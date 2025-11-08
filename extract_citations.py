@@ -24,6 +24,7 @@ DEFAULT_SYSTEM_PROMPT = (
 )
 
 USER_PROMPT_TEMPLATE = """You are analyzing part {{chunk_index}} of the book "{{book_title}}".
+This chunk contains sentences {{start_sentence}} through {{end_sentence}}.
 
 Extract book citations and return ONLY JSON that matches this schema:
 
@@ -31,9 +32,9 @@ You may cite just the author when just a reference to their name is present, but
 If there is more than one book from the same author make 2 separate citations.
 
 {
-  "chunk_index": int,
-  "start_sentence": int,
-  "end_sentence": int,
+  "chunk_index": {{chunk_index}},
+  "start_sentence": {{start_sentence}},
+  "end_sentence": {{end_sentence}},
   "citations": [
     {
       "title": str | null,
@@ -124,7 +125,7 @@ class ExtractionConfig:
     api_key: str = "test"
     model: str = "Qwen/Qwen3-30B-A3B"
     max_completion_tokens: int = 2048
-    max_input_tokens: int = 4000
+    max_context_per_request: int = 6144  # Total context window per request (input + output)
     tokenizer_name: str = "Qwen/Qwen3-30B-A3B"
     book_title: Optional[str] = None
 
@@ -162,21 +163,23 @@ def build_chunks(
     chunk_size: int,
     tokenizer: Tokenizer,
     system_prompt: str,
-    max_input_tokens: int,
+    max_context_per_request: int,
     max_completion_tokens: int,
     book_title: str,
     *,
     char_per_token: int = CHAR_PER_TOKEN_SAFETY,
 ) -> Iterable[SentenceChunk]:
-    if max_input_tokens <= 0:
-        raise ValueError("--max-input-tokens must be positive.")
+    if max_context_per_request <= 0:
+        raise ValueError("max_context_per_request must be positive.")
+    if max_completion_tokens <= 0:
+        raise ValueError("max_completion_tokens must be positive.")
     if char_per_token <= 0:
         raise ValueError("char_per_token must be positive.")
 
     # Reserve space for output tokens in the context window
-    available_input_tokens = max_input_tokens - max_completion_tokens
+    available_input_tokens = max_context_per_request - max_completion_tokens
     if available_input_tokens <= 0:
-        raise ValueError("max_input_tokens must be greater than max_completion_tokens.")
+        raise ValueError("max_context_per_request must be greater than max_completion_tokens.")
     char_budget = available_input_tokens * char_per_token
     total_sentences = len(sentences)
     chunk_index = 0
@@ -245,6 +248,8 @@ def chunk_text(chunk: SentenceChunk) -> str:
 def format_user_prompt(chunk: SentenceChunk, book_title: str) -> str:
     return (
         USER_PROMPT_TEMPLATE.replace("{{chunk_index}}", str(chunk.index))
+        .replace("{{start_sentence}}", str(chunk.start_sentence))
+        .replace("{{end_sentence}}", str(chunk.end_sentence))
         .replace("{{book_title}}", book_title)
         .replace("{{sentences_block}}", chunk_text(chunk))
     )
@@ -265,7 +270,7 @@ async def call_model(
     semaphore: asyncio.Semaphore,
     model: str,
     max_completion_tokens: int,
-    max_input_tokens: int,
+    max_context_per_request: int,
 ) -> tuple[SentenceChunk, ChunkExtraction | None, ChunkFailure | None]:
     # build_chunks already ensures chunks fit within token limits
     user_prompt = format_user_prompt(chunk, book_title)
@@ -372,7 +377,7 @@ async def process_book(
             config.chunk_size,
             tokenizer,
             DEFAULT_SYSTEM_PROMPT,
-            config.max_input_tokens,
+            config.max_context_per_request,
             config.max_completion_tokens,
             book_title,
         )
@@ -396,7 +401,7 @@ async def process_book(
                 semaphore=semaphore,
                 model=config.model,
                 max_completion_tokens=config.max_completion_tokens,
-                max_input_tokens=config.max_input_tokens,
+                max_context_per_request=config.max_context_per_request,
             )
         )
         for chunk in chunks

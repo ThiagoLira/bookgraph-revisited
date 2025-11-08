@@ -54,10 +54,10 @@ def parse_args() -> argparse.Namespace:
         help="Maximum number of tokens to generate per completion.",
     )
     parser.add_argument(
-        "--max-input-tokens",
+        "--max-context-per-request",
         type=int,
-        default=2048,
-        help="Token ceiling for prompts (before completion tokens).",
+        default=6144,
+        help="Total context window per request (input + output tokens).",
     )
     parser.add_argument(
         "--tokenizer-name",
@@ -105,7 +105,7 @@ async def run(args: argparse.Namespace):
         api_key=args.api_key,
         model=args.model,
         max_completion_tokens=args.max_completion_tokens,
-        max_input_tokens=args.max_input_tokens,
+        max_context_per_request=args.max_context_per_request,
         tokenizer_name=args.tokenizer_name,
         book_title=args.book_title or args.input_path.stem,
     )

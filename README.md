@@ -67,7 +67,7 @@ config = ExtractionConfig(
     input_path=Path("book.txt"),
     chunk_size=50,
     max_concurrency=30,
-    max_input_tokens=4096,
+    max_context_per_request=6144,  # Total context window (input + output)
     max_completion_tokens=2048,
     base_url="http://localhost:8080/v1",
 )
@@ -105,7 +105,7 @@ Command-line interface for processing text files.
 uv run python run_single_file.py book.txt \
   --chunk-size 50 \
   --max-concurrency 30 \
-  --max-input-tokens 4096 \
+  --max-context-per-request 6144 \
   --max-completion-tokens 2048 \
   --base-url http://localhost:8080/v1
 ```
@@ -116,7 +116,7 @@ uv run python run_single_file.py book.txt \
 |-----------|---------|-------------|
 | `--chunk-size` | 15 | Sentences per chunk |
 | `--max-concurrency` | 50 | Parallel requests |
-| `--max-input-tokens` | 4000 | Max prompt tokens |
+| `--max-context-per-request` | 6144 | Total context window per request (input + output) |
 | `--max-completion-tokens` | 2048 | Max response tokens |
 | `--base-url` | localhost:8080/v1 | OpenAI-compatible API endpoint |
 | `--model` | Qwen/Qwen3-30B-A3B | Model identifier |
@@ -152,14 +152,16 @@ Automated profiling with llama.cpp server management and GPU monitoring.
 ### Default Configuration
 
 ```bash
-INPUT_TXT:           test_book_subset.txt
-CHUNK_SIZE:          50 sentences
-MAX_CONCURRENCY:     30 parallel requests
-MAX_INPUT_TOKENS:    4096
+INPUT_TXT:             test_book_subset.txt
+CHUNK_SIZE:            50 sentences
+MAX_CONCURRENCY:       30 parallel requests
+MAX_INPUT_TOKENS:      4096
 MAX_COMPLETION_TOKENS: 2048
-MODEL_PATH:          Qwen3-30B-A3B-Q5_K_S.gguf
-GPU_LAYERS:          -1 (all layers)
-KV_CACHE:            q4_0 (quantized for VRAM efficiency)
+CONTEXT_PER_REQUEST:   6144 (4096 input + 2048 output)
+BATCH_SIZE:            2048
+MODEL_PATH:            Qwen3-30B-A3B-Q5_K_S.gguf
+GPU_LAYERS:            -1 (all layers)
+KV_CACHE:              q4_0 (quantized for VRAM efficiency)
 ```
 
 ### Server Parameters
@@ -170,12 +172,12 @@ The script automatically configures llama-server with optimized settings:
 -c CONTEXT_SIZE              # (input+output) * concurrency
 -np CONCURRENCY              # Parallel slots
 -n MAX_COMPLETION_TOKENS     # Generation limit
+-b BATCH_SIZE                # Batch size for token processing (default: 2048)
 -ngl -1                      # All layers on GPU
 -ctk q4_0 -ctv q4_0         # Quantized KV cache (50% VRAM savings)
 --repeat-penalty 1.2
 --presence-penalty 0.4
 --frequency-penalty 0.6
--fa on                       # Flash attention
 ```
 
 ### Output
@@ -193,27 +195,31 @@ profile_runs/TIMESTAMP/
 
 Tested on RTX 5090 (32GB VRAM) with Qwen3-30B-A3B-Q5_K_S (20GB model):
 
-### Test Results (600-line subset)
+### Test Results (733-sentence subset, 15 chunks)
 
-| Config | Concurrency | KV Cache | Time | GPU Util |
-|--------|-------------|----------|------|----------|
-| **Optimal** | 30 | q4_0 | 13.6s | 85-97% |
-| Baseline | 20 | q8_0 | 14.4s | 70-85% |
-| Small chunks | 25 | q8_0 | 15.8s | 65-80% |
+| Config | Batch Size | Time | GPU Util |
+|--------|-----------|------|----------|
+| **Optimal** | 2048 | 13.5s | 70-75% |
+| Medium | 1024 | 14.0s | 63% |
+| Small | 512 | 14.5s | 68% |
+| Tiny | 256 | 16.2s | 74% |
 
-### Full Book (680KB, ~106 chunks)
+### Full Book (680KB, 104 chunks)
 
-- **Time**: ~57 seconds
-- **GPU utilization**: 85-95% sustained
+- **Time**: ~55 seconds
+- **GPU utilization**: 70-75% sustained
 - **Throughput**: ~30-40 tokens/sec per slot
 - **VRAM usage**: ~24.5 GB (model + q4_0 KV cache)
+- **Chunks**: 104 (50 sentences each, 4096 input tokens utilized)
 
 ### Key Optimization Findings
 
-1. **KV cache quantization matters**: q4_0 outperforms q8_0 by enabling higher concurrency
-2. **Optimal concurrency**: 30 parallel requests for this workload
-3. **Larger chunks are faster**: 50 sentences > 25 sentences (less overhead)
-4. **VRAM bottleneck**: Context must account for parallel slots: `(input+output) * concurrency`
+1. **Batch size matters**: 2048 optimal for full books, 1024 for small workloads
+2. **KV cache quantization**: q4_0 enables higher concurrency with 50% VRAM savings
+3. **Optimal concurrency**: 30 parallel requests saturates GPU efficiently
+4. **Larger chunks = faster**: 50 sentences optimal (1-sentence chunks 5.6x slower!)
+5. **Context calculation**: Total context = (input+output) × concurrency, llama.cpp divides by -np
+6. **Parameter clarity**: Renamed max_input_tokens → max_context_per_request to fix double-reservation bug
 
 ## Troubleshooting
 
