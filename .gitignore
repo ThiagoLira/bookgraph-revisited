@@ -47,6 +47,8 @@ profile_runs/
 *.txt.json
 test_server.py
 test_book_subset.txt
+books/
+!books/README.md
 
 # Model files
 *.gguf
