@@ -20,6 +20,9 @@ wheels/
 .installed.cfg
 *.egg
 
+
+goodreads_data/
+
 # Virtual environments
 venv/
 ENV/
