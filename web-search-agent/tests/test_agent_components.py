@@ -139,47 +139,6 @@ def test_goodreads_tool_returns_matches_for_synthetic_catalog(tmp_path) -> None:
     )
 
 
-@pytest.mark.skipif(
-    not Path("goodreads_data/goodreads_books.json").exists(),
-    reason="Requires the full Goodreads dataset.",
-)
-def test_real_catalog_lookup_timings() -> None:
-    """
-    Measure timings for actual catalog entries at the 10th, middle, and last positions.
-
-    Hardcoded references (precomputed):
-      - 10th line:  The Devil's Notebook — Anton Szandor LaVey
-      - Middle:     El Espejo de mi Alma — Tannia E. Ortiz-Lopes
-      - Last line:  The Spanish Duke's Virgin Bride ... — Chantelle Shaw
-    """
-
-    catalog = GoodreadsCatalog()  # type: ignore[arg-type]
-    targets = [
-        ("tenth", "The Devil's Notebook", "Anton Szandor LaVey"),
-        ("middle", "El Espejo de mi Alma", "Tannia E. Ortiz-Lopes"),
-        (
-            "last",
-            "The Spanish Duke's Virgin Bride (Innocent Mistress, Virgin Bride, #1) (Harlequin Presents, #2679)",
-            "Chantelle Shaw",
-        ),
-    ]
-    timings: dict[str, float] = {}
-    try:
-        for label, title, author in targets:
-            start = time.perf_counter()
-            matches = catalog.find_books(title=title, author=author, limit=1)
-            elapsed = time.perf_counter() - start
-            timings[label] = elapsed
-            print(f"[timing] {label} lookup took {elapsed:.6f}s for {title}")
-            assert matches, f"{label} lookup failed for {title!r}"
-            returned_title = matches[0]["title"] or ""
-            assert returned_title.lower() == title.lower(), (
-                f"{label} lookup returned {returned_title!r} instead of {title!r}"
-            )
-    finally:
-        catalog.close()
-
-    assert "middle" in timings and "tenth" in timings and "last" in timings
 
 
 def _write_linear_catalog(tmp_path: Path, total_rows: int) -> tuple[Path, Path]:

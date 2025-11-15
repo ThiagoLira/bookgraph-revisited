@@ -33,7 +33,7 @@ Both scripts ultimately call the same extraction codepath—the difference is wh
 - **Purpose**: answer “does this citation exist on Goodreads?” by pairing a LlamaIndex FunctionAgent with a multiprocessing search tool.
 - **Key pieces**:
   - `agent.py` builds the agent, forcing tool-first reasoning and accepting any OpenAI-compatible endpoint.
-  - `goodreads_tool.py` memory-maps `goodreads_books.json`, splits it into 1 MB, line-aligned chunks, and spawns 16 processes that scan in parallel. The first process that finds a match returns the **entire metadata JSON**; everyone else terminates immediately.
+  - `goodreads_tool.py` memory-maps `goodreads_books.json`, splits it into 1 MB, line-aligned chunks, and spawns 20 processes that scan in parallel. The first process that finds a match returns the **entire metadata JSON**; everyone else terminates immediately.
   - `test_agent.py` is a CLI harness for running canned prompts; pass `--trace-tool` to log every lookup and the metadata payload.
   - `tests/test_agent_components.py` contains verbose unit tests and timing probes (both synthetic and real Goodreads datasets) so regressions are caught quickly.
 - **When to use**: you want a deterministic, auditable check that a citation exists—e.g., validating `run_single_file.py` outputs or testing alternate prompts.

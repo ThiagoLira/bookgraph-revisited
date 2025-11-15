@@ -128,7 +128,7 @@ uv run python run_single_file.py book.txt \
 Need to validate citations against Goodreads? Use the agent under `web-search-agent/`:
 
 - `agent.py` builds a LlamaIndex **FunctionAgent** that forces every turn through the `goodreads_book_lookup` tool.
-- The lookup tool memory-maps `goodreads_books.json` and dispatches **16 multiprocessing workers** that scan 1 MB, line-aligned chunks concurrently. As soon as one worker finds the target, the pool terminates, so mid-file lookups now finish in seconds rather than minutes.
+- The lookup tool memory-maps `goodreads_books.json` and dispatches **20 multiprocessing workers** that scan 1 MB, line-aligned chunks concurrently. As soon as one worker finds the target, the pool terminates, so mid-file lookups now finish in seconds rather than minutes.
 - `test_agent.py` is a smoke harness that feeds prompts from `susan_sample.txt.json` and prints the agent verdict (`FOUND`/`NOT FOUND`).
 - `tests/test_agent_components.py` includes unit tests for the agent runner, synthetic catalogs, and timing checks against real Goodreads data.
 

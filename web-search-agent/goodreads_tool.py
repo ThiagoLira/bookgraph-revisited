@@ -142,7 +142,7 @@ class GoodreadsCatalog:
         self,
         books_path: Path | str = BOOKS_PATH,
         authors_path: Path | str = AUTHORS_PATH,
-        parallel_workers: int = 16,
+        parallel_workers: int = 20,
     ) -> None:
         self.books_path = Path(books_path)
         self.authors_path = Path(authors_path)
@@ -357,7 +357,7 @@ def create_book_lookup_tool(
     authors_path: Path | str = AUTHORS_PATH,
     description: Optional[str] = None,
     trace: bool = False,
-    parallel_workers: int = 16,
+    parallel_workers: int = 20,
 ) -> FunctionTool:
     """
     Build a LlamaIndex FunctionTool that verifies if a Goodreads book exists.
