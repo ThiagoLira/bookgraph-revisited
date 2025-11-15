@@ -123,6 +123,26 @@ uv run python run_single_file.py book.txt \
 | `--tokenizer-name` | Qwen/Qwen3-30B-A3B | HuggingFace tokenizer |
 | `--debug-limit` | None | Limit chunks for testing |
 
+## Metadata Agent: `web-search-agent`
+
+Need to validate citations against Goodreads? Use the agent under `web-search-agent/`:
+
+- `agent.py` builds a LlamaIndex **FunctionAgent** that forces every turn through the `goodreads_book_lookup` tool.
+- The lookup tool memory-maps `goodreads_books.json` and dispatches **16 multiprocessing workers** that scan 1 MB, line-aligned chunks concurrently. As soon as one worker finds the target, the pool terminates, so mid-file lookups now finish in seconds rather than minutes.
+- `test_agent.py` is a smoke harness that feeds prompts from `susan_sample.txt.json` and prints the agent verdict (`FOUND`/`NOT FOUND`).
+- `tests/test_agent_components.py` includes unit tests for the agent runner, synthetic catalogs, and timing checks against real Goodreads data.
+
+Example:
+
+```bash
+uv run python web-search-agent/test_agent.py \
+  --citations-json susan_sample.txt.json \
+  --limit 5 \
+  --trace-tool
+```
+
+`--trace-tool` logs every Goodreads lookup plus the full metadata JSON returned by the multiprocessing tool, making it easy to inspect what the agent saw.
+
 ## Profiling Script: `run_profiled_single.sh`
 
 Automated profiling with llama.cpp server management and GPU monitoring.
