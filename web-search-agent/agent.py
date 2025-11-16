@@ -18,10 +18,12 @@ import asyncio
 import os
 from dataclasses import dataclass
 from pathlib import Path
-from typing import TYPE_CHECKING, Optional, Sequence
+from typing import TYPE_CHECKING, Optional, Sequence, List, Dict
 
 from llama_index.core.agent import FunctionAgent
 from llama_index.llms.openai import OpenAI
+from pydantic import BaseModel, Field
+from typing import Literal
 
 if TYPE_CHECKING:  # pragma: no cover
     from llama_index.core.llms import ChatMessage, LLM
@@ -32,12 +34,46 @@ if str(CURRENT_DIR) not in os.sys.path:  # pragma: no cover
 
 from goodreads_tool import create_book_lookup_tool, create_author_lookup_tool
 
+
+class BookMetadata(BaseModel):
+    type: Literal["book"] = "book"
+    title: str = Field(..., description="Book title as listed on Goodreads.")
+    title_without_series: Optional[str] = Field(
+        None, description="Title stripped of series information when available."
+    )
+    authors: List[str] = Field(default_factory=list, description="List of author names.")
+    publication_year: Optional[int] = None
+    publication_month: Optional[int] = None
+    publication_day: Optional[int] = None
+    book_id: Optional[str] = Field(None, description="Goodreads book_id.")
+    num_pages: Optional[int] = None
+    publisher: Optional[str] = None
+    ratings_count: Optional[int] = None
+    average_rating: Optional[float] = None
+
+
+class AuthorMetadata(BaseModel):
+    type: Literal["author"] = "author"
+    author_id: str = Field(..., description="Goodreads author_id.")
+    name: str = Field(..., description="Canonical author name.")
+    ratings_count: Optional[int] = None
+
+
 SYSTEM_PROMPT = (
-    "You verify whether bibliographic entries exist on Goodreads. "
-    "When a citation includes a title, call `goodreads_book_lookup` to inspect matching "
-    "editions and compare their authors. If a citation only includes an author, call "
-    "`goodreads_author_lookup` to disambiguate identities first. Respond strictly with "
-    "either 'FOUND - <short reason>' or 'NOT FOUND - <short reason>'."
+    "You verify whether bibliographic entries exist on Goodreads.\n"
+    "• Normalize search queries aggressively: strip punctuation, accents, edition notes, "
+    "and try multiple variations (e.g., swapped word order, removing subtitles) until you "
+    "exhaust reasonable options.\n"
+    "• When a citation includes a title, call `goodreads_book_lookup` first to gather "
+    "candidate editions, then compare the returned authors to the citation.\n"
+    "• When only an author is supplied, call `goodreads_author_lookup` to disambiguate "
+    "the identity before concluding.\n"
+    "• Always respond with a JSON object containing `result` (FOUND/NOT_FOUND) and "
+    "`metadata`. For book matches, `metadata` must conform to `BookMetadata` "
+    "(fields: title, title_without_series, authors, publication_year, publication_month, "
+    "publication_day, book_id, num_pages, plus any optional extras). For author-only "
+    "matches, `metadata` must conform to `AuthorMetadata` (fields: author_id, name, "
+    "ratings_count)."
 )
 
 
