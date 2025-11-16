@@ -36,6 +36,7 @@ env/
 *.swo
 *~
 .DS_Store
+.env
 
 # Testing
 .pytest_cache/
@@ -46,10 +47,14 @@ htmlcov/
 # Project specific
 *.json
 !pyproject.toml
+!web-search-agent/**/*.json
 profile_runs/
 *.txt.json
 test_server.py
 test_book_subset.txt
+books/
+!books/.gitkeep
+openrouter_runs/
 
 # Model files
 *.gguf

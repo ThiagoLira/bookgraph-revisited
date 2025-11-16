@@ -402,13 +402,47 @@ def create_book_lookup_tool(
                 "[goodreads_tool] lookup_book call "
                 f"title={title!r} author={author!r} limit={limit}"
             )
-        matches = catalog.find_books(title=title, author=author, limit=limit)
-        if not matches:
-            return {}
-        top = matches[0]
+        seen_ids = set()
+        matches: List[Dict[str, Any]] = []
+
+        def add_candidates(candidates: List[Dict[str, Any]]) -> None:
+            for entry in candidates:
+                book_id = entry.get("book_id")
+                if not book_id:
+                    continue
+                if book_id in seen_ids:
+                    continue
+                seen_ids.add(book_id)
+                matches.append(entry)
+                if len(matches) >= limit:
+                    break
+
+        capped_limit = min(limit, 20)
+        if title:
+            add_candidates(
+                catalog.find_books(title=title, author=None, limit=capped_limit)
+            )
+        if len(matches) < limit and author:
+            add_candidates(
+                catalog.find_books(title=None, author=author, limit=capped_limit)
+            )
+        if len(matches) < limit and title and author:
+            add_candidates(
+                catalog.find_books(title=title, author=author, limit=capped_limit)
+            )
+
         if trace:
-            print("[goodreads_tool] match metadata:", json.dumps(top))
-        return top
+            print(
+                "[goodreads_tool] lookup results:",
+                json.dumps(
+                    {"query": {"title": title, "author": author}, "matches": matches}
+                ),
+            )
+        return {
+            "query": {"title": title, "author": author, "limit": limit},
+            "matches_found": len(matches),
+            "matches": matches,
+        }
 
     tool_description = description or (
         "Searches Goodreads edition metadata (title + authors). "

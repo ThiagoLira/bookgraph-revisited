@@ -128,14 +128,15 @@ def test_goodreads_tool_returns_matches_for_synthetic_catalog(tmp_path) -> None:
     )
 
     payload = tool.fn(title="Analytical Engine", author="Lovelace", limit=3)
-    assert payload, "Expected a metadata dict for the top match"
-    assert payload["title"] == "Analytical Engine Memoirs", (
+    assert payload["matches_found"] == 1
+    match = payload["matches"][0]
+    assert match["title"] == "Analytical Engine Memoirs", (
         "Tool should return the full title from the JSON lines entry; "
-        f"raw match object: {payload}"
+        f"raw match object: {match}"
     )
-    assert payload["authors"] == ["Ada Lovelace"], (
+    assert match["authors"] == ["Ada Lovelace"], (
         "Author IDs must resolve to human-readable names. "
-        f"Resolved authors: {payload['authors']}"
+        f"Resolved authors: {match['authors']}"
     )
 
 
