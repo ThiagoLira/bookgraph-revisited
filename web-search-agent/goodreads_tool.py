@@ -453,3 +453,76 @@ def create_book_lookup_tool(
         name="goodreads_book_lookup",
         description=tool_description,
     )
+
+
+def create_author_lookup_tool(
+    *,
+    authors_path: Path | str = AUTHORS_PATH,
+    description: Optional[str] = None,
+) -> FunctionTool:
+    try:
+        from llama_index.core.tools import FunctionTool
+    except ImportError as exc:  # pragma: no cover
+        raise ImportError(
+            "llama-index is required to build the Goodreads lookup tool. "
+            "Install it via `uv sync` or `pip install llama-index`."
+        ) from exc
+
+    catalog = GoodreadsAuthorCatalog(authors_path=authors_path)
+
+    def lookup_author(author: Optional[str] = None, limit: int = 5) -> Dict[str, Any]:
+        norm_limit = min(limit, 20)
+        matches = catalog.find_authors(author or "", limit=norm_limit)
+        return {
+            "query": {"author": author, "limit": norm_limit},
+            "matches_found": len(matches),
+            "matches": matches,
+        }
+
+    tool_description = description or (
+        "Searches Goodreads author metadata. Use when only the author is known and "
+        "you need to disambiguate identities."
+    )
+    return FunctionTool.from_defaults(
+        fn=lookup_author,
+        name="goodreads_author_lookup",
+        description=tool_description,
+    )
+class GoodreadsAuthorCatalog:
+    def __init__(self, authors_path: Path | str = AUTHORS_PATH) -> None:
+        self.authors_path = Path(authors_path)
+        self._authors: List[Dict[str, Any]] = []
+        self._load_authors()
+
+    def _load_authors(self) -> None:
+        if not self.authors_path.exists():
+            raise FileNotFoundError(
+                f"Author dataset missing at {self.authors_path.resolve()}."
+            )
+        with self.authors_path.open("r", encoding="utf-8") as fh:
+            for line in fh:
+                self._authors.append(json.loads(line))
+
+    def find_authors(self, query: str, limit: int = 5) -> List[Dict[str, Any]]:
+        if not query:
+            return []
+        norm = _normalize(query)
+        matches: List[Dict[str, Any]] = []
+        for row in self._authors:
+            name = row.get("name")
+            if not isinstance(name, str):
+                continue
+            if norm in _normalize(name):
+                matches.append(
+                    {
+                        "author_id": str(row.get("author_id")),
+                        "name": name,
+                        "average_rating": row.get("average_rating"),
+                        "works_count": row.get("works_count"),
+                        "fans_count": row.get("fans_count"),
+                        "link": row.get("link") or row.get("url"),
+                    }
+                )
+            if len(matches) >= limit:
+                break
+        return matches

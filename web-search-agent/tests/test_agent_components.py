@@ -23,7 +23,11 @@ if str(MODULE_DIR) not in sys.path:
     sys.path.insert(0, str(MODULE_DIR))
 
 from agent import GoodreadsAgentRunner, SYSTEM_PROMPT, build_agent  # type: ignore[attr-defined]
-from goodreads_tool import GoodreadsCatalog, create_book_lookup_tool  # type: ignore[attr-defined]
+from goodreads_tool import (
+    GoodreadsCatalog,
+    create_book_lookup_tool,
+    create_author_lookup_tool,
+)  # type: ignore[attr-defined]
 
 
 class _ToolLessStubAgent:
@@ -140,6 +144,20 @@ def test_goodreads_tool_returns_matches_for_synthetic_catalog(tmp_path) -> None:
     )
 
 
+def test_author_lookup_returns_matches(tmp_path) -> None:
+    authors_path = tmp_path / "authors.json"
+    rows = [
+        {"author_id": 1, "name": "William Shakespeare", "works_count": 10},
+        {"author_id": 2, "name": "John Milton", "works_count": 5},
+    ]
+    authors_path.write_text("\n".join(json.dumps(row) for row in rows))
+
+    tool = create_author_lookup_tool(authors_path=authors_path)
+    payload = tool.fn(author="Shakespeare", limit=5)
+    assert payload["matches_found"] == 1
+    assert payload["matches"][0]["name"] == "William Shakespeare"
+
+
 
 
 def _write_linear_catalog(tmp_path: Path, total_rows: int) -> tuple[Path, Path]:
@@ -219,7 +237,7 @@ def test_build_agent_uses_tool_and_agent_integration(monkeypatch):
 
     import agent as agent_mod  # type: ignore[import-not-found]
 
-    class RecordingTool:
+    class RecordingBookTool:
         def __init__(self):
             self.metadata = SimpleNamespace(name="goodreads_book_lookup")
             self.calls: list[dict] = []
@@ -227,8 +245,22 @@ def test_build_agent_uses_tool_and_agent_integration(monkeypatch):
         def fn(self, title=None, author=None, limit=5):
             self.calls.append({"title": title, "author": author, "limit": limit})
             return {
+                "query": {"title": title, "author": author},
                 "matches_found": 1,
                 "matches": [{"title": title, "authors": [author]}],
+            }
+
+    class RecordingAuthorTool:
+        def __init__(self):
+            self.metadata = SimpleNamespace(name="goodreads_author_lookup")
+            self.calls: list[dict] = []
+
+        def fn(self, author=None, limit=5):
+            self.calls.append({"author": author, "limit": limit})
+            return {
+                "query": {"author": author},
+                "matches_found": 1,
+                "matches": [{"name": author, "author_id": "123"}],
             }
 
     class StubFunctionAgent:
@@ -253,9 +285,15 @@ def test_build_agent_uses_tool_and_agent_integration(monkeypatch):
 
             return _finish()
 
-    recording_tool = RecordingTool()
+    recording_book_tool = RecordingBookTool()
+    recording_author_tool = RecordingAuthorTool()
     monkeypatch.setattr(agent_mod, "FunctionAgent", StubFunctionAgent)
-    monkeypatch.setattr(agent_mod, "create_book_lookup_tool", lambda **_: recording_tool)
+    monkeypatch.setattr(
+        agent_mod, "create_book_lookup_tool", lambda **_: recording_book_tool
+    )
+    monkeypatch.setattr(
+        agent_mod, "create_author_lookup_tool", lambda **_: recording_author_tool
+    )
     monkeypatch.setattr(agent_mod, "build_llm", lambda **__: "dummy-llm")
 
     runner = build_agent(
@@ -277,16 +315,18 @@ def test_build_agent_uses_tool_and_agent_integration(monkeypatch):
     assert (
         stub_agent.kwargs["system_prompt"] == SYSTEM_PROMPT
     ), "build_agent must propagate the curated bibliography system prompt."
-    assert (
-        stub_agent.kwargs["initial_tool_choice"] == "goodreads_book_lookup"
-    ), "FunctionAgent should be forced to call the Goodreads tool first."
+    assert stub_agent.kwargs["initial_tool_choice"] is None
+    assert [tool.metadata.name for tool in stub_agent.kwargs["tools"]] == [
+        "goodreads_book_lookup",
+        "goodreads_author_lookup",
+    ]
     assert stub_agent.kwargs["llm"] == "dummy-llm", (
         "Custom build_llm patch should feed directly into the FunctionAgent arguments; "
         f"observed kwargs: {stub_agent.kwargs}"
     )
-    assert recording_tool.calls == [
+    assert recording_book_tool.calls == [
         {"title": "Synthetic Geometry", "author": "Test Author", "limit": 5}
     ], (
         "The stub agent should have invoked the synthetic tool exactly once with the "
-        f"scripted query; recorded tool calls: {recording_tool.calls}"
+        f"scripted query; recorded tool calls: {recording_book_tool.calls}"
     )

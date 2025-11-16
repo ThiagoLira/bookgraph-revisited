@@ -30,15 +30,14 @@ CURRENT_DIR = Path(__file__).resolve().parent
 if str(CURRENT_DIR) not in os.sys.path:  # pragma: no cover
     os.sys.path.insert(0, str(CURRENT_DIR))
 
-from goodreads_tool import create_book_lookup_tool
+from goodreads_tool import create_book_lookup_tool, create_author_lookup_tool
 
 SYSTEM_PROMPT = (
-    "You verify whether bibliographic entries exist on Goodreads. Prefer a staged "
-    "strategy: first search by title only, inspect authors, then (if still ambiguous) "
-    "search under the author name alone to find likely matches. If neither lookup yields "
-    "a confident pairing, try simple variations (e.g., stripping accents, swapping word "
-    "order) before concluding failure. Respond strictly with either "
-    "'FOUND - <short reason>' or 'NOT FOUND - <short reason>'."
+    "You verify whether bibliographic entries exist on Goodreads. "
+    "When a citation includes a title, call `goodreads_book_lookup` to inspect matching "
+    "editions and compare their authors. If a citation only includes an author, call "
+    "`goodreads_author_lookup` to disambiguate identities first. Respond strictly with "
+    "either 'FOUND - <short reason>' or 'NOT FOUND - <short reason>'."
 )
 
 
@@ -109,7 +108,7 @@ def build_agent(
 ) -> GoodreadsAgentRunner:
     """Construct a function-calling agent with our Goodreads lookup tool."""
     llm = build_llm(model=model, api_key=api_key, base_url=base_url)
-    search_tool = create_book_lookup_tool(
+    book_tool = create_book_lookup_tool(
         books_path=books_path,
         authors_path=authors_path,
         description=(
@@ -118,16 +117,20 @@ def build_agent(
         ),
         trace=trace_tool,
     )
+    author_tool = create_author_lookup_tool(
+        authors_path=authors_path,
+        description="Use this when you only have the author name and must disambiguate.",
+    )
     agent = FunctionAgent(
         name="goodreads_validator",
         description="Validates bibliography entries with Goodreads metadata.",
         system_prompt=SYSTEM_PROMPT,
-        tools=[search_tool],
+        tools=[book_tool, author_tool],
         llm=llm,
         verbose=verbose,
         streaming=False,
         allow_parallel_tool_calls=False,
-        initial_tool_choice=search_tool.metadata.name,
+        initial_tool_choice=None,
     )
     return GoodreadsAgentRunner(agent=agent)
 
