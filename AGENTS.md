@@ -28,7 +28,7 @@ Two main entrypoints exist in this repo depending on the kind of “agent” you
 
 Both scripts ultimately call the same extraction codepath—the difference is whether you want the script to act as a **server+client profiler** or just a **client**. Pick the one that matches your deployment surface.
 
-## Goodreads Metadata Agent: `web-search-agent`
+## Goodreads Metadata Agent: `lib/goodreads_agent`
 
 - **Purpose**: answer “does this citation exist on Goodreads?” by pairing a LlamaIndex FunctionAgent with a multiprocessing search tool.
 - **Key pieces**:

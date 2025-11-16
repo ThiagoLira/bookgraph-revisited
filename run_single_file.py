@@ -10,7 +10,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from extract_citations import ExtractionConfig, process_book, write_output
+from lib.extract_citations import ExtractionConfig, process_book, write_output
 
 
 def parse_args() -> argparse.Namespace:

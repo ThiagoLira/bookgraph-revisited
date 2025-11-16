@@ -14,6 +14,10 @@ from typing import Dict, List
 from dotenv import load_dotenv
 import os
 
+MODULE_DIR = Path(__file__).resolve().parent
+if str(MODULE_DIR) not in sys.path:
+    sys.path.insert(0, str(MODULE_DIR))
+
 from agent import build_agent  # type: ignore[attr-defined]
 from test_agent import build_prompts  # type: ignore[attr-defined]
 

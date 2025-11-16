@@ -15,14 +15,14 @@ import os
 from pathlib import Path
 from typing import Iterable, List
 
-from extract_citations import ExtractionConfig, process_book, write_output
+from lib.extract_citations import ExtractionConfig, process_book, write_output
 from preprocess_citations import preprocess as preprocess_citations
-from web_search_agent.agent import (
+from lib.goodreads_agent.agent import (
     BookMetadata,
     AuthorMetadata,
     build_agent,
 )
-from web_search_agent.test_agent import build_prompts
+from lib.goodreads_agent.test_agent import build_prompts
 
 # ---------- Tunable defaults ----------
 

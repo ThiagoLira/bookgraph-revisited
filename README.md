@@ -123,9 +123,9 @@ uv run python run_single_file.py book.txt \
 | `--tokenizer-name` | Qwen/Qwen3-30B-A3B | HuggingFace tokenizer |
 | `--debug-limit` | None | Limit chunks for testing |
 
-## Metadata Agent: `web-search-agent`
+## Metadata Agent: `lib/goodreads_agent`
 
-Need to validate citations against Goodreads? Use the agent under `web-search-agent/`:
+Need to validate citations against Goodreads? Use the agent under `lib/goodreads_agent/`:
 
 - `agent.py` builds a LlamaIndex **FunctionAgent** that forces every turn through the `goodreads_book_lookup` tool.
 - Two complementary tools power the agent:
@@ -137,7 +137,7 @@ Need to validate citations against Goodreads? Use the agent under `web-search-ag
 Example:
 
 ```bash
-uv run python web-search-agent/test_agent.py \
+uv run python -m lib.goodreads_agent.test_agent \
   --citations-json susan_sample.txt.json \
   --limit 5 \
   --trace-tool
