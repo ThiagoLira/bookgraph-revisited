@@ -153,7 +153,7 @@ parser.add_argument("--max-input-tokens", type=int, default=4000)
 parser.add_argument("--max-context-per-request", type=int, default=6144)
 ```
 
-**run_profiled_single.sh:**
+**profiling/single_gpu/run_profiled_single.sh:**
 ```bash
 # Calculation remains the same, but naming is clearer
 CONTEXT_PER_REQUEST=$((MAX_INPUT_TOKENS + MAX_COMPLETION_TOKENS))
@@ -314,9 +314,9 @@ llama-server \
 ### Complete Parameter Flow Diagram
 
 ```
-┌─────────────────────────────────────────────┐
-│  User Configuration (run_profiled_single.sh) │
-└─────────────────────┬───────────────────────┘
+┌──────────────────────────────────────────────────────────┐
+│  User Configuration (profiling/single_gpu/run_profiled_single.sh) │
+└─────────────────────┬────────────────────────────────────┘
                       │
         ┌─────────────┼─────────────┐
         │                           │

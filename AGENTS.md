@@ -2,10 +2,10 @@
 
 Two main entrypoints exist in this repo depending on the kind of “agent” you want to run—either a **local stress-testing agent** that spins up llama.cpp and records GPU stats, or a **remote-run agent** that only needs an OpenAI-compatible endpoint.
 
-## Local Stress Agent: `run_profiled_single.sh`
+## Local Stress Agents
 
-- **Purpose**: end-to-end harness for load testing on local hardware.
-- **What it does**: launches `llama-server` with high-concurrency settings, runs `run_single_file.py`, samples GPU utilization via `monitor_gpu_util.sh`, and emits logs/plots inside `profile_runs/<timestamp>/`.
+- **Single GPU (`profiling/single_gpu/run_profiled_single.sh`)**: end-to-end harness for load testing on one GPU. Launches `llama-server`, runs `run_single_file.py`, samples GPU utilization via `profiling/common/monitor_gpu_util.sh`, and emits logs/plots inside `profiling/single_gpu/profile_runs/<timestamp>/`.
+- **Dual GPU (`profiling/dual_gpu/run_profiled_dual.sh`)**: sweeps through multiple `--max-concurrency` settings while running the server across GPUs 0/1 with row-split tensor parallelism. Drops outputs inside `profiling/dual_gpu/profile_runs/<timestamp>/np_*`.
 - **When to use**: you’re iterating on model quantization, batch sizes, or GPU placement and want automatic instrumentation without touching remote infra.
 - **Inputs**: optional parameters for chunk size, concurrency, token budgets, GGUF path, GPU layers, etc. Defaults match the README table.
 - **Outputs**: JSON citation file + `llama_server.log`, `run_single_file.log`, raw GPU log, and `gpu_utilization.png`.
@@ -15,16 +15,17 @@ Two main entrypoints exist in this repo depending on the kind of “agent” you
 - **Purpose**: lightweight CLI that just needs an OpenAI-compatible server URL (local or remote).
 - **What it does**: reads a plaintext book, slices it into chunks, calls `extract_citations.process_book(...)`, and writes `<input>.json`. All server details are injected through flags (`--base-url`, `--api-key`, `--model`, token limits, etc.).
 - **When to use**: the LLM is already running elsewhere (cloud llama.cpp, vLLM, OpenAI API, etc.) and you only want the citation extraction client.
-- **How it fits with the stress agent**: `run_profiled_single.sh` simply wraps this script after launching the local server; you can also run it directly against any compatible endpoint without touching GPUs on this machine.
+- **How it fits with the stress agent**: `profiling/single_gpu/run_profiled_single.sh` simply wraps this script after launching the local server; you can also run it directly against any compatible endpoint without touching GPUs on this machine.
 
 ## Choosing the Right Agent
 
 | Goal | Recommended Entry Point | Reason |
 |------|------------------------|--------|
-| Benchmark throughput on your RTX box | `run_profiled_single.sh` | Handles server boot, GPU logging, and cleanup automatically. |
+| Benchmark throughput on your RTX box | `profiling/single_gpu/run_profiled_single.sh` | Handles server boot, GPU logging, and cleanup automatically. |
+| Explore multi-GPU concurrency scaling | `profiling/dual_gpu/run_profiled_dual.sh` | Sweeps `-np` (parallel slots) and records both GPU utilization plots. |
 | Use an already-running remote OpenAI-compatible server | `run_single_file.py` | Only depends on network endpoint + API key; zero GPU assumptions. |
 | Integrate citation extraction into another pipeline | `run_single_file.py` or import `extract_citations` | Acts as a thin CLI/client; reusable config objects. |
-| Tweak llama.cpp launch params | `run_profiled_single.sh` | Exposes model path, batch size, concurrency, token budgets via args. |
+| Tweak llama.cpp launch params | `profiling/single_gpu/run_profiled_single.sh` | Exposes model path, batch size, concurrency, token budgets via args. |
 
 Both scripts ultimately call the same extraction codepath—the difference is whether you want the script to act as a **server+client profiler** or just a **client**. Pick the one that matches your deployment surface.
 

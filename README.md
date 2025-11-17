@@ -18,13 +18,13 @@ This project extracts book and author citations from text files using a local LL
 uv sync
 
 # Process a book (uses default test subset)
-./run_profiled_single.sh
+./profiling/single_gpu/run_profiled_single.sh
 
 # Process a custom book
-./run_profiled_single.sh "your_book.txt"
+./profiling/single_gpu/run_profiled_single.sh "your_book.txt"
 
 # Full control
-./run_profiled_single.sh "book.txt" 50 30 4096 2048
+./profiling/single_gpu/run_profiled_single.sh "book.txt" 50 30 4096 2048
 ```
 
 ## Requirements
@@ -38,12 +38,18 @@ uv sync
 
 ```
 bookgraph-revisited/
-├── extract_citations.py      # Core library for citation extraction
-├── run_single_file.py         # CLI tool for processing books
-├── run_profiled_single.sh     # Profiling script with GPU monitoring
-├── monitor_gpu_util.sh        # GPU utilization monitor
-├── plot_gpu_util.py          # GPU utilization plotter
-└── profile_runs/              # Profiling results (gitignored)
+├── extract_citations.py        # Core library for citation extraction
+├── run_single_file.py          # CLI tool for processing books
+├── profiling/
+│   ├── single_gpu/
+│   │   ├── run_profiled_single.sh   # Legacy single-GPU profiler
+│   │   └── profile_runs/            # Single-GPU experiment outputs
+│   ├── dual_gpu/
+│   │   ├── run_profiled_dual.sh     # Two-GPU concurrency profiler
+│   │   └── profile_runs/            # Dual-GPU experiment outputs
+│   └── common/monitor_gpu_util.sh   # Shared GPU utilization logger
+├── plot_gpu_util.py            # GPU utilization plotter
+└── launch_llama_server_2_gpus.sh # Helper launcher for 2-GPU server
 ```
 
 ## Core Library: `extract_citations.py`
@@ -131,7 +137,7 @@ Need to validate citations against Goodreads? Use the agent under `lib/goodreads
 - Two complementary tools power the agent:
   - `goodreads_book_lookup` scans `goodreads_books.json` with **20 multiprocessing workers** by title-only (then author-only) searches, returning the first 20 distinct matches so the agent can judge author alignment.
   - `goodreads_author_lookup` loads `goodreads_book_authors.json` in memory and surfaces author candidates when only an author name is cited.
-- `test_agent.py` is a smoke harness that feeds prompts from `susan_sample.txt.json` and prints the agent verdict (`FOUND`/`NOT FOUND`).
+- `test_agent.py` is a smoke harness that feeds prompts from `susan_sample.txt.json` and prints the JSON metadata (or `{}` when nothing matches).
 - `tests/test_agent_components.py` includes unit tests for the agent runner, synthetic catalogs, and timing checks against real Goodreads data.
 
 Example:
@@ -145,73 +151,83 @@ uv run python -m lib.goodreads_agent.test_agent \
 
 `--trace-tool` logs every Goodreads lookup plus the full metadata JSON returned by the multiprocessing tool, making it easy to inspect what the agent saw.
 
-## Profiling Script: `run_profiled_single.sh`
+## Profiling Scripts
 
-Automated profiling with llama.cpp server management and GPU monitoring.
+### Single-GPU Stress Harness (`profiling/single_gpu/run_profiled_single.sh`)
 
-### Features
+Automates everything for one-GPU experiments: spins up `llama-server`, launches `run_single_file.py`, records GPU utilization, and produces a PNG plot.
 
-- **Automatic server management** - launches/stops llama-server
-- **GPU utilization tracking** - monitors GPU usage in real-time
-- **Performance plots** - generates utilization graphs
-- **Optimized defaults** - production-ready configuration
-
-### Usage
+**Usage**
 
 ```bash
 # Quick test with defaults
-./run_profiled_single.sh
+./profiling/single_gpu/run_profiled_single.sh
 
 # Custom book
-./run_profiled_single.sh "mybook.txt"
+./profiling/single_gpu/run_profiled_single.sh "mybook.txt"
 
 # Full control
-./run_profiled_single.sh INPUT_TXT CHUNK_SIZE CONCURRENCY \
-                         MAX_INPUT MAX_COMPLETION \
-                         [MODEL_PATH] [GPU_LAYERS] [SERVER_BINARY] [INTERVAL]
+./profiling/single_gpu/run_profiled_single.sh INPUT CHUNK CONCURRENCY \
+    MAX_INPUT MAX_COMPLETION [MODEL_PATH] [GPU_LAYERS] [SERVER_BINARY] [INTERVAL]
 ```
 
-### Default Configuration
+**Default configuration**
 
-```bash
+```
 INPUT_TXT:             test_book_subset.txt
 CHUNK_SIZE:            50 sentences
 MAX_CONCURRENCY:       30 parallel requests
 MAX_INPUT_TOKENS:      4096
 MAX_COMPLETION_TOKENS: 2048
 CONTEXT_PER_REQUEST:   6144 (4096 input + 2048 output)
-BATCH_SIZE:            2048
+BATCH_SIZE:            2048  (logical)
 MODEL_PATH:            Qwen3-30B-A3B-Q5_K_S.gguf
 GPU_LAYERS:            -1 (all layers)
 KV_CACHE:              q4_0 (quantized for VRAM efficiency)
 ```
 
-### Server Parameters
+The harness writes artifacts to `profiling/single_gpu/profile_runs/<timestamp>/`:
 
-The script automatically configures llama-server with optimized settings:
+```
+├── gpu_utilization.png      # GPU 0 plot
+├── *_metrics.log            # Raw utilization samples
+├── run_single_file.log      # Extraction logs
+└── llama_server.log         # Server logs
+```
+
+### Dual-GPU Parallel Sweep (`profiling/dual_gpu/run_profiled_dual.sh`)
+
+New experiment focused on 2×GPU launches. It:
+
+- Boots a row-split, tensor-parallel `llama-server` across GPUs `0,1`
+- Processes a single book from `books_samples/` (default: `freud.txt`)
+- Sweeps through multiple `--max-concurrency` values in one run
+- Logs/plots utilization for **both GPUs** per experiment
+
+**Usage**
 
 ```bash
--c CONTEXT_SIZE              # (input+output) * concurrency
--np CONCURRENCY              # Parallel slots
--n MAX_COMPLETION_TOKENS     # Generation limit
--b BATCH_SIZE                # Batch size for token processing (default: 2048)
--ngl -1                      # All layers on GPU
--ctk q4_0 -ctv q4_0         # Quantized KV cache (50% VRAM savings)
---repeat-penalty 1.2
---presence-penalty 0.4
---frequency-penalty 0.6
+# Profile freud.txt at 12, 20, and 28 concurrent slots
+./profiling/dual_gpu/run_profiled_dual.sh \
+  "$PWD/books_samples/freud.txt" 12,20,28
+
+# Override tensor split + batch size
+./profiling/dual_gpu/run_profiled_dual.sh \
+  "$PWD/books_samples/sandel.txt" 16,24 \
+  50 4096 2048 /home/thiago/models/Qwen3-30B-A3B-Q5_K_S.gguf \
+  -1 llama-server 1 2048 512 65,35 0
 ```
 
-### Output
+Output lives under `profiling/dual_gpu/profile_runs/<timestamp>/np_<parallel>/` with:
 
 ```
-profile_runs/TIMESTAMP/
-├── gpu_utilization.png      # GPU usage plot
-├── 30_50_4096_2048.log      # GPU utilization data
-├── run_single_file.log      # Processing log
-├── llama_server.log         # Server log
-└── book.txt.json            # Extracted citations
+├── gpu0.log / gpu0_util.png        # GPU 0 raw + plot
+├── gpu1.log / gpu1_util.png        # GPU 1 raw + plot
+├── run_single_file.log             # Extraction logs
+└── llama_server.log                # Server stdout/stderr
 ```
+
+The default server launch mirrors the recommendations in `launch_llama_server_2_gpus.sh`: row split, tensor split `70,30`, heavy tensors pinned to GPU 0, `-np` sweeping over the provided list.
 
 ## Performance Benchmarks
 

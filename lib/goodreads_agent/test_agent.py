@@ -111,7 +111,8 @@ def build_prompts(citations: List[Dict[str, str]]) -> List[str]:
             (
                 "You are validating bibliography metadata. "
                 "Use the Goodreads search tool to check whether the specified book exists. "
-                "Respond with 'FOUND - <short justification>' or 'NOT FOUND - <reason>'.\n"
+                "Return a JSON object describing the matching Goodreads metadata. "
+                "If no book is found, return an empty JSON object `{}`.\n"
                 f'Book title: "{title}"\n'
                 f"Author: {author}"
             )

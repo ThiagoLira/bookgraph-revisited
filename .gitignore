@@ -48,6 +48,8 @@ htmlcov/
 !pyproject.toml
 !web-search-agent/**/*.json
 profile_runs/
+profiling/single_gpu/profile_runs/
+profiling/dual_gpu/profile_runs/
 *.txt.json
 test_server.py
 test_book_subset.txt

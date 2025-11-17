@@ -22,11 +22,11 @@ from lib.goodreads_agent.test_agent import build_prompts
 
 # ---------- Tunable defaults ----------
 
-EXTRACT_MODEL_ID = "Qwen/Qwen3-30B-A3B"
 EXTRACT_CHUNK_SIZE = 50
 EXTRACT_MAX_CONCURRENCY = 20
 EXTRACT_MAX_CONTEXT = 6144
 EXTRACT_MAX_COMPLETION = 2048
+EXTRACT_MODEL_ID = "Qwen/Qwen3-30B-A3B"
 
 AGENT_MODEL_ID = "qwen/qwen3-next-80b-a3b-instruct"
 
@@ -40,6 +40,7 @@ async def run_extraction(
     output_path: Path,
     base_url: str,
     api_key: str,
+    model_id: str,
 ) -> None:
     config = ExtractionConfig(
         input_path=txt_path,
@@ -49,8 +50,8 @@ async def run_extraction(
         max_completion_tokens=EXTRACT_MAX_COMPLETION,
         base_url=base_url,
         api_key=api_key,
-        model=EXTRACT_MODEL_ID,
-        tokenizer_name=EXTRACT_MODEL_ID,
+        model=model_id,
+        tokenizer_name=model_id,
     )
     result = await process_book(config)
     write_output(result, output_path)
@@ -61,6 +62,7 @@ def stage_extract(
     output_dir: Path,
     base_url: str,
     api_key: str,
+    model_id: str,
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     for txt in txt_files:
@@ -69,7 +71,7 @@ def stage_extract(
             print(f"[extract] Skip {txt.name} (cached).")
             continue
         print(f"[extract] Processing {txt.name} -> {out_path}")
-        asyncio.run(run_extraction(txt, out_path, base_url, api_key))
+        asyncio.run(run_extraction(txt, out_path, base_url, api_key, model_id))
 
 
 def stage_preprocess(raw_dir: Path, output_dir: Path, txt_files: Iterable[Path]) -> None:
@@ -88,9 +90,13 @@ def stage_preprocess(raw_dir: Path, output_dir: Path, txt_files: Iterable[Path])
         pre_path.write_text(json.dumps(processed, indent=2, ensure_ascii=False))
 
 
-def build_agent_runner(base_url: str, api_key: str) -> "GoodreadsAgentRunner":
+def build_agent_runner(
+    base_url: str,
+    api_key: str,
+    model_id: str,
+) -> "GoodreadsAgentRunner":
     return build_agent(
-        model=AGENT_MODEL_ID,
+        model=model_id,
         api_key=api_key,
         base_url=base_url,
         books_path="goodreads_data/goodreads_books.json",
@@ -106,9 +112,10 @@ def stage_agent(
     txt_files: Iterable[Path],
     base_url: str,
     api_key: str,
+    model_id: str,
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    runner = build_agent_runner(base_url, api_key)
+    runner = build_agent_runner(base_url, api_key, model_id)
     for txt in txt_files:
         pre_path = pre_dir / f"{txt.stem}.json"
         final_path = output_dir / f"{txt.stem}.jsonl"
@@ -157,6 +164,16 @@ def parse_args() -> argparse.Namespace:
         default=os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENAI_API_KEY") or "",
         help="API key for Goodreads agent.",
     )
+    parser.add_argument(
+        "--extract-model",
+        default=EXTRACT_MODEL_ID,
+        help="Model identifier/tokenizer to use for extraction.",
+    )
+    parser.add_argument(
+        "--agent-model",
+        default=AGENT_MODEL_ID,
+        help="Model identifier to use for the Goodreads metadata agent.",
+    )
     return parser.parse_args()
 
 
@@ -173,9 +190,16 @@ def main() -> None:
     pre_dir = args.input_dir / "preprocessed_extracted_citations"
     final_dir = args.input_dir / "final_citations_metadata_goodreads"
 
-    stage_extract(txt_files, raw_dir, args.extract_base_url, args.extract_api_key)
+    stage_extract(txt_files, raw_dir, args.extract_base_url, args.extract_api_key, args.extract_model)
     stage_preprocess(raw_dir, pre_dir, txt_files)
-    stage_agent(pre_dir, final_dir, txt_files, args.agent_base_url, args.agent_api_key)
+    stage_agent(
+        pre_dir,
+        final_dir,
+        txt_files,
+        args.agent_base_url,
+        args.agent_api_key,
+        args.agent_model,
+    )
 
     print("Pipeline complete.")
 

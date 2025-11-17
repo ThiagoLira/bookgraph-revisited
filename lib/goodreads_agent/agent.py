@@ -34,6 +34,31 @@ if str(CURRENT_DIR) not in os.sys.path:  # pragma: no cover
 
 from goodreads_tool import create_book_lookup_tool, create_author_lookup_tool
 
+# llama.cpp REST API expects legacy tool message structure where `content` is a string.
+# LlamaIndex recently switched to the new OpenAI Responses schema (object-based),
+# which triggers parsing errors on llama-server. Patch the conversion helper so
+# tool outputs are serialized as plain strings again.
+try:
+    from llama_index.llms.openai import utils as _openai_utils
+
+    _orig_to_openai_message_dict = _openai_utils.to_openai_message_dict
+
+    def _legacy_tool_message_adapter(message, *args, **kwargs):
+        result = _orig_to_openai_message_dict(message, *args, **kwargs)
+        if isinstance(result, dict) and result.get("type") == "function_call_output":
+            return {
+                "role": "tool",
+                "content": result.get("output") or "",
+                "tool_call_id": result.get("call_id"),
+            }
+        return result
+
+    _openai_utils.to_openai_message_dict = _legacy_tool_message_adapter
+except Exception:
+    # If the import fails we simply skip the compatibility shim.
+    pass
+
+
 
 class BookMetadata(BaseModel):
     type: Literal["book"] = "book"
@@ -68,12 +93,10 @@ SYSTEM_PROMPT = (
     "candidate editions, then compare the returned authors to the citation.\n"
     "• When only an author is supplied, call `goodreads_author_lookup` to disambiguate "
     "the identity before concluding.\n"
-    "• Always respond with a JSON object containing `result` (FOUND/NOT_FOUND) and "
-    "`metadata`. For book matches, `metadata` must conform to `BookMetadata` "
-    "(fields: title, title_without_series, authors, publication_year, publication_month, "
-    "publication_day, book_id, num_pages, plus any optional extras). For author-only "
-    "matches, `metadata` must conform to `AuthorMetadata` (fields: author_id, name, "
-    "ratings_count)."
+    "• Respond with a JSON object describing the best Goodreads match. Include fields from "
+    "`BookMetadata` (title, title_without_series, authors, publication_year, publication_month, "
+    "publication_day, book_id, num_pages, optional extras) or `AuthorMetadata` "
+    "(author_id, name, ratings_count). If nothing matches, respond with an empty JSON object `{}`."
 )
 
 
@@ -104,18 +127,24 @@ def build_llm(model: str, api_key: str, base_url: Optional[str]) -> LLM:
 @dataclass
 class GoodreadsAgentRunner:
     agent: FunctionAgent
+    verbose: bool = False
 
     async def _chat_async(
         self,
         prompt: str,
         chat_history: Optional[Sequence["ChatMessage"]] = None,
     ) -> str:
+        if self.verbose:
+            print(f"[GoodreadsAgent] Prompt:\n{prompt}\n{'-' * 40}")
         handler = self.agent.run(
             user_msg=prompt,
             chat_history=list(chat_history or []),
         )
         agent_output = await handler
-        return agent_output.response.content or ""
+        response = agent_output.response.content or ""
+        if self.verbose:
+            print(f"[GoodreadsAgent] Response:\n{response}\n{'=' * 40}")
+        return response
 
     async def query(
         self,
@@ -168,7 +197,7 @@ def build_agent(
         allow_parallel_tool_calls=False,
         initial_tool_choice=None,
     )
-    return GoodreadsAgentRunner(agent=agent)
+    return GoodreadsAgentRunner(agent=agent, verbose=verbose)
 
 
 def parse_args() -> argparse.Namespace:

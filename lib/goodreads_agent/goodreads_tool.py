@@ -33,6 +33,24 @@ if TYPE_CHECKING:  # pragma: no cover
 BOOKS_PATH = Path("goodreads_data/goodreads_books.json")
 AUTHORS_PATH = Path("goodreads_data/goodreads_book_authors.json")
 SEGMENT_SIZE_BYTES = 1 * 1024 * 1024  # 1MB per scan segment
+BOOK_METADATA_KEYS = {
+    "book_id",
+    "work_id",
+    "isbn",
+    "isbn13",
+    "title",
+    "title_without_series",
+    "publication_year",
+    "publication_month",
+    "publication_day",
+    "publisher",
+    "num_pages",
+    "format",
+    "average_rating",
+    "ratings_count",
+    "text_reviews_count",
+}
+MAX_DESCRIPTION_CHARS = 512
 
 
 def _to_int(value: Any) -> Optional[int]:
@@ -69,17 +87,33 @@ def _book_author_names_from_lookup(
 def _format_match_data(
     book: Dict[str, Any], authors_lookup: Dict[str, str]
 ) -> Dict[str, Any]:
-    result = dict(book)
+    result: Dict[str, Any] = {}
+    for key in BOOK_METADATA_KEYS:
+        value = book.get(key)
+        if value in ("", None, [], {}):
+            continue
+        result[key] = value
+    description = (book.get("description") or "").strip()
+    if description:
+        truncated = description[:MAX_DESCRIPTION_CHARS]
+        if len(description) > MAX_DESCRIPTION_CHARS:
+            truncated = truncated.rstrip() + "..."
+        result["description"] = truncated
     result["authors"] = _book_author_names_from_lookup(book, authors_lookup)
     result["publication_year"] = _to_int(book.get("publication_year"))
+    result["publication_month"] = _to_int(book.get("publication_month"))
+    result["publication_day"] = _to_int(book.get("publication_day"))
     result["publisher"] = book.get("publisher")
-    result["book_id"] = str(book.get("book_id"))
-    result["work_id"] = str(book.get("work_id"))
+    result["num_pages"] = _to_int(book.get("num_pages"))
+    result["book_id"] = str(book.get("book_id")) if book.get("book_id") else None
+    result["work_id"] = str(book.get("work_id")) if book.get("work_id") else None
     result["average_rating"] = _to_float(book.get("average_rating"))
     result["ratings_count"] = _to_int(book.get("ratings_count"))
     result["text_reviews_count"] = _to_int(book.get("text_reviews_count"))
-    result["link"] = book.get("link") or book.get("url")
-    return result
+    link = book.get("link") or book.get("url")
+    if link:
+        result["link"] = link
+    return {k: v for k, v in result.items() if v not in (None, "", [], {})}
 
 
 _MP_AUTHORS: Dict[str, str] = {}

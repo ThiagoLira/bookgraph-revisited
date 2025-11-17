@@ -68,7 +68,9 @@ def test_agent_runner_without_tool_emits_explicit_message() -> None:
     """
 
     tool_less_agent = _ToolLessStubAgent(
-        scripted_response="FOUND - synthetic baseline without Goodreads cross-check"
+        scripted_response=json.dumps(
+            {"title": "Synthetic Baseline", "authors": ["Stub Researcher"]}
+        )
     )
     runner = GoodreadsAgentRunner(agent=tool_less_agent)  # type: ignore[arg-type]
 
@@ -76,8 +78,8 @@ def test_agent_runner_without_tool_emits_explicit_message() -> None:
     answer = runner.chat(prompt)
 
     assert (
-        answer == "FOUND - synthetic baseline without Goodreads cross-check"
-    ), f"The runner should echo the stubbed answer verbatim, but got {answer!r}"
+        json.loads(answer)["title"] == "Synthetic Baseline"
+    ), f"The runner should echo the stubbed JSON answer; received {answer!r}"
     assert tool_less_agent.run_calls == [
         {"user_msg": prompt, "chat_history": []}
     ], (
@@ -228,7 +230,7 @@ def test_build_agent_uses_tool_and_agent_integration(monkeypatch):
     """
     Patch build_agent internals so we can inspect every argument handed to FunctionAgent.
 
-    The stub agent immediately invokes the synthetic tool to fabricate a FOUND verdict.
+    The stub agent immediately invokes the synthetic tool to fabricate a JSON metadata snippet.
     Assertions confirm:
     - system prompt wiring
     - initial tool choice selection
@@ -276,12 +278,10 @@ def test_build_agent_uses_tool_and_agent_integration(monkeypatch):
 
             async def _finish():
                 payload = tool.fn(title="Synthetic Geometry", author="Test Author")
-                status = (
-                    "FOUND - Synthetic Geometry located"
-                    if payload["matches_found"]
-                    else "NOT FOUND - Synthetic Geometry missing"
+                metadata = payload["matches"][0] if payload["matches_found"] else {}
+                return SimpleNamespace(
+                    response=SimpleNamespace(content=json.dumps(metadata))
                 )
-                return SimpleNamespace(response=SimpleNamespace(content=status))
 
             return _finish()
 
@@ -307,9 +307,11 @@ def test_build_agent_uses_tool_and_agent_integration(monkeypatch):
     )
 
     outcome = runner.chat("Please confirm Synthetic Geometry by Test Author.")
-    assert outcome.startswith(
-        "FOUND -"
-    ), f"Combined flow should yield a FOUND verdict, received: {outcome!r}"
+    parsed = json.loads(outcome)
+    assert parsed.get("title") == "Synthetic Geometry", (
+        "Combined flow should yield metadata for the synthetic title; "
+        f"response: {parsed!r}"
+    )
 
     stub_agent: StubFunctionAgent = runner.agent  # type: ignore[assignment]
     assert (
