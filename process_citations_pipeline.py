@@ -17,11 +17,7 @@ from typing import Iterable, List
 
 from lib.extract_citations import ExtractionConfig, process_book, write_output
 from preprocess_citations import preprocess as preprocess_citations
-from lib.goodreads_agent.agent import (
-    BookMetadata,
-    AuthorMetadata,
-    build_agent,
-)
+from lib.goodreads_agent.agent import build_agent
 from lib.goodreads_agent.test_agent import build_prompts
 
 # ---------- Tunable defaults ----------
@@ -104,16 +100,6 @@ def build_agent_runner(base_url: str, api_key: str) -> "GoodreadsAgentRunner":
     )
 
 
-def validate_metadata(entry: dict):
-    metadata = entry.get("metadata", {})
-    if metadata.get("type") == "book":
-        BookMetadata.model_validate(metadata)
-    elif metadata.get("type") == "author":
-        AuthorMetadata.model_validate(metadata)
-    else:
-        raise ValueError(f"Unknown metadata type: {metadata}")
-
-
 def stage_agent(
     pre_dir: Path,
     output_dir: Path,
@@ -141,7 +127,6 @@ def stage_agent(
                 response = runner.chat(prompt)
                 try:
                     payload = json.loads(response)
-                    validate_metadata(payload)
                 except Exception as exc:
                     print(f"[agent] Warning: failed to parse response {response}: {exc}")
                     continue
