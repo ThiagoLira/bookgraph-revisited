@@ -9,4 +9,8 @@ dependencies = [
     "nltk>=3.9",
     "pydantic>=2.6",
     "tokenizers>=0.15",
+    "python-dotenv>=1.0.1",
+    "llama-index>=0.11.0",
+    "llama-index-llms-openai-like>=0.1.7",
+    "pytest>=8.3",
 ]

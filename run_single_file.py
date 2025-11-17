@@ -8,7 +8,9 @@ import asyncio
 import sys
 from pathlib import Path
 
-from extract_citations import ExtractionConfig, process_book, write_output
+from dotenv import load_dotenv
+
+from lib.extract_citations import ExtractionConfig, process_book, write_output
 
 
 def parse_args() -> argparse.Namespace:
@@ -124,6 +126,7 @@ async def run(args: argparse.Namespace):
 
 
 def main() -> None:
+    load_dotenv()
     args = parse_args()
     try:
         asyncio.run(run(args))

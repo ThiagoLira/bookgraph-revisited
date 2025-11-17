@@ -10,7 +10,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -19,6 +18,9 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+
+goodreads_data/
 
 # Virtual environments
 venv/
@@ -33,6 +35,7 @@ env/
 *.swo
 *~
 .DS_Store
+.env
 
 # Testing
 .pytest_cache/
@@ -43,12 +46,15 @@ htmlcov/
 # Project specific
 *.json
 !pyproject.toml
+!web-search-agent/**/*.json
 profile_runs/
 *.txt.json
 test_server.py
 test_book_subset.txt
 books/
 !books/README.md
+!books/.gitkeep
+openrouter_runs/
 
 # Model files
 *.gguf
