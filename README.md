@@ -141,7 +141,7 @@ Need to validate citations against Goodreads? Use the agent under `lib/goodreads
   - `goodreads_author_lookup` loads `goodreads_book_authors.json` in memory and surfaces author candidates when only an author name is cited.
 - `test_agent.py` is a smoke harness that feeds prompts from `susan_sample.txt.json` and prints the JSON metadata (or `{}` when nothing matches).
 - `tests/test_agent_components.py` includes unit tests for the agent runner, synthetic catalogs, and timing checks against real Goodreads data.
-- **One-time setup**: Run `uv run python scripts/build_goodreads_index.py --force` whenever the raw Goodreads dataset changes to build/refresh the `goodreads_data/books_index.db` FTS index.
+- **One-time setup**: Run `uv run python scripts/build_goodreads_index.py --force` whenever the raw Goodreads dataset changes to build/refresh the `goodreads_data/books_index.db` FTS index. The script resolves author IDs into human-readable names up front so runtime lookups never need to load the original JSON.
 
 Example:
 

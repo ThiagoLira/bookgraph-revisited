@@ -180,15 +180,12 @@ def build_agent(
     llm = build_llm(model=model, api_key=api_key, base_url=base_url)
     memory_catalog = SQLiteGoodreadsCatalog(
         db_path=BOOKS_DB_PATH,
-        authors_path=authors_path,
         trace=trace_tool,
     )
     book_tool = create_book_lookup_tool(
-        books_path=books_path,
-        authors_path=authors_path,
         description=(
             "Use this when you need to confirm a book exists on Goodreads by title "
-            "and/or author."
+            "or author."
         ),
         trace=trace_tool,
         db_path=memory_catalog.db_path,

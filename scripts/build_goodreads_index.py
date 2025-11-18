@@ -17,6 +17,7 @@ from typing import Dict, Iterable, List
 BOOKS_JSON = Path("goodreads_data/goodreads_books.json")
 AUTHORS_JSON = Path("goodreads_data/goodreads_book_authors.json")
 DEFAULT_DB = Path("goodreads_data/books_index.db")
+MAX_DESCRIPTION_CHARS = 512
 
 
 def load_authors(authors_path: Path) -> Dict[str, str]:
@@ -85,7 +86,19 @@ def build_index(db_path: Path, books_path: Path, authors: Dict[str, str], batch_
                         if mapped:
                             author_names.append(mapped)
                 authors_field = " ".join(author_names)
-                yield (title, authors_field, json.dumps(row, ensure_ascii=False))
+                row["author_names_resolved"] = author_names
+                description = (row.get("description") or "").strip()
+                if description:
+                    row["description"] = (
+                        description[:MAX_DESCRIPTION_CHARS].rstrip() + "..."
+                        if len(description) > MAX_DESCRIPTION_CHARS
+                        else description
+                    )
+                yield (
+                    title,
+                    authors_field,
+                    json.dumps(row, ensure_ascii=False),
+                )
 
     total = 0
     for batch in chunks(iter_books(), batch_size):

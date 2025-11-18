@@ -18,7 +18,6 @@ if TYPE_CHECKING:  # pragma: no cover
     from llama_index.core.tools import FunctionTool
 
 
-BOOKS_PATH = Path("goodreads_data/goodreads_books.json")
 AUTHORS_PATH = Path("goodreads_data/goodreads_book_authors.json")
 BOOKS_DB_PATH = Path("goodreads_data/books_index.db")
 BOOK_METADATA_KEYS = {
@@ -59,21 +58,7 @@ def _normalize(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().casefold()
 
 
-def _book_author_names_from_lookup(
-    book: Dict[str, Any], authors_lookup: Dict[str, str]
-) -> List[str]:
-    names = []
-    for author in book.get("authors", []) or []:
-        author_id = str(author.get("author_id"))
-        if not author_id:
-            continue
-        names.append(authors_lookup.get(author_id, author_id))
-    return names
-
-
-def _format_match_data(
-    book: Dict[str, Any], authors_lookup: Dict[str, str]
-) -> Dict[str, Any]:
+def _format_match_data(book: Dict[str, Any]) -> Dict[str, Any]:
     result: Dict[str, Any] = {}
     for key in BOOK_METADATA_KEYS:
         value = book.get(key)
@@ -86,7 +71,16 @@ def _format_match_data(
         if len(description) > MAX_DESCRIPTION_CHARS:
             truncated = truncated.rstrip() + "..."
         result["description"] = truncated
-    result["authors"] = _book_author_names_from_lookup(book, authors_lookup)
+    authors = book.get("author_names_resolved")
+    if isinstance(authors, list) and authors:
+        result["authors"] = authors
+    else:
+        fallback = []
+        for author in book.get("authors", []) or []:
+            name = author.get("name")
+            if isinstance(name, str) and name.strip():
+                fallback.append(name.strip())
+        result["authors"] = fallback
     result["publication_year"] = _to_int(book.get("publication_year"))
     result["publication_month"] = _to_int(book.get("publication_month"))
     result["publication_day"] = _to_int(book.get("publication_day"))
@@ -109,7 +103,6 @@ class SQLiteGoodreadsCatalog:
     def __init__(
         self,
         db_path: Path | str = BOOKS_DB_PATH,
-        authors_path: Path | str = AUTHORS_PATH,
         trace: bool = False,
     ) -> None:
         self.db_path = Path(db_path)
@@ -118,29 +111,10 @@ class SQLiteGoodreadsCatalog:
             raise FileNotFoundError(
                 f"{self.db_path} not found. Run scripts/build_goodreads_index.py first."
             )
-        self.authors_lookup = self._load_authors(Path(authors_path))
         self._conn = sqlite3.connect(self.db_path)
         self._conn.row_factory = sqlite3.Row
         if trace:
             print(f"[goodreads_tool] Connected to {self.db_path}")
-
-    def _load_authors(self, authors_path: Path) -> Dict[str, str]:
-        if not authors_path.exists():
-            raise FileNotFoundError(
-                f"Author dataset missing at {authors_path.resolve()}."
-            )
-        mapping: Dict[str, str] = {}
-        with authors_path.open("r", encoding="utf-8") as fh:
-            for line in fh:
-                try:
-                    row = json.loads(line)
-                except json.JSONDecodeError:
-                    continue
-                author_id = str(row.get("author_id"))
-                name = row.get("name")
-                if author_id and isinstance(name, str):
-                    mapping[author_id] = name
-        return mapping
 
     def _fts_escape(self, text: str) -> str:
         return text.replace('"', '""')
@@ -188,7 +162,7 @@ class SQLiteGoodreadsCatalog:
                 book = json.loads(payload)
             except json.JSONDecodeError:
                 continue
-            matches.append(_format_match_data(book, self.authors_lookup))
+            matches.append(_format_match_data(book))
         if self.trace:
             print(
                 f"[goodreads_tool] SQLite search returned {len(matches)} matches "
@@ -245,8 +219,6 @@ class GoodreadsAuthorCatalog:
 
 def create_book_lookup_tool(
     *,
-    books_path: Path | str = BOOKS_PATH,
-    authors_path: Path | str = AUTHORS_PATH,
     description: Optional[str] = None,
     trace: bool = False,
     db_path: Path | str = BOOKS_DB_PATH,
@@ -266,7 +238,6 @@ def create_book_lookup_tool(
 
     catalog_obj = catalog or SQLiteGoodreadsCatalog(
         db_path=db_path,
-        authors_path=authors_path,
         trace=trace,
     )
 
