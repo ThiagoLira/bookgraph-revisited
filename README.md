@@ -336,3 +336,21 @@ mypy extract_citations.py
 ## License
 
 MIT
+### Mock profiling
+
+When debugging agent latency, you can profile a single synthetic file (e.g., `books_samples/mock_short.txt`) via:
+
+```bash
+. .venv/bin/activate
+python -m cProfile -o profiling/mock_profile.prof \
+  process_citations_pipeline.py books_samples \
+  --pattern mock_short.txt \
+  --extract-base-url http://127.0.0.1:8080/v1 \
+  --agent-base-url http://127.0.0.1:8080/v1 \
+  --extract-api-key test --agent-api-key test \
+  --extract-model Qwen/Qwen3-30B-A3B \
+  --agent-model Qwen/Qwen3-30B-A3B \
+  --agent-trace
+```
+
+This keeps the pipeline focused on the tiny test document while cProfile records timing.

@@ -48,8 +48,8 @@ EXTRACT_MODEL_ID = "Qwen/Qwen3-30B-A3B"
 AGENT_MODEL_ID = "qwen/qwen3-next-80b-a3b-instruct"
 
 
-def find_txt_files(folder: Path) -> List[Path]:
-    return sorted(p for p in folder.iterdir() if p.suffix.lower() == ".txt")
+def find_txt_files(folder: Path, pattern: str = "*.txt") -> List[Path]:
+    return sorted(p for p in folder.glob(pattern) if p.suffix.lower() == ".txt")
 
 
 async def run_extraction(
@@ -254,6 +254,11 @@ def parse_args() -> argparse.Namespace:
         help="Model identifier to use for the Goodreads metadata agent.",
     )
     parser.add_argument(
+        "--pattern",
+        default="*.txt",
+        help="Glob pattern to select specific .txt files (default: *.txt).",
+    )
+    parser.add_argument(
         "--agent-trace",
         action="store_true",
         help="Enable verbose tracing of Goodreads tool activity.",
@@ -265,7 +270,7 @@ def main() -> None:
     args = parse_args()
     if not args.input_dir.exists():
         raise SystemExit(f"Input directory {args.input_dir} does not exist.")
-    txt_files = find_txt_files(args.input_dir)
+    txt_files = find_txt_files(args.input_dir, args.pattern)
     if not txt_files:
         print("No .txt files found; nothing to do.")
         return
