@@ -195,6 +195,7 @@ dependencies = [
     { name = "pytest" },
     { name = "python-dotenv" },
     { name = "tokenizers" },
+    { name = "tqdm" },
 ]
 
 [package.metadata]
@@ -207,6 +208,7 @@ requires-dist = [
     { name = "pytest", specifier = ">=8.3" },
     { name = "python-dotenv", specifier = ">=1.0.1" },
     { name = "tokenizers", specifier = ">=0.15" },
+    { name = "tqdm", specifier = ">=4.67.1" },
 ]
 
 [[package]]

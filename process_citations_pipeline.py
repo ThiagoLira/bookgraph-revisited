@@ -13,12 +13,28 @@ import asyncio
 import json
 import os
 from pathlib import Path
-from typing import Iterable, List
+from typing import Iterable, List, Optional
 
-from lib.extract_citations import ExtractionConfig, process_book, write_output
+from lib.extract_citations import (
+    ExtractionConfig,
+    ProgressCallback,
+    process_book,
+    write_output,
+)
 from preprocess_citations import preprocess as preprocess_citations
 from lib.goodreads_agent.agent import build_agent
 from lib.goodreads_agent.test_agent import build_prompts
+
+try:
+    from tqdm import tqdm  # type: ignore
+except ImportError:  # pragma: no cover - optional dependency
+    tqdm = None
+
+
+def progress_iter(iterable: Iterable[Path], **kwargs: object) -> Iterable[Path]:
+    if tqdm is None:
+        return iterable
+    return tqdm(iterable, **kwargs)
 
 # ---------- Tunable defaults ----------
 
@@ -41,6 +57,7 @@ async def run_extraction(
     base_url: str,
     api_key: str,
     model_id: str,
+    progress_callback: Optional[ProgressCallback] = None,
 ) -> None:
     config = ExtractionConfig(
         input_path=txt_path,
@@ -53,7 +70,7 @@ async def run_extraction(
         model=model_id,
         tokenizer_name=model_id,
     )
-    result = await process_book(config)
+    result = await process_book(config, progress_callback=progress_callback)
     write_output(result, output_path)
 
 
@@ -65,13 +82,45 @@ def stage_extract(
     model_id: str,
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    for txt in txt_files:
+    iterator = progress_iter(
+        txt_files,
+        desc="Stage 1/3: Extraction",
+        unit="book",
+    )
+    for txt in iterator:
         out_path = output_dir / f"{txt.stem}.json"
         if out_path.exists():
             print(f"[extract] Skip {txt.name} (cached).")
             continue
         print(f"[extract] Processing {txt.name} -> {out_path}")
-        asyncio.run(run_extraction(txt, out_path, base_url, api_key, model_id))
+        if tqdm is None:
+            asyncio.run(run_extraction(txt, out_path, base_url, api_key, model_id))
+            continue
+        chunk_bar = tqdm(
+            desc=f"  chunks for {txt.name}",
+            unit="chunk",
+            leave=False,
+        )
+
+        def on_chunk_progress(done: int, total: int) -> None:
+            if chunk_bar.total != total:
+                chunk_bar.total = total
+            chunk_bar.n = done
+            chunk_bar.refresh()
+
+        try:
+            asyncio.run(
+                run_extraction(
+                    txt,
+                    out_path,
+                    base_url,
+                    api_key,
+                    model_id,
+                    progress_callback=on_chunk_progress,
+                )
+            )
+        finally:
+            chunk_bar.close()
 
 
 def stage_preprocess(raw_dir: Path, output_dir: Path, txt_files: Iterable[Path]) -> None:
@@ -94,6 +143,7 @@ def build_agent_runner(
     base_url: str,
     api_key: str,
     model_id: str,
+    trace_tool: bool,
 ) -> "GoodreadsAgentRunner":
     return build_agent(
         model=model_id,
@@ -102,7 +152,7 @@ def build_agent_runner(
         books_path="goodreads_data/goodreads_books.json",
         authors_path="goodreads_data/goodreads_book_authors.json",
         verbose=False,
-        trace_tool=False,
+        trace_tool=trace_tool,
     )
 
 
@@ -113,10 +163,16 @@ def stage_agent(
     base_url: str,
     api_key: str,
     model_id: str,
+    trace_tool: bool,
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    runner = build_agent_runner(base_url, api_key, model_id)
-    for txt in txt_files:
+    runner = build_agent_runner(base_url, api_key, model_id, trace_tool)
+    iterator = progress_iter(
+        txt_files,
+        desc="Stage 3/3: Goodreads agent",
+        unit="book",
+    )
+    for txt in iterator:
         pre_path = pre_dir / f"{txt.stem}.json"
         final_path = output_dir / f"{txt.stem}.jsonl"
         if final_path.exists():
@@ -129,16 +185,30 @@ def stage_agent(
         citations = data.get("citations", [])
         prompts = build_prompts(citations)
         print(f"[agent] Processing {len(citations)} citations for {txt.name}")
-        with final_path.open("w", encoding="utf-8") as out:
-            for citation, prompt in zip(citations, prompts):
-                response = runner.chat(prompt)
-                try:
-                    payload = json.loads(response)
-                except Exception as exc:
-                    print(f"[agent] Warning: failed to parse response {response}: {exc}")
-                    continue
-                record = {"citation": citation, "agent_response": payload}
-                out.write(json.dumps(record, ensure_ascii=False) + "\n")
+        citation_bar = None
+        if tqdm is not None and citations:
+            citation_bar = tqdm(
+                total=len(citations),
+                desc=f"  citations for {txt.name}",
+                unit="citation",
+                leave=False,
+            )
+        try:
+            with final_path.open("w", encoding="utf-8") as out:
+                for citation, prompt in zip(citations, prompts):
+                    response = runner.chat(prompt)
+                    try:
+                        payload = json.loads(response)
+                    except Exception as exc:
+                        print(f"[agent] Warning: failed to parse response {response}: {exc}")
+                        continue
+                    record = {"citation": citation, "agent_response": payload}
+                    out.write(json.dumps(record, ensure_ascii=False) + "\n")
+                    if citation_bar is not None:
+                        citation_bar.update(1)
+        finally:
+            if citation_bar is not None:
+                citation_bar.close()
 
 
 def parse_args() -> argparse.Namespace:
@@ -174,6 +244,11 @@ def parse_args() -> argparse.Namespace:
         default=AGENT_MODEL_ID,
         help="Model identifier to use for the Goodreads metadata agent.",
     )
+    parser.add_argument(
+        "--agent-trace",
+        action="store_true",
+        help="Enable verbose tracing of Goodreads tool activity.",
+    )
     return parser.parse_args()
 
 
@@ -199,6 +274,7 @@ def main() -> None:
         args.agent_base_url,
         args.agent_api_key,
         args.agent_model,
+        args.agent_trace,
     )
 
     print("Pipeline complete.")

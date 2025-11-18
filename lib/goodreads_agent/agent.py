@@ -32,7 +32,11 @@ CURRENT_DIR = Path(__file__).resolve().parent
 if str(CURRENT_DIR) not in os.sys.path:  # pragma: no cover
     os.sys.path.insert(0, str(CURRENT_DIR))
 
-from goodreads_tool import create_book_lookup_tool, create_author_lookup_tool
+from goodreads_tool import (
+    InMemoryGoodreadsCatalog,
+    create_book_lookup_tool,
+    create_author_lookup_tool,
+)
 
 # llama.cpp REST API expects legacy tool message structure where `content` is a string.
 # LlamaIndex recently switched to the new OpenAI Responses schema (object-based),
@@ -173,6 +177,12 @@ def build_agent(
 ) -> GoodreadsAgentRunner:
     """Construct a function-calling agent with our Goodreads lookup tool."""
     llm = build_llm(model=model, api_key=api_key, base_url=base_url)
+    memory_catalog = InMemoryGoodreadsCatalog(
+        books_path=books_path,
+        authors_path=authors_path,
+        books_parquet_path=Path(books_path).with_suffix(".parquet"),
+        trace=trace_tool,
+    )
     book_tool = create_book_lookup_tool(
         books_path=books_path,
         authors_path=authors_path,
@@ -181,10 +191,12 @@ def build_agent(
             "and/or author."
         ),
         trace=trace_tool,
+        catalog=memory_catalog,
     )
     author_tool = create_author_lookup_tool(
         authors_path=authors_path,
         description="Use this when you only have the author name and must disambiguate.",
+        catalog=memory_catalog,
     )
     agent = FunctionAgent(
         name="goodreads_validator",

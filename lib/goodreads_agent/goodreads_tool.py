@@ -11,7 +11,7 @@ This module reads the plain ``.json`` variants directly and memory-maps
 - ``goodreads_book_works.json`` – aggregate work-level statistics (not needed here).
 
 The `create_book_lookup_tool` function below builds a `FunctionTool` that LLM agents
-can call to verify whether a book exists given a title, an author, or both.
+can call to verify whether a book exists given a title or an author.
 """
 
 from __future__ import annotations
@@ -25,6 +25,8 @@ import threading
 import multiprocessing as mp
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Optional
+
+import pandas as pd
 
 if TYPE_CHECKING:  # pragma: no cover
     from llama_index.core.tools import FunctionTool
@@ -176,6 +178,7 @@ class GoodreadsCatalog:
         self,
         books_path: Path | str = BOOKS_PATH,
         authors_path: Path | str = AUTHORS_PATH,
+        books_parquet_path: Optional[Path] = None,
         parallel_workers: int = 20,
     ) -> None:
         self.books_path = Path(books_path)
@@ -231,6 +234,157 @@ class GoodreadsCatalog:
                 name = row.get("name")
                 if author_id and name:
                     self._authors[author_id] = name
+
+
+class InMemoryGoodreadsCatalog:
+    """Eagerly loads Goodreads metadata into Python structures for fast lookup."""
+
+    def __init__(
+        self,
+        books_path: Path | str = BOOKS_PATH,
+        authors_path: Path | str = AUTHORS_PATH,
+        trace: bool = False,
+        books_parquet_path: Optional[Path] = None,
+    ) -> None:
+        self.books_path = Path(books_path)
+        self.authors_path = Path(authors_path)
+        self.books_parquet_path = books_parquet_path
+        self.authors: Dict[str, str] = {}
+        self.author_rows: Dict[str, Dict[str, Any]] = {}
+        self.authors_df: pd.DataFrame | None = None
+        self.books_df: pd.DataFrame | None = None
+        self.trace = trace
+        self._load()
+
+    def _load(self) -> None:
+        if not self.authors_path.exists():
+            raise FileNotFoundError(f"Missing authors file: {self.authors_path}")
+        if not self.books_path.exists():
+            raise FileNotFoundError(f"Missing books file: {self.books_path}")
+        if self.trace:
+            print("[goodreads_tool] Loading authors into memory...")
+        authors_df = pd.read_json(self.authors_path, lines=True)
+        authors_df["author_id"] = authors_df["author_id"].astype(str)
+        authors_df["name"] = authors_df["name"].fillna("")
+        authors_df["name_norm"] = authors_df["name"].apply(_normalize)
+        self.authors_df = authors_df
+        for row in authors_df.to_dict(orient="records"):
+            author_id = row["author_id"]
+            name = row["name"]
+            if author_id and name:
+                self.authors[author_id] = name
+                self.author_rows[author_id] = row
+        books_parquet = self.books_parquet_path or self.books_path.with_suffix(".parquet")
+        if self.trace:
+            print(
+                f"[goodreads_tool] Loading books from "
+                f"{books_parquet if books_parquet.exists() else self.books_path}..."
+            )
+        if books_parquet.exists():
+            df = pd.read_parquet(books_parquet)
+        else:
+            df = pd.read_json(self.books_path, lines=True)
+            if "description" in df.columns:
+                df["description"] = df["description"].fillna("").apply(
+                    lambda x: x[:500] if isinstance(x, str) else x
+                )
+            df.to_parquet(books_parquet, index=False)
+
+        df["title_norm"] = df["title"].fillna("").apply(_normalize)
+        df["title_without_series_norm"] = df["title_without_series"].fillna("").apply(
+            _normalize
+        )
+
+        def _authors_norm(authors):
+            names = []
+            if isinstance(authors, list):
+                for author in authors:
+                    author_id = str(author.get("author_id"))
+                    if author_id:
+                        names.append(self.authors.get(author_id, author_id))
+            return ", ".join(_normalize(name) for name in names if name)
+
+        df["authors_norm"] = df["authors"].apply(_authors_norm)
+        self.books_df = df
+
+        if self.trace:
+            print(
+                f"[goodreads_tool] Loaded {len(df)} books and {len(self.authors)} authors."
+            )
+
+    def _book_matches(
+        self,
+        book: Dict[str, Any],
+        title_norm: Optional[str],
+        author_norm: Optional[str],
+    ) -> bool:
+        if title_norm:
+            title_fields = [
+                _normalize(book.get("title", "")) if isinstance(book.get("title"), str) else "",
+                _normalize(book.get("title_without_series", ""))
+                if isinstance(book.get("title_without_series"), str)
+                else "",
+            ]
+            if not any(title_norm in val for val in title_fields if val):
+                return False
+        if author_norm:
+            for name in _book_author_names_from_lookup(book, self.authors):
+                if author_norm in _normalize(name):
+                    return True
+            return False
+        return True
+
+    def find_books(
+        self,
+        title: Optional[str],
+        author: Optional[str],
+        limit: int = 5,
+    ) -> List[Dict[str, Any]]:
+        if self.books_df is None:
+            return []
+        title_norm = _normalize(title) if title else None
+        author_norm = _normalize(author) if author else None
+        if self.trace:
+            print(
+                f"[goodreads_tool] InMemory search start "
+                f"(title={title_norm}, author={author_norm})"
+            )
+        df = self.books_df
+        mask = pd.Series(True, index=df.index)
+        if title_norm:
+            mask &= (
+                df["title_norm"].str.contains(title_norm, na=False)
+                | df["title_without_series_norm"].str.contains(title_norm, na=False)
+            )
+        if author_norm:
+            mask &= df["authors_norm"].str.contains(author_norm, na=False)
+        rows = df[mask].head(limit)
+        matches = [
+            _format_match_data(row, self.authors)
+            for row in rows.to_dict(orient="records")
+        ]
+        if self.trace:
+            print(f"[goodreads_tool] InMemory search done ({len(matches)} matches)")
+        return matches
+
+    def find_authors(self, query: str, limit: int = 5) -> List[Dict[str, Any]]:
+        if self.authors_df is None:
+            return []
+        author_norm = _normalize(query) if query else ""
+        df = self.authors_df
+        mask = df["name_norm"].str.contains(author_norm, na=False) if author_norm else pd.Series(True, index=df.index)
+        rows = df[mask].head(limit)
+        return [
+            {
+                "author_id": row["author_id"],
+                "name": row["name"],
+                "average_rating": row.get("average_rating"),
+                "works_count": row.get("works_count"),
+                "fans_count": row.get("fans_count"),
+                "link": row.get("link") or row.get("url"),
+            }
+            for row in rows.to_dict(orient="records")
+        ]
 
     def _iter_books(self) -> Iterable[Dict[str, Any]]:
         if not self.books_path.exists():
@@ -392,6 +546,7 @@ def create_book_lookup_tool(
     description: Optional[str] = None,
     trace: bool = False,
     parallel_workers: int = 20,
+    catalog: Optional[Any] = None,
 ) -> FunctionTool:
     """
     Build a LlamaIndex FunctionTool that verifies if a Goodreads book exists.
@@ -420,11 +575,14 @@ def create_book_lookup_tool(
             "Install it via `uv sync` or `pip install llama-index`."
         ) from exc
 
-    catalog = GoodreadsCatalog(
-        books_path=books_path,
-        authors_path=authors_path,
-        parallel_workers=parallel_workers,
-    )
+    if catalog is not None:
+        catalog_obj = catalog
+    else:
+        catalog_obj = GoodreadsCatalog(
+            books_path=books_path,
+            authors_path=authors_path,
+            parallel_workers=parallel_workers,
+        )
 
     def lookup_book(
         title: Optional[str] = None,
@@ -439,7 +597,9 @@ def create_book_lookup_tool(
         seen_ids = set()
         matches: List[Dict[str, Any]] = []
 
-        def add_candidates(candidates: List[Dict[str, Any]]) -> None:
+        def add_candidates(reason: str, candidates: List[Dict[str, Any]]) -> None:
+            if trace:
+                print(f"[goodreads_tool] add_candidates via {reason}: {len(candidates)} rows")
             for entry in candidates:
                 book_id = entry.get("book_id")
                 if not book_id:
@@ -452,17 +612,21 @@ def create_book_lookup_tool(
                     break
 
         capped_limit = min(limit, 20)
+        if trace:
+            print(
+                "[goodreads_tool] normalized query",
+                {"title_norm": title_norm, "author_norm": author_norm},
+            )
+
         if title:
             add_candidates(
-                catalog.find_books(title=title, author=None, limit=capped_limit)
+                "title-only",
+                catalog_obj.find_books(title=title, author=None, limit=capped_limit)
             )
         if len(matches) < limit and author:
             add_candidates(
-                catalog.find_books(title=None, author=author, limit=capped_limit)
-            )
-        if len(matches) < limit and title and author:
-            add_candidates(
-                catalog.find_books(title=title, author=author, limit=capped_limit)
+                "author-only",
+                catalog_obj.find_books(title=None, author=author, limit=capped_limit)
             )
 
         if trace:
@@ -480,7 +644,7 @@ def create_book_lookup_tool(
 
     tool_description = description or (
         "Searches Goodreads edition metadata (title + authors). "
-        "Provide a partial title, author, or both to verify whether a book exists."
+        "Provide a partial title or author to verify whether a book exists. Only one field is used per call."
     )
     return FunctionTool.from_defaults(
         fn=lookup_book,
@@ -493,6 +657,7 @@ def create_author_lookup_tool(
     *,
     authors_path: Path | str = AUTHORS_PATH,
     description: Optional[str] = None,
+    catalog: Optional[Any] = None,
 ) -> FunctionTool:
     try:
         from llama_index.core.tools import FunctionTool
@@ -502,11 +667,11 @@ def create_author_lookup_tool(
             "Install it via `uv sync` or `pip install llama-index`."
         ) from exc
 
-    catalog = GoodreadsAuthorCatalog(authors_path=authors_path)
+    catalog_obj = catalog or GoodreadsAuthorCatalog(authors_path=authors_path)
 
     def lookup_author(author: Optional[str] = None, limit: int = 5) -> Dict[str, Any]:
         norm_limit = min(limit, 20)
-        matches = catalog.find_authors(author or "", limit=norm_limit)
+        matches = catalog_obj.find_authors(author or "", limit=norm_limit)
         return {
             "query": {"author": author, "limit": norm_limit},
             "matches_found": len(matches),

@@ -105,18 +105,18 @@ def parse_args() -> argparse.Namespace:
 def build_prompts(citations: List[Dict[str, str]]) -> List[str]:
     prompts = []
     for citation in citations:
-        title = citation["title"]
-        author = citation["author"]
-        prompts.append(
-            (
-                "You are validating bibliography metadata. "
-                "Use the Goodreads search tool to check whether the specified book exists. "
-                "Return a JSON object describing the matching Goodreads metadata. "
-                "If no book is found, return an empty JSON object `{}`.\n"
-                f'Book title: "{title}"\n'
-                f"Author: {author}"
-            )
-        )
+        title = citation.get("title") or ""
+        author = citation.get("author") or ""
+        lines = [
+            "You are validating bibliography metadata.",
+            "Use the Goodreads search tool to check whether the specified book exists.",
+            "Return a JSON object describing the matching Goodreads metadata.",
+            "You may call only one Goodreads search field at a time: either use the title-only path OR the author-only path, never both in a single call.",
+            "If nothing is found, return an empty JSON object `{}`.",
+            f'Book title: "{title}"' if title else "Book title: <not provided>",
+            f"Author: {author}" if author else "Author: <not provided>",
+        ]
+        prompts.append("\n".join(lines))
     return prompts
 
 
