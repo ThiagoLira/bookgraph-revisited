@@ -12,6 +12,7 @@ import argparse
 import asyncio
 import json
 import os
+import time
 from pathlib import Path
 from typing import Iterable, List, Optional
 
@@ -196,7 +197,15 @@ def stage_agent(
         try:
             with final_path.open("w", encoding="utf-8") as out:
                 for citation, prompt in zip(citations, prompts):
+                    start = time.perf_counter()
                     response = runner.chat(prompt)
+                    elapsed = time.perf_counter() - start
+                    if trace_tool:
+                        title = citation.get("title") or citation.get("author") or "unknown citation"
+                        print(
+                            f"[agent] Completed '{title}' in {elapsed:.3f}s "
+                            f"-> {response[:120]}{'...' if len(response) > 120 else ''}"
+                        )
                     try:
                         payload = json.loads(response)
                     except Exception as exc:
