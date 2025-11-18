@@ -145,6 +145,8 @@ class GoodreadsAgentRunner:
             user_msg=prompt,
             chat_history=list(chat_history or []),
         )
+        if self.verbose:
+            print("[GoodreadsAgent] Waiting for LLM response...")
         agent_output = await handler
         response = agent_output.response.content or ""
         if self.verbose:
@@ -187,9 +189,9 @@ def build_agent(
             "Use this when you need to confirm a book exists on Goodreads by title "
             "or author."
         ),
-        trace=trace_tool,
         db_path=memory_catalog.db_path,
         catalog=memory_catalog,
+        trace=trace_tool,
     )
     author_tool = create_author_lookup_tool(
         authors_path=authors_path,

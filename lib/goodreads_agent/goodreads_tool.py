@@ -1,8 +1,7 @@
 """
 Utilities that expose Goodreads search capabilities as LlamaIndex tools.
 
-This version stores book metadata in a SQLite FTS5 index (built via
-``scripts/build_goodreads_index.py``) so lookups are fast and memory-light.
+Books are indexed via SQLite FTS5 (see scripts/build_goodreads_index.py).
 """
 
 from __future__ import annotations
@@ -10,16 +9,15 @@ from __future__ import annotations
 import json
 import re
 import sqlite3
+import time
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Optional
-import time
 
 if TYPE_CHECKING:  # pragma: no cover
     from llama_index.core.tools import FunctionTool
 
-
-AUTHORS_PATH = Path("goodreads_data/goodreads_book_authors.json")
 BOOKS_DB_PATH = Path("goodreads_data/books_index.db")
+AUTHORS_PATH = Path("goodreads_data/goodreads_book_authors.json")
 BOOK_METADATA_KEYS = {
     "book_id",
     "work_id",
@@ -65,12 +63,6 @@ def _format_match_data(book: Dict[str, Any]) -> Dict[str, Any]:
         if value in ("", None, [], {}):
             continue
         result[key] = value
-    description = (book.get("description") or "").strip()
-    if description:
-        truncated = description[:MAX_DESCRIPTION_CHARS]
-        if len(description) > MAX_DESCRIPTION_CHARS:
-            truncated = truncated.rstrip() + "..."
-        result["description"] = truncated
     authors = book.get("author_names_resolved")
     if isinstance(authors, list) and authors:
         result["authors"] = authors
@@ -81,6 +73,12 @@ def _format_match_data(book: Dict[str, Any]) -> Dict[str, Any]:
             if isinstance(name, str) and name.strip():
                 fallback.append(name.strip())
         result["authors"] = fallback
+    description = (book.get("description") or "").strip()
+    if description:
+        truncated = description[:MAX_DESCRIPTION_CHARS]
+        if len(description) > MAX_DESCRIPTION_CHARS:
+            truncated = truncated.rstrip() + "..."
+        result["description"] = truncated
     result["publication_year"] = _to_int(book.get("publication_year"))
     result["publication_month"] = _to_int(book.get("publication_month"))
     result["publication_day"] = _to_int(book.get("publication_day"))
@@ -100,11 +98,7 @@ def _format_match_data(book: Dict[str, Any]) -> Dict[str, Any]:
 class SQLiteGoodreadsCatalog:
     """Search Goodreads book metadata via SQLite FTS5."""
 
-    def __init__(
-        self,
-        db_path: Path | str = BOOKS_DB_PATH,
-        trace: bool = False,
-    ) -> None:
+    def __init__(self, db_path: Path | str = BOOKS_DB_PATH, trace: bool = False) -> None:
         self.db_path = Path(db_path)
         self.trace = trace
         if not self.db_path.exists():
@@ -134,6 +128,8 @@ class SQLiteGoodreadsCatalog:
         if author:
             clauses.append(f'authors : "{self._fts_escape(author)}"')
         query = " AND ".join(clauses)
+        if self.trace:
+            print(f"[goodreads_tool] FTS query string: {query}")
 
         sql = """
             SELECT data
@@ -142,9 +138,6 @@ class SQLiteGoodreadsCatalog:
             ORDER BY rank
             LIMIT ?
         """
-
-        if self.trace:
-            print(f"[goodreads_tool] FTS query string: {query}")
 
         start = time.perf_counter()
         try:
@@ -224,10 +217,7 @@ def create_book_lookup_tool(
     db_path: Path | str = BOOKS_DB_PATH,
     catalog: Optional[Any] = None,
 ) -> "FunctionTool":
-    """
-    Build a LlamaIndex FunctionTool that verifies if a Goodreads book exists.
-    """
-
+    """Build a LlamaIndex FunctionTool that verifies if a Goodreads book exists."""
     try:
         from llama_index.core.tools import FunctionTool
     except ImportError as exc:  # pragma: no cover
@@ -251,12 +241,18 @@ def create_book_lookup_tool(
                 "[goodreads_tool] lookup_book call "
                 f"title={title!r} author={author!r} limit={limit}"
             )
+        if not title and not author:
+            raise ValueError("Provide at least a title or author.")
+
         seen_ids = set()
         matches: List[Dict[str, Any]] = []
 
         def add_candidates(reason: str, candidates: List[Dict[str, Any]]) -> None:
             if trace:
-                print(f"[goodreads_tool] add_candidates via {reason}: {len(candidates)} rows")
+                print(
+                    f"[goodreads_tool] add_candidates via {reason}: "
+                    f"{len(candidates)} rows"
+                )
             for entry in candidates:
                 book_id = entry.get("book_id")
                 if not book_id or book_id in seen_ids:
@@ -269,18 +265,21 @@ def create_book_lookup_tool(
         capped_limit = min(limit, 20)
         if title:
             add_candidates(
-                "title-only", catalog_obj.find_books(title=title, author=None, limit=capped_limit)
+                "title-only",
+                catalog_obj.find_books(title=title, author=None, limit=capped_limit),
             )
         if len(matches) < limit and author:
             add_candidates(
-                "author-only", catalog_obj.find_books(title=None, author=author, limit=capped_limit)
+                "author-only",
+                catalog_obj.find_books(title=None, author=author, limit=capped_limit),
             )
 
         if trace:
             print(
-                "[goodreads_tool] lookup results:",
+                "[goodreads_tool] lookup results:\n",
                 json.dumps(
                     {"query": {"title": title, "author": author}, "matches": matches},
+                    indent=2,
                     ensure_ascii=False,
                 ),
             )
@@ -291,8 +290,7 @@ def create_book_lookup_tool(
         }
 
     tool_description = description or (
-        "Searches Goodreads edition metadata by title or author. "
-        "Provide a partial title OR author (one field per call)."
+        "Searches Goodreads edition metadata by title or author (one field per call)."
     )
     return FunctionTool.from_defaults(
         fn=lookup_book,
@@ -322,8 +320,12 @@ def create_author_lookup_tool(
         matches = catalog.find_authors(author or "", limit=norm_limit)
         if trace:
             print(
-                "[goodreads_tool] lookup_author",
-                json.dumps({"author": author, "matches": len(matches)}),
+                "[goodreads_tool] lookup_author\n",
+                json.dumps(
+                    {"query": author, "matches_found": len(matches), "matches": matches},
+                    indent=2,
+                    ensure_ascii=False,
+                ),
             )
         return {
             "query": {"author": author, "limit": norm_limit},
