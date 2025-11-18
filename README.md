@@ -48,6 +48,8 @@ bookgraph-revisited/
 │   │   ├── run_profiled_dual.sh     # Two-GPU concurrency profiler
 │   │   └── profile_runs/            # Dual-GPU experiment outputs
 │   └── common/monitor_gpu_util.sh   # Shared GPU utilization logger
+├── scripts/
+│   └── build_goodreads_index.py   # One-time SQLite FTS index builder
 ├── plot_gpu_util.py            # GPU utilization plotter
 └── launch_llama_server_2_gpus.sh # Helper launcher for 2-GPU server
 ```
@@ -135,10 +137,11 @@ Need to validate citations against Goodreads? Use the agent under `lib/goodreads
 
 - `agent.py` builds a LlamaIndex **FunctionAgent** that forces every turn through the `goodreads_book_lookup` tool.
 - Two complementary tools power the agent:
-  - `goodreads_book_lookup` scans `goodreads_books.json` with **20 multiprocessing workers** by title-only (then author-only) searches, returning the first 20 distinct matches so the agent can judge author alignment.
+  - `goodreads_book_lookup` queries a SQLite FTS5 index (built once via `uv run python scripts/build_goodreads_index.py --force`) with either a title-only or author-only search.
   - `goodreads_author_lookup` loads `goodreads_book_authors.json` in memory and surfaces author candidates when only an author name is cited.
 - `test_agent.py` is a smoke harness that feeds prompts from `susan_sample.txt.json` and prints the JSON metadata (or `{}` when nothing matches).
 - `tests/test_agent_components.py` includes unit tests for the agent runner, synthetic catalogs, and timing checks against real Goodreads data.
+- **One-time setup**: Run `uv run python scripts/build_goodreads_index.py --force` whenever the raw Goodreads dataset changes to build/refresh the `goodreads_data/books_index.db` FTS index.
 
 Example:
 

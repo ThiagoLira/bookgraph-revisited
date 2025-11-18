@@ -33,7 +33,8 @@ if str(CURRENT_DIR) not in os.sys.path:  # pragma: no cover
     os.sys.path.insert(0, str(CURRENT_DIR))
 
 from goodreads_tool import (
-    InMemoryGoodreadsCatalog,
+    BOOKS_DB_PATH,
+    SQLiteGoodreadsCatalog,
     create_book_lookup_tool,
     create_author_lookup_tool,
 )
@@ -177,10 +178,9 @@ def build_agent(
 ) -> GoodreadsAgentRunner:
     """Construct a function-calling agent with our Goodreads lookup tool."""
     llm = build_llm(model=model, api_key=api_key, base_url=base_url)
-    memory_catalog = InMemoryGoodreadsCatalog(
-        books_path=books_path,
+    memory_catalog = SQLiteGoodreadsCatalog(
+        db_path=BOOKS_DB_PATH,
         authors_path=authors_path,
-        books_parquet_path=Path(books_path).with_suffix(".parquet"),
         trace=trace_tool,
     )
     book_tool = create_book_lookup_tool(
@@ -191,12 +191,13 @@ def build_agent(
             "and/or author."
         ),
         trace=trace_tool,
+        db_path=memory_catalog.db_path,
         catalog=memory_catalog,
     )
     author_tool = create_author_lookup_tool(
         authors_path=authors_path,
         description="Use this when you only have the author name and must disambiguate.",
-        catalog=memory_catalog,
+        trace=trace_tool,
     )
     agent = FunctionAgent(
         name="goodreads_validator",
