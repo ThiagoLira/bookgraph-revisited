@@ -23,6 +23,7 @@ Two main entrypoints exist in this repo depending on the kind of “agent” you
 |------|------------------------|--------|
 | Benchmark throughput on your RTX box | `profiling/single_gpu/run_profiled_single.sh` | Handles server boot, GPU logging, and cleanup automatically. |
 | Explore multi-GPU concurrency scaling | `profiling/dual_gpu/run_profiled_dual.sh` | Sweeps `-np` (parallel slots) and records both GPU utilization plots. |
+| Quick timing-only dual-GPU sweep | `profiling/dual_gpu/run_profiled_dual_timing.sh` | Runs the same server config but only writes duration metrics/CSV. |
 | Use an already-running remote OpenAI-compatible server | `run_single_file.py` | Only depends on network endpoint + API key; zero GPU assumptions. |
 | Integrate citation extraction into another pipeline | `run_single_file.py` or import `extract_citations` | Acts as a thin CLI/client; reusable config objects. |
 | Tweak llama.cpp launch params | `profiling/single_gpu/run_profiled_single.sh` | Exposes model path, batch size, concurrency, token budgets via args. |

@@ -229,6 +229,23 @@ Output lives under `profiling/dual_gpu/profile_runs/<timestamp>/np_<parallel>/` 
 
 The default server launch mirrors the recommendations in `launch_llama_server_2_gpus.sh`: row split, tensor split `70,30`, heavy tensors pinned to GPU 0, `-np` sweeping over the provided list.
 
+### Dual-GPU Timing-Only Sweep (`profiling/dual_gpu/run_profiled_dual_timing.sh`)
+
+Same launch mechanics as the full profiler but stripped down to a single datapoint: wall-clock seconds per concurrency. No GPU logs, just run/server logs and a CSV summary.
+
+```bash
+./profiling/dual_gpu/run_profiled_dual_timing.sh \
+  "$PWD/books_samples/susan.txt" 8,16,24
+```
+
+Results land under `profiling/dual_gpu/profile_runs/<timestamp>_timings/` with:
+
+```
+├── timings.csv                 # concurrency,duration_seconds
+├── np_<N>/run_single_file.log  # extraction log per sweep
+└── np_<N>/llama_server.log     # server stdout/stderr
+```
+
 ## Performance Benchmarks
 
 Tested on RTX 5090 (32GB VRAM) with Qwen3-30B-A3B-Q5_K_S (20GB model):
