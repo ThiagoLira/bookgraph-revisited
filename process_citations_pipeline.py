@@ -151,7 +151,7 @@ def build_agent_runner(
         base_url=base_url,
         books_path="goodreads_data/goodreads_books.json",
         authors_path="goodreads_data/goodreads_book_authors.json",
-        verbose=False,
+        verbose=trace_tool,
         trace_tool=trace_tool,
     )
 
