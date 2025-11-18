@@ -159,7 +159,7 @@ class SQLiteGoodreadsCatalog:
         if self.trace:
             print(
                 f"[goodreads_tool] SQLite search returned {len(matches)} matches "
-                f"in {duration*1000:.1f} ms"
+                f"in {duration:.3f}s"
             )
         return matches
 
