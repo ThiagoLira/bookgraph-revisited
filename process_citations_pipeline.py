@@ -166,8 +166,11 @@ def stage_agent(
     model_id: str,
     trace_tool: bool,
 ) -> None:
+    from lib.goodreads_agent.goodreads_tool import SQLiteGoodreadsCatalog
+
     output_dir.mkdir(parents=True, exist_ok=True)
     runner = build_agent_runner(base_url, api_key, model_id, trace_tool)
+    catalog = SQLiteGoodreadsCatalog(trace=trace_tool)
     iterator = progress_iter(
         txt_files,
         desc="Stage 3/3: Goodreads agent",
@@ -199,6 +202,29 @@ def stage_agent(
                 for citation, prompt in zip(citations, prompts):
                     start = time.perf_counter()
                     response = runner.chat(prompt)
+                    response_str = response.strip()
+                    if response_str.startswith("<tool_call>"):
+                        try:
+                            tool_payload = json.loads(response_str.split(">", 1)[1].strip())
+                            if tool_payload.get("name") == "goodreads_book_lookup":
+                                args = tool_payload.get("arguments", {})
+                                matches = catalog.find_books(
+                                    title=args.get("title"),
+                                    author=args.get("author"),
+                                    limit=5,
+                                )
+                                if matches:
+                                    response = json.dumps(
+                                        {"result": "FOUND", "metadata": matches[0]},
+                                        ensure_ascii=False,
+                                    )
+                                else:
+                                    response = json.dumps(
+                                        {"result": "NOT_FOUND", "metadata": {}},
+                                        ensure_ascii=False,
+                                    )
+                        except Exception as exc:
+                            print(f"[agent] Warning: failed to interpret tool call {response_str}: {exc}")
                     elapsed = time.perf_counter() - start
                     if trace_tool:
                         title = citation.get("title") or citation.get("author") or "unknown citation"
