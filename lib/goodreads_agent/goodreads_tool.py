@@ -12,6 +12,7 @@ import re
 import sqlite3
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Optional
+import time
 
 if TYPE_CHECKING:  # pragma: no cover
     from llama_index.core.tools import FunctionTool
@@ -118,6 +119,10 @@ class SQLiteGoodreadsCatalog:
                 f"{self.db_path} not found. Run scripts/build_goodreads_index.py first."
             )
         self.authors_lookup = self._load_authors(Path(authors_path))
+        self._conn = sqlite3.connect(self.db_path)
+        self._conn.row_factory = sqlite3.Row
+        if trace:
+            print(f"[goodreads_tool] Connected to {self.db_path}")
 
     def _load_authors(self, authors_path: Path) -> Dict[str, str]:
         if not authors_path.exists():
@@ -139,11 +144,6 @@ class SQLiteGoodreadsCatalog:
 
     def _fts_escape(self, text: str) -> str:
         return text.replace('"', '""')
-
-    def _connect(self) -> sqlite3.Connection:
-        conn = sqlite3.connect(self.db_path)
-        conn.row_factory = sqlite3.Row
-        return conn
 
     def find_books(
         self,
@@ -169,15 +169,17 @@ class SQLiteGoodreadsCatalog:
             LIMIT ?
         """
 
-        conn = self._connect()
+        if self.trace:
+            print(f"[goodreads_tool] FTS query string: {query}")
+
+        start = time.perf_counter()
         try:
-            rows = conn.execute(sql, (query, limit)).fetchall()
+            rows = self._conn.execute(sql, (query, limit)).fetchall()
         except sqlite3.OperationalError as exc:
             if self.trace:
                 print(f"[goodreads_tool] FTS query error: {exc}")
             return []
-        finally:
-            conn.close()
+        duration = time.perf_counter() - start
 
         matches = []
         for row in rows:
@@ -188,7 +190,10 @@ class SQLiteGoodreadsCatalog:
                 continue
             matches.append(_format_match_data(book, self.authors_lookup))
         if self.trace:
-            print(f"[goodreads_tool] SQLite search returned {len(matches)} matches")
+            print(
+                f"[goodreads_tool] SQLite search returned {len(matches)} matches "
+                f"in {duration*1000:.1f} ms"
+            )
         return matches
 
 
