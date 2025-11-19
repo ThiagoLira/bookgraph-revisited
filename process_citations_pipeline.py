@@ -14,7 +14,7 @@ import json
 import os
 import time
 from pathlib import Path
-from typing import Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Optional
 
 from lib.extract_citations import (
     ExtractionConfig,
@@ -157,7 +157,7 @@ def build_agent_runner(
     )
 
 
-def stage_agent(
+async def stage_agent_async(
     pre_dir: Path,
     output_dir: Path,
     txt_files: Iterable[Path],
@@ -165,17 +165,77 @@ def stage_agent(
     api_key: str,
     model_id: str,
     trace_tool: bool,
+    agent_max_workers: int,
 ) -> None:
     from lib.goodreads_agent.goodreads_tool import SQLiteGoodreadsCatalog
 
+    if agent_max_workers < 1:
+        raise ValueError("--agent-max-workers must be at least 1.")
+
     output_dir.mkdir(parents=True, exist_ok=True)
-    runner = build_agent_runner(base_url, api_key, model_id, trace_tool)
+    runners = [build_agent_runner(base_url, api_key, model_id, trace_tool) for _ in range(agent_max_workers)]
+    runner_queue: asyncio.Queue["GoodreadsAgentRunner"] = asyncio.Queue()
+    for runner in runners:
+        runner_queue.put_nowait(runner)
+
     catalog = SQLiteGoodreadsCatalog(trace=trace_tool)
     iterator = progress_iter(
         txt_files,
         desc="Stage 3/3: Goodreads agent",
         unit="book",
     )
+
+    async def process_single_citation(
+        idx: int,
+        citation: Dict[str, Any],
+        prompt: str,
+    ) -> tuple[int, Optional[str]]:
+        runner = await runner_queue.get()
+        try:
+            start = time.perf_counter()
+            response = await runner.query(prompt)
+        finally:
+            runner_queue.put_nowait(runner)
+
+        response_str = response.strip()
+        if response_str.startswith("<tool_call>"):
+            try:
+                tool_payload = json.loads(response_str.split(">", 1)[1].strip())
+                if tool_payload.get("name") == "goodreads_book_lookup":
+                    args = tool_payload.get("arguments", {})
+                    matches = catalog.find_books(
+                        title=args.get("title"),
+                        author=args.get("author"),
+                        limit=5,
+                    )
+                    if matches:
+                        response = json.dumps(
+                            {"result": "FOUND", "metadata": matches[0]},
+                            ensure_ascii=False,
+                        )
+                    else:
+                        response = json.dumps(
+                            {"result": "NOT_FOUND", "metadata": {}},
+                            ensure_ascii=False,
+                        )
+            except Exception as exc:
+                print(f"[agent] Warning: failed to interpret tool call {response_str}: {exc}")
+
+        elapsed = time.perf_counter() - start
+        if trace_tool:
+            title = citation.get("title") or citation.get("author") or "unknown citation"
+            preview = response[:120] + ("..." if len(response) > 120 else "")
+            print(f"[agent] Completed '{title}' in {elapsed:.3f}s -> {preview}")
+
+        try:
+            payload = json.loads(response)
+        except Exception as exc:
+            print(f"[agent] Warning: failed to parse response {response}: {exc}")
+            return idx, None
+
+        record = {"citation": citation, "agent_response": payload}
+        return idx, json.dumps(record, ensure_ascii=False)
+
     for txt in iterator:
         pre_path = pre_dir / f"{txt.stem}.json"
         final_path = output_dir / f"{txt.stem}.jsonl"
@@ -185,65 +245,68 @@ def stage_agent(
         if not pre_path.exists():
             print(f"[agent] Missing preprocessed JSON for {txt.name}, skipping.")
             continue
+
         data = json.loads(pre_path.read_text())
         citations = data.get("citations", [])
         prompts = build_prompts(citations)
         print(f"[agent] Processing {len(citations)} citations for {txt.name}")
+
+        if not citations:
+            final_path.write_text("")
+            continue
+
         citation_bar = None
-        if tqdm is not None and citations:
+        if tqdm is not None:
             citation_bar = tqdm(
                 total=len(citations),
                 desc=f"  citations for {txt.name}",
                 unit="citation",
                 leave=False,
             )
+
         try:
+            tasks = [
+                asyncio.create_task(process_single_citation(idx, citation, prompt))
+                for idx, (citation, prompt) in enumerate(zip(citations, prompts))
+            ]
+            results: List[Optional[str]] = [None] * len(tasks)
+            for task in asyncio.as_completed(tasks):
+                idx, record_line = await task
+                if record_line is not None:
+                    results[idx] = record_line
+                if citation_bar is not None:
+                    citation_bar.update(1)
             with final_path.open("w", encoding="utf-8") as out:
-                for citation, prompt in zip(citations, prompts):
-                    start = time.perf_counter()
-                    response = runner.chat(prompt)
-                    response_str = response.strip()
-                    if response_str.startswith("<tool_call>"):
-                        try:
-                            tool_payload = json.loads(response_str.split(">", 1)[1].strip())
-                            if tool_payload.get("name") == "goodreads_book_lookup":
-                                args = tool_payload.get("arguments", {})
-                                matches = catalog.find_books(
-                                    title=args.get("title"),
-                                    author=args.get("author"),
-                                    limit=5,
-                                )
-                                if matches:
-                                    response = json.dumps(
-                                        {"result": "FOUND", "metadata": matches[0]},
-                                        ensure_ascii=False,
-                                    )
-                                else:
-                                    response = json.dumps(
-                                        {"result": "NOT_FOUND", "metadata": {}},
-                                        ensure_ascii=False,
-                                    )
-                        except Exception as exc:
-                            print(f"[agent] Warning: failed to interpret tool call {response_str}: {exc}")
-                    elapsed = time.perf_counter() - start
-                    if trace_tool:
-                        title = citation.get("title") or citation.get("author") or "unknown citation"
-                        print(
-                            f"[agent] Completed '{title}' in {elapsed:.3f}s "
-                            f"-> {response[:120]}{'...' if len(response) > 120 else ''}"
-                        )
-                    try:
-                        payload = json.loads(response)
-                    except Exception as exc:
-                        print(f"[agent] Warning: failed to parse response {response}: {exc}")
-                        continue
-                    record = {"citation": citation, "agent_response": payload}
-                    out.write(json.dumps(record, ensure_ascii=False) + "\n")
-                    if citation_bar is not None:
-                        citation_bar.update(1)
+                for record_line in results:
+                    if record_line is not None:
+                        out.write(record_line + "\n")
         finally:
             if citation_bar is not None:
                 citation_bar.close()
+
+
+def stage_agent(
+    pre_dir: Path,
+    output_dir: Path,
+    txt_files: Iterable[Path],
+    base_url: str,
+    api_key: str,
+    model_id: str,
+    trace_tool: bool,
+    agent_max_workers: int,
+) -> None:
+    asyncio.run(
+        stage_agent_async(
+            pre_dir,
+            output_dir,
+            txt_files,
+            base_url,
+            api_key,
+            model_id,
+            trace_tool,
+            agent_max_workers,
+        )
+    )
 
 
 def parse_args() -> argparse.Namespace:
@@ -285,6 +348,12 @@ def parse_args() -> argparse.Namespace:
         help="Glob pattern to select specific .txt files (default: *.txt).",
     )
     parser.add_argument(
+        "--agent-max-workers",
+        type=int,
+        default=5,
+        help="Maximum concurrent Goodreads agent calls (default: 5).",
+    )
+    parser.add_argument(
         "--agent-trace",
         action="store_true",
         help="Enable verbose tracing of Goodreads tool activity.",
@@ -315,6 +384,7 @@ def main() -> None:
         args.agent_api_key,
         args.agent_model,
         args.agent_trace,
+        args.agent_max_workers,
     )
 
     print("Pipeline complete.")

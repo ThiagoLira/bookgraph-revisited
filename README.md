@@ -154,6 +154,46 @@ uv run python -m lib.goodreads_agent.test_agent \
 
 `--trace-tool` logs every Goodreads lookup plus the full metadata JSON returned by the multiprocessing tool, making it easy to inspect what the agent saw.
 
+## Full Pipeline: `process_citations_pipeline.py`
+
+`process_citations_pipeline.py` stitches extraction, preprocessing, and Goodreads validation together. Each stage is asynchronous and reports progress:
+
+1. **Extraction** – fan-out chunked prompts against your LLM server via `process_book` (async with per-chunk progress bars).
+2. **Preprocess** – collapse duplicates and normalize citation dictionaries.
+3. **Goodreads agent** – now async too: up to `--agent-max-workers` agent runners share a single SQLite catalog and concurrently resolve citations. Timings per citation appear whenever `--agent-trace` is set.
+
+Key CLI flags:
+
+| Flag | Description |
+| ---- | ----------- |
+| `--pattern` | Glob to pick a subset of `.txt` sources (great for mock docs or profiling) |
+| `--agent-max-workers` | Number of concurrent Goodreads agent calls (default 5). Each worker reuses the same LlamaIndex workflow |
+| `--agent-trace` | Emits the system prompt, tool calls, timings, and final JSON for every citation |
+| `--extract-*` / `--agent-*` | OpenAI-compatible endpoint + model pair for each stage |
+
+Example (single mock doc, local llama.cpp endpoints):
+
+```bash
+uv run python process_citations_pipeline.py books_samples \
+  --pattern mock_short.txt \
+  --extract-base-url http://127.0.0.1:8080/v1 \
+  --agent-base-url http://127.0.0.1:8080/v1 \
+  --extract-api-key test --agent-api-key test \
+  --extract-model Qwen/Qwen3-30B-A3B \
+  --agent-model qwen/qwen3-next-80b-a3b-instruct \
+  --agent-max-workers 8 \
+  --agent-trace
+```
+
+Outputs land in:
+
+```
+books_samples/
+├── raw_extracted_citations/                 # Stage 1 JSON
+├── preprocessed_extracted_citations/        # Stage 2 deduped results
+└── final_citations_metadata_goodreads/      # Stage 3 JSONL w/ metadata
+```
+
 ## Profiling Scripts
 
 ### Single-GPU Stress Harness (`profiling/single_gpu/run_profiled_single.sh`)
@@ -249,6 +289,16 @@ Results land under `profiling/dual_gpu/profile_runs/<timestamp>_timings/` with:
 └── np_<N>/llama_server.log     # server stdout/stderr
 ```
 
+### Agent & Database micro-benchmarks
+
+For latency hunts we keep a few focused utilities under `profiling/`:
+
+- `profiling/mock_run.sh` – spins up a virtualenv, runs `process_citations_pipeline.py` against `books_samples/mock_short.txt`, and records a cProfile trace at `profiling/mock_profile.prof`.
+- `profiling/query_goodreads.py` – lightweight CLI that issues direct `goodreads_book_lookup` calls without the full agent stack.
+- `profiling/bench_goodreads_queries.sh` – bash harness that times a suite of known-good queries (title-only and author-only) against the SQLite FTS index, logging milliseconds per lookup so you can validate DB build quality or hardware differences quickly.
+
+Each script accepts the same `--base-url`, `--api-key`, or database overrides used elsewhere, so you can experiment without touching the core pipeline.
+
 ## Performance Benchmarks
 
 Tested on RTX 5090 (32GB VRAM) with Qwen3-30B-A3B-Q5_K_S (20GB model):
@@ -338,19 +388,4 @@ mypy extract_citations.py
 MIT
 ### Mock profiling
 
-When debugging agent latency, you can profile a single synthetic file (e.g., `books_samples/mock_short.txt`) via:
-
-```bash
-. .venv/bin/activate
-python -m cProfile -o profiling/mock_profile.prof \
-  process_citations_pipeline.py books_samples \
-  --pattern mock_short.txt \
-  --extract-base-url http://127.0.0.1:8080/v1 \
-  --agent-base-url http://127.0.0.1:8080/v1 \
-  --extract-api-key test --agent-api-key test \
-  --extract-model Qwen/Qwen3-30B-A3B \
-  --agent-model Qwen/Qwen3-30B-A3B \
-  --agent-trace
-```
-
-This keeps the pipeline focused on the tiny test document while cProfile records timing.
+`profiling/mock_run.sh` bundles the cProfile flow above. After running it, inspect `profiling/mock_profile.prof` via `snakeviz` or `python -m pstats profiling/mock_profile.prof`. This keeps the pipeline focused on the tiny test document while cProfile records timing.
