@@ -15,7 +15,9 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import json
 import os
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import TYPE_CHECKING, Optional, Sequence, List, Dict
@@ -134,6 +136,47 @@ class GoodreadsAgentRunner:
     agent: FunctionAgent
     verbose: bool = False
 
+    @staticmethod
+    def _normalize_response(raw: str) -> str:
+        """
+        Ensure downstream stages always receive JSON or a tool_call envelope.
+
+        - Pass through tool calls unchanged (run_agent_stage3 handles them).
+        - Try direct JSON parse; if that fails, try fenced ```json``` blocks,
+          then a loose first {...} match.
+        - Fall back to a structured error payload instead of raising.
+        """
+        cleaned = raw.strip()
+        if not cleaned:
+            return json.dumps({})
+        if cleaned.startswith("<tool_call>"):
+            return cleaned
+        try:
+            json.loads(cleaned)
+            return cleaned
+        except Exception:
+            pass
+
+        fence = re.search(r"```json\s*(\{.*?\})\s*```", cleaned, flags=re.DOTALL)
+        if fence:
+            snippet = fence.group(1).strip()
+            try:
+                json.loads(snippet)
+                return snippet
+            except Exception:
+                pass
+
+        brace = re.search(r"(\{.*\})", cleaned, flags=re.DOTALL)
+        if brace:
+            snippet = brace.group(1)
+            try:
+                json.loads(snippet)
+                return snippet
+            except Exception:
+                pass
+
+        return json.dumps({"result": "UNPARSEABLE", "raw_response": cleaned}, ensure_ascii=False)
+
     async def _chat_async(
         self,
         prompt: str,
@@ -149,9 +192,11 @@ class GoodreadsAgentRunner:
             print("[GoodreadsAgent] Waiting for LLM response...")
         agent_output = await handler
         response = agent_output.response.content or ""
+        normalized = self._normalize_response(response)
         if self.verbose:
-            print(f"[GoodreadsAgent] Response:\n{response}\n{'=' * 40}")
-        return response
+            print(f"[GoodreadsAgent] Response (raw):\n{response}\n{'-' * 40}")
+            print(f"[GoodreadsAgent] Response (normalized):\n{normalized}\n{'=' * 40}")
+        return normalized
 
     async def query(
         self,

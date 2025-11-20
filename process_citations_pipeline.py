@@ -178,7 +178,11 @@ async def stage_agent_async(
     for runner in runners:
         runner_queue.put_nowait(runner)
 
-    catalog = SQLiteGoodreadsCatalog(trace=trace_tool)
+    # Create one catalog per worker to avoid SQLite thread-safety issues
+    catalogs = [SQLiteGoodreadsCatalog(trace=trace_tool) for _ in range(agent_max_workers)]
+    catalog_queue: asyncio.Queue[SQLiteGoodreadsCatalog] = asyncio.Queue()
+    for catalog in catalogs:
+        catalog_queue.put_nowait(catalog)
     iterator = progress_iter(
         txt_files,
         desc="Stage 3/3: Goodreads agent",
@@ -191,35 +195,39 @@ async def stage_agent_async(
         prompt: str,
     ) -> tuple[int, Optional[str]]:
         runner = await runner_queue.get()
+        catalog = await catalog_queue.get()
         try:
             start = time.perf_counter()
             response = await runner.query(prompt)
         finally:
             runner_queue.put_nowait(runner)
 
-        response_str = response.strip()
-        if response_str.startswith("<tool_call>"):
-            try:
-                tool_payload = json.loads(response_str.split(">", 1)[1].strip())
-                if tool_payload.get("name") == "goodreads_book_lookup":
-                    args = tool_payload.get("arguments", {})
-                    matches = catalog.find_books(
-                        title=args.get("title"),
-                        author=args.get("author"),
-                        limit=5,
-                    )
-                    if matches:
-                        response = json.dumps(
-                            {"result": "FOUND", "metadata": matches[0]},
-                            ensure_ascii=False,
+        try:
+            response_str = response.strip()
+            if response_str.startswith("<tool_call>"):
+                try:
+                    tool_payload = json.loads(response_str.split(">", 1)[1].strip())
+                    if tool_payload.get("name") == "goodreads_book_lookup":
+                        args = tool_payload.get("arguments", {})
+                        matches = catalog.find_books(
+                            title=args.get("title"),
+                            author=args.get("author"),
+                            limit=5,
                         )
-                    else:
-                        response = json.dumps(
-                            {"result": "NOT_FOUND", "metadata": {}},
-                            ensure_ascii=False,
-                        )
-            except Exception as exc:
-                print(f"[agent] Warning: failed to interpret tool call {response_str}: {exc}")
+                        if matches:
+                            response = json.dumps(
+                                {"result": "FOUND", "metadata": matches[0]},
+                                ensure_ascii=False,
+                            )
+                        else:
+                            response = json.dumps(
+                                {"result": "NOT_FOUND", "metadata": {}},
+                                ensure_ascii=False,
+                            )
+                except Exception as exc:
+                    print(f"[agent] Warning: failed to interpret tool call {response_str}: {exc}")
+        finally:
+            catalog_queue.put_nowait(catalog)
 
         elapsed = time.perf_counter() - start
         if trace_tool:

@@ -165,32 +165,52 @@ class SQLiteGoodreadsCatalog:
 
 
 class GoodreadsAuthorCatalog:
-    """Loads author metadata into a simple in-memory list."""
+    """Loads author metadata into a simple in-memory list.
+
+    Uses class-level caching to avoid reloading the same authors file
+    multiple times across different instances.
+    """
+
+    # Class-level cache shared by all instances
+    _cached_authors: List[Dict[str, Any]] = []
+    _cached_path: Path | None = None
 
     def __init__(self, authors_path: Path | str = AUTHORS_PATH) -> None:
         self.authors_path = Path(authors_path)
-        self._authors: List[Dict[str, Any]] = []
         self._load_authors()
 
     def _load_authors(self) -> None:
+        # Use cached data if available and path matches
+        if (GoodreadsAuthorCatalog._cached_authors and
+            GoodreadsAuthorCatalog._cached_path == self.authors_path):
+            return
+
         if not self.authors_path.exists():
             raise FileNotFoundError(
                 f"Author dataset missing at {self.authors_path.resolve()}."
             )
+
+        # Load and cache the data at class level
+        authors_list: List[Dict[str, Any]] = []
         with self.authors_path.open("r", encoding="utf-8") as fh:
             for line in fh:
                 try:
                     row = json.loads(line)
                 except json.JSONDecodeError:
                     continue
-                self._authors.append(row)
+                authors_list.append(row)
+
+        # Update class-level cache
+        GoodreadsAuthorCatalog._cached_authors = authors_list
+        GoodreadsAuthorCatalog._cached_path = self.authors_path
 
     def find_authors(self, query: str, limit: int = 5) -> List[Dict[str, Any]]:
         if not query:
             return []
         norm = _normalize(query)
         matches: List[Dict[str, Any]] = []
-        for row in self._authors:
+        # Use the class-level cached data
+        for row in GoodreadsAuthorCatalog._cached_authors:
             name = row.get("name")
             if not isinstance(name, str):
                 continue
