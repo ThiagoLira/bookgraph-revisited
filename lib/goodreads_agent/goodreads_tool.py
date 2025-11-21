@@ -21,6 +21,7 @@ AUTHORS_PATH = Path("goodreads_data/goodreads_book_authors.json")
 BOOK_METADATA_KEYS = {
     "book_id",
     "work_id",
+    "author_ids",
     "isbn",
     "isbn13",
     "title",

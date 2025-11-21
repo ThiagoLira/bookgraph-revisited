@@ -73,20 +73,23 @@ def build_index(db_path: Path, books_path: Path, authors: Dict[str, str], batch_
                     continue
                 title = row.get("title", "")
                 author_names: List[str] = []
+                author_ids: List[str] = []
                 for author in row.get("authors", []) or []:
                     if not isinstance(author, dict):
                         continue
                     name = author.get("name")
                     if name:
                         author_names.append(str(name))
-                        continue
                     author_id = author.get("author_id")
                     if author_id is not None:
+                        author_ids.append(str(author_id))
                         mapped = authors.get(str(author_id))
-                        if mapped:
+                        if mapped and mapped not in author_names:
                             author_names.append(mapped)
                 authors_field = " ".join(author_names)
                 row["author_names_resolved"] = author_names
+                if author_ids:
+                    row["author_ids"] = author_ids
                 description = (row.get("description") or "").strip()
                 if description:
                     row["description"] = (
