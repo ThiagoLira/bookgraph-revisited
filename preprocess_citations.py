@@ -8,8 +8,9 @@ Usage:
 
 import argparse
 import json
+import re
 from pathlib import Path
-from typing import Any, Callable, Dict, Iterable, List
+from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence
 
 
 Citation = Dict[str, Any]
@@ -80,23 +81,99 @@ def collapse_author_only(citations: List[Citation]) -> List[Citation]:
     return result
 
 
-HEURISTICS: List[Heuristic] = [
-    placeholder_heuristic,
-    collapse_author_only,
-]
+def normalize_text(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip().casefold()
 
 
-def apply_heuristics(citations: List[Citation]) -> List[Citation]:
-    result = citations
-    for heuristic in HEURISTICS:
-        result = heuristic(result)
+def normalize_title(title: str) -> str:
+    """
+    Normalize titles for loose dedup:
+    - Lowercase/strip
+    - Split on common separators (:, -, _, (, [) and take the leading chunk
+    - Collapse non-alphanumerics to spaces
+    """
+    lowered = title.strip().casefold()
+    for sep in (":", "-", "_", "(", "["):
+        if sep in lowered:
+            lowered = lowered.split(sep, 1)[0]
+    cleaned = re.sub(r"[^a-z0-9]+", " ", lowered)
+    return cleaned.strip()
+
+
+def collapse_variant_titles(citations: List[Citation]) -> List[Citation]:
+    """
+    Deduplicate obvious title variants for the same author by using a
+    normalized prefix of the title.
+    """
+    seen = set()
+    result: List[Citation] = []
+    for citation in citations:
+        author = citation.get("author") or ""
+        title = citation.get("title") or ""
+        canon_author = normalize_text(author)
+        canon_title = normalize_title(title)
+        key = (canon_author, canon_title) if canon_title else (canon_author, title.casefold())
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(citation)
     return result
 
 
-def preprocess(path: Path) -> Dict[str, Any]:
+def drop_self_references(
+    citations: List[Citation],
+    source_title: Optional[str],
+    source_authors: Optional[Sequence[str]],
+) -> List[Citation]:
+    """
+    Remove citations that point back to the same book/author when we know the source.
+    """
+    if not source_title and not source_authors:
+        return citations
+    norm_title = normalize_title(source_title or "")
+    norm_authors = {normalize_text(a) for a in (source_authors or []) if a}
+    result: List[Citation] = []
+    for citation in citations:
+        c_title = citation.get("title") or ""
+        c_author = citation.get("author") or ""
+        canon_title = normalize_title(c_title)
+        canon_author = normalize_text(c_author)
+        is_same_author = norm_authors and canon_author in norm_authors
+        is_same_title = norm_title and canon_title and canon_title == norm_title
+        if is_same_author and (is_same_title or not c_title.strip()):
+            # Drop self-citations (same author + same title or no title)
+            continue
+        result.append(citation)
+    return result
+
+
+HEURISTICS: List[Heuristic] = [
+    placeholder_heuristic,
+    collapse_author_only,
+    collapse_variant_titles,
+]
+
+
+def apply_heuristics(
+    citations: List[Citation],
+    source_title: Optional[str],
+    source_authors: Optional[Sequence[str]],
+) -> List[Citation]:
+    result = citations
+    for heuristic in HEURISTICS:
+        result = heuristic(result)
+    result = drop_self_references(result, source_title, source_authors)
+    return result
+
+
+def preprocess(
+    path: Path,
+    source_title: Optional[str] = None,
+    source_authors: Optional[Sequence[str]] = None,
+) -> Dict[str, Any]:
     citations = load_citations(path)
     citations = deduplicate_exact(citations)
-    citations = apply_heuristics(citations)
+    citations = apply_heuristics(citations, source_title, source_authors)
     return {
         "source": path.name,
         "total": len(citations),

@@ -205,7 +205,11 @@ def stage_preprocess(raw_dir: Path, output_dir: Path, books: Iterable[CalibreBoo
             print(f"[preprocess] Missing raw JSON for {book.title}, skipping.")
             continue
         print(f"[preprocess] {raw_path} -> {pre_path}")
-        processed = preprocess_citations(raw_path)
+        processed = preprocess_citations(
+            raw_path,
+            source_title=book.title,
+            source_authors=[book.author_sort],
+        )
         pre_path.write_text(json.dumps(processed, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
