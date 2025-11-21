@@ -194,10 +194,32 @@ async def run_agent_stage(
                     results[idx] = record_line
                 if citation_bar is not None:
                     citation_bar.update(1)
+            kept = 0
             with final_path.open("w", encoding="utf-8") as out:
                 for record_line in results:
-                    if record_line is not None:
-                        out.write(record_line + "\n")
+                    if record_line is None:
+                        continue
+                    try:
+                        payload = json.loads(record_line)
+                    except Exception:
+                        continue
+                    agent_resp = payload.get("agent_response") or {}
+                    meta = {}
+                    if isinstance(agent_resp, dict):
+                        if agent_resp.get("result") == "FOUND" and isinstance(agent_resp.get("metadata"), dict):
+                            meta = agent_resp["metadata"]
+                        elif agent_resp.get("result") == "NOT_FOUND":
+                            meta = {}
+                        else:
+                            meta = agent_resp
+                    has_book = bool(meta.get("book_id"))
+                    author_ids = meta.get("author_ids") or []
+                    if not has_book and not author_ids:
+                        continue  # drop entries without a resolved Goodreads target
+                    out.write(json.dumps(payload, ensure_ascii=False) + "\n")
+                    kept += 1
+            if kept == 0:
+                print(f"[agent] Warning: no validated citations kept for {pre_file.name}")
         finally:
             if citation_bar is not None:
                 citation_bar.close()

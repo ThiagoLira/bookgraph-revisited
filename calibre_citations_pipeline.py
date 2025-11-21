@@ -458,12 +458,14 @@ async def stage_agent_async(
                     metadata = agent_response
 
             target_type, target_book_id, target_author_ids = pick_match_type(metadata)
+            if not target_book_id and not target_author_ids:
+                continue  # drop citations without a validated Goodreads target
             output_payload["citations"].append(
                 {
                     "raw": citation,
                     "goodreads_match": metadata,
                     "edge": {
-                        "target_type": target_type if target_author_ids or target_book_id else "none",
+                        "target_type": target_type,
                         "target_book_id": target_book_id,
                         "target_author_ids": target_author_ids,
                     },
