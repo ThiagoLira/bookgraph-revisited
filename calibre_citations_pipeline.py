@@ -275,6 +275,7 @@ async def stage_agent_async(
     model_id: str,
     trace_tool: bool,
     agent_max_workers: int,
+    debug_trace: bool = False,
 ) -> None:
     from lib.goodreads_agent.goodreads_tool import SQLiteGoodreadsCatalog
 
@@ -284,16 +285,16 @@ async def stage_agent_async(
         raise ValueError("--agent-max-workers must be at least 1.")
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    runners = [build_agent_runner(base_url, api_key, model_id, trace_tool) for _ in range(agent_max_workers)]
+    runners = [build_agent_runner(base_url, api_key, model_id, trace_tool or debug_trace) for _ in range(agent_max_workers)]
     runner_queue: asyncio.Queue["GoodreadsAgentRunner"] = asyncio.Queue()
-    for runner in runners:
-        runner_queue.put_nowait(runner)
+    for idx, runner in enumerate(runners):
+        runner_queue.put_nowait((idx, runner))
 
     # Per-worker catalogs to avoid SQLite thread issues
     catalogs = [SQLiteGoodreadsCatalog(trace=trace_tool) for _ in range(agent_max_workers)]
     catalog_queue: asyncio.Queue[SQLiteGoodreadsCatalog] = asyncio.Queue()
-    for catalog in catalogs:
-        catalog_queue.put_nowait(catalog)
+    for idx, catalog in enumerate(catalogs):
+        catalog_queue.put_nowait((idx, catalog))
 
     # Prefetch source Goodreads metadata for source nodes
     book_ids_needed: Set[str] = {b.goodreads_id for b in books}
@@ -304,13 +305,15 @@ async def stage_agent_async(
         citation: Dict[str, Any],
         prompt: str,
     ) -> tuple[int, Optional[Dict[str, Any]]]:
-        runner = await runner_queue.get()
-        catalog = await catalog_queue.get()
+        runner_idx, runner = await runner_queue.get()
+        catalog_idx, catalog = await catalog_queue.get()
+        if debug_trace:
+            print(f"[trace agent={runner_idx}] citation[{idx}] prompt:\n{prompt}\n{'-' * 40}")
         try:
             start = time.perf_counter()
             response = await runner.query(prompt)
         finally:
-            runner_queue.put_nowait(runner)
+            runner_queue.put_nowait((runner_idx, runner))
 
         try:
             response_str = response.strip()
@@ -319,6 +322,8 @@ async def stage_agent_async(
                     tool_payload = json.loads(response_str.split(">", 1)[1].strip())
                     if tool_payload.get("name") == "goodreads_book_lookup":
                         args = tool_payload.get("arguments", {})
+                        if debug_trace:
+                            print(f"[trace agent={runner_idx}] citation[{idx}] tool_call args: {args}")
                         matches = catalog.find_books(
                             title=args.get("title"),
                             author=args.get("author"),
@@ -335,20 +340,20 @@ async def stage_agent_async(
                                 ensure_ascii=False,
                             )
                 except Exception as exc:
-                    print(f"[agent] Warning: failed to interpret tool call {response_str}: {exc}")
+                    print(f"[agent {runner_idx}] Warning: failed to interpret tool call {response_str}: {exc}")
         finally:
-            catalog_queue.put_nowait(catalog)
+            catalog_queue.put_nowait((catalog_idx, catalog))
 
         elapsed = time.perf_counter() - start
-        if trace_tool:
+        if trace_tool or debug_trace:
             title = citation.get("title") or citation.get("author") or "unknown citation"
             preview = response[:120] + ("..." if len(response) > 120 else "")
-            print(f"[agent] Completed '{title}' in {elapsed:.3f}s -> {preview}")
+            print(f"[agent {runner_idx}] Completed '{title}' in {elapsed:.3f}s -> {preview}")
 
         try:
             payload = json.loads(response)
         except Exception as exc:
-            print(f"[agent] Warning: failed to parse response {response}: {exc}")
+            print(f"[agent {runner_idx}] Warning: failed to parse response {response}: {exc}")
             return idx, None
 
         record = {"citation": citation, "agent_response": payload}
@@ -488,6 +493,7 @@ def stage_agent(
     model_id: str,
     trace_tool: bool,
     agent_max_workers: int,
+    debug_trace: bool = False,
 ) -> None:
     asyncio.run(
         stage_agent_async(
@@ -499,6 +505,7 @@ def stage_agent(
             model_id,
             trace_tool,
             agent_max_workers,
+            debug_trace=debug_trace,
         )
     )
 
@@ -528,7 +535,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--agent-base-url",
-        default=os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1"),
+        default="http://localhost:8080/v1",
         help="Base URL for Goodreads agent.",
     )
     parser.add_argument(
@@ -557,6 +564,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Enable verbose tracing of Goodreads tool activity.",
     )
+    parser.add_argument(
+        "--debug-trace",
+        action="store_true",
+        help="Verbose logging of prompts, tool calls, and responses for debugging.",
+    )
     return parser.parse_args()
 
 
@@ -583,8 +595,9 @@ def main() -> None:
         args.agent_base_url,
         args.agent_api_key,
         args.agent_model,
-        args.agent_trace,
+        args.agent_trace or args.debug_trace,
         args.agent_max_workers,
+        debug_trace=args.debug_trace,
     )
 
     print(f"Pipeline complete. Outputs at {output_base}")

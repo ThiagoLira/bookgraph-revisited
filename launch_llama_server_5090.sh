@@ -13,9 +13,9 @@
 #  10: SERVER_BINARY
 set -euo pipefail
 
-MODEL_PATH="${1:-/home/thiago/models/Qwen3-30B-A3B-Q5_K_S.gguf}"
-MAX_CONCURRENCY="${2:-20}"
-MAX_INPUT_TOKENS="${3:-2000}"
+MODEL_PATH="${1:-/home/thiago/models/Qwen3-Coder-30B-A3B-Instruct-UD-Q4_K_XL.gguf}"
+MAX_CONCURRENCY="${2:-10}"
+MAX_INPUT_TOKENS="${3:-4000}"
 MAX_COMPLETION_TOKENS="${4:-1000}"
 BATCH_SIZE="${5:-2048}"
 UBATCH_SIZE="${6:-512}"

@@ -92,18 +92,24 @@ class AuthorMetadata(BaseModel):
 
 
 SYSTEM_PROMPT = (
-    "You verify whether bibliographic entries exist on Goodreads.\n"
-    "• Normalize search queries aggressively: strip punctuation, accents, edition notes, "
-    "and try multiple variations (e.g., swapped word order, removing subtitles) until you "
-    "exhaust reasonable options.\n"
-    "• When a citation includes a title, call `goodreads_book_lookup` first to gather "
-    "candidate editions, then compare the returned authors to the citation.\n"
-    "• When only an author is supplied, call `goodreads_author_lookup` to disambiguate "
-    "the identity before concluding.\n"
-    "• Respond with a JSON object describing the best Goodreads match. Include fields from "
-    "`BookMetadata` (title, title_without_series, authors, publication_year, publication_month, "
-    "publication_day, book_id, num_pages, optional extras) or `AuthorMetadata` "
-    "(author_id, name, ratings_count). If nothing matches, respond with an empty JSON object `{}`."
+    "You are a strict bibliographic validation engine. Your goal is to find a matching "
+    "Goodreads entry for a given book/author citation using the provided search tools.\n\n"
+    "### TOOL USAGE PROTOCOL (CRITICAL)\n"
+    "1. SINGLE FIELD ONLY: The `goodreads_book_lookup` tool fails if you provide both "
+    "title and author. You must call it with title='...' (and author=None) OR "
+    "author='...' (and title=None). NEVER BOTH.\n"
+    "2. TITLE FIRST STRATEGY: Always search by Title first. If that fails, search by Author.\n"
+    "3. VERIFICATION: The tool returns a list of candidates. You must inspect this list "
+    "internally to find the one that matches your citation's author.\n\n"
+    "### SEARCH HEURISTICS\n"
+    "The database search is strict. You must clean inputs aggressively before calling tools:\n"
+    "- Subtitles: REMOVE them. Search 'How to Do Nothing', NOT 'How to Do Nothing: Resisting...'\n"
+    "- Punctuation: REMOVE commas/colons. Search 'Bartleby the Scrivener', NOT 'Bartleby, the Scrivener'.\n"
+    "- Initials: If an author has initials (e.g., 'B. F. Skinner'), search by surname only "
+    "('Skinner') or full name without dots ('Burrhus Skinner') if known. Dots confuse the index.\n\n"
+    "### OUTPUT FORMAT\n"
+    "Return a JSON object describing the best match (using BookMetadata or AuthorMetadata fields). "
+    "If absolutely no match is found after trying simplified variations, return {}."
 )
 
 
@@ -231,8 +237,9 @@ def build_agent(
     )
     book_tool = create_book_lookup_tool(
         description=(
-            "Use this when you need to confirm a book exists on Goodreads by title "
-            "or author."
+            "Search for books. IMPORTANT: provide EITHER a 'title' OR an 'author', "
+            "but NEVER both in the same call. To search by title, leave author null. "
+            "To search by author, leave title null."
         ),
         db_path=memory_catalog.db_path,
         catalog=memory_catalog,
