@@ -3,14 +3,15 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
-INPUT_DIR="$SCRIPT_DIR/books"
+INPUT_DIR="$PROJECT_ROOT/books"
 EXTRACT_URL="https://openrouter.ai/api/v1"
 AGENT_URL="https://openrouter.ai/api/v1"
 
-if [[ -f "$SCRIPT_DIR/.env" ]]; then
+if [[ -f "$PROJECT_ROOT/.env" ]]; then
   # shellcheck disable=SC1090
-  set -a; source "$SCRIPT_DIR/.env"; set +a
+  set -a; source "$PROJECT_ROOT/.env"; set +a
 fi
 
 if [[ -z "${OPENROUTER_API_KEY:-}" ]]; then
@@ -18,7 +19,7 @@ if [[ -z "${OPENROUTER_API_KEY:-}" ]]; then
   exit 1
 fi
 
-uv run python "$SCRIPT_DIR/process_citations_pipeline.py" \
+uv run python "$PROJECT_ROOT/process_citations_pipeline.py" \
   --extract-base-url "$EXTRACT_URL" \
   --extract-api-key "$OPENROUTER_API_KEY" \
   --agent-base-url "$AGENT_URL" \

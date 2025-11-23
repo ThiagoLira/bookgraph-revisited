@@ -4,7 +4,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$SCRIPT_DIR"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 # Load .env if present so OPENROUTER_API_KEY is available
 if [[ -f "$PROJECT_ROOT/.env" ]]; then
@@ -21,15 +21,15 @@ fi
 
 if [[ $# -gt 0 ]] && [[ "$1" == "-h" || "$1" == "--help" ]]; then
   cat <<'EOF'
-Usage: ./run_openrouter_single.sh [INPUT_TXT] [CHUNK_SIZE] [MAX_CONCURRENCY] [MAX_CONTEXT] [MAX_COMPLETION] [MODEL] [BASE_URL]
+Usage: ./pipeline_single_openrouter.sh [INPUT_TXT] [CHUNK_SIZE] [MAX_CONCURRENCY] [MAX_CONTEXT] [MAX_COMPLETION] [MODEL] [BASE_URL]
 
 Defaults:
-  INPUT_TXT       test_book_subset.txt
+  INPUT_TXT       books/susan_sample.txt
   CHUNK_SIZE      50
   MAX_CONCURRENCY 20
   MAX_CONTEXT     6144
   MAX_COMPLETION  2048
-  MODEL           Qwen/Qwen3-30B-A3B
+  MODEL           qwen/qwen3-next-80b-a3b-instruct
   BASE_URL        https://openrouter.ai/api/v1
 
 Reads OPENROUTER_API_KEY from the environment (load via .env automatically).
@@ -37,7 +37,7 @@ EOF
   exit 0
 fi
 
-INPUT_PATH="${1:-$SCRIPT_DIR/books/susan_sample.txt}"
+INPUT_PATH="${1:-$PROJECT_ROOT/books/susan_sample.txt}"
 CHUNK_SIZE="${2:-50}"
 MAX_CONCURRENCY="${3:-20}"
 MAX_CONTEXT="${4:-6144}"
@@ -46,7 +46,7 @@ MODEL_NAME="${6:-qwen/qwen3-next-80b-a3b-instruct}"
 BASE_URL="${7:-https://openrouter.ai/api/v1}"
 
 RUN_TS="$(date +%Y%m%d-%H%M%S)"
-OUTPUT_DIR="$SCRIPT_DIR/openrouter_runs/$RUN_TS"
+OUTPUT_DIR="$PROJECT_ROOT/openrouter_runs/$RUN_TS"
 mkdir -p "$OUTPUT_DIR"
 RUN_LOG="$OUTPUT_DIR/run_single_file.log"
 
@@ -60,7 +60,7 @@ echo "  Model:             $MODEL_NAME" >&2
 echo "  Output directory:  $OUTPUT_DIR" >&2
 
 set +e
-uv run "$SCRIPT_DIR/run_single_file.py" "$INPUT_PATH" \
+uv run "$PROJECT_ROOT/run_single_file.py" "$INPUT_PATH" \
   --chunk-size "$CHUNK_SIZE" \
   --max-concurrency "$MAX_CONCURRENCY" \
   --max-context-per-request "$MAX_CONTEXT" \

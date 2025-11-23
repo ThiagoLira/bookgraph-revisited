@@ -2,8 +2,9 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
-INPUT_PATH="$SCRIPT_DIR/books/Where the Stress Falls (Penguin - Susan Sontag.txt"
+INPUT_PATH="${1:-$PROJECT_ROOT/books/susan.txt}"
 CHUNK_SIZE=100
 MAX_CONCURRENCY=4
 BASE_URL="http://localhost:8080/v1"
@@ -16,7 +17,7 @@ DEBUG_LIMIT=""
 
 cmd=(
   uv run
-  "$SCRIPT_DIR/run_single_file.py"
+  "$PROJECT_ROOT/run_single_file.py"
   "$INPUT_PATH"
   --chunk-size "$CHUNK_SIZE"
   --max-concurrency "$MAX_CONCURRENCY"

@@ -4,11 +4,11 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 usage() {
   cat <<'EOF'
-Usage: ./run_calibre_openrouter.sh [CALIBRE_LIBRARY_DIR] [OUTPUT_DIR]
+Usage: ./pipeline_calibre_openrouter.sh [CALIBRE_LIBRARY_DIR] [OUTPUT_DIR]
 
 Environment:
   OPENROUTER_API_KEY   Required. Read from .env if present.
@@ -36,7 +36,7 @@ if [[ -z "${OPENROUTER_API_KEY:-}" ]]; then
   exit 1
 fi
 
-LIBRARY_DIR="${1:-$HOME/OneDrive/Documentos/calibre_bookgraph}"
+LIBRARY_DIR="${1:-$HOME/OneDrive/Documents/calibre_goodreads}"
 OUTPUT_DIR="${2:-}"
 
 BASE_URL="${OPENROUTER_BASE_URL:-https://openrouter.ai/api/v1}"
@@ -53,7 +53,7 @@ CMD=(
   --agent-api-key "$OPENROUTER_API_KEY"
   --agent-model "$AGENT_MODEL"
   --agent-max-workers "$AGENT_MAX_WORKERS"
-#  --only-goodreads-ids "61535"
+  --only-goodreads-ids "61535"
 )
 
 if [[ -n "$OUTPUT_DIR" ]]; then
