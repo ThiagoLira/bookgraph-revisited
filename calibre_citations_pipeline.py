@@ -74,7 +74,7 @@ class CalibreBook:
     goodreads_id: str
 
 
-def load_calibre_books(library_dir: Path) -> List[CalibreBook]:
+def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[str]] = None) -> List[CalibreBook]:
     """Load Calibre metadata, focusing on books with a Goodreads identifier and TXT format."""
     db_path = library_dir / "metadata.db"
     if not db_path.exists():
@@ -97,6 +97,8 @@ def load_calibre_books(library_dir: Path) -> List[CalibreBook]:
     for calibre_id, title, author_sort, rel_path, name, fmt, goodreads_id in rows:
         if not goodreads_id:
             print(f"[calibre] Skipping book {title!r} (Calibre ID {calibre_id}) with no Goodreads ID.")
+            continue
+        if allowed_goodreads_ids is not None and str(goodreads_id) not in allowed_goodreads_ids:
             continue
         if fmt != "TXT":
             # We only process TXT sources in this pipeline.
@@ -569,6 +571,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Verbose logging of prompts, tool calls, and responses for debugging.",
     )
+    parser.add_argument(
+        "--only-goodreads-ids",
+        type=str,
+        default=None,
+        help="Comma-separated list of Goodreads IDs to process. Others are skipped if present.",
+    )
     return parser.parse_args()
 
 
@@ -576,7 +584,13 @@ def main() -> None:
     args = parse_args()
     if not args.library_dir.exists():
         raise SystemExit(f"Library directory {args.library_dir} does not exist.")
-    books = load_calibre_books(args.library_dir)
+    allowed_ids: Optional[Set[str]] = None
+    if args.only_goodreads_ids:
+        allowed_ids = {token.strip() for token in args.only_goodreads_ids.replace(",", " ").split() if token.strip()}
+        if not allowed_ids:
+            print("No valid Goodreads IDs provided to --only-goodreads-ids; processing all eligible books.")
+            allowed_ids = None
+    books = load_calibre_books(args.library_dir, allowed_ids)
     if not books:
         print("No eligible Calibre books found (need TXT format and Goodreads ID); nothing to do.")
         return

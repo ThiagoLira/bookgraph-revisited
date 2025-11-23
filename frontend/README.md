@@ -5,7 +5,7 @@ Renders a book/author citation graph from stage-3 JSON outputs.
 
 How it works
 ------------
-- Loads all `*.json` files from a stage-3 output folder (default: `calibre_outputs/calibre_bookgraph/final_citations_metadata_goodreads`).
+- Loads all `*.json` files from a folder of stage-3 outputs (default: `frontend/data` next to this HTML).
 - Builds nodes for books (`book_id`) and authors (`author_id`).
 - Creates edges:
   - source book → cited book (if `edge.target_book_id`)
@@ -17,8 +17,11 @@ Run locally
 ```bash
 # From repo root
 python -m http.server 8000
-# Open in browser:
-http://localhost:8000/frontend/index.html?dataDir=calibre_outputs/calibre_bookgraph/final_citations_metadata_goodreads
+# Open in browser (uses frontend/data by default):
+http://localhost:8000/frontend/index.html
+
+# Or point at another folder:
+# http://localhost:8000/frontend/index.html?dataDir=calibre_outputs/calibre_bookgraph/final_citations_metadata_goodreads
 ```
 
 Controls
