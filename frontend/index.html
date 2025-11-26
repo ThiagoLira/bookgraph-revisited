@@ -60,6 +60,20 @@
     .link { stroke: var(--edge); stroke-opacity: 0.5; }
     .label { fill: var(--text); font-size: 11px; pointer-events: none; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
     .highlight { stroke: var(--accent); stroke-width: 2.2px; stroke-opacity: 0.9; }
+    #details {
+      position: absolute;
+      left: 16px; right: 16px; bottom: 12px;
+      background: rgba(18,25,51,0.85);
+      border: 1px solid rgba(124,229,255,0.2);
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 13px;
+      color: var(--text);
+      backdrop-filter: blur(6px);
+      min-height: 24px;
+      z-index: 2;
+    }
+    .author-hull { pointer-events: none; }
   </style>
 </head>
 <body>
@@ -71,6 +85,7 @@
       <label class="pill"><input id="toggle-authors" type="checkbox" checked /><span class="swatch" style="background: var(--author)"></span>Authors</label>
     </div>
   </header>
+  <div id="details"></div>
   <svg></svg>
 
   <script type="module">
@@ -83,8 +98,33 @@
     const statusEl = document.getElementById("status");
     const toggleBooks = document.getElementById("toggle-books");
     const toggleAuthors = document.getElementById("toggle-authors");
+    const detailsEl = document.getElementById("details");
 
     function setStatus(msg) { statusEl.textContent = msg; }
+    let pinnedDetails = null;
+    function setDetails(node, pinned = false) {
+      if (pinned) pinnedDetails = node;
+      if (!node) {
+        detailsEl.textContent = pinnedDetails ? detailsEl.textContent : "";
+        return;
+      }
+      if (!pinned && pinnedDetails) return;
+      const meta = node.meta || {};
+      const label = node.label || node.id;
+      const rows = [
+        `Type: ${node.type}`,
+        label ? `Label: ${label}` : null,
+        meta.title ? `Title: ${meta.title}` : null,
+        meta.name ? `Name: ${meta.name}` : null,
+        meta.author ? `Author: ${meta.author}` : null,
+        meta.authors ? `Authors: ${meta.authors.join(", ")}` : null,
+        meta.average_rating ? `Rating: ${meta.average_rating}` : null,
+        meta.goodreads_id ? `Goodreads ID: ${meta.goodreads_id}` : null,
+        meta.book_id ? `Book ID: ${meta.book_id}` : null,
+        meta.author_id ? `Author ID: ${meta.author_id}` : null,
+      ].filter(Boolean);
+      detailsEl.textContent = rows.join(" • ");
+    }
 
     async function listJsonFiles(dir) {
       // Assumes directory listing is available (e.g., python -m http.server)
@@ -110,6 +150,8 @@
     function buildGraph(records) {
       const nodes = new Map(); // id -> node
       const links = [];
+      const authorBooks = new Map(); // authorId -> Set(bookIds)
+      const bookOwners = new Map(); // bookId -> authorId (first author)
       const addNode = (id, type, label, meta = {}) => {
         if (!id) return;
         if (!nodes.has(id)) nodes.set(id, { id, type, label, meta });
@@ -127,23 +169,44 @@
         const src = rec.source || {};
         const srcBookId = src.goodreads_id || (src.goodreads && src.goodreads.book_id);
         addNode(`book:${srcBookId}`, "book", src.title || `Book ${srcBookId}`, src);
+        for (const aid of src.author_ids || []) {
+          addNode(`author:${aid}`, "author", (src.authors && src.authors[0]) || aid, { author_id: aid, authors: src.authors || [] });
+          addLink(`book:${srcBookId}`, `author:${aid}`);
+          if (!authorBooks.has(aid)) authorBooks.set(aid, new Set());
+          authorBooks.get(aid).add(`book:${srcBookId}`);
+          bookOwners.set(`book:${srcBookId}`, aid);
+        }
 
         for (const cit of rec.citations || []) {
           const edge = cit.edge || {};
           const tgtBook = edge.target_book_id;
           const tgtAuthors = edge.target_author_ids || [];
+          const match = cit.goodreads_match || {};
 
-          if (tgtBook) {
-            addNode(`book:${tgtBook}`, "book", cit.goodreads_match?.title || tgtBook, cit.goodreads_match || {});
-            addLink(`book:${srcBookId}`, `book:${tgtBook}`);
+          // If a book id is present, use it; otherwise fabricate a stable id from author+title so we can render a book node.
+          const inferredTitle = match.title || cit.raw?.title;
+          const primaryAuthor = tgtAuthors[0] || match.author_id;
+          const derivedBookId = tgtBook || (inferredTitle ? `${primaryAuthor || "unknown"}:${inferredTitle}` : null);
+
+          if (derivedBookId) {
+            addNode(`book:${derivedBookId}`, "book", inferredTitle || derivedBookId, { ...match, title: inferredTitle, book_id: tgtBook || match.book_id });
+            addLink(`book:${srcBookId}`, `book:${derivedBookId}`);
+            if (primaryAuthor) {
+              bookOwners.set(`book:${derivedBookId}`, primaryAuthor);
+            }
           }
+
           for (const aid of tgtAuthors) {
             addNode(`author:${aid}`, "author", cit.goodreads_match?.author || cit.goodreads_match?.name || aid, cit.goodreads_match || {});
-            addLink(`book:${srcBookId}`, `author:${aid}`);
+            addLink(`book:${srcBookId}`, derivedBookId ? `book:${derivedBookId}` : `author:${aid}`);
+            if (derivedBookId) {
+              if (!authorBooks.has(aid)) authorBooks.set(aid, new Set());
+              authorBooks.get(aid).add(`book:${derivedBookId}`);
+            }
           }
         }
       }
-      return { nodes: Array.from(nodes.values()), links };
+      return { nodes: Array.from(nodes.values()), links, authorBooks, bookOwners };
     }
 
     function render(graph) {
@@ -153,86 +216,155 @@
       const height = window.innerHeight;
 
       const g = svg.append("g");
-      const zoom = d3.zoom().scaleExtent([0.1, 5]).on("zoom", (event) => {
+      const zoom = d3.zoom().scaleExtent([0.4, 3]).on("zoom", (event) => {
         g.attr("transform", event.transform);
       });
       svg.call(zoom);
 
-      const link = g.append("g")
-        .attr("stroke-width", 1.2)
-        .selectAll("line")
-        .data(graph.links)
-        .enter().append("line")
-        .attr("class", "link");
+      const nodesById = new Map(graph.nodes.map(n => [n.id, n]));
+      const authors = graph.nodes.filter(n => n.type === "author");
+      const booksByAuthor = new Map();
+      for (const [bookId, aid] of graph.bookOwners.entries()) {
+        const b = nodesById.get(bookId);
+        if (!b) continue;
+        if (!booksByAuthor.has(aid)) booksByAuthor.set(aid, []);
+        booksByAuthor.get(aid).push(b);
+      }
 
-      const node = g.append("g")
-        .selectAll("circle")
+      // Radial layout for authors, inner radial layout for each author's books (no force physics).
+      // Precompute ring sizes per author to size spacing.
+      const authorLayouts = authors.map(a => {
+        const books = booksByAuthor.get(a.meta.author_id || a.id.replace("author:", "")) || [];
+        const ring = Math.min(200, 40 + books.length * 12);
+        const hull = ring + 18;
+        return { author: a, books, ring, hull };
+      });
+      const nAuthors = Math.max(authorLayouts.length, 1);
+      const baseRadius = Math.min(width, height) * 0.8;
+      const maxHull = authorLayouts.reduce((m, a) => Math.max(m, a.hull), 30);
+      const minAngle = Math.PI / Math.max(nAuthors, 2);
+      const requiredRadius = (maxHull * 1.6) / Math.max(Math.sin(minAngle), 0.35) + 60;
+      const authorRadius = Math.max(baseRadius, requiredRadius);
+      const centerX = width / 2;
+      const centerY = height / 2;
+      const angleStep = (2 * Math.PI) / nAuthors;
+
+      const positions = new Map();
+      authorLayouts.forEach((layout, idx) => {
+        const { author: a, books, ring } = layout;
+        const angle = idx * angleStep;
+        const x = centerX + authorRadius * Math.cos(angle);
+        const y = centerY + authorRadius * Math.sin(angle);
+        positions.set(a.id, { x, y });
+        const bookAngleStep = (2 * Math.PI) / Math.max(books.length, 1);
+        books.forEach((b, j) => {
+          const ang = j * bookAngleStep;
+          positions.set(b.id, {
+            x: x + ring * Math.cos(ang),
+            y: y + ring * Math.sin(ang),
+          });
+        });
+      });
+      // Place any unowned books in a small inner ring.
+      const unownedBooks = graph.nodes.filter(n => n.type === "book" && !positions.has(n.id));
+      unownedBooks.forEach((b, idx) => {
+        const ang = idx * ((2 * Math.PI) / Math.max(unownedBooks.length, 1));
+        positions.set(b.id, { x: centerX + 120 * Math.cos(ang), y: centerY + 120 * Math.sin(ang) });
+      });
+
+      // Layers
+      const linkLayer = g.append("g").attr("stroke-width", 1.2);
+      const hullLayer = g.append("g").attr("class", "author-containers");
+      const nodeLayer = g.append("g");
+      const labelLayer = g.append("g");
+
+      const neighbors = new Set(graph.links.map(l => `${l.source.id || l.source}|${l.target.id || l.target}`));
+      const wiredLinks = graph.links.map(l => ({
+        ...l,
+        source: nodesById.get(l.source.id || l.source) || l.source,
+        target: nodesById.get(l.target.id || l.target) || l.target,
+      }));
+
+      const linksSel = linkLayer.selectAll("line")
+        .data(wiredLinks)
+        .enter().append("line")
+        .attr("class", "link")
+        .attr("x1", d => positions.get(d.source.id || d.source)?.x)
+        .attr("y1", d => positions.get(d.source.id || d.source)?.y)
+        .attr("x2", d => positions.get(d.target.id || d.target)?.x)
+        .attr("y2", d => positions.get(d.target.id || d.target)?.y);
+
+      const node = nodeLayer.selectAll("circle")
         .data(graph.nodes)
         .enter().append("circle")
         .attr("class", d => `node ${d.type}`)
-        .attr("r", d => d.type === "book" ? 8 : 6)
-        .call(d3.drag()
-          .on("start", (event, d) => {
-            if (!event.active) simulation.alphaTarget(0.3).restart();
-            d.fx = d.x; d.fy = d.y;
-          })
-          .on("drag", (event, d) => {
-            d.fx = event.x; d.fy = event.y;
-          })
-          .on("end", (event, d) => {
-            if (!event.active) simulation.alphaTarget(0);
-            // Click toggles pin; drag end leaves pinned unless clicked again
-          })
-        )
+        .attr("r", d => d.type === "book" ? 7 : 10)
+        .attr("cx", d => positions.get(d.id)?.x)
+        .attr("cy", d => positions.get(d.id)?.y)
         .on("click", (event, d) => {
-          d.fx = d.fx == null ? d.x : null;
-          d.fy = d.fy == null ? d.y : null;
+          if (pinnedDetails && pinnedDetails.id === d.id) {
+            pinnedDetails = null;
+            setDetails(null);
+          } else {
+            setDetails(d, true);
+          }
         })
         .on("mouseover", function(event, d) {
           node.classed("highlight", n => n === d || neighbors.has(`${d.id}|${n.id}`) || neighbors.has(`${n.id}|${d.id}`));
-          link.classed("highlight", l => l.source.id === d.id || l.target.id === d.id);
+          linksSel.classed("highlight", l => l.source.id === d.id || l.target.id === d.id);
+          label.style("display", n => n.type === "book" ? (n.id === d.id ? null : "none") : null);
+          setDetails(d);
         })
         .on("mouseout", () => {
           node.classed("highlight", false);
-          link.classed("highlight", false);
+          linksSel.classed("highlight", false);
+          label.style("display", n => n.type === "book" ? "none" : null);
+          setDetails(null);
         });
 
-      const label = g.append("g")
-        .selectAll("text")
+      const label = labelLayer.selectAll("text")
         .data(graph.nodes)
         .enter().append("text")
         .attr("class", "label")
         .attr("dx", 10)
         .attr("dy", 4)
-        .text(d => d.label);
+        .attr("x", d => positions.get(d.id)?.x)
+        .attr("y", d => positions.get(d.id)?.y)
+        .text(d => d.label)
+        .style("display", d => d.type === "book" ? "none" : null);
 
-      const neighbors = new Set(graph.links.map(l => `${l.source.id || l.source}|${l.target.id || l.target}`));
+      // Author hulls sized to their books.
+      const radii = [];
+      for (const layout of authorLayouts) {
+        const aid = layout.author.meta.author_id || layout.author.id.replace("author:", "");
+        const aPos = positions.get(`author:${aid}`);
+        if (!aPos) continue;
+        const r = layout.hull;
+        radii.push({ id: aid, x: aPos.x, y: aPos.y, r });
+      }
 
-      const simulation = d3.forceSimulation(graph.nodes)
-        .force("link", d3.forceLink(graph.links).id(d => d.id).distance(d => d.type === "book" ? 80 : 60).strength(0.15))
-        .force("charge", d3.forceManyBody().strength(-160))
-        .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collision", d3.forceCollide().radius(d => d.type === "book" ? 14 : 10));
-
-      simulation.on("tick", () => {
-        link
-          .attr("x1", d => d.source.x)
-          .attr("y1", d => d.source.y)
-          .attr("x2", d => d.target.x)
-          .attr("y2", d => d.target.y);
-        node
-          .attr("cx", d => d.x)
-          .attr("cy", d => d.y);
-        label
-          .attr("x", d => d.x)
-          .attr("y", d => d.y);
-      });
+      hullLayer.selectAll("circle.author-hull")
+        .data(radii, d => d.id)
+        .join(
+          enter => enter.append("circle")
+            .attr("class", "author-hull")
+            .attr("fill", "rgba(247,164,108,0.08)")
+            .attr("stroke", "rgba(247,164,108,0.5)")
+            .attr("stroke-width", 1.2),
+          update => update,
+          exit => exit.remove()
+        )
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y)
+        .attr("r", d => d.r)
+        .style("display", toggleAuthors.checked ? null : "none");
 
       const updateVisibility = () => {
         node.style("display", d => (d.type === "book" && !toggleBooks.checked) || (d.type === "author" && !toggleAuthors.checked) ? "none" : null);
         label.style("display", d => (d.type === "book" && !toggleBooks.checked) || (d.type === "author" && !toggleAuthors.checked) ? "none" : null);
         const hidden = new Set(graph.nodes.filter(d => ((d.type === "book" && !toggleBooks.checked) || (d.type === "author" && !toggleAuthors.checked))).map(d => d.id));
-        link.style("display", l => hidden.has(l.source.id) || hidden.has(l.target.id) ? "none" : null);
+        linksSel.style("display", l => hidden.has(l.source.id || l.source) || hidden.has(l.target.id || l.target) ? "none" : null);
+        hullLayer.style("display", toggleAuthors.checked ? null : "none");
       };
       toggleBooks.onchange = updateVisibility;
       toggleAuthors.onchange = updateVisibility;
