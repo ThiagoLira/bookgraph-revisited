@@ -23,18 +23,10 @@ DEFAULT_SYSTEM_PROMPT = (
     "websites, or other works of art like paintings and architecture. When uncertain, omit the item."
 )
 
-USER_PROMPT_TEMPLATE = """You are analyzing part {{chunk_index}} of the book "{{book_title}}".
-This chunk contains sentences {{start_sentence}} through {{end_sentence}}.
+USER_PROMPT_TEMPLATE = """You are extracting book citations from a bounded excerpt of "{{book_title}}".
 
-Extract book citations and return ONLY JSON that matches this schema:
-
-You may cite just the author when just a reference to their name is present, but always when you cite a book you need to have the title and the author.
-If there is more than one book from the same author make 2 separate citations.
-
+Return ONLY JSON with this shape:
 {
-  "chunk_index": {{chunk_index}},
-  "start_sentence": {{start_sentence}},
-  "end_sentence": {{end_sentence}},
   "citations": [
     {
       "title": str | null,
@@ -44,13 +36,16 @@ If there is more than one book from the same author make 2 separate citations.
   ]
 }
 
+Rules:
+- Use only information inside the excerpt; do not invent books or authors.
+- Cite an author alone when only the author is mentioned; when a book is cited, include both title and author.
+- If one author has multiple books, output separate citations.
 - Return an empty list when no book citations are present.
-- Include each cited book at most once per chunk.
-- Ignore repeated mentions of the same book within the chunk; provide only one entry per unique title.
-- Exclude commentary or explanations outside the JSON payload.
+- Include each cited book at most once per chunk and avoid any commentary outside the JSON payload.
 
-Book excerpt:
+===== BEGIN BOOK EXCERPT =====
 {{sentences_block}}
+===== END BOOK EXCERPT =====
 """
 
 CHAR_PER_TOKEN_SAFETY = 6
@@ -91,8 +86,15 @@ class ExtractionResult(BaseModel):
     failures: List[ChunkFailure] = Field(default_factory=list)
 
 
-CHUNK_EXTRACTION_JSON_SCHEMA = ChunkExtraction.model_json_schema(
-    ref_template="#/$defs/{model}"
+class ModelChunkCitations(BaseModel):
+    citations: List[BookCitation] = Field(
+        default_factory=list,
+        description="Citations drawn strictly from the provided excerpt.",
+    )
+
+
+CHUNK_EXTRACTION_JSON_SCHEMA = ModelChunkCitations.model_json_schema(
+    ref_template="#/$defs/{model}",
 )
 
 
@@ -247,11 +249,9 @@ def chunk_text(chunk: SentenceChunk) -> str:
 
 def format_user_prompt(chunk: SentenceChunk, book_title: str) -> str:
     return (
-        USER_PROMPT_TEMPLATE.replace("{{chunk_index}}", str(chunk.index))
-        .replace("{{start_sentence}}", str(chunk.start_sentence))
-        .replace("{{end_sentence}}", str(chunk.end_sentence))
-        .replace("{{book_title}}", book_title)
-        .replace("{{sentences_block}}", chunk_text(chunk))
+        USER_PROMPT_TEMPLATE.replace("{{book_title}}", book_title).replace(
+            "{{sentences_block}}", chunk_text(chunk)
+        )
     )
 
 
@@ -325,7 +325,7 @@ async def call_model(
         return chunk, None, failure
 
     try:
-        parsed = ChunkExtraction.model_validate_json(content)
+        parsed = ModelChunkCitations.model_validate_json(content)
     except ValidationError as exc:
         failure = ChunkFailure(
             chunk_index=chunk.index,
@@ -345,7 +345,14 @@ async def call_model(
         )
         return chunk, None, failure
 
-    return chunk, parsed, None
+    extraction = ChunkExtraction(
+        chunk_index=chunk.index,
+        start_sentence=chunk.start_sentence,
+        end_sentence=chunk.end_sentence,
+        citations=parsed.citations,
+    )
+
+    return chunk, extraction, None
 
 
 ProgressCallback = Callable[[int, int], None]

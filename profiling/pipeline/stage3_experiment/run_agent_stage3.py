@@ -166,7 +166,12 @@ async def run_agent_stage(
 
         data = json.loads(pre_file.read_text(encoding="utf-8"))
         citations = data.get("citations", [])
-        prompts = build_prompts(citations)
+        prompts = build_prompts(
+            citations,
+            source_title=txt.stem,
+            source_authors=[],
+            source_description=None,
+        )
         print(f"[agent] Processing {len(citations)} citations for {pre_file.name}")
 
         if not citations:

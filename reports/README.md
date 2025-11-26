@@ -179,63 +179,17 @@ While validating chunk sizes, discovered the output JSON contained nonsensical s
 
 ### Root Cause
 
-The prompt template asked the LLM to return JSON matching a schema, but didn't explicitly provide the actual `start_sentence` and `end_sentence` values:
-
-```python
-# BUGGY PROMPT
-USER_PROMPT_TEMPLATE = """
-Extract book citations and return ONLY JSON that matches this schema:
-{
-  "chunk_index": int,
-  "start_sentence": int,  # LLM makes this up!
-  "end_sentence": int,    # LLM makes this up!
-  "citations": [...]
-}
-"""
-```
-
-The LLM saw the schema but had no guidance on what values to use, so it hallucinated plausible-looking numbers.
+The prompt previously asked the LLM to echo `chunk_index`, `start_sentence`, and `end_sentence`. When those values were missing or unclear, the model hallucinated metadata.
 
 ### Impact
 
 **Severity**: Medium (data quality issue, not performance)
-- Output metadata incorrect and unusable
-- Unable to accurately track which sentences were processed
-- Debugging and validation impossible
+- Output metadata could be incorrect or unusable
+- Mapping citations back to source sentences became unreliable
 
 ### Solution
 
-Updated prompt to explicitly provide the values:
-
-```python
-# FIXED PROMPT
-USER_PROMPT_TEMPLATE = """
-You are analyzing part {{chunk_index}} of the book "{{book_title}}".
-This chunk contains sentences {{start_sentence}} through {{end_sentence}}.
-
-Extract book citations and return ONLY JSON that matches this schema:
-{
-  "chunk_index": {{chunk_index}},          # Explicit value
-  "start_sentence": {{start_sentence}},    # Explicit value
-  "end_sentence": {{end_sentence}},        # Explicit value
-  "citations": [...]
-}
-"""
-```
-
-Updated formatting function to substitute all placeholders:
-
-```python
-def format_user_prompt(chunk: SentenceChunk, book_title: str) -> str:
-    return (
-        USER_PROMPT_TEMPLATE
-        .replace("{{chunk_index}}", str(chunk.index))
-        .replace("{{start_sentence}}", str(chunk.start_sentence))
-        .replace("{{end_sentence}}", str(chunk.end_sentence))
-        .replace("{{book_title}}", book_title)
-        .replace("{{sentences_block}}", chunk_text(chunk))
-    )
-```
+Stop asking the LLM for metadata. The prompt now only requests a `citations` list, and the caller deterministically injects `chunk_index`, `start_sentence`, and `end_sentence` after parsing the response.
 
 ### Validation
 

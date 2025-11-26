@@ -35,7 +35,12 @@ def test_real_world_cases():
         verbose=True,
         trace_tool=True,
     )
-    prompts = build_prompts(REAL_CASES)
+    prompts = build_prompts(
+        REAL_CASES,
+        source_title="Test Source",
+        source_authors=[],
+        source_description=None,
+    )
     for case, prompt in zip(REAL_CASES, prompts):
         response = agent.chat(prompt)
         print(f"{case['title']} — {case['author']}: {response}")

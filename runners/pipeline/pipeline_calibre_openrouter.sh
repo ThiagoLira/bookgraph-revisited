@@ -36,24 +36,28 @@ if [[ -z "${OPENROUTER_API_KEY:-}" ]]; then
   exit 1
 fi
 
-LIBRARY_DIR="${1:-$HOME/OneDrive/Documents/calibre_goodreads}"
+LIBRARY_DIR="${1:-/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos/calibre_bookgraph/}"
 OUTPUT_DIR="${2:-}"
 
 BASE_URL="${OPENROUTER_BASE_URL:-https://openrouter.ai/api/v1}"
 EXTRACT_MODEL="${EXTRACT_MODEL:-qwen/qwen3-next-80b-a3b-instruct}"
 AGENT_MODEL="${AGENT_MODEL:-qwen/qwen3-next-80b-a3b-instruct}"
 AGENT_MAX_WORKERS="${AGENT_MAX_WORKERS:-5}"
+EXTRACT_CHUNK_SIZE="${EXTRACT_CHUNK_SIZE:-100}"
+EXTRACT_MAX_CONTEXT="${EXTRACT_MAX_CONTEXT:-12288}"
 
 CMD=(
   uv run python "$PROJECT_ROOT/calibre_citations_pipeline.py"
   --extract-base-url "$BASE_URL"
   --extract-api-key "$OPENROUTER_API_KEY"
   --extract-model "$EXTRACT_MODEL"
+  --extract-chunk-size "$EXTRACT_CHUNK_SIZE"
+  --extract-max-context-per-request "$EXTRACT_MAX_CONTEXT"
   --agent-base-url "$BASE_URL"
   --agent-api-key "$OPENROUTER_API_KEY"
   --agent-model "$AGENT_MODEL"
   --agent-max-workers "$AGENT_MAX_WORKERS"
-  --only-goodreads-ids "61535"
+#  --only-goodreads-ids "61535"
 )
 
 if [[ -n "$OUTPUT_DIR" ]]; then

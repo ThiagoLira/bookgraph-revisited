@@ -256,7 +256,12 @@ async def stage_agent_async(
 
         data = json.loads(pre_path.read_text())
         citations = data.get("citations", [])
-        prompts = build_prompts(citations)
+        prompts = build_prompts(
+            citations,
+            source_title=txt.stem,
+            source_authors=[],
+            source_description=None,
+        )
         print(f"[agent] Processing {len(citations)} citations for {txt.name}")
 
         if not citations:

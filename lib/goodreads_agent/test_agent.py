@@ -13,7 +13,7 @@ import argparse
 import json
 import os
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -102,13 +102,27 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def build_prompts(citations: List[Dict[str, str]]) -> List[str]:
+def build_prompts(
+    citations: List[Dict[str, str]],
+    *,
+    source_title: str,
+    source_authors: List[str],
+    source_description: Optional[str] = None,
+) -> List[str]:
     prompts = []
+    source_block = [
+        "These citations come from the following source book:",
+        f"  Title   : {source_title}",
+        f"  Authors : {', '.join(source_authors) if source_authors else '<unknown>'}",
+        f"  Summary : {source_description.strip() if source_description else '<no description provided>'}",
+        "Use this context to disambiguate titles/authors but still validate against Goodreads.",
+    ]
     for citation in citations:
         title = citation.get("title") or ""
         author = citation.get("author") or ""
         lines = [
-            "You are validating bibliography metadata.",
+            "You are validating bibliography metadata for citations extracted from the source book below.",
+            *source_block,
             "Use the Goodreads search tool to check whether the specified book exists.",
             "Return a JSON object describing the matching Goodreads metadata.",
             "You may call only one Goodreads search field at a time: either use the title-only path OR the author-only path, never both in a single call.",
@@ -129,7 +143,12 @@ async def main() -> None:
 
     citations_path = Path(args.citations_json)
     citations = load_citation_pairs(citations_path, args.limit)
-    prompts = build_prompts(citations)
+    prompts = build_prompts(
+        citations,
+        source_title="Test Source",
+        source_authors=[],
+        source_description=None,
+    )
 
     agent = build_agent(
         model=args.model,

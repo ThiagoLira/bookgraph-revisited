@@ -19,6 +19,7 @@ import argparse
 import asyncio
 import json
 import os
+import re
 import sqlite3
 import sys
 import time
@@ -33,7 +34,7 @@ from lib.extract_citations import (
     write_output,
 )
 from preprocess_citations import preprocess as preprocess_citations
-from lib.goodreads_agent.agent import build_agent
+from lib.goodreads_agent.agent import SYSTEM_PROMPT, build_agent
 from lib.goodreads_agent.test_agent import build_prompts
 
 try:
@@ -72,6 +73,7 @@ class CalibreBook:
     txt_path: Path
     epub_path: Optional[Path]
     goodreads_id: str
+    description: Optional[str] = None
 
 
 def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[str]] = None) -> List[CalibreBook]:
@@ -84,17 +86,26 @@ def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[st
     cur = conn.cursor()
     cur.execute(
         """
-        SELECT b.id, b.title, b.author_sort, b.path, d.name, d.format, i.val as goodreads_id
+        SELECT
+            b.id,
+            b.title,
+            b.author_sort,
+            b.path,
+            d.name,
+            d.format,
+            i.val as goodreads_id,
+            c.text as description
         FROM books b
         JOIN identifiers i ON i.book = b.id AND i.type = 'goodreads'
         LEFT JOIN data d ON d.book = b.id
+        LEFT JOIN comments c ON c.book = b.id
         """
     )
     rows = cur.fetchall()
     conn.close()
 
     books: List[CalibreBook] = []
-    for calibre_id, title, author_sort, rel_path, name, fmt, goodreads_id in rows:
+    for calibre_id, title, author_sort, rel_path, name, fmt, goodreads_id, description in rows:
         if not goodreads_id:
             print(f"[calibre] Skipping book {title!r} (Calibre ID {calibre_id}) with no Goodreads ID.")
             continue
@@ -118,6 +129,7 @@ def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[st
                 txt_path=txt_path,
                 epub_path=epub_path if epub_path.exists() else None,
                 goodreads_id=str(goodreads_id),
+                description=(description.strip() if description else None),
             )
         )
     return books
@@ -129,13 +141,15 @@ async def run_extraction(
     base_url: str,
     api_key: str,
     model_id: str,
+    chunk_size: int,
+    max_context: int,
     progress_callback: Optional[ProgressCallback] = None,
 ) -> None:
     config = ExtractionConfig(
         input_path=txt_path,
-        chunk_size=EXTRACT_CHUNK_SIZE,
+        chunk_size=chunk_size,
         max_concurrency=EXTRACT_MAX_CONCURRENCY,
-        max_context_per_request=EXTRACT_MAX_CONTEXT,
+        max_context_per_request=max_context,
         max_completion_tokens=EXTRACT_MAX_COMPLETION,
         base_url=base_url,
         api_key=api_key,
@@ -152,6 +166,8 @@ def stage_extract(
     base_url: str,
     api_key: str,
     model_id: str,
+    chunk_size: int,
+    max_context: int,
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     iterator = progress_iter_items(
@@ -166,7 +182,7 @@ def stage_extract(
             continue
         print(f"[extract] Processing {book.title} -> {out_path}")
         if tqdm is None:
-            asyncio.run(run_extraction(book.txt_path, out_path, base_url, api_key, model_id))
+            asyncio.run(run_extraction(book.txt_path, out_path, base_url, api_key, model_id, chunk_size, max_context))
             continue
         chunk_bar = tqdm(
             desc=f"  chunks for {book.title}",
@@ -188,6 +204,8 @@ def stage_extract(
                     base_url,
                     api_key,
                     model_id,
+                    chunk_size,
+                    max_context,
                     progress_callback=on_chunk_progress,
                 )
             )
@@ -220,6 +238,7 @@ def build_agent_runner(
     api_key: str,
     model_id: str,
     trace_tool: bool,
+    system_prompt: Optional[str] = None,
 ) -> "GoodreadsAgentRunner":
     return build_agent(
         model=model_id,
@@ -229,6 +248,20 @@ def build_agent_runner(
         authors_path="goodreads_data/goodreads_book_authors.json",
         verbose=trace_tool,
         trace_tool=trace_tool,
+        system_prompt=system_prompt,
+    )
+
+
+def format_system_prompt(book: CalibreBook) -> str:
+    desc = book.description.strip() if book.description else "No Calibre description available."
+    return (
+        f"{SYSTEM_PROMPT}\n\n"
+        "SOURCE BOOK CONTEXT\n"
+        f"- Title: {book.title}\n"
+        f"- Authors: {book.author_sort}\n"
+        f"- Goodreads ID: {book.goodreads_id}\n"
+        f"- Calibre description: {desc}\n"
+        "Use this source context to disambiguate citations; never fabricate metadata."
     )
 
 
@@ -287,81 +320,27 @@ async def stage_agent_async(
         raise ValueError("--agent-max-workers must be at least 1.")
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    runners = [build_agent_runner(base_url, api_key, model_id, trace_tool or debug_trace) for _ in range(agent_max_workers)]
-    runner_queue: asyncio.Queue["GoodreadsAgentRunner"] = asyncio.Queue()
-    for idx, runner in enumerate(runners):
-        runner_queue.put_nowait((idx, runner))
-
-    # Per-worker catalogs to avoid SQLite thread issues
-    catalogs = [SQLiteGoodreadsCatalog(trace=trace_tool) for _ in range(agent_max_workers)]
-    catalog_queue: asyncio.Queue[SQLiteGoodreadsCatalog] = asyncio.Queue()
-    for idx, catalog in enumerate(catalogs):
-        catalog_queue.put_nowait((idx, catalog))
 
     # Prefetch source Goodreads metadata for source nodes
     book_ids_needed: Set[str] = {b.goodreads_id for b in books}
     source_goodreads_meta = load_goodreads_metadata(book_ids_needed)
 
-    async def process_single_citation(
-        idx: int,
-        citation: Dict[str, Any],
-        prompt: str,
-    ) -> tuple[int, Optional[Dict[str, Any]]]:
-        runner_idx, runner = await runner_queue.get()
-        catalog_idx, catalog = await catalog_queue.get()
-        if debug_trace:
-            print(f"[trace agent={runner_idx}] citation[{idx}] prompt:\n{prompt}\n{'-' * 40}")
-        try:
-            start = time.perf_counter()
-            response = await runner.query(prompt)
-        finally:
-            runner_queue.put_nowait((runner_idx, runner))
-
-        try:
-            response_str = response.strip()
-            if response_str.startswith("<tool_call>"):
-                try:
-                    tool_payload = json.loads(response_str.split(">", 1)[1].strip())
-                    if tool_payload.get("name") == "goodreads_book_lookup":
-                        args = tool_payload.get("arguments", {})
-                        if debug_trace:
-                            print(f"[trace agent={runner_idx}] citation[{idx}] tool_call args: {args}")
-                        matches = catalog.find_books(
-                            title=args.get("title"),
-                            author=args.get("author"),
-                            limit=5,
-                        )
-                        if matches:
-                            response = json.dumps(
-                                {"result": "FOUND", "metadata": matches[0]},
-                                ensure_ascii=False,
-                            )
-                        else:
-                            response = json.dumps(
-                                {"result": "NOT_FOUND", "metadata": {}},
-                                ensure_ascii=False,
-                            )
-                except Exception as exc:
-                    print(f"[agent {runner_idx}] Warning: failed to interpret tool call {response_str}: {exc}")
-        finally:
-            catalog_queue.put_nowait((catalog_idx, catalog))
-
-        elapsed = time.perf_counter() - start
-        if trace_tool or debug_trace:
-            title = citation.get("title") or citation.get("author") or "unknown citation"
-            preview = response[:120] + ("..." if len(response) > 120 else "")
-            print(f"[agent {runner_idx}] Completed '{title}' in {elapsed:.3f}s -> {preview}")
-
-        try:
-            payload = json.loads(response)
-        except Exception as exc:
-            print(f"[agent {runner_idx}] Warning: failed to parse response {response}: {exc}")
-            return idx, None
-
-        record = {"citation": citation, "agent_response": payload}
-        return idx, record
-
     for book in progress_iter_items(books, desc="Stage 3/3: Goodreads agent", unit="book"):
+        system_prompt = format_system_prompt(book)
+        runners = [
+            build_agent_runner(base_url, api_key, model_id, trace_tool or debug_trace, system_prompt=system_prompt)
+            for _ in range(agent_max_workers)
+        ]
+        runner_queue: asyncio.Queue["GoodreadsAgentRunner"] = asyncio.Queue()
+        for idx, runner in enumerate(runners):
+            runner_queue.put_nowait((idx, runner))
+
+        # Per-worker catalogs to avoid SQLite thread issues
+        catalogs = [SQLiteGoodreadsCatalog(trace=trace_tool) for _ in range(agent_max_workers)]
+        catalog_queue: asyncio.Queue[SQLiteGoodreadsCatalog] = asyncio.Queue()
+        for idx, catalog in enumerate(catalogs):
+            catalog_queue.put_nowait((idx, catalog))
+
         pre_path = pre_dir / f"{book.goodreads_id}.json"
         final_path = output_dir / f"{book.goodreads_id}.json"
         if final_path.exists():
@@ -373,7 +352,12 @@ async def stage_agent_async(
 
         data = json.loads(pre_path.read_text(encoding="utf-8"))
         citations = data.get("citations", [])
-        prompts = build_prompts(citations)
+        prompts = build_prompts(
+            citations,
+            source_title=book.title,
+            source_authors=[book.author_sort],
+            source_description=book.description,
+        )
         print(f"[agent] Processing {len(citations)} citations for {book.title}")
 
         if not citations:
@@ -410,12 +394,93 @@ async def stage_agent_async(
                 leave=False,
             )
 
+        def _extract_json_snippet(text: str) -> Optional[Dict[str, Any]]:
+            text = text.strip()
+            if not text:
+                return None
+            try:
+                return json.loads(text)
+            except Exception:
+                pass
+            fence = re.search(r"```json\s*(\{.*?\})\s*```", text, flags=re.DOTALL)
+            if fence:
+                snippet = fence.group(1).strip()
+                try:
+                    return json.loads(snippet)
+                except Exception:
+                    pass
+            brace = re.search(r"(\{.*\})", text, flags=re.DOTALL)
+            if brace:
+                snippet = brace.group(1)
+                try:
+                    return json.loads(snippet)
+                except Exception:
+                    pass
+            return None
+
+        async def process_single_citation(
+            idx: int,
+            citation: Dict[str, Any],
+            prompt: str,
+        ) -> tuple[int, Optional[Dict[str, Any]]]:
+            runner_idx, runner = await runner_queue.get()
+            catalog_idx, catalog = await catalog_queue.get()
+            if debug_trace:
+                print(f"[trace agent={runner_idx}] citation[{idx}] prompt:\n{prompt}\n{'-' * 40}")
+            try:
+                start = time.perf_counter()
+                response = await runner.query(prompt)
+            finally:
+                runner_queue.put_nowait((runner_idx, runner))
+
+            response_str = response.strip()
+            if response_str.startswith("<tool_call>"):
+                tool_body = response_str.split(">", 1)[1].strip() if ">" in response_str else response_str
+                tool_payload = _extract_json_snippet(tool_body)
+                if tool_payload and isinstance(tool_payload, dict) and tool_payload.get("name") == "goodreads_book_lookup":
+                    args = tool_payload.get("arguments", {})
+                    if debug_trace:
+                        print(f"[trace agent={runner_idx}] citation[{idx}] tool_call args: {args}")
+                    matches = catalog.find_books(
+                        title=args.get("title"),
+                        author=args.get("author"),
+                        limit=5,
+                    )
+                    if matches:
+                        response = json.dumps({"result": "FOUND", "metadata": matches[0]}, ensure_ascii=False)
+                    else:
+                        response = json.dumps({"result": "NOT_FOUND", "metadata": {}}, ensure_ascii=False)
+                else:
+                    # Not a valid tool payload; try to salvage JSON from the full response.
+                    recovered = _extract_json_snippet(response_str)
+                    if recovered is not None:
+                        response = json.dumps(recovered, ensure_ascii=False)
+                    else:
+                        print(f"[agent {runner_idx}] Warning: failed to interpret tool call response; skipping citation {idx}")
+                        catalog_queue.put_nowait((catalog_idx, catalog))
+                        return idx, None
+            catalog_queue.put_nowait((catalog_idx, catalog))
+
+            elapsed = time.perf_counter() - start
+            if trace_tool or debug_trace:
+                title = citation.get("title") or citation.get("author") or "unknown citation"
+                preview = response[:120] + ("..." if len(response) > 120 else "")
+                print(f"[agent {runner_idx}] Completed '{title}' in {elapsed:.3f}s -> {preview}")
+
+            payload = _extract_json_snippet(response)
+            if payload is None:
+                print(f"[agent {runner_idx}] Warning: failed to parse response {response}")
+                return idx, None
+
+            record = {"citation": citation, "agent_response": payload}
+            return idx, record
+
+        tasks = [
+            asyncio.create_task(process_single_citation(idx, citation, prompt))
+            for idx, (citation, prompt) in enumerate(zip(citations, prompts))
+        ]
+        results: List[Optional[Dict[str, Any]]] = [None] * len(tasks)
         try:
-            tasks = [
-                asyncio.create_task(process_single_citation(idx, citation, prompt))
-                for idx, (citation, prompt) in enumerate(zip(citations, prompts))
-            ]
-            results: List[Optional[Dict[str, Any]]] = [None] * len(tasks)
             for task in asyncio.as_completed(tasks):
                 idx, record = await task
                 if record is not None:
@@ -438,6 +503,7 @@ async def stage_agent_async(
             "authors": source_meta.get("author_names_resolved") or [book.author_sort],
             "goodreads_id": book.goodreads_id,
             "author_ids": source_author_ids,
+            "description": book.description,
             "goodreads": {
                 "book_id": book.goodreads_id,
                 "author_ids": source_author_ids,
@@ -450,6 +516,7 @@ async def stage_agent_async(
                 "path": str(book.path),
                 "txt_path": str(book.txt_path),
                 "epub_path": str(book.epub_path) if book.epub_path else None,
+                "description": book.description,
             },
         }
 
@@ -551,6 +618,18 @@ def parse_args() -> argparse.Namespace:
         help="Model identifier/tokenizer to use for extraction.",
     )
     parser.add_argument(
+        "--extract-chunk-size",
+        type=int,
+        default=EXTRACT_CHUNK_SIZE,
+        help="Sentences per chunk for extraction stage.",
+    )
+    parser.add_argument(
+        "--extract-max-context-per-request",
+        type=int,
+        default=EXTRACT_MAX_CONTEXT,
+        help="Total context window per extraction request (input + output).",
+    )
+    parser.add_argument(
         "--agent-model",
         default=AGENT_MODEL_ID,
         help="Model identifier to use for the Goodreads metadata agent.",
@@ -600,7 +679,15 @@ def main() -> None:
     pre_dir = output_base / "preprocessed_extracted_citations"
     final_dir = output_base / "final_citations_metadata_goodreads"
 
-    stage_extract(books, raw_dir, args.extract_base_url, args.extract_api_key, args.extract_model)
+    stage_extract(
+        books,
+        raw_dir,
+        args.extract_base_url,
+        args.extract_api_key,
+        args.extract_model,
+        args.extract_chunk_size,
+        args.extract_max_context_per_request,
+    )
     stage_preprocess(raw_dir, pre_dir, books)
     stage_agent(
         books,

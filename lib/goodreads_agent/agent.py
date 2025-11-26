@@ -109,7 +109,8 @@ SYSTEM_PROMPT = (
     "('Skinner') or full name without dots ('Burrhus Skinner') if known. Dots confuse the index.\n\n"
     "### OUTPUT FORMAT\n"
     "Return a JSON object describing the best match (using BookMetadata or AuthorMetadata fields). "
-    "If absolutely no match is found after trying simplified variations, return {}."
+    "If absolutely no match is found after trying simplified variations, return {}.\n"
+    "Output STRICTLY as tool calls or raw JSON. Do not include explanations or prose."
 )
 
 
@@ -228,6 +229,7 @@ def build_agent(
     authors_path: str,
     verbose: bool,
     trace_tool: bool = False,
+    system_prompt: Optional[str] = None,
 ) -> GoodreadsAgentRunner:
     """Construct a function-calling agent with our Goodreads lookup tool."""
     llm = build_llm(model=model, api_key=api_key, base_url=base_url)
@@ -250,10 +252,11 @@ def build_agent(
         description="Use this when you only have the author name and must disambiguate.",
         trace=trace_tool,
     )
+    prompt = system_prompt or SYSTEM_PROMPT
     agent = FunctionAgent(
         name="goodreads_validator",
         description="Validates bibliography entries with Goodreads metadata.",
-        system_prompt=SYSTEM_PROMPT,
+        system_prompt=prompt,
         tools=[book_tool, author_tool],
         llm=llm,
         verbose=verbose,

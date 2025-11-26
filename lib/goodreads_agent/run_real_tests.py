@@ -97,7 +97,12 @@ def main() -> None:
         verbose=args.verbose,
         trace_tool=args.trace_tool,
     )
-    prompts = build_prompts(REAL_CASES)
+    prompts = build_prompts(
+        REAL_CASES,
+        source_title="Test Source",
+        source_authors=[],
+        source_description=None,
+    )
     results = []
     for case, prompt in zip(REAL_CASES, prompts):
         response = agent.chat(prompt)

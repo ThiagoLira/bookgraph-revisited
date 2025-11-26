@@ -25,8 +25,9 @@ class DummyTokenizer:
 
     def encode(self, text: str) -> DummyEncoding:
         base_cost = 4
-        if "Book excerpt:\n" in text:
-            excerpt = text.split("Book excerpt:\n", 1)[1]
+        marker = "===== BEGIN BOOK EXCERPT ====="
+        if marker in text:
+            excerpt = text.split(marker, 1)[1]
         else:
             excerpt = text
         lines = [line for line in excerpt.splitlines() if line.strip()]
@@ -47,14 +48,17 @@ class BuildChunksTests(unittest.TestCase):
 
     def test_chunks_cover_sample_without_exceeding_token_limit(self) -> None:
         sample_sentences = self.sentences[:30]
-        max_input_tokens = 12
+        available_input_tokens = 12
+        max_completion_tokens = 8
+        max_context_per_request = available_input_tokens + max_completion_tokens
         chunks = list(
             build_chunks(
                 sample_sentences,
                 chunk_size=0,
                 tokenizer=self.tokenizer,
                 system_prompt=self.system_prompt,
-                max_input_tokens=max_input_tokens,
+                max_context_per_request=max_context_per_request,
+                max_completion_tokens=max_completion_tokens,
                 book_title=self.book_title,
             )
         )
@@ -66,7 +70,7 @@ class BuildChunksTests(unittest.TestCase):
             token_count = estimate_prompt_tokens(
                 self.tokenizer, self.system_prompt, prompt
             )
-            self.assertLessEqual(token_count, max_input_tokens)
+            self.assertLessEqual(token_count, available_input_tokens)
             self.assertEqual(chunk.start_sentence, processed + 1)
             processed = chunk.end_sentence
 
@@ -74,14 +78,17 @@ class BuildChunksTests(unittest.TestCase):
 
     def test_chunks_trim_sentences_when_needed(self) -> None:
         sample_sentences = self.sentences[:5]
-        max_input_tokens = 8
+        available_input_tokens = 8
+        max_completion_tokens = 4
+        max_context_per_request = available_input_tokens + max_completion_tokens
         chunks = list(
             build_chunks(
                 sample_sentences,
                 chunk_size=10,
                 tokenizer=self.tokenizer,
                 system_prompt=self.system_prompt,
-                max_input_tokens=max_input_tokens,
+                max_context_per_request=max_context_per_request,
+                max_completion_tokens=max_completion_tokens,
                 book_title=self.book_title,
             )
         )
@@ -133,9 +140,6 @@ class CallModelTests(unittest.IsolatedAsyncioTestCase):
         )
         completion_content = json.dumps(
             {
-                "chunk_index": 0,
-                "start_sentence": 1,
-                "end_sentence": 2,
                 "citations": [
                     {"title": "Justice", "author": "Michael Sandel", "note": None}
                 ],
@@ -154,7 +158,7 @@ class CallModelTests(unittest.IsolatedAsyncioTestCase):
             semaphore=semaphore,
             model="dummy",
             max_completion_tokens=32,
-            max_input_tokens=20,
+            max_context_per_request=40,
         )
 
         self.assertIsNone(failure)
