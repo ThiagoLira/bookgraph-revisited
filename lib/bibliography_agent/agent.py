@@ -112,14 +112,13 @@ SYSTEM_PROMPT = (
     "### AUTHOR-ONLY CITATIONS WORKFLOW (CRITICAL)\n"
     "1) Call `wikipedia_person_lookup` first to disambiguate the person by name and role. "
     "Use categories/infoboxes to judge whether this matches the source book's domain. "
-    "2) If the person is an author (writer/novelist/poet/journalist/screenwriter) OR clearly "
-    "fits the source context (e.g., scientist for a science book), then call `goodreads_author_lookup` "
-    "to retrieve an author_id. If Goodreads doesn't have the person but Wikipedia does, you may still "
-    "return a result with Wikipedia metadata only.\n"
+    "2) If a good Wikipedia match is found, then call `goodreads_author_lookup` to attach an author_id. "
+    "If Goodreads has no match, return Wikipedia metadata alone. If Wikipedia has no satisfactory match, "
+    "fall back to Goodreads author lookup after exhausting Wikipedia.\n"
     "3) If multiple people share the name, pick the one whose roles/categories align with the source book; "
     "otherwise return {}.\n"
-    "4) Output JSON should include Wikipedia metadata when used (title, page_id, categories/infobox hints), "
-    "and include Goodreads author_id when available. Do not include prose.\n\n"
+    "4) Output JSON should include Wikipedia metadata (title, page_id, categories/infobox hints) and "
+    "Goodreads author_id when available. Do not include prose.\n\n"
     "### TOOL USAGE PROTOCOL (CRITICAL)\n"
     "1. SINGLE FIELD ONLY: The `goodreads_book_lookup` tool fails if you provide both "
     "title and author. You must call it with title='...' (and author=None) OR "
@@ -255,6 +254,7 @@ class GoodreadsAgentRunner:
         wiki = SQLiteWikiPeopleIndex(
             db_path=self.wiki_people_path, trace=self.verbose)
         wiki_matches = wiki.find_people(author, limit=3)
+        best_wiki = wiki_matches[0] if wiki_matches else None
         gr_catalog = GoodreadsAuthorCatalog(authors_path=self.authors_path)
         gr_matches = gr_catalog.find_authors(author, limit=3)
         author_id = gr_matches[0]["author_id"] if gr_matches else None
@@ -262,6 +262,8 @@ class GoodreadsAgentRunner:
             "author": author,
             "author_id": author_id,
             "wikipedia_matches": wiki_matches,
+            "wikipedia_match": best_wiki,
+            "wikipedia_page_id": best_wiki.get("page_id") if best_wiki else None,
             "goodreads_matches": gr_matches,
         }
         return json.dumps(payload, ensure_ascii=False)

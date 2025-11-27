@@ -294,10 +294,10 @@ def load_goodreads_metadata(book_ids: Set[str]) -> Dict[str, Dict[str, Any]]:
     return result
 
 
-def pick_match_type(payload: Dict[str, Any]) -> Tuple[str, Optional[str], List[str]]:
+def pick_match_type(payload: Dict[str, Any]) -> Tuple[str, Optional[str], List[str], Optional[Dict[str, Any]]]:
     """
-    Decide whether a match is a book or author and return:
-      (target_type, book_id, author_ids)
+    Decide whether a match is a book, author, or person and return:
+      (target_type, book_id, author_ids, wiki_person)
     """
     book_id = payload.get("book_id") or payload.get("id") or None
     author_ids = []
@@ -305,7 +305,19 @@ def pick_match_type(payload: Dict[str, Any]) -> Tuple[str, Optional[str], List[s
         author_ids = [str(a) for a in payload["author_ids"] if a]
     elif "author_id" in payload and payload["author_id"]:
         author_ids = [str(payload["author_id"])]
-    return ("book", str(book_id), author_ids) if book_id else ("author", None, author_ids)
+    wiki_match = payload.get("wikipedia_match") or {}
+    wiki_page_id = payload.get("wikipedia_page_id") or wiki_match.get("page_id")
+    wiki_title = wiki_match.get("title") or payload.get("wikipedia_title")
+    wiki_person = None
+    if wiki_page_id:
+        wiki_person = {"wikipedia_page_id": wiki_page_id, "wikipedia_title": wiki_title}
+    if book_id:
+        return ("book", str(book_id), author_ids, wiki_person)
+    if author_ids:
+        return ("author", None, author_ids, wiki_person)
+    if wiki_person:
+        return ("person", None, [], wiki_person)
+    return ("unknown", None, [], None)
 
 
 async def stage_agent_async(
@@ -560,18 +572,20 @@ async def stage_agent_async(
                 else:
                     metadata = agent_response
 
-            target_type, target_book_id, target_author_ids = pick_match_type(
+            target_type, target_book_id, target_author_ids, wiki_person = pick_match_type(
                 metadata)
-            if not target_book_id and not target_author_ids:
-                continue  # drop citations without a validated Goodreads target
+            if target_type == "unknown":
+                continue  # drop citations without any validated target
             output_payload["citations"].append(
                 {
                     "raw": citation,
                     "goodreads_match": metadata,
+                    "wikipedia_match": metadata.get("wikipedia_match"),
                     "edge": {
                         "target_type": target_type,
                         "target_book_id": target_book_id,
                         "target_author_ids": target_author_ids,
+                        "target_person": wiki_person,
                     },
                 }
             )
