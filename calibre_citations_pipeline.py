@@ -35,7 +35,7 @@ from lib.extract_citations import (
 )
 from preprocess_citations import preprocess as preprocess_citations
 from lib.bibliography_agent.agent import SYSTEM_PROMPT, build_agent
-from lib.bibliography_agent.test_agent import build_prompts
+from lib.bibliography_agent.test_bibliography_agent import build_prompts
 
 try:
     from tqdm import tqdm  # type: ignore
