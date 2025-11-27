@@ -331,7 +331,7 @@ async def stage_agent_async(
     agent_max_workers: int,
     debug_trace: bool = False,
 ) -> None:
-    from lib.goodreads_agent.goodreads_tool import SQLiteGoodreadsCatalog
+    from lib.bibliography_agent.bibliography_tool import SQLiteGoodreadsCatalog
 
     books = list(books)
 
