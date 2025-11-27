@@ -248,8 +248,6 @@ class GoodreadsAgentRunner:
                 author = line.split(":", 1)[1].strip()
         if not author or author.lower() in {"<not provided>", "unknown", "null"}:
             return None
-        if title and title.lower() not in {"<not provided>", "unknown", "null", ""}:
-            return None
 
         def _score_name(name: str, target: str) -> int:
             n = name.strip().lower()
