@@ -231,8 +231,7 @@
         booksByAuthor.get(aid).push(b);
       }
 
-      // Radial layout for authors, inner radial layout for each author's books (no force physics).
-      // Precompute ring sizes per author to size spacing.
+      // Grid layout for authors; books orbit their author (no force physics).
       const authorLayouts = authors.map(a => {
         const books = booksByAuthor.get(a.meta.author_id || a.id.replace("author:", "")) || [];
         const ring = Math.min(200, 40 + books.length * 12);
@@ -240,21 +239,20 @@
         return { author: a, books, ring, hull };
       });
       const nAuthors = Math.max(authorLayouts.length, 1);
-      const baseRadius = Math.min(width, height) * 0.8;
       const maxHull = authorLayouts.reduce((m, a) => Math.max(m, a.hull), 30);
-      const minAngle = Math.PI / Math.max(nAuthors, 2);
-      const requiredRadius = (maxHull * 1.6) / Math.max(Math.sin(minAngle), 0.35) + 60;
-      const authorRadius = Math.max(baseRadius, requiredRadius);
+      const cellSize = maxHull * 2 + 80;
+      const cols = Math.ceil(Math.sqrt(nAuthors));
+      const rows = Math.ceil(nAuthors / cols);
       const centerX = width / 2;
       const centerY = height / 2;
-      const angleStep = (2 * Math.PI) / nAuthors;
 
       const positions = new Map();
       authorLayouts.forEach((layout, idx) => {
         const { author: a, books, ring } = layout;
-        const angle = idx * angleStep;
-        const x = centerX + authorRadius * Math.cos(angle);
-        const y = centerY + authorRadius * Math.sin(angle);
+        const col = idx % cols;
+        const row = Math.floor(idx / cols);
+        const x = centerX + (col - (cols - 1) / 2) * cellSize;
+        const y = centerY + (row - (rows - 1) / 2) * cellSize;
         positions.set(a.id, { x, y });
         const bookAngleStep = (2 * Math.PI) / Math.max(books.length, 1);
         books.forEach((b, j) => {
@@ -265,11 +263,17 @@
           });
         });
       });
-      // Place any unowned books in a small inner ring.
+      // Place any unowned books in a compact grid near center.
       const unownedBooks = graph.nodes.filter(n => n.type === "book" && !positions.has(n.id));
+      const freeCols = Math.ceil(Math.sqrt(Math.max(unownedBooks.length, 1)));
+      const freeCell = 120;
       unownedBooks.forEach((b, idx) => {
-        const ang = idx * ((2 * Math.PI) / Math.max(unownedBooks.length, 1));
-        positions.set(b.id, { x: centerX + 120 * Math.cos(ang), y: centerY + 120 * Math.sin(ang) });
+        const c = idx % freeCols;
+        const r = Math.floor(idx / freeCols);
+        positions.set(b.id, {
+          x: centerX + (c - (freeCols - 1) / 2) * freeCell,
+          y: centerY + (r - (freeCols - 1) / 2) * freeCell,
+        });
       });
 
       // Layers

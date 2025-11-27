@@ -34,8 +34,8 @@ from lib.extract_citations import (
     write_output,
 )
 from preprocess_citations import preprocess as preprocess_citations
-from lib.goodreads_agent.agent import SYSTEM_PROMPT, build_agent
-from lib.goodreads_agent.test_agent import build_prompts
+from lib.bibliography_agent.agent import SYSTEM_PROMPT, build_agent
+from lib.bibliography_agent.test_agent import build_prompts
 
 try:
     from tqdm import tqdm  # type: ignore
@@ -107,7 +107,8 @@ def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[st
     books: List[CalibreBook] = []
     for calibre_id, title, author_sort, rel_path, name, fmt, goodreads_id, description in rows:
         if not goodreads_id:
-            print(f"[calibre] Skipping book {title!r} (Calibre ID {calibre_id}) with no Goodreads ID.")
+            print(f"[calibre] Skipping book {
+                  title!r} (Calibre ID {calibre_id}) with no Goodreads ID.")
             continue
         if allowed_goodreads_ids is not None and str(goodreads_id) not in allowed_goodreads_ids:
             continue
@@ -118,7 +119,8 @@ def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[st
         txt_path = book_dir / f"{name}.txt"
         epub_path = book_dir / f"{name}.epub"
         if not txt_path.exists():
-            print(f"[calibre] Skipping Goodreads {goodreads_id} ({title}) because TXT not found at {txt_path}")
+            print(f"[calibre] Skipping Goodreads {goodreads_id} ({
+                  title}) because TXT not found at {txt_path}")
             continue
         books.append(
             CalibreBook(
@@ -182,7 +184,8 @@ def stage_extract(
             continue
         print(f"[extract] Processing {book.title} -> {out_path}")
         if tqdm is None:
-            asyncio.run(run_extraction(book.txt_path, out_path, base_url, api_key, model_id, chunk_size, max_context))
+            asyncio.run(run_extraction(book.txt_path, out_path,
+                        base_url, api_key, model_id, chunk_size, max_context))
             continue
         chunk_bar = tqdm(
             desc=f"  chunks for {book.title}",
@@ -230,7 +233,8 @@ def stage_preprocess(raw_dir: Path, output_dir: Path, books: Iterable[CalibreBoo
             source_title=book.title,
             source_authors=[book.author_sort],
         )
-        pre_path.write_text(json.dumps(processed, indent=2, ensure_ascii=False), encoding="utf-8")
+        pre_path.write_text(json.dumps(processed, indent=2,
+                            ensure_ascii=False), encoding="utf-8")
 
 
 def build_agent_runner(
@@ -239,6 +243,7 @@ def build_agent_runner(
     model_id: str,
     trace_tool: bool,
     system_prompt: Optional[str] = None,
+    wiki_people_path: str = "goodreads_data/wiki_people_index.db",
 ) -> "GoodreadsAgentRunner":
     return build_agent(
         model=model_id,
@@ -246,6 +251,7 @@ def build_agent_runner(
         base_url=base_url,
         books_path="goodreads_data/goodreads_books.json",
         authors_path="goodreads_data/goodreads_book_authors.json",
+        wiki_people_path=wiki_people_path,
         verbose=trace_tool,
         trace_tool=trace_tool,
         system_prompt=system_prompt,
@@ -278,7 +284,8 @@ def load_goodreads_metadata(book_ids: Set[str]) -> Dict[str, Dict[str, Any]]:
                 row = json.loads(line)
             except json.JSONDecodeError:
                 continue
-            bid = str(row.get("book_id")) if row.get("book_id") is not None else None
+            bid = str(row.get("book_id")) if row.get(
+                "book_id") is not None else None
             if bid and bid in remaining:
                 result[bid] = row
                 remaining.discard(bid)
@@ -328,7 +335,8 @@ async def stage_agent_async(
     for book in progress_iter_items(books, desc="Stage 3/3: Goodreads agent", unit="book"):
         system_prompt = format_system_prompt(book)
         runners = [
-            build_agent_runner(base_url, api_key, model_id, trace_tool or debug_trace, system_prompt=system_prompt)
+            build_agent_runner(base_url, api_key, model_id,
+                               trace_tool or debug_trace, system_prompt=system_prompt)
             for _ in range(agent_max_workers)
         ]
         runner_queue: asyncio.Queue["GoodreadsAgentRunner"] = asyncio.Queue()
@@ -336,7 +344,8 @@ async def stage_agent_async(
             runner_queue.put_nowait((idx, runner))
 
         # Per-worker catalogs to avoid SQLite thread issues
-        catalogs = [SQLiteGoodreadsCatalog(trace=trace_tool) for _ in range(agent_max_workers)]
+        catalogs = [SQLiteGoodreadsCatalog(
+            trace=trace_tool) for _ in range(agent_max_workers)]
         catalog_queue: asyncio.Queue[SQLiteGoodreadsCatalog] = asyncio.Queue()
         for idx, catalog in enumerate(catalogs):
             catalog_queue.put_nowait((idx, catalog))
@@ -347,7 +356,8 @@ async def stage_agent_async(
             print(f"[agent] Skip {book.title} (cached).")
             continue
         if not pre_path.exists():
-            print(f"[agent] Missing preprocessed JSON for {book.title}, skipping.")
+            print(f"[agent] Missing preprocessed JSON for {
+                  book.title}, skipping.")
             continue
 
         data = json.loads(pre_path.read_text(encoding="utf-8"))
@@ -358,7 +368,8 @@ async def stage_agent_async(
             source_authors=[book.author_sort],
             source_description=book.description,
         )
-        print(f"[agent] Processing {len(citations)} citations for {book.title}")
+        print(f"[agent] Processing {
+              len(citations)} citations for {book.title}")
 
         if not citations:
             final_path.write_text(
@@ -402,7 +413,8 @@ async def stage_agent_async(
                 return json.loads(text)
             except Exception:
                 pass
-            fence = re.search(r"```json\s*(\{.*?\})\s*```", text, flags=re.DOTALL)
+            fence = re.search(
+                r"```json\s*(\{.*?\})\s*```", text, flags=re.DOTALL)
             if fence:
                 snippet = fence.group(1).strip()
                 try:
@@ -426,7 +438,8 @@ async def stage_agent_async(
             runner_idx, runner = await runner_queue.get()
             catalog_idx, catalog = await catalog_queue.get()
             if debug_trace:
-                print(f"[trace agent={runner_idx}] citation[{idx}] prompt:\n{prompt}\n{'-' * 40}")
+                print(f"[trace agent={runner_idx}] citation[{
+                      idx}] prompt:\n{prompt}\n{'-' * 40}")
             try:
                 start = time.perf_counter()
                 response = await runner.query(prompt)
@@ -435,41 +448,50 @@ async def stage_agent_async(
 
             response_str = response.strip()
             if response_str.startswith("<tool_call>"):
-                tool_body = response_str.split(">", 1)[1].strip() if ">" in response_str else response_str
+                tool_body = response_str.split(">", 1)[1].strip(
+                ) if ">" in response_str else response_str
                 tool_payload = _extract_json_snippet(tool_body)
                 if tool_payload and isinstance(tool_payload, dict) and tool_payload.get("name") == "goodreads_book_lookup":
                     args = tool_payload.get("arguments", {})
                     if debug_trace:
-                        print(f"[trace agent={runner_idx}] citation[{idx}] tool_call args: {args}")
+                        print(f"[trace agent={runner_idx}] citation[{
+                              idx}] tool_call args: {args}")
                     matches = catalog.find_books(
                         title=args.get("title"),
                         author=args.get("author"),
                         limit=5,
                     )
                     if matches:
-                        response = json.dumps({"result": "FOUND", "metadata": matches[0]}, ensure_ascii=False)
+                        response = json.dumps(
+                            {"result": "FOUND", "metadata": matches[0]}, ensure_ascii=False)
                     else:
-                        response = json.dumps({"result": "NOT_FOUND", "metadata": {}}, ensure_ascii=False)
+                        response = json.dumps(
+                            {"result": "NOT_FOUND", "metadata": {}}, ensure_ascii=False)
                 else:
                     # Not a valid tool payload; try to salvage JSON from the full response.
                     recovered = _extract_json_snippet(response_str)
                     if recovered is not None:
                         response = json.dumps(recovered, ensure_ascii=False)
                     else:
-                        print(f"[agent {runner_idx}] Warning: failed to interpret tool call response; skipping citation {idx}")
+                        print(f"[agent {
+                              runner_idx}] Warning: failed to interpret tool call response; skipping citation {idx}")
                         catalog_queue.put_nowait((catalog_idx, catalog))
                         return idx, None
             catalog_queue.put_nowait((catalog_idx, catalog))
 
             elapsed = time.perf_counter() - start
             if trace_tool or debug_trace:
-                title = citation.get("title") or citation.get("author") or "unknown citation"
-                preview = response[:120] + ("..." if len(response) > 120 else "")
-                print(f"[agent {runner_idx}] Completed '{title}' in {elapsed:.3f}s -> {preview}")
+                title = citation.get("title") or citation.get(
+                    "author") or "unknown citation"
+                preview = response[:120] + \
+                    ("..." if len(response) > 120 else "")
+                print(f"[agent {runner_idx}] Completed '{
+                      title}' in {elapsed:.3f}s -> {preview}")
 
             payload = _extract_json_snippet(response)
             if payload is None:
-                print(f"[agent {runner_idx}] Warning: failed to parse response {response}")
+                print(
+                    f"[agent {runner_idx}] Warning: failed to parse response {response}")
                 return idx, None
 
             record = {"citation": citation, "agent_response": payload}
@@ -495,9 +517,11 @@ async def stage_agent_async(
         source_meta = source_goodreads_meta.get(book.goodreads_id, {})
         source_author_ids = []
         if source_meta.get("authors"):
-            source_author_ids = [str(a.get("author_id")) for a in source_meta.get("authors", []) if a.get("author_id")]
+            source_author_ids = [str(a.get("author_id")) for a in source_meta.get(
+                "authors", []) if a.get("author_id")]
         elif source_meta.get("author_ids"):
-            source_author_ids = [str(a) for a in source_meta.get("author_ids") if a]
+            source_author_ids = [str(a)
+                                 for a in source_meta.get("author_ids") if a]
         source_record = {
             "title": source_meta.get("title") or book.title,
             "authors": source_meta.get("author_names_resolved") or [book.author_sort],
@@ -520,7 +544,8 @@ async def stage_agent_async(
             },
         }
 
-        output_payload: Dict[str, Any] = {"source": source_record, "citations": []}
+        output_payload: Dict[str, Any] = {
+            "source": source_record, "citations": []}
         for record in results:
             if record is None:
                 continue
@@ -535,7 +560,8 @@ async def stage_agent_async(
                 else:
                     metadata = agent_response
 
-            target_type, target_book_id, target_author_ids = pick_match_type(metadata)
+            target_type, target_book_id, target_author_ids = pick_match_type(
+                metadata)
             if not target_book_id and not target_author_ids:
                 continue  # drop citations without a validated Goodreads target
             output_payload["citations"].append(
@@ -550,7 +576,8 @@ async def stage_agent_async(
                 }
             )
 
-        final_path.write_text(json.dumps(output_payload, indent=2, ensure_ascii=False), encoding="utf-8")
+        final_path.write_text(json.dumps(
+            output_payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def stage_agent(
@@ -584,8 +611,10 @@ def derive_output_base(library_dir: Path) -> Path:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Calibre citation processing pipeline.")
-    parser.add_argument("library_dir", type=Path, help="Calibre library directory (contains metadata.db).")
+    parser = argparse.ArgumentParser(
+        description="Calibre citation processing pipeline.")
+    parser.add_argument("library_dir", type=Path,
+                        help="Calibre library directory (contains metadata.db).")
     parser.add_argument(
         "--output-dir",
         type=Path,
@@ -609,7 +638,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--agent-api-key",
-        default=os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENAI_API_KEY") or "",
+        default=os.environ.get("OPENROUTER_API_KEY") or os.environ.get(
+            "OPENAI_API_KEY") or "",
         help="API key for Goodreads agent.",
     )
     parser.add_argument(
@@ -662,12 +692,15 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     if not args.library_dir.exists():
-        raise SystemExit(f"Library directory {args.library_dir} does not exist.")
+        raise SystemExit(f"Library directory {
+                         args.library_dir} does not exist.")
     allowed_ids: Optional[Set[str]] = None
     if args.only_goodreads_ids:
-        allowed_ids = {token.strip() for token in args.only_goodreads_ids.replace(",", " ").split() if token.strip()}
+        allowed_ids = {token.strip() for token in args.only_goodreads_ids.replace(
+            ",", " ").split() if token.strip()}
         if not allowed_ids:
-            print("No valid Goodreads IDs provided to --only-goodreads-ids; processing all eligible books.")
+            print(
+                "No valid Goodreads IDs provided to --only-goodreads-ids; processing all eligible books.")
             allowed_ids = None
     books = load_calibre_books(args.library_dir, allowed_ids)
     if not books:

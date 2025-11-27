@@ -27,9 +27,9 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 if str(REPO_ROOT) not in sys.path:
     sys.path.append(str(REPO_ROOT))
 
-from lib.goodreads_agent.agent import build_agent
-from lib.goodreads_agent.goodreads_tool import SQLiteGoodreadsCatalog
-from lib.goodreads_agent.test_agent import build_prompts
+from lib.bibliography_agent.agent import build_agent
+from lib.bibliography_agent.goodreads_tool import SQLiteGoodreadsCatalog
+from lib.bibliography_agent.test_agent import build_prompts
 
 try:
     from tqdm import tqdm  # type: ignore
@@ -52,6 +52,7 @@ def build_agent_runner(
     api_key: str,
     model_id: str,
     trace_tool: bool,
+    wiki_people_path: str = str(REPO_ROOT / "goodreads_data" / "wiki_people_index.db"),
 ) -> "GoodreadsAgentRunner":
     return build_agent(
         model=model_id,
@@ -59,6 +60,7 @@ def build_agent_runner(
         base_url=base_url,
         books_path=str(REPO_ROOT / "goodreads_data" / "goodreads_books.json"),
         authors_path=str(REPO_ROOT / "goodreads_data" / "goodreads_book_authors.json"),
+        wiki_people_path=wiki_people_path,
         verbose=trace_tool,
         trace_tool=trace_tool,
     )

@@ -23,8 +23,8 @@ from lib.extract_citations import (
     write_output,
 )
 from preprocess_citations import preprocess as preprocess_citations
-from lib.goodreads_agent.agent import build_agent
-from lib.goodreads_agent.test_agent import build_prompts
+from lib.bibliography_agent.agent import build_agent
+from lib.bibliography_agent.test_agent import build_prompts
 
 try:
     from tqdm import tqdm  # type: ignore
@@ -145,6 +145,7 @@ def build_agent_runner(
     api_key: str,
     model_id: str,
     trace_tool: bool,
+    wiki_people_path: str = "goodreads_data/wiki_people_index.db",
 ) -> "GoodreadsAgentRunner":
     return build_agent(
         model=model_id,
@@ -152,6 +153,7 @@ def build_agent_runner(
         base_url=base_url,
         books_path="goodreads_data/goodreads_books.json",
         authors_path="goodreads_data/goodreads_book_authors.json",
+        wiki_people_path=wiki_people_path,
         verbose=trace_tool,
         trace_tool=trace_tool,
     )

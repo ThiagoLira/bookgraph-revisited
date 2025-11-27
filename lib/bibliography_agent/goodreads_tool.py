@@ -18,6 +18,7 @@ if TYPE_CHECKING:  # pragma: no cover
 
 BOOKS_DB_PATH = Path("goodreads_data/books_index.db")
 AUTHORS_PATH = Path("goodreads_data/goodreads_book_authors.json")
+WIKI_PEOPLE_DB_PATH = Path("goodreads_data/wiki_people_index.db")
 BOOK_METADATA_KEYS = {
     "book_id",
     "work_id",
@@ -229,6 +230,108 @@ class GoodreadsAuthorCatalog:
             if len(matches) >= limit:
                 break
         return matches
+
+
+# --- Wikipedia people lookup -------------------------------------------------
+
+
+class SQLiteWikiPeopleIndex:
+    """Search Wikipedia people index built from people_pages.jsonl."""
+
+    def __init__(self, db_path: Path | str = WIKI_PEOPLE_DB_PATH, trace: bool = False) -> None:
+        self.db_path = Path(db_path)
+        self.trace = trace
+        if not self.db_path.exists():
+            raise FileNotFoundError(
+                f"{self.db_path} not found. Build it via scripts/filter_wiki_people.py "
+                "then scripts/build_wiki_people_index.py."
+            )
+        self._conn = sqlite3.connect(self.db_path)
+        self._conn.row_factory = sqlite3.Row
+        if trace:
+            print(f"[wiki_people_tool] Connected to {self.db_path}")
+
+    def _fts_escape(self, text: str) -> str:
+        return text.replace('"', '""')
+
+    def find_people(self, name: str, limit: int = 5) -> List[Dict[str, Any]]:
+        if not name:
+            return []
+        query = f'title : "{self._fts_escape(name)}"'
+        sql = """
+            SELECT title, data
+            FROM people_fts
+            WHERE people_fts MATCH ?
+            ORDER BY rank
+            LIMIT ?
+        """
+        start = time.perf_counter()
+        try:
+            rows = self._conn.execute(sql, (query, limit)).fetchall()
+        except sqlite3.OperationalError as exc:
+            if self.trace:
+                print(f"[wiki_people_tool] FTS query error: {exc}")
+            return []
+        duration = time.perf_counter() - start
+        results: List[Dict[str, Any]] = []
+        for row in rows:
+            try:
+                payload = json.loads(row["data"])
+            except json.JSONDecodeError:
+                continue
+            results.append(
+                {
+                    "title": payload.get("title"),
+                    "page_id": payload.get("page_id"),
+                    "infoboxes": payload.get("infoboxes") or [],
+                    "categories": (payload.get("categories") or [])[:30],
+                }
+            )
+        if self.trace:
+            print(f"[wiki_people_tool] Returned {len(results)} matches in {duration:.3f}s")
+        return results
+
+
+def create_wiki_people_lookup_tool(
+    *,
+    description: Optional[str] = None,
+    trace: bool = False,
+    db_path: Path | str = WIKI_PEOPLE_DB_PATH,
+    catalog: Optional[Any] = None,
+) -> "FunctionTool":
+    try:
+        from llama_index.core.tools import FunctionTool
+    except ImportError as exc:  # pragma: no cover
+        raise ImportError(
+            "llama-index is required to build the Wikipedia people lookup tool. "
+            "Install it via `uv sync` or `pip install llama-index`."
+        ) from exc
+
+    catalog_obj = catalog or SQLiteWikiPeopleIndex(db_path=db_path, trace=trace)
+
+    def lookup_person(name: str, limit: int = 5) -> Dict[str, Any]:
+        norm_limit = min(limit, 20)
+        matches = catalog_obj.find_people(name, norm_limit)
+        if trace:
+            print(
+                "[wiki_people_tool] lookup_person\n",
+                json.dumps(
+                    {"query": name, "matches_found": len(matches), "matches": matches},
+                    indent=2,
+                    ensure_ascii=False,
+                ),
+            )
+        return {"query": {"name": name, "limit": norm_limit}, "matches_found": len(matches), "matches": matches}
+
+    tool_description = description or (
+        "Searches a local Wikipedia people index by name. "
+        "Returns titles, page_ids, infobox roles, and categories to help disambiguate identity."
+    )
+    return FunctionTool.from_defaults(
+        fn=lookup_person,
+        name="wikipedia_person_lookup",
+        description=tool_description,
+    )
 
 
 def create_book_lookup_tool(

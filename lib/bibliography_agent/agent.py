@@ -12,6 +12,15 @@ Environment
 """
 
 from __future__ import annotations
+from bibliography_tool import (
+    BOOKS_DB_PATH,
+    SQLiteGoodreadsCatalog,
+    SQLiteWikiPeopleIndex,
+    GoodreadsAuthorCatalog,
+    create_book_lookup_tool,
+    create_author_lookup_tool,
+    create_wiki_people_lookup_tool,
+)
 
 import argparse
 import asyncio
@@ -34,12 +43,6 @@ CURRENT_DIR = Path(__file__).resolve().parent
 if str(CURRENT_DIR) not in os.sys.path:  # pragma: no cover
     os.sys.path.insert(0, str(CURRENT_DIR))
 
-from goodreads_tool import (
-    BOOKS_DB_PATH,
-    SQLiteGoodreadsCatalog,
-    create_book_lookup_tool,
-    create_author_lookup_tool,
-)
 
 # llama.cpp REST API expects legacy tool message structure where `content` is a string.
 # LlamaIndex recently switched to the new OpenAI Responses schema (object-based),
@@ -66,14 +69,14 @@ except Exception:
     pass
 
 
-
 class BookMetadata(BaseModel):
     type: Literal["book"] = "book"
     title: str = Field(..., description="Book title as listed on Goodreads.")
     title_without_series: Optional[str] = Field(
         None, description="Title stripped of series information when available."
     )
-    authors: List[str] = Field(default_factory=list, description="List of author names.")
+    authors: List[str] = Field(
+        default_factory=list, description="List of author names.")
     publication_year: Optional[int] = None
     publication_month: Optional[int] = None
     publication_day: Optional[int] = None
@@ -89,11 +92,34 @@ class AuthorMetadata(BaseModel):
     author_id: str = Field(..., description="Goodreads author_id.")
     name: str = Field(..., description="Canonical author name.")
     ratings_count: Optional[int] = None
+    wikipedia_page_id: Optional[int] = Field(
+        None, description="Wikipedia page_id when resolved via wikipedia_person_lookup."
+    )
+    wikipedia_title: Optional[str] = Field(
+        None, description="Wikipedia title for the matched person."
+    )
+    wikipedia_infoboxes: List[str] = Field(
+        default_factory=list, description="Infobox roles from Wikipedia."
+    )
+    wikipedia_categories: List[str] = Field(
+        default_factory=list, description="Categories from Wikipedia to help disambiguate domain/role."
+    )
 
 
 SYSTEM_PROMPT = (
-    "You are a strict bibliographic validation engine. Your goal is to find a matching "
-    "Goodreads entry for a given book/author citation using the provided search tools.\n\n"
+    "You are BibliographyAgent. Validate book/author citations using Goodreads IDs and Wikipedia "
+    "person metadata to disambiguate identities.\n\n"
+    "### AUTHOR-ONLY CITATIONS WORKFLOW (CRITICAL)\n"
+    "1) Call `wikipedia_person_lookup` first to disambiguate the person by name and role. "
+    "Use categories/infoboxes to judge whether this matches the source book's domain. "
+    "2) If the person is an author (writer/novelist/poet/journalist/screenwriter) OR clearly "
+    "fits the source context (e.g., scientist for a science book), then call `goodreads_author_lookup` "
+    "to retrieve an author_id. If Goodreads doesn't have the person but Wikipedia does, you may still "
+    "return a result with Wikipedia metadata only.\n"
+    "3) If multiple people share the name, pick the one whose roles/categories align with the source book; "
+    "otherwise return {}.\n"
+    "4) Output JSON should include Wikipedia metadata when used (title, page_id, categories/infobox hints), "
+    "and include Goodreads author_id when available. Do not include prose.\n\n"
     "### TOOL USAGE PROTOCOL (CRITICAL)\n"
     "1. SINGLE FIELD ONLY: The `goodreads_book_lookup` tool fails if you provide both "
     "title and author. You must call it with title='...' (and author=None) OR "
@@ -142,6 +168,8 @@ def build_llm(model: str, api_key: str, base_url: Optional[str]) -> LLM:
 class GoodreadsAgentRunner:
     agent: FunctionAgent
     verbose: bool = False
+    authors_path: Path = Path("goodreads_data/goodreads_book_authors.json")
+    wiki_people_path: Path = Path("goodreads_data/wiki_people_index.db")
 
     @staticmethod
     def _normalize_response(raw: str) -> str:
@@ -164,7 +192,8 @@ class GoodreadsAgentRunner:
         except Exception:
             pass
 
-        fence = re.search(r"```json\s*(\{.*?\})\s*```", cleaned, flags=re.DOTALL)
+        fence = re.search(
+            r"```json\s*(\{.*?\})\s*```", cleaned, flags=re.DOTALL)
         if fence:
             snippet = fence.group(1).strip()
             try:
@@ -189,6 +218,9 @@ class GoodreadsAgentRunner:
         prompt: str,
         chat_history: Optional[Sequence["ChatMessage"]] = None,
     ) -> str:
+        detour = self._maybe_handle_author_only(prompt)
+        if detour is not None:
+            return detour
         if self.verbose:
             print(f"[GoodreadsAgent] Prompt:\n{prompt}\n{'-' * 40}")
         handler = self.agent.run(
@@ -202,8 +234,37 @@ class GoodreadsAgentRunner:
         normalized = self._normalize_response(response)
         if self.verbose:
             print(f"[GoodreadsAgent] Response (raw):\n{response}\n{'-' * 40}")
-            print(f"[GoodreadsAgent] Response (normalized):\n{normalized}\n{'=' * 40}")
+            print(f"[GoodreadsAgent] Response (normalized):\n{
+                  normalized}\n{'=' * 40}")
         return normalized
+
+    def _maybe_handle_author_only(self, prompt: str) -> Optional[str]:
+        title = None
+        author = None
+        for line in prompt.splitlines():
+            if line.lower().startswith("book title"):
+                title = line.split(":", 1)[1].strip().strip('"')
+            if line.lower().startswith("author"):
+                author = line.split(":", 1)[1].strip()
+        if not author or author.lower() in {"<not provided>", "unknown", "null"}:
+            return None
+        if title and title.lower() not in {"<not provided>", "unknown", "null", ""}:
+            return None
+
+        # Author-only path: use Wikipedia people index then Goodreads authors.
+        wiki = SQLiteWikiPeopleIndex(
+            db_path=self.wiki_people_path, trace=self.verbose)
+        wiki_matches = wiki.find_people(author, limit=3)
+        gr_catalog = GoodreadsAuthorCatalog(authors_path=self.authors_path)
+        gr_matches = gr_catalog.find_authors(author, limit=3)
+        author_id = gr_matches[0]["author_id"] if gr_matches else None
+        payload = {
+            "author": author,
+            "author_id": author_id,
+            "wikipedia_matches": wiki_matches,
+            "goodreads_matches": gr_matches,
+        }
+        return json.dumps(payload, ensure_ascii=False)
 
     async def query(
         self,
@@ -227,6 +288,7 @@ def build_agent(
     base_url: Optional[str],
     books_path: str,
     authors_path: str,
+    wiki_people_path: str = "goodreads_data/wiki_people_index.db",
     verbose: bool,
     trace_tool: bool = False,
     system_prompt: Optional[str] = None,
@@ -252,23 +314,34 @@ def build_agent(
         description="Use this when you only have the author name and must disambiguate.",
         trace=trace_tool,
     )
+    wiki_people_tool = create_wiki_people_lookup_tool(
+        description="Look up people on Wikipedia by name to disambiguate identities and roles.",
+        db_path=wiki_people_path,
+        trace=trace_tool,
+    )
     prompt = system_prompt or SYSTEM_PROMPT
     agent = FunctionAgent(
         name="goodreads_validator",
         description="Validates bibliography entries with Goodreads metadata.",
         system_prompt=prompt,
-        tools=[book_tool, author_tool],
+        tools=[book_tool, author_tool, wiki_people_tool],
         llm=llm,
         verbose=verbose,
         streaming=False,
         allow_parallel_tool_calls=False,
         initial_tool_choice=None,
     )
-    return GoodreadsAgentRunner(agent=agent, verbose=verbose)
+    return GoodreadsAgentRunner(
+        agent=agent,
+        verbose=verbose,
+        authors_path=Path(authors_path),
+        wiki_people_path=Path(wiki_people_path),
+    )
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Query Goodreads metadata via an agent.")
+    parser = argparse.ArgumentParser(
+        description="Query Goodreads metadata via an agent.")
     parser.add_argument(
         "--prompt",
         required=True,
@@ -288,7 +361,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--base-url",
-        default=os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1"),
+        default=os.environ.get("OPENROUTER_BASE_URL",
+                               "https://openrouter.ai/api/v1"),
         help="OpenAI-compatible base URL. Leave blank to use official OpenAI.",
     )
     parser.add_argument(
@@ -300,6 +374,11 @@ def parse_args() -> argparse.Namespace:
         "--authors-path",
         default="goodreads_data/goodreads_book_authors.json",
         help="Path to goodreads_book_authors.json (or .json.gz)",
+    )
+    parser.add_argument(
+        "--wiki-people-path",
+        default="goodreads_data/wiki_people_index.db",
+        help="Path to wiki_people_index.db",
     )
     parser.add_argument(
         "--verbose",
@@ -329,6 +408,7 @@ def main() -> None:
         base_url=base_url,
         books_path=args.books_path,
         authors_path=args.authors_path,
+        wiki_people_path=args.wiki_people_path,
         verbose=args.verbose,
         trace_tool=args.trace_tool,
     )

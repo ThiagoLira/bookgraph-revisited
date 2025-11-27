@@ -12,7 +12,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from lib.goodreads_agent.goodreads_tool import SQLiteGoodreadsCatalog  # pylint: disable=wrong-import-position
+from lib.bibliography_agent.goodreads_tool import SQLiteGoodreadsCatalog  # pylint: disable=wrong-import-position
 
 
 def main() -> None:

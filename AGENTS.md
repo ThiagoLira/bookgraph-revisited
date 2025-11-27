@@ -32,14 +32,15 @@ Two main entrypoints exist in this repo depending on the kind of “agent” you
 
 Both scripts ultimately call the same extraction codepath—the difference is whether you want the script to act as a **server+client profiler** or just a **client**. Pick the one that matches your deployment surface.
 
-## Goodreads Metadata Agent: `lib/goodreads_agent`
+## Bibliography Agent: `lib/bibliography_agent`
 
-- **Purpose**: answer “does this citation exist on Goodreads?” by pairing a LlamaIndex FunctionAgent with a multiprocessing search tool.
+- **Purpose**: answer “does this citation exist on Goodreads?” and use Wikipedia to disambiguate authors via a LlamaIndex FunctionAgent with multiprocessing search tools.
 - **Key pieces**:
   - `agent.py` builds the agent, forcing tool-first reasoning and accepting any OpenAI-compatible endpoint.
-  - `goodreads_tool.py` exposes two tools:
+  - `goodreads_tool.py` exposes three tools:
     - `goodreads_book_lookup`: memory-maps `goodreads_books.json`, splits it into 1 MB chunks, and spawns 20 processes that scan in parallel, returning up to 20 candidate editions (title-first, then author-only, then combined).
     - `goodreads_author_lookup`: loads the author dataset into memory so author-only citations can be disambiguated without touching the massive books file.
+    - `wikipedia_person_lookup`: searches a prebuilt `wiki_people_index.db` to disambiguate author identities and roles.
   - `test_agent.py` is a CLI harness for running canned prompts; pass `--trace-tool` to log every lookup and the metadata payload.
   - `tests/test_agent_components.py` contains verbose unit tests and timing probes (both synthetic and real Goodreads datasets) so regressions are caught quickly.
 - **When to use**: you want a deterministic, auditable check that a citation exists—e.g., validating `run_single_file.py` outputs or testing alternate prompts.

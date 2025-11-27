@@ -9,7 +9,7 @@ if str(MODULE_DIR) not in sys.path:
     sys.path.insert(0, str(MODULE_DIR))
 
 from agent import GoodreadsAgentRunner  # type: ignore[attr-defined]
-from goodreads_tool import GoodreadsCatalog  # type: ignore[attr-defined]
+from bibliography_tool import GoodreadsCatalog  # type: ignore[attr-defined]
 
 DATASET_EXISTS = Path("goodreads_data/goodreads_books.json").exists()
 TARGETS = [

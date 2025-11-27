@@ -19,7 +19,7 @@ if str(MODULE_DIR) not in sys.path:
     sys.path.insert(0, str(MODULE_DIR))
 
 from agent import build_agent  # type: ignore[attr-defined]
-from test_agent import build_prompts  # type: ignore[attr-defined]
+from test_bibliography_agent import build_prompts  # type: ignore[attr-defined]
 
 REAL_CASES: List[Dict[str, str]] = [
     {"title": "A Trick to Catch the Old One", "author": "Middleton"},
