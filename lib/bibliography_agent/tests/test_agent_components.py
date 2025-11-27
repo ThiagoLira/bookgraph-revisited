@@ -23,7 +23,7 @@ if str(MODULE_DIR) not in sys.path:
     sys.path.insert(0, str(MODULE_DIR))
 
 from agent import GoodreadsAgentRunner, SYSTEM_PROMPT, build_agent  # type: ignore[attr-defined]
-from bibliography_tool import (
+from bibliography_agent.bibliography_tool import (
     GoodreadsCatalog,
     create_book_lookup_tool,
     create_author_lookup_tool,

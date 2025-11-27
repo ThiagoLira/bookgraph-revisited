@@ -57,7 +57,7 @@ CMD=(
   --agent-api-key "$OPENROUTER_API_KEY"
   --agent-model "$AGENT_MODEL"
   --agent-max-workers "$AGENT_MAX_WORKERS"
-  --only-goodreads-ids "690051"
+  --only-goodreads-ids "61535"
   --agent-trace
 )
 

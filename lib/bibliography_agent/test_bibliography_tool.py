@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from bibliography_tool import GoodreadsCatalog
+from bibliography_agent.bibliography_tool import GoodreadsCatalog
 
 
 def main() -> None:
