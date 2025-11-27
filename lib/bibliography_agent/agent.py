@@ -13,7 +13,7 @@ Environment
 
 from __future__ import annotations
 
-from .bibliography_tool import (
+from lib.bibliography_agent.bibliography_tool import (
     BOOKS_DB_PATH,
     SQLiteGoodreadsCatalog,
     SQLiteWikiPeopleIndex,

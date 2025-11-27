@@ -20,10 +20,12 @@ load_dotenv()
 
 
 CURRENT_DIR = Path(__file__).resolve().parent
-if str(CURRENT_DIR) not in os.sys.path:  # pragma: no cover
-    os.sys.path.insert(0, str(CURRENT_DIR))
+REPO_ROOT = Path(__file__).resolve().parents[2]
+for p in (CURRENT_DIR, REPO_ROOT):
+    if str(p) not in os.sys.path:  # pragma: no cover
+        os.sys.path.insert(0, str(p))
 
-from agent import build_agent
+from lib.bibliography_agent.agent import build_agent
 
 DEFAULT_MODEL = "qwen/qwen3-next-80b-a3b-instruct"
 DEFAULT_BASE_URL = "https://openrouter.ai/api/v1"

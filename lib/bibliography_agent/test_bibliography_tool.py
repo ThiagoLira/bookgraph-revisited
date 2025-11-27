@@ -2,14 +2,19 @@
 Basic smoke test for the Goodreads lookup tool.
 
 Usage:
-    python web-search-agent/test_tool.py
+    python -m lib.bibliography_agent.test_bibliography_tool
 """
 
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 
-from bibliography_agent.bibliography_tool import GoodreadsCatalog
+ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:  # pragma: no cover
+    sys.path.insert(0, str(ROOT))
+
+from lib.bibliography_agent.bibliography_tool import GoodreadsCatalog
 
 
 def main() -> None:

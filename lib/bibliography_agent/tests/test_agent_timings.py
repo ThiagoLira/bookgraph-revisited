@@ -5,11 +5,13 @@ from pathlib import Path
 import pytest
 
 MODULE_DIR = Path(__file__).resolve().parents[1]
-if str(MODULE_DIR) not in sys.path:
-    sys.path.insert(0, str(MODULE_DIR))
+ROOT = Path(__file__).resolve().parents[2]
+for p in (MODULE_DIR, ROOT):
+    if str(p) not in sys.path:
+        sys.path.insert(0, str(p))
 
-from agent import GoodreadsAgentRunner  # type: ignore[attr-defined]
-from bibliography_agent.bibliography_tool import GoodreadsCatalog  # type: ignore[attr-defined]
+from lib.bibliography_agent.agent import GoodreadsAgentRunner  # type: ignore[attr-defined]
+from lib.bibliography_agent.bibliography_tool import GoodreadsCatalog  # type: ignore[attr-defined]
 
 DATASET_EXISTS = Path("goodreads_data/goodreads_books.json").exists()
 TARGETS = [
