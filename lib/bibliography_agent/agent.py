@@ -251,21 +251,64 @@ class GoodreadsAgentRunner:
         if title and title.lower() not in {"<not provided>", "unknown", "null", ""}:
             return None
 
+        def _score_name(name: str, target: str) -> int:
+            n = name.strip().lower()
+            t = target.strip().lower()
+            if n == t:
+                return 3
+            if n.startswith(t) or t.startswith(n):
+                return 2
+            if t in n or n in t:
+                return 1
+            return 0
+
+        def _is_relevant_person(entry: Dict[str, Any]) -> bool:
+            boxes = " ".join(entry.get("infoboxes") or [])
+            cats = " ".join(entry.get("categories") or [])
+            signals = (
+                "writer",
+                "author",
+                "novelist",
+                "poet",
+                "journalist",
+                "screenwriter",
+                "scientist",
+                "biologist",
+                "philosopher",
+                "mathematician",
+                "historian",
+            )
+            return any(sig in boxes.lower() or sig in cats.lower() for sig in signals)
+
         # Author-only path: use Wikipedia people index then Goodreads authors.
         wiki = SQLiteWikiPeopleIndex(
             db_path=self.wiki_people_path, trace=self.verbose)
-        wiki_matches = wiki.find_people(author, limit=3)
-        best_wiki = wiki_matches[0] if wiki_matches else None
+        wiki_matches = wiki.find_people(author, limit=10)
+        scored_wiki = sorted(
+            wiki_matches,
+            key=lambda w: (_is_relevant_person(w), _score_name(w.get("title", ""), author)),
+            reverse=True,
+        )
+        best_wiki = scored_wiki[0] if scored_wiki else None
+        if best_wiki is None:
+            # No Wikipedia signal; fall back to Goodreads-only path.
+            return None
         gr_catalog = GoodreadsAuthorCatalog(authors_path=self.authors_path)
         gr_matches = gr_catalog.find_authors(author, limit=3)
-        author_id = gr_matches[0]["author_id"] if gr_matches else None
+        gr_matches_sorted = sorted(
+            gr_matches,
+            key=lambda g: _score_name(g.get("name", ""), author),
+            reverse=True,
+        )
+        best_gr = gr_matches_sorted[0] if gr_matches_sorted else None
+        author_id = best_gr.get("author_id") if best_gr else None
         payload = {
             "author": author,
             "author_id": author_id,
-            "wikipedia_matches": wiki_matches,
             "wikipedia_match": best_wiki,
             "wikipedia_page_id": best_wiki.get("page_id") if best_wiki else None,
-            "goodreads_matches": gr_matches,
+            "wikipedia_title": best_wiki.get("title") if best_wiki else None,
+            "goodreads_match": best_gr,
         }
         return json.dumps(payload, ensure_ascii=False)
 
