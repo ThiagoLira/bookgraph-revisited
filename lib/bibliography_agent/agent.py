@@ -218,7 +218,17 @@ class GoodreadsAgentRunner:
         prompt: str,
         chat_history: Optional[Sequence["ChatMessage"]] = None,
     ) -> str:
-        prompt = self._augment_prompt(prompt)
+        # Branch: author-only citations handled deterministically via Wikipedia + Goodreads.
+        title, author = self._parse_prompt_fields(prompt)
+        placeholder = {"<not provided>", "unknown", "null", ""}
+        title_ok = title and title.lower() not in placeholder
+        author_ok = author and author.lower() not in placeholder
+
+        if author_ok and not title_ok:
+            shortcut = self._author_shortcut(author)
+            if shortcut is not None:
+                return shortcut
+
         if self.verbose:
             print(f"[GoodreadsAgent] Prompt:\n{prompt}\n{'-' * 40}")
         handler = self.agent.run(
@@ -232,31 +242,8 @@ class GoodreadsAgentRunner:
         normalized = self._normalize_response(response)
         if self.verbose:
             print(f"[GoodreadsAgent] Response (raw):\n{response}\n{'-' * 40}")
-            print(f"[GoodreadsAgent] Response (normalized):\n{
-                  normalized}\n{'=' * 40}")
+            print(f"[GoodreadsAgent] Response (normalized):\n{normalized}\n{'=' * 40}")
         return normalized
-
-    def _augment_prompt(self, prompt: str) -> str:
-        title, author = self._parse_prompt_fields(prompt)
-        placeholder = {"<not provided>", "unknown", "null", ""}
-        title_ok = title and title.lower() not in placeholder
-        author_ok = author and author.lower() not in placeholder
-        if title_ok and author_ok:
-            guidance = (
-                "AUTHOR+TITLE PATH: This citation has both author and title. "
-                "Use goodreads_book_lookup (title-first, then author if needed) to validate the book. "
-                "Do not skip the Goodreads lookup. Return only the best match."
-            )
-            return f"{guidance}\n\n{prompt}"
-        if author_ok and not title_ok:
-            guidance = (
-                "AUTHOR-ONLY PATH: This citation has only an author. "
-                "First call wikipedia_person_lookup to pick the correct person (role/domain match). "
-                "Then, if relevant, call goodreads_author_lookup to attach an author_id. "
-                "If Goodreads is missing but Wikipedia is confident, return Wikipedia metadata only."
-            )
-            return f"{guidance}\n\n{prompt}"
-        return prompt
 
     def _parse_prompt_fields(self, prompt: str) -> tuple[Optional[str], Optional[str]]:
         title = None
@@ -267,6 +254,67 @@ class GoodreadsAgentRunner:
             if line.lower().startswith("author"):
                 author = line.split(":", 1)[1].strip()
         return title, author
+
+    def _author_shortcut(self, author: str) -> Optional[str]:
+        def _score_name(name: str, target: str) -> int:
+            n = name.strip().lower()
+            t = target.strip().lower()
+            if n == t:
+                return 3
+            if n.startswith(t) or t.startswith(n):
+                return 2
+            if t in n or n in t:
+                return 1
+            return 0
+
+        def _is_relevant_person(entry: Dict[str, Any]) -> bool:
+            boxes = " ".join(entry.get("infoboxes") or [])
+            cats = " ".join(entry.get("categories") or [])
+            signals = (
+                "writer",
+                "author",
+                "novelist",
+                "poet",
+                "journalist",
+                "screenwriter",
+                "scientist",
+                "biologist",
+                "philosopher",
+                "mathematician",
+                "historian",
+            )
+            return any(sig in boxes.lower() or sig in cats.lower() for sig in signals)
+
+        wiki = SQLiteWikiPeopleIndex(db_path=self.wiki_people_path, trace=self.verbose)
+        wiki_matches = wiki.find_people(author, limit=10)
+        scored_wiki = sorted(
+            wiki_matches,
+            key=lambda w: (_is_relevant_person(w), _score_name(w.get("title", ""), author)),
+            reverse=True,
+        )
+        best_wiki = scored_wiki[0] if scored_wiki else None
+        gr_catalog = GoodreadsAuthorCatalog(authors_path=self.authors_path)
+        gr_matches = gr_catalog.find_authors(author, limit=3)
+        gr_matches_sorted = sorted(
+            gr_matches,
+            key=lambda g: _score_name(g.get("name", ""), author),
+            reverse=True,
+        )
+        best_gr = gr_matches_sorted[0] if gr_matches_sorted else None
+
+        if best_wiki is None and best_gr is None:
+            return None
+
+        author_id = best_gr.get("author_id") if best_gr else None
+        payload = {
+            "author": author,
+            "author_id": author_id,
+            "wikipedia_match": best_wiki,
+            "wikipedia_page_id": best_wiki.get("page_id") if best_wiki else None,
+            "wikipedia_title": best_wiki.get("title") if best_wiki else None,
+            "goodreads_match": best_gr,
+        }
+        return json.dumps(payload, ensure_ascii=False)
 
     async def query(
         self,
