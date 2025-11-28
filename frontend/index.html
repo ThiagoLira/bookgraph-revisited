@@ -28,11 +28,11 @@
       left: 0;
       right: 0;
       padding: 12px 16px;
-      background: linear-gradient(180deg, rgba(11,16,33,0.9), rgba(11,16,33,0.3));
+      background: linear-gradient(180deg, rgba(11,16,33,0.92), rgba(11,16,33,0.4));
       display: flex;
       align-items: center;
       gap: 12px;
-      z-index: 2;
+      z-index: 3;
       backdrop-filter: blur(6px);
       border-bottom: 1px solid rgba(124,229,255,0.15);
     }
@@ -57,7 +57,8 @@
     .node { stroke: #0b1021; stroke-width: 1px; cursor: pointer; }
     .node.book { fill: var(--book); }
     .node.author { fill: var(--author); }
-    .link { stroke: var(--edge); stroke-opacity: 0.5; }
+    .node.source { stroke: var(--accent); stroke-width: 2px; }
+    .link { stroke: var(--edge); stroke-opacity: 0.45; }
     .label { fill: var(--text); font-size: 11px; pointer-events: none; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
     .highlight { stroke: var(--accent); stroke-width: 2.2px; stroke-opacity: 0.9; }
     #details {
@@ -73,7 +74,33 @@
       min-height: 24px;
       z-index: 2;
     }
-    .author-hull { pointer-events: none; }
+    .panel {
+      position: absolute;
+      top: 72px;
+      right: 16px;
+      width: 360px;
+      max-height: calc(100vh - 90px);
+      overflow: auto;
+      background: rgba(18,25,51,0.92);
+      border: 1px solid rgba(124,229,255,0.2);
+      border-radius: 12px;
+      padding: 14px;
+      color: var(--text);
+      font-size: 13px;
+      backdrop-filter: blur(6px);
+      z-index: 3;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+    .panel h3 { margin: 0 0 6px; font-size: 15px; }
+    .panel .meta-row { margin: 6px 0; color: var(--muted); line-height: 1.4; }
+    .panel .muted { color: var(--muted); }
+    .pill-group { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 10px; }
+    .pill-group .pill { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08); }
+    .card {
+      fill: rgba(255,255,255,0.04);
+      stroke: rgba(255,255,255,0.06);
+      stroke-width: 1.2;
+    }
   </style>
 </head>
 <body>
@@ -85,6 +112,10 @@
       <label class="pill"><input id="toggle-authors" type="checkbox" checked /><span class="swatch" style="background: var(--author)"></span>Authors</label>
     </div>
   </header>
+  <div id="info-panel" class="panel">
+    <h3>Details</h3>
+    <div class="meta-row muted">Hover or click a node to see metadata.</div>
+  </div>
   <div id="details"></div>
   <svg></svg>
 
@@ -92,23 +123,45 @@
     import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
     const params = new URLSearchParams(window.location.search);
-    // Default to ./data relative to this frontend folder.
-    const dataDir = params.get("dataDir") || "data";
+    // Default to local calibre outputs unless overridden.
+    const dataDir = params.get("dataDir") || "calibre_outputs/calibre_bookgraph/final_citations_metadata_goodreads";
 
     const statusEl = document.getElementById("status");
     const toggleBooks = document.getElementById("toggle-books");
     const toggleAuthors = document.getElementById("toggle-authors");
     const detailsEl = document.getElementById("details");
+    const infoEl = document.getElementById("info-panel");
 
     function setStatus(msg) { statusEl.textContent = msg; }
     let pinnedDetails = null;
+    function renderInfo(node) {
+      if (!node) {
+        infoEl.innerHTML = "<h3>Details</h3><div class='meta-row'>Hover or click a node to see metadata.</div>";
+        return;
+      }
+      const meta = node.meta || {};
+      const rows = [
+        meta.title || meta.name || meta.author || node.label || node.id,
+        meta.authors ? `Authors: ${meta.authors.join(", ")}` : null,
+        meta.author ? `Author: ${meta.author}` : null,
+        meta.average_rating ? `Rating: ${meta.average_rating}` : null,
+        meta.publication_year ? `Year: ${meta.publication_year}` : null,
+        meta.goodreads_id ? `Goodreads ID: ${meta.goodreads_id}` : null,
+        meta.book_id ? `Book ID: ${meta.book_id}` : null,
+        meta.author_id ? `Author ID: ${meta.author_id}` : null,
+        meta.description ? `Description: ${meta.description}` : null,
+        meta.note ? `Note: ${meta.note}` : null,
+      ].filter(Boolean);
+      infoEl.innerHTML = `<h3>${node.label || node.id}</h3>${rows.map(r => `<div class="meta-row">${r}</div>`).join("") || "<div class='meta-row'>No metadata</div>"}`;
+    }
+
     function setDetails(node, pinned = false) {
       if (pinned) pinnedDetails = node;
       if (!node) {
         detailsEl.textContent = pinnedDetails ? detailsEl.textContent : "";
+        renderInfo(pinnedDetails);
         return;
       }
-      if (!pinned && pinnedDetails) return;
       const meta = node.meta || {};
       const label = node.label || node.id;
       const rows = [
@@ -124,6 +177,7 @@
         meta.author_id ? `Author ID: ${meta.author_id}` : null,
       ].filter(Boolean);
       detailsEl.textContent = rows.join(" • ");
+      renderInfo(node);
     }
 
     async function listJsonFiles(dir) {
@@ -168,7 +222,7 @@
       for (const rec of records) {
         const src = rec.source || {};
         const srcBookId = src.goodreads_id || (src.goodreads && src.goodreads.book_id);
-        addNode(`book:${srcBookId}`, "book", src.title || `Book ${srcBookId}`, src);
+        addNode(`book:${srcBookId}`, "book", src.title || `Book ${srcBookId}`, { ...src, root: true });
         for (const aid of src.author_ids || []) {
           addNode(`author:${aid}`, "author", (src.authors && src.authors[0]) || aid, { author_id: aid, authors: src.authors || [] });
           addLink(`book:${srcBookId}`, `author:${aid}`);
@@ -234,14 +288,14 @@
       // Grid layout for authors; books orbit their author (no force physics).
       const authorLayouts = authors.map(a => {
         const books = booksByAuthor.get(a.meta.author_id || a.id.replace("author:", "")) || [];
-        const ring = Math.min(200, 40 + books.length * 12);
+        const ring = Math.min(220, 40 + books.length * 12);
         const hull = ring + 18;
         return { author: a, books, ring, hull };
       });
       const nAuthors = Math.max(authorLayouts.length, 1);
       const maxHull = authorLayouts.reduce((m, a) => Math.max(m, a.hull), 30);
-      const cellSize = maxHull * 2 + 80;
-      const cols = Math.ceil(Math.sqrt(nAuthors));
+      const cellSize = maxHull * 2 + 160; // generous padding between author blocks
+      const cols = Math.max(1, Math.floor(width / cellSize)) || 1;
       const rows = Math.ceil(nAuthors / cols);
       const centerX = width / 2;
       const centerY = height / 2;
@@ -301,7 +355,7 @@
       const node = nodeLayer.selectAll("circle")
         .data(graph.nodes)
         .enter().append("circle")
-        .attr("class", d => `node ${d.type}`)
+        .attr("class", d => `node ${d.type} ${d.meta?.root ? "source" : ""}`)
         .attr("r", d => d.type === "book" ? 7 : 10)
         .attr("cx", d => positions.get(d.id)?.x)
         .attr("cy", d => positions.get(d.id)?.y)

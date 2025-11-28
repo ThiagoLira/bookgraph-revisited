@@ -34,14 +34,24 @@ Both scripts ultimately call the same extraction codepath—the difference is wh
 
 ## Bibliography Agent: `lib/bibliography_agent`
 
-- **Purpose**: answer “does this citation exist on Goodreads?” and use Wikipedia to disambiguate authors via a LlamaIndex FunctionAgent with multiprocessing search tools.
+- **Purpose**: Resolve citations against Goodreads and Wikipedia using a robust, event-driven workflow.
 - **Key pieces**:
-  - `agent.py` builds the agent, forcing tool-first reasoning and accepting any OpenAI-compatible endpoint.
-  - `goodreads_tool.py` exposes three tools:
-    - `goodreads_book_lookup`: memory-maps `goodreads_books.json`, splits it into 1 MB chunks, and spawns 20 processes that scan in parallel, returning up to 20 candidate editions (title-first, then author-only, then combined).
-    - `goodreads_author_lookup`: loads the author dataset into memory so author-only citations can be disambiguated without touching the massive books file.
-    - `wikipedia_person_lookup`: searches a prebuilt `wiki_people_index.db` to disambiguate author identities and roles.
-  - `test_agent.py` is a CLI harness for running canned prompts; pass `--trace-tool` to log every lookup and the metadata payload.
-  - `tests/test_agent_components.py` contains verbose unit tests and timing probes (both synthetic and real Goodreads datasets) so regressions are caught quickly.
-- **When to use**: you want a deterministic, auditable check that a citation exists—e.g., validating `run_single_file.py` outputs or testing alternate prompts.
-- **Returns**: either a full Goodreads metadata object (dict) for the best match or `{}` if nothing is found, so downstream code can format Markdown, YAML front matter, or agent responses without re-querying the dataset.
+  - `citation_workflow.py`: Implements `CitationWorkflow`, a LlamaIndex workflow that:
+    1.  **Generates Queries**: Uses LLM to create structured search queries (Title+Author or Author-only).
+    2.  **Searches**: Queries Goodreads (books/authors) and Wikipedia (people).
+    3.  **Validates**: Uses LLM to verify matches against the original citation.
+    4.  **Retries**: Automatically retries with broader queries if no match is found.
+  - `calibre_citations_pipeline.py`: End-to-end pipeline for Calibre libraries.
+    - Extracts citations from TXT files.
+    - Preprocesses/deduplicates.
+    - Runs `CitationWorkflow` for each citation.
+    - Outputs graph-ready JSON with resolved Goodreads/Wikipedia IDs.
+
+### Workflow Logic
+- **Book Mode** (Title + Author): Generates structured queries to find the specific book.
+- **Author Only Mode**: Generates queries to find the author, checking Wikipedia for disambiguation if needed.
+- **Retry Mechanism**: If a search fails, the workflow generates broader queries (up to 3 attempts).
+
+### Supporting Data
+- `goodreads_data/books_index.db` (SQLite FTS5 index)
+- `goodreads_data/wiki_people_index.db` (SQLite FTS5 index)

@@ -38,21 +38,35 @@ uv sync
 
 ```
 bookgraph-revisited/
-├── extract_citations.py        # Core library for citation extraction
-├── run_single_file.py          # CLI tool for processing books
-├── profiling/
-│   ├── single_gpu/
-│   │   ├── run_profiled_single.sh   # Legacy single-GPU profiler
-│   │   └── profile_runs/            # Single-GPU experiment outputs
-│   ├── dual_gpu/
-│   │   ├── run_profiled_dual.sh     # Two-GPU concurrency profiler
-│   │   └── profile_runs/            # Dual-GPU experiment outputs
-│   └── common/monitor_gpu_util.sh   # Shared GPU utilization logger
+├── extract_citations.py        # Core library for extraction
+├── process_citations_pipeline.py # Generic pipeline
+├── calibre_citations_pipeline.py # Calibre-specific pipeline
+├── run_single_file.py          # CLI tool
+├── profiling/                  # Profiling scripts
 ├── scripts/
-│   └── build_goodreads_index.py   # One-time SQLite FTS index builder
-├── plot_gpu_util.py            # GPU utilization plotter
-└── launch_llama_server_2_gpus.sh # Helper launcher for 2-GPU server
+│   ├── build_goodreads_index.py
+│   ├── build_wiki_people_index.py
+│   └── debug/                  # Debugging scripts (workflow, failures, retries)
+├── lib/
+│   └── bibliography_agent/     # Citation workflow & agent
+└── ...
 ```
+
+## Calibre Pipeline: `calibre_citations_pipeline.py`
+
+Designed to process a Calibre library export (metadata.db + TXT files).
+
+```bash
+uv run python calibre_citations_pipeline.py /path/to/calibre/library \
+  --extract-base-url http://localhost:8080/v1 \
+  --agent-base-url https://openrouter.ai/api/v1 \
+  --agent-api-key $OPENROUTER_API_KEY \
+  --agent-model "qwen/qwen3-next-80b-a3b-instruct" \
+  --debug-trace
+```
+
+Outputs are saved to `calibre_outputs/<library_name>/`.
+
 
 ## Core Library: `extract_citations.py`
 
@@ -135,18 +149,23 @@ uv run python run_single_file.py book.txt \
 
 Need to validate citations against Goodreads and Wikipedia? Use the agent under `lib/bibliography_agent/`:
 
-- `agent.py` builds a LlamaIndex **FunctionAgent** that forces every turn through the `goodreads_book_lookup` tool.
-- Two complementary tools power the agent:
-  - `goodreads_book_lookup` queries a SQLite FTS5 index (built once via `uv run python scripts/build_goodreads_index.py --force`) with either a title-only or author-only search.
-  - `goodreads_author_lookup` loads `goodreads_book_authors.json` in memory and surfaces author candidates when only an author name is cited.
-- `test_agent.py` is a smoke harness that feeds prompts from `susan_sample.txt.json` and prints the JSON metadata (or `{}` when nothing matches).
+- `agent.py` builds a LlamaIndex **FunctionAgent** that branches:
+  - **Author + Title present**: prompt steers the LLM to use `goodreads_book_lookup` (title-first, then author if needed) and return the best match.
+  - **Author-only**: prompt steers the LLM to call `wikipedia_person_lookup` first to disambiguate the person (role/domain match), then `goodreads_author_lookup` to attach an author_id; if Goodreads is missing but Wikipedia is confident, return Wikipedia metadata only.
+- Tools in `bibliography_tool.py`:
+  - `goodreads_book_lookup` queries a SQLite FTS5 index (built once via `uv run python scripts/build_goodreads_index.py --force`).
+  - `goodreads_author_lookup` loads `goodreads_book_authors.json` in memory to surface author candidates.
+  - `wikipedia_person_lookup` searches a prebuilt `wiki_people_index.db` (built via `scripts/filter_wiki_people.py` → `scripts/build_wiki_people_index.py`) to disambiguate identities/roles.
+- `test_bibliography_agent.py` is a smoke harness that feeds prompts from `susan_sample.txt.json` and prints the JSON metadata (or `{}` when nothing matches).
 - `tests/test_agent_components.py` includes unit tests for the agent runner, synthetic catalogs, and timing checks against real Goodreads data.
-- **One-time setup**: Run `uv run python scripts/build_goodreads_index.py --force` whenever the raw Goodreads dataset changes to build/refresh the `goodreads_data/books_index.db` FTS index. The script resolves author IDs into human-readable names up front so runtime lookups never need to load the original JSON.
+- **One-time setup**:
+  - `uv run python scripts/build_goodreads_index.py --force` to build/refresh `goodreads_data/books_index.db`.
+  - `uv run python scripts/filter_wiki_people.py` then `uv run python scripts/build_wiki_people_index.py` to build `goodreads_data/wiki_people_index.db`.
 
 Example:
 
 ```bash
-uv run python -m lib.bibliography_agent.test_agent \
+uv run python -m lib.bibliography_agent.test_bibliography_agent \
   --citations-json susan_sample.txt.json \
   --limit 5 \
   --trace-tool

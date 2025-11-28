@@ -34,8 +34,7 @@ from lib.extract_citations import (
     write_output,
 )
 from preprocess_citations import preprocess as preprocess_citations
-from lib.bibliography_agent.agent import SYSTEM_PROMPT, build_agent
-from lib.bibliography_agent.test_bibliography_agent import build_prompts
+from lib.bibliography_agent.citation_workflow import CitationWorkflow
 
 try:
     from tqdm import tqdm  # type: ignore
@@ -48,8 +47,6 @@ EXTRACT_MAX_CONCURRENCY = 20
 EXTRACT_MAX_CONTEXT = 6144
 EXTRACT_MAX_COMPLETION = 2048
 EXTRACT_MODEL_ID = "Qwen/Qwen3-30B-A3B"
-
-AGENT_MODEL_ID = "qwen/qwen3-next-80b-a3b-instruct"
 
 
 def progress_iter(iterable: Iterable[Path], **kwargs: object) -> Iterable[Path]:
@@ -237,303 +234,64 @@ def stage_preprocess(raw_dir: Path, output_dir: Path, books: Iterable[CalibreBoo
                             ensure_ascii=False), encoding="utf-8")
 
 
-def build_agent_runner(
-    base_url: str,
-    api_key: str,
-    model_id: str,
-    trace_tool: bool,
-    system_prompt: Optional[str] = None,
-    wiki_people_path: str = "goodreads_data/wiki_people_index.db",
-) -> "GoodreadsAgentRunner":
-    return build_agent(
-        model=model_id,
-        api_key=api_key,
-        base_url=base_url,
-        books_path="goodreads_data/goodreads_books.json",
-        authors_path="goodreads_data/goodreads_book_authors.json",
-        wiki_people_path=wiki_people_path,
-        verbose=trace_tool,
-        trace_tool=trace_tool,
-        system_prompt=system_prompt,
-    )
+from lib.bibliography_agent.agent import build_llm
 
-
-def format_system_prompt(book: CalibreBook) -> str:
-    desc = book.description.strip() if book.description else "No Calibre description available."
-    return (
-        f"{SYSTEM_PROMPT}\n\n"
-        "SOURCE BOOK CONTEXT\n"
-        f"- Title: {book.title}\n"
-        f"- Authors: {book.author_sort}\n"
-        f"- Goodreads ID: {book.goodreads_id}\n"
-        f"- Calibre description: {desc}\n"
-        "Use this source context to disambiguate citations; never fabricate metadata."
-    )
-
-
-def load_goodreads_metadata(book_ids: Set[str]) -> Dict[str, Dict[str, Any]]:
-    """Load a small subset of Goodreads book metadata for the given IDs."""
-    result: Dict[str, Dict[str, Any]] = {}
-    books_path = Path("goodreads_data/goodreads_books.json")
-    if not books_path.exists() or not book_ids:
-        return result
-    remaining = set(book_ids)
-    with books_path.open("r", encoding="utf-8") as fh:
-        for line in fh:
-            try:
-                row = json.loads(line)
-            except json.JSONDecodeError:
-                continue
-            bid = str(row.get("book_id")) if row.get(
-                "book_id") is not None else None
-            if bid and bid in remaining:
-                result[bid] = row
-                remaining.discard(bid)
-                if not remaining:
-                    break
-    return result
-
-
-def pick_match_type(payload: Dict[str, Any]) -> Tuple[str, Optional[str], List[str], Optional[Dict[str, Any]]]:
-    """
-    Decide whether a match is a book, author, or person and return:
-      (target_type, book_id, author_ids, wiki_person)
-    """
-    book_id = payload.get("book_id") or payload.get("id") or None
-    author_ids = []
-    if "author_ids" in payload and isinstance(payload["author_ids"], list):
-        author_ids = [str(a) for a in payload["author_ids"] if a]
-    elif "author_id" in payload and payload["author_id"]:
-        author_ids = [str(payload["author_id"])]
-    wiki_match = payload.get("wikipedia_match") or {}
-    wiki_page_id = payload.get("wikipedia_page_id") or wiki_match.get("page_id")
-    wiki_title = wiki_match.get("title") or payload.get("wikipedia_title")
-    wiki_person = None
-    if wiki_page_id:
-        wiki_person = {"wikipedia_page_id": wiki_page_id, "wikipedia_title": wiki_title}
-    if book_id:
-        return ("book", str(book_id), author_ids, wiki_person)
-    if author_ids:
-        return ("author", None, author_ids, wiki_person)
-    if wiki_person:
-        return ("person", None, [], wiki_person)
-    return ("unknown", None, [], None)
-
-
-async def stage_agent_async(
+async def stage_workflow_async(
     books: Iterable[CalibreBook],
     pre_dir: Path,
     output_dir: Path,
+    books_db: str,
+    authors_db: str,
+    wiki_db: str,
     base_url: str,
     api_key: str,
     model_id: str,
-    trace_tool: bool,
-    agent_max_workers: int,
     debug_trace: bool = False,
 ) -> None:
-    from lib.bibliography_agent.bibliography_tool import SQLiteGoodreadsCatalog
-
     books = list(books)
-
-    if agent_max_workers < 1:
-        raise ValueError("--agent-max-workers must be at least 1.")
-
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Prefetch source Goodreads metadata for source nodes
     book_ids_needed: Set[str] = {b.goodreads_id for b in books}
     source_goodreads_meta = load_goodreads_metadata(book_ids_needed)
 
-    for book in progress_iter_items(books, desc="Stage 3/3: Goodreads agent", unit="book"):
-        system_prompt = format_system_prompt(book)
-        runners = [
-            build_agent_runner(base_url, api_key, model_id,
-                               trace_tool or debug_trace, system_prompt=system_prompt)
-            for _ in range(agent_max_workers)
-        ]
-        runner_queue: asyncio.Queue["GoodreadsAgentRunner"] = asyncio.Queue()
-        for idx, runner in enumerate(runners):
-            runner_queue.put_nowait((idx, runner))
+    # Initialize LLM
+    llm = build_llm(model=model_id, api_key=api_key, base_url=base_url)
 
-        # Per-worker catalogs to avoid SQLite thread issues
-        catalogs = [SQLiteGoodreadsCatalog(
-            trace=trace_tool) for _ in range(agent_max_workers)]
-        catalog_queue: asyncio.Queue[SQLiteGoodreadsCatalog] = asyncio.Queue()
-        for idx, catalog in enumerate(catalogs):
-            catalog_queue.put_nowait((idx, catalog))
+    # Initialize workflow
+    # We use a single workflow instance (or one per book if we want to reset state, 
+    # but CitationWorkflow is stateless per run call).
+    workflow = CitationWorkflow(
+        books_db_path=books_db,
+        authors_path=authors_db,
+        wiki_people_path=wiki_db,
+        llm=llm,
+        verbose=debug_trace,
+    )
 
+    for book in progress_iter_items(books, desc="Stage 3/3: Citation Workflow", unit="book"):
         pre_path = pre_dir / f"{book.goodreads_id}.json"
         final_path = output_dir / f"{book.goodreads_id}.json"
+        
         if final_path.exists():
-            print(f"[agent] Skip {book.title} (cached).")
+            print(f"[workflow] Skip {book.title} (cached).")
             continue
         if not pre_path.exists():
-            print(f"[agent] Missing preprocessed JSON for {
-                  book.title}, skipping.")
+            print(f"[workflow] Missing preprocessed JSON for {book.title}, skipping.")
             continue
 
         data = json.loads(pre_path.read_text(encoding="utf-8"))
         citations = data.get("citations", [])
-        prompts = build_prompts(
-            citations,
-            source_title=book.title,
-            source_authors=[book.author_sort],
-            source_description=book.description,
-        )
-        print(f"[agent] Processing {
-              len(citations)} citations for {book.title}")
+        print(f"[workflow] Processing {len(citations)} citations for {book.title}")
 
-        if not citations:
-            final_path.write_text(
-                json.dumps(
-                    {
-                        "source": {
-                            "title": book.title,
-                            "authors": [book.author_sort],
-                            "goodreads_id": book.goodreads_id,
-                            "author_ids": [],
-                            "calibre": {
-                                "id": book.calibre_id,
-                                "path": str(book.path),
-                                "txt_path": str(book.txt_path),
-                                "epub_path": str(book.epub_path) if book.epub_path else None,
-                            },
-                        },
-                        "citations": [],
-                    },
-                    indent=2,
-                    ensure_ascii=False,
-                ),
-                encoding="utf-8",
-            )
-            continue
-
-        citation_bar = None
-        if tqdm is not None:
-            citation_bar = tqdm(
-                total=len(citations),
-                desc=f"  citations for {book.title}",
-                unit="citation",
-                leave=False,
-            )
-
-        def _extract_json_snippet(text: str) -> Optional[Dict[str, Any]]:
-            text = text.strip()
-            if not text:
-                return None
-            try:
-                return json.loads(text)
-            except Exception:
-                pass
-            fence = re.search(
-                r"```json\s*(\{.*?\})\s*```", text, flags=re.DOTALL)
-            if fence:
-                snippet = fence.group(1).strip()
-                try:
-                    return json.loads(snippet)
-                except Exception:
-                    pass
-            brace = re.search(r"(\{.*\})", text, flags=re.DOTALL)
-            if brace:
-                snippet = brace.group(1)
-                try:
-                    return json.loads(snippet)
-                except Exception:
-                    pass
-            return None
-
-        async def process_single_citation(
-            idx: int,
-            citation: Dict[str, Any],
-            prompt: str,
-        ) -> tuple[int, Optional[Dict[str, Any]]]:
-            runner_idx, runner = await runner_queue.get()
-            catalog_idx, catalog = await catalog_queue.get()
-            if debug_trace:
-                print(f"[trace agent={runner_idx}] citation[{
-                      idx}] prompt:\n{prompt}\n{'-' * 40}")
-            try:
-                start = time.perf_counter()
-                response = await runner.query(prompt)
-            finally:
-                runner_queue.put_nowait((runner_idx, runner))
-
-            response_str = response.strip()
-            if response_str.startswith("<tool_call>"):
-                tool_body = response_str.split(">", 1)[1].strip(
-                ) if ">" in response_str else response_str
-                tool_payload = _extract_json_snippet(tool_body)
-                if tool_payload and isinstance(tool_payload, dict) and tool_payload.get("name") == "goodreads_book_lookup":
-                    args = tool_payload.get("arguments", {})
-                    if debug_trace:
-                        print(f"[trace agent={runner_idx}] citation[{
-                              idx}] tool_call args: {args}")
-                    matches = catalog.find_books(
-                        title=args.get("title"),
-                        author=args.get("author"),
-                        limit=5,
-                    )
-                    if matches:
-                        response = json.dumps(
-                            {"result": "FOUND", "metadata": matches[0]}, ensure_ascii=False)
-                    else:
-                        response = json.dumps(
-                            {"result": "NOT_FOUND", "metadata": {}}, ensure_ascii=False)
-                else:
-                    # Not a valid tool payload; try to salvage JSON from the full response.
-                    recovered = _extract_json_snippet(response_str)
-                    if recovered is not None:
-                        response = json.dumps(recovered, ensure_ascii=False)
-                    else:
-                        print(f"[agent {
-                              runner_idx}] Warning: failed to interpret tool call response; skipping citation {idx}")
-                        catalog_queue.put_nowait((catalog_idx, catalog))
-                        return idx, None
-            catalog_queue.put_nowait((catalog_idx, catalog))
-
-            elapsed = time.perf_counter() - start
-            if trace_tool or debug_trace:
-                title = citation.get("title") or citation.get(
-                    "author") or "unknown citation"
-                preview = response[:120] + \
-                    ("..." if len(response) > 120 else "")
-                print(f"[agent {runner_idx}] Completed '{
-                      title}' in {elapsed:.3f}s -> {preview}")
-
-            payload = _extract_json_snippet(response)
-            if payload is None:
-                print(
-                    f"[agent {runner_idx}] Warning: failed to parse response {response}")
-                return idx, None
-
-            record = {"citation": citation, "agent_response": payload}
-            return idx, record
-
-        tasks = [
-            asyncio.create_task(process_single_citation(idx, citation, prompt))
-            for idx, (citation, prompt) in enumerate(zip(citations, prompts))
-        ]
-        results: List[Optional[Dict[str, Any]]] = [None] * len(tasks)
-        try:
-            for task in asyncio.as_completed(tasks):
-                idx, record = await task
-                if record is not None:
-                    results[idx] = record
-                if citation_bar is not None:
-                    citation_bar.update(1)
-        finally:
-            if citation_bar is not None:
-                citation_bar.close()
-
-        # Build final graph-friendly JSON
+        # Build source record
         source_meta = source_goodreads_meta.get(book.goodreads_id, {})
         source_author_ids = []
         if source_meta.get("authors"):
-            source_author_ids = [str(a.get("author_id")) for a in source_meta.get(
-                "authors", []) if a.get("author_id")]
+            source_author_ids = [str(a.get("author_id")) for a in source_meta.get("authors", []) if a.get("author_id")]
         elif source_meta.get("author_ids"):
-            source_author_ids = [str(a)
-                                 for a in source_meta.get("author_ids") if a]
+            source_author_ids = [str(a) for a in source_meta.get("author_ids") if a]
+            
         source_record = {
             "title": source_meta.get("title") or book.title,
             "authors": source_meta.get("author_names_resolved") or [book.author_sort],
@@ -556,68 +314,78 @@ async def stage_agent_async(
             },
         }
 
-        output_payload: Dict[str, Any] = {
-            "source": source_record, "citations": []}
-        for record in results:
-            if record is None:
-                continue
-            citation = record.get("citation", {})
-            agent_response = record.get("agent_response") or {}
-            metadata = {}
-            if isinstance(agent_response, dict):
-                if agent_response.get("result") == "FOUND" and isinstance(agent_response.get("metadata"), dict):
-                    metadata = agent_response["metadata"]
-                elif agent_response.get("result") == "NOT_FOUND":
-                    metadata = {}
-                else:
-                    metadata = agent_response
+        output_payload: Dict[str, Any] = {"source": source_record, "citations": []}
 
-            target_type, target_book_id, target_author_ids, wiki_person = pick_match_type(
-                metadata)
-            if target_type == "unknown":
-                continue  # drop citations without any validated target
-            output_payload["citations"].append(
-                {
+        if not citations:
+            final_path.write_text(json.dumps(output_payload, indent=2, ensure_ascii=False), encoding="utf-8")
+            continue
+
+        # Process citations
+        citation_bar = None
+        if tqdm is not None:
+            citation_bar = tqdm(total=len(citations), desc=f"  citations for {book.title}", unit="citation", leave=False)
+
+        for citation in citations:
+            try:
+                result = await workflow.run(citation=citation)
+                
+                # Format output based on result
+                match_type = result.get("match_type", "unknown")
+                metadata = result.get("metadata", {})
+                
+                if match_type == "not_found" or match_type == "unknown":
+                    if citation_bar: citation_bar.update(1)
+                    continue
+
+                # Construct edge data
+                target_book_id = metadata.get("book_id")
+                target_author_ids = []
+                if metadata.get("author_id"):
+                    target_author_ids.append(str(metadata.get("author_id")))
+                elif metadata.get("author_ids"):
+                    target_author_ids = [str(a) for a in metadata.get("author_ids")]
+                
+                wiki_person = metadata.get("wikipedia_match")
+
+                output_payload["citations"].append({
                     "raw": citation,
                     "goodreads_match": metadata,
-                    "wikipedia_match": metadata.get("wikipedia_match"),
+                    "wikipedia_match": wiki_person,
                     "edge": {
-                        "target_type": target_type,
+                        "target_type": match_type,
                         "target_book_id": target_book_id,
                         "target_author_ids": target_author_ids,
                         "target_person": wiki_person,
-                    },
-                }
-            )
+                    }
+                })
+            except Exception as e:
+                print(f"[workflow] Error processing citation {citation}: {e}")
+            
+            if citation_bar:
+                citation_bar.update(1)
+        
+        if citation_bar:
+            citation_bar.close()
 
-        final_path.write_text(json.dumps(
-            output_payload, indent=2, ensure_ascii=False), encoding="utf-8")
+        final_path.write_text(json.dumps(output_payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def stage_agent(
+def stage_workflow(
     books: Iterable[CalibreBook],
     pre_dir: Path,
     output_dir: Path,
+    books_db: str,
+    authors_db: str,
+    wiki_db: str,
     base_url: str,
     api_key: str,
     model_id: str,
-    trace_tool: bool,
-    agent_max_workers: int,
     debug_trace: bool = False,
 ) -> None:
-    asyncio.run(
-        stage_agent_async(
-            books,
-            pre_dir,
-            output_dir,
-            base_url,
-            api_key,
-            model_id,
-            trace_tool,
-            agent_max_workers,
-            debug_trace=debug_trace,
-        )
-    )
+    asyncio.run(stage_workflow_async(
+        books, pre_dir, output_dir, books_db, authors_db, wiki_db, 
+        base_url, api_key, model_id, debug_trace
+    ))
 
 
 def derive_output_base(library_dir: Path) -> Path:
@@ -646,59 +414,62 @@ def parse_args() -> argparse.Namespace:
         help="API key for extraction stage.",
     )
     parser.add_argument(
-        "--agent-base-url",
-        default="http://localhost:8080/v1",
-        help="Base URL for Goodreads agent.",
+        "--books-db",
+        default="goodreads_data/books_index.db",
+        help="Path to Goodreads books SQLite index.",
     )
     parser.add_argument(
-        "--agent-api-key",
-        default=os.environ.get("OPENROUTER_API_KEY") or os.environ.get(
-            "OPENAI_API_KEY") or "",
-        help="API key for Goodreads agent.",
+        "--authors-json",
+        default="goodreads_data/goodreads_book_authors.json",
+        help="Path to Goodreads authors JSON.",
     )
     parser.add_argument(
-        "--extract-model",
-        default=EXTRACT_MODEL_ID,
-        help="Model identifier/tokenizer to use for extraction.",
-    )
-    parser.add_argument(
-        "--extract-chunk-size",
-        type=int,
-        default=EXTRACT_CHUNK_SIZE,
-        help="Sentences per chunk for extraction stage.",
-    )
-    parser.add_argument(
-        "--extract-max-context-per-request",
-        type=int,
-        default=EXTRACT_MAX_CONTEXT,
-        help="Total context window per extraction request (input + output).",
-    )
-    parser.add_argument(
-        "--agent-model",
-        default=AGENT_MODEL_ID,
-        help="Model identifier to use for the Goodreads metadata agent.",
-    )
-    parser.add_argument(
-        "--agent-max-workers",
-        type=int,
-        default=5,
-        help="Maximum concurrent Goodreads agent calls (default: 5).",
-    )
-    parser.add_argument(
-        "--agent-trace",
-        action="store_true",
-        help="Enable verbose tracing of Goodreads tool activity.",
-    )
-    parser.add_argument(
-        "--debug-trace",
-        action="store_true",
-        help="Verbose logging of prompts, tool calls, and responses for debugging.",
+        "--wiki-db",
+        default="goodreads_data/wiki_people_index.db",
+        help="Path to Wikipedia people SQLite index.",
     )
     parser.add_argument(
         "--only-goodreads-ids",
         type=str,
         default=None,
         help="Comma-separated list of Goodreads IDs to process. Others are skipped if present.",
+    )
+    parser.add_argument(
+        "--extract-model",
+        default=EXTRACT_MODEL_ID,
+        help="Model ID for extraction stage.",
+    )
+    parser.add_argument(
+        "--extract-chunk-size",
+        type=int,
+        default=EXTRACT_CHUNK_SIZE,
+        help="Chunk size for extraction.",
+    )
+    parser.add_argument(
+        "--extract-max-context-per-request",
+        type=int,
+        default=EXTRACT_MAX_CONTEXT,
+        help="Max context tokens per request.",
+    )
+    parser.add_argument(
+        "--agent-base-url",
+        default=os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1"),
+        help="Base URL for bibliography agent.",
+    )
+    parser.add_argument(
+        "--agent-api-key",
+        default=os.environ.get("OPENROUTER_API_KEY", ""),
+        help="API key for bibliography agent.",
+    )
+    parser.add_argument(
+        "--agent-model",
+        default="qwen/qwen3-next-80b-a3b-instruct",
+        help="Model ID for bibliography agent.",
+    )
+    parser.add_argument(
+        "--debug-trace",
+        action="store_true",
+        help="Enable verbose debug tracing.",
     )
     return parser.parse_args()
 
@@ -736,15 +507,16 @@ def main() -> None:
         args.extract_max_context_per_request,
     )
     stage_preprocess(raw_dir, pre_dir, books)
-    stage_agent(
+    stage_workflow(
         books,
         pre_dir,
         final_dir,
+        args.books_db,
+        args.authors_json,
+        args.wiki_db,
         args.agent_base_url,
         args.agent_api_key,
         args.agent_model,
-        args.agent_trace or args.debug_trace,
-        args.agent_max_workers,
         debug_trace=args.debug_trace,
     )
 
