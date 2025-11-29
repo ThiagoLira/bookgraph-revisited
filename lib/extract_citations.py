@@ -280,18 +280,32 @@ async def call_model(
         {"role": "user", "content": user_prompt},
     ]
 
-    async with semaphore:
-        response: ChatCompletion = await client.chat.completions.create(
-            model=model,
-            messages=messages,
-            max_tokens=max_completion_tokens,
-            temperature=0.0,
-            response_format=chunk_extraction_response_format(),
-            extra_body={
-                "chat_template_kwargs": {"enable_thinking": False},
-                "reasoning_format": "none",
-            },
+    # print(f"[DEBUG] Chunk {chunk.index}: Waiting for semaphore...", flush=True)
+    try:
+        async with semaphore:
+            # print(f"[DEBUG] Chunk {chunk.index}: Acquired semaphore. Calling API...", flush=True)
+            response: ChatCompletion = await client.chat.completions.create(
+                model=model,
+                messages=messages,
+                max_tokens=max_completion_tokens,
+                temperature=0.0,
+                response_format=chunk_extraction_response_format(),
+                extra_body={
+                    "chat_template_kwargs": {"enable_thinking": False},
+                    "reasoning_format": "none",
+                },
+                timeout=120.0,
+            )
+            # print(f"[DEBUG] Chunk {chunk.index}: API returned.", flush=True)
+    except Exception as e:
+        print(f"[DEBUG] Chunk {chunk.index}: API Failed with {e}", flush=True)
+        failure = ChunkFailure(
+            chunk_index=chunk.index,
+            start_sentence=chunk.start_sentence,
+            end_sentence=chunk.end_sentence,
+            error=f"API Error: {str(e)}",
         )
+        return chunk, None, failure
 
     content = ""
     finish_reason = None
@@ -306,6 +320,7 @@ async def call_model(
                 content = reasoning_content.strip()
 
     if not content:
+        print(f"[DEBUG] Chunk {chunk.index}: Empty content.", flush=True)
         failure = ChunkFailure(
             chunk_index=chunk.index,
             start_sentence=chunk.start_sentence,
@@ -315,6 +330,7 @@ async def call_model(
         return chunk, None, failure
 
     if finish_reason == "length":
+        print(f"[DEBUG] Chunk {chunk.index}: Finish reason length.", flush=True)
         failure = ChunkFailure(
             chunk_index=chunk.index,
             start_sentence=chunk.start_sentence,
@@ -327,6 +343,7 @@ async def call_model(
     try:
         parsed = ModelChunkCitations.model_validate_json(content)
     except ValidationError as exc:
+        print(f"[DEBUG] Chunk {chunk.index}: Validation Error {exc}", flush=True)
         failure = ChunkFailure(
             chunk_index=chunk.index,
             start_sentence=chunk.start_sentence,
@@ -336,6 +353,7 @@ async def call_model(
         )
         return chunk, None, failure
     except json.JSONDecodeError as exc:  # pragma: no cover - defensive
+        print(f"[DEBUG] Chunk {chunk.index}: JSON Error {exc}", flush=True)
         failure = ChunkFailure(
             chunk_index=chunk.index,
             start_sentence=chunk.start_sentence,
@@ -394,41 +412,41 @@ async def process_book(
             raise ValueError("--debug-limit must be positive.")
         chunks = chunks[: debug_limit]
 
-    client = AsyncOpenAI(api_key=config.api_key, base_url=config.base_url)
     semaphore = asyncio.Semaphore(config.max_concurrency)
 
-    tasks = [
-        asyncio.create_task(
-            call_model(
-                client,
-                tokenizer,
-                chunk,
-                DEFAULT_SYSTEM_PROMPT,
-                book_title,
-                semaphore=semaphore,
-                model=config.model,
-                max_completion_tokens=config.max_completion_tokens,
-                max_context_per_request=config.max_context_per_request,
+    async with AsyncOpenAI(api_key=config.api_key, base_url=config.base_url) as client:
+        tasks = [
+            asyncio.create_task(
+                call_model(
+                    client,
+                    tokenizer,
+                    chunk,
+                    DEFAULT_SYSTEM_PROMPT,
+                    book_title,
+                    semaphore=semaphore,
+                    model=config.model,
+                    max_completion_tokens=config.max_completion_tokens,
+                    max_context_per_request=config.max_context_per_request,
+                )
             )
-        )
-        for chunk in chunks
-    ]
+            for chunk in chunks
+        ]
 
-    chunk_results: List[ChunkExtraction] = []
-    failures: List[ChunkFailure] = []
+        chunk_results: List[ChunkExtraction] = []
+        failures: List[ChunkFailure] = []
 
-    completed = 0
-    total_chunks = len(chunks)
+        completed = 0
+        total_chunks = len(chunks)
 
-    for coro in asyncio.as_completed(tasks):
-        _, success, failure = await coro
-        if success:
-            chunk_results.append(success)
-        if failure:
-            failures.append(failure)
-        completed += 1
-        if progress_callback:
-            progress_callback(completed, total_chunks)
+        for coro in asyncio.as_completed(tasks):
+            _, success, failure = await coro
+            if success:
+                chunk_results.append(success)
+            if failure:
+                failures.append(failure)
+            completed += 1
+            if progress_callback:
+                progress_callback(completed, total_chunks)
 
     chunk_results.sort(key=lambda c: c.chunk_index)
     failures.sort(key=lambda f: f.chunk_index)

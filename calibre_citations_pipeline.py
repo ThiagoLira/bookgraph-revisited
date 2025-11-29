@@ -305,6 +305,7 @@ async def stage_workflow_async(
         wiki_people_path=wiki_db,
         llm=llm,
         verbose=debug_trace,
+        timeout=120.0,
     )
 
     sem = asyncio.Semaphore(max_concurrency)
@@ -312,12 +313,21 @@ async def stage_workflow_async(
     async def process_citation_safe(citation: Dict[str, Any], bar: Optional[tqdm]) -> Dict[str, Any]:
         async with sem:
             try:
-                result = await workflow.run(citation=citation)
+                # Enforce a strict timeout on the workflow execution
+                result = await asyncio.wait_for(workflow.run(citation=citation), timeout=130.0)
                 if bar:
                     bar.update(1)
                 return {
                     "citation": citation,
                     "result": result
+                }
+            except asyncio.TimeoutError:
+                print(f"[workflow] Timeout processing citation {citation}", flush=True)
+                if bar:
+                    bar.update(1)
+                return {
+                    "citation": citation,
+                    "error": "Timeout"
                 }
             except Exception as e:
                 print(f"[workflow] Error processing citation {citation}: {e}")

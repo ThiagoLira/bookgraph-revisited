@@ -42,7 +42,7 @@ OUTPUT_DIR="${2:-}"
 BASE_URL="${OPENROUTER_BASE_URL:-https://openrouter.ai/api/v1}"
 EXTRACT_MODEL="${EXTRACT_MODEL:-qwen/qwen3-next-80b-a3b-instruct}"
 AGENT_MODEL="${AGENT_MODEL:-qwen/qwen3-next-80b-a3b-instruct}"
-AGENT_MAX_WORKERS="${AGENT_MAX_WORKERS:-5}"
+AGENT_MAX_WORKERS="${AGENT_MAX_WORKERS:-10}"
 EXTRACT_CHUNK_SIZE="${EXTRACT_CHUNK_SIZE:-100}"
 EXTRACT_MAX_CONTEXT="${EXTRACT_MAX_CONTEXT:-12288}"
 
@@ -57,8 +57,8 @@ CMD=(
   --agent-api-key "$OPENROUTER_API_KEY"
   --agent-model "$AGENT_MODEL"
   --agent-max-concurrency "$AGENT_MAX_WORKERS"
-  --only-goodreads-ids "61535"
-  --debug-trace
+#  --only-goodreads-ids "61535"
+#  --debug-trace
 )
 
 if [[ -n "$OUTPUT_DIR" ]]; then
