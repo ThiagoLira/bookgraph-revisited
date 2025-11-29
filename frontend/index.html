@@ -1,444 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Citation Graph Viewer</title>
+  <title>BookGraph Explorer</title>
   <style>
     :root {
-      --bg: #0b1021;
-      --panel: #121933;
-      --text: #e6ecff;
-      --muted: #9fb0d9;
-      --book: #64d8cb;
-      --author: #f7a46c;
-      --edge: #4b5d8c;
-      --accent: #7ce5ff;
+      --bg: #050505;
+      /* Pure Dark */
+      --panel: rgba(20, 20, 20, 0.8);
+      --text: #ededed;
+      --text-muted: #888;
+      --accent: #00f2ff;
+
+      /* Node Colors */
+      --book-source: #ff2a6d;
+      /* Neon Red/Pink */
+      --book-cited: #05d9e8;
+      /* Neon Cyan */
+      --author: #ffffff;
+      /* White */
+
+      --edge: #404040;
+      --edge-highlight: #05d9e8;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-      background: radial-gradient(circle at 20% 20%, rgba(124,229,255,0.12), transparent 35%), var(--bg);
+      font-family: "Outfit", "Inter", sans-serif;
+      background: var(--bg);
       color: var(--text);
       overflow: hidden;
     }
+
     header {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      padding: 12px 16px;
-      background: linear-gradient(180deg, rgba(11,16,33,0.92), rgba(11,16,33,0.4));
+      padding: 16px 24px;
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0));
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    header>* {
+      pointer-events: auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, #fff, #94a3b8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    #controls {
+      display: flex;
       gap: 12px;
-      z-index: 3;
-      backdrop-filter: blur(6px);
-      border-bottom: 1px solid rgba(124,229,255,0.15);
-    }
-    #title { font-weight: 700; letter-spacing: 0.3px; }
-    #status { color: var(--muted); font-size: 14px; }
-    #legend { margin-left: auto; display: flex; align-items: center; gap: 12px; }
-    .pill {
-      display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.08);
-      font-size: 13px;
-      cursor: pointer;
-      user-select: none;
     }
-    .swatch { width: 10px; height: 10px; border-radius: 50%; }
-    .pill input { margin: 0; cursor: pointer; }
-    svg { width: 100vw; height: 100vh; display: block; }
-    .node { stroke: #0b1021; stroke-width: 1px; cursor: pointer; }
-    .node.book { fill: var(--book); }
-    .node.author { fill: var(--author); }
-    .node.source { stroke: var(--accent); stroke-width: 2px; }
-    .link { stroke: var(--edge); stroke-opacity: 0.45; }
-    .label { fill: var(--text); font-size: 11px; pointer-events: none; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
-    .highlight { stroke: var(--accent); stroke-width: 2.2px; stroke-opacity: 0.9; }
-    #details {
-      position: absolute;
-      left: 16px; right: 16px; bottom: 12px;
-      background: rgba(18,25,51,0.85);
-      border: 1px solid rgba(124,229,255,0.2);
-      border-radius: 10px;
+
+    .search-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
       padding: 8px 12px;
-      font-size: 13px;
       color: var(--text);
-      backdrop-filter: blur(6px);
-      min-height: 24px;
-      z-index: 2;
+      font-family: inherit;
+      font-size: 14px;
+      width: 240px;
+      transition: all 0.2s;
     }
-    .panel {
+
+    .search-box:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    #info-panel {
       position: absolute;
-      top: 72px;
-      right: 16px;
-      width: 360px;
-      max-height: calc(100vh - 90px);
-      overflow: auto;
-      background: rgba(18,25,51,0.92);
-      border: 1px solid rgba(124,229,255,0.2);
-      border-radius: 12px;
-      padding: 14px;
-      color: var(--text);
-      font-size: 13px;
-      backdrop-filter: blur(6px);
-      z-index: 3;
-      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+      top: 80px;
+      right: 24px;
+      width: 320px;
+      background: var(--panel);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      transform: translateX(120%);
+      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+      z-index: 5;
     }
-    .panel h3 { margin: 0 0 6px; font-size: 15px; }
-    .panel .meta-row { margin: 6px 0; color: var(--muted); line-height: 1.4; }
-    .panel .muted { color: var(--muted); }
-    .pill-group { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 10px; }
-    .pill-group .pill { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08); }
-    .card {
-      fill: rgba(255,255,255,0.04);
-      stroke: rgba(255,255,255,0.06);
-      stroke-width: 1.2;
+
+    #info-panel.visible {
+      transform: translateX(0);
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 16px;
+    }
+
+    .panel-title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 0;
+    }
+
+    .panel-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .panel-close:hover {
+      color: var(--text);
+    }
+
+    .meta-item {
+      margin-bottom: 12px;
+    }
+
+    .meta-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .meta-value {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      margin-right: 6px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .tag.source {
+      background: rgba(255, 42, 109, 0.2);
+      color: var(--book-source);
+    }
+
+    .tag.cited {
+      background: rgba(5, 217, 232, 0.2);
+      color: var(--book-cited);
+    }
+
+    .tag.author {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--author);
+    }
+
+    svg {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      cursor: grab;
+    }
+
+    svg:active {
+      cursor: grabbing;
+    }
+
+    .link {
+      stroke: var(--edge);
+      stroke-opacity: 0.3;
+      transition: stroke 0.2s, stroke-opacity 0.2s;
+    }
+
+    .link.highlight {
+      stroke: var(--edge-highlight);
+      stroke-opacity: 0.8;
+      stroke-width: 2px;
+    }
+
+    .node {
+      transition: fill 0.2s, r 0.2s;
+      filter: drop-shadow(0 0 3px currentColor);
+    }
+
+    .node:hover {
+      stroke: #fff;
+      stroke-width: 2px;
+    }
+
+    .node.dimmed {
+      opacity: 0.1;
+    }
+
+    .link.dimmed {
+      opacity: 0.05;
+    }
+
+    .label {
+      font-size: 10px;
+      fill: var(--text);
+      pointer-events: none;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    .label.dimmed {
+      opacity: 0.1;
+    }
+
+    #loading {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      color: var(--text-muted);
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .spinner {
+      width: 12px;
+      height: 12px;
+      border: 2px solid var(--text-muted);
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <div id="title">Citation Graph Viewer</div>
-    <div id="status">Loading…</div>
-    <div id="legend">
-      <label class="pill"><input id="toggle-books" type="checkbox" checked /><span class="swatch" style="background: var(--book)"></span>Books</label>
-      <label class="pill"><input id="toggle-authors" type="checkbox" checked /><span class="swatch" style="background: var(--author)"></span>Authors</label>
+    <h1>BookGraph</h1>
+    <div id="controls">
+      <input type="text" class="search-box" placeholder="Search books or authors..." id="search">
     </div>
   </header>
-  <div id="info-panel" class="panel">
-    <h3>Details</h3>
-    <div class="meta-row muted">Hover or click a node to see metadata.</div>
+
+  <div id="info-panel">
+    <div class="panel-header">
+      <h2 class="panel-title" id="panel-title">Title</h2>
+      <button class="panel-close" id="panel-close">✕</button>
+    </div>
+    <div id="panel-content"></div>
   </div>
-  <div id="details"></div>
-  <svg></svg>
+
+  <div id="loading">
+    <div class="spinner"></div>
+    <span id="status-text">Initializing...</span>
+  </div>
+
+  <svg>
+    <defs>
+      <marker id="arrow" viewBox="0 -5 10 10" refX="20" refY="0" markerWidth="4" markerHeight="4" orient="auto">
+        <path d="M0,-3L8,0L0,3" fill="#404040" opacity="0.8"></path>
+      </marker>
+    </defs>
+  </svg>
 
   <script type="module">
     import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
-    const params = new URLSearchParams(window.location.search);
-    // Default to local calibre outputs unless overridden.
-    const dataDir = params.get("dataDir") || "calibre_outputs/calibre_bookgraph/final_citations_metadata_goodreads";
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const svg = d3.select("svg");
 
-    const statusEl = document.getElementById("status");
-    const toggleBooks = document.getElementById("toggle-books");
-    const toggleAuthors = document.getElementById("toggle-authors");
-    const detailsEl = document.getElementById("details");
-    const infoEl = document.getElementById("info-panel");
+    // Config
+    const COLORS = {
+      source: "#ff2a6d",
+      cited: "#05d9e8",
+      author: "#ffffff"
+    };
 
-    function setStatus(msg) { statusEl.textContent = msg; }
-    let pinnedDetails = null;
-    function renderInfo(node) {
-      if (!node) {
-        infoEl.innerHTML = "<h3>Details</h3><div class='meta-row'>Hover or click a node to see metadata.</div>";
-        return;
+    // State
+    let graphData = { nodes: [], links: [] };
+    let simulation;
+    let transform = d3.zoomIdentity;
+
+    // Elements
+    const g = svg.append("g");
+    const linkGroup = g.append("g").attr("class", "links");
+    const nodeGroup = g.append("g").attr("class", "nodes");
+    const labelGroup = g.append("g").attr("class", "labels");
+
+    const statusText = document.getElementById("status-text");
+    const loadingEl = document.getElementById("loading");
+    const panel = document.getElementById("info-panel");
+    const searchInput = document.getElementById("search");
+
+    // Zoom
+    const zoom = d3.zoom()
+      .scaleExtent([0.1, 4])
+      .on("zoom", e => {
+        transform = e.transform;
+        g.attr("transform", transform);
+      });
+    svg.call(zoom);
+
+    // Data Loading
+    async function loadData() {
+      const params = new URLSearchParams(window.location.search);
+      const dataDir = params.get("dataDir") || "calibre_outputs/calibre_bookgraph/final_citations_metadata_goodreads";
+
+      statusText.textContent = "Scanning library...";
+
+      try {
+        // List files (assumes directory listing enabled)
+        const listRes = await fetch(dataDir + "/");
+        if (!listRes.ok) throw new Error("Could not list directory");
+        const html = await listRes.text();
+        const files = [...html.matchAll(/href=["']([^"']+\.json)["']/gi)]
+          .map(m => decodeURIComponent(m[1]))
+          .filter(f => !f.includes("/"));
+
+        statusText.textContent = `Loading ${files.length} books...`;
+
+        const rawData = await Promise.all(files.map(async f => {
+          const r = await fetch(`${dataDir}/${f}`);
+          return r.json();
+        }));
+
+        processData(rawData);
+        loadingEl.style.display = "none";
+      } catch (e) {
+        statusText.textContent = "Error: " + e.message;
+        console.error(e);
       }
-      const meta = node.meta || {};
-      const rows = [
-        meta.title || meta.name || meta.author || node.label || node.id,
-        meta.authors ? `Authors: ${meta.authors.join(", ")}` : null,
-        meta.author ? `Author: ${meta.author}` : null,
-        meta.average_rating ? `Rating: ${meta.average_rating}` : null,
-        meta.publication_year ? `Year: ${meta.publication_year}` : null,
-        meta.goodreads_id ? `Goodreads ID: ${meta.goodreads_id}` : null,
-        meta.book_id ? `Book ID: ${meta.book_id}` : null,
-        meta.author_id ? `Author ID: ${meta.author_id}` : null,
-        meta.description ? `Description: ${meta.description}` : null,
-        meta.note ? `Note: ${meta.note}` : null,
-      ].filter(Boolean);
-      infoEl.innerHTML = `<h3>${node.label || node.id}</h3>${rows.map(r => `<div class="meta-row">${r}</div>`).join("") || "<div class='meta-row'>No metadata</div>"}`;
     }
 
-    function setDetails(node, pinned = false) {
-      if (pinned) pinnedDetails = node;
-      if (!node) {
-        detailsEl.textContent = pinnedDetails ? detailsEl.textContent : "";
-        renderInfo(pinnedDetails);
-        return;
-      }
-      const meta = node.meta || {};
-      const label = node.label || node.id;
-      const rows = [
-        `Type: ${node.type}`,
-        label ? `Label: ${label}` : null,
-        meta.title ? `Title: ${meta.title}` : null,
-        meta.name ? `Name: ${meta.name}` : null,
-        meta.author ? `Author: ${meta.author}` : null,
-        meta.authors ? `Authors: ${meta.authors.join(", ")}` : null,
-        meta.average_rating ? `Rating: ${meta.average_rating}` : null,
-        meta.goodreads_id ? `Goodreads ID: ${meta.goodreads_id}` : null,
-        meta.book_id ? `Book ID: ${meta.book_id}` : null,
-        meta.author_id ? `Author ID: ${meta.author_id}` : null,
-      ].filter(Boolean);
-      detailsEl.textContent = rows.join(" • ");
-      renderInfo(node);
-    }
-
-    async function listJsonFiles(dir) {
-      // Assumes directory listing is available (e.g., python -m http.server)
-      const res = await fetch(dir + "/");
-      if (!res.ok) throw new Error(`Failed to list ${dir}: ${res.status}`);
-      const html = await res.text();
-      const matches = [...html.matchAll(/href=["']([^"']+\.json)["']/gi)];
-      return matches.map(m => decodeURIComponent(m[1])).filter(f => !f.includes("/"));
-    }
-
-    async function loadAll() {
-      setStatus(`Listing ${dataDir}…`);
-      const files = await listJsonFiles(dataDir);
-      setStatus(`Loading ${files.length} files…`);
-      const data = await Promise.all(files.map(async f => {
-        const res = await fetch(`${dataDir}/${f}`);
-        if (!res.ok) throw new Error(`Failed to fetch ${f}: ${res.status}`);
-        return res.json();
-      }));
-      return data;
-    }
-
-    function buildGraph(records) {
-      const nodes = new Map(); // id -> node
+    function processData(records) {
+      const authorMap = new Map();
+      const bookMap = new Map(); // Global book registry for linking
       const links = [];
-      const authorBooks = new Map(); // authorId -> Set(bookIds)
-      const bookOwners = new Map(); // bookId -> authorId (first author)
-      const addNode = (id, type, label, meta = {}) => {
-        if (!id) return;
-        if (!nodes.has(id)) nodes.set(id, { id, type, label, meta });
-      };
-      const addLink = (source, target) => {
-        if (!source || !target) return;
-        const key = `${source}|${target}`;
-        if (linkSet.has(key)) return;
-        linkSet.add(key);
-        links.push({ source, target });
-      };
-      const linkSet = new Set();
 
-      for (const rec of records) {
-        const src = rec.source || {};
-        const srcBookId = src.goodreads_id || (src.goodreads && src.goodreads.book_id);
-        addNode(`book:${srcBookId}`, "book", src.title || `Book ${srcBookId}`, { ...src, root: true });
-        for (const aid of src.author_ids || []) {
-          addNode(`author:${aid}`, "author", (src.authors && src.authors[0]) || aid, { author_id: aid, authors: src.authors || [] });
-          addLink(`book:${srcBookId}`, `author:${aid}`);
-          if (!authorBooks.has(aid)) authorBooks.set(aid, new Set());
-          authorBooks.get(aid).add(`book:${srcBookId}`);
-          bookOwners.set(`book:${srcBookId}`, aid);
-        }
-
-        for (const cit of rec.citations || []) {
-          const edge = cit.edge || {};
-          const tgtBook = edge.target_book_id;
-          const tgtAuthors = edge.target_author_ids || [];
-          const match = cit.goodreads_match || {};
-
-          // If a book id is present, use it; otherwise fabricate a stable id from author+title so we can render a book node.
-          const inferredTitle = match.title || cit.raw?.title;
-          const primaryAuthor = tgtAuthors[0] || match.author_id;
-          const derivedBookId = tgtBook || (inferredTitle ? `${primaryAuthor || "unknown"}:${inferredTitle}` : null);
-
-          if (derivedBookId) {
-            addNode(`book:${derivedBookId}`, "book", inferredTitle || derivedBookId, { ...match, title: inferredTitle, book_id: tgtBook || match.book_id });
-            addLink(`book:${srcBookId}`, `book:${derivedBookId}`);
-            if (primaryAuthor) {
-              bookOwners.set(`book:${derivedBookId}`, primaryAuthor);
-            }
-          }
-
-          for (const aid of tgtAuthors) {
-            addNode(`author:${aid}`, "author", cit.goodreads_match?.author || cit.goodreads_match?.name || aid, cit.goodreads_match || {});
-            addLink(`book:${srcBookId}`, derivedBookId ? `book:${derivedBookId}` : `author:${aid}`);
-            if (derivedBookId) {
-              if (!authorBooks.has(aid)) authorBooks.set(aid, new Set());
-              authorBooks.get(aid).add(`book:${derivedBookId}`);
-            }
-          }
-        }
-      }
-      return { nodes: Array.from(nodes.values()), links, authorBooks, bookOwners };
-    }
-
-    function render(graph) {
-      const svg = d3.select("svg");
-      svg.selectAll("*").remove();
-      const width = window.innerWidth;
-      const height = window.innerHeight;
-
-      const g = svg.append("g");
-      const zoom = d3.zoom().scaleExtent([0.4, 3]).on("zoom", (event) => {
-        g.attr("transform", event.transform);
-      });
-      svg.call(zoom);
-
-      const nodesById = new Map(graph.nodes.map(n => [n.id, n]));
-      const authors = graph.nodes.filter(n => n.type === "author");
-      const booksByAuthor = new Map();
-      for (const [bookId, aid] of graph.bookOwners.entries()) {
-        const b = nodesById.get(bookId);
-        if (!b) continue;
-        if (!booksByAuthor.has(aid)) booksByAuthor.set(aid, []);
-        booksByAuthor.get(aid).push(b);
-      }
-
-      // Grid layout for authors; books orbit their author (no force physics).
-      const authorLayouts = authors.map(a => {
-        const books = booksByAuthor.get(a.meta.author_id || a.id.replace("author:", "")) || [];
-        const ring = Math.min(220, 40 + books.length * 12);
-        const hull = ring + 18;
-        return { author: a, books, ring, hull };
-      });
-      const nAuthors = Math.max(authorLayouts.length, 1);
-      const maxHull = authorLayouts.reduce((m, a) => Math.max(m, a.hull), 30);
-      const cellSize = maxHull * 2 + 160; // generous padding between author blocks
-      const cols = Math.max(1, Math.floor(width / cellSize)) || 1;
-      const rows = Math.ceil(nAuthors / cols);
-      const centerX = width / 2;
-      const centerY = height / 2;
-
-      const positions = new Map();
-      authorLayouts.forEach((layout, idx) => {
-        const { author: a, books, ring } = layout;
-        const col = idx % cols;
-        const row = Math.floor(idx / cols);
-        const x = centerX + (col - (cols - 1) / 2) * cellSize;
-        const y = centerY + (row - (rows - 1) / 2) * cellSize;
-        positions.set(a.id, { x, y });
-        const bookAngleStep = (2 * Math.PI) / Math.max(books.length, 1);
-        books.forEach((b, j) => {
-          const ang = j * bookAngleStep;
-          positions.set(b.id, {
-            x: x + ring * Math.cos(ang),
-            y: y + ring * Math.sin(ang),
+      // Helper to get/create author
+      function getAuthor(id, name, meta = {}) {
+        if (!authorMap.has(id)) {
+          authorMap.set(id, {
+            id,
+            type: 'author',
+            label: name,
+            books: [],
+            meta: meta,
+            r: 25, // Base radius
+            x: width / 2 + (Math.random() - 0.5) * 50,
+            y: height / 2 + (Math.random() - 0.5) * 50
           });
-        });
-      });
-      // Place any unowned books in a compact grid near center.
-      const unownedBooks = graph.nodes.filter(n => n.type === "book" && !positions.has(n.id));
-      const freeCols = Math.ceil(Math.sqrt(Math.max(unownedBooks.length, 1)));
-      const freeCell = 120;
-      unownedBooks.forEach((b, idx) => {
-        const c = idx % freeCols;
-        const r = Math.floor(idx / freeCols);
-        positions.set(b.id, {
-          x: centerX + (c - (freeCols - 1) / 2) * freeCell,
-          y: centerY + (r - (freeCols - 1) / 2) * freeCell,
-        });
-      });
-
-      // Layers
-      const linkLayer = g.append("g").attr("stroke-width", 1.2);
-      const hullLayer = g.append("g").attr("class", "author-containers");
-      const nodeLayer = g.append("g");
-      const labelLayer = g.append("g");
-
-      const neighbors = new Set(graph.links.map(l => `${l.source.id || l.source}|${l.target.id || l.target}`));
-      const wiredLinks = graph.links.map(l => ({
-        ...l,
-        source: nodesById.get(l.source.id || l.source) || l.source,
-        target: nodesById.get(l.target.id || l.target) || l.target,
-      }));
-
-      const linksSel = linkLayer.selectAll("line")
-        .data(wiredLinks)
-        .enter().append("line")
-        .attr("class", "link")
-        .attr("x1", d => positions.get(d.source.id || d.source)?.x)
-        .attr("y1", d => positions.get(d.source.id || d.source)?.y)
-        .attr("x2", d => positions.get(d.target.id || d.target)?.x)
-        .attr("y2", d => positions.get(d.target.id || d.target)?.y);
-
-      const node = nodeLayer.selectAll("circle")
-        .data(graph.nodes)
-        .enter().append("circle")
-        .attr("class", d => `node ${d.type} ${d.meta?.root ? "source" : ""}`)
-        .attr("r", d => d.type === "book" ? 7 : 10)
-        .attr("cx", d => positions.get(d.id)?.x)
-        .attr("cy", d => positions.get(d.id)?.y)
-        .on("click", (event, d) => {
-          if (pinnedDetails && pinnedDetails.id === d.id) {
-            pinnedDetails = null;
-            setDetails(null);
-          } else {
-            setDetails(d, true);
-          }
-        })
-        .on("mouseover", function(event, d) {
-          node.classed("highlight", n => n === d || neighbors.has(`${d.id}|${n.id}`) || neighbors.has(`${n.id}|${d.id}`));
-          linksSel.classed("highlight", l => l.source.id === d.id || l.target.id === d.id);
-          label.style("display", n => n.type === "book" ? (n.id === d.id ? null : "none") : null);
-          setDetails(d);
-        })
-        .on("mouseout", () => {
-          node.classed("highlight", false);
-          linksSel.classed("highlight", false);
-          label.style("display", n => n.type === "book" ? "none" : null);
-          setDetails(null);
-        });
-
-      const label = labelLayer.selectAll("text")
-        .data(graph.nodes)
-        .enter().append("text")
-        .attr("class", "label")
-        .attr("dx", 10)
-        .attr("dy", 4)
-        .attr("x", d => positions.get(d.id)?.x)
-        .attr("y", d => positions.get(d.id)?.y)
-        .text(d => d.label)
-        .style("display", d => d.type === "book" ? "none" : null);
-
-      // Author hulls sized to their books.
-      const radii = [];
-      for (const layout of authorLayouts) {
-        const aid = layout.author.meta.author_id || layout.author.id.replace("author:", "");
-        const aPos = positions.get(`author:${aid}`);
-        if (!aPos) continue;
-        const r = layout.hull;
-        radii.push({ id: aid, x: aPos.x, y: aPos.y, r });
+        } else {
+          // Merge metadata
+          const existing = authorMap.get(id);
+          existing.meta = { ...existing.meta, ...meta };
+        }
+        return authorMap.get(id);
       }
 
-      hullLayer.selectAll("circle.author-hull")
-        .data(radii, d => d.id)
-        .join(
-          enter => enter.append("circle")
-            .attr("class", "author-hull")
-            .attr("fill", "rgba(247,164,108,0.08)")
-            .attr("stroke", "rgba(247,164,108,0.5)")
-            .attr("stroke-width", 1.2),
-          update => update,
-          exit => exit.remove()
-        )
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y)
-        .attr("r", d => d.r)
-        .style("display", toggleAuthors.checked ? null : "none");
+      records.forEach(rec => {
+        const src = rec.source;
 
-      const updateVisibility = () => {
-        node.style("display", d => (d.type === "book" && !toggleBooks.checked) || (d.type === "author" && !toggleAuthors.checked) ? "none" : null);
-        label.style("display", d => (d.type === "book" && !toggleBooks.checked) || (d.type === "author" && !toggleAuthors.checked) ? "none" : null);
-        const hidden = new Set(graph.nodes.filter(d => ((d.type === "book" && !toggleBooks.checked) || (d.type === "author" && !toggleAuthors.checked))).map(d => d.id));
-        linksSel.style("display", l => hidden.has(l.source.id || l.source) || hidden.has(l.target.id || l.target) ? "none" : null);
-        hullLayer.style("display", toggleAuthors.checked ? null : "none");
+        // Process Source Authors & Book
+        (src.author_ids || []).forEach((aid, i) => {
+          const name = src.authors?.[i] || "Unknown";
+          const author = getAuthor(`author:${aid}`, name);
+
+          const bookId = `book:${src.goodreads_id}`;
+          if (!bookMap.has(bookId)) {
+            const book = {
+              id: bookId,
+              type: 'book',
+              label: src.title,
+              root: true,
+              meta: src,
+              r: 4,
+              parent: author // Link to parent
+            };
+            bookMap.set(bookId, book);
+            author.books.push(book);
+          }
+        });
+
+        // Process Citations
+        (rec.citations || []).forEach(cit => {
+          const match = cit.goodreads_match || {};
+          const edge = cit.edge || {};
+          if (edge.target_type === 'not_found') return;
+
+          // Target Book
+          let targetBookId = null;
+          if (edge.target_book_id) {
+            targetBookId = `book:${edge.target_book_id}`;
+          }
+
+          // Target Authors
+          (edge.target_author_ids || []).forEach((aid, i) => {
+            // Resolve Name
+            let name = "Unknown";
+            if (match.authors && match.author_ids) {
+              const idx = match.author_ids.indexOf(aid);
+              if (idx >= 0 && match.authors[idx]) name = match.authors[idx];
+            }
+            if (name === "Unknown") name = match.author || match.name || "Unknown";
+
+            // Extract Author Metadata if available
+            // If the match is an author record (has works_count/fans_count), use it.
+            let authorMeta = {};
+            if (match.works_count !== undefined || match.fans_count !== undefined) {
+              authorMeta = match;
+            }
+
+            const author = getAuthor(`author:${aid}`, name, authorMeta);
+
+            // If we have a target book, add it to this author
+            if (targetBookId) {
+              if (!bookMap.has(targetBookId)) {
+                const book = {
+                  id: targetBookId,
+                  type: 'book',
+                  label: match.title,
+                  root: false,
+                  meta: match,
+                  r: 4,
+                  parent: author
+                };
+                bookMap.set(targetBookId, book);
+                author.books.push(book);
+              }
+            }
+          });
+
+          // Wikipedia Person
+          if (edge.target_person) {
+            const person = edge.target_person;
+            const pid = `person:${person.page_id}`;
+            // Treat person as an Author node for now
+            getAuthor(pid, person.title, person);
+          }
+
+          // Create Citation Links (Book -> Book)
+          const srcBookId = `book:${src.goodreads_id}`;
+          if (bookMap.has(srcBookId) && targetBookId && bookMap.has(targetBookId)) {
+            links.push({
+              source: bookMap.get(srcBookId),
+              target: bookMap.get(targetBookId),
+              type: 'citation'
+            });
+          }
+
+          // Link Source Book -> Wikipedia Person
+          if (bookMap.has(srcBookId) && edge.target_person) {
+            const pid = `person:${edge.target_person.page_id}`;
+            if (authorMap.has(pid)) {
+              links.push({
+                source: bookMap.get(srcBookId),
+                target: authorMap.get(pid), // Target is the Author/Person node itself
+                type: 'citation'
+              });
+            }
+          }
+        });
+      });
+
+      // Calculate Author Radii based on book count
+      authorMap.forEach(a => {
+        a.r = 20 + (a.books.length * 3);
+      });
+
+      // Prepare Physics Data
+      // Only Authors are in the simulation
+      const physicsNodes = Array.from(authorMap.values());
+
+      // We need "physics links" to keep related authors together.
+      // If Book A (in Author X) cites Book B (in Author Y), we add a force between X and Y.
+      const physicsLinks = [];
+      links.forEach(l => {
+        const sourceAuthor = l.source.type === 'author' ? l.source : l.source.parent;
+        const targetAuthor = l.target.type === 'author' ? l.target : l.target.parent;
+
+        if (sourceAuthor && targetAuthor && sourceAuthor !== targetAuthor) {
+          physicsLinks.push({
+            source: sourceAuthor.id,
+            target: targetAuthor.id
+          });
+        }
+      });
+
+      graphData = {
+        nodes: physicsNodes, // For simulation
+        allBooks: Array.from(bookMap.values()), // For rendering
+        links: links, // Visual links (Book -> Book)
+        physicsLinks: physicsLinks // Invisible links for force layout
       };
-      toggleBooks.onchange = updateVisibility;
-      toggleAuthors.onchange = updateVisibility;
-      updateVisibility();
+
+      initSimulation();
     }
 
-    loadAll()
-      .then(records => {
-        const graph = buildGraph(records);
-        setStatus(`Loaded ${graph.nodes.length} nodes, ${graph.links.length} edges`);
-        render(graph);
-      })
-      .catch(err => {
-        console.error(err);
-        setStatus(err.message || "Failed to load data");
+    function initSimulation() {
+      simulation = d3.forceSimulation(graphData.nodes)
+        .force("link", d3.forceLink(graphData.physicsLinks).id(d => d.id).distance(150).strength(0.2))
+        .force("charge", d3.forceManyBody().strength(-500))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collide", d3.forceCollide().radius(d => d.r + 10).iterations(2))
+        .on("tick", ticked);
+
+      render();
+    }
+
+    function ticked() {
+      // 1. Update Author Positions (handled by sim)
+
+      // 2. Update Book Positions (relative to parent Author)
+      graphData.nodes.forEach(author => {
+        const books = author.books;
+        if (!books.length) return;
+
+        // Place books in a circle/spiral inside the author
+        const step = (Math.PI * 2) / books.length;
+        const radius = author.r * 0.6; // Keep inside
+
+        books.forEach((book, i) => {
+          book.x = author.x + Math.cos(i * step) * radius;
+          book.y = author.y + Math.sin(i * step) * radius;
+        });
       });
+
+      // 3. Update Visuals
+      nodeGroup.selectAll(".author-node")
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y);
+
+      nodeGroup.selectAll(".book-node")
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y);
+
+      linkGroup.selectAll("line")
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+      labelGroup.selectAll("text")
+        .attr("x", d => d.x)
+        .attr("y", d => d.y);
+    }
+
+    function render() {
+      // Links
+      const link = linkGroup.selectAll("line")
+        .data(graphData.links)
+        .join("line")
+        .attr("class", "link")
+        .attr("stroke-width", 1)
+        .attr("marker-end", "url(#arrow)");
+
+      // Author Nodes
+      const authors = nodeGroup.selectAll(".author-node")
+        .data(graphData.nodes)
+        .join("circle")
+        .attr("class", "node author-node")
+        .attr("r", d => d.r)
+        .attr("fill", COLORS.author)
+        .attr("opacity", 0.2)
+        .attr("stroke", COLORS.author)
+        .attr("stroke-width", 1)
+        .on("click", (e, d) => showPanel(d))
+        .call(drag(simulation));
+
+      // Book Nodes
+      const books = nodeGroup.selectAll(".book-node")
+        .data(graphData.allBooks)
+        .join("circle")
+        .attr("class", "node book-node")
+        .attr("r", 4)
+        .attr("fill", d => d.root ? COLORS.source : COLORS.cited)
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 1)
+        .on("click", (e, d) => showPanel(d)); // Interactions on books
+
+      // Labels (Author Names)
+      const labels = labelGroup.selectAll("text")
+        .data(graphData.nodes)
+        .join("text")
+        .attr("class", "label")
+        .text(d => d.label)
+        .attr("text-anchor", "middle")
+        .attr("dy", d => -d.r - 5) // Above the circle
+        .style("font-size", "12px")
+        .style("fill", "#fff")
+        .style("pointer-events", "none");
+    }
+
+    // Drag behavior
+    function drag(sim) {
+      function dragstarted(event, d) {
+        if (!event.active) sim.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      }
+
+      function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+      }
+
+      function dragended(event, d) {
+        if (!event.active) sim.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      }
+
+      return d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended);
+    }
+
+    // UI Logic
+    function showPanel(d) {
+      const meta = d.meta || {};
+      document.getElementById("panel-title").textContent = d.label;
+
+      const content = document.getElementById("panel-content");
+      content.innerHTML = "";
+
+      const fields = [
+        { label: "Type", value: d.type === 'book' ? (d.root ? "Source Book" : "Cited Book") : "Author", tag: true },
+        { label: "Books Count", value: d.type === 'author' ? d.books.length : null },
+        { label: "Works Count", value: meta.works_count },
+        { label: "Fans Count", value: meta.fans_count },
+        { label: "Categories", value: meta.categories?.join(", ") },
+        { label: "Authors", value: meta.authors?.join(", ") },
+        { label: "Year", value: meta.publication_year },
+        { label: "Rating", value: meta.average_rating },
+        { label: "Description", value: meta.description },
+        { label: "Goodreads ID", value: meta.goodreads_id || meta.id }
+      ];
+
+      fields.forEach(f => {
+        if (!f.value) return;
+        const div = document.createElement("div");
+        div.className = "meta-item";
+
+        const label = document.createElement("div");
+        label.className = "meta-label";
+        label.textContent = f.label;
+
+        const val = document.createElement("div");
+        val.className = "meta-value";
+
+        if (f.tag) {
+          const span = document.createElement("span");
+          span.className = `tag ${d.type} ${d.root ? 'source' : 'cited'}`;
+          span.textContent = f.value;
+          val.appendChild(span);
+        } else {
+          val.textContent = f.value;
+        }
+
+        div.appendChild(label);
+        div.appendChild(val);
+        content.appendChild(div);
+      });
+
+      panel.classList.add("visible");
+    }
+
+    document.getElementById("panel-close").onclick = () => {
+      panel.classList.remove("visible");
+    };
+
+    // Search
+    searchInput.addEventListener("input", (e) => {
+      const term = e.target.value.toLowerCase();
+      if (!term) {
+        nodeGroup.selectAll("circle").classed("dimmed", false);
+        return;
+      }
+
+      nodeGroup.selectAll("circle").classed("dimmed", d => {
+        return !d.label.toLowerCase().includes(term);
+      });
+    });
+
+    // Start
+    loadData();
   </script>
 </body>
+
 </html>

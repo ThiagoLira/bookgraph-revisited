@@ -134,6 +134,43 @@ def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[st
     return books
 
 
+def load_goodreads_metadata(book_ids: Set[str], db_path: str = "goodreads_data/books_index.db") -> Dict[str, Any]:
+    """Load metadata for a set of Goodreads book IDs from the SQLite index."""
+    if not book_ids:
+        return {}
+    
+    if not os.path.exists(db_path):
+        print(f"[pipeline] Warning: Books DB not found at {db_path}, cannot load source metadata.")
+        return {}
+
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+    
+    placeholders = ",".join("?" for _ in book_ids)
+    query = f"SELECT * FROM books WHERE book_id IN ({placeholders})"
+    
+    results = {}
+    try:
+        cur.execute(query, list(book_ids))
+        for row in cur.fetchall():
+            data = dict(row)
+            # Parse JSON fields if necessary (authors is usually a JSON string in some schemas, 
+            # but here we might need to check the schema. Assuming standard columns).
+            # If authors is a string, try to parse it.
+            if isinstance(data.get("authors"), str):
+                try:
+                    data["authors"] = json.loads(data["authors"])
+                except json.JSONDecodeError:
+                    pass
+            results[str(data["book_id"])] = data
+    except Exception as e:
+        print(f"[pipeline] Error loading Goodreads metadata: {e}")
+    finally:
+        conn.close()
+        
+    return results
+
 async def run_extraction(
     txt_path: Path,
     output_path: Path,
@@ -247,6 +284,7 @@ async def stage_workflow_async(
     api_key: str,
     model_id: str,
     debug_trace: bool = False,
+    max_concurrency: int = 10,
 ) -> None:
     books = list(books)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -268,6 +306,27 @@ async def stage_workflow_async(
         llm=llm,
         verbose=debug_trace,
     )
+
+    sem = asyncio.Semaphore(max_concurrency)
+
+    async def process_citation_safe(citation: Dict[str, Any], bar: Optional[tqdm]) -> Dict[str, Any]:
+        async with sem:
+            try:
+                result = await workflow.run(citation=citation)
+                if bar:
+                    bar.update(1)
+                return {
+                    "citation": citation,
+                    "result": result
+                }
+            except Exception as e:
+                print(f"[workflow] Error processing citation {citation}: {e}")
+                if bar:
+                    bar.update(1)
+                return {
+                    "citation": citation,
+                    "error": str(e)
+                }
 
     for book in progress_iter_items(books, desc="Stage 3/3: Citation Workflow", unit="book"):
         pre_path = pre_dir / f"{book.goodreads_id}.json"
@@ -325,47 +384,47 @@ async def stage_workflow_async(
         if tqdm is not None:
             citation_bar = tqdm(total=len(citations), desc=f"  citations for {book.title}", unit="citation", leave=False)
 
-        for citation in citations:
-            try:
-                result = await workflow.run(citation=citation)
-                
-                # Format output based on result
-                match_type = result.get("match_type", "unknown")
-                metadata = result.get("metadata", {})
-                
-                if match_type == "not_found" or match_type == "unknown":
-                    if citation_bar: citation_bar.update(1)
-                    continue
-
-                # Construct edge data
-                target_book_id = metadata.get("book_id")
-                target_author_ids = []
-                if metadata.get("author_id"):
-                    target_author_ids.append(str(metadata.get("author_id")))
-                elif metadata.get("author_ids"):
-                    target_author_ids = [str(a) for a in metadata.get("author_ids")]
-                
-                wiki_person = metadata.get("wikipedia_match")
-
-                output_payload["citations"].append({
-                    "raw": citation,
-                    "goodreads_match": metadata,
-                    "wikipedia_match": wiki_person,
-                    "edge": {
-                        "target_type": match_type,
-                        "target_book_id": target_book_id,
-                        "target_author_ids": target_author_ids,
-                        "target_person": wiki_person,
-                    }
-                })
-            except Exception as e:
-                print(f"[workflow] Error processing citation {citation}: {e}")
-            
-            if citation_bar:
-                citation_bar.update(1)
+        tasks = [process_citation_safe(c, citation_bar) for c in citations]
+        results = await asyncio.gather(*tasks)
         
         if citation_bar:
             citation_bar.close()
+
+        for res in results:
+            if "error" in res:
+                continue
+            
+            citation = res["citation"]
+            result = res["result"]
+            
+            # Format output based on result
+            match_type = result.get("match_type", "unknown")
+            metadata = result.get("metadata", {})
+            
+            if match_type == "not_found" or match_type == "unknown":
+                continue
+
+            # Construct edge data
+            target_book_id = metadata.get("book_id")
+            target_author_ids = []
+            if metadata.get("author_id"):
+                target_author_ids.append(str(metadata.get("author_id")))
+            elif metadata.get("author_ids"):
+                target_author_ids = [str(a) for a in metadata.get("author_ids")]
+            
+            wiki_person = metadata.get("wikipedia_match")
+
+            output_payload["citations"].append({
+                "raw": citation,
+                "goodreads_match": metadata,
+                "wikipedia_match": wiki_person,
+                "edge": {
+                    "target_type": match_type,
+                    "target_book_id": target_book_id,
+                    "target_author_ids": target_author_ids,
+                    "target_person": wiki_person,
+                }
+            })
 
         final_path.write_text(json.dumps(output_payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -381,10 +440,11 @@ def stage_workflow(
     api_key: str,
     model_id: str,
     debug_trace: bool = False,
+    max_concurrency: int = 10,
 ) -> None:
     asyncio.run(stage_workflow_async(
         books, pre_dir, output_dir, books_db, authors_db, wiki_db, 
-        base_url, api_key, model_id, debug_trace
+        base_url, api_key, model_id, debug_trace, max_concurrency
     ))
 
 
@@ -471,6 +531,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Enable verbose debug tracing.",
     )
+    parser.add_argument(
+        "--agent-max-concurrency",
+        type=int,
+        default=10,
+        help="Max concurrent agent workflows.",
+    )
     return parser.parse_args()
 
 
@@ -518,6 +584,7 @@ def main() -> None:
         args.agent_api_key,
         args.agent_model,
         debug_trace=args.debug_trace,
+        max_concurrency=args.agent_max_concurrency,
     )
 
     print(f"Pipeline complete. Outputs at {output_base}")

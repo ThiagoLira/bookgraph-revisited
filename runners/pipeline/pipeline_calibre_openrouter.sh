@@ -56,9 +56,9 @@ CMD=(
   --agent-base-url "$BASE_URL"
   --agent-api-key "$OPENROUTER_API_KEY"
   --agent-model "$AGENT_MODEL"
-  --agent-max-workers "$AGENT_MAX_WORKERS"
+  --agent-max-concurrency "$AGENT_MAX_WORKERS"
   --only-goodreads-ids "61535"
-  --agent-trace
+  --debug-trace
 )
 
 if [[ -n "$OUTPUT_DIR" ]]; then
