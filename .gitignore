@@ -33,6 +33,9 @@ venv/
 ENV/
 env/
 .venv
+.venv_mwxml/
+.ruff_cache/
+.uv_cache/
 
 # IDE
 .vscode/
