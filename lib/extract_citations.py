@@ -280,97 +280,98 @@ async def call_model(
         {"role": "user", "content": user_prompt},
     ]
 
-    # print(f"[DEBUG] Chunk {chunk.index}: Waiting for semaphore...", flush=True)
-    try:
-        async with semaphore:
-            # print(f"[DEBUG] Chunk {chunk.index}: Acquired semaphore. Calling API...", flush=True)
-            response: ChatCompletion = await client.chat.completions.create(
-                model=model,
-                messages=messages,
-                max_tokens=max_completion_tokens,
-                temperature=0.0,
-                response_format=chunk_extraction_response_format(),
-                extra_body={
-                    "chat_template_kwargs": {"enable_thinking": False},
-                    "reasoning_format": "none",
-                },
-                timeout=120.0,
+    max_retries = 2
+    last_failure: Optional[ChunkFailure] = None
+
+    for attempt in range(max_retries + 1):
+        try:
+            async with semaphore:
+                response: ChatCompletion = await client.chat.completions.create(
+                    model=model,
+                    messages=messages,
+                    max_tokens=max_completion_tokens,
+                    temperature=0.0,
+                    response_format=chunk_extraction_response_format(),
+                    extra_body={
+                        "chat_template_kwargs": {"enable_thinking": False},
+                        "reasoning_format": "none",
+                    },
+                    timeout=120.0,
+                )
+        except Exception as e:
+            print(f"[DEBUG] Chunk {chunk.index}: API Failed (Attempt {attempt+1}/{max_retries+1}): {e}", flush=True)
+            last_failure = ChunkFailure(
+                chunk_index=chunk.index,
+                start_sentence=chunk.start_sentence,
+                end_sentence=chunk.end_sentence,
+                error=f"API Error: {str(e)}",
             )
-            # print(f"[DEBUG] Chunk {chunk.index}: API returned.", flush=True)
-    except Exception as e:
-        print(f"[DEBUG] Chunk {chunk.index}: API Failed with {e}", flush=True)
-        failure = ChunkFailure(
-            chunk_index=chunk.index,
-            start_sentence=chunk.start_sentence,
-            end_sentence=chunk.end_sentence,
-            error=f"API Error: {str(e)}",
-        )
-        return chunk, None, failure
+            continue
 
-    content = ""
-    finish_reason = None
-    if response.choices:
-        choice = response.choices[0]
-        finish_reason = choice.finish_reason
-        message = choice.message
-        content = (message.content or "").strip()
+        content = ""
+        finish_reason = None
+        if response.choices:
+            choice = response.choices[0]
+            finish_reason = choice.finish_reason
+            message = choice.message
+            content = (message.content or "").strip()
+            if not content:
+                reasoning_content = getattr(message, "reasoning_content", None)
+                if reasoning_content:
+                    content = reasoning_content.strip()
+
         if not content:
-            reasoning_content = getattr(message, "reasoning_content", None)
-            if reasoning_content:
-                content = reasoning_content.strip()
+            print(f"[DEBUG] Chunk {chunk.index}: Empty content (Attempt {attempt+1}/{max_retries+1}).", flush=True)
+            last_failure = ChunkFailure(
+                chunk_index=chunk.index,
+                start_sentence=chunk.start_sentence,
+                end_sentence=chunk.end_sentence,
+                error="Empty response from model.",
+            )
+            continue
 
-    if not content:
-        print(f"[DEBUG] Chunk {chunk.index}: Empty content.", flush=True)
-        failure = ChunkFailure(
-            chunk_index=chunk.index,
-            start_sentence=chunk.start_sentence,
-            end_sentence=chunk.end_sentence,
-            error="Empty response from model.",
-        )
-        return chunk, None, failure
+        if finish_reason == "length":
+            print(f"[DEBUG] Chunk {chunk.index}: Finish reason length (Attempt {attempt+1}/{max_retries+1}).", flush=True)
+            last_failure = ChunkFailure(
+                chunk_index=chunk.index,
+                start_sentence=chunk.start_sentence,
+                end_sentence=chunk.end_sentence,
+                error="Model stopped early due to max token limit; increase --max-completion-tokens.",
+                raw_response=content,
+            )
+            continue
 
-    if finish_reason == "length":
-        print(f"[DEBUG] Chunk {chunk.index}: Finish reason length.", flush=True)
-        failure = ChunkFailure(
-            chunk_index=chunk.index,
-            start_sentence=chunk.start_sentence,
-            end_sentence=chunk.end_sentence,
-            error="Model stopped early due to max token limit; increase --max-completion-tokens.",
-            raw_response=content,
-        )
-        return chunk, None, failure
+        try:
+            parsed = ModelChunkCitations.model_validate_json(content)
+            extraction = ChunkExtraction(
+                chunk_index=chunk.index,
+                start_sentence=chunk.start_sentence,
+                end_sentence=chunk.end_sentence,
+                citations=parsed.citations,
+            )
+            return chunk, extraction, None
 
-    try:
-        parsed = ModelChunkCitations.model_validate_json(content)
-    except ValidationError as exc:
-        print(f"[DEBUG] Chunk {chunk.index}: Validation Error {exc}", flush=True)
-        failure = ChunkFailure(
-            chunk_index=chunk.index,
-            start_sentence=chunk.start_sentence,
-            end_sentence=chunk.end_sentence,
-            error=f"Pydantic validation failed: {exc}",
-            raw_response=content,
-        )
-        return chunk, None, failure
-    except json.JSONDecodeError as exc:  # pragma: no cover - defensive
-        print(f"[DEBUG] Chunk {chunk.index}: JSON Error {exc}", flush=True)
-        failure = ChunkFailure(
-            chunk_index=chunk.index,
-            start_sentence=chunk.start_sentence,
-            end_sentence=chunk.end_sentence,
-            error=f"Invalid JSON output: {exc}",
-            raw_response=content,
-        )
-        return chunk, None, failure
+        except ValidationError as exc:
+            print(f"[DEBUG] Chunk {chunk.index}: Validation Error (Attempt {attempt+1}/{max_retries+1}): {exc}", flush=True)
+            last_failure = ChunkFailure(
+                chunk_index=chunk.index,
+                start_sentence=chunk.start_sentence,
+                end_sentence=chunk.end_sentence,
+                error=f"Pydantic validation failed: {exc}",
+                raw_response=content,
+            )
+        except json.JSONDecodeError as exc:
+            print(f"[DEBUG] Chunk {chunk.index}: JSON Error (Attempt {attempt+1}/{max_retries+1}): {exc}", flush=True)
+            last_failure = ChunkFailure(
+                chunk_index=chunk.index,
+                start_sentence=chunk.start_sentence,
+                end_sentence=chunk.end_sentence,
+                error=f"Invalid JSON output: {exc}",
+                raw_response=content,
+            )
 
-    extraction = ChunkExtraction(
-        chunk_index=chunk.index,
-        start_sentence=chunk.start_sentence,
-        end_sentence=chunk.end_sentence,
-        citations=parsed.citations,
-    )
-
-    return chunk, extraction, None
+    # If we exhaust all retries, return the last failure
+    return chunk, None, last_failure
 
 
 ProgressCallback = Callable[[int, int], None]
