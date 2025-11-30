@@ -57,7 +57,7 @@ CHAR_PER_TOKEN_SAFETY = 6
 
 
 class BookCitation(BaseModel):
-    title: Optional[str] = Field(..., description="Title of the referenced book.")
+    title: Optional[str] = Field(None, description="Title of the referenced book.")
     author: str = Field(
         ..., description="Book Author mentioned"
     )
@@ -127,12 +127,12 @@ class SentenceChunk:
 class ExtractionConfig:
     input_path: Path
     chunk_size: int = 15
-    max_concurrency: int = 50
+    max_concurrency: int = 10
     base_url: str = "http://localhost:8080/v1"
     api_key: str = "test"
     model: str = "Qwen/Qwen3-30B-A3B"
-    max_completion_tokens: int = 2048
-    max_context_per_request: int = 6144  # Total context window per request (input + output)
+    max_completion_tokens: int = 4096
+    max_context_per_request: int = 8192  # Total context window per request (input + output)
     tokenizer_name: str = "Qwen/Qwen3-30B-A3B"
     book_title: Optional[str] = None
 
