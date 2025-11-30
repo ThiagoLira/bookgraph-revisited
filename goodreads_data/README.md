@@ -17,6 +17,7 @@ To enable real-time querying and graph construction, we transformed these massiv
 
 ### A. Books Index (`books_index.db`)
 *   **Source**: `goodreads_books.json.gz`
+*   **Script**: [`scripts/build_goodreads_index.py`](../scripts/build_goodreads_index.py)
 *   **Transformation**:
     1.  Iterated through the gzipped JSON stream.
     2.  Filtered for valid records (must have title and authors).
@@ -33,6 +34,9 @@ To enable real-time querying and graph construction, we transformed these massiv
 
 ### B. People Index (`wiki_people_index.db`)
 *   **Source**: `enwiki-...xml.bz2`
+*   **Scripts**:
+    1.  [`scripts/filter_wiki_people.py`](../scripts/filter_wiki_people.py) (Extracts people from XML)
+    2.  [`scripts/build_wiki_people_index.py`](../scripts/build_wiki_people_index.py) (Indexes them)
 *   **Transformation**:
     1.  Parsed the XML dump to identify pages representing people.
     2.  Extracted metadata (birth/death dates, occupation).

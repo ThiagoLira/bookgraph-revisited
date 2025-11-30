@@ -1,0 +1,224 @@
+# Running Local LLMs with llama.cpp
+
+This guide details how to run the extraction pipeline using local LLMs (specifically Qwen3-30B-A3B) with `llama.cpp`. It covers setup, profiling, and performance tuning.
+
+## Requirements
+
+- Python 3.10+
+- [llama.cpp server](https://github.com/ggml-org/llama.cpp)
+- CUDA-capable GPU (tested on RTX 5090)
+- ~20GB VRAM for 30B model
+
+## Quick Start
+
+```bash
+# Install dependencies
+uv sync
+
+# Process a book (uses default test subset)
+./profiling/single_gpu/run_profiled_single.sh
+
+# Process a custom book
+./profiling/single_gpu/run_profiled_single.sh "your_book.txt"
+
+# Full control
+./profiling/single_gpu/run_profiled_single.sh "book.txt" 50 30 4096 2048
+```
+
+## CLI Tool: `run_single_file.py`
+
+Command-line interface for processing text files directly with a local server.
+
+```bash
+uv run python run_single_file.py book.txt \
+  --chunk-size 50 \
+  --max-concurrency 30 \
+  --max-context-per-request 6144 \
+  --max-completion-tokens 2048 \
+  --base-url http://localhost:8080/v1
+```
+
+### Parameters
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `--chunk-size` | 15 | Sentences per chunk |
+| `--max-concurrency` | 50 | Parallel requests |
+| `--max-context-per-request` | 6144 | Total context window per request (input + output) |
+| `--max-completion-tokens` | 2048 | Max response tokens |
+| `--base-url` | localhost:8080/v1 | OpenAI-compatible API endpoint |
+| `--model` | Qwen/Qwen3-30B-A3B | Model identifier |
+| `--tokenizer-name` | Qwen/Qwen3-30B-A3B | HuggingFace tokenizer |
+| `--debug-limit` | None | Limit chunks for testing |
+
+## Profiling Scripts
+
+### Single-GPU Stress Harness (`profiling/single_gpu/run_profiled_single.sh`)
+
+Automates everything for one-GPU experiments: spins up `llama-server`, launches `run_single_file.py`, records GPU utilization, and produces a PNG plot.
+
+**Usage**
+
+```bash
+# Quick test with defaults
+./profiling/single_gpu/run_profiled_single.sh
+
+# Custom book
+./profiling/single_gpu/run_profiled_single.sh "mybook.txt"
+
+# Full control
+./profiling/single_gpu/run_profiled_single.sh INPUT CHUNK CONCURRENCY \
+    MAX_INPUT MAX_COMPLETION [MODEL_PATH] [GPU_LAYERS] [SERVER_BINARY] [INTERVAL]
+```
+
+**Default configuration**
+
+```
+INPUT_TXT:             test_book_subset.txt
+CHUNK_SIZE:            50 sentences
+MAX_CONCURRENCY:       30 parallel requests
+MAX_INPUT_TOKENS:      4096
+MAX_COMPLETION_TOKENS: 2048
+CONTEXT_PER_REQUEST:   6144 (4096 input + 2048 output)
+BATCH_SIZE:            2048  (logical)
+MODEL_PATH:            Qwen3-30B-A3B-Q5_K_S.gguf
+GPU_LAYERS:            -1 (all layers)
+KV_CACHE:              q4_0 (quantized for VRAM efficiency)
+```
+
+The harness writes artifacts to `profiling/single_gpu/profile_runs/<timestamp>/`:
+
+```
+├── gpu_utilization.png      # GPU 0 plot
+├── *_metrics.log            # Raw utilization samples
+├── run_single_file.log      # Extraction logs
+└── llama_server.log         # Server logs
+```
+
+### Dual-GPU Parallel Sweep (`profiling/dual_gpu/run_profiled_dual.sh`)
+
+New experiment focused on 2×GPU launches. It:
+
+- Boots a row-split, tensor-parallel `llama-server` across GPUs `0,1`
+- Processes a single book from `books_samples/` (default: `freud.txt`)
+- Sweeps through multiple `--max-concurrency` values in one run
+- Logs/plots utilization for **both GPUs** per experiment
+
+**Usage**
+
+```bash
+# Profile freud.txt at 12, 20, and 28 concurrent slots
+./profiling/dual_gpu/run_profiled_dual.sh \
+  "$PWD/books_samples/freud.txt" 12,20,28
+
+# Override tensor split + batch size
+./profiling/dual_gpu/run_profiled_dual.sh \
+  "$PWD/books_samples/sandel.txt" 16,24 \
+  50 4096 2048 /home/thiago/models/Qwen3-30B-A3B-Q5_K_S.gguf \
+  -1 llama-server 1 2048 512 65,35 0
+```
+
+Output lives under `profiling/dual_gpu/profile_runs/<timestamp>/np_<parallel>/` with:
+
+```
+├── gpu0.log / gpu0_util.png        # GPU 0 raw + plot
+├── gpu1.log / gpu1_util.png        # GPU 1 raw + plot
+├── run_single_file.log             # Extraction logs
+└── llama_server.log                # Server stdout/stderr
+```
+
+The default server launch mirrors the recommendations in `launch_llama_server_2_gpus.sh`: row split, tensor split `70,30`, heavy tensors pinned to GPU 0, `-np` sweeping over the provided list.
+
+### Dual-GPU Timing-Only Sweep (`profiling/dual_gpu/run_profiled_dual_timing.sh`)
+
+Same launch mechanics as the full profiler but stripped down to a single datapoint: wall-clock seconds per concurrency. No GPU logs, just run/server logs and a CSV summary.
+
+```bash
+./profiling/dual_gpu/run_profiled_dual_timing.sh \
+  "$PWD/books_samples/susan.txt" 8,16,24
+```
+
+Results land under `profiling/dual_gpu/profile_runs/<timestamp>_timings/` with:
+
+```
+├── timings.csv                 # concurrency,duration_seconds
+├── np_<N>/run_single_file.log  # extraction log per sweep
+└── np_<N>/llama_server.log     # server stdout/stderr
+```
+
+### Agent & Database micro-benchmarks
+
+For latency hunts we keep a few focused utilities under `profiling/`:
+
+- `profiling/mock_run.sh` – spins up a virtualenv, runs `process_citations_pipeline.py` against `books_samples/mock_short.txt`, and records a cProfile trace at `profiling/mock_profile.prof`.
+- `profiling/query_goodreads.py` – lightweight CLI that issues direct `goodreads_book_lookup` calls without the full agent stack.
+- `profiling/bench_goodreads_queries.sh` – bash harness that times a suite of known-good queries (title-only and author-only) against the SQLite FTS index, logging milliseconds per lookup so you can validate DB build quality or hardware differences quickly.
+
+Each script accepts the same `--base-url`, `--api-key`, or database overrides used elsewhere, so you can experiment without touching the core pipeline.
+
+## Performance Benchmarks
+
+Tested on RTX 5090 (32GB VRAM) with Qwen3-30B-A3B-Q5_K_S (20GB model):
+
+### Test Results (733-sentence subset, 15 chunks)
+
+| Config | Batch Size | Time | GPU Util |
+|--------|-----------|------|----------|
+| **Optimal** | 2048 | 13.5s | 70-75% |
+| Medium | 1024 | 14.0s | 63% |
+| Small | 512 | 14.5s | 68% |
+| Tiny | 256 | 16.2s | 74% |
+
+### Full Book (680KB, 104 chunks)
+
+- **Time**: ~55 seconds
+- **GPU utilization**: 70-75% sustained
+- **Throughput**: ~30-40 tokens/sec per slot
+- **VRAM usage**: ~24.5 GB (model + q4_0 KV cache)
+- **Chunks**: 104 (50 sentences each, 4096 input tokens utilized)
+
+### Key Optimization Findings
+
+1. **Batch size matters**: 2048 optimal for full books, 1024 for small workloads
+2. **KV cache quantization**: q4_0 enables higher concurrency with 50% VRAM savings
+3. **Optimal concurrency**: 30 parallel requests saturates GPU efficiently
+4. **Larger chunks = faster**: 50 sentences optimal (1-sentence chunks 5.6x slower!)
+5. **Context calculation**: Total context = (input+output) × concurrency, llama.cpp divides by -np
+6. **Parameter clarity**: Renamed max_input_tokens → max_context_per_request to fix double-reservation bug
+
+## Troubleshooting
+
+### Out of Memory (OOM)
+
+```bash
+cudaMalloc failed: out of memory
+```
+
+**Solutions:**
+1. Reduce concurrency: `--max-concurrency 20`
+2. Use q4_0 KV cache (default in profiling script)
+3. Reduce context: `--max-input-tokens 2048`
+
+### Slow Performance
+
+**Check GPU utilization:**
+```bash
+watch -n 1 nvidia-smi
+```
+
+If GPU util < 80%:
+- Increase concurrency
+- Check for Python event loop bottleneck
+- Verify batch-size in server config
+
+### Server Won't Start
+
+**Check logs:**
+```bash
+tail -100 profile_runs/TIMESTAMP/llama_server.log
+```
+
+Common issues:
+- Model not found - verify `MODEL_PATH`
+- Port already in use - kill existing server
+- Insufficient VRAM - reduce context/concurrency

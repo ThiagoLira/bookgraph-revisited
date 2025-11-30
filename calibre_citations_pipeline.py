@@ -271,7 +271,7 @@ def stage_preprocess(raw_dir: Path, output_dir: Path, books: Iterable[CalibreBoo
                             ensure_ascii=False), encoding="utf-8")
 
 
-from lib.bibliography_agent.agent import build_llm
+from lib.bibliography_agent.llm_utils import build_llm
 
 async def stage_workflow_async(
     books: Iterable[CalibreBook],
