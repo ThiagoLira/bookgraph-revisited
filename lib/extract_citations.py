@@ -20,7 +20,9 @@ from tokenizers import Tokenizer
 DEFAULT_SYSTEM_PROMPT = (
     "You are an expert research librarian. Extract only citations that refer to "
     "books or book authors. Ignore references to papers, articles, movies, podcasts, "
-    "websites, or other works of art like paintings and architecture. When uncertain, omit the item."
+    "websites, or other works of art like paintings and architecture. "
+    "CRITICAL: IGNORE lists of books, Table of Contents, or 'Other books by...' sections. "
+    "Focus ONLY on citations that appear within the narrative prose."
 )
 
 USER_PROMPT_TEMPLATE = """You are extracting book citations from a bounded excerpt of "{{book_title}}".
@@ -31,7 +33,7 @@ Return ONLY JSON with this shape:
     {
       "title": str | null,
       "author": str,
-      "note": str | null
+      "citation_excerpt": str
     }
   ]
 }
@@ -41,7 +43,10 @@ Rules:
 - Cite an author alone when only the author is mentioned; when a book is cited, include both title and author.
 - If one author has multiple books, output separate citations.
 - Return an empty list when no book citations are present.
-- Include each cited book at most once per chunk and avoid any commentary outside the JSON payload.
+- Include each cited book at most once per chunk.
+- **IGNORE** Table of Contents, Bibliographies, or lists of "Other books by this author".
+- **PRIORITIZE** citations that appear naturally within the prose/sentences.
+- `citation_excerpt` MUST be the exact text snippet from the excerpt where the citation appears.
 
 ===== BEGIN BOOK EXCERPT =====
 {{sentences_block}}
@@ -56,9 +61,9 @@ class BookCitation(BaseModel):
     author: str = Field(
         ..., description="Book Author mentioned"
     )
-    note: Optional[str] = Field(
-        None,
-        description="Optional clarification for ambiguous references.",
+    citation_excerpt: str = Field(
+        ...,
+        description="The exact text snippet where the citation appears.",
     )
 
 
