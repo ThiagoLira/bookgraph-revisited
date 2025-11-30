@@ -20,7 +20,13 @@ wheels/
 *.egg
 
 
-goodreads_data/
+# goodreads_data/ # Allow directory
+goodreads_data/*.json
+goodreads_data/*.json.gz
+goodreads_data/*.db
+goodreads_data/*.xml.bz2
+goodreads_data/*.jsonl.gz
+!goodreads_data/README.md
 
 # Virtual environments
 venv/
