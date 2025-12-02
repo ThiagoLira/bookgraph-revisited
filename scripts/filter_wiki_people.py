@@ -32,6 +32,9 @@ PEOPLE_BOXES = re.compile(
     r"person|scientist|writer|artist|philosopher|biography|academic|politician",
     re.IGNORECASE,
 )
+# Matches "1809 births", "384 BC births", "50 births"
+BIRTH_CAT_RE = re.compile(r"(\d{1,4})(?:\s+(BC))?\s+births", re.IGNORECASE)
+DEATH_CAT_RE = re.compile(r"(\d{1,4})(?:\s+(BC))?\s+deaths", re.IGNORECASE)
 
 
 def parse_args() -> argparse.Namespace:
@@ -77,6 +80,31 @@ def extract_infoboxes(text: str) -> List[str]:
     return INFOBOX_RE.findall(text)
 
 
+def extract_years(categories: List[str]) -> Tuple[Optional[int], Optional[int]]:
+    birth_year = None
+    death_year = None
+    for cat in categories:
+        b_match = BIRTH_CAT_RE.search(cat)
+        if b_match:
+            try:
+                y = int(b_match.group(1))
+                if b_match.group(2): # BC
+                    y = -y
+                birth_year = y
+            except ValueError:
+                pass
+        d_match = DEATH_CAT_RE.search(cat)
+        if d_match:
+            try:
+                y = int(d_match.group(1))
+                if d_match.group(2): # BC
+                    y = -y
+                death_year = y
+            except ValueError:
+                pass
+    return birth_year, death_year
+
+
 def is_person(text: str, categories: List[str], infoboxes: List[str]) -> bool:
     if DISAMBIG_RE.search(text):
         return False
@@ -100,12 +128,16 @@ def page_to_record(page: mwxml.Page) -> Optional[dict]:
     infoboxes = extract_infoboxes(text)
     if not is_person(text, categories, infoboxes):
         return None
+    
+    birth_year, death_year = extract_years(categories)
     return {
         "title": page.title,
         "page_id": page.id,
         "rev_id": revision.id,
         "categories": categories,
         "infoboxes": infoboxes,
+        "birth_year": birth_year,
+        "death_year": death_year,
     }
 
 
@@ -118,6 +150,8 @@ def process_batch(pages: List[dict]) -> List[dict]:
         boxes = extract_infoboxes(text)
         if not is_person(text, cats, boxes):
             continue
+            
+        birth_year, death_year = extract_years(cats)
         results.append(
             {
                 "title": pdata["title"],
@@ -125,6 +159,8 @@ def process_batch(pages: List[dict]) -> List[dict]:
                 "rev_id": pdata["rev_id"],
                 "categories": cats,
                 "infoboxes": boxes,
+                "birth_year": birth_year,
+                "death_year": death_year,
             }
         )
     return results

@@ -54,12 +54,26 @@ def build_index(db_path: Path, books_path: Path, authors: Dict[str, str], batch_
     conn.execute("PRAGMA temp_store = MEMORY;")
     cur = conn.cursor()
     cur.execute("DROP TABLE IF EXISTS books_fts;")
+    cur.execute("DROP TABLE IF EXISTS books;")
+    
+    # FTS table for text search
     cur.execute(
         """
         CREATE VIRTUAL TABLE books_fts USING fts5(
             title,
             authors,
+            book_id UNINDEXED,
             data UNINDEXED
+        );
+        """
+    )
+    
+    # Standard table for ID lookup
+    cur.execute(
+        """
+        CREATE TABLE books (
+            book_id TEXT PRIMARY KEY,
+            data TEXT
         );
         """
     )
@@ -100,14 +114,21 @@ def build_index(db_path: Path, books_path: Path, authors: Dict[str, str], batch_
                 yield (
                     title,
                     authors_field,
+                    str(row.get("book_id", "")),
                     json.dumps(row, ensure_ascii=False),
                 )
 
     total = 0
     for batch in chunks(iter_books(), batch_size):
+        # Insert into FTS
         cur.executemany(
-            "INSERT INTO books_fts(title, authors, data) VALUES (?, ?, ?)",
-            batch,
+            "INSERT INTO books_fts(title, authors, book_id, data) VALUES (?, ?, ?, ?)",
+            [(b[0], b[1], b[2], b[3]) for b in batch],
+        )
+        # Insert into standard table
+        cur.executemany(
+            "INSERT OR IGNORE INTO books(book_id, data) VALUES (?, ?)",
+            [(b[2], b[3]) for b in batch],
         )
         conn.commit()
         total += len(batch)

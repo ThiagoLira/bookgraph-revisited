@@ -43,6 +43,19 @@ To enable real-time querying and graph construction, we transformed these massiv
     3.  Indexed into a SQLite database.
 *   **Purpose**: Used to distinguish "Authors" from "Historical Figures" or other entities when processing citations.
 
+## 4. Curated Metadata (The "Gold Standard")
+
+We have enriched the raw Goodreads/Wikipedia data with a layer of manually curated and algorithmically cleaned metadata to ensure historical accuracy (e.g., correct BC dates for ancient authors).
+
+*   **`original_publication_dates.json`**: A mapping of Goodreads IDs to **integer** publication years.
+    *   **Source**: Scraped from Goodreads "original publication date" fields and manually corrected.
+    *   **Corrections**: Includes fixes for ancient texts (e.g., Homer, Plato), "Year Unknown" issues, and integer normalization.
+    *   **Usage**: Merged into `books_index.db` (column `original_publication_year`) for fast retrieval.
+
+*   **`authors_metadata.json`**: A mapping of Author Names to birth/death years.
+    *   **Source**: Extracted from Wikipedia and manually corrected for ancient/classical authors.
+    *   **Usage**: Loaded by `bibliography_tool.py` as an **override layer**. If an author name matches exactly, these dates take precedence over `wiki_people_index.db`.
+
 ## 3. Usage in Pipeline
 
 1.  **Extraction**: The pipeline reads your Calibre library.

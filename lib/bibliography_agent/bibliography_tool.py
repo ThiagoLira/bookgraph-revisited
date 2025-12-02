@@ -144,6 +144,27 @@ class SQLiteGoodreadsCatalog:
         start = time.perf_counter()
         try:
             rows = self._conn.execute(sql, (query, limit)).fetchall()
+            
+            # Fallback: If no matches and author is present, try splitting author name
+            if not rows and author and " " in author.strip():
+                tokens = author.strip().split()
+                if len(tokens) > 1:
+                    fallback_clauses = []
+                    if title:
+                        fallback_clauses.append(f'title : "{self._fts_escape(title)}"')
+                    
+                    # Add each token as a separate AND clause
+                    for token in tokens:
+                        # Skip short tokens or initials if desired, but for now include all
+                        if len(token) > 1:
+                            fallback_clauses.append(f'authors : "{self._fts_escape(token)}"')
+                    
+                    if len(fallback_clauses) > (1 if title else 0): # Ensure we added something new
+                        fallback_query = " AND ".join(fallback_clauses)
+                        if self.trace:
+                            print(f"[goodreads_tool] Fallback FTS query string: {fallback_query}")
+                        rows = self._conn.execute(sql, (fallback_query, limit)).fetchall()
+
         except sqlite3.OperationalError as exc:
             if self.trace:
                 print(f"[goodreads_tool] FTS query error: {exc}")
@@ -248,6 +269,22 @@ class SQLiteWikiPeopleIndex:
             )
         self._conn = sqlite3.connect(self.db_path)
         self._conn.row_factory = sqlite3.Row
+        
+        # Load overrides
+        self.overrides = {}
+        overrides_path = Path("goodreads_data/authors_metadata.json")
+        if overrides_path.exists():
+            try:
+                with overrides_path.open("r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    # Normalize keys for case-insensitive lookup
+                    for name, meta in data.items():
+                        self.overrides[name.lower()] = meta
+                if trace:
+                    print(f"[wiki_people_tool] Loaded {len(self.overrides)} author overrides")
+            except Exception as e:
+                print(f"[wiki_people_tool] Error loading overrides: {e}")
+        
         if trace:
             print(f"[wiki_people_tool] Connected to {self.db_path}")
 
@@ -265,28 +302,61 @@ class SQLiteWikiPeopleIndex:
             ORDER BY rank
             LIMIT ?
         """
+        # Fetch more candidates to allow for re-ranking
+        fetch_limit = max(limit * 10, 50)
         start = time.perf_counter()
         try:
-            rows = self._conn.execute(sql, (query, limit)).fetchall()
+            rows = self._conn.execute(sql, (query, fetch_limit)).fetchall()
         except sqlite3.OperationalError as exc:
             if self.trace:
                 print(f"[wiki_people_tool] FTS query error: {exc}")
             return []
         duration = time.perf_counter() - start
-        results: List[Dict[str, Any]] = []
+        
+        candidates: List[Dict[str, Any]] = []
         for row in rows:
             try:
                 payload = json.loads(row["data"])
+                title = payload.get("title")
+                
+                # Check for override (perfect match, case-insensitive)
+                birth_year = payload.get("birth_year")
+                death_year = payload.get("death_year")
+                
+                if title and title.lower() in self.overrides:
+                    override = self.overrides[title.lower()]
+                    birth_year = override.get("birth_year")
+                    death_year = override.get("death_year")
+                    if self.trace:
+                        print(f"[wiki_people_tool] Applied override for {title}: {birth_year}-{death_year}")
+
+                candidates.append(
+                    {
+                        "title": title,
+                        "page_id": payload.get("page_id"),
+                        "infoboxes": payload.get("infoboxes") or [],
+                        "categories": (payload.get("categories") or [])[:30],
+                        "birth_year": birth_year,
+                        "death_year": death_year,
+                    }
+                )
             except json.JSONDecodeError:
                 continue
-            results.append(
-                {
-                    "title": payload.get("title"),
-                    "page_id": payload.get("page_id"),
-                    "infoboxes": payload.get("infoboxes") or [],
-                    "categories": (payload.get("categories") or [])[:30],
-                }
+
+        # Re-rank candidates
+        # 1. Exact title match (case-insensitive)
+        # 2. Page ID (lower is usually more important/older)
+        def rank_score(c):
+            is_exact = c["title"].lower() == name.lower()
+            return (
+                0 if is_exact else 1,
+                c["page_id"] if c["page_id"] else float('inf')
             )
+            
+        candidates.sort(key=rank_score)
+        
+        results = candidates[:limit]
+
         if self.trace:
             print(f"[wiki_people_tool] Returned {len(results)} matches in {duration:.3f}s")
         return results

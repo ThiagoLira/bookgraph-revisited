@@ -9,7 +9,8 @@ This project extracts book and author citations from text files (specifically Ca
 - **Async parallel processing** with configurable concurrency
 - **Structured JSON output** via JSON schema constraints
 - **Goodreads & Wikipedia Resolution** for metadata enrichment
-- **Interactive Graph Visualization** (D3.js)
+- **Curated Historical Metadata** for accurate ancient/classic book dating
+- **Interactive Graph Visualization** (D3.js) with **Author Timeline View**
 
 ## Quick Start
 
