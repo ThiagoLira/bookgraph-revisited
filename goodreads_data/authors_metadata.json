@@ -1,0 +1,6524 @@
+{
+  "Pausanias (geographer)": {
+    "birth_year": 110,
+    "death_year": 180,
+    "title": "Pausanias (geographer)",
+    "description": null
+  },
+  "David Diringer": {
+    "birth_year": 1900,
+    "death_year": 1975,
+    "title": "David Diringer",
+    "description": null
+  },
+  "Archimedes": {
+    "birth_year": -287,
+    "death_year": -212,
+    "title": "Archimedes",
+    "description": null
+  },
+  "Thomas Robert Malthus": {
+    "birth_year": 1766,
+    "death_year": 1834,
+    "title": "Thomas Robert Malthus",
+    "description": null
+  },
+  "Johannes Hevelius": {
+    "birth_year": 1611,
+    "death_year": 1687,
+    "title": "Johannes Hevelius",
+    "description": null
+  },
+  "Cornel West": {
+    "birth_year": 1953,
+    "death_year": null,
+    "title": "Cornel West",
+    "description": null
+  },
+  "Fred Dretske": {
+    "birth_year": 1932,
+    "death_year": 2013,
+    "title": "Fred Dretske",
+    "description": null
+  },
+  "Maxime Kaltenmark": {
+    "birth_year": 1910,
+    "death_year": 2002,
+    "title": "Maxime Kaltenmark",
+    "description": null
+  },
+  "Merle Fainsod": {
+    "birth_year": 1907,
+    "death_year": 1972,
+    "title": "Merle Fainsod",
+    "description": null
+  },
+  "Niall Rudd": {
+    "birth_year": 1927,
+    "death_year": 2015,
+    "title": "Niall Rudd",
+    "description": null
+  },
+  "Jacques Monod": {
+    "birth_year": 1910,
+    "death_year": 1976,
+    "title": "Jacques Monod",
+    "description": null
+  },
+  "John Bengtson": {
+    "birth_year": 1948,
+    "death_year": null,
+    "title": "John Bengtson",
+    "description": null
+  },
+  "Herbert Spencer": {
+    "birth_year": 1820,
+    "death_year": 1903,
+    "title": "Herbert Spencer",
+    "description": null
+  },
+  "Pierre Grimal": {
+    "birth_year": 1912,
+    "death_year": 1996,
+    "title": "Pierre Grimal",
+    "description": null
+  },
+  "Robert Boyle": {
+    "birth_year": 1627,
+    "death_year": 1691,
+    "title": "Robert Boyle",
+    "description": null
+  },
+  "\u00c9douard Drumont": {
+    "birth_year": 1844,
+    "death_year": 1917,
+    "title": "\u00c9douard Drumont",
+    "description": null
+  },
+  "Walter Bauer": {
+    "birth_year": 1877,
+    "death_year": 1960,
+    "title": "Walter Bauer",
+    "description": null
+  },
+  "Xie Lingyun": {
+    "birth_year": 385,
+    "death_year": 433,
+    "title": "Xie Lingyun",
+    "description": null
+  },
+  "Zhuang Zhou": {
+    "birth_year": -369,
+    "death_year": -286,
+    "title": "Zhuang Zhou",
+    "description": null
+  },
+  "David Hume": {
+    "birth_year": 1711,
+    "death_year": 1776,
+    "title": "David Hume",
+    "description": null
+  },
+  "Samuel Johnson": {
+    "birth_year": 1709,
+    "death_year": 1784,
+    "title": "Samuel Johnson",
+    "description": null
+  },
+  "Gotthold Ephraim Lessing": {
+    "birth_year": 1729,
+    "death_year": 1781,
+    "title": "Gotthold Ephraim Lessing",
+    "description": null
+  },
+  "Jules Lequier": {
+    "birth_year": 1814,
+    "death_year": 1862,
+    "title": "Jules Lequier",
+    "description": null
+  },
+  "Alexandre Dumas fils": {
+    "birth_year": 1824,
+    "death_year": 1895,
+    "title": "Alexandre Dumas fils",
+    "description": null
+  },
+  "Har Dayal": {
+    "birth_year": 1884,
+    "death_year": 1939,
+    "title": "Har Dayal",
+    "description": null
+  },
+  "Erwin Schrodinger": {
+    "birth_year": 1887,
+    "death_year": 1961,
+    "title": "Erwin Schr\u00f6dinger",
+    "description": null
+  },
+  "Richard Montague": {
+    "birth_year": 1930,
+    "death_year": 1971,
+    "title": "Richard Montague",
+    "description": null
+  },
+  "George Gilder": {
+    "birth_year": 1939,
+    "death_year": null,
+    "title": "George Gilder",
+    "description": null
+  },
+  "Ulrich von Wilamowitz-Moellendorff": {
+    "birth_year": 1848,
+    "death_year": 1931,
+    "title": "Ulrich von Wilamowitz-Moellendorff",
+    "description": null
+  },
+  "Marcus Aurelius": {
+    "birth_year": 121,
+    "death_year": 180,
+    "title": "Marcus Aurelius",
+    "description": null
+  },
+  "Andr\u00e9-Jean Festugi\u00e8re": {
+    "birth_year": 1898,
+    "death_year": 1982,
+    "title": "Andr\u00e9-Jean Festugi\u00e8re",
+    "description": null
+  },
+  "Philip Jos\u00e9 Farmer": {
+    "birth_year": 1918,
+    "death_year": 2009,
+    "title": "Philip Jos\u00e9 Farmer",
+    "description": null
+  },
+  "Charles Babbage": {
+    "birth_year": 1791,
+    "death_year": 1871,
+    "title": "Charles Babbage",
+    "description": null
+  },
+  "Joseph G\u00f6rres": {
+    "birth_year": 1776,
+    "death_year": 1848,
+    "title": "Joseph G\u00f6rres",
+    "description": null
+  },
+  "Alan Watts": {
+    "birth_year": 1915,
+    "death_year": 1973,
+    "title": "Alan Watts",
+    "description": null
+  },
+  "Robert Louis Stevenson": {
+    "birth_year": 1850,
+    "death_year": 1894,
+    "title": "Robert Louis Stevenson",
+    "description": null
+  },
+  "Agathon": {
+    "birth_year": -445,
+    "death_year": -400,
+    "title": "Agathon",
+    "description": null
+  },
+  "John Milton": {
+    "birth_year": 1608,
+    "death_year": 1674,
+    "title": "John Milton",
+    "description": null
+  },
+  "Guy Lee": {
+    "birth_year": 1952,
+    "death_year": null,
+    "title": "Guy Lee Thys",
+    "description": null
+  },
+  "Tennessee Williams": {
+    "birth_year": 1911,
+    "death_year": 1983,
+    "title": "Tennessee Williams",
+    "description": null
+  },
+  "William T. Vollmann": {
+    "birth_year": 1959,
+    "death_year": null,
+    "title": "William T. Vollmann",
+    "description": null
+  },
+  "Gustave Flaubert": {
+    "birth_year": 1821,
+    "death_year": 1880,
+    "title": "Gustave Flaubert",
+    "description": null
+  },
+  "Sarah Ruden": {
+    "birth_year": 1962,
+    "death_year": null,
+    "title": "Sarah Ruden",
+    "description": null
+  },
+  "Johan Huizinga": {
+    "birth_year": 1872,
+    "death_year": 1945,
+    "title": "Johan Huizinga",
+    "description": null
+  },
+  "Bernard Groethuysen": {
+    "birth_year": 1880,
+    "death_year": 1946,
+    "title": "Bernard Groethuysen",
+    "description": null
+  },
+  "Shlomo Pines": {
+    "birth_year": 1908,
+    "death_year": 1990,
+    "title": "Shlomo Pines",
+    "description": null
+  },
+  "Rudyard Kipling": {
+    "birth_year": 1865,
+    "death_year": 1936,
+    "title": "Rudyard Kipling",
+    "description": null
+  },
+  "Audre Lorde": {
+    "birth_year": 1934,
+    "death_year": 1992,
+    "title": "Audre Lorde",
+    "description": null
+  },
+  "Gilbert Murray": {
+    "birth_year": 1866,
+    "death_year": 1957,
+    "title": "Gilbert Murray",
+    "description": null
+  },
+  "Robert Cawdrey": {
+    "birth_year": 1538,
+    "death_year": 1604,
+    "title": "Robert Cawdrey",
+    "description": null
+  },
+  "John Simon (critic)": {
+    "birth_year": 1925,
+    "death_year": 2019,
+    "title": "John Simon (critic)",
+    "description": null
+  },
+  "Susan Blackmore": {
+    "birth_year": 1951,
+    "death_year": null,
+    "title": "Susan Blackmore",
+    "description": null
+  },
+  "Marcel Mauss": {
+    "birth_year": 1872,
+    "death_year": 1950,
+    "title": "Marcel Mauss",
+    "description": null
+  },
+  "Plutarch": {
+    "birth_year": 46,
+    "death_year": null,
+    "title": "Plutarch",
+    "description": null
+  },
+  "Maurice Maeterlinck": {
+    "birth_year": 1862,
+    "death_year": 1949,
+    "title": "Maurice Maeterlinck",
+    "description": null
+  },
+  "Claude L\u00e9vi-Strauss": {
+    "birth_year": 1908,
+    "death_year": 2009,
+    "title": "Claude L\u00e9vi-Strauss",
+    "description": null
+  },
+  "Philip Babcock Gove": {
+    "birth_year": 1902,
+    "death_year": 1972,
+    "title": "Philip Babcock Gove",
+    "description": null
+  },
+  "Pompey": {
+    "birth_year": -106,
+    "death_year": -48,
+    "title": "Pompey",
+    "description": null
+  },
+  "F. M. Cornford": {
+    "birth_year": 1874,
+    "death_year": 1943,
+    "title": "F. M. Cornford",
+    "description": null
+  },
+  "Pappus of Alexandria": {
+    "birth_year": 290,
+    "death_year": 350,
+    "title": "Pappus of Alexandria",
+    "description": null
+  },
+  "Bernhard Karlgren": {
+    "birth_year": 1889,
+    "death_year": 1978,
+    "title": "Bernhard Karlgren",
+    "description": null
+  },
+  "Peter Bondanella": {
+    "birth_year": 1943,
+    "death_year": 2017,
+    "title": "Peter Bondanella",
+    "description": null
+  },
+  "D.T. Suzuki": {
+    "birth_year": 1870,
+    "death_year": 1966,
+    "title": "D. T. Suzuki",
+    "description": null
+  },
+  "Leo Strauss": {
+    "birth_year": 1899,
+    "death_year": 1973,
+    "title": "Leo Strauss",
+    "description": null
+  },
+  "Ernst Pulgram": {
+    "birth_year": 1915,
+    "death_year": 2005,
+    "title": "Ernst Pulgram",
+    "description": null
+  },
+  "David Eugene Smith": {
+    "birth_year": 1860,
+    "death_year": 1944,
+    "title": "David Eugene Smith",
+    "description": null
+  },
+  "Jules Simon": {
+    "birth_year": 1814,
+    "death_year": 1896,
+    "title": "Jules Simon",
+    "description": null
+  },
+  "Don DeLillo": {
+    "birth_year": 1936,
+    "death_year": null,
+    "title": "Don DeLillo",
+    "description": null
+  },
+  "Robert Coover": {
+    "birth_year": 1932,
+    "death_year": 2024,
+    "title": "Robert Coover",
+    "description": null
+  },
+  "Pythagoras": {
+    "birth_year": -570,
+    "death_year": -495,
+    "title": "Pythagoras",
+    "description": null
+  },
+  "Gary Snyder": {
+    "birth_year": 1930,
+    "death_year": null,
+    "title": "Gary Snyder",
+    "description": null
+  },
+  "Raul Hilberg": {
+    "birth_year": 1926,
+    "death_year": 2007,
+    "title": "Raul Hilberg",
+    "description": null
+  },
+  "Stanley Lombardo": {
+    "birth_year": 1943,
+    "death_year": null,
+    "title": "Stanley Lombardo",
+    "description": null
+  },
+  "Robin Wall Kimmerer": {
+    "birth_year": 1953,
+    "death_year": null,
+    "title": "Robin Wall Kimmerer",
+    "description": null
+  },
+  "Niccol\u00f2 Machiavelli": {
+    "birth_year": 1469,
+    "death_year": 1527,
+    "title": "Niccol\u00f2 Machiavelli",
+    "description": null
+  },
+  "Keith Stanovich": {
+    "birth_year": 1950,
+    "death_year": null,
+    "title": "Keith Stanovich",
+    "description": null
+  },
+  "Multatuli": {
+    "birth_year": 1820,
+    "death_year": 1887,
+    "title": "Multatuli",
+    "description": null
+  },
+  "Christopher Chabris": {
+    "birth_year": 1966,
+    "death_year": null,
+    "title": "Christopher Chabris",
+    "description": null
+  },
+  "G.E.M. Anscombe": {
+    "birth_year": 1919,
+    "death_year": 2001,
+    "title": "G. E. M. Anscombe",
+    "description": null
+  },
+  "Wolfgang Amadeus Mozart": {
+    "birth_year": 1756,
+    "death_year": 1791,
+    "title": "Wolfgang Amadeus Mozart",
+    "description": null
+  },
+  "Aristotle": {
+    "birth_year": -384,
+    "death_year": -322,
+    "title": "Aristotle",
+    "description": null
+  },
+  "Julian Jaynes": {
+    "birth_year": 1920,
+    "death_year": 1997,
+    "title": "Julian Jaynes",
+    "description": null
+  },
+  "Cornelius Gemma": {
+    "birth_year": 1535,
+    "death_year": 1578,
+    "title": "Cornelius Gemma",
+    "description": null
+  },
+  "Huineng": {
+    "birth_year": 638,
+    "death_year": 713,
+    "title": "Huineng",
+    "description": null
+  },
+  "Finnur Jonsson": {
+    "birth_year": 1858,
+    "death_year": 1934,
+    "title": "Finnur J\u00f3nsson",
+    "description": null
+  },
+  "Ferdinand Gregorovius": {
+    "birth_year": 1821,
+    "death_year": 1891,
+    "title": "Ferdinand Gregorovius",
+    "description": null
+  },
+  "James C. Collins": {
+    "birth_year": 1958,
+    "death_year": null,
+    "title": "James C. Collins",
+    "description": null
+  },
+  "Rebecca Solnit": {
+    "birth_year": 1961,
+    "death_year": null,
+    "title": "Rebecca Solnit",
+    "description": null
+  },
+  "Johann Gustav Droysen": {
+    "birth_year": 1808,
+    "death_year": 1884,
+    "title": "Johann Gustav Droysen",
+    "description": null
+  },
+  "Victor Kravchenko (defector)": {
+    "birth_year": 1905,
+    "death_year": 1966,
+    "title": "Victor Kravchenko (defector)",
+    "description": null
+  },
+  "Plotinus": {
+    "birth_year": 204,
+    "death_year": 270,
+    "title": "Plotinus",
+    "description": null
+  },
+  "Kenneth Lantz": {
+    "birth_year": 1949,
+    "death_year": null,
+    "title": "Kenneth Lantz",
+    "description": null
+  },
+  "William Caxton": {
+    "birth_year": 1422,
+    "death_year": 1491,
+    "title": "William Caxton",
+    "description": null
+  },
+  "Weegee": {
+    "birth_year": 1899,
+    "death_year": 1968,
+    "title": "Weegee",
+    "description": null
+  },
+  "Gustav Fechner": {
+    "birth_year": 1801,
+    "death_year": 1887,
+    "title": "Gustav Fechner",
+    "description": null
+  },
+  "Judith Krantz": {
+    "birth_year": 1928,
+    "death_year": 2019,
+    "title": "Judith Krantz",
+    "description": null
+  },
+  "Sima Qian": {
+    "birth_year": -145,
+    "death_year": -86,
+    "title": "Sima Qian",
+    "description": null
+  },
+  "Stefan Zweig": {
+    "birth_year": 1881,
+    "death_year": 1942,
+    "title": "Stefan Zweig",
+    "description": null
+  },
+  "Georg Gottfried Gervinus": {
+    "birth_year": 1805,
+    "death_year": 1871,
+    "title": "Georg Gottfried Gervinus",
+    "description": null
+  },
+  "Xinru Liu": {
+    "birth_year": 1951,
+    "death_year": null,
+    "title": "Xinru Liu",
+    "description": null
+  },
+  "T. S. Eliot": {
+    "birth_year": 1888,
+    "death_year": 1965,
+    "title": "T. S. Eliot",
+    "description": null
+  },
+  "Harold Nicolson": {
+    "birth_year": 1886,
+    "death_year": 1968,
+    "title": "Harold Nicolson",
+    "description": null
+  },
+  "Immanuel Kant": {
+    "birth_year": 1724,
+    "death_year": 1804,
+    "title": "Immanuel Kant",
+    "description": null
+  },
+  "Thomas Sprat": {
+    "birth_year": 1635,
+    "death_year": 1713,
+    "title": "Thomas Sprat",
+    "description": null
+  },
+  "Wilhelm Bousset": {
+    "birth_year": 1865,
+    "death_year": 1920,
+    "title": "Wilhelm Bousset",
+    "description": null
+  },
+  "Robert Guiscard": {
+    "birth_year": 1015,
+    "death_year": 1085,
+    "title": "Robert Guiscard",
+    "description": null
+  },
+  "Ammianus Marcellinus": {
+    "birth_year": 330,
+    "death_year": null,
+    "title": "Ammianus Marcellinus",
+    "description": null
+  },
+  "Galileo Galilei": {
+    "birth_year": 1564,
+    "death_year": 1642,
+    "title": "Galileo Galilei",
+    "description": null
+  },
+  "Dmitri Nabokov": {
+    "birth_year": 1934,
+    "death_year": 2012,
+    "title": "Dmitri Nabokov",
+    "description": null
+  },
+  "Jean-Paul Sartre": {
+    "birth_year": 1905,
+    "death_year": 1980,
+    "title": "Jean-Paul Sartre",
+    "description": null
+  },
+  "Jules Michelet": {
+    "birth_year": 1798,
+    "death_year": 1874,
+    "title": "Jules Michelet",
+    "description": null
+  },
+  "Martin Buber": {
+    "birth_year": 1878,
+    "death_year": 1965,
+    "title": "Martin Buber",
+    "description": null
+  },
+  "John von Neumann": {
+    "birth_year": 1903,
+    "death_year": 1957,
+    "title": "John von Neumann",
+    "description": null
+  },
+  "Jonathan Haidt": {
+    "birth_year": 1963,
+    "death_year": null,
+    "title": "Jonathan Haidt",
+    "description": null
+  },
+  "Paul Slovic": {
+    "birth_year": 1938,
+    "death_year": null,
+    "title": "Paul Slovic",
+    "description": null
+  },
+  "John Grisham": {
+    "birth_year": 1955,
+    "death_year": null,
+    "title": "John Grisham",
+    "description": null
+  },
+  "Norman Cameron": {
+    "birth_year": 1905,
+    "death_year": 1953,
+    "title": "Norman Cameron (poet)",
+    "description": null
+  },
+  "Robert Zajonc": {
+    "birth_year": 1923,
+    "death_year": 2008,
+    "title": "Robert Zajonc",
+    "description": null
+  },
+  "Heinrich Bl\u00fccher": {
+    "birth_year": 1899,
+    "death_year": 1970,
+    "title": "Heinrich Bl\u00fccher",
+    "description": null
+  },
+  "Nathanael West": {
+    "birth_year": 1903,
+    "death_year": 1940,
+    "title": "Nathanael West",
+    "description": null
+  },
+  "Steven Pinker": {
+    "birth_year": 1954,
+    "death_year": null,
+    "title": "Steven Pinker",
+    "description": null
+  },
+  "D. H. Lawrence": {
+    "birth_year": 1885,
+    "death_year": 1930,
+    "title": "D. H. Lawrence",
+    "description": null
+  },
+  "Hesiod": {
+    "birth_year": -750,
+    "death_year": -650,
+    "title": "Hesiod",
+    "description": null
+  },
+  "Ben Jonson": {
+    "birth_year": 1572,
+    "death_year": 1637,
+    "title": "Ben Jonson",
+    "description": null
+  },
+  "Francis Bacon": {
+    "birth_year": 1561,
+    "death_year": 1626,
+    "title": "Francis Bacon",
+    "description": null
+  },
+  "Jane F. Gardner": {
+    "birth_year": 1934,
+    "death_year": 2023,
+    "title": "Jane F. Gardner",
+    "description": null
+  },
+  "Michel de Montaigne": {
+    "birth_year": 1533,
+    "death_year": 1592,
+    "title": "Michel de Montaigne",
+    "description": null
+  },
+  "Jean-Jacques Rousseau": {
+    "birth_year": 1712,
+    "death_year": 1778,
+    "title": "Jean-Jacques Rousseau",
+    "description": null
+  },
+  "Timur Kuran": {
+    "birth_year": 1954,
+    "death_year": null,
+    "title": "Timur Kuran",
+    "description": null
+  },
+  "Edward Said": {
+    "birth_year": 1935,
+    "death_year": 2003,
+    "title": "Edward Said",
+    "description": null
+  },
+  "J.M. Cohen": {
+    "birth_year": 1903,
+    "death_year": 1989,
+    "title": "J. M. Cohen",
+    "description": null
+  },
+  "Charlotte B\u00fchler": {
+    "birth_year": 1893,
+    "death_year": 1974,
+    "title": "Charlotte B\u00fchler",
+    "description": null
+  },
+  "John Maynard Keynes": {
+    "birth_year": 1883,
+    "death_year": 1946,
+    "title": "John Maynard Keynes",
+    "description": null
+  },
+  "Aeschylus": {
+    "birth_year": -525,
+    "death_year": -456,
+    "title": "Aeschylus",
+    "description": null
+  },
+  "George Moore (novelist)": {
+    "birth_year": 1852,
+    "death_year": 1933,
+    "title": "George Moore (novelist)",
+    "description": null
+  },
+  "Richard Henry Dana Jr.": {
+    "birth_year": 1815,
+    "death_year": 1882,
+    "title": "Richard Henry Dana Jr.",
+    "description": null
+  },
+  "Gustave Le Bon": {
+    "birth_year": 1841,
+    "death_year": 1931,
+    "title": "Gustave Le Bon",
+    "description": null
+  },
+  "Charles H. Bennett (physicist)": {
+    "birth_year": 1943,
+    "death_year": null,
+    "title": "Charles H. Bennett (physicist)",
+    "description": null
+  },
+  "Cynthia Ozick": {
+    "birth_year": 1928,
+    "death_year": null,
+    "title": "Cynthia Ozick",
+    "description": null
+  },
+  "Thomas Percy": {
+    "birth_year": 1729,
+    "death_year": 1811,
+    "title": "Thomas Percy",
+    "description": null
+  },
+  "Rolf Landauer": {
+    "birth_year": 1927,
+    "death_year": 1999,
+    "title": "Rolf Landauer",
+    "description": null
+  },
+  "Timothy Wilson": {
+    "birth_year": 1951,
+    "death_year": null,
+    "title": "Timothy Wilson",
+    "description": null
+  },
+  "Ernest Renan": {
+    "birth_year": 1823,
+    "death_year": 1892,
+    "title": "Ernest Renan",
+    "description": null
+  },
+  "Virgil": {
+    "birth_year": -70,
+    "death_year": -19,
+    "title": "Virgil",
+    "description": null
+  },
+  "Maya Angelou": {
+    "birth_year": 1928,
+    "death_year": 2014,
+    "title": "Maya Angelou",
+    "description": null
+  },
+  "Geoffrey Sampson": {
+    "birth_year": 1944,
+    "death_year": null,
+    "title": "Geoffrey Sampson",
+    "description": null
+  },
+  "Stephen MacKenna": {
+    "birth_year": 1872,
+    "death_year": 1934,
+    "title": "Stephen MacKenna",
+    "description": null
+  },
+  "Al-Biruni": {
+    "birth_year": 973,
+    "death_year": null,
+    "title": "Al-Biruni",
+    "description": null
+  },
+  "Larissa Volokhonsky": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "Richard Pevear and Larissa Volokhonsky",
+    "description": null
+  },
+  "Raymond Chandler": {
+    "birth_year": 1888,
+    "death_year": 1959,
+    "title": "Raymond Chandler",
+    "description": null
+  },
+  "Allan Bloom": {
+    "birth_year": 1930,
+    "death_year": 1992,
+    "title": "Allan Bloom",
+    "description": null
+  },
+  "Daniel Simons": {
+    "birth_year": 1975,
+    "death_year": null,
+    "title": "Daniel Simon",
+    "description": null
+  },
+  "Augustus De Morgan": {
+    "birth_year": 1806,
+    "death_year": 1871,
+    "title": "Augustus De Morgan",
+    "description": null
+  },
+  "Gerald James Larson": {
+    "birth_year": 1938,
+    "death_year": 2019,
+    "title": "Gerald James Larson",
+    "description": null
+  },
+  "Stuart Piggott": {
+    "birth_year": 1910,
+    "death_year": 1996,
+    "title": "Stuart Piggott",
+    "description": null
+  },
+  "Sallust": {
+    "birth_year": -86,
+    "death_year": null,
+    "title": "Sallust",
+    "description": null
+  },
+  "Ambrose Bierce": {
+    "birth_year": 1842,
+    "death_year": null,
+    "title": "Ambrose Bierce",
+    "description": null
+  },
+  "Malcolm Gladwell": {
+    "birth_year": 1963,
+    "death_year": null,
+    "title": "Malcolm Gladwell",
+    "description": null
+  },
+  "Karl B\u00fchler": {
+    "birth_year": 1879,
+    "death_year": 1963,
+    "title": "Karl B\u00fchler",
+    "description": null
+  },
+  "Publius Rutilius Rufus": {
+    "birth_year": -158,
+    "death_year": null,
+    "title": "Publius Rutilius Rufus",
+    "description": null
+  },
+  "Jean Giraudoux": {
+    "birth_year": 1882,
+    "death_year": 1944,
+    "title": "Jean Giraudoux",
+    "description": null
+  },
+  "Fergus Millar": {
+    "birth_year": 1935,
+    "death_year": 2019,
+    "title": "Fergus Millar",
+    "description": null
+  },
+  "Sri M": {
+    "birth_year": 1948,
+    "death_year": null,
+    "title": "Sri M",
+    "description": null
+  },
+  "Pausanias": {
+    "birth_year": 110,
+    "death_year": 180,
+    "title": "Pausanias",
+    "description": null
+  },
+  "Sigebert of Gembloux": {
+    "birth_year": 1030,
+    "death_year": 1112,
+    "title": "Sigebert of Gembloux",
+    "description": null
+  },
+  "Athanasius of Alexandria": {
+    "birth_year": 296,
+    "death_year": 373,
+    "title": "Athanasius of Alexandria",
+    "description": null
+  },
+  "Viktor Frankl": {
+    "birth_year": 1905,
+    "death_year": 1997,
+    "title": "Viktor Frankl",
+    "description": null
+  },
+  "Sherwood Anderson": {
+    "birth_year": 1876,
+    "death_year": 1941,
+    "title": "Sherwood Anderson",
+    "description": null
+  },
+  "Blaise Pascal": {
+    "birth_year": 1623,
+    "death_year": 1662,
+    "title": "Blaise Pascal",
+    "description": null
+  },
+  "Chrysippus": {
+    "birth_year": -279,
+    "death_year": -206,
+    "title": "Chrysippus",
+    "description": null
+  },
+  "R.J. Hollingdale": {
+    "birth_year": 1930,
+    "death_year": 2001,
+    "title": "R. J. Hollingdale",
+    "description": null
+  },
+  "Tzvetan Todorov": {
+    "birth_year": 1939,
+    "death_year": 2017,
+    "title": "Tzvetan Todorov",
+    "description": null
+  },
+  "Panaetius": {
+    "birth_year": -185,
+    "death_year": -110,
+    "title": "Panaetius",
+    "description": null
+  },
+  "Herman Melville": {
+    "birth_year": 1819,
+    "death_year": 1891,
+    "title": "Herman Melville",
+    "description": null
+  },
+  "Flavius Josephus": {
+    "birth_year": 37,
+    "death_year": 100,
+    "title": "Flavius Josephus",
+    "description": null
+  },
+  "Geo Widengren": {
+    "birth_year": 1907,
+    "death_year": 1996,
+    "title": "Geo Widengren",
+    "description": null
+  },
+  "Anaximander": {
+    "birth_year": -610,
+    "death_year": -546,
+    "title": "Anaximander",
+    "description": null
+  },
+  "Rene Descartes": {
+    "birth_year": 1596,
+    "death_year": 1650,
+    "title": "Rene Descartes",
+    "description": null
+  },
+  "Louis-Ferdinand Celine": {
+    "birth_year": 1894,
+    "death_year": 1961,
+    "title": "Louis-Ferdinand C\u00e9line",
+    "description": null
+  },
+  "Diane Arbus": {
+    "birth_year": 1923,
+    "death_year": null,
+    "title": "Diane Arbus",
+    "description": null
+  },
+  "Nathaniel Hawthorne": {
+    "birth_year": 1804,
+    "death_year": 1864,
+    "title": "Nathaniel Hawthorne",
+    "description": null
+  },
+  "Donald S. Lopez Jr.": {
+    "birth_year": 1952,
+    "death_year": null,
+    "title": "Donald S. Lopez Jr.",
+    "description": null
+  },
+  "Nikolaas Tinbergen": {
+    "birth_year": 1907,
+    "death_year": 1988,
+    "title": "Nikolaas Tinbergen",
+    "description": null
+  },
+  "Barry S. Strauss": {
+    "birth_year": 1953,
+    "death_year": null,
+    "title": "Barry S. Strauss",
+    "description": null
+  },
+  "Hariulf of Oudenburg": {
+    "birth_year": 1060,
+    "death_year": 1143,
+    "title": "Hariulf of Oudenburg",
+    "description": null
+  },
+  "Rainer Maria Rilke": {
+    "birth_year": 1875,
+    "death_year": 1926,
+    "title": "Rainer Maria Rilke",
+    "description": null
+  },
+  "Edward Dahlberg": {
+    "birth_year": 1900,
+    "death_year": 1977,
+    "title": "Edward Dahlberg",
+    "description": null
+  },
+  "Erik Desmazieres": {
+    "birth_year": 1948,
+    "death_year": null,
+    "title": "\u00c9rik Desmazi\u00e8res",
+    "description": null
+  },
+  "Francis Galton": {
+    "birth_year": 1822,
+    "death_year": 1911,
+    "title": "Francis Galton",
+    "description": null
+  },
+  "Sallustius": {
+    "birth_year": -86,
+    "death_year": -35,
+    "title": "Sallustius",
+    "description": null
+  },
+  "Shaun Whiteside": {
+    "birth_year": 1959,
+    "death_year": null,
+    "title": "Shaun Whiteside",
+    "description": null
+  },
+  "Jean Giono": {
+    "birth_year": 1895,
+    "death_year": 1970,
+    "title": "Jean Giono",
+    "description": null
+  },
+  "Eugen Hadamovsky": {
+    "birth_year": 1904,
+    "death_year": 1945,
+    "title": "Eugen Hadamovsky",
+    "description": null
+  },
+  "Jean Fourasti\u00e9": {
+    "birth_year": 1907,
+    "death_year": 1990,
+    "title": "Jean Fourasti\u00e9",
+    "description": null
+  },
+  "Thucydides": {
+    "birth_year": -460,
+    "death_year": -400,
+    "title": "Thucydides",
+    "description": null
+  },
+  "Michael Lesy": {
+    "birth_year": 1945,
+    "death_year": null,
+    "title": "Michael Lesy",
+    "description": null
+  },
+  "Friedrich Engels": {
+    "birth_year": 1820,
+    "death_year": 1895,
+    "title": "Friedrich Engels",
+    "description": null
+  },
+  "William Blake": {
+    "birth_year": 1757,
+    "death_year": 1827,
+    "title": "William Blake",
+    "description": null
+  },
+  "Samuel Richardson": {
+    "birth_year": 1689,
+    "death_year": 1761,
+    "title": "Samuel Richardson",
+    "description": null
+  },
+  "Niccolo Machiavelli": {
+    "birth_year": 1469,
+    "death_year": 1527,
+    "title": "Niccol\u00f2 Machiavelli",
+    "description": null
+  },
+  "John Donne": {
+    "birth_year": 1572,
+    "death_year": 1631,
+    "title": "John Donne",
+    "description": null
+  },
+  "Apollonius of Rhodes": {
+    "birth_year": -295,
+    "death_year": -246,
+    "title": "Apollonius of Rhodes",
+    "description": null
+  },
+  "Nikolai Gogol": {
+    "birth_year": 1809,
+    "death_year": 1852,
+    "title": "Nikolai Gogol",
+    "description": null
+  },
+  "Guillaume Apollinaire": {
+    "birth_year": 1880,
+    "death_year": 1918,
+    "title": "Guillaume Apollinaire",
+    "description": null
+  },
+  "Roman Ghirshman": {
+    "birth_year": 1895,
+    "death_year": 1979,
+    "title": "Roman Ghirshman",
+    "description": null
+  },
+  "David Wise": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "David Wise (composer)",
+    "description": null
+  },
+  "Margaret Mead": {
+    "birth_year": 1901,
+    "death_year": 1978,
+    "title": "Margaret Mead",
+    "description": null
+  },
+  "George Long (scholar)": {
+    "birth_year": 1800,
+    "death_year": 1879,
+    "title": "George Long (scholar)",
+    "description": null
+  },
+  "Benjamin Jowett": {
+    "birth_year": 1817,
+    "death_year": 1893,
+    "title": "Benjamin Jowett",
+    "description": null
+  },
+  "Karl Popper": {
+    "birth_year": 1902,
+    "death_year": 1994,
+    "title": "Karl Popper",
+    "description": null
+  },
+  "Kamala\u015b\u012bla": {
+    "birth_year": 740,
+    "death_year": 795,
+    "title": "Kamala\u015b\u012bla",
+    "description": null
+  },
+  "Robert Coleman": {
+    "birth_year": 1937,
+    "death_year": 2013,
+    "title": "Robert Coleman Richardson",
+    "description": null
+  },
+  "Philip Mairet": {
+    "birth_year": 1886,
+    "death_year": 1975,
+    "title": "Philip Mairet",
+    "description": null
+  },
+  "Lawrence Weschler": {
+    "birth_year": 1952,
+    "death_year": null,
+    "title": "Lawrence Weschler",
+    "description": null
+  },
+  "Lev Shestov": {
+    "birth_year": 1866,
+    "death_year": 1938,
+    "title": "Lev Shestov",
+    "description": null
+  },
+  "Bryan A. Garner": {
+    "birth_year": 1958,
+    "death_year": null,
+    "title": "Bryan A. Garner",
+    "description": null
+  },
+  "Eric Partridge": {
+    "birth_year": 1894,
+    "death_year": 1979,
+    "title": "Eric Partridge",
+    "description": null
+  },
+  "Will Durant": {
+    "birth_year": 1885,
+    "death_year": 1981,
+    "title": "Will Durant",
+    "description": null
+  },
+  "Henry David Thoreau": {
+    "birth_year": 1817,
+    "death_year": 1862,
+    "title": "Henry David Thoreau",
+    "description": null
+  },
+  "Louis Althusser": {
+    "birth_year": 1918,
+    "death_year": 1990,
+    "title": "Louis Althusser",
+    "description": null
+  },
+  "Voltaire": {
+    "birth_year": 1694,
+    "death_year": 1778,
+    "title": "Voltaire",
+    "description": null
+  },
+  "Franz Kafka": {
+    "birth_year": 1883,
+    "death_year": 1924,
+    "title": "Franz Kafka",
+    "description": null
+  },
+  "Proclus": {
+    "birth_year": 412,
+    "death_year": 485,
+    "title": "Proclus",
+    "description": null
+  },
+  "William H. Gass": {
+    "birth_year": 1924,
+    "death_year": 2017,
+    "title": "William H. Gass",
+    "description": null
+  },
+  "Arthur Sullivan": {
+    "birth_year": 1842,
+    "death_year": 1900,
+    "title": "Arthur Sullivan",
+    "description": null
+  },
+  "Hsuan Hua": {
+    "birth_year": 1918,
+    "death_year": 1995,
+    "title": "Hsuan Hua",
+    "description": null
+  },
+  "E. R. Dodds": {
+    "birth_year": 1893,
+    "death_year": 1979,
+    "title": "E. R. Dodds",
+    "description": null
+  },
+  "Bertrand Russell": {
+    "birth_year": 1872,
+    "death_year": 1970,
+    "title": "Bertrand Russell",
+    "description": null
+  },
+  "Baruch Spinoza": {
+    "birth_year": 1632,
+    "death_year": 1677,
+    "title": "Baruch Spinoza",
+    "description": null
+  },
+  "Xenophanes": {
+    "birth_year": -570,
+    "death_year": -478,
+    "title": "Xenophanes",
+    "description": null
+  },
+  "August Strindberg": {
+    "birth_year": 1849,
+    "death_year": 1912,
+    "title": "August Strindberg",
+    "description": null
+  },
+  "Anthony Burgess": {
+    "birth_year": 1917,
+    "death_year": 1993,
+    "title": "Anthony Burgess",
+    "description": null
+  },
+  "Henrik Ibsen": {
+    "birth_year": 1828,
+    "death_year": 1906,
+    "title": "Henrik Ibsen",
+    "description": null
+  },
+  "Graham Greene": {
+    "birth_year": 1904,
+    "death_year": 1991,
+    "title": "Graham Greene",
+    "description": null
+  },
+  "Emil Gutheil": {
+    "birth_year": 1889,
+    "death_year": 1959,
+    "title": "Emil Gutheil",
+    "description": null
+  },
+  "Eunapius": {
+    "birth_year": 347,
+    "death_year": 414,
+    "title": "Eunapius",
+    "description": null
+  },
+  "Polyaenus": {
+    "birth_year": 100,
+    "death_year": 163,
+    "title": "Polyaenus",
+    "description": null
+  },
+  "Morton Smith": {
+    "birth_year": 1915,
+    "death_year": null,
+    "title": "Morton Smith",
+    "description": null
+  },
+  "Cecil Rhodes": {
+    "birth_year": 1853,
+    "death_year": 1902,
+    "title": "Cecil Rhodes",
+    "description": null
+  },
+  "Lynn Margulis": {
+    "birth_year": 1938,
+    "death_year": 2011,
+    "title": "Lynn Margulis",
+    "description": null
+  },
+  "Benjamin Disraeli": {
+    "birth_year": 1804,
+    "death_year": 1881,
+    "title": "Benjamin Disraeli",
+    "description": null
+  },
+  "Edgar Allan Poe": {
+    "birth_year": 1809,
+    "death_year": 1849,
+    "title": "Edgar Allan Poe",
+    "description": null
+  },
+  "Franz Neumann (political scientist)": {
+    "birth_year": 1900,
+    "death_year": 1954,
+    "title": "Franz Neumann (political scientist)",
+    "description": null
+  },
+  "Empedocles": {
+    "birth_year": -494,
+    "death_year": -434,
+    "title": "Empedocles",
+    "description": null
+  },
+  "Robert H. MacArthur": {
+    "birth_year": 1930,
+    "death_year": 1972,
+    "title": "Robert H. MacArthur",
+    "description": null
+  },
+  "Lycurgus of Athens": {
+    "birth_year": -390,
+    "death_year": -324,
+    "title": "Lycurgus of Athens",
+    "description": null
+  },
+  "Diodorus Siculus": {
+    "birth_year": -90,
+    "death_year": -30,
+    "title": "Diodorus Siculus",
+    "description": null
+  },
+  "Matthew Arnold": {
+    "birth_year": 1822,
+    "death_year": 1888,
+    "title": "Matthew Arnold",
+    "description": null
+  },
+  "Cesare Lombroso": {
+    "birth_year": 1835,
+    "death_year": 1909,
+    "title": "Cesare Lombroso",
+    "description": null
+  },
+  "Daniel Gilbert (psychologist)": {
+    "birth_year": 1957,
+    "death_year": null,
+    "title": "Daniel Gilbert (psychologist)",
+    "description": null
+  },
+  "Werner Conze": {
+    "birth_year": 1910,
+    "death_year": 1986,
+    "title": "Werner Conze",
+    "description": null
+  },
+  "Robert J. Sampson": {
+    "birth_year": 1963,
+    "death_year": null,
+    "title": "Robert J. Sampson",
+    "description": null
+  },
+  "Joseph Stalin": {
+    "birth_year": 1878,
+    "death_year": 1953,
+    "title": "Joseph Stalin",
+    "description": null
+  },
+  "Johann Baptist Cysat": {
+    "birth_year": 1585,
+    "death_year": 1657,
+    "title": "Johann Baptist Cysat",
+    "description": null
+  },
+  "Carlton J. H. Hayes": {
+    "birth_year": 1882,
+    "death_year": 1964,
+    "title": "Carlton J. H. Hayes",
+    "description": null
+  },
+  "Xenocrates": {
+    "birth_year": -396,
+    "death_year": -314,
+    "title": "Xenocrates",
+    "description": null
+  },
+  "Maurice Sendak": {
+    "birth_year": 1928,
+    "death_year": 2012,
+    "title": "Maurice Sendak",
+    "description": null
+  },
+  "Beth Cuthand": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "Beth Cuthand",
+    "description": null
+  },
+  "Mircea Eliade": {
+    "birth_year": 1907,
+    "death_year": 1986,
+    "title": "Mircea Eliade",
+    "description": null
+  },
+  "Ping-ti Ho": {
+    "birth_year": 1917,
+    "death_year": 2012,
+    "title": "Ping-ti Ho",
+    "description": null
+  },
+  "John R. Pierce": {
+    "birth_year": 1910,
+    "death_year": 2002,
+    "title": "John R. Pierce",
+    "description": null
+  },
+  "Bonizo of Sutri": {
+    "birth_year": 1045,
+    "death_year": 1090,
+    "title": "Bonizo of Sutri",
+    "description": null
+  },
+  "Edward Rutherfurd": {
+    "birth_year": 1948,
+    "death_year": null,
+    "title": "Edward Rutherfurd",
+    "description": null
+  },
+  "Sivananda Saraswati": {
+    "birth_year": 1887,
+    "death_year": 1963,
+    "title": "Sivananda Saraswati",
+    "description": null
+  },
+  "Melissa Lane": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "Melissa Lane",
+    "description": null
+  },
+  "Hajime Nakamura": {
+    "birth_year": 1912,
+    "death_year": 1999,
+    "title": "Hajime Nakamura",
+    "description": null
+  },
+  "Evan Thompson": {
+    "birth_year": 1962,
+    "death_year": null,
+    "title": "Evan Thompson",
+    "description": null
+  },
+  "Jakob B\u00f6hme": {
+    "birth_year": 1575,
+    "death_year": 1624,
+    "title": "Jakob B\u00f6hme",
+    "description": null
+  },
+  "Eugene Borgida": {
+    "birth_year": 1949,
+    "death_year": null,
+    "title": "Eugene Borgida",
+    "description": null
+  },
+  "Boethius": {
+    "birth_year": 477,
+    "death_year": 524,
+    "title": "Boethius",
+    "description": null
+  },
+  "Oswald Spengler": {
+    "birth_year": 1880,
+    "death_year": 1936,
+    "title": "Oswald Spengler",
+    "description": null
+  },
+  "Jean Rousset": {
+    "birth_year": 1910,
+    "death_year": 2002,
+    "title": "Jean Rousset",
+    "description": null
+  },
+  "Abraham Lincoln": {
+    "birth_year": 1809,
+    "death_year": 1865,
+    "title": "Abraham Lincoln",
+    "description": null
+  },
+  "Edmund Husserl": {
+    "birth_year": 1859,
+    "death_year": 1938,
+    "title": "Edmund Husserl",
+    "description": null
+  },
+  "Andrew Hurley": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "Andrew Hurley (academic)",
+    "description": null
+  },
+  "John Blofeld": {
+    "birth_year": 1913,
+    "death_year": 1987,
+    "title": "John Blofeld (writer)",
+    "description": null
+  },
+  "John Cleland": {
+    "birth_year": 1709,
+    "death_year": 1789,
+    "title": "John Cleland",
+    "description": null
+  },
+  "Ronald Fisher": {
+    "birth_year": 1890,
+    "death_year": 1962,
+    "title": "Ronald Fisher",
+    "description": null
+  },
+  "J.A. Hobson": {
+    "birth_year": 1858,
+    "death_year": 1940,
+    "title": "J. A. Hobson",
+    "description": null
+  },
+  "Raghavan N. Iyer": {
+    "birth_year": 1930,
+    "death_year": 1995,
+    "title": "Raghavan N. Iyer",
+    "description": null
+  },
+  "D.H. Lawrence": {
+    "birth_year": 1885,
+    "death_year": 1930,
+    "title": "D. H. Lawrence",
+    "description": null
+  },
+  "Roland Barthes": {
+    "birth_year": 1915,
+    "death_year": 1980,
+    "title": "Roland Barthes",
+    "description": null
+  },
+  "Ralph Waldo Emerson": {
+    "birth_year": 1803,
+    "death_year": 1882,
+    "title": "Ralph Waldo Emerson",
+    "description": null
+  },
+  "Maxim Gorky": {
+    "birth_year": 1868,
+    "death_year": 1936,
+    "title": "Maxim Gorky",
+    "description": null
+  },
+  "Marcel Proust": {
+    "birth_year": 1871,
+    "death_year": 1922,
+    "title": "Marcel Proust",
+    "description": null
+  },
+  "Raymond Carver": {
+    "birth_year": 1938,
+    "death_year": 1988,
+    "title": "Raymond Carver",
+    "description": null
+  },
+  "John Elliot": {
+    "birth_year": 1914,
+    "death_year": 1972,
+    "title": "John Elliot (songwriter)",
+    "description": null
+  },
+  "Warren Weaver": {
+    "birth_year": 1894,
+    "death_year": 1978,
+    "title": "Warren Weaver",
+    "description": null
+  },
+  "Mary Boyce": {
+    "birth_year": 1920,
+    "death_year": 2006,
+    "title": "Mary Boyce",
+    "description": null
+  },
+  "Henry Chadwick": {
+    "birth_year": 1824,
+    "death_year": 1908,
+    "title": "Henry Chadwick (writer)",
+    "description": null
+  },
+  "Pliny the Younger": {
+    "birth_year": 61,
+    "death_year": 113,
+    "title": "Pliny the Younger",
+    "description": null
+  },
+  "Odo of Cluny": {
+    "birth_year": 878,
+    "death_year": 942,
+    "title": "Odo of Cluny",
+    "description": null
+  },
+  "Anatole France": {
+    "birth_year": 1844,
+    "death_year": 1924,
+    "title": "Anatole France",
+    "description": null
+  },
+  "Max H. Bazerman": {
+    "birth_year": 1955,
+    "death_year": null,
+    "title": "Max H. Bazerman",
+    "description": null
+  },
+  "Roger Lass": {
+    "birth_year": 1937,
+    "death_year": null,
+    "title": "Roger Lass",
+    "description": null
+  },
+  "Dwight Bolinger": {
+    "birth_year": 1907,
+    "death_year": 1992,
+    "title": "Dwight Bolinger",
+    "description": null
+  },
+  "James F. Crow": {
+    "birth_year": 1916,
+    "death_year": 2012,
+    "title": "James F. Crow",
+    "description": null
+  },
+  "Gottfried Wilhelm Leibniz": {
+    "birth_year": 1646,
+    "death_year": 1716,
+    "title": "Gottfried Wilhelm Leibniz",
+    "description": null
+  },
+  "Theophrastus": {
+    "birth_year": -371,
+    "death_year": -287,
+    "title": "Theophrastus",
+    "description": null
+  },
+  "Anaxagoras": {
+    "birth_year": -500,
+    "death_year": -428,
+    "title": "Anaxagoras",
+    "description": null
+  },
+  "Karl Barth": {
+    "birth_year": 1886,
+    "death_year": 1968,
+    "title": "Karl Barth",
+    "description": null
+  },
+  "Jacques-B\u00e9nigne Bossuet": {
+    "birth_year": 1627,
+    "death_year": 1704,
+    "title": "Jacques-B\u00e9nigne Bossuet",
+    "description": null
+  },
+  "Jules Verne": {
+    "birth_year": 1828,
+    "death_year": 1905,
+    "title": "Jules Verne",
+    "description": null
+  },
+  "Henry Picker": {
+    "birth_year": 1858,
+    "death_year": 1938,
+    "title": "William Henry Pickering",
+    "description": null
+  },
+  "Michael Cunningham": {
+    "birth_year": 1952,
+    "death_year": null,
+    "title": "Michael Cunningham",
+    "description": null
+  },
+  "Daniel Nettle": {
+    "birth_year": 1970,
+    "death_year": null,
+    "title": "Daniel Nettle",
+    "description": null
+  },
+  "Christiaan Huygens": {
+    "birth_year": 1629,
+    "death_year": 1695,
+    "title": "Christiaan Huygens",
+    "description": null
+  },
+  "Georg Simmel": {
+    "birth_year": 1858,
+    "death_year": 1918,
+    "title": "Georg Simmel",
+    "description": null
+  },
+  "G.K. Chesterton": {
+    "birth_year": 1874,
+    "death_year": 1936,
+    "title": "G. K. Chesterton",
+    "description": null
+  },
+  "William Kirkpatrick Magee": {
+    "birth_year": 1868,
+    "death_year": 1961,
+    "title": "William Kirkpatrick Magee",
+    "description": null
+  },
+  "Ward Just": {
+    "birth_year": 1935,
+    "death_year": 2019,
+    "title": "Ward Just",
+    "description": null
+  },
+  "Gary Klein": {
+    "birth_year": 1942,
+    "death_year": null,
+    "title": "Gary Klein (producer)",
+    "description": null
+  },
+  "Stillman Drake": {
+    "birth_year": 1910,
+    "death_year": 1993,
+    "title": "Stillman Drake",
+    "description": null
+  },
+  "Jean-Louis Guez de Balzac": {
+    "birth_year": 1597,
+    "death_year": 1654,
+    "title": "Jean-Louis Guez de Balzac",
+    "description": null
+  },
+  "Richard Wagner": {
+    "birth_year": 1813,
+    "death_year": 1883,
+    "title": "Richard Wagner",
+    "description": null
+  },
+  "John McCain": {
+    "birth_year": 1936,
+    "death_year": 2018,
+    "title": "John McCain",
+    "description": null
+  },
+  "John Maynard Smith": {
+    "birth_year": 1920,
+    "death_year": 2004,
+    "title": "John Maynard Smith",
+    "description": null
+  },
+  "John Napier": {
+    "birth_year": 1550,
+    "death_year": 1617,
+    "title": "John Napier",
+    "description": null
+  },
+  "Christopher Marlowe": {
+    "birth_year": 1564,
+    "death_year": 1593,
+    "title": "Christopher Marlowe",
+    "description": null
+  },
+  "Robert Ardrey": {
+    "birth_year": 1908,
+    "death_year": 1980,
+    "title": "Robert Ardrey",
+    "description": null
+  },
+  "Richard Dawkins": {
+    "birth_year": 1941,
+    "death_year": null,
+    "title": "Richard Dawkins",
+    "description": null
+  },
+  "Isaac Newton": {
+    "birth_year": 1643,
+    "death_year": 1727,
+    "title": "Isaac Newton",
+    "description": null
+  },
+  "Polybius": {
+    "birth_year": -200,
+    "death_year": -118,
+    "title": "Polybius",
+    "description": null
+  },
+  "Hippocrates": {
+    "birth_year": -460,
+    "death_year": -370,
+    "title": "Hippocrates",
+    "description": null
+  },
+  "Giambattista Vico": {
+    "birth_year": 1668,
+    "death_year": 1744,
+    "title": "Giambattista Vico",
+    "description": null
+  },
+  "Plautus": {
+    "birth_year": -254,
+    "death_year": -184,
+    "title": "Plautus",
+    "description": null
+  },
+  "Stig Wikander": {
+    "birth_year": 1908,
+    "death_year": 1983,
+    "title": "Stig Wikander",
+    "description": null
+  },
+  "Eusebius": {
+    "birth_year": 260,
+    "death_year": 340,
+    "title": "Eusebius",
+    "description": null
+  },
+  "Pierre de Marivaux": {
+    "birth_year": 1688,
+    "death_year": 1763,
+    "title": "Pierre de Marivaux",
+    "description": null
+  },
+  "Michael Tanner": {
+    "birth_year": 1935,
+    "death_year": 2024,
+    "title": "Michael Tanner",
+    "description": null
+  },
+  "Kenneth Silverman": {
+    "birth_year": 1936,
+    "death_year": 2017,
+    "title": "Kenneth Silverman",
+    "description": null
+  },
+  "Philo": {
+    "birth_year": 1906,
+    "death_year": 1971,
+    "title": "Philo Farnsworth",
+    "description": null
+  },
+  "Eug\u00e8ne Ionesco": {
+    "birth_year": 1909,
+    "death_year": 1994,
+    "title": "Eug\u00e8ne Ionesco",
+    "description": null
+  },
+  "Thomas Cleary": {
+    "birth_year": 1949,
+    "death_year": 2021,
+    "title": "Thomas Cleary",
+    "description": null
+  },
+  "Ren\u00e9-Fran\u00e7ois de Sluse": {
+    "birth_year": 1622,
+    "death_year": 1685,
+    "title": "Ren\u00e9-Fran\u00e7ois de Sluse",
+    "description": null
+  },
+  "John Updike": {
+    "birth_year": 1932,
+    "death_year": 2009,
+    "title": "John Updike",
+    "description": null
+  },
+  "Pierre Corneille": {
+    "birth_year": 1606,
+    "death_year": 1684,
+    "title": "Pierre Corneille",
+    "description": null
+  },
+  "Eleanor Rosch": {
+    "birth_year": 1938,
+    "death_year": null,
+    "title": "Eleanor Rosch",
+    "description": null
+  },
+  "Walter Benjamin": {
+    "birth_year": 1892,
+    "death_year": 1940,
+    "title": "Walter Benjamin",
+    "description": null
+  },
+  "Diogenes Laertius": {
+    "birth_year": 180,
+    "death_year": null,
+    "title": "Diogenes Laertius",
+    "description": null
+  },
+  "Suzanne Romaine": {
+    "birth_year": 1951,
+    "death_year": null,
+    "title": "Suzanne Romaine",
+    "description": null
+  },
+  "Mikhail Bakhtin": {
+    "birth_year": 1895,
+    "death_year": 1975,
+    "title": "Mikhail Bakhtin",
+    "description": null
+  },
+  "Fred Hoyle": {
+    "birth_year": 1915,
+    "death_year": 2001,
+    "title": "Fred Hoyle",
+    "description": null
+  },
+  "Paul Goodman": {
+    "birth_year": 1959,
+    "death_year": null,
+    "title": "Paul Goodman, Baron Goodman of Wycombe",
+    "description": null
+  },
+  "J.G. Ballard": {
+    "birth_year": 1930,
+    "death_year": 2009,
+    "title": "J. G. Ballard",
+    "description": null
+  },
+  "Boris Souvarine": {
+    "birth_year": 1895,
+    "death_year": 1984,
+    "title": "Boris Souvarine",
+    "description": null
+  },
+  "John Cage": {
+    "birth_year": 1912,
+    "death_year": 1992,
+    "title": "John Cage",
+    "description": null
+  },
+  "Arthur Conan Doyle": {
+    "birth_year": 1859,
+    "death_year": 1930,
+    "title": "Arthur Conan Doyle",
+    "description": null
+  },
+  "Norbert Wiener": {
+    "birth_year": 1894,
+    "death_year": 1964,
+    "title": "Norbert Wiener",
+    "description": null
+  },
+  "Asger Aaboe": {
+    "birth_year": 1922,
+    "death_year": 2007,
+    "title": "Asger Aaboe",
+    "description": null
+  },
+  "Jerry I. Porras": {
+    "birth_year": 1938,
+    "death_year": null,
+    "title": "Jerry I. Porras",
+    "description": null
+  },
+  "John Flamsteed": {
+    "birth_year": 1646,
+    "death_year": 1719,
+    "title": "John Flamsteed",
+    "description": null
+  },
+  "Igor Stravinsky": {
+    "birth_year": 1882,
+    "death_year": 1971,
+    "title": "Igor Stravinsky",
+    "description": null
+  },
+  "Apuleius": {
+    "birth_year": 124,
+    "death_year": null,
+    "title": "Apuleius",
+    "description": null
+  },
+  "Herbert A. Simon": {
+    "birth_year": 1916,
+    "death_year": 2001,
+    "title": "Herbert A. Simon",
+    "description": null
+  },
+  "Gary Saul Morson": {
+    "birth_year": 1948,
+    "death_year": null,
+    "title": "Gary Saul Morson",
+    "description": null
+  },
+  "E. M. Forster": {
+    "birth_year": 1879,
+    "death_year": 1970,
+    "title": "E. M. Forster",
+    "description": null
+  },
+  "Edward Champlin": {
+    "birth_year": 1948,
+    "death_year": 2024,
+    "title": "Edward Champlin",
+    "description": null
+  },
+  "H.G. Wells": {
+    "birth_year": 1866,
+    "death_year": 1946,
+    "title": "H. G. Wells",
+    "description": null
+  },
+  "Marcus Terentius Varro": {
+    "birth_year": -116,
+    "death_year": -27,
+    "title": "Marcus Terentius Varro",
+    "description": null
+  },
+  "Erich Auerbach": {
+    "birth_year": 1892,
+    "death_year": 1957,
+    "title": "Erich Auerbach",
+    "description": null
+  },
+  "Efraim Karsh": {
+    "birth_year": 1953,
+    "death_year": null,
+    "title": "Efraim Karsh",
+    "description": null
+  },
+  "Ibn Hazm": {
+    "birth_year": 994,
+    "death_year": 1064,
+    "title": "Ibn Hazm",
+    "description": null
+  },
+  "Thomas Hobbes": {
+    "birth_year": 1588,
+    "death_year": 1679,
+    "title": "Thomas Hobbes",
+    "description": null
+  },
+  "Icek Ajzen": {
+    "birth_year": 1942,
+    "death_year": null,
+    "title": "Icek Ajzen",
+    "description": null
+  },
+  "Jack Kerouac": {
+    "birth_year": 1922,
+    "death_year": 1969,
+    "title": "Jack Kerouac",
+    "description": null
+  },
+  "Peter the Venerable": {
+    "birth_year": 1092,
+    "death_year": 1156,
+    "title": "Peter the Venerable",
+    "description": null
+  },
+  "Charles Maurras": {
+    "birth_year": 1868,
+    "death_year": 1952,
+    "title": "Charles Maurras",
+    "description": null
+  },
+  "Aldo Leopold": {
+    "birth_year": 1887,
+    "death_year": 1948,
+    "title": "Aldo Leopold",
+    "description": null
+  },
+  "Arthur Danto": {
+    "birth_year": 1924,
+    "death_year": 2013,
+    "title": "Arthur Danto",
+    "description": null
+  },
+  "James D. McCawley": {
+    "birth_year": 1938,
+    "death_year": 1999,
+    "title": "James D. McCawley",
+    "description": null
+  },
+  "W.K.C. Guthrie": {
+    "birth_year": 1906,
+    "death_year": 1981,
+    "title": "W. K. C. Guthrie",
+    "description": null
+  },
+  "Joshua Meyrowitz": {
+    "birth_year": 1949,
+    "death_year": null,
+    "title": "Joshua Meyrowitz",
+    "description": null
+  },
+  "Glenn W. Most": {
+    "birth_year": 1952,
+    "death_year": null,
+    "title": "Glenn W. Most",
+    "description": null
+  },
+  "Maurice Barr\u00e8s": {
+    "birth_year": 1862,
+    "death_year": 1923,
+    "title": "Maurice Barr\u00e8s",
+    "description": null
+  },
+  "Charles P\u00e9guy": {
+    "birth_year": 1873,
+    "death_year": 1914,
+    "title": "Charles P\u00e9guy",
+    "description": null
+  },
+  "William of Poitiers": {
+    "birth_year": 1020,
+    "death_year": 1090,
+    "title": "William of Poitiers",
+    "description": null
+  },
+  "F. Scott Fitzgerald": {
+    "birth_year": 1896,
+    "death_year": 1940,
+    "title": "F. Scott Fitzgerald",
+    "description": null
+  },
+  "Walker Evans": {
+    "birth_year": 1903,
+    "death_year": 1975,
+    "title": "Walker Evans",
+    "description": null
+  },
+  "Robert Axelrod": {
+    "birth_year": 1943,
+    "death_year": null,
+    "title": "Robert Axelrod (political scientist)",
+    "description": null
+  },
+  "Dexter Palmer": {
+    "birth_year": 1974,
+    "death_year": null,
+    "title": "Dexter Palmer",
+    "description": null
+  },
+  "Athenodorus Cananites": {
+    "birth_year": -74,
+    "death_year": 7,
+    "title": "Athenodorus Cananites",
+    "description": null
+  },
+  "\u00c9mile Zola": {
+    "birth_year": 1840,
+    "death_year": 1902,
+    "title": "\u00c9mile Zola",
+    "description": null
+  },
+  "Enoch": {
+    "birth_year": -3000,
+    "death_year": -2000,
+    "title": "Enoch",
+    "description": null
+  },
+  "G. H. Hardy": {
+    "birth_year": 1877,
+    "death_year": 1947,
+    "title": "G. H. Hardy",
+    "description": null
+  },
+  "Montesquieu": {
+    "birth_year": 1689,
+    "death_year": 1755,
+    "title": "Montesquieu",
+    "description": null
+  },
+  "Hippolyte Taine": {
+    "birth_year": 1828,
+    "death_year": 1893,
+    "title": "Hippolyte Taine",
+    "description": null
+  },
+  "Gregory Chaitin": {
+    "birth_year": 1947,
+    "death_year": null,
+    "title": "Gregory Chaitin",
+    "description": null
+  },
+  "Plato": {
+    "birth_year": -428,
+    "death_year": -348,
+    "title": "Plato",
+    "description": null
+  },
+  "Andr\u00e9 Gide": {
+    "birth_year": 1869,
+    "death_year": 1951,
+    "title": "Andr\u00e9 Gide",
+    "description": null
+  },
+  "Tom\u00e1\u0161 Masaryk": {
+    "birth_year": 1850,
+    "death_year": 1937,
+    "title": "Tom\u00e1\u0161 Masaryk",
+    "description": null
+  },
+  "Walter Liebenthal": {
+    "birth_year": 1886,
+    "death_year": 1982,
+    "title": "Walter Liebenthal",
+    "description": null
+  },
+  "Albert Einstein": {
+    "birth_year": 1879,
+    "death_year": 1955,
+    "title": "Albert Einstein",
+    "description": null
+  },
+  "Propertius": {
+    "birth_year": -50,
+    "death_year": -15,
+    "title": "Propertius",
+    "description": null
+  },
+  "Toni Morrison": {
+    "birth_year": 1931,
+    "death_year": 2019,
+    "title": "Toni Morrison",
+    "description": null
+  },
+  "Andr\u00e9 Malraux": {
+    "birth_year": 1901,
+    "death_year": 1976,
+    "title": "Andr\u00e9 Malraux",
+    "description": null
+  },
+  "Louis Antoine de Saint-Just": {
+    "birth_year": 1767,
+    "death_year": 1794,
+    "title": "Louis Antoine de Saint-Just",
+    "description": null
+  },
+  "Thomas Carlyle": {
+    "birth_year": 1795,
+    "death_year": 1881,
+    "title": "Thomas Carlyle",
+    "description": null
+  },
+  "Red Pine": {
+    "birth_year": 1943,
+    "death_year": null,
+    "title": "Red Pine (author)",
+    "description": null
+  },
+  "William Faulkner": {
+    "birth_year": 1897,
+    "death_year": 1962,
+    "title": "William Faulkner",
+    "description": null
+  },
+  "Albert Hofstadter": {
+    "birth_year": 1910,
+    "death_year": 1989,
+    "title": "Albert Hofstadter",
+    "description": null
+  },
+  "Alan Donagan": {
+    "birth_year": 1925,
+    "death_year": 1991,
+    "title": "Alan Donagan",
+    "description": null
+  },
+  "Tirso de Molina": {
+    "birth_year": 1584,
+    "death_year": 1648,
+    "title": "Tirso de Molina",
+    "description": null
+  },
+  "Adolf Hitler": {
+    "birth_year": 1889,
+    "death_year": 1945,
+    "title": "Adolf Hitler",
+    "description": null
+  },
+  "P.C. Wren": {
+    "birth_year": 1875,
+    "death_year": 1941,
+    "title": "P. C. Wren",
+    "description": null
+  },
+  "Gwendolyn Leick": {
+    "birth_year": 1951,
+    "death_year": 2022,
+    "title": "Gwendolyn Leick",
+    "description": null
+  },
+  "Karl Marx": {
+    "birth_year": 1818,
+    "death_year": 1883,
+    "title": "Karl Marx",
+    "description": null
+  },
+  "Peter Medawar": {
+    "birth_year": 1915,
+    "death_year": 1987,
+    "title": "Peter Medawar",
+    "description": null
+  },
+  "Adam M\u00fcller": {
+    "birth_year": 1779,
+    "death_year": 1829,
+    "title": "Adam M\u00fcller",
+    "description": null
+  },
+  "B.F. Skinner": {
+    "birth_year": 1904,
+    "death_year": 1990,
+    "title": "B. F. Skinner",
+    "description": null
+  },
+  "Gabriel Marcel": {
+    "birth_year": 1889,
+    "death_year": 1973,
+    "title": "Gabriel Marcel",
+    "description": null
+  },
+  "Kurt G\u00f6del": {
+    "birth_year": 1906,
+    "death_year": 1978,
+    "title": "Kurt G\u00f6del",
+    "description": null
+  },
+  "David Crystal": {
+    "birth_year": 1941,
+    "death_year": null,
+    "title": "David Crystal",
+    "description": null
+  },
+  "Robert C. Tucker": {
+    "birth_year": 1918,
+    "death_year": 2010,
+    "title": "Robert C. Tucker",
+    "description": null
+  },
+  "Emmanuel Joseph Siey\u00e8s": {
+    "birth_year": 1748,
+    "death_year": 1836,
+    "title": "Emmanuel Joseph Siey\u00e8s",
+    "description": null
+  },
+  "Xenophon": {
+    "birth_year": -430,
+    "death_year": -354,
+    "title": "Xenophon",
+    "description": null
+  },
+  "Jean de La Bruy\u00e8re": {
+    "birth_year": 1645,
+    "death_year": 1696,
+    "title": "Jean de La Bruy\u00e8re",
+    "description": null
+  },
+  "Huangbo Xiyun": {
+    "birth_year": 770,
+    "death_year": 850,
+    "title": "Huangbo Xiyun",
+    "description": null
+  },
+  "Jean Racine": {
+    "birth_year": 1639,
+    "death_year": 1699,
+    "title": "Jean Racine",
+    "description": null
+  },
+  "Bhikkhu Bodhi": {
+    "birth_year": 1944,
+    "death_year": null,
+    "title": "Bhikkhu Bodhi",
+    "description": null
+  },
+  "Demophilus": {
+    "birth_year": 320,
+    "death_year": 386,
+    "title": "Demophilus",
+    "description": null
+  },
+  "Widukind of Corvey": {
+    "birth_year": 925,
+    "death_year": 973,
+    "title": "Widukind of Corvey",
+    "description": null
+  },
+  "Wolfram Eberhard": {
+    "birth_year": 1909,
+    "death_year": 1989,
+    "title": "Wolfram Eberhard",
+    "description": null
+  },
+  "Pierre-Simon Laplace": {
+    "birth_year": 1749,
+    "death_year": 1827,
+    "title": "Pierre-Simon Laplace",
+    "description": null
+  },
+  "Henry de Montherlant": {
+    "birth_year": 1895,
+    "death_year": 1972,
+    "title": "Henry de Montherlant",
+    "description": null
+  },
+  "Apollonius of Perga": {
+    "birth_year": -240,
+    "death_year": -190,
+    "title": "Apollonius of Perga",
+    "description": null
+  },
+  "Kwang-chih Chang": {
+    "birth_year": 1931,
+    "death_year": 2001,
+    "title": "Kwang-chih Chang",
+    "description": null
+  },
+  "Thomas Bayes": {
+    "birth_year": 1701,
+    "death_year": 1761,
+    "title": "Thomas Bayes",
+    "description": null
+  },
+  "Gunther Bornkamm": {
+    "birth_year": 1905,
+    "death_year": 1990,
+    "title": "G\u00fcnther Bornkamm",
+    "description": null
+  },
+  "William Feller": {
+    "birth_year": 1906,
+    "death_year": 1970,
+    "title": "William Feller",
+    "description": null
+  },
+  "Oliver Wendell Holmes Sr.": {
+    "birth_year": 1809,
+    "death_year": 1894,
+    "title": "Oliver Wendell Holmes Sr.",
+    "description": null
+  },
+  "Max Wertheimer": {
+    "birth_year": 1880,
+    "death_year": 1943,
+    "title": "Max Wertheimer",
+    "description": null
+  },
+  "Joseph Conrad": {
+    "birth_year": 1857,
+    "death_year": 1924,
+    "title": "Joseph Conrad",
+    "description": null
+  },
+  "Philip E. Tetlock": {
+    "birth_year": 1954,
+    "death_year": null,
+    "title": "Philip E. Tetlock",
+    "description": null
+  },
+  "\u00c9mile Senart": {
+    "birth_year": 1847,
+    "death_year": 1928,
+    "title": "\u00c9mile Senart",
+    "description": null
+  },
+  "David Grene": {
+    "birth_year": 1913,
+    "death_year": 2002,
+    "title": "David Grene",
+    "description": null
+  },
+  "James Merrill": {
+    "birth_year": 1926,
+    "death_year": 1995,
+    "title": "James Merrill",
+    "description": null
+  },
+  "Vannevar Bush": {
+    "birth_year": 1890,
+    "death_year": 1974,
+    "title": "Vannevar Bush",
+    "description": null
+  },
+  "Marshall McLuhan": {
+    "birth_year": 1911,
+    "death_year": 1980,
+    "title": "Marshall McLuhan",
+    "description": null
+  },
+  "Thomas Middleton": {
+    "birth_year": 1580,
+    "death_year": 1627,
+    "title": "Thomas Middleton",
+    "description": null
+  },
+  "Michael Grant": {
+    "birth_year": 1914,
+    "death_year": 2004,
+    "title": "Michael Grant (classicist)",
+    "description": null
+  },
+  "Karl Jaspers": {
+    "birth_year": 1883,
+    "death_year": 1969,
+    "title": "Karl Jaspers",
+    "description": null
+  },
+  "Jody Thompson": {
+    "birth_year": 1976,
+    "death_year": null,
+    "title": "Jody Thompson",
+    "description": null
+  },
+  "Masanobu Fukuoka": {
+    "birth_year": 1913,
+    "death_year": 2008,
+    "title": "Masanobu Fukuoka",
+    "description": null
+  },
+  "Andr\u00e9 Chamson": {
+    "birth_year": 1900,
+    "death_year": 1983,
+    "title": "Andr\u00e9 Chamson",
+    "description": null
+  },
+  "Pliny the Elder": {
+    "birth_year": 23,
+    "death_year": 79,
+    "title": "Pliny the Elder",
+    "description": null
+  },
+  "Roy Baumeister": {
+    "birth_year": 1953,
+    "death_year": null,
+    "title": "Roy Baumeister",
+    "description": null
+  },
+  "Frank Capra": {
+    "birth_year": 1897,
+    "death_year": 1991,
+    "title": "Frank Capra",
+    "description": null
+  },
+  "C.H. Dodd": {
+    "birth_year": 1884,
+    "death_year": 1973,
+    "title": "C. H. Dodd",
+    "description": null
+  },
+  "Ante Ciliga": {
+    "birth_year": 1898,
+    "death_year": 1992,
+    "title": "Ante Ciliga",
+    "description": null
+  },
+  "Robert   Levine": {
+    "birth_year": 1947,
+    "death_year": null,
+    "title": "Robert Levin (musicologist)",
+    "description": null
+  },
+  "A.H. Armstrong": {
+    "birth_year": 1909,
+    "death_year": 1997,
+    "title": "A. H. Armstrong",
+    "description": null
+  },
+  "Zeno of Citium": {
+    "birth_year": -334,
+    "death_year": -262,
+    "title": "Zeno of Citium",
+    "description": null
+  },
+  "Thomas Taylor": {
+    "birth_year": 1758,
+    "death_year": 1835,
+    "title": "Thomas Taylor (Neoplatonist)",
+    "description": null
+  },
+  "John Simon": {
+    "birth_year": 1925,
+    "death_year": 2019,
+    "title": "John Simon",
+    "description": null
+  },
+  "Manetho": {
+    "birth_year": -300,
+    "death_year": -250,
+    "title": "Manetho",
+    "description": null
+  },
+  "Thomas Merton": {
+    "birth_year": 1915,
+    "death_year": 1968,
+    "title": "Thomas Merton",
+    "description": null
+  },
+  "Leo Tolstoy": {
+    "birth_year": 1828,
+    "death_year": 1910,
+    "title": "Leo Tolstoy",
+    "description": null
+  },
+  "E. E. Cummings": {
+    "birth_year": 1894,
+    "death_year": 1962,
+    "title": "E. E. Cummings",
+    "description": null
+  },
+  "Gabriele D'Annunzio": {
+    "birth_year": 1863,
+    "death_year": 1938,
+    "title": "Gabriele D'Annunzio",
+    "description": null
+  },
+  "William Shakespeare": {
+    "birth_year": 1564,
+    "death_year": 1616,
+    "title": "William Shakespeare",
+    "description": null
+  },
+  "Johann Bayer": {
+    "birth_year": 1572,
+    "death_year": 1625,
+    "title": "Johann Bayer",
+    "description": null
+  },
+  "Jonathan Crary": {
+    "birth_year": 1951,
+    "death_year": null,
+    "title": "Jonathan Crary",
+    "description": null
+  },
+  "Amos Tversky": {
+    "birth_year": 1937,
+    "death_year": 1996,
+    "title": "Amos Tversky",
+    "description": null
+  },
+  "Pope Gelasius I": {
+    "birth_year": 410,
+    "death_year": 496,
+    "title": "Pope Gelasius I",
+    "description": null
+  },
+  "Grant Showerman": {
+    "birth_year": 1870,
+    "death_year": 1935,
+    "title": "Grant Showerman",
+    "description": null
+  },
+  "Hippolytus of Rome": {
+    "birth_year": 170,
+    "death_year": 235,
+    "title": "Hippolytus of Rome",
+    "description": null
+  },
+  "Henri Poincare": {
+    "birth_year": 1854,
+    "death_year": 1912,
+    "title": "Henri Poincar\u00e9",
+    "description": null
+  },
+  "Hans Jonas": {
+    "birth_year": 1903,
+    "death_year": 1993,
+    "title": "Hans Jonas",
+    "description": null
+  },
+  "Thomas Browne": {
+    "birth_year": 1605,
+    "death_year": 1682,
+    "title": "Thomas Browne",
+    "description": null
+  },
+  "Sextus Empiricus": {
+    "birth_year": 160,
+    "death_year": 210,
+    "title": "Sextus Empiricus",
+    "description": null
+  },
+  "Jean le Rond d'Alembert": {
+    "birth_year": 1717,
+    "death_year": 1783,
+    "title": "Jean le Rond d'Alembert",
+    "description": null
+  },
+  "Georges-Louis Leclerc, Comte de Buffon": {
+    "birth_year": 1707,
+    "death_year": 1788,
+    "title": "Georges-Louis Leclerc, Comte de Buffon",
+    "description": null
+  },
+  "Marcus Cornelius Fronto": {
+    "birth_year": 100,
+    "death_year": 166,
+    "title": "Marcus Cornelius Fronto",
+    "description": null
+  },
+  "Roger Caillois": {
+    "birth_year": 1913,
+    "death_year": 1978,
+    "title": "Roger Caillois",
+    "description": null
+  },
+  "Jonathan Swift": {
+    "birth_year": 1667,
+    "death_year": 1745,
+    "title": "Jonathan Swift",
+    "description": null
+  },
+  "Countess of S\u00e9gur": {
+    "birth_year": 1799,
+    "death_year": 1874,
+    "title": "Countess of S\u00e9gur",
+    "description": null
+  },
+  "Edward Sapir": {
+    "birth_year": 1884,
+    "death_year": 1939,
+    "title": "Edward Sapir",
+    "description": null
+  },
+  "Richard Lewontin": {
+    "birth_year": 1929,
+    "death_year": 2021,
+    "title": "Richard Lewontin",
+    "description": null
+  },
+  "Samuel Butler": {
+    "birth_year": 1613,
+    "death_year": 1680,
+    "title": "Samuel Butler (poet)",
+    "description": null
+  },
+  "Pindar": {
+    "birth_year": -522,
+    "death_year": -443,
+    "title": "Pindar",
+    "description": null
+  },
+  "E.J. Kenney": {
+    "birth_year": 1924,
+    "death_year": 2019,
+    "title": "E. J. Kenney",
+    "description": null
+  },
+  "Andr\u00e9 Leroi-Gourhan": {
+    "birth_year": 1911,
+    "death_year": 1986,
+    "title": "Andr\u00e9 Leroi-Gourhan",
+    "description": null
+  },
+  "Buddhaghosa": {
+    "birth_year": 370,
+    "death_year": 450,
+    "title": "Buddhaghosa",
+    "description": null
+  },
+  "Virginia Woolf": {
+    "birth_year": 1882,
+    "death_year": 1941,
+    "title": "Virginia Woolf",
+    "description": null
+  },
+  "Ernest Hemingway": {
+    "birth_year": 1899,
+    "death_year": 1961,
+    "title": "Ernest Hemingway",
+    "description": null
+  },
+  "John Archibald Wheeler": {
+    "birth_year": 1911,
+    "death_year": 2008,
+    "title": "John Archibald Wheeler",
+    "description": null
+  },
+  "\u00c9mile Puech": {
+    "birth_year": 1941,
+    "death_year": null,
+    "title": "\u00c9mile Puech",
+    "description": null
+  },
+  "Alf Hiltebeitel": {
+    "birth_year": 1942,
+    "death_year": null,
+    "title": "Alf Hiltebeitel",
+    "description": null
+  },
+  "Andrey Kolmogorov": {
+    "birth_year": 1903,
+    "death_year": 1987,
+    "title": "Andrey Kolmogorov",
+    "description": null
+  },
+  "Mark Leyner": {
+    "birth_year": 1956,
+    "death_year": null,
+    "title": "Mark Leyner",
+    "description": null
+  },
+  "Magda B. Arnold": {
+    "birth_year": 1903,
+    "death_year": 2002,
+    "title": "Magda B. Arnold",
+    "description": null
+  },
+  "Jonathan Bennett (philosopher)": {
+    "birth_year": 1930,
+    "death_year": 2024,
+    "title": "Jonathan Bennett (philosopher)",
+    "description": null
+  },
+  "Hipparchus": {
+    "birth_year": -190,
+    "death_year": -120,
+    "title": "Hipparchus",
+    "description": null
+  },
+  "Alexander Pope": {
+    "birth_year": 1688,
+    "death_year": 1744,
+    "title": "Alexander Pope",
+    "description": null
+  },
+  "Lord Byron": {
+    "birth_year": 1788,
+    "death_year": 1824,
+    "title": "Lord Byron",
+    "description": null
+  },
+  "Vasily Rozanov": {
+    "birth_year": 1856,
+    "death_year": 1919,
+    "title": "Vasily Rozanov",
+    "description": null
+  },
+  "Zadie Smith": {
+    "birth_year": 1975,
+    "death_year": null,
+    "title": "Zadie Smith",
+    "description": null
+  },
+  "Lewis Thomas": {
+    "birth_year": 1913,
+    "death_year": 1993,
+    "title": "Lewis Thomas",
+    "description": null
+  },
+  "James G. Wilson": {
+    "birth_year": 1915,
+    "death_year": 1987,
+    "title": "James G. Wilson",
+    "description": null
+  },
+  "Kenneth Clark": {
+    "birth_year": 1940,
+    "death_year": null,
+    "title": "Kenneth Clarke",
+    "description": null
+  },
+  "Ephorus": {
+    "birth_year": -400,
+    "death_year": -330,
+    "title": "Ephorus",
+    "description": null
+  },
+  "Analayo": {
+    "birth_year": 1962,
+    "death_year": null,
+    "title": "Bhikkhu Analayo",
+    "description": null
+  },
+  "Albert Camus": {
+    "birth_year": 1913,
+    "death_year": 1960,
+    "title": "Albert Camus",
+    "description": null
+  },
+  "Monier Monier-Williams": {
+    "birth_year": 1819,
+    "death_year": 1899,
+    "title": "Monier Monier-Williams",
+    "description": null
+  },
+  "Victor Tcherikover": {
+    "birth_year": 1894,
+    "death_year": 1958,
+    "title": "Victor Tcherikover",
+    "description": null
+  },
+  "Charles Mackay": {
+    "birth_year": 1814,
+    "death_year": 1889,
+    "title": "Charles Mackay (author)",
+    "description": null
+  },
+  "Franco Berardi": {
+    "birth_year": 1949,
+    "death_year": null,
+    "title": "Franco Berardi",
+    "description": null
+  },
+  "Tracy Austin": {
+    "birth_year": 1962,
+    "death_year": null,
+    "title": "Tracy Austin",
+    "description": null
+  },
+  "Sophocles": {
+    "birth_year": -497,
+    "death_year": -406,
+    "title": "Sophocles",
+    "description": null
+  },
+  "Henri Bergson": {
+    "birth_year": 1859,
+    "death_year": 1941,
+    "title": "Henri Bergson",
+    "description": null
+  },
+  "William Gaddis": {
+    "birth_year": 1922,
+    "death_year": 1998,
+    "title": "William Gaddis",
+    "description": null
+  },
+  "Henry Monnier": {
+    "birth_year": 1799,
+    "death_year": 1877,
+    "title": "Henry Monnier",
+    "description": null
+  },
+  "Desmond Lee": {
+    "birth_year": 1908,
+    "death_year": 1993,
+    "title": "Desmond Lee (classical scholar)",
+    "description": null
+  },
+  "Ren\u00e9 Descartes": {
+    "birth_year": 1596,
+    "death_year": 1650,
+    "title": "Ren\u00e9 Descartes",
+    "description": null
+  },
+  "George Berkeley": {
+    "birth_year": 1685,
+    "death_year": 1753,
+    "title": "George Berkeley",
+    "description": null
+  },
+  "Anton Chekhov": {
+    "birth_year": 1860,
+    "death_year": 1904,
+    "title": "Anton Chekhov",
+    "description": null
+  },
+  "David Lack": {
+    "birth_year": 1910,
+    "death_year": 1973,
+    "title": "David Lack",
+    "description": null
+  },
+  "Henry Bordeaux": {
+    "birth_year": 1870,
+    "death_year": 1963,
+    "title": "Henry Bordeaux",
+    "description": null
+  },
+  "Euclides da Cunha": {
+    "birth_year": 1866,
+    "death_year": 1909,
+    "title": "Euclides da Cunha",
+    "description": null
+  },
+  "Martha A. Sandweiss": {
+    "birth_year": 1954,
+    "death_year": null,
+    "title": "Martha A. Sandweiss",
+    "description": null
+  },
+  "Tom Holland (author)": {
+    "birth_year": 1968,
+    "death_year": null,
+    "title": "Tom Holland (author)",
+    "description": null
+  },
+  "Nan Huai-Chin": {
+    "birth_year": 1918,
+    "death_year": 2012,
+    "title": "Nan Huai-Chin",
+    "description": null
+  },
+  "Mark Salter": {
+    "birth_year": 1955,
+    "death_year": null,
+    "title": "Mark Salter",
+    "description": null
+  },
+  "Roger Martin du Gard": {
+    "birth_year": 1881,
+    "death_year": 1958,
+    "title": "Roger Martin du Gard",
+    "description": null
+  },
+  "Charles de R\u00e9musat": {
+    "birth_year": 1797,
+    "death_year": 1875,
+    "title": "Charles de R\u00e9musat",
+    "description": null
+  },
+  "Miriam T. Griffin": {
+    "birth_year": 1935,
+    "death_year": 2018,
+    "title": "Miriam T. Griffin",
+    "description": null
+  },
+  "Sigmund Freud": {
+    "birth_year": 1856,
+    "death_year": 1939,
+    "title": "Sigmund Freud",
+    "description": null
+  },
+  "Brian McGing": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "Brian McGing",
+    "description": null
+  },
+  "Bertolt Brecht": {
+    "birth_year": 1898,
+    "death_year": 1956,
+    "title": "Bertolt Brecht",
+    "description": null
+  },
+  "Confucius": {
+    "birth_year": -551,
+    "death_year": -479,
+    "title": "Confucius",
+    "description": null
+  },
+  "Gloria Bird": {
+    "birth_year": 1951,
+    "death_year": null,
+    "title": "Gloria Bird",
+    "description": null
+  },
+  "Stendhal": {
+    "birth_year": 1783,
+    "death_year": 1842,
+    "title": "Stendhal",
+    "description": null
+  },
+  "Martin Amis": {
+    "birth_year": 1949,
+    "death_year": 2023,
+    "title": "Martin Amis",
+    "description": null
+  },
+  "P.J. Rhodes": {
+    "birth_year": 1940,
+    "death_year": 2021,
+    "title": "P. J. Rhodes",
+    "description": null
+  },
+  "Stanis\u0142aw Lem": {
+    "birth_year": 1921,
+    "death_year": 2006,
+    "title": "Stanis\u0142aw Lem",
+    "description": null
+  },
+  "Franz Cumont": {
+    "birth_year": 1868,
+    "death_year": 1947,
+    "title": "Franz Cumont",
+    "description": null
+  },
+  "James Gleick": {
+    "birth_year": 1954,
+    "death_year": null,
+    "title": "James Gleick",
+    "description": null
+  },
+  "Franco Venturi": {
+    "birth_year": 1914,
+    "death_year": 1994,
+    "title": "Franco Venturi",
+    "description": null
+  },
+  "\u00c9mile Littr\u00e9": {
+    "birth_year": 1801,
+    "death_year": 1881,
+    "title": "\u00c9mile Littr\u00e9",
+    "description": null
+  },
+  "Jay L. Garfield": {
+    "birth_year": 1955,
+    "death_year": null,
+    "title": "Jay L. Garfield",
+    "description": null
+  },
+  "Pope Gregory I": {
+    "birth_year": 540,
+    "death_year": 604,
+    "title": "Pope Gregory I",
+    "description": null
+  },
+  "Walter Kaufmann": {
+    "birth_year": 1921,
+    "death_year": 1980,
+    "title": "Walter Kaufmann (philosopher)",
+    "description": null
+  },
+  "John Barth": {
+    "birth_year": 1930,
+    "death_year": 2024,
+    "title": "John Barth",
+    "description": null
+  },
+  "Carneades": {
+    "birth_year": -214,
+    "death_year": -129,
+    "title": "Carneades",
+    "description": null
+  },
+  "Leon Poliakov": {
+    "birth_year": 1910,
+    "death_year": 1997,
+    "title": "L\u00e9on Poliakov",
+    "description": null
+  },
+  "Johannes Kepler": {
+    "birth_year": 1571,
+    "death_year": 1630,
+    "title": "Johannes Kepler",
+    "description": null
+  },
+  "Louise Erdrich": {
+    "birth_year": 1954,
+    "death_year": null,
+    "title": "Louise Erdrich",
+    "description": null
+  },
+  "Robert Dodds": {
+    "birth_year": 1973,
+    "death_year": null,
+    "title": "Robert Dodd (baseball)",
+    "description": null
+  },
+  "Seamus Heaney": {
+    "birth_year": 1939,
+    "death_year": 2013,
+    "title": "Seamus Heaney",
+    "description": null
+  },
+  "Cleanthes": {
+    "birth_year": -330,
+    "death_year": -230,
+    "title": "Cleanthes",
+    "description": null
+  },
+  "John E. Woods": {
+    "birth_year": 1942,
+    "death_year": 2023,
+    "title": "John E. Woods (translator)",
+    "description": null
+  },
+  "Michael Crichton": {
+    "birth_year": 1942,
+    "death_year": 2008,
+    "title": "Michael Crichton",
+    "description": null
+  },
+  "Simon Singh": {
+    "birth_year": 1964,
+    "death_year": null,
+    "title": "Simon Singh",
+    "description": null
+  },
+  "Yuanwu Keqin": {
+    "birth_year": 1063,
+    "death_year": 1135,
+    "title": "Yuanwu Keqin",
+    "description": null
+  },
+  "Pat Conroy": {
+    "birth_year": 1945,
+    "death_year": 2016,
+    "title": "Pat Conroy",
+    "description": null
+  },
+  "Bernard Williams": {
+    "birth_year": 1929,
+    "death_year": 2003,
+    "title": "Bernard Williams",
+    "description": null
+  },
+  "Alastair Hannay": {
+    "birth_year": 1932,
+    "death_year": 2024,
+    "title": "Alastair Hannay",
+    "description": null
+  },
+  "David Luke": {
+    "birth_year": 1924,
+    "death_year": 1995,
+    "title": "David Luke Norman",
+    "description": null
+  },
+  "Reinhold Niebuhr": {
+    "birth_year": 1892,
+    "death_year": 1971,
+    "title": "Reinhold Niebuhr",
+    "description": null
+  },
+  "H. W. Fowler": {
+    "birth_year": 1858,
+    "death_year": 1933,
+    "title": "H. W. Fowler",
+    "description": null
+  },
+  "Matthew Paris": {
+    "birth_year": 1200,
+    "death_year": 1259,
+    "title": "Matthew Paris",
+    "description": null
+  },
+  "Gunter d'Alquen": {
+    "birth_year": 1910,
+    "death_year": 1998,
+    "title": "Gunter d'Alquen",
+    "description": null
+  },
+  "Jay McInerney": {
+    "birth_year": 1955,
+    "death_year": null,
+    "title": "Jay McInerney",
+    "description": null
+  },
+  "John Stuart Mill": {
+    "birth_year": 1806,
+    "death_year": 1873,
+    "title": "John Stuart Mill",
+    "description": null
+  },
+  "Ferdinand de Saussure": {
+    "birth_year": 1857,
+    "death_year": 1913,
+    "title": "Ferdinand de Saussure",
+    "description": null
+  },
+  "Lewis Mumford": {
+    "birth_year": 1895,
+    "death_year": 1990,
+    "title": "Lewis Mumford",
+    "description": null
+  },
+  "Justin Martyr": {
+    "birth_year": 100,
+    "death_year": 165,
+    "title": "Justin Martyr",
+    "description": null
+  },
+  "Phocion": {
+    "birth_year": -402,
+    "death_year": -318,
+    "title": "Phocion",
+    "description": null
+  },
+  "James Surowiecki": {
+    "birth_year": 1967,
+    "death_year": null,
+    "title": "James Surowiecki",
+    "description": null
+  },
+  "Susan Sontag": {
+    "birth_year": 1933,
+    "death_year": 2004,
+    "title": "Susan Sontag",
+    "description": null
+  },
+  "Stanley Cavell": {
+    "birth_year": 1926,
+    "death_year": 2018,
+    "title": "Stanley Cavell",
+    "description": null
+  },
+  "Irenaeus": {
+    "birth_year": 130,
+    "death_year": 202,
+    "title": "Irenaeus",
+    "description": null
+  },
+  "Catharine Edwards": {
+    "birth_year": 1963,
+    "death_year": null,
+    "title": "Catharine Edwards (historian)",
+    "description": null
+  },
+  "Marcus Atilius Regulus (consul 267 BC)": {
+    "birth_year": -307,
+    "death_year": -250,
+    "title": "Marcus Atilius Regulus (consul 267 BC)",
+    "description": null
+  },
+  "Thomas Malory": {
+    "birth_year": 1415,
+    "death_year": 1471,
+    "title": "Thomas Malory",
+    "description": null
+  },
+  "Swami Vivekananda": {
+    "birth_year": 1863,
+    "death_year": 1902,
+    "title": "Swami Vivekananda",
+    "description": null
+  },
+  "David        Young": {
+    "birth_year": 1957,
+    "death_year": null,
+    "title": "David Young (Ontario politician)",
+    "description": null
+  },
+  "Ovid": {
+    "birth_year": -43,
+    "death_year": null,
+    "title": "Ovid",
+    "description": null
+  },
+  "Charles Fourier": {
+    "birth_year": 1772,
+    "death_year": 1837,
+    "title": "Charles Fourier",
+    "description": null
+  },
+  "Barbara Foxley": {
+    "birth_year": 1860,
+    "death_year": 1958,
+    "title": "Barbara Foxley",
+    "description": null
+  },
+  "Thomas Hardy": {
+    "birth_year": 1840,
+    "death_year": 1928,
+    "title": "Thomas Hardy",
+    "description": null
+  },
+  "Wallace Stevens": {
+    "birth_year": 1879,
+    "death_year": 1955,
+    "title": "Wallace Stevens",
+    "description": null
+  },
+  "Sigehard (patriarch of Aquileia)": {
+    "birth_year": 1020,
+    "death_year": 1077,
+    "title": "Sigehard (patriarch of Aquileia)",
+    "description": null
+  },
+  "Luigi Pirandello": {
+    "birth_year": 1867,
+    "death_year": 1936,
+    "title": "Luigi Pirandello",
+    "description": null
+  },
+  "Aristophanes": {
+    "birth_year": -446,
+    "death_year": -386,
+    "title": "Aristophanes",
+    "description": null
+  },
+  "William Golding": {
+    "birth_year": 1911,
+    "death_year": 1993,
+    "title": "William Golding",
+    "description": null
+  },
+  "Patanjali": {
+    "birth_year": 1889,
+    "death_year": 1963,
+    "title": "M. Patanjali Sastri",
+    "description": null
+  },
+  "E.R. Dodds": {
+    "birth_year": 1893,
+    "death_year": 1979,
+    "title": "E. R. Dodds",
+    "description": null
+  },
+  "John Edgar Wideman": {
+    "birth_year": 1941,
+    "death_year": null,
+    "title": "John Edgar Wideman",
+    "description": null
+  },
+  "John J. Collins": {
+    "birth_year": 1946,
+    "death_year": null,
+    "title": "John J. Collins",
+    "description": null
+  },
+  "Walter Burkert": {
+    "birth_year": 1931,
+    "death_year": 2015,
+    "title": "Walter Burkert",
+    "description": null
+  },
+  "John Banville": {
+    "birth_year": 1945,
+    "death_year": null,
+    "title": "John Banville",
+    "description": null
+  },
+  "A. H. Armstrong": {
+    "birth_year": 1909,
+    "death_year": 1997,
+    "title": "A. H. Armstrong",
+    "description": null
+  },
+  "John Berger": {
+    "birth_year": 1926,
+    "death_year": 2017,
+    "title": "John Berger",
+    "description": null
+  },
+  "Marcus Porcius Cato": {
+    "birth_year": -234,
+    "death_year": -149,
+    "title": "Marcus Porcius Cato",
+    "description": null
+  },
+  "Wayne C. Booth": {
+    "birth_year": 1921,
+    "death_year": 2005,
+    "title": "Wayne C. Booth",
+    "description": null
+  },
+  "Mikhail Bulgakov": {
+    "birth_year": 1891,
+    "death_year": 1940,
+    "title": "Mikhail Bulgakov",
+    "description": null
+  },
+  "Cass Sunstein": {
+    "birth_year": 1954,
+    "death_year": null,
+    "title": "Cass Sunstein",
+    "description": null
+  },
+  "David Cronenberg": {
+    "birth_year": 1943,
+    "death_year": null,
+    "title": "David Cronenberg",
+    "description": null
+  },
+  "Maimonides": {
+    "birth_year": 1135,
+    "death_year": 1204,
+    "title": "Maimonides",
+    "description": null
+  },
+  "Mary Beard": {
+    "birth_year": 1955,
+    "death_year": null,
+    "title": "Mary Beard",
+    "description": null
+  },
+  "Arthur de Gobineau": {
+    "birth_year": 1816,
+    "death_year": 1882,
+    "title": "Arthur de Gobineau",
+    "description": null
+  },
+  "Ansel Adams": {
+    "birth_year": 1902,
+    "death_year": 1984,
+    "title": "Ansel Adams",
+    "description": null
+  },
+  "Irving Thalberg": {
+    "birth_year": 1899,
+    "death_year": 1936,
+    "title": "Irving Thalberg",
+    "description": null
+  },
+  "Aulus Hirtius": {
+    "birth_year": -90,
+    "death_year": -43,
+    "title": "Aulus Hirtius",
+    "description": null
+  },
+  "David Rousset": {
+    "birth_year": 1912,
+    "death_year": 1997,
+    "title": "David Rousset",
+    "description": null
+  },
+  "Ernest Nagel": {
+    "birth_year": 1901,
+    "death_year": 1985,
+    "title": "Ernest Nagel",
+    "description": null
+  },
+  "Ibn Ishaq": {
+    "birth_year": 704,
+    "death_year": 767,
+    "title": "Ibn Ishaq",
+    "description": null
+  },
+  "Lambert of Hersfeld": {
+    "birth_year": 1025,
+    "death_year": 1088,
+    "title": "Lambert of Hersfeld",
+    "description": null
+  },
+  "Paramartha (Chinese monk)": {
+    "birth_year": 499,
+    "death_year": 569,
+    "title": "Paramartha (Chinese monk)",
+    "description": null
+  },
+  "Joseph Goebbels": {
+    "birth_year": 1897,
+    "death_year": 1945,
+    "title": "Joseph Goebbels",
+    "description": null
+  },
+  "Jacob Burckhardt": {
+    "birth_year": 1818,
+    "death_year": 1897,
+    "title": "Jacob Burckhardt",
+    "description": null
+  },
+  "George Orwell": {
+    "birth_year": 1903,
+    "death_year": 1950,
+    "title": "George Orwell",
+    "description": null
+  },
+  "Lorenzo Da Ponte": {
+    "birth_year": 1749,
+    "death_year": 1838,
+    "title": "Lorenzo Da Ponte",
+    "description": null
+  },
+  "Norman Mailer": {
+    "birth_year": 1923,
+    "death_year": 2007,
+    "title": "Norman Mailer",
+    "description": null
+  },
+  "Gaius Julius Caesar": {
+    "birth_year": -100,
+    "death_year": -44,
+    "title": "Gaius Julius Caesar",
+    "description": null
+  },
+  "Speros Vryonis": {
+    "birth_year": 1928,
+    "death_year": 2019,
+    "title": "Speros Vryonis",
+    "description": null
+  },
+  "Lewis Carroll": {
+    "birth_year": 1832,
+    "death_year": 1898,
+    "title": "Lewis Carroll",
+    "description": null
+  },
+  "Seneca": {
+    "birth_year": -4,
+    "death_year": 65,
+    "title": "Seneca",
+    "description": null
+  },
+  "Henri de Boulainvilliers": {
+    "birth_year": 1658,
+    "death_year": 1722,
+    "title": "Henri de Boulainvilliers",
+    "description": null
+  },
+  "Xuanzang": {
+    "birth_year": 602,
+    "death_year": 664,
+    "title": "Xuanzang",
+    "description": null
+  },
+  "Camille Jullian": {
+    "birth_year": 1859,
+    "death_year": 1933,
+    "title": "Camille Jullian",
+    "description": null
+  },
+  "Isaak Markus Jost": {
+    "birth_year": 1793,
+    "death_year": 1860,
+    "title": "Isaak Markus Jost",
+    "description": null
+  },
+  "Isaac D'Israeli": {
+    "birth_year": 1766,
+    "death_year": 1848,
+    "title": "Isaac D'Israeli",
+    "description": null
+  },
+  "Samuel Putnam": {
+    "birth_year": 1892,
+    "death_year": 1950,
+    "title": "Samuel Putnam",
+    "description": null
+  },
+  "Porphyry": {
+    "birth_year": 234,
+    "death_year": null,
+    "title": "Porphyry of Tyre",
+    "description": null
+  },
+  "Peter S. Wells": {
+    "birth_year": 1948,
+    "death_year": null,
+    "title": "Peter S. Wells",
+    "description": null
+  },
+  "David Gallop": {
+    "birth_year": 1965,
+    "death_year": null,
+    "title": "David Gallop",
+    "description": null
+  },
+  "Maurice Genevoix": {
+    "birth_year": 1890,
+    "death_year": 1980,
+    "title": "Maurice Genevoix",
+    "description": null
+  },
+  "August Wilhelm Schlegel": {
+    "birth_year": 1767,
+    "death_year": 1845,
+    "title": "August Wilhelm Schlegel",
+    "description": null
+  },
+  "Berossus": {
+    "birth_year": -350,
+    "death_year": -280,
+    "title": "Berossus",
+    "description": null
+  },
+  "Honore de Balzac": {
+    "birth_year": 1799,
+    "death_year": 1850,
+    "title": "Honor\u00e9 de Balzac",
+    "description": null
+  },
+  "Anna Komnene": {
+    "birth_year": 1083,
+    "death_year": 1153,
+    "title": "Anna Komnene",
+    "description": null
+  },
+  "Amory Lovins": {
+    "birth_year": 1947,
+    "death_year": null,
+    "title": "Amory Lovins",
+    "description": null
+  },
+  "Joseph Cropsey": {
+    "birth_year": 1919,
+    "death_year": 2012,
+    "title": "Joseph Cropsey",
+    "description": null
+  },
+  "Josephus": {
+    "birth_year": 37,
+    "death_year": null,
+    "title": "Josephus",
+    "description": null
+  },
+  "Juvenal": {
+    "birth_year": 1937,
+    "death_year": 1994,
+    "title": "Juv\u00e9nal Habyarimana",
+    "description": null
+  },
+  "Seymour Feldman": {
+    "birth_year": 1932,
+    "death_year": null,
+    "title": "Seymour Feldman",
+    "description": null
+  },
+  "Robert Lowth": {
+    "birth_year": 1710,
+    "death_year": 1787,
+    "title": "Robert Lowth",
+    "description": null
+  },
+  "Wendy Doniger": {
+    "birth_year": 1940,
+    "death_year": null,
+    "title": "Wendy Doniger",
+    "description": null
+  },
+  "Albert Michotte": {
+    "birth_year": 1881,
+    "death_year": 1965,
+    "title": "Albert Michotte",
+    "description": null
+  },
+  "Herg\u00e9": {
+    "birth_year": 1907,
+    "death_year": 1983,
+    "title": "Herg\u00e9",
+    "description": null
+  },
+  "Fran\u00e7ois Guizot": {
+    "birth_year": 1787,
+    "death_year": 1874,
+    "title": "Fran\u00e7ois Guizot",
+    "description": null
+  },
+  "Moli\u00e8re": {
+    "birth_year": 1622,
+    "death_year": 1673,
+    "title": "Moli\u00e8re",
+    "description": null
+  },
+  "Anthony Hecht": {
+    "birth_year": 1923,
+    "death_year": 2004,
+    "title": "Anthony Hecht",
+    "description": null
+  },
+  "Suetonius": {
+    "birth_year": 69,
+    "death_year": 140,
+    "title": "Suetonius",
+    "description": null
+  },
+  "Colm Brogan": {
+    "birth_year": 1902,
+    "death_year": 1977,
+    "title": "Colm Brogan",
+    "description": null
+  },
+  "Giorgio de Chirico": {
+    "birth_year": 1888,
+    "death_year": 1978,
+    "title": "Giorgio de Chirico",
+    "description": null
+  },
+  "Helmut Gernsheim": {
+    "birth_year": 1913,
+    "death_year": 1995,
+    "title": "Helmut Gernsheim",
+    "description": null
+  },
+  "Horace": {
+    "birth_year": -65,
+    "death_year": -8,
+    "title": "Horace",
+    "description": null
+  },
+  "Emile Zola": {
+    "birth_year": 1840,
+    "death_year": 1902,
+    "title": "\u00c9mile Zola",
+    "description": null
+  },
+  "Thomas Mann": {
+    "birth_year": 1875,
+    "death_year": 1955,
+    "title": "Thomas Mann",
+    "description": null
+  },
+  "Aurel Kolnai": {
+    "birth_year": 1900,
+    "death_year": 1973,
+    "title": "Aurel Kolnai",
+    "description": null
+  },
+  "Frank Herbert": {
+    "birth_year": 1920,
+    "death_year": 1986,
+    "title": "Frank Herbert",
+    "description": null
+  },
+  "John of Damascus": {
+    "birth_year": 676,
+    "death_year": 749,
+    "title": "John of Damascus",
+    "description": null
+  },
+  "Isocrates": {
+    "birth_year": -436,
+    "death_year": -338,
+    "title": "Isocrates",
+    "description": null
+  },
+  "Archilochus": {
+    "birth_year": -680,
+    "death_year": -645,
+    "title": "Archilochus",
+    "description": null
+  },
+  "Jennifer Ackerman": {
+    "birth_year": 1959,
+    "death_year": null,
+    "title": "Jennifer Ackerman",
+    "description": null
+  },
+  "Jonathan Riley-Smith": {
+    "birth_year": 1938,
+    "death_year": 2016,
+    "title": "Jonathan Riley-Smith",
+    "description": null
+  },
+  "G. K. Chesterton": {
+    "birth_year": 1874,
+    "death_year": 1936,
+    "title": "G. K. Chesterton",
+    "description": null
+  },
+  "Ariel Durant": {
+    "birth_year": 1898,
+    "death_year": 1981,
+    "title": "Ariel Durant",
+    "description": null
+  },
+  "V. C. Wynne-Edwards": {
+    "birth_year": 1906,
+    "death_year": 1997,
+    "title": "V. C. Wynne-Edwards",
+    "description": null
+  },
+  "Baruch Fischhoff": {
+    "birth_year": 1946,
+    "death_year": null,
+    "title": "Baruch Fischhoff",
+    "description": null
+  },
+  "Paulo Neves": {
+    "birth_year": 1961,
+    "death_year": null,
+    "title": "Paulo Neves",
+    "description": null
+  },
+  "Thomas    Taylor": {
+    "birth_year": 1758,
+    "death_year": 1835,
+    "title": "Thomas Taylor (Neoplatonist)",
+    "description": null
+  },
+  "Alan Bullock": {
+    "birth_year": 1914,
+    "death_year": 2004,
+    "title": "Alan Bullock",
+    "description": null
+  },
+  "Daniel Kahneman": {
+    "birth_year": 1934,
+    "death_year": 2024,
+    "title": "Daniel Kahneman",
+    "description": null
+  },
+  "James Creed Meredith": {
+    "birth_year": 1875,
+    "death_year": 1942,
+    "title": "James Creed Meredith",
+    "description": null
+  },
+  "Georges Dum\u00e9zil": {
+    "birth_year": 1898,
+    "death_year": 1986,
+    "title": "Georges Dum\u00e9zil",
+    "description": null
+  },
+  "Peter Brown (historian)": {
+    "birth_year": 1935,
+    "death_year": null,
+    "title": "Peter Brown (historian)",
+    "description": null
+  },
+  "Hugh Trevor-Roper": {
+    "birth_year": 1914,
+    "death_year": 2003,
+    "title": "Hugh Trevor-Roper",
+    "description": null
+  },
+  "Arthur Moeller van den Bruck": {
+    "birth_year": 1876,
+    "death_year": 1925,
+    "title": "Arthur Moeller van den Bruck",
+    "description": null
+  },
+  "Johann Jakob Bachofen": {
+    "birth_year": 1815,
+    "death_year": 1887,
+    "title": "Johann Jakob Bachofen",
+    "description": null
+  },
+  "Albrecht D\u00fcrer": {
+    "birth_year": 1471,
+    "death_year": 1528,
+    "title": "Albrecht D\u00fcrer",
+    "description": null
+  },
+  "Anonymous": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "Anonymous 4",
+    "description": null
+  },
+  "Lewis Hyde": {
+    "birth_year": 1945,
+    "death_year": null,
+    "title": "Lewis Hyde",
+    "description": null
+  },
+  "Jane Austen": {
+    "birth_year": 1775,
+    "death_year": 1817,
+    "title": "Jane Austen",
+    "description": null
+  },
+  "Johann Wolfgang von Goethe": {
+    "birth_year": 1749,
+    "death_year": 1832,
+    "title": "Johann Wolfgang von Goethe",
+    "description": null
+  },
+  "Strabo": {
+    "birth_year": -63,
+    "death_year": 24,
+    "title": "Strabo",
+    "description": null
+  },
+  "Nikolai Berdyaev": {
+    "birth_year": 1874,
+    "death_year": 1948,
+    "title": "Nikolai Berdyaev",
+    "description": null
+  },
+  "Tom Holland": {
+    "birth_year": 1943,
+    "death_year": null,
+    "title": "Tom Holland (filmmaker)",
+    "description": null
+  },
+  "James Redfield": {
+    "birth_year": 1935,
+    "death_year": null,
+    "title": "James Redfield",
+    "description": null
+  },
+  "Oskar Morgenstern": {
+    "birth_year": 1902,
+    "death_year": 1977,
+    "title": "Oskar Morgenstern",
+    "description": null
+  },
+  "Joseph Frank": {
+    "birth_year": 1918,
+    "death_year": 2013,
+    "title": "Joseph Frank",
+    "description": null
+  },
+  "Philip Roth": {
+    "birth_year": 1933,
+    "death_year": 2018,
+    "title": "Philip Roth",
+    "description": null
+  },
+  "Douglas Hofstadter": {
+    "birth_year": 1945,
+    "death_year": null,
+    "title": "Douglas Hofstadter",
+    "description": null
+  },
+  "Arthur Schopenhauer": {
+    "birth_year": 1788,
+    "death_year": 1860,
+    "title": "Arthur Schopenhauer",
+    "description": null
+  },
+  "David Brewster": {
+    "birth_year": 1781,
+    "death_year": 1868,
+    "title": "David Brewster",
+    "description": null
+  },
+  "Jonathan Z. Smith": {
+    "birth_year": 1938,
+    "death_year": 2017,
+    "title": "Jonathan Z. Smith",
+    "description": null
+  },
+  "Robert Frank": {
+    "birth_year": 1924,
+    "death_year": 2019,
+    "title": "Robert Frank",
+    "description": null
+  },
+  "Dionysius Lardner": {
+    "birth_year": 1793,
+    "death_year": 1859,
+    "title": "Dionysius Lardner",
+    "description": null
+  },
+  "E. O. Wilson": {
+    "birth_year": 1929,
+    "death_year": 2021,
+    "title": "E. O. Wilson",
+    "description": null
+  },
+  "S\u00f8ren Kierkegaard": {
+    "birth_year": 1813,
+    "death_year": 1855,
+    "title": "S\u00f8ren Kierkegaard",
+    "description": null
+  },
+  "Julius Caesar": {
+    "birth_year": -100,
+    "death_year": -44,
+    "title": "Julius Caesar",
+    "description": null
+  },
+  "Dionysius of Halicarnassus": {
+    "birth_year": -60,
+    "death_year": -7,
+    "title": "Dionysius of Halicarnassus",
+    "description": null
+  },
+  "Nagarjuna": {
+    "birth_year": 150,
+    "death_year": 250,
+    "title": "Nagarjuna",
+    "description": null
+  },
+  "Mihaly Csikszentmihalyi": {
+    "birth_year": 1934,
+    "death_year": 2021,
+    "title": "Mihaly Csikszentmihalyi",
+    "description": null
+  },
+  "Joseph de Maistre": {
+    "birth_year": 1753,
+    "death_year": 1821,
+    "title": "Joseph de Maistre",
+    "description": null
+  },
+  "Arthur Koestler": {
+    "birth_year": 1905,
+    "death_year": 1983,
+    "title": "Arthur Koestler",
+    "description": null
+  },
+  "Fyodor Dostoevsky": {
+    "birth_year": 1821,
+    "death_year": 1881,
+    "title": "Fyodor Dostoevsky",
+    "description": null
+  },
+  "Vasubandhu": {
+    "birth_year": 320,
+    "death_year": 400,
+    "title": "Vasubandhu",
+    "description": null
+  },
+  "Johann Gottfried Herder": {
+    "birth_year": 1744,
+    "death_year": 1803,
+    "title": "Johann Gottfried Herder",
+    "description": null
+  },
+  "Parmenides": {
+    "birth_year": -515,
+    "death_year": -450,
+    "title": "Parmenides",
+    "description": null
+  },
+  "Leo the Deacon": {
+    "birth_year": 950,
+    "death_year": 992,
+    "title": "Leo the Deacon",
+    "description": null
+  },
+  "Gaston Bachelard": {
+    "birth_year": 1884,
+    "death_year": 1962,
+    "title": "Gaston Bachelard",
+    "description": null
+  },
+  "Augustine of Hippo": {
+    "birth_year": 354,
+    "death_year": 430,
+    "title": "Augustine of Hippo",
+    "description": null
+  },
+  "Irvin D. Yalom": {
+    "birth_year": 1931,
+    "death_year": null,
+    "title": "Irvin D. Yalom",
+    "description": null
+  },
+  "Honor\u00e9 Gabriel Riqueti, comte de Mirabeau": {
+    "birth_year": 1749,
+    "death_year": 1791,
+    "title": "Honor\u00e9 Gabriel Riqueti, comte de Mirabeau",
+    "description": null
+  },
+  "Isaac Deutscher": {
+    "birth_year": 1907,
+    "death_year": 1967,
+    "title": "Isaac Deutscher",
+    "description": null
+  },
+  "Norman Malcolm": {
+    "birth_year": 1911,
+    "death_year": 1990,
+    "title": "Norman Malcolm",
+    "description": null
+  },
+  "Cicero": {
+    "birth_year": -106,
+    "death_year": -43,
+    "title": "Cicero",
+    "description": null
+  },
+  "Alexander Luria": {
+    "birth_year": 1902,
+    "death_year": 1977,
+    "title": "Alexander Luria",
+    "description": null
+  },
+  "Origen": {
+    "birth_year": 184,
+    "death_year": 253,
+    "title": "Origen",
+    "description": null
+  },
+  "Eknath Easwaran": {
+    "birth_year": 1910,
+    "death_year": 1999,
+    "title": "Eknath Easwaran",
+    "description": null
+  },
+  "Ludwig Feuerbach": {
+    "birth_year": 1804,
+    "death_year": 1872,
+    "title": "Ludwig Feuerbach",
+    "description": null
+  },
+  "Claude Tresmontant": {
+    "birth_year": 1925,
+    "death_year": 1997,
+    "title": "Claude Tresmontant",
+    "description": null
+  },
+  "Jean Cocteau": {
+    "birth_year": 1889,
+    "death_year": 1963,
+    "title": "Jean Cocteau",
+    "description": null
+  },
+  "Brassai": {
+    "birth_year": 1899,
+    "death_year": 1984,
+    "title": "Brassa\u00ef",
+    "description": null
+  },
+  "R.W. Southern": {
+    "birth_year": 1912,
+    "death_year": 2001,
+    "title": "R. W. Southern",
+    "description": null
+  },
+  "Mark  Johnson": {
+    "birth_year": 1949,
+    "death_year": null,
+    "title": "Mark Johnson (philosopher)",
+    "description": null
+  },
+  "Georges Simenon": {
+    "birth_year": 1903,
+    "death_year": 1989,
+    "title": "Georges Simenon",
+    "description": null
+  },
+  "Epicurus": {
+    "birth_year": -341,
+    "death_year": -270,
+    "title": "Epicurus",
+    "description": null
+  },
+  "Carl Jung": {
+    "birth_year": 1875,
+    "death_year": 1961,
+    "title": "Carl Jung",
+    "description": null
+  },
+  "Charles Darwin": {
+    "birth_year": 1809,
+    "death_year": 1882,
+    "title": "Charles Darwin",
+    "description": null
+  },
+  "Sylvia Plath": {
+    "birth_year": 1932,
+    "death_year": 1963,
+    "title": "Sylvia Plath",
+    "description": null
+  },
+  "Ernst Moritz Arndt": {
+    "birth_year": 1769,
+    "death_year": 1860,
+    "title": "Ernst Moritz Arndt",
+    "description": null
+  },
+  "Walter Hamilton": {
+    "birth_year": 1856,
+    "death_year": 1879,
+    "title": "Walter Hamilton (VC)",
+    "description": null
+  },
+  "Garrett Hardin": {
+    "birth_year": 1915,
+    "death_year": 2003,
+    "title": "Garrett Hardin",
+    "description": null
+  },
+  "Charles Lindbergh": {
+    "birth_year": 1902,
+    "death_year": 1974,
+    "title": "Charles Lindbergh",
+    "description": null
+  },
+  "Porphyry of Tyre": {
+    "birth_year": 234,
+    "death_year": null,
+    "title": "Porphyry of Tyre",
+    "description": null
+  },
+  "Edward Caird": {
+    "birth_year": 1835,
+    "death_year": 1908,
+    "title": "Edward Caird",
+    "description": null
+  },
+  "Tycho Brahe": {
+    "birth_year": 1546,
+    "death_year": 1601,
+    "title": "Tycho Brahe",
+    "description": null
+  },
+  "Samuel Butler (novelist)": {
+    "birth_year": 1835,
+    "death_year": 1902,
+    "title": "Samuel Butler (novelist)",
+    "description": null
+  },
+  "Arthur Waley": {
+    "birth_year": 1889,
+    "death_year": 1966,
+    "title": "Arthur Waley",
+    "description": null
+  },
+  "Jacques-Antoine-Adrien Delort": {
+    "birth_year": 1773,
+    "death_year": 1846,
+    "title": "Jacques-Antoine-Adrien Delort",
+    "description": null
+  },
+  "Edmund Burke": {
+    "birth_year": 1729,
+    "death_year": 1797,
+    "title": "Edmund Burke",
+    "description": null
+  },
+  "Snorri Sturluson": {
+    "birth_year": 1179,
+    "death_year": 1241,
+    "title": "Snorri Sturluson",
+    "description": null
+  },
+  "Alexander of Aphrodisias": {
+    "birth_year": 200,
+    "death_year": 215,
+    "title": "Alexander of Aphrodisias",
+    "description": null
+  },
+  "Richard August Reitzenstein": {
+    "birth_year": 1861,
+    "death_year": 1931,
+    "title": "Richard August Reitzenstein",
+    "description": null
+  },
+  "Stuart Hampshire": {
+    "birth_year": 1914,
+    "death_year": 2004,
+    "title": "Stuart Hampshire",
+    "description": null
+  },
+  "Walt Whitman": {
+    "birth_year": 1819,
+    "death_year": 1892,
+    "title": "Walt Whitman",
+    "description": null
+  },
+  "Hannah Arendt": {
+    "birth_year": 1906,
+    "death_year": 1975,
+    "title": "Hannah Arendt",
+    "description": null
+  },
+  "John Zachary Young": {
+    "birth_year": 1907,
+    "death_year": 1997,
+    "title": "John Zachary Young",
+    "description": null
+  },
+  "Francesco Maria Grimaldi": {
+    "birth_year": 1618,
+    "death_year": 1663,
+    "title": "Francesco Maria Grimaldi",
+    "description": null
+  },
+  "Gottlob Frege": {
+    "birth_year": 1848,
+    "death_year": 1925,
+    "title": "Gottlob Frege",
+    "description": null
+  },
+  "Methodius of Olympus": {
+    "birth_year": 230,
+    "death_year": 311,
+    "title": "Methodius of Olympus",
+    "description": null
+  },
+  "C.D.C. Reeve": {
+    "birth_year": 1948,
+    "death_year": null,
+    "title": "C. D. C. Reeve",
+    "description": null
+  },
+  "Jeremy Bentham": {
+    "birth_year": 1748,
+    "death_year": 1832,
+    "title": "Jeremy Bentham",
+    "description": null
+  },
+  "Euripides": {
+    "birth_year": -480,
+    "death_year": -406,
+    "title": "Euripides",
+    "description": null
+  },
+  "Hilaire Belloc": {
+    "birth_year": 1870,
+    "death_year": 1953,
+    "title": "Hilaire Belloc",
+    "description": null
+  },
+  "Lucretius": {
+    "birth_year": -99,
+    "death_year": -55,
+    "title": "Lucretius",
+    "description": null
+  },
+  "Euclid": {
+    "birth_year": -325,
+    "death_year": -265,
+    "title": "Euclid",
+    "description": null
+  },
+  "Howard Kunreuther": {
+    "birth_year": 1938,
+    "death_year": 2023,
+    "title": "Howard Kunreuther",
+    "description": null
+  },
+  "Bodhidharma": {
+    "birth_year": 483,
+    "death_year": 540,
+    "title": "Bodhidharma",
+    "description": null
+  },
+  "Alexis de Tocqueville": {
+    "birth_year": 1805,
+    "death_year": 1859,
+    "title": "Alexis de Tocqueville",
+    "description": null
+  },
+  "Jean Piaget": {
+    "birth_year": 1896,
+    "death_year": 1980,
+    "title": "Jean Piaget",
+    "description": null
+  },
+  "Daniel Dennett": {
+    "birth_year": 1942,
+    "death_year": 2024,
+    "title": "Daniel Dennett",
+    "description": null
+  },
+  "Alain Robbe-Grillet": {
+    "birth_year": 1922,
+    "death_year": 2008,
+    "title": "Alain Robbe-Grillet",
+    "description": null
+  },
+  "Stephen Jay Gould": {
+    "birth_year": 1941,
+    "death_year": 2002,
+    "title": "Stephen Jay Gould",
+    "description": null
+  },
+  "W.H.S. Jones": {
+    "birth_year": 1876,
+    "death_year": 1963,
+    "title": "W. H. S. Jones",
+    "description": null
+  },
+  "Robert H. Jackson": {
+    "birth_year": 1892,
+    "death_year": 1954,
+    "title": "Robert H. Jackson",
+    "description": null
+  },
+  "James Joyce": {
+    "birth_year": 1882,
+    "death_year": 1941,
+    "title": "James Joyce",
+    "description": null
+  },
+  "Melody Beattie": {
+    "birth_year": 1948,
+    "death_year": 2025,
+    "title": "Melody Beattie",
+    "description": null
+  },
+  "Paul Thomas Anderson": {
+    "birth_year": 1970,
+    "death_year": null,
+    "title": "Paul Thomas Anderson",
+    "description": null
+  },
+  "James Baldwin": {
+    "birth_year": 1924,
+    "death_year": 1987,
+    "title": "James Baldwin",
+    "description": null
+  },
+  "Leo Szilard": {
+    "birth_year": 1898,
+    "death_year": 1964,
+    "title": "Leo Szilard",
+    "description": null
+  },
+  "Swami Satchidananda": {
+    "birth_year": 1914,
+    "death_year": 2002,
+    "title": "Swami Satchidananda Saraswati",
+    "description": null
+  },
+  "Ernest Alfred Vizetelly": {
+    "birth_year": 1853,
+    "death_year": 1922,
+    "title": "Ernest Alfred Vizetelly",
+    "description": null
+  },
+  "James Agee": {
+    "birth_year": 1909,
+    "death_year": 1955,
+    "title": "James Agee",
+    "description": null
+  },
+  "Theodor Mommsen": {
+    "birth_year": 1817,
+    "death_year": 1903,
+    "title": "Theodor Mommsen",
+    "description": null
+  },
+  "Paul Zanker": {
+    "birth_year": 1937,
+    "death_year": null,
+    "title": "Paul Zanker",
+    "description": null
+  },
+  "Walter J. Ong": {
+    "birth_year": 1912,
+    "death_year": 2003,
+    "title": "Walter J. Ong",
+    "description": null
+  },
+  "Charles Dickens": {
+    "birth_year": 1812,
+    "death_year": 1870,
+    "title": "Charles Dickens",
+    "description": null
+  },
+  "Margaret Atwood": {
+    "birth_year": 1939,
+    "death_year": null,
+    "title": "Margaret Atwood",
+    "description": null
+  },
+  "John M. Riddle": {
+    "birth_year": 1937,
+    "death_year": null,
+    "title": "John M. Riddle",
+    "description": null
+  },
+  "Regino of Pr\u00fcm": {
+    "birth_year": 840,
+    "death_year": 915,
+    "title": "Regino of Pr\u00fcm",
+    "description": null
+  },
+  "Edward Rice": {
+    "birth_year": 1918,
+    "death_year": 2001,
+    "title": "Edward Rice",
+    "description": null
+  },
+  "George Bernard Shaw": {
+    "birth_year": 1856,
+    "death_year": 1950,
+    "title": "George Bernard Shaw",
+    "description": null
+  },
+  "Houston Stewart Chamberlain": {
+    "birth_year": 1855,
+    "death_year": 1927,
+    "title": "Houston Stewart Chamberlain",
+    "description": null
+  },
+  "Jane Goodall": {
+    "birth_year": 1934,
+    "death_year": 2025,
+    "title": "Jane Goodall",
+    "description": null
+  },
+  "Colin Turnbull": {
+    "birth_year": 1924,
+    "death_year": 1994,
+    "title": "Colin Turnbull",
+    "description": null
+  },
+  "John Veitch": {
+    "birth_year": 1829,
+    "death_year": 1894,
+    "title": "John Veitch (poet)",
+    "description": null
+  },
+  "Jean-Pierre Dupuy": {
+    "birth_year": 1941,
+    "death_year": null,
+    "title": "Jean-Pierre Dupuy",
+    "description": null
+  },
+  "Helen H. Bacon": {
+    "birth_year": 1919,
+    "death_year": 2007,
+    "title": "Helen H. Bacon",
+    "description": null
+  },
+  "Tacitus": {
+    "birth_year": 56,
+    "death_year": 120,
+    "title": "Tacitus",
+    "description": null
+  },
+  "Stephen Hawking": {
+    "birth_year": 1942,
+    "death_year": 2018,
+    "title": "Stephen Hawking",
+    "description": null
+  },
+  "Pierre Bayle": {
+    "birth_year": 1647,
+    "death_year": 1706,
+    "title": "Pierre Bayle",
+    "description": null
+  },
+  "Alfred Rosenberg": {
+    "birth_year": 1893,
+    "death_year": 1946,
+    "title": "Alfred Rosenberg",
+    "description": null
+  },
+  "Friedrich Nietzsche": {
+    "birth_year": 1844,
+    "death_year": 1900,
+    "title": "Friedrich Nietzsche",
+    "description": null
+  },
+  "Felix Guattari": {
+    "birth_year": 1930,
+    "death_year": 1992,
+    "title": "F\u00e9lix Guattari",
+    "description": null
+  },
+  "Gore Vidal": {
+    "birth_year": 1925,
+    "death_year": 2012,
+    "title": "Gore Vidal",
+    "description": null
+  },
+  "Daniel Bernoulli": {
+    "birth_year": 1700,
+    "death_year": 1782,
+    "title": "Daniel Bernoulli",
+    "description": null
+  },
+  "Sengzhao": {
+    "birth_year": 384,
+    "death_year": 414,
+    "title": "Sengzhao",
+    "description": null
+  },
+  "Quintus Fabius Pictor": {
+    "birth_year": -270,
+    "death_year": -200,
+    "title": "Quintus Fabius Pictor",
+    "description": null
+  },
+  "Michael   Lewis": {
+    "birth_year": 1980,
+    "death_year": null,
+    "title": "Michael Lewis (safety)",
+    "description": null
+  },
+  "Noam Chomsky": {
+    "birth_year": 1928,
+    "death_year": null,
+    "title": "Noam Chomsky",
+    "description": null
+  },
+  "Antoine de Saint-Exup\u00e9ry": {
+    "birth_year": 1900,
+    "death_year": 1944,
+    "title": "Antoine de Saint-Exup\u00e9ry",
+    "description": null
+  },
+  "Georg Wilhelm Friedrich Hegel": {
+    "birth_year": 1770,
+    "death_year": 1831,
+    "title": "Georg Wilhelm Friedrich Hegel",
+    "description": null
+  },
+  "George Santayana": {
+    "birth_year": 1863,
+    "death_year": 1952,
+    "title": "George Santayana",
+    "description": null
+  },
+  "John Keats": {
+    "birth_year": 1795,
+    "death_year": 1821,
+    "title": "John Keats",
+    "description": null
+  },
+  "Arthur Rimbaud": {
+    "birth_year": 1854,
+    "death_year": 1891,
+    "title": "Arthur Rimbaud",
+    "description": null
+  },
+  "Homer": {
+    "birth_year": -850,
+    "death_year": -800,
+    "title": "Homer",
+    "description": null
+  },
+  "Andrew Wallace-Hadrill": {
+    "birth_year": 1951,
+    "death_year": null,
+    "title": "Andrew Wallace-Hadrill",
+    "description": null
+  },
+  "Otto of Freising": {
+    "birth_year": 1111,
+    "death_year": 1158,
+    "title": "Otto of Freising",
+    "description": null
+  },
+  "William S. Burroughs": {
+    "birth_year": 1914,
+    "death_year": 1997,
+    "title": "William S. Burroughs",
+    "description": null
+  },
+  "Martin Seligman": {
+    "birth_year": 1942,
+    "death_year": null,
+    "title": "Martin Seligman",
+    "description": null
+  },
+  "Richard Thaler": {
+    "birth_year": 1945,
+    "death_year": null,
+    "title": "Richard Thaler",
+    "description": null
+  },
+  "Rodulfus Glaber": {
+    "birth_year": 985,
+    "death_year": 1047,
+    "title": "Rodulfus Glaber",
+    "description": null
+  },
+  "Henry James": {
+    "birth_year": 1843,
+    "death_year": 1916,
+    "title": "Henry James",
+    "description": null
+  },
+  "Thomas Aquinas": {
+    "birth_year": 1225,
+    "death_year": 1274,
+    "title": "Thomas Aquinas",
+    "description": null
+  },
+  "Geoffrey K. Pullum": {
+    "birth_year": 1945,
+    "death_year": null,
+    "title": "Geoffrey K. Pullum",
+    "description": null
+  },
+  "Valerie Martinez": {
+    "birth_year": 1961,
+    "death_year": null,
+    "title": "Valerie Mart\u00ednez",
+    "description": null
+  },
+  "Carl Schmitt": {
+    "birth_year": 1888,
+    "death_year": 1985,
+    "title": "Carl Schmitt",
+    "description": null
+  },
+  "George Polya": {
+    "birth_year": 1887,
+    "death_year": 1985,
+    "title": "George P\u00f3lya",
+    "description": null
+  },
+  "Arthur Hugh Clough": {
+    "birth_year": 1819,
+    "death_year": 1861,
+    "title": "Arthur Hugh Clough",
+    "description": null
+  },
+  "David Abram": {
+    "birth_year": 1957,
+    "death_year": null,
+    "title": "David Abram",
+    "description": null
+  },
+  "Honor\u00e9 de Balzac": {
+    "birth_year": 1799,
+    "death_year": 1850,
+    "title": "Honor\u00e9 de Balzac",
+    "description": null
+  },
+  "E.A. Wallis Budge": {
+    "birth_year": 1857,
+    "death_year": 1934,
+    "title": "E. A. Wallis Budge",
+    "description": null
+  },
+  "Steve Silberman": {
+    "birth_year": 1957,
+    "death_year": 2024,
+    "title": "Steve Silberman",
+    "description": null
+  },
+  "William Harris Stahl": {
+    "birth_year": 1908,
+    "death_year": 1969,
+    "title": "William Harris Stahl",
+    "description": null
+  },
+  "Robert Charles Zaehner": {
+    "birth_year": 1913,
+    "death_year": 1974,
+    "title": "Robert Charles Zaehner",
+    "description": null
+  },
+  "Mario Praz": {
+    "birth_year": 1896,
+    "death_year": 1982,
+    "title": "Mario Praz",
+    "description": null
+  },
+  "Konrad Heiden": {
+    "birth_year": 1901,
+    "death_year": 1966,
+    "title": "Konrad Heiden",
+    "description": null
+  },
+  "C. Wright Mills": {
+    "birth_year": 1916,
+    "death_year": 1962,
+    "title": "C. Wright Mills",
+    "description": null
+  },
+  "Paul B\u00e9nichou": {
+    "birth_year": 1908,
+    "death_year": 2001,
+    "title": "Paul B\u00e9nichou",
+    "description": null
+  },
+  "David Foster Wallace": {
+    "birth_year": 1962,
+    "death_year": 2008,
+    "title": "David Foster Wallace",
+    "description": null
+  },
+  "Gerd Gigerenzer": {
+    "birth_year": 1947,
+    "death_year": null,
+    "title": "Gerd Gigerenzer",
+    "description": null
+  },
+  "Caryl Emerson": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "Caryl Emerson",
+    "description": null
+  },
+  "Robert Trivers": {
+    "birth_year": 1943,
+    "death_year": null,
+    "title": "Robert Trivers",
+    "description": null
+  },
+  "Jason Burke": {
+    "birth_year": 1970,
+    "death_year": null,
+    "title": "Jason Burke",
+    "description": null
+  },
+  "Unknown": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "Those Unknown",
+    "description": null
+  },
+  "John Dryden": {
+    "birth_year": 1631,
+    "death_year": 1700,
+    "title": "John Dryden",
+    "description": null
+  },
+  "Wendell Berry": {
+    "birth_year": 1934,
+    "death_year": null,
+    "title": "Wendell Berry",
+    "description": null
+  },
+  "Jean-Baptiste Capefigue": {
+    "birth_year": 1801,
+    "death_year": 1872,
+    "title": "Jean-Baptiste Capefigue",
+    "description": null
+  },
+  "Martin Heidegger": {
+    "birth_year": 1889,
+    "death_year": 1976,
+    "title": "Martin Heidegger",
+    "description": null
+  },
+  "Frances Moore Lappe": {
+    "birth_year": 1944,
+    "death_year": null,
+    "title": "Frances Moore Lapp\u00e9",
+    "description": null
+  },
+  "Vladimir Nabokov": {
+    "birth_year": 1899,
+    "death_year": 1977,
+    "title": "Vladimir Nabokov",
+    "description": null
+  },
+  "Jenny Uglow": {
+    "birth_year": 1947,
+    "death_year": null,
+    "title": "Jenny Uglow",
+    "description": null
+  },
+  "Julien Benda": {
+    "birth_year": 1867,
+    "death_year": 1956,
+    "title": "Julien Benda",
+    "description": null
+  },
+  "Horace Freeland Judson": {
+    "birth_year": 1931,
+    "death_year": 2011,
+    "title": "Horace Freeland Judson",
+    "description": null
+  },
+  "Miguel de Cervantes": {
+    "birth_year": 1547,
+    "death_year": 1616,
+    "title": "Miguel de Cervantes",
+    "description": null
+  },
+  "John Cheke": {
+    "birth_year": 1514,
+    "death_year": 1557,
+    "title": "John Cheke",
+    "description": null
+  },
+  "Robert Schlaifer": {
+    "birth_year": 1914,
+    "death_year": 1994,
+    "title": "Robert Schlaifer",
+    "description": null
+  },
+  "Kate Crosby": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "Kate Crosby",
+    "description": null
+  },
+  "Derek Bickerton": {
+    "birth_year": 1926,
+    "death_year": 2018,
+    "title": "Derek Bickerton",
+    "description": null
+  },
+  "Jared Diamond": {
+    "birth_year": 1937,
+    "death_year": null,
+    "title": "Jared Diamond",
+    "description": null
+  },
+  "Frank Conroy": {
+    "birth_year": 1936,
+    "death_year": 2005,
+    "title": "Frank Conroy (author)",
+    "description": null
+  },
+  "Isma\u00ebl Bullialdus": {
+    "birth_year": 1605,
+    "death_year": 1694,
+    "title": "Isma\u00ebl Bullialdus",
+    "description": null
+  },
+  "Phocylides": {
+    "birth_year": -560,
+    "death_year": -500,
+    "title": "Phocylides",
+    "description": null
+  },
+  "Friedrich Schiller": {
+    "birth_year": 1759,
+    "death_year": 1805,
+    "title": "Friedrich Schiller",
+    "description": null
+  },
+  "Saul Kripke": {
+    "birth_year": 1940,
+    "death_year": 2022,
+    "title": "Saul Kripke",
+    "description": null
+  },
+  "Claude Shannon": {
+    "birth_year": 1916,
+    "death_year": 2001,
+    "title": "Claude Shannon",
+    "description": null
+  },
+  "Peter Berg (bioregionalist)": {
+    "birth_year": 1937,
+    "death_year": 2011,
+    "title": "Peter Berg (bioregionalist)",
+    "description": null
+  },
+  "Nassim Nicholas Taleb": {
+    "birth_year": 1960,
+    "death_year": null,
+    "title": "Nassim Nicholas Taleb",
+    "description": null
+  },
+  "Jan de Vries (philologist)": {
+    "birth_year": 1890,
+    "death_year": 1964,
+    "title": "Jan de Vries (philologist)",
+    "description": null
+  },
+  "Burton Watson": {
+    "birth_year": 1925,
+    "death_year": 2017,
+    "title": "Burton Watson",
+    "description": null
+  },
+  "St\u00e9phane Mallarm\u00e9": {
+    "birth_year": 1842,
+    "death_year": 1898,
+    "title": "St\u00e9phane Mallarm\u00e9",
+    "description": null
+  },
+  "David Mitchell (author)": {
+    "birth_year": 1969,
+    "death_year": null,
+    "title": "David Mitchell (author)",
+    "description": null
+  },
+  "Alfred Adler": {
+    "birth_year": 1870,
+    "death_year": 1937,
+    "title": "Alfred Adler",
+    "description": null
+  },
+  "Georges Bernanos": {
+    "birth_year": 1888,
+    "death_year": 1948,
+    "title": "Georges Bernanos",
+    "description": null
+  },
+  "Ludwig Wittgenstein": {
+    "birth_year": 1889,
+    "death_year": 1951,
+    "title": "Ludwig Wittgenstein",
+    "description": null
+  },
+  "Dante Alighieri": {
+    "birth_year": 1265,
+    "death_year": 1321,
+    "title": "Dante Alighieri",
+    "description": null
+  },
+  "Eric A. Havelock": {
+    "birth_year": 1903,
+    "death_year": 1988,
+    "title": "Eric A. Havelock",
+    "description": null
+  },
+  "Vladimir Lenin": {
+    "birth_year": 1870,
+    "death_year": 1924,
+    "title": "Vladimir Lenin",
+    "description": null
+  },
+  "Thomas Elyot": {
+    "birth_year": 1490,
+    "death_year": 1546,
+    "title": "Thomas Elyot",
+    "description": null
+  },
+  "Richard E. Nisbett": {
+    "birth_year": 1941,
+    "death_year": null,
+    "title": "Richard E. Nisbett",
+    "description": null
+  },
+  "Merritt Ruhlen": {
+    "birth_year": 1944,
+    "death_year": 2021,
+    "title": "Merritt Ruhlen",
+    "description": null
+  },
+  "Richard Pevear": {
+    "birth_year": null,
+    "death_year": null,
+    "title": "Richard Pevear and Larissa Volokhonsky",
+    "description": null
+  },
+  "Paul Vidal de La Blache": {
+    "birth_year": 1845,
+    "death_year": 1918,
+    "title": "Paul Vidal de La Blache",
+    "description": null
+  },
+  "Bernard Lazare": {
+    "birth_year": 1865,
+    "death_year": 1903,
+    "title": "Bernard Lazare",
+    "description": null
+  },
+  "George Boole": {
+    "birth_year": 1815,
+    "death_year": 1864,
+    "title": "George Boole",
+    "description": null
+  },
+  "Clemens Brentano": {
+    "birth_year": 1778,
+    "death_year": 1842,
+    "title": "Clemens Brentano",
+    "description": null
+  },
+  "Goronwy Rees": {
+    "birth_year": 1909,
+    "death_year": 1979,
+    "title": "Goronwy Rees",
+    "description": null
+  },
+  "Tom Stoppard": {
+    "birth_year": 1937,
+    "death_year": null,
+    "title": "Tom Stoppard",
+    "description": null
+  },
+  "Thietmar of Merseburg": {
+    "birth_year": 975,
+    "death_year": 1018,
+    "title": "Thietmar of Merseburg",
+    "description": null
+  },
+  "F. Sherwood Taylor": {
+    "birth_year": 1897,
+    "death_year": 1956,
+    "title": "F. Sherwood Taylor",
+    "description": null
+  },
+  "Antonio Damasio": {
+    "birth_year": 1944,
+    "death_year": null,
+    "title": "Antonio Damasio",
+    "description": null
+  },
+  "Eric Berne": {
+    "birth_year": 1910,
+    "death_year": 1970,
+    "title": "Eric Berne",
+    "description": null
+  },
+  "Simonides of Ceos": {
+    "birth_year": -556,
+    "death_year": -468,
+    "title": "Simonides of Ceos",
+    "description": null
+  },
+  "Henri Poincar\u00e9": {
+    "birth_year": 1854,
+    "death_year": 1912,
+    "title": "Henri Poincar\u00e9",
+    "description": null
+  },
+  "Fran\u00e7ois Dominique de Reynaud, Comte de Montlosier": {
+    "birth_year": 1755,
+    "death_year": 1838,
+    "title": "Fran\u00e7ois Dominique de Reynaud, Comte de Montlosier",
+    "description": null
+  },
+  "George C. Williams": {
+    "birth_year": 1926,
+    "death_year": 2010,
+    "title": "George C. Williams",
+    "description": null
+  },
+  "Jorge Luis Borges": {
+    "birth_year": 1899,
+    "death_year": 1986,
+    "title": "Jorge Luis Borges",
+    "description": null
+  },
+  "George Lakoff": {
+    "birth_year": 1941,
+    "death_year": null,
+    "title": "George Lakoff",
+    "description": null
+  },
+  "Constance Garnett": {
+    "birth_year": 1861,
+    "death_year": 1946,
+    "title": "Constance Garnett",
+    "description": null
+  },
+  "Edward Conze": {
+    "birth_year": 1904,
+    "death_year": 1979,
+    "title": "Edward Conze",
+    "description": null
+  },
+  "Manius Curius Dentatus": {
+    "birth_year": -330,
+    "death_year": -270,
+    "title": "Manius Curius Dentatus",
+    "description": null
+  },
+  "Seneca the Younger": {
+    "birth_year": -4,
+    "death_year": 65,
+    "title": "Seneca the Younger",
+    "description": null
+  },
+  "Lawrence Gowing": {
+    "birth_year": 1918,
+    "death_year": 1991,
+    "title": "Lawrence Gowing",
+    "description": null
+  },
+  "Paul Mus": {
+    "birth_year": 1902,
+    "death_year": 1969,
+    "title": "Paul Mus",
+    "description": null
+  },
+  "Otto E. Neugebauer": {
+    "birth_year": 1899,
+    "death_year": 1990,
+    "title": "Otto E. Neugebauer",
+    "description": null
+  },
+  "Henri Cartier-Bresson": {
+    "birth_year": 1908,
+    "death_year": 2004,
+    "title": "Henri Cartier-Bresson",
+    "description": null
+  },
+  "George Armitage Miller": {
+    "birth_year": 1920,
+    "death_year": 2012,
+    "title": "George Armitage Miller",
+    "description": null
+  },
+  "Jean Bayet": {
+    "birth_year": 1892,
+    "death_year": 1969,
+    "title": "Jean Bayet",
+    "description": null
+  },
+  "Auguste Comte": {
+    "birth_year": 1798,
+    "death_year": 1857,
+    "title": "Auguste Comte",
+    "description": null
+  },
+  "Kum\u0101raj\u012bva": {
+    "birth_year": 344,
+    "death_year": 413,
+    "title": "Kum\u0101raj\u012bva",
+    "description": null
+  },
+  "Bruno Bettelheim": {
+    "birth_year": 1903,
+    "death_year": 1990,
+    "title": "Bruno Bettelheim",
+    "description": null
+  },
+  "W.S. Gilbert": {
+    "birth_year": 1836,
+    "death_year": 1911,
+    "title": "W. S. Gilbert",
+    "description": null
+  },
+  "Paul Roche": {
+    "birth_year": 1982,
+    "death_year": null,
+    "title": "Paul Roche (hurler)",
+    "description": null
+  },
+  "Jaron Lanier": {
+    "birth_year": 1960,
+    "death_year": null,
+    "title": "Jaron Lanier",
+    "description": null
+  },
+  "Joy Harjo": {
+    "birth_year": 1951,
+    "death_year": null,
+    "title": "Joy Harjo",
+    "description": null
+  },
+  "Mark Turner": {
+    "birth_year": 1954,
+    "death_year": null,
+    "title": "Mark Turner (cognitive scientist)",
+    "description": null
+  },
+  "Robert Axelrod (political scientist)": {
+    "birth_year": 1943,
+    "death_year": null,
+    "title": "Robert Axelrod (political scientist)",
+    "description": null
+  },
+  "Edmond de Goncourt": {
+    "birth_year": 1822,
+    "death_year": 1896,
+    "title": "Edmond de Goncourt",
+    "description": null
+  },
+  "Barbara Cartland": {
+    "birth_year": 1901,
+    "death_year": 2000,
+    "title": "Barbara Cartland",
+    "description": null
+  },
+  "Livy": {
+    "birth_year": -59,
+    "death_year": 17,
+    "title": "Livy",
+    "description": null
+  },
+  "Harry Frankfurt": {
+    "birth_year": 1929,
+    "death_year": 2023,
+    "title": "Harry Frankfurt",
+    "description": null
+  },
+  "Andre Maurois": {
+    "birth_year": 1885,
+    "death_year": 1967,
+    "title": "Andr\u00e9 Maurois",
+    "description": null
+  },
+  "Jedediah Purdy": {
+    "birth_year": 1974,
+    "death_year": null,
+    "title": "Jedediah Purdy",
+    "description": null
+  },
+  "Thomas Pynchon": {
+    "birth_year": 1937,
+    "death_year": null,
+    "title": "Thomas Pynchon",
+    "description": null
+  },
+  "Samuel Hazzard Cross": {
+    "birth_year": 1891,
+    "death_year": 1946,
+    "title": "Samuel Hazzard Cross",
+    "description": null
+  },
+  "John Locke": {
+    "birth_year": 1632,
+    "death_year": 1704,
+    "title": "John Locke",
+    "description": null
+  },
+  "Adrian Goldsworthy": {
+    "birth_year": 1969,
+    "death_year": null,
+    "title": "Adrian Goldsworthy",
+    "description": null
+  },
+  "George Eliot": {
+    "birth_year": 1819,
+    "death_year": 1880,
+    "title": "George Eliot",
+    "description": null
+  },
+  "I. Bernard Cohen": {
+    "birth_year": 1914,
+    "death_year": 2003,
+    "title": "I. Bernard Cohen",
+    "description": null
+  },
+  "Philip Schaff": {
+    "birth_year": 1819,
+    "death_year": 1893,
+    "title": "Philip Schaff",
+    "description": null
+  },
+  "Tim Weiner": {
+    "birth_year": 1956,
+    "death_year": null,
+    "title": "Tim Weiner",
+    "description": null
+  },
+  "Pauline Oliveros": {
+    "birth_year": 1932,
+    "death_year": 2016,
+    "title": "Pauline Oliveros",
+    "description": null
+  },
+  "Rudolf Bultmann": {
+    "birth_year": 1884,
+    "death_year": 1976,
+    "title": "Rudolf Bultmann",
+    "description": null
+  },
+  "Cassius Dio": {
+    "birth_year": 150,
+    "death_year": 235,
+    "title": "Cassius Dio",
+    "description": null
+  },
+  "H. G. Wells": {
+    "birth_year": 1866,
+    "death_year": 1946,
+    "title": "H. G. Wells",
+    "description": null
+  },
+  "Aesop": {
+    "birth_year": 1976,
+    "death_year": null,
+    "title": "Aesop Rock",
+    "description": null
+  },
+  "Graham Cairns-Smith": {
+    "birth_year": 1931,
+    "death_year": 2016,
+    "title": "Graham Cairns-Smith",
+    "description": null
+  },
+  "Pierre Briant": {
+    "birth_year": 1940,
+    "death_year": null,
+    "title": "Pierre Briant",
+    "description": null
+  },
+  "Ding Fubao": {
+    "birth_year": 1874,
+    "death_year": 1952,
+    "title": "Ding Fubao",
+    "description": null
+  },
+  "Novalis": {
+    "birth_year": 1772,
+    "death_year": 1801,
+    "title": "Novalis",
+    "description": null
+  },
+  "Clement of Alexandria": {
+    "birth_year": 150,
+    "death_year": 215,
+    "title": "Clement of Alexandria",
+    "description": null
+  },
+  "Jules de Goncourt": {
+    "birth_year": 1830,
+    "death_year": 1870,
+    "title": "Jules de Goncourt",
+    "description": null
+  },
+  "Christopher Hitchens": {
+    "birth_year": 1949,
+    "death_year": 2011,
+    "title": "Christopher Hitchens",
+    "description": null
+  },
+  "Herodotus": {
+    "birth_year": -484,
+    "death_year": -425,
+    "title": "Herodotus",
+    "description": null
+  },
+  "Friedrich Schlegel": {
+    "birth_year": 1772,
+    "death_year": 1829,
+    "title": "Friedrich Schlegel",
+    "description": null
+  },
+  "Walter Mischel": {
+    "birth_year": 1930,
+    "death_year": 2018,
+    "title": "Walter Mischel",
+    "description": null
+  },
+  "Henri Maspero": {
+    "birth_year": 1883,
+    "death_year": 1945,
+    "title": "Henri Maspero",
+    "description": null
+  },
+  "Sarah Schulman": {
+    "birth_year": 1958,
+    "death_year": null,
+    "title": "Sarah Schulman",
+    "description": null
+  },
+  "Robert Graves": {
+    "birth_year": 1895,
+    "death_year": 1985,
+    "title": "Robert Graves",
+    "description": null
+  },
+  "Frank Conroy (author)": {
+    "birth_year": 1936,
+    "death_year": 2005,
+    "title": "Frank Conroy (author)",
+    "description": null
+  },
+  "Asvaghosa": {
+    "birth_year": 80,
+    "death_year": 150,
+    "title": "Asvaghosa",
+    "description": null
+  },
+  "David Lynch": {
+    "birth_year": 1946,
+    "death_year": 2025,
+    "title": "David Lynch",
+    "description": null
+  },
+  "Iris Murdoch": {
+    "birth_year": 1919,
+    "death_year": 1999,
+    "title": "Iris Murdoch",
+    "description": null
+  },
+  "Stesichorus": {
+    "birth_year": -630,
+    "death_year": -555,
+    "title": "Stesichorus",
+    "description": null
+  },
+  "Antisthenes": {
+    "birth_year": -445,
+    "death_year": -365,
+    "title": "Antisthenes",
+    "description": null
+  },
+  "Michel Foucault": {
+    "birth_year": 1926,
+    "death_year": 1984,
+    "title": "Michel Foucault",
+    "description": null
+  },
+  "Epictetus": {
+    "birth_year": 55,
+    "death_year": 135,
+    "title": "Epictetus",
+    "description": null
+  },
+  "John McWhorter": {
+    "birth_year": 1965,
+    "death_year": null,
+    "title": "John McWhorter",
+    "description": null
+  },
+  "Ronald Syme": {
+    "birth_year": 1903,
+    "death_year": 1989,
+    "title": "Ronald Syme",
+    "description": null
+  },
+  "Alfred North Whitehead": {
+    "birth_year": 1861,
+    "death_year": 1947,
+    "title": "Alfred North Whitehead",
+    "description": null
+  },
+  "Paul Auster": {
+    "birth_year": 1947,
+    "death_year": 2024,
+    "title": "Paul Auster",
+    "description": null
+  },
+  "Robert de Flers": {
+    "birth_year": 1872,
+    "death_year": 1927,
+    "title": "Robert de Flers",
+    "description": null
+  },
+  "Posidonius": {
+    "birth_year": -135,
+    "death_year": -51,
+    "title": "Posidonius",
+    "description": null
+  },
+  "Nancy Newhall": {
+    "birth_year": 1908,
+    "death_year": 1974,
+    "title": "Nancy Newhall",
+    "description": null
+  },
+  "Louis XIV": {
+    "birth_year": 1638,
+    "death_year": 1715,
+    "title": "Louis XIV",
+    "description": null
+  },
+  "Henri Gr\u00e9goire": {
+    "birth_year": 1750,
+    "death_year": 1831,
+    "title": "Henri Gr\u00e9goire",
+    "description": null
+  },
+  "Hugo Gressmann": {
+    "birth_year": 1877,
+    "death_year": 1927,
+    "title": "Hugo Gressmann",
+    "description": null
+  },
+  "Martin Hengel": {
+    "birth_year": 1926,
+    "death_year": 2009,
+    "title": "Martin Hengel",
+    "description": null
+  },
+  "Lucien Goldmann": {
+    "birth_year": 1913,
+    "death_year": 1970,
+    "title": "Lucien Goldmann",
+    "description": null
+  },
+  "Regiomontanus": {
+    "birth_year": 1436,
+    "death_year": 1476,
+    "title": "Regiomontanus",
+    "description": null
+  },
+  "Roger Penrose": {
+    "birth_year": 1931,
+    "death_year": null,
+    "title": "Roger Penrose",
+    "description": null
+  },
+  "Fran\u00e7ois de La Rochefoucauld (writer)": {
+    "birth_year": 1613,
+    "death_year": 1680,
+    "title": "Fran\u00e7ois de La Rochefoucauld (writer)",
+    "description": null
+  },
+  "Henri Lefebvre": {
+    "birth_year": 1901,
+    "death_year": 1991,
+    "title": "Henri Lefebvre",
+    "description": null
+  },
+  "Vernon L. Smith": {
+    "birth_year": 1927,
+    "death_year": null,
+    "title": "Vernon L. Smith",
+    "description": null
+  },
+  "Norman O. Brown": {
+    "birth_year": 1913,
+    "death_year": 2002,
+    "title": "Norman O. Brown",
+    "description": null
+  },
+  "Salo Baron": {
+    "birth_year": 1895,
+    "death_year": 1989,
+    "title": "Salo Baron",
+    "description": null
+  },
+  "Heraclitus": {
+    "birth_year": -535,
+    "death_year": -475,
+    "title": "Heraclitus",
+    "description": null
+  },
+  "William Woodthorpe Tarn": {
+    "birth_year": 1869,
+    "death_year": 1957,
+    "title": "William Woodthorpe Tarn",
+    "description": null
+  },
+  "Gustav Klemm": {
+    "birth_year": 1802,
+    "death_year": 1867,
+    "title": "Gustav Klemm",
+    "description": null
+  },
+  "Aleksandr Solzhenitsyn": {
+    "birth_year": 1918,
+    "death_year": 2008,
+    "title": "Aleksandr Solzhenitsyn",
+    "description": null
+  },
+  "Jenny Odell": {
+    "birth_year": 1986,
+    "death_year": null,
+    "title": "Jenny Odell",
+    "description": null
+  },
+  "J. D. Salinger": {
+    "birth_year": 1919,
+    "death_year": 2010,
+    "title": "J. D. Salinger",
+    "description": null
+  },
+  "Mark Twain": {
+    "birth_year": 1835,
+    "death_year": 1910,
+    "title": "Mark Twain",
+    "description": null
+  },
+  "Peter Mark Roget": {
+    "birth_year": 1779,
+    "death_year": 1869,
+    "title": "Peter Mark Roget",
+    "description": null
+  },
+  "Leon Trotsky": {
+    "birth_year": 1879,
+    "death_year": 1940,
+    "title": "Leon Trotsky",
+    "description": null
+  },
+  "Leo Buscaglia": {
+    "birth_year": 1924,
+    "death_year": 1998,
+    "title": "Leo Buscaglia",
+    "description": null
+  },
+  "Gordon Allport": {
+    "birth_year": 1897,
+    "death_year": 1967,
+    "title": "Gordon Allport",
+    "description": null
+  },
+  "D. T. Suzuki": {
+    "birth_year": 1870,
+    "death_year": 1966,
+    "title": "D. T. Suzuki",
+    "description": null
+  },
+  "Ctesias": {
+    "birth_year": -441,
+    "death_year": -398,
+    "title": "Ctesias",
+    "description": null
+  },
+  "Charles Baudelaire": {
+    "birth_year": 1821,
+    "death_year": 1867,
+    "title": "Charles Baudelaire",
+    "description": null
+  },
+  "Paul Samuelson": {
+    "birth_year": 1915,
+    "death_year": 2009,
+    "title": "Paul Samuelson",
+    "description": null
+  },
+  "David Bostock": {
+    "birth_year": 1948,
+    "death_year": 2016,
+    "title": "David Bostock (diplomat)",
+    "description": null
+  },
+  "William James": {
+    "birth_year": 1842,
+    "death_year": 1910,
+    "title": "William James",
+    "description": null
+  },
+  "Paramahansa Yogananda": {
+    "birth_year": 1893,
+    "death_year": 1952,
+    "title": "Paramahansa Yogananda",
+    "description": null
+  },
+  "Herge": {
+    "birth_year": 1907,
+    "death_year": 1983,
+    "title": "Herg\u00e9",
+    "description": null
+  },
+  "Peter Green": {
+    "birth_year": 1946,
+    "death_year": 2020,
+    "title": "Peter Green (musician)",
+    "description": null
+  },
+  "Christopher Wren": {
+    "birth_year": 1632,
+    "death_year": 1723,
+    "title": "Christopher Wren",
+    "description": null
+  },
+  "Marquis de Sade": {
+    "birth_year": 1740,
+    "death_year": 1814,
+    "title": "Marquis de Sade",
+    "description": null
+  },
+  "Atul Gawande": {
+    "birth_year": 1965,
+    "death_year": null,
+    "title": "Atul Gawande",
+    "description": null
+  },
+  "Charles Wesley": {
+    "birth_year": 1707,
+    "death_year": 1788,
+    "title": "Charles Wesley",
+    "description": null
+  },
+  "Gaius Asinius Pollio": {
+    "birth_year": -75,
+    "death_year": 4,
+    "title": "Gaius Asinius Pollio",
+    "description": null
+  },
+  "Erwin Schr\u00f6dinger": {
+    "birth_year": 1887,
+    "death_year": 1961,
+    "title": "Erwin Schr\u00f6dinger",
+    "description": null
+  },
+  "Afonso Cruz": {
+    "birth_year": 1971,
+    "death_year": null,
+    "title": "Afonso Cruz",
+    "description": null
+  },
+  "Ernst Gombrich": {
+    "birth_year": 1909,
+    "death_year": 2001,
+    "title": "Ernst Gombrich",
+    "description": null
+  },
+  "Democritus": {
+    "birth_year": -460,
+    "death_year": -370,
+    "title": "Democritus",
+    "description": null
+  },
+  "Norman Cohn": {
+    "birth_year": 1915,
+    "death_year": 2007,
+    "title": "Norman Cohn",
+    "description": null
+  },
+  "Bernard Stonehouse": {
+    "birth_year": 1926,
+    "death_year": 2014,
+    "title": "Bernard Stonehouse",
+    "description": null
+  },
+  "Donald A. Yates": {
+    "birth_year": 1930,
+    "death_year": 2017,
+    "title": "Donald A. Yates",
+    "description": null
+  },
+  "L\u00e9on Brillouin": {
+    "birth_year": 1889,
+    "death_year": 1969,
+    "title": "L\u00e9on Brillouin",
+    "description": null
+  },
+  "Konrad Lorenz": {
+    "birth_year": 1903,
+    "death_year": 1989,
+    "title": "Konrad Lorenz",
+    "description": null
+  },
+  "Viktor Shklovsky": {
+    "birth_year": 1893,
+    "death_year": 1984,
+    "title": "Viktor Shklovsky",
+    "description": null
+  },
+  "Gilles Deleuze": {
+    "birth_year": 1925,
+    "death_year": 1995,
+    "title": "Gilles Deleuze",
+    "description": null
+  },
+  "J. M. Coetzee": {
+    "birth_year": 1940,
+    "death_year": null,
+    "title": "J. M. Coetzee",
+    "description": null
+  },
+  "Jean Genet": {
+    "birth_year": 1910,
+    "death_year": 1986,
+    "title": "Jean Genet",
+    "description": null
+  },
+  "Edward Gibbon": {
+    "birth_year": 1737,
+    "death_year": 1794,
+    "title": "Edward Gibbon",
+    "description": null
+  },
+  "Pablo Picasso": {
+    "birth_year": 1881,
+    "death_year": 1973,
+    "title": "Pablo Picasso",
+    "description": null
+  },
+  "Peter Galison": {
+    "birth_year": 1955,
+    "death_year": null,
+    "title": "Peter Galison",
+    "description": null
+  },
+  "Saul Bellow": {
+    "birth_year": 1915,
+    "death_year": 2005,
+    "title": "Saul Bellow",
+    "description": null
+  },
+  "Abbo of Fleury": {
+    "birth_year": 945,
+    "death_year": 1004,
+    "title": "Abbo of Fleury",
+    "description": null
+  },
+  "N. David Mermin": {
+    "birth_year": 1935,
+    "death_year": null,
+    "title": "N. David Mermin",
+    "description": null
+  },
+  "Fyodor Dostoyevsky": {
+    "birth_year": 1821,
+    "death_year": 1881,
+    "title": "Fyodor Dostoyevsky"
+  },
+  "Marcus Tullius Cicero": {
+    "birth_year": -106,
+    "death_year": -43,
+    "title": "Marcus Tullius Cicero"
+  },
+  "Joseph-Arthur de Gobineau": {
+    "birth_year": 1816,
+    "death_year": 1882,
+    "title": "Joseph-Arthur de Gobineau"
+  },
+  "Viktor E. Frankl": {
+    "birth_year": 1905,
+    "death_year": 1997,
+    "title": "Viktor E. Frankl"
+  },
+  "Robert McQueen Grant": {
+    "birth_year": 1917,
+    "death_year": 2014,
+    "title": "Robert McQueen Grant"
+  },
+  "Thich Nhat Hanh": {
+    "birth_year": 1926,
+    "death_year": 2022,
+    "title": "Thich Nhat Hanh"
+  },
+  "Terrence W. Deacon": {
+    "birth_year": 1947,
+    "death_year": null,
+    "title": "Terrence W. Deacon"
+  },
+  "Nikolai A. Berdyaev": {
+    "birth_year": 1874,
+    "death_year": 1948,
+    "title": "Nikolai A. Berdyaev"
+  },
+  "Franco Bifo Berardi": {
+    "birth_year": 1949,
+    "death_year": null,
+    "title": "Franco Bifo Berardi"
+  },
+  "Petronius Arbiter": {
+    "birth_year": 27,
+    "death_year": 66,
+    "title": "Petronius Arbiter"
+  },
+  "Philip M. Rosenzweig": {
+    "birth_year": 1949,
+    "death_year": null,
+    "title": "Philip M. Rosenzweig"
+  },
+  "Soren Kierkegaard": {
+    "birth_year": 1813,
+    "death_year": 1855,
+    "title": "Soren Kierkegaard"
+  },
+  "Edward O. Wilson": {
+    "birth_year": 1929,
+    "death_year": 2021,
+    "title": "Edward O. Wilson"
+  },
+  "James E. Lovelock": {
+    "birth_year": 1919,
+    "death_year": 2022,
+    "title": "James E. Lovelock"
+  },
+  "W.W. Tarn": {
+    "birth_year": 1869,
+    "death_year": 1957,
+    "title": "W.W. Tarn"
+  },
+  "Arnold Joseph Toynbee": {
+    "birth_year": 1889,
+    "death_year": 1975,
+    "title": "Arnold Joseph Toynbee"
+  },
+  "Han Shan": {
+    "birth_year": 700,
+    "death_year": 800,
+    "title": "Han Shan"
+  },
+  "Hui-Neng": {
+    "birth_year": 638,
+    "death_year": 713,
+    "title": "Hui-Neng"
+  },
+  "Lao Tzu": {
+    "birth_year": -604,
+    "death_year": -531,
+    "title": "Lao Tzu"
+  },
+  "R.M.W. Dixon": {
+    "birth_year": 1939,
+    "death_year": null,
+    "title": "R.M.W. Dixon"
+  },
+  "Patricia Cline Cohen": {
+    "birth_year": 1946,
+    "death_year": null,
+    "title": "Patricia Cline Cohen"
+  },
+  "Barbara Tuchman": {
+    "birth_year": 1912,
+    "death_year": 1989,
+    "title": "Barbara Tuchman"
+  },
+  "Maria Brosius": {
+    "birth_year": 1955,
+    "death_year": null,
+    "title": "Maria Brosius"
+  },
+  "Hans Van Wees": {
+    "birth_year": 1959,
+    "death_year": null,
+    "title": "Hans Van Wees"
+  },
+  "Jacob A. Riis": {
+    "birth_year": 1849,
+    "death_year": 1914,
+    "title": "Jacob A. Riis"
+  },
+  "Gustav Janouch": {
+    "birth_year": 1903,
+    "death_year": 1968,
+    "title": "Gustav Janouch"
+  },
+  "Alfred Tennyson": {
+    "birth_year": 1809,
+    "death_year": 1892,
+    "title": "Alfred Tennyson"
+  },
+  "George H. Sabine": {
+    "birth_year": 1880,
+    "death_year": 1961,
+    "title": "George H. Sabine"
+  },
+  "Harrison E. Salisbury": {
+    "birth_year": 1908,
+    "death_year": 1993,
+    "title": "Harrison E. Salisbury"
+  },
+  "Bertram D. Wolfe": {
+    "birth_year": 1896,
+    "death_year": 1977,
+    "title": "Bertram D. Wolfe"
+  },
+  "Kamalasila": {
+    "birth_year": 740,
+    "death_year": 795,
+    "title": "Kamalasila"
+  },
+  "Marcus Atilius Regulus": {
+    "birth_year": -307,
+    "death_year": -250,
+    "title": "Marcus Atilius Regulus"
+  },
+  "Yoshito Hakeda": {
+    "birth_year": 1924,
+    "death_year": 1983,
+    "title": "Yoshito Hakeda"
+  },
+  "Egon Caesar Conte Corti": {
+    "birth_year": 1886,
+    "death_year": 1953,
+    "title": "Egon Caesar Conte Corti"
+  },
+  "Robert O. Paxton": {
+    "birth_year": 1932,
+    "death_year": null,
+    "title": "Robert O. Paxton"
+  },
+  "Jout Jout": {
+    "birth_year": 1991,
+    "death_year": null,
+    "title": "Jout Jout"
+  },
+  "Francisco J. Varela": {
+    "birth_year": 1946,
+    "death_year": 2001,
+    "title": "Francisco J. Varela"
+  },
+  "Henrik Mouritsen": {
+    "birth_year": 1962,
+    "death_year": null,
+    "title": "Henrik Mouritsen"
+  },
+  "Brent D. Shaw": {
+    "birth_year": 1947,
+    "death_year": null,
+    "title": "Brent D. Shaw"
+  },
+  "Florence Dupont": {
+    "birth_year": 1943,
+    "death_year": null,
+    "title": "Florence Dupont"
+  },
+  "Aloys Winterling": {
+    "birth_year": 1956,
+    "death_year": null,
+    "title": "Aloys Winterling"
+  },
+  "Lawrence Keppie": {
+    "birth_year": 1947,
+    "death_year": null,
+    "title": "Lawrence Keppie"
+  },
+  "Timothy D. Wilson": {
+    "birth_year": 1955,
+    "death_year": null,
+    "title": "Timothy D. Wilson"
+  },
+  "Richard H. Thaler": {
+    "birth_year": 1945,
+    "death_year": null,
+    "title": "Richard H. Thaler"
+  },
+  "Keith E. Stanovich": {
+    "birth_year": 1950,
+    "death_year": null,
+    "title": "Keith E. Stanovich"
+  },
+  "Burton G. Malkiel": {
+    "birth_year": 1932,
+    "death_year": null,
+    "title": "Burton G. Malkiel"
+  },
+  "Antonio R. Damasio": {
+    "birth_year": 1944,
+    "death_year": null,
+    "title": "Antonio R. Damasio"
+  },
+  "Harold S. Kushner": {
+    "birth_year": 1935,
+    "death_year": 2023,
+    "title": "Harold S. Kushner"
+  },
+  "Sophron": {
+    "birth_year": -500,
+    "death_year": -460,
+    "title": "Sophron"
+  },
+  "Jonathan Francis Bennett": {
+    "birth_year": 1930,
+    "death_year": 2024,
+    "title": "Jonathan Francis Bennett"
+  },
+  "Edwin M. Curley": {
+    "birth_year": 1937,
+    "death_year": null,
+    "title": "Edwin M. Curley"
+  },
+  "Numenius": {
+    "birth_year": 150,
+    "death_year": 200,
+    "title": "Numenius"
+  },
+  "San Juan de la Cruz": {
+    "birth_year": 1542,
+    "death_year": 1591,
+    "title": "San Juan de la Cruz"
+  },
+  "Thomas B. Ross": {
+    "birth_year": 1929,
+    "death_year": 2002,
+    "title": "Thomas B. Ross"
+  },
+  "W. Jeffrey Tatum": {
+    "birth_year": 1957,
+    "death_year": null,
+    "title": "W. Jeffrey Tatum"
+  },
+  "Gautama Buddha": {
+    "birth_year": -563,
+    "death_year": -483,
+    "title": "Gautama Buddha"
+  },
+  "Sir Isaac Newton": {
+    "birth_year": 1643,
+    "death_year": 1727,
+    "title": "Sir Isaac Newton"
+  },
+  "Bernard Suits": {
+    "birth_year": 1925,
+    "death_year": 2007,
+    "title": "Bernard Suits"
+  },
+  "Liudprand of Cremona": {
+    "birth_year": 920,
+    "death_year": 972,
+    "title": "Liudprand of Cremona"
+  },
+  "Guibert de Nogent": {
+    "birth_year": 1053,
+    "death_year": 1124,
+    "title": "Guibert de Nogent"
+  },
+  "Bhikkhu Nanamoli": {
+    "birth_year": 1905,
+    "death_year": 1960,
+    "title": "Bhikkhu Nanamoli"
+  },
+  "Laurence Khantipalo Mills": {
+    "birth_year": 1932,
+    "death_year": 2021,
+    "title": "Laurence Khantipalo Mills"
+  },
+  "Brahmrishi Vishvatma Bawra": {
+    "birth_year": 1934,
+    "death_year": null,
+    "title": "Brahmrishi Vishvatma Bawra"
+  },
+  "Santideva": {
+    "birth_year": 685,
+    "death_year": 763,
+    "title": "Santideva"
+  },
+  "Andrew Skilton": {
+    "birth_year": 1969,
+    "death_year": null,
+    "title": "Andrew Skilton"
+  },
+  "John E. Goldingay": {
+    "birth_year": 1942,
+    "death_year": null,
+    "title": "John E. Goldingay"
+  },
+  "R.H. Charles": {
+    "birth_year": 1855,
+    "death_year": 1931,
+    "title": "R.H. Charles"
+  },
+  "Lucian of Samosata": {
+    "birth_year": 125,
+    "death_year": 180,
+    "title": "Lucian of Samosata"
+  },
+  "Marcus Annaeus Lucanus": {
+    "birth_year": 39,
+    "death_year": 65,
+    "title": "Marcus Annaeus Lucanus"
+  },
+  "Susan H. Braund": {
+    "birth_year": 1957,
+    "death_year": null,
+    "title": "Susan H. Braund"
+  },
+  "Ambrosius Theodosius Macrobius": {
+    "birth_year": 370,
+    "death_year": 430,
+    "title": "Ambrosius Theodosius Macrobius"
+  },
+  "Samuel George Frederick Brandon": {
+    "birth_year": 1907,
+    "death_year": 1971,
+    "title": "Samuel George Frederick Brandon"
+  },
+  "George Emmanuel Mylonas": {
+    "birth_year": 1898,
+    "death_year": 1988,
+    "title": "George Emmanuel Mylonas"
+  },
+  "T.M. Prudden": {
+    "birth_year": 1891,
+    "death_year": 1968,
+    "title": "T.M. Prudden"
+  },
+  "Richard H. Jones": {
+    "birth_year": 1934,
+    "death_year": 2020,
+    "title": "Richard H. Jones"
+  },
+  "Gabrielle Moss": {
+    "birth_year": 1982,
+    "death_year": null,
+    "title": "Gabrielle Moss"
+  },
+  "Luis E. Navia": {
+    "birth_year": 1940,
+    "death_year": null,
+    "title": "Luis E. Navia"
+  },
+  "Chris Carlsson": {
+    "birth_year": 1986,
+    "death_year": null,
+    "title": "Chris Carlsson"
+  },
+  "Susan Treggiari": {
+    "birth_year": 1940,
+    "death_year": null,
+    "title": "Susan Treggiari"
+  },
+  "Henry Watson Fowler": {
+    "birth_year": 1858,
+    "death_year": 1933,
+    "title": "Henry Watson Fowler"
+  },
+  "Theodore M. Bernstein": {
+    "birth_year": 1904,
+    "death_year": 1979,
+    "title": "Theodore M. Bernstein"
+  },
+  "Adolph Caso": {
+    "birth_year": 1934,
+    "death_year": 2023,
+    "title": "Adolph Caso"
+  },
+  "Rufus Goodwin": {
+    "birth_year": 1914,
+    "death_year": 1990,
+    "title": "Rufus Goodwin"
+  },
+  "Daniel C. Dennett": {
+    "birth_year": 1942,
+    "death_year": 2024,
+    "title": "Daniel C. Dennett"
+  },
+  "John Andrew Simpson": {
+    "birth_year": 1871,
+    "death_year": 1937,
+    "title": "John Andrew Simpson"
+  },
+  "A.N. Kolmogorov": {
+    "birth_year": 1903,
+    "death_year": 1987,
+    "title": "A.N. Kolmogorov"
+  },
+  "Elizabeth L. Eisenstein": {
+    "birth_year": 1923,
+    "death_year": 2016,
+    "title": "Elizabeth L. Eisenstein"
+  },
+  "John Robinson Pierce": {
+    "birth_year": 1910,
+    "death_year": 2002,
+    "title": "John Robinson Pierce"
+  },
+  "Harry Middleton Hyatt": {
+    "birth_year": 1896,
+    "death_year": 1978,
+    "title": "Harry Middleton Hyatt"
+  },
+  "Fred I. Dretske": {
+    "birth_year": 1932,
+    "death_year": 2013,
+    "title": "Fred I. Dretske"
+  },
+  "Tom Siegfried": {
+    "birth_year": 1950,
+    "death_year": null,
+    "title": "Tom Siegfried"
+  },
+  "Louisa Gilder": {
+    "birth_year": 1978,
+    "death_year": null,
+    "title": "Louisa Gilder"
+  },
+  "Solon": {
+    "birth_year": -630,
+    "death_year": -560,
+    "title": "Solon"
+  },
+  "Meno": {
+    "birth_year": -423,
+    "death_year": -400,
+    "title": "Meno"
+  },
+  "Vergil": {
+    "birth_year": -70,
+    "death_year": -19,
+    "title": "Vergil"
+  },
+  "Aeneid": {
+    "birth_year": -19,
+    "death_year": -19,
+    "title": "Aeneid"
+  }
+}
