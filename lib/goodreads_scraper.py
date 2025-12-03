@@ -86,76 +86,72 @@ def get_original_publication_date(goodreads_id: str) -> Optional[datetime.dateti
 import os
 import time
 
-def generate_pub_dates_map(input_file: str):
+def generate_pub_dates_map(ids_file: str, output_file: str = "goodreads_data/original_publication_dates.json"):
     """
-    Reads a citation metadata JSON file, collects all Goodreads IDs,
-    fetches their original publication dates, and saves the mapping to a new JSON file.
+    Reads a list of Goodreads IDs from a file, fetches their original publication dates,
+    and updates a JSON mapping file.
     
     Args:
-        input_file: Path to the input JSON file (e.g., ".../61535.json").
+        ids_file: Path to the text file containing Goodreads IDs (one per line).
+        output_file: Path to the output JSON file.
     """
-    try:
-        with open(input_file, 'r') as f:
-            data = json.load(f)
-            
-        source_id = data.get("source", {}).get("goodreads_id")
-        if not source_id:
-            print(f"Error: No source Goodreads ID found in {input_file}")
-            return
-
-        # Collect all unique IDs
-        ids = set()
-        if source_id:
-            ids.add(source_id)
-            
-        for citation in data.get("citations", []):
-            edge = citation.get("edge", {})
-            target_id = edge.get("target_book_id")
-            if target_id:
-                ids.add(target_id)
-        
-        print(f"Found {len(ids)} unique Goodreads IDs in {input_file}")
-        
-        # Fetch dates
+    # Load existing data
+    if os.path.exists(output_file):
+        try:
+            with open(output_file, 'r') as f:
+                pub_dates = json.load(f)
+        except json.JSONDecodeError:
+            pub_dates = {}
+    else:
         pub_dates = {}
-        for i, gid in enumerate(ids):
-            print(f"[{i+1}/{len(ids)}] Fetching date for ID: {gid}")
+        
+    # Load IDs to process
+    with open(ids_file, 'r') as f:
+        ids_to_process = [line.strip() for line in f if line.strip()]
+        
+    print(f"Loaded {len(ids_to_process)} IDs to process.")
+    
+    # Filter out already processed IDs
+    ids_to_fetch = [gid for gid in ids_to_process if gid not in pub_dates]
+    print(f"Fetching dates for {len(ids_to_fetch)} new IDs...")
+    
+    try:
+        for i, gid in enumerate(ids_to_fetch):
+            print(f"[{i+1}/{len(ids_to_fetch)}] Fetching date for ID: {gid}")
             date = get_original_publication_date(gid)
+            
             if date:
-                # Store as ISO string or just year? User asked for "String".
-                # Let's store the full ISO string if it's a datetime, or the string if it's a BC string.
                 if isinstance(date, datetime.datetime):
                     pub_dates[gid] = date.isoformat()
                 else:
                     pub_dates[gid] = str(date)
             else:
                 pub_dates[gid] = None
+                
+            # Save periodically
+            if (i + 1) % 10 == 0:
+                with open(output_file, 'w') as f:
+                    json.dump(pub_dates, f, indent=2)
+                print(f"Saved progress to {output_file}")
             
             # Be polite to Goodreads
             time.sleep(1.0)
             
-        # Save output
-        output_filename = f"pub_dates_{source_id}.json"
-        # Save in the same directory as the script or current dir? 
-        # User said "create a file called pub_dates_ID.json", didn't specify path.
-        # Let's save it in the current working directory.
-        with open(output_filename, 'w') as f:
-            json.dump(pub_dates, f, indent=2)
-            
-        print(f"Successfully saved publication dates to {output_filename}")
-
+    except KeyboardInterrupt:
+        print("\nInterrupted! Saving progress...")
     except Exception as e:
-        print(f"Error generating pub dates map: {e}")
+        print(f"Error: {e}")
+    finally:
+        # Final save
+        with open(output_file, 'w') as f:
+            json.dump(pub_dates, f, indent=2)
+        print(f"Final save to {output_file}")
 
 if __name__ == "__main__":
-    # Test with "The Republic" (ID: 30289) -> Orig: ~375 BC
-    # test_id = "30289"
-    # date = get_original_publication_date(test_id)
-    # print(f"Original Publication Date for {test_id}: {date}")
-    
-    # Test bulk generation if a file argument is provided
-    import sys
-    if len(sys.argv) > 1:
-        generate_pub_dates_map(sys.argv[1])
-    else:
-        print("Usage: python lib/goodreads_scraper.py <input_json_file>")
+    import argparse
+    parser = argparse.ArgumentParser(description="Fetch original publication dates from Goodreads.")
+    parser.add_argument("ids_file", help="Path to file containing Goodreads IDs")
+    parser.add_argument("--output", default="goodreads_data/original_publication_dates.json", help="Path to output JSON file")
+    args = parser.parse_args()
+
+    generate_pub_dates_map(args.ids_file, args.output)

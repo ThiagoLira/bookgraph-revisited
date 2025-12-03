@@ -10,7 +10,7 @@ def build_llm(model: str, api_key: str, base_url: Optional[str]) -> LLM:
     Falls back to the builtin OpenAI wrapper if base_url is omitted.
     """
     if not base_url:
-        return OpenAI(model=model, api_key=api_key, timeout=120.0)
+        return OpenAI(model=model, api_key=api_key, timeout=150.0)
 
     try:
         from llama_index.llms.openai_like import OpenAILike
@@ -21,7 +21,7 @@ def build_llm(model: str, api_key: str, base_url: Optional[str]) -> LLM:
             api_base=base_url,
             is_chat_model=True,
             is_function_calling_model=True,
-            timeout=120.0,
+            timeout=150.0,
         )
     except ModuleNotFoundError:
-        return OpenAI(model=model, api_key=api_key, base_url=base_url, timeout=120.0)
+        return OpenAI(model=model, api_key=api_key, base_url=base_url, timeout=150.0)

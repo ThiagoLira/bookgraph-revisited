@@ -148,22 +148,17 @@ def load_goodreads_metadata(book_ids: Set[str], db_path: str = "goodreads_data/b
     cur = conn.cursor()
     
     placeholders = ",".join("?" for _ in book_ids)
-    query = f"SELECT * FROM books WHERE book_id IN ({placeholders})"
+    query = f"SELECT data FROM books WHERE book_id IN ({placeholders})"
     
     results = {}
     try:
         cur.execute(query, list(book_ids))
         for row in cur.fetchall():
-            data = dict(row)
-            # Parse JSON fields if necessary (authors is usually a JSON string in some schemas, 
-            # but here we might need to check the schema. Assuming standard columns).
-            # If authors is a string, try to parse it.
-            if isinstance(data.get("authors"), str):
-                try:
-                    data["authors"] = json.loads(data["authors"])
-                except json.JSONDecodeError:
-                    pass
-            results[str(data["book_id"])] = data
+            try:
+                data = json.loads(row["data"])
+                results[str(data["book_id"])] = data
+            except (json.JSONDecodeError, KeyError):
+                continue
     except Exception as e:
         print(f"[pipeline] Error loading Goodreads metadata: {e}")
     finally:
@@ -180,6 +175,7 @@ async def run_extraction(
     chunk_size: int,
     max_context: int,
     progress_callback: Optional[ProgressCallback] = None,
+    verbose: bool = False,
 ) -> None:
     config = ExtractionConfig(
         input_path=txt_path,
@@ -187,6 +183,7 @@ async def run_extraction(
         max_concurrency=EXTRACT_MAX_CONCURRENCY,
         max_context_per_request=max_context,
         max_completion_tokens=EXTRACT_MAX_COMPLETION,
+        verbose=verbose,
         base_url=base_url,
         api_key=api_key,
         model=model_id,
@@ -204,6 +201,7 @@ def stage_extract(
     model_id: str,
     chunk_size: int,
     max_context: int,
+    debug_trace: bool = False,
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     iterator = progress_iter_items(
@@ -219,7 +217,7 @@ def stage_extract(
         print(f"[extract] Processing {book.title} -> {out_path}")
         if tqdm is None:
             asyncio.run(run_extraction(book.txt_path, out_path,
-                        base_url, api_key, model_id, chunk_size, max_context))
+                        base_url, api_key, model_id, chunk_size, max_context, verbose=debug_trace))
             continue
         chunk_bar = tqdm(
             desc=f"  chunks for {book.title}",
@@ -243,6 +241,7 @@ def stage_extract(
                     model_id,
                     chunk_size,
                     max_context,
+                    verbose=debug_trace,
                     progress_callback=on_chunk_progress,
                 )
             )
@@ -305,7 +304,7 @@ async def stage_workflow_async(
         wiki_people_path=wiki_db,
         llm=llm,
         verbose=debug_trace,
-        timeout=120.0,
+        timeout=150.0,
     )
 
     sem = asyncio.Semaphore(max_concurrency)
@@ -314,7 +313,7 @@ async def stage_workflow_async(
         async with sem:
             try:
                 # Enforce a strict timeout on the workflow execution
-                result = await asyncio.wait_for(workflow.run(citation=citation), timeout=130.0)
+                result = await asyncio.wait_for(workflow.run(citation=citation), timeout=160.0)
                 if bar:
                     bar.update(1)
                 return {
@@ -394,7 +393,19 @@ async def stage_workflow_async(
         if tqdm is not None:
             citation_bar = tqdm(total=len(citations), desc=f"  citations for {book.title}", unit="citation", leave=False)
 
-        tasks = [process_citation_safe(c, citation_bar) for c in citations]
+        # Prepare tasks, truncating excerpts to avoid context explosion
+        tasks = []
+        for c in citations:
+            # Create a copy to avoid modifying the original data which might be used elsewhere (though here it's fine)
+            c_input = c.copy()
+            if "excerpts" in c_input and isinstance(c_input["excerpts"], list):
+                # Keep top 5 excerpts (longest? random? first?)
+                # First 5 is fine as they are likely from the beginning of the book or random if not sorted.
+                # Preprocess doesn't sort excerpts, just appends.
+                c_input["excerpts"] = c_input["excerpts"][:5]
+            
+            tasks.append(process_citation_safe(c_input, citation_bar))
+
         results = await asyncio.gather(*tasks)
         
         if citation_bar:
@@ -581,6 +592,7 @@ def main() -> None:
         args.extract_model,
         args.extract_chunk_size,
         args.extract_max_context_per_request,
+        debug_trace=args.debug_trace,
     )
     stage_preprocess(raw_dir, pre_dir, books)
     stage_workflow(

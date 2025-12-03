@@ -3,26 +3,23 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>BookGraph Explorer</title>
   <style>
     :root {
       --bg: #050505;
-      /* Pure Dark */
-      --panel: rgba(20, 20, 20, 0.8);
+      --panel: rgba(20, 20, 20, 0.9);
       --text: #ededed;
       --text-muted: #888;
       --accent: #00f2ff;
 
       /* Node Colors */
       --book-source: #ff4444;
-      /* Red */
       --book-cited: #4444ff;
-      /* Blue */
-      --author: #999999;
-      /* Gray */
+      --author-fill: rgba(255, 255, 255, 0.05);
+      --author-stroke: rgba(255, 255, 255, 0.2);
 
       --edge: #404040;
-      --edge-highlight: #ffffff;
     }
 
     * {
@@ -34,18 +31,22 @@
       font-family: "Outfit", "Inter", sans-serif;
       background: var(--bg);
       color: var(--text);
-      overflow: hidden;
+      overflow-y: auto;
+      /* Allow scrolling */
+      overflow-x: hidden;
+      touch-action: pan-y;
+      /* Enforce vertical scrolling */
     }
 
     header {
-      position: absolute;
+      position: fixed;
+      /* Fixed header */
       top: 0;
       left: 0;
       right: 0;
       padding: 16px 24px;
-      background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0));
+      background: linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0));
       display: flex;
-      align-items: center;
       justify-content: space-between;
       z-index: 10;
       pointer-events: none;
@@ -59,9 +60,7 @@
       margin: 0;
       font-size: 20px;
       font-weight: 600;
-      letter-spacing: 0.5px;
       background: linear-gradient(90deg, #fff, #94a3b8);
-      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -69,7 +68,6 @@
     #controls {
       display: flex;
       gap: 12px;
-      align-items: center;
     }
 
     .search-box {
@@ -78,50 +76,16 @@
       border-radius: 8px;
       padding: 8px 12px;
       color: var(--text);
-      font-family: inherit;
-      font-size: 14px;
       width: 240px;
-      transition: all 0.2s;
     }
 
     .search-box:focus {
       outline: none;
       border-color: var(--accent);
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .view-switch {
-      display: flex;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
-      padding: 2px;
-      gap: 2px;
-    }
-
-    .view-option {
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 13px;
-      cursor: pointer;
-      color: var(--text-muted);
-      transition: all 0.2s;
-      user-select: none;
-    }
-
-    .view-option:hover {
-      color: var(--text);
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .view-option.active {
-      background: var(--accent);
-      color: #000;
-      font-weight: 600;
     }
 
     #info-panel {
-      position: absolute;
+      position: fixed;
       top: 80px;
       right: 24px;
       width: 320px;
@@ -130,9 +94,8 @@
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 16px;
       padding: 20px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
       transform: translateX(120%);
-      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+      transition: transform 0.3s;
       z-index: 5;
     }
 
@@ -143,14 +106,12 @@
     .panel-header {
       display: flex;
       justify-content: space-between;
-      align-items: start;
       margin-bottom: 16px;
     }
 
     .panel-title {
       font-size: 18px;
       font-weight: 600;
-      line-height: 1.3;
       margin: 0;
     }
 
@@ -159,169 +120,80 @@
       border: none;
       color: var(--text-muted);
       cursor: pointer;
-      padding: 4px;
-    }
-
-    .panel-close:hover {
-      color: var(--text);
-    }
-
-    .meta-item {
-      margin-bottom: 12px;
-    }
-
-    .meta-label {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      margin-bottom: 4px;
-    }
-
-    .meta-value {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 11px;
-      font-weight: 500;
-      margin-right: 6px;
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .tag.source {
-      background: rgba(255, 68, 68, 0.2);
-      color: var(--book-source);
-    }
-
-    .tag.cited {
-      background: rgba(68, 68, 255, 0.2);
-      color: var(--book-cited);
-    }
-
-    .tag.author {
-      background: rgba(153, 153, 153, 0.2);
-      color: var(--author);
     }
 
     svg {
       width: 100vw;
-      height: 100vh;
+      /* Height set dynamically via JS */
       display: block;
-      cursor: grab;
-    }
-
-    svg:active {
-      cursor: grabbing;
     }
 
     .link {
       stroke: var(--edge);
-      stroke-opacity: 0;
-      /* Hidden by default */
-      transition: stroke 0.2s, stroke-opacity 0.2s;
+      stroke-opacity: 0.3;
+      /* Increased from 0.1 */
+      stroke-width: 1px;
+      fill: none;
       pointer-events: none;
     }
 
-    .link.highlight-out {
-      stroke: #ffaa00;
-      /* Orange for outgoing (I cite them) */
+    .link.highlight {
+      stroke: #fff;
       stroke-opacity: 0.8;
-      stroke-width: 2px;
-    }
-
-    .link.highlight-in {
-      stroke: #00aaff;
-      /* Blue for incoming (They cite me) */
-      stroke-opacity: 0.6;
-      stroke-dasharray: 4;
-      /* Dashed for incoming */
       stroke-width: 1.5px;
     }
 
-    /* Legend */
-    #legend {
-      position: absolute;
-      bottom: 24px;
-      left: 24px;
-      background: var(--panel);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
-      padding: 16px;
-      z-index: 5;
-      font-size: 12px;
-      pointer-events: auto;
+    .link.dimmed {
+      stroke-opacity: 0.05;
     }
 
-    .legend-section {
-      margin-bottom: 12px;
+    .axis text {
+      font-size: 14px;
+      fill: var(--text-muted);
+      font-family: "Outfit", sans-serif;
     }
 
-    .legend-section:last-child {
-      margin-bottom: 0;
+    .axis line,
+    .axis path {
+      stroke: var(--text-muted);
+      stroke-opacity: 0.3;
     }
 
-    .legend-title {
-      font-weight: 600;
-      margin-bottom: 8px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      font-size: 10px;
+    .author-circle {
+      fill: var(--author-fill);
+      stroke: var(--author-stroke);
+      stroke-width: 1px;
+      transition: all 0.2s;
     }
 
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 6px;
+    .author-group:hover .author-circle,
+    .author-group.highlight .author-circle {
+      stroke: var(--accent);
+      stroke-width: 2px;
+      fill: rgba(255, 255, 255, 0.1);
     }
 
-    .legend-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-    }
-
-    .legend-line {
-      width: 24px;
-      height: 2px;
-    }
-
-    .node {
-      transition: fill 0.2s, r 0.2s, opacity 0.2s;
-      filter: drop-shadow(0 0 3px currentColor);
+    .book-circle {
+      stroke: none;
+      transition: r 0.2s;
       cursor: pointer;
     }
 
-    .node:hover {
-      stroke: #fff;
-      stroke-width: 2px;
-    }
-
-    .node.dimmed {
-      opacity: 0.1;
-    }
-
-    .node.highlight {
-      opacity: 1;
+    .book-circle:hover {
       stroke: #fff;
       stroke-width: 2px;
     }
 
     .label {
-      font-size: 10px;
-      fill: var(--text);
+      font-size: 14px;
+      fill: #fff;
       pointer-events: none;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+      text-anchor: middle;
       opacity: 0;
       /* Hidden by default */
       transition: opacity 0.2s;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+      font-weight: 500;
     }
 
     .label.visible {
@@ -334,71 +206,17 @@
       left: 24px;
       color: var(--text-muted);
       font-size: 13px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .spinner {
-      width: 12px;
-      height: 12px;
-      border: 2px solid var(--text-muted);
-      border-top-color: transparent;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1>BookGraph</h1>
+    <h1>BookGraph Vertical</h1>
     <div id="controls">
-      <div class="view-switch">
-        <div class="view-option active" data-view="book">Books</div>
-        <div class="view-option" data-view="author">Authors</div>
-      </div>
       <input type="text" class="search-box" placeholder="Search..." id="search">
     </div>
   </header>
-
-  <div id="legend">
-    <div class="legend-section">
-      <div class="legend-title">Nodes</div>
-      <div class="legend-item">
-        <div class="legend-dot" style="background: var(--book-source)"></div>
-        <span>Source Book</span>
-      </div>
-      <div class="legend-item">
-        <div class="legend-dot" style="background: var(--book-cited)"></div>
-        <span>Cited Book</span>
-      </div>
-      <div class="legend-item">
-        <div class="legend-dot" style="background: var(--author)"></div>
-        <span>Author</span>
-      </div>
-    </div>
-    <div class="legend-section">
-      <div class="legend-title">Connections (On Select)</div>
-      <div class="legend-item">
-        <div class="legend-line" style="background: #ffaa00; opacity: 0.8;"></div>
-        <span>Outgoing (Cites)</span>
-      </div>
-      <div class="legend-item">
-        <div class="legend-line"
-          style="background: #00aaff; opacity: 0.6; border-top: 2px dashed #00aaff; height: 0; background: none;"></div>
-        <span>Incoming (Cited By)</span>
-      </div>
-    </div>
-  </div>
 
   <div id="info-panel">
     <div class="panel-header">
@@ -408,523 +226,507 @@
     <div id="panel-content"></div>
   </div>
 
-  <div id="loading">
-    <div class="spinner"></div>
-    <span id="status-text">Initializing...</span>
-  </div>
+  <div id="loading">Initializing...</div>
 
   <svg>
-    <defs>
-      <marker id="arrow" viewBox="0 -5 10 10" refX="20" refY="0" markerWidth="4" markerHeight="4" orient="auto">
-        <script type="module">
-          import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+    <g id="main-group"></g>
+  </svg>
 
-          const width = window.innerWidth;
-          const height = window.innerHeight;
-          const svg = d3.select("svg");
+  <script type="module">
+    import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
-          // Config
-          const COLORS = {
-            source: "#ff4444", // Red
-            cited: "#4444ff", // Blue
-            author: "#999999", // Gray
-            authorSource: "#ffaa00", // Orange for source authors
-            authorCited: "#00ffaa"   // Green for cited authors
-          };
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const svg = d3.select("svg");
+    const g = d3.select("#main-group");
 
-          // State
-          let rawRecords = [];
-          let graphData = { nodes: [], links: [] };
-          let simulation;
-          let transform = d3.zoomIdentity;
-          let selectedNode = null;
-          let pubDateMap = {};
-          let authorMeta = {};
-          let currentView = 'book'; // 'book' or 'author'
+    // Layers
+    const linkGroup = g.append("g").attr("class", "links");
+    const nodeGroup = g.append("g").attr("class", "nodes");
+    const labelGroup = g.append("g").attr("class", "labels");
+    const axisGroup = g.append("g").attr("class", "axis");
 
-          // Elements
-          const g = svg.append("g");
-          // Order matters for layering: Axis -> Links -> Nodes -> Labels
-          const axisGroup = g.append("g").attr("class", "axis");
-          const linkGroup = g.append("g").attr("class", "links");
-          const nodeGroup = g.append("g").attr("class", "nodes");
-          const labelGroup = g.append("g").attr("class", "labels");
+    // State
+    let pubDateMap = {};
+    let authorMeta = {};
+    let simulation;
+    let graphData = { authors: [], links: [] };
+    let selectedNode = null;
 
-          const statusText = document.getElementById("status-text");
-          const loadingEl = document.getElementById("loading");
-          const panel = document.getElementById("info-panel");
-          const searchInput = document.getElementById("search");
-          const viewOptions = document.querySelectorAll(".view-option");
+    // Clear selection on background click
+    svg.on("click", () => {
+      selectedNode = null;
+      resetHighlight();
+    });
 
-          // Scales
-          let xScale = d3.scalePow().exponent(3).range([100, width - 100]);
-          let xAxis = d3.axisBottom(xScale);
+    // Zoom removed for native scrolling
+    // const zoom = d3.zoom() ...
 
-          // Zoom
-          const zoom = d3.zoom()
-            .scaleExtent([0.1, 10])
-            .on("zoom", e => {
-              transform = e.transform;
-              g.attr("transform", transform);
-            });
-          svg.call(zoom);
+    // Load Data
+    async function loadData() {
+      const params = new URLSearchParams(window.location.search);
+      const dataDir = params.get("dataDir") || "./data";
 
-          // Background Click to Reset
-          svg.on("click", (e) => {
-            if (e.target.tagName === 'svg') {
-              resetHighlight();
-            }
-          });
+      try {
+        const [dates, authors, manifest] = await Promise.all([
+          fetch(`${dataDir}/original_publication_dates.json`).then(r => r.json()),
+          fetch(`${dataDir}/authors_metadata.json`).then(r => r.json()),
+          fetch(`${dataDir}/manifest.json`).then(r => r.json())
+        ]);
 
-          // View Switcher
-          viewOptions.forEach(opt => {
-            opt.addEventListener("click", () => {
-              const view = opt.dataset.view;
-              if (view === currentView) return;
+        pubDateMap = dates;
+        authorMeta = authors;
 
-              // Update UI
-              viewOptions.forEach(o => o.classList.remove("active"));
-              opt.classList.add("active");
+        const files = await Promise.all(manifest.map(f => fetch(`${dataDir}/${f}`).then(r => r.json())));
+        processData(files);
 
-              currentView = view;
-              updateView();
-            });
-          });
+        document.getElementById("loading").style.display = "none";
+      } catch (e) {
+        console.error(e);
+        document.getElementById("loading").textContent = "Error loading data";
+      }
+    }
 
-          // Helper: Parse Date
-          function parseYear(dateStr) {
-            if (!dateStr) return null;
-            if (typeof dateStr === 'number') return dateStr;
-            if (dateStr.toString().includes("BC")) {
-              const year = parseInt(dateStr.replace(/\D/g, ''));
-              return -year;
-            }
-            const date = new Date(dateStr);
-            if (!isNaN(date.getFullYear())) {
-              return date.getFullYear();
-            }
-            return null;
-          }
+    function parseYear(dateStr) {
+      if (!dateStr) return null;
+      if (typeof dateStr === 'number') return dateStr;
+      if (dateStr.toString().includes("BC")) return -parseInt(dateStr.replace(/\D/g, ''));
+      const d = new Date(dateStr);
+      return !isNaN(d.getFullYear()) ? d.getFullYear() : null;
+    }
 
-          // Data Loading
-          async function loadData() {
-            const params = new URLSearchParams(window.location.search);
-            const dataDir = params.get("dataDir") || "./data";
+    function getBookYear(meta) {
+      const gid = meta.goodreads_id || (meta.goodreads_match ? meta.goodreads_match.book_id : null);
+      if (gid && pubDateMap[gid]) return parseYear(pubDateMap[gid]);
+      if (meta.publication_year) return meta.publication_year;
+      return null;
+    }
 
-            statusText.textContent = "Loading metadata...";
+    function normalizeAuthor(name) {
+      if (!name) return "Unknown";
 
-            try {
-              // Load Pub Dates
-              const pubDatesRes = await fetch(`${dataDir}/original_publication_dates.json`);
-              if (pubDatesRes.ok) pubDateMap = await pubDatesRes.json();
+      if (name.includes(",")) {
+        const parts = name.split(",", 2);
+        if (parts.length === 2) return `${parts[1].trim()} ${parts[0].trim()}`;
+      }
+      return name;
+    }
 
-              // Load Author Metadata
-              const authorMetaRes = await fetch(`${dataDir}/authors_metadata.json`);
-              if (authorMetaRes.ok) authorMeta = await authorMetaRes.json();
+    function processData(records) {
+      const authorMap = new Map(); // name -> { name, books: [], year }
+      const bookMap = new Map();   // id -> bookNode
 
-              statusText.textContent = "Loading library manifest...";
-              const manifestRes = await fetch(`${dataDir}/manifest.json`);
-              if (!manifestRes.ok) throw new Error("Could not load manifest.json");
-              const files = await manifestRes.json();
+      // 1. Collect all books and assign to authors
+      records.forEach(rec => {
+        // Source Book
+        const src = rec.source;
+        const srcAuth = normalizeAuthor(Array.isArray(src.authors) ? src.authors[0] : src.authors);
+        const srcYear = getBookYear(src);
 
-              statusText.textContent = `Loading ${files.length} books...`;
+        if (!authorMap.has(srcAuth)) authorMap.set(srcAuth, { name: srcAuth, books: [], isSource: true });
+        const srcAuthorNode = authorMap.get(srcAuth);
 
-              rawRecords = await Promise.all(files.map(async f => {
-                const r = await fetch(`${dataDir}/${f}`);
-                return r.json();
-              }));
+        const srcBook = {
+          id: `book:${src.goodreads_id}`,
+          title: src.title,
+          year: srcYear,
+          isSource: true,
+          meta: src
+        };
+        srcAuthorNode.books.push(srcBook);
+        bookMap.set(srcBook.id, srcBook);
 
-              updateView();
-              loadingEl.style.display = "none";
-            } catch (e) {
-              statusText.textContent = "Error: " + e.message;
-              console.error(e);
-            }
-          }
+        // Cited Books
+        (rec.citations || []).forEach(cit => {
+          const match = cit.goodreads_match || {};
+          const wiki = cit.wikipedia_match || {};
 
-          function updateView() {
-            resetHighlight();
-            if (simulation) simulation.stop();
+          // If it's a book citation
+          if (cit.edge && cit.edge.target_book_id) {
+            const citedAuth = normalizeAuthor(match.authors ? match.authors[0] : "Unknown");
+            const citedYear = getBookYear(match);
 
-            if (currentView === 'book') {
-              processBookData(rawRecords);
-            } else {
-              processAuthorData(rawRecords);
+            if (!authorMap.has(citedAuth)) authorMap.set(citedAuth, { name: citedAuth, books: [] });
+            const citedAuthorNode = authorMap.get(citedAuth);
+
+            const citedBook = {
+              id: `book:${cit.edge.target_book_id}`,
+              title: match.title || "Unknown",
+              year: citedYear,
+              isSource: false,
+              meta: match
+            };
+
+            // Avoid duplicates within author
+            if (!citedAuthorNode.books.find(b => b.id === citedBook.id)) {
+              citedAuthorNode.books.push(citedBook);
+              bookMap.set(citedBook.id, citedBook);
             }
           }
+          // If it's an author citation (no book), we create a "dummy" book or just track the author?
+          // User asked for "Author balls containing book balls". 
+          // If author has no books, we treat them as an empty author ball?
+          else if (cit.edge && cit.edge.target_author_ids) {
+            const name = wiki.title || (match.authors ? match.authors[0] : "Unknown");
+            const normName = normalizeAuthor(name);
+            if (!authorMap.has(normName)) authorMap.set(normName, { name: normName, books: [] });
+          }
+        });
+      });
 
-          function processBookData(records) {
-            const nodesMap = new Map();
-            const links = [];
+      // 2. Calculate Author Positions & Pack Books
+      const authors = Array.from(authorMap.values()).map(auth => {
+        // Calculate Year
+        // Calculate Year
+        let year = null;
+        const meta = authorMeta[auth.name];
 
-            function getNode(id, type, label, meta = {}) {
-              if (!nodesMap.has(id)) {
-                let year = null;
-                const gid = meta.goodreads_id || (meta.goodreads_match ? meta.goodreads_match.book_id : null) || meta.book_id;
-                if (gid && pubDateMap[gid]) year = parseYear(pubDateMap[gid]);
-                if (year === null && meta.publication_year) year = meta.publication_year;
-                if (year === null && meta.goodreads && meta.goodreads.publication_year) year = meta.goodreads.publication_year;
-                if (type === 'author' && meta.birth_year) year = meta.birth_year;
+        // Priority 1: Author Metadata (Birth/Death)
+        if (meta && meta.birth_year) {
+          // Use midpoint of life, or birth + 30 if death unknown (active years)
+          const endYear = meta.death_year || (meta.birth_year + 60);
+          year = (meta.birth_year + endYear) / 2;
+        }
 
-                nodesMap.set(id, {
-                  id, type, label, meta, year,
-                  r: type === 'book' ? 5 : 3,
-                  x: width / 2 + (Math.random() - 0.5) * 50,
-                  y: height / 2 + (Math.random() - 0.5) * 50
-                });
+        // Priority 2: Mean of Book Years (Fallback)
+        if (year === null) {
+          const validBookYears = auth.books.map(b => b.year).filter(y => y !== null);
+          if (validBookYears.length > 0) {
+            year = validBookYears.reduce((a, b) => a + b, 0) / validBookYears.length;
+          }
+        }
+
+        // Pack Books
+        // We create a hierarchy: Root -> Books
+        const root = { children: auth.books.map(b => ({ ...b, value: 1 })) };
+        const pack = d3.pack().padding(2);
+        // Estimate radius based on book count to avoid huge empty circles
+        // But d3.pack needs a size. We can run it with an arbitrary size and then scale?
+        // Better: d3.packSiblings (if we just had circles) or d3.packEnclose.
+        // Let's use d3.pack on a hierarchy.
+
+        const hierarchy = d3.hierarchy(root).sum(d => d.value || 1);
+        // Radius of book = 5 (source) or 3 (cited)
+        hierarchy.children?.forEach(c => {
+          c.r = c.data.isSource ? 8 : 4;
+        });
+
+        // We need to pack them. d3.pack() expects a size. 
+        // Instead, let's use d3.packSiblings which packs circles tightly.
+        const circles = (hierarchy.children || []).map(c => ({ r: c.r, data: c.data }));
+        d3.packSiblings(circles);
+
+        // Enclose them to get author radius
+        const enclosure = d3.packEnclose(circles);
+        const r = enclosure ? enclosure.r + 5 : (auth.isSource ? 10 : 5); // Padding
+
+        return {
+          id: `author:${auth.name}`,
+          name: auth.name,
+          year: year,
+          r: r,
+          books: circles, // {x, y, r, data} relative to center (0,0)
+          x: width / 2, // Initial pos
+          y: height / 2
+        };
+      });
+
+      // Filter authors with no year? Or put them at "Unknown"?
+      // User said "bottom to top". Let's put unknowns at the side or filter.
+      // Let's keep them but put them at 2025 (top) or separate.
+      const validAuthors = authors.filter(a => a.year !== null);
+
+      // 3. Links (Author to Author)
+      const authorNodeMap = new Map(validAuthors.map(a => [a.name, a]));
+      const linkSet = new Set();
+      const links = [];
+
+      records.forEach(rec => {
+        const src = rec.source;
+        const srcName = normalizeAuthor(Array.isArray(src.authors) ? src.authors[0] : src.authors);
+        const srcNode = authorNodeMap.get(srcName);
+
+        if (!srcNode) return;
+
+        (rec.citations || []).forEach(cit => {
+          let targetName = null;
+          const match = cit.goodreads_match || {};
+          const wiki = cit.wikipedia_match || {};
+
+          if (cit.edge && cit.edge.target_book_id) {
+            targetName = normalizeAuthor(match.authors ? match.authors[0] : "Unknown");
+          } else if (cit.edge && cit.edge.target_author_ids) {
+            targetName = normalizeAuthor(wiki.title || (match.authors ? match.authors[0] : "Unknown"));
+          }
+
+          if (targetName) {
+            const targetNode = authorNodeMap.get(targetName);
+            if (targetNode && targetNode !== srcNode) {
+              const key = `${srcName}|${targetName}`;
+              if (!linkSet.has(key)) {
+                linkSet.add(key);
+                links.push({ source: srcNode, target: targetNode });
               }
-              return nodesMap.get(id);
             }
-
-            records.forEach(rec => {
-              const src = rec.source;
-              const srcId = `book:${src.goodreads_id}`;
-              const srcNode = getNode(srcId, 'book', src.title, src);
-              srcNode.root = true;
-
-              (rec.citations || []).forEach(cit => {
-                const match = cit.goodreads_match || {};
-                const edge = cit.edge || {};
-
-                if (edge.target_book_id) {
-                  const targetId = `book:${edge.target_book_id}`;
-                  const targetNode = getNode(targetId, 'book', match.title || "Unknown", match);
-                  links.push({ source: srcNode, target: targetNode, type: 'citation' });
-                }
-
-                if (edge.target_author_ids && edge.target_author_ids.length > 0) {
-                  edge.target_author_ids.forEach(authId => {
-                    const targetId = `author:${authId}`;
-                    const wiki = cit.wikipedia_match;
-                    const label = wiki ? wiki.title : (match.authors ? match.authors[0] : "Unknown Author");
-                    const meta = { ...wiki, goodreads_id: authId, type: 'author' };
-                    const targetNode = getNode(targetId, 'author', label, meta);
-                    links.push({ source: srcNode, target: targetNode, type: 'citation' });
-                  });
-                }
-              });
-            });
-
-            finalizeGraph(nodesMap, links);
           }
+        });
+      });
 
-          function processAuthorData(records) {
-            const nodesMap = new Map();
-            const linksMap = new Map();
+      graphData.authors = validAuthors;
+      graphData.links = links;
+      initSimulation();
+    }
 
-            function getAuthorNode(name, isSource) {
-              const id = `author:${name}`;
-              if (!nodesMap.has(id)) {
-                const meta = authorMeta[name] || {};
-                let year = null;
-                const birth = meta.birth_year;
-                const death = meta.death_year;
+    function initSimulation() {
+      const authors = graphData.authors;
 
-                if (birth) {
-                  if (death) {
-                    year = (birth + death) / 2;
+      // Y Scale: Ancient (Bottom) -> Modern (Top)
+      // Y Scale: Ancient (Bottom) -> Modern (Top)
+      const years = authors.map(a => a.year);
+      const minYear = Math.min(...years);
+      const maxYear = Math.max(...years);
+
+      // Variable Resolution Configuration
+      const splitYear = 1800; // Breakpoint between low and high density
+      const lowRes = 0.3;     // Pixels per year for Ancient/Pre-1800 (Balanced)
+      const highRes = 8;      // Pixels per year for Modern/Post-1800 (Balanced)
+
+      // Calculate Distances
+      const ancientSpan = Math.max(0, splitYear - minYear);
+      const modernSpan = Math.max(0, maxYear - splitYear);
+
+      const ancientHeight = ancientSpan * lowRes;
+      const modernHeight = modernSpan * highRes;
+
+      const totalHeight = ancientHeight + modernHeight + 400; // + Padding
+
+      svg.attr("height", totalHeight);
+
+      // Polylinear Scale
+      // Domain: [Min, Split, Max]
+      // Range: [Bottom, SplitPoint, Top]
+      // Note: Y coords go Top(0) -> Bottom(Height). 
+      // So MinYear is at TotalHeight (minus padding), MaxYear is at Top (plus padding).
+
+      const yBottom = totalHeight - 100;
+      const ySplit = yBottom - ancientHeight;
+      const yTop = ySplit - modernHeight; // Should be approx 300
+
+      const yScale = d3.scaleLinear()
+        .domain([minYear, splitYear, maxYear])
+        .range([yBottom, ySplit, yTop]);
+
+      // Axis
+      const yAxis = d3.axisRight(yScale)
+        .tickValues([
+          ...d3.range(Math.ceil(minYear / 100) * 100, splitYear, 100), // Every 100 years for ancient
+          ...d3.range(splitYear, maxYear + 1, 10) // Every 10 years for modern
+        ])
+        .tickFormat(d => d < 0 ? `${-d} BC` : d)
+        .tickSize(-width);
+
+      axisGroup.attr("transform", `translate(${width - 80}, 0)`)
+        .call(yAxis)
+        .call(g => g.select(".domain").remove()) // Remove the vertical line
+        .call(g => g.selectAll(".tick line")
+          .attr("stroke-opacity", 0.1) // Faint grid lines
+          .attr("stroke-dasharray", "2,2")); // Dashed grid lines
+
+      // Lock Y positions
+      authors.forEach(d => {
+        d.fy = yScale(d.year); // Strictly lock Y
+        d.y = d.fy; // Start at correct position
+      });
+
+      simulation = d3.forceSimulation(authors)
+        //.force("y", d3.forceY(d => yScale(d.year)).strength(3)) // Removed: Y is locked
+        .force("x", d3.forceX(width / 2).strength(0.2)) // Center horizontally
+        .force("collide", d3.forceCollide(d => d.r + 5).iterations(2))
+        .on("tick", ticked);
+
+      function ticked() {
+        // Render Links
+        linkGroup.selectAll("line")
+          .data(graphData.links)
+          .join("line")
+          .attr("class", "link")
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        // Render Authors
+        const authorSel = nodeGroup.selectAll(".author-group")
+          .data(authors, d => d.id)
+          .join(
+            enter => {
+              const g = enter.append("g")
+                .attr("class", "author-group")
+                .on("mouseenter", (e, d) => highlight(d))
+                .on("mouseleave", () => resetHighlight())
+                .on("click", (e, d) => {
+                  e.stopPropagation();
+
+                  // Toggle selection
+                  if (selectedNode && selectedNode.id === d.id) {
+                    selectedNode = null;
+                    resetHighlight();
                   } else {
-                    // Alive: Plot at end (2025)
-                    year = 2025;
+                    selectedNode = d; // Freeze selection
+                    highlight(d);
                   }
+                });
+
+              g.append("circle")
+                .attr("class", "author-circle")
+                .attr("r", d => d.r);
+
+              // Render Books inside
+              g.each(function (d) {
+                const group = d3.select(this);
+                if (d.books) {
+                  group.selectAll(".book-circle")
+                    .data(d.books)
+                    .join("circle")
+                    .attr("class", "book-circle")
+                    .attr("r", b => b.r)
+                    .attr("cx", b => b.x)
+                    .attr("cy", b => b.y)
+                    .attr("fill", b => b.data.isSource ? "var(--book-source)" : "var(--book-cited)")
+                    .on("mouseenter", (e, b) => {
+                      // Show book title on hover
+                      showTooltip(e, b.data.title);
+                    })
+                    .on("mouseleave", hideTooltip)
+                    .on("click", (e, b) => {
+                      e.stopPropagation();
+                      showPanel(b.data);
+                    });
                 }
-
-                nodesMap.set(id, {
-                  id, type: 'author', label: name, meta, year,
-                  isSource,
-                  r: isSource ? 6 : 4,
-                  x: width / 2 + (Math.random() - 0.5) * 50,
-                  y: height / 2 + (Math.random() - 0.5) * 50
-                });
-              }
-              // Upgrade to source if encountered as source
-              if (isSource && !nodesMap.get(id).isSource) {
-                nodesMap.get(id).isSource = true;
-                nodesMap.get(id).r = 6;
-              }
-              return nodesMap.get(id);
-            }
-
-            // Helper to normalize name (simple version matching python script)
-            function normalize(name) {
-              if (!name) return "Unknown";
-              if (name.includes(",")) {
-                const parts = name.split(",", 2);
-                if (parts.length === 2) return `${parts[1].trim()} ${parts[0].trim()}`;
-              }
-              return name;
-            }
-
-            records.forEach(rec => {
-              const srcAuthors = rec.source.authors || [];
-              const srcNames = (Array.isArray(srcAuthors) ? srcAuthors : [srcAuthors]).map(normalize);
-
-              srcNames.forEach(srcName => {
-                const srcNode = getAuthorNode(srcName, true);
-
-                (rec.citations || []).forEach(cit => {
-                  let targetNames = [];
-                  // 1. Wikipedia Match
-                  if (cit.wikipedia_match && cit.wikipedia_match.title) {
-                    targetNames.push(cit.wikipedia_match.title);
-                  }
-                  // 2. Goodreads Match
-                  else if (cit.goodreads_match && cit.goodreads_match.authors) {
-                    const grAuthors = cit.goodreads_match.authors;
-                    (Array.isArray(grAuthors) ? grAuthors : [grAuthors]).forEach(n => targetNames.push(normalize(n)));
-                  }
-
-                  targetNames.forEach(targetName => {
-                    if (targetName === srcName) return; // Self citation?
-                    const targetNode = getAuthorNode(targetName, false);
-
-                    const linkId = `${srcNode.id}->${targetNode.id}`;
-                    if (!linksMap.has(linkId)) {
-                      linksMap.set(linkId, {
-                        source: srcNode,
-                        target: targetNode,
-                        type: 'citation'
-                      });
-                    }
-                  });
-                });
-              });
-            });
-
-            finalizeGraph(nodesMap, Array.from(linksMap.values()));
-          }
-
-          function finalizeGraph(nodesMap, links) {
-            const nodes = Array.from(nodesMap.values());
-            const nodesWithYear = nodes.filter(n => n.year !== null);
-
-            // Domain
-            const years = nodesWithYear.map(n => n.year);
-            let minYear = Math.min(...years);
-            let maxYear = Math.max(...years);
-            if (!isFinite(minYear)) minYear = 1900;
-            if (!isFinite(maxYear)) maxYear = 2025;
-
-            const yearRange = Math.max(1, maxYear - minYear);
-
-            // Scale
-            xScale = d3.scaleLog()
-              .domain([1, yearRange + 100])
-              .range([width - 100, 100]);
-
-            // Ticks
-            const niceYears = [
-              2025, 2020, 2010, 2000, 1990, 1980, 1950, 1900,
-              1800, 1500, 1000, 500, 0, -500, -1000, -2000
-            ];
-            const validTicks = niceYears.filter(y => y >= minYear && y <= maxYear);
-            const tickValues = validTicks.map(y => maxYear - y + 1);
-
-            xAxis.scale(xScale)
-              .tickValues(tickValues)
-              .tickFormat(d => {
-                const year = maxYear + 1 - d;
-                return year < 0 ? `${Math.abs(Math.round(year))} BC` : Math.round(year);
               });
 
-            // Target X
-            nodes.forEach(n => {
-              if (n.year !== null) {
-                const yearsAgo = maxYear - n.year + 1;
-                n.targetX = xScale(yearsAgo);
-              } else {
-                n.targetX = xScale(1); // Far right
-                n.year = "Unknown";
-              }
-            });
+              // Label (Author Name) - Hidden by default via CSS
+              g.append("text")
+                .attr("class", "label")
+                .attr("y", d => -d.r - 10)
+                .text(d => d.name);
 
-            graphData = { nodes, links };
-            initSimulation();
-          }
-
-          function initSimulation() {
-            console.log(`Initialized simulation with ${graphData.nodes.length} nodes and ${graphData.links.length} links.`);
-
-            axisGroup.attr("transform", `translate(0, ${height / 2 + 100})`).call(xAxis);
-
-            simulation = d3.forceSimulation(graphData.nodes)
-              .force("x", d3.forceX(d => d.targetX).strength(1))
-              .force("y", d3.forceY(height / 2).strength(0.1))
-              .force("collide", d3.forceCollide().radius(d => d.r + 2).iterations(1))
-              .alphaDecay(0.05)
-              .on("tick", ticked);
-
-            simulation.tick(100);
-            render();
-          }
-
-          function ticked() {
-            nodeGroup.selectAll("circle")
-              .attr("cx", d => d.x)
-              .attr("cy", d => d.y);
-
-            linkGroup.selectAll("line")
-              .attr("x1", d => d.source.x)
-              .attr("y1", d => d.source.y)
-              .attr("x2", d => d.target.x)
-              .attr("y2", d => d.target.y);
-
-            labelGroup.selectAll("text")
-              .attr("x", d => d.x)
-              .attr("y", d => d.y);
-          }
-
-          function render() {
-            // Links
-            linkGroup.selectAll("line")
-              .data(graphData.links)
-              .join("line")
-              .attr("class", "link")
-              .attr("stroke-width", 1);
-
-            // Nodes
-            nodeGroup.selectAll("circle")
-              .data(graphData.nodes, d => d.id) // Key by ID to ensure smooth transitions if possible
-              .join("circle")
-              .attr("class", "node")
-              .attr("r", d => d.r)
-              .attr("fill", d => {
-                if (currentView === 'book') {
-                  return d.root ? COLORS.source : (d.type === 'author' ? COLORS.author : COLORS.cited);
-                } else {
-                  return d.isSource ? COLORS.authorSource : COLORS.authorCited;
-                }
-              })
-              .on("click", (e, d) => { e.stopPropagation(); highlightNode(d); });
-
-            // Labels
-            labelGroup.selectAll("text")
-              .data(graphData.nodes, d => d.id)
-              .join("text")
-              .attr("class", "label")
-              .text(d => d.label)
-              .attr("text-anchor", "middle")
-              .attr("dy", -10)
-              .style("font-size", "10px")
-              .style("fill", "#fff");
-          }
-
-          function highlightNode(d) {
-            selectedNode = d;
-            showPanel(d);
-
-            const neighbors = new Set();
-            neighbors.add(d.id);
-
-            const connectedLinks = graphData.links.filter(l => l.source.id === d.id || l.target.id === d.id);
-            connectedLinks.forEach(l => {
-              neighbors.add(l.source.id);
-              neighbors.add(l.target.id);
-            });
-
-            nodeGroup.selectAll("circle")
-              .classed("dimmed", n => !neighbors.has(n.id))
-              .classed("highlight", n => neighbors.has(n.id));
-
-            linkGroup.selectAll("line")
-              .classed("highlight-out", l => l.source.id === d.id)
-              .classed("highlight-in", l => l.target.id === d.id)
-              .style("stroke-opacity", l => (l.source.id === d.id || l.target.id === d.id) ? 1 : 0);
-
-            labelGroup.selectAll("text")
-              .classed("visible", false);
-          }
-
-          function resetHighlight() {
-            selectedNode = null;
-            panel.classList.remove("visible");
-
-            nodeGroup.selectAll("circle")
-              .classed("dimmed", false)
-              .classed("highlight", false);
-
-            linkGroup.selectAll("line")
-              .classed("highlight-out", false)
-              .classed("highlight-in", false)
-              .style("stroke-opacity", 0);
-
-            labelGroup.selectAll("text")
-              .classed("visible", false);
-          }
-
-          // UI Logic
-          function showPanel(d) {
-            const meta = d.meta || {};
-            document.getElementById("panel-title").textContent = d.label;
-
-            const content = document.getElementById("panel-content");
-            content.innerHTML = "";
-
-            const fields = [
-              { label: "Type", value: currentView === 'book' ? (d.type === 'author' ? "Author" : (d.root ? "Source Book" : "Cited Book")) : (d.isSource ? "Source Author" : "Cited Author"), tag: true },
-              { label: "Year", value: d.year },
-              { label: "Born", value: meta.birth_year },
-              { label: "Died", value: meta.death_year },
-              { label: "Description", value: meta.description },
-              { label: "Categories", value: meta.categories ? meta.categories.join(", ") : null }
-            ];
-
-            fields.forEach(f => {
-              if (!f.value) return;
-              const div = document.createElement("div");
-              div.className = "meta-item";
-
-              const label = document.createElement("div");
-              label.className = "meta-label";
-              label.textContent = f.label;
-              div.appendChild(label);
-
-              const value = document.createElement("div");
-              value.className = "meta-value";
-
-              if (f.tag) {
-                const span = document.createElement("span");
-                span.className = "tag";
-                if (f.value.includes("Source")) span.classList.add("source");
-                else if (f.value.includes("Cited")) span.classList.add("cited");
-                else span.classList.add("author");
-                span.textContent = f.value;
-                value.appendChild(span);
-              } else {
-                value.textContent = f.value;
-              }
-
-              div.appendChild(value);
-              content.appendChild(div);
-            });
-
-            panel.classList.add("visible");
-
-            // Close button
-            document.getElementById("panel-close").onclick = resetHighlight;
-          }
-
-          // Search
-          searchInput.addEventListener("input", (e) => {
-            const term = e.target.value.toLowerCase();
-            if (!term) {
-              resetHighlight();
-              return;
+              return g;
             }
+          )
+          .attr("transform", d => `translate(${d.x},${d.y})`);
+      }
+    }
 
-            const match = graphData.nodes.find(n => n.label.toLowerCase().includes(term));
-            if (match) {
-              highlightNode(match);
-              // Center view on node
-              const scale = 2;
-              const x = -match.x * scale + width / 2;
-              const y = -match.y * scale + height / 2;
-              svg.transition().duration(750).call(
-                zoom.transform,
-                d3.zoomIdentity.translate(x, y).scale(scale)
-              );
-            }
-          });
+    // Tooltip
+    const tooltip = d3.select("body").append("div")
+      .style("position", "absolute")
+      .style("background", "rgba(0,0,0,0.8)")
+      .style("padding", "4px 8px")
+      .style("border-radius", "4px")
+      .style("pointer-events", "none")
+      .style("font-size", "12px")
+      .style("display", "none")
+      .style("z-index", "100");
 
-          loadData();
-        </script>
+    function showTooltip(e, text) {
+      tooltip.style("display", "block")
+        .text(text)
+        .style("left", (e.pageX + 10) + "px")
+        .style("top", (e.pageY - 10) + "px");
+    }
+    function hideTooltip() { tooltip.style("display", "none"); }
+
+    function highlight(d) {
+      // If a node is selected and it's not this one, ignore hover
+      if (selectedNode && selectedNode.id !== d.id) return;
+
+      // Dim all
+      d3.selectAll(".author-group").classed("dimmed", true).classed("highlight", false);
+      d3.selectAll(".label").classed("visible", false);
+      d3.selectAll(".link").classed("dimmed", true).classed("highlight", false);
+
+      // Highlight selected node
+      const sel = d3.selectAll(".author-group").filter(n => n.id === d.id);
+      sel.classed("dimmed", false).classed("highlight", true);
+      sel.select(".label").classed("visible", true);
+
+      // Find connected neighbors
+      const connectedIds = new Set();
+      connectedIds.add(d.id);
+
+      // Highlight connected links and collect neighbors
+      d3.selectAll(".link")
+        .filter(l => {
+          if (l.source.id === d.id) {
+            connectedIds.add(l.target.id);
+            return true;
+          }
+          if (l.target.id === d.id) {
+            connectedIds.add(l.source.id);
+            return true;
+          }
+          return false;
+        })
+        .classed("dimmed", false)
+        .classed("highlight", true)
+        .raise(); // Bring to front
+
+      // Highlight connected neighbors
+      d3.selectAll(".author-group")
+        .filter(n => connectedIds.has(n.id))
+        .classed("dimmed", false)
+        .classed("highlight", true)
+        .select(".label").classed("visible", true);
+    }
+
+    function resetHighlight() {
+      // If a node is selected, don't reset
+      if (selectedNode) return;
+
+      d3.selectAll(".author-group").classed("dimmed", false).classed("highlight", false);
+      d3.selectAll(".label").classed("visible", false);
+      d3.selectAll(".link").classed("dimmed", false).classed("highlight", false);
+    }
+
+    function showPanel(book) {
+      const panel = document.getElementById("info-panel");
+      document.getElementById("panel-title").textContent = book.title;
+      const content = document.getElementById("panel-content");
+
+      const meta = book.meta || {};
+      const authors = meta.authors ? (Array.isArray(meta.authors) ? meta.authors.join(", ") : meta.authors) : "Unknown Author";
+      const rating = meta.average_rating ? `★ ${meta.average_rating}` : "";
+      const pages = meta.num_pages ? `${meta.num_pages} pages` : "";
+      const publisher = meta.publisher ? meta.publisher : "";
+      const link = meta.link || meta.url;
+
+      let metaHtml = `<div style="margin-bottom:12px; color:#888; font-size:13px;">${book.year || "Unknown Year"} • ${authors}</div>`;
+
+      if (rating || pages || publisher) {
+        metaHtml += `<div style="display:flex; gap:10px; margin-bottom:12px; font-size:12px; color:var(--text-muted);">`;
+        if (rating) metaHtml += `<span>${rating}</span>`;
+        if (pages) metaHtml += `<span>${pages}</span>`;
+        if (publisher) metaHtml += `<span>${publisher}</span>`;
+        metaHtml += `</div>`;
+      }
+
+      metaHtml += `<div style="line-height:1.5; margin-bottom:16px;">${meta.description || "No description available."}</div>`;
+
+      if (link) {
+        metaHtml += `<a href="${link}" target="_blank" style="display:inline-block; padding:8px 16px; background:rgba(255,255,255,0.1); color:#fff; text-decoration:none; border-radius:4px; font-size:12px; transition:background 0.2s;">View on Goodreads ↗</a>`;
+      }
+
+      content.innerHTML = metaHtml;
+      panel.classList.add("visible");
+    }
+
+    document.getElementById("panel-close").onclick = () => {
+      document.getElementById("info-panel").classList.remove("visible");
+    };
+
+    loadData();
+  </script>
+</body>
+
+</html>

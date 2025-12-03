@@ -15,4 +15,5 @@ dependencies = [
     "pytest>=8.3",
     "tqdm>=4.67.1",
     "snakeviz>=2.2.2",
+    "mwxml>=0.3.6",
 ]

@@ -135,14 +135,37 @@ class CitationWorkflow(Workflow):
             )
 
         try:
+            # Try standard structured predict first
             response = await self.llm.astructured_predict(QueryList, PromptTemplate(prompt))
-            if self.verbose:
-                print(f"[Workflow] Generated Queries ({mode}): {response.queries}")
             
-            return QueriesGeneratedEvent(citation=citation, queries=response.queries, mode=mode)
+            # If we got a string, it failed to parse internally but didn't raise.
+            if isinstance(response, str):
+                 raise ValueError(f"astructured_predict returned string: {response[:100]}")
+
         except Exception as e:
-            print(f"[Workflow] Error generating queries: {e}")
-            return StopEvent(result={"citation": citation, "error": str(e)})
+            if self.verbose:
+                print(f"[Workflow] astructured_predict failed: {e}. Falling back to apredict.")
+            
+            # Fallback: Manual JSON prompt
+            json_prompt = prompt + f"\nRespond strictly with a JSON object matching this schema:\n{QueryList.model_json_schema()}"
+            raw_response = await self.llm.apredict(PromptTemplate(json_prompt))
+            
+            if self.verbose:
+                print(f"[Workflow] Fallback Raw Response: {raw_response}")
+
+            # Parse
+            match = re.search(r"\{.*\}", raw_response, re.DOTALL)
+            if match:
+                clean_response = match.group(0)
+                data = json.loads(clean_response)
+                response = QueryList(**data)
+            else:
+                raise ValueError(f"Could not parse JSON from fallback response: {raw_response[:200]}")
+
+        if self.verbose:
+            print(f"[Workflow] Generated Queries ({mode}): {response.queries}")
+        
+        return QueriesGeneratedEvent(citation=citation, queries=response.queries, mode=mode)
 
     @step
     async def search_goodreads(
@@ -275,11 +298,34 @@ class CitationWorkflow(Workflow):
         try:
             if self.verbose:
                 print("[Workflow] Calling LLM for validation...")
+            
             response = await self.llm.astructured_predict(ValidationResult, PromptTemplate(prompt))
-            idx = response.index
-            selected = None
-            if 0 <= idx < len(candidates):
-                selected = candidates[idx]
+             # If we got a string, it failed to parse internally but didn't raise.
+            if isinstance(response, str):
+                 raise ValueError(f"astructured_predict returned string: {response[:100]}")
+
+        except Exception as e:
+            if self.verbose:
+                print(f"[Workflow] astructured_predict validation failed: {e}. Falling back to apredict.")
+            
+            json_prompt = prompt + f"\nRespond strictly with a JSON object matching this schema:\n{ValidationResult.model_json_schema()}"
+            raw_response = await self.llm.apredict(PromptTemplate(json_prompt))
+            
+            if self.verbose:
+                print(f"[Workflow] Fallback Validation Response: {raw_response}")
+
+            match = re.search(r"\{.*\}", raw_response, re.DOTALL)
+            if match:
+                clean_response = match.group(0)
+                data = json.loads(clean_response)
+                response = ValidationResult(**data)
+            else:
+                raise ValueError(f"Could not parse JSON from fallback response: {raw_response[:200]}")
+
+        idx = response.index
+        selected = None
+        if 0 <= idx < len(candidates):
+            selected = candidates[idx]
             
             if self.verbose:
                 print(f"[Workflow] Validation ({source}): Selected index {idx}. Reason: {response.reasoning}")
@@ -291,9 +337,6 @@ class CitationWorkflow(Workflow):
                 mode=mode, 
                 reasoning=response.reasoning
             )
-        except Exception as e:
-            print(f"[Workflow] Validation Error: {e}")
-            return ValidationEvent(citation=citation, selected_result=None, source=source, mode=mode, reasoning=f"Error: {e}")
 
     @step
     async def aggregate_results(

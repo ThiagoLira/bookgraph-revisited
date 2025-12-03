@@ -135,6 +135,7 @@ class ExtractionConfig:
     max_context_per_request: int = 8192  # Total context window per request (input + output)
     tokenizer_name: str = "Qwen/Qwen3-30B-A3B"
     book_title: Optional[str] = None
+    verbose: bool = False
 
 
 def drop_last_sentence(chunk: SentenceChunk) -> Optional[SentenceChunk]:
@@ -276,9 +277,13 @@ async def call_model(
     model: str,
     max_completion_tokens: int,
     max_context_per_request: int,
+    verbose: bool = False,
 ) -> tuple[SentenceChunk, ChunkExtraction | None, ChunkFailure | None]:
     # build_chunks already ensures chunks fit within token limits
     user_prompt = format_user_prompt(chunk, book_title)
+
+    if verbose:
+        print(f"\n[DEBUG] Prompt (Chunk {chunk.index}):\n{user_prompt}\n---", flush=True)
 
     messages = [
         {"role": "system", "content": system_prompt},
@@ -301,7 +306,7 @@ async def call_model(
                         "chat_template_kwargs": {"enable_thinking": False},
                         "reasoning_format": "none",
                     },
-                    timeout=120.0,
+                    timeout=150.0,
                 )
         except Exception as e:
             print(f"[DEBUG] Chunk {chunk.index}: API Failed (Attempt {attempt+1}/{max_retries+1}): {e}", flush=True)
@@ -320,6 +325,10 @@ async def call_model(
             finish_reason = choice.finish_reason
             message = choice.message
             content = (message.content or "").strip()
+            
+            if verbose:
+                print(f"\n[DEBUG] Response (Chunk {chunk.index}):\n{content}\n---", flush=True)
+
             if not content:
                 reasoning_content = getattr(message, "reasoning_content", None)
                 if reasoning_content:
@@ -396,10 +405,14 @@ async def process_book(
 
     try:
         tokenizer = Tokenizer.from_pretrained(config.tokenizer_name)
-    except Exception as exc:  # pragma: no cover - defensive
-        raise RuntimeError(
-            f"Failed to load tokenizer '{config.tokenizer_name}': {exc}"
-        ) from exc
+    except Exception as exc:
+        print(f"Warning: Failed to load tokenizer '{config.tokenizer_name}': {exc}. Falling back to 'Qwen/Qwen3-30B-A3B'.")
+        try:
+            tokenizer = Tokenizer.from_pretrained("Qwen/Qwen3-30B-A3B")
+        except Exception as fallback_exc:
+            raise RuntimeError(
+                f"Failed to load fallback tokenizer 'Qwen/Qwen3-30B-A3B': {fallback_exc}"
+            ) from fallback_exc
 
     sentences = load_sentences(input_path)
     chunks = list(
@@ -433,6 +446,7 @@ async def process_book(
                     model=config.model,
                     max_completion_tokens=config.max_completion_tokens,
                     max_context_per_request=config.max_context_per_request,
+                    verbose=config.verbose,
                 )
             )
             for chunk in chunks
