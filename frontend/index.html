@@ -277,7 +277,14 @@
         pubDateMap = dates;
         authorMeta = authors;
 
-        const files = await Promise.all(manifest.map(f => fetch(`${dataDir}/${f}`).then(r => r.json())));
+        const files = [];
+        const batchSize = 3; // Conservative batch size for strict rate limits
+
+        for (let i = 0; i < manifest.length; i += batchSize) {
+          const batch = manifest.slice(i, i + batchSize);
+          const results = await Promise.all(batch.map(f => fetch(`${dataDir}/${f}`).then(r => r.json())));
+          files.push(...results);
+        }
         processData(files);
 
         document.getElementById("loading").style.display = "none";
