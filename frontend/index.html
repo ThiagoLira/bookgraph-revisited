@@ -656,16 +656,14 @@
       connectedIds.add(d.id);
 
       // Highlight connected links and collect neighbors
+      // Highlight connected links and collect neighbors (OUTBOUND ONLY)
       d3.selectAll(".link")
         .filter(l => {
           if (l.source.id === d.id) {
             connectedIds.add(l.target.id);
             return true;
           }
-          if (l.target.id === d.id) {
-            connectedIds.add(l.source.id);
-            return true;
-          }
+          // Removed inbound check: if (l.target.id === d.id) ...
           return false;
         })
         .classed("dimmed", false)
