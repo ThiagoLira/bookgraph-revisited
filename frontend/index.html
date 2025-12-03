@@ -547,11 +547,16 @@
 
       simulation = d3.forceSimulation(authors)
         //.force("y", d3.forceY(d => yScale(d.year)).strength(3)) // Removed: Y is locked
-        .force("x", d3.forceX(width / 2).strength(0.2)) // Center horizontally
+        .force("x", d3.forceX(width / 2).strength(0.3)) // Stronger centering
         .force("collide", d3.forceCollide(d => d.r + 5).iterations(2))
         .on("tick", ticked);
 
       function ticked() {
+        // Constrain to screen width
+        authors.forEach(d => {
+          d.x = Math.max(d.r + 10, Math.min(width - d.r - 10, d.x));
+        });
+
         // Render Links
         linkGroup.selectAll("line")
           .data(graphData.links)
