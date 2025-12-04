@@ -1,0 +1,3887 @@
+{
+  "source": {
+    "title": "Ethics",
+    "authors": [
+      "Baruch Spinoza"
+    ],
+    "goodreads_id": "24477404",
+    "author_ids": [],
+    "description": null,
+    "goodreads": {
+      "book_id": "24477404",
+      "author_ids": [],
+      "title": "Ethics",
+      "authors": [
+        "Baruch Spinoza"
+      ],
+      "publication_year": null
+    },
+    "calibre": {
+      "id": 37,
+      "path": "/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos/calibre_bookgraph/Baruch Spinoza/Ethics (Hackett Classics) (37)",
+      "txt_path": "/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos/calibre_bookgraph/Baruch Spinoza/Ethics (Hackett Classics) (37)/Ethics (Hackett Classics) - Baruch Spinoza.txt",
+      "epub_path": "/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos/calibre_bookgraph/Baruch Spinoza/Ethics (Hackett Classics) (37)/Ethics (Hackett Classics) - Baruch Spinoza.epub",
+      "description": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Descartes",
+        "count": 13,
+        "excerpts": [
+          "But the reader of Descartes and Spinoza should realize that when these philosophers use the term \u2018objective\u2019 they are talking about a mental representation of a thing, the thing as an object of thought.",
+          "In this passage Spinoza makes use of a distinction that was frequently employed by philosophers in the middle ages and by Descartes as well.",
+          "I know, indeed, that the renowned Descartes, though he too believed that the mind has absolute power over its actions, does explain human emotions through their first causes, and has also zealously striven to show how the mind can have absolute control over the emotions.",
+          "Spinoza\u2019s appeal to these innate instruments of the intellect, by means of which it forges its own cognitive material for further intellectual work, is reminiscent of Plato and Descartes, who also made use of the notion of \u201cinnatism.\u201d",
+          "Referring anonymously to Descartes, Spinoza boldly claims that skepticism is really not a genuine problem."
+        ],
+        "canonical_author": "Descartes"
+      },
+      "goodreads_match": {
+        "author_id": "36556",
+        "name": "Rene Descartes",
+        "average_rating": "3.70",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Ren\u00e9 Descartes",
+          "page_id": 25525,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Ren\u00e9 Descartes| ",
+            "Cartesianism|*",
+            "1596 births",
+            "1650 deaths",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "17th-century French scientists",
+            "17th-century French non-fiction writers",
+            "17th-century writers in Latin",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Aphorists",
+            "Augustinian philosophers",
+            "Burials at Saint-Germain-des-Pr\u00e9s (abbey)",
+            "Catholic philosophers",
+            "French consciousness researchers and theorists",
+            "Constructed language creators",
+            "Critics of animal rights",
+            "Deaths from pneumonia in Sweden",
+            "Dualists",
+            "Enlightenment philosophers",
+            "French emigrants",
+            "Immigrants to the Dutch Republic",
+            "French ethicists",
+            "French expatriates in Sweden",
+            "French expatriates in the Dutch Republic",
+            "French logicians",
+            "French mercenaries",
+            "French music theorists"
+          ],
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ren\u00e9 Descartes",
+        "page_id": 25525,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Ren\u00e9 Descartes| ",
+          "Cartesianism|*",
+          "1596 births",
+          "1650 deaths",
+          "17th-century French mathematicians",
+          "17th-century French philosophers",
+          "17th-century French scientists",
+          "17th-century French non-fiction writers",
+          "17th-century writers in Latin",
+          "17th-century French male writers",
+          "17th-century Roman Catholics",
+          "Age of Enlightenment",
+          "Aphorists",
+          "Augustinian philosophers",
+          "Burials at Saint-Germain-des-Pr\u00e9s (abbey)",
+          "Catholic philosophers",
+          "French consciousness researchers and theorists",
+          "Constructed language creators",
+          "Critics of animal rights",
+          "Deaths from pneumonia in Sweden",
+          "Dualists",
+          "Enlightenment philosophers",
+          "French emigrants",
+          "Immigrants to the Dutch Republic",
+          "French ethicists",
+          "French expatriates in Sweden",
+          "French expatriates in the Dutch Republic",
+          "French logicians",
+          "French mercenaries",
+          "French music theorists"
+        ],
+        "birth_year": 1596,
+        "death_year": 1650
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "36556"
+        ],
+        "target_person": {
+          "title": "Ren\u00e9 Descartes",
+          "page_id": 25525,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Ren\u00e9 Descartes| ",
+            "Cartesianism|*",
+            "1596 births",
+            "1650 deaths",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "17th-century French scientists",
+            "17th-century French non-fiction writers",
+            "17th-century writers in Latin",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Aphorists",
+            "Augustinian philosophers",
+            "Burials at Saint-Germain-des-Pr\u00e9s (abbey)",
+            "Catholic philosophers",
+            "French consciousness researchers and theorists",
+            "Constructed language creators",
+            "Critics of animal rights",
+            "Deaths from pneumonia in Sweden",
+            "Dualists",
+            "Enlightenment philosophers",
+            "French emigrants",
+            "Immigrants to the Dutch Republic",
+            "French ethicists",
+            "French expatriates in Sweden",
+            "French expatriates in the Dutch Republic",
+            "French logicians",
+            "French mercenaries",
+            "French music theorists"
+          ],
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "count": 5,
+        "excerpts": [
+          "Nature is not only an ordered system, a point insisted upon by Aristotle and repeated by many of the medievals, but it is a deterministic system.",
+          "He tells us explicitly that he does not mean thereby infinite duration, which is how Aristotle and some of his medieval disciples construed this idea (Proposition 29, Part V).",
+          "Aristotle originally suggested that human thinking is such that we need to distinguish three phases in its development.",
+          "Finally, the medievals, influenced by Aristotle, introduced a third character into this story to account for the stimulation, or energizing, of the potential intellect so that it actually thinks, i.e.",
+          "Like Aristotle, Spinoza quickly realizes that worldly goods in and of themselves are not sufficient and satisfying:"
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": {
+        "author_id": "2192",
+        "name": "Aristotle",
+        "average_rating": "3.93",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Principles of Philosophy",
+        "author": "Descartes",
+        "count": 3,
+        "excerpts": [
+          "(Descartes, Principles of Philosophy 1:51) To Spinoza this philosophical-linguistic license leads to serious logical and metaphysical sins.",
+          "An attribute was defined by Descartes as \u201cthe principle property that constitutes the essence and nature of a substance \u2026 and on which all the other properties depend.\u201d [Descartes, Principles of Philosophy, Part I, principle 53]",
+          "Nevertheless, he went on to permit the use of the term \u2018substance\u2019 to refer to created entities as well (Descartes, Principles of Philosophy I: 51-53)."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1411429370",
+        "average_rating": 3.62,
+        "format": "ebook",
+        "book_id": "8058415",
+        "author_ids": [
+          "36556",
+          "92421",
+          "1214435"
+        ],
+        "work_id": "12732216",
+        "text_reviews_count": 10,
+        "title_without_series": "Principles of Philosophy",
+        "publication_day": 1,
+        "ratings_count": 105,
+        "publication_month": 9,
+        "publisher": "Barnes & Noble",
+        "publication_year": 2009,
+        "num_pages": 112,
+        "title": "Principles of Philosophy",
+        "isbn13": "9781411429376",
+        "authors": [
+          "Rene Descartes",
+          "John Veitch",
+          "Paul Hoyt-O'Connor"
+        ],
+        "description": "Rene Descartes is perhaps most remembered for declaring, I think; therefore, I am. First published in 1644, Descartes s \"Principles of Philosophy\" elucidates the meaning of those words that ushered in a new era of philosophical thought. Unlike the medieval philosophers who often began by examining the existence and nature of God in a spirit of faith, Descartes begins by reflecting upon himself as one who doubts but who nonetheless desires certain knowledge of God and the world. In setting forth the truths h...",
+        "link": "https://www.goodreads.com/book/show/8058415-principles-of-philosophy"
+      },
+      "wikipedia_match": {
+        "title": "Rene Descartes",
+        "birth_year": 1596,
+        "death_year": 1650,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "8058415",
+        "target_author_ids": [
+          "36556",
+          "92421",
+          "1214435"
+        ],
+        "target_person": {
+          "title": "Rene Descartes",
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "count": 3,
+        "excerpts": [
+          "If Socrates\u2019 execution was the key event in Plato\u2019s life that shaped his subsequent career in philosophy, Spinoza\u2019s excommunication from the Jewish community of Amsterdam in 1656 at the age of twenty-four was similarly the critical episode in his life and thought.",
+          "In Sch. 2, Pr. 40, II \u201cimaginatio\u2019 is defined as covering the {28} entire field of \u201cknowledge of the first kind,\u201d which he elsewhere equates with opinion, a level of cognition similar to Plato\u2019s belief (doxa).",
+          "Spinoza\u2019s appeal to these innate instruments of the intellect, by means of which it forges its own cognitive material for further intellectual work, is reminiscent of Plato and Descartes, who also made use of the notion of \u201cinnatism.\u201d"
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": {
+        "author_id": "879",
+        "name": "Plato",
+        "average_rating": "3.99",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -428,
+        "death_year": -348
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hobbes",
+        "count": 2,
+        "excerpts": [
+          "Nor is it the case that when we describe someone as thinking we really are referring to movements in his nervous system, as Hobbes claimed; or that when we describe someone as eating an apple we are referring to his sensations of eating the apple, as Berkeley believed.",
+          "In Spinoza, as in Descartes, there are degrees of reality, a concept that Hobbes found difficult."
+        ],
+        "canonical_author": "Hobbes"
+      },
+      "goodreads_match": {
+        "author_id": "10122",
+        "name": "Thomas Hobbes",
+        "average_rating": "3.79",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Thomas Hobbes",
+          "page_id": 29823,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Thomas Hobbes| ",
+            "1588 births",
+            "1679 deaths",
+            "17th-century English writers",
+            "17th-century writers in Latin",
+            "17th-century English male writers",
+            "17th-century English philosophers",
+            "Alumni of Magdalen Hall, Oxford",
+            "Atomists",
+            "British critics of Christianity",
+            "British critics of religions",
+            "Critics of the Catholic Church",
+            "Empiricists",
+            "English expatriates in France",
+            "English mathematicians",
+            "English physicists",
+            "English political philosophers",
+            "English theologians",
+            "Epistemologists",
+            "Materialists",
+            "Metaphysicians",
+            "Ontologists",
+            "Writers from Malmesbury",
+            "Philosophers of culture",
+            "British philosophers of education",
+            "Philosophers of history",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of mathematics",
+            "Philosophers of mind"
+          ],
+          "birth_year": 1588,
+          "death_year": 1679
+        }
+      },
+      "wikipedia_match": {
+        "title": "Thomas Hobbes",
+        "page_id": 29823,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Thomas Hobbes| ",
+          "1588 births",
+          "1679 deaths",
+          "17th-century English writers",
+          "17th-century writers in Latin",
+          "17th-century English male writers",
+          "17th-century English philosophers",
+          "Alumni of Magdalen Hall, Oxford",
+          "Atomists",
+          "British critics of Christianity",
+          "British critics of religions",
+          "Critics of the Catholic Church",
+          "Empiricists",
+          "English expatriates in France",
+          "English mathematicians",
+          "English physicists",
+          "English political philosophers",
+          "English theologians",
+          "Epistemologists",
+          "Materialists",
+          "Metaphysicians",
+          "Ontologists",
+          "Writers from Malmesbury",
+          "Philosophers of culture",
+          "British philosophers of education",
+          "Philosophers of history",
+          "English philosophers of language",
+          "British philosophers of law",
+          "Philosophers of mathematics",
+          "Philosophers of mind"
+        ],
+        "birth_year": 1588,
+        "death_year": 1679
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "10122"
+        ],
+        "target_person": {
+          "title": "Thomas Hobbes",
+          "page_id": 29823,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Thomas Hobbes| ",
+            "1588 births",
+            "1679 deaths",
+            "17th-century English writers",
+            "17th-century writers in Latin",
+            "17th-century English male writers",
+            "17th-century English philosophers",
+            "Alumni of Magdalen Hall, Oxford",
+            "Atomists",
+            "British critics of Christianity",
+            "British critics of religions",
+            "Critics of the Catholic Church",
+            "Empiricists",
+            "English expatriates in France",
+            "English mathematicians",
+            "English physicists",
+            "English political philosophers",
+            "English theologians",
+            "Epistemologists",
+            "Materialists",
+            "Metaphysicians",
+            "Ontologists",
+            "Writers from Malmesbury",
+            "Philosophers of culture",
+            "British philosophers of education",
+            "Philosophers of history",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of mathematics",
+            "Philosophers of mind"
+          ],
+          "birth_year": 1588,
+          "death_year": 1679
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Seneca",
+        "count": 2,
+        "excerpts": [
+          "Or it may come about when unobservable external causes condition a man\u2019s imagination and affect his body in such a way that the latter assumes a different nature contrary to the previously existing one, a nature whereof there can be no idea in mind (Pr.10,III).",
+          "Seneca (4 B.C.-A.D. 66), the Roman writer and statesman, committed suicide under political pressure rather than suffer public disgrace."
+        ],
+        "canonical_author": "Seneca"
+      },
+      "goodreads_match": {
+        "author_id": "4918776",
+        "name": "Seneca",
+        "average_rating": "4.19",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Seneca the Younger",
+          "page_id": 75150,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Seneca the Younger| ",
+            "0s BC births",
+            "Year of birth uncertain",
+            "65 deaths",
+            "1st-century executions",
+            "1st-century philosophers",
+            "1st-century Romans",
+            "1st-century writers in Latin",
+            "Ancient Roman tragic dramatists",
+            "Suicides in Ancient Rome",
+            "Annaei",
+            "Ethicists",
+            "Executed philosophers",
+            "Executed writers",
+            "Forced suicides",
+            "Letter writers in Latin",
+            "Male dramatists and playwrights",
+            "Male essayists",
+            "Members of the Pisonian conspiracy",
+            "People executed by the Roman Empire",
+            "People from C\u00f3rdoba, Spain",
+            "Ancient Roman encyclopedists",
+            "Ancient Roman satirists",
+            "Roman-era Stoic philosophers",
+            "Romans from Hispania",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome",
+            "Roman-era philosophers in Rome",
+            "Characters in the Divine Comedy",
+            "Male suicides"
+          ],
+          "birth_year": null,
+          "death_year": 65
+        }
+      },
+      "wikipedia_match": {
+        "title": "Seneca the Younger",
+        "page_id": 75150,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Seneca the Younger| ",
+          "0s BC births",
+          "Year of birth uncertain",
+          "65 deaths",
+          "1st-century executions",
+          "1st-century philosophers",
+          "1st-century Romans",
+          "1st-century writers in Latin",
+          "Ancient Roman tragic dramatists",
+          "Suicides in Ancient Rome",
+          "Annaei",
+          "Ethicists",
+          "Executed philosophers",
+          "Executed writers",
+          "Forced suicides",
+          "Letter writers in Latin",
+          "Male dramatists and playwrights",
+          "Male essayists",
+          "Members of the Pisonian conspiracy",
+          "People executed by the Roman Empire",
+          "People from C\u00f3rdoba, Spain",
+          "Ancient Roman encyclopedists",
+          "Ancient Roman satirists",
+          "Roman-era Stoic philosophers",
+          "Romans from Hispania",
+          "Silver Age Latin writers",
+          "Suffect consuls of Imperial Rome",
+          "Roman-era philosophers in Rome",
+          "Characters in the Divine Comedy",
+          "Male suicides"
+        ],
+        "birth_year": -4,
+        "death_year": 65
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "4918776"
+        ],
+        "target_person": {
+          "title": "Seneca the Younger",
+          "page_id": 75150,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Seneca the Younger| ",
+            "0s BC births",
+            "Year of birth uncertain",
+            "65 deaths",
+            "1st-century executions",
+            "1st-century philosophers",
+            "1st-century Romans",
+            "1st-century writers in Latin",
+            "Ancient Roman tragic dramatists",
+            "Suicides in Ancient Rome",
+            "Annaei",
+            "Ethicists",
+            "Executed philosophers",
+            "Executed writers",
+            "Forced suicides",
+            "Letter writers in Latin",
+            "Male dramatists and playwrights",
+            "Male essayists",
+            "Members of the Pisonian conspiracy",
+            "People executed by the Roman Empire",
+            "People from C\u00f3rdoba, Spain",
+            "Ancient Roman encyclopedists",
+            "Ancient Roman satirists",
+            "Roman-era Stoic philosophers",
+            "Romans from Hispania",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome",
+            "Roman-era philosophers in Rome",
+            "Characters in the Divine Comedy",
+            "Male suicides"
+          ],
+          "birth_year": -4,
+          "death_year": 65
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Spinoza",
+        "count": 2,
+        "excerpts": [
+          "In a letter written in April of 1662 Spinoza reports that he has written a treatise that contains a part devoted to the topic of \u201cthe emendation of the intellect\u201d (Letter 6).",
+          "The Latin \u2018objectivus\u2019 is used by Spinoza and his contemporaries in a way quite opposed to the modern usage where \u2018objective\u2019 is the opposite of \u2018subjective.\u2019"
+        ],
+        "canonical_author": "Spinoza"
+      },
+      "goodreads_match": {
+        "author_id": "122092",
+        "name": "Baruch Spinoza",
+        "average_rating": "4.01",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Baruch Spinoza",
+          "page_id": 3408,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1632 births",
+            "1677 deaths",
+            "Baruch Spinoza| ",
+            "17th-century Jewish biblical scholars",
+            "17th-century Jewish theologians",
+            "17th-century writers in Latin",
+            "17th-century Sephardi Jews",
+            "17th-century Dutch philosophers",
+            "Censorship in Judaism",
+            "Censorship in the Netherlands",
+            "Critics of Judaism",
+            "Dutch critics of religions",
+            "Dutch Enlightenment",
+            "Critics of the Catholic Church",
+            "Descartes scholars",
+            "Determinists",
+            "Dutch ethicists",
+            "Dutch logicians",
+            "Dutch people of Portuguese descent",
+            "Dutch people of Portuguese-Jewish descent",
+            "Dutch Sephardi Jews",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Freethought",
+            "Heresy in Judaism",
+            "Jewish philosophers",
+            "Jewish skeptics",
+            "Jewish translators of the Bible",
+            "Metaphilosophers",
+            "Metaphysicians"
+          ],
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "page_id": 3408,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1632 births",
+          "1677 deaths",
+          "Baruch Spinoza| ",
+          "17th-century Jewish biblical scholars",
+          "17th-century Jewish theologians",
+          "17th-century writers in Latin",
+          "17th-century Sephardi Jews",
+          "17th-century Dutch philosophers",
+          "Censorship in Judaism",
+          "Censorship in the Netherlands",
+          "Critics of Judaism",
+          "Dutch critics of religions",
+          "Dutch Enlightenment",
+          "Critics of the Catholic Church",
+          "Descartes scholars",
+          "Determinists",
+          "Dutch ethicists",
+          "Dutch logicians",
+          "Dutch people of Portuguese descent",
+          "Dutch people of Portuguese-Jewish descent",
+          "Dutch Sephardi Jews",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Freethought",
+          "Heresy in Judaism",
+          "Jewish philosophers",
+          "Jewish skeptics",
+          "Jewish translators of the Bible",
+          "Metaphilosophers",
+          "Metaphysicians"
+        ],
+        "birth_year": 1632,
+        "death_year": 1677
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "122092"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "page_id": 3408,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1632 births",
+            "1677 deaths",
+            "Baruch Spinoza| ",
+            "17th-century Jewish biblical scholars",
+            "17th-century Jewish theologians",
+            "17th-century writers in Latin",
+            "17th-century Sephardi Jews",
+            "17th-century Dutch philosophers",
+            "Censorship in Judaism",
+            "Censorship in the Netherlands",
+            "Critics of Judaism",
+            "Dutch critics of religions",
+            "Dutch Enlightenment",
+            "Critics of the Catholic Church",
+            "Descartes scholars",
+            "Determinists",
+            "Dutch ethicists",
+            "Dutch logicians",
+            "Dutch people of Portuguese descent",
+            "Dutch people of Portuguese-Jewish descent",
+            "Dutch Sephardi Jews",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Freethought",
+            "Heresy in Judaism",
+            "Jewish philosophers",
+            "Jewish skeptics",
+            "Jewish translators of the Bible",
+            "Metaphilosophers",
+            "Metaphysicians"
+          ],
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Ethics",
+        "author": "Baruch Spinoza",
+        "count": 1,
+        "excerpts": [
+          "{iii} The Ethics Treatise on the Emendation of the Intellect Selected Letters Translated by SAMUEL SHIRLEY Edited, with Introductions, by SEYMOUR FELDMAN Hackett Publishing Company Indianapolis / Cambridge {iv} Baruch Spinoza: 1632-1677"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0915145197",
+        "average_rating": 4.01,
+        "format": "Paperback",
+        "book_id": "1163939",
+        "author_ids": [
+          "122092",
+          "122093",
+          "122094"
+        ],
+        "work_id": "1218789",
+        "text_reviews_count": 2,
+        "title_without_series": "The Ethics and Selected Letters",
+        "publication_day": 1,
+        "ratings_count": 10,
+        "publication_month": 12,
+        "publisher": "Hackett Publishing Co, Inc",
+        "publication_year": 1982,
+        "num_pages": 262,
+        "title": "The Ethics and Selected Letters",
+        "isbn13": "9780915145195",
+        "authors": [
+          "Baruch Spinoza",
+          "Samuel Shirley",
+          "Seymour Feldman"
+        ],
+        "description": "Published shortly after his death in 1677, Ethicsis undoubtedly Spinoza's greatest work--a fully cohesive philosophical system that strives to provide a coherent picture of reality & to comprehend the meaning of an ethical life. Following a logical step-by-step format, it defines in turn the nature of God, the mind, human bondage to the emotions & the power of understanding, moving from a consideration of the eternal to speculate upon humanity's place in the natural order, freedom & the path to attainable h...",
+        "link": "https://www.goodreads.com/book/show/1163939.The_Ethics_and_Selected_Letters"
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "birth_year": 1632,
+        "death_year": 1677,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1163939",
+        "target_author_ids": [
+          "122092",
+          "122093",
+          "122094"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Theological-Political Treatise",
+        "author": "Spinoza",
+        "count": 1,
+        "excerpts": [
+          "During his lifetime Spinoza himself published only two books: The Principles of Descartes\u2019 Philosophy and The Theological-Political Treatise; the latter bore only Spinoza\u2019s initials."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0872206076",
+        "average_rating": 4.03,
+        "format": "Paperback",
+        "book_id": "208657",
+        "author_ids": [
+          "122092",
+          "122094",
+          "122093"
+        ],
+        "work_id": "1850355",
+        "text_reviews_count": 38,
+        "title_without_series": "Theological-Political Treatise",
+        "publication_day": 15,
+        "ratings_count": 2933,
+        "publication_month": 11,
+        "publisher": "Hackett Publishing Company, Inc.",
+        "publication_year": 2001,
+        "num_pages": 296,
+        "title": "Theological-Political Treatise",
+        "isbn13": "9780872206076",
+        "authors": [
+          "Baruch Spinoza",
+          "Seymour Feldman",
+          "Samuel Shirley"
+        ],
+        "description": "Rational examination of the Old Testament to show that freedom of thought and speech is consistent with the religious life. True religion consists in practice of simple piety, independent of philosophical speculation.",
+        "link": "https://www.goodreads.com/book/show/208657.Theological_Political_Treatise"
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "birth_year": 1632,
+        "death_year": 1677,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "208657",
+        "target_author_ids": [
+          "122092",
+          "122094",
+          "122093"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Ethics",
+        "author": "Spinoza",
+        "count": 1,
+        "excerpts": [
+          "Letter 6 his worry about the theologians\u2019 response to his Short Treatise on God, Man and his Well-Being; Letter 13 his reluctance to publish the Ethics.]"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0915145197",
+        "average_rating": 4.01,
+        "format": "Paperback",
+        "book_id": "1163939",
+        "author_ids": [
+          "122092",
+          "122093",
+          "122094"
+        ],
+        "work_id": "1218789",
+        "text_reviews_count": 2,
+        "title_without_series": "The Ethics and Selected Letters",
+        "publication_day": 1,
+        "ratings_count": 10,
+        "publication_month": 12,
+        "publisher": "Hackett Publishing Co, Inc",
+        "publication_year": 1982,
+        "num_pages": 262,
+        "title": "The Ethics and Selected Letters",
+        "isbn13": "9780915145195",
+        "authors": [
+          "Baruch Spinoza",
+          "Samuel Shirley",
+          "Seymour Feldman"
+        ],
+        "description": "Published shortly after his death in 1677, Ethicsis undoubtedly Spinoza's greatest work--a fully cohesive philosophical system that strives to provide a coherent picture of reality & to comprehend the meaning of an ethical life. Following a logical step-by-step format, it defines in turn the nature of God, the mind, human bondage to the emotions & the power of understanding, moving from a consideration of the eternal to speculate upon humanity's place in the natural order, freedom & the path to attainable h...",
+        "link": "https://www.goodreads.com/book/show/1163939.The_Ethics_and_Selected_Letters"
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "birth_year": 1632,
+        "death_year": 1677,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1163939",
+        "target_author_ids": [
+          "122092",
+          "122093",
+          "122094"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Philosophical Works",
+        "author": "R. Descartes",
+        "count": 1,
+        "excerpts": [
+          "[R. Descartes, Philosophical Works, trans. E.S. Haldane and G.R.T. Ross (Cambridge U. Press, 1970) volume I, page 133.]"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "052109416X",
+        "average_rating": 4.05,
+        "format": "Paperback",
+        "book_id": "350720",
+        "author_ids": [
+          "36556",
+          "3334982",
+          "3979431"
+        ],
+        "work_id": "139446",
+        "text_reviews_count": 1,
+        "title_without_series": "Philosophical Works of Descartes: Volume 1",
+        "publication_day": 1,
+        "ratings_count": 3,
+        "publication_month": 1,
+        "publisher": "Cambridge University Press",
+        "publication_year": 1967,
+        "num_pages": 460,
+        "title": "Philosophical Works of Descartes: Volume 1",
+        "isbn13": "9780521094160",
+        "authors": [
+          "Rene Descartes",
+          "E.S. Haldane",
+          "G.R. Ross"
+        ],
+        "link": "https://www.goodreads.com/book/show/350720.Philosophical_Works_of_Descartes"
+      },
+      "wikipedia_match": {
+        "title": "Rene Descartes",
+        "birth_year": 1596,
+        "death_year": 1650,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "350720",
+        "target_author_ids": [
+          "36556",
+          "3334982",
+          "3979431"
+        ],
+        "target_person": {
+          "title": "Rene Descartes",
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Mathematical Principles of Natural Philosophy",
+        "author": "Isaac Newton",
+        "count": 1,
+        "excerpts": [
+          "A few decades after Spinoza this method found another advocate and practitioner in Isaac Newton, whose Mathematical Principles of Natural Philosophy (1687) is the finest specimen of this genre in the natural sciences."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0520088174",
+        "average_rating": 4.2,
+        "format": "Paperback",
+        "book_id": "231083",
+        "author_ids": [
+          "135106",
+          "15050",
+          "3939634"
+        ],
+        "work_id": "846336",
+        "text_reviews_count": 33,
+        "title_without_series": "The Principia: Mathematical Principles of Natural Philosophy",
+        "publication_day": 20,
+        "ratings_count": 3579,
+        "publication_month": 10,
+        "publisher": "University of California Press",
+        "publication_year": 1999,
+        "num_pages": 991,
+        "title": "The Principia: Mathematical Principles of Natural Philosophy",
+        "isbn13": "9780520088177",
+        "authors": [
+          "Isaac Newton",
+          "I. Bernard Cohen",
+          "Anne Whitman"
+        ],
+        "description": "In his monumental 1687 work Philosophiae Naturalis Principia Mathematica, known familiarly as the Principia, Isaac Newton laid out in mathematical terms the principles of time, force, and motion that have guided the development of modern physical science. Even after more than three centuries and the revolutions of Einsteinian relativity and quantum mechanics, Newtonian physics continues to account for many of the phenomena of the observed world, and Newtonian celestial dynamics is used to determine the orbi...",
+        "link": "https://www.goodreads.com/book/show/231083.The_Principia"
+      },
+      "wikipedia_match": {
+        "title": "Isaac Newton",
+        "birth_year": 1643,
+        "death_year": 1727,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "231083",
+        "target_author_ids": [
+          "135106",
+          "15050",
+          "3939634"
+        ],
+        "target_person": {
+          "title": "Isaac Newton",
+          "birth_year": 1643,
+          "death_year": 1727
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Meditations",
+        "author": "Descartes",
+        "count": 1,
+        "excerpts": [
+          "The personal ruminations of Descartes\u2019 Meditations or the polished literary style of some of the Italian Renaissance philosophical litterateurs was no substitute for rigorous philosophical proof."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0141192968",
+        "average_rating": 3.69,
+        "format": "Paperback",
+        "book_id": "8585068",
+        "author_ids": [
+          "36556"
+        ],
+        "work_id": "6299110",
+        "text_reviews_count": 8,
+        "title_without_series": "Meditations",
+        "publication_day": 26,
+        "ratings_count": 101,
+        "publication_month": 8,
+        "publisher": "Penguin Books",
+        "publication_year": 2010,
+        "num_pages": 144,
+        "title": "Meditations",
+        "isbn13": "9780141192963",
+        "authors": [
+          "Rene Descartes"
+        ],
+        "description": "Widely regarded as the father of modern Western philosophy, Descartes sought to look beyond established ideas and create a thought system based on reason. In this profound work he meditates on doubt, the human soul, God, truth and the nature of existence itself.",
+        "link": "https://www.goodreads.com/book/show/8585068-meditations"
+      },
+      "wikipedia_match": {
+        "title": "Rene Descartes",
+        "birth_year": 1596,
+        "death_year": 1650,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "8585068",
+        "target_author_ids": [
+          "36556"
+        ],
+        "target_person": {
+          "title": "Rene Descartes",
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Treatise on the Passions",
+        "author": "Descartes",
+        "count": 1,
+        "excerpts": [
+          "Descartes attempted it in his Treatise on the Passions; but to Spinoza, Descartes\u2019 efforts were not successful."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0872200353",
+        "average_rating": 3.55,
+        "format": "Paperback",
+        "book_id": "323656",
+        "author_ids": [
+          "36556",
+          "15305545"
+        ],
+        "work_id": "23857111",
+        "text_reviews_count": 6,
+        "title_without_series": "Passions of the Soul",
+        "publication_day": 15,
+        "ratings_count": 276,
+        "publication_month": 12,
+        "publisher": "Hackett Publishing Company, Inc.",
+        "publication_year": 1989,
+        "num_pages": 191,
+        "title": "Passions of the Soul",
+        "isbn13": "9780872200357",
+        "authors": [
+          "Rene Descartes",
+          "Stephen  Voss"
+        ],
+        "description": "In the treatise Passions of the Soul (Les passions de l'ame), the last of Descartes' published work, completed in 1649 and dedicated to Princess Elizabeth of Bohemia, the author contributes to a long tradition of theorizing \"the passions.\"",
+        "link": "https://www.goodreads.com/book/show/323656.Passions_of_the_Soul"
+      },
+      "wikipedia_match": {
+        "title": "Rene Descartes",
+        "birth_year": 1596,
+        "death_year": 1650,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "323656",
+        "target_author_ids": [
+          "36556",
+          "15305545"
+        ],
+        "target_person": {
+          "title": "Rene Descartes",
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Guide of The Perplexed",
+        "author": "Maimonides",
+        "count": 1,
+        "excerpts": [
+          "In fact, probably the first philosopher Spinoza read, Maimonides, ends his famous Guide of The Perplexed with a description of this kind of vision, which he characterizes as love of God through knowledge, a love that unites the lover with the beloved."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0226502260",
+        "average_rating": 4.29,
+        "format": "ebook",
+        "book_id": "19306348",
+        "author_ids": [
+          "194459",
+          "209541"
+        ],
+        "work_id": "18449270",
+        "text_reviews_count": 1,
+        "title_without_series": "The Guide of the Perplexed",
+        "ratings_count": 5,
+        "publisher": "Not Avail",
+        "num_pages": 367,
+        "title": "The Guide of the Perplexed",
+        "isbn13": "9780226502267",
+        "authors": [
+          "Maimonides",
+          "Shlomo Pines"
+        ],
+        "link": "https://www.goodreads.com/book/show/19306348-the-guide-of-the-perplexed"
+      },
+      "wikipedia_match": {
+        "title": "Maimonides",
+        "birth_year": 1135,
+        "death_year": 1204,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "19306348",
+        "target_author_ids": [
+          "194459",
+          "209541"
+        ],
+        "target_person": {
+          "title": "Maimonides",
+          "birth_year": 1135,
+          "death_year": 1204
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Categories",
+        "author": "Aristotle",
+        "count": 1,
+        "excerpts": [
+          "a substance was the basic metaphysical individual that could exist by itself (Aristotle, Categories, 2-5)."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1419156195",
+        "average_rating": 3.77,
+        "book_id": "2324975",
+        "author_ids": [
+          "2192"
+        ],
+        "work_id": "2570070",
+        "text_reviews_count": 28,
+        "title_without_series": "The Categories",
+        "ratings_count": 434,
+        "title": "The Categories",
+        "isbn13": "9781419156199",
+        "authors": [
+          "Aristotle"
+        ],
+        "description": "Categories (Lat. Categoriae, Greek Kategoriai Kategoriai) is a text from Aristotle's Organon that enumerates all the possible kinds of thing which can be the subject or the predicate of a proposition.\nThe Categories places every object of human apprehension under one of ten categories known to medieval writers as the praedicamenta. They are intended to enumerate everything which can be expressed without composition or structure, thus anything which can be either the subject or the predicate of a proposition...",
+        "link": "https://www.goodreads.com/book/show/2324975.The_Categories"
+      },
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "birth_year": -384,
+        "death_year": -322,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "2324975",
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "As You Like It",
+        "author": "Shakespeare",
+        "count": 1,
+        "excerpts": [
+          "Such expressions as \u2018in so far as,\u2019 \u2018in respect of\u2019 were commonplace in the philosophical language of the time, and Shakespeare makes fun of them in As You Like It, when Touchstone is asked by Corin how he likes a shepherd\u2019s life."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0486404323",
+        "average_rating": 3.83,
+        "format": "Paperback",
+        "book_id": "752934",
+        "author_ids": [
+          "947"
+        ],
+        "work_id": "702863",
+        "text_reviews_count": 13,
+        "title_without_series": "As You Like It",
+        "ratings_count": 91,
+        "publisher": "Dover Publications",
+        "num_pages": 96,
+        "title": "As You Like It",
+        "isbn13": "9780486404325",
+        "authors": [
+          "William Shakespeare"
+        ],
+        "description": "Unjustly deposed by his younger brother, the rightful duke retreats to the Forest of Arden and forms a utopia with his loyal followers while his daughter remains at court as a companion to her cousin. When forbidden romance enters their lives, the girls assume disguises and flee to the forest, where they encounter a magical world of friendly outlaws and wise fools. Both a lighthearted comedy and a deeper exploration of social and literary issues, this play features a memorable cast of characters and some of...",
+        "link": "https://www.goodreads.com/book/show/752934.As_You_Like_It"
+      },
+      "wikipedia_match": {
+        "title": "William Shakespeare",
+        "birth_year": 1564,
+        "death_year": 1616,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "752934",
+        "target_author_ids": [
+          "947"
+        ],
+        "target_person": {
+          "title": "William Shakespeare",
+          "birth_year": 1564,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Principles of Philosophy I",
+        "author": "Descartes",
+        "count": 1,
+        "excerpts": [
+          "[Descartes, Principles of Philosophy I, sections 60\u201361]"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0760793565",
+        "average_rating": 3.62,
+        "format": "Hardcover",
+        "book_id": "6619278",
+        "author_ids": [
+          "36556"
+        ],
+        "work_id": "12732216",
+        "text_reviews_count": 3,
+        "title_without_series": "Principles of Philosophy",
+        "publication_day": 1,
+        "ratings_count": 8,
+        "publication_month": 1,
+        "publisher": "Barnes & Noble",
+        "publication_year": 2008,
+        "num_pages": 71,
+        "title": "Principles of Philosophy",
+        "isbn13": "9780760793565",
+        "authors": [
+          "Rene Descartes"
+        ],
+        "description": "Principles of Philosophy was written in Latin by Ren Descartes. Published in 1644, it was intended to replace Aristotle's philosophy and traditional Scholastic Philosophy. This volume contains a letter of the author to the French translator of the Principles of Philosophy serving for a Preface and a letter to the most serene princess, Elizabeth, eldest daughter of Frederick, King of Bohemia, Count Palatine, and Elector of the Sacred Roman Empire. Principes de philosophie, by Claude Picot, under the supervis...",
+        "link": "https://www.goodreads.com/book/show/6619278-principles-of-philosophy"
+      },
+      "wikipedia_match": {
+        "title": "Rene Descartes",
+        "birth_year": 1596,
+        "death_year": 1650,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "6619278",
+        "target_author_ids": [
+          "36556"
+        ],
+        "target_person": {
+          "title": "Rene Descartes",
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Seventh Book of Euclid",
+        "author": "Euclid",
+        "count": 1,
+        "excerpts": [
+          "or else from the force of the proof of Proposition 19 of the Seventh Book of Euclid, to wit, the common property of proportionals."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1888009195",
+        "average_rating": 4.28,
+        "format": "Paperback",
+        "book_id": "214441",
+        "author_ids": [
+          "125792",
+          "267811",
+          "125791"
+        ],
+        "work_id": "207594",
+        "text_reviews_count": 46,
+        "title_without_series": "Euclid's Elements",
+        "publication_day": 1,
+        "ratings_count": 2460,
+        "publication_month": 1,
+        "publisher": "Green Lion Press",
+        "publication_year": 2002,
+        "num_pages": 499,
+        "title": "Euclid's Elements",
+        "isbn13": "9781888009194",
+        "authors": [
+          "Euclid",
+          "Thomas L. Heath",
+          "Dana Densmore"
+        ],
+        "description": "Green Lion Press has prepared a new one-volume edition of T.L. Heath's translation of the thirteen books of Euclid's Elements. In keeping with Green Lion's design commitment, diagrams have been placed on every spread for convenient reference while working through the proofs; running heads on every page indicate both Euclid's book number and proposition numbers for that page; and adequate space for notes is allowed between propositions and around diagrams. The all-new index has built into it a glossary of Eu...",
+        "link": "https://www.goodreads.com/book/show/214441.Euclid_s_Elements"
+      },
+      "wikipedia_match": {
+        "title": "Euclid",
+        "birth_year": -325,
+        "death_year": -265,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "214441",
+        "target_author_ids": [
+          "125792",
+          "267811",
+          "125791"
+        ],
+        "target_person": {
+          "title": "Euclid",
+          "birth_year": -325,
+          "death_year": -265
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Guide of The Perplexed",
+        "author": "Moses Maimonides",
+        "count": 1,
+        "excerpts": [
+          "The reference is most likely to Moses Maimonides, The Guide of The Perplexed, Part 1, Chapter 68."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0226502309",
+        "average_rating": 4.29,
+        "format": "Paperback",
+        "book_id": "366583",
+        "author_ids": [
+          "194459",
+          "1015",
+          "209541"
+        ],
+        "work_id": "18449270",
+        "text_reviews_count": 9,
+        "title_without_series": "The Guide of the Perplexed, Volume 1",
+        "publication_day": 15,
+        "ratings_count": 127,
+        "publication_month": 12,
+        "publisher": "University Of Chicago Press",
+        "publication_year": 1974,
+        "num_pages": 384,
+        "title": "The Guide of the Perplexed, Volume 1",
+        "isbn13": "9780226502304",
+        "authors": [
+          "Maimonides",
+          "Leo Strauss",
+          "Shlomo Pines"
+        ],
+        "description": "This monument of rabbinical exegesis written at the end of the twelfth century has exerted an immense and continuing influence upon Jewish thought. Its aim is to liberate people from the tormenting perplexities arising from their understanding of the Bible according only to its literal meaning. This edition contains extensive introductions by Shlomo Pines and Leo Strauss, a leading authority on Maimonides.",
+        "link": "https://www.goodreads.com/book/show/366583.The_Guide_of_the_Perplexed_Volume_1"
+      },
+      "wikipedia_match": {
+        "title": "Maimonides",
+        "birth_year": 1135,
+        "death_year": 1204,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "366583",
+        "target_author_ids": [
+          "194459",
+          "1015",
+          "209541"
+        ],
+        "target_person": {
+          "title": "Maimonides",
+          "birth_year": 1135,
+          "death_year": 1204
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Rules for the Direction of the Mind",
+        "author": "Descartes",
+        "count": 1,
+        "excerpts": [
+          "In this respect the TIE bears comparison with Descartes\u2019 early essay Rules for the Direction of the Mind or his Discourse on Method."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0672603349",
+        "average_rating": 3.66,
+        "format": "Paperback",
+        "book_id": "318740",
+        "author_ids": [
+          "36556",
+          "497419"
+        ],
+        "work_id": "309524",
+        "text_reviews_count": 10,
+        "title_without_series": "Rules for the Direction of the Mind",
+        "ratings_count": 171,
+        "publisher": "Bobbs-Merrill",
+        "publication_year": 1961,
+        "num_pages": 108,
+        "title": "Rules for the Direction of the Mind",
+        "isbn13": "9780672603341",
+        "authors": [
+          "Rene Descartes",
+          "Laurence J. Lafleur"
+        ],
+        "description": "qw`d ltwjyh lfkr , ktb llfylswf lmbd` rynyh dykrt tnwl fyh lqw`d l'ssy@ lty stkhlSh ltwjyh lfkr lnsny nHw m`rf@ 'fDl wytbn~ dykrt fyh fkr@ twHyd lm`rf klh fyqwl \"lyst l`lwm jmy` sw~ lHkm@ lnsns@, why `ynh tZl wHdh mhm tnw`t lmwDy` ltytbHth fyh\",",
+        "link": "https://www.goodreads.com/book/show/318740.Rules_for_the_Direction_of_the_Mind"
+      },
+      "wikipedia_match": {
+        "title": "Rene Descartes",
+        "birth_year": 1596,
+        "death_year": 1650,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "318740",
+        "target_author_ids": [
+          "36556",
+          "497419"
+        ],
+        "target_person": {
+          "title": "Rene Descartes",
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Discourse on Method",
+        "author": "Descartes",
+        "count": 1,
+        "excerpts": [
+          "In this respect the TIE bears comparison with Descartes\u2019 early essay Rules for the Direction of the Mind or his Discourse on Method."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0872204227",
+        "average_rating": 3.7,
+        "format": "Paperback",
+        "book_id": "159418",
+        "author_ids": [
+          "36556",
+          "586904"
+        ],
+        "work_id": "17612730",
+        "text_reviews_count": 162,
+        "title_without_series": "Discourse on Method",
+        "publication_day": 15,
+        "ratings_count": 10772,
+        "publication_month": 9,
+        "publisher": "Hackett Publishing Company, Inc.",
+        "publication_year": 1998,
+        "num_pages": 58,
+        "title": "Discourse on Method",
+        "isbn13": "9780872204225",
+        "authors": [
+          "Rene Descartes",
+          "Donald A. Cress"
+        ],
+        "description": "By far the most widely used translation in North American college classrooms, Donald A. Cress's translation from the French of the Adam and Tannery critical edition is prized for its accuracy, elegance, and economy. The translation featured in the Third Edition has been thoroughly revised from the 1979 First Edition and includes page references to the critical edition for ease of comparison.",
+        "link": "https://www.goodreads.com/book/show/159418.Discourse_on_Method"
+      },
+      "wikipedia_match": {
+        "title": "Rene Descartes",
+        "birth_year": 1596,
+        "death_year": 1650,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "159418",
+        "target_author_ids": [
+          "36556",
+          "586904"
+        ],
+        "target_person": {
+          "title": "Rene Descartes",
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Meno",
+        "author": "Plato",
+        "count": 1,
+        "excerpts": [
+          "Spinoza seems to be caught in the same circle or vicious regress that Plato in the Meno and Descartes in the Third Meditation were faced with."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1419133969",
+        "average_rating": 3.94,
+        "format": "Paperback",
+        "book_id": "3350311",
+        "author_ids": [
+          "879"
+        ],
+        "work_id": "140111",
+        "text_reviews_count": 1,
+        "title_without_series": "Meno",
+        "ratings_count": 6,
+        "title": "Meno",
+        "isbn13": "9781419133961",
+        "authors": [
+          "Plato"
+        ],
+        "link": "https://www.goodreads.com/book/show/3350311-meno"
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "3350311",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Third Meditation",
+        "author": "Descartes",
+        "count": 1,
+        "excerpts": [
+          "Spinoza seems to be caught in the same circle or vicious regress that Plato in the Meno and Descartes in the Third Meditation were faced with."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0872201929",
+        "average_rating": 3.69,
+        "format": "Paperback",
+        "book_id": "30658",
+        "author_ids": [
+          "36556",
+          "586904"
+        ],
+        "work_id": "6299110",
+        "text_reviews_count": 268,
+        "title_without_series": "Meditations on First Philosophy",
+        "publication_day": 1,
+        "ratings_count": 14958,
+        "publication_month": 10,
+        "publisher": "Hackett Publishing Company, Inc.",
+        "publication_year": 1993,
+        "num_pages": 59,
+        "title": "Meditations on First Philosophy",
+        "isbn13": "9780872201927",
+        "authors": [
+          "Rene Descartes",
+          "Donald A. Cress"
+        ],
+        "description": "Descartes's Meditations on First Philosophy, the fundamental and originating work of the modern era in Western philosophy, is presented here in Donald Cress's completely revised edition of his well-established translation, bringing this version even closer to Descartes's original, while maintaining its clear and accessible style.",
+        "link": "https://www.goodreads.com/book/show/30658.Meditations_on_First_Philosophy"
+      },
+      "wikipedia_match": {
+        "title": "Rene Descartes",
+        "birth_year": 1596,
+        "death_year": 1650,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "30658",
+        "target_author_ids": [
+          "36556",
+          "586904"
+        ],
+        "target_person": {
+          "title": "Rene Descartes",
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Principles of Cartesian Philosophy Demonstrated In Geometrical Form",
+        "author": "Baruch Spinoza",
+        "count": 1,
+        "excerpts": [
+          "as I have demonstrated in the Scholium to Proposition 15 of my \u201cPrinciples of Cartesian Philosophy Demonstrated In Geometrical Form,\u201d Part I."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0872204006",
+        "average_rating": 3.92,
+        "format": "Paperback",
+        "book_id": "1920620",
+        "author_ids": [
+          "122092"
+        ],
+        "work_id": "1922772",
+        "text_reviews_count": 2,
+        "title_without_series": "Principles of Cartesian Philosophy with Metaphysical Thoughts & Lodewijk Meyer's Inaugural Dissertation",
+        "publication_day": 15,
+        "ratings_count": 20,
+        "publication_month": 3,
+        "publisher": "Hackett Publishing Company, Inc.",
+        "publication_year": 1998,
+        "num_pages": 192,
+        "title": "Principles of Cartesian Philosophy with Metaphysical Thoughts & Lodewijk Meyer's Inaugural Dissertation",
+        "isbn13": "9780872204003",
+        "authors": [
+          "Baruch Spinoza"
+        ],
+        "description": "With meticulous scholarship and an accurate, highly readable translation, this volume sheds light not only on Spinoza's debt to Descartes but also on the development of Spinoza's own thought.\nAppearing for the first time in English translation, Lodewijk Meyer's inaugural dissertation on matter (1683)--relevant for its comments on Descartes, Spinoza, and other thinkers of the time--is appended with notes and a short commentary. Cross-references to Descartes's Principles of Philosophyare provided in an index,...",
+        "link": "https://www.goodreads.com/book/show/1920620.Principles_of_Cartesian_Philosophy_with_Metaphysical_Thoughts_Lodewijk_Meyer_s_Inaugural_Dissertation"
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "birth_year": 1632,
+        "death_year": 1677,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1920620",
+        "target_author_ids": [
+          "122092"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Elements",
+        "author": "Euclid",
+        "count": 1,
+        "excerpts": [
+          "When I was studying Euclid\u2019s Elements, I understood early on that the three angles of a triangle are equal to two right angles, and I clearly perceived this property of a triangle although I was ignorant of many others."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1888009195",
+        "average_rating": 4.28,
+        "format": "Paperback",
+        "book_id": "214441",
+        "author_ids": [
+          "125792",
+          "267811",
+          "125791"
+        ],
+        "work_id": "207594",
+        "text_reviews_count": 46,
+        "title_without_series": "Euclid's Elements",
+        "publication_day": 1,
+        "ratings_count": 2460,
+        "publication_month": 1,
+        "publisher": "Green Lion Press",
+        "publication_year": 2002,
+        "num_pages": 499,
+        "title": "Euclid's Elements",
+        "isbn13": "9781888009194",
+        "authors": [
+          "Euclid",
+          "Thomas L. Heath",
+          "Dana Densmore"
+        ],
+        "description": "Green Lion Press has prepared a new one-volume edition of T.L. Heath's translation of the thirteen books of Euclid's Elements. In keeping with Green Lion's design commitment, diagrams have been placed on every spread for convenient reference while working through the proofs; running heads on every page indicate both Euclid's book number and proposition numbers for that page; and adequate space for notes is allowed between propositions and around diagrams. The all-new index has built into it a glossary of Eu...",
+        "link": "https://www.goodreads.com/book/show/214441.Euclid_s_Elements"
+      },
+      "wikipedia_match": {
+        "title": "Euclid",
+        "birth_year": -325,
+        "death_year": -265,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "214441",
+        "target_author_ids": [
+          "125792",
+          "267811",
+          "125791"
+        ],
+        "target_person": {
+          "title": "Euclid",
+          "birth_year": -325,
+          "death_year": -265
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Novum Organum",
+        "author": "Francis Bacon",
+        "count": 1,
+        "excerpts": [
+          "Francis Bacon, Novum Organum I: 41-51."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 3.72,
+        "book_id": "6506054",
+        "author_ids": [
+          "50964"
+        ],
+        "work_id": "2131337",
+        "text_reviews_count": 1,
+        "title_without_series": "The New Organon (Novum Organum) or;  The True Directions Concerning the Interpretation of Nature",
+        "ratings_count": 1,
+        "title": "The New Organon (Novum Organum) or;  The True Directions Concerning the Interpretation of Nature",
+        "authors": [
+          "Francis Bacon"
+        ],
+        "description": "The Novum Organumis a philosophical work by Francis Bacon published in 1620. The title translates as \"new instrument\". This is a reference to Aristotle's work Organon, which was his treatise on logic and syllogism. In Novum Organum, Bacon details a new system of logic he believes to be superior to the old ways of syllogism. For Bacon, finding the essence of a thing was a simple process of reduction, and the use of inductive reasoning. In finding the cause of a phenomenal naturesuch as heat, one must list al...",
+        "link": "https://www.goodreads.com/book/show/6506054-the-new-organon-novum-organum-or-the-true-directions-concerning-the"
+      },
+      "wikipedia_match": {
+        "title": "Francis Bacon",
+        "birth_year": 1561,
+        "death_year": 1626,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "6506054",
+        "target_author_ids": [
+          "50964"
+        ],
+        "target_person": {
+          "title": "Francis Bacon",
+          "birth_year": 1561,
+          "death_year": 1626
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Metaphysical Thoughts",
+        "author": "Baruch Spinoza",
+        "count": 1,
+        "excerpts": [
+          "Spinoza alludes here to his Metaphysical Thoughts, Part II, chapters 7-9, a work that is the appendix to his Principles of Cartesian Philosophy."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0872204006",
+        "average_rating": 3.92,
+        "format": "Paperback",
+        "book_id": "1920620",
+        "author_ids": [
+          "122092"
+        ],
+        "work_id": "1922772",
+        "text_reviews_count": 2,
+        "title_without_series": "Principles of Cartesian Philosophy with Metaphysical Thoughts & Lodewijk Meyer's Inaugural Dissertation",
+        "publication_day": 15,
+        "ratings_count": 20,
+        "publication_month": 3,
+        "publisher": "Hackett Publishing Company, Inc.",
+        "publication_year": 1998,
+        "num_pages": 192,
+        "title": "Principles of Cartesian Philosophy with Metaphysical Thoughts & Lodewijk Meyer's Inaugural Dissertation",
+        "isbn13": "9780872204003",
+        "authors": [
+          "Baruch Spinoza"
+        ],
+        "description": "With meticulous scholarship and an accurate, highly readable translation, this volume sheds light not only on Spinoza's debt to Descartes but also on the development of Spinoza's own thought.\nAppearing for the first time in English translation, Lodewijk Meyer's inaugural dissertation on matter (1683)--relevant for its comments on Descartes, Spinoza, and other thinkers of the time--is appended with notes and a short commentary. Cross-references to Descartes's Principles of Philosophyare provided in an index,...",
+        "link": "https://www.goodreads.com/book/show/1920620.Principles_of_Cartesian_Philosophy_with_Metaphysical_Thoughts_Lodewijk_Meyer_s_Inaugural_Dissertation"
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "birth_year": 1632,
+        "death_year": 1677,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1920620",
+        "target_author_ids": [
+          "122092"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Principles of Cartesian Philosophy",
+        "author": "Baruch Spinoza",
+        "count": 1,
+        "excerpts": [
+          "Spinoza alludes here to his Metaphysical Thoughts, Part II, chapters 7-9, a work that is the appendix to his Principles of Cartesian Philosophy."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0872204006",
+        "average_rating": 3.92,
+        "format": "Paperback",
+        "book_id": "1920620",
+        "author_ids": [
+          "122092"
+        ],
+        "work_id": "1922772",
+        "text_reviews_count": 2,
+        "title_without_series": "Principles of Cartesian Philosophy with Metaphysical Thoughts & Lodewijk Meyer's Inaugural Dissertation",
+        "publication_day": 15,
+        "ratings_count": 20,
+        "publication_month": 3,
+        "publisher": "Hackett Publishing Company, Inc.",
+        "publication_year": 1998,
+        "num_pages": 192,
+        "title": "Principles of Cartesian Philosophy with Metaphysical Thoughts & Lodewijk Meyer's Inaugural Dissertation",
+        "isbn13": "9780872204003",
+        "authors": [
+          "Baruch Spinoza"
+        ],
+        "description": "With meticulous scholarship and an accurate, highly readable translation, this volume sheds light not only on Spinoza's debt to Descartes but also on the development of Spinoza's own thought.\nAppearing for the first time in English translation, Lodewijk Meyer's inaugural dissertation on matter (1683)--relevant for its comments on Descartes, Spinoza, and other thinkers of the time--is appended with notes and a short commentary. Cross-references to Descartes's Principles of Philosophyare provided in an index,...",
+        "link": "https://www.goodreads.com/book/show/1920620.Principles_of_Cartesian_Philosophy_with_Metaphysical_Thoughts_Lodewijk_Meyer_s_Inaugural_Dissertation"
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "birth_year": 1632,
+        "death_year": 1677,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1920620",
+        "target_author_ids": [
+          "122092"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Principles of Cartesian Philosophy",
+        "author": "Ludwig Meyer",
+        "count": 1,
+        "excerpts": [
+          "Ludwig Meyer had written a preface to Spinoza\u2019s Principles of Cartesian Philosophy, in which he warned the reader that Spinoza differed from Descartes on some important issues, especially on the topic of freedom."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0872204006",
+        "average_rating": 3.92,
+        "format": "Paperback",
+        "book_id": "1920620",
+        "author_ids": [
+          "122092"
+        ],
+        "work_id": "1922772",
+        "text_reviews_count": 2,
+        "title_without_series": "Principles of Cartesian Philosophy with Metaphysical Thoughts & Lodewijk Meyer's Inaugural Dissertation",
+        "publication_day": 15,
+        "ratings_count": 20,
+        "publication_month": 3,
+        "publisher": "Hackett Publishing Company, Inc.",
+        "publication_year": 1998,
+        "num_pages": 192,
+        "title": "Principles of Cartesian Philosophy with Metaphysical Thoughts & Lodewijk Meyer's Inaugural Dissertation",
+        "isbn13": "9780872204003",
+        "authors": [
+          "Baruch Spinoza"
+        ],
+        "description": "With meticulous scholarship and an accurate, highly readable translation, this volume sheds light not only on Spinoza's debt to Descartes but also on the development of Spinoza's own thought.\nAppearing for the first time in English translation, Lodewijk Meyer's inaugural dissertation on matter (1683)--relevant for its comments on Descartes, Spinoza, and other thinkers of the time--is appended with notes and a short commentary. Cross-references to Descartes's Principles of Philosophyare provided in an index,...",
+        "link": "https://www.goodreads.com/book/show/1920620.Principles_of_Cartesian_Philosophy_with_Metaphysical_Thoughts_Lodewijk_Meyer_s_Inaugural_Dissertation"
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "birth_year": 1632,
+        "death_year": 1677,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1920620",
+        "target_author_ids": [
+          "122092"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Moral Letters",
+        "author": "Seneca",
+        "count": 1,
+        "excerpts": [
+          "(A similar expression occurs in Seneca\u2019s Moral Letters, Number 33.)"
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 4.33,
+        "book_id": "30228592",
+        "author_ids": [
+          "4918776"
+        ],
+        "work_id": "93900",
+        "text_reviews_count": 2,
+        "title_without_series": "Moral Letters to Lucilius",
+        "ratings_count": 16,
+        "title": "Moral Letters to Lucilius",
+        "authors": [
+          "Seneca"
+        ],
+        "description": "The Roman statesman and philosopher Seneca (4 BCE-65 CE) recorded his moral philosophy and reflections on life as a highly original kind of correspondence. Letters on Ethicsincludes vivid descriptions of town and country life in Nero's Italy, discussions of poetry and oratory, and philosophical training for Seneca's friend Lucilius. This volume, the first complete English translation in nearly a century, makes the Lettersmore accessible than ever before.\nWritten as much for a general audience as for Luciliu...",
+        "link": "https://www.goodreads.com/book/show/30228592-moral-letters-to-lucilius"
+      },
+      "wikipedia_match": {
+        "title": "Seneca",
+        "birth_year": -54,
+        "death_year": 39,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "30228592",
+        "target_author_ids": [
+          "4918776"
+        ],
+        "target_person": {
+          "title": "Seneca",
+          "birth_year": -54,
+          "death_year": 39
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Expressionism in Philosophy: Spinoza",
+        "author": "Gilles Deleuze",
+        "count": 1,
+        "excerpts": [
+          "Deleuze, Gilles.\nExpressionism in Philosophy: Spinoza.\nTrans, by M. Joughin.\nNew York: Zone Books, 1990."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0942299515",
+        "average_rating": 4.22,
+        "format": "Paperback",
+        "book_id": "203327",
+        "author_ids": [
+          "13009",
+          "3080130"
+        ],
+        "work_id": "196722",
+        "text_reviews_count": 4,
+        "title_without_series": "Expressionism in Philosophy: Spinoza",
+        "publication_day": 18,
+        "ratings_count": 133,
+        "publication_month": 2,
+        "publisher": "Zone Books",
+        "publication_year": 1992,
+        "num_pages": 448,
+        "title": "Expressionism in Philosophy: Spinoza",
+        "isbn13": "9780942299519",
+        "authors": [
+          "Gilles Deleuze",
+          "Martin Joughin"
+        ],
+        "description": "Expressionism in Philosophy is both a pivotal reading of Spinoza's work and also a crucial text within the development of Deleuze's own thought. It was the culmination of a series of monographic studies by Deleuze (on Hume, Bergson, Nietzsche, Proust, Kant, and Sacher-Masoch), and it prepared the transition from these abstract treatments of historical schemes of experience to the nomadology of Capitalism and Schizophrenia.In this extraordinary work, Deleuze reflects on one of the thinkers of the past who mo...",
+        "link": "https://www.goodreads.com/book/show/203327.Expressionism_in_Philosophy"
+      },
+      "wikipedia_match": {
+        "title": "Gilles Deleuze",
+        "birth_year": 1925,
+        "death_year": 1995,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "203327",
+        "target_author_ids": [
+          "13009",
+          "3080130"
+        ],
+        "target_person": {
+          "title": "Gilles Deleuze",
+          "birth_year": 1925,
+          "death_year": 1995
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Spinoza",
+        "author": "Alan Donagan",
+        "count": 1,
+        "excerpts": [
+          "Donagan, Alan.\nSpinoza.\nChicago: University of Chicago Press, 1988."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0226155692",
+        "average_rating": 3.67,
+        "format": "Hardcover",
+        "book_id": "3732140",
+        "author_ids": [
+          "199852"
+        ],
+        "work_id": "3775931",
+        "text_reviews_count": 2,
+        "title_without_series": "Spinoza",
+        "publication_day": 15,
+        "ratings_count": 6,
+        "publication_month": 6,
+        "publisher": "University Of Chicago Press",
+        "publication_year": 1989,
+        "num_pages": 238,
+        "title": "Spinoza",
+        "isbn13": "9780226155692",
+        "authors": [
+          "Alan Donagan"
+        ],
+        "link": "https://www.goodreads.com/book/show/3732140-spinoza"
+      },
+      "wikipedia_match": {
+        "title": "Alan Donagan",
+        "birth_year": 1925,
+        "death_year": 1991,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "3732140",
+        "target_author_ids": [
+          "199852"
+        ],
+        "target_person": {
+          "title": "Alan Donagan",
+          "birth_year": 1925,
+          "death_year": 1991
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "A Study of Spinoza\u2019s Ethics",
+        "author": "Jonathan Bennett",
+        "count": 1,
+        "excerpts": [
+          "Bennett, Jonathan.\nA Study of Spinoza\u2019s Ethics.\nIndianapolis: Hackett, 1984."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0915145839",
+        "average_rating": 3.85,
+        "format": "Paperback",
+        "book_id": "996623",
+        "author_ids": [
+          "168538"
+        ],
+        "work_id": "202000",
+        "text_reviews_count": 1,
+        "title_without_series": "A Study of Spinoza's Ethics",
+        "publication_day": 1,
+        "ratings_count": 9,
+        "publication_month": 4,
+        "publisher": "Hackett Publishing Company",
+        "publication_year": 1984,
+        "title": "A Study of Spinoza's Ethics",
+        "isbn13": "9780915145836",
+        "authors": [
+          "Jonathan Francis Bennett"
+        ],
+        "description": "\"With an astonishing erudition . . . and in a direct no-nonsense style, Bennett expounds, compares, and criticizes Spinoza's theses. . . . No one can fail to profit from it. Bennett has succeeded in making Spinoza a philosopher of our time.\" --W. N. A. Klever, Studia Spinoza",
+        "link": "https://www.goodreads.com/book/show/996623.A_Study_of_Spinoza_s_Ethics"
+      },
+      "wikipedia_match": {
+        "title": "Jonathan Francis Bennett",
+        "birth_year": 1930,
+        "death_year": 2024,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "996623",
+        "target_author_ids": [
+          "168538"
+        ],
+        "target_person": {
+          "title": "Jonathan Francis Bennett",
+          "birth_year": 1930,
+          "death_year": 2024
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Behind the Geometrical Method",
+        "author": "E. Curley",
+        "count": 1,
+        "excerpts": [
+          "Curley, E. Behind the Geometrical Method.\nPrinceton: Princeton University Press, 1988."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "069102037X",
+        "average_rating": 4.06,
+        "format": "Paperback",
+        "book_id": "1382943",
+        "author_ids": [
+          "122102"
+        ],
+        "work_id": "1372941",
+        "text_reviews_count": 3,
+        "title_without_series": "Behind the Geometrical Method: A Reading of Spinoza's Ethics",
+        "publication_day": 21,
+        "ratings_count": 15,
+        "publication_month": 5,
+        "publisher": "Princeton University Press",
+        "publication_year": 1988,
+        "num_pages": 200,
+        "title": "Behind the Geometrical Method: A Reading of Spinoza's Ethics",
+        "isbn13": "9780691020372",
+        "authors": [
+          "Edwin M. Curley"
+        ],
+        "description": "This book is the fruit of twenty-five years of study of Spinoza by the editor and translator of a new and widely acclaimed edition of Spinoza's collected works. Based on three lectures delivered at the Hebrew University of Jerusalem in 1984, the work provides a useful focal point for continued discussion of the relationship between Descartes and Spinoza, while also serving as a readable and relatively brief but substantial introduction to the Ethics for students. Behind the Geometrical Method is actually tw...",
+        "link": "https://www.goodreads.com/book/show/1382943.Behind_the_Geometrical_Method"
+      },
+      "wikipedia_match": {
+        "title": "Edwin M. Curley",
+        "birth_year": 1937,
+        "death_year": null,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1382943",
+        "target_author_ids": [
+          "122102"
+        ],
+        "target_person": {
+          "title": "Edwin M. Curley",
+          "birth_year": 1937,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Novalis",
+        "count": 1,
+        "excerpts": [
+          "But as the German poet Novalis remarked, Spinoza was \u201ca God-intoxicated man\u201d; indeed, there are passages in the Ethics in which Spinoza speaks of God with almost {11} mystical ardor, especially in Part V."
+        ],
+        "canonical_author": "Novalis"
+      },
+      "goodreads_match": {
+        "author_id": "187510",
+        "name": "Novalis",
+        "average_rating": "3.96",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Novalis",
+          "page_id": 214866,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "1772 births",
+            "1801 deaths",
+            "Novalis| ",
+            "People from Mansfeld-S\u00fcdharz",
+            "German Lutherans",
+            "German monarchists",
+            "Romantic philosophers",
+            "Romantic poets",
+            "Natural philosophers",
+            "Leipzig University alumni",
+            "Hardenberg family",
+            "18th-century German poets",
+            "19th-century German poets",
+            "19th-century German male writers",
+            "19th-century deaths from tuberculosis",
+            "German male poets",
+            "Scholars from the Electorate of Saxony",
+            "Poets from the Electorate of Saxony",
+            "Deaths from tuberculosis",
+            "18th-century pseudonymous writers",
+            "19th-century pseudonymous writers",
+            "Protestant mystics",
+            "German Christian mystics",
+            "German idealists"
+          ],
+          "birth_year": 1772,
+          "death_year": 1801
+        }
+      },
+      "wikipedia_match": {
+        "title": "Novalis",
+        "page_id": 214866,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "1772 births",
+          "1801 deaths",
+          "Novalis| ",
+          "People from Mansfeld-S\u00fcdharz",
+          "German Lutherans",
+          "German monarchists",
+          "Romantic philosophers",
+          "Romantic poets",
+          "Natural philosophers",
+          "Leipzig University alumni",
+          "Hardenberg family",
+          "18th-century German poets",
+          "19th-century German poets",
+          "19th-century German male writers",
+          "19th-century deaths from tuberculosis",
+          "German male poets",
+          "Scholars from the Electorate of Saxony",
+          "Poets from the Electorate of Saxony",
+          "Deaths from tuberculosis",
+          "18th-century pseudonymous writers",
+          "19th-century pseudonymous writers",
+          "Protestant mystics",
+          "German Christian mystics",
+          "German idealists"
+        ],
+        "birth_year": 1772,
+        "death_year": 1801
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "187510"
+        ],
+        "target_person": {
+          "title": "Novalis",
+          "page_id": 214866,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "1772 births",
+            "1801 deaths",
+            "Novalis| ",
+            "People from Mansfeld-S\u00fcdharz",
+            "German Lutherans",
+            "German monarchists",
+            "Romantic philosophers",
+            "Romantic poets",
+            "Natural philosophers",
+            "Leipzig University alumni",
+            "Hardenberg family",
+            "18th-century German poets",
+            "19th-century German poets",
+            "19th-century German male writers",
+            "19th-century deaths from tuberculosis",
+            "German male poets",
+            "Scholars from the Electorate of Saxony",
+            "Poets from the Electorate of Saxony",
+            "Deaths from tuberculosis",
+            "18th-century pseudonymous writers",
+            "19th-century pseudonymous writers",
+            "Protestant mystics",
+            "German Christian mystics",
+            "German idealists"
+          ],
+          "birth_year": 1772,
+          "death_year": 1801
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Berkeley",
+        "count": 1,
+        "excerpts": [
+          "Nor is it the case that when we describe someone as thinking we really are referring to movements in his nervous system, as Hobbes claimed; or that when we describe someone as eating an apple we are referring to his sensations of eating the apple, as Berkeley believed."
+        ],
+        "canonical_author": "Berkeley"
+      },
+      "goodreads_match": {
+        "author_id": "92770",
+        "name": "George Berkeley",
+        "average_rating": "3.72",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "George Berkeley",
+          "page_id": 11958,
+          "infoboxes": [
+            "Christian leader",
+            "philosopher"
+          ],
+          "categories": [
+            "George Berkeley| ",
+            "1685 births",
+            "1753 deaths",
+            "17th-century Anglican theologians",
+            "18th-century Anglican theologians",
+            "18th-century Irish male writers",
+            "18th-century Irish philosophers",
+            "18th-century Irish writers",
+            "17th-century Anglo-Irish people",
+            "18th-century Anglo-Irish people",
+            "Academics of Trinity College Dublin",
+            "Alumni of Trinity College Dublin",
+            "Anglican bishops of Cloyne",
+            "Anglican philosophers",
+            "Deans of Derry",
+            "Deans of Dromore",
+            "Empiricists",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Fellows of Trinity College Dublin",
+            "History of calculus",
+            "Idealists",
+            "Irish expatriates in England",
+            "Irish philosophers",
+            "Natural philosophers",
+            "Irish religious writers",
+            "Irish slave owners",
+            "People educated at Kilkenny College",
+            "Christian clergy from County Kilkenny",
+            "Philosophers of science"
+          ],
+          "birth_year": 1685,
+          "death_year": 1753
+        }
+      },
+      "wikipedia_match": {
+        "title": "George Berkeley",
+        "page_id": 11958,
+        "infoboxes": [
+          "Christian leader",
+          "philosopher"
+        ],
+        "categories": [
+          "George Berkeley| ",
+          "1685 births",
+          "1753 deaths",
+          "17th-century Anglican theologians",
+          "18th-century Anglican theologians",
+          "18th-century Irish male writers",
+          "18th-century Irish philosophers",
+          "18th-century Irish writers",
+          "17th-century Anglo-Irish people",
+          "18th-century Anglo-Irish people",
+          "Academics of Trinity College Dublin",
+          "Alumni of Trinity College Dublin",
+          "Anglican bishops of Cloyne",
+          "Anglican philosophers",
+          "Deans of Derry",
+          "Deans of Dromore",
+          "Empiricists",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Fellows of Trinity College Dublin",
+          "History of calculus",
+          "Idealists",
+          "Irish expatriates in England",
+          "Irish philosophers",
+          "Natural philosophers",
+          "Irish religious writers",
+          "Irish slave owners",
+          "People educated at Kilkenny College",
+          "Christian clergy from County Kilkenny",
+          "Philosophers of science"
+        ],
+        "birth_year": 1685,
+        "death_year": 1753
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "92770"
+        ],
+        "target_person": {
+          "title": "George Berkeley",
+          "page_id": 11958,
+          "infoboxes": [
+            "Christian leader",
+            "philosopher"
+          ],
+          "categories": [
+            "George Berkeley| ",
+            "1685 births",
+            "1753 deaths",
+            "17th-century Anglican theologians",
+            "18th-century Anglican theologians",
+            "18th-century Irish male writers",
+            "18th-century Irish philosophers",
+            "18th-century Irish writers",
+            "17th-century Anglo-Irish people",
+            "18th-century Anglo-Irish people",
+            "Academics of Trinity College Dublin",
+            "Alumni of Trinity College Dublin",
+            "Anglican bishops of Cloyne",
+            "Anglican philosophers",
+            "Deans of Derry",
+            "Deans of Dromore",
+            "Empiricists",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Fellows of Trinity College Dublin",
+            "History of calculus",
+            "Idealists",
+            "Irish expatriates in England",
+            "Irish philosophers",
+            "Natural philosophers",
+            "Irish religious writers",
+            "Irish slave owners",
+            "People educated at Kilkenny College",
+            "Christian clergy from County Kilkenny",
+            "Philosophers of science"
+          ],
+          "birth_year": 1685,
+          "death_year": 1753
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Nietzsche",
+        "count": 1,
+        "excerpts": [
+          "Spinoza\u2019s free spirit, to use Nietzsche\u2019s term, is a person who says \u2018Yes\u2019 to life, not \u2018No.\u2019"
+        ],
+        "canonical_author": "Nietzsche"
+      },
+      "goodreads_match": {
+        "author_id": "1938",
+        "name": "Friedrich Nietzsche",
+        "average_rating": "4.04",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from L\u00fctzen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "page_id": 10671,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Friedrich Nietzsche| ",
+          "1844 births",
+          "1900 deaths",
+          "People from L\u00fctzen",
+          "People from the Province of Saxony",
+          "Former Lutherans",
+          "19th-century German non-fiction writers",
+          "19th-century German male writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German male musicians",
+          "19th-century Prussian people",
+          "Aphorists",
+          "German critics of Christianity",
+          "Determinists",
+          "Existentialists",
+          "German classical philologists",
+          "Hellenists",
+          "German metaphysicians",
+          "German philosophers of art",
+          "Philosophers of time",
+          "Philosophers of nihilism",
+          "German philosophy writers",
+          "Writers from Saxony-Anhalt",
+          "Leipzig University alumni",
+          "University of Bonn alumni",
+          "Academic staff of the University of Basel",
+          "People associated with the University of Basel",
+          "Prussian Army personnel",
+          "German military personnel of the Franco-Prussian War"
+        ],
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1938"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from L\u00fctzen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Jonathan Bennett",
+        "count": 1,
+        "excerpts": [
+          "For an inter-relating of the two passages, see Jonathan Bennett, \u2018Spinoza\u2019s Vacuum Argument\u2019; Midwest Studies in Philosophy V (1980), pp."
+        ],
+        "canonical_author": "Jonathan Bennett"
+      },
+      "goodreads_match": {
+        "author_id": "122114",
+        "name": "Jonathan Bennett",
+        "average_rating": "3.88",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Jonathan Bennett (philosopher)",
+          "page_id": 2127356,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1930 births",
+            "2024 deaths",
+            "20th-century British philosophers",
+            "British historians of philosophy",
+            "20th-century New Zealand philosophers",
+            "Philosophers of language",
+            "Alumni of Magdalen College, Oxford",
+            "Philosophy academics at the University of Cambridge",
+            "Fellows of the American Academy of Arts and Sciences",
+            "People from Greymouth",
+            "Academic staff of Simon Fraser University",
+            "Syracuse University faculty",
+            "Academic staff of the University of British Columbia",
+            "Spinoza scholars",
+            "University of Canterbury alumni"
+          ],
+          "birth_year": 1930,
+          "death_year": 2024
+        }
+      },
+      "wikipedia_match": {
+        "title": "Jonathan Bennett (philosopher)",
+        "page_id": 2127356,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1930 births",
+          "2024 deaths",
+          "20th-century British philosophers",
+          "British historians of philosophy",
+          "20th-century New Zealand philosophers",
+          "Philosophers of language",
+          "Alumni of Magdalen College, Oxford",
+          "Philosophy academics at the University of Cambridge",
+          "Fellows of the American Academy of Arts and Sciences",
+          "People from Greymouth",
+          "Academic staff of Simon Fraser University",
+          "Syracuse University faculty",
+          "Academic staff of the University of British Columbia",
+          "Spinoza scholars",
+          "University of Canterbury alumni"
+        ],
+        "birth_year": 1930,
+        "death_year": 2024
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "122114"
+        ],
+        "target_person": {
+          "title": "Jonathan Bennett (philosopher)",
+          "page_id": 2127356,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1930 births",
+            "2024 deaths",
+            "20th-century British philosophers",
+            "British historians of philosophy",
+            "20th-century New Zealand philosophers",
+            "Philosophers of language",
+            "Alumni of Magdalen College, Oxford",
+            "Philosophy academics at the University of Cambridge",
+            "Fellows of the American Academy of Arts and Sciences",
+            "People from Greymouth",
+            "Academic staff of Simon Fraser University",
+            "Syracuse University faculty",
+            "Academic staff of the University of British Columbia",
+            "Spinoza scholars",
+            "University of Canterbury alumni"
+          ],
+          "birth_year": 1930,
+          "death_year": 2024
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cicero",
+        "count": 1,
+        "excerpts": [
+          "\u201cThe best men,\u201d said Cicero, \u201care particularly led by the hope of renown."
+        ],
+        "canonical_author": "Cicero"
+      },
+      "goodreads_match": {
+        "author_id": "13755",
+        "name": "Marcus Tullius Cicero",
+        "average_rating": "3.94",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Cicero",
+          "page_id": 6046,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Cicero| ",
+            "106 BC births",
+            "43 BC deaths",
+            "2nd-century BC Romans",
+            "1st-century BC executions",
+            "1st-century BC philosophers",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Academic skeptics",
+            "Ancient landowners",
+            "Ancient Roman equites",
+            "Ancient Roman exiles",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Ancient Roman scholars of religion",
+            "Classical humanists",
+            "Deaths by edged and bladed weapons",
+            "Executed ancient Roman people",
+            "Executed philosophers",
+            "Executed writers",
+            "Golden Age Latin writers",
+            "Letter writers in Latin",
+            "Optimates",
+            "People executed by the Roman Republic",
+            "People from Arpino",
+            "Plebeian aediles",
+            "Philosophers of Roman Italy",
+            "Recipients of ancient Roman pardons",
+            "Roman governors of Cilicia"
+          ],
+          "birth_year": -106,
+          "death_year": -43
+        }
+      },
+      "wikipedia_match": {
+        "title": "Cicero",
+        "page_id": 6046,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Cicero| ",
+          "106 BC births",
+          "43 BC deaths",
+          "2nd-century BC Romans",
+          "1st-century BC executions",
+          "1st-century BC philosophers",
+          "1st-century BC Roman augurs",
+          "1st-century BC Roman consuls",
+          "1st-century BC writers in Latin",
+          "Academic skeptics",
+          "Ancient landowners",
+          "Ancient Roman equites",
+          "Ancient Roman exiles",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Ancient Roman scholars of religion",
+          "Classical humanists",
+          "Deaths by edged and bladed weapons",
+          "Executed ancient Roman people",
+          "Executed philosophers",
+          "Executed writers",
+          "Golden Age Latin writers",
+          "Letter writers in Latin",
+          "Optimates",
+          "People executed by the Roman Republic",
+          "People from Arpino",
+          "Plebeian aediles",
+          "Philosophers of Roman Italy",
+          "Recipients of ancient Roman pardons",
+          "Roman governors of Cilicia"
+        ],
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Cicero",
+          "page_id": 6046,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Cicero| ",
+            "106 BC births",
+            "43 BC deaths",
+            "2nd-century BC Romans",
+            "1st-century BC executions",
+            "1st-century BC philosophers",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Academic skeptics",
+            "Ancient landowners",
+            "Ancient Roman equites",
+            "Ancient Roman exiles",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Ancient Roman scholars of religion",
+            "Classical humanists",
+            "Deaths by edged and bladed weapons",
+            "Executed ancient Roman people",
+            "Executed philosophers",
+            "Executed writers",
+            "Golden Age Latin writers",
+            "Letter writers in Latin",
+            "Optimates",
+            "People executed by the Roman Republic",
+            "People from Arpino",
+            "Plebeian aediles",
+            "Philosophers of Roman Italy",
+            "Recipients of ancient Roman pardons",
+            "Roman governors of Cilicia"
+          ],
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Seymour Feldman",
+        "count": 1,
+        "excerpts": [
+          "Seymour Feldman Rutgers University {231}"
+        ],
+        "canonical_author": "Seymour Feldman"
+      },
+      "goodreads_match": {
+        "author_id": "122094",
+        "name": "Seymour Feldman",
+        "average_rating": "4.05",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Seymour Feldman",
+          "page_id": 73605464,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Jewish American academics",
+            "Columbia University alumni",
+            "Judaic scholars",
+            "Spinoza scholars",
+            "Cornell University alumni",
+            "Jewish Theological Seminary of America alumni",
+            "Rutgers University faculty",
+            "American medievalists",
+            "Scholars of medieval philosophy",
+            "20th-century Jewish biblical scholars",
+            "Old Testament scholars",
+            "1932 births",
+            "Living people"
+          ],
+          "birth_year": 1932,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Seymour Feldman",
+        "page_id": 73605464,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "Jewish American academics",
+          "Columbia University alumni",
+          "Judaic scholars",
+          "Spinoza scholars",
+          "Cornell University alumni",
+          "Jewish Theological Seminary of America alumni",
+          "Rutgers University faculty",
+          "American medievalists",
+          "Scholars of medieval philosophy",
+          "20th-century Jewish biblical scholars",
+          "Old Testament scholars",
+          "1932 births",
+          "Living people"
+        ],
+        "birth_year": 1932,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "122094"
+        ],
+        "target_person": {
+          "title": "Seymour Feldman",
+          "page_id": 73605464,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Jewish American academics",
+            "Columbia University alumni",
+            "Judaic scholars",
+            "Spinoza scholars",
+            "Cornell University alumni",
+            "Jewish Theological Seminary of America alumni",
+            "Rutgers University faculty",
+            "American medievalists",
+            "Scholars of medieval philosophy",
+            "20th-century Jewish biblical scholars",
+            "Old Testament scholars",
+            "1932 births",
+            "Living people"
+          ],
+          "birth_year": 1932,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Baruch Spinoza",
+        "count": 1,
+        "excerpts": [
+          "This work, probably the earliest of Spinoza\u2019s Latin writings, presents special difficulties to the translator, partly because it was never adequately revised, and partly because Spinoza had not yet attained such facility in Latin as appears in his later works."
+        ],
+        "canonical_author": "Baruch Spinoza"
+      },
+      "goodreads_match": {
+        "author_id": "122092",
+        "name": "Baruch Spinoza",
+        "average_rating": "4.01",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Baruch Spinoza",
+          "page_id": 3408,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1632 births",
+            "1677 deaths",
+            "Baruch Spinoza| ",
+            "17th-century Jewish biblical scholars",
+            "17th-century Jewish theologians",
+            "17th-century writers in Latin",
+            "17th-century Sephardi Jews",
+            "17th-century Dutch philosophers",
+            "Censorship in Judaism",
+            "Censorship in the Netherlands",
+            "Critics of Judaism",
+            "Dutch critics of religions",
+            "Dutch Enlightenment",
+            "Critics of the Catholic Church",
+            "Descartes scholars",
+            "Determinists",
+            "Dutch ethicists",
+            "Dutch logicians",
+            "Dutch people of Portuguese descent",
+            "Dutch people of Portuguese-Jewish descent",
+            "Dutch Sephardi Jews",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Freethought",
+            "Heresy in Judaism",
+            "Jewish philosophers",
+            "Jewish skeptics",
+            "Jewish translators of the Bible",
+            "Metaphilosophers",
+            "Metaphysicians"
+          ],
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "page_id": 3408,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1632 births",
+          "1677 deaths",
+          "Baruch Spinoza| ",
+          "17th-century Jewish biblical scholars",
+          "17th-century Jewish theologians",
+          "17th-century writers in Latin",
+          "17th-century Sephardi Jews",
+          "17th-century Dutch philosophers",
+          "Censorship in Judaism",
+          "Censorship in the Netherlands",
+          "Critics of Judaism",
+          "Dutch critics of religions",
+          "Dutch Enlightenment",
+          "Critics of the Catholic Church",
+          "Descartes scholars",
+          "Determinists",
+          "Dutch ethicists",
+          "Dutch logicians",
+          "Dutch people of Portuguese descent",
+          "Dutch people of Portuguese-Jewish descent",
+          "Dutch Sephardi Jews",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Freethought",
+          "Heresy in Judaism",
+          "Jewish philosophers",
+          "Jewish skeptics",
+          "Jewish translators of the Bible",
+          "Metaphilosophers",
+          "Metaphysicians"
+        ],
+        "birth_year": 1632,
+        "death_year": 1677
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "122092"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "page_id": 3408,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1632 births",
+            "1677 deaths",
+            "Baruch Spinoza| ",
+            "17th-century Jewish biblical scholars",
+            "17th-century Jewish theologians",
+            "17th-century writers in Latin",
+            "17th-century Sephardi Jews",
+            "17th-century Dutch philosophers",
+            "Censorship in Judaism",
+            "Censorship in the Netherlands",
+            "Critics of Judaism",
+            "Dutch critics of religions",
+            "Dutch Enlightenment",
+            "Critics of the Catholic Church",
+            "Descartes scholars",
+            "Determinists",
+            "Dutch ethicists",
+            "Dutch logicians",
+            "Dutch people of Portuguese descent",
+            "Dutch people of Portuguese-Jewish descent",
+            "Dutch Sephardi Jews",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Freethought",
+            "Heresy in Judaism",
+            "Jewish philosophers",
+            "Jewish skeptics",
+            "Jewish translators of the Bible",
+            "Metaphilosophers",
+            "Metaphysicians"
+          ],
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Euclid",
+        "count": 1,
+        "excerpts": [
+          "But mathematicians, [24] because of the force of the demonstration of Proposition 19 of Book 7 of Euclid, know what numbers are proportional to one another from the nature and property of proportion, which tells us that the product of the first and fourth numbers is equal to the product of the second and third."
+        ],
+        "canonical_author": "Euclid"
+      },
+      "goodreads_match": {
+        "author_id": "125792",
+        "name": "Euclid",
+        "average_rating": "4.28",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Euclid",
+          "page_id": 9331,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Euclid| ",
+            "4th-century BC births",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC Greek writers",
+            "3rd-century BC deaths",
+            "3rd-century BC Greek mathematicians",
+            "3rd-century BC Greek writers",
+            "Ancient Alexandrians",
+            "Ancient Greek geometers",
+            "Number theorists",
+            "Ancient Greeks in Egypt"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Euclid",
+        "page_id": 9331,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Euclid| ",
+          "4th-century BC births",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC Greek writers",
+          "3rd-century BC deaths",
+          "3rd-century BC Greek mathematicians",
+          "3rd-century BC Greek writers",
+          "Ancient Alexandrians",
+          "Ancient Greek geometers",
+          "Number theorists",
+          "Ancient Greeks in Egypt"
+        ],
+        "birth_year": -325,
+        "death_year": -265
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "125792"
+        ],
+        "target_person": {
+          "title": "Euclid",
+          "page_id": 9331,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Euclid| ",
+            "4th-century BC births",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC Greek writers",
+            "3rd-century BC deaths",
+            "3rd-century BC Greek mathematicians",
+            "3rd-century BC Greek writers",
+            "Ancient Alexandrians",
+            "Ancient Greek geometers",
+            "Number theorists",
+            "Ancient Greeks in Egypt"
+          ],
+          "birth_year": -325,
+          "death_year": -265
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bacon",
+        "count": 1,
+        "excerpts": [
+          "Secondly, you ask me what errors I see in the philosophy of Descartes and Bacon."
+        ],
+        "canonical_author": "Bacon"
+      },
+      "goodreads_match": {
+        "author_id": "119129",
+        "name": "Roger Bacon",
+        "average_rating": "4.30",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Francis Bacon",
+          "page_id": 11319,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "Francis Bacon| ",
+            "1561 births",
+            "1626 deaths",
+            "16th-century English lawyers",
+            "16th-century English male writers",
+            "16th-century English novelists",
+            "16th-century English philosophers",
+            "16th-century English writers",
+            "16th-century spies",
+            "16th-century writers in Latin",
+            "17th-century English LGBTQ people",
+            "17th-century English lawyers",
+            "17th-century English male writers",
+            "17th-century English novelists",
+            "17th-century English philosophers",
+            "17th-century English writers",
+            "17th-century King's Counsel",
+            "17th-century regents",
+            "17th-century spies",
+            "17th-century writers in Latin",
+            "Age of Enlightenment",
+            "Alumni of Trinity College, Cambridge",
+            "Anglican writers",
+            "Attorneys general for England and Wales",
+            "Atomists",
+            "Authors of utopian literature",
+            "Bacon family|Francis",
+            "Baconian theory of Shakespeare authorship|Baconian theory of Shakespeare authorship",
+            "British philosophers of law",
+            "Latin-language British writers"
+          ],
+          "birth_year": 1561,
+          "death_year": 1626
+        }
+      },
+      "wikipedia_match": {
+        "title": "Francis Bacon",
+        "page_id": 11319,
+        "infoboxes": [
+          "officeholder",
+          "philosopher"
+        ],
+        "categories": [
+          "Francis Bacon| ",
+          "1561 births",
+          "1626 deaths",
+          "16th-century English lawyers",
+          "16th-century English male writers",
+          "16th-century English novelists",
+          "16th-century English philosophers",
+          "16th-century English writers",
+          "16th-century spies",
+          "16th-century writers in Latin",
+          "17th-century English LGBTQ people",
+          "17th-century English lawyers",
+          "17th-century English male writers",
+          "17th-century English novelists",
+          "17th-century English philosophers",
+          "17th-century English writers",
+          "17th-century King's Counsel",
+          "17th-century regents",
+          "17th-century spies",
+          "17th-century writers in Latin",
+          "Age of Enlightenment",
+          "Alumni of Trinity College, Cambridge",
+          "Anglican writers",
+          "Attorneys general for England and Wales",
+          "Atomists",
+          "Authors of utopian literature",
+          "Bacon family|Francis",
+          "Baconian theory of Shakespeare authorship|Baconian theory of Shakespeare authorship",
+          "British philosophers of law",
+          "Latin-language British writers"
+        ],
+        "birth_year": 1561,
+        "death_year": 1626
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "119129"
+        ],
+        "target_person": {
+          "title": "Francis Bacon",
+          "page_id": 11319,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "Francis Bacon| ",
+            "1561 births",
+            "1626 deaths",
+            "16th-century English lawyers",
+            "16th-century English male writers",
+            "16th-century English novelists",
+            "16th-century English philosophers",
+            "16th-century English writers",
+            "16th-century spies",
+            "16th-century writers in Latin",
+            "17th-century English LGBTQ people",
+            "17th-century English lawyers",
+            "17th-century English male writers",
+            "17th-century English novelists",
+            "17th-century English philosophers",
+            "17th-century English writers",
+            "17th-century King's Counsel",
+            "17th-century regents",
+            "17th-century spies",
+            "17th-century writers in Latin",
+            "Age of Enlightenment",
+            "Alumni of Trinity College, Cambridge",
+            "Anglican writers",
+            "Attorneys general for England and Wales",
+            "Atomists",
+            "Authors of utopian literature",
+            "Bacon family|Francis",
+            "Baconian theory of Shakespeare authorship|Baconian theory of Shakespeare authorship",
+            "British philosophers of law",
+            "Latin-language British writers"
+          ],
+          "birth_year": 1561,
+          "death_year": 1626
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sextus Empiricus",
+        "count": 1,
+        "excerpts": [
+          "Sextus Empiricus19 and other Sceptics whom you quote say that it is false that the whole is greater than its part, and they pass similar judgment on other axioms."
+        ],
+        "canonical_author": "Sextus Empiricus"
+      },
+      "goodreads_match": {
+        "author_id": "302857",
+        "name": "Sextus Empiricus",
+        "average_rating": "3.95",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Sextus Empiricus",
+          "page_id": 177582,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "2nd-century Greek philosophers",
+            "Roman-era Skeptic philosophers",
+            "2nd-century Roman physicians",
+            "2nd-century Greek physicians",
+            "Ancient Greek epistemologists",
+            "Pyrrhonism"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Sextus Empiricus",
+        "page_id": 177582,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "2nd-century Greek philosophers",
+          "Roman-era Skeptic philosophers",
+          "2nd-century Roman physicians",
+          "2nd-century Greek physicians",
+          "Ancient Greek epistemologists",
+          "Pyrrhonism"
+        ],
+        "birth_year": 160,
+        "death_year": 210
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "302857"
+        ],
+        "target_person": {
+          "title": "Sextus Empiricus",
+          "page_id": 177582,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "2nd-century Greek philosophers",
+            "Roman-era Skeptic philosophers",
+            "2nd-century Roman physicians",
+            "2nd-century Greek physicians",
+            "Ancient Greek epistemologists",
+            "Pyrrhonism"
+          ],
+          "birth_year": 160,
+          "death_year": 210
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Democritus",
+        "count": 1,
+        "excerpts": [
+          "It is not surprising that those who have thought up occult qualities, intentional species, substantial forms and a thousand more bits of nonsense should have devised spectres and ghosts and given credence to old wives\u2019 tales with a view to disparaging the authority of Democritus, whose high reputation they so envied that they burned all the books that he had published with much acclaim."
+        ],
+        "canonical_author": "Democritus"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Democritus",
+          "page_id": 8211,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Abderites",
+            "Ancient Greek atomist philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek metaphysicians",
+            "Presocratic philosophers",
+            "460s BC births",
+            "370s BC deaths",
+            "5th-century BC Greek mathematicians",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Democritus",
+        "page_id": 8211,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Abderites",
+          "Ancient Greek atomist philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek metaphysicians",
+          "Presocratic philosophers",
+          "460s BC births",
+          "370s BC deaths",
+          "5th-century BC Greek mathematicians",
+          "4th-century BC Greek mathematicians"
+        ],
+        "birth_year": -460,
+        "death_year": -370
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Democritus",
+          "page_id": 8211,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Abderites",
+            "Ancient Greek atomist philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek metaphysicians",
+            "Presocratic philosophers",
+            "460s BC births",
+            "370s BC deaths",
+            "5th-century BC Greek mathematicians",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": -460,
+          "death_year": -370
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,4029 @@
+{
+  "source": {
+    "title": "Millennium: The End of the World and the Forging of Christendom",
+    "authors": [
+      "Tom Holland"
+    ],
+    "goodreads_id": "11890280",
+    "author_ids": [],
+    "description": null,
+    "goodreads": {
+      "book_id": "11890280",
+      "author_ids": [],
+      "title": "Millennium: The End of the World and the Forging of Christendom",
+      "authors": [
+        "Tom Holland"
+      ],
+      "publication_year": null
+    },
+    "calibre": {
+      "id": 46,
+      "path": "/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos/calibre_bookgraph/Tom Holland/Millennium_ The End of the World and the Forging of Christendom (46)",
+      "txt_path": "/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos/calibre_bookgraph/Tom Holland/Millennium_ The End of the World and the Forging of Christendom (46)/Millennium_ The End of the World and the F - Tom Holland.txt",
+      "epub_path": "/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos/calibre_bookgraph/Tom Holland/Millennium_ The End of the World and the Forging of Christendom (46)/Millennium_ The End of the World and the F - Tom Holland.epub",
+      "description": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "City of God",
+        "author": "Augustine",
+        "count": 4,
+        "excerpts": [
+          "Within the City of God, where Christ had ascended to reign in splendour, the saints and the martyrs already sat about Him upon their thrones.",
+          "Augustine, City of God, 5.25.",
+          "Augustine, City of God, 4.15.",
+          "Augustine, City of God, 20.7."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0140448942",
+        "average_rating": 3.89,
+        "format": "Paperback",
+        "book_id": "25673",
+        "author_ids": [
+          "6819578",
+          "299304"
+        ],
+        "work_id": "5814",
+        "text_reviews_count": 237,
+        "title_without_series": "City of God",
+        "publication_day": 27,
+        "ratings_count": 7216,
+        "publication_month": 11,
+        "publisher": "Penguin Books Ltd",
+        "publication_year": 2003,
+        "num_pages": 1097,
+        "title": "City of God",
+        "isbn13": "9780140448948",
+        "authors": [
+          "Augustine of Hippo",
+          "Henry Bettenson"
+        ],
+        "description": "No book except the Bibleitself had a greater influence on the Middle Ages than Augustine's City of God. And since medieval Europe was the cradle of modern Western society, this work is vital for understanding our world and how it came into being.",
+        "link": "https://www.goodreads.com/book/show/25673.City_of_God"
+      },
+      "wikipedia_match": {
+        "title": "Augustine of Hippo",
+        "birth_year": 354,
+        "death_year": 430,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "25673",
+        "target_author_ids": [
+          "6819578",
+          "299304"
+        ],
+        "target_person": {
+          "title": "Augustine of Hippo",
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Rudolf Glaber",
+        "count": 4,
+        "excerpts": [
+          "Hence, for its admirers, the monastery\u2019s unprecedented nimbus of holiness: \u2018for so reverently are the masses performed there,\u2019 as Rudolf Glaber put it, \u2018so piously and worthily, that you would think them the work, not of men, but of angels indeed\u2019.",
+          "Such was the judgement of Rudolf Glaber, seated in that mightiest of all bastions of holiness, the abbey of Cluny.",
+          "Rudolf Glaber, recording the paroxysms of that feverish year in the more heated terms that came naturally to him, described the whole of Christendom as gripped by a blood lust.",
+          "Rudolf Glaber, as assiduous as ever in tracing the touch of God\u2019s finger upon the world, marked from his monastery how the violent rainstorms had abruptly ceased."
+        ],
+        "canonical_author": "Rudolf Glaber"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Rodulfus Glaber",
+          "page_id": 5737016,
+          "infoboxes": [],
+          "categories": [
+            "1047 deaths",
+            "French chroniclers",
+            "11th-century French historians",
+            "985 births",
+            "11th-century writers in Latin",
+            "French male non-fiction writers"
+          ],
+          "birth_year": 985,
+          "death_year": 1047
+        }
+      },
+      "wikipedia_match": {
+        "title": "Rodulfus Glaber",
+        "page_id": 5737016,
+        "infoboxes": [],
+        "categories": [
+          "1047 deaths",
+          "French chroniclers",
+          "11th-century French historians",
+          "985 births",
+          "11th-century writers in Latin",
+          "French male non-fiction writers"
+        ],
+        "birth_year": 985,
+        "death_year": 1047
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Rodulfus Glaber",
+          "page_id": 5737016,
+          "infoboxes": [],
+          "categories": [
+            "1047 deaths",
+            "French chroniclers",
+            "11th-century French historians",
+            "985 births",
+            "11th-century writers in Latin",
+            "French male non-fiction writers"
+          ],
+          "birth_year": 985,
+          "death_year": 1047
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "St Augustine",
+        "count": 4,
+        "excerpts": [
+          "It was this question, put by St Augustine many centuries before the Millennium, that had haunted Wulfstan in the wake of the St Brice\u2019s Day massacre, and led him to see, in the rubble of a desecrated church, a possible proof of Antichrist\u2019s imminence.",
+          "Better by far to affect a lofty blend of contempt and indifference: such had been the judgement of St Augustine, an authority not readily brooked.",
+          "After all, if the Africans, the very countrymen of St Augustine, could end up lost so utterly to Christendom that barely a Christian remained among them, then who was to say that the same terrible fate might not one day befall the people whom Gregory freely described as \u2018our brothers \u2013 those who hold the empire beyond the sea in Constantinople\u2019?",
+          "The question of whether an unworthy priest invalidated the miracle of the Mass was an ancient one, and orthodoxy \u2013 originally articulated, inevitably, by St Augustine \u2013 argued that it did not."
+        ],
+        "canonical_author": "St Augustine"
+      },
+      "goodreads_match": {
+        "author_id": "6819578",
+        "name": "Augustine of Hippo",
+        "average_rating": "3.91",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Augustine of Hippo",
+          "page_id": 2030,
+          "infoboxes": [
+            "saint",
+            "philosopher"
+          ],
+          "categories": [
+            "Augustine of Hippo| ",
+            "354 births",
+            "430 deaths",
+            "4th-century Berber people",
+            "4th-century bishops in Roman North Africa",
+            "4th-century Christian theologians",
+            "4th-century philosophers",
+            "4th-century Romans",
+            "4th-century writers in Latin",
+            "5th-century Berber people",
+            "5th-century bishops in Roman North Africa",
+            "5th-century Christian saints",
+            "5th-century Christian theologians",
+            "5th-century philosophers",
+            "5th-century Western Romans",
+            "5th-century writers in Latin",
+            "African philosophers",
+            "Amillennialism",
+            "Ancient Roman Christian mystics",
+            "Ancient Roman philosophers",
+            "Ancient Roman rhetoricians",
+            "Anglican saints",
+            "Augustinian Order| ",
+            "Augustinian philosophers",
+            "Aurelii|Augustinus",
+            "Autobiographers",
+            "Berber Christians",
+            "Burials at San Pietro in Ciel d'Oro",
+            "Catholic philosophers",
+            "Catholic saints"
+          ],
+          "birth_year": 354,
+          "death_year": 430
+        }
+      },
+      "wikipedia_match": {
+        "title": "Augustine of Hippo",
+        "page_id": 2030,
+        "infoboxes": [
+          "saint",
+          "philosopher"
+        ],
+        "categories": [
+          "Augustine of Hippo| ",
+          "354 births",
+          "430 deaths",
+          "4th-century Berber people",
+          "4th-century bishops in Roman North Africa",
+          "4th-century Christian theologians",
+          "4th-century philosophers",
+          "4th-century Romans",
+          "4th-century writers in Latin",
+          "5th-century Berber people",
+          "5th-century bishops in Roman North Africa",
+          "5th-century Christian saints",
+          "5th-century Christian theologians",
+          "5th-century philosophers",
+          "5th-century Western Romans",
+          "5th-century writers in Latin",
+          "African philosophers",
+          "Amillennialism",
+          "Ancient Roman Christian mystics",
+          "Ancient Roman philosophers",
+          "Ancient Roman rhetoricians",
+          "Anglican saints",
+          "Augustinian Order| ",
+          "Augustinian philosophers",
+          "Aurelii|Augustinus",
+          "Autobiographers",
+          "Berber Christians",
+          "Burials at San Pietro in Ciel d'Oro",
+          "Catholic philosophers",
+          "Catholic saints"
+        ],
+        "birth_year": 354,
+        "death_year": 430
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6819578"
+        ],
+        "target_person": {
+          "title": "Augustine of Hippo",
+          "page_id": 2030,
+          "infoboxes": [
+            "saint",
+            "philosopher"
+          ],
+          "categories": [
+            "Augustine of Hippo| ",
+            "354 births",
+            "430 deaths",
+            "4th-century Berber people",
+            "4th-century bishops in Roman North Africa",
+            "4th-century Christian theologians",
+            "4th-century philosophers",
+            "4th-century Romans",
+            "4th-century writers in Latin",
+            "5th-century Berber people",
+            "5th-century bishops in Roman North Africa",
+            "5th-century Christian saints",
+            "5th-century Christian theologians",
+            "5th-century philosophers",
+            "5th-century Western Romans",
+            "5th-century writers in Latin",
+            "African philosophers",
+            "Amillennialism",
+            "Ancient Roman Christian mystics",
+            "Ancient Roman philosophers",
+            "Ancient Roman rhetoricians",
+            "Anglican saints",
+            "Augustinian Order| ",
+            "Augustinian philosophers",
+            "Aurelii|Augustinus",
+            "Autobiographers",
+            "Berber Christians",
+            "Burials at San Pietro in Ciel d'Oro",
+            "Catholic philosophers",
+            "Catholic saints"
+          ],
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Heimskringla",
+        "author": "Snorri Sturluson",
+        "count": 3,
+        "excerpts": [
+          "Snorri Sturluson, Heimskringla.",
+          "Snorri Sturluson, Heimskringla. The Saga of Olaf Haraldsson, chapter 238."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0486263665",
+        "average_rating": 4.17,
+        "format": "Paperback",
+        "book_id": "949473",
+        "author_ids": [
+          "13879"
+        ],
+        "work_id": "15282299",
+        "text_reviews_count": 12,
+        "title_without_series": "Heimskringla: or, The Lives of the Norse Kings",
+        "publication_day": 1,
+        "ratings_count": 765,
+        "publication_month": 5,
+        "publisher": "Dover Publications",
+        "publication_year": 1990,
+        "num_pages": 770,
+        "title": "Heimskringla: or, The Lives of the Norse Kings",
+        "isbn13": "9780486263663",
+        "authors": [
+          "Snorri Sturluson"
+        ],
+        "description": "Great classic by Icelandic poet/chieftain chronicles the reigns of 16 high kings descended from the warrior-wizard god Odin. Major section on 15-year reign of Olav II Haraldson, patron saint of Norway. Based on earlier histories, oral traditions, plus new material by author, all presented with intelligence, warmth and objectivity. Over 130 illustrations and 5 maps.",
+        "link": "https://www.goodreads.com/book/show/949473.Heimskringla"
+      },
+      "wikipedia_match": {
+        "title": "Snorri Sturluson",
+        "birth_year": 1179,
+        "death_year": 1241,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "949473",
+        "target_author_ids": [
+          "13879"
+        ],
+        "target_person": {
+          "title": "Snorri Sturluson",
+          "birth_year": 1179,
+          "death_year": 1241
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Vryonis",
+        "count": 3,
+        "excerpts": [
+          "Quoted by Vryonis, p. 81.",
+          "See Vryonis, p. 195.",
+          "Quoted by Vryonis, p. 170."
+        ],
+        "canonical_author": "Vryonis"
+      },
+      "goodreads_match": {
+        "author_id": "228471",
+        "name": "Speros Vryonis Jr.",
+        "average_rating": "3.92",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Speros Vryonis",
+          "page_id": 22318084,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1928 births",
+            "2019 deaths",
+            "Writers from Memphis, Tennessee",
+            "American writers of Greek descent",
+            "American Byzantinists",
+            "21st-century American historians",
+            "Harvard Graduate School of Arts and Sciences alumni",
+            "Rhodes College alumni",
+            "20th-century American male writers",
+            "21st-century American male writers",
+            "Scholars of Byzantine history",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1928,
+          "death_year": 2019
+        }
+      },
+      "wikipedia_match": {
+        "title": "Speros Vryonis",
+        "page_id": 22318084,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1928 births",
+          "2019 deaths",
+          "Writers from Memphis, Tennessee",
+          "American writers of Greek descent",
+          "American Byzantinists",
+          "21st-century American historians",
+          "Harvard Graduate School of Arts and Sciences alumni",
+          "Rhodes College alumni",
+          "20th-century American male writers",
+          "21st-century American male writers",
+          "Scholars of Byzantine history",
+          "Members of the American Philosophical Society"
+        ],
+        "birth_year": 1928,
+        "death_year": 2019
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "228471"
+        ],
+        "target_person": {
+          "title": "Speros Vryonis",
+          "page_id": 22318084,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1928 births",
+            "2019 deaths",
+            "Writers from Memphis, Tennessee",
+            "American writers of Greek descent",
+            "American Byzantinists",
+            "21st-century American historians",
+            "Harvard Graduate School of Arts and Sciences alumni",
+            "Rhodes College alumni",
+            "20th-century American male writers",
+            "21st-century American male writers",
+            "Scholars of Byzantine history",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1928,
+          "death_year": 2019
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Millennium_ The End of the World and the F",
+        "author": "Tom Holland",
+        "count": 2,
+        "excerpts": [
+          "You are extracting book citations from a bounded excerpt of \"Millennium_ The End of the World and the F - Tom Holland\"."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0316732451",
+        "average_rating": 3.82,
+        "format": "Hardcover",
+        "book_id": "5574571",
+        "author_ids": [
+          "52292"
+        ],
+        "work_id": "5745769",
+        "text_reviews_count": 90,
+        "title_without_series": "Millennium: The End of the World and the Forging of Christendom",
+        "publication_day": 18,
+        "ratings_count": 1314,
+        "publication_month": 9,
+        "publisher": "Little Brown and Company",
+        "publication_year": 2008,
+        "num_pages": 476,
+        "title": "Millennium: The End of the World and the Forging of Christendom",
+        "isbn13": "9780316732451",
+        "authors": [
+          "Tom Holland"
+        ],
+        "description": "In AD 900, few would have guessed that the splintering kingdoms of Christendom were candidates for future greatness. Hemmed in by implacable enemies on three sides, and by ocean on the fourth, it seemed that the Christian people had nowhere to turn. Indeed, there were many who feared--cast in the Millennium's shadow--that they were nearing the time when the Antichrist would appear, drowning the world in blood and heralding its end.\nBut the Antichrist did not appear, and Christendom did not collapse. Instead...",
+        "link": "https://www.goodreads.com/book/show/5574571-millennium"
+      },
+      "wikipedia_match": {
+        "title": "Tom Holland",
+        "birth_year": 1943,
+        "death_year": null,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "5574571",
+        "target_author_ids": [
+          "52292"
+        ],
+        "target_person": {
+          "title": "Tom Holland",
+          "birth_year": 1943,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "City of God",
+        "author": "St Augustine",
+        "count": 2,
+        "excerpts": [
+          "North Africa, where St Augustine had written his great book on the City of God, had been under Saracen rule for many centuries; and now the local emir had imprisoned the leader of the church there, and beaten him, \u2018as though he were a criminal\u2019.",
+          "426 St Augustine completes his book on the City of God."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0140448942",
+        "average_rating": 3.89,
+        "format": "Paperback",
+        "book_id": "25673",
+        "author_ids": [
+          "6819578",
+          "299304"
+        ],
+        "work_id": "5814",
+        "text_reviews_count": 237,
+        "title_without_series": "City of God",
+        "publication_day": 27,
+        "ratings_count": 7216,
+        "publication_month": 11,
+        "publisher": "Penguin Books Ltd",
+        "publication_year": 2003,
+        "num_pages": 1097,
+        "title": "City of God",
+        "isbn13": "9780140448948",
+        "authors": [
+          "Augustine of Hippo",
+          "Henry Bettenson"
+        ],
+        "description": "No book except the Bibleitself had a greater influence on the Middle Ages than Augustine's City of God. And since medieval Europe was the cradle of modern Western society, this work is vital for understanding our world and how it came into being.",
+        "link": "https://www.goodreads.com/book/show/25673.City_of_God"
+      },
+      "wikipedia_match": {
+        "title": "Augustine of Hippo",
+        "birth_year": 354,
+        "death_year": 430,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "25673",
+        "target_author_ids": [
+          "6819578",
+          "299304"
+        ],
+        "target_person": {
+          "title": "Augustine of Hippo",
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ibn Hazm",
+        "count": 2,
+        "excerpts": [
+          "So wrote Ibn Hazm, a high-born intellectual and Umayyad loyalist, whose fruitless nostalgia for the decaying Caliphate had led him to endure years of imprisonment and exile.",
+          "14 Ibn Hazm, chapter 23."
+        ],
+        "canonical_author": "Ibn Hazm"
+      },
+      "goodreads_match": {
+        "author_id": "2474988",
+        "name": "Ibn Hazm Al-Andalusi",
+        "average_rating": "3.92",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Ibn Hazm",
+          "page_id": 1467830,
+          "infoboxes": [
+            "religious biography",
+            "Arabic name"
+          ],
+          "categories": [
+            "Ibn Hazm| ",
+            "994 births",
+            "1064 deaths",
+            "11th-century writers from al-Andalus|Hazm",
+            "11th-century Muslim theologians",
+            "Critics of Shia Islam",
+            "Spanish genealogists",
+            "Hadith scholars",
+            "Medieval Islamic philosophers",
+            "Mujaddid",
+            "People from C\u00f3rdoba, Spain",
+            "Scholars from the Caliphate of C\u00f3rdoba",
+            "Biographical evaluation scholars",
+            "Muwallads",
+            "Zahiris"
+          ],
+          "birth_year": 994,
+          "death_year": 1064
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ibn Hazm",
+        "page_id": 1467830,
+        "infoboxes": [
+          "religious biography",
+          "Arabic name"
+        ],
+        "categories": [
+          "Ibn Hazm| ",
+          "994 births",
+          "1064 deaths",
+          "11th-century writers from al-Andalus|Hazm",
+          "11th-century Muslim theologians",
+          "Critics of Shia Islam",
+          "Spanish genealogists",
+          "Hadith scholars",
+          "Medieval Islamic philosophers",
+          "Mujaddid",
+          "People from C\u00f3rdoba, Spain",
+          "Scholars from the Caliphate of C\u00f3rdoba",
+          "Biographical evaluation scholars",
+          "Muwallads",
+          "Zahiris"
+        ],
+        "birth_year": 994,
+        "death_year": 1064
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2474988"
+        ],
+        "target_person": {
+          "title": "Ibn Hazm",
+          "page_id": 1467830,
+          "infoboxes": [
+            "religious biography",
+            "Arabic name"
+          ],
+          "categories": [
+            "Ibn Hazm| ",
+            "994 births",
+            "1064 deaths",
+            "11th-century writers from al-Andalus|Hazm",
+            "11th-century Muslim theologians",
+            "Critics of Shia Islam",
+            "Spanish genealogists",
+            "Hadith scholars",
+            "Medieval Islamic philosophers",
+            "Mujaddid",
+            "People from C\u00f3rdoba, Spain",
+            "Scholars from the Caliphate of C\u00f3rdoba",
+            "Biographical evaluation scholars",
+            "Muwallads",
+            "Zahiris"
+          ],
+          "birth_year": 994,
+          "death_year": 1064
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Rubicon",
+        "author": "Tom Holland",
+        "count": 1,
+        "excerpts": [
+          "Rubicon was shortlisted for the Samuel Johnson Prize and won the Hessell-Tiltman Prize for History in 2004, and Persian Fire won the Anglo-Hellenic League\u2019s Runciman Award in 2006."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "038550313X",
+        "average_rating": 4.17,
+        "format": "Hardcover",
+        "book_id": "2058114",
+        "author_ids": [
+          "52292"
+        ],
+        "work_id": "87825",
+        "text_reviews_count": 11,
+        "title_without_series": "Rubicon: The Last Years of the Roman Republic",
+        "publication_day": 17,
+        "ratings_count": 83,
+        "publication_month": 2,
+        "publisher": "Doubleday",
+        "publication_year": 2004,
+        "num_pages": 432,
+        "title": "Rubicon: The Last Years of the Roman Republic",
+        "isbn13": "9780385503136",
+        "authors": [
+          "Tom Holland"
+        ],
+        "description": "A masterful, witty, brilliantly researched popular history of perhaps the greatest civilization ever and the events and people that led to its transformation from a republic to an empire.\nOn a dark January morning, Julius Caesar, the governor of Gaul, rode with his closest aides towards a river named the Rubicon, which marked the line of the frontier with Italy. A governor was forbidden to lead troops out of his allotted province - to break this severest of laws was tantamount to a declaration of civil war....",
+        "link": "https://www.goodreads.com/book/show/2058114.Rubicon"
+      },
+      "wikipedia_match": {
+        "title": "Tom Holland",
+        "birth_year": 1943,
+        "death_year": null,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "2058114",
+        "target_author_ids": [
+          "52292"
+        ],
+        "target_person": {
+          "title": "Tom Holland",
+          "birth_year": 1943,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Persian Fire",
+        "author": "Tom Holland",
+        "count": 1,
+        "excerpts": [
+          "Rubicon was shortlisted for the Samuel Johnson Prize and won the Hessell-Tiltman Prize for History in 2004, and Persian Fire won the Anglo-Hellenic League\u2019s Runciman Award in 2006."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0385513119",
+        "average_rating": 4.16,
+        "format": "Hardcover",
+        "book_id": "103749",
+        "author_ids": [
+          "52292"
+        ],
+        "work_id": "100036",
+        "text_reviews_count": 227,
+        "title_without_series": "Persian Fire: The First World Empire and the Battle for the West",
+        "publication_day": 2,
+        "ratings_count": 4093,
+        "publication_month": 5,
+        "publisher": "DoubleDay",
+        "publication_year": 2006,
+        "num_pages": 418,
+        "title": "Persian Fire: The First World Empire and the Battle for the West",
+        "isbn13": "9780385513111",
+        "authors": [
+          "Tom Holland"
+        ],
+        "description": "In 480 B.C., Xerxes, the King of Persia, led an invasion of mainland Greece. Its success should have been a formality. For seventy years, victory--rapid, spectacular victory--had seemed the birthright of the Persian Empire. In the space of a single generation, they had swept across the Near East, shattering ancient kingdoms, storming famous cities, putting together an empire which stretched from India to the shores of the Aegean. As a result of those conquests, Xerxes ruled as the most powerful man on the p...",
+        "link": "https://www.goodreads.com/book/show/103749.Persian_Fire"
+      },
+      "wikipedia_match": {
+        "title": "Tom Holland",
+        "birth_year": 1943,
+        "death_year": null,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "103749",
+        "target_author_ids": [
+          "52292"
+        ],
+        "target_person": {
+          "title": "Tom Holland",
+          "birth_year": 1943,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Revenge of Gaia",
+        "author": "James Lovelock",
+        "count": 1,
+        "excerpts": [
+          "a bare three years on, and he was gloomily confessing in his own book, The Revenge of Gaia, \u2018I was so wrong.\u201924"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0713999144",
+        "average_rating": 3.78,
+        "format": "Hardcover",
+        "book_id": "835913",
+        "author_ids": [
+          "145416"
+        ],
+        "work_id": "241122",
+        "text_reviews_count": 8,
+        "title_without_series": "The Revenge Of Gaia: Why The Earth Is Fighting Back   And How We Can Still Save Humanity",
+        "publication_day": 1,
+        "ratings_count": 66,
+        "publication_month": 5,
+        "publisher": "Allen Lane",
+        "publication_year": 2006,
+        "num_pages": 177,
+        "title": "The Revenge Of Gaia: Why The Earth Is Fighting Back   And How We Can Still Save Humanity",
+        "isbn13": "9780713999143",
+        "authors": [
+          "James E. Lovelock"
+        ],
+        "description": "James Lovelock, originator of the idea of Gaia, makes an argued plea that we must change our way of life - before it is too late. Illustrated with examples drawn from his experiences around the world, he draws many radical conclusions, most controversially a passionate advocacy of nuclear energy.",
+        "link": "https://www.goodreads.com/book/show/835913.The_Revenge_Of_Gaia"
+      },
+      "wikipedia_match": {
+        "title": "James E. Lovelock",
+        "birth_year": 1919,
+        "death_year": 2022,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "835913",
+        "target_author_ids": [
+          "145416"
+        ],
+        "target_person": {
+          "title": "James E. Lovelock",
+          "birth_year": 1919,
+          "death_year": 2022
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The City of God",
+        "author": "Augustine",
+        "count": 1,
+        "excerpts": [
+          "The great division in the affairs of the world, Augustine had argued, lay not between civilised and savage, Roman and barbarian, but between those earthly dominions of which Rome had been merely the most prominent example and a dominion incalculably greater and more glorious: the City of God."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0679600876",
+        "average_rating": 3.89,
+        "format": "Hardcover",
+        "book_id": "900967",
+        "author_ids": [
+          "6819578"
+        ],
+        "work_id": "5814",
+        "text_reviews_count": 27,
+        "title_without_series": "The City of God",
+        "publication_day": 1,
+        "ratings_count": 196,
+        "publication_month": 2,
+        "publisher": "Random House",
+        "publication_year": 1994,
+        "num_pages": 892,
+        "title": "The City of God",
+        "isbn13": "9780679600879",
+        "authors": [
+          "Augustine of Hippo"
+        ],
+        "description": "One of the great cornerstones in the history of Christian philosophy, The City of God provides an insightful interpretation of the development of modern Western society and the origin of most Western thought. Contrasting earthly and heavenly cities--representing the omnipresent struggle between good and evil--Augustine explores human history in its relation to all eternity. In Thomas Merton's words, \"The City of God is the autobiography of the Church written by the most Catholic of her great saints.\"\nThis M...",
+        "link": "https://www.goodreads.com/book/show/900967.The_City_of_God"
+      },
+      "wikipedia_match": {
+        "title": "Augustine of Hippo",
+        "birth_year": 354,
+        "death_year": 430,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "900967",
+        "target_author_ids": [
+          "6819578"
+        ],
+        "target_person": {
+          "title": "Augustine of Hippo",
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Decline and Fall of the Roman Empire",
+        "author": "Gibbon",
+        "count": 1,
+        "excerpts": [
+          "The Decline and Fall of the Roman Empire So it was that Charlemagne came to rule as a second Constantine."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1857150953",
+        "average_rating": 3.96,
+        "book_id": "101582",
+        "author_ids": [
+          "11628"
+        ],
+        "work_id": "3209631",
+        "text_reviews_count": 3,
+        "title_without_series": "The Decline and Fall of the Roman Empire",
+        "ratings_count": 13,
+        "publisher": "Everyman's Library",
+        "num_pages": 704,
+        "title": "The Decline and Fall of the Roman Empire",
+        "isbn13": "9781857150957",
+        "authors": [
+          "Edward Gibbon"
+        ],
+        "description": "Easily the most celebrated historical work in English, Gibbon's account of the Roman empire was in its time a landmark in classical and historical scholarship and remains a remarkable fresh and powerful contribution to the interpretation of Roman history more than two hundred years after its first appearance. Its fame, however, rests more on the exceptional clarity, scope and force of its argument, and the brilliance of its style, which is still a delight to read. Furthermore, both argument and style embody...",
+        "link": "https://www.goodreads.com/book/show/101582.The_Decline_and_Fall_of_the_Roman_Empire"
+      },
+      "wikipedia_match": {
+        "title": "Edward Gibbon",
+        "birth_year": 1737,
+        "death_year": 1794,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "101582",
+        "target_author_ids": [
+          "11628"
+        ],
+        "target_person": {
+          "title": "Edward Gibbon",
+          "birth_year": 1737,
+          "death_year": 1794
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Western Society and the Church in the Middle Ages",
+        "author": "Southern",
+        "count": 1,
+        "excerpts": [
+          "10 Southern, Western Society and the Church in the Middle Ages, p. 34."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0140137556",
+        "average_rating": 3.77,
+        "format": "Paperback",
+        "book_id": "271116",
+        "author_ids": [
+          "6173359"
+        ],
+        "work_id": "262839",
+        "text_reviews_count": 21,
+        "title_without_series": "Western Society and the Church in the Middle Ages (The Penguin History of the Church, #2)",
+        "publication_day": 16,
+        "ratings_count": 230,
+        "publication_month": 8,
+        "publisher": "Penguin Putnam Inc.",
+        "publication_year": 1990,
+        "num_pages": 384,
+        "title": "Western Society and the Church in the Middle Ages (The Penguin History of the Church, #2)",
+        "isbn13": "9780140137552",
+        "authors": [
+          "R.W. Southern"
+        ],
+        "description": "The concept of an ordered human society, both religious and secular, as an expression of a divinely ordered universe was central to medieval thought. In the West the political and religious community were inextricably bound together, and because the Church was so intimately involved with the world, any history of it must take into account the development of medieval society.Professor Southern's book covers the period from the eighth to the sixteenth century. After sketching the main features of each medieva...",
+        "link": "https://www.goodreads.com/book/show/271116.Western_Society_and_the_Church_in_the_Middle_Ages"
+      },
+      "wikipedia_match": {
+        "title": "R.W. Southern",
+        "birth_year": 1912,
+        "death_year": 2001,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "271116",
+        "target_author_ids": [
+          "6173359"
+        ],
+        "target_person": {
+          "title": "R.W. Southern",
+          "birth_year": 1912,
+          "death_year": 2001
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Regulae Pastoralis Liber",
+        "author": "Gregory I",
+        "count": 1,
+        "excerpts": [
+          "Ibid., Regulae Pastoralis Liber, col. 14."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0881413186",
+        "average_rating": 3.92,
+        "format": "Paperback",
+        "book_id": "1763876",
+        "author_ids": [
+          "15461985"
+        ],
+        "work_id": "1761892",
+        "text_reviews_count": 14,
+        "title_without_series": "The Book of Pastoral Rule",
+        "ratings_count": 116,
+        "publisher": "St. Vladimir's Seminary Press",
+        "publication_year": 2007,
+        "num_pages": 212,
+        "title": "The Book of Pastoral Rule",
+        "isbn13": "9780881413182",
+        "authors": [
+          "Pope Gregory I"
+        ],
+        "description": "Recognized as the most thorough pastoral treatise of the patristic era, this sixth-century work by St Gregory the Great carefully details the duties and obligations of the clergy concerning the spiritual formation of their flock.",
+        "link": "https://www.goodreads.com/book/show/1763876.The_Book_of_Pastoral_Rule"
+      },
+      "wikipedia_match": {
+        "title": "Pope Gregory I",
+        "birth_year": 540,
+        "death_year": 604,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1763876",
+        "target_author_ids": [
+          "15461985"
+        ],
+        "target_person": {
+          "title": "Pope Gregory I",
+          "birth_year": 540,
+          "death_year": 604
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "History of Otto",
+        "author": "Liudprand",
+        "count": 1,
+        "excerpts": [
+          "7 Liudprand, History of Otto, 2.20."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0813215064",
+        "average_rating": 3.8,
+        "format": "Paperback",
+        "book_id": "2622816",
+        "author_ids": [
+          "397759"
+        ],
+        "work_id": "2647497",
+        "text_reviews_count": 1,
+        "title_without_series": "The Complete Works of Liudprand of Cremona",
+        "publication_day": 1,
+        "ratings_count": 11,
+        "publication_month": 11,
+        "publisher": "Catholic University of America Press",
+        "publication_year": 2007,
+        "num_pages": 296,
+        "title": "The Complete Works of Liudprand of Cremona",
+        "isbn13": "9780813215068",
+        "authors": [
+          "Liudprand of Cremona"
+        ],
+        "description": "This modern english translation of all the surviving literary compositions ascribed to Liudprand, the bishop of Cremona from 962 to 972, offers unrivaled insight into society and culture in western Europe during the \"iron century.\" Since Liudprand enjoyed the favor of the Saxon Roman emperor Otto the Great, and traveled to Constantinople more than once on official business, his narratives also reveal European attitudes toward the Byzantine Empire and the culture of its refined capital city. No other tenth-c...",
+        "link": "https://www.goodreads.com/book/show/2622816-the-complete-works-of-liudprand-of-cremona"
+      },
+      "wikipedia_match": {
+        "title": "Liudprand of Cremona",
+        "birth_year": 920,
+        "death_year": 972,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "2622816",
+        "target_author_ids": [
+          "397759"
+        ],
+        "target_person": {
+          "title": "Liudprand of Cremona",
+          "birth_year": 920,
+          "death_year": 972
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Ynglinga Saga",
+        "author": "Snorri Sturluson",
+        "count": 1,
+        "excerpts": [
+          "Snorri Sturluson, The Ynglinga Saga, 1."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0292732627",
+        "average_rating": 4.17,
+        "format": "Hardcover",
+        "book_id": "1216209",
+        "author_ids": [
+          "13879"
+        ],
+        "work_id": "15282299",
+        "text_reviews_count": 1,
+        "title_without_series": "Heimskringla: History of the Kings of Norway",
+        "publication_day": 1,
+        "ratings_count": 8,
+        "publication_month": 1,
+        "publisher": "University of Texas Press",
+        "publication_year": 1964,
+        "title": "Heimskringla: History of the Kings of Norway",
+        "isbn13": "9780292732629",
+        "authors": [
+          "Snorri Sturluson"
+        ],
+        "description": "Heimskringla(Icelandic pronunciation: ['heims,khriNGla]) is the best known of the Old Norse kings' sagas. It was written in Old Norse in Iceland by the poet and historian Snorri Sturluson (1178/79-1241) ca. 1230. The name Heimskringla was first used in the 17th century, derived from the first two words of one of the manuscripts (kringla heimsins - the circle of the world).\nHeimskringla is a collection of sagas about the Norwegian kings, beginning with the saga of the legendary Swedish dynasty of the Yngling...",
+        "link": "https://www.goodreads.com/book/show/1216209.Heimskringla"
+      },
+      "wikipedia_match": {
+        "title": "Snorri Sturluson",
+        "birth_year": 1179,
+        "death_year": 1241,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1216209",
+        "target_author_ids": [
+          "13879"
+        ],
+        "target_person": {
+          "title": "Snorri Sturluson",
+          "birth_year": 1179,
+          "death_year": 1241
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "King Harald\u2019s Saga",
+        "author": "Snorri Sturluson",
+        "count": 1,
+        "excerpts": [
+          "Snorri Sturluson, King Harald\u2019s Saga, chapter 2."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 4.02,
+        "format": "Paperback",
+        "book_id": "8911406",
+        "author_ids": [
+          "13879"
+        ],
+        "work_id": "99406",
+        "text_reviews_count": 7,
+        "title_without_series": "King Harald's Saga: Harald Hardradi of Norway: From Snorri Sturluson's Heimskringla",
+        "ratings_count": 36,
+        "publisher": "Penguin",
+        "publication_year": 1966,
+        "num_pages": 187,
+        "title": "King Harald's Saga: Harald Hardradi of Norway: From Snorri Sturluson's Heimskringla",
+        "authors": [
+          "Snorri Sturluson"
+        ],
+        "description": "This compelling Icelandic history describes the life of King Harald Hardradi, from his battles across Europe and Russia to his final assault on England in 1066, less than three weeks before the invasion of William the Conqueror. It was a battle that led to his death and marked the end of an era in which Europe had been dominated by the threat of Scandinavian forces. Despite England's triumph, it also played a crucial part in fatally weakening the English army immediately prior to the Norman Conquest, changi...",
+        "link": "https://www.goodreads.com/book/show/8911406-king-harald-s-saga"
+      },
+      "wikipedia_match": {
+        "title": "Snorri Sturluson",
+        "birth_year": 1179,
+        "death_year": 1241,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "8911406",
+        "target_author_ids": [
+          "13879"
+        ],
+        "target_person": {
+          "title": "Snorri Sturluson",
+          "birth_year": 1179,
+          "death_year": 1241
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Deeds of God through the Franks",
+        "author": "Guibert de Nogent",
+        "count": 1,
+        "excerpts": [
+          "Guibert de Nogent, The Deeds of God through the Franks, p. 225."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0851156932",
+        "average_rating": 3.43,
+        "format": "Hardcover",
+        "book_id": "226045",
+        "author_ids": [
+          "603809",
+          "13981524"
+        ],
+        "work_id": "218943",
+        "text_reviews_count": 1,
+        "title_without_series": "The Deeds of God Through the Franks: A Translation of Guibert de Nogent's 'Gesta Dei Per Francos'",
+        "publication_day": 13,
+        "ratings_count": 5,
+        "publication_month": 4,
+        "publisher": "Boydell Press",
+        "publication_year": 1997,
+        "num_pages": 172,
+        "title": "The Deeds of God Through the Franks: A Translation of Guibert de Nogent's 'Gesta Dei Per Francos'",
+        "isbn13": "9780851156934",
+        "authors": [
+          "Guibert de Nogent",
+          "Robert   Levine"
+        ],
+        "description": "Guibert of Nogent's account of the First Crusade is an important but difficult chronicle which will be welcomed in this first English translation. It is a valuable addition to Boydell & Brewer's repertoire of crusading material, and is an interesting text because it represents an attempt to produce a critical history from the eyewitness sources - the Deeds of the Franks and Fulker of Chartres' History of the Expedition to Jerusalem: in the process it reveals considerable detail on Western attitudes to the F...",
+        "link": "https://www.goodreads.com/book/show/226045.The_Deeds_of_God_Through_the_Franks"
+      },
+      "wikipedia_match": {
+        "title": "Guibert de Nogent",
+        "birth_year": 1053,
+        "death_year": 1124,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "226045",
+        "target_author_ids": [
+          "603809",
+          "13981524"
+        ],
+        "target_person": {
+          "title": "Guibert de Nogent",
+          "birth_year": 1053,
+          "death_year": 1124
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "City of God, the",
+        "author": "St Augustine",
+        "count": 1,
+        "excerpts": [
+          "Augustine on role of the 13\u201314; and the fall of Rome 8\u20139; freed from secular control xvii\u2013xx; Gregory VII\u2019s ambition for 351; and Holy Mass 17; imperial interference in 258\u20139; legitimises Pepin\u2019s kingship 23; and martyrdom 83; Norman patronage 187; North African 353\u20134; as path to redemption 15\u201317; reform 257\u201362, 263, 265\u20136, 267\u20138; relations with Constantinople 21; schism with Eastern Church 279\u201380; support for Charlemagne 28\u201332; supremacy of Rome 18, 19; use of Latin 17, 134; variety of traditions and beliefs 18 church building 224\u20135 Church of the Holy Sepulchre 5, 243, 253\u20134, 412, 413; destruction of 237\u20138 City of God, the 13\u201314, 16 cleanliness 163 Clement II, Pope 263\u20134 Clement III, Pope."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0140448942",
+        "average_rating": 3.89,
+        "format": "Paperback",
+        "book_id": "25673",
+        "author_ids": [
+          "6819578",
+          "299304"
+        ],
+        "work_id": "5814",
+        "text_reviews_count": 237,
+        "title_without_series": "City of God",
+        "publication_day": 27,
+        "ratings_count": 7216,
+        "publication_month": 11,
+        "publisher": "Penguin Books Ltd",
+        "publication_year": 2003,
+        "num_pages": 1097,
+        "title": "City of God",
+        "isbn13": "9780140448948",
+        "authors": [
+          "Augustine of Hippo",
+          "Henry Bettenson"
+        ],
+        "description": "No book except the Bibleitself had a greater influence on the Middle Ages than Augustine's City of God. And since medieval Europe was the cradle of modern Western society, this work is vital for understanding our world and how it came into being.",
+        "link": "https://www.goodreads.com/book/show/25673.City_of_God"
+      },
+      "wikipedia_match": {
+        "title": "Augustine of Hippo",
+        "birth_year": 354,
+        "death_year": 430,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "25673",
+        "target_author_ids": [
+          "6819578",
+          "299304"
+        ],
+        "target_person": {
+          "title": "Augustine of Hippo",
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Revenge of Gaia",
+        "author": "Lovelock",
+        "count": 1,
+        "excerpts": [
+          "Revenge of Gaia, The (Lovelock) xxvi\u2013xxvii"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0713999144",
+        "average_rating": 3.78,
+        "format": "Hardcover",
+        "book_id": "835913",
+        "author_ids": [
+          "145416"
+        ],
+        "work_id": "241122",
+        "text_reviews_count": 8,
+        "title_without_series": "The Revenge Of Gaia: Why The Earth Is Fighting Back   And How We Can Still Save Humanity",
+        "publication_day": 1,
+        "ratings_count": 66,
+        "publication_month": 5,
+        "publisher": "Allen Lane",
+        "publication_year": 2006,
+        "num_pages": 177,
+        "title": "The Revenge Of Gaia: Why The Earth Is Fighting Back   And How We Can Still Save Humanity",
+        "isbn13": "9780713999143",
+        "authors": [
+          "James E. Lovelock"
+        ],
+        "description": "James Lovelock, originator of the idea of Gaia, makes an argued plea that we must change our way of life - before it is too late. Illustrated with examples drawn from his experiences around the world, he draws many radical conclusions, most controversially a passionate advocacy of nuclear energy.",
+        "link": "https://www.goodreads.com/book/show/835913.The_Revenge_Of_Gaia"
+      },
+      "wikipedia_match": {
+        "title": "James E. Lovelock",
+        "birth_year": 1919,
+        "death_year": 2022,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "835913",
+        "target_author_ids": [
+          "145416"
+        ],
+        "target_person": {
+          "title": "James E. Lovelock",
+          "birth_year": 1919,
+          "death_year": 2022
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Gelasius",
+        "count": 1,
+        "excerpts": [
+          "So it had been put by one pope, Gelasius, way back in AD 494."
+        ],
+        "canonical_author": "Gelasius"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Pope Gelasius I",
+          "page_id": 59207,
+          "infoboxes": [
+            "Christian leader"
+          ],
+          "categories": [
+            "Pope Gelasius I| ",
+            "496 deaths",
+            "5th-century archbishops",
+            "5th-century Christian saints",
+            "African popes",
+            "Saints from Roman Africa",
+            "Ancient Christians involved in controversies",
+            "5th-century Berber people",
+            "Ostrogothic Papacy",
+            "Papal saints",
+            "Popes",
+            "Year of birth unknown",
+            "5th-century popes",
+            "Berber Christians",
+            "5th-century writers in Latin",
+            "Burials at St. Peter's Basilica"
+          ],
+          "birth_year": null,
+          "death_year": 496
+        }
+      },
+      "wikipedia_match": {
+        "title": "Pope Gelasius I",
+        "page_id": 59207,
+        "infoboxes": [
+          "Christian leader"
+        ],
+        "categories": [
+          "Pope Gelasius I| ",
+          "496 deaths",
+          "5th-century archbishops",
+          "5th-century Christian saints",
+          "African popes",
+          "Saints from Roman Africa",
+          "Ancient Christians involved in controversies",
+          "5th-century Berber people",
+          "Ostrogothic Papacy",
+          "Papal saints",
+          "Popes",
+          "Year of birth unknown",
+          "5th-century popes",
+          "Berber Christians",
+          "5th-century writers in Latin",
+          "Burials at St. Peter's Basilica"
+        ],
+        "birth_year": 410,
+        "death_year": 496
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Pope Gelasius I",
+          "page_id": 59207,
+          "infoboxes": [
+            "Christian leader"
+          ],
+          "categories": [
+            "Pope Gelasius I| ",
+            "496 deaths",
+            "5th-century archbishops",
+            "5th-century Christian saints",
+            "African popes",
+            "Saints from Roman Africa",
+            "Ancient Christians involved in controversies",
+            "5th-century Berber people",
+            "Ostrogothic Papacy",
+            "Papal saints",
+            "Popes",
+            "Year of birth unknown",
+            "5th-century popes",
+            "Berber Christians",
+            "5th-century writers in Latin",
+            "Burials at St. Peter's Basilica"
+          ],
+          "birth_year": 410,
+          "death_year": 496
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hilaire Belloc",
+        "count": 1,
+        "excerpts": [
+          "And Europe is the Faith.\u2019 Hilaire Belloc 1 THE RETURN OF THE KING The Whore of Babylon \u2018All these will I give you,\u2019 said Satan, showing Jesus the kingdoms of the world, \u2018if you will fall down and worship me.\u20191"
+        ],
+        "canonical_author": "Hilaire Belloc"
+      },
+      "goodreads_match": {
+        "author_id": "4025",
+        "name": "Hilaire Belloc",
+        "average_rating": "3.99",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Hilaire Belloc",
+          "page_id": 403286,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Hilaire Belloc",
+            "1870 births",
+            "1953 deaths",
+            "19th-century English poets",
+            "19th-century French essayists",
+            "19th-century French male writers",
+            "19th-century French poets",
+            "19th-century Roman Catholics",
+            "20th-century English male writers",
+            "20th-century English poets",
+            "20th-century French essayists",
+            "20th-century Roman Catholics",
+            "Alumni of Balliol College, Oxford",
+            "Belloc family|Hilaire",
+            "British anti-capitalists",
+            "British anti-communists",
+            "British humorous poets",
+            "Burials in West Sussex",
+            "British children's poets",
+            "French children's poets",
+            "Christian radicals",
+            "Christian humanists",
+            "Contributors to the Catholic Encyclopedia",
+            "Critics of Buddhism",
+            "Critics of Freemasonry",
+            "Deaths from fire",
+            "Distributism",
+            "English Catholic poets",
+            "English male essayists",
+            "English male poets"
+          ],
+          "birth_year": 1870,
+          "death_year": 1953
+        }
+      },
+      "wikipedia_match": {
+        "title": "Hilaire Belloc",
+        "page_id": 403286,
+        "infoboxes": [
+          "writer",
+          "officeholder "
+        ],
+        "categories": [
+          "Hilaire Belloc",
+          "1870 births",
+          "1953 deaths",
+          "19th-century English poets",
+          "19th-century French essayists",
+          "19th-century French male writers",
+          "19th-century French poets",
+          "19th-century Roman Catholics",
+          "20th-century English male writers",
+          "20th-century English poets",
+          "20th-century French essayists",
+          "20th-century Roman Catholics",
+          "Alumni of Balliol College, Oxford",
+          "Belloc family|Hilaire",
+          "British anti-capitalists",
+          "British anti-communists",
+          "British humorous poets",
+          "Burials in West Sussex",
+          "British children's poets",
+          "French children's poets",
+          "Christian radicals",
+          "Christian humanists",
+          "Contributors to the Catholic Encyclopedia",
+          "Critics of Buddhism",
+          "Critics of Freemasonry",
+          "Deaths from fire",
+          "Distributism",
+          "English Catholic poets",
+          "English male essayists",
+          "English male poets"
+        ],
+        "birth_year": 1870,
+        "death_year": 1953
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "4025"
+        ],
+        "target_person": {
+          "title": "Hilaire Belloc",
+          "page_id": 403286,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Hilaire Belloc",
+            "1870 births",
+            "1953 deaths",
+            "19th-century English poets",
+            "19th-century French essayists",
+            "19th-century French male writers",
+            "19th-century French poets",
+            "19th-century Roman Catholics",
+            "20th-century English male writers",
+            "20th-century English poets",
+            "20th-century French essayists",
+            "20th-century Roman Catholics",
+            "Alumni of Balliol College, Oxford",
+            "Belloc family|Hilaire",
+            "British anti-capitalists",
+            "British anti-communists",
+            "British humorous poets",
+            "Burials in West Sussex",
+            "British children's poets",
+            "French children's poets",
+            "Christian radicals",
+            "Christian humanists",
+            "Contributors to the Catholic Encyclopedia",
+            "Critics of Buddhism",
+            "Critics of Freemasonry",
+            "Deaths from fire",
+            "Distributism",
+            "English Catholic poets",
+            "English male essayists",
+            "English male poets"
+          ],
+          "birth_year": 1870,
+          "death_year": 1953
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Methodius",
+        "count": 1,
+        "excerpts": [
+          "Written, it was claimed, by Methodius, a saint who had been martyred some three hundred years previously, these appeared to lift the veil, just as St John\u2019s vision had done, from the end days of the world."
+        ],
+        "canonical_author": "Methodius"
+      },
+      "goodreads_match": {
+        "author_id": "15187621",
+        "name": "St. Methodius",
+        "average_rating": "3.86",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Methodius of Olympus",
+          "page_id": 1864217,
+          "infoboxes": [
+            "saint",
+            "theologian"
+          ],
+          "categories": [
+            "Christian anti-Gnosticism",
+            "3rd-century births",
+            "3rd-century Christian theologians",
+            "4th-century bishops in Roman Anatolia",
+            "311 deaths",
+            "Saints from Roman Anatolia",
+            "4th-century Greek writers",
+            "4th-century Christian martyrs",
+            "Church Fathers"
+          ],
+          "birth_year": null,
+          "death_year": 311
+        }
+      },
+      "wikipedia_match": {
+        "title": "Methodius of Olympus",
+        "page_id": 1864217,
+        "infoboxes": [
+          "saint",
+          "theologian"
+        ],
+        "categories": [
+          "Christian anti-Gnosticism",
+          "3rd-century births",
+          "3rd-century Christian theologians",
+          "4th-century bishops in Roman Anatolia",
+          "311 deaths",
+          "Saints from Roman Anatolia",
+          "4th-century Greek writers",
+          "4th-century Christian martyrs",
+          "Church Fathers"
+        ],
+        "birth_year": 230,
+        "death_year": 311
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "15187621"
+        ],
+        "target_person": {
+          "title": "Methodius of Olympus",
+          "page_id": 1864217,
+          "infoboxes": [
+            "saint",
+            "theologian"
+          ],
+          "categories": [
+            "Christian anti-Gnosticism",
+            "3rd-century births",
+            "3rd-century Christian theologians",
+            "4th-century bishops in Roman Anatolia",
+            "311 deaths",
+            "Saints from Roman Anatolia",
+            "4th-century Greek writers",
+            "4th-century Christian martyrs",
+            "Church Fathers"
+          ],
+          "birth_year": 230,
+          "death_year": 311
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pythagoras",
+        "count": 1,
+        "excerpts": [
+          "Mathematicians who explored the nature of infinity did so using numerals derived from the idol worshippers of far-off India; mystics who pronounced that salvation might be attained through a mastery of the sciences depended for their philosophy upon the teachings of Pythagoras and Plato, long-dead Greek idolaters who had never heard of Mohammed."
+        ],
+        "canonical_author": "Pythagoras"
+      },
+      "goodreads_match": {
+        "author_id": "203707",
+        "name": "Pythagoras",
+        "average_rating": "3.91",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Pythagoras",
+        "page_id": 23275,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Pythagoras| ",
+          "570s BC births",
+          "490s BC deaths",
+          "6th-century BC mathematicians",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek mathematicians",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek geometers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek music theorists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political refugees",
+          "Ancient Greek shamans",
+          "Ancient occultists",
+          "Ancient Samians",
+          "Pythagoreans",
+          "Founders of religions",
+          "Numerologists",
+          "Pythagoreans of Magna Graecia",
+          "6th-century BC religious leaders",
+          "5th-century BC religious leaders"
+        ],
+        "birth_year": -570,
+        "death_year": -495
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "203707"
+        ],
+        "target_person": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": -570,
+          "death_year": -495
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "count": 1,
+        "excerpts": [
+          "Mathematicians who explored the nature of infinity did so using numerals derived from the idol worshippers of far-off India; mystics who pronounced that salvation might be attained through a mastery of the sciences depended for their philosophy upon the teachings of Pythagoras and Plato, long-dead Greek idolaters who had never heard of Mohammed."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": {
+        "author_id": "879",
+        "name": "Plato",
+        "average_rating": "3.99",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -428,
+        "death_year": -348
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thietmar",
+        "count": 1,
+        "excerpts": [
+          "\u2018Not a ruler, but a destroyer\u2019:62 such was the judgement of his near neighbour, Thietmar, the ever-sniffy Bishop of Merseburg."
+        ],
+        "canonical_author": "Thietmar"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Thietmar of Merseburg",
+          "page_id": 2953769,
+          "infoboxes": [],
+          "categories": [
+            "975 births",
+            "1018 deaths",
+            "Chronologists",
+            "11th-century German bishops",
+            "11th-century German historians",
+            "Roman Catholic bishops of Merseburg",
+            "Chroniclers from the Holy Roman Empire",
+            "Prince-bishops in the Holy Roman Empire",
+            "German male non-fiction writers",
+            "11th-century writers in Latin"
+          ],
+          "birth_year": 975,
+          "death_year": 1018
+        }
+      },
+      "wikipedia_match": {
+        "title": "Thietmar of Merseburg",
+        "page_id": 2953769,
+        "infoboxes": [],
+        "categories": [
+          "975 births",
+          "1018 deaths",
+          "Chronologists",
+          "11th-century German bishops",
+          "11th-century German historians",
+          "Roman Catholic bishops of Merseburg",
+          "Chroniclers from the Holy Roman Empire",
+          "Prince-bishops in the Holy Roman Empire",
+          "German male non-fiction writers",
+          "11th-century writers in Latin"
+        ],
+        "birth_year": 975,
+        "death_year": 1018
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Thietmar of Merseburg",
+          "page_id": 2953769,
+          "infoboxes": [],
+          "categories": [
+            "975 births",
+            "1018 deaths",
+            "Chronologists",
+            "11th-century German bishops",
+            "11th-century German historians",
+            "Roman Catholic bishops of Merseburg",
+            "Chroniclers from the Holy Roman Empire",
+            "Prince-bishops in the Holy Roman Empire",
+            "German male non-fiction writers",
+            "11th-century writers in Latin"
+          ],
+          "birth_year": 975,
+          "death_year": 1018
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Robert Guiscard",
+        "count": 1,
+        "excerpts": [
+          "Indeed, in sober truth, rulers needed to be either very pious, like the Countess Matilda, or else very hungry for legitimacy, like Robert Guiscard, to become vassals of St Peter."
+        ],
+        "canonical_author": "Robert Guiscard"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Robert Guiscard",
+          "page_id": 157902,
+          "infoboxes": [
+            "royalty"
+          ],
+          "categories": [
+            "Robert Guiscard| ",
+            "1010s births",
+            "1085 deaths",
+            "11th-century Italian nobility",
+            "11th-century Normans",
+            "Year of birth uncertain",
+            "Italo-Normans",
+            "Norman mercenaries",
+            "Norman warriors",
+            "Dukes of Apulia",
+            "People excommunicated by the Catholic Church",
+            "Counts of Apulia and Calabria",
+            "Hauteville family",
+            "Burials at the Abbey of Santissima Trinit\u00e0, Venosa",
+            "People of the Byzantine\u2013Norman wars",
+            "Nobilissimi"
+          ],
+          "birth_year": null,
+          "death_year": 1085
+        }
+      },
+      "wikipedia_match": {
+        "title": "Robert Guiscard",
+        "page_id": 157902,
+        "infoboxes": [
+          "royalty"
+        ],
+        "categories": [
+          "Robert Guiscard| ",
+          "1010s births",
+          "1085 deaths",
+          "11th-century Italian nobility",
+          "11th-century Normans",
+          "Year of birth uncertain",
+          "Italo-Normans",
+          "Norman mercenaries",
+          "Norman warriors",
+          "Dukes of Apulia",
+          "People excommunicated by the Catholic Church",
+          "Counts of Apulia and Calabria",
+          "Hauteville family",
+          "Burials at the Abbey of Santissima Trinit\u00e0, Venosa",
+          "People of the Byzantine\u2013Norman wars",
+          "Nobilissimi"
+        ],
+        "birth_year": 1015,
+        "death_year": 1085
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Robert Guiscard",
+          "page_id": 157902,
+          "infoboxes": [
+            "royalty"
+          ],
+          "categories": [
+            "Robert Guiscard| ",
+            "1010s births",
+            "1085 deaths",
+            "11th-century Italian nobility",
+            "11th-century Normans",
+            "Year of birth uncertain",
+            "Italo-Normans",
+            "Norman mercenaries",
+            "Norman warriors",
+            "Dukes of Apulia",
+            "People excommunicated by the Catholic Church",
+            "Counts of Apulia and Calabria",
+            "Hauteville family",
+            "Burials at the Abbey of Santissima Trinit\u00e0, Venosa",
+            "People of the Byzantine\u2013Norman wars",
+            "Nobilissimi"
+          ],
+          "birth_year": 1015,
+          "death_year": 1085
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Regino of Pr\u00fcm",
+        "count": 1,
+        "excerpts": [
+          "52 Regino of Pr\u00fcm, p. 129."
+        ],
+        "canonical_author": "Regino Of Pr\u00fcm"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Regino of Pr\u00fcm",
+          "page_id": 154531,
+          "infoboxes": [],
+          "categories": [
+            "9th-century births",
+            "915 deaths",
+            "Chroniclers from the Holy Roman Empire",
+            "10th-century German historians",
+            "Year of birth unknown",
+            "German music theorists",
+            "Tonaries",
+            "Benedictine abbots",
+            "Eifel in the Middle Ages",
+            "10th-century German writers",
+            "10th-century writers in Latin",
+            "10th-century jurists",
+            "Canon law jurists",
+            "9th-century Christian abbots",
+            "10th-century Christian abbots"
+          ],
+          "birth_year": null,
+          "death_year": 915
+        }
+      },
+      "wikipedia_match": {
+        "title": "Regino of Pr\u00fcm",
+        "page_id": 154531,
+        "infoboxes": [],
+        "categories": [
+          "9th-century births",
+          "915 deaths",
+          "Chroniclers from the Holy Roman Empire",
+          "10th-century German historians",
+          "Year of birth unknown",
+          "German music theorists",
+          "Tonaries",
+          "Benedictine abbots",
+          "Eifel in the Middle Ages",
+          "10th-century German writers",
+          "10th-century writers in Latin",
+          "10th-century jurists",
+          "Canon law jurists",
+          "9th-century Christian abbots",
+          "10th-century Christian abbots"
+        ],
+        "birth_year": 840,
+        "death_year": 915
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Regino of Pr\u00fcm",
+          "page_id": 154531,
+          "infoboxes": [],
+          "categories": [
+            "9th-century births",
+            "915 deaths",
+            "Chroniclers from the Holy Roman Empire",
+            "10th-century German historians",
+            "Year of birth unknown",
+            "German music theorists",
+            "Tonaries",
+            "Benedictine abbots",
+            "Eifel in the Middle Ages",
+            "10th-century German writers",
+            "10th-century writers in Latin",
+            "10th-century jurists",
+            "Canon law jurists",
+            "9th-century Christian abbots",
+            "10th-century Christian abbots"
+          ],
+          "birth_year": 840,
+          "death_year": 915
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Otto of Freising",
+        "count": 1,
+        "excerpts": [
+          "54 Otto of Freising, p. 66."
+        ],
+        "canonical_author": "Otto Of Freising"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Otto of Freising",
+          "page_id": 351392,
+          "infoboxes": [
+            "Christian leader"
+          ],
+          "categories": [
+            "1110s births",
+            "1158 deaths",
+            "People from Klosterneuburg",
+            "12th-century writers in Latin",
+            "German Cistercians",
+            "Medieval writers about the Crusades",
+            "Roman Catholic bishops of Freising",
+            "12th-century German Roman Catholic bishops",
+            "Hohenstaufen family",
+            "House of Babenberg",
+            "12th-century German historians",
+            "Burials at Heiligenkreuz Abbey",
+            "Chroniclers from the Holy Roman Empire",
+            "Christians of the Second Crusade",
+            "Sons of monarchs"
+          ],
+          "birth_year": null,
+          "death_year": 1158
+        }
+      },
+      "wikipedia_match": {
+        "title": "Otto of Freising",
+        "page_id": 351392,
+        "infoboxes": [
+          "Christian leader"
+        ],
+        "categories": [
+          "1110s births",
+          "1158 deaths",
+          "People from Klosterneuburg",
+          "12th-century writers in Latin",
+          "German Cistercians",
+          "Medieval writers about the Crusades",
+          "Roman Catholic bishops of Freising",
+          "12th-century German Roman Catholic bishops",
+          "Hohenstaufen family",
+          "House of Babenberg",
+          "12th-century German historians",
+          "Burials at Heiligenkreuz Abbey",
+          "Chroniclers from the Holy Roman Empire",
+          "Christians of the Second Crusade",
+          "Sons of monarchs"
+        ],
+        "birth_year": 1111,
+        "death_year": 1158
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Otto of Freising",
+          "page_id": 351392,
+          "infoboxes": [
+            "Christian leader"
+          ],
+          "categories": [
+            "1110s births",
+            "1158 deaths",
+            "People from Klosterneuburg",
+            "12th-century writers in Latin",
+            "German Cistercians",
+            "Medieval writers about the Crusades",
+            "Roman Catholic bishops of Freising",
+            "12th-century German Roman Catholic bishops",
+            "Hohenstaufen family",
+            "House of Babenberg",
+            "12th-century German historians",
+            "Burials at Heiligenkreuz Abbey",
+            "Chroniclers from the Holy Roman Empire",
+            "Christians of the Second Crusade",
+            "Sons of monarchs"
+          ],
+          "birth_year": 1111,
+          "death_year": 1158
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Abbo of Fleury",
+        "count": 1,
+        "excerpts": [
+          "59 Abbo of Fleury, col. 471 A."
+        ],
+        "canonical_author": "Abbo Of Fleury"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Abbo of Fleury",
+          "page_id": 277446,
+          "infoboxes": [
+            "saint"
+          ],
+          "categories": [
+            "940s births",
+            "1004 deaths",
+            "Medieval French saints",
+            "French abbots",
+            "Clergy from Orl\u00e9ans",
+            "10th-century mathematicians",
+            "11th-century Christian saints",
+            "10th-century French writers",
+            "10th-century writers in Latin",
+            "10th-century jurists",
+            "10th-century French philosophers",
+            "Christian hagiographers",
+            "Writers from Orl\u00e9ans"
+          ],
+          "birth_year": null,
+          "death_year": 1004
+        }
+      },
+      "wikipedia_match": {
+        "title": "Abbo of Fleury",
+        "page_id": 277446,
+        "infoboxes": [
+          "saint"
+        ],
+        "categories": [
+          "940s births",
+          "1004 deaths",
+          "Medieval French saints",
+          "French abbots",
+          "Clergy from Orl\u00e9ans",
+          "10th-century mathematicians",
+          "11th-century Christian saints",
+          "10th-century French writers",
+          "10th-century writers in Latin",
+          "10th-century jurists",
+          "10th-century French philosophers",
+          "Christian hagiographers",
+          "Writers from Orl\u00e9ans"
+        ],
+        "birth_year": 945,
+        "death_year": 1004
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Abbo of Fleury",
+          "page_id": 277446,
+          "infoboxes": [
+            "saint"
+          ],
+          "categories": [
+            "940s births",
+            "1004 deaths",
+            "Medieval French saints",
+            "French abbots",
+            "Clergy from Orl\u00e9ans",
+            "10th-century mathematicians",
+            "11th-century Christian saints",
+            "10th-century French writers",
+            "10th-century writers in Latin",
+            "10th-century jurists",
+            "10th-century French philosophers",
+            "Christian hagiographers",
+            "Writers from Orl\u00e9ans"
+          ],
+          "birth_year": 945,
+          "death_year": 1004
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Widukind",
+        "count": 1,
+        "excerpts": [
+          "3 Widukind, 1.36."
+        ],
+        "canonical_author": "Widukind"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Widukind of Corvey",
+          "page_id": 59184,
+          "infoboxes": [],
+          "categories": [
+            "Old Saxony",
+            "920s births",
+            "Year of birth uncertain",
+            "Year of death unknown",
+            "10th-century German historians",
+            "German male writers",
+            "10th-century Saxon people",
+            "10th-century writers in Latin"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Widukind of Corvey",
+        "page_id": 59184,
+        "infoboxes": [],
+        "categories": [
+          "Old Saxony",
+          "920s births",
+          "Year of birth uncertain",
+          "Year of death unknown",
+          "10th-century German historians",
+          "German male writers",
+          "10th-century Saxon people",
+          "10th-century writers in Latin"
+        ],
+        "birth_year": 925,
+        "death_year": 973
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Widukind of Corvey",
+          "page_id": 59184,
+          "infoboxes": [],
+          "categories": [
+            "Old Saxony",
+            "920s births",
+            "Year of birth uncertain",
+            "Year of death unknown",
+            "10th-century German historians",
+            "German male writers",
+            "10th-century Saxon people",
+            "10th-century writers in Latin"
+          ],
+          "birth_year": 925,
+          "death_year": 973
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Leo the Deacon",
+        "count": 1,
+        "excerpts": [
+          "21 Leo the Deacon, 1.1."
+        ],
+        "canonical_author": "Leo The Deacon"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Leo the Deacon",
+          "page_id": 7484986,
+          "infoboxes": [],
+          "categories": [
+            "950s births",
+            "10th-century Byzantine historians",
+            "Byzantine chroniclers",
+            "Year of birth uncertain",
+            "Year of death unknown"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Leo the Deacon",
+        "page_id": 7484986,
+        "infoboxes": [],
+        "categories": [
+          "950s births",
+          "10th-century Byzantine historians",
+          "Byzantine chroniclers",
+          "Year of birth uncertain",
+          "Year of death unknown"
+        ],
+        "birth_year": 950,
+        "death_year": 992
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Leo the Deacon",
+          "page_id": 7484986,
+          "infoboxes": [],
+          "categories": [
+            "950s births",
+            "10th-century Byzantine historians",
+            "Byzantine chroniclers",
+            "Year of birth uncertain",
+            "Year of death unknown"
+          ],
+          "birth_year": 950,
+          "death_year": 992
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "St John of Damascus",
+        "count": 1,
+        "excerpts": [
+          "The originator of the phrase was St John of Damascus, in his book On the Heretics \u2013 although, as Sahas points out, he applied it to \u2018the religion of the Ishmaelities\u2019, rather than to Mohammed himself (footnote 7, p. 69)."
+        ],
+        "canonical_author": "St John Of Damascus"
+      },
+      "goodreads_match": {
+        "author_id": "622008",
+        "name": "John Damascene",
+        "average_rating": "4.29",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "John of Damascus",
+          "page_id": 42927,
+          "infoboxes": [
+            "saint ",
+            "philosopher"
+          ],
+          "categories": [
+            "Arab Christian saints",
+            "676 births",
+            "749 deaths",
+            "7th-century Byzantine scientists",
+            "7th-century Byzantine writers",
+            "7th-century Byzantine monks",
+            "7th-century Christian theologians",
+            "7th-century composers",
+            "7th-century Syrian people",
+            "8th-century Byzantine scientists",
+            "8th-century Byzantine writers",
+            "8th-century Christian saints",
+            "8th-century Christian theologians",
+            "8th-century composers",
+            "8th-century Greek philosophers",
+            "8th-century Syrian people",
+            "Christians|Saints",
+            "Byzantine composers",
+            "Byzantine hymnographers",
+            "Byzantine Iconoclasm",
+            "Byzantine saints",
+            "Byzantine theologians",
+            "Christian anti-Gnosticism",
+            "Christian apologists",
+            "Christian critics of Islam",
+            "Christians from the Umayyad Caliphate",
+            "Church Fathers",
+            "Catholic philosophers",
+            "Doctors of the Church",
+            "Eastern Orthodox philosophers"
+          ],
+          "birth_year": 676,
+          "death_year": 749
+        }
+      },
+      "wikipedia_match": {
+        "title": "John of Damascus",
+        "page_id": 42927,
+        "infoboxes": [
+          "saint ",
+          "philosopher"
+        ],
+        "categories": [
+          "Arab Christian saints",
+          "676 births",
+          "749 deaths",
+          "7th-century Byzantine scientists",
+          "7th-century Byzantine writers",
+          "7th-century Byzantine monks",
+          "7th-century Christian theologians",
+          "7th-century composers",
+          "7th-century Syrian people",
+          "8th-century Byzantine scientists",
+          "8th-century Byzantine writers",
+          "8th-century Christian saints",
+          "8th-century Christian theologians",
+          "8th-century composers",
+          "8th-century Greek philosophers",
+          "8th-century Syrian people",
+          "Christians|Saints",
+          "Byzantine composers",
+          "Byzantine hymnographers",
+          "Byzantine Iconoclasm",
+          "Byzantine saints",
+          "Byzantine theologians",
+          "Christian anti-Gnosticism",
+          "Christian apologists",
+          "Christian critics of Islam",
+          "Christians from the Umayyad Caliphate",
+          "Church Fathers",
+          "Catholic philosophers",
+          "Doctors of the Church",
+          "Eastern Orthodox philosophers"
+        ],
+        "birth_year": 676,
+        "death_year": 749
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "622008"
+        ],
+        "target_person": {
+          "title": "John of Damascus",
+          "page_id": 42927,
+          "infoboxes": [
+            "saint ",
+            "philosopher"
+          ],
+          "categories": [
+            "Arab Christian saints",
+            "676 births",
+            "749 deaths",
+            "7th-century Byzantine scientists",
+            "7th-century Byzantine writers",
+            "7th-century Byzantine monks",
+            "7th-century Christian theologians",
+            "7th-century composers",
+            "7th-century Syrian people",
+            "8th-century Byzantine scientists",
+            "8th-century Byzantine writers",
+            "8th-century Christian saints",
+            "8th-century Christian theologians",
+            "8th-century composers",
+            "8th-century Greek philosophers",
+            "8th-century Syrian people",
+            "Christians|Saints",
+            "Byzantine composers",
+            "Byzantine hymnographers",
+            "Byzantine Iconoclasm",
+            "Byzantine saints",
+            "Byzantine theologians",
+            "Christian anti-Gnosticism",
+            "Christian apologists",
+            "Christian critics of Islam",
+            "Christians from the Umayyad Caliphate",
+            "Church Fathers",
+            "Catholic philosophers",
+            "Doctors of the Church",
+            "Eastern Orthodox philosophers"
+          ],
+          "birth_year": 676,
+          "death_year": 749
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ibn Ishaq",
+        "count": 1,
+        "excerpts": [
+          "The number of military expeditions in which Mohammed took part is set by an early Muslim historian, Ibn Ishaq, at twenty-seven; he is supposed to have fought personally in nine of these."
+        ],
+        "canonical_author": "Ibn Ishaq"
+      },
+      "goodreads_match": {
+        "author_id": "1633461",
+        "name": "Muhammad Ibn Ishaq",
+        "average_rating": "3.96",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Ibn Ishaq",
+          "page_id": 344705,
+          "infoboxes": [
+            "religious biography"
+          ],
+          "categories": [
+            "767 deaths",
+            "8th-century historians from the Abbasid Caliphate",
+            "Hadith scholars",
+            "Writers of lost works",
+            "704 births",
+            "Arab biographers",
+            "8th-century Arab people",
+            "8th-century Arabic-language writers",
+            "People from Medina",
+            "8th-century people from the Umayyad Caliphate"
+          ],
+          "birth_year": 704,
+          "death_year": 767
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ibn Ishaq",
+        "page_id": 344705,
+        "infoboxes": [
+          "religious biography"
+        ],
+        "categories": [
+          "767 deaths",
+          "8th-century historians from the Abbasid Caliphate",
+          "Hadith scholars",
+          "Writers of lost works",
+          "704 births",
+          "Arab biographers",
+          "8th-century Arab people",
+          "8th-century Arabic-language writers",
+          "People from Medina",
+          "8th-century people from the Umayyad Caliphate"
+        ],
+        "birth_year": 704,
+        "death_year": 767
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1633461"
+        ],
+        "target_person": {
+          "title": "Ibn Ishaq",
+          "page_id": 344705,
+          "infoboxes": [
+            "religious biography"
+          ],
+          "categories": [
+            "767 deaths",
+            "8th-century historians from the Abbasid Caliphate",
+            "Hadith scholars",
+            "Writers of lost works",
+            "704 births",
+            "Arab biographers",
+            "8th-century Arab people",
+            "8th-century Arabic-language writers",
+            "People from Medina",
+            "8th-century people from the Umayyad Caliphate"
+          ],
+          "birth_year": 704,
+          "death_year": 767
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Karsh",
+        "count": 1,
+        "excerpts": [
+          "61 Quoted in Karsh, p. 63."
+        ],
+        "canonical_author": "Karsh"
+      },
+      "goodreads_match": {
+        "author_id": "79645",
+        "name": "Efraim Karsh",
+        "average_rating": "3.67",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Efraim Karsh",
+          "page_id": 1825195,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1953 births",
+            "Living people",
+            "Israeli historians",
+            "Jewish historians",
+            "Writers on antisemitism",
+            "Islam and politics",
+            "British historians of Islam",
+            "Jewish scholars of Islam",
+            "Hebrew University of Jerusalem alumni",
+            "Tel Aviv University alumni",
+            "Jewish Israeli writers",
+            "Academic staff of Bar-Ilan University",
+            "Columbia University faculty",
+            "Harvard University faculty",
+            "Academic staff of the University of Paris",
+            "Academic staff of the University of Helsinki",
+            "Academics of the London School of Economics",
+            "Academics of King's College London"
+          ],
+          "birth_year": 1953,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Efraim Karsh",
+        "page_id": 1825195,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1953 births",
+          "Living people",
+          "Israeli historians",
+          "Jewish historians",
+          "Writers on antisemitism",
+          "Islam and politics",
+          "British historians of Islam",
+          "Jewish scholars of Islam",
+          "Hebrew University of Jerusalem alumni",
+          "Tel Aviv University alumni",
+          "Jewish Israeli writers",
+          "Academic staff of Bar-Ilan University",
+          "Columbia University faculty",
+          "Harvard University faculty",
+          "Academic staff of the University of Paris",
+          "Academic staff of the University of Helsinki",
+          "Academics of the London School of Economics",
+          "Academics of King's College London"
+        ],
+        "birth_year": 1953,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "79645"
+        ],
+        "target_person": {
+          "title": "Efraim Karsh",
+          "page_id": 1825195,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1953 births",
+            "Living people",
+            "Israeli historians",
+            "Jewish historians",
+            "Writers on antisemitism",
+            "Islam and politics",
+            "British historians of Islam",
+            "Jewish scholars of Islam",
+            "Hebrew University of Jerusalem alumni",
+            "Tel Aviv University alumni",
+            "Jewish Israeli writers",
+            "Academic staff of Bar-Ilan University",
+            "Columbia University faculty",
+            "Harvard University faculty",
+            "Academic staff of the University of Paris",
+            "Academic staff of the University of Helsinki",
+            "Academics of the London School of Economics",
+            "Academics of King's College London"
+          ],
+          "birth_year": 1953,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Gibbon",
+        "count": 1,
+        "excerpts": [
+          "63 Gibbon, vol.\n3, p. 348."
+        ],
+        "canonical_author": "Gibbon"
+      },
+      "goodreads_match": {
+        "author_id": "11628",
+        "name": "Edward Gibbon",
+        "average_rating": "4.02",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Edward Gibbon",
+          "page_id": 10310,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1737 births",
+            "1794 deaths",
+            "18th-century English diarists",
+            "18th-century English historians",
+            "18th-century English male writers",
+            "18th-century English non-fiction writers",
+            "Acton family|Edward",
+            "Alumni of Magdalen College, Oxford",
+            "British Byzantinists",
+            "British critics of religions",
+            "British Freemasons",
+            "British historians of religion",
+            "English male essayists",
+            "English monarchists",
+            "British MPs 1774\u20131780",
+            "British MPs 1780\u20131784",
+            "British Protestants",
+            "British rhetoricians",
+            "Burials in East Sussex",
+            "Converts to Protestantism from Catholicism",
+            "Deaths from peritonitis",
+            "English book and manuscript collectors",
+            "English classical scholars",
+            "English essayists",
+            "English Protestants",
+            "English rhetoricians",
+            "Hampshire and Isle of Wight Militia officers",
+            "Fellows of the Royal Society",
+            "Freemasons of the Premier Grand Lodge of England",
+            "Historians of ancient Rome"
+          ],
+          "birth_year": 1737,
+          "death_year": 1794
+        }
+      },
+      "wikipedia_match": {
+        "title": "Edward Gibbon",
+        "page_id": 10310,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "1737 births",
+          "1794 deaths",
+          "18th-century English diarists",
+          "18th-century English historians",
+          "18th-century English male writers",
+          "18th-century English non-fiction writers",
+          "Acton family|Edward",
+          "Alumni of Magdalen College, Oxford",
+          "British Byzantinists",
+          "British critics of religions",
+          "British Freemasons",
+          "British historians of religion",
+          "English male essayists",
+          "English monarchists",
+          "British MPs 1774\u20131780",
+          "British MPs 1780\u20131784",
+          "British Protestants",
+          "British rhetoricians",
+          "Burials in East Sussex",
+          "Converts to Protestantism from Catholicism",
+          "Deaths from peritonitis",
+          "English book and manuscript collectors",
+          "English classical scholars",
+          "English essayists",
+          "English Protestants",
+          "English rhetoricians",
+          "Hampshire and Isle of Wight Militia officers",
+          "Fellows of the Royal Society",
+          "Freemasons of the Premier Grand Lodge of England",
+          "Historians of ancient Rome"
+        ],
+        "birth_year": 1737,
+        "death_year": 1794
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11628"
+        ],
+        "target_person": {
+          "title": "Edward Gibbon",
+          "page_id": 10310,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1737 births",
+            "1794 deaths",
+            "18th-century English diarists",
+            "18th-century English historians",
+            "18th-century English male writers",
+            "18th-century English non-fiction writers",
+            "Acton family|Edward",
+            "Alumni of Magdalen College, Oxford",
+            "British Byzantinists",
+            "British critics of religions",
+            "British Freemasons",
+            "British historians of religion",
+            "English male essayists",
+            "English monarchists",
+            "British MPs 1774\u20131780",
+            "British MPs 1780\u20131784",
+            "British Protestants",
+            "British rhetoricians",
+            "Burials in East Sussex",
+            "Converts to Protestantism from Catholicism",
+            "Deaths from peritonitis",
+            "English book and manuscript collectors",
+            "English classical scholars",
+            "English essayists",
+            "English Protestants",
+            "English rhetoricians",
+            "Hampshire and Isle of Wight Militia officers",
+            "Fellows of the Royal Society",
+            "Freemasons of the Premier Grand Lodge of England",
+            "Historians of ancient Rome"
+          ],
+          "birth_year": 1737,
+          "death_year": 1794
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Gregorovius",
+        "count": 1,
+        "excerpts": [
+          "Quoted by Gregorovius, p. 496."
+        ],
+        "canonical_author": "Gregorovius"
+      },
+      "goodreads_match": {
+        "author_id": "96436",
+        "name": "Ferdinand Gregorovius",
+        "average_rating": "3.48",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Ferdinand Gregorovius",
+          "page_id": 142382,
+          "infoboxes": [],
+          "categories": [
+            "1821 births",
+            "1891 deaths",
+            "People from Nidzica",
+            "People from East Prussia",
+            "German Protestants",
+            "20th-century German historians",
+            "Historians of the Catholic Church",
+            "German male non-fiction writers",
+            "19th-century German male writers"
+          ],
+          "birth_year": 1821,
+          "death_year": 1891
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ferdinand Gregorovius",
+        "page_id": 142382,
+        "infoboxes": [],
+        "categories": [
+          "1821 births",
+          "1891 deaths",
+          "People from Nidzica",
+          "People from East Prussia",
+          "German Protestants",
+          "20th-century German historians",
+          "Historians of the Catholic Church",
+          "German male non-fiction writers",
+          "19th-century German male writers"
+        ],
+        "birth_year": 1821,
+        "death_year": 1891
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "96436"
+        ],
+        "target_person": {
+          "title": "Ferdinand Gregorovius",
+          "page_id": 142382,
+          "infoboxes": [],
+          "categories": [
+            "1821 births",
+            "1891 deaths",
+            "People from Nidzica",
+            "People from East Prussia",
+            "German Protestants",
+            "20th-century German historians",
+            "Historians of the Catholic Church",
+            "German male non-fiction writers",
+            "19th-century German male writers"
+          ],
+          "birth_year": 1821,
+          "death_year": 1891
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hariulf",
+        "count": 1,
+        "excerpts": [
+          "32 Hariulf, 4.21."
+        ],
+        "canonical_author": "Hariulf"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Hariulf of Oudenburg",
+          "page_id": 78457790,
+          "infoboxes": [],
+          "categories": [
+            "11th-century births",
+            "1143 deaths",
+            "11th-century French historians",
+            "12th-century French historians",
+            "Benedictine abbots",
+            "Christian hagiographers"
+          ],
+          "birth_year": null,
+          "death_year": 1143
+        }
+      },
+      "wikipedia_match": {
+        "title": "Hariulf of Oudenburg",
+        "page_id": 78457790,
+        "infoboxes": [],
+        "categories": [
+          "11th-century births",
+          "1143 deaths",
+          "11th-century French historians",
+          "12th-century French historians",
+          "Benedictine abbots",
+          "Christian hagiographers"
+        ],
+        "birth_year": 1060,
+        "death_year": 1143
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Hariulf of Oudenburg",
+          "page_id": 78457790,
+          "infoboxes": [],
+          "categories": [
+            "11th-century births",
+            "1143 deaths",
+            "11th-century French historians",
+            "12th-century French historians",
+            "Benedictine abbots",
+            "Christian hagiographers"
+          ],
+          "birth_year": 1060,
+          "death_year": 1143
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sigehard",
+        "count": 1,
+        "excerpts": [
+          "34 Sigehard, 2."
+        ],
+        "canonical_author": "Sigehard"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Sigehard (patriarch of Aquileia)",
+          "page_id": 61869472,
+          "infoboxes": [],
+          "categories": [
+            "1077 deaths",
+            "Patriarchs of Aquileia",
+            "Investiture Controversy"
+          ],
+          "birth_year": null,
+          "death_year": 1077
+        }
+      },
+      "wikipedia_match": {
+        "title": "Sigehard (patriarch of Aquileia)",
+        "page_id": 61869472,
+        "infoboxes": [],
+        "categories": [
+          "1077 deaths",
+          "Patriarchs of Aquileia",
+          "Investiture Controversy"
+        ],
+        "birth_year": 1020,
+        "death_year": 1077
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Sigehard (patriarch of Aquileia)",
+          "page_id": 61869472,
+          "infoboxes": [],
+          "categories": [
+            "1077 deaths",
+            "Patriarchs of Aquileia",
+            "Investiture Controversy"
+          ],
+          "birth_year": 1020,
+          "death_year": 1077
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Odo of Cluny",
+        "count": 1,
+        "excerpts": [
+          "36 Odo of Cluny, col. 562."
+        ],
+        "canonical_author": "Odo Of Cluny"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Odo of Cluny",
+          "page_id": 634919,
+          "infoboxes": [
+            "saint"
+          ],
+          "categories": [
+            "880s births",
+            "942 deaths",
+            "10th-century French Christian clergy",
+            "French abbots",
+            "10th-century Christian saints",
+            "10th-century writers in Latin",
+            "French Benedictines",
+            "Cluniacs",
+            "Saints of West Francia",
+            "10th-century people from West Francia",
+            "10th-century Christian monks",
+            "10th-century French writers",
+            "10th-century poets",
+            "10th-century composers",
+            "Benedictine saints",
+            "French saints"
+          ],
+          "birth_year": null,
+          "death_year": 942
+        }
+      },
+      "wikipedia_match": {
+        "title": "Odo of Cluny",
+        "page_id": 634919,
+        "infoboxes": [
+          "saint"
+        ],
+        "categories": [
+          "880s births",
+          "942 deaths",
+          "10th-century French Christian clergy",
+          "French abbots",
+          "10th-century Christian saints",
+          "10th-century writers in Latin",
+          "French Benedictines",
+          "Cluniacs",
+          "Saints of West Francia",
+          "10th-century people from West Francia",
+          "10th-century Christian monks",
+          "10th-century French writers",
+          "10th-century poets",
+          "10th-century composers",
+          "Benedictine saints",
+          "French saints"
+        ],
+        "birth_year": 878,
+        "death_year": 942
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Odo of Cluny",
+          "page_id": 634919,
+          "infoboxes": [
+            "saint"
+          ],
+          "categories": [
+            "880s births",
+            "942 deaths",
+            "10th-century French Christian clergy",
+            "French abbots",
+            "10th-century Christian saints",
+            "10th-century writers in Latin",
+            "French Benedictines",
+            "Cluniacs",
+            "Saints of West Francia",
+            "10th-century people from West Francia",
+            "10th-century Christian monks",
+            "10th-century French writers",
+            "10th-century poets",
+            "10th-century composers",
+            "Benedictine saints",
+            "French saints"
+          ],
+          "birth_year": 878,
+          "death_year": 942
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Peter the Venerable",
+        "count": 1,
+        "excerpts": [
+          "45 Peter the Venerable, 1.12."
+        ],
+        "canonical_author": "Peter The Venerable"
+      },
+      "goodreads_match": {
+        "author_id": "546568",
+        "name": "Peter the Venerable",
+        "average_rating": "3.00",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Peter the Venerable",
+          "page_id": 1716439,
+          "infoboxes": [
+            "saint"
+          ],
+          "categories": [
+            "Year of birth uncertain",
+            "1156 deaths",
+            "12th-century French people",
+            "12th-century French Roman Catholic priests",
+            "Christian critics of Islam",
+            "Cluniacs",
+            "Folk saints",
+            "French abbots",
+            "French Benedictines"
+          ],
+          "birth_year": null,
+          "death_year": 1156
+        }
+      },
+      "wikipedia_match": {
+        "title": "Peter the Venerable",
+        "page_id": 1716439,
+        "infoboxes": [
+          "saint"
+        ],
+        "categories": [
+          "Year of birth uncertain",
+          "1156 deaths",
+          "12th-century French people",
+          "12th-century French Roman Catholic priests",
+          "Christian critics of Islam",
+          "Cluniacs",
+          "Folk saints",
+          "French abbots",
+          "French Benedictines"
+        ],
+        "birth_year": 1092,
+        "death_year": 1156
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "546568"
+        ],
+        "target_person": {
+          "title": "Peter the Venerable",
+          "page_id": 1716439,
+          "infoboxes": [
+            "saint"
+          ],
+          "categories": [
+            "Year of birth uncertain",
+            "1156 deaths",
+            "12th-century French people",
+            "12th-century French Roman Catholic priests",
+            "Christian critics of Islam",
+            "Cluniacs",
+            "Folk saints",
+            "French abbots",
+            "French Benedictines"
+          ],
+          "birth_year": 1092,
+          "death_year": 1156
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "William of Poitiers",
+        "count": 1,
+        "excerpts": [
+          "The Life of King Edward, the Bayeux Tapestry, and even William of Poitiers, a gung-ho Norman, all imply that Harold had been nominated by the dying Edward."
+        ],
+        "canonical_author": "William Of Poitiers"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "William of Poitiers",
+          "page_id": 252427,
+          "infoboxes": [],
+          "categories": [
+            "1020s births",
+            "1090 deaths",
+            "11th-century French historians",
+            "11th-century Normans",
+            "Norman conquest of England",
+            "11th-century English historians",
+            "11th-century writers in Latin"
+          ],
+          "birth_year": null,
+          "death_year": 1090
+        }
+      },
+      "wikipedia_match": {
+        "title": "William of Poitiers",
+        "page_id": 252427,
+        "infoboxes": [],
+        "categories": [
+          "1020s births",
+          "1090 deaths",
+          "11th-century French historians",
+          "11th-century Normans",
+          "Norman conquest of England",
+          "11th-century English historians",
+          "11th-century writers in Latin"
+        ],
+        "birth_year": 1020,
+        "death_year": 1090
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "William of Poitiers",
+          "page_id": 252427,
+          "infoboxes": [],
+          "categories": [
+            "1020s births",
+            "1090 deaths",
+            "11th-century French historians",
+            "11th-century Normans",
+            "Norman conquest of England",
+            "11th-century English historians",
+            "11th-century writers in Latin"
+          ],
+          "birth_year": 1020,
+          "death_year": 1090
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lampert of Hersfeld",
+        "count": 1,
+        "excerpts": [
+          "63 Lampert of Hersfeld, p. 156."
+        ],
+        "canonical_author": "Lampert Of Hersfeld"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Lambert of Hersfeld",
+          "page_id": 1647641,
+          "infoboxes": [],
+          "categories": [
+            "1080s deaths",
+            "11th-century German historians",
+            "Medieval historical texts in Latin",
+            "Chroniclers from the Holy Roman Empire",
+            "Year of birth uncertain",
+            "1020s births",
+            "German male non-fiction writers",
+            "11th-century writers in Latin"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Lambert of Hersfeld",
+        "page_id": 1647641,
+        "infoboxes": [],
+        "categories": [
+          "1080s deaths",
+          "11th-century German historians",
+          "Medieval historical texts in Latin",
+          "Chroniclers from the Holy Roman Empire",
+          "Year of birth uncertain",
+          "1020s births",
+          "German male non-fiction writers",
+          "11th-century writers in Latin"
+        ],
+        "birth_year": 1025,
+        "death_year": 1088
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Lambert of Hersfeld",
+          "page_id": 1647641,
+          "infoboxes": [],
+          "categories": [
+            "1080s deaths",
+            "11th-century German historians",
+            "Medieval historical texts in Latin",
+            "Chroniclers from the Holy Roman Empire",
+            "Year of birth uncertain",
+            "1020s births",
+            "German male non-fiction writers",
+            "11th-century writers in Latin"
+          ],
+          "birth_year": 1025,
+          "death_year": 1088
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bonizo of Sutri",
+        "count": 1,
+        "excerpts": [
+          "98 Bonizo of Sutri, p. 255."
+        ],
+        "canonical_author": "Bonizo Of Sutri"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Bonizo of Sutri",
+          "page_id": 6477490,
+          "infoboxes": [],
+          "categories": [
+            "1040s births",
+            "1090s deaths",
+            "11th-century Italian Roman Catholic bishops",
+            "Bishops of Piacenza",
+            "Bishops of Sutri",
+            "11th-century Italian jurists",
+            "11th-century writers in Latin"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Bonizo of Sutri",
+        "page_id": 6477490,
+        "infoboxes": [],
+        "categories": [
+          "1040s births",
+          "1090s deaths",
+          "11th-century Italian Roman Catholic bishops",
+          "Bishops of Piacenza",
+          "Bishops of Sutri",
+          "11th-century Italian jurists",
+          "11th-century writers in Latin"
+        ],
+        "birth_year": 1045,
+        "death_year": 1090
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Bonizo of Sutri",
+          "page_id": 6477490,
+          "infoboxes": [],
+          "categories": [
+            "1040s births",
+            "1090s deaths",
+            "11th-century Italian Roman Catholic bishops",
+            "Bishops of Piacenza",
+            "Bishops of Sutri",
+            "11th-century Italian jurists",
+            "11th-century writers in Latin"
+          ],
+          "birth_year": 1045,
+          "death_year": 1090
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sigebert of Gembloux",
+        "count": 1,
+        "excerpts": [
+          "99 Sigebert of Gembloux, p. 364."
+        ],
+        "canonical_author": "Sigebert Of Gembloux"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Sigebert of Gembloux",
+          "page_id": 1954276,
+          "infoboxes": [],
+          "categories": [
+            "1030s births",
+            "1112 deaths",
+            "12th-century historians from the Holy Roman Empire",
+            "Belgian Benedictines",
+            "Medieval Latin-language poets",
+            "Belgian male poets",
+            "People from Gembloux",
+            "11th-century historians from the Holy Roman Empire",
+            "12th-century writers in Latin",
+            "11th-century writers in Latin"
+          ],
+          "birth_year": null,
+          "death_year": 1112
+        }
+      },
+      "wikipedia_match": {
+        "title": "Sigebert of Gembloux",
+        "page_id": 1954276,
+        "infoboxes": [],
+        "categories": [
+          "1030s births",
+          "1112 deaths",
+          "12th-century historians from the Holy Roman Empire",
+          "Belgian Benedictines",
+          "Medieval Latin-language poets",
+          "Belgian male poets",
+          "People from Gembloux",
+          "11th-century historians from the Holy Roman Empire",
+          "12th-century writers in Latin",
+          "11th-century writers in Latin"
+        ],
+        "birth_year": 1030,
+        "death_year": 1112
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Sigebert of Gembloux",
+          "page_id": 1954276,
+          "infoboxes": [],
+          "categories": [
+            "1030s births",
+            "1112 deaths",
+            "12th-century historians from the Holy Roman Empire",
+            "Belgian Benedictines",
+            "Medieval Latin-language poets",
+            "Belgian male poets",
+            "People from Gembloux",
+            "11th-century historians from the Holy Roman Empire",
+            "12th-century writers in Latin",
+            "11th-century writers in Latin"
+          ],
+          "birth_year": 1030,
+          "death_year": 1112
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Anna Comnena",
+        "count": 1,
+        "excerpts": [
+          "101 Anna Comnena, p. 124."
+        ],
+        "canonical_author": "Anna Comnena"
+      },
+      "goodreads_match": {
+        "author_id": "270893",
+        "name": "Anna Comnena",
+        "average_rating": "3.98",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Anna Komnene",
+          "page_id": 157653,
+          "infoboxes": [
+            "royalty"
+          ],
+          "categories": [
+            "1083 births",
+            "1153 deaths",
+            "Komnenos dynasty|Anna",
+            "12th-century Byzantine historians",
+            "Byzantine women writers",
+            "Eastern Orthodox Christians from the Byzantine Empire",
+            "Daughters of Byzantine emperors",
+            "Byzantine women physicians",
+            "12th-century Byzantine physicians",
+            "12th-century Byzantine women",
+            "12th-century women writers",
+            "Porphyrogennetoi",
+            "Family of Alexios I Komnenos|Anna",
+            "Byzantine Christians",
+            "12th-century Byzantine writers",
+            "12th-century Byzantine scientists",
+            "12th-century Greek scientists",
+            "12th-century Greek mathematicians",
+            "Greek women historians"
+          ],
+          "birth_year": 1083,
+          "death_year": 1153
+        }
+      },
+      "wikipedia_match": {
+        "title": "Anna Komnene",
+        "page_id": 157653,
+        "infoboxes": [
+          "royalty"
+        ],
+        "categories": [
+          "1083 births",
+          "1153 deaths",
+          "Komnenos dynasty|Anna",
+          "12th-century Byzantine historians",
+          "Byzantine women writers",
+          "Eastern Orthodox Christians from the Byzantine Empire",
+          "Daughters of Byzantine emperors",
+          "Byzantine women physicians",
+          "12th-century Byzantine physicians",
+          "12th-century Byzantine women",
+          "12th-century women writers",
+          "Porphyrogennetoi",
+          "Family of Alexios I Komnenos|Anna",
+          "Byzantine Christians",
+          "12th-century Byzantine writers",
+          "12th-century Byzantine scientists",
+          "12th-century Greek scientists",
+          "12th-century Greek mathematicians",
+          "Greek women historians"
+        ],
+        "birth_year": 1083,
+        "death_year": 1153
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "270893"
+        ],
+        "target_person": {
+          "title": "Anna Komnene",
+          "page_id": 157653,
+          "infoboxes": [
+            "royalty"
+          ],
+          "categories": [
+            "1083 births",
+            "1153 deaths",
+            "Komnenos dynasty|Anna",
+            "12th-century Byzantine historians",
+            "Byzantine women writers",
+            "Eastern Orthodox Christians from the Byzantine Empire",
+            "Daughters of Byzantine emperors",
+            "Byzantine women physicians",
+            "12th-century Byzantine physicians",
+            "12th-century Byzantine women",
+            "12th-century women writers",
+            "Porphyrogennetoi",
+            "Family of Alexios I Komnenos|Anna",
+            "Byzantine Christians",
+            "12th-century Byzantine writers",
+            "12th-century Byzantine scientists",
+            "12th-century Greek scientists",
+            "12th-century Greek mathematicians",
+            "Greek women historians"
+          ],
+          "birth_year": 1083,
+          "death_year": 1153
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Riley-Smith",
+        "count": 1,
+        "excerpts": [
+          "Quoted by Riley-Smith, p. 33."
+        ],
+        "canonical_author": "Riley-Smith"
+      },
+      "goodreads_match": {
+        "author_id": "36382",
+        "name": "Jonathan Riley-Smith",
+        "average_rating": "3.78",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Jonathan Riley-Smith",
+          "page_id": 16597374,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1938 births",
+            "2016 deaths",
+            "English Christians",
+            "English Roman Catholics",
+            "Fellows of Queens' College, Cambridge",
+            "English historians",
+            "Alumni of Trinity College, Cambridge",
+            "Bailiffs Grand Cross of the Order of St John",
+            "Fellows of Emmanuel College, Cambridge",
+            "Fellows of the Royal Historical Society",
+            "Historians of the Crusades",
+            "People educated at Eton College",
+            "People from Harrogate",
+            "Dixie Professors of Ecclesiastical History",
+            "Converts to Roman Catholicism",
+            "Place of death missing",
+            "Corresponding Fellows of the Medieval Academy of America"
+          ],
+          "birth_year": 1938,
+          "death_year": 2016
+        }
+      },
+      "wikipedia_match": {
+        "title": "Jonathan Riley-Smith",
+        "page_id": 16597374,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "1938 births",
+          "2016 deaths",
+          "English Christians",
+          "English Roman Catholics",
+          "Fellows of Queens' College, Cambridge",
+          "English historians",
+          "Alumni of Trinity College, Cambridge",
+          "Bailiffs Grand Cross of the Order of St John",
+          "Fellows of Emmanuel College, Cambridge",
+          "Fellows of the Royal Historical Society",
+          "Historians of the Crusades",
+          "People educated at Eton College",
+          "People from Harrogate",
+          "Dixie Professors of Ecclesiastical History",
+          "Converts to Roman Catholicism",
+          "Place of death missing",
+          "Corresponding Fellows of the Medieval Academy of America"
+        ],
+        "birth_year": 1938,
+        "death_year": 2016
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "36382"
+        ],
+        "target_person": {
+          "title": "Jonathan Riley-Smith",
+          "page_id": 16597374,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1938 births",
+            "2016 deaths",
+            "English Christians",
+            "English Roman Catholics",
+            "Fellows of Queens' College, Cambridge",
+            "English historians",
+            "Alumni of Trinity College, Cambridge",
+            "Bailiffs Grand Cross of the Order of St John",
+            "Fellows of Emmanuel College, Cambridge",
+            "Fellows of the Royal Historical Society",
+            "Historians of the Crusades",
+            "People educated at Eton College",
+            "People from Harrogate",
+            "Dixie Professors of Ecclesiastical History",
+            "Converts to Roman Catholicism",
+            "Place of death missing",
+            "Corresponding Fellows of the Medieval Academy of America"
+          ],
+          "birth_year": 1938,
+          "death_year": 2016
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Delort",
+        "count": 1,
+        "excerpts": [
+          "See Delort, p. 64."
+        ],
+        "canonical_author": "Delort"
+      },
+      "goodreads_match": {
+        "author_id": "789321",
+        "name": "Robert Delort",
+        "average_rating": "3.26",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Jacques-Antoine-Adrien Delort",
+          "page_id": 3124961,
+          "infoboxes": [],
+          "categories": [
+            "French barons",
+            "French generals",
+            "French military personnel of the Napoleonic Wars",
+            "1773 births",
+            "1846 deaths",
+            "Names inscribed under the Arc de Triomphe"
+          ],
+          "birth_year": 1773,
+          "death_year": 1846
+        }
+      },
+      "wikipedia_match": {
+        "title": "Jacques-Antoine-Adrien Delort",
+        "page_id": 3124961,
+        "infoboxes": [],
+        "categories": [
+          "French barons",
+          "French generals",
+          "French military personnel of the Napoleonic Wars",
+          "1773 births",
+          "1846 deaths",
+          "Names inscribed under the Arc de Triomphe"
+        ],
+        "birth_year": 1773,
+        "death_year": 1846
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "789321"
+        ],
+        "target_person": {
+          "title": "Jacques-Antoine-Adrien Delort",
+          "page_id": 3124961,
+          "infoboxes": [],
+          "categories": [
+            "French barons",
+            "French generals",
+            "French military personnel of the Napoleonic Wars",
+            "1773 births",
+            "1846 deaths",
+            "Names inscribed under the Arc de Triomphe"
+          ],
+          "birth_year": 1773,
+          "death_year": 1846
+        }
+      }
+    }
+  ]
+}
