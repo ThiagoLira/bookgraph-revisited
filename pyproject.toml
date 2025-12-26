@@ -16,4 +16,5 @@ dependencies = [
     "tqdm>=4.67.1",
     "snakeviz>=2.2.2",
     "mwxml>=0.3.6",
+    "llama-index-tools-mcp>=0.4.5",
 ]
