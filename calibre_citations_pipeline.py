@@ -24,8 +24,11 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
-
+import logging
+from lib.logging_config import setup_logging
 from lib.main_pipeline import BookPipeline, PipelineConfig
+
+logger = logging.getLogger(__name__)
 
 try:
     from tqdm import tqdm  # type: ignore
@@ -87,7 +90,7 @@ def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[st
         txt_path = book_dir / f"{name}.txt"
         epub_path = book_dir / f"{name}.epub"
         if not txt_path.exists():
-            print(f"[calibre] Skipping Goodreads {goodreads_id} ({title}) because TXT not found at {txt_path}")
+            logger.warning(f"Skipping Goodreads {goodreads_id} ({title}) because TXT not found at {txt_path}")
             continue
         books.append(
             CalibreBook(
@@ -110,7 +113,7 @@ def load_goodreads_metadata(book_ids: Set[str], db_path: str = "datasets/books_i
         return {}
     
     if not os.path.exists(db_path):
-        print(f"[pipeline] Warning: Books DB not found at {db_path}, cannot load source metadata.")
+        logger.warning(f"Books DB not found at {db_path}, cannot load source metadata.")
         return {}
 
     conn = sqlite3.connect(db_path)
@@ -132,7 +135,8 @@ def load_goodreads_metadata(book_ids: Set[str], db_path: str = "datasets/books_i
                     pass
             results[str(data["book_id"])] = data
     except Exception as e:
-        print(f"[pipeline] Error loading Goodreads metadata: {e}")
+    except Exception as e:
+        logger.error(f"Error loading Goodreads metadata: {e}")
     finally:
         conn.close()
         
@@ -228,6 +232,11 @@ def parse_args() -> argparse.Namespace:
         default=10,
         help="Max concurrent agent workflows.",
     )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Enable verbose logging.",
+    )
     return parser.parse_args()
 
 
@@ -241,10 +250,10 @@ async def run_pipeline(args):
         allowed_ids = {token.strip() for token in args.only_goodreads_ids.replace(
             ",", " ").split() if token.strip()}
             
-    print("Loading Calibre metadata...")
+    logger.info("Loading Calibre metadata...")
     books = load_calibre_books(args.library_dir, allowed_ids)
     if not books:
-        print("No eligible Calibre books found (need TXT format and Goodreads ID); nothing to do.")
+        logger.warning("No eligible Calibre books found (need TXT format and Goodreads ID); nothing to do.")
         return
 
     # Load Source Metadata
@@ -272,9 +281,10 @@ async def run_pipeline(args):
     
     pipeline = BookPipeline(config)
     output_base = args.output_dir or derive_output_base(args.library_dir)
+    log_file = setup_logging(output_base, verbose=args.verbose or args.debug_trace)
     
-    print(f"Starting pipeline for {len(books)} books...")
-    print(f"Output Directory: {output_base}")
+    logger.info(f"Starting pipeline for {len(books)} books...")
+    logger.info(f"Output Directory: {output_base}")
     
     iterator = tqdm(books, desc="Total Progress") if tqdm else books
     
@@ -299,11 +309,16 @@ async def run_pipeline(args):
                 book_id=book.goodreads_id
             )
         except Exception as e:
-            print(f"Failed to process {book.title}: {e}")
+            logger.error(f"Failed to process {book.title}: {e}", exc_info=True)
 
 def main():
     args = parse_args()
-    asyncio.run(run_pipeline(args))
+    try:
+        asyncio.run(run_pipeline(args))
+    except KeyboardInterrupt:
+        logger.info("Pipeline cancelled by user.")
+    except Exception as e:
+        logger.critical(f"Unhandled pipeline exception: {e}", exc_info=True)
 
 if __name__ == "__main__":
     main()

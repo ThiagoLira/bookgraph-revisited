@@ -19,9 +19,9 @@ from tokenizers import Tokenizer
 
 DEFAULT_SYSTEM_PROMPT = (
     "You are an expert research librarian. Extract only citations that refer to "
-    "books or book authors. Ignore references to papers, articles, movies, podcasts, "
-    "websites, or other works of art like paintings and architecture. "
-    "CRITICAL: IGNORE lists of books, Table of Contents, or 'Other books by...' sections. "
+    "books or book authors mentioned as sources of ideas. "
+    "Ignore references to papers, articles, movies, podcasts, websites, or other works of art. "
+    "CRITICAL: IGNORE lists of books, Bibliographies, Acknowledgements, Prefaces, or 'Other books by...' sections. "
     "Focus ONLY on citations that appear within the narrative prose."
 )
 
@@ -31,8 +31,8 @@ Return ONLY JSON with this shape:
 {
   "citations": [
     {
-      "title": str | null,
-      "author": str,
+      "title": str | null, // If only an author is mentioned (Person Reference), set title to null.
+      "author": str,       // Cite the ORIGINAL author (e.g., 'Plato', not the translator).
       "citation_excerpt": str
     }
   ]
@@ -40,12 +40,10 @@ Return ONLY JSON with this shape:
 
 Rules:
 - Use only information inside the excerpt; do not invent books or authors.
-- Cite an author alone when only the author is mentioned; when a book is cited, include both title and author.
-- If one author has multiple books, output separate citations.
-- Return an empty list when no book citations are present.
-- Include each cited book at most once per chunk.
-- **IGNORE** Table of Contents, Bibliographies, or lists of "Other books by this author".
-- **PRIORITIZE** citations that appear naturally within the prose/sentences.
+- **Original Authors Only**: If a translator is mentioned, extract the original author (e.g. for "Homer's Iliad translated by Pope", author is "Homer").
+- **Person References**: If an author is mentioned as a source of ideas but no specific book is named (e.g. "As Socrates argued..."), extract them with `title: null`.
+- **Ignore Meta-Content**: Do NOT extract from Bibliographies, Footnotes, Indices, or "Further Reading" lists.
+- **Deduplicate**: Include each cited book/author at most once per chunk.
 - `citation_excerpt` MUST be the exact text snippet from the excerpt where the citation appears.
 
 ===== BEGIN BOOK EXCERPT =====

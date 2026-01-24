@@ -174,7 +174,26 @@ run_folder/
 *   **Agent Workflow**: `lib/bibliography_agent/citation_workflow.py`
 *   **Frontend**: `frontend/` (D3.js visualization)
 
-### Testing
-```bash
-pytest tests/
-```
+### Frontend Visualization
+1.  Serve the frontend directory:
+    ```bash
+    cd frontend
+    python -m http.server
+    ```
+2.  Open `http://localhost:8000` in your browser.
+3.  Available Datasets:
+    *   **Stalin's Library**: Historical citations from a real-world library.
+    *   **David Foster Wallace Test**: Regression test based on "E Unibus Pluram".
+
+### Testing & Evaluation
+*   **Evaluation**: `uv run python evaluation/evaluate_essay.py`
+    *   Runs the pipeline against the DFW ground truth.
+    *   Generates logs in `evaluation/logs/`.
+*   **Generate Frontend Data for DFW**:
+    ```bash
+    uv run python scripts/generate_dfw_frontend.py
+    ```
+
+### Logging
+Logs are automatically written to `outputs/calibre_libs/<lib>/pipeline_run_<timestamp>.log`.
+*   Use `--verbose` to see detailed LLM interactions and debugging info.

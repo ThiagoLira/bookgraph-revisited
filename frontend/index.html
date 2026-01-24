@@ -214,6 +214,9 @@
   <header>
     <h1>BookGraph Vertical</h1>
     <div id="controls">
+      <select id="dataset-select" class="search-box" style="width: auto; cursor: pointer;">
+        <option value="" disabled selected>Select Dataset...</option>
+      </select>
       <input type="text" class="search-box" placeholder="Search..." id="search">
     </div>
   </header>
@@ -247,8 +250,6 @@
     const axisGroup = g.append("g").attr("class", "axis");
 
     // State
-    let pubDateMap = {};
-    let authorMeta = {};
     let simulation;
     let graphData = { authors: [], links: [] };
     let selectedNode = null;
@@ -263,22 +264,48 @@
     // const zoom = d3.zoom() ...
 
     // Load Data
-    async function loadData() {
-      const params = new URLSearchParams(window.location.search);
-      const dataDir = params.get("dataDir") || "./data";
+    // Load Data
+    async function init() {
+      try {
+        const datasets = await fetch("datasets.json").then(r => r.json());
+        const select = document.getElementById("dataset-select");
+
+        datasets.forEach((ds, i) => {
+          const opt = document.createElement("option");
+          opt.value = ds.path;
+          opt.textContent = ds.name;
+          select.appendChild(opt);
+
+          // Auto-select first
+          if (i === 0) select.value = ds.path;
+        });
+
+        select.onchange = (e) => loadDataset(e.target.value);
+
+        // Load initial
+        if (datasets.length > 0) loadDataset(datasets[0].path);
+
+      } catch (e) {
+        console.error("Failed to load datasets.json", e);
+      }
+    }
+
+    async function loadDataset(dataDir) {
+      document.getElementById("loading").style.display = "block";
+      document.getElementById("loading").textContent = "Loading " + dataDir + "...";
+
+      // Clear graph
+      graphData = { authors: [], links: [] };
+      if (simulation) simulation.stop();
+      d3.selectAll("svg > g > g").selectAll("*").remove();
 
       try {
-        const [dates, authors, manifest] = await Promise.all([
-          fetch(`${dataDir}/original_publication_dates.json`).then(r => r.json()),
-          fetch(`${dataDir}/authors_metadata.json`).then(r => r.json()),
+        const [manifest] = await Promise.all([
           fetch(`${dataDir}/manifest.json`).then(r => r.json())
         ]);
 
-        pubDateMap = dates;
-        authorMeta = authors;
-
         const files = [];
-        const batchSize = 3; // Conservative batch size for strict rate limits
+        const batchSize = 3;
 
         for (let i = 0; i < manifest.length; i += batchSize) {
           const batch = manifest.slice(i, i + batchSize);
@@ -290,7 +317,7 @@
         document.getElementById("loading").style.display = "none";
       } catch (e) {
         console.error(e);
-        document.getElementById("loading").textContent = "Error loading data";
+        document.getElementById("loading").textContent = "Error loading data: " + e.message;
       }
     }
 
@@ -303,9 +330,12 @@
     }
 
     function getBookYear(meta) {
-      const gid = meta.goodreads_id || (meta.goodreads_match ? meta.goodreads_match.book_id : null);
-      if (gid && pubDateMap[gid]) return parseYear(pubDateMap[gid]);
+      // Priority 1: Enriched Original Year (from pipeline)
+      if (meta.original_year !== undefined && meta.original_year !== null) return meta.original_year;
+
+      // Priority 2: Goodreads Pub Year
       if (meta.publication_year) return meta.publication_year;
+
       return null;
     }
 
@@ -320,7 +350,7 @@
     }
 
     function processData(records) {
-      const authorMap = new Map(); // name -> { name, books: [], year }
+      const authorMap = new Map(); // name -> { name, books: [], year, meta: {} }
       const bookMap = new Map();   // id -> bookNode
 
       // 1. Collect all books and assign to authors
@@ -330,8 +360,11 @@
         const srcAuth = normalizeAuthor(Array.isArray(src.authors) ? src.authors[0] : src.authors);
         const srcYear = getBookYear(src);
 
-        if (!authorMap.has(srcAuth)) authorMap.set(srcAuth, { name: srcAuth, books: [], isSource: true });
+        if (!authorMap.has(srcAuth)) authorMap.set(srcAuth, { name: srcAuth, books: [], isSource: true, meta: {} });
         const srcAuthorNode = authorMap.get(srcAuth);
+
+        // Check if source has meta (rarely populated in current pipeline but good for future)
+        if (src.author_meta) srcAuthorNode.meta = src.author_meta;
 
         const srcBook = {
           id: `book:${src.goodreads_id}`,
@@ -348,13 +381,19 @@
           const match = cit.goodreads_match || {};
           const wiki = cit.wikipedia_match || {};
 
+          // Harvest author metadata if available from enrichment
+          const authorMeta = match.author_meta || {};
+
           // If it's a book citation
           if (cit.edge && cit.edge.target_book_id) {
             const citedAuth = normalizeAuthor(match.authors ? match.authors[0] : "Unknown");
             const citedYear = getBookYear(match);
 
-            if (!authorMap.has(citedAuth)) authorMap.set(citedAuth, { name: citedAuth, books: [] });
+            if (!authorMap.has(citedAuth)) authorMap.set(citedAuth, { name: citedAuth, books: [], meta: {} });
             const citedAuthorNode = authorMap.get(citedAuth);
+
+            // Merge meta if found
+            if (Object.keys(authorMeta).length > 0) citedAuthorNode.meta = authorMeta;
 
             const citedBook = {
               id: `book:${cit.edge.target_book_id}`,
@@ -370,13 +409,13 @@
               bookMap.set(citedBook.id, citedBook);
             }
           }
-          // If it's an author citation (no book), we create a "dummy" book or just track the author?
-          // User asked for "Author balls containing book balls". 
-          // If author has no books, we treat them as an empty author ball?
           else if (cit.edge && cit.edge.target_author_ids) {
             const name = wiki.title || (match.authors ? match.authors[0] : "Unknown");
             const normName = normalizeAuthor(name);
-            if (!authorMap.has(normName)) authorMap.set(normName, { name: normName, books: [] });
+            if (!authorMap.has(normName)) authorMap.set(normName, { name: normName, books: [], meta: {} });
+
+            // Merge meta
+            if (Object.keys(authorMeta).length > 0) authorMap.get(normName).meta = authorMeta;
           }
         });
       });
@@ -384,12 +423,11 @@
       // 2. Calculate Author Positions & Pack Books
       const authors = Array.from(authorMap.values()).map(auth => {
         // Calculate Year
-        // Calculate Year
         let year = null;
-        const meta = authorMeta[auth.name];
+        const meta = auth.meta || {};
 
-        // Priority 1: Author Metadata (Birth/Death)
-        if (meta && meta.birth_year) {
+        // Priority 1: Author Metadata (Birth/Death) enriched from pipeline
+        if (meta.birth_year) {
           // Use midpoint of life, or birth + 30 if death unknown (active years)
           const endYear = meta.death_year || (meta.birth_year + 60);
           year = (meta.birth_year + endYear) / 2;
@@ -735,7 +773,7 @@
       document.getElementById("info-panel").classList.remove("visible");
     };
 
-    loadData();
+    init();
   </script>
 </body>
 

@@ -31,19 +31,38 @@ def load_citations(path: Path) -> List[Citation]:
                     "title": title,
                     "author": author,
                     "note": citation.get("note"),
+                    "count": 1,
+                    "contexts": [citation.get("citation_excerpt")] if citation.get("citation_excerpt") else [],
                 }
             )
     return rows
 
 
+def merge_citation_metadata(target: Citation, source: Citation) -> Citation:
+    """Merge metadata (count, contexts) from source into target."""
+    target["count"] = target.get("count", 1) + source.get("count", 1)
+    
+    # Merge contexts unique-ly
+    tgt_contexts = target.get("contexts", [])
+    src_contexts = source.get("contexts", [])
+    
+    # Simple deduplication of exact strings
+    new_contexts = [c for c in src_contexts if c not in tgt_contexts]
+    target["contexts"] = tgt_contexts + new_contexts
+    return target
+
+
 def deduplicate_exact(citations: Iterable[Citation]) -> List[Citation]:
-    seen = set()
+    seen: Dict[tuple, Citation] = {}
     deduped: List[Citation] = []
+    
     for citation in citations:
         key = (citation["title"].casefold(), citation["author"].casefold())
         if key in seen:
+            merge_citation_metadata(seen[key], citation)
             continue
-        seen.add(key)
+        
+        seen[key] = citation
         deduped.append(citation)
     return deduped
 
@@ -56,10 +75,7 @@ def placeholder_heuristic(citations: List[Citation]) -> List[Citation]:
 def collapse_author_only(citations: List[Citation]) -> List[Citation]:
     """
     Keep only one entry per author when the title is empty/null.
-
-    Example: repeated author mentions with no title (e.g., "Wagner") collapse to one.
     """
-
     seen_authors: Dict[str, Citation] = {}
     result: List[Citation] = []
     for citation in citations:
@@ -67,10 +83,13 @@ def collapse_author_only(citations: List[Citation]) -> List[Citation]:
         author = citation.get("author")
         if not author:
             continue
+
         if not title:
             key = author.casefold()
             if key in seen_authors:
+                merge_citation_metadata(seen_authors[key], citation)
                 continue
+            
             seen_authors[key] = citation
             citation = {
                 **citation,
@@ -105,17 +124,22 @@ def collapse_variant_titles(citations: List[Citation]) -> List[Citation]:
     Deduplicate obvious title variants for the same author by using a
     normalized prefix of the title.
     """
-    seen = set()
+    seen: Dict[tuple, Citation] = {}
     result: List[Citation] = []
+    
     for citation in citations:
         author = citation.get("author") or ""
         title = citation.get("title") or ""
         canon_author = normalize_text(author)
         canon_title = normalize_title(title)
+        
         key = (canon_author, canon_title) if canon_title else (canon_author, title.casefold())
+        
         if key in seen:
+            merge_citation_metadata(seen[key], citation)
             continue
-        seen.add(key)
+            
+        seen[key] = citation
         result.append(citation)
     return result
 
@@ -147,10 +171,82 @@ def drop_self_references(
     return result
 
 
+def merge_similar_citations(citations: List[Citation]) -> List[Citation]:
+    """
+    Aggressively merge citations that have very similar titles and authors.
+    Uses difflib.SequenceMatcher.
+    """
+    from difflib import SequenceMatcher
+
+    def is_similar(a: str, b: str, threshold: float = 0.9) -> bool:
+        if not a and not b: return True
+        if not a or not b: return False
+        return SequenceMatcher(None, a, b).ratio() > threshold
+
+    def is_similar_title(a: str, b: str) -> bool:
+        # Lower threshold for titles to catch "The X" vs "X" or typos
+        return is_similar(normalize_title(a), normalize_title(b), threshold=0.85)
+
+    def is_similar_author(a: str, b: str) -> bool:
+        return is_similar(normalize_text(a), normalize_text(b), threshold=0.85)
+
+    merged: List[Citation] = []
+    # We'll use a simple greedy clustering
+    sorted_citations = sorted(
+        citations, 
+        key=lambda c: len(c.get("title") or "") + len(c.get("author") or ""), 
+        reverse=True
+    )
+
+    used_indices = set()
+
+    for i, candidate in enumerate(sorted_citations):
+        if i in used_indices:
+            continue
+        
+        cluster = [candidate]
+        used_indices.add(i)
+
+        ref_title = candidate.get("title") or ""
+        ref_author = candidate.get("author") or ""
+
+        for j in range(i + 1, len(sorted_citations)):
+            if j in used_indices:
+                continue
+            
+            target = sorted_citations[j]
+            tgt_title = target.get("title") or ""
+            tgt_author = target.get("author") or ""
+
+            # Check if Author matches
+            if not is_similar_author(ref_author, tgt_author):
+                a1 = normalize_text(ref_author)
+                a2 = normalize_text(tgt_author)
+                if not (a1 in a2 or a2 in a1): 
+                    continue
+
+            # Check if Title matches
+            same_title = False
+            if not ref_title and not tgt_title:
+                same_title = True
+            elif ref_title and tgt_title:
+                same_title = is_similar_title(ref_title, tgt_title)
+            
+            if same_title:
+                # Merge target into candidate
+                merge_citation_metadata(candidate, target)
+                used_indices.add(j)
+
+        merged.append(candidate)
+
+    return merged
+
+
 HEURISTICS: List[Heuristic] = [
     placeholder_heuristic,
     collapse_author_only,
     collapse_variant_titles,
+    merge_similar_citations,
 ]
 
 
@@ -185,6 +281,8 @@ def preprocess_data(
                     "title": title,
                     "author": author,
                     "note": citation.get("note"),
+                    "count": 1,
+                    "contexts": [citation.get("citation_excerpt")] if citation.get("citation_excerpt") else [],
                 }
             )
             

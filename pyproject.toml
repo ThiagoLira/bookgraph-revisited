@@ -17,4 +17,7 @@ dependencies = [
     "snakeviz>=2.2.2",
     "mwxml>=0.3.6",
     "llama-index-tools-mcp>=0.4.5",
+    "pyppeteer>=2.0.0",
+    "beautifulsoup4>=4.14.2",
+    "lxml>=6.0.2",
 ]

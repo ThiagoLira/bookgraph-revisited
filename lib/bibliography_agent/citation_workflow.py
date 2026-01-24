@@ -1,6 +1,7 @@
 import asyncio
 import json
 import re
+import logging
 from typing import Any, Dict, List, Optional, Set, Union
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -23,6 +24,8 @@ from lib.bibliography_agent.bibliography_tool import (
     GoodreadsAuthorCatalog,
     SQLiteWikiPeopleIndex,
 )
+
+logger = logging.getLogger(__name__)
 
 # --- Helpers ---
 
@@ -87,8 +90,8 @@ class CitationWorkflow(Workflow):
         self.wiki_catalog = None
         if wiki_people_path and Path(wiki_people_path).exists():
             self.wiki_catalog = SQLiteWikiPeopleIndex(db_path=wiki_people_path, trace=verbose)
-        elif self.verbose:
-            print(f"[Workflow] Wiki DB not found at {wiki_people_path}, skipping Wiki lookups.")
+        else:
+            logger.warning(f"Wiki DB not found at {wiki_people_path}, skipping Wiki lookups.")
 
         self.llm = llm or OpenAI(model="gpt-4o-mini")
 
@@ -299,15 +302,14 @@ class CitationWorkflow(Workflow):
                  print(f"[Workflow] Validation Raw Response type: {type(response)}")
             
             idx = response.index
-            if self.verbose:
-                 print(f"[Workflow] Validation idx: {idx} (type: {type(idx)})")
+            idx = response.index
+            logger.debug(f"Validation idx: {idx} (type: {type(idx)})")
 
             selected = None
             if isinstance(idx, int) and 0 <= idx < len(candidates):
                 selected = candidates[idx]
             
-            if self.verbose:
-                print(f"[Workflow] Validation ({source}): Selected index {idx}. Reason: {response.reasoning}")
+            logger.info(f"Validation ({source}): Selected index {idx}. Reason: {response.reasoning}")
 
             return ValidationEvent(
                 citation=citation, 
@@ -317,15 +319,14 @@ class CitationWorkflow(Workflow):
                 reasoning=response.reasoning
             )
         except Exception as e:
-            print(f"[Workflow] Validation Error: {e}")
+            logger.error(f"Validation Error: {e}")
             return ValidationEvent(citation=citation, selected_result=None, source=source, mode=mode, reasoning=f"Error: {e}")
 
     @step
     async def aggregate_results(
         self, ctx: Context, ev: ValidationEvent
     ) -> StopEvent | RetryEvent | None:
-        if self.verbose:
-            print(f"[Workflow] Entering aggregate_results for {ev.source}")
+        logger.debug(f"Entering aggregate_results for {ev.source}")
         mode = ev.mode
         
         # Store result in context
@@ -399,8 +400,7 @@ class CitationWorkflow(Workflow):
         if retry_count < 3:
             new_count = retry_count + 1
             await ctx.store.set("retry_count", new_count)
-            if self.verbose:
-                print(f"[Workflow] Retrying... ({new_count}/3)")
+            logger.info(f"Retrying... ({new_count}/3)")
             
             # Re-trigger query generation
             # We might want to modify the prompt to be broader, but for now just re-running

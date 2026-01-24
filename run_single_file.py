@@ -113,6 +113,12 @@ async def run(args: argparse.Namespace):
         authors_json=str(REPO_ROOT / "datasets/goodreads_book_authors.json"),
         wiki_db=str(REPO_ROOT / "datasets/wiki_people_index.db"),
         
+        # Enrichment Paths (Consolidated in datasets/)
+        dates_json=str(REPO_ROOT / "datasets/original_publication_dates.json"),
+        author_meta_json=str(REPO_ROOT / "datasets/authors_metadata.json"),
+        # legacy_dates_json is now the same as dates_json, so we can omit it or pass None
+        legacy_dates_json=None,
+        
         debug_trace=True
     )
     

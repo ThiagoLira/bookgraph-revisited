@@ -13,6 +13,10 @@ sys.path.insert(0, str(repo_root))
 from lib.bibliography_agent.citation_workflow import CitationWorkflow
 from lib.bibliography_agent.llm_utils import build_llm
 from llama_index.core import Settings
+import logging
+from lib.logging_config import setup_logging
+
+logger = logging.getLogger(__name__)
 
 # Metrics tracking
 class Metrics:
@@ -25,67 +29,76 @@ class Metrics:
         self.goodreads_failures = 0
     
     def report(self):
-        print("\n=== Evaluation Report ===")
-        print(f"Total Citations: {self.total}")
-        print(f"Processed: {self.processed}")
-        print(f"Goodreads Matches Found: {self.goodreads_hits}")
-        print(f"Enrichment Matches Found: {self.enrichment_hits}")
-        print(f"Enrichment Missed (Expected but not found): {self.enrichment_missed}")
-        print("=========================\n")
+        logger.info("\n=== Evaluation Report ===")
+        logger.info(f"Total Citations: {self.total}")
+        logger.info(f"Processed: {self.processed}")
+        logger.info(f"Goodreads Matches Found: {self.goodreads_hits}")
+        logger.info(f"Enrichment Matches Found: {self.enrichment_hits}")
+        logger.info(f"Enrichment Missed (Expected but not found): {self.enrichment_missed}")
+        logger.info("=========================\n")
 
 def fuzzy_match(s1: str, s2: str) -> bool:
     if not s1 or not s2: return False
     return s1.lower() in s2.lower() or s2.lower() in s1.lower()
 
 async def run_evaluation():
-    print("Starting Evaluation Pipeline...")
+    log_file = setup_logging(Path("evaluation/logs"))
+    logger.info(f"Starting Evaluation Pipeline... Logs at {log_file}")
     
     # Configuration
     books_db = repo_root / "datasets/books_index.db"
     authors_file = repo_root / "datasets/goodreads_book_authors.json"
     wiki_db = repo_root / "datasets/wiki_people_index.db"
     
-    # Load input (Simulated Preprocessed Citations)
-    input_path = repo_root / "calibre_outputs/manual_test/preprocessed_extracted_citations/1000.json"
-    if not input_path.exists():
-        print(f"Error: Input file {input_path} not found.")
-        return
-
-    input_data = json.loads(input_path.read_text())
-    citations = input_data.get("citations", [])
+    # Enrichment Paths (Use TEMP to force lookup/test agent)
+    dates_json = repo_root / "datasets/temp_original_publication_dates.json"
+    author_meta_json = repo_root / "datasets/temp_authors_metadata.json"
     
-    # Load Ground Truth
+    # Clean up temp files if they exist from previous runs
+    if dates_json.exists(): dates_json.unlink()
+    if author_meta_json.exists(): author_meta_json.unlink()
+    
+    # Load Ground Truths
     gt_path = repo_root / "evaluation/ground_truth.json"
     enrich_gt_path = repo_root / "evaluation/enrichment_ground_truth.json"
     
-    gt_data = json.loads(gt_path.read_text())
-    enrich_data = json.loads(enrich_gt_path.read_text())
+    if not gt_path.exists() or not enrich_gt_path.exists():
+        logger.error("Error: Ground truth files not found.")
+        return
+        
+    gt_entries = json.loads(gt_path.read_text())
+    enrich_entries = json.loads(enrich_gt_path.read_text())
     
+    # Build a lookup for enrichment GT by (title, author)
+    enrich_lookup = {}
+    for entry in enrich_entries:
+        c = entry["citation"]
+        key = (c.get("title"), c.get("author"))
+        enrich_lookup[key] = entry.get("enrichment")
+
     # Initialize Workflow
     api_key = os.environ.get("OPENROUTER_API_KEY", "")
     base_url = os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")
     model = "openai/gpt-oss-120b"
     
-    # Load .env if key missing
     if not api_key:
         env_path = repo_root / ".env"
         if env_path.exists():
-            print(f"Loading .env from {env_path}")
+            logger.info(f"Loading .env from {env_path}")
             with open(env_path) as f:
                 for line in f:
                     if line.strip() and not line.startswith("#") and "=" in line:
                         k, v = line.strip().split("=", 1)
                         if k == "OPENROUTER_API_KEY":
                             api_key = v
-    
-    # Manually build LLM with the fix
+                            
     from llama_index.llms.openai_like import OpenAILike
     llm = OpenAILike(
         model=model,
         api_key=api_key,
         api_base=base_url,
         is_chat_model=True,
-        is_function_calling_model=False, # The Fix
+        is_function_calling_model=False,
         context_window=131072,
         max_tokens=1024
     )
@@ -95,63 +108,115 @@ async def run_evaluation():
         authors_path=str(authors_file),
         wiki_people_path=str(wiki_db),
         llm=llm,
-        verbose=False # Set to True for debugging
+        verbose=False
+    )
+    
+    # Initialize Enricher
+    from lib.metadata_enricher import MetadataEnricher
+    enricher = MetadataEnricher(
+        dates_path=str(dates_json),
+        authors_path=str(author_meta_json),
+        llm=llm
     )
     
     metrics = Metrics()
-    metrics.total = len(citations)
+    metrics.total = len(gt_entries)
     
-    print(f"Processing {len(citations)} citations...")
+    logger.info(f"Processing {len(gt_entries)} citations from Ground Truth...")
     
-    for i, cit in enumerate(citations):
-        print(f"[{i+1}/{len(citations)}] Processing: {cit.get('title', 'Unknown')} / {cit.get('author', 'Unknown')}")
+    for i, entry in enumerate(gt_entries):
+        cit = entry["citation"]
+        logger.info(f"[{i+1}/{len(gt_entries)}] Processing: {cit.get('title', 'Unknown')} / {cit.get('author', 'Unknown')}")
         
         # 1. Run Workflow
         try:
             result = await workflow.run(citation=cit)
         except Exception as e:
-            print(f"  Error running workflow: {e}")
+            logger.error(f"  Error running workflow: {e}")
             continue
 
         metrics.processed += 1
         
-        # 2. Analyze Result
         match_type = result.get("match_type")
         metadata = result.get("metadata", {})
         
-        print(f"  Result: {match_type}")
-        if match_type in ["book", "author"]:
+        logger.info(f"  Match: {match_type}")
+        if match_type in ["book", "author", "person"]:
              metrics.goodreads_hits += 1
         
-        # 3. Check Enrichment
-        # Did we get wiki data?
-        wiki_match = metadata.get("wikipedia_match")
+        # 2. Enrichment
+        enriched_author_meta = {}
+        book_year = None
         
-        # Find expected enrichment from Ground Truth
-        # We need to map 'cit' to 'enrich_data' entry
-        expected_enrichment = None
-        for entry in enrich_data:
-            c = entry["citation"]
-            # Flexible matching
-            t_match = (c.get("title") == cit.get("title"))
-            if not c.get("title") and not cit.get("title"): t_match = True
-            
-            a_match = (c.get("author") == cit.get("author"))
-            
-            if t_match and a_match:
-                expected_enrichment = entry.get("enrichment")
-                break
+        # Identity to enrich
+        author_name_to_enrich = None
         
-        if wiki_match:
-            print(f"  Enrichment: FOUND ({wiki_match.get('title')})")
-            metrics.enrichment_hits += 1
+        if match_type == "book":
+            book_id = metadata.get("book_id")
+            title = metadata.get("title")
+            # Author name from metadata or citation
+            author_data = metadata.get("author") # string or list?
+            # Usually author is inside metadata if it came from GR
+            # But duplicate author logic might be tricky.
+            # GR metadata usually has 'authors': ['Name'] or similar?
+            # Workflow metadata update:
+            # if gr_res: metadata.update(gr_res).
+            # gr_res usually has 'title', 'book_id', 'author' (string name if single)
+            
+            author_clean = metadata.get("author") 
+            if not author_clean: author_clean = cit.get("author")
+            
+            # Enrich Book Year
+            try:
+                book_year = await enricher.enrich_book(str(book_id) if book_id else None, title, author_clean)
+            except Exception as e:
+                logger.error(f"  Enrich Book Error: {e}")
+
+            if author_clean:
+                author_name_to_enrich = author_clean
+                
+        elif match_type in ["author", "person"]:
+            author_name_to_enrich = metadata.get("name") or cit.get("author")
+
+        # Enrich Author
+        if author_name_to_enrich:
+            try:
+                enriched_author_meta = await enricher.enrich_author(author_name_to_enrich)
+            except Exception as e:
+                logger.error(f"  Enrich Author Error: {e}")
+        
+        # 3. Validation
+        key = (cit.get("title"), cit.get("author"))
+        expected = enrich_lookup.get(key)
+        
+        if expected:
+            # Check correctness (Birth/Death Year)
+            # Expected format: {"birth_year": 1930, "death_year": 2024, ...}
+            
+            if enriched_author_meta:
+                # Compare fuzzy
+                logger.info(f"  Enriched Author: {author_name_to_enrich} -> {enriched_author_meta}")
+                
+                # Check birth year
+                exp_born = expected.get("birth_year")
+                got_born = enriched_author_meta.get("birth_year")
+                
+                if exp_born and got_born:
+                    if exp_born == got_born:
+                        logger.info(f"    ✅ Birth Year Matches: {got_born}")
+                    else:
+                        logger.warning(f"    ❌ Birth Year Mismatch: Exp {exp_born} vs Got {got_born}")
+                
+                metrics.enrichment_hits += 1
+            else:
+                logger.warning(f"  MISSING ENRICHMENT! Expected for {author_name_to_enrich}")
+                metrics.enrichment_missed += 1
         else:
-            print("  Enrichment: NONE")
-            
-        if expected_enrichment and not wiki_match:
-            print(f"  MISSING ENRICHMENT! Expected: {expected_enrichment.get('wiki_title')}")
-            metrics.enrichment_missed += 1
-            
+            if enriched_author_meta:
+                 logger.info(f"  (Unexpected Enrichment found for {author_name_to_enrich}: {enriched_author_meta})")
+            if book_year:
+                 logger.info(f"  (Book Year Found: {book_year})")
+
     metrics.report()
 
 if __name__ == "__main__":

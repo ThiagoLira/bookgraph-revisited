@@ -14,6 +14,7 @@ from lib.extract_citations import (
 from .preprocess_citations import preprocess_data
 from lib.bibliography_agent.citation_workflow import CitationWorkflow
 from lib.bibliography_agent.llm_utils import build_llm
+from lib.metadata_enricher import MetadataEnricher
 
 try:
     from tqdm import tqdm  # type: ignore
@@ -46,12 +47,18 @@ class PipelineConfig:
     authors_json: str = "datasets/goodreads_book_authors.json"
     wiki_db: str = "datasets/wiki_people_index.db"
     
+    # Enrichment Paths
+    dates_json: str = "frontend/data/stalin_library/original_publication_dates.json"
+    author_meta_json: str = "frontend/data/stalin_library/authors_metadata.json"
+    legacy_dates_json: Optional[str] = "datasets/original_publication_dates.json" # Default legacy
+    
     debug_trace: bool = False
 
 class BookPipeline:
     def __init__(self, config: PipelineConfig):
         self.config = config
         self._setup_workflow()
+        self._setup_enricher()
         
     def _setup_workflow(self):
         # Initialize LLM and Workflow once
@@ -60,14 +67,7 @@ class BookPipeline:
             api_key=self.config.agent_api_key, 
             base_url=self.config.agent_base_url
         )
-        # Note: CitationWorkflow tracks state per run, but we can reuse the instance 
-        # as long as we call run() which creates a new Context.
-        # WAIT: CitationWorkflow in llama-index might store state in self. 
-        # Checking implementation: It uses `ctx` for state. So it should be safe to reuse?
-        # Actually, let's create a new one per run effectively to be safe, 
-        # or share the catalog instances.
         
-        # We'll create the workflow instance here, as catalogs are heavy to load.
         self.workflow = CitationWorkflow(
             books_db_path=self.config.books_db,
             authors_path=self.config.authors_json,
@@ -75,6 +75,15 @@ class BookPipeline:
             llm=self.llm,
             verbose=self.config.debug_trace,
             timeout=120.0,
+        )
+
+    def _setup_enricher(self):
+        self.enricher = MetadataEnricher(
+            dates_path=self.config.dates_json,
+            authors_path=self.config.author_meta_json,
+            legacy_dates_path=self.config.legacy_dates_json,
+            llm=self.llm,
+            auto_update=True
         )
 
     async def run_file(
@@ -177,18 +186,29 @@ class BookPipeline:
         async def process_safe(cit):
             async with sem:
                 try:
-                    return await self.workflow.run(citation=cit)
+                    res = await self.workflow.run(citation=cit)
+                    return (cit, res)
                 except Exception as e:
                     print(f"Error in workflow: {e}")
-                    return {"error": str(e)}
+                    return (cit, {"error": str(e)})
 
         pbar = tqdm(total=len(citations), desc="  Resolving Citations", leave=False) if tqdm else None
         
+        # We can also batch enrichment, but let's do it sequentially per item 
+        # post-resolution for simplicity, or inside the loop.
+        # To avoid blocking the semaphore with enrichment logic (LLM calls), 
+        # we might want to do it in parallel too.
+        
+        tasks = [process_safe(cit) for cit in citations]
         results = []
-        for cit in citations:
-            res = await process_safe(cit)
+        
+        # Use as_completed to update progress bar as items finish
+        for future in asyncio.as_completed(tasks):
+            cit, res = await future
+            
             # Merge result with citation
             if "error" in res:
+                if pbar: pbar.update(1)
                 continue
                 
             match_type = res.get("match_type", "unknown")
@@ -204,6 +224,42 @@ class BookPipeline:
 
             wiki_match = metadata.get("wikipedia_match")
 
+            # --- ENRICHMENT START ---
+            enrichment = {}
+            
+            # 1. Enrich Book
+            target_title = metadata.get("title") or cit.get("title")
+            target_authors = metadata.get("authors") or [cit.get("author")]
+            target_author_name = target_authors[0] if target_authors else "Unknown"
+
+            if target_book_id and target_title:
+                year = await self.enricher.enrich_book(str(target_book_id), target_title, target_author_name)
+                if year:
+                    enrichment["original_year"] = year
+            elif match_type == "book" and target_title:
+                 # Even if no ID (rare for 'book' match type but possible if partial), try enrich by title
+                 year = await self.enricher.enrich_book(None, target_title, target_author_name)
+                 if year:
+                    enrichment["original_year"] = year
+
+            # 2. Enrich Authors
+            # Enrich all found author IDs/Names
+            for auth_id in target_author_ids:
+                # We need name map... metadata usually has 'authors' list but not id->name map
+                # We'll just assume the main author or iterate if we have names
+                pass 
+            
+            # If we have a name from the citation or metadata
+            main_author_name = target_author_name
+            if main_author_name:
+                auth_meta = await self.enricher.enrich_author(main_author_name)
+                if auth_meta:
+                    enrichment["author_meta"] = auth_meta
+            # --- ENRICHMENT END ---
+            
+            # Merge enrichment into metadata for valid JSON output
+            metadata.update(enrichment)
+
             results.append({
                 "raw": cit,
                 "goodreads_match": metadata,
@@ -218,6 +274,10 @@ class BookPipeline:
             if pbar: pbar.update(1)
             
         if pbar: pbar.close()
+        
+        # Flush enrichment updates
+        print("[pipeline] Saving enriched metadata...")
+        self.enricher.save()
         
         output = {
             "source": meta,
