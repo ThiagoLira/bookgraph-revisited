@@ -169,8 +169,8 @@ def build_llm(model: str, api_key: str, base_url: Optional[str]) -> LLM:
 class GoodreadsAgentRunner:
     agent: FunctionAgent
     verbose: bool = False
-    authors_path: Path = Path("goodreads_data/goodreads_book_authors.json")
-    wiki_people_path: Path = Path("goodreads_data/wiki_people_index.db")
+    authors_path: Path = Path("datasets/goodreads_book_authors.json")
+    wiki_people_path: Path = Path("datasets/wiki_people_index.db")
 
     @staticmethod
     def _normalize_response(raw: str) -> str:
@@ -339,7 +339,7 @@ def build_agent(
     base_url: Optional[str],
     books_path: str,
     authors_path: str,
-    wiki_people_path: str = "goodreads_data/wiki_people_index.db",
+    wiki_people_path: str = "datasets/wiki_people_index.db",
     verbose: bool,
     trace_tool: bool = False,
     system_prompt: Optional[str] = None,
@@ -418,17 +418,17 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--books-path",
-        default="goodreads_data/goodreads_books.json",
+        default="datasets/goodreads_books.json",
         help="Path to goodreads_books.json (or .json.gz)",
     )
     parser.add_argument(
         "--authors-path",
-        default="goodreads_data/goodreads_book_authors.json",
+        default="datasets/goodreads_book_authors.json",
         help="Path to goodreads_book_authors.json (or .json.gz)",
     )
     parser.add_argument(
         "--wiki-people-path",
-        default="goodreads_data/wiki_people_index.db",
+        default="datasets/wiki_people_index.db",
         help="Path to wiki_people_index.db",
     )
     parser.add_argument(

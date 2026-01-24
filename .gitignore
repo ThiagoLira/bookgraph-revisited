@@ -19,14 +19,14 @@ wheels/
 .installed.cfg
 *.egg
 
-
-# goodreads_data/ # Allow directory
-goodreads_data/*.json
-goodreads_data/*.json.gz
-goodreads_data/*.db
-goodreads_data/*.xml.bz2
-goodreads_data/*.jsonl.gz
-!goodreads_data/README.md
+# Datasets
+goodreads_data/
+datasets/*.json
+datasets/*.db
+datasets/*.csv
+datasets/*.json.gz
+datasets/*.xml.bz2
+datasets/*.parquet
 
 # Virtual environments
 venv/
@@ -57,10 +57,10 @@ htmlcov/
 !pyproject.toml
 !web-search-agent/**/*.json
 profile_runs/
-profiling/single_gpu/profile_runs/
-profiling/dual_gpu/profile_runs/
-profiling/gpu/single_gpu/profile_runs/
-profiling/gpu/dual_gpu/profile_runs/
+profiling/
+
+# Unified Output Directory
+outputs/
 calibre_outputs/
 *.txt.json
 test_server.py
@@ -74,6 +74,7 @@ openrouter_runs/
 *.gguf
 *.bin
 models/
+profile.stats
 
 # Logs
 *.log

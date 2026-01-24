@@ -63,9 +63,9 @@ async def main():
     # ... existing code ...
     mock_llm = MockLLM()
     w = CitationWorkflow(
-        books_db_path="goodreads_data/books_index.db",
-        authors_path="goodreads_data/goodreads_book_authors.json",
-        wiki_people_path="goodreads_data/wiki_people_index.db",
+        books_db_path="datasets/books_index.db",
+        authors_path="datasets/goodreads_book_authors.json",
+        wiki_people_path="datasets/wiki_people_index.db",
         llm=mock_llm,
         verbose=True
     )

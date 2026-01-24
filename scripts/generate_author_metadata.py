@@ -17,7 +17,7 @@ def normalize_name(name):
 def main():
     base_dir = "/Users/thlira/Documents/bookgraph-revisited"
     data_dir = os.path.join(base_dir, "frontend/data")
-    db_path = os.path.join(base_dir, "goodreads_data/wiki_people_index.db")
+    db_path = os.path.join(base_dir, "datasets/wiki_people_index.db")
     output_path = os.path.join(data_dir, "authors_metadata.json")
 
     if not os.path.exists(db_path):

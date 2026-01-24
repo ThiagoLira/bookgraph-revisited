@@ -1,35 +1,33 @@
 #!/usr/bin/env bash
-# Launch llama-server with Qwen3-30B-A3B sharded across two GPUs using row-split tensor parallelism.
-# Args:
-#   1: MODEL_PATH (default: /home/thiago/models/Qwen3-30B-A3B-Q5_K_S.gguf)
-#   2: MAX_CONCURRENCY / slots (-np)
-#   3: MAX_INPUT_TOKENS
-#   4: MAX_COMPLETION_TOKENS
-#   5: BATCH_SIZE (-b)
-#   6: UBATCH_SIZE (-ub)
-#   7: GPU_LAYERS (-ngl)
-#   8: HOST
-#   9: PORT
-#  10: SERVER_BINARY
-#  11: TENSOR_SPLIT weights (e.g. "70,30")
-#  12: MAIN_GPU index
-#  13: PIN_HEAVY_TENSORS flag (1 = pin token/output tensors to main GPU)
+# Launch llama-server for a large OpenAI-style model on two GPUs.
+# Args (all optional):
+#   1: MODEL_PATH (default: /home/thiago/models/gpt-oss-120b-Q5_K_S-00001-of-00002.gguf)
+#   2: MAX_CONCURRENCY (-np, default: 20)
+#   3: MAX_INPUT_TOKENS (default: 4096)
+#   4: MAX_COMPLETION_TOKENS (default: 1024)
+#   5: BATCH_SIZE (-b, default: 2048)
+#   6: UBATCH_SIZE (-ub, default: 512)
+#   7: GPU_LAYERS (-ngl, default: -1)
+#   8: HOST (default: 127.0.0.1)
+#   9: PORT (default: 8080)
+#  10: SERVER_BINARY (default: llama-server)
+#  11: TENSOR_SPLIT weights (default: 50,50)
+#  12: MAIN_GPU index (default: 0)
+#  13: PIN_HEAVY_TENSORS (1 to pin token/output to MAIN_GPU, default: 1)
 
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-MODEL_PATH="${1:-/home/thiago/models/Qwen3-30B-A3B-Q5_K_S.gguf}"
-MAX_CONCURRENCY="${2:-20}"
-MAX_INPUT_TOKENS="${3:-2000}"
-MAX_COMPLETION_TOKENS="${4:-1000}"
+MODEL_PATH="${1:-/home/thiago/models/gpt-oss-120b-Q5_K_S-00001-of-00002.gguf}"
+MAX_CONCURRENCY="${2:-1}"
+MAX_INPUT_TOKENS="${3:-2096}"
+MAX_COMPLETION_TOKENS="${4:-1024}"
 BATCH_SIZE="${5:-2048}"
 UBATCH_SIZE="${6:-512}"
-GPU_LAYERS="${7:--1}"
+GPU_LAYERS="${7:-25}"
 HOST="${8:-127.0.0.1}"
 PORT="${9:-8080}"
 SERVER_BINARY="${10:-llama-server}"
-TENSOR_SPLIT="${11:-100,0}"
+TENSOR_SPLIT="${11:-55,45}"
 MAIN_GPU="${12:-0}"
 PIN_HEAVY_TENSORS="${13:-1}"
 
@@ -39,19 +37,22 @@ TOTAL_CONTEXT_SIZE=$((CONTEXT_PER_REQUEST * MAX_CONCURRENCY))
 CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0,1}"
 IFS=',' read -r -a GPU_IDS <<< "$CUDA_VISIBLE_DEVICES"
 if [[ "${#GPU_IDS[@]}" -ne 2 ]]; then
-  echo "Expected exactly two GPUs in CUDA_VISIBLE_DEVICES (e.g. 0,1). Current value: ${CUDA_VISIBLE_DEVICES}" >&2
+  echo "Expected exactly two GPUs in CUDA_VISIBLE_DEVICES (e.g. 0,1). Current: ${CUDA_VISIBLE_DEVICES}" >&2
   exit 1
 fi
 
-echo "Launching llama-server with Qwen3-30B-A3B across GPUs ${CUDA_VISIBLE_DEVICES}..." >&2
+echo "Launching llama-server across GPUs ${CUDA_VISIBLE_DEVICES}..." >&2
 echo "  Model path            : ${MODEL_PATH}" >&2
 echo "  Total context (-c)    : ${TOTAL_CONTEXT_SIZE} tokens" >&2
 echo "  Concurrency (-np)     : ${MAX_CONCURRENCY}" >&2
 echo "  Context / request     : ${CONTEXT_PER_REQUEST} (input ${MAX_INPUT_TOKENS} + output ${MAX_COMPLETION_TOKENS})" >&2
-echo "  Host:Port             : ${HOST}:${PORT}" >&2
-echo "  Split mode            : row (2-way tensor parallelism)" >&2
+echo "  Batch size (-b)       : ${BATCH_SIZE}" >&2
+echo "  Micro-batch (-ub)     : ${UBATCH_SIZE}" >&2
+echo "  GPU layers (-ngl)     : ${GPU_LAYERS}" >&2
+echo "  Split mode            : row (tensor parallel)" >&2
 echo "  Tensor split weights  : ${TENSOR_SPLIT}" >&2
 echo "  Main GPU              : ${MAIN_GPU}" >&2
+echo "  Host:Port             : ${HOST}:${PORT}" >&2
 
 SERVER_ARGS=(
   -m "${MODEL_PATH}"
@@ -62,6 +63,7 @@ SERVER_ARGS=(
   -ub "${UBATCH_SIZE}"
   -ngl "${GPU_LAYERS}"
   -sm row
+  --tensor-split "${TENSOR_SPLIT}"
   --main-gpu "${MAIN_GPU}"
   --host "${HOST}"
   --port "${PORT}"
@@ -74,10 +76,6 @@ SERVER_ARGS=(
   --jinja
 )
 
-if [[ -n "${TENSOR_SPLIT}" ]]; then
-  SERVER_ARGS+=(--tensor-split "${TENSOR_SPLIT}")
-fi
-
 if [[ "${PIN_HEAVY_TENSORS}" != "0" ]]; then
   SERVER_ARGS+=(
     --override-tensor "token_embd.weight=CUDA${MAIN_GPU}"
@@ -85,4 +83,5 @@ if [[ "${PIN_HEAVY_TENSORS}" != "0" ]]; then
   )
 fi
 
+echo "Command: CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES} ${SERVER_BINARY} ${SERVER_ARGS[*]}" >&2
 CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES}" "${SERVER_BINARY}" "${SERVER_ARGS[@]}"

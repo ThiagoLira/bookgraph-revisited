@@ -30,8 +30,8 @@ def test_real_world_cases():
         model="qwen/qwen3-next-80b-a3b-instruct",
         api_key="",
         base_url="https://openrouter.ai/api/v1",
-        books_path="goodreads_data/goodreads_books.json",
-        authors_path="goodreads_data/goodreads_book_authors.json",
+        books_path="datasets/goodreads_books.json",
+        authors_path="datasets/goodreads_book_authors.json",
         verbose=True,
         trace_tool=True,
     )

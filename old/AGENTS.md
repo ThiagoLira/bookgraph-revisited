@@ -6,7 +6,7 @@ Two main entrypoints exist in this repo depending on the kind of “agent” you
 
 - **Single GPU (`profiling/single_gpu/run_profiled_single.sh`)**: end-to-end harness for load testing on one GPU. Launches `llama-server`, runs `run_single_file.py`, samples GPU utilization via `profiling/common/monitor_gpu_util.sh`, and emits logs/plots inside `profiling/single_gpu/profile_runs/<timestamp>/`.
 - **Dual GPU (`profiling/dual_gpu/run_profiled_dual.sh`)**: sweeps through multiple `--max-concurrency` settings while running the server across GPUs 0/1 with row-split tensor parallelism. Drops outputs inside `profiling/dual_gpu/profile_runs/<timestamp>/np_*`.
-- **Goodreads FTS builder (`scripts/build_goodreads_index.py`)**: preprocesses the Goodreads datasets into a SQLite FTS5 index (`goodreads_data/books_index.db`) with author names resolved and descriptions trimmed. Run once (or after updating the datasets) before using the metadata agent.
+- **Goodreads FTS builder (`scripts/build_goodreads_index.py`)**: preprocesses the Goodreads datasets into a SQLite FTS5 index (`datasets/books_index.db`) with author names resolved and descriptions trimmed. Run once (or after updating the datasets) before using the metadata agent.
 - **When to use**: you’re iterating on model quantization, batch sizes, or GPU placement and want automatic instrumentation without touching remote infra.
 - **Inputs**: optional parameters for chunk size, concurrency, token budgets, GGUF path, GPU layers, etc. Defaults match the README table.
 - **Outputs**: JSON citation file + `llama_server.log`, `run_single_file.log`, raw GPU log, and `gpu_utilization.png`.
@@ -53,5 +53,5 @@ Both scripts ultimately call the same extraction codepath—the difference is wh
 - **Retry Mechanism**: If a search fails, the workflow generates broader queries (up to 3 attempts).
 
 ### Supporting Data
-- `goodreads_data/books_index.db` (SQLite FTS5 index)
-- `goodreads_data/wiki_people_index.db` (SQLite FTS5 index)
+- `datasets/books_index.db` (SQLite FTS5 index)
+- `datasets/wiki_people_index.db` (SQLite FTS5 index)

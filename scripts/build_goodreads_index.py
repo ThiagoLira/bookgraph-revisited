@@ -14,9 +14,9 @@ import sqlite3
 from pathlib import Path
 from typing import Dict, Iterable, List
 
-BOOKS_JSON = Path("goodreads_data/goodreads_books.json")
-AUTHORS_JSON = Path("goodreads_data/goodreads_book_authors.json")
-DEFAULT_DB = Path("goodreads_data/books_index.db")
+BOOKS_JSON = Path("datasets/goodreads_books.json")
+AUTHORS_JSON = Path("datasets/goodreads_book_authors.json")
+DEFAULT_DB = Path("datasets/books_index.db")
 MAX_DESCRIPTION_CHARS = 512
 
 

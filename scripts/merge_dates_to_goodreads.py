@@ -5,7 +5,7 @@ from datetime import datetime
 
 def merge_dates():
     source_path = 'frontend/data/original_publication_dates.json'
-    target_path = 'goodreads_data/original_publication_dates.json'
+    target_path = 'datasets/original_publication_dates.json'
 
     print(f"Loading source: {source_path}")
     try:

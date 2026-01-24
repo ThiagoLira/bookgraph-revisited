@@ -8,7 +8,7 @@ import time
 from pathlib import Path
 from typing import Any, Dict, List
 
-DEFAULT_JSON_PATH = "goodreads_data/goodreads_books.json"
+DEFAULT_JSON_PATH = "datasets/goodreads_books.json"
 # Middle entry from tests: "El Espejo de mi Alma"
 MIDDLE_BOOK_ID = "12841265"
 

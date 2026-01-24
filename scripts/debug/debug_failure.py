@@ -17,9 +17,9 @@ async def run_debug_test():
     print(f"Testing citation: {citation}")
 
     # Config
-    books_db = "goodreads_data/books_index.db"
-    authors_json = "goodreads_data/goodreads_book_authors.json"
-    wiki_db = "goodreads_data/wiki_people_index.db"
+    books_db = "datasets/books_index.db"
+    authors_json = "datasets/goodreads_book_authors.json"
+    wiki_db = "datasets/wiki_people_index.db"
     
     # Load .env
     env_path = Path(".env")

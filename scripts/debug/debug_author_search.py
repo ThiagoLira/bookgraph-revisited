@@ -9,7 +9,7 @@ from lib.bibliography_agent.bibliography_tool import GoodreadsAuthorCatalog
 
 def test_author_search():
     print("Initializing GoodreadsAuthorCatalog...")
-    catalog = GoodreadsAuthorCatalog("goodreads_data/goodreads_book_authors.json")
+    catalog = GoodreadsAuthorCatalog("datasets/goodreads_book_authors.json")
     
     print("Testing find_authors with 'query' arg...")
     try:
