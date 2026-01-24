@@ -4,7 +4,7 @@ from pathlib import Path
 import datetime
 
 def backup_data():
-    source_dir = Path("goodreads_data")
+    source_dir = Path("datasets")
     target_base = Path(os.path.expanduser("~/OneDrive/BookGraphData"))
     
     # Create target directory if it doesn't exist

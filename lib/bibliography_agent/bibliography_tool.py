@@ -16,9 +16,9 @@ from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Optional
 if TYPE_CHECKING:  # pragma: no cover
     from llama_index.core.tools import FunctionTool
 
-BOOKS_DB_PATH = Path("goodreads_data/books_index.db")
-AUTHORS_PATH = Path("goodreads_data/goodreads_book_authors.json")
-WIKI_PEOPLE_DB_PATH = Path("goodreads_data/wiki_people_index.db")
+BOOKS_DB_PATH = Path("datasets/books_index.db")
+AUTHORS_PATH = Path("datasets/goodreads_book_authors.json")
+WIKI_PEOPLE_DB_PATH = Path("datasets/wiki_people_index.db")
 BOOK_METADATA_KEYS = {
     "book_id",
     "work_id",
@@ -272,7 +272,7 @@ class SQLiteWikiPeopleIndex:
         
         # Load overrides
         self.overrides = {}
-        overrides_path = Path("goodreads_data/authors_metadata.json")
+        overrides_path = Path("datasets/authors_metadata.json")
         if overrides_path.exists():
             try:
                 with overrides_path.open("r", encoding="utf-8") as f:

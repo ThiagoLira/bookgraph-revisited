@@ -42,7 +42,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--input",
         type=Path,
-        default=Path("goodreads_data/enwiki-20251101-pages-articles-multistream.xml.bz2"),
+        default=Path("datasets/enwiki-20251101-pages-articles-multistream.xml.bz2"),
         help="Path to enwiki XML.bz2 dump.",
     )
     parser.add_argument(

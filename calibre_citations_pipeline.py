@@ -19,46 +19,18 @@ import argparse
 import asyncio
 import json
 import os
-import re
 import sqlite3
 import sys
-import time
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Sequence, Set, Tuple
+from typing import Any, Dict, List, Optional, Set
 
-from lib.extract_citations import (
-    ExtractionConfig,
-    ProgressCallback,
-    process_book,
-    write_output,
-)
-from preprocess_citations import preprocess as preprocess_citations
-from lib.bibliography_agent.citation_workflow import CitationWorkflow
+from lib.main_pipeline import BookPipeline, PipelineConfig
 
 try:
     from tqdm import tqdm  # type: ignore
 except ImportError:  # pragma: no cover
     tqdm = None
-
-# Tunable defaults (aligned with existing pipeline)
-EXTRACT_CHUNK_SIZE = 50
-EXTRACT_MAX_CONCURRENCY = 20
-EXTRACT_MAX_CONTEXT = 6144
-EXTRACT_MAX_COMPLETION = 2048
-EXTRACT_MODEL_ID = "Qwen/Qwen3-30B-A3B"
-
-
-def progress_iter(iterable: Iterable[Path], **kwargs: object) -> Iterable[Path]:
-    if tqdm is None:
-        return iterable
-    return tqdm(iterable, **kwargs)
-
-
-def progress_iter_items(iterable: Iterable[Any], **kwargs: object) -> Iterable[Any]:
-    if tqdm is None:
-        return iterable
-    return tqdm(iterable, **kwargs)
 
 
 @dataclass
@@ -104,8 +76,7 @@ def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[st
     books: List[CalibreBook] = []
     for calibre_id, title, author_sort, rel_path, name, fmt, goodreads_id, description in rows:
         if not goodreads_id:
-            print(f"[calibre] Skipping book {
-                  title!r} (Calibre ID {calibre_id}) with no Goodreads ID.")
+            # print(f"[calibre] Skipping book {title!r} (Calibre ID {calibre_id}) with no Goodreads ID.")
             continue
         if allowed_goodreads_ids is not None and str(goodreads_id) not in allowed_goodreads_ids:
             continue
@@ -116,8 +87,7 @@ def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[st
         txt_path = book_dir / f"{name}.txt"
         epub_path = book_dir / f"{name}.epub"
         if not txt_path.exists():
-            print(f"[calibre] Skipping Goodreads {goodreads_id} ({
-                  title}) because TXT not found at {txt_path}")
+            print(f"[calibre] Skipping Goodreads {goodreads_id} ({title}) because TXT not found at {txt_path}")
             continue
         books.append(
             CalibreBook(
@@ -134,7 +104,7 @@ def load_calibre_books(library_dir: Path, allowed_goodreads_ids: Optional[Set[st
     return books
 
 
-def load_goodreads_metadata(book_ids: Set[str], db_path: str = "goodreads_data/books_index.db") -> Dict[str, Any]:
+def load_goodreads_metadata(book_ids: Set[str], db_path: str = "datasets/books_index.db") -> Dict[str, Any]:
     """Load metadata for a set of Goodreads book IDs from the SQLite index."""
     if not book_ids:
         return {}
@@ -155,9 +125,6 @@ def load_goodreads_metadata(book_ids: Set[str], db_path: str = "goodreads_data/b
         cur.execute(query, list(book_ids))
         for row in cur.fetchall():
             data = dict(row)
-            # Parse JSON fields if necessary (authors is usually a JSON string in some schemas, 
-            # but here we might need to check the schema. Assuming standard columns).
-            # If authors is a string, try to parse it.
             if isinstance(data.get("authors"), str):
                 try:
                     data["authors"] = json.loads(data["authors"])
@@ -171,295 +138,9 @@ def load_goodreads_metadata(book_ids: Set[str], db_path: str = "goodreads_data/b
         
     return results
 
-async def run_extraction(
-    txt_path: Path,
-    output_path: Path,
-    base_url: str,
-    api_key: str,
-    model_id: str,
-    chunk_size: int,
-    max_context: int,
-    progress_callback: Optional[ProgressCallback] = None,
-) -> None:
-    config = ExtractionConfig(
-        input_path=txt_path,
-        chunk_size=chunk_size,
-        max_concurrency=EXTRACT_MAX_CONCURRENCY,
-        max_context_per_request=max_context,
-        max_completion_tokens=EXTRACT_MAX_COMPLETION,
-        base_url=base_url,
-        api_key=api_key,
-        model=model_id,
-        tokenizer_name=model_id,
-    )
-    result = await process_book(config, progress_callback=progress_callback)
-    write_output(result, output_path)
-
-
-def stage_extract(
-    books: Iterable[CalibreBook],
-    output_dir: Path,
-    base_url: str,
-    api_key: str,
-    model_id: str,
-    chunk_size: int,
-    max_context: int,
-) -> None:
-    output_dir.mkdir(parents=True, exist_ok=True)
-    iterator = progress_iter_items(
-        books,
-        desc="Stage 1/3: Extraction",
-        unit="book",
-    )
-    for book in iterator:
-        out_path = output_dir / f"{book.goodreads_id}.json"
-        if out_path.exists():
-            print(f"[extract] Skip {book.title} (cached).")
-            continue
-        print(f"[extract] Processing {book.title} -> {out_path}")
-        if tqdm is None:
-            asyncio.run(run_extraction(book.txt_path, out_path,
-                        base_url, api_key, model_id, chunk_size, max_context))
-            continue
-        chunk_bar = tqdm(
-            desc=f"  chunks for {book.title}",
-            unit="chunk",
-            leave=False,
-        )
-
-        def on_chunk_progress(done: int, total: int) -> None:
-            if chunk_bar.total != total:
-                chunk_bar.total = total
-            chunk_bar.n = done
-            chunk_bar.refresh()
-
-        try:
-            asyncio.run(
-                run_extraction(
-                    book.txt_path,
-                    out_path,
-                    base_url,
-                    api_key,
-                    model_id,
-                    chunk_size,
-                    max_context,
-                    progress_callback=on_chunk_progress,
-                )
-            )
-        finally:
-            chunk_bar.close()
-
-
-def stage_preprocess(raw_dir: Path, output_dir: Path, books: Iterable[CalibreBook]) -> None:
-    output_dir.mkdir(parents=True, exist_ok=True)
-    for book in progress_iter_items(books, desc="Stage 2/3: Preprocess", unit="book"):
-        raw_path = raw_dir / f"{book.goodreads_id}.json"
-        pre_path = output_dir / f"{book.goodreads_id}.json"
-        if pre_path.exists():
-            print(f"[preprocess] Skip {book.title} (cached).")
-            continue
-        if not raw_path.exists():
-            print(f"[preprocess] Missing raw JSON for {book.title}, skipping.")
-            continue
-        print(f"[preprocess] {raw_path} -> {pre_path}")
-        processed = preprocess_citations(
-            raw_path,
-            source_title=book.title,
-            source_authors=[book.author_sort],
-        )
-        pre_path.write_text(json.dumps(processed, indent=2,
-                            ensure_ascii=False), encoding="utf-8")
-
-
-from lib.bibliography_agent.llm_utils import build_llm
-
-async def stage_workflow_async(
-    books: Iterable[CalibreBook],
-    pre_dir: Path,
-    output_dir: Path,
-    books_db: str,
-    authors_db: str,
-    wiki_db: str,
-    base_url: str,
-    api_key: str,
-    model_id: str,
-    debug_trace: bool = False,
-    max_concurrency: int = 10,
-) -> None:
-    books = list(books)
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    # Prefetch source Goodreads metadata for source nodes
-    book_ids_needed: Set[str] = {b.goodreads_id for b in books}
-    source_goodreads_meta = load_goodreads_metadata(book_ids_needed)
-
-    # Initialize LLM
-    llm = build_llm(model=model_id, api_key=api_key, base_url=base_url)
-
-    # Initialize workflow
-    # We use a single workflow instance (or one per book if we want to reset state, 
-    # but CitationWorkflow is stateless per run call).
-    workflow = CitationWorkflow(
-        books_db_path=books_db,
-        authors_path=authors_db,
-        wiki_people_path=wiki_db,
-        llm=llm,
-        verbose=debug_trace,
-        timeout=120.0,
-    )
-
-    sem = asyncio.Semaphore(max_concurrency)
-
-    async def process_citation_safe(citation: Dict[str, Any], bar: Optional[tqdm]) -> Dict[str, Any]:
-        async with sem:
-            try:
-                # Enforce a strict timeout on the workflow execution
-                result = await asyncio.wait_for(workflow.run(citation=citation), timeout=130.0)
-                if bar:
-                    bar.update(1)
-                return {
-                    "citation": citation,
-                    "result": result
-                }
-            except asyncio.TimeoutError:
-                print(f"[workflow] Timeout processing citation {citation}", flush=True)
-                if bar:
-                    bar.update(1)
-                return {
-                    "citation": citation,
-                    "error": "Timeout"
-                }
-            except Exception as e:
-                print(f"[workflow] Error processing citation {citation}: {e}")
-                if bar:
-                    bar.update(1)
-                return {
-                    "citation": citation,
-                    "error": str(e)
-                }
-
-    for book in progress_iter_items(books, desc="Stage 3/3: Citation Workflow", unit="book"):
-        pre_path = pre_dir / f"{book.goodreads_id}.json"
-        final_path = output_dir / f"{book.goodreads_id}.json"
-        
-        if final_path.exists():
-            print(f"[workflow] Skip {book.title} (cached).")
-            continue
-        if not pre_path.exists():
-            print(f"[workflow] Missing preprocessed JSON for {book.title}, skipping.")
-            continue
-
-        data = json.loads(pre_path.read_text(encoding="utf-8"))
-        citations = data.get("citations", [])
-        print(f"[workflow] Processing {len(citations)} citations for {book.title}")
-
-        # Build source record
-        source_meta = source_goodreads_meta.get(book.goodreads_id, {})
-        source_author_ids = []
-        if source_meta.get("authors"):
-            source_author_ids = [str(a.get("author_id")) for a in source_meta.get("authors", []) if a.get("author_id")]
-        elif source_meta.get("author_ids"):
-            source_author_ids = [str(a) for a in source_meta.get("author_ids") if a]
-            
-        source_record = {
-            "title": source_meta.get("title") or book.title,
-            "authors": source_meta.get("author_names_resolved") or [book.author_sort],
-            "goodreads_id": book.goodreads_id,
-            "author_ids": source_author_ids,
-            "description": book.description,
-            "goodreads": {
-                "book_id": book.goodreads_id,
-                "author_ids": source_author_ids,
-                "title": source_meta.get("title") or book.title,
-                "authors": source_meta.get("author_names_resolved") or [book.author_sort],
-                "publication_year": source_meta.get("publication_year"),
-            },
-            "calibre": {
-                "id": book.calibre_id,
-                "path": str(book.path),
-                "txt_path": str(book.txt_path),
-                "epub_path": str(book.epub_path) if book.epub_path else None,
-                "description": book.description,
-            },
-        }
-
-        output_payload: Dict[str, Any] = {"source": source_record, "citations": []}
-
-        if not citations:
-            final_path.write_text(json.dumps(output_payload, indent=2, ensure_ascii=False), encoding="utf-8")
-            continue
-
-        # Process citations
-        citation_bar = None
-        if tqdm is not None:
-            citation_bar = tqdm(total=len(citations), desc=f"  citations for {book.title}", unit="citation", leave=False)
-
-        tasks = [process_citation_safe(c, citation_bar) for c in citations]
-        results = await asyncio.gather(*tasks)
-        
-        if citation_bar:
-            citation_bar.close()
-
-        for res in results:
-            if "error" in res:
-                continue
-            
-            citation = res["citation"]
-            result = res["result"]
-            
-            # Format output based on result
-            match_type = result.get("match_type", "unknown")
-            metadata = result.get("metadata", {})
-            
-            if match_type == "not_found" or match_type == "unknown":
-                continue
-
-            # Construct edge data
-            target_book_id = metadata.get("book_id")
-            target_author_ids = []
-            if metadata.get("author_id"):
-                target_author_ids.append(str(metadata.get("author_id")))
-            elif metadata.get("author_ids"):
-                target_author_ids = [str(a) for a in metadata.get("author_ids")]
-            
-            wiki_person = metadata.get("wikipedia_match")
-
-            output_payload["citations"].append({
-                "raw": citation,
-                "goodreads_match": metadata,
-                "wikipedia_match": wiki_person,
-                "edge": {
-                    "target_type": match_type,
-                    "target_book_id": target_book_id,
-                    "target_author_ids": target_author_ids,
-                    "target_person": wiki_person,
-                }
-            })
-
-        final_path.write_text(json.dumps(output_payload, indent=2, ensure_ascii=False), encoding="utf-8")
-
-
-def stage_workflow(
-    books: Iterable[CalibreBook],
-    pre_dir: Path,
-    output_dir: Path,
-    books_db: str,
-    authors_db: str,
-    wiki_db: str,
-    base_url: str,
-    api_key: str,
-    model_id: str,
-    debug_trace: bool = False,
-    max_concurrency: int = 10,
-) -> None:
-    asyncio.run(stage_workflow_async(
-        books, pre_dir, output_dir, books_db, authors_db, wiki_db, 
-        base_url, api_key, model_id, debug_trace, max_concurrency
-    ))
-
 
 def derive_output_base(library_dir: Path) -> Path:
-    return Path("calibre_outputs") / library_dir.name
+    return Path("outputs") / "calibre_libs" / library_dir.name
 
 
 def parse_args() -> argparse.Namespace:
@@ -485,17 +166,17 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--books-db",
-        default="goodreads_data/books_index.db",
+        default="datasets/books_index.db",
         help="Path to Goodreads books SQLite index.",
     )
     parser.add_argument(
         "--authors-json",
-        default="goodreads_data/goodreads_book_authors.json",
+        default="datasets/goodreads_book_authors.json",
         help="Path to Goodreads authors JSON.",
     )
     parser.add_argument(
         "--wiki-db",
-        default="goodreads_data/wiki_people_index.db",
+        default="datasets/wiki_people_index.db",
         help="Path to Wikipedia people SQLite index.",
     )
     parser.add_argument(
@@ -506,19 +187,19 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--extract-model",
-        default=EXTRACT_MODEL_ID,
+        default="Qwen/Qwen3-30B-A3B",
         help="Model ID for extraction stage.",
     )
     parser.add_argument(
         "--extract-chunk-size",
         type=int,
-        default=EXTRACT_CHUNK_SIZE,
+        default=50,
         help="Chunk size for extraction.",
     )
     parser.add_argument(
         "--extract-max-context-per-request",
         type=int,
-        default=EXTRACT_MAX_CONTEXT,
+        default=6144,
         help="Max context tokens per request.",
     )
     parser.add_argument(
@@ -550,55 +231,79 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def main() -> None:
-    args = parse_args()
+async def run_pipeline(args):
+    # Load Books
     if not args.library_dir.exists():
-        raise SystemExit(f"Library directory {
-                         args.library_dir} does not exist.")
+        raise SystemExit(f"Library directory {args.library_dir} does not exist.")
+        
     allowed_ids: Optional[Set[str]] = None
     if args.only_goodreads_ids:
         allowed_ids = {token.strip() for token in args.only_goodreads_ids.replace(
             ",", " ").split() if token.strip()}
-        if not allowed_ids:
-            print(
-                "No valid Goodreads IDs provided to --only-goodreads-ids; processing all eligible books.")
-            allowed_ids = None
+            
+    print("Loading Calibre metadata...")
     books = load_calibre_books(args.library_dir, allowed_ids)
     if not books:
         print("No eligible Calibre books found (need TXT format and Goodreads ID); nothing to do.")
         return
 
+    # Load Source Metadata
+    book_ids_needed = {b.goodreads_id for b in books}
+    source_metadata_map = load_goodreads_metadata(book_ids_needed, args.books_db)
+
+    # Initialize Pipeline
+    config = PipelineConfig(
+        extract_base_url=args.extract_base_url,
+        extract_api_key=args.extract_api_key,
+        extract_model=args.extract_model,
+        extract_chunk_size=args.extract_chunk_size,
+        extract_max_context=args.extract_max_context_per_request,
+        
+        agent_base_url=args.agent_base_url,
+        agent_api_key=args.agent_api_key,
+        agent_model=args.agent_model,
+        agent_concurrency=args.agent_max_concurrency,
+        
+        books_db=args.books_db,
+        authors_json=args.authors_json,
+        wiki_db=args.wiki_db,
+        debug_trace=args.debug_trace
+    )
+    
+    pipeline = BookPipeline(config)
     output_base = args.output_dir or derive_output_base(args.library_dir)
-    raw_dir = output_base / "raw_extracted_citations"
-    pre_dir = output_base / "preprocessed_extracted_citations"
-    final_dir = output_base / "final_citations_metadata_goodreads"
+    
+    print(f"Starting pipeline for {len(books)} books...")
+    print(f"Output Directory: {output_base}")
+    
+    iterator = tqdm(books, desc="Total Progress") if tqdm else books
+    
+    for book in iterator:
+        if tqdm: iterator.set_description(f"Processing {book.title}")
+        
+        # Build source metadata dict
+        gr_meta = source_metadata_map.get(book.goodreads_id, {})
+        source_meta = {
+            "title": gr_meta.get("title") or book.title,
+            "authors": gr_meta.get("author_names_resolved") or [book.author_sort],
+            "goodreads_id": book.goodreads_id,
+            "calibre_id": book.calibre_id,
+            "description": book.description
+        }
+        
+        try:
+            await pipeline.run_file(
+                input_text_path=book.txt_path,
+                output_dir=output_base,
+                source_metadata=source_meta,
+                book_id=book.goodreads_id
+            )
+        except Exception as e:
+            print(f"Failed to process {book.title}: {e}")
 
-    stage_extract(
-        books,
-        raw_dir,
-        args.extract_base_url,
-        args.extract_api_key,
-        args.extract_model,
-        args.extract_chunk_size,
-        args.extract_max_context_per_request,
-    )
-    stage_preprocess(raw_dir, pre_dir, books)
-    stage_workflow(
-        books,
-        pre_dir,
-        final_dir,
-        args.books_db,
-        args.authors_json,
-        args.wiki_db,
-        args.agent_base_url,
-        args.agent_api_key,
-        args.agent_model,
-        debug_trace=args.debug_trace,
-        max_concurrency=args.agent_max_concurrency,
-    )
-
-    print(f"Pipeline complete. Outputs at {output_base}")
-
+def main():
+    args = parse_args()
+    asyncio.run(run_pipeline(args))
 
 if __name__ == "__main__":
     main()

@@ -13,7 +13,7 @@ for p in (MODULE_DIR, ROOT):
 from lib.bibliography_agent.agent import GoodreadsAgentRunner  # type: ignore[attr-defined]
 from lib.bibliography_agent.bibliography_tool import GoodreadsCatalog  # type: ignore[attr-defined]
 
-DATASET_EXISTS = Path("goodreads_data/goodreads_books.json").exists()
+DATASET_EXISTS = Path("datasets/goodreads_books.json").exists()
 TARGETS = [
     ("tenth", "The Devil's Notebook", "Anton Szandor LaVey"),
     ("middle", "El Espejo de mi Alma", "Tannia E. Ortiz-Lopes"),

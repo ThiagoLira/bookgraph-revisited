@@ -145,14 +145,14 @@ def build_agent_runner(
     api_key: str,
     model_id: str,
     trace_tool: bool,
-    wiki_people_path: str = "goodreads_data/wiki_people_index.db",
+    wiki_people_path: str = "datasets/wiki_people_index.db",
 ) -> "GoodreadsAgentRunner":
     return build_agent(
         model=model_id,
         api_key=api_key,
         base_url=base_url,
-        books_path="goodreads_data/goodreads_books.json",
-        authors_path="goodreads_data/goodreads_book_authors.json",
+        books_path="datasets/goodreads_books.json",
+        authors_path="datasets/goodreads_book_authors.json",
         wiki_people_path=wiki_people_path,
         verbose=trace_tool,
         trace_tool=trace_tool,

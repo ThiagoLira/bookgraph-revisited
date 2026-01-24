@@ -56,12 +56,12 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--books-path",
-        default="goodreads_data/goodreads_books.json",
+        default="datasets/goodreads_books.json",
         help="Path to goodreads_books.json",
     )
     parser.add_argument(
         "--authors-path",
-        default="goodreads_data/goodreads_book_authors.json",
+        default="datasets/goodreads_book_authors.json",
         help="Path to goodreads_book_authors.json",
     )
     parser.add_argument(

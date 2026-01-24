@@ -3,6 +3,7 @@ import json
 import re
 from typing import Any, Dict, List, Optional, Set, Union
 from difflib import SequenceMatcher
+from pathlib import Path
 
 from llama_index.core.workflow import (
     Context,
@@ -81,7 +82,14 @@ class CitationWorkflow(Workflow):
         self.verbose = verbose
         self.book_catalog = SQLiteGoodreadsCatalog(db_path=books_db_path, trace=verbose)
         self.author_catalog = GoodreadsAuthorCatalog(authors_path=authors_path)
-        self.wiki_catalog = SQLiteWikiPeopleIndex(db_path=wiki_people_path, trace=verbose)
+        
+        # Make Wiki optional
+        self.wiki_catalog = None
+        if wiki_people_path and Path(wiki_people_path).exists():
+            self.wiki_catalog = SQLiteWikiPeopleIndex(db_path=wiki_people_path, trace=verbose)
+        elif self.verbose:
+            print(f"[Workflow] Wiki DB not found at {wiki_people_path}, skipping Wiki lookups.")
+
         self.llm = llm or OpenAI(model="gpt-4o-mini")
 
 
@@ -206,9 +214,12 @@ class CitationWorkflow(Workflow):
     async def search_wikipedia(
         self, ctx: Context, ev: QueriesGeneratedEvent
     ) -> SearchResultsEvent | StopEvent | None:
-        # Only runs for "author_only" mode
-        if ev.mode != "author_only":
-            return None # Do not stop the workflow, just produce no event
+        # Runs for both "book" and "author_only"
+        
+        if self.wiki_catalog is None:
+             if self.verbose:
+                 print("[Workflow] Skipping Wikipedia search (DB missing).")
+             return None
 
         queries = ev.queries
         citation = ev.citation
@@ -217,7 +228,13 @@ class CitationWorkflow(Workflow):
         seen_ids = set()
 
         for q in queries:
-            name = q.author or q.title
+            name = q.author
+            if not name and ev.mode == "author_only":
+                 name = q.title # Fallback if author field is misused
+            
+            if not name:
+                continue
+
             matches = self.wiki_catalog.find_people(name=name, limit=5)
             for m in matches:
                 mid = m.get("page_id")
@@ -231,6 +248,8 @@ class CitationWorkflow(Workflow):
             for res in all_results:
                 target = res.get("title", "")
                 source_text = citation.get("author") or queries[0].author
+                if not source_text: 
+                     continue
                 score = fuzzy_token_sort_ratio(source_text, target)
                 scored.append((score, res))
             
@@ -276,9 +295,15 @@ class CitationWorkflow(Workflow):
             if self.verbose:
                 print("[Workflow] Calling LLM for validation...")
             response = await self.llm.astructured_predict(ValidationResult, PromptTemplate(prompt))
+            if self.verbose:
+                 print(f"[Workflow] Validation Raw Response type: {type(response)}")
+            
             idx = response.index
+            if self.verbose:
+                 print(f"[Workflow] Validation idx: {idx} (type: {type(idx)})")
+
             selected = None
-            if 0 <= idx < len(candidates):
+            if isinstance(idx, int) and 0 <= idx < len(candidates):
                 selected = candidates[idx]
             
             if self.verbose:
@@ -309,38 +334,43 @@ class CitationWorkflow(Workflow):
         current_results[ev.source] = ev.selected_result
         await ctx.store.set(results_key, current_results)
 
-        # Check if we are done
-        if mode == "book":
-            # Book mode only waits for Goodreads
-            # (We don't search Wikipedia for books in this design, only authors)
-            final_result = {
-                "match_type": "book" if ev.selected_result else "not_found",
-                "metadata": ev.selected_result or {},
-                "reasoning": ev.reasoning
-            }
-            
-            # Retry logic
-            if not ev.selected_result:
-                return await self._handle_retry(ctx, ev.citation)
-            
-            return StopEvent(result=final_result)
+        # Wait for both events if possible, OR proceed if one is sufficient but we prefer enrichment
+        # We generally expect 'goodreads' and 'wikipedia' events if valid.
         
-        elif mode == "author_only":
-            # Wait for both Goodreads and Wikipedia
-            # We need to know if we have received both.
-            # Since events come in one by one, we check if we have both keys.
-            # BUT, if one fails/stops early (e.g. no queries), we might hang.
-            # However, search steps always emit SearchResultsEvent (even empty), 
-            # and validate always emits ValidationEvent.
-            # So we should eventually get both.
+        # Check if we have received both expected events?
+        # A robust way is to check if we have results for 'goodreads' and 'wikipedia' keys.
+        # But if wikipedia search was skipped (e.g. no author name), we might never get it?
+        # Actually search_wikipedia emits SearchResultsEvent even if empty, so validate_matches emits ValidationEvent.
+        # UNLESS search_wikipedia returns None early.
+        # I updated search_wikipedia to run for book mode.
+        
+        has_gr = "goodreads" in current_results
+        has_wiki = "wikipedia" in current_results
+        
+        if has_gr and has_wiki:
+            gr_res = current_results["goodreads"]
+            wiki_res = current_results["wikipedia"]
             
-            if "goodreads" in current_results and "wikipedia" in current_results:
-                gr_res = current_results["goodreads"]
-                wiki_res = current_results["wikipedia"]
-                
-                final_metadata = {}
-                match_type = "not_found"
-                
+            final_metadata = {}
+            match_type = "not_found"
+            
+            if mode == "book":
+                if gr_res:
+                    final_metadata.update(gr_res)
+                    match_type = "book"
+                    # Add enrichment
+                    if wiki_res:
+                        final_metadata["wikipedia_match"] = wiki_res
+                else:
+                     # Failed to find book. 
+                     # Should we fall back to author match? 
+                     # For now, let's stick to "not_found" or retry.
+                     # But if we found the author in Wiki, maybe we should report "person" only?
+                     # The requirement is to fix missing metadata for BOOKS. 
+                     # So if book is missing, we probably want to retry looking for the book.
+                     pass
+            
+            elif mode == "author_only":
                 if gr_res:
                     final_metadata.update(gr_res)
                     match_type = "author"
@@ -348,19 +378,21 @@ class CitationWorkflow(Workflow):
                 if wiki_res:
                     final_metadata["wikipedia_match"] = wiki_res
                     if match_type == "not_found":
-                        match_type = "person" # Found in wiki but not goodreads
-                
-                # Retry logic if NOTHING found
-                if not gr_res and not wiki_res:
-                    return await self._handle_retry(ctx, ev.citation)
+                        match_type = "person"
 
-                return StopEvent(result={
-                    "match_type": match_type,
-                    "metadata": final_metadata,
-                    "reasoning": "Aggregated results."
-                })
-            
-            return None # Wait for other event
+            # Retry logic if NOTHING found (for book mode, if GR is missing)
+            if mode == "book" and not gr_res:
+                 return await self._handle_retry(ctx, ev.citation)
+            if mode == "author_only" and match_type == "not_found":
+                 return await self._handle_retry(ctx, ev.citation)
+
+            return StopEvent(result={
+                "match_type": match_type,
+                "metadata": final_metadata,
+                "reasoning": "Aggregated results."
+            })
+        
+        return None # Wait for other event
 
     async def _handle_retry(self, ctx: Context, citation: Dict[str, Any]) -> StopEvent | RetryEvent:
         retry_count = await ctx.store.get("retry_count", default=0)

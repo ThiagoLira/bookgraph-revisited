@@ -8,7 +8,7 @@ Each row is keyed by title and stores:
   - categories (joined string)
   - data (raw JSON for downstream use)
 
-Output DB: goodreads_data/wiki_people_index.db
+Output DB: datasets/wiki_people_index.db
 """
 
 from __future__ import annotations
@@ -31,7 +31,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("goodreads_data/wiki_people_index.db"),
+        default=Path("datasets/wiki_people_index.db"),
         help="Path to output SQLite DB.",
     )
     parser.add_argument(

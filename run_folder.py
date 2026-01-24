@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CLI for processing a single text file using the standard BookPipeline.
+CLI for processing all files in a folder using the standard BookPipeline.
 """
 
 from __future__ import annotations
@@ -9,6 +9,7 @@ import argparse
 import asyncio
 import os
 import sys
+from datetime import datetime
 from pathlib import Path
 
 # Fix: Ensure repo root is in python path
@@ -16,7 +17,7 @@ REPO_ROOT = Path(__file__).resolve().parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-# Attempt to load .env manually if python-dotenv is not installed or just to be safe
+# Attempt to load .env manually
 try:
     from dotenv import load_dotenv
     load_dotenv()
@@ -28,20 +29,19 @@ from lib.main_pipeline import BookPipeline, PipelineConfig
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Process a single plaintext book using BookPipeline."
+        description="Process every *file in a directory using BookPipeline."
     )
     parser.add_argument(
-        "input_path",
+        "input_dir",
         type=Path,
-        help="Path to the plaintext book file.",
+        help="Directory containing plaintext book files.",
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("outputs") / "single_runs",
-        help="Directory to save outputs.",
+        default=None,
+        help="Directory to save outputs (default: creates numbered run folder).",
     )
-    
     # LLM / Extraction Config
     parser.add_argument(
         "--chunk-size",
@@ -70,32 +70,60 @@ def parse_args() -> argparse.Namespace:
         default="qwen/qwen3-next-80b-a3b-instruct",
         help="Model ID.",
     )
-
-    # Optional Overrides
     parser.add_argument(
-        "--book-title",
-        default=None,
-        help="Override book title metadata.",
+        "--pattern",
+        default="*.txt",
+        help="Glob pattern to select text files (default: *.txt).",
     )
     parser.add_argument(
-        "--author",
-        default=None,
-        help="Override author metadata.",
-    )
-    parser.add_argument(
-        "--goodreads-id",
-        default="manual_run",
-        help="Override Goodreads ID.",
+        "--workers",
+        type=int,
+        default=1,
+        help="Number of files to process in parallel (be careful with API limits).",
     )
 
     return parser.parse_args()
 
 
+async def process_file(pipeline: BookPipeline, input_path: Path, output_dir: Path):
+    print(f"Starting: {input_path.name}")
+    source_metadata = {
+        "title": input_path.stem,
+        "authors": [], # Cannot infer from filename easily
+        "goodreads_id": None,
+        "calibre_id": None
+    }
+    try:
+        await pipeline.run_file(
+            input_text_path=input_path,
+            output_dir=output_dir,
+            source_metadata=source_metadata,
+            book_id=f"folder_run_{input_path.stem}"
+        )
+        print(f"Finished: {input_path.name}")
+    except Exception as e:
+        print(f"Error processing {input_path.name}: {e}")
+        import traceback
+        traceback.print_exc()
+
+
 async def run(args: argparse.Namespace):
-    if not args.input_path.exists():
-        print(f"Error: Input file {args.input_path} not found.")
+    if not args.input_dir.is_dir():
+        print(f"Error: {args.input_dir} is not a directory.")
         sys.exit(1)
 
+    files = sorted(path for path in args.input_dir.glob(args.pattern) if path.is_file())
+    if not files:
+        print("No matching files found.")
+        sys.exit(1)
+
+    # Output Dir
+    if args.output_dir:
+        output_dir = args.output_dir
+    else:
+        timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+        output_dir = REPO_ROOT / "outputs" / "folder_runs" / f"run_{timestamp}"
+    
     # Initialize Pipeline
     config = PipelineConfig(
         extract_base_url=args.base_url,
@@ -108,7 +136,6 @@ async def run(args: argparse.Namespace):
         agent_api_key=args.api_key,
         agent_model=args.model,
         
-        # Default DB paths relative to repo root
         books_db=str(REPO_ROOT / "datasets/books_index.db"),
         authors_json=str(REPO_ROOT / "datasets/goodreads_book_authors.json"),
         wiki_db=str(REPO_ROOT / "datasets/wiki_people_index.db"),
@@ -118,30 +145,22 @@ async def run(args: argparse.Namespace):
     
     pipeline = BookPipeline(config)
     
-    # Build minimal source metadata
-    source_metadata = {
-        "title": args.book_title or args.input_path.stem,
-        "authors": [args.author] if args.author else [],
-        "goodreads_id": args.goodreads_id,
-        "calibre_id": None
-    }
-    
-    print(f"Processing: {args.input_path}")
-    print(f"Output Dir: {args.output_dir}")
+    print(f"Processing {len(files)} files from {args.input_dir}")
+    print(f"Output Directory: {output_dir}")
     print(f"Model: {args.model}")
+    print(f"Parallel Workers: {args.workers}")
+
+    # Semaphore for file-level concurrency
+    sem = asyncio.Semaphore(args.workers)
     
-    try:
-        await pipeline.run_file(
-            input_text_path=args.input_path,
-            output_dir=args.output_dir,
-            source_metadata=source_metadata,
-            book_id=args.goodreads_id
-        )
-        print("Done.")
-    except Exception as e:
-        print(f"Error processing file: {e}")
-        import traceback
-        traceback.print_exc()
+    async def worker(fpath):
+        async with sem:
+            await process_file(pipeline, fpath, output_dir)
+
+    await asyncio.gather(*(worker(f) for f in files))
+    
+    print("All done.")
+
 
 def main() -> None:
     args = parse_args()

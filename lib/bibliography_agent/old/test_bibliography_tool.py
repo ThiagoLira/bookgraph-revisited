@@ -19,8 +19,8 @@ from lib.bibliography_agent.bibliography_tool import GoodreadsCatalog
 
 def main() -> None:
     catalog = GoodreadsCatalog(
-        books_path=Path("goodreads_data/goodreads_books.json.gz"),
-        authors_path=Path("goodreads_data/goodreads_book_authors.json.gz"),
+        books_path=Path("datasets/goodreads_books.json.gz"),
+        authors_path=Path("datasets/goodreads_book_authors.json.gz"),
     )
     matches = catalog.find_books(title="The Hobbit", author="Tolkien", limit=5)
     if not matches:

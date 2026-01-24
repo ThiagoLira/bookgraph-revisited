@@ -166,19 +166,51 @@ def apply_heuristics(
     return result
 
 
+def preprocess_data(
+    data: Dict[str, Any],
+    source_name: str,
+    source_title: Optional[str] = None,
+    source_authors: Optional[Sequence[str]] = None,
+) -> Dict[str, Any]:
+    # Extract
+    citations: List[Citation] = []
+    for chunk in data.get("chunks", []):
+        for citation in chunk.get("citations", []):
+            title = (citation.get("title") or "").strip()
+            author = (citation.get("author") or "").strip()
+            if not author:
+                continue
+            citations.append(
+                {
+                    "title": title,
+                    "author": author,
+                    "note": citation.get("note"),
+                }
+            )
+            
+    # Process
+    citations = deduplicate_exact(citations)
+    citations = apply_heuristics(citations, source_title, source_authors)
+    
+    return {
+        "source": source_name,
+        "total": len(citations),
+        "citations": citations,
+    }
+
+
 def preprocess(
     path: Path,
     source_title: Optional[str] = None,
     source_authors: Optional[Sequence[str]] = None,
 ) -> Dict[str, Any]:
-    citations = load_citations(path)
-    citations = deduplicate_exact(citations)
-    citations = apply_heuristics(citations, source_title, source_authors)
-    return {
-        "source": path.name,
-        "total": len(citations),
-        "citations": citations,
-    }
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return preprocess_data(
+        data, 
+        source_name=path.name,
+        source_title=source_title, 
+        source_authors=source_authors
+    )
 
 
 def main() -> None:

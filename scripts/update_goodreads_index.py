@@ -5,8 +5,8 @@ import os
 from datetime import datetime
 
 def update_index():
-    db_path = 'goodreads_data/books_index.db'
-    dates_path = 'goodreads_data/original_publication_dates.json'
+    db_path = 'datasets/books_index.db'
+    dates_path = 'datasets/original_publication_dates.json'
 
     # 1. Backup
     if os.path.exists(db_path):
