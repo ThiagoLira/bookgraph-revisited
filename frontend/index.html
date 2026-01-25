@@ -61,6 +61,7 @@
       font-size: 20px;
       font-weight: 600;
       background: linear-gradient(90deg, #fff, #94a3b8);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -360,7 +361,7 @@
         const srcAuth = normalizeAuthor(Array.isArray(src.authors) ? src.authors[0] : src.authors);
         const srcYear = getBookYear(src);
 
-        if (!authorMap.has(srcAuth)) authorMap.set(srcAuth, { name: srcAuth, books: [], isSource: true, meta: {} });
+        if (!authorMap.has(srcAuth)) authorMap.set(srcAuth, { name: srcAuth, books: [], isSource: true, meta: {}, commentaries: [] });
         const srcAuthorNode = authorMap.get(srcAuth);
 
         // Check if source has meta (rarely populated in current pipeline but good for future)
@@ -389,7 +390,7 @@
             const citedAuth = normalizeAuthor(match.authors ? match.authors[0] : "Unknown");
             const citedYear = getBookYear(match);
 
-            if (!authorMap.has(citedAuth)) authorMap.set(citedAuth, { name: citedAuth, books: [], meta: {} });
+            if (!authorMap.has(citedAuth)) authorMap.set(citedAuth, { name: citedAuth, books: [], meta: {}, commentaries: [] });
             const citedAuthorNode = authorMap.get(citedAuth);
 
             // Merge meta if found
@@ -400,7 +401,8 @@
               title: match.title || "Unknown",
               year: citedYear,
               isSource: false,
-              meta: match
+              meta: match,
+              commentaries: cit.raw.commentaries || []
             };
 
             // Avoid duplicates within author
@@ -412,10 +414,17 @@
           else if (cit.edge && cit.edge.target_author_ids) {
             const name = wiki.title || (match.authors ? match.authors[0] : "Unknown");
             const normName = normalizeAuthor(name);
-            if (!authorMap.has(normName)) authorMap.set(normName, { name: normName, books: [], meta: {} });
+            if (!authorMap.has(normName)) authorMap.set(normName, { name: normName, books: [], meta: {}, commentaries: [] });
 
+            const authNode = authorMap.get(normName);
             // Merge meta
-            if (Object.keys(authorMeta).length > 0) authorMap.get(normName).meta = authorMeta;
+            if (Object.keys(authorMeta).length > 0) authNode.meta = authorMeta;
+
+            // Accumulate commentaries
+            if (cit.raw.commentaries) {
+              if (!authNode.commentaries) authNode.commentaries = [];
+              authNode.commentaries.push(...cit.raw.commentaries);
+            }
           }
         });
       });
@@ -466,6 +475,7 @@
         const r = enclosure ? enclosure.r + 5 : (auth.isSource ? 10 : 5); // Padding
 
         return {
+          commentaries: [...new Set(auth.commentaries)],
           id: `author:${auth.name}`,
           name: auth.name,
           year: year,
@@ -624,6 +634,7 @@
                   } else {
                     selectedNode = d; // Freeze selection
                     highlight(d);
+                    showPanel(d);
                   }
                 });
 
@@ -737,32 +748,61 @@
       d3.selectAll(".link").classed("dimmed", false).classed("highlight", false);
     }
 
-    function showPanel(book) {
+    function showPanel(node) {
       const panel = document.getElementById("info-panel");
-      document.getElementById("panel-title").textContent = book.title;
+      // Handle both Book and Author nodes
+      // Book: title, meta.authors, meta.link, etc.
+      // Author: name, meta (birth_year, etc.), commentaries
+
+      const isBook = node.id && node.id.startsWith("book:");
+      const title = isBook ? node.title : node.name;
+      document.getElementById("panel-title").textContent = title;
+
       const content = document.getElementById("panel-content");
+      const meta = node.meta || {};
 
-      const meta = book.meta || {};
-      const authors = meta.authors ? (Array.isArray(meta.authors) ? meta.authors.join(", ") : meta.authors) : "Unknown Author";
-      const rating = meta.average_rating ? `★ ${meta.average_rating}` : "";
-      const pages = meta.num_pages ? `${meta.num_pages} pages` : "";
-      const publisher = meta.publisher ? meta.publisher : "";
-      const link = meta.link || meta.url;
+      let metaHtml = "";
 
-      let metaHtml = `<div style="margin-bottom:12px; color:#888; font-size:13px;">${book.year || "Unknown Year"} • ${authors}</div>`;
+      if (isBook) {
+        const authors = meta.authors ? (Array.isArray(meta.authors) ? meta.authors.join(", ") : meta.authors) : "Unknown Author";
+        metaHtml += `<div style="margin-bottom:12px; color:#888; font-size:13px;">${node.year || "Unknown Year"} • ${authors}</div>`;
+      } else {
+        // Author Metatada
+        metaHtml += `<div style="margin-bottom:12px; color:#888; font-size:13px;">Author</div>`;
+        if (meta.birth_year) {
+          metaHtml += `<div style="margin-bottom:12px; color:#aaa; font-size:13px;">${meta.birth_year} – ${meta.death_year || "Present"}</div>`;
+        }
+      }
 
-      if (rating || pages || publisher) {
+      if (meta.average_rating || meta.num_pages || meta.publisher) {
         metaHtml += `<div style="display:flex; gap:10px; margin-bottom:12px; font-size:12px; color:var(--text-muted);">`;
-        if (rating) metaHtml += `<span>${rating}</span>`;
-        if (pages) metaHtml += `<span>${pages}</span>`;
-        if (publisher) metaHtml += `<span>${publisher}</span>`;
+        if (meta.average_rating) metaHtml += `<span>★ ${meta.average_rating}</span>`;
+        if (meta.num_pages) metaHtml += `<span>${meta.num_pages} pages</span>`;
+        if (meta.publisher) metaHtml += `<span>${meta.publisher}</span>`;
         metaHtml += `</div>`;
       }
 
-      metaHtml += `<div style="line-height:1.5; margin-bottom:16px;">${meta.description || "No description available."}</div>`;
+      if (meta.description) {
+        metaHtml += `<div style="line-height:1.5; margin-bottom:16px;">${meta.description}</div>`;
+      }
 
+      // Commentaries (from node.commentaries or meta if stored there?)
+      // We pass commentaries in node.commentaries for both Books and Authors now
+      // (For books we attached it to the node in processData, for authors we did too)
+
+      if (node.commentaries && node.commentaries.length > 0) {
+        metaHtml += `<div style="margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.1);">`;
+        metaHtml += `<h4 style="margin:0 0 8px 0; font-size:14px; color:var(--accent);">Author Commentary</h4>`;
+        node.commentaries.forEach(c => {
+          metaHtml += `<div style="font-style:italic; font-size:13px; color:#ddd; margin-bottom:8px; padding-left:8px; border-left:2px solid var(--accent);">${c}</div>`;
+        });
+        metaHtml += `</div>`;
+      }
+
+      // Link
+      const link = meta.link || meta.url;
       if (link) {
-        metaHtml += `<a href="${link}" target="_blank" style="display:inline-block; padding:8px 16px; background:rgba(255,255,255,0.1); color:#fff; text-decoration:none; border-radius:4px; font-size:12px; transition:background 0.2s;">View on Goodreads ↗</a>`;
+        metaHtml += `<a href="${link}" target="_blank" style="display:inline-block; padding:8px 16px; background:rgba(255,255,255,0.1); color:#fff; text-decoration:none; border-radius:4px; font-size:12px; transition:background 0.2s;">View on Web ↗</a>`;
       }
 
       content.innerHTML = metaHtml;

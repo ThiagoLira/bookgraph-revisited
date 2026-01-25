@@ -33,22 +33,26 @@ def load_citations(path: Path) -> List[Citation]:
                     "note": citation.get("note"),
                     "count": 1,
                     "contexts": [citation.get("citation_excerpt")] if citation.get("citation_excerpt") else [],
+                    "commentaries": [citation.get("commentary")] if citation.get("commentary") else [],
                 }
             )
     return rows
 
 
 def merge_citation_metadata(target: Citation, source: Citation) -> Citation:
-    """Merge metadata (count, contexts) from source into target."""
+    """Merge metadata (count, contexts, commentaries) from source into target."""
     target["count"] = target.get("count", 1) + source.get("count", 1)
     
     # Merge contexts unique-ly
     tgt_contexts = target.get("contexts", [])
     src_contexts = source.get("contexts", [])
-    
-    # Simple deduplication of exact strings
-    new_contexts = [c for c in src_contexts if c not in tgt_contexts]
-    target["contexts"] = tgt_contexts + new_contexts
+    target["contexts"] = list(dict.fromkeys(tgt_contexts + src_contexts)) # Deduplicate preserving order
+
+    # Merge commentaries unique-ly
+    tgt_comments = target.get("commentaries", [])
+    src_comments = source.get("commentaries", [])
+    target["commentaries"] = list(dict.fromkeys(tgt_comments + src_comments))
+
     return target
 
 
@@ -283,6 +287,7 @@ def preprocess_data(
                     "note": citation.get("note"),
                     "count": 1,
                     "contexts": [citation.get("citation_excerpt")] if citation.get("citation_excerpt") else [],
+                    "commentaries": [citation.get("commentary")] if citation.get("commentary") else [],
                 }
             )
             

@@ -33,7 +33,8 @@ Return ONLY JSON with this shape:
     {
       "title": str | null, // If only an author is mentioned (Person Reference), set title to null.
       "author": str,       // Cite the ORIGINAL author (e.g., 'Plato', not the translator).
-      "citation_excerpt": str
+      "citation_excerpt": str,
+      "commentary": str    // Third-person commentary on how the book is referenced.
     }
   ]
 }
@@ -45,6 +46,7 @@ Rules:
 - **Ignore Meta-Content**: Do NOT extract from Bibliographies, Footnotes, Indices, or "Further Reading" lists.
 - **Deduplicate**: Include each cited book/author at most once per chunk.
 - `citation_excerpt` MUST be the exact text snippet from the excerpt where the citation appears.
+- `commentary`: Write a brief third-person note explaining what the author says about the book (e.g., "The author mentions reading this book in his youth," "The author cites this as a prime example of modernism").
 
 ===== BEGIN BOOK EXCERPT =====
 {{sentences_block}}
@@ -62,6 +64,10 @@ class BookCitation(BaseModel):
     citation_excerpt: str = Field(
         ...,
         description="The exact text snippet where the citation appears.",
+    )
+    commentary: str = Field(
+        ...,
+        description="A brief third-person commentary explaining the context or sentiment of the citation.",
     )
 
 
