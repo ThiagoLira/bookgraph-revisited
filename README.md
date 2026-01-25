@@ -1,55 +1,20 @@
 # BookGraph Revisited
 
-A high-performance pipeline for extracting, resolving, and visualizing book and author citations from large text corpora (specifically Calibre libraries).
+A high-performance pipeline for extracting, resolving, and visualizing book and author citations from large text corpora.
 
 ## Overview
 
-This system processes raw text files (books) to find citations of other books and authors. It uses LLMs for extraction and a specialized validation agent to resolve these citations against Goodreads and Wikipedia data.
+This system processes raw text files (books) to find citations of other books and authors. It uses LLMs for extraction, a specialized validation agent to resolve citations against Goodreads/Wikipedia, and an automatic web fallback for obscure references.
 
 **Key Features:**
 *   **Pipeline Architecture**: Modular `BookPipeline` that handles extraction, preprocessing, and resolution.
-*   **LLM Extraction**: Uses prompt-based extraction (compatible with OpenAI-like APIs) to find citations in text chunks.
-*   **Agentic Resolution**: A `CitationWorkflow` (LlamaIndex-based) that searches fuzzy matches, validates them with an LLM, and enriches them with Wikipedia metadata.
-*   **Calibre Integration**: Native support for processing Calibre libraries, using existing metadata to aid resolution.
-*   **Visualization**: D3.js frontend for exploring the citation graph and author timelines.
+*   **LLM Extraction**: Uses prompt-based extraction (compatible with OpenAI-like APIs).
+*   **Agentic Resolution**: A `CitationWorkflow` (LlamaIndex-based) that searches fuzzy matches and validates them with an LLM.
+*   **Web Resolution Fallback**: Automatic fallback to agentic web search (using LLM knowledge) when local resolution fails.
+*   **Calibre Integration**: Native support for processing Calibre libraries, leveraging existing metadata.
+*   **Visualization**: D3.js frontend for exploring the citation graph, timeline, and commentaries.
 
 ## Architecture
-
-```mermaid
-classDiagram
-    class BookPipeline {
-        +PipelineConfig config
-        +run_file(input_path, output_dir, metadata)
-        -_run_extraction()
-        -_run_preprocessing()
-        -_run_workflow()
-    }
-
-    class CitationWorkflow {
-        +Context ctx
-        +run(citation)
-        -search_targets()
-        -validate_matches()
-        -enrich_metadata()
-    }
-
-    class CalibrePipeline {
-        +load_calibre_books()
-        +process_library()
-    }
-
-    class OutputData {
-        +Raw JSON (Extraction)
-        +Preprocessed JSON
-        +Final Enriched JSON
-    }
-
-    CalibrePipeline --> BookPipeline : Uses
-    BookPipeline --> CitationWorkflow : Delegated for each citation
-    BookPipeline --> OutputData : Produces
-    CitationWorkflow ..> GoodreadsDB : SQLite Search
-    CitationWorkflow ..> WikipediaDB : SQLite Search
-```
 
 ```mermaid
 graph TD
@@ -61,14 +26,15 @@ graph TD
         D -->|Clean List| E[Step 3: Citation Workflow]
     end
     
-    subgraph Citation Workflow
+    subgraph Resolution Process
         E --> F{Search Indices}
         F -->|Candidates| G[LLM Validation]
         G -->|Match| H[Metadata Enrichment]
-        H -->|Goodreads/Wiki Data| I[Final Result]
+        G -->|No Match| I[Web Resolution Fallback]
+        I -->|Resolved| H
     end
 
-    I --> J[Output: Final JSON]
+    H --> J[Output: Final JSON]
     J --> K[Frontend Visualization]
 ```
 
@@ -76,124 +42,125 @@ graph TD
 
 ### Prerequisites
 *   Python 3.10+
-*   `uv` (Universal Python Package Manager) recommended
-*   An LLM API Provider (e.g., OpenRouter) with a compatible model (Recommended: `qwen/qwen-2.5-72b-instruct` or similar).
+*   `uv` (Universal Python Package Manager)
+*   LLM API Provider (e.g., OpenRouter)
 
 ### Installation
 
-1.  **Clone the repository**:
+1.  **Clone & Install**:
     ```bash
     git clone https://github.com/thiago-lira/bookgraph-revisited.git
     cd bookgraph-revisited
-    ```
-
-2.  **Install dependencies**:
-    ```bash
     uv sync
     ```
 
-3.  **Environment Variables**:
-    Create a `.env` file or export variables:
+2.  **Environment Variables**:
+    Create a `.env` file:
     ```bash
     export OPENROUTER_API_KEY="sk-..."
-    # Optional defaults
     export OPENROUTER_BASE_URL="https://openrouter.ai/api/v1"
     ```
 
-## Usage
+## standard Workflows
 
-### 1. Process a Single File
-Good for testing the pipeline on a specific text file.
+Choose the workflow that matches your input data:
 
+```mermaid
+graph TD
+    Start([Start]) --> Q{What is your input?}
+    Q -->|Single .txt File| A[Workflow 1: Single File]
+    Q -->|Folder of .txt Files| B[Workflow 2: Folder Batch]
+    Q -->|Calibre Library| C[Workflow 3: Calibre Pipeline]
+    
+    A --> D[Visualize Output]
+    B --> D
+    C --> D
+```
+
+### 1. Single File Experiment (`run_single_file.py`)
+Best for testing extraction on a specific book or essay.
+
+**Command**:
 ```bash
-uv run run_single_file.py /path/to/book.txt \
-    --output-dir ./my_output \
-    --model "qwen/qwen-2.5-72b-instruct"
+uv run run_single_file.py <INPUT_PATH> \
+    --output-dir outputs/single_runs/<ID> \
+    --book-title "<TITLE>" \
+    --author "<AUTHOR>" \
+    --goodreads-id <ID>
 ```
 
-### 2. Process a Folder of Text Files
-Process all `*.txt` files in a directory.
-
+**Example**:
 ```bash
-uv run run_folder.py /path/to/books_folder/ \
-    --workers 5
+uv run run_single_file.py evaluation/DFW-PLURIBUS.txt \
+  --output-dir outputs/single_runs/dfw_pluribus \
+  --book-title "E Unibus Pluram" \
+  --author "David Foster Wallace" \
+  --goodreads-id dfw_pluribus
 ```
 
-### 3. Process a Calibre Library
-Process an exported Calibre library. Requires `metadata.db` and text files.
+### 2. Folder Batch Process (`run_folder.py`)
+Best for processing a directory of text files in parallel.
 
+**Command**:
 ```bash
-uv run calibre_citations_pipeline.py /path/to/calibre/library/ \
-    --agent-concurrency 10
+uv run run_folder.py <FOLDER_PATH> --workers 5
 ```
 
-Outputs are saved to `outputs/calibre_libs/<library_name>/`.
-
-## Output Structure
-
-The pipeline generates outputs in the `outputs/` directory by default:
-
-- **Calibre**: `outputs/calibre_libs/<library_name>/`
-- **Single File**: `outputs/single_runs/`
-- **Folder**: `outputs/folder_runs/`
-
-Inside each run folder, you will find:
-
-```
-run_folder/
-├── raw_extracted_citations/        # Step 1: Raw LLM output (noisy)
-│   └── {book_id}.json
-├── preprocessed_extracted_citations/ # Step 2: Deduplicated & Cleaned
-│   └── {book_id}.json
-└── final_citations_metadata_goodreads/ # Step 3: Fully Resolved & Enriched
-    └── {book_id}.json
+**Example**:
+```bash
+uv run run_folder.py datasets/test_books/ --workers 5
 ```
 
-**Final JSON Format:**
-```json
-{
-  "source": { ...book metadata... },
-  "citations": [
-    {
-      "edge": {
-        "target_book_id": "12345",
-        "target_author_ids": ["67890"],
-        "target_type": "book"
-      },
-      "wikipedia_match": { ...wiki metadata... },
-      "goodreads_match": { ...goodreads metadata... }
-    }
-  ]
-}
+### 3. Calibre Library (`calibre_citations_pipeline.py`)
+Best for ingesting an entire Calibre library (requires `metadata.db`).
+
+**Command**:
+```bash
+uv run calibre_citations_pipeline.py <LIBRARY_DIR> \
+    --agent-max-concurrency 10
+```
+
+## Visualization
+
+To view your results in the frontend, use the **universal registration tool**. It automatically handles file copying and configuration updates.
+
+**Command:**
+```bash
+uv run python scripts/register_dataset.py <OUTPUT_DIR> --name "My Dataset Title"
+```
+
+**What it does:**
+1.  **Scans** the `<OUTPUT_DIR>` for the final resolved JSON files.
+2.  **copies** them to `frontend/data/`.
+3.  **Generates** a `manifest.json`.
+4.  **Updates** `frontend/datasets.json`.
+
+**Example:**
+```bash
+uv run python scripts/register_dataset.py outputs/single_runs/dfw_pluribus --name "DFW: E Unibus Pluram"
+```
+
+Then open `http://localhost:8000` (run `python -m http.server` in `frontend/` if needed).
+
+## Logic Details
+
+### Web Resolution Fallback
+If a citation cannot be found in our local database:
+1.  **LLM Prompt**: The system asks the LLM to identify the book/person based on context, ensuring strictly chronological validity.
+2.  **Synthetic ID**: A deterministic ID (`web_md5hash`) is generated from the title/year.
+3.  **Fallback**: This allows the graph to remain connected even without Goodreads IDs.
+
+### Output Structure
+```
+outputs/run_name/
+├── raw_extracted_citations/        # Step 1: Raw LLM output
+├── preprocessed_extracted_citations/ # Step 2: Cleaned
+└── final_citations_metadata_goodreads/ # Step 3: Final Graph JSON
 ```
 
 ## Development
 
-*   **Extraction Logic**: `lib/extract_citations.py`
-*   **Pipeline Logic**: `lib/main_pipeline.py`
-*   **Agent Workflow**: `lib/bibliography_agent/citation_workflow.py`
-*   **Frontend**: `frontend/` (D3.js visualization)
-
-### Frontend Visualization
-1.  Serve the frontend directory:
-    ```bash
-    cd frontend
-    python -m http.server
-    ```
-2.  Open `http://localhost:8000` in your browser.
-3.  Available Datasets:
-    *   **Stalin's Library**: Historical citations from a real-world library.
-    *   **David Foster Wallace Test**: Regression test based on "E Unibus Pluram".
-
-### Testing & Evaluation
-*   **Evaluation**: `uv run python evaluation/evaluate_essay.py`
-    *   Runs the pipeline against the DFW ground truth.
-    *   Generates logs in `evaluation/logs/`.
-*   **Generate Frontend Data for DFW**:
-    ```bash
-    uv run python scripts/generate_dfw_frontend.py
-    ```
-
-### Logging
-Logs are automatically written to `outputs/calibre_libs/<lib>/pipeline_run_<timestamp>.log`.
-*   Use `--verbose` to see detailed LLM interactions and debugging info.
+*   **Extraction**: `lib/extract_citations.py`
+*   **Pipeline**: `lib/main_pipeline.py`
+*   **Agent**: `lib/bibliography_agent/citation_workflow.py`
+*   **Frontend**: `frontend/` (D3.js Visualization)

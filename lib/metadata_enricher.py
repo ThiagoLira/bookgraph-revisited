@@ -224,3 +224,63 @@ class MetadataEnricher:
         except Exception as e:
             logger.error(f"Error enriching author {name}: {e}")
         return None
+    async def resolve_citation_fallback(self, citation: Dict[str, Any], source_context: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Fallback resolution using LLM knowledge when local DBs fail.
+        """
+        title = citation.get("title", "")
+        author = citation.get("author", "")
+        context = citation.get("contexts", [])
+        
+        source_title = source_context.get("title", "Unknown Source")
+        source_year = source_context.get("publication_year") or 2025
+        
+        prompt = (
+            f"You are an expert bibliographer. A citation was found in the book '{source_title}' (Published: {source_year}).\n"
+            f"The citation text is: Title='{title}', Author='{author}'.\n"
+            f"Context snippet: {context}\n\n"
+            f"Task: Identify the real-world book or person referenced.\n"
+            f"CRITICAL CONSTRAINT: The identified work MUST have existed before {source_year}. Do not hallucinate future books.\n"
+            f"If it is a Book, provide: title, author, original_year.\n"
+            f"If it is a Person (no specific book cited), provide keywords about them.\n"
+            f"If you cannot identify it with high confidence, return match_type='not_found'.\n\n"
+            f"Return JSON ONLY with this schema:\n"
+            f"{{\n"
+            f"  \"match_type\": \"book\" | \"person\" | \"not_found\",\n"
+            f"  \"metadata\": {{\n"
+            f"      \"title\": \"Title or Name\",\n"
+            f"      \"authors\": [\"Author Name\"],\n"
+            f"      \"original_year\": int,\n"
+            f"      \"birth_year\": int,\n"
+            f"      \"death_year\": int,\n"
+            f"      \"nationality\": \"string\",\n"
+            f"      \"description\": \"Brief description\"\n"
+            f"  }}\n"
+            f"}}"
+        )
+        
+        try:
+            logger.info(f"Fallback Resolution for: {title} / {author}")
+            resp = await self.llm.acomplete(prompt)
+            text = resp.text.strip()
+            
+            # Clean markdown
+            if text.startswith("```"):
+                text = text.split("\n", 1)[1]
+                if text.endswith("```"):
+                    text = text.rsplit("\n", 1)[0]
+                    
+            data = json.loads(text)
+            
+            # Basic validation
+            if data.get("match_type") == "book":
+                 # Ensure authors is a list
+                 meta = data.get("metadata", {})
+                 if isinstance(meta.get("authors"), str):
+                     meta["authors"] = [meta["authors"]]
+            
+            return data
+            
+        except Exception as e:
+            logger.error(f"Error in fallback resolution: {e}")
+            return {"match_type": "not_found", "metadata": {}}

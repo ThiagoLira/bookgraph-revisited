@@ -307,8 +307,8 @@ async def call_model(
                     temperature=0.0,
                     response_format=chunk_extraction_response_format(),
                     extra_body={
-                        "chat_template_kwargs": {"enable_thinking": False},
-                        "reasoning_format": "none",
+                        "chat_template_kwargs": {"enable_thinking": True},
+                        # "reasoning_format": "none",
                     },
                     timeout=150.0,
                 )

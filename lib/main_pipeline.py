@@ -214,6 +214,25 @@ class BookPipeline:
             match_type = res.get("match_type", "unknown")
             metadata = res.get("metadata", {})
             
+            # --- FALLBACK START ---
+            if match_type in ["not_found", "unknown"]:
+                # Try fallback resolution
+                # Pass source context (meta is the source_metadata passed to _run_workflow)
+                fallback_res = await self.enricher.resolve_citation_fallback(cit, meta)
+                if fallback_res.get("match_type") in ["book", "person"]:
+                    match_type = fallback_res["match_type"]
+                    metadata = fallback_res["metadata"]
+                    # If it's a book, we might generate a fake ID or just rely on title/author
+                    if match_type == "book":
+                        # Generate a deterministic ID from title to allow graph linking? 
+                        # Or leave ID null and reliance is on title matching in frontend (which defaults to ID)
+                        # Let's generate a synthetic ID if missing
+                        if not metadata.get("book_id"):
+                            import hashlib
+                            slug = f"{metadata.get('title')}{metadata.get('original_year')}"
+                            metadata["book_id"] = f"web_{hashlib.md5(slug.encode()).hexdigest()[:8]}"
+            # --- FALLBACK END ---
+            
             # Build Edge
             target_book_id = metadata.get("book_id")
             target_author_ids = []

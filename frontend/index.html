@@ -412,7 +412,7 @@
             }
           }
           else if (cit.edge && cit.edge.target_author_ids) {
-            const name = wiki.title || (match.authors ? match.authors[0] : "Unknown");
+            const name = wiki.title || (match.authors ? match.authors[0] : match.name) || "Unknown";
             const normName = normalizeAuthor(name);
             if (!authorMap.has(normName)) authorMap.set(normName, { name: normName, books: [], meta: {}, commentaries: [] });
 

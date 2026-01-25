@@ -15,9 +15,11 @@ def get_original_publication_date(goodreads_id: str) -> Optional[datetime.dateti
         datetime.datetime object representing the original publication date, or None if not found.
     """
     url = f"https://www.goodreads.com/book/show/{goodreads_id}"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
     }
+    
+    # Skip synthetic IDs from fallback resolution
+    if str(goodreads_id).startswith("web_"):
+        return None
     
     try:
         response = requests.get(url, headers=headers, timeout=10)
