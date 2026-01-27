@@ -24,7 +24,8 @@ def parse_args():
 
 def main():
     args = parse_args()
-    
+    repo_root = Path(__file__).resolve().parent.parent
+
     if not args.input_dir.exists():
         print(f"Error: Input directory {args.input_dir} does not exist.")
         sys.exit(1)
@@ -50,6 +51,17 @@ def main():
     
     print(f"Found {len(json_files)} JSON files to register.")
     
+    # Determine target directory once
+    if args.target_dir:
+         dest_dir = args.target_dir
+    else:
+         # Better: derive from name
+         sanitized_name = args.name.lower().replace(" ", "_").replace(":", "")
+         dest_dir = repo_root / "frontend" / "data" / sanitized_name
+
+    if not dest_dir.exists():
+        dest_dir.mkdir(parents=True)
+
     for src in json_files:
         if len(json_files) == 1:
             # Single file case: rename to graph.json for convention (optional but clean)
@@ -58,19 +70,18 @@ def main():
             # Multi file case: keep original names
             dst_name = src.name
             
-        dst_path = target_dir / dst_name
+        dst_path = dest_dir / dst_name
         print(f"Copying {src.name} -> {dst_name}")
         shutil.copy2(src, dst_path)
         manifest_files.append(dst_name)
 
     # 4. Create manifest.json
-    manifest_path = target_dir / "manifest.json"
+    manifest_path = dest_dir / "manifest.json"
     with open(manifest_path, "w") as f:
         json.dump(manifest_files, f, indent=4)
     print(f"Created {manifest_path} with {len(manifest_files)} entries.")
 
     # 5. Update frontend/datasets.json
-    repo_root = Path(__file__).resolve().parent.parent
     datasets_json_path = repo_root / "frontend" / "datasets.json"
     
     if not datasets_json_path.exists():
@@ -84,11 +95,11 @@ def main():
     # If target_dir is absolute, make it relative to frontend/
     try:
         frontend_root = repo_root / "frontend"
-        rel_path = "./" + str(target_dir.relative_to(frontend_root))
+        rel_path = "./" + str(dest_dir.relative_to(frontend_root))
     except ValueError:
         # Fallback if not inside frontend
-        print(f"Warning: Target dir {target_dir} is not inside frontend/. UI might not load it.")
-        rel_path = str(target_dir)
+        print(f"Warning: Target dir {dest_dir} is not inside frontend/. UI might not load it.")
+        rel_path = str(dest_dir)
 
     # Check if exists
     existing = next((d for d in datasets if d["path"] == rel_path), None)

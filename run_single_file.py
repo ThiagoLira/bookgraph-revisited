@@ -92,9 +92,17 @@ def parse_args() -> argparse.Namespace:
 
 
 async def run(args: argparse.Namespace):
-    if not args.input_path.exists():
-        print(f"Error: Input file {args.input_path} not found.")
-        sys.exit(1)
+    input_path = args.input_path
+    if not input_path.exists():
+        # Check in input_books/one_off_books
+        repo_root = Path(__file__).resolve().parent
+        potential_path = repo_root / "input_books" / "one_off_books" / input_path.name
+        if potential_path.exists():
+             print(f"Found input file at: {potential_path}")
+             input_path = potential_path
+        else:
+             print(f"Error: Input file {input_path} not found.")
+             sys.exit(1)
 
     # Initialize Pipeline
     config = PipelineConfig(

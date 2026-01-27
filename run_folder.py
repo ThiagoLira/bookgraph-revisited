@@ -85,22 +85,66 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+
 async def process_file(pipeline: BookPipeline, input_path: Path, output_dir: Path):
     print(f"Starting: {input_path.name}")
+    
+    import re
+    # Match strict numeric ID at the end of the filename (Title_12345.txt)
+    match = re.search(r'_(\d+)\.txt$', input_path.name)
+    
+    extracted_id = None
+    clean_title = input_path.stem
+    
+    if match:
+        extracted_id = match.group(1)
+        # Title is everything before the ID
+        clean_title = input_path.name[:match.start()].replace("_", " ")
+    else:
+        # Fallback: ID not in filename. Try to lookup in DB.
+        print(f"  [WARN] No ID in filename for '{input_path.name}'. Attempting DB lookup...")
+        from lib.bibliography_agent.bibliography_tool import SQLiteGoodreadsCatalog
+        
+        # We need to instantiate the catalog. 
+        # Since pipeline.config has the path, we can use it.
+        # But efficiently, we should probably pass a shared catalog or instantiate it once.
+        # For now, let's just make a quick connection.
+        catalog = SQLiteGoodreadsCatalog(pipeline.config.books_db, trace=False)
+        
+        # Heuristic: Clean the filename to get a title
+        # Remove underscores, .txt
+        heuristic_title = input_path.stem.replace("_", " ")
+        # Maybe split by double underscore if present (Calibre export sometimes does Title__Subtitle)
+        heuristic_title = heuristic_title.split("__")[0]
+        
+        matches = catalog.find_books(title=heuristic_title, limit=1)
+        if matches:
+            best = matches[0]
+            extracted_id = best['book_id']
+            clean_title = best['title']
+            print(f"  [LOOKUP] Found match: {clean_title} (ID: {extracted_id})")
+        else:
+            print(f"  [FAIL] Could not find book in DB for '{heuristic_title}'. Using slug as ID.")
+            clean_title = heuristic_title
+
     source_metadata = {
-        "title": input_path.stem,
-        "authors": [], # Cannot infer from filename easily
-        "goodreads_id": None,
+        "title": clean_title,
+        "authors": [], 
+        "goodreads_id": extracted_id, # Can be None if lookup failed
         "calibre_id": None
     }
+    
+    # If we still don't have an ID, we use the filename stem as a fallback ID to avoid overwrites
+    final_book_id = str(extracted_id) if extracted_id else input_path.stem
+
     try:
         await pipeline.run_file(
             input_text_path=input_path,
             output_dir=output_dir,
             source_metadata=source_metadata,
-            book_id=f"folder_run_{input_path.stem}"
+            book_id=final_book_id
         )
-        print(f"Finished: {input_path.name}")
+        print(f"Finished: {input_path.name} -> {final_book_id}.json")
     except Exception as e:
         print(f"Error processing {input_path.name}: {e}")
         import traceback
@@ -108,11 +152,19 @@ async def process_file(pipeline: BookPipeline, input_path: Path, output_dir: Pat
 
 
 async def run(args: argparse.Namespace):
-    if not args.input_dir.is_dir():
-        print(f"Error: {args.input_dir} is not a directory.")
-        sys.exit(1)
+    input_dir = args.input_dir
+    if not input_dir.is_dir():
+        # Check if it's a name inside input_books/libraries
+        repo_root = Path(__file__).resolve().parent
+        potential_path = repo_root / "input_books" / "libraries" / input_dir.name
+        if potential_path.is_dir():
+            print(f"Found library at: {potential_path}")
+            input_dir = potential_path
+        else:
+            print(f"Error: Input directory {input_dir} does not exist or is not a directory.")
+            sys.exit(1)
 
-    files = sorted(path for path in args.input_dir.glob(args.pattern) if path.is_file())
+    files = sorted(path for path in input_dir.glob(args.pattern) if path.is_file())
     if not files:
         print("No matching files found.")
         sys.exit(1)

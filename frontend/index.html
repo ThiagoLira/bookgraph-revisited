@@ -66,239 +66,396 @@
       -webkit-text-fill-color: transparent;
     }
 
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .cover-image {
+      height: 120px;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .cover-image:hover {
+      transform: scale(1.5) translateY(20px);
+      z-index: 100;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
     #controls {
       display: flex;
-      gap: 12px;
+      gap: 16px;
+      align-items: flex-start;
     }
 
-    .search-box {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
-      padding: 8px 12px;
-      color: var(--text);
-      width: 240px;
-    }
-
-    .search-box:focus {
-      outline: none;
-      border-color: var(--accent);
-    }
-
-    #info-panel {
+    /* Loading Indicator */
+    #loading {
       position: fixed;
-      top: 80px;
-      right: 24px;
-      width: 320px;
-      background: var(--panel);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      padding: 20px;
-      transform: translateX(120%);
-      transition: transform 0.3s;
-      z-index: 5;
-    }
-
-    #info-panel.visible {
-      transform: translateX(0);
-    }
-
-    .panel-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 16px;
-    }
-
-    .panel-title {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       font-size: 18px;
-      font-weight: 600;
-      margin: 0;
-    }
-
-    .panel-close {
-      background: none;
-      border: none;
       color: var(--text-muted);
-      cursor: pointer;
+      z-index: 100;
     }
 
+    /* SVG Container */
     svg {
-      width: 100vw;
-      /* Height set dynamically via JS */
       display: block;
+      width: 100%;
+      min-height: 100vh;
     }
 
+    /* Timeline Axis */
+    .tick text {
+      fill: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .tick line {
+      stroke: var(--text-muted);
+    }
+
+    /* Links */
     .link {
       stroke: var(--edge);
-      stroke-opacity: 0.3;
-      /* Increased from 0.1 */
-      stroke-width: 1px;
-      fill: none;
-      pointer-events: none;
+      stroke-width: 1;
+      stroke-opacity: 0.6;
     }
 
     .link.highlight {
-      stroke: #fff;
-      stroke-opacity: 0.8;
-      stroke-width: 1.5px;
+      stroke: var(--accent);
+      stroke-width: 2;
+      stroke-opacity: 1;
     }
 
     .link.dimmed {
-      stroke-opacity: 0.05;
+      stroke-opacity: 0.1;
     }
 
-    .axis text {
-      font-size: 14px;
-      fill: var(--text-muted);
-      font-family: "Outfit", sans-serif;
-    }
-
-    .axis line,
-    .axis path {
-      stroke: var(--text-muted);
-      stroke-opacity: 0.3;
-    }
-
+    /* Author Nodes */
     .author-circle {
       fill: var(--author-fill);
       stroke: var(--author-stroke);
-      stroke-width: 1px;
-      transition: all 0.2s;
+      stroke-width: 1;
+      cursor: pointer;
+      transition: stroke 0.2s;
     }
 
-    .author-group:hover .author-circle,
     .author-group.highlight .author-circle {
       stroke: var(--accent);
-      stroke-width: 2px;
-      fill: rgba(255, 255, 255, 0.1);
+      stroke-width: 2;
     }
 
+    .author-group.dimmed .author-circle {
+      opacity: 0.3;
+    }
+
+    /* Book Circles */
     .book-circle {
-      stroke: none;
-      transition: r 0.2s;
       cursor: pointer;
+      transition: transform 0.2s;
     }
 
     .book-circle:hover {
-      stroke: #fff;
-      stroke-width: 2px;
+      transform: scale(1.2);
     }
 
+    /* Labels */
     .label {
-      font-size: 14px;
-      fill: #fff;
-      pointer-events: none;
+      font-size: 11px;
+      fill: var(--text);
       text-anchor: middle;
+      pointer-events: none;
       opacity: 0;
-      /* Hidden by default */
       transition: opacity 0.2s;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
-      font-weight: 500;
     }
 
     .label.visible {
       opacity: 1;
     }
 
-    #loading {
-      position: absolute;
-      bottom: 24px;
-      left: 24px;
+    /* Search Box */
+    .search-box {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      padding: 8px 16px;
+      color: var(--text);
+      font-size: 14px;
+      outline: none;
+      width: 200px;
+    }
+
+    .search-box:focus {
+      border-color: var(--accent);
+    }
+
+    /* Info Panel */
+    #info-panel {
+      position: fixed;
+      right: -400px;
+      top: 0;
+      width: 400px;
+      height: 100vh;
+      background: var(--panel);
+      padding: 24px;
+      overflow-y: auto;
+      transition: right 0.3s ease;
+      z-index: 20;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #info-panel.visible {
+      right: 0;
+    }
+
+    #panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    #panel-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+      flex: 1;
+    }
+
+    #panel-close {
+      background: none;
+      border: none;
       color: var(--text-muted);
-      font-size: 13px;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 0;
+      line-height: 1;
+    }
+
+    #panel-close:hover {
+      color: var(--text);
+    }
+
+    #panel-content {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    #hero {
+      padding: 100px 24px 40px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #hero h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0 0 16px;
+      background: linear-gradient(90deg, #fff, #94a3b8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    #hero p {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Control Labels */
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      position: relative;
+    }
+
+    .control-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+    }
+
+    /* Search Results Indicator */
+    #search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 4px;
+      font-size: 11px;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    /* Search Match Highlight */
+    .author-group.search-match .author-circle {
+      stroke: var(--accent);
+      stroke-width: 2;
+    }
+
+    /* Hide hero when graph is loaded */
+    #hero.hidden {
+      display: none;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>BookGraph Vertical</h1>
+    <div class="header-content">
+      <img id="header-cover" class="cover-image" src="" style="display:none;" />
+      <div class="header-text">
+        <h1>BookGraph</h1>
+        <div class="header-subtitle" id="header-subtitle">Exploring Citation Networks</div>
+      </div>
+    </div>
+
     <div id="controls">
-      <select id="dataset-select" class="search-box" style="width: auto; cursor: pointer;">
-        <option value="" disabled selected>Select Dataset...</option>
-      </select>
-      <input type="text" class="search-box" placeholder="Search..." id="search">
+      <div class="control-group">
+        <span class="control-label">Library</span>
+        <select id="dataset-select" class="search-box" style="width: auto; cursor: pointer;">
+          <option value="" disabled selected>Select a library...</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <span class="control-label">Search authors & books</span>
+        <input type="text" class="search-box" placeholder="Type to search..." id="search">
+        <span id="search-results"></span>
+      </div>
     </div>
   </header>
 
+  <div id="hero">
+    <h2>Visualizing Literary Citation Networks</h2>
+    <p>Explore how authors reference each other across time. Each circle represents an author, containing their books.
+       Red circles are source texts being analyzed; blue circles are cited works.
+       The vertical axis represents time, from ancient texts at the bottom to modern works at the top.
+       Select a library above to begin exploring.</p>
+  </div>
+
+  <div id="loading">Loading...</div>
+
+  <svg id="graph-svg">
+    <g id="axis-group"></g>
+    <g id="link-group"></g>
+    <g id="node-group"></g>
+  </svg>
+
   <div id="info-panel">
-    <div class="panel-header">
-      <h2 class="panel-title" id="panel-title">Title</h2>
-      <button class="panel-close" id="panel-close">✕</button>
+    <div id="panel-header">
+      <h2 id="panel-title"></h2>
+      <button id="panel-close">&times;</button>
     </div>
     <div id="panel-content"></div>
   </div>
 
-  <div id="loading">Initializing...</div>
-
-  <svg>
-    <g id="main-group"></g>
-  </svg>
-
-  <script type="module">
-    import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
-
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    const svg = d3.select("svg");
-    const g = d3.select("#main-group");
-
-    // Layers
-    const linkGroup = g.append("g").attr("class", "links");
-    const nodeGroup = g.append("g").attr("class", "nodes");
-    const labelGroup = g.append("g").attr("class", "labels");
-    const axisGroup = g.append("g").attr("class", "axis");
-
-    // State
-    let simulation;
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    // Global variables
     let graphData = { authors: [], links: [] };
+    let simulation = null;
     let selectedNode = null;
 
-    // Clear selection on background click
-    svg.on("click", () => {
-      selectedNode = null;
-      resetHighlight();
-    });
+    const width = window.innerWidth;
+    let height = window.innerHeight;
 
-    // Zoom removed for native scrolling
-    // const zoom = d3.zoom() ...
-
-    // Load Data
-    // Load Data
-    async function init() {
-      try {
-        const datasets = await fetch("datasets.json").then(r => r.json());
-        const select = document.getElementById("dataset-select");
-
-        datasets.forEach((ds, i) => {
-          const opt = document.createElement("option");
-          opt.value = ds.path;
-          opt.textContent = ds.name;
-          select.appendChild(opt);
-
-          // Auto-select first
-          if (i === 0) select.value = ds.path;
-        });
-
-        select.onchange = (e) => loadDataset(e.target.value);
-
-        // Load initial
-        if (datasets.length > 0) loadDataset(datasets[0].path);
-
-      } catch (e) {
-        console.error("Failed to load datasets.json", e);
-      }
-    }
+    const svg = d3.select("#graph-svg").attr("width", width).attr("height", height);
+    const axisGroup = d3.select("#axis-group");
+    const linkGroup = d3.select("#link-group");
+    const nodeGroup = d3.select("#node-group");
 
     async function loadDataset(dataDir) {
+      // Hide hero section when loading a dataset
+      document.getElementById("hero").classList.add("hidden");
       document.getElementById("loading").style.display = "block";
       document.getElementById("loading").textContent = "Loading " + dataDir + "...";
 
-      // Clear graph
+      // Clear graph and search
       graphData = { authors: [], links: [] };
       if (simulation) simulation.stop();
-      d3.selectAll("svg > g > g").selectAll("*").remove();
+      document.getElementById("search").value = "";
+      document.getElementById("search-results").textContent = "";
+      selectedNode = null;
+
+      // Clear axis, links, and nodes
+      axisGroup.selectAll("*").remove();
+      linkGroup.selectAll("*").remove();
+      nodeGroup.selectAll("*").remove();
+
+      // Reset Header
+      const headerCov = document.getElementById("header-cover");
+      headerCov.style.display = "none";
+      headerCov.src = "";
+
+      // Check for dataset config in select
+      const select = document.getElementById("dataset-select");
+      const selectedOption = select.options[select.selectedIndex];
+      const covers = selectedOption ? JSON.parse(selectedOption.getAttribute("data-covers") || "null") : null;
+
+      // Clear any existing partial covers
+      let shelfContainer = document.getElementById("header-shelf");
+      if (!shelfContainer) {
+        shelfContainer = document.createElement("div");
+        shelfContainer.id = "header-shelf";
+        shelfContainer.style.display = "flex";
+        shelfContainer.style.gap = "8px";
+        // Insert before title text if possible, or just before cover
+        headerCov.parentNode.insertBefore(shelfContainer, headerCov);
+      }
+      shelfContainer.innerHTML = "";
+
+      if (covers && covers.length > 0) {
+        // Multiple Covers (Shelf)
+        headerCov.style.display = "none";
+        covers.forEach(c => {
+          const img = document.createElement("img");
+          img.className = "cover-image";
+          // Only show image if it loads successfully and has valid dimensions
+          img.onload = function() {
+            if (this.naturalWidth > 50 && this.naturalHeight > 50) {
+              this.style.display = "block";
+            } else {
+              this.remove(); // Remove tiny/placeholder images
+            }
+          };
+          img.onerror = function() {
+            this.remove(); // Remove broken images
+          };
+          img.style.display = "none"; // Hidden until validated
+          img.src = `${dataDir}/${c}`;
+          shelfContainer.appendChild(img);
+        });
+      } else {
+        // Single Cover
+        const coverPath = `${dataDir}/cover.jpg`;
+        const img = new Image();
+        img.onload = () => {
+          headerCov.src = coverPath;
+          headerCov.style.display = "block";
+        };
+        img.src = coverPath;
+      }
 
       try {
         const [manifest] = await Promise.all([
@@ -342,17 +499,18 @@
 
     function normalizeAuthor(name) {
       if (!name) return "Unknown";
+      let n = name.toString().trim();
 
-      if (name.includes(",")) {
-        const parts = name.split(",", 2);
-        if (parts.length === 2) return `${parts[1].trim()} ${parts[0].trim()}`;
+      if (n.includes(",")) {
+        const parts = n.split(",", 2);
+        if (parts.length === 2) n = `${parts[1].trim()} ${parts[0].trim()}`;
       }
-      return name;
+      return n.replace(/\s+/g, " ");
     }
 
     function processData(records) {
       const authorMap = new Map(); // name -> { name, books: [], year, meta: {} }
-      const bookMap = new Map();   // id -> bookNode
+      const bookMap = new Map(); // id -> bookNode
 
       // 1. Collect all books and assign to authors
       records.forEach(rec => {
@@ -361,7 +519,10 @@
         const srcAuth = normalizeAuthor(Array.isArray(src.authors) ? src.authors[0] : src.authors);
         const srcYear = getBookYear(src);
 
-        if (!authorMap.has(srcAuth)) authorMap.set(srcAuth, { name: srcAuth, books: [], isSource: true, meta: {}, commentaries: [] });
+        if (!authorMap.has(srcAuth)) authorMap.set(srcAuth, {
+          name: srcAuth, books: [], isSource: true, meta: {},
+          commentaries: []
+        });
         const srcAuthorNode = authorMap.get(srcAuth);
 
         // Check if source has meta (rarely populated in current pipeline but good for future)
@@ -387,7 +548,7 @@
 
           // If it's a book citation
           if (cit.edge && cit.edge.target_book_id) {
-            const citedAuth = normalizeAuthor(match.authors ? match.authors[0] : "Unknown");
+            const citedAuth = normalizeAuthor(match.authors && match.authors.length > 0 ? match.authors[0] : "Unknown");
             const citedYear = getBookYear(match);
 
             if (!authorMap.has(citedAuth)) authorMap.set(citedAuth, { name: citedAuth, books: [], meta: {}, commentaries: [] });
@@ -412,7 +573,7 @@
             }
           }
           else if (cit.edge && cit.edge.target_author_ids) {
-            const name = wiki.title || (match.authors ? match.authors[0] : match.name) || "Unknown";
+            const name = wiki.title || (match.authors && match.authors.length > 0 ? match.authors[0] : match.name) || "Unknown";
             const normName = normalizeAuthor(name);
             if (!authorMap.has(normName)) authorMap.set(normName, { name: normName, books: [], meta: {}, commentaries: [] });
 
@@ -462,10 +623,10 @@
         const hierarchy = d3.hierarchy(root).sum(d => d.value || 1);
         // Radius of book = 5 (source) or 3 (cited)
         hierarchy.children?.forEach(c => {
-          c.r = c.data.isSource ? 8 : 4;
+          c.r = c.data.isSource ? 12 : 6;
         });
 
-        // We need to pack them. d3.pack() expects a size. 
+        // We need to pack them. d3.pack() expects a size.
         // Instead, let's use d3.packSiblings which packs circles tightly.
         const circles = (hierarchy.children || []).map(c => ({ r: c.r, data: c.data }));
         d3.packSiblings(circles);
@@ -482,14 +643,20 @@
           r: r,
           books: circles, // {x, y, r, data} relative to center (0,0)
           x: width / 2, // Initial pos
-          y: height / 2
+          y: height / 2,
+          isSource: auth.isSource || false,
+          meta: auth.meta || {}
         };
       });
 
-      // Filter authors with no year? Or put them at "Unknown"?
-      // User said "bottom to top". Let's put unknowns at the side or filter.
-      // Let's keep them but put them at 2025 (top) or separate.
-      const validAuthors = authors.filter(a => a.year !== null);
+      // Handle authors with no year data
+      // Source authors without dates default to 2000, cited authors to 1950
+      authors.forEach(a => {
+        if (a.year === null) {
+          a.year = a.isSource ? 2000 : 1950;
+        }
+      });
+      const validAuthors = authors;
 
       // 3. Links (Author to Author)
       const authorNodeMap = new Map(validAuthors.map(a => [a.name, a]));
@@ -509,9 +676,9 @@
           const wiki = cit.wikipedia_match || {};
 
           if (cit.edge && cit.edge.target_book_id) {
-            targetName = normalizeAuthor(match.authors ? match.authors[0] : "Unknown");
+            targetName = normalizeAuthor(match.authors && match.authors.length > 0 ? match.authors[0] : "Unknown");
           } else if (cit.edge && cit.edge.target_author_ids) {
-            targetName = normalizeAuthor(wiki.title || (match.authors ? match.authors[0] : "Unknown"));
+            targetName = normalizeAuthor(wiki.title || (match.authors && match.authors.length > 0 ? match.authors[0] : match.name) || "Unknown");
           }
 
           if (targetName) {
@@ -543,8 +710,8 @@
 
       // Variable Resolution Configuration
       const splitYear = 1800; // Breakpoint between low and high density
-      const lowRes = 0.3;     // Pixels per year for Ancient/Pre-1800 (Balanced)
-      const highRes = 8;      // Pixels per year for Modern/Post-1800 (Balanced)
+      const lowRes = 0.3; // Pixels per year for Ancient/Pre-1800 (Balanced)
+      const highRes = 8; // Pixels per year for Modern/Post-1800 (Balanced)
 
       // Calculate Distances
       const ancientSpan = Math.max(0, splitYear - minYear);
@@ -560,7 +727,7 @@
       // Polylinear Scale
       // Domain: [Min, Split, Max]
       // Range: [Bottom, SplitPoint, Top]
-      // Note: Y coords go Top(0) -> Bottom(Height). 
+      // Note: Y coords go Top(0) -> Bottom(Height).
       // So MinYear is at TotalHeight (minus padding), MaxYear is at Top (plus padding).
 
       const yBottom = totalHeight - 100;
@@ -580,7 +747,8 @@
         .tickFormat(d => d < 0 ? `${-d} BC` : d)
         .tickSize(-width);
 
-      axisGroup.attr("transform", `translate(${width - 80}, 0)`)
+      axisGroup
+        .attr("transform", `translate(${width - 80}, 0)`)
         .call(yAxis)
         .call(g => g.select(".domain").remove()) // Remove the vertical line
         .call(g => g.selectAll(".tick line")
@@ -767,7 +935,7 @@
         const authors = meta.authors ? (Array.isArray(meta.authors) ? meta.authors.join(", ") : meta.authors) : "Unknown Author";
         metaHtml += `<div style="margin-bottom:12px; color:#888; font-size:13px;">${node.year || "Unknown Year"} • ${authors}</div>`;
       } else {
-        // Author Metatada
+        // Author Metadata
         metaHtml += `<div style="margin-bottom:12px; color:#888; font-size:13px;">Author</div>`;
         if (meta.birth_year) {
           metaHtml += `<div style="margin-bottom:12px; color:#aaa; font-size:13px;">${meta.birth_year} – ${meta.death_year || "Present"}</div>`;
@@ -811,7 +979,123 @@
 
     document.getElementById("panel-close").onclick = () => {
       document.getElementById("info-panel").classList.remove("visible");
+      selectedNode = null;
+      resetHighlight();
     };
+
+    // Click outside to deselect
+    svg.on("click", () => {
+      selectedNode = null;
+      resetHighlight();
+      document.getElementById("info-panel").classList.remove("visible");
+    });
+
+    // Search functionality with scroll to match
+    let searchTimeout = null;
+    document.getElementById("search").addEventListener("input", (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      const resultsEl = document.getElementById("search-results");
+
+      // Clear previous timeout
+      if (searchTimeout) clearTimeout(searchTimeout);
+
+      if (!query) {
+        // Reset all nodes when search is cleared
+        d3.selectAll(".author-group").classed("dimmed", false).classed("search-match", false);
+        d3.selectAll(".label").classed("visible", false);
+        resultsEl.textContent = "";
+        return;
+      }
+
+      // Debounce search
+      searchTimeout = setTimeout(() => {
+        const matches = [];
+
+        d3.selectAll(".author-group").each(function(d) {
+          const authorMatch = d.name.toLowerCase().includes(query);
+          const bookMatch = d.books.some(b => b.data.title.toLowerCase().includes(query));
+          const isMatch = authorMatch || bookMatch;
+
+          d3.select(this).classed("dimmed", !isMatch);
+          d3.select(this).classed("search-match", isMatch);
+          d3.select(this).select(".label").classed("visible", isMatch);
+
+          if (isMatch) {
+            // Calculate match score (prefer exact/start matches)
+            let score = 0;
+            if (d.name.toLowerCase() === query) score = 100;
+            else if (d.name.toLowerCase().startsWith(query)) score = 80;
+            else if (authorMatch) score = 60;
+            else score = 40; // book match
+
+            matches.push({ node: d, element: this, score, authorMatch });
+          }
+        });
+
+        // Sort by score and scroll to best match
+        matches.sort((a, b) => b.score - a.score);
+
+        if (matches.length > 0) {
+          resultsEl.textContent = `${matches.length} match${matches.length > 1 ? 'es' : ''} found`;
+
+          // Scroll to the best match
+          const best = matches[0];
+          const y = best.node.y || best.node.fy;
+          if (y !== undefined) {
+            window.scrollTo({
+              top: y - window.innerHeight / 3,
+              behavior: 'smooth'
+            });
+          }
+
+          // Highlight the best match
+          selectedNode = best.node;
+          highlight(best.node);
+        } else {
+          resultsEl.textContent = "No matches";
+        }
+      }, 200);
+    });
+
+    // Enter key scrolls to next match
+    document.getElementById("search").addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        e.target.value = "";
+        e.target.dispatchEvent(new Event("input"));
+      }
+    });
+
+    async function init() {
+      try {
+        const datasets = await fetch("datasets.json").then(r => r.json());
+        const select = document.getElementById("dataset-select");
+
+        datasets.forEach(ds => {
+          const opt = document.createElement("option");
+          opt.value = ds.path;
+          opt.textContent = ds.name;
+          if (ds.covers) {
+            opt.setAttribute("data-covers", JSON.stringify(ds.covers));
+          }
+          select.appendChild(opt);
+        });
+
+        select.addEventListener("change", () => {
+          if (select.value) {
+            loadDataset(select.value);
+          }
+        });
+
+        // Auto-load first dataset
+        if (datasets.length > 0) {
+          select.value = datasets[0].path;
+          loadDataset(datasets[0].path);
+        }
+      } catch (e) {
+        console.error("Failed to load datasets:", e);
+        document.getElementById("loading").textContent = "Error loading datasets.json";
+      }
+    }
 
     init();
   </script>
