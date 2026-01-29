@@ -5,21 +5,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>BookGraph Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #050505;
-      --panel: rgba(20, 20, 20, 0.9);
-      --text: #ededed;
-      --text-muted: #888;
-      --accent: #00f2ff;
+      --bg: #0a0a0c;
+      --bg-warm: #0d0c0a;
+      --panel: #111113;
+      --panel-elevated: #18181b;
+      --text: #e8e6e3;
+      --text-muted: #6b6b6b;
+      --text-warm: #c4b8a5;
+      --accent: #d4a574;
+      --accent-glow: rgba(212, 165, 116, 0.15);
+      --accent-bright: #e8c4a0;
 
-      /* Node Colors */
-      --book-source: #ff4444;
-      --book-cited: #4444ff;
-      --author-fill: rgba(255, 255, 255, 0.05);
-      --author-stroke: rgba(255, 255, 255, 0.2);
+      /* Node Colors - warmer palette */
+      --book-source: #c45c4a;
+      --book-cited: #4a6fa5;
+      --author-fill: rgba(212, 165, 116, 0.03);
+      --author-stroke: rgba(212, 165, 116, 0.15);
 
-      --edge: #404040;
+      --edge: #2a2a2f;
+      --edge-highlight: var(--accent);
+
+      /* Citation card colors */
+      --card-bg: rgba(20, 20, 22, 0.7);
+      --card-border: rgba(212, 165, 116, 0.1);
+      --card-hover: rgba(212, 165, 116, 0.08);
     }
 
     * {
@@ -28,24 +42,35 @@
 
     body {
       margin: 0;
-      font-family: "Outfit", "Inter", sans-serif;
+      font-family: "Cormorant Garamond", Georgia, serif;
       background: var(--bg);
       color: var(--text);
       overflow-y: auto;
-      /* Allow scrolling */
       overflow-x: hidden;
       touch-action: pan-y;
-      /* Enforce vertical scrolling */
+    }
+
+    /* Subtle noise texture overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      z-index: 9999;
     }
 
     header {
       position: fixed;
-      /* Fixed header */
       top: 0;
       left: 0;
       right: 0;
-      padding: 16px 24px;
-      background: linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0));
+      padding: 20px 32px;
+      background: linear-gradient(180deg, rgba(10, 10, 12, 0.98) 0%, rgba(10, 10, 12, 0.9) 60%, transparent 100%);
       display: flex;
       justify-content: space-between;
       z-index: 10;
@@ -58,51 +83,53 @@
 
     h1 {
       margin: 0;
-      font-size: 20px;
-      font-weight: 600;
-      background: linear-gradient(90deg, #fff, #94a3b8);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-warm);
     }
 
     .header-content {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 24px;
     }
 
     .cover-image {
-      height: 120px;
-      border-radius: 4px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: transform 0.2s;
+      height: 100px;
+      border-radius: 2px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(212, 165, 116, 0.1);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+      cursor: pointer;
     }
 
     .cover-image:hover {
-      transform: scale(1.5) translateY(20px);
+      transform: scale(1.6) translateY(24px);
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.8);
       z-index: 100;
     }
 
     .header-text {
       display: flex;
       flex-direction: column;
+      gap: 4px;
     }
 
     .header-subtitle {
-      font-size: 12px;
+      font-size: 13px;
       color: var(--text-muted);
-      margin-top: 4px;
+      font-style: italic;
+      letter-spacing: 0.02em;
     }
 
     #controls {
       display: flex;
-      gap: 16px;
+      gap: 24px;
       align-items: flex-start;
     }
 
-    /* Loading Indicator */
     #loading {
       position: fixed;
       top: 50%;
@@ -111,213 +138,667 @@
       font-size: 18px;
       color: var(--text-muted);
       z-index: 100;
+      letter-spacing: 0.1em;
     }
 
-    /* SVG Container */
     svg {
       display: block;
       width: 100%;
       min-height: 100vh;
     }
 
-    /* Timeline Axis */
     .tick text {
       fill: var(--text-muted);
       font-size: 11px;
+      font-family: "JetBrains Mono", monospace;
     }
 
     .tick line {
       stroke: var(--text-muted);
     }
 
-    /* Links */
     .link {
       stroke: var(--edge);
       stroke-width: 1;
-      stroke-opacity: 0.6;
+      stroke-opacity: 0.4;
     }
 
     .link.highlight {
-      stroke: var(--accent);
+      stroke: var(--edge-highlight);
       stroke-width: 2;
-      stroke-opacity: 1;
+      stroke-opacity: 0.9;
     }
 
     .link.dimmed {
-      stroke-opacity: 0.1;
+      stroke-opacity: 0.08;
     }
 
-    /* Author Nodes */
     .author-circle {
       fill: var(--author-fill);
       stroke: var(--author-stroke);
       stroke-width: 1;
       cursor: pointer;
-      transition: stroke 0.2s;
+      transition: stroke 0.3s ease, fill 0.3s ease;
     }
 
     .author-group.highlight .author-circle {
       stroke: var(--accent);
       stroke-width: 2;
+      fill: var(--accent-glow);
     }
 
     .author-group.dimmed .author-circle {
-      opacity: 0.3;
+      opacity: 0.2;
     }
 
-    /* Book Circles */
     .book-circle {
       cursor: pointer;
-      transition: transform 0.2s;
+      transition: transform 0.2s ease, filter 0.2s ease;
     }
 
     .book-circle:hover {
-      transform: scale(1.2);
+      transform: scale(1.3);
+      filter: brightness(1.3);
     }
 
-    /* Labels */
     .label {
-      font-size: 11px;
-      fill: var(--text);
+      font-size: 12px;
+      font-family: "JetBrains Mono", monospace;
+      fill: var(--text-warm);
       text-anchor: middle;
       pointer-events: none;
       opacity: 0;
-      transition: opacity 0.2s;
+      transition: opacity 0.3s ease;
+      letter-spacing: 0.02em;
     }
 
     .label.visible {
       opacity: 1;
     }
 
-    /* Search Box */
     .search-box {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(212, 165, 116, 0.15);
+      border-radius: 2px;
+      padding: 10px 16px;
       color: var(--text);
       font-size: 14px;
+      font-family: "JetBrains Mono", monospace;
       outline: none;
-      width: 200px;
+      width: 220px;
+      transition: border-color 0.3s ease, background 0.3s ease;
     }
 
     .search-box:focus {
       border-color: var(--accent);
+      background: rgba(212, 165, 116, 0.05);
     }
 
-    /* Info Panel */
+    .search-box::placeholder {
+      color: var(--text-muted);
+    }
+
+    /* === CITATION PANEL - The Star of the Show === */
     #info-panel {
       position: fixed;
-      right: -400px;
+      right: -520px;
       top: 0;
-      width: 400px;
+      width: 520px;
       height: 100vh;
       background: var(--panel);
-      padding: 24px;
       overflow-y: auto;
-      transition: right 0.3s ease;
+      transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
       z-index: 20;
-      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      border-left: 1px solid rgba(212, 165, 116, 0.08);
+      display: flex;
+      flex-direction: column;
     }
 
     #info-panel.visible {
       right: 0;
     }
 
+    #info-panel::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+      background: linear-gradient(180deg, var(--accent-glow) 0%, transparent 100%);
+      pointer-events: none;
+    }
+
     #panel-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 16px;
+      position: relative;
+      padding: 40px 32px 24px;
+      border-bottom: 1px solid rgba(212, 165, 116, 0.08);
+      flex-shrink: 0;
+    }
+
+    #panel-type {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: block;
     }
 
     #panel-title {
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 28px;
+      font-weight: 400;
       margin: 0;
-      flex: 1;
-    }
-
-    #panel-close {
-      background: none;
-      border: none;
-      color: var(--text-muted);
-      font-size: 24px;
-      cursor: pointer;
-      padding: 0;
-      line-height: 1;
-    }
-
-    #panel-close:hover {
+      line-height: 1.3;
       color: var(--text);
     }
 
-    #panel-content {
+    #panel-meta {
+      margin-top: 12px;
       font-size: 14px;
-      line-height: 1.6;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    #panel-close {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      background: none;
+      border: 1px solid rgba(212, 165, 116, 0.15);
+      color: var(--text-muted);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    #panel-close:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-glow);
+    }
+
+    #panel-content {
+      padding: 24px 32px 40px;
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    /* Stats row for books */
+    .panel-stats {
+      display: flex;
+      gap: 24px;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(212, 165, 116, 0.08);
+      margin-bottom: 20px;
+    }
+
+    .panel-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .panel-stat-value {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    .panel-stat-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    /* Description */
+    .panel-description {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--text);
+      margin-bottom: 32px;
+    }
+
+    /* === CITATION CARDS === */
+    .citations-section {
+      margin-top: 32px;
+    }
+
+    .citations-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(212, 165, 116, 0.08);
+    }
+
+    .citations-title {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin: 0;
+    }
+
+    .citations-count {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      background: rgba(212, 165, 116, 0.1);
+      padding: 3px 8px;
+      border-radius: 2px;
+    }
+
+    .citation-card {
+      position: relative;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .citation-card:hover {
+      background: var(--card-hover);
+      border-color: rgba(212, 165, 116, 0.25);
+      transform: translateX(-4px);
+    }
+
+    .citation-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .citation-card:hover::before {
+      opacity: 1;
+    }
+
+    .citation-card-inner {
+      padding: 20px 24px;
+    }
+
+    .citation-number {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      color: var(--text-muted);
+      opacity: 0.5;
+    }
+
+    .citation-quote {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      font-style: italic;
+      margin: 0;
+      padding-right: 32px;
+    }
+
+    .citation-quote::before {
+      content: open-quote;
+      font-size: 24px;
+      color: var(--accent);
+      opacity: 0.5;
+      margin-right: 4px;
+      line-height: 0;
+      vertical-align: -0.3em;
+    }
+
+    .citation-quote::after {
+      content: close-quote;
+      font-size: 24px;
+      color: var(--accent);
+      opacity: 0.5;
+      margin-left: 4px;
+      line-height: 0;
+      vertical-align: -0.3em;
+    }
+
+    /* Expandable citation card */
+    .citation-card.expandable .citation-quote {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .citation-card.expandable.expanded .citation-quote {
+      display: block;
+      -webkit-line-clamp: unset;
+    }
+
+    .citation-expand {
+      display: none;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(212, 165, 116, 0.1);
+    }
+
+    .citation-card.expandable .citation-expand {
+      display: block;
+    }
+
+    .citation-expand-btn {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      cursor: pointer;
+      padding: 0;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    .citation-expand-btn:hover {
+      opacity: 1;
+    }
+
+    .citation-card.expanded .citation-expand-btn {
+      display: none;
+    }
+
+    /* Link button */
+    .panel-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background: transparent;
+      border: 1px solid rgba(212, 165, 116, 0.2);
+      color: var(--accent);
+      text-decoration: none;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      margin-top: 24px;
+    }
+
+    .panel-link:hover {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+    }
+
+    .panel-link svg {
+      width: 14px;
+      height: 14px;
     }
 
     /* Hero Section */
     #hero {
-      padding: 100px 24px 40px;
-      max-width: 800px;
+      padding: 140px 40px 60px;
+      max-width: 720px;
       margin: 0 auto;
       text-align: center;
     }
 
     #hero h2 {
-      font-size: 28px;
-      font-weight: 600;
-      margin: 0 0 16px;
-      background: linear-gradient(90deg, #fff, #94a3b8);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 36px;
+      font-weight: 400;
+      margin: 0 0 24px;
+      color: var(--text-warm);
+      letter-spacing: 0.02em;
     }
 
     #hero p {
       color: var(--text-muted);
-      font-size: 15px;
-      line-height: 1.6;
+      font-size: 17px;
+      line-height: 1.8;
       margin: 0;
     }
 
-    /* Control Labels */
     .control-group {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 6px;
       position: relative;
     }
 
     .control-label {
-      font-size: 10px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.12em;
       color: var(--text-muted);
     }
 
-    /* Search Results Indicator */
     #search-results {
       position: absolute;
       top: 100%;
       left: 0;
-      margin-top: 4px;
+      margin-top: 6px;
+      font-family: "JetBrains Mono", monospace;
       font-size: 11px;
       color: var(--accent);
       white-space: nowrap;
     }
 
-    /* Search Match Highlight */
     .author-group.search-match .author-circle {
       stroke: var(--accent);
       stroke-width: 2;
     }
 
-    /* Hide hero when graph is loaded */
     #hero.hidden {
       display: none;
     }
+
+    /* Mobile hint */
+    #mobile-hint {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--panel);
+      border: 1px solid rgba(212, 165, 116, 0.2);
+      color: var(--text-muted);
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      z-index: 100;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    #mobile-hint strong {
+      color: var(--accent);
+    }
+
+    #mobile-hint-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      margin-left: 12px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      #mobile-hint {
+        display: block;
+      }
+    }
+
+    /* Empty state for no citations */
+    .empty-citations {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+    }
+
+    .empty-citations-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+      opacity: 0.3;
+    }
+
+    /* Focus Mode */
+    .focus-mode .author-group {
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .focus-mode .author-group.hidden-in-focus {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .focus-mode .link {
+      stroke-opacity: 0.12 !important;
+      stroke-width: 1 !important;
+    }
+
+    .focus-mode {
+      cursor: grab;
+    }
+
+    .focus-mode:active {
+      cursor: grabbing;
+    }
+
+    .focus-mode .link.hidden-in-focus {
+      opacity: 0;
+    }
+
+    /* Labels in focus mode - add dark halo for readability */
+    .focus-mode .label.visible {
+      paint-order: stroke fill;
+      stroke: var(--bg);
+      stroke-width: 4px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    #focus-exit {
+      position: fixed;
+      top: 100px;
+      left: 32px;
+      background: var(--panel);
+      border: 1px solid rgba(212, 165, 116, 0.2);
+      color: var(--text);
+      padding: 12px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      display: none;
+      align-items: center;
+      gap: 8px;
+      z-index: 15;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #focus-exit:hover {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+    }
+
+    #focus-exit.visible {
+      display: flex;
+    }
+
+    #focus-exit svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Focus mode info badge */
+    #focus-info {
+      position: fixed;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--panel);
+      border: 1px solid rgba(212, 165, 116, 0.15);
+      color: var(--text-warm);
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      display: none;
+      z-index: 15;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #focus-info.visible {
+      display: block;
+    }
+
+    #focus-info strong {
+      color: var(--accent);
+    }
+
+    /* Scrollbar styling */
+    #info-panel::-webkit-scrollbar,
+    #panel-content::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    #info-panel::-webkit-scrollbar-track,
+    #panel-content::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    #info-panel::-webkit-scrollbar-thumb,
+    #panel-content::-webkit-scrollbar-thumb {
+      background: rgba(212, 165, 116, 0.2);
+      border-radius: 3px;
+    }
+
+    #info-panel::-webkit-scrollbar-thumb:hover,
+    #panel-content::-webkit-scrollbar-thumb:hover {
+      background: rgba(212, 165, 116, 0.4);
+    }
+
+    /* Animation for cards appearing */
+    @keyframes cardSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .citation-card {
+      animation: cardSlideIn 0.4s ease forwards;
+    }
+
+    .citation-card:nth-child(1) { animation-delay: 0.05s; }
+    .citation-card:nth-child(2) { animation-delay: 0.1s; }
+    .citation-card:nth-child(3) { animation-delay: 0.15s; }
+    .citation-card:nth-child(4) { animation-delay: 0.2s; }
+    .citation-card:nth-child(5) { animation-delay: 0.25s; }
+    .citation-card:nth-child(6) { animation-delay: 0.3s; }
+    .citation-card:nth-child(7) { animation-delay: 0.35s; }
+    .citation-card:nth-child(8) { animation-delay: 0.4s; }
   </style>
 </head>
 
@@ -356,6 +837,22 @@
 
   <div id="loading">Loading...</div>
 
+  <div id="mobile-hint">
+    <strong>Tip:</strong> For the best experience, rotate to landscape or use a wider screen
+    <button id="mobile-hint-close">&times;</button>
+  </div>
+
+  <button id="focus-exit">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    Exit Focus
+  </button>
+
+  <div id="focus-info">
+    <strong id="focus-author-name"></strong> &mdash; <strong id="focus-count"></strong> citations
+  </div>
+
   <svg id="graph-svg">
     <g id="axis-group"></g>
     <g id="link-group"></g>
@@ -364,7 +861,9 @@
 
   <div id="info-panel">
     <div id="panel-header">
+      <span id="panel-type">Book</span>
       <h2 id="panel-title"></h2>
+      <div id="panel-meta"></div>
       <button id="panel-close">&times;</button>
     </div>
     <div id="panel-content"></div>
@@ -376,6 +875,14 @@
     let graphData = { authors: [], links: [] };
     let simulation = null;
     let selectedNode = null;
+    let sourceBookMap = new Map();
+    let focusMode = false;
+    let focusedNode = null;
+    let originalPositions = new Map(); // Store original positions for exit
+    let isDragging = false;
+    let dragStart = { x: 0, y: 0 };
+    let panOffset = { x: 0, y: 0 };
+    let didDrag = false; // Track if an actual drag happened
 
     const width = window.innerWidth;
     let height = window.innerHeight;
@@ -385,77 +892,101 @@
     const linkGroup = d3.select("#link-group");
     const nodeGroup = d3.select("#node-group");
 
-    async function loadDataset(dataDir) {
-      // Hide hero section when loading a dataset
-      document.getElementById("hero").classList.add("hidden");
-      document.getElementById("loading").style.display = "block";
-      document.getElementById("loading").textContent = "Loading " + dataDir + "...";
+    function slugifyTitle(title) {
+      return title.toLowerCase()
+        .replace(/[^a-z0-9]+/g, "_")
+        .replace(/^_+|_+$/g, "");
+    }
 
-      // Clear graph and search
-      graphData = { authors: [], links: [] };
-      if (simulation) simulation.stop();
-      document.getElementById("search").value = "";
-      document.getElementById("search-results").textContent = "";
-      selectedNode = null;
-
-      // Clear axis, links, and nodes
-      axisGroup.selectAll("*").remove();
-      linkGroup.selectAll("*").remove();
-      nodeGroup.selectAll("*").remove();
-
-      // Reset Header
+    function renderHeaderCovers(dataDir, covers) {
       const headerCov = document.getElementById("header-cover");
       headerCov.style.display = "none";
       headerCov.src = "";
 
-      // Check for dataset config in select
-      const select = document.getElementById("dataset-select");
-      const selectedOption = select.options[select.selectedIndex];
-      const covers = selectedOption ? JSON.parse(selectedOption.getAttribute("data-covers") || "null") : null;
-
-      // Clear any existing partial covers
       let shelfContainer = document.getElementById("header-shelf");
       if (!shelfContainer) {
         shelfContainer = document.createElement("div");
         shelfContainer.id = "header-shelf";
         shelfContainer.style.display = "flex";
         shelfContainer.style.gap = "8px";
-        // Insert before title text if possible, or just before cover
         headerCov.parentNode.insertBefore(shelfContainer, headerCov);
       }
       shelfContainer.innerHTML = "";
 
+      const attachCoverClick = (img, coverPath) => {
+        const filename = coverPath.split("/").pop() || "";
+        const slug = filename.replace(/\.[^/.]+$/, "");
+        img.style.cursor = "pointer";
+        img.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const target = sourceBookMap.get(slug);
+          if (target) {
+            selectedNode = target.authorNode;
+            highlight(target.authorNode);
+            showPanel(target.bookData);
+          }
+        });
+      };
+
       if (covers && covers.length > 0) {
-        // Multiple Covers (Shelf)
         headerCov.style.display = "none";
         covers.forEach(c => {
           const img = document.createElement("img");
           img.className = "cover-image";
-          // Only show image if it loads successfully and has valid dimensions
           img.onload = function() {
             if (this.naturalWidth > 50 && this.naturalHeight > 50) {
               this.style.display = "block";
             } else {
-              this.remove(); // Remove tiny/placeholder images
+              this.remove();
             }
           };
           img.onerror = function() {
-            this.remove(); // Remove broken images
+            this.remove();
           };
-          img.style.display = "none"; // Hidden until validated
+          img.style.display = "none";
           img.src = `${dataDir}/${c}`;
+          attachCoverClick(img, c);
           shelfContainer.appendChild(img);
         });
       } else {
-        // Single Cover
         const coverPath = `${dataDir}/cover.jpg`;
         const img = new Image();
         img.onload = () => {
           headerCov.src = coverPath;
           headerCov.style.display = "block";
+          attachCoverClick(headerCov, "cover.jpg");
         };
         img.src = coverPath;
       }
+    }
+
+    async function loadDataset(dataDir) {
+      // Exit focus mode if active
+      if (focusMode) {
+        focusMode = false;
+        focusedNode = null;
+        document.getElementById("focus-exit").classList.remove("visible");
+        document.getElementById("focus-info").classList.remove("visible");
+        svg.classed("focus-mode", false);
+      }
+
+      document.getElementById("hero").classList.add("hidden");
+      document.getElementById("loading").style.display = "block";
+      document.getElementById("loading").textContent = "Loading " + dataDir + "...";
+
+      graphData = { authors: [], links: [] };
+      if (simulation) simulation.stop();
+      document.getElementById("search").value = "";
+      document.getElementById("search-results").textContent = "";
+      selectedNode = null;
+
+      axisGroup.selectAll("*").remove();
+      linkGroup.selectAll("*").remove();
+      nodeGroup.selectAll("*").remove();
+
+      const select = document.getElementById("dataset-select");
+      const selectedOption = select.options[select.selectedIndex];
+      const covers = selectedOption ? JSON.parse(selectedOption.getAttribute("data-covers") || "null") : null;
 
       try {
         const [manifest] = await Promise.all([
@@ -471,6 +1002,7 @@
           files.push(...results);
         }
         processData(files);
+        renderHeaderCovers(dataDir, covers);
 
         document.getElementById("loading").style.display = "none";
       } catch (e) {
@@ -488,19 +1020,14 @@
     }
 
     function getBookYear(meta) {
-      // Priority 1: Enriched Original Year (from pipeline)
       if (meta.original_year !== undefined && meta.original_year !== null) return meta.original_year;
-
-      // Priority 2: Goodreads Pub Year
       if (meta.publication_year) return meta.publication_year;
-
       return null;
     }
 
     function normalizeAuthor(name) {
       if (!name) return "Unknown";
       let n = name.toString().trim();
-
       if (n.includes(",")) {
         const parts = n.split(",", 2);
         if (parts.length === 2) n = `${parts[1].trim()} ${parts[0].trim()}`;
@@ -509,12 +1036,10 @@
     }
 
     function processData(records) {
-      const authorMap = new Map(); // name -> { name, books: [], year, meta: {} }
-      const bookMap = new Map(); // id -> bookNode
+      const authorMap = new Map();
+      const bookMap = new Map();
 
-      // 1. Collect all books and assign to authors
       records.forEach(rec => {
-        // Source Book
         const src = rec.source;
         const srcAuth = normalizeAuthor(Array.isArray(src.authors) ? src.authors[0] : src.authors);
         const srcYear = getBookYear(src);
@@ -525,7 +1050,6 @@
         });
         const srcAuthorNode = authorMap.get(srcAuth);
 
-        // Check if source has meta (rarely populated in current pipeline but good for future)
         if (src.author_meta) srcAuthorNode.meta = src.author_meta;
 
         const srcBook = {
@@ -538,15 +1062,17 @@
         srcAuthorNode.books.push(srcBook);
         bookMap.set(srcBook.id, srcBook);
 
-        // Cited Books
         (rec.citations || []).forEach(cit => {
           const match = cit.goodreads_match || {};
           const wiki = cit.wikipedia_match || {};
 
-          // Harvest author metadata if available from enrichment
           const authorMeta = match.author_meta || {};
+          const wikiAuthorMeta = (wiki && (wiki.birth_year || wiki.death_year)) ? {
+            birth_year: wiki.birth_year,
+            death_year: wiki.death_year,
+            canonical_name: wiki.title
+          } : {};
 
-          // If it's a book citation
           if (cit.edge && cit.edge.target_book_id) {
             const citedAuth = normalizeAuthor(match.authors && match.authors.length > 0 ? match.authors[0] : "Unknown");
             const citedYear = getBookYear(match);
@@ -554,7 +1080,6 @@
             if (!authorMap.has(citedAuth)) authorMap.set(citedAuth, { name: citedAuth, books: [], meta: {}, commentaries: [] });
             const citedAuthorNode = authorMap.get(citedAuth);
 
-            // Merge meta if found
             if (Object.keys(authorMeta).length > 0) citedAuthorNode.meta = authorMeta;
 
             const citedBook = {
@@ -566,7 +1091,6 @@
               commentaries: cit.raw.commentaries || []
             };
 
-            // Avoid duplicates within author
             if (!citedAuthorNode.books.find(b => b.id === citedBook.id)) {
               citedAuthorNode.books.push(citedBook);
               bookMap.set(citedBook.id, citedBook);
@@ -578,10 +1102,9 @@
             if (!authorMap.has(normName)) authorMap.set(normName, { name: normName, books: [], meta: {}, commentaries: [] });
 
             const authNode = authorMap.get(normName);
-            // Merge meta
             if (Object.keys(authorMeta).length > 0) authNode.meta = authorMeta;
+            else if (Object.keys(wikiAuthorMeta).length > 0) authNode.meta = wikiAuthorMeta;
 
-            // Accumulate commentaries
             if (cit.raw.commentaries) {
               if (!authNode.commentaries) authNode.commentaries = [];
               authNode.commentaries.push(...cit.raw.commentaries);
@@ -590,20 +1113,15 @@
         });
       });
 
-      // 2. Calculate Author Positions & Pack Books
       const authors = Array.from(authorMap.values()).map(auth => {
-        // Calculate Year
         let year = null;
         const meta = auth.meta || {};
 
-        // Priority 1: Author Metadata (Birth/Death) enriched from pipeline
         if (meta.birth_year) {
-          // Use midpoint of life, or birth + 30 if death unknown (active years)
           const endYear = meta.death_year || (meta.birth_year + 60);
           year = (meta.birth_year + endYear) / 2;
         }
 
-        // Priority 2: Mean of Book Years (Fallback)
         if (year === null) {
           const validBookYears = auth.books.map(b => b.year).filter(y => y !== null);
           if (validBookYears.length > 0) {
@@ -611,29 +1129,19 @@
           }
         }
 
-        // Pack Books
-        // We create a hierarchy: Root -> Books
         const root = { children: auth.books.map(b => ({ ...b, value: 1 })) };
         const pack = d3.pack().padding(2);
-        // Estimate radius based on book count to avoid huge empty circles
-        // But d3.pack needs a size. We can run it with an arbitrary size and then scale?
-        // Better: d3.packSiblings (if we just had circles) or d3.packEnclose.
-        // Let's use d3.pack on a hierarchy.
 
         const hierarchy = d3.hierarchy(root).sum(d => d.value || 1);
-        // Radius of book = 5 (source) or 3 (cited)
         hierarchy.children?.forEach(c => {
           c.r = c.data.isSource ? 12 : 6;
         });
 
-        // We need to pack them. d3.pack() expects a size.
-        // Instead, let's use d3.packSiblings which packs circles tightly.
         const circles = (hierarchy.children || []).map(c => ({ r: c.r, data: c.data }));
         d3.packSiblings(circles);
 
-        // Enclose them to get author radius
         const enclosure = d3.packEnclose(circles);
-        const r = enclosure ? enclosure.r + 5 : (auth.isSource ? 10 : 5); // Padding
+        const r = enclosure ? enclosure.r + 5 : (auth.isSource ? 10 : 5);
 
         return {
           commentaries: [...new Set(auth.commentaries)],
@@ -641,24 +1149,30 @@
           name: auth.name,
           year: year,
           r: r,
-          books: circles, // {x, y, r, data} relative to center (0,0)
-          x: width / 2, // Initial pos
+          books: circles,
+          x: width / 2,
           y: height / 2,
           isSource: auth.isSource || false,
           meta: auth.meta || {}
         };
       });
 
-      // Handle authors with no year data
-      // Source authors without dates default to 2000, cited authors to 1950
       authors.forEach(a => {
         if (a.year === null) {
           a.year = a.isSource ? 2000 : 1950;
         }
       });
       const validAuthors = authors;
+      sourceBookMap = new Map();
+      validAuthors.forEach(a => {
+        (a.books || []).forEach(b => {
+          if (b.data && b.data.isSource && b.data.title) {
+            const slug = slugifyTitle(b.data.title);
+            sourceBookMap.set(slug, { authorNode: a, bookData: b.data });
+          }
+        });
+      });
 
-      // 3. Links (Author to Author)
       const authorNodeMap = new Map(validAuthors.map(a => [a.name, a]));
       const linkSet = new Set();
       const links = [];
@@ -702,47 +1216,36 @@
     function initSimulation() {
       const authors = graphData.authors;
 
-      // Y Scale: Ancient (Bottom) -> Modern (Top)
-      // Y Scale: Ancient (Bottom) -> Modern (Top)
       const years = authors.map(a => a.year);
       const minYear = Math.min(...years);
       const maxYear = Math.max(...years);
 
-      // Variable Resolution Configuration
-      const splitYear = 1800; // Breakpoint between low and high density
-      const lowRes = 0.3; // Pixels per year for Ancient/Pre-1800 (Balanced)
-      const highRes = 8; // Pixels per year for Modern/Post-1800 (Balanced)
+      const splitYear = 1800;
+      const lowRes = 0.3;
+      const highRes = 8;
 
-      // Calculate Distances
       const ancientSpan = Math.max(0, splitYear - minYear);
       const modernSpan = Math.max(0, maxYear - splitYear);
 
       const ancientHeight = ancientSpan * lowRes;
       const modernHeight = modernSpan * highRes;
 
-      const totalHeight = ancientHeight + modernHeight + 400; // + Padding
+      const totalHeight = ancientHeight + modernHeight + 400;
 
       svg.attr("height", totalHeight);
 
-      // Polylinear Scale
-      // Domain: [Min, Split, Max]
-      // Range: [Bottom, SplitPoint, Top]
-      // Note: Y coords go Top(0) -> Bottom(Height).
-      // So MinYear is at TotalHeight (minus padding), MaxYear is at Top (plus padding).
-
       const yBottom = totalHeight - 100;
       const ySplit = yBottom - ancientHeight;
-      const yTop = ySplit - modernHeight; // Should be approx 300
+      const yTop = ySplit - modernHeight;
 
       const yScale = d3.scaleLinear()
         .domain([minYear, splitYear, maxYear])
         .range([yBottom, ySplit, yTop]);
 
-      // Axis
       const yAxis = d3.axisRight(yScale)
         .tickValues([
-          ...d3.range(Math.ceil(minYear / 100) * 100, splitYear, 100), // Every 100 years for ancient
-          ...d3.range(splitYear, maxYear + 1, 10) // Every 10 years for modern
+          ...d3.range(Math.ceil(minYear / 100) * 100, splitYear, 100),
+          ...d3.range(splitYear, maxYear + 1, 10)
         ])
         .tickFormat(d => d < 0 ? `${-d} BC` : d)
         .tickSize(-width);
@@ -750,30 +1253,26 @@
       axisGroup
         .attr("transform", `translate(${width - 80}, 0)`)
         .call(yAxis)
-        .call(g => g.select(".domain").remove()) // Remove the vertical line
+        .call(g => g.select(".domain").remove())
         .call(g => g.selectAll(".tick line")
-          .attr("stroke-opacity", 0.1) // Faint grid lines
-          .attr("stroke-dasharray", "2,2")); // Dashed grid lines
+          .attr("stroke-opacity", 0.07)
+          .attr("stroke-dasharray", "2,2"));
 
-      // Lock Y positions
       authors.forEach(d => {
-        d.fy = yScale(d.year); // Strictly lock Y
-        d.y = d.fy; // Start at correct position
+        d.fy = yScale(d.year);
+        d.y = d.fy;
       });
 
       simulation = d3.forceSimulation(authors)
-        //.force("y", d3.forceY(d => yScale(d.year)).strength(3)) // Removed: Y is locked
-        .force("x", d3.forceX(width / 2).strength(0.3)) // Stronger centering
+        .force("x", d3.forceX(width / 2).strength(0.3))
         .force("collide", d3.forceCollide(d => d.r + 5).iterations(2))
         .on("tick", ticked);
 
       function ticked() {
-        // Constrain to screen width
         authors.forEach(d => {
           d.x = Math.max(d.r + 10, Math.min(width - d.r - 10, d.x));
         });
 
-        // Render Links
         linkGroup.selectAll("line")
           .data(graphData.links)
           .join("line")
@@ -783,26 +1282,32 @@
           .attr("x2", d => d.target.x)
           .attr("y2", d => d.target.y);
 
-        // Render Authors
         const authorSel = nodeGroup.selectAll(".author-group")
           .data(authors, d => d.id)
           .join(
             enter => {
               const g = enter.append("g")
                 .attr("class", "author-group")
-                .on("mouseenter", (e, d) => highlight(d))
-                .on("mouseleave", () => resetHighlight())
+                .on("mouseenter", (e, d) => {
+                  if (!focusMode) highlight(d);
+                })
+                .on("mouseleave", () => {
+                  if (!focusMode) resetHighlight();
+                })
                 .on("click", (e, d) => {
                   e.stopPropagation();
 
-                  // Toggle selection
-                  if (selectedNode && selectedNode.id === d.id) {
-                    selectedNode = null;
-                    resetHighlight();
+                  if (focusMode) {
+                    // In focus mode, clicking another node shows its panel
+                    // Double-click on focused node exits
+                    if (focusedNode && focusedNode.id === d.id) {
+                      exitFocusMode();
+                    } else {
+                      showPanel(d);
+                    }
                   } else {
-                    selectedNode = d; // Freeze selection
-                    highlight(d);
-                    showPanel(d);
+                    // Enter focus mode
+                    enterFocusMode(d);
                   }
                 });
 
@@ -810,7 +1315,6 @@
                 .attr("class", "author-circle")
                 .attr("r", d => d.r);
 
-              // Render Books inside
               g.each(function (d) {
                 const group = d3.select(this);
                 if (d.books) {
@@ -823,18 +1327,22 @@
                     .attr("cy", b => b.y)
                     .attr("fill", b => b.data.isSource ? "var(--book-source)" : "var(--book-cited)")
                     .on("mouseenter", (e, b) => {
-                      // Show book title on hover
                       showTooltip(e, b.data.title);
                     })
                     .on("mouseleave", hideTooltip)
                     .on("click", (e, b) => {
                       e.stopPropagation();
+                      // In normal mode, enter focus on the parent author
+                      // In focus mode, just show the book panel
+                      if (!focusMode) {
+                        const authorNode = d3.select(e.target.parentNode).datum();
+                        enterFocusMode(authorNode);
+                      }
                       showPanel(b.data);
                     });
                 }
               });
 
-              // Label (Author Name) - Hidden by default via CSS
               g.append("text")
                 .attr("class", "label")
                 .attr("y", d => -d.r - 10)
@@ -847,133 +1355,365 @@
       }
     }
 
-    // Tooltip
     const tooltip = d3.select("body").append("div")
       .style("position", "absolute")
-      .style("background", "rgba(0,0,0,0.8)")
-      .style("padding", "4px 8px")
+      .style("background", "rgba(17, 17, 19, 0.95)")
+      .style("padding", "8px 12px")
       .style("border-radius", "4px")
+      .style("border", "1px solid rgba(212, 165, 116, 0.2)")
       .style("pointer-events", "none")
-      .style("font-size", "12px")
+      .style("font-size", "13px")
+      .style("font-family", "Cormorant Garamond, serif")
       .style("display", "none")
-      .style("z-index", "100");
+      .style("z-index", "100")
+      .style("max-width", "280px")
+      .style("box-shadow", "0 8px 32px rgba(0,0,0,0.4)");
 
     function showTooltip(e, text) {
       tooltip.style("display", "block")
         .text(text)
-        .style("left", (e.pageX + 10) + "px")
-        .style("top", (e.pageY - 10) + "px");
+        .style("left", (e.pageX + 12) + "px")
+        .style("top", (e.pageY - 12) + "px");
     }
     function hideTooltip() { tooltip.style("display", "none"); }
 
     function highlight(d) {
-      // If a node is selected and it's not this one, ignore hover
+      if (focusMode) return; // Don't change highlight in focus mode
       if (selectedNode && selectedNode.id !== d.id) return;
 
-      // Dim all
       d3.selectAll(".author-group").classed("dimmed", true).classed("highlight", false);
       d3.selectAll(".label").classed("visible", false);
       d3.selectAll(".link").classed("dimmed", true).classed("highlight", false);
 
-      // Highlight selected node
       const sel = d3.selectAll(".author-group").filter(n => n.id === d.id);
       sel.classed("dimmed", false).classed("highlight", true);
       sel.select(".label").classed("visible", true);
 
-      // Find connected neighbors
       const connectedIds = new Set();
       connectedIds.add(d.id);
 
-      // Highlight connected links and collect neighbors
-      // Highlight connected links and collect neighbors (OUTBOUND ONLY)
       d3.selectAll(".link")
         .filter(l => {
           if (l.source.id === d.id) {
             connectedIds.add(l.target.id);
             return true;
           }
-          // Removed inbound check: if (l.target.id === d.id) ...
           return false;
         })
         .classed("dimmed", false)
         .classed("highlight", true)
-        .raise(); // Bring to front
+        .raise();
 
-      // Highlight connected neighbors
+      // Only show label for hovered node, not all connections
+      // This prevents the label overlap issue
       d3.selectAll(".author-group")
         .filter(n => connectedIds.has(n.id))
         .classed("dimmed", false)
-        .classed("highlight", true)
-        .select(".label").classed("visible", true);
+        .classed("highlight", true);
+      // Don't auto-show all connected labels anymore
     }
 
     function resetHighlight() {
-      // If a node is selected, don't reset
-      if (selectedNode) return;
+      if (selectedNode || focusMode) return;
 
       d3.selectAll(".author-group").classed("dimmed", false).classed("highlight", false);
       d3.selectAll(".label").classed("visible", false);
       d3.selectAll(".link").classed("dimmed", false).classed("highlight", false);
     }
 
+    function enterFocusMode(node) {
+      focusMode = true;
+      focusedNode = node;
+      selectedNode = node;
+      panOffset = { x: 0, y: 0 };
+
+      // Store original positions
+      originalPositions.clear();
+      graphData.authors.forEach(a => {
+        originalPositions.set(a.id, { x: a.x, y: a.y, fx: a.fx, fy: a.fy });
+      });
+
+      // Find connected nodes (outbound only for clarity)
+      const connectedIds = new Set([node.id]);
+      const connectedNodes = [node];
+
+      graphData.links.forEach(l => {
+        if (l.source.id === node.id) {
+          connectedIds.add(l.target.id);
+          connectedNodes.push(l.target);
+        }
+      });
+
+      // Update UI
+      document.getElementById("focus-author-name").textContent = node.name;
+      document.getElementById("focus-count").textContent = connectedNodes.length - 1;
+      document.getElementById("focus-exit").classList.add("visible");
+      document.getElementById("focus-info").classList.add("visible");
+      svg.classed("focus-mode", true);
+
+      // Hide non-connected nodes and links
+      d3.selectAll(".author-group")
+        .classed("hidden-in-focus", d => !connectedIds.has(d.id))
+        .classed("dimmed", false)
+        .classed("highlight", d => connectedIds.has(d.id))
+        .classed("focus-center", d => d.id === node.id);
+
+      d3.selectAll(".link")
+        .classed("hidden-in-focus", l => l.source.id !== node.id)
+        .classed("dimmed", false)
+        .classed("highlight", l => l.source.id === node.id);
+
+      // Show labels for all connected nodes
+      d3.selectAll(".label")
+        .classed("visible", function() {
+          const d = d3.select(this.parentNode).datum();
+          return connectedIds.has(d.id);
+        });
+
+      // Calculate radial layout
+      const centerX = width / 2;
+      const viewportTop = window.scrollY + 200;
+      const centerY = viewportTop + (window.innerHeight - 200) / 2;
+
+      // Stop existing simulation
+      if (simulation) simulation.stop();
+
+      // Position central node
+      node.fx = centerX;
+      node.fy = centerY;
+      node.x = centerX;
+      node.y = centerY;
+
+      // Position connected nodes in radial pattern with multiple rings for large sets
+      const others = connectedNodes.filter(n => n.id !== node.id);
+      const count = others.length;
+
+      // Calculate how many rings we need (max ~25 per ring for readability)
+      const nodesPerRing = 25;
+      const ringCount = Math.ceil(count / nodesPerRing);
+      const baseRadius = Math.min(width, window.innerHeight) * 0.25;
+      const ringSpacing = 100; // pixels between rings
+
+      others.forEach((n, i) => {
+        // Determine which ring this node belongs to
+        const ringIndex = Math.floor(i / nodesPerRing);
+        const posInRing = i % nodesPerRing;
+        const nodesInThisRing = Math.min(nodesPerRing, count - ringIndex * nodesPerRing);
+
+        const radius = baseRadius + ringIndex * ringSpacing;
+        const angleStep = (2 * Math.PI) / nodesInThisRing;
+        const angleOffset = ringIndex * 0.3; // Offset each ring slightly for visual variety
+        const angle = angleStep * posInRing - Math.PI / 2 + angleOffset;
+
+        n.fx = centerX + Math.cos(angle) * radius;
+        n.fy = centerY + Math.sin(angle) * radius;
+        n.x = n.fx;
+        n.y = n.fy;
+      });
+
+      // Smooth scroll to center
+      window.scrollTo({
+        top: centerY - window.innerHeight / 2,
+        behavior: 'smooth'
+      });
+
+      // Update positions with animation
+      d3.selectAll(".author-group")
+        .transition()
+        .duration(600)
+        .ease(d3.easeCubicOut)
+        .attr("transform", d => `translate(${d.x},${d.y})`);
+
+      d3.selectAll(".link")
+        .filter(l => l.source.id === node.id)
+        .transition()
+        .duration(600)
+        .ease(d3.easeCubicOut)
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+      // Show panel for focused node
+      showPanel(node);
+    }
+
+    function exitFocusMode() {
+      if (!focusMode) return;
+
+      focusMode = false;
+      focusedNode = null;
+      selectedNode = null;
+
+      // Hide UI elements
+      document.getElementById("focus-exit").classList.remove("visible");
+      document.getElementById("focus-info").classList.remove("visible");
+      svg.classed("focus-mode", false);
+
+      // Restore original positions
+      graphData.authors.forEach(a => {
+        const orig = originalPositions.get(a.id);
+        if (orig) {
+          a.fx = orig.fx;
+          a.fy = orig.fy;
+          a.x = orig.x;
+          a.y = orig.y;
+        }
+      });
+
+      // Show all nodes
+      d3.selectAll(".author-group")
+        .classed("hidden-in-focus", false)
+        .classed("dimmed", false)
+        .classed("highlight", false)
+        .classed("focus-center", false);
+
+      d3.selectAll(".link")
+        .classed("hidden-in-focus", false)
+        .classed("dimmed", false)
+        .classed("highlight", false);
+
+      d3.selectAll(".label").classed("visible", false);
+
+      // Animate back to original positions
+      d3.selectAll(".author-group")
+        .transition()
+        .duration(600)
+        .ease(d3.easeCubicOut)
+        .attr("transform", d => `translate(${d.x},${d.y})`);
+
+      d3.selectAll(".link")
+        .transition()
+        .duration(600)
+        .ease(d3.easeCubicOut)
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+      // Close panel
+      document.getElementById("info-panel").classList.remove("visible");
+
+      // Restart simulation
+      if (simulation) {
+        simulation.alpha(0.3).restart();
+      }
+    }
+
+    // Focus exit button handler
+    document.getElementById("focus-exit").addEventListener("click", (e) => {
+      e.stopPropagation();
+      exitFocusMode();
+    });
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
     function showPanel(node) {
       const panel = document.getElementById("info-panel");
-      // Handle both Book and Author nodes
-      // Book: title, meta.authors, meta.link, etc.
-      // Author: name, meta (birth_year, etc.), commentaries
-
       const isBook = node.id && node.id.startsWith("book:");
       const title = isBook ? node.title : node.name;
-      document.getElementById("panel-title").textContent = title;
-
-      const content = document.getElementById("panel-content");
       const meta = node.meta || {};
 
-      let metaHtml = "";
+      // Panel type label
+      document.getElementById("panel-type").textContent = isBook ? "Book" : "Author";
+      document.getElementById("panel-title").textContent = title;
 
+      // Meta line
+      let metaText = "";
       if (isBook) {
         const authors = meta.authors ? (Array.isArray(meta.authors) ? meta.authors.join(", ") : meta.authors) : "Unknown Author";
-        metaHtml += `<div style="margin-bottom:12px; color:#888; font-size:13px;">${node.year || "Unknown Year"} • ${authors}</div>`;
+        metaText = `${node.year || "Unknown Year"} \u00B7 ${authors}`;
       } else {
-        // Author Metadata
-        metaHtml += `<div style="margin-bottom:12px; color:#888; font-size:13px;">Author</div>`;
         if (meta.birth_year) {
-          metaHtml += `<div style="margin-bottom:12px; color:#aaa; font-size:13px;">${meta.birth_year} – ${meta.death_year || "Present"}</div>`;
+          metaText = `${meta.birth_year} \u2013 ${meta.death_year || "Present"}`;
         }
       }
+      document.getElementById("panel-meta").textContent = metaText;
 
-      if (meta.average_rating || meta.num_pages || meta.publisher) {
-        metaHtml += `<div style="display:flex; gap:10px; margin-bottom:12px; font-size:12px; color:var(--text-muted);">`;
-        if (meta.average_rating) metaHtml += `<span>★ ${meta.average_rating}</span>`;
-        if (meta.num_pages) metaHtml += `<span>${meta.num_pages} pages</span>`;
-        if (meta.publisher) metaHtml += `<span>${meta.publisher}</span>`;
-        metaHtml += `</div>`;
+      // Content
+      const content = document.getElementById("panel-content");
+      let html = "";
+
+      // Stats row for books
+      if (isBook && (meta.average_rating || meta.num_pages || meta.publisher)) {
+        html += `<div class="panel-stats">`;
+        if (meta.average_rating) {
+          html += `<div class="panel-stat">
+            <span class="panel-stat-value">\u2605 ${meta.average_rating}</span>
+            <span class="panel-stat-label">Rating</span>
+          </div>`;
+        }
+        if (meta.num_pages) {
+          html += `<div class="panel-stat">
+            <span class="panel-stat-value">${meta.num_pages}</span>
+            <span class="panel-stat-label">Pages</span>
+          </div>`;
+        }
+        if (meta.publisher) {
+          html += `<div class="panel-stat">
+            <span class="panel-stat-value">${escapeHtml(meta.publisher)}</span>
+            <span class="panel-stat-label">Publisher</span>
+          </div>`;
+        }
+        html += `</div>`;
       }
 
+      // Description
       if (meta.description) {
-        metaHtml += `<div style="line-height:1.5; margin-bottom:16px;">${meta.description}</div>`;
+        html += `<div class="panel-description">${escapeHtml(meta.description)}</div>`;
       }
 
-      // Commentaries (from node.commentaries or meta if stored there?)
-      // We pass commentaries in node.commentaries for both Books and Authors now
-      // (For books we attached it to the node in processData, for authors we did too)
+      // Citations / Commentaries section
+      const commentaries = node.commentaries || [];
+      if (commentaries.length > 0) {
+        html += `<div class="citations-section">`;
+        html += `<div class="citations-header">
+          <h3 class="citations-title">${isBook ? "Author Commentary" : "Referenced As"}</h3>
+          <span class="citations-count">${commentaries.length} citation${commentaries.length > 1 ? 's' : ''}</span>
+        </div>`;
 
-      if (node.commentaries && node.commentaries.length > 0) {
-        metaHtml += `<div style="margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.1);">`;
-        metaHtml += `<h4 style="margin:0 0 8px 0; font-size:14px; color:var(--accent);">Author Commentary</h4>`;
-        node.commentaries.forEach(c => {
-          metaHtml += `<div style="font-style:italic; font-size:13px; color:#ddd; margin-bottom:8px; padding-left:8px; border-left:2px solid var(--accent);">${c}</div>`;
+        commentaries.forEach((c, i) => {
+          const isLong = c.length > 200;
+          const cardClass = isLong ? "citation-card expandable" : "citation-card";
+
+          html += `<div class="${cardClass}" data-index="${i}">
+            <div class="citation-card-inner">
+              <span class="citation-number">${String(i + 1).padStart(2, '0')}</span>
+              <p class="citation-quote">${escapeHtml(c)}</p>
+              ${isLong ? `<div class="citation-expand">
+                <button class="citation-expand-btn" onclick="this.closest('.citation-card').classList.add('expanded')">Read more</button>
+              </div>` : ''}
+            </div>
+          </div>`;
         });
-        metaHtml += `</div>`;
+
+        html += `</div>`;
+      } else if (!isBook) {
+        // Empty state for authors with no citations
+        html += `<div class="empty-citations">
+          <div class="empty-citations-icon">\u{1F4DA}</div>
+          <p>No direct citations found</p>
+        </div>`;
       }
 
-      // Link
+      // External link
       const link = meta.link || meta.url;
       if (link) {
-        metaHtml += `<a href="${link}" target="_blank" style="display:inline-block; padding:8px 16px; background:rgba(255,255,255,0.1); color:#fff; text-decoration:none; border-radius:4px; font-size:12px; transition:background 0.2s;">View on Web ↗</a>`;
+        html += `<a href="${escapeHtml(link)}" target="_blank" class="panel-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          View on Goodreads
+        </a>`;
       }
 
-      content.innerHTML = metaHtml;
+      content.innerHTML = html;
       panel.classList.add("visible");
     }
 
@@ -983,31 +1723,90 @@
       resetHighlight();
     };
 
-    // Click outside to deselect
-    svg.on("click", () => {
-      selectedNode = null;
-      resetHighlight();
-      document.getElementById("info-panel").classList.remove("visible");
+    // Drag to pan in focus mode
+    svg.on("mousedown", (e) => {
+      if (focusMode) {
+        isDragging = true;
+        didDrag = false;
+        dragStart = { x: e.clientX, y: e.clientY };
+        svg.style("cursor", "grabbing");
+      }
     });
 
-    // Search functionality with scroll to match
+    svg.on("mousemove", (e) => {
+      if (isDragging && focusMode) {
+        const dx = e.clientX - dragStart.x;
+        const dy = e.clientY - dragStart.y;
+
+        // Only count as drag if moved more than 3 pixels
+        if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+          didDrag = true;
+        }
+
+        // Move all nodes that have fixed positions (focus mode nodes)
+        graphData.authors.forEach(a => {
+          if (a.fx !== undefined && a.fx !== null) {
+            a.fx += dx;
+            a.fy += dy;
+            a.x = a.fx;
+            a.y = a.fy;
+          }
+        });
+
+        // Update positions immediately
+        d3.selectAll(".author-group")
+          .attr("transform", d => `translate(${d.x},${d.y})`);
+
+        d3.selectAll(".link")
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        dragStart = { x: e.clientX, y: e.clientY };
+      }
+    });
+
+    svg.on("mouseup", () => {
+      isDragging = false;
+      svg.style("cursor", null);
+    });
+
+    svg.on("mouseleave", () => {
+      isDragging = false;
+      svg.style("cursor", null);
+    });
+
+    svg.on("click", (e) => {
+      // Don't exit focus if we were dragging
+      if (didDrag) {
+        didDrag = false;
+        return;
+      }
+
+      if (focusMode) {
+        exitFocusMode();
+      } else {
+        selectedNode = null;
+        resetHighlight();
+        document.getElementById("info-panel").classList.remove("visible");
+      }
+    });
+
     let searchTimeout = null;
     document.getElementById("search").addEventListener("input", (e) => {
       const query = e.target.value.toLowerCase().trim();
       const resultsEl = document.getElementById("search-results");
 
-      // Clear previous timeout
       if (searchTimeout) clearTimeout(searchTimeout);
 
       if (!query) {
-        // Reset all nodes when search is cleared
         d3.selectAll(".author-group").classed("dimmed", false).classed("search-match", false);
         d3.selectAll(".label").classed("visible", false);
         resultsEl.textContent = "";
         return;
       }
 
-      // Debounce search
       searchTimeout = setTimeout(() => {
         const matches = [];
 
@@ -1021,24 +1820,21 @@
           d3.select(this).select(".label").classed("visible", isMatch);
 
           if (isMatch) {
-            // Calculate match score (prefer exact/start matches)
             let score = 0;
             if (d.name.toLowerCase() === query) score = 100;
             else if (d.name.toLowerCase().startsWith(query)) score = 80;
             else if (authorMatch) score = 60;
-            else score = 40; // book match
+            else score = 40;
 
             matches.push({ node: d, element: this, score, authorMatch });
           }
         });
 
-        // Sort by score and scroll to best match
         matches.sort((a, b) => b.score - a.score);
 
         if (matches.length > 0) {
           resultsEl.textContent = `${matches.length} match${matches.length > 1 ? 'es' : ''} found`;
 
-          // Scroll to the best match
           const best = matches[0];
           const y = best.node.y || best.node.fy;
           if (y !== undefined) {
@@ -1048,7 +1844,6 @@
             });
           }
 
-          // Highlight the best match
           selectedNode = best.node;
           highlight(best.node);
         } else {
@@ -1057,12 +1852,23 @@
       }, 200);
     });
 
-    // Enter key scrolls to next match
     document.getElementById("search").addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         e.target.value = "";
         e.target.dispatchEvent(new Event("input"));
       }
+    });
+
+    // Global keyboard handler
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && focusMode) {
+        exitFocusMode();
+      }
+    });
+
+    // Mobile hint close
+    document.getElementById("mobile-hint-close").addEventListener("click", () => {
+      document.getElementById("mobile-hint").style.display = "none";
     });
 
     async function init() {
@@ -1086,7 +1892,6 @@
           }
         });
 
-        // Auto-load first dataset
         if (datasets.length > 0) {
           select.value = datasets[0].path;
           loadDataset(datasets[0].path);
