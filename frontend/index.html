@@ -147,6 +147,10 @@
       min-height: 100vh;
     }
 
+    #axis-group {
+      transition: opacity 0.4s ease;
+    }
+
     .tick text {
       fill: var(--text-muted);
       font-size: 11px;
@@ -636,9 +640,433 @@
       font-size: 14px;
     }
 
+    /* ============================================
+       MOBILE RESPONSIVE STYLES
+       ============================================ */
+
+    /* Tablet breakpoint */
     @media (max-width: 900px) {
       #mobile-hint {
         display: block;
+      }
+
+      header {
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+
+      .header-subtitle {
+        display: none;
+      }
+
+      #controls {
+        gap: 12px;
+      }
+
+      .search-box {
+        width: 160px;
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+
+      .cover-image {
+        height: 70px;
+      }
+
+      .cover-image:hover {
+        transform: scale(1.3) translateY(16px);
+      }
+
+      /* Panel - narrower on tablet */
+      #info-panel {
+        width: 400px;
+        right: -400px;
+      }
+
+      #info-panel.visible {
+        right: 0;
+      }
+
+      #panel-header {
+        padding: 24px 20px 16px;
+      }
+
+      #panel-content {
+        padding: 16px 20px 32px;
+      }
+
+      #panel-title {
+        font-size: 22px;
+      }
+
+      /* Focus mode controls */
+      #focus-exit {
+        top: 80px;
+        left: 16px;
+        padding: 10px 14px;
+        font-size: 11px;
+      }
+
+      #focus-info {
+        top: 80px;
+        font-size: 10px;
+        padding: 8px 14px;
+        max-width: 70%;
+      }
+    }
+
+    /* Phone breakpoint */
+    @media (max-width: 600px) {
+      header {
+        padding: 10px 12px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-content {
+        gap: 12px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 16px;
+        letter-spacing: 0.1em;
+      }
+
+      #controls {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .control-group {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .control-label {
+        font-size: 8px;
+      }
+
+      .search-box {
+        width: 100%;
+        min-width: 0;
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+
+      .cover-image {
+        height: 50px;
+      }
+
+      .cover-image:hover {
+        transform: none; /* Disable hover zoom on mobile */
+      }
+
+      /* Panel - full width on phone landscape */
+      #info-panel {
+        width: 100%;
+        right: -100%;
+      }
+
+      #info-panel.visible {
+        right: 0;
+      }
+
+      #panel-header {
+        padding: 20px 16px 12px;
+      }
+
+      #panel-content {
+        padding: 12px 16px 24px;
+      }
+
+      #panel-title {
+        font-size: 20px;
+        padding-right: 40px;
+      }
+
+      #panel-close {
+        top: 16px;
+        right: 16px;
+        width: 32px;
+        height: 32px;
+      }
+
+      #panel-type {
+        font-size: 9px;
+      }
+
+      .panel-description {
+        font-size: 15px;
+      }
+
+      .citation-card-inner {
+        padding: 14px 16px;
+      }
+
+      .citation-quote {
+        font-size: 14px;
+      }
+
+      /* Focus exit - corner button on mobile */
+      #focus-exit {
+        top: auto;
+        bottom: 20px;
+        left: 16px;
+        transform: none;
+        padding: 10px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        background: var(--panel);
+        border: 1px solid var(--accent);
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+      }
+
+      #focus-exit svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      /* Focus info - below header on mobile */
+      #focus-info {
+        top: 120px;
+        left: 12px;
+        right: 12px;
+        transform: none;
+        text-align: center;
+        font-size: 10px;
+        padding: 8px 12px;
+        max-width: none;
+      }
+
+      /* Hero section */
+      #hero {
+        padding: 100px 20px 40px;
+      }
+
+      #hero h2 {
+        font-size: 24px;
+      }
+
+      #hero p {
+        font-size: 14px;
+      }
+
+      /* Labels smaller on mobile */
+      .label {
+        font-size: 10px;
+      }
+
+      /* Smaller nodes for touch */
+      .focus-mode .label.visible {
+        stroke-width: 3px;
+      }
+    }
+
+    /* Portrait mode on phones - compact bottom sheet instead of full overlay */
+    @media (max-width: 600px) and (orientation: portrait) {
+      /* Panel becomes a bottom sheet taking only 45% height */
+      #info-panel {
+        width: 100%;
+        height: 45vh;
+        max-height: 45vh;
+        top: auto;
+        bottom: -45vh;
+        right: 0;
+        left: 0;
+        border-left: none;
+        border-top: 1px solid rgba(212, 165, 116, 0.15);
+        border-radius: 16px 16px 0 0;
+        transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      #info-panel.visible {
+        bottom: 0;
+        right: 0;
+      }
+
+      #info-panel::before {
+        height: 100px;
+        border-radius: 16px 16px 0 0;
+      }
+
+      /* Drag handle indicator */
+      #info-panel::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 36px;
+        height: 4px;
+        background: rgba(212, 165, 116, 0.3);
+        border-radius: 2px;
+      }
+
+      #panel-header {
+        padding: 20px 16px 10px;
+      }
+
+      #panel-title {
+        font-size: 18px;
+        padding-right: 36px;
+      }
+
+      #panel-close {
+        top: 12px;
+        right: 12px;
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+      }
+
+      #panel-meta {
+        font-size: 12px;
+        margin-top: 6px;
+      }
+
+      #panel-content {
+        padding: 8px 16px 20px;
+      }
+
+      .panel-stats {
+        gap: 16px;
+        padding: 10px 0;
+        margin-bottom: 12px;
+      }
+
+      .panel-description {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+        /* Limit description height in compact mode */
+        max-height: 80px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+
+      .citations-section {
+        margin-top: 16px;
+      }
+
+      .citations-header {
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+      }
+
+      .citation-card {
+        margin-bottom: 10px;
+      }
+
+      .citation-card-inner {
+        padding: 10px 12px;
+      }
+
+      .citation-quote {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      /* Focus exit - small icon button in corner */
+      #focus-exit {
+        bottom: auto;
+        top: 70px;
+        left: 12px;
+        padding: 0;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        justify-content: center;
+        gap: 0;
+      }
+
+      /* Hide text, show only icon */
+      #focus-exit .focus-exit-text {
+        display: none;
+      }
+
+      #focus-exit svg {
+        width: 16px;
+        height: 16px;
+        margin: 0;
+      }
+
+      /* Focus info - compact badge next to exit button, below header */
+      #focus-info {
+        top: 120px;
+        bottom: auto;
+        left: 56px;
+        right: auto;
+        transform: none;
+        padding: 6px 12px;
+        font-size: 9px;
+        border-radius: 12px;
+        white-space: nowrap;
+      }
+
+      /* Exit button also needs to be below header in portrait */
+      #focus-exit {
+        top: 116px;
+      }
+    }
+
+    /* Extra small phones */
+    @media (max-width: 380px) {
+      h1 {
+        font-size: 14px;
+      }
+
+      .cover-image {
+        height: 40px;
+      }
+
+      #panel-title {
+        font-size: 18px;
+      }
+    }
+
+    /* Extra small phones in landscape only - keep text button */
+    @media (max-width: 380px) and (orientation: landscape) {
+      #focus-exit {
+        padding: 10px 14px;
+        font-size: 10px;
+      }
+    }
+
+    /* Touch-specific: larger tap targets */
+    @media (pointer: coarse) {
+      .book-circle {
+        /* Ensure minimum tap target */
+        stroke: transparent;
+        stroke-width: 8px;
+      }
+
+      .author-circle {
+        stroke-width: 2px;
+      }
+
+      #panel-close {
+        width: 44px;
+        height: 44px;
+        font-size: 24px;
+      }
+
+      .panel-link {
+        padding: 14px 20px;
+        font-size: 13px;
+      }
+
+      .citation-expand-btn {
+        padding: 8px 0;
+        font-size: 12px;
       }
     }
 
@@ -672,6 +1100,7 @@
 
     .focus-mode {
       cursor: grab;
+      touch-action: none; /* Allow custom touch handling */
     }
 
     .focus-mode:active {
@@ -680,6 +1109,12 @@
 
     .focus-mode .link.hidden-in-focus {
       opacity: 0;
+    }
+
+    /* Hide timeline axis in focus mode - doesn't apply to radial layout */
+    .focus-mode #axis-group {
+      opacity: 0;
+      transition: opacity 0.4s ease;
     }
 
     /* Labels in focus mode - add dark halo for readability */
@@ -846,7 +1281,7 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M19 12H5M12 19l-7-7 7-7"/>
     </svg>
-    Exit Focus
+    <span class="focus-exit-text">Exit Focus</span>
   </button>
 
   <div id="focus-info">
@@ -1332,13 +1767,18 @@
                     .on("mouseleave", hideTooltip)
                     .on("click", (e, b) => {
                       e.stopPropagation();
+                      const wasInFocusMode = focusMode;
                       // In normal mode, enter focus on the parent author
                       // In focus mode, just show the book panel
                       if (!focusMode) {
                         const authorNode = d3.select(e.target.parentNode).datum();
                         enterFocusMode(authorNode);
                       }
-                      showPanel(b.data);
+                      // On portrait mobile, only show panel if already in focus mode
+                      // (first tap enters focus mode without panel, second tap shows panel)
+                      if (!isPortraitMobile() || wasInFocusMode) {
+                        showPanel(b.data);
+                      }
                     });
                 }
               });
@@ -1419,6 +1859,10 @@
       d3.selectAll(".author-group").classed("dimmed", false).classed("highlight", false);
       d3.selectAll(".label").classed("visible", false);
       d3.selectAll(".link").classed("dimmed", false).classed("highlight", false);
+    }
+
+    function isPortraitMobile() {
+      return window.innerWidth <= 600 && window.innerHeight > window.innerWidth;
     }
 
     function enterFocusMode(node) {
@@ -1534,8 +1978,10 @@
         .attr("x2", d => d.target.x)
         .attr("y2", d => d.target.y);
 
-      // Show panel for focused node
-      showPanel(node);
+      // Show panel for focused node (but not on portrait mobile - too intrusive)
+      if (!isPortraitMobile()) {
+        showPanel(node);
+      }
     }
 
     function exitFocusMode() {
@@ -1775,6 +2221,57 @@
     svg.on("mouseleave", () => {
       isDragging = false;
       svg.style("cursor", null);
+    });
+
+    // Touch support for mobile drag-to-pan
+    svg.on("touchstart", (e) => {
+      if (focusMode && e.touches.length === 1) {
+        isDragging = true;
+        didDrag = false;
+        const touch = e.touches[0];
+        dragStart = { x: touch.clientX, y: touch.clientY };
+      }
+    }, { passive: true });
+
+    svg.on("touchmove", (e) => {
+      if (isDragging && focusMode && e.touches.length === 1) {
+        const touch = e.touches[0];
+        const dx = touch.clientX - dragStart.x;
+        const dy = touch.clientY - dragStart.y;
+
+        if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+          didDrag = true;
+        }
+
+        graphData.authors.forEach(a => {
+          if (a.fx !== undefined && a.fx !== null) {
+            a.fx += dx;
+            a.fy += dy;
+            a.x = a.fx;
+            a.y = a.fy;
+          }
+        });
+
+        d3.selectAll(".author-group")
+          .attr("transform", d => `translate(${d.x},${d.y})`);
+
+        d3.selectAll(".link")
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        dragStart = { x: touch.clientX, y: touch.clientY };
+
+        // Prevent page scroll while dragging in focus mode
+        if (didDrag) {
+          e.preventDefault();
+        }
+      }
+    }, { passive: false });
+
+    svg.on("touchend", () => {
+      isDragging = false;
     });
 
     svg.on("click", (e) => {

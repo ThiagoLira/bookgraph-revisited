@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Famous Non-Fiction Books",
+        "path": "./data/philosophy_stress_test",
+        "covers": [
+            "covers/the_myth_of_sisyphus.jpg",
+            "covers/beyond_good_and_evil.jpg",
+            "covers/between_past_and_future.jpg",
+            "covers/fashionable_nonsense.jpg",
+            "covers/meditations.jpg",
+            "covers/the_consolations_of_philosophy.jpg",
+            "covers/g_del_escher_bach_an_eternal_golden_braid.jpg",
+            "covers/fear_and_trembling.jpg",
+            "covers/enlightenment_now.jpg",
+            "covers/pens_es.jpg",
+            "covers/essays_of_francis_bacon.jpg"
+        ]
+    },
+    {
+        "name": "Stalin's Library: A Dictator and His Books",
+        "path": "./data/stalin_library",
+        "covers": [
+            "covers/stalin_s_library_a_dictator_and_his_books.jpg"
+        ]
+    },
+    {
+        "name": "Umberto Eco Collection",
+        "path": "./data/umberto_eco_collection",
+        "covers": [
+            "covers/inventing_the_enemy_essays.jpg",
+            "covers/how_to_write_a_thesis.jpg",
+            "covers/mouse_or_rat_translation_as_negotiation.jpg",
+            "covers/on_the_shoulders_of_giants.jpg",
+            "covers/how_to_spot_a_fascist.jpg"
+        ]
+    },
+    {
+        "name": "David Foster Wallace Library",
+        "path": "./data/david_foster_wallace_library",
+        "covers": [
+            "covers/consider_the_lobster_and_other.jpg",
+            "covers/david_foster_wallace_the_last_interview_and_other.jpg",
+            "covers/a_supposedly_fun_thing_i_ll_never_do.jpg"
+        ]
+    },
+    {
+        "name": "Lovecraft - Supernatural Horror in Literature",
+        "path": "./data/lovecraft_-_supernatural_horror_in_literature",
+        "covers": [
+            "covers/supernatural_horror_in_literature.jpg"
+        ]
+    },
+    {
+        "name": "What I Believe",
+        "path": "./data/what_i_believe",
+        "covers": [
+            "covers/what_i_believe.jpg"
+        ]
+    }
+]

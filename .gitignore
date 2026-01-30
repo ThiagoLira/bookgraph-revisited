@@ -56,6 +56,7 @@ htmlcov/
 *.json
 !pyproject.toml
 !web-search-agent/**/*.json
+!frontend/datasets.json
 profile_runs/
 profiling/
 
