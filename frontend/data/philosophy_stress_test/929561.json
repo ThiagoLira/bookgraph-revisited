@@ -12220,73 +12220,6 @@
     {
       "raw": {
         "title": "",
-        "author": "Platonists",
-        "note": null,
-        "count": 18,
-        "contexts": [
-          "the Platonists, for whom the only reality is that of the archetype (Norris, Judas Abrabanel, Gemistus, Plotinus),",
-          "In the thirteenth century, the image reappeared in the symbolic Roman de la Rose, where it is given as a citation from Plato,",
-          "the Platonic and Pythagorean doctrine of the transmigration of the soul through many bodies",
-          "Since Horace predicted his celestial metamorphosis with a Platonic or Pythagorean image, the theme of the poet’s immortality has been classic in literature.",
-          "a collection of Hebrew imaginings that had been subjected to Plato and Aristotle.",
-          "Pascal could have found that sphere in Rabelais (III, 13), who attributes it to Hermes Trismegistus, or in the symbolical Roman de la Rose, which says that it is from Plato.",
-          "his famous argument of the third man against the Platonic doctrine. This doctrine tries to demonstrate that two individuals who have common attributes (for example, two men) are mere temporal appearances of an eternal archetype.",
-          "Such is the cosmological proof; it is prefigured by Aristotle and Plato; later Leibniz rediscovers it.39",
-          "Keats, who could write without exaggerated injustice that he knew nothing, that he had read nothing, divined the Greek spirit from the pages of a schoolboy’s dictionary; a very subtle proof of that divination or re-creation is his intuitive recognition of the Platonic nightingale in the dark nightingale of a spring evening.",
-          "Coleridge observes that all men are born Aristotelians or Platonists.",
-          "the Platonists, for whom the only realities are the archetypes",
-          "It can mean the eternity of Plato or of Boethius",
-          "It can mean the eternity of Plato or Boethius and also the dilemmas of Sextus Empiricus.",
-          "None of the several eternities men have charted—nominalism’s, Irenaeus’, Plato’s—is a mechanical aggregate of past, present, and future.",
-          "This is an unpromising beginning, for Plato has far more laborious universal forms to propose.",
-          "I must confess my guilty omission of the unsuspected major masters of the genre: Parmenides, Plato, John Scotus Erigena, Albertus Magnus, Spinoza, Leibniz, Kant, Francis Bradley.",
-          "In the Parmenides―whose Zenonian character is irrefutable ―Plato expounds a very similar argument to demonstrate that the one is really many.",
-          "I do not wish to bid farewell to Platonism (which seems icily remote) without making the following observation"
-        ],
-        "commentaries": [
-          "The author cites the Platonists as a philosophical group adhering to idealism, listing specific thinkers as examples.",
-          "The author notes that the Roman de la Rose cites Plato as the source for the spherical metaphor, referencing Plato's ideas.",
-          "The author references Plato as part of the Platonic and Pythagorean doctrine of transmigration, which Quevedo rejects as foolish.",
-          "The author references Platonic ideas in the context of Horace's prediction of immortality, though no specific book by Plato is named.",
-          "The author references Plato as a philosophical influence on the Catholic faith, suggesting that Hebrew traditions were interpreted through Platonic thought.",
-          "The author mentions that the metaphor used by Pascal is attributed to Plato in the 'Roman de la Rose'.",
-          "The author references Plato's doctrine of forms as the target of Aristotle's 'third man' argument, explaining the philosophical context.",
-          "The author mentions Plato as a prefigurer of the cosmological proof for God's existence, without citing a specific work.",
-          "The author references Plato as a source of the concept of archetypes, which Keats is said to have intuitively recognized.",
-          "The author references Plato as one of the two foundational philosophical types identified by Coleridge.",
-          "The author references Platonists as a philosophical group whose ideas exemplify idealism, implying the foundational thought of Plato.",
-          "The author references Plato's concept of eternity as one interpretation of the 'negation of time'.",
-          "The author mentions Plato in the context of the concept of eternity, referencing his ideas without specifying a particular book.",
-          "The author mentions Plato as one of the thinkers who charted an eternity, contrasting it with a mechanical view of time.",
-          "The author references Plato as the philosopher who proposed the theory of universal forms, which is being critically examined in the text.",
-          "The author lists Plato among the philosophical masters of the fantastic genre, whose works were omitted from an anthology.",
-          "The author references Plato's philosophical argument from the dialogue Parmenides.",
-          "The author mentions Plato as the founder of Platonism, reflecting on philosophical ideas without citing a specific book."
-        ],
-        "canonical_author": "Platonists"
-      },
-      "goodreads_match": null,
-      "wikipedia_match": {
-        "title": "Platonists",
-        "birth_year": 1618,
-        "death_year": 1652
-      },
-      "edge": {
-        "target_type": "author",
-        "target_book_id": null,
-        "target_author_ids": [
-          "879"
-        ],
-        "target_person": {
-          "title": "Platonists",
-          "birth_year": 1618,
-          "death_year": 1652
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "",
         "author": "Lord Dunsany",
         "note": null,
         "count": 2,
@@ -19560,37 +19493,6 @@
           ],
           "birth_year": 1846,
           "death_year": 1917
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "",
-        "author": "Scaligers",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "simply combined fragments from Seneca, Quintilian, Justus Lipsius, Vives, Erasmus, Machiavelli, Bacon, and the two Scaligers."
-        ],
-        "commentaries": [
-          "The author mentions the two Scaligers as sources in Ben Jonson's work, reinforcing the idea that classical literature values collective contribution over individual identity."
-        ],
-        "canonical_author": "Scaligers"
-      },
-      "goodreads_match": null,
-      "wikipedia_match": {
-        "title": "Scaligers",
-        "birth_year": 1484,
-        "death_year": 1558
-      },
-      "edge": {
-        "target_type": "person",
-        "target_book_id": null,
-        "target_author_ids": [],
-        "target_person": {
-          "title": "Scaligers",
-          "birth_year": 1484,
-          "death_year": 1558
         }
       }
     },
@@ -52066,5 +51968,6 @@
         }
       }
     }
-  ]
+  ],
+  "total": 569
 }
