@@ -18752,50 +18752,6 @@
     {
       "raw": {
         "title": "",
-        "author": "Elders of Zion",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "the example of the secret society of the Elders of Zion"
-        ],
-        "commentaries": [
-          "The author references the secret society of the Elders of Zion as a model that the Nazis consciously imitated in their organizational structure."
-        ],
-        "canonical_author": "Elders Of Zion"
-      },
-      "goodreads_match": {
-        "title": "The Protocols of the Elders of Zion",
-        "authors": [
-          "Unknown (forged document)"
-        ],
-        "original_year": 1919,
-        "birth_year": null,
-        "death_year": null,
-        "nationality": "Russian (originally published in Russia)",
-        "description": "An antisemitic fabricated text purporting to describe a Jewish conspiracy for global domination. First published in Russian in 1903, it was widely disseminated and translated in the early 20th century.",
-        "book_id": "web_2bfcc665",
-        "author_meta": {
-          "birth_year": 0,
-          "death_year": null,
-          "main_genre": "Forged Document",
-          "nationality": "Unknown"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Unknown (forged document)"
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "web_2bfcc665",
-        "target_author_ids": [],
-        "target_person": {
-          "title": "Unknown (forged document)"
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "",
         "author": "Thomas Masaryk",
         "note": null,
         "count": 1,

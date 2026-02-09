@@ -2151,60 +2151,6 @@
     {
       "raw": {
         "title": "",
-        "author": "thinkers",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "proclaimed as the final wisdom by so many thinkers"
-        ],
-        "commentaries": [
-          "The author references thinkers collectively as sources who have proclaimed love as the final wisdom."
-        ],
-        "canonical_author": "Thinkers"
-      },
-      "goodreads_match": null,
-      "wikipedia_match": {
-        "title": "thinkers"
-      },
-      "edge": {
-        "target_type": "error",
-        "target_book_id": null,
-        "target_author_ids": [],
-        "target_person": {
-          "title": "thinkers"
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "",
-        "author": "poets",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "for the first time in my life I saw the truth as it is set into song by so many poets"
-        ],
-        "commentaries": [
-          "The author references poets collectively as sources who have sung about the truth of love being the ultimate human goal."
-        ],
-        "canonical_author": "Poets"
-      },
-      "goodreads_match": null,
-      "wikipedia_match": {
-        "title": "poets"
-      },
-      "edge": {
-        "target_type": "error",
-        "target_book_id": null,
-        "target_author_ids": [],
-        "target_person": {
-          "title": "poets"
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "",
         "author": "Bismarck",
         "note": null,
         "count": 1,

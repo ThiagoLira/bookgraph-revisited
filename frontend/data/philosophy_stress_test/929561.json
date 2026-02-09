@@ -6901,61 +6901,6 @@
     },
     {
       "raw": {
-        "title": "Amadis",
-        "author": "Unknown",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "To the vast and vague geographies of the Amadis, he opposes the dusty roads and sordid wayside inns of Castille;"
-        ],
-        "commentaries": [
-          "The author contrasts the realistic settings in 'Don Quixote' with the imaginary geographies of the chivalric romance 'Amadis'."
-        ]
-      },
-      "goodreads_match": {
-        "isbn": "8432048852",
-        "work_id": "13514589",
-        "title_without_series": "Amadis de Gaula",
-        "isbn13": "9788432048852",
-        "text_reviews_count": 1,
-        "book_id": "86253",
-        "average_rating": 3.48,
-        "title": "Amadis de Gaula",
-        "ratings_count": 2,
-        "author_ids": [
-          "49352"
-        ],
-        "authors": [
-          "Garci Rodriguez de Montalvo"
-        ],
-        "description": "This is an EXACT reproduction of a book published before 1923. This IS NOT an OCR'd book with strange characters, introduced typographical errors, and jumbled words. This book may have occasional imperfections such as missing or blurred pages, poor pictures, errant marks, etc. that were either part of the original artifact, or were introduced by the scanning process. We believe this work is culturally important, and despite the imperfections, have elected to bring it back into print as part of our continuin...",
-        "link": "https://www.goodreads.com/book/show/86253.Amadis_de_Gaula",
-        "original_year": 1508,
-        "author_meta": {
-          "birth_year": 1450,
-          "death_year": 1505
-        }
-      },
-      "wikipedia_match": {
-        "title": "Garci Rodriguez de Montalvo",
-        "birth_year": 1450,
-        "death_year": 1505
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "86253",
-        "target_author_ids": [
-          "49352"
-        ],
-        "target_person": {
-          "title": "Garci Rodriguez de Montalvo",
-          "birth_year": 1450,
-          "death_year": 1505
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "",
         "author": "Virginia Woolf",
         "note": null,
@@ -19651,59 +19596,6 @@
     },
     {
       "raw": {
-        "title": "Chanson de Roland",
-        "author": "Anonymous",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "in the Chanson de Roland, in Victor Hugo, in Whitman, and in Faulkner..."
-        ],
-        "commentaries": [
-          "The author lists the 'Chanson de Roland' among works that possess the 'savor of heroism'."
-        ]
-      },
-      "goodreads_match": {
-        "isbn": "2040282777",
-        "work_id": "2906638",
-        "title_without_series": "La Chanson de Roland",
-        "isbn13": "9782040282776",
-        "text_reviews_count": 1,
-        "book_id": "7205338",
-        "average_rating": 3.54,
-        "title": "La Chanson de Roland",
-        "ratings_count": 14,
-        "author_ids": [
-          "4699102"
-        ],
-        "authors": [
-          "Unknown"
-        ],
-        "description": "\"Roland sent que ses yeux ne voient plus. Il se remet debout et rassemble ses dernieres forces. Son visage n'a plus de couleurs. Devant lui se trouve une roche grise. Il la frappe de dix coups d'epee avec colere, avec depit. L'acier grince sans se briser ni s'ebrecher. \"Ah ! prie le comte, sainte Marie, au secours ! Ah ! Durendal, ma bonne epee, quel malheur pour vous ! Puisque me voila perdu, je ne suis plus desormais responsable de vous. Grace a vous j'ai remporte tant de victoires sur les champs de batai...",
-        "link": "https://www.goodreads.com/book/show/7205338-la-chanson-de-roland",
-        "original_year": 1115,
-        "author_meta": {
-          "birth_year": null,
-          "death_year": null,
-          "main_genre": null,
-          "nationality": null
-        }
-      },
-      "wikipedia_match": {
-        "title": "Unknown"
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "7205338",
-        "target_author_ids": [
-          "4699102"
-        ],
-        "target_person": {
-          "title": "Unknown"
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "",
         "author": "Solinus",
         "note": null,
@@ -20810,67 +20702,6 @@
           "title": "Francesco da Buti",
           "birth_year": 1324,
           "death_year": 1406
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "the seven voyages of Sinbad",
-        "author": "Anonymous",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "the seven voyages of Sinbad"
-        ],
-        "commentaries": [
-          "The author references 'The Seven Voyages of Sinbad' as another example of sequential storytelling without a rigid plot."
-        ]
-      },
-      "goodreads_match": {
-        "isbn": "1420931954",
-        "publication_day": 1,
-        "work_id": "1311583",
-        "title_without_series": "The Seven Voyages of Sinbad the Sailor",
-        "publication_year": 2009,
-        "isbn13": "9781420931952",
-        "publisher": "Digireads.com",
-        "publication_month": 1,
-        "text_reviews_count": 1,
-        "format": "Paperback",
-        "book_id": "6852105",
-        "average_rating": 3.67,
-        "num_pages": 80,
-        "title": "The Seven Voyages of Sinbad the Sailor",
-        "ratings_count": 26,
-        "author_ids": [
-          "5158478",
-          "4197526"
-        ],
-        "authors": [
-          "Anonymous",
-          "Richard Francis Burton"
-        ],
-        "description": "The following text has been drawn from Sir Richard Burton's exhaustive translation of \"The Book of the Thousand Nights and a Night,\" more commonly known as \"The Arabian Nights.\" The story of \"The Seven Voyages of Sinbad the Sailor\" tells the tale of Sinbad who ventures out to sea, at first to acquire wealth, but afterwards in search of adventure. During these voyages he encounters many obstacles including giant animals, monsters, and savage cannibals, yet always seems to escape with an even greater fortune....",
-        "link": "https://www.goodreads.com/book/show/6852105-the-seven-voyages-of-sinbad-the-sailor",
-        "author_meta": {
-          "birth_year": null,
-          "death_year": null,
-          "description": null,
-          "title": "Anonymous 4"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Anonymous"
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "6852105",
-        "target_author_ids": [
-          "5158478",
-          "4197526"
-        ],
-        "target_person": {
-          "title": "Anonymous"
         }
       }
     },
@@ -22387,88 +22218,6 @@
     },
     {
       "raw": {
-        "title": "The Thousand and One Nights",
-        "author": "Anonymous",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "one of the traditional themes of The Thousand and One Nights."
-        ],
-        "commentaries": [
-          "The author cites this work as a source for the theme of falling in love by description, referencing specific stories within it."
-        ]
-      },
-      "goodreads_match": {
-        "work_id": "859375",
-        "title_without_series": "The Book of The Thousand and One Nights",
-        "publication_year": 1966,
-        "publisher": "Panther Books Ltd",
-        "text_reviews_count": 1,
-        "format": "Paperback",
-        "book_id": "23306478",
-        "average_rating": 4.06,
-        "num_pages": 190,
-        "title": "The Book of The Thousand and One Nights",
-        "ratings_count": 3,
-        "author_ids": [
-          "5158478",
-          "4197526"
-        ],
-        "authors": [
-          "Anonymous",
-          "Richard Francis Burton"
-        ],
-        "description": "The ancient stories of The Arabian Nights have entertained all mankind down the centuries. Abounding in wisdom, bawdiness and humour they contain much that is now part of the world's literary heritage.\nTranslated by Sir Richard Burton (1821-1890) and edited by P.H. Newby.",
-        "link": "https://www.goodreads.com/book/show/23306478-the-book-of-the-thousand-and-one-nights",
-        "wikipedia_match": {
-          "title": "Anonymous",
-          "page_id": 81277615,
-          "infoboxes": [
-            "person"
-          ],
-          "categories": [],
-          "birth_year": null,
-          "death_year": null
-        },
-        "original_year": 800,
-        "author_meta": {
-          "birth_year": null,
-          "death_year": null,
-          "description": null,
-          "title": "Anonymous 4"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Anonymous",
-        "page_id": 81277615,
-        "infoboxes": [
-          "person"
-        ],
-        "categories": [],
-        "birth_year": null,
-        "death_year": null
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "23306478",
-        "target_author_ids": [
-          "5158478",
-          "4197526"
-        ],
-        "target_person": {
-          "title": "Anonymous",
-          "page_id": 81277615,
-          "infoboxes": [
-            "person"
-          ],
-          "categories": [],
-          "birth_year": null,
-          "death_year": null
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "",
         "author": "Karl Marx",
         "note": null,
@@ -23645,53 +23394,6 @@
           "title": "Gustave Kahn",
           "birth_year": 1859,
           "death_year": 1936
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "Path to Purity",
-        "author": "unknown",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "\"the Path to Purity advises us, “The man in the past, of the past moment,” ... has lived, but he does not live, nor will he live; the man of a future moment will live, but he has not lived nor does he now live; the man of the present moment lives, but he has not lived nor will he live” {op. cit., I, 407),\""
-        ],
-        "commentaries": [
-          "The author quotes from the Buddhist text 'Path to Purity' to illustrate the doctrine of the illusory and momentary nature of the self."
-        ]
-      },
-      "goodreads_match": {
-        "title": "Visuddhimagga",
-        "authors": [
-          "Buddhaghosa"
-        ],
-        "original_year": 430,
-        "birth_year": null,
-        "death_year": null,
-        "nationality": "Indian",
-        "description": "The 'Path to Purity' is the English translation of the Visuddhimagga, a foundational Theravada Buddhist text written by the scholar-monk Buddhaghosa in the 5th century CE. It is a systematic summary and exposition of the Buddha's teaching on the path to enlightenment.",
-        "book_id": "web_83a2da94",
-        "author_meta": {
-          "birth_year": 370,
-          "death_year": 450,
-          "description": null,
-          "title": "Buddhaghosa"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Buddhaghosa",
-        "birth_year": 370,
-        "death_year": 450
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "web_83a2da94",
-        "target_author_ids": [],
-        "target_person": {
-          "title": "Buddhaghosa",
-          "birth_year": 370,
-          "death_year": 450
         }
       }
     },
@@ -29303,53 +29005,6 @@
           ],
           "birth_year": 1832,
           "death_year": 1898
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "Book of Rites",
-        "author": "Unknown",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "The latter, according to the Book of Rites, gave things their true name;"
-        ],
-        "commentaries": [
-          "The author references the 'Book of Rites' to draw a parallel between the legendary emperor Huang Ti and Shih Huang Ti's naming practices."
-        ]
-      },
-      "goodreads_match": {
-        "title": "Book of Rites",
-        "authors": [
-          "Attributed to Confucius, compiled by disciples"
-        ],
-        "original_year": 1992,
-        "birth_year": null,
-        "death_year": null,
-        "nationality": "Chinese",
-        "description": "One of the Five Classics of Confucianism, also known as Liji, detailing social forms, administration, and ceremonial rites of the Zhou Dynasty. Compiled during the Han Dynasty (c. 200 BCE) from earlier materials.",
-        "book_id": "web_e246d749",
-        "author_meta": {
-          "birth_year": -551,
-          "death_year": -479,
-          "main_genre": "Philosophy",
-          "nationality": "Chinese"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Attributed to Confucius, compiled by disciples",
-        "birth_year": -551,
-        "death_year": -479
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "web_e246d749",
-        "target_author_ids": [],
-        "target_person": {
-          "title": "Attributed to Confucius, compiled by disciples",
-          "birth_year": -551,
-          "death_year": -479
         }
       }
     },
@@ -35007,49 +34662,6 @@
     },
     {
       "raw": {
-        "title": "Milinda Panha",
-        "author": "unknown",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "\"There is no exposition of Buddhism which does not mention the Milinda Panha, a second century work of apologetics;\""
-        ],
-        "commentaries": [
-          "The author mentions the 'Milinda Panha' as a foundational Buddhist text that debates the nature of self and reality."
-        ]
-      },
-      "goodreads_match": {
-        "title": "Milinda Panha",
-        "authors": [
-          "unknown"
-        ],
-        "original_year": 100,
-        "birth_year": null,
-        "death_year": null,
-        "nationality": "Indian",
-        "description": "A Buddhist text from around the 2nd century CE, also known as 'The Questions of King Milinda', presenting a dialogue between the Indo-Greek king Menander I (Milinda) and the Buddhist sage Nagasena. It is an important work of Buddhist apologetics and philosophy.",
-        "book_id": "web_1e1b75a4",
-        "author_meta": {
-          "birth_year": null,
-          "death_year": null,
-          "main_genre": "Unknown",
-          "nationality": "Unknown"
-        }
-      },
-      "wikipedia_match": {
-        "title": "unknown"
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "web_1e1b75a4",
-        "target_author_ids": [],
-        "target_person": {
-          "title": "unknown"
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "Philosophy of Redemption",
         "author": "Philipp Mainlander",
         "note": null,
@@ -38344,65 +37956,6 @@
           ],
           "birth_year": 1547,
           "death_year": 1616
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "Poem of the Cid",
-        "author": "Anonymous",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "I am assured that the Poem of the Cid has this savor; I have tasted it, unmistakably, in some verses of the Aeneid..."
-        ],
-        "commentaries": [
-          "The author mentions the 'Poem of the Cid' as an example of a work possessing the 'elementary savor of heroism' he is discussing."
-        ]
-      },
-      "goodreads_match": {
-        "isbn": "0520250109",
-        "publication_day": 22,
-        "work_id": "477",
-        "title_without_series": "The Poem of the Cid",
-        "publication_year": 2007,
-        "isbn13": "9780520250109",
-        "publisher": "University of California Press",
-        "publication_month": 1,
-        "text_reviews_count": 12,
-        "format": "Paperback",
-        "book_id": "261091",
-        "average_rating": 3.45,
-        "num_pages": 157,
-        "title": "The Poem of the Cid",
-        "ratings_count": 167,
-        "author_ids": [
-          "5158478"
-        ],
-        "authors": [
-          "Anonymous"
-        ],
-        "description": "Students of Spanish literature have long been familiar with this eight-hundred-year-old epic detailing the legendary exploits of the soldier-adventurer Ruy Diaz of Bivar, El Cid, and of his part in the long struggle between Christianity and Islam. The epic poem recounts the adventures of the Cid; of his peerless steed, Babieca, and of his two famous swords, Colada and Tizon; of his wife, Dona Ximena, and his two daughters, Dona Elvira and Dona Sol, who found sanctuary with Abbot Don Sancho in the monastery....",
-        "link": "https://www.goodreads.com/book/show/261091.The_Poem_of_the_Cid",
-        "original_year": 1110,
-        "author_meta": {
-          "birth_year": null,
-          "death_year": null,
-          "description": null,
-          "title": "Anonymous 4"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Anonymous"
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "261091",
-        "target_author_ids": [
-          "5158478"
-        ],
-        "target_person": {
-          "title": "Anonymous"
         }
       }
     },
@@ -45481,68 +45034,6 @@
           "title": "Philo of Alexandria",
           "birth_year": -20,
           "death_year": 50
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "Bhagavad Gita",
-        "author": "Anonymous",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "\"I am the rite, I am the offering, I am the oblation to the parents, I am the grass, I am the prayer I am the libation of butter, I am the fire\" (Bhagavad-Gita, IX, 16)"
-        ],
-        "commentaries": [
-          "The author directly quotes from the Bhagavad Gita to illustrate pantheistic phrases that declare God as multiple things."
-        ]
-      },
-      "goodreads_match": {
-        "publisher": "Nilgiri Press",
-        "average_rating": 4.1,
-        "text_reviews_count": 19,
-        "ratings_count": 176,
-        "publication_month": 5,
-        "num_pages": 297,
-        "format": "ebook",
-        "publication_day": 17,
-        "title": "Bhagavad Gita",
-        "book_id": "8805803",
-        "isbn": "1586380230",
-        "work_id": "1492580",
-        "publication_year": 2007,
-        "title_without_series": "Bhagavad Gita",
-        "author_ids": [
-          "5158478",
-          "54296"
-        ],
-        "isbn13": "9781586380236",
-        "authors": [
-          "Anonymous",
-          "Eknath Easwaran"
-        ],
-        "description": "The Bhagavad Gita, OC The Song of the Lord, OCO is probably the best known of all the Indian scriptures, and EaswaranOCOs clear, accessible translation is the best-selling edition. The Gita opens dramatically, with prince Arjuna collapsing in anguish on the brink of a war that he doesnOCOt want to fight. Arjuna has lost his way on the battlefield of life, and turns to his spiritual guide, Sri Krishna, the Lord himself. Krishna replies in 700 verses of sublime instruction on living and dying, loving and work...",
-        "link": "https://www.goodreads.com/book/show/8805803-bhagavad-gita",
-        "original_year": -200,
-        "author_meta": {
-          "birth_year": null,
-          "death_year": null,
-          "description": null,
-          "title": "Anonymous 4"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Anonymous"
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "8805803",
-        "target_author_ids": [
-          "5158478",
-          "54296"
-        ],
-        "target_person": {
-          "title": "Anonymous"
         }
       }
     },

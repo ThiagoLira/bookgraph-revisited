@@ -16630,35 +16630,6 @@
     },
     {
       "raw": {
-        "title": "",
-        "author": "Stoics",
-        "note": null,
-        "count": 2,
-        "contexts": [
-          "The Stoics, about and within the heart;",
-          "The Stoics say that there is so great connection and relation amongst the sages, that he who dines in France nourishes his companion in Egypt; and that whoever does but hold out his finger, in what part of the world soever, all the sages upon the habitable earth feel themselves assisted by it."
-        ],
-        "commentaries": [
-          "The author mentions the Stoics as a group who located the soul in and around the heart.",
-          "The author references the Stoics to illustrate the idea of a profound connection among wise individuals, using their philosophy to support his argument about friendship and absence."
-        ],
-        "canonical_author": "Stoics"
-      },
-      "goodreads_match": null,
-      "wikipedia_match": {
-        "title": "Stoics"
-      },
-      "edge": {
-        "target_type": "person",
-        "target_book_id": null,
-        "target_author_ids": [],
-        "target_person": {
-          "title": "Stoics"
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "Of Amorous Exercises",
         "author": "Aristo",
         "note": null,
@@ -18572,85 +18543,6 @@
           "title": "Lucius Annaeus Seneca",
           "birth_year": -4,
           "death_year": 65
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "",
-        "author": "Epicureans",
-        "note": null,
-        "count": 2,
-        "contexts": [
-          "What then, also, would become of that brave and generous Epicurean pleasure, which makes account that it nourishes virtue tenderly in her lap, and there makes it play and wanton, giving it for toys to play withal, shame, fevers, poverty, death, and torments?",
-          "And what did the Epicureans think of, out of what simplicity did they first imagine that their atoms that they said were bodies having some weight, and a natural motion downwards, had made the world; till they were put in mind, by their adversaries, that, according to this description, it was impossible they should unite and join to one another, their fall being so direct and perpendicular, and making so many parallel lines throughout?"
-        ],
-        "commentaries": [
-          "The author cites Epicurean philosophy, describing its conception of pleasure as nurturing virtue and treating hardships as trivial matters.",
-          "The author questions the Epicureans' initial atomic theory, highlighting its simplicity and the subsequent need to add random motion and hooks to explain cohesion."
-        ],
-        "canonical_author": "Epicureans"
-      },
-      "goodreads_match": null,
-      "wikipedia_match": {
-        "title": "Epicurus",
-        "page_id": 10073,
-        "infoboxes": [
-          "philosopher"
-        ],
-        "categories": [
-          "4th-century BC Greek philosophers",
-          "3rd-century BC Greek philosophers",
-          "341 BC births",
-          "270 BC deaths",
-          "Ancient Greek epistemologists",
-          "Ancient Greek ethicists",
-          "Ancient Greek metaphysicians",
-          "Ancient Greek philosophers of mind",
-          "Ancient Greek physicists",
-          "Ancient Samians",
-          "Empiricists",
-          "Epicurean philosophers",
-          "Greek male writers",
-          "Materialists",
-          "Philosophers of death",
-          "Hellenistic-era philosophers in Athens"
-        ],
-        "birth_year": -341,
-        "death_year": -270
-      },
-      "edge": {
-        "target_type": "author",
-        "target_book_id": null,
-        "target_author_ids": [
-          "114041"
-        ],
-        "target_person": {
-          "title": "Epicurus",
-          "page_id": 10073,
-          "infoboxes": [
-            "philosopher"
-          ],
-          "categories": [
-            "4th-century BC Greek philosophers",
-            "3rd-century BC Greek philosophers",
-            "341 BC births",
-            "270 BC deaths",
-            "Ancient Greek epistemologists",
-            "Ancient Greek ethicists",
-            "Ancient Greek metaphysicians",
-            "Ancient Greek philosophers of mind",
-            "Ancient Greek physicists",
-            "Ancient Samians",
-            "Empiricists",
-            "Epicurean philosophers",
-            "Greek male writers",
-            "Materialists",
-            "Philosophers of death",
-            "Hellenistic-era philosophers in Athens"
-          ],
-          "birth_year": -341,
-          "death_year": -270
         }
       }
     },
@@ -23818,49 +23710,6 @@
           ],
           "birth_year": -99,
           "death_year": -55
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "Book of Wisdom",
-        "author": "Unknown",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "\"Quis hominum potest scire consilium Dei? Aut quis poterit cogitare quid velit Dominus?\" [\"Who of men can know the counsel of God? or who can think what the will of the Lord is.\"—Book of Wisdom, ix. 13.]"
-        ],
-        "commentaries": [
-          "The author cites a verse from the Book of Wisdom to emphasize the inscrutability of divine will and the folly of humans attempting to understand God's plans through reason alone."
-        ]
-      },
-      "goodreads_match": {
-        "title": "Book of Wisdom",
-        "authors": [
-          "Unknown"
-        ],
-        "original_year": -50,
-        "birth_year": null,
-        "death_year": null,
-        "nationality": "Jewish (Hellenistic)",
-        "description": "Also called the Wisdom of Solomon, a deuterocanonical book of the Old Testament written in Greek, likely composed in Alexandria between 100 BCE and 50 CE. It is included in the Septuagint and Catholic/Orthodox Bibles, but not in the Hebrew Bible or most Protestant canons.",
-        "book_id": "web_25526772",
-        "author_meta": {
-          "birth_year": null,
-          "death_year": null,
-          "main_genre": null,
-          "nationality": null
-        }
-      },
-      "wikipedia_match": {
-        "title": "Unknown"
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "web_25526772",
-        "target_author_ids": [],
-        "target_person": {
-          "title": "Unknown"
         }
       }
     },
