@@ -1,0 +1,4009 @@
+{
+  "source": {
+    "title": "Beyond Good and Evil",
+    "authors": [
+      "Friedrich Nietzsche"
+    ],
+    "goodreads_id": "12321",
+    "calibre_id": null,
+    "publication_year": 1886
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Shakespeare",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The case is not different with Shakespeare, that marvelous Spanish-Moorish-Saxon synthesis of taste, over whom an ancient Athenian of the circle of AEschylus would have half-killed himself with laughter or irritation: but we--accept precisely this wild motleyness, this medley of the most delicate, the most coarse, and the most artificial, with a secret confidence and cordiality; we enjoy it as a refinement of art reserved expressly for us"
+        ],
+        "commentaries": [
+          "The author cites Shakespeare as an example of a complex, hybrid artist whose work is embraced by modern Europeans with historical sense, despite its potentially jarring contrasts for earlier cultures."
+        ],
+        "canonical_author": "Shakespeare"
+      },
+      "goodreads_match": {
+        "author_id": "947",
+        "name": "William Shakespeare",
+        "average_rating": "3.86",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": 1564,
+          "death_year": -1616,
+          "main_genre": "drama",
+          "nationality": "English"
+        }
+      },
+      "wikipedia_match": {
+        "title": "William Shakespeare",
+        "page_id": 32897,
+        "birth_year": 1564,
+        "death_year": 1616
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "947"
+        ],
+        "target_person": {
+          "title": "William Shakespeare",
+          "page_id": 32897,
+          "birth_year": 1564,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Heinrich Heine",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "not to speak of Heinrich Heine, who has long ago been re-incarnated in the more refined and fastidious lyrists of Paris"
+        ],
+        "commentaries": [
+          "The author notes that Heinrich Heine's influence has been absorbed and continued by refined lyricists in Paris, indicating his lasting impact on French culture."
+        ],
+        "canonical_author": "Heinrich Heine"
+      },
+      "goodreads_match": {
+        "author_id": "16071",
+        "name": "Heinrich Heine",
+        "average_rating": "3.92",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Heinrich Heine",
+          "page_id": 104641,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Heinrich Heine| ",
+            "1797 births",
+            "1856 deaths",
+            "Writers from D\u00fcsseldorf",
+            "19th-century Christians",
+            "19th-century German Jews",
+            "19th-century German writers",
+            "19th-century German male writers",
+            "German Ashkenazi Jews",
+            "German Christians",
+            "German duellists",
+            "German emigrants to France",
+            "German Lutherans",
+            "19th-century German poets",
+            "German male poets",
+            "German satirists",
+            "German satirical poets",
+            "German skeptics",
+            "Allgemeine Zeitung people",
+            "German social liberals",
+            "German travel writers",
+            "French-language German writers",
+            "Jewish German writers",
+            "Jewish poets",
+            "Saint-Simonists",
+            "University of Bonn alumni",
+            "University of G\u00f6ttingen alumni",
+            "Burials at Montmartre Cemetery",
+            "Critics of atheism",
+            "Epic poets"
+          ],
+          "birth_year": 1797,
+          "death_year": 1856
+        },
+        "author_meta": {
+          "birth_year": 1797,
+          "death_year": 1856,
+          "main_genre": "poetry",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Heinrich Heine",
+        "page_id": 104641,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Heinrich Heine| ",
+          "1797 births",
+          "1856 deaths",
+          "Writers from D\u00fcsseldorf",
+          "19th-century Christians",
+          "19th-century German Jews",
+          "19th-century German writers",
+          "19th-century German male writers",
+          "German Ashkenazi Jews",
+          "German Christians",
+          "German duellists",
+          "German emigrants to France",
+          "German Lutherans",
+          "19th-century German poets",
+          "German male poets",
+          "German satirists",
+          "German satirical poets",
+          "German skeptics",
+          "Allgemeine Zeitung people",
+          "German social liberals",
+          "German travel writers",
+          "French-language German writers",
+          "Jewish German writers",
+          "Jewish poets",
+          "Saint-Simonists",
+          "University of Bonn alumni",
+          "University of G\u00f6ttingen alumni",
+          "Burials at Montmartre Cemetery",
+          "Critics of atheism",
+          "Epic poets"
+        ],
+        "birth_year": 1797,
+        "death_year": 1856
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "16071"
+        ],
+        "target_person": {
+          "title": "Heinrich Heine",
+          "page_id": 104641,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Heinrich Heine| ",
+            "1797 births",
+            "1856 deaths",
+            "Writers from D\u00fcsseldorf",
+            "19th-century Christians",
+            "19th-century German Jews",
+            "19th-century German writers",
+            "19th-century German male writers",
+            "German Ashkenazi Jews",
+            "German Christians",
+            "German duellists",
+            "German emigrants to France",
+            "German Lutherans",
+            "19th-century German poets",
+            "German male poets",
+            "German satirists",
+            "German satirical poets",
+            "German skeptics",
+            "Allgemeine Zeitung people",
+            "German social liberals",
+            "German travel writers",
+            "French-language German writers",
+            "Jewish German writers",
+            "Jewish poets",
+            "Saint-Simonists",
+            "University of Bonn alumni",
+            "University of G\u00f6ttingen alumni",
+            "Burials at Montmartre Cemetery",
+            "Critics of atheism",
+            "Epic poets"
+          ],
+          "birth_year": 1797,
+          "death_year": 1856
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Helvetius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "just as he had already stalked in the footsteps of the respectable Helvetius!"
+        ],
+        "commentaries": [
+          "The author references Helvetius as an influence on Bentham and the utilitarian tradition."
+        ],
+        "canonical_author": "Helvetius"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Claude Adrien Helv\u00e9tius",
+          "page_id": 196196,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Writers from Paris",
+            "1715 births",
+            "1771 deaths",
+            "18th-century atheists",
+            "18th-century French writers",
+            "18th-century French male writers",
+            "18th-century French philosophers",
+            "French atheism activists",
+            "Atheist philosophers",
+            "Fermiers g\u00e9n\u00e9raux",
+            "Members of the French Academy of Sciences",
+            "Enlightenment philosophers",
+            "French ethicists",
+            "French Freemasons"
+          ],
+          "birth_year": 1715,
+          "death_year": 1771
+        },
+        "author_meta": {
+          "birth_year": 1715,
+          "death_year": 1771,
+          "main_genre": "Philosophy",
+          "nationality": "French"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Claude Adrien Helv\u00e9tius",
+        "page_id": 196196,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Writers from Paris",
+          "1715 births",
+          "1771 deaths",
+          "18th-century atheists",
+          "18th-century French writers",
+          "18th-century French male writers",
+          "18th-century French philosophers",
+          "French atheism activists",
+          "Atheist philosophers",
+          "Fermiers g\u00e9n\u00e9raux",
+          "Members of the French Academy of Sciences",
+          "Enlightenment philosophers",
+          "French ethicists",
+          "French Freemasons"
+        ],
+        "birth_year": 1715,
+        "death_year": 1771
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Claude Adrien Helv\u00e9tius",
+          "page_id": 196196,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Writers from Paris",
+            "1715 births",
+            "1771 deaths",
+            "18th-century atheists",
+            "18th-century French writers",
+            "18th-century French male writers",
+            "18th-century French philosophers",
+            "French atheism activists",
+            "Atheist philosophers",
+            "Fermiers g\u00e9n\u00e9raux",
+            "Members of the French Academy of Sciences",
+            "Enlightenment philosophers",
+            "French ethicists",
+            "French Freemasons"
+          ],
+          "birth_year": 1715,
+          "death_year": 1771
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Descartes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Unless one should make an exception in the case of Descartes, the father of rationalism (and consequently the grandfather of the Revolution), who recognized only the authority of reason: but reason is only a tool, and Descartes was superficial."
+        ],
+        "commentaries": [
+          "The author cites Descartes as the founder of rationalism, critiquing his exclusive reliance on reason as superficial."
+        ],
+        "canonical_author": "Descartes"
+      },
+      "goodreads_match": {
+        "author_id": "36556",
+        "name": "Rene Descartes",
+        "average_rating": "3.70",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Ren\u00e9 Descartes",
+          "page_id": 25525,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Ren\u00e9 Descartes| ",
+            "Cartesianism|*",
+            "1596 births",
+            "1650 deaths",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "17th-century French scientists",
+            "17th-century French non-fiction writers",
+            "17th-century writers in Latin",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Aphorists",
+            "Augustinian philosophers",
+            "Burials at Saint-Germain-des-Pr\u00e9s (abbey)",
+            "Catholic philosophers",
+            "French consciousness researchers and theorists",
+            "Constructed language creators",
+            "Critics of animal rights",
+            "Deaths from pneumonia in Sweden",
+            "Dualists",
+            "Enlightenment philosophers",
+            "French emigrants",
+            "Immigrants to the Dutch Republic",
+            "French ethicists",
+            "French expatriates in Sweden",
+            "French expatriates in the Dutch Republic",
+            "French logicians",
+            "French mercenaries",
+            "French music theorists"
+          ],
+          "birth_year": 1596,
+          "death_year": 1650
+        },
+        "author_meta": {
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ren\u00e9 Descartes",
+        "page_id": 25525,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Ren\u00e9 Descartes| ",
+          "Cartesianism|*",
+          "1596 births",
+          "1650 deaths",
+          "17th-century French mathematicians",
+          "17th-century French philosophers",
+          "17th-century French scientists",
+          "17th-century French non-fiction writers",
+          "17th-century writers in Latin",
+          "17th-century French male writers",
+          "17th-century Roman Catholics",
+          "Age of Enlightenment",
+          "Aphorists",
+          "Augustinian philosophers",
+          "Burials at Saint-Germain-des-Pr\u00e9s (abbey)",
+          "Catholic philosophers",
+          "French consciousness researchers and theorists",
+          "Constructed language creators",
+          "Critics of animal rights",
+          "Deaths from pneumonia in Sweden",
+          "Dualists",
+          "Enlightenment philosophers",
+          "French emigrants",
+          "Immigrants to the Dutch Republic",
+          "French ethicists",
+          "French expatriates in Sweden",
+          "French expatriates in the Dutch Republic",
+          "French logicians",
+          "French mercenaries",
+          "French music theorists"
+        ],
+        "birth_year": 1596,
+        "death_year": 1650
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "36556"
+        ],
+        "target_person": {
+          "title": "Ren\u00e9 Descartes",
+          "page_id": 25525,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Ren\u00e9 Descartes| ",
+            "Cartesianism|*",
+            "1596 births",
+            "1650 deaths",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "17th-century French scientists",
+            "17th-century French non-fiction writers",
+            "17th-century writers in Latin",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Aphorists",
+            "Augustinian philosophers",
+            "Burials at Saint-Germain-des-Pr\u00e9s (abbey)",
+            "Catholic philosophers",
+            "French consciousness researchers and theorists",
+            "Constructed language creators",
+            "Critics of animal rights",
+            "Deaths from pneumonia in Sweden",
+            "Dualists",
+            "Enlightenment philosophers",
+            "French emigrants",
+            "Immigrants to the Dutch Republic",
+            "French ethicists",
+            "French expatriates in Sweden",
+            "French expatriates in the Dutch Republic",
+            "French logicians",
+            "French mercenaries",
+            "French music theorists"
+          ],
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Horace",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "An educator who nowadays preached truthfulness above everything else, and called out constantly to his pupils: \"Be true! Be natural! Show yourselves as you are!\" --even such a virtuous and sincere ass would learn in a short time to have recourse to the FURCA of Horace, NATURAM EXPELLERE: with what results? \"Plebeianism\" USQUE RECURRET."
+        ],
+        "commentaries": [
+          "The author references Horace's phrase 'Naturam expellere furca, tamen usque recurret' (You may drive out Nature with a pitchfork, yet she will ever return) to illustrate the futility of education trying to suppress inherited plebeian traits."
+        ],
+        "canonical_author": "Horace"
+      },
+      "goodreads_match": {
+        "author_id": "3341504",
+        "name": "Horace",
+        "average_rating": "3.98",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": -65,
+          "death_year": -8,
+          "main_genre": "lyric poetry",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Horace",
+        "birth_year": -65,
+        "death_year": -8
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3341504"
+        ],
+        "target_person": {
+          "title": "Horace",
+          "birth_year": -65,
+          "death_year": -8
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Epicurean",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "it operates upon them as the Epicurean philosophy usually operates upon sufferers of a higher order"
+        ],
+        "commentaries": [
+          "The author references Epicurean philosophy as a comparative example of how religion can refine and justify suffering for the common man."
+        ],
+        "canonical_author": "Epicurean"
+      },
+      "goodreads_match": {
+        "author_id": "114041",
+        "name": "Epicurus",
+        "average_rating": "3.94",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": -341,
+          "death_year": -270,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Epicurean",
+        "birth_year": -341,
+        "death_year": -270
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "114041"
+        ],
+        "target_person": {
+          "title": "Epicurean",
+          "birth_year": -341,
+          "death_year": -270
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Herbert Spencer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "now that the influence of respectable but mediocre Englishmen--I may mention Darwin, John Stuart Mill, and Herbert Spencer--begins to gain the ascendancy in the middle-class region of European taste."
+        ],
+        "commentaries": [
+          "The author includes Herbert Spencer among the mediocre English thinkers whose influence is becoming dominant in European middle-class taste."
+        ],
+        "canonical_author": "Herbert Spencer"
+      },
+      "goodreads_match": {
+        "author_id": "52666",
+        "name": "Herbert Spencer",
+        "average_rating": "3.85",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Herbert Spencer",
+          "page_id": 248859,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Herbert Spencer| ",
+            "19th-century British economists",
+            "19th-century English philosophers",
+            "20th-century English philosophers",
+            "1820 births",
+            "1903 deaths",
+            "British anti-suffragists",
+            "British male feminists",
+            "English ethicists",
+            "Burials at Highgate Cemetery",
+            "Economic sociologists",
+            "English agnostics",
+            "English anthropologists",
+            "English biologists",
+            "English feminist writers",
+            "English libertarians",
+            "English male non-fiction writers",
+            "English political philosophers",
+            "English political writers",
+            "English rhetoricians",
+            "English sociologists",
+            "Functionalism (social theory)",
+            "History of libertarianism",
+            "Lamarckism",
+            "Libertarian economists",
+            "Libertarian theorists",
+            "Male critics of feminism",
+            "People from Derby",
+            "Philosophers of culture",
+            "Philosophers of economics"
+          ],
+          "birth_year": 1820,
+          "death_year": 1903
+        },
+        "author_meta": {
+          "birth_year": 1820,
+          "death_year": 1903,
+          "main_genre": "Philosophy",
+          "nationality": "English"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Herbert Spencer",
+        "page_id": 248859,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Herbert Spencer| ",
+          "19th-century British economists",
+          "19th-century English philosophers",
+          "20th-century English philosophers",
+          "1820 births",
+          "1903 deaths",
+          "British anti-suffragists",
+          "British male feminists",
+          "English ethicists",
+          "Burials at Highgate Cemetery",
+          "Economic sociologists",
+          "English agnostics",
+          "English anthropologists",
+          "English biologists",
+          "English feminist writers",
+          "English libertarians",
+          "English male non-fiction writers",
+          "English political philosophers",
+          "English political writers",
+          "English rhetoricians",
+          "English sociologists",
+          "Functionalism (social theory)",
+          "History of libertarianism",
+          "Lamarckism",
+          "Libertarian economists",
+          "Libertarian theorists",
+          "Male critics of feminism",
+          "People from Derby",
+          "Philosophers of culture",
+          "Philosophers of economics"
+        ],
+        "birth_year": 1820,
+        "death_year": 1903
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "52666"
+        ],
+        "target_person": {
+          "title": "Herbert Spencer",
+          "page_id": 248859,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Herbert Spencer| ",
+            "19th-century British economists",
+            "19th-century English philosophers",
+            "20th-century English philosophers",
+            "1820 births",
+            "1903 deaths",
+            "British anti-suffragists",
+            "British male feminists",
+            "English ethicists",
+            "Burials at Highgate Cemetery",
+            "Economic sociologists",
+            "English agnostics",
+            "English anthropologists",
+            "English biologists",
+            "English feminist writers",
+            "English libertarians",
+            "English male non-fiction writers",
+            "English political philosophers",
+            "English political writers",
+            "English rhetoricians",
+            "English sociologists",
+            "Functionalism (social theory)",
+            "History of libertarianism",
+            "Lamarckism",
+            "Libertarian economists",
+            "Libertarian theorists",
+            "Male critics of feminism",
+            "People from Derby",
+            "Philosophers of culture",
+            "Philosophers of economics"
+          ],
+          "birth_year": 1820,
+          "death_year": 1903
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bentham",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "in the footsteps of Bentham"
+        ],
+        "commentaries": [
+          "The author mentions Bentham as a predecessor followed by the English utilitarians."
+        ],
+        "canonical_author": "Bentham"
+      },
+      "goodreads_match": {
+        "author_id": "59867",
+        "name": "Jeremy Bentham",
+        "average_rating": "3.60",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Jeremy Bentham",
+          "page_id": 46038,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1748 births",
+            "1832 deaths",
+            "People with Asperger syndrome",
+            "18th century in LGBTQ history",
+            "18th-century atheists",
+            "19th-century atheists",
+            "18th-century British philosophers",
+            "19th-century British philosophers",
+            "18th-century English writers",
+            "18th-century English male writers",
+            "19th-century English writers",
+            "Animal rights scholars",
+            "Atheist philosophers",
+            "British ethicists",
+            "British reformers",
+            "British social liberals",
+            "Consequentialists",
+            "English atheists",
+            "English human rights activists",
+            "English male non-fiction writers",
+            "English philosophers",
+            "English political philosophers",
+            "Jeremy Bentham",
+            "English autistic people",
+            "LGBTQ history in the United Kingdom",
+            "Mummies",
+            "People associated with University College London",
+            "People educated at Westminster School, London",
+            "People from the City of London",
+            "Philosophers of law"
+          ],
+          "birth_year": 1748,
+          "death_year": 1832
+        },
+        "author_meta": {
+          "birth_year": 1748,
+          "death_year": 1832,
+          "main_genre": "Philosophy",
+          "nationality": "British"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Jeremy Bentham",
+        "page_id": 46038,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1748 births",
+          "1832 deaths",
+          "People with Asperger syndrome",
+          "18th century in LGBTQ history",
+          "18th-century atheists",
+          "19th-century atheists",
+          "18th-century British philosophers",
+          "19th-century British philosophers",
+          "18th-century English writers",
+          "18th-century English male writers",
+          "19th-century English writers",
+          "Animal rights scholars",
+          "Atheist philosophers",
+          "British ethicists",
+          "British reformers",
+          "British social liberals",
+          "Consequentialists",
+          "English atheists",
+          "English human rights activists",
+          "English male non-fiction writers",
+          "English philosophers",
+          "English political philosophers",
+          "Jeremy Bentham",
+          "English autistic people",
+          "LGBTQ history in the United Kingdom",
+          "Mummies",
+          "People associated with University College London",
+          "People educated at Westminster School, London",
+          "People from the City of London",
+          "Philosophers of law"
+        ],
+        "birth_year": 1748,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "59867"
+        ],
+        "target_person": {
+          "title": "Jeremy Bentham",
+          "page_id": 46038,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1748 births",
+            "1832 deaths",
+            "People with Asperger syndrome",
+            "18th century in LGBTQ history",
+            "18th-century atheists",
+            "19th-century atheists",
+            "18th-century British philosophers",
+            "19th-century British philosophers",
+            "18th-century English writers",
+            "18th-century English male writers",
+            "19th-century English writers",
+            "Animal rights scholars",
+            "Atheist philosophers",
+            "British ethicists",
+            "British reformers",
+            "British social liberals",
+            "Consequentialists",
+            "English atheists",
+            "English human rights activists",
+            "English male non-fiction writers",
+            "English philosophers",
+            "English political philosophers",
+            "Jeremy Bentham",
+            "English autistic people",
+            "LGBTQ history in the United Kingdom",
+            "Mummies",
+            "People associated with University College London",
+            "People educated at Westminster School, London",
+            "People from the City of London",
+            "Philosophers of law"
+          ],
+          "birth_year": 1748,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Petronius",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "so Aristophanes and Petronius are untranslatable for him.",
+          "Finally, who would venture on a German translation of Petronius, who, more than any great musician hitherto, was a master of PRESTO in invention, ideas, and words?"
+        ],
+        "commentaries": [
+          "The author states that Petronius is untranslatable for Germans due to stylistic tempo differences.",
+          "The author again cites Petronius, emphasizing his mastery of fast tempo in writing and the difficulty of translating him into German."
+        ],
+        "canonical_author": "Petronius"
+      },
+      "goodreads_match": {
+        "author_id": "7900823",
+        "name": "Petronius Arbiter",
+        "average_rating": "3.84",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Petronius",
+          "page_id": 248171,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "20s births",
+            "Year of birth uncertain",
+            "66 deaths",
+            "Suffect consuls of Imperial Rome",
+            "Suicides in Ancient Rome",
+            "Classical Latin novelists",
+            "1st-century Roman poets",
+            "Silver Age Latin writers",
+            "Suicides by sharp instrument in Italy",
+            "1st-century Romans",
+            "1st-century writers in Latin",
+            "Ancient Roman satirists",
+            "Petronii",
+            "Ancient Massaliotes"
+          ],
+          "birth_year": null,
+          "death_year": 66
+        },
+        "author_meta": {
+          "birth_year": -27,
+          "death_year": 66,
+          "main_genre": "Satire",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Petronius",
+        "page_id": 248171,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "20s births",
+          "Year of birth uncertain",
+          "66 deaths",
+          "Suffect consuls of Imperial Rome",
+          "Suicides in Ancient Rome",
+          "Classical Latin novelists",
+          "1st-century Roman poets",
+          "Silver Age Latin writers",
+          "Suicides by sharp instrument in Italy",
+          "1st-century Romans",
+          "1st-century writers in Latin",
+          "Ancient Roman satirists",
+          "Petronii",
+          "Ancient Massaliotes"
+        ],
+        "birth_year": 27,
+        "death_year": 66
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7900823"
+        ],
+        "target_person": {
+          "title": "Petronius",
+          "page_id": 248171,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "20s births",
+            "Year of birth uncertain",
+            "66 deaths",
+            "Suffect consuls of Imperial Rome",
+            "Suicides in Ancient Rome",
+            "Classical Latin novelists",
+            "1st-century Roman poets",
+            "Silver Age Latin writers",
+            "Suicides by sharp instrument in Italy",
+            "1st-century Romans",
+            "1st-century writers in Latin",
+            "Ancient Roman satirists",
+            "Petronii",
+            "Ancient Massaliotes"
+          ],
+          "birth_year": 27,
+          "death_year": 66
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Kleist",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Those great poets, for example, such as Byron, Musset, Poe, Leopardi, Kleist, Gogol (I do not venture to mention much greater names, but I have them in my mind), as they now appear, and were perhaps obliged to be: men of the moment, enthusiastic, sensuous, and childish, light- minded and impulsive in their trust and distrust..."
+        ],
+        "commentaries": [
+          "The author cites Heinrich von Kleist as an example of a 'great poet' who is ultimately a tormented and flawed 'man of the moment,' using his work for personal revenge or forgetfulness."
+        ],
+        "canonical_author": "Kleist"
+      },
+      "goodreads_match": {
+        "author_id": "54427",
+        "name": "Heinrich von Kleist",
+        "average_rating": "3.58",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Heinrich von Kleist",
+          "page_id": 216556,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Heinrich von Kleist| ",
+            "1777 births",
+            "1811 deaths",
+            "1810s suicides",
+            "18th-century German poets",
+            "19th-century German poets",
+            "19th-century German novelists",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "People from Frankfurt (Oder)",
+            "People from the Margraviate of Brandenburg",
+            "Kleist family|Heinrich",
+            "German male dramatists and playwrights",
+            "Writers from Brandenburg",
+            "Suicides by firearm in Germany",
+            "Joint suicides",
+            "European University Viadrina alumni",
+            "Prussian Army personnel",
+            "Prussian military officers",
+            "German military personnel of the French Revolutionary Wars",
+            "Poets from the Kingdom of Prussia",
+            "German male poets",
+            "19th-century German short story writers",
+            "German male novelists",
+            "German male short story writers",
+            "19th-century German journalists",
+            "German male journalists",
+            "19th-century German essayists"
+          ],
+          "birth_year": 1777,
+          "death_year": 1811
+        },
+        "author_meta": {
+          "birth_year": 1777,
+          "death_year": 1811,
+          "main_genre": "Drama",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Heinrich von Kleist",
+        "page_id": 216556,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Heinrich von Kleist| ",
+          "1777 births",
+          "1811 deaths",
+          "1810s suicides",
+          "18th-century German poets",
+          "19th-century German poets",
+          "19th-century German novelists",
+          "19th-century German dramatists and playwrights",
+          "19th-century German male writers",
+          "People from Frankfurt (Oder)",
+          "People from the Margraviate of Brandenburg",
+          "Kleist family|Heinrich",
+          "German male dramatists and playwrights",
+          "Writers from Brandenburg",
+          "Suicides by firearm in Germany",
+          "Joint suicides",
+          "European University Viadrina alumni",
+          "Prussian Army personnel",
+          "Prussian military officers",
+          "German military personnel of the French Revolutionary Wars",
+          "Poets from the Kingdom of Prussia",
+          "German male poets",
+          "19th-century German short story writers",
+          "German male novelists",
+          "German male short story writers",
+          "19th-century German journalists",
+          "German male journalists",
+          "19th-century German essayists"
+        ],
+        "birth_year": 1777,
+        "death_year": 1811
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "54427"
+        ],
+        "target_person": {
+          "title": "Heinrich von Kleist",
+          "page_id": 216556,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Heinrich von Kleist| ",
+            "1777 births",
+            "1811 deaths",
+            "1810s suicides",
+            "18th-century German poets",
+            "19th-century German poets",
+            "19th-century German novelists",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "People from Frankfurt (Oder)",
+            "People from the Margraviate of Brandenburg",
+            "Kleist family|Heinrich",
+            "German male dramatists and playwrights",
+            "Writers from Brandenburg",
+            "Suicides by firearm in Germany",
+            "Joint suicides",
+            "European University Viadrina alumni",
+            "Prussian Army personnel",
+            "Prussian military officers",
+            "German military personnel of the French Revolutionary Wars",
+            "Poets from the Kingdom of Prussia",
+            "German male poets",
+            "19th-century German short story writers",
+            "German male novelists",
+            "German male short story writers",
+            "19th-century German journalists",
+            "German male journalists",
+            "19th-century German essayists"
+          ],
+          "birth_year": 1777,
+          "death_year": 1811
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Henri Beyle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and as the most successful expression of genuine French curiosity and inventive talent in this domain of delicate thrills, Henri Beyle may be noted; that remarkable anticipatory and forerunning man, who, with a Napoleonic TEMPO, traversed HIS Europe, in fact, several centuries of the European soul, as a surveyor and discoverer thereof"
+        ],
+        "commentaries": [
+          "The author praises Henri Beyle (Stendhal) as a profound psychologist and forerunner who explored the European soul, highlighting his unique French psychological curiosity and talent."
+        ],
+        "canonical_author": "Henri Beyle"
+      },
+      "goodreads_match": {
+        "author_id": "1481537",
+        "name": "Stendhal",
+        "average_rating": "3.84",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Stendhal",
+          "page_id": 26773,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Stendhal| ",
+            "1783 births",
+            "1842 deaths",
+            "19th-century French novelists",
+            "19th-century French short story writers",
+            "19th-century French writers",
+            "19th-century pseudonymous writers",
+            "Burials at Montmartre Cemetery",
+            "Conseil d'\u00c9tat (France)",
+            "French agnostics",
+            "French biographers",
+            "French male essayists",
+            "French male novelists",
+            "French male short story writers",
+            "French military personnel of the Napoleonic Wars",
+            "French psychological fiction writers",
+            "French travel writers",
+            "French male biographers",
+            "Writers of the Romantic era",
+            "Writers from Grenoble",
+            "Rossini scholars"
+          ],
+          "birth_year": 1783,
+          "death_year": 1842
+        },
+        "author_meta": {
+          "birth_year": 1783,
+          "death_year": 1842,
+          "main_genre": "Realism",
+          "nationality": "French"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Stendhal",
+        "page_id": 26773,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Stendhal| ",
+          "1783 births",
+          "1842 deaths",
+          "19th-century French novelists",
+          "19th-century French short story writers",
+          "19th-century French writers",
+          "19th-century pseudonymous writers",
+          "Burials at Montmartre Cemetery",
+          "Conseil d'\u00c9tat (France)",
+          "French agnostics",
+          "French biographers",
+          "French male essayists",
+          "French male novelists",
+          "French male short story writers",
+          "French military personnel of the Napoleonic Wars",
+          "French psychological fiction writers",
+          "French travel writers",
+          "French male biographers",
+          "Writers of the Romantic era",
+          "Writers from Grenoble",
+          "Rossini scholars"
+        ],
+        "birth_year": 1783,
+        "death_year": 1842
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1481537"
+        ],
+        "target_person": {
+          "title": "Stendhal",
+          "page_id": 26773,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Stendhal| ",
+            "1783 births",
+            "1842 deaths",
+            "19th-century French novelists",
+            "19th-century French short story writers",
+            "19th-century French writers",
+            "19th-century pseudonymous writers",
+            "Burials at Montmartre Cemetery",
+            "Conseil d'\u00c9tat (France)",
+            "French agnostics",
+            "French biographers",
+            "French male essayists",
+            "French male novelists",
+            "French male short story writers",
+            "French military personnel of the Napoleonic Wars",
+            "French psychological fiction writers",
+            "French travel writers",
+            "French male biographers",
+            "Writers of the Romantic era",
+            "Writers from Grenoble",
+            "Rossini scholars"
+          ],
+          "birth_year": 1783,
+          "death_year": 1842
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sacchetti",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "From old Florentine novels--moreover, from life: Buona femmina e mala femmina vuol bastone.--Sacchetti, Nov. 86."
+        ],
+        "commentaries": [
+          "The author cites a proverb from an old Florentine novel by Sacchetti to illustrate a point about women."
+        ],
+        "canonical_author": "Sacchetti"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Franco Sacchetti",
+          "page_id": 1846185,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1330s births",
+            "1400s deaths",
+            "Italian poets",
+            "Italian male poets",
+            "Italian novelists",
+            "14th-century people from the Republic of Florence",
+            "Writers from Florence",
+            "Italian male novelists"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": 1332,
+          "death_year": 1400,
+          "main_genre": "Novella/Poetry",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Sacchetti",
+        "page_id": 1846185,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1330s births",
+          "1400s deaths",
+          "Italian poets",
+          "Italian male poets",
+          "Italian novelists",
+          "14th-century people from the Republic of Florence",
+          "Writers from Florence",
+          "Italian male novelists"
+        ],
+        "birth_year": 1332,
+        "death_year": 1400
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Sacchetti",
+          "page_id": 1846185,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1330s births",
+            "1400s deaths",
+            "Italian poets",
+            "Italian male poets",
+            "Italian novelists",
+            "14th-century people from the Republic of Florence",
+            "Writers from Florence",
+            "Italian male novelists"
+          ],
+          "birth_year": 1332,
+          "death_year": 1400
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Galiani",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "as in the case of the Abbe Galiani, the profoundest, acutest, and perhaps also filthiest man of his century--he was far profounder than Voltaire, and consequently also, a good deal more silent.",
+          "a thoughtful letter of Galiani to Madame d'Epinay",
+          "to use an expression of Galiani",
+          "There are free insolent minds which would fain conceal and deny that they are broken, proud, incurable hearts (the cynicism of Hamlet--the case of Galiani); and occasionally folly itself is the mask of an unfortunate OVER- ASSURED knowledge.",
+          "For as Galiani said, who was obliged to know it: VERTU EST ENTHOUSIASME."
+        ],
+        "commentaries": [
+          "The author cites Galiani as an example of a genius bound to an indiscreet nature, describing him as profound and acute.",
+          "The author references a letter by Galiani as a documentary source for early symptoms of Europe's moral decline.",
+          "The author cites Galiani as the source of a specific expression used to describe Helvetius.",
+          "The author references the Abb\u00e9 Galiani as a historical case, analogous to Hamlet, of a mind using cynicism or folly as a mask to conceal a broken heart and over-assured knowledge.",
+          "The author cites Galiani's statement that virtue is enthusiasm, using it to discuss deception and the appearance of stupidity."
+        ],
+        "canonical_author": "Galiani"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Ferdinando Galiani",
+          "page_id": 196213,
+          "infoboxes": [],
+          "categories": [
+            "1728 births",
+            "1787 deaths",
+            "People from Chieti",
+            "Italian economists",
+            "18th-century Italian philosophers",
+            "18th-century Italian writers",
+            " 18th-century Italian economists",
+            "18th-century Italian male writers",
+            "Writers from Naples",
+            "French-language Italian writers",
+            "Honorary members of the Saint Petersburg Academy of Sciences",
+            "Mercantilists",
+            "Enlightenment philosophers",
+            "Scholars from the Kingdom of Naples",
+            "Italian Enlightenment"
+          ],
+          "birth_year": 1728,
+          "death_year": 1787
+        },
+        "author_meta": {
+          "birth_year": 1728,
+          "death_year": 1787,
+          "main_genre": "Economics/Philosophy",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ferdinando Galiani",
+        "page_id": 196213,
+        "infoboxes": [],
+        "categories": [
+          "1728 births",
+          "1787 deaths",
+          "People from Chieti",
+          "Italian economists",
+          "18th-century Italian philosophers",
+          "18th-century Italian writers",
+          " 18th-century Italian economists",
+          "18th-century Italian male writers",
+          "Writers from Naples",
+          "French-language Italian writers",
+          "Honorary members of the Saint Petersburg Academy of Sciences",
+          "Mercantilists",
+          "Enlightenment philosophers",
+          "Scholars from the Kingdom of Naples",
+          "Italian Enlightenment"
+        ],
+        "birth_year": 1728,
+        "death_year": 1787
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Ferdinando Galiani",
+          "page_id": 196213,
+          "infoboxes": [],
+          "categories": [
+            "1728 births",
+            "1787 deaths",
+            "People from Chieti",
+            "Italian economists",
+            "18th-century Italian philosophers",
+            "18th-century Italian writers",
+            " 18th-century Italian economists",
+            "18th-century Italian male writers",
+            "Writers from Naples",
+            "French-language Italian writers",
+            "Honorary members of the Saint Petersburg Academy of Sciences",
+            "Mercantilists",
+            "Enlightenment philosophers",
+            "Scholars from the Kingdom of Naples",
+            "Italian Enlightenment"
+          ],
+          "birth_year": 1728,
+          "death_year": 1787
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Carlyle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the absurd muddle-head, Carlyle, who sought to conceal under passionate grimaces what he knew about himself: namely, what was LACKING in Carlyle--real POWER of intellect, real DEPTH of intellectual perception, in short, philosophy."
+        ],
+        "commentaries": [
+          "The author critiques Carlyle as an unphilosophical figure who lacks intellectual depth, using him as an example of what is deficient in the English character."
+        ],
+        "canonical_author": "Carlyle"
+      },
+      "goodreads_match": {
+        "author_id": "29951",
+        "name": "Thomas Carlyle",
+        "average_rating": "3.66",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Thomas Carlyle",
+          "page_id": 128422,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Thomas Carlyle| ",
+            "1795 births",
+            "1881 deaths",
+            "19th-century Scottish biographers",
+            "19th-century British essayists",
+            "19th-century Scottish historians",
+            "19th-century Scottish translators",
+            "19th-century Scottish novelists",
+            "19th-century Scottish philosophers",
+            "Alumni of the University of Edinburgh",
+            "Antisemitism in the United Kingdom",
+            "British anti-communists",
+            "Conservatism in the United Kingdom",
+            "Critics of Freemasonry",
+            "Critics of political economy",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Historians of the French Revolution",
+            "British lecturers",
+            "British white supremacists",
+            "People associated with the National Portrait Gallery",
+            "People educated at Annan Academy",
+            "People from Dumfries and Galloway",
+            "People of the Victorian era",
+            "Scottish proslavery activists",
+            "Racism in the United Kingdom",
+            "Recipients of the Pour le M\u00e9rite (civil class)",
+            "Rectors of the University of Edinburgh",
+            "Right-wing politics in the United Kingdom",
+            "Romantic critics of political economy",
+            "Scottish biographers"
+          ],
+          "birth_year": 1795,
+          "death_year": 1881
+        },
+        "author_meta": {
+          "birth_year": 1795,
+          "death_year": 1881,
+          "main_genre": "History and Social Commentary",
+          "nationality": "Scottish"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Thomas Carlyle",
+        "page_id": 128422,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Thomas Carlyle| ",
+          "1795 births",
+          "1881 deaths",
+          "19th-century Scottish biographers",
+          "19th-century British essayists",
+          "19th-century Scottish historians",
+          "19th-century Scottish translators",
+          "19th-century Scottish novelists",
+          "19th-century Scottish philosophers",
+          "Alumni of the University of Edinburgh",
+          "Antisemitism in the United Kingdom",
+          "British anti-communists",
+          "Conservatism in the United Kingdom",
+          "Critics of Freemasonry",
+          "Critics of political economy",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Historians of the French Revolution",
+          "British lecturers",
+          "British white supremacists",
+          "People associated with the National Portrait Gallery",
+          "People educated at Annan Academy",
+          "People from Dumfries and Galloway",
+          "People of the Victorian era",
+          "Scottish proslavery activists",
+          "Racism in the United Kingdom",
+          "Recipients of the Pour le M\u00e9rite (civil class)",
+          "Rectors of the University of Edinburgh",
+          "Right-wing politics in the United Kingdom",
+          "Romantic critics of political economy",
+          "Scottish biographers"
+        ],
+        "birth_year": 1795,
+        "death_year": 1881
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "29951"
+        ],
+        "target_person": {
+          "title": "Thomas Carlyle",
+          "page_id": 128422,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Thomas Carlyle| ",
+            "1795 births",
+            "1881 deaths",
+            "19th-century Scottish biographers",
+            "19th-century British essayists",
+            "19th-century Scottish historians",
+            "19th-century Scottish translators",
+            "19th-century Scottish novelists",
+            "19th-century Scottish philosophers",
+            "Alumni of the University of Edinburgh",
+            "Antisemitism in the United Kingdom",
+            "British anti-communists",
+            "Conservatism in the United Kingdom",
+            "Critics of Freemasonry",
+            "Critics of political economy",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Historians of the French Revolution",
+            "British lecturers",
+            "British white supremacists",
+            "People associated with the National Portrait Gallery",
+            "People educated at Annan Academy",
+            "People from Dumfries and Galloway",
+            "People of the Victorian era",
+            "Scottish proslavery activists",
+            "Racism in the United Kingdom",
+            "Recipients of the Pour le M\u00e9rite (civil class)",
+            "Rectors of the University of Edinburgh",
+            "Right-wing politics in the United Kingdom",
+            "Romantic critics of political economy",
+            "Scottish biographers"
+          ],
+          "birth_year": 1795,
+          "death_year": 1881
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Goethe",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "even Goethe's prose, in its mixture of stiffness and elegance, is no exception, as a reflection of the 'good old time' to which it belongs",
+          "as has been taught by Hafis and Goethe, the bold letting-go of the reins",
+          "and the latter when he interpreted it, 'the eternally feminine draws us ALOFT';",
+          "It is a question what Goethe really thought about the Germans?--But about many things around him he never spoke explicitly, and all his life he knew how to keep an astute silence--probably he had good reason for it.",
+          "\"One can only truly esteem him who does not LOOK OUT FOR himself.\" --Goethe to Rath Schlosser."
+        ],
+        "commentaries": [
+          "The author critiques Goethe's prose as reflecting an older German taste, describing it as stiff and elegant.",
+          "The author cites Goethe, alongside Hafis, as exemplifying a moral teaching that involves a complaisant surrender to the passions.",
+          "The author references Goethe's interpretation of the 'eternally feminine,' from Faust, as a belief about woman that he claims noble women oppose.",
+          "The author references Goethe as a thinker who maintained a deliberate silence on certain matters, implying a complex and strategic relationship to German identity.",
+          "The author quotes Goethe's statement to Rath Schlosser as a pithy aphorism on esteem and selflessness, presenting it without further elaboration."
+        ],
+        "canonical_author": "Goethe"
+      },
+      "goodreads_match": {
+        "author_id": "285217",
+        "name": "Johann Wolfgang von Goethe",
+        "average_rating": "3.79",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Johann Wolfgang von Goethe",
+          "page_id": 19242322,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Johann Wolfgang von Goethe| ",
+            "1749 births",
+            "1832 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German civil servants",
+            "18th-century German dramatists and playwrights",
+            "18th-century German male writers",
+            "18th-century German novelists",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century historians",
+            "18th-century travel writers",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German civil servants",
+            "19th-century German diplomats",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century historians",
+            "19th-century travel writers",
+            "Color scientists",
+            "Enlightenment philosophers",
+            "Epic poets",
+            "Epigrammatists"
+          ],
+          "birth_year": 1749,
+          "death_year": 1832
+        },
+        "author_meta": {
+          "birth_year": 1749,
+          "death_year": 1832,
+          "main_genre": "poetry",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Johann Wolfgang von Goethe",
+        "page_id": 19242322,
+        "infoboxes": [
+          "writer",
+          "officeholder "
+        ],
+        "categories": [
+          "Johann Wolfgang von Goethe| ",
+          "1749 births",
+          "1832 deaths",
+          "18th-century German educators",
+          "18th-century essayists",
+          "18th-century German civil servants",
+          "18th-century German dramatists and playwrights",
+          "18th-century German male writers",
+          "18th-century German novelists",
+          "18th-century German philosophers",
+          "18th-century German poets",
+          "18th-century historians",
+          "18th-century travel writers",
+          "19th-century German educators",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German civil servants",
+          "19th-century German diplomats",
+          "19th-century German dramatists and playwrights",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German poets",
+          "19th-century historians",
+          "19th-century travel writers",
+          "Color scientists",
+          "Enlightenment philosophers",
+          "Epic poets",
+          "Epigrammatists"
+        ],
+        "birth_year": 1749,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "285217"
+        ],
+        "target_person": {
+          "title": "Johann Wolfgang von Goethe",
+          "page_id": 19242322,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Johann Wolfgang von Goethe| ",
+            "1749 births",
+            "1832 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German civil servants",
+            "18th-century German dramatists and playwrights",
+            "18th-century German male writers",
+            "18th-century German novelists",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century historians",
+            "18th-century travel writers",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German civil servants",
+            "19th-century German diplomats",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century historians",
+            "19th-century travel writers",
+            "Color scientists",
+            "Enlightenment philosophers",
+            "Epic poets",
+            "Epigrammatists"
+          ],
+          "birth_year": 1749,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "St. Augustine",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "to use the expression of the holy rhetorician, St. Augustine, who was himself such a man."
+        ],
+        "commentaries": [
+          "The author quotes St. Augustine's expression 'Sabbath of Sabbaths' to describe a type of happiness sought by weak men in ages of dissolution."
+        ],
+        "canonical_author": "St. Augustine"
+      },
+      "goodreads_match": {
+        "author_id": "6819578",
+        "name": "Augustine of Hippo",
+        "average_rating": "3.91",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Augustine of Hippo",
+          "page_id": 2030,
+          "infoboxes": [
+            "saint",
+            "philosopher"
+          ],
+          "categories": [
+            "Augustine of Hippo| ",
+            "354 births",
+            "430 deaths",
+            "4th-century Berber people",
+            "4th-century bishops in Roman North Africa",
+            "4th-century Christian theologians",
+            "4th-century philosophers",
+            "4th-century Romans",
+            "4th-century writers in Latin",
+            "5th-century Berber people",
+            "5th-century bishops in Roman North Africa",
+            "5th-century Christian saints",
+            "5th-century Christian theologians",
+            "5th-century philosophers",
+            "5th-century Western Romans",
+            "5th-century writers in Latin",
+            "African philosophers",
+            "Amillennialism",
+            "Ancient Roman Christian mystics",
+            "Ancient Roman philosophers",
+            "Ancient Roman rhetoricians",
+            "Anglican saints",
+            "Augustinian Order| ",
+            "Augustinian philosophers",
+            "Aurelii|Augustinus",
+            "Autobiographers",
+            "Berber Christians",
+            "Burials at San Pietro in Ciel d'Oro",
+            "Catholic philosophers",
+            "Catholic saints"
+          ],
+          "birth_year": 354,
+          "death_year": 430
+        },
+        "author_meta": {
+          "birth_year": 354,
+          "death_year": -430,
+          "main_genre": "theology",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Augustine of Hippo",
+        "page_id": 2030,
+        "infoboxes": [
+          "saint",
+          "philosopher"
+        ],
+        "categories": [
+          "Augustine of Hippo| ",
+          "354 births",
+          "430 deaths",
+          "4th-century Berber people",
+          "4th-century bishops in Roman North Africa",
+          "4th-century Christian theologians",
+          "4th-century philosophers",
+          "4th-century Romans",
+          "4th-century writers in Latin",
+          "5th-century Berber people",
+          "5th-century bishops in Roman North Africa",
+          "5th-century Christian saints",
+          "5th-century Christian theologians",
+          "5th-century philosophers",
+          "5th-century Western Romans",
+          "5th-century writers in Latin",
+          "African philosophers",
+          "Amillennialism",
+          "Ancient Roman Christian mystics",
+          "Ancient Roman philosophers",
+          "Ancient Roman rhetoricians",
+          "Anglican saints",
+          "Augustinian Order| ",
+          "Augustinian philosophers",
+          "Aurelii|Augustinus",
+          "Autobiographers",
+          "Berber Christians",
+          "Burials at San Pietro in Ciel d'Oro",
+          "Catholic philosophers",
+          "Catholic saints"
+        ],
+        "birth_year": 354,
+        "death_year": 430
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6819578"
+        ],
+        "target_person": {
+          "title": "Augustine of Hippo",
+          "page_id": 2030,
+          "infoboxes": [
+            "saint",
+            "philosopher"
+          ],
+          "categories": [
+            "Augustine of Hippo| ",
+            "354 births",
+            "430 deaths",
+            "4th-century Berber people",
+            "4th-century bishops in Roman North Africa",
+            "4th-century Christian theologians",
+            "4th-century philosophers",
+            "4th-century Romans",
+            "4th-century writers in Latin",
+            "5th-century Berber people",
+            "5th-century bishops in Roman North Africa",
+            "5th-century Christian saints",
+            "5th-century Christian theologians",
+            "5th-century philosophers",
+            "5th-century Western Romans",
+            "5th-century writers in Latin",
+            "African philosophers",
+            "Amillennialism",
+            "Ancient Roman Christian mystics",
+            "Ancient Roman philosophers",
+            "Ancient Roman rhetoricians",
+            "Anglican saints",
+            "Augustinian Order| ",
+            "Augustinian philosophers",
+            "Aurelii|Augustinus",
+            "Autobiographers",
+            "Berber Christians",
+            "Burials at San Pietro in Ciel d'Oro",
+            "Catholic philosophers",
+            "Catholic saints"
+          ],
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pascal",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "the intellectual conscience of Pascal",
+          "as exemplified in the European Christian (Pascal, for instance)",
+          "to Pascal-like SACRIFIZIA DELL' INTELLETO"
+        ],
+        "commentaries": [
+          "The author references Pascal as an example of a soul with profound, bruised, and immense experience, specifically regarding the problem of knowledge and conscience, without mentioning a specific work.",
+          "The author cites Pascal as a specific example of the stunted, Christian type of man whose degeneration evokes horror.",
+          "The author references Pascal in the context of intellectual self-sacrifice and cruelty towards oneself."
+        ],
+        "canonical_author": "Pascal"
+      },
+      "goodreads_match": {
+        "author_id": "10994",
+        "name": "Blaise Pascal",
+        "average_rating": "3.97",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Blaise Pascal",
+          "page_id": 4068,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Blaise Pascal| ",
+            "1623 births",
+            "1662 deaths",
+            "Writers from Clermont-Ferrand",
+            "French Roman Catholic writers",
+            "17th-century French writers",
+            "17th-century French male writers",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "Aphorists",
+            "Christian apologists",
+            "Christian humanists",
+            "Roman Catholic mystics",
+            "Critics of atheism",
+            "Converts to Roman Catholicism",
+            "Dualists",
+            "French fluid dynamicists",
+            "French mathematicians",
+            "French physicists",
+            "17th-century French theologians",
+            "17th-century Christian mystics",
+            "People with hypochondriasis",
+            "Jansenists",
+            "French probability theorists",
+            "Catholic philosophers",
+            "17th-century Roman Catholics",
+            "Burials at Saint-\u00c9tienne-du-Mont",
+            "Cartesianism",
+            "Scientists from Clermont-Ferrand",
+            "Philosophers of pessimism"
+          ],
+          "birth_year": 1623,
+          "death_year": 1662
+        },
+        "author_meta": {
+          "birth_year": 1623,
+          "death_year": 1662,
+          "main_genre": "philosophy",
+          "nationality": "French"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Blaise Pascal",
+        "page_id": 4068,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Blaise Pascal| ",
+          "1623 births",
+          "1662 deaths",
+          "Writers from Clermont-Ferrand",
+          "French Roman Catholic writers",
+          "17th-century French writers",
+          "17th-century French male writers",
+          "17th-century French mathematicians",
+          "17th-century French philosophers",
+          "Aphorists",
+          "Christian apologists",
+          "Christian humanists",
+          "Roman Catholic mystics",
+          "Critics of atheism",
+          "Converts to Roman Catholicism",
+          "Dualists",
+          "French fluid dynamicists",
+          "French mathematicians",
+          "French physicists",
+          "17th-century French theologians",
+          "17th-century Christian mystics",
+          "People with hypochondriasis",
+          "Jansenists",
+          "French probability theorists",
+          "Catholic philosophers",
+          "17th-century Roman Catholics",
+          "Burials at Saint-\u00c9tienne-du-Mont",
+          "Cartesianism",
+          "Scientists from Clermont-Ferrand",
+          "Philosophers of pessimism"
+        ],
+        "birth_year": 1623,
+        "death_year": 1662
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "10994"
+        ],
+        "target_person": {
+          "title": "Blaise Pascal",
+          "page_id": 4068,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Blaise Pascal| ",
+            "1623 births",
+            "1662 deaths",
+            "Writers from Clermont-Ferrand",
+            "French Roman Catholic writers",
+            "17th-century French writers",
+            "17th-century French male writers",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "Aphorists",
+            "Christian apologists",
+            "Christian humanists",
+            "Roman Catholic mystics",
+            "Critics of atheism",
+            "Converts to Roman Catholicism",
+            "Dualists",
+            "French fluid dynamicists",
+            "French mathematicians",
+            "French physicists",
+            "17th-century French theologians",
+            "17th-century Christian mystics",
+            "People with hypochondriasis",
+            "Jansenists",
+            "French probability theorists",
+            "Catholic philosophers",
+            "17th-century Roman Catholics",
+            "Burials at Saint-\u00c9tienne-du-Mont",
+            "Cartesianism",
+            "Scientists from Clermont-Ferrand",
+            "Philosophers of pessimism"
+          ],
+          "birth_year": 1623,
+          "death_year": 1662
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hobbes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "\"Laughing is a bad infirmity of human nature, which every thinking mind will strive to overcome\" (Hobbes),"
+        ],
+        "commentaries": [
+          "The author references Hobbes to critique the view that laughter is a weakness, contrasting it with his own valuation of laughter as a sign of philosophical rank."
+        ],
+        "canonical_author": "Hobbes"
+      },
+      "goodreads_match": {
+        "author_id": "10122",
+        "name": "Thomas Hobbes",
+        "average_rating": "3.79",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Thomas Hobbes",
+          "page_id": 29823,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Thomas Hobbes| ",
+            "1588 births",
+            "1679 deaths",
+            "17th-century English writers",
+            "17th-century writers in Latin",
+            "17th-century English male writers",
+            "17th-century English philosophers",
+            "Alumni of Magdalen Hall, Oxford",
+            "Atomists",
+            "British critics of Christianity",
+            "British critics of religions",
+            "Critics of the Catholic Church",
+            "Empiricists",
+            "English expatriates in France",
+            "English mathematicians",
+            "English physicists",
+            "English political philosophers",
+            "English theologians",
+            "Epistemologists",
+            "Materialists",
+            "Metaphysicians",
+            "Ontologists",
+            "Writers from Malmesbury",
+            "Philosophers of culture",
+            "British philosophers of education",
+            "Philosophers of history",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of mathematics",
+            "Philosophers of mind"
+          ],
+          "birth_year": 1588,
+          "death_year": 1679
+        },
+        "author_meta": {
+          "birth_year": 1588,
+          "death_year": 1679
+        }
+      },
+      "wikipedia_match": {
+        "title": "Thomas Hobbes",
+        "page_id": 29823,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Thomas Hobbes| ",
+          "1588 births",
+          "1679 deaths",
+          "17th-century English writers",
+          "17th-century writers in Latin",
+          "17th-century English male writers",
+          "17th-century English philosophers",
+          "Alumni of Magdalen Hall, Oxford",
+          "Atomists",
+          "British critics of Christianity",
+          "British critics of religions",
+          "Critics of the Catholic Church",
+          "Empiricists",
+          "English expatriates in France",
+          "English mathematicians",
+          "English physicists",
+          "English political philosophers",
+          "English theologians",
+          "Epistemologists",
+          "Materialists",
+          "Metaphysicians",
+          "Ontologists",
+          "Writers from Malmesbury",
+          "Philosophers of culture",
+          "British philosophers of education",
+          "Philosophers of history",
+          "English philosophers of language",
+          "British philosophers of law",
+          "Philosophers of mathematics",
+          "Philosophers of mind"
+        ],
+        "birth_year": 1588,
+        "death_year": 1679
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "10122"
+        ],
+        "target_person": {
+          "title": "Thomas Hobbes",
+          "page_id": 29823,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Thomas Hobbes| ",
+            "1588 births",
+            "1679 deaths",
+            "17th-century English writers",
+            "17th-century writers in Latin",
+            "17th-century English male writers",
+            "17th-century English philosophers",
+            "Alumni of Magdalen Hall, Oxford",
+            "Atomists",
+            "British critics of Christianity",
+            "British critics of religions",
+            "Critics of the Catholic Church",
+            "Empiricists",
+            "English expatriates in France",
+            "English mathematicians",
+            "English physicists",
+            "English political philosophers",
+            "English theologians",
+            "Epistemologists",
+            "Materialists",
+            "Metaphysicians",
+            "Ontologists",
+            "Writers from Malmesbury",
+            "Philosophers of culture",
+            "British philosophers of education",
+            "Philosophers of history",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of mathematics",
+            "Philosophers of mind"
+          ],
+          "birth_year": 1588,
+          "death_year": 1679
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lessing",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Lessing is an exception, owing to his histrionic nature, which understood much, and was versed in many things; he who was not the translator of Bayle to no purpose, who took refuge willingly in the shadow of Diderot and Voltaire, and still more willingly among the Roman comedy-writers"
+        ],
+        "commentaries": [
+          "The author describes Lessing as an exception among German writers, noting his versatile nature and influences."
+        ],
+        "canonical_author": "Lessing"
+      },
+      "goodreads_match": {
+        "author_id": "7723",
+        "name": "Gotthold Ephraim Lessing",
+        "average_rating": "3.40",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Gotthold Ephraim Lessing",
+          "page_id": 12305,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Gotthold Ephraim Lessing| ",
+            "1729 births",
+            "1781 deaths",
+            "18th-century German dramatists and playwrights",
+            "18th-century German Protestant theologians",
+            "18th-century German poets",
+            "18th-century German philosophers",
+            "Christian poets",
+            "Enlightenment philosophers",
+            "German Christians",
+            "German male non-fiction writers",
+            "Members of the Prussian Academy of Sciences",
+            "People from Kamenz",
+            "Scholars from the Electorate of Saxony",
+            "People of the Age of Enlightenment",
+            "Protestant philosophers",
+            "Leipzig University alumni",
+            "University of Wittenberg alumni",
+            "Wolfenb\u00fcttel",
+            "German Enlightenment",
+            "German Freemasons",
+            "German male poets",
+            "German male dramatists and playwrights",
+            "Vossische Zeitung people",
+            "Spinozists",
+            "Poets from the Electorate of Saxony"
+          ],
+          "birth_year": 1729,
+          "death_year": 1781
+        },
+        "author_meta": {
+          "birth_year": 1919,
+          "death_year": 2013,
+          "main_genre": "Novel",
+          "nationality": "British"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Gotthold Ephraim Lessing",
+        "page_id": 12305,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Gotthold Ephraim Lessing| ",
+          "1729 births",
+          "1781 deaths",
+          "18th-century German dramatists and playwrights",
+          "18th-century German Protestant theologians",
+          "18th-century German poets",
+          "18th-century German philosophers",
+          "Christian poets",
+          "Enlightenment philosophers",
+          "German Christians",
+          "German male non-fiction writers",
+          "Members of the Prussian Academy of Sciences",
+          "People from Kamenz",
+          "Scholars from the Electorate of Saxony",
+          "People of the Age of Enlightenment",
+          "Protestant philosophers",
+          "Leipzig University alumni",
+          "University of Wittenberg alumni",
+          "Wolfenb\u00fcttel",
+          "German Enlightenment",
+          "German Freemasons",
+          "German male poets",
+          "German male dramatists and playwrights",
+          "Vossische Zeitung people",
+          "Spinozists",
+          "Poets from the Electorate of Saxony"
+        ],
+        "birth_year": 1729,
+        "death_year": 1781
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7723"
+        ],
+        "target_person": {
+          "title": "Gotthold Ephraim Lessing",
+          "page_id": 12305,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Gotthold Ephraim Lessing| ",
+            "1729 births",
+            "1781 deaths",
+            "18th-century German dramatists and playwrights",
+            "18th-century German Protestant theologians",
+            "18th-century German poets",
+            "18th-century German philosophers",
+            "Christian poets",
+            "Enlightenment philosophers",
+            "German Christians",
+            "German male non-fiction writers",
+            "Members of the Prussian Academy of Sciences",
+            "People from Kamenz",
+            "Scholars from the Electorate of Saxony",
+            "People of the Age of Enlightenment",
+            "Protestant philosophers",
+            "Leipzig University alumni",
+            "University of Wittenberg alumni",
+            "Wolfenb\u00fcttel",
+            "German Enlightenment",
+            "German Freemasons",
+            "German male poets",
+            "German male dramatists and playwrights",
+            "Vossische Zeitung people",
+            "Spinozists",
+            "Poets from the Electorate of Saxony"
+          ],
+          "birth_year": 1729,
+          "death_year": 1781
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Copernicus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the Pole Copernicus"
+        ],
+        "commentaries": [
+          "The author mentions Copernicus as a key figure who challenged sensory evidence by persuading people that the Earth does not stand still."
+        ],
+        "canonical_author": "Copernicus"
+      },
+      "goodreads_match": {
+        "author_id": "3072638",
+        "name": "Nicolaus Copernicus",
+        "average_rating": "4.17",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Nicolaus Copernicus",
+          "page_id": 323592,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Nicolaus Copernicus| ",
+            "1473 births",
+            "1543 deaths",
+            "15th-century German philosophers",
+            "15th-century Polish astronomers",
+            "16th-century economists",
+            "16th-century German astronomers",
+            "16th-century German male writers",
+            "16th-century German mathematicians",
+            "16th-century German philosophers",
+            "16th-century German writers",
+            "16th-century mathematicians",
+            "16th-century Polish astronomers",
+            "16th-century Polish male writers",
+            "16th-century Polish philosophers",
+            "16th-century Polish scientists",
+            "16th-century Polish writers",
+            "16th-century writers in Latin",
+            "Anglican saints",
+            "Burials at Frombork Cathedral",
+            "Canon law jurists",
+            "Canons of Warmia",
+            "Catholic clergy scientists",
+            "Copernican Revolution",
+            "German economists",
+            "German Roman Catholics",
+            "Jagiellonian University alumni",
+            "People celebrated in the Lutheran liturgical calendar",
+            "People from Royal Prussia",
+            "People from Toru\u0144"
+          ],
+          "birth_year": 1473,
+          "death_year": 1543
+        },
+        "author_meta": {
+          "birth_year": 1473,
+          "death_year": 1543,
+          "main_genre": "Astronomy",
+          "nationality": "Polish"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Nicolaus Copernicus",
+        "page_id": 323592,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Nicolaus Copernicus| ",
+          "1473 births",
+          "1543 deaths",
+          "15th-century German philosophers",
+          "15th-century Polish astronomers",
+          "16th-century economists",
+          "16th-century German astronomers",
+          "16th-century German male writers",
+          "16th-century German mathematicians",
+          "16th-century German philosophers",
+          "16th-century German writers",
+          "16th-century mathematicians",
+          "16th-century Polish astronomers",
+          "16th-century Polish male writers",
+          "16th-century Polish philosophers",
+          "16th-century Polish scientists",
+          "16th-century Polish writers",
+          "16th-century writers in Latin",
+          "Anglican saints",
+          "Burials at Frombork Cathedral",
+          "Canon law jurists",
+          "Canons of Warmia",
+          "Catholic clergy scientists",
+          "Copernican Revolution",
+          "German economists",
+          "German Roman Catholics",
+          "Jagiellonian University alumni",
+          "People celebrated in the Lutheran liturgical calendar",
+          "People from Royal Prussia",
+          "People from Toru\u0144"
+        ],
+        "birth_year": 1473,
+        "death_year": 1543
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3072638"
+        ],
+        "target_person": {
+          "title": "Nicolaus Copernicus",
+          "page_id": 323592,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Nicolaus Copernicus| ",
+            "1473 births",
+            "1543 deaths",
+            "15th-century German philosophers",
+            "15th-century Polish astronomers",
+            "16th-century economists",
+            "16th-century German astronomers",
+            "16th-century German male writers",
+            "16th-century German mathematicians",
+            "16th-century German philosophers",
+            "16th-century German writers",
+            "16th-century mathematicians",
+            "16th-century Polish astronomers",
+            "16th-century Polish male writers",
+            "16th-century Polish philosophers",
+            "16th-century Polish scientists",
+            "16th-century Polish writers",
+            "16th-century writers in Latin",
+            "Anglican saints",
+            "Burials at Frombork Cathedral",
+            "Canon law jurists",
+            "Canons of Warmia",
+            "Catholic clergy scientists",
+            "Copernican Revolution",
+            "German economists",
+            "German Roman Catholics",
+            "Jagiellonian University alumni",
+            "People celebrated in the Lutheran liturgical calendar",
+            "People from Royal Prussia",
+            "People from Toru\u0144"
+          ],
+          "birth_year": 1473,
+          "death_year": 1543
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Tacitus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as Tacitus and the whole ancient world say of them"
+        ],
+        "commentaries": [
+          "The author references Tacitus as an ancient source for the characterization of the Jewish people as 'born for slavery.'"
+        ],
+        "canonical_author": "Tacitus"
+      },
+      "goodreads_match": {
+        "author_id": "2936846",
+        "name": "Tacitus",
+        "average_rating": "4.01",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        },
+        "author_meta": {
+          "birth_year": -56,
+          "death_year": -120,
+          "main_genre": "historiography",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Tacitus",
+        "page_id": 19594563,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "Tacitus| ",
+          "1st-century Gallo-Roman people",
+          "1st-century writers in Latin",
+          "1st-century historians",
+          "2nd-century Gallo-Roman people",
+          "2nd-century historians",
+          "2nd-century writers in Latin",
+          "50s births",
+          "120s deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Cornelii",
+          "Latin historians",
+          "Roman governors of Asia",
+          "Ancient Roman biographers",
+          "Senators of the Roman Empire",
+          "Silver Age Latin writers",
+          "Suffect consuls of Imperial Rome"
+        ],
+        "birth_year": 56,
+        "death_year": 120
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2936846"
+        ],
+        "target_person": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hafis",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as has been taught by Hafis and Goethe, the bold letting-go of the reins"
+        ],
+        "commentaries": [
+          "The author cites Hafis, alongside Goethe, as teaching a surrender to emotions, presenting it as another form of moral system."
+        ],
+        "canonical_author": "Hafis"
+      },
+      "goodreads_match": {
+        "author_id": "15291385",
+        "name": "Hafez",
+        "average_rating": "4.52",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Hafez",
+          "page_id": 204260,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "14th-century Persian-language poets",
+            "Sufi poets",
+            "Mystic poets",
+            "People from Shiraz",
+            "1320s births",
+            "1390 deaths",
+            "Angelic visionaries",
+            "Injuid-period poets",
+            "14th-century Iranian writers",
+            "Satirical poets"
+          ],
+          "birth_year": null,
+          "death_year": 1390
+        },
+        "author_meta": {
+          "birth_year": 1315,
+          "death_year": 1390,
+          "main_genre": "Poetry",
+          "nationality": "Persian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Hafis",
+        "page_id": 204260,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "14th-century Persian-language poets",
+          "Sufi poets",
+          "Mystic poets",
+          "People from Shiraz",
+          "1320s births",
+          "1390 deaths",
+          "Angelic visionaries",
+          "Injuid-period poets",
+          "14th-century Iranian writers",
+          "Satirical poets"
+        ],
+        "birth_year": 1325,
+        "death_year": 1390
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "15291385"
+        ],
+        "target_person": {
+          "title": "Hafis",
+          "page_id": 204260,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "14th-century Persian-language poets",
+            "Sufi poets",
+            "Mystic poets",
+            "People from Shiraz",
+            "1320s births",
+            "1390 deaths",
+            "Angelic visionaries",
+            "Injuid-period poets",
+            "14th-century Iranian writers",
+            "Satirical poets"
+          ],
+          "birth_year": 1325,
+          "death_year": 1390
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Schiller",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "how strangely does the language of Rousseau, Schiller, Shelley, and Byron sound to our ear"
+        ],
+        "commentaries": [
+          "The author groups Schiller with other writers whose language expressed a shared European fate that now seems distant."
+        ],
+        "canonical_author": "Schiller"
+      },
+      "goodreads_match": {
+        "author_id": "1399243",
+        "name": "Friedrich Schiller",
+        "average_rating": "3.49",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": 1759,
+          "death_year": 1805,
+          "main_genre": "Poetry/Drama",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Schiller",
+        "birth_year": 1759,
+        "death_year": 1805
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1399243"
+        ],
+        "target_person": {
+          "title": "Schiller",
+          "birth_year": 1759,
+          "death_year": 1805
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Gogol",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Those great poets, for example, such as Byron, Musset, Poe, Leopardi, Kleist, Gogol (I do not venture to mention much greater names, but I have them in my mind), as they now appear, and were perhaps obliged to be: men of the moment, enthusiastic, sensuous, and childish, light- minded and impulsive in their trust and distrust..."
+        ],
+        "commentaries": [
+          "The author cites Nikolai Gogol as an example of a 'great poet' who is ultimately a tormented and flawed 'man of the moment,' using his work for personal revenge or forgetfulness."
+        ],
+        "canonical_author": "Gogol"
+      },
+      "goodreads_match": {
+        "author_id": "232932",
+        "name": "Nikolai Gogol",
+        "average_rating": "4.05",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Nikolai Gogol",
+          "page_id": 139177,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Nikolai Gogol| ",
+            "1809 births",
+            "1852 deaths",
+            "19th-century Eastern Orthodox Christians",
+            "19th-century short story writers from the Russian Empire",
+            "19th-century Ukrainian dramatists and playwrights",
+            "19th-century writers from the Russian Empire",
+            "Burials at Novodevichy Cemetery",
+            "Dramatists and playwrights from the Russian Empire",
+            "Eastern Orthodox writers",
+            "Magical realism writers",
+            "Monarchists from the Russian Empire",
+            "Mythopoeic writers",
+            "Nizhyn Gogol State University alumni",
+            "People from Mirgorodsky Uyezd",
+            "People from Poltava Oblast",
+            "People of Zaporozhian Cossack descent",
+            "Russian male dramatists and playwrights",
+            "Russian male novelists",
+            "Russian male short story writers",
+            "Russian satirists",
+            "Russian satirical novelists",
+            "Russian satirical dramatists and playwrights",
+            "Russian satirical short story writers",
+            "Saint Petersburg State University alumni",
+            "Ukrainian male writers",
+            "Ukrainian novelists",
+            "Ukrainian satirical novelists",
+            "Ukrainian satirical dramatists and playwrights",
+            "Ukrainian satirical short story writers"
+          ],
+          "birth_year": 1809,
+          "death_year": 1852
+        },
+        "author_meta": {
+          "birth_year": 1809,
+          "death_year": 1852,
+          "main_genre": "fiction",
+          "nationality": "Russian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Nikolai Gogol",
+        "page_id": 139177,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Nikolai Gogol| ",
+          "1809 births",
+          "1852 deaths",
+          "19th-century Eastern Orthodox Christians",
+          "19th-century short story writers from the Russian Empire",
+          "19th-century Ukrainian dramatists and playwrights",
+          "19th-century writers from the Russian Empire",
+          "Burials at Novodevichy Cemetery",
+          "Dramatists and playwrights from the Russian Empire",
+          "Eastern Orthodox writers",
+          "Magical realism writers",
+          "Monarchists from the Russian Empire",
+          "Mythopoeic writers",
+          "Nizhyn Gogol State University alumni",
+          "People from Mirgorodsky Uyezd",
+          "People from Poltava Oblast",
+          "People of Zaporozhian Cossack descent",
+          "Russian male dramatists and playwrights",
+          "Russian male novelists",
+          "Russian male short story writers",
+          "Russian satirists",
+          "Russian satirical novelists",
+          "Russian satirical dramatists and playwrights",
+          "Russian satirical short story writers",
+          "Saint Petersburg State University alumni",
+          "Ukrainian male writers",
+          "Ukrainian novelists",
+          "Ukrainian satirical novelists",
+          "Ukrainian satirical dramatists and playwrights",
+          "Ukrainian satirical short story writers"
+        ],
+        "birth_year": 1809,
+        "death_year": 1852
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "232932"
+        ],
+        "target_person": {
+          "title": "Nikolai Gogol",
+          "page_id": 139177,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Nikolai Gogol| ",
+            "1809 births",
+            "1852 deaths",
+            "19th-century Eastern Orthodox Christians",
+            "19th-century short story writers from the Russian Empire",
+            "19th-century Ukrainian dramatists and playwrights",
+            "19th-century writers from the Russian Empire",
+            "Burials at Novodevichy Cemetery",
+            "Dramatists and playwrights from the Russian Empire",
+            "Eastern Orthodox writers",
+            "Magical realism writers",
+            "Monarchists from the Russian Empire",
+            "Mythopoeic writers",
+            "Nizhyn Gogol State University alumni",
+            "People from Mirgorodsky Uyezd",
+            "People from Poltava Oblast",
+            "People of Zaporozhian Cossack descent",
+            "Russian male dramatists and playwrights",
+            "Russian male novelists",
+            "Russian male short story writers",
+            "Russian satirists",
+            "Russian satirical novelists",
+            "Russian satirical dramatists and playwrights",
+            "Russian satirical short story writers",
+            "Saint Petersburg State University alumni",
+            "Ukrainian male writers",
+            "Ukrainian novelists",
+            "Ukrainian satirical novelists",
+            "Ukrainian satirical dramatists and playwrights",
+            "Ukrainian satirical short story writers"
+          ],
+          "birth_year": 1809,
+          "death_year": 1852
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dante",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I have no doubt that every noble woman will oppose what Dante and Goethe believed about woman\u2014the former when he sang, 'ELLA GUARDAVA SUSO, ED IO IN LEI,'"
+        ],
+        "commentaries": [
+          "The author references Dante's poetic depiction of woman, specifically a line from the Divine Comedy, to contrast it with what he claims noble women actually believe."
+        ],
+        "canonical_author": "Dante"
+      },
+      "goodreads_match": {
+        "author_id": "5031312",
+        "name": "Dante Alighieri",
+        "average_rating": "4.02",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": 1265,
+          "death_year": 1321,
+          "main_genre": "poetry",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Dante",
+        "birth_year": 1265,
+        "death_year": 1321
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5031312"
+        ],
+        "target_person": {
+          "title": "Dante",
+          "birth_year": 1265,
+          "death_year": 1321
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John Stuart Mill",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "now that the influence of respectable but mediocre Englishmen--I may mention Darwin, John Stuart Mill, and Herbert Spencer--begins to gain the ascendancy in the middle-class region of European taste."
+        ],
+        "commentaries": [
+          "The author cites John Stuart Mill as an example of a mediocre English thinker whose influence is rising in European middle-class taste."
+        ],
+        "canonical_author": "John Stuart Mill"
+      },
+      "goodreads_match": {
+        "author_id": "57651",
+        "name": "John Stuart Mill",
+        "average_rating": "3.88",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "John Stuart Mill",
+          "page_id": 15626,
+          "infoboxes": [
+            "officeholder",
+            "philosopher",
+            "economist "
+          ],
+          "categories": [
+            "John Stuart Mill| ",
+            "1806 births",
+            "1873 deaths",
+            "19th-century English essayists",
+            "19th-century English philosophers",
+            "19th-century English writers",
+            "19th-century British autobiographers",
+            "Anglo-Scots",
+            "British classical liberal economists",
+            "British free speech activists",
+            "British radicals",
+            "British male feminists",
+            "British philosophers of logic",
+            "British philosophers of mind",
+            "British philosophy writers",
+            "British social liberals",
+            "British social philosophers",
+            "Consequentialists",
+            "Empiricists",
+            "English agnostics",
+            "English autobiographers",
+            "English ethicists",
+            "English feminist writers",
+            "English libertarians",
+            "English logicians",
+            "English male essayists",
+            "English male non-fiction writers",
+            "English non-fiction writers",
+            "English people of Scottish descent",
+            "English philosophers of language"
+          ],
+          "birth_year": 1806,
+          "death_year": 1873
+        },
+        "author_meta": {
+          "birth_year": 1806,
+          "death_year": 1873,
+          "main_genre": "Philosophy",
+          "nationality": "British"
+        }
+      },
+      "wikipedia_match": {
+        "title": "John Stuart Mill",
+        "page_id": 15626,
+        "infoboxes": [
+          "officeholder",
+          "philosopher",
+          "economist "
+        ],
+        "categories": [
+          "John Stuart Mill| ",
+          "1806 births",
+          "1873 deaths",
+          "19th-century English essayists",
+          "19th-century English philosophers",
+          "19th-century English writers",
+          "19th-century British autobiographers",
+          "Anglo-Scots",
+          "British classical liberal economists",
+          "British free speech activists",
+          "British radicals",
+          "British male feminists",
+          "British philosophers of logic",
+          "British philosophers of mind",
+          "British philosophy writers",
+          "British social liberals",
+          "British social philosophers",
+          "Consequentialists",
+          "Empiricists",
+          "English agnostics",
+          "English autobiographers",
+          "English ethicists",
+          "English feminist writers",
+          "English libertarians",
+          "English logicians",
+          "English male essayists",
+          "English male non-fiction writers",
+          "English non-fiction writers",
+          "English people of Scottish descent",
+          "English philosophers of language"
+        ],
+        "birth_year": 1806,
+        "death_year": 1873
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "57651"
+        ],
+        "target_person": {
+          "title": "John Stuart Mill",
+          "page_id": 15626,
+          "infoboxes": [
+            "officeholder",
+            "philosopher",
+            "economist "
+          ],
+          "categories": [
+            "John Stuart Mill| ",
+            "1806 births",
+            "1873 deaths",
+            "19th-century English essayists",
+            "19th-century English philosophers",
+            "19th-century English writers",
+            "19th-century British autobiographers",
+            "Anglo-Scots",
+            "British classical liberal economists",
+            "British free speech activists",
+            "British radicals",
+            "British male feminists",
+            "British philosophers of logic",
+            "British philosophers of mind",
+            "British philosophy writers",
+            "British social liberals",
+            "British social philosophers",
+            "Consequentialists",
+            "Empiricists",
+            "English agnostics",
+            "English autobiographers",
+            "English ethicists",
+            "English feminist writers",
+            "English libertarians",
+            "English logicians",
+            "English male essayists",
+            "English male non-fiction writers",
+            "English non-fiction writers",
+            "English people of Scottish descent",
+            "English philosophers of language"
+          ],
+          "birth_year": 1806,
+          "death_year": 1873
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bayle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "he who was not the translator of Bayle to no purpose"
+        ],
+        "commentaries": [
+          "The author mentions Bayle in relation to Lessing's translation work, implying it was purposeful."
+        ],
+        "canonical_author": "Bayle"
+      },
+      "goodreads_match": {
+        "author_id": "444184",
+        "name": "Pierre Bayle",
+        "average_rating": "3.68",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Pierre Bayle",
+          "page_id": 308126,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1647 births",
+            "1706 deaths",
+            "17th-century Calvinist and Reformed Christians",
+            "18th-century Calvinist and Reformed Christians",
+            "17th-century Dutch philosophers",
+            "18th-century Dutch philosophers",
+            "17th-century French philosophers",
+            "17th-century French writers",
+            "17th-century lexicographers",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Alumni of Jesuit schools",
+            "Calvinist and Reformed philosophers",
+            "Converts to Roman Catholicism from Calvinism",
+            "Converts to Calvinism from Roman Catholicism",
+            "Dutch historians",
+            "Encyclopedists",
+            "Enlightenment philosophers",
+            "French literary critics",
+            "French Protestants",
+            "Huguenots",
+            "People from Ari\u00e8ge (department)",
+            "Writers from Rotterdam",
+            "Philosophy and thought in the Dutch Republic",
+            "French sceptics",
+            "Skeptic philosophers",
+            "People from the County of Foix"
+          ],
+          "birth_year": 1647,
+          "death_year": 1706
+        },
+        "author_meta": {
+          "birth_year": 1647,
+          "death_year": 1706,
+          "main_genre": "Philosophical and Critical Essays",
+          "nationality": "French"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Pierre Bayle",
+        "page_id": 308126,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1647 births",
+          "1706 deaths",
+          "17th-century Calvinist and Reformed Christians",
+          "18th-century Calvinist and Reformed Christians",
+          "17th-century Dutch philosophers",
+          "18th-century Dutch philosophers",
+          "17th-century French philosophers",
+          "17th-century French writers",
+          "17th-century lexicographers",
+          "17th-century French male writers",
+          "17th-century Roman Catholics",
+          "Age of Enlightenment",
+          "Alumni of Jesuit schools",
+          "Calvinist and Reformed philosophers",
+          "Converts to Roman Catholicism from Calvinism",
+          "Converts to Calvinism from Roman Catholicism",
+          "Dutch historians",
+          "Encyclopedists",
+          "Enlightenment philosophers",
+          "French literary critics",
+          "French Protestants",
+          "Huguenots",
+          "People from Ari\u00e8ge (department)",
+          "Writers from Rotterdam",
+          "Philosophy and thought in the Dutch Republic",
+          "French sceptics",
+          "Skeptic philosophers",
+          "People from the County of Foix"
+        ],
+        "birth_year": 1647,
+        "death_year": 1706
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "444184"
+        ],
+        "target_person": {
+          "title": "Pierre Bayle",
+          "page_id": 308126,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1647 births",
+            "1706 deaths",
+            "17th-century Calvinist and Reformed Christians",
+            "18th-century Calvinist and Reformed Christians",
+            "17th-century Dutch philosophers",
+            "18th-century Dutch philosophers",
+            "17th-century French philosophers",
+            "17th-century French writers",
+            "17th-century lexicographers",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Alumni of Jesuit schools",
+            "Calvinist and Reformed philosophers",
+            "Converts to Roman Catholicism from Calvinism",
+            "Converts to Calvinism from Roman Catholicism",
+            "Dutch historians",
+            "Encyclopedists",
+            "Enlightenment philosophers",
+            "French literary critics",
+            "French Protestants",
+            "Huguenots",
+            "People from Ari\u00e8ge (department)",
+            "Writers from Rotterdam",
+            "Philosophy and thought in the Dutch Republic",
+            "French sceptics",
+            "Skeptic philosophers",
+            "People from the County of Foix"
+          ],
+          "birth_year": 1647,
+          "death_year": 1706
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Boscovich",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "thanks chiefly to the Pole Boscovich"
+        ],
+        "commentaries": [
+          "The author credits Boscovich for refuting materialistic atomism, highlighting his role as a successful opponent of sensory evidence."
+        ],
+        "canonical_author": "Boscovich"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Roger Joseph Boscovich",
+          "page_id": 23747676,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1711 births",
+            "1787 deaths",
+            "People from Dubrovnik",
+            "Ragusan Jesuits",
+            "Croatian people of Italian descent",
+            "Croatian Roman Catholic theologians",
+            "Croatian physicists",
+            "Croatian philosophers",
+            "Croatian male poets",
+            "18th-century Croatian poets",
+            "Italian people of Croatian descent",
+            "18th-century Italian astronomers",
+            "18th-century Italian philosophers",
+            "18th-century Italian Jesuits",
+            "18th-century Italian Roman Catholic theologians",
+            "18th-century Italian mathematicians",
+            "18th-century Italian physicists",
+            "18th-century Italian poets",
+            "18th-century Italian male writers",
+            "Italian male poets",
+            "Fellows of the Royal Society",
+            "Academic staff of the University of Pavia",
+            "Jesuit scientists",
+            "18th-century Croatian Jesuits",
+            "Ragusan diplomats"
+          ],
+          "birth_year": 1711,
+          "death_year": 1787
+        },
+        "author_meta": {
+          "birth_year": 1711,
+          "death_year": 1787,
+          "main_genre": "Natural Philosophy / Science",
+          "nationality": "Ragusan (now Croatian)"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Roger Joseph Boscovich",
+        "page_id": 23747676,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1711 births",
+          "1787 deaths",
+          "People from Dubrovnik",
+          "Ragusan Jesuits",
+          "Croatian people of Italian descent",
+          "Croatian Roman Catholic theologians",
+          "Croatian physicists",
+          "Croatian philosophers",
+          "Croatian male poets",
+          "18th-century Croatian poets",
+          "Italian people of Croatian descent",
+          "18th-century Italian astronomers",
+          "18th-century Italian philosophers",
+          "18th-century Italian Jesuits",
+          "18th-century Italian Roman Catholic theologians",
+          "18th-century Italian mathematicians",
+          "18th-century Italian physicists",
+          "18th-century Italian poets",
+          "18th-century Italian male writers",
+          "Italian male poets",
+          "Fellows of the Royal Society",
+          "Academic staff of the University of Pavia",
+          "Jesuit scientists",
+          "18th-century Croatian Jesuits",
+          "Ragusan diplomats"
+        ],
+        "birth_year": 1711,
+        "death_year": 1787
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Roger Joseph Boscovich",
+          "page_id": 23747676,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1711 births",
+            "1787 deaths",
+            "People from Dubrovnik",
+            "Ragusan Jesuits",
+            "Croatian people of Italian descent",
+            "Croatian Roman Catholic theologians",
+            "Croatian physicists",
+            "Croatian philosophers",
+            "Croatian male poets",
+            "18th-century Croatian poets",
+            "Italian people of Croatian descent",
+            "18th-century Italian astronomers",
+            "18th-century Italian philosophers",
+            "18th-century Italian Jesuits",
+            "18th-century Italian Roman Catholic theologians",
+            "18th-century Italian mathematicians",
+            "18th-century Italian physicists",
+            "18th-century Italian poets",
+            "18th-century Italian male writers",
+            "Italian male poets",
+            "Fellows of the Royal Society",
+            "Academic staff of the University of Pavia",
+            "Jesuit scientists",
+            "18th-century Croatian Jesuits",
+            "Ragusan diplomats"
+          ],
+          "birth_year": 1711,
+          "death_year": 1787
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Rousseau",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the same light in which Europe was bathed when it dreamed with Rousseau"
+        ],
+        "commentaries": [
+          "The author references Rousseau as a thinker whose ideas, alongside others, characterized a European sentiment that is now fading."
+        ],
+        "canonical_author": "Rousseau"
+      },
+      "goodreads_match": {
+        "author_id": "7994",
+        "name": "Jean-Jacques Rousseau",
+        "average_rating": "3.75",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Jean-Jacques Rousseau",
+          "page_id": 15941,
+          "infoboxes": [
+            "philosopher",
+            "writer"
+          ],
+          "categories": [
+            "Jean-Jacques Rousseau| ",
+            "1712 births",
+            "1778 deaths",
+            "18th-century classical composers",
+            "18th-century male musicians",
+            "18th-century memoirists",
+            "18th-century novelists",
+            "18th-century philosophers",
+            "18th-century writers from the Republic of Geneva",
+            "Age of Enlightenment",
+            "Autobiographers",
+            "Baroque composers",
+            "Burials at the Panth\u00e9on, Paris",
+            "Classical-period composers",
+            "Contributors to the Encyclop\u00e9die (1751\u20131772)",
+            "Converts to Roman Catholicism from Calvinism",
+            "Deist philosophers",
+            "Enlightenment philosophers",
+            "Male non-fiction writers",
+            "Political philosophers",
+            "Music copyists",
+            "Music theorists",
+            "Musicians from the Republic of Geneva",
+            "People with hypochondriasis",
+            "Philosophers from the Republic of Geneva",
+            "Philosophers of art",
+            "Philosophers of culture",
+            "Philosophers of economics",
+            "Philosophers of education",
+            "Philosophers of literature"
+          ],
+          "birth_year": 1712,
+          "death_year": 1778
+        },
+        "author_meta": {
+          "birth_year": 1712,
+          "death_year": 1778,
+          "main_genre": "Philosophical treatise",
+          "nationality": "Genevan"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Jean-Jacques Rousseau",
+        "page_id": 15941,
+        "infoboxes": [
+          "philosopher",
+          "writer"
+        ],
+        "categories": [
+          "Jean-Jacques Rousseau| ",
+          "1712 births",
+          "1778 deaths",
+          "18th-century classical composers",
+          "18th-century male musicians",
+          "18th-century memoirists",
+          "18th-century novelists",
+          "18th-century philosophers",
+          "18th-century writers from the Republic of Geneva",
+          "Age of Enlightenment",
+          "Autobiographers",
+          "Baroque composers",
+          "Burials at the Panth\u00e9on, Paris",
+          "Classical-period composers",
+          "Contributors to the Encyclop\u00e9die (1751\u20131772)",
+          "Converts to Roman Catholicism from Calvinism",
+          "Deist philosophers",
+          "Enlightenment philosophers",
+          "Male non-fiction writers",
+          "Political philosophers",
+          "Music copyists",
+          "Music theorists",
+          "Musicians from the Republic of Geneva",
+          "People with hypochondriasis",
+          "Philosophers from the Republic of Geneva",
+          "Philosophers of art",
+          "Philosophers of culture",
+          "Philosophers of economics",
+          "Philosophers of education",
+          "Philosophers of literature"
+        ],
+        "birth_year": 1712,
+        "death_year": 1778
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7994"
+        ],
+        "target_person": {
+          "title": "Jean-Jacques Rousseau",
+          "page_id": 15941,
+          "infoboxes": [
+            "philosopher",
+            "writer"
+          ],
+          "categories": [
+            "Jean-Jacques Rousseau| ",
+            "1712 births",
+            "1778 deaths",
+            "18th-century classical composers",
+            "18th-century male musicians",
+            "18th-century memoirists",
+            "18th-century novelists",
+            "18th-century philosophers",
+            "18th-century writers from the Republic of Geneva",
+            "Age of Enlightenment",
+            "Autobiographers",
+            "Baroque composers",
+            "Burials at the Panth\u00e9on, Paris",
+            "Classical-period composers",
+            "Contributors to the Encyclop\u00e9die (1751\u20131772)",
+            "Converts to Roman Catholicism from Calvinism",
+            "Deist philosophers",
+            "Enlightenment philosophers",
+            "Male non-fiction writers",
+            "Political philosophers",
+            "Music copyists",
+            "Music theorists",
+            "Musicians from the Republic of Geneva",
+            "People with hypochondriasis",
+            "Philosophers from the Republic of Geneva",
+            "Philosophers of art",
+            "Philosophers of culture",
+            "Philosophers of economics",
+            "Philosophers of education",
+            "Philosophers of literature"
+          ],
+          "birth_year": 1712,
+          "death_year": 1778
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ernest Renan",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And even Ernest Renan: how inaccessible to us Northerners does the language of such a Renan appear, in whom every instant the merest touch of religious thrill throws his refined voluptuous and comfortably couching soul off its balance!"
+        ],
+        "commentaries": [
+          "The author comments on Ernest Renan's writing, noting its inaccessibility to Northerners due to its refined, voluptuous, and religiously sensitive character."
+        ],
+        "canonical_author": "Ernest Renan"
+      },
+      "goodreads_match": {
+        "author_id": "9809310",
+        "name": "Ernest Renan",
+        "average_rating": "3.81",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Ernest Renan",
+          "page_id": 191819,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1823 births",
+            "1892 deaths",
+            "19th-century biblical scholars",
+            "19th-century French historians",
+            "19th-century French philosophers",
+            "19th-century French writers",
+            "Antisemitism in France",
+            "Biblical criticism",
+            "Biblical studies",
+            "Writers from Brittany",
+            "Burials at Montmartre Cemetery",
+            "Academic staff of the Coll\u00e8ge de France",
+            "Corresponding members of the Saint Petersburg Academy of Sciences",
+            "Founders of Sciences Po",
+            "French biblical scholars",
+            "French Hebraists",
+            "French historians of religion",
+            "French literary critics",
+            "French orientalists",
+            "French philologists",
+            "Grand Officers of the Legion of Honour",
+            "Historians of Christianity",
+            "Members of the Acad\u00e9mie des Inscriptions et Belles-Lettres",
+            "Members of the Acad\u00e9mie Fran\u00e7aise",
+            "Members of the Bavarian Academy of Sciences",
+            "Members of the Hungarian Academy of Sciences",
+            "Members of the Soci\u00e9t\u00e9 Asiatique",
+            "New Testament scholars",
+            "People from C\u00f4tes-d'Armor",
+            "Scholars of medieval philosophy"
+          ],
+          "birth_year": 1823,
+          "death_year": 1892
+        },
+        "author_meta": {
+          "birth_year": 1823,
+          "death_year": 1892,
+          "main_genre": "Philosophy/History",
+          "nationality": "French"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ernest Renan",
+        "page_id": 191819,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1823 births",
+          "1892 deaths",
+          "19th-century biblical scholars",
+          "19th-century French historians",
+          "19th-century French philosophers",
+          "19th-century French writers",
+          "Antisemitism in France",
+          "Biblical criticism",
+          "Biblical studies",
+          "Writers from Brittany",
+          "Burials at Montmartre Cemetery",
+          "Academic staff of the Coll\u00e8ge de France",
+          "Corresponding members of the Saint Petersburg Academy of Sciences",
+          "Founders of Sciences Po",
+          "French biblical scholars",
+          "French Hebraists",
+          "French historians of religion",
+          "French literary critics",
+          "French orientalists",
+          "French philologists",
+          "Grand Officers of the Legion of Honour",
+          "Historians of Christianity",
+          "Members of the Acad\u00e9mie des Inscriptions et Belles-Lettres",
+          "Members of the Acad\u00e9mie Fran\u00e7aise",
+          "Members of the Bavarian Academy of Sciences",
+          "Members of the Hungarian Academy of Sciences",
+          "Members of the Soci\u00e9t\u00e9 Asiatique",
+          "New Testament scholars",
+          "People from C\u00f4tes-d'Armor",
+          "Scholars of medieval philosophy"
+        ],
+        "birth_year": 1823,
+        "death_year": 1892
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "9809310"
+        ],
+        "target_person": {
+          "title": "Ernest Renan",
+          "page_id": 191819,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1823 births",
+            "1892 deaths",
+            "19th-century biblical scholars",
+            "19th-century French historians",
+            "19th-century French philosophers",
+            "19th-century French writers",
+            "Antisemitism in France",
+            "Biblical criticism",
+            "Biblical studies",
+            "Writers from Brittany",
+            "Burials at Montmartre Cemetery",
+            "Academic staff of the Coll\u00e8ge de France",
+            "Corresponding members of the Saint Petersburg Academy of Sciences",
+            "Founders of Sciences Po",
+            "French biblical scholars",
+            "French Hebraists",
+            "French historians of religion",
+            "French literary critics",
+            "French orientalists",
+            "French philologists",
+            "Grand Officers of the Legion of Honour",
+            "Historians of Christianity",
+            "Members of the Acad\u00e9mie des Inscriptions et Belles-Lettres",
+            "Members of the Acad\u00e9mie Fran\u00e7aise",
+            "Members of the Bavarian Academy of Sciences",
+            "Members of the Hungarian Academy of Sciences",
+            "Members of the Soci\u00e9t\u00e9 Asiatique",
+            "New Testament scholars",
+            "People from C\u00f4tes-d'Armor",
+            "Scholars of medieval philosophy"
+          ],
+          "birth_year": 1823,
+          "death_year": 1892
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Leibniz",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "\"JE NE MEPRISE PRESQUE RIEN\"-- he says, with Leibniz"
+        ],
+        "commentaries": [
+          "The author quotes Leibniz's phrase 'I despise almost nothing' in the context of describing the objective man's attitude."
+        ],
+        "canonical_author": "Leibniz"
+      },
+      "goodreads_match": {
+        "author_id": "1340566",
+        "name": "Gottfried Wilhelm Leibniz",
+        "average_rating": "3.86",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Gottfried Wilhelm Leibniz",
+          "page_id": 12281,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Gottfried Wilhelm Leibniz| ",
+            "1646 births",
+            "1716 deaths",
+            "17th-century German mathematicians",
+            "17th-century German philosophers",
+            "17th-century German scientists",
+            "17th-century German writers",
+            "17th-century German male writers",
+            "17th-century writers in Latin",
+            "17th-century German inventors",
+            "18th-century German mathematicians",
+            "18th-century German philosophers",
+            "18th-century German physicists",
+            "18th-century German scientists",
+            "18th-century German writers",
+            "18th-century German male writers",
+            "18th-century writers in Latin",
+            "18th-century German inventors",
+            "Constructed language creators",
+            "Determinists",
+            "Enlightenment philosophers",
+            "Fellows of the Royal Society",
+            "German librarians",
+            "German logicians",
+            "German Lutherans",
+            "German philologists",
+            "German political philosophers",
+            "German Protestants",
+            "French-language German writers",
+            "Leipzig University alumni"
+          ],
+          "birth_year": 1646,
+          "death_year": 1716
+        },
+        "author_meta": {
+          "birth_year": 1646,
+          "death_year": 1716
+        }
+      },
+      "wikipedia_match": {
+        "title": "Gottfried Wilhelm Leibniz",
+        "page_id": 12281,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Gottfried Wilhelm Leibniz| ",
+          "1646 births",
+          "1716 deaths",
+          "17th-century German mathematicians",
+          "17th-century German philosophers",
+          "17th-century German scientists",
+          "17th-century German writers",
+          "17th-century German male writers",
+          "17th-century writers in Latin",
+          "17th-century German inventors",
+          "18th-century German mathematicians",
+          "18th-century German philosophers",
+          "18th-century German physicists",
+          "18th-century German scientists",
+          "18th-century German writers",
+          "18th-century German male writers",
+          "18th-century writers in Latin",
+          "18th-century German inventors",
+          "Constructed language creators",
+          "Determinists",
+          "Enlightenment philosophers",
+          "Fellows of the Royal Society",
+          "German librarians",
+          "German logicians",
+          "German Lutherans",
+          "German philologists",
+          "German political philosophers",
+          "German Protestants",
+          "French-language German writers",
+          "Leipzig University alumni"
+        ],
+        "birth_year": 1646,
+        "death_year": 1716
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1340566"
+        ],
+        "target_person": {
+          "title": "Gottfried Wilhelm Leibniz",
+          "page_id": 12281,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Gottfried Wilhelm Leibniz| ",
+            "1646 births",
+            "1716 deaths",
+            "17th-century German mathematicians",
+            "17th-century German philosophers",
+            "17th-century German scientists",
+            "17th-century German writers",
+            "17th-century German male writers",
+            "17th-century writers in Latin",
+            "17th-century German inventors",
+            "18th-century German mathematicians",
+            "18th-century German philosophers",
+            "18th-century German physicists",
+            "18th-century German scientists",
+            "18th-century German writers",
+            "18th-century German male writers",
+            "18th-century writers in Latin",
+            "18th-century German inventors",
+            "Constructed language creators",
+            "Determinists",
+            "Enlightenment philosophers",
+            "Fellows of the Royal Society",
+            "German librarians",
+            "German logicians",
+            "German Lutherans",
+            "German philologists",
+            "German political philosophers",
+            "German Protestants",
+            "French-language German writers",
+            "Leipzig University alumni"
+          ],
+          "birth_year": 1646,
+          "death_year": 1716
+        }
+      }
+    }
+  ]
+}

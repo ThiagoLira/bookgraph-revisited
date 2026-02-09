@@ -407,7 +407,7 @@ class CitationWorkflow(Workflow):
                         for i, c in enumerate(candidates):
                             target = c.get("title", "") if mode == "book" else c.get("title", c.get("name", ""))
                             score = fuzzy_token_sort_ratio(source_text, target)
-                            if score > best_score and score > 60:  # Minimum threshold
+                            if score > best_score and score > 70:  # Minimum threshold
                                 best_score = score
                                 best_idx = i
 

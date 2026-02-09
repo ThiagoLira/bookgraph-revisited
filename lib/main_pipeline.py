@@ -1,7 +1,10 @@
 import asyncio
+import copy
 import json
 import logging
 import os
+import unicodedata
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Sequence
 from dataclasses import dataclass
@@ -13,6 +16,7 @@ from lib.extract_citations import (
     write_output,
 )
 from .preprocess_citations import preprocess_data
+from .validate_citations import validate_citations
 from lib.bibliography_agent.citation_workflow import CitationWorkflow
 from lib.bibliography_agent.llm_utils import build_llm
 from lib.bibliography_agent.bibliography_tool import SQLiteWikiPeopleIndex, SQLiteGoodreadsCatalog
@@ -31,12 +35,43 @@ def progress_iter_items(iterable: Sequence[Any], **kwargs: Any) -> Sequence[Any]
         return iterable
     return tqdm(iterable, **kwargs)
 
+def _normalize_author(name: str) -> str:
+    """Normalize author name for cache lookup.
+
+    Strips accents, lowercases, removes periods/commas, and strips common
+    prefixes like 'St.' or 'Saint'.
+    """
+    # Strip accents
+    name = unicodedata.normalize('NFD', name)
+    name = ''.join(c for c in name if unicodedata.category(c) != 'Mn')
+    # Lowercase, strip periods/commas, normalize whitespace
+    name = name.lower().replace('.', '').replace(',', '').strip()
+    name = ' '.join(name.split())
+    # Strip common prefixes
+    for prefix in ('st ', 'saint '):
+        if name.startswith(prefix):
+            name = name[len(prefix):]
+    return name
+
+
+def _find_cached_author(name: str, cache: Dict[str, dict]) -> Optional[dict]:
+    """Look up an author in the cache, with fuzzy fallback."""
+    key = _normalize_author(name)
+    if key in cache:
+        return cache[key]
+    # Fuzzy fallback: check existing keys with SequenceMatcher
+    for cached_key, cached_val in cache.items():
+        if SequenceMatcher(None, key, cached_key).ratio() >= 0.9:
+            return cached_val
+    return None
+
+
 @dataclass
 class PipelineConfig:
     # Extraction
     extract_base_url: str = "http://localhost:8080/v1"
     extract_api_key: str = "test"
-    extract_model: str = "Qwen/Qwen3-30B-A3B"
+    extract_model: str = "deepseek/deepseek-v3.2"
     extract_chunk_size: int = 50
     extract_max_context: int = 6144
     extract_max_completion: int = 2048
@@ -44,8 +79,12 @@ class PipelineConfig:
     # Workflow
     agent_base_url: str = "https://openrouter.ai/api/v1"
     agent_api_key: str = ""
-    agent_model: str = "qwen/qwen3-next-80b-a3b-instruct"
-    agent_concurrency: int = 10
+    agent_model: str = "deepseek/deepseek-v3.2"
+    agent_concurrency: int = 20
+    extract_concurrency: int = 20
+
+    # Validation
+    validate_concurrency: int = 5
 
     # Data
     books_db: str = "datasets/books_index.db"
@@ -220,7 +259,8 @@ class BookPipeline:
         0. Enrich source metadata (author, publication year)
         1. Extract (LLM) -> raw_dir
         2. Preprocess (Heuristic) -> pre_dir
-        3. Workflow (Agent) -> final_dir
+        3. Validate (LLM) -> val_dir
+        4. Workflow (Agent) -> final_dir
         """
         # 0. Enrich source metadata first
         logger.info(f"[pipeline] Enriching source metadata for: {source_metadata.get('title', book_id)}")
@@ -229,14 +269,17 @@ class BookPipeline:
 
         raw_dir = output_dir / "raw_extracted_citations"
         pre_dir = output_dir / "preprocessed_extracted_citations"
+        val_dir = output_dir / "validated_citations"
         final_dir = output_dir / "final_citations_metadata_goodreads"
 
         raw_dir.mkdir(parents=True, exist_ok=True)
         pre_dir.mkdir(parents=True, exist_ok=True)
+        val_dir.mkdir(parents=True, exist_ok=True)
         final_dir.mkdir(parents=True, exist_ok=True)
 
         raw_path = raw_dir / f"{book_id}.json"
         pre_path = pre_dir / f"{book_id}.json"
+        val_path = val_dir / f"{book_id}.json"
         final_path = final_dir / f"{book_id}.json"
 
         # 1. Extraction
@@ -251,11 +294,17 @@ class BookPipeline:
              print(f"[pipeline] Preprocessing {book_id}...")
              self._run_preprocessing(raw_path, pre_path, source_metadata)
 
-        # 3. Workflow
+        # 3. Validate
+        if not val_path.exists() or force:
+             logger.info(f"[pipeline] Validating {book_id}...")
+             print(f"[pipeline] Validating {book_id}...")
+             await self._run_validation(pre_path, val_path, source_metadata)
+
+        # 4. Workflow
         if not final_path.exists() or force:
              logger.info(f"[pipeline] Running Workflow {book_id}...")
              print(f"[pipeline] Running Workflow {book_id}...")
-             await self._run_workflow(pre_path, final_path, source_metadata)
+             await self._run_workflow(val_path, final_path, source_metadata)
 
         return final_path
 
@@ -263,7 +312,7 @@ class BookPipeline:
         config = ExtractionConfig(
             input_path=input_path,
             chunk_size=self.config.extract_chunk_size,
-            max_concurrency=10, # Internal concurrency for chunks
+            max_concurrency=self.config.extract_concurrency,
             max_context_per_request=self.config.extract_max_context,
             max_completion_tokens=self.config.extract_max_completion,
             base_url=self.config.extract_base_url,
@@ -298,10 +347,52 @@ class BookPipeline:
         )
         pre_path.write_text(json.dumps(processed, indent=2, ensure_ascii=False))
 
+    async def _run_validation(self, pre_path: Path, val_path: Path, meta: Dict[str, Any]):
+        data = json.loads(pre_path.read_text())
+        citations = data.get("citations", [])
+        source_title = meta.get("title", "")
+        source_authors = meta.get("authors", [])
+
+        if not citations:
+            val_path.write_text(json.dumps(data, indent=2, ensure_ascii=False))
+            return
+
+        validated, stats = await validate_citations(
+            citations,
+            source_title,
+            source_authors,
+            base_url=self.config.agent_base_url,
+            api_key=self.config.agent_api_key,
+            model=self.config.agent_model,
+            concurrency=self.config.validate_concurrency,
+        )
+
+        output = {
+            "source": data.get("source", pre_path.name),
+            "total": len(validated),
+            "validation_stats": stats,
+            "citations": validated,
+        }
+        val_path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
+
+        logger.info(f"[pipeline] Validation: {len(citations)} → {len(validated)} citations "
+                     f"(removed={stats['removed']}, fixed={stats['fixed']})")
+        print(f"[pipeline] Validation: {len(citations)} → {len(validated)} citations "
+              f"(removed={stats['removed']}, fixed={stats['fixed']})")
+
     def _save_checkpoint(self, path: Path, meta: Dict, results: List):
         """Save checkpoint with partial results."""
         path.write_text(json.dumps({"source": meta, "citations": results, "complete": False}, indent=2, ensure_ascii=False))
         logger.debug(f"[pipeline] Checkpoint saved: {len(results)} citations")
+
+    def _add_to_author_cache(self, cache: Dict[str, dict], author_name: str, result_dict: dict):
+        """Add a resolved result to the author cache, including bare last-name variant."""
+        key = _normalize_author(author_name)
+        cache[key] = result_dict
+        # Also cache bare last name for fuzzy matching (e.g. "Plutarch" from "Lucius Plutarch")
+        parts = key.split()
+        if len(parts) > 1:
+            cache[parts[-1]] = result_dict
 
     async def _run_workflow(self, pre_path: Path, final_path: Path, meta: Dict[str, Any]):
         data = json.loads(pre_path.read_text())
@@ -331,12 +422,26 @@ class BookPipeline:
             if (cit.get("author"), cit.get("title")) not in processed_keys
         ]
 
+        # --- Per-book resolution cache ---
+        # Caches fully-resolved result_dicts keyed by normalized author name.
+        # For author-only citations (no title): full cache hit -> skip workflow.
+        # For book citations: not cached (title-specific), run workflow normally.
+        author_cache: Dict[str, dict] = {}
+
+        # Seed cache from checkpoint results
+        for r in existing_results:
+            raw = r.get("raw", {})
+            author = raw.get("author")
+            if author:
+                self._add_to_author_cache(author_cache, author, r)
+
         # Prepare tasks
         sem = asyncio.Semaphore(self.config.agent_concurrency)
 
         # Stats for logging
         stats = {
             "total": len(citations),
+            "cache_hits": 0,
             "workflow_success": 0,
             "workflow_error": 0,
             "fallback_triggered": 0,
@@ -362,10 +467,39 @@ class BookPipeline:
                     logger.debug(f"[workflow] Full citation that failed: {json.dumps(cit, ensure_ascii=False)}")
                     return (cit, {"error": str(e), "match_type": "error"})
 
+        # Separate citations into cache-hittable (author-only) and must-run (has title)
+        cached_results: List[dict] = []
+        citations_needing_workflow: List[dict] = []
+
+        for cit in citations_to_process:
+            author = cit.get("author")
+            title = cit.get("title")
+            is_author_only = author and not title
+
+            if is_author_only and author:
+                cached = _find_cached_author(author, author_cache)
+                if cached:
+                    # Full cache hit for author-only citation
+                    cloned = copy.deepcopy(cached)
+                    cloned["raw"] = cit  # Use the current citation's raw data
+                    cached_results.append(cloned)
+                    stats["cache_hits"] += 1
+                    logger.info(f"[cache] Hit for author-only citation: '{author}'")
+                    continue
+
+            citations_needing_workflow.append(cit)
+
+        logger.info(f"[cache] {stats['cache_hits']} cache hits, {len(citations_needing_workflow)} citations need workflow")
+
         pbar = tqdm(total=len(citations_to_process), desc="  Resolving Citations", leave=False) if tqdm else None
 
-        tasks = [process_safe(cit) for cit in citations_to_process]
+        # Count cached results in progress bar
+        if pbar and cached_results:
+            pbar.update(len(cached_results))
+
+        tasks = [process_safe(cit) for cit in citations_needing_workflow]
         results = list(existing_results)  # Start with checkpoint results
+        results.extend(cached_results)  # Add cache hits
 
         # Use as_completed to update progress bar as items finish
         for future in asyncio.as_completed(tasks):
@@ -476,6 +610,11 @@ class BookPipeline:
             }
             results.append(result_dict)
 
+            # Add to author cache for future citations in this book
+            author = cit.get("author")
+            if author and match_type not in ["error"]:
+                self._add_to_author_cache(author_cache, author, result_dict)
+
             # Save checkpoint every 5 results
             if len(results) % 5 == 0:
                 self._save_checkpoint(checkpoint_path, meta, results)
@@ -492,8 +631,9 @@ class BookPipeline:
         print("           RESOLUTION SUMMARY")
         print("="*50)
         print(f"  Total Citations:    {stats['total']}")
+        print(f"  Cache Hits:         {stats['cache_hits']}")
         print(f"  Workflow Success:   {stats['workflow_success']} ({100*stats['workflow_success']//max(1,stats['total'])}%)")
-        print(f"  Not Found:          {stats['total'] - stats['workflow_success'] - stats['workflow_error']}")
+        print(f"  Not Found:          {stats['total'] - stats['workflow_success'] - stats['workflow_error'] - stats['cache_hits']}")
         print(f"  Errors:             {stats['workflow_error']}")
         print(f"  Fallback Triggered: {stats['fallback_triggered']}")
         print(f"  Fallback Success:   {stats['fallback_success']}")

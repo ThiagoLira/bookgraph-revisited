@@ -1,0 +1,2893 @@
+{
+  "source": {
+    "title": "Ecce Homo",
+    "authors": [
+      "Friedrich Nietzsche"
+    ],
+    "goodreads_id": "685683",
+    "calibre_id": null,
+    "publication_year": 2011,
+    "author_metadata": {
+      "birth_year": 1844,
+      "death_year": 1900,
+      "description": null,
+      "title": "Friedrich Nietzsche"
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Paul Rée",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the whole book as a sort of superior Realism. As a matter of fact it contradicts five or six of my friend's utterances: only read the introduction to The Genealogy of Morals on this question.—The passage above referred to reads: \"What, after all, is the principal axiom to which the boldest and coldest thinker, the author of the book 'On the Origin of Moral Sensations' (read Nietzsche, the first Immoralist), 'has attained by means of his incisive and decisive analysis of human actions?\""
+        ],
+        "commentaries": [
+          "The author mentions his friend Paul Rée as a thinker whose ideas are referenced and contrasted, noting that his own work contradicts several of Rée's utterances."
+        ],
+        "canonical_author": "Paul Rée"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Paul Rée",
+        "page_id": 3313488,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1849 births",
+          "1901 deaths",
+          "19th-century German Jews",
+          "19th-century German non-fiction writers",
+          "19th-century German philosophers",
+          "19th-century German physicians",
+          "19th-century German essayists",
+          "20th-century German essayists",
+          "20th-century German philosophers",
+          "20th-century German physicians",
+          "Aphorists",
+          "Deaths from falls",
+          "Friedrich Nietzsche",
+          "German ethicists",
+          "German male essayists",
+          "20th-century German male writers",
+          "German male non-fiction writers",
+          "Jewish philosophers",
+          "People from the Province of Pomerania",
+          "People from Vorpommern-Rügen",
+          "Phenomenologists",
+          "Philosophers of literature",
+          "Philosophers of psychology",
+          "German philosophers of science",
+          "Philosophers of social science",
+          "German philosophy writers",
+          "German social philosophers",
+          "Theorists on Western civilization",
+          "Unsolved deaths",
+          "Writers about activism and social change"
+        ],
+        "birth_year": 1849,
+        "death_year": 1901
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Paul Rée",
+          "page_id": 3313488,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1849 births",
+            "1901 deaths",
+            "19th-century German Jews",
+            "19th-century German non-fiction writers",
+            "19th-century German philosophers",
+            "19th-century German physicians",
+            "19th-century German essayists",
+            "20th-century German essayists",
+            "20th-century German philosophers",
+            "20th-century German physicians",
+            "Aphorists",
+            "Deaths from falls",
+            "Friedrich Nietzsche",
+            "German ethicists",
+            "German male essayists",
+            "20th-century German male writers",
+            "German male non-fiction writers",
+            "Jewish philosophers",
+            "People from the Province of Pomerania",
+            "People from Vorpommern-Rügen",
+            "Phenomenologists",
+            "Philosophers of literature",
+            "Philosophers of psychology",
+            "German philosophers of science",
+            "Philosophers of social science",
+            "German philosophy writers",
+            "German social philosophers",
+            "Theorists on Western civilization",
+            "Unsolved deaths",
+            "Writers about activism and social change"
+          ],
+          "birth_year": 1849,
+          "death_year": 1901
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Molière",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "if my artist's taste endeavours to defend the names of Molière, Corneille, and Racine"
+        ],
+        "commentaries": [
+          "The author defends Molière, along with Corneille and Racine, against Shakespeare, indicating a preference for French classical drama."
+        ],
+        "canonical_author": "Molière"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Molière",
+        "page_id": 51465,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Molière| ",
+          "1622 births",
+          "1673 deaths",
+          "Male actors from Paris",
+          "17th-century French dramatists and playwrights",
+          "17th-century French male writers",
+          "17th-century French poets",
+          "French satirists",
+          "French satirical dramatists and playwrights",
+          "Lycée Louis-le-Grand alumni",
+          "Burials at Père Lachaise Cemetery",
+          "17th-century French male actors",
+          "French male stage actors",
+          "17th-century deaths from tuberculosis",
+          "Deaths onstage",
+          "Man in the Iron Mask",
+          "17th-century pseudonymous writers",
+          "17th-century theatre managers",
+          "Tuberculosis deaths in France"
+        ],
+        "birth_year": 1622,
+        "death_year": 1673
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "29837"
+        ],
+        "target_person": {
+          "title": "Molière",
+          "page_id": 51465,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Molière| ",
+            "1622 births",
+            "1673 deaths",
+            "Male actors from Paris",
+            "17th-century French dramatists and playwrights",
+            "17th-century French male writers",
+            "17th-century French poets",
+            "French satirists",
+            "French satirical dramatists and playwrights",
+            "Lycée Louis-le-Grand alumni",
+            "Burials at Père Lachaise Cemetery",
+            "17th-century French male actors",
+            "French male stage actors",
+            "17th-century deaths from tuberculosis",
+            "Deaths onstage",
+            "Man in the Iron Mask",
+            "17th-century pseudonymous writers",
+            "17th-century theatre managers",
+            "Tuberculosis deaths in France"
+          ],
+          "birth_year": 1622,
+          "death_year": 1673
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pascal",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "If I do not read, but literally love Pascal?"
+        ],
+        "commentaries": [
+          "The author expresses a deep, almost sacrificial love for Pascal, viewing him as an instinctive sacrifice to Christianity."
+        ],
+        "canonical_author": "Pascal"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pascal",
+        "birth_year": 1623,
+        "death_year": 1662
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "10994"
+        ],
+        "target_person": {
+          "title": "Pascal",
+          "birth_year": 1623,
+          "death_year": 1662
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Schopenhauer",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "My triumph is just the opposite of what Schopenhauer's was—I say \"Non legor, non legar.\"",
+          "Tragedy itself is the proof of the fact that the Greeks were not pessimists: Schopenhauer blundered here as he blundered in everything else."
+        ],
+        "commentaries": [
+          "The author contrasts his own reception with that of Schopenhauer, implying Schopenhauer achieved a different kind of triumph in being read.",
+          "The author references Schopenhauer's philosophical ideas on pessimism, critiquing his interpretation of Greek tragedy."
+        ],
+        "canonical_author": "Schopenhauer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Arthur Schopenhauer",
+        "page_id": 700,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Arthur Schopenhauer| ",
+          "1788 births",
+          "1860 deaths",
+          "19th-century atheists",
+          "19th-century German philosophers",
+          "Academic staff of the Humboldt University of Berlin",
+          "German animal rights scholars",
+          "Anti-natalists",
+          "Atheist philosophers",
+          "Burials at Frankfurt Main Cemetery",
+          "German epistemologists",
+          "German atheists",
+          "German ethicists",
+          "German people of Dutch descent",
+          "German scholars of Buddhism",
+          "Idealists",
+          "Kantian philosophers",
+          "German philosophers of art",
+          "Philosophers of pessimism",
+          "Philosophers of psychology",
+          "University of Göttingen alumni",
+          "Writers from Gdańsk"
+        ],
+        "birth_year": 1788,
+        "death_year": 1860
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11682"
+        ],
+        "target_person": {
+          "title": "Arthur Schopenhauer",
+          "page_id": 700,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Arthur Schopenhauer| ",
+            "1788 births",
+            "1860 deaths",
+            "19th-century atheists",
+            "19th-century German philosophers",
+            "Academic staff of the Humboldt University of Berlin",
+            "German animal rights scholars",
+            "Anti-natalists",
+            "Atheist philosophers",
+            "Burials at Frankfurt Main Cemetery",
+            "German epistemologists",
+            "German atheists",
+            "German ethicists",
+            "German people of Dutch descent",
+            "German scholars of Buddhism",
+            "Idealists",
+            "Kantian philosophers",
+            "German philosophers of art",
+            "Philosophers of pessimism",
+            "Philosophers of psychology",
+            "University of Göttingen alumni",
+            "Writers from Gdańsk"
+          ],
+          "birth_year": 1788,
+          "death_year": 1860
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Chopin",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I have still enough of the Pole left in me to let all other music go, if only I can keep Chopin."
+        ],
+        "commentaries": [
+          "The author expresses a strong personal preference for Chopin's music, valuing it above almost all other composers."
+        ],
+        "canonical_author": "Chopin"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Frédéric Chopin",
+        "page_id": 10823,
+        "infoboxes": [
+          "classical composer"
+        ],
+        "categories": [
+          "Frédéric Chopin| ",
+          "1810 births",
+          "1849 deaths",
+          "19th-century Polish classical composers",
+          "19th-century Polish classical pianists",
+          "19th-century deaths from tuberculosis",
+          "19th-century Polish male musicians",
+          "19th-century Polish musicians",
+          "Burials at Père Lachaise Cemetery",
+          "Child classical musicians",
+          "Composers for piano",
+          "Composers from Paris",
+          "Emigrants from the Russian Empire to France",
+          "Great Emigration",
+          "Musicians from Warsaw",
+          "People from Sochaczew County",
+          "Polish emigrants to France",
+          "Polish male classical composers",
+          "Polish male classical pianists",
+          "Polish music educators",
+          "Polish people of French descent",
+          "Polish Romantic composers",
+          "Tuberculosis deaths in France",
+          "University of Warsaw alumni",
+          "Chopin family|Frederic"
+        ],
+        "birth_year": 1810,
+        "death_year": 1849
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "128294"
+        ],
+        "target_person": {
+          "title": "Frédéric Chopin",
+          "page_id": 10823,
+          "infoboxes": [
+            "classical composer"
+          ],
+          "categories": [
+            "Frédéric Chopin| ",
+            "1810 births",
+            "1849 deaths",
+            "19th-century Polish classical composers",
+            "19th-century Polish classical pianists",
+            "19th-century deaths from tuberculosis",
+            "19th-century Polish male musicians",
+            "19th-century Polish musicians",
+            "Burials at Père Lachaise Cemetery",
+            "Child classical musicians",
+            "Composers for piano",
+            "Composers from Paris",
+            "Emigrants from the Russian Empire to France",
+            "Great Emigration",
+            "Musicians from Warsaw",
+            "People from Sochaczew County",
+            "Polish emigrants to France",
+            "Polish male classical composers",
+            "Polish male classical pianists",
+            "Polish music educators",
+            "Polish people of French descent",
+            "Polish Romantic composers",
+            "Tuberculosis deaths in France",
+            "University of Warsaw alumni",
+            "Chopin family|Frederic"
+          ],
+          "birth_year": 1810,
+          "death_year": 1849
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Thus Spake Zarathustra: A Book for All and None",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 8,
+        "contexts": [
+          "\"THUS SPAKE ZARATHUSTRA: A BOOK FOR ALL AND NONE\" 1 I now wish to relate the history of Zarathustra.",
+          "If you should require a formula for a destiny of this kind that has taken human form, you will find it in my Zarathustra.",
+          "\"And he who would be a creator in good and evil—verily, he must first be a destroyer, and break values into pieces.\n\"Thus the greatest evil belongeth unto the greatest good: but this is the creative good.\"",
+          "Zarathustra says: \"Good men never speak the truth.\nFalse shores and false harbours were ye taught by the good.\nIn the lies of the good were ye born and bred.\nThrough the good everything hath become false and crooked from the roots.\"",
+          "\"The good—they cannot create; they are ever the beginning of the end.\n\"They crucify him who writeth new values on new tables; they sacrifice unto themselves the future; they crucify the whole future of humanity!\n\"The good—they are ever the beginning of the end.\"",
+          "\"And whatever harm the slanderers of the world may do, the harm of the good is the most calamitous of all harm.\""
+        ],
+        "commentaries": [
+          "The author introduces his own book, Zarathustra, and proceeds to detail its conception and composition.",
+          "The author presents his own book 'Zarathustra' as the source of a formula for a destiny that has taken human form.",
+          "The author quotes directly from his book 'Zarathustra' to illustrate the concept of creation through destruction.",
+          "The author quotes from 'Zarathustra' to argue that good men are fundamentally dishonest and that their influence corrupts truth.",
+          "The author quotes from 'Zarathustra' to depict the good as destructive forces that oppose innovation and sacrifice the future.",
+          "The author quotes from 'Zarathustra' to claim that the harm caused by good people is the most disastrous."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1406947199",
+        "publication_day": 3,
+        "work_id": "196327",
+        "title_without_series": "Thus Spake Zarathustra: A Book for All and None",
+        "publication_year": 2006,
+        "isbn13": "9781406947199",
+        "publisher": "Penguin",
+        "publication_month": 11,
+        "text_reviews_count": 21,
+        "format": "paperback",
+        "book_id": "18310",
+        "average_rating": 4.05,
+        "num_pages": 356,
+        "title": "Thus Spake Zarathustra: A Book for All and None",
+        "ratings_count": 278,
+        "author_ids": [
+          "1938"
+        ],
+        "authors": [
+          "Friedrich Nietzsche"
+        ],
+        "description": "Thus Spoke Zarathustra (subtitled as A Book for All and None) chronicles the fictitious travels and speeches of Zarathustra, the founder of Zoroastrianism. While Nietzsche injects myriad ideas into the book, a few recurring themes stand out. The overman (Ubermensch), a self-mastered individual who has achieved his full power, is an almost omnipresent idea in Thus Spoke Zarathustra. Man as a race is merely a bridge between animals and the overman. Nietzsche also makes a point that the overman is not an end r...",
+        "link": "https://www.goodreads.com/book/show/18310.Thus_Spake_Zarathustra",
+        "wikipedia_match": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        },
+        "original_year": 1883,
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "description": null,
+          "title": "Friedrich Nietzsche"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "page_id": 10671,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Friedrich Nietzsche| ",
+          "1844 births",
+          "1900 deaths",
+          "People from Lützen",
+          "People from the Province of Saxony",
+          "Former Lutherans",
+          "19th-century German non-fiction writers",
+          "19th-century German male writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German male musicians",
+          "19th-century Prussian people",
+          "Aphorists",
+          "German critics of Christianity",
+          "Determinists",
+          "Existentialists",
+          "German classical philologists",
+          "Hellenists",
+          "German metaphysicians",
+          "German philosophers of art",
+          "Philosophers of time",
+          "Philosophers of nihilism",
+          "German philosophy writers",
+          "Writers from Saxony-Anhalt",
+          "Leipzig University alumni",
+          "University of Bonn alumni",
+          "Academic staff of the University of Basel",
+          "People associated with the University of Basel",
+          "Prussian Army personnel",
+          "German military personnel of the Franco-Prussian War"
+        ],
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "18310",
+        "target_author_ids": [
+          "1938"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Buddha",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This was fully grasped by that profound physiologist Buddha. His \"religion,\" which it would be better to call a system of hygiene, in order to avoid confounding it with a creed so wretched as Christianity, depended for its effect upon the triumph over resentment: to make the soul free therefrom was considered the first step towards recovery. \"Not through hostility is hostility put to flight; through friendship does hostility end\": this stands at the beginning of Buddha's teaching—this is not a precept of morality, but of physiology."
+        ],
+        "commentaries": [
+          "The author references Buddha's teachings as a system of hygiene that emphasizes overcoming resentment, interpreting it as a physiological principle rather than a moral one."
+        ],
+        "canonical_author": "Buddha"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "The Buddha",
+        "page_id": 3395,
+        "infoboxes": [
+          "religious biography",
+          "Chinese"
+        ],
+        "categories": [
+          "Gautama Buddha| ",
+          "5th-century BC Indian people",
+          "5th century BC in religion",
+          "5th-century BC Indian philosophers",
+          "6th-century BC Indian people",
+          "6th-century BC Indian philosophers",
+          "Avatars of Vishnu",
+          "Buddhas",
+          "Classical humanists",
+          "Founders of religions",
+          "Indian ethicists",
+          "Indian political philosophers",
+          "Prophets in Ahmadiyya",
+          "Miracle workers",
+          "National heroes of Nepal",
+          "Philosophers of mind",
+          "Philosophers of pessimism",
+          "Ascetics",
+          "Social philosophers",
+          "Year of birth unknown",
+          "Year of death unknown",
+          "Journey to the West characters",
+          "Seven Buddhas of the Past",
+          "Deified men",
+          "Shakyas",
+          "Indian princes",
+          "Deified Indian men"
+        ],
+        "birth_year": -563,
+        "death_year": -483
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2167493"
+        ],
+        "target_person": {
+          "title": "The Buddha",
+          "page_id": 3395,
+          "infoboxes": [
+            "religious biography",
+            "Chinese"
+          ],
+          "categories": [
+            "Gautama Buddha| ",
+            "5th-century BC Indian people",
+            "5th century BC in religion",
+            "5th-century BC Indian philosophers",
+            "6th-century BC Indian people",
+            "6th-century BC Indian philosophers",
+            "Avatars of Vishnu",
+            "Buddhas",
+            "Classical humanists",
+            "Founders of religions",
+            "Indian ethicists",
+            "Indian political philosophers",
+            "Prophets in Ahmadiyya",
+            "Miracle workers",
+            "National heroes of Nepal",
+            "Philosophers of mind",
+            "Philosophers of pessimism",
+            "Ascetics",
+            "Social philosophers",
+            "Year of birth unknown",
+            "Year of death unknown",
+            "Journey to the West characters",
+            "Seven Buddhas of the Past",
+            "Deified men",
+            "Shakyas",
+            "Indian princes",
+            "Deified Indian men"
+          ],
+          "birth_year": -563,
+          "death_year": -483
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Corneille",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "if my artist's taste endeavours to defend the names of Molière, Corneille, and Racine"
+        ],
+        "commentaries": [
+          "The author defends Corneille, along with Molière and Racine, against Shakespeare, indicating a preference for French classical drama."
+        ],
+        "canonical_author": "Corneille"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Corneille",
+        "birth_year": 1606,
+        "death_year": 1684
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3015432"
+        ],
+        "target_person": {
+          "title": "Corneille",
+          "birth_year": 1606,
+          "death_year": 1684
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hegel",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "all of whom were corrupted by German philosophy (Taine, for instance, by Hegel, whom he has to thank for his misunderstanding of great men and great periods).",
+          "Its attitude towards politics is one of indifference,—\"un-German,\" as people would say to-day,—it smells offensively of Hegel;"
+        ],
+        "commentaries": [
+          "The author criticizes Hegel for corrupting French masters like Taine, leading to a misunderstanding of great men and periods.",
+          "The author notes that his book 'The Birth of Tragedy' has a philosophical scent or influence of Hegel."
+        ],
+        "canonical_author": "Hegel"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Georg Wilhelm Friedrich Hegel",
+        "page_id": 12598,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Georg Wilhelm Friedrich Hegel| ",
+          "1770 births",
+          "1831 deaths",
+          "18th-century German educators",
+          "18th-century essayists",
+          "18th-century German male writers",
+          "18th-century German philosophers",
+          "18th-century German writers",
+          "18th-century historians",
+          "19th-century German educators",
+          "19th-century German essayists",
+          "19th-century German male writers",
+          "19th-century German philosophers",
+          "19th-century historians",
+          "19th-century mystics",
+          "Academic staff of the Humboldt University of Berlin",
+          "Academic staff of the University of Jena",
+          "Burials at the Dorotheenstadt Cemetery",
+          "Death of God theologians",
+          "Deaths from cholera",
+          "Enlightenment philosophers",
+          "German historians of philosophy",
+          "German Lutherans",
+          "German male essayists",
+          "German male non-fiction writers",
+          "German political philosophers",
+          "Hegelian philosophers| ",
+          "Heidelberg University alumni",
+          "German idealists",
+          "Infectious disease deaths in Germany"
+        ],
+        "birth_year": 1770,
+        "death_year": 1831
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6188"
+        ],
+        "target_person": {
+          "title": "Georg Wilhelm Friedrich Hegel",
+          "page_id": 12598,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Georg Wilhelm Friedrich Hegel| ",
+            "1770 births",
+            "1831 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German male writers",
+            "18th-century German philosophers",
+            "18th-century German writers",
+            "18th-century historians",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "19th-century German male writers",
+            "19th-century German philosophers",
+            "19th-century historians",
+            "19th-century mystics",
+            "Academic staff of the Humboldt University of Berlin",
+            "Academic staff of the University of Jena",
+            "Burials at the Dorotheenstadt Cemetery",
+            "Death of God theologians",
+            "Deaths from cholera",
+            "Enlightenment philosophers",
+            "German historians of philosophy",
+            "German Lutherans",
+            "German male essayists",
+            "German male non-fiction writers",
+            "German political philosophers",
+            "Hegelian philosophers| ",
+            "Heidelberg University alumni",
+            "German idealists",
+            "Infectious disease deaths in Germany"
+          ],
+          "birth_year": 1770,
+          "death_year": 1831
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Shakespeare",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "against such a wild genius as Shakespeare",
+          "When I cast about me for my highest formula of Shakespeare, I find invariably but this one: that he conceived the type of Cæsar.",
+          "a Goethe or a Shakespeare would not for an instant have known how to take breath in this atmosphere of passion and of the heights"
+        ],
+        "commentaries": [
+          "The author contrasts Shakespeare's 'wild genius' with the French dramatists Molière, Corneille, and Racine.",
+          "The author identifies Shakespeare's conception of Caesar as his highest achievement, implying that only one who embodies such greatness can create it.",
+          "The author suggests that Shakespeare, along with Goethe, would be unable to endure the intense atmosphere of Zarathustra's world."
+        ],
+        "canonical_author": "Shakespeare"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "William Shakespeare",
+        "page_id": 32897,
+        "infoboxes": [
+          "person",
+          "writer "
+        ],
+        "categories": [
+          "William Shakespeare| ",
+          "1564 births",
+          "1616 deaths",
+          "16th-century English male actors",
+          "English male stage actors",
+          "English male Shakespearean actors",
+          "16th-century English dramatists and playwrights",
+          "16th-century English male writers",
+          "17th-century English dramatists and playwrights",
+          "16th-century English poets",
+          "Burials in Warwickshire",
+          "17th-century English poets",
+          "17th-century English male writers",
+          "English Renaissance dramatists",
+          "People educated at King Edward VI School, Stratford-upon-Avon",
+          "Male actors from Stratford-upon-Avon",
+          "People of the Elizabethan era",
+          "Shakespeare family",
+          "Sonneteers",
+          "King's Men (playing company)",
+          "17th-century English male actors",
+          "English male dramatists and playwrights",
+          "English male poets",
+          "Writers from Warwickshire",
+          "Burials at Church of the Holy Trinity, Stratford-upon-Avon"
+        ],
+        "birth_year": 1564,
+        "death_year": 1616
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "16770970"
+        ],
+        "target_person": {
+          "title": "William Shakespeare",
+          "page_id": 32897,
+          "infoboxes": [
+            "person",
+            "writer "
+          ],
+          "categories": [
+            "William Shakespeare| ",
+            "1564 births",
+            "1616 deaths",
+            "16th-century English male actors",
+            "English male stage actors",
+            "English male Shakespearean actors",
+            "16th-century English dramatists and playwrights",
+            "16th-century English male writers",
+            "17th-century English dramatists and playwrights",
+            "16th-century English poets",
+            "Burials in Warwickshire",
+            "17th-century English poets",
+            "17th-century English male writers",
+            "English Renaissance dramatists",
+            "People educated at King Edward VI School, Stratford-upon-Avon",
+            "Male actors from Stratford-upon-Avon",
+            "People of the Elizabethan era",
+            "Shakespeare family",
+            "Sonneteers",
+            "King's Men (playing company)",
+            "17th-century English male actors",
+            "English male dramatists and playwrights",
+            "English male poets",
+            "Writers from Warwickshire",
+            "Burials at Church of the Holy Trinity, Stratford-upon-Avon"
+          ],
+          "birth_year": 1564,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "this was Aristotle's misunderstanding of it"
+        ],
+        "commentaries": [
+          "The author critiques Aristotle's interpretation of tragedy, specifically his view on purging terror and pity, as a misunderstanding compared to the Dionysian concept."
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dante",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "by the side of Zarathustra, Dante is no more than a believer, and not one who first creates the truth"
+        ],
+        "commentaries": [
+          "The author compares Dante unfavorably to Zarathustra, stating that Dante is merely a believer rather than a creator of truth."
+        ],
+        "canonical_author": "Dante"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Dante",
+        "birth_year": 1265,
+        "death_year": 1321
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5031312"
+        ],
+        "target_person": {
+          "title": "Dante",
+          "birth_year": 1265,
+          "death_year": 1321
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sallust",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "to aspire with my pen to emulating the exactitude and the terseness of my model, Sallust"
+        ],
+        "commentaries": [
+          "The author references Sallust as a stylistic model for his own Latin writing, implying admiration for his conciseness and precision."
+        ],
+        "canonical_author": "Sallust"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sallust",
+        "page_id": 161420,
+        "infoboxes": [
+          "person",
+          "military person"
+        ],
+        "categories": [
+          "86 BC births",
+          "30s BC deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "1st-century BC historians",
+          "1st-century BC Romans",
+          "Roman Republican soldiers",
+          "Golden Age Latin writers",
+          "Latin historians",
+          "Sallustii"
+        ],
+        "birth_year": -86,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "185771"
+        ],
+        "target_person": {
+          "title": "Sallust",
+          "page_id": 161420,
+          "infoboxes": [
+            "person",
+            "military person"
+          ],
+          "categories": [
+            "86 BC births",
+            "30s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "1st-century BC historians",
+            "1st-century BC Romans",
+            "Roman Republican soldiers",
+            "Golden Age Latin writers",
+            "Latin historians",
+            "Sallustii"
+          ],
+          "birth_year": -86,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Joyful Wisdom: La Gaya Scienza",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "\"JOYFUL WISDOM: LA GAYA SCIENZA\" 1 Dawn of Day is a yea-saying book, profound, but clear and kindly."
+        ],
+        "commentaries": [
+          "The author describes his own book, La Gaya Scienza, as a yea-saying work where profundity and playfulness coexist."
+        ]
+      },
+      "goodreads_match": {
+        "title": "The Gay Science",
+        "authors": [
+          "Friedrich Nietzsche"
+        ],
+        "original_year": 1882,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "Philosophical work by Friedrich Nietzsche, originally titled 'Die fröhliche Wissenschaft' (The Joyful Science), often translated as 'The Gay Science' or 'Joyful Wisdom'. It introduces the concept of 'God is dead' and contains Nietzsche's first use of the idea of eternal recurrence.",
+        "book_id": "web_eae3abaa",
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "description": null,
+          "title": "Friedrich Nietzsche"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_eae3abaa",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Hamlet",
+        "author": "Shakespeare",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Is Hamlet understood? It is not doubt, but certitude that drives one mad...."
+        ],
+        "commentaries": [
+          "The author offers an interpretation of 'Hamlet', arguing that it is certainty, not doubt, that leads to madness, and links this to philosophical depth."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Hamlet",
+        "authors": [
+          "William Shakespeare"
+        ],
+        "original_year": 1603,
+        "birth_year": 1564,
+        "death_year": 1616,
+        "nationality": "English",
+        "description": "The Tragedy of Hamlet, Prince of Denmark, is a tragedy by William Shakespeare, exploring themes of revenge, madness, and moral corruption.",
+        "book_id": "web_a7fed86c",
+        "author_meta": {
+          "birth_year": 1564,
+          "death_year": 1616,
+          "main_genre": "drama",
+          "nationality": "English"
+        }
+      },
+      "wikipedia_match": {
+        "title": "William Shakespeare",
+        "birth_year": 1564,
+        "death_year": 1616
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_a7fed86c",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "William Shakespeare",
+          "birth_year": 1564,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Rossini",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I could not possibly dispense with Rossini"
+        ],
+        "commentaries": [
+          "The author states that Rossini's music is indispensable to him, associating it with Southern, non-German artistic qualities."
+        ],
+        "canonical_author": "Rossini"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gioachino Rossini",
+        "page_id": 12406,
+        "infoboxes": [],
+        "categories": [
+          "Gioachino Rossini| ",
+          "1792 births",
+          "1868 deaths",
+          "19th-century Italian classical composers",
+          "Burials at Basilica of Santa Croce, Florence",
+          "Burials at Père Lachaise Cemetery",
+          "Catholic liturgical composers",
+          "Italian classical composers of church music",
+          "Composers from Paris",
+          "Conservatorio Giovanni Battista Martini alumni",
+          "Academic staff of the Conservatorio Giovanni Battista Martini",
+          "Grand Officers of the Legion of Honour",
+          "Italian Classical-period composers",
+          "Italian Romantic composers",
+          "Italian emigrants to France",
+          "Italian opera composers",
+          "Italian male opera composers",
+          "Composers from Bologna",
+          "People from Pesaro",
+          "Recipients of the Pour le Mérite (civil class)",
+          "Ballets Russes composers",
+          "19th-century Italian male composers"
+        ],
+        "birth_year": 1792,
+        "death_year": 1868
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Gioachino Rossini",
+          "page_id": 12406,
+          "infoboxes": [],
+          "categories": [
+            "Gioachino Rossini| ",
+            "1792 births",
+            "1868 deaths",
+            "19th-century Italian classical composers",
+            "Burials at Basilica of Santa Croce, Florence",
+            "Burials at Père Lachaise Cemetery",
+            "Catholic liturgical composers",
+            "Italian classical composers of church music",
+            "Composers from Paris",
+            "Conservatorio Giovanni Battista Martini alumni",
+            "Academic staff of the Conservatorio Giovanni Battista Martini",
+            "Grand Officers of the Legion of Honour",
+            "Italian Classical-period composers",
+            "Italian Romantic composers",
+            "Italian emigrants to France",
+            "Italian opera composers",
+            "Italian male opera composers",
+            "Composers from Bologna",
+            "People from Pesaro",
+            "Recipients of the Pour le Mérite (civil class)",
+            "Ballets Russes composers",
+            "19th-century Italian male composers"
+          ],
+          "birth_year": 1792,
+          "death_year": 1868
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Faust",
+        "author": "Goethe",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Words fail me, I have only a look, for those who dare to utter the name of Faust in the presence of Manfred."
+        ],
+        "commentaries": [
+          "The author dismisses comparisons between 'Faust' and 'Manfred', suggesting 'Manfred' is superior and that mentioning 'Faust' in its context is audacious."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "24158213",
+        "title_without_series": "Faust",
+        "text_reviews_count": 7,
+        "format": "Kindle Edition",
+        "book_id": "8133791",
+        "average_rating": 3.97,
+        "title": "Faust",
+        "ratings_count": 48,
+        "author_ids": [
+          "285217"
+        ],
+        "authors": [
+          "Johann Wolfgang von Goethe"
+        ],
+        "description": "Johann Wolfgang von Goethe's Faust is a tragic play in two parts: Faust. Der Tragodie erster Teil (translated as: Faust: The First Part of the Tragedy) and Faust. Der Tragodie zweiter Teil (Faust: The Second Part of the Tragedy). Although rarely staged in its entirety, it is the play with the largest audience numbers on German-language stages. Faust is Goethe's most famous work and considered by many to be one of the greatest works of German literature.",
+        "link": "https://www.goodreads.com/book/show/8133791-faust",
+        "original_year": 1808,
+        "author_meta": {
+          "birth_year": 1749,
+          "death_year": 1832,
+          "main_genre": "Poetry",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Johann Wolfgang von Goethe",
+        "birth_year": 1749,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "8133791",
+        "target_author_ids": [
+          "285217"
+        ],
+        "target_person": {
+          "title": "Johann Wolfgang von Goethe",
+          "birth_year": 1749,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Genealogy of Morals",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "\"THE GENEALOGY OF MORALS: A POLEMIC\""
+        ],
+        "commentaries": [
+          "The author describes the three essays of this work as curious, calculated to mystify, and revealing unpleasant truths about Christianity, conscience, and the ascetic ideal."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0486426912",
+        "publication_day": 23,
+        "work_id": "13751223",
+        "title_without_series": "The Genealogy of Morals",
+        "publication_year": 2003,
+        "isbn13": "9780486426914",
+        "publisher": "Dover Publications",
+        "publication_month": 4,
+        "text_reviews_count": 17,
+        "format": "Paperback",
+        "book_id": "135665",
+        "average_rating": 4.1,
+        "num_pages": 128,
+        "title": "The Genealogy of Morals",
+        "ratings_count": 267,
+        "author_ids": [
+          "1938",
+          "3904776"
+        ],
+        "authors": [
+          "Friedrich Nietzsche",
+          "Talfourd Barnett Ely"
+        ],
+        "description": "Written in response to a book on the origins of morality by his erstwhile friend Paul Ree, the three essays comprising The Genealogy of Morals-- all three advancing the critique of Christian morality set forth in Beyond Good and Evil-- are among Nietzsche's most sustained and cohesive work.\nIn the first essay -- starting from a linguistic analysis of words such as \"good,\" \"bad,\" and \"evil\" -- Nietzsche sets up a contrast between what he calls \"master\" morality and \"slave\" morality and shows how strength and...",
+        "link": "https://www.goodreads.com/book/show/135665.The_Genealogy_of_Morals",
+        "original_year": 1887,
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "description": null,
+          "title": "Friedrich Nietzsche"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "135665",
+        "target_author_ids": [
+          "1938",
+          "3904776"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "for his nose scents decomposition.",
+          "Plato made use of Socrates in the same way—that is to say, as a cipher for Plato."
+        ],
+        "commentaries": [
+          "The author references Plato as a source of degenerate idealism, contrasting it with Dionysian philosophy, and suggests that understanding the Dionysian makes refuting Plato unnecessary.",
+          "The author cites Plato's use of Socrates as a literary device, comparing it to his own method of using Schopenhauer and Wagner as vehicles for his ideas."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Wagner",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "I could never have survived my youth without Wagnerian music.",
+          "I have loved Wagner."
+        ],
+        "commentaries": [
+          "The author credits Wagner's music as essential to his psychological survival during his youth, describing it as a counter-poison to German culture.",
+          "The author references Wagner as a personal and intellectual influence, acknowledging a complex relationship despite the critical stance taken in the work."
+        ],
+        "canonical_author": "Wagner"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Wagner",
+        "birth_year": 1813,
+        "death_year": -430
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Wagner",
+          "birth_year": 1813,
+          "death_year": -430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lord Bacon",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I feel instinctively certain and convinced that Lord Bacon is the originator, the self-torturer, of this most sinister kind of literature"
+        ],
+        "commentaries": [
+          "The author asserts that Lord Bacon is the originator of a sinister literary tradition, specifically in relation to Shakespeare's works, dismissing contrary American theories."
+        ],
+        "canonical_author": "Lord Bacon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Francis Bacon",
+        "page_id": 11319,
+        "infoboxes": [
+          "officeholder",
+          "philosopher"
+        ],
+        "categories": [
+          "Francis Bacon| ",
+          "1561 births",
+          "1626 deaths",
+          "16th-century English lawyers",
+          "16th-century English male writers",
+          "16th-century English novelists",
+          "16th-century English philosophers",
+          "16th-century English writers",
+          "16th-century spies",
+          "16th-century writers in Latin",
+          "17th-century English LGBTQ people",
+          "17th-century English lawyers",
+          "17th-century English male writers",
+          "17th-century English novelists",
+          "17th-century English philosophers",
+          "17th-century English writers",
+          "17th-century King's Counsel",
+          "17th-century regents",
+          "17th-century spies",
+          "17th-century writers in Latin",
+          "Age of Enlightenment",
+          "Alumni of Trinity College, Cambridge",
+          "Anglican writers",
+          "Attorneys general for England and Wales",
+          "Atomists",
+          "Authors of utopian literature",
+          "Bacon family|Francis",
+          "Baconian theory of Shakespeare authorship|Baconian theory of Shakespeare authorship",
+          "British philosophers of law",
+          "Latin-language British writers"
+        ],
+        "birth_year": 1561,
+        "death_year": 1626
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "50964"
+        ],
+        "target_person": {
+          "title": "Francis Bacon",
+          "page_id": 11319,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "Francis Bacon| ",
+            "1561 births",
+            "1626 deaths",
+            "16th-century English lawyers",
+            "16th-century English male writers",
+            "16th-century English novelists",
+            "16th-century English philosophers",
+            "16th-century English writers",
+            "16th-century spies",
+            "16th-century writers in Latin",
+            "17th-century English LGBTQ people",
+            "17th-century English lawyers",
+            "17th-century English male writers",
+            "17th-century English novelists",
+            "17th-century English philosophers",
+            "17th-century English writers",
+            "17th-century King's Counsel",
+            "17th-century regents",
+            "17th-century spies",
+            "17th-century writers in Latin",
+            "Age of Enlightenment",
+            "Alumni of Trinity College, Cambridge",
+            "Anglican writers",
+            "Attorneys general for England and Wales",
+            "Atomists",
+            "Authors of utopian literature",
+            "Bacon family|Francis",
+            "Baconian theory of Shakespeare authorship|Baconian theory of Shakespeare authorship",
+            "British philosophers of law",
+            "Latin-language British writers"
+          ],
+          "birth_year": 1561,
+          "death_year": 1626
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Carlyle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Other learned cattle have suspected me of Darwinism on account of this word: even the \"hero cult\" of that great unconscious and involuntary swindler, Carlyle,—a cult which I repudiated with such roguish malice,—was recognised in my doctrine."
+        ],
+        "commentaries": [
+          "The author mentions Carlyle's 'hero cult' as something mistakenly associated with his own ideas, which he repudiates with malice."
+        ],
+        "canonical_author": "Carlyle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Carlyle",
+        "birth_year": 1795,
+        "death_year": 1881
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "29951"
+        ],
+        "target_person": {
+          "title": "Carlyle",
+          "birth_year": 1795,
+          "death_year": 1881
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Victor Brochard",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "An excellent study by Victor Brochard upon the Greek sceptics, in which my Laertiana was used to advantage."
+        ],
+        "commentaries": [
+          "The author references Victor Brochard's study on Greek skeptics, noting it as excellent and mentioning that his own work (Laertiana) was utilized in it."
+        ],
+        "canonical_author": "Victor Brochard"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Victor Brochard",
+        "page_id": 39298796,
+        "infoboxes": [],
+        "categories": [
+          "1848 births",
+          "1907 deaths",
+          "19th-century French philosophers",
+          "20th-century French philosophers",
+          "French historians of philosophy",
+          "French male non-fiction writers"
+        ],
+        "birth_year": 1848,
+        "death_year": 1907
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Victor Brochard",
+          "page_id": 39298796,
+          "infoboxes": [],
+          "categories": [
+            "1848 births",
+            "1907 deaths",
+            "19th-century French philosophers",
+            "20th-century French philosophers",
+            "French historians of philosophy",
+            "French male non-fiction writers"
+          ],
+          "birth_year": 1848,
+          "death_year": 1907
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Goethe",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Her brother, Krause, the Professor of Theology in Königsberg, was called to the post of General Superintendent at Weimar after Herder's death.",
+          "a Goethe or a Shakespeare would not for an instant have known how to take breath in this atmosphere of passion and of the heights"
+        ],
+        "commentaries": [
+          "The author references Herder in the context of his grandmother's social circle in Weimar, implying Herder's influence or presence as a figure of intellectual history.",
+          "The author suggests that Goethe, along with Shakespeare, would be unable to endure the intense atmosphere of Zarathustra's world."
+        ],
+        "canonical_author": "Goethe"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Johann Wolfgang von Goethe",
+        "page_id": 19242322,
+        "infoboxes": [
+          "writer",
+          "officeholder "
+        ],
+        "categories": [
+          "Johann Wolfgang von Goethe| ",
+          "1749 births",
+          "1832 deaths",
+          "18th-century German educators",
+          "18th-century essayists",
+          "18th-century German civil servants",
+          "18th-century German dramatists and playwrights",
+          "18th-century German male writers",
+          "18th-century German novelists",
+          "18th-century German philosophers",
+          "18th-century German poets",
+          "18th-century historians",
+          "18th-century travel writers",
+          "19th-century German educators",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German civil servants",
+          "19th-century German diplomats",
+          "19th-century German dramatists and playwrights",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German poets",
+          "19th-century historians",
+          "19th-century travel writers",
+          "Color scientists",
+          "Enlightenment philosophers",
+          "Epic poets",
+          "Epigrammatists"
+        ],
+        "birth_year": 1749,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "285217"
+        ],
+        "target_person": {
+          "title": "Johann Wolfgang von Goethe",
+          "page_id": 19242322,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Johann Wolfgang von Goethe| ",
+            "1749 births",
+            "1832 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German civil servants",
+            "18th-century German dramatists and playwrights",
+            "18th-century German male writers",
+            "18th-century German novelists",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century historians",
+            "18th-century travel writers",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German civil servants",
+            "19th-century German diplomats",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century historians",
+            "19th-century travel writers",
+            "Color scientists",
+            "Enlightenment philosophers",
+            "Epic poets",
+            "Epigrammatists"
+          ],
+          "birth_year": 1749,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Socrates",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "All the morbid disturbances of the intellect, even that semi-stupor which accompanies fever, have, unto this day, remained completely unknown to me; and for my first information concerning their nature and frequency, I was obliged to have recourse to the learned works which have been compiled on the subject.",
+          "and, secondly, the comprehension of Socraticism—Socrates being presented for the first time as the instrument of Greek dissolution, as a typical decadent. \"Reason\" versus Instinct. \"Reason\" at any cost, as a dangerous, life-undermining force."
+        ],
+        "commentaries": [
+          "The author references Socrates as a famous case of dialectic being a symptom of decadence, using him as an example within his argument about intellectual health.",
+          "The author references Socrates as a philosophical figure and his concept of 'Reason' as a decadent force."
+        ],
+        "canonical_author": "Socrates"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Socrates",
+        "page_id": 25664190,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Socrates| ",
+          "5th-century BC Athenians",
+          "5th-century BC Greek philosophers",
+          "4th-century BC executions",
+          "470s BC births",
+          "399 BC deaths",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political philosophers",
+          "Ancient Greeks accused of sacrilege",
+          "Characters in the Divine Comedy",
+          "Critics of religions",
+          "Executed ancient Greek people",
+          "Executed philosophers",
+          "Family of Socrates",
+          "Forced suicides",
+          "Irony theorists",
+          "People executed by ancient Athens",
+          "People executed by poison",
+          "People executed for heresy",
+          "Philosophers of education",
+          "Classical theism",
+          "Male suicides",
+          "Suicides by poison"
+        ],
+        "birth_year": -470,
+        "death_year": -399
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Socrates",
+          "page_id": 25664190,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Socrates| ",
+            "5th-century BC Athenians",
+            "5th-century BC Greek philosophers",
+            "4th-century BC executions",
+            "470s BC births",
+            "399 BC deaths",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political philosophers",
+            "Ancient Greeks accused of sacrilege",
+            "Characters in the Divine Comedy",
+            "Critics of religions",
+            "Executed ancient Greek people",
+            "Executed philosophers",
+            "Family of Socrates",
+            "Forced suicides",
+            "Irony theorists",
+            "People executed by ancient Athens",
+            "People executed by poison",
+            "People executed for heresy",
+            "Philosophers of education",
+            "Classical theism",
+            "Male suicides",
+            "Suicides by poison"
+          ],
+          "birth_year": -470,
+          "death_year": -399
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Horace",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "a reader such as I deserve, and one who reads me just as the good old philologists used to read their Horace."
+        ],
+        "commentaries": [
+          "The author uses the reading of Horace by classical philologists as a benchmark for the kind of attentive, worthy reader his own works deserve."
+        ],
+        "canonical_author": "Horace"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Horace",
+        "birth_year": -65,
+        "death_year": -8
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Horace",
+          "birth_year": -65,
+          "death_year": -8
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "On the Origin of Moral Sensations",
+        "author": "Paul Rée",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "\"What, after all, is the principal axiom to which the boldest and coldest thinker, the author of the book 'On the Origin of Moral Sensations' (read Nietzsche, the first Immoralist), 'has attained by means of his incisive and decisive analysis of human actions?\""
+        ],
+        "commentaries": [
+          "The author references Rée's book as part of a self-referential analysis, using it to illustrate the ideas of the 'first Immoralist' (himself) and the theory that there is no intelligible metaphysical world."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Der Ursprung der moralischen Empfindungen",
+        "authors": [
+          "Paul Rée"
+        ],
+        "original_year": 1877,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A philosophical work by Paul Rée analyzing the psychological and historical origins of moral concepts, influential on Nietzsche's thinking.",
+        "book_id": "web_b371c3d4",
+        "author_meta": {
+          "birth_year": 1849,
+          "canonical_name": "Paul Rée",
+          "death_year": 1901
+        }
+      },
+      "wikipedia_match": {
+        "title": "Paul Rée",
+        "birth_year": 1849,
+        "death_year": 1901
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_b371c3d4",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Paul Rée",
+          "birth_year": 1849,
+          "death_year": 1901
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Beyond Good and Evil",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "BEYOND GOOD AND EVIL: \"THE PRELUDE TO A PHILOSOPHY OF THE FUTURE\"",
+          "I forbid, by the bye, any guessing as to whom I am describing in this passage. \"The genius of the heart, as that great anchorite possesses it, the divine tempter and born Pied Piper of consciences, whose voice knows how to sink into the inmost depths of every soul, who neither utters a word nor casts a glance, in which some seductive motive or trick does not lie: a part of whose masterliness is that he understands the art of seeming—not what he is, but that which will place a fresh constraint upon his followers to press ever more closely upon him, to follow him ever more enthusiastically and whole-heartedly...."
+        ],
+        "commentaries": [
+          "The author presents this book as a criticism of modernity and a school for a noble, yea-saying type of gentleman, following the affirmative work of Zarathustra.",
+          "The author quotes a passage from his own book to illustrate his skill as a psychologist."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Beyond Good and Evil: Prelude to a Philosophy of the Future",
+        "authors": [
+          "Friedrich Nietzsche"
+        ],
+        "original_year": 1886,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A major philosophical work by Friedrich Nietzsche that expands upon ideas from Thus Spoke Zarathustra and critiques traditional morality, truth, and philosophy.",
+        "book_id": "web_d4332099",
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "description": null,
+          "title": "Friedrich Nietzsche"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_d4332099",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Heinrich Heine",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "It was Heinrich Heine who gave me the most perfect idea of what a lyrical poet could be."
+        ],
+        "commentaries": [
+          "The author credits Heine with providing the ideal model of a lyrical poet, praising his music and divine wickedness."
+        ],
+        "canonical_author": "Heinrich Heine"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Heinrich Heine",
+        "page_id": 104641,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Heinrich Heine| ",
+          "1797 births",
+          "1856 deaths",
+          "Writers from Düsseldorf",
+          "19th-century Christians",
+          "19th-century German Jews",
+          "19th-century German writers",
+          "19th-century German male writers",
+          "German Ashkenazi Jews",
+          "German Christians",
+          "German duellists",
+          "German emigrants to France",
+          "German Lutherans",
+          "19th-century German poets",
+          "German male poets",
+          "German satirists",
+          "German satirical poets",
+          "German skeptics",
+          "Allgemeine Zeitung people",
+          "German social liberals",
+          "German travel writers",
+          "French-language German writers",
+          "Jewish German writers",
+          "Jewish poets",
+          "Saint-Simonists",
+          "University of Bonn alumni",
+          "University of Göttingen alumni",
+          "Burials at Montmartre Cemetery",
+          "Critics of atheism",
+          "Epic poets"
+        ],
+        "birth_year": 1797,
+        "death_year": 1856
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "16071"
+        ],
+        "target_person": {
+          "title": "Heinrich Heine",
+          "page_id": 104641,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Heinrich Heine| ",
+            "1797 births",
+            "1856 deaths",
+            "Writers from Düsseldorf",
+            "19th-century Christians",
+            "19th-century German Jews",
+            "19th-century German writers",
+            "19th-century German male writers",
+            "German Ashkenazi Jews",
+            "German Christians",
+            "German duellists",
+            "German emigrants to France",
+            "German Lutherans",
+            "19th-century German poets",
+            "German male poets",
+            "German satirists",
+            "German satirical poets",
+            "German skeptics",
+            "Allgemeine Zeitung people",
+            "German social liberals",
+            "German travel writers",
+            "French-language German writers",
+            "Jewish German writers",
+            "Jewish poets",
+            "Saint-Simonists",
+            "University of Bonn alumni",
+            "University of Göttingen alumni",
+            "Burials at Montmartre Cemetery",
+            "Critics of atheism",
+            "Epic poets"
+          ],
+          "birth_year": 1797,
+          "death_year": 1856
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Racine",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "if my artist's taste endeavours to defend the names of Molière, Corneille, and Racine"
+        ],
+        "commentaries": [
+          "The author defends Racine, along with Molière and Corneille, against Shakespeare, indicating a preference for French classical drama."
+        ],
+        "canonical_author": "Racine"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Jean Racine",
+        "page_id": 52201,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Jean Racine| ",
+          "17th-century French dramatists and playwrights",
+          "17th-century French male writers",
+          "17th-century French poets",
+          "17th-century writers in Latin",
+          "Writers from Hauts-de-France",
+          "Jansenists",
+          "French Roman Catholics",
+          "Lycée Saint-Louis alumni",
+          "Members of the Académie Française",
+          "Members of the Académie des Inscriptions et Belles-Lettres",
+          "Deaths from liver cancer in France",
+          "Burials at Saint-Étienne-du-Mont",
+          "People from the Province of Picardy",
+          "People from Aisne",
+          "1639 births",
+          "1699 deaths"
+        ],
+        "birth_year": 1639,
+        "death_year": 1699
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "15686"
+        ],
+        "target_person": {
+          "title": "Jean Racine",
+          "page_id": 52201,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Jean Racine| ",
+            "17th-century French dramatists and playwrights",
+            "17th-century French male writers",
+            "17th-century French poets",
+            "17th-century writers in Latin",
+            "Writers from Hauts-de-France",
+            "Jansenists",
+            "French Roman Catholics",
+            "Lycée Saint-Louis alumni",
+            "Members of the Académie Française",
+            "Members of the Académie des Inscriptions et Belles-Lettres",
+            "Deaths from liver cancer in France",
+            "Burials at Saint-Étienne-du-Mont",
+            "People from the Province of Picardy",
+            "People from Aisne",
+            "1639 births",
+            "1699 deaths"
+          ],
+          "birth_year": 1639,
+          "death_year": 1699
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Montaigne",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "if I have something of Montaigne's mischievousness in my soul"
+        ],
+        "commentaries": [
+          "The author acknowledges possessing a quality of mischievousness akin to Montaigne's, possibly in both soul and body."
+        ],
+        "canonical_author": "Montaigne"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Michel de Montaigne",
+        "page_id": 44307,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1533 births",
+          "1592 deaths",
+          "People from Guyenne",
+          "16th-century French historians",
+          "16th-century French male writers",
+          "16th-century French philosophers",
+          "16th-century travel writers",
+          "Christian humanists",
+          "College of Guienne alumni",
+          "Deaths from peritonsillar abscess",
+          "French autobiographers",
+          "French book and manuscript collectors",
+          "French male essayists",
+          "French male writers",
+          "French nobility",
+          "French people of Spanish-Jewish descent",
+          "French Renaissance humanists",
+          "French Roman Catholic writers",
+          "French sceptics",
+          "French travel writers",
+          "Mayors of Bordeaux",
+          "People from Dordogne",
+          "French philosophers of education",
+          "French philosophers of science",
+          "Prisoners of the Bastille",
+          "Skeptic philosophers",
+          "Writers from Nouvelle-Aquitaine",
+          "16th-century essayists",
+          "16th-century French writers"
+        ],
+        "birth_year": 1533,
+        "death_year": 1592
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "17241"
+        ],
+        "target_person": {
+          "title": "Michel de Montaigne",
+          "page_id": 44307,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1533 births",
+            "1592 deaths",
+            "People from Guyenne",
+            "16th-century French historians",
+            "16th-century French male writers",
+            "16th-century French philosophers",
+            "16th-century travel writers",
+            "Christian humanists",
+            "College of Guienne alumni",
+            "Deaths from peritonsillar abscess",
+            "French autobiographers",
+            "French book and manuscript collectors",
+            "French male essayists",
+            "French male writers",
+            "French nobility",
+            "French people of Spanish-Jewish descent",
+            "French Renaissance humanists",
+            "French Roman Catholic writers",
+            "French sceptics",
+            "French travel writers",
+            "Mayors of Bordeaux",
+            "People from Dordogne",
+            "French philosophers of education",
+            "French philosophers of science",
+            "Prisoners of the Bastille",
+            "Skeptic philosophers",
+            "Writers from Nouvelle-Aquitaine",
+            "16th-century essayists",
+            "16th-century French writers"
+          ],
+          "birth_year": 1533,
+          "death_year": 1592
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Stendhal",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Stendhal is one of the happiest accidents of my life",
+          "At bottom all I had done was to put one of Stendhal's maxims into practice: he advises one to make one's entrance into society by means of a duel."
+        ],
+        "commentaries": [
+          "The author describes Stendhal as a pivotal, accidental discovery in his life, praising his psychological insight and factual grasp.",
+          "The author references Stendhal as a source of a maxim on social strategy, applying it to his own entry into intellectual society."
+        ],
+        "canonical_author": "Stendhal"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Stendhal",
+        "page_id": 26773,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Stendhal| ",
+          "1783 births",
+          "1842 deaths",
+          "19th-century French novelists",
+          "19th-century French short story writers",
+          "19th-century French writers",
+          "19th-century pseudonymous writers",
+          "Burials at Montmartre Cemetery",
+          "Conseil d'État (France)",
+          "French agnostics",
+          "French biographers",
+          "French male essayists",
+          "French male novelists",
+          "French male short story writers",
+          "French military personnel of the Napoleonic Wars",
+          "French psychological fiction writers",
+          "French travel writers",
+          "French male biographers",
+          "Writers of the Romantic era",
+          "Writers from Grenoble",
+          "Rossini scholars"
+        ],
+        "birth_year": 1783,
+        "death_year": 1842
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1481537"
+        ],
+        "target_person": {
+          "title": "Stendhal",
+          "page_id": 26773,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Stendhal| ",
+            "1783 births",
+            "1842 deaths",
+            "19th-century French novelists",
+            "19th-century French short story writers",
+            "19th-century French writers",
+            "19th-century pseudonymous writers",
+            "Burials at Montmartre Cemetery",
+            "Conseil d'État (France)",
+            "French agnostics",
+            "French biographers",
+            "French male essayists",
+            "French male novelists",
+            "French male short story writers",
+            "French military personnel of the Napoleonic Wars",
+            "French psychological fiction writers",
+            "French travel writers",
+            "French male biographers",
+            "Writers of the Romantic era",
+            "Writers from Grenoble",
+            "Rossini scholars"
+          ],
+          "birth_year": 1783,
+          "death_year": 1842
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Old and the New Faith",
+        "author": "David Strauss",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "in short, as the author of that suburban gospel of his, called The Old and the New Faith"
+        ],
+        "commentaries": [
+          "The author mocks David Strauss's book as a 'suburban gospel,' using it to typify German Philistine culture and smug self-content in a critical attack."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Der alte und der neue Glaube: Ein Bekenntnis",
+        "authors": [
+          "David Friedrich Strauss"
+        ],
+        "original_year": 1872,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A controversial work by theologian David Friedrich Strauss that contrasts traditional Christian faith with modern scientific worldview, often criticized by Nietzsche as representing bourgeois complacency.",
+        "book_id": "web_96a9eab9",
+        "author_meta": {
+          "birth_year": 1808,
+          "death_year": 1874,
+          "main_genre": "Theology",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "David Friedrich Strauss",
+        "birth_year": 1808,
+        "death_year": 1874
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_96a9eab9",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "David Friedrich Strauss",
+          "birth_year": 1808,
+          "death_year": 1874
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Manfred",
+        "author": "Byron",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I must be profoundly related to Byron's Manfred: of all the dark abysses in this work I found the counterparts in my own soul—at the age of thirteen I was ripe for this book."
+        ],
+        "commentaries": [
+          "The author expresses a deep personal connection to Byron's 'Manfred', finding reflections of his own soul in its dark themes from a young age."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1604599081",
+        "publication_day": 19,
+        "work_id": "3774729",
+        "title_without_series": "Manfred",
+        "publication_year": 2009,
+        "isbn13": "9781604599084",
+        "publisher": "Wilder Publications",
+        "publication_month": 12,
+        "text_reviews_count": 2,
+        "format": "Paperback",
+        "book_id": "8104223",
+        "average_rating": 3.83,
+        "num_pages": 64,
+        "title": "Manfred",
+        "ratings_count": 20,
+        "author_ids": [
+          "44407"
+        ],
+        "authors": [
+          "George Gordon Byron"
+        ],
+        "description": "Manfred, a Faustian noble, is tortured by guilt over the death of his beloved, Astarte. He uses his mastery of language and spell-casting to summon seven spirits, from whom he seeks forgetfulness. The spirits are unable to control the past and thus cannot grant Manfred's plea.",
+        "link": "https://www.goodreads.com/book/show/8104223-manfred",
+        "wikipedia_match": {
+          "title": "Lord Byron",
+          "page_id": 17566665,
+          "infoboxes": [
+            "writer",
+            "officeholder"
+          ],
+          "categories": [
+            "Lord Byron| ",
+            "1788 births",
+            "1824 deaths",
+            "18th-century English nobility",
+            "19th-century English dramatists and playwrights",
+            "19th-century English nobility",
+            "19th-century English poets",
+            "19th-century English LGBTQ people",
+            "San Lazzaro degli Armeni alumni",
+            "Alumni of Trinity College, Cambridge",
+            "Anglo-Scots",
+            "Anti-monarchists",
+            "Armenian studies scholars",
+            "Barons Byron|Byron, George Gordon Byron, 6th Baron",
+            "Bisexual male writers",
+            "Bisexual male politicians",
+            "Bisexual poets",
+            "English bisexual politicians",
+            "English bisexual writers",
+            "English bisexual men",
+            "British people of Cornish descent",
+            "British philhellenes in the Greek War of Independence",
+            "Greek people of English descent",
+            "Greek people of Scottish descent",
+            "Naturalized citizens of Greece",
+            "Burials at the Church of St Mary Magdalene, Hucknall",
+            "Burials in Nottinghamshire",
+            "Byron family",
+            "Carbonari",
+            "Coppet group"
+          ],
+          "birth_year": 1788,
+          "death_year": 1824
+        },
+        "original_year": 1817,
+        "author_meta": {
+          "birth_year": 1858,
+          "canonical_name": "George Gordon Byron Sproat",
+          "death_year": 1927
+        }
+      },
+      "wikipedia_match": {
+        "title": "Lord Byron",
+        "page_id": 17566665,
+        "infoboxes": [
+          "writer",
+          "officeholder"
+        ],
+        "categories": [
+          "Lord Byron| ",
+          "1788 births",
+          "1824 deaths",
+          "18th-century English nobility",
+          "19th-century English dramatists and playwrights",
+          "19th-century English nobility",
+          "19th-century English poets",
+          "19th-century English LGBTQ people",
+          "San Lazzaro degli Armeni alumni",
+          "Alumni of Trinity College, Cambridge",
+          "Anglo-Scots",
+          "Anti-monarchists",
+          "Armenian studies scholars",
+          "Barons Byron|Byron, George Gordon Byron, 6th Baron",
+          "Bisexual male writers",
+          "Bisexual male politicians",
+          "Bisexual poets",
+          "English bisexual politicians",
+          "English bisexual writers",
+          "English bisexual men",
+          "British people of Cornish descent",
+          "British philhellenes in the Greek War of Independence",
+          "Greek people of English descent",
+          "Greek people of Scottish descent",
+          "Naturalized citizens of Greece",
+          "Burials at the Church of St Mary Magdalene, Hucknall",
+          "Burials in Nottinghamshire",
+          "Byron family",
+          "Carbonari",
+          "Coppet group"
+        ],
+        "birth_year": 1788,
+        "death_year": 1824
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "8104223",
+        "target_author_ids": [
+          "44407"
+        ],
+        "target_person": {
+          "title": "Lord Byron",
+          "page_id": 17566665,
+          "infoboxes": [
+            "writer",
+            "officeholder"
+          ],
+          "categories": [
+            "Lord Byron| ",
+            "1788 births",
+            "1824 deaths",
+            "18th-century English nobility",
+            "19th-century English dramatists and playwrights",
+            "19th-century English nobility",
+            "19th-century English poets",
+            "19th-century English LGBTQ people",
+            "San Lazzaro degli Armeni alumni",
+            "Alumni of Trinity College, Cambridge",
+            "Anglo-Scots",
+            "Anti-monarchists",
+            "Armenian studies scholars",
+            "Barons Byron|Byron, George Gordon Byron, 6th Baron",
+            "Bisexual male writers",
+            "Bisexual male politicians",
+            "Bisexual poets",
+            "English bisexual politicians",
+            "English bisexual writers",
+            "English bisexual men",
+            "British people of Cornish descent",
+            "British philhellenes in the Greek War of Independence",
+            "Greek people of English descent",
+            "Greek people of Scottish descent",
+            "Naturalized citizens of Greece",
+            "Burials at the Church of St Mary Magdalene, Hucknall",
+            "Burials in Nottinghamshire",
+            "Byron family",
+            "Carbonari",
+            "Coppet group"
+          ],
+          "birth_year": 1788,
+          "death_year": 1824
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Birth of Tragedy",
+        "author": "Nietzsche",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "... \"THE BIRTH Of TRAGEDY\" 1 In order to be fair to the Birth of Tragedy (1872) it is necessary to forget a few things."
+        ],
+        "commentaries": [
+          "The author begins a self-critique and analysis of his earlier work, discussing its reception and core ideas."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0192832921",
+        "publication_day": 30,
+        "work_id": "3036434",
+        "title_without_series": "The Birth of Tragedy",
+        "publication_year": 2000,
+        "isbn13": "9780192832924",
+        "publisher": "Oxford University Press",
+        "publication_month": 3,
+        "text_reviews_count": 3,
+        "format": "Paperback",
+        "book_id": "1037842",
+        "average_rating": 3.98,
+        "title": "The Birth of Tragedy",
+        "ratings_count": 28,
+        "author_ids": [
+          "1938",
+          "6543253"
+        ],
+        "authors": [
+          "Friedrich Nietzsche",
+          "Douglas Smith"
+        ],
+        "description": "In The Birth of TragedyNietzsche expounds on the origins of Greek tragedy and its relevance to the German culture of its time. He declares it to be the expression of a culture which has achieved a delicate but powerful balance between Dionysian insight into the chaos and suffering which underlies all existence and the discipline and clarity of rational Apollonian form. In order to promote a return to these values, Nietzsche critiques complacent rationalism of late nineteenth-century German culture and makes...",
+        "link": "https://www.goodreads.com/book/show/1037842.The_Birth_of_Tragedy",
+        "original_year": 1871,
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "description": null,
+          "title": "Friedrich Nietzsche"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1037842",
+        "target_author_ids": [
+          "1938",
+          "6543253"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Heraclitus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I still remained a little doubtful about Heraclitus, in whose presence, alone, I felt warmer and more at ease than anywhere else."
+        ],
+        "commentaries": [
+          "The author expresses a personal affinity for Heraclitus, noting that his philosophy of becoming and affirmation of impermanence aligns closely with Dionysian thought."
+        ],
+        "canonical_author": "Heraclitus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Heraclitus",
+        "page_id": 13792,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Heraclitus| ",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek philosophers",
+          "530s BC births",
+          "470s BC deaths",
+          "Ancient Ephesians",
+          "Ancient Greek cosmologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Deaths from edema",
+          "Ancient Greek epistemologists",
+          "Natural philosophers",
+          "Ontologists",
+          "Philosophers of ancient Ionia",
+          "Ancient Greek philosophers of mind",
+          "Philosophers of religion",
+          "Philosophers of time",
+          "Ancient Greek political philosophers",
+          "Presocratic philosophers"
+        ],
+        "birth_year": -535,
+        "death_year": -475
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "77989"
+        ],
+        "target_person": {
+          "title": "Heraclitus",
+          "page_id": 13792,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Heraclitus| ",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek philosophers",
+            "530s BC births",
+            "470s BC deaths",
+            "Ancient Ephesians",
+            "Ancient Greek cosmologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Deaths from edema",
+            "Ancient Greek epistemologists",
+            "Natural philosophers",
+            "Ontologists",
+            "Philosophers of ancient Ionia",
+            "Ancient Greek philosophers of mind",
+            "Philosophers of religion",
+            "Philosophers of time",
+            "Ancient Greek political philosophers",
+            "Presocratic philosophers"
+          ],
+          "birth_year": -535,
+          "death_year": -475
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Napoleon",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "with his grasp of facts, which is reminiscent of the same art in the greatest of all masters of facts (ex ungue Napoleonem)"
+        ],
+        "commentaries": [
+          "The author compares Stendhal's grasp of facts to that of Napoleon, implying a high degree of mastery."
+        ],
+        "canonical_author": "Napoleon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Napoleon",
+        "birth_year": 1769,
+        "death_year": 1821
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Napoleon",
+          "birth_year": 1769,
+          "death_year": 1821
+        }
+      }
+    }
+  ]
+}

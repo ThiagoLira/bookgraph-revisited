@@ -18,25 +18,137 @@ This system processes raw text files (books) to find citations of other books an
 ## Architecture
 
 ```mermaid
-graph TD
-    A[Input: Calibre Library / Text Files] --> B(BookPipeline)
+flowchart TD
+    %% ── Input ──────────────────────────────────────────────
+    INPUT[/"📁 Input: .txt files<br/>(Title_GoodreadsID.txt)"/]
+    INPUT --> ENRICH
 
-    subgraph Pipeline Stages
-        B --> C[Step 1: LLM Extraction]
-        C -->|Raw JSON| D[Step 2: Preprocessing]
-        D -->|Clean List| E[Step 3: Citation Workflow]
+    %% ── Stage 0: Source Enrichment ─────────────────────────
+    subgraph STAGE0["Stage 0 — Source Metadata Enrichment"]
+        ENRICH["_enrich_source_metadata()"]
+        ENRICH --> GR_LOOKUP["Goodreads Catalog<br/>SQLite FTS5 lookup"]
+        GR_LOOKUP -->|"authors, pub_year"| ENRICH_MERGE["Merge into<br/>source_metadata"]
+        ENRICH -->|"missing fields?"| LLM_SOURCE["LLM Fallback<br/>(acomplete → JSON)"]
+        LLM_SOURCE -->|"author, year"| ENRICH_MERGE
+        ENRICH_MERGE --> AUTHOR_META_SRC["Enrich primary author<br/>birth/death years"]
+        AUTHOR_META_SRC -->|"Wiki DB → Web → LLM"| ENRICHED_META[/"Enriched source_metadata<br/>{title, authors, year, author_meta}"/]
     end
 
-    subgraph Resolution Process
-        E --> F{Search Indices}
-        F -->|Candidates| G[LLM Validation]
-        G -->|Match| H[Metadata Enrichment]
-        G -->|No Match| I[Web Resolution Fallback]
-        I -->|Resolved| H
+    ENRICHED_META --> EXTRACT
+
+    %% ── Stage 1: Extraction ───────────────────────────────
+    subgraph STAGE1["Stage 1 — LLM Extraction  (extract_citations.py)"]
+        EXTRACT["process_book()"]
+        EXTRACT --> SENT["NLTK sent_tokenize()"]
+        SENT --> CHUNK["build_chunks()<br/>token-budget aware,<br/>≤50 sentences/chunk"]
+        CHUNK --> PARALLEL_LLM["Async LLM calls<br/>(semaphore = extract_concurrency)<br/>OpenAI-compatible API"]
+        PARALLEL_LLM -->|"JSON schema enforced<br/>response_format"| PARSE["Pydantic parse<br/>ModelChunkCitations"]
+        PARSE -->|"retry ×2 on failure"| PARALLEL_LLM
+        PARSE --> RAW_OUT[/"raw_extracted_citations/<br/>BookID.json<br/>{chunks: [{citations: [...]}]}"/]
     end
 
-    H --> J[Output: Final JSON]
-    J --> K[Frontend Visualization]
+    RAW_OUT --> PREPROCESS
+
+    %% ── Stage 2: Preprocessing ────────────────────────────
+    subgraph STAGE2["Stage 2 — Heuristic Preprocessing  (preprocess_citations.py)"]
+        PREPROCESS["preprocess_data()"]
+        PREPROCESS --> FLATTEN["Flatten chunks →<br/>flat citation list"]
+        FLATTEN --> DEDUP_EXACT["deduplicate_exact()<br/>case-insensitive (title, author)"]
+        DEDUP_EXACT --> H1["filter_non_person_authors()<br/>blocklist + pattern filter<br/>(groups, all-caps, generic terms)"]
+        H1 --> H2["collapse_author_only()<br/>merge author-only refs"]
+        H2 --> H3["collapse_variant_titles()<br/>normalize title prefixes"]
+        H3 --> H4["merge_similar_citations()<br/>SequenceMatcher ≥0.85"]
+        H4 --> SELF_REF["drop_self_references()<br/>remove source book from results"]
+        SELF_REF --> PRE_OUT[/"preprocessed_extracted_citations/<br/>BookID.json<br/>{total: N, citations: [...]}"/]
+    end
+
+    PRE_OUT --> VALIDATE
+
+    %% ── Stage 3: LLM Validation ──────────────────────────
+    subgraph STAGE3["Stage 3 — LLM Batch Validation  (validate_citations.py)"]
+        VALIDATE["validate_citations()"]
+        VALIDATE --> BATCH["Split into batches<br/>(≤30 citations each)"]
+        BATCH --> VAL_LLM["Async LLM calls<br/>(semaphore = validate_concurrency)<br/>per-batch prompt"]
+        VAL_LLM -->|"JSON array response"| VAL_PARSE["Parse decisions:<br/>keep / fix / remove"]
+        VAL_PARSE -->|"fix"| APPLY_FIX["Apply corrections<br/>(author name, title,<br/>misattributions)"]
+        VAL_PARSE -->|"remove"| LOG_REMOVE["Log removal reason<br/>(non-person, fictional, etc.)"]
+        VAL_PARSE -->|"keep"| PASS_THROUGH["Pass through unchanged"]
+        APPLY_FIX --> VAL_OUT
+        PASS_THROUGH --> VAL_OUT
+        VAL_OUT[/"validated_citations/<br/>BookID.json<br/>{total: N, validation_stats, citations}"/]
+    end
+
+    VAL_OUT --> WORKFLOW
+
+    %% ── Stage 4: Citation Workflow ────────────────────────
+    subgraph STAGE4["Stage 4 — Agentic Resolution  (citation_workflow.py + main_pipeline.py)"]
+
+        WORKFLOW["_run_workflow()"]
+        WORKFLOW --> CACHE_CHECK{"Author cache hit?<br/>(author-only, no title)"}
+        CACHE_CHECK -->|"hit"| CACHE_RESULT["Clone cached result"]
+        CACHE_CHECK -->|"miss"| CIT_WORKFLOW["CitationWorkflow.run()<br/>(LlamaIndex Workflow)"]
+
+        subgraph WF_INNER["CitationWorkflow Steps"]
+            direction TB
+            GEN_Q["generate_queries()<br/>LLM → structured QueryList<br/>(title/author variants,<br/>alias expansion)"]
+            GEN_Q --> SEARCH_GR["search_goodreads()<br/>SQLite FTS5<br/>→ top 5 by fuzzy score"]
+            GEN_Q --> SEARCH_WIKI["search_wikipedia()<br/>SQLite wiki_people_index<br/>→ top 5 by fuzzy score"]
+            SEARCH_GR --> VALIDATE_GR["validate_matches()<br/>LLM structured predict<br/>→ best index or -1"]
+            SEARCH_WIKI --> VALIDATE_WIKI["validate_matches()<br/>LLM structured predict<br/>→ best index or -1"]
+            VALIDATE_GR -->|"fallback: fuzzy ≥70"| AGG["aggregate_results()<br/>combine GR + Wiki"]
+            VALIDATE_WIKI --> AGG
+            AGG -->|"not_found & retries < 3"| GEN_Q
+            AGG -->|"match found"| WF_RESULT["Return match_type +<br/>metadata"]
+        end
+
+        CIT_WORKFLOW --> WF_INNER
+        WF_INNER --> FALLBACK_CHECK{"match_type =<br/>not_found / error?"}
+        FALLBACK_CHECK -->|"yes"| WEB_FALLBACK["MetadataEnricher<br/>.resolve_citation_fallback()<br/>(LLM knowledge-based)"]
+        FALLBACK_CHECK -->|"no"| ENRICH_STEP
+
+        WEB_FALLBACK -->|"book or person"| ENRICH_STEP
+        WEB_FALLBACK -->|"still not found"| ENRICH_STEP
+
+        subgraph ENRICHMENT["Metadata Enrichment"]
+            ENRICH_STEP["Enrich resolved citation"]
+            ENRICH_STEP --> ENRICH_BOOK["enrich_book()<br/>1. Cache<br/>2. Goodreads scraper<br/>3. Wikipedia web<br/>4. LLM fallback<br/>→ original_year"]
+            ENRICH_STEP --> ENRICH_AUTHOR["enrich_author()<br/>1. Cache<br/>2. Local Wiki DB<br/>3. Wikipedia web<br/>4. LLM fallback<br/>→ birth/death years"]
+            ENRICH_BOOK --> BUILD_EDGE
+            ENRICH_AUTHOR --> BUILD_EDGE
+        end
+
+        BUILD_EDGE["Build edge dict:<br/>{target_type, target_book_id,<br/>target_author_ids, target_person}"]
+
+        CACHE_RESULT --> RESULTS
+        BUILD_EDGE --> RESULTS["Append to results[]<br/>+ update author_cache"]
+        RESULTS -->|"every 5 results"| CHECKPOINT[("💾 .checkpoint.json")]
+    end
+
+    RESULTS --> FINAL_OUT[/"final_citations_metadata_goodreads/<br/>BookID.json<br/>{source: {...}, citations: [{raw, goodreads_match,<br/>wikipedia_match, edge}]}"/]
+
+    FINAL_OUT --> REGISTER
+
+    %% ── Frontend Registration ─────────────────────────────
+    subgraph FRONTEND["Frontend"]
+        REGISTER["register_dataset.py<br/>copy JSONs, create manifest"]
+        REGISTER --> DATASETS_JSON[/"datasets.json"/]
+        REGISTER --> MANIFEST[/"data/library_name/manifest.json"/]
+        MANIFEST --> D3["D3.js Visualization<br/>index.html"]
+        DATASETS_JSON --> D3
+    end
+
+    %% ── Styling ───────────────────────────────────────────
+    classDef stage fill:#1a1a2e,stroke:#d4a574,color:#e8e6e3
+    classDef io fill:#0d1117,stroke:#4a6fa5,color:#c9d1d9
+    classDef llm fill:#2d1b3d,stroke:#b48ead,color:#e8e6e3
+    classDef db fill:#1b2d2a,stroke:#a3be8c,color:#e8e6e3
+    classDef checkpoint fill:#2d2a1b,stroke:#ebcb8b,color:#e8e6e3
+
+    class STAGE0,STAGE1,STAGE2,STAGE3,STAGE4 stage
+    class INPUT,RAW_OUT,PRE_OUT,VAL_OUT,FINAL_OUT,ENRICHED_META io
+    class PARALLEL_LLM,VAL_LLM,LLM_SOURCE,GEN_Q,VALIDATE_GR,VALIDATE_WIKI,WEB_FALLBACK llm
+    class GR_LOOKUP,SEARCH_GR,SEARCH_WIKI db
+    class CHECKPOINT checkpoint
 ```
 
 ## Setup
@@ -218,7 +330,7 @@ If the pipeline is interrupted, a `.checkpoint.json` file is saved. Simply re-ru
 |--------|---------|-------------|
 | `--workers` | 1 | Parallel file processing |
 | `--chunk-size` | 50 | Sentences per extraction chunk |
-| `--model` | qwen/qwen3-next-80b | LLM model ID |
+| `--model` | deepseek/deepseek-v3.2 | LLM model ID |
 | `--base-url` | OpenRouter | API endpoint |
 
 ### Author Aliases (`datasets/author_aliases.json`)

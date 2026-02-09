@@ -22,7 +22,11 @@ DEFAULT_SYSTEM_PROMPT = (
     "books or book authors mentioned as sources of ideas. "
     "Ignore references to papers, articles, movies, podcasts, websites, or other works of art. "
     "CRITICAL: IGNORE lists of books, Bibliographies, Acknowledgements, Prefaces, or 'Other books by...' sections. "
-    "Focus ONLY on citations that appear within the narrative prose."
+    "Focus ONLY on citations that appear within the narrative prose. "
+    "Authors MUST be named individuals (real people like 'Aristotle', 'Virginia Woolf'). "
+    "Do NOT extract groups, schools of thought, or generic terms ('the Stoics', 'Greek philosophers', 'poets', 'thinkers'). "
+    "Do NOT extract unnamed or generic references ('a philosopher once said', 'ancient authors'). "
+    "If a name is a mythological character or fictional entity rather than a real historical author, exclude it."
 )
 
 USER_PROMPT_TEMPLATE = """You are extracting book citations from a bounded excerpt of "{{book_title}}".
@@ -43,6 +47,7 @@ Rules:
 - Use only information inside the excerpt; do not invent books or authors.
 - **Original Authors Only**: If a translator is mentioned, extract the original author (e.g. for "Homer's Iliad translated by Pope", author is "Homer").
 - **Person References**: If an author is mentioned as a source of ideas but no specific book is named (e.g. "As Socrates argued..."), extract them with `title: null`.
+- **Real People Only**: Authors MUST be real named individuals. Do NOT extract groups, schools, or generic terms like "the Stoics", "Greek philosophers", "poets", "thinkers", "Epicureans". Do NOT extract mythological or fictional characters (e.g. "Dionysus", "Hamlet") as authors.
 - **Ignore Meta-Content**: Do NOT extract from Bibliographies, Footnotes, Indices, or "Further Reading" lists.
 - **Deduplicate**: Include each cited book/author at most once per chunk.
 - `citation_excerpt` MUST be the exact text snippet from the excerpt where the citation appears.
@@ -134,10 +139,10 @@ class ExtractionConfig:
     max_concurrency: int = 10
     base_url: str = "http://localhost:8080/v1"
     api_key: str = "test"
-    model: str = "Qwen/Qwen3-30B-A3B"
+    model: str = "deepseek/deepseek-v3.2"
     max_completion_tokens: int = 4096
     max_context_per_request: int = 8192  # Total context window per request (input + output)
-    tokenizer_name: str = "Qwen/Qwen3-30B-A3B"
+    tokenizer_name: str = "deepseek-ai/DeepSeek-V3"
     book_title: Optional[str] = None
     verbose: bool = False
 
@@ -410,12 +415,12 @@ async def process_book(
     try:
         tokenizer = Tokenizer.from_pretrained(config.tokenizer_name)
     except Exception as exc:
-        print(f"Warning: Failed to load tokenizer '{config.tokenizer_name}': {exc}. Falling back to 'Qwen/Qwen3-30B-A3B'.")
+        print(f"Warning: Failed to load tokenizer '{config.tokenizer_name}': {exc}. Falling back to 'deepseek-ai/DeepSeek-V3'.")
         try:
-            tokenizer = Tokenizer.from_pretrained("Qwen/Qwen3-30B-A3B")
+            tokenizer = Tokenizer.from_pretrained("deepseek-ai/DeepSeek-V3")
         except Exception as fallback_exc:
             raise RuntimeError(
-                f"Failed to load fallback tokenizer 'Qwen/Qwen3-30B-A3B': {fallback_exc}"
+                f"Failed to load fallback tokenizer 'deepseek-ai/DeepSeek-V3': {fallback_exc}"
             ) from fallback_exc
 
     sentences = load_sentences(input_path)

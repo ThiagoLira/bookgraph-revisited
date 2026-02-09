@@ -1,0 +1,1515 @@
+{
+  "source": {
+    "title": "Fear and Trembling",
+    "authors": [
+      "Søren Kierkegaard"
+    ],
+    "goodreads_id": "24965",
+    "calibre_id": null,
+    "publication_year": 1843
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "King Richard III",
+        "author": "Shakespeare",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Shakespeare's King Richard III, Act II, Scene 1."
+        ],
+        "commentaries": [
+          "The author references a specific play by Shakespeare, indicating a citation to a dramatic work."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "2913597",
+        "author_ids": [
+          "947"
+        ],
+        "average_rating": 3.92,
+        "title_without_series": "King Richard III",
+        "book_id": "24084729",
+        "ratings_count": 18,
+        "title": "King Richard III",
+        "text_reviews_count": 3,
+        "authors": [
+          "William Shakespeare"
+        ],
+        "description": "This timeless tragedy follows the bloody path of the \"rudely stamped\" Richard, Duke of Gloucester, who uses his murderous guile to achieve the throne of England.",
+        "link": "https://www.goodreads.com/book/show/24084729-king-richard-iii",
+        "original_year": 1593,
+        "author_meta": {
+          "birth_year": 1564,
+          "death_year": 1616,
+          "main_genre": "drama",
+          "nationality": "English"
+        },
+        "publication_year": 1593
+      },
+      "wikipedia_match": {
+        "title": "William Shakespeare",
+        "page_id": 32897,
+        "birth_year": 1564,
+        "death_year": 1616
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "24084729",
+        "target_author_ids": [
+          "947"
+        ],
+        "target_person": {
+          "title": "William Shakespeare",
+          "page_id": 32897,
+          "birth_year": 1564,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Diogenes Laertius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "(cf. Diogenes Laertius, viii. 39)."
+        ],
+        "commentaries": [
+          "The author references Diogenes Laertius as the source for the account of Pythagoras' death and his final words about silence, using it to support the discussion on heroic speech and silence."
+        ],
+        "canonical_author": "Diogenes Laertius"
+      },
+      "goodreads_match": {
+        "author_id": "5752152",
+        "name": "Diogenes Laertius",
+        "average_rating": "4.12",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Diogenes Laertius",
+          "page_id": 80047,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "3rd-century Romans",
+            "3rd-century Greek philosophers",
+            "Ancient Greek biographers",
+            "Year of birth unknown",
+            "Year of death unknown",
+            "Compilers of works of quotations",
+            "Ancient Roman biographers",
+            "Epigrammatists of the Greek Anthology",
+            "180 births"
+          ],
+          "birth_year": 180,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -180,
+          "death_year": -240,
+          "main_genre": "Biography/Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Diogenes Laertius",
+        "page_id": 80047,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "3rd-century Romans",
+          "3rd-century Greek philosophers",
+          "Ancient Greek biographers",
+          "Year of birth unknown",
+          "Year of death unknown",
+          "Compilers of works of quotations",
+          "Ancient Roman biographers",
+          "Epigrammatists of the Greek Anthology",
+          "180 births"
+        ],
+        "birth_year": 180,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5752152"
+        ],
+        "target_person": {
+          "title": "Diogenes Laertius",
+          "page_id": 80047,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "3rd-century Romans",
+            "3rd-century Greek philosophers",
+            "Ancient Greek biographers",
+            "Year of birth unknown",
+            "Year of death unknown",
+            "Compilers of works of quotations",
+            "Ancient Roman biographers",
+            "Epigrammatists of the Greek Anthology",
+            "180 births"
+          ],
+          "birth_year": 180,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Descartes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "\"But Descartes3did it.\""
+        ],
+        "commentaries": [
+          "The author references Descartes as a thinker who actually practiced what he preached about doubt, contrasting him with contemporary philosophers."
+        ],
+        "canonical_author": "Descartes"
+      },
+      "goodreads_match": {
+        "author_id": "36556",
+        "name": "Rene Descartes",
+        "average_rating": "3.70",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "René Descartes",
+          "page_id": 25525,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "René Descartes| ",
+            "Cartesianism|*",
+            "1596 births",
+            "1650 deaths",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "17th-century French scientists",
+            "17th-century French non-fiction writers",
+            "17th-century writers in Latin",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Aphorists",
+            "Augustinian philosophers",
+            "Burials at Saint-Germain-des-Prés (abbey)",
+            "Catholic philosophers",
+            "French consciousness researchers and theorists",
+            "Constructed language creators",
+            "Critics of animal rights",
+            "Deaths from pneumonia in Sweden",
+            "Dualists",
+            "Enlightenment philosophers",
+            "French emigrants",
+            "Immigrants to the Dutch Republic",
+            "French ethicists",
+            "French expatriates in Sweden",
+            "French expatriates in the Dutch Republic",
+            "French logicians",
+            "French mercenaries",
+            "French music theorists"
+          ],
+          "birth_year": 1596,
+          "death_year": 1650
+        },
+        "author_meta": {
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      },
+      "wikipedia_match": {
+        "title": "René Descartes",
+        "page_id": 25525,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "René Descartes| ",
+          "Cartesianism|*",
+          "1596 births",
+          "1650 deaths",
+          "17th-century French mathematicians",
+          "17th-century French philosophers",
+          "17th-century French scientists",
+          "17th-century French non-fiction writers",
+          "17th-century writers in Latin",
+          "17th-century French male writers",
+          "17th-century Roman Catholics",
+          "Age of Enlightenment",
+          "Aphorists",
+          "Augustinian philosophers",
+          "Burials at Saint-Germain-des-Prés (abbey)",
+          "Catholic philosophers",
+          "French consciousness researchers and theorists",
+          "Constructed language creators",
+          "Critics of animal rights",
+          "Deaths from pneumonia in Sweden",
+          "Dualists",
+          "Enlightenment philosophers",
+          "French emigrants",
+          "Immigrants to the Dutch Republic",
+          "French ethicists",
+          "French expatriates in Sweden",
+          "French expatriates in the Dutch Republic",
+          "French logicians",
+          "French mercenaries",
+          "French music theorists"
+        ],
+        "birth_year": 1596,
+        "death_year": 1650
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "36556"
+        ],
+        "target_person": {
+          "title": "René Descartes",
+          "page_id": 25525,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "René Descartes| ",
+            "Cartesianism|*",
+            "1596 births",
+            "1650 deaths",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "17th-century French scientists",
+            "17th-century French non-fiction writers",
+            "17th-century writers in Latin",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Aphorists",
+            "Augustinian philosophers",
+            "Burials at Saint-Germain-des-Prés (abbey)",
+            "Catholic philosophers",
+            "French consciousness researchers and theorists",
+            "Constructed language creators",
+            "Critics of animal rights",
+            "Deaths from pneumonia in Sweden",
+            "Dualists",
+            "Enlightenment philosophers",
+            "French emigrants",
+            "Immigrants to the Dutch Republic",
+            "French ethicists",
+            "French expatriates in Sweden",
+            "French expatriates in the Dutch Republic",
+            "French logicians",
+            "French mercenaries",
+            "French music theorists"
+          ],
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Apology",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Plato's Apology, Cap. 25."
+        ],
+        "commentaries": [
+          "The author cites a specific work by Plato, referring to a philosophical text."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "1692879",
+        "author_ids": [
+          "879"
+        ],
+        "num_pages": 44,
+        "average_rating": 4.15,
+        "title_without_series": "Apology",
+        "book_id": "8340956",
+        "ratings_count": 154,
+        "title": "Apology",
+        "text_reviews_count": 5,
+        "authors": [
+          "Plato"
+        ],
+        "description": "(The) Apology (of Socrates) is Plato's version of the speech given by Socrates as he defends himself against the charges of being a man \"who corrupted the young, did not believe in the gods, and created new deities\". \"Apology\" here has its earlier meaning (now usually expressed by the word \"apologia\") of speaking in defense of a cause or of one's beliefs or actions.\nThis book was converted from its physical edition to the digital format by a community of volunteers. You may find it for free on the web. Purc...",
+        "link": "https://www.goodreads.com/book/show/8340956-apology",
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        },
+        "original_year": -398,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "8340956",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Horace",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Quoted from Horace's Letters, I, 18, 84: \"It's your affair when the neighbor's house is afire.\""
+        ],
+        "commentaries": [
+          "The author directly quotes a line from Horace's 'Letters' to illustrate a point about personal concern or responsibility."
+        ],
+        "canonical_author": "Horace"
+      },
+      "goodreads_match": {
+        "author_id": "3341504",
+        "name": "Horace",
+        "average_rating": "3.98",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": -65,
+          "death_year": -8,
+          "main_genre": "lyric poetry",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Horace",
+        "birth_year": -65,
+        "death_year": -8
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3341504"
+        ],
+        "target_person": {
+          "title": "Horace",
+          "birth_year": -65,
+          "death_year": -8
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Socrates",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "Even to make the well-known Socratic distinction between what one understands and what one does not understand, passion is required, and of course even more to make the characteristic Socratic movement, the movement, namely, of ignorance.",
+          "If faith is nothing but what philosophy makes it out to be, then Socrates already went further, much further, whereas the contrary is true, that he never reached it. In an intellectual respect he made the movement of infinity. His ignorance is infinite resignation.",
+          "I am thinking of Pythagoras and Socrates.",
+          "One may take Socrates as an example."
+        ],
+        "commentaries": [
+          "The author references Socrates as the originator of a philosophical distinction and a characteristic intellectual movement, using them as an example to argue for the necessity of passion over mere reflection.",
+          "The author uses Socrates as a philosophical reference point, analyzing his intellectual stance as one of infinite resignation, which is contrasted with faith.",
+          "The author references Socrates as a thinker, linking him to the concept of self-knowledge and the discovery of evil within, without citing a specific written work.",
+          "The author uses Socrates as an intellectual tragic hero to illustrate the spiritual strength required at the moment of death, contrasting his ability to speak meaningfully with Abraham's paradoxical silence."
+        ],
+        "canonical_author": "Socrates"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Socrates",
+          "page_id": 25664190,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Socrates| ",
+            "5th-century BC Athenians",
+            "5th-century BC Greek philosophers",
+            "4th-century BC executions",
+            "470s BC births",
+            "399 BC deaths",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political philosophers",
+            "Ancient Greeks accused of sacrilege",
+            "Characters in the Divine Comedy",
+            "Critics of religions",
+            "Executed ancient Greek people",
+            "Executed philosophers",
+            "Family of Socrates",
+            "Forced suicides",
+            "Irony theorists",
+            "People executed by ancient Athens",
+            "People executed by poison",
+            "People executed for heresy",
+            "Philosophers of education",
+            "Classical theism",
+            "Male suicides",
+            "Suicides by poison"
+          ],
+          "birth_year": -470,
+          "death_year": -399
+        },
+        "author_meta": {
+          "birth_year": -470,
+          "death_year": -399,
+          "main_genre": "philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Socrates",
+        "page_id": 25664190,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Socrates| ",
+          "5th-century BC Athenians",
+          "5th-century BC Greek philosophers",
+          "4th-century BC executions",
+          "470s BC births",
+          "399 BC deaths",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political philosophers",
+          "Ancient Greeks accused of sacrilege",
+          "Characters in the Divine Comedy",
+          "Critics of religions",
+          "Executed ancient Greek people",
+          "Executed philosophers",
+          "Family of Socrates",
+          "Forced suicides",
+          "Irony theorists",
+          "People executed by ancient Athens",
+          "People executed by poison",
+          "People executed for heresy",
+          "Philosophers of education",
+          "Classical theism",
+          "Male suicides",
+          "Suicides by poison"
+        ],
+        "birth_year": -470,
+        "death_year": -399
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Socrates",
+          "page_id": 25664190,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Socrates| ",
+            "5th-century BC Athenians",
+            "5th-century BC Greek philosophers",
+            "4th-century BC executions",
+            "470s BC births",
+            "399 BC deaths",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political philosophers",
+            "Ancient Greeks accused of sacrilege",
+            "Characters in the Divine Comedy",
+            "Critics of religions",
+            "Executed ancient Greek people",
+            "Executed philosophers",
+            "Family of Socrates",
+            "Forced suicides",
+            "Irony theorists",
+            "People executed by ancient Athens",
+            "People executed by poison",
+            "People executed for heresy",
+            "Philosophers of education",
+            "Classical theism",
+            "Male suicides",
+            "Suicides by poison"
+          ],
+          "birth_year": -470,
+          "death_year": -399
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Encyclopedie",
+        "author": "Hegel",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Hegel's Logik, ii, Book 2, Sect 3, Cap. C (Werke IV, pp. 177ff.; Encyclopedie I §140 (Werke VI, pp. 275ff.)."
+        ],
+        "commentaries": [
+          "The author references Hegel's 'Encyclopedie' as another example in the same footnote."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "43165841",
+        "publisher": "Hackett Publishing Company, Inc.",
+        "author_ids": [
+          "6188",
+          "184370",
+          "184371",
+          "952644"
+        ],
+        "isbn13": "9780872200708",
+        "num_pages": 381,
+        "average_rating": 4.31,
+        "title_without_series": "The Encyclopaedia Logic: The Encyclopaedia of Philosophical Sciences 1 with the Zusatze",
+        "book_id": "967436",
+        "ratings_count": 122,
+        "isbn": "0872200701",
+        "title": "The Encyclopaedia Logic: The Encyclopaedia of Philosophical Sciences 1 with the Zusatze",
+        "publication_year": 1991,
+        "text_reviews_count": 7,
+        "format": "Paperback",
+        "authors": [
+          "Georg Wilhelm Friedrich Hegel",
+          "Theodore F. Geraets",
+          "W.A. Suchting",
+          "H.S. Harris"
+        ],
+        "description": "A translation of Hegel's German text. It includes a bilingual annotated glossary, bibliographic and interpretive notes to Hegel's text, an Index of References for works cited in the notes, a select Bibliography of various works on Hegel's logic, and an Index.\"",
+        "link": "https://www.goodreads.com/book/show/967436.The_Encyclopaedia_Logic",
+        "original_year": 1812,
+        "author_meta": {
+          "birth_year": 1770,
+          "death_year": 1831,
+          "main_genre": "Philosophy",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Hegel",
+        "birth_year": 1770,
+        "death_year": 1831
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "967436",
+        "target_author_ids": [
+          "6188",
+          "184370",
+          "184371",
+          "952644"
+        ],
+        "target_person": {
+          "title": "Hegel",
+          "birth_year": 1770,
+          "death_year": 1831
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Rousseau",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "this love would be open to suspicion, like that of which Rousseau speaks, referring to people who love the Kaffirs instead of their neighbors."
+        ],
+        "commentaries": [
+          "The author references an idea or argument made by Rousseau, using it as a comparative example of misplaced love, without citing a specific book."
+        ],
+        "canonical_author": "Rousseau"
+      },
+      "goodreads_match": {
+        "author_id": "7994",
+        "name": "Jean-Jacques Rousseau",
+        "average_rating": "3.75",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Jean-Jacques Rousseau",
+          "page_id": 15941,
+          "infoboxes": [
+            "philosopher",
+            "writer"
+          ],
+          "categories": [
+            "Jean-Jacques Rousseau| ",
+            "1712 births",
+            "1778 deaths",
+            "18th-century classical composers",
+            "18th-century male musicians",
+            "18th-century memoirists",
+            "18th-century novelists",
+            "18th-century philosophers",
+            "18th-century writers from the Republic of Geneva",
+            "Age of Enlightenment",
+            "Autobiographers",
+            "Baroque composers",
+            "Burials at the Panthéon, Paris",
+            "Classical-period composers",
+            "Contributors to the Encyclopédie (1751–1772)",
+            "Converts to Roman Catholicism from Calvinism",
+            "Deist philosophers",
+            "Enlightenment philosophers",
+            "Male non-fiction writers",
+            "Political philosophers",
+            "Music copyists",
+            "Music theorists",
+            "Musicians from the Republic of Geneva",
+            "People with hypochondriasis",
+            "Philosophers from the Republic of Geneva",
+            "Philosophers of art",
+            "Philosophers of culture",
+            "Philosophers of economics",
+            "Philosophers of education",
+            "Philosophers of literature"
+          ],
+          "birth_year": 1712,
+          "death_year": 1778
+        },
+        "author_meta": {
+          "birth_year": 1712,
+          "death_year": 1778,
+          "main_genre": "Philosophical treatise",
+          "nationality": "Genevan"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Jean-Jacques Rousseau",
+        "page_id": 15941,
+        "infoboxes": [
+          "philosopher",
+          "writer"
+        ],
+        "categories": [
+          "Jean-Jacques Rousseau| ",
+          "1712 births",
+          "1778 deaths",
+          "18th-century classical composers",
+          "18th-century male musicians",
+          "18th-century memoirists",
+          "18th-century novelists",
+          "18th-century philosophers",
+          "18th-century writers from the Republic of Geneva",
+          "Age of Enlightenment",
+          "Autobiographers",
+          "Baroque composers",
+          "Burials at the Panthéon, Paris",
+          "Classical-period composers",
+          "Contributors to the Encyclopédie (1751–1772)",
+          "Converts to Roman Catholicism from Calvinism",
+          "Deist philosophers",
+          "Enlightenment philosophers",
+          "Male non-fiction writers",
+          "Political philosophers",
+          "Music copyists",
+          "Music theorists",
+          "Musicians from the Republic of Geneva",
+          "People with hypochondriasis",
+          "Philosophers from the Republic of Geneva",
+          "Philosophers of art",
+          "Philosophers of culture",
+          "Philosophers of economics",
+          "Philosophers of education",
+          "Philosophers of literature"
+        ],
+        "birth_year": 1712,
+        "death_year": 1778
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7994"
+        ],
+        "target_person": {
+          "title": "Jean-Jacques Rousseau",
+          "page_id": 15941,
+          "infoboxes": [
+            "philosopher",
+            "writer"
+          ],
+          "categories": [
+            "Jean-Jacques Rousseau| ",
+            "1712 births",
+            "1778 deaths",
+            "18th-century classical composers",
+            "18th-century male musicians",
+            "18th-century memoirists",
+            "18th-century novelists",
+            "18th-century philosophers",
+            "18th-century writers from the Republic of Geneva",
+            "Age of Enlightenment",
+            "Autobiographers",
+            "Baroque composers",
+            "Burials at the Panthéon, Paris",
+            "Classical-period composers",
+            "Contributors to the Encyclopédie (1751–1772)",
+            "Converts to Roman Catholicism from Calvinism",
+            "Deist philosophers",
+            "Enlightenment philosophers",
+            "Male non-fiction writers",
+            "Political philosophers",
+            "Music copyists",
+            "Music theorists",
+            "Musicians from the Republic of Geneva",
+            "People with hypochondriasis",
+            "Philosophers from the Republic of Geneva",
+            "Philosophers of art",
+            "Philosophers of culture",
+            "Philosophers of economics",
+            "Philosophers of education",
+            "Philosophers of literature"
+          ],
+          "birth_year": 1712,
+          "death_year": 1778
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Opinions may be divided as to which rejoinder of Socrates is to be regarded as the decisive one, inasmuch as Socrates has been in so many ways volatilized by Plato."
+        ],
+        "commentaries": [
+          "The author notes that Plato's philosophical interpretations have obscured the historical Socrates, making it difficult to determine which of Socrates' final statements is most authentic."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": {
+        "author_id": "879",
+        "name": "Plato",
+        "average_rating": "3.99",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        },
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pythagoras",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "I am thinking of Pythagoras and Socrates.",
+          "If there can be any question of an analogy, the circumstance of the death of Pythagoras fumishes it, for the silence which he had always maintained he had to carry through in his last moment"
+        ],
+        "commentaries": [
+          "The author references Pythagoras as a thinker, linking him to the concept of self-knowledge and the discovery of evil within, without citing a specific written work.",
+          "The author cites Pythagoras as an example of maintaining silence until compelled to speak at death, drawing a parallel to the theme of necessary silence in Abraham's ordeal."
+        ],
+        "canonical_author": "Pythagoras"
+      },
+      "goodreads_match": {
+        "author_id": "203707",
+        "name": "Pythagoras",
+        "average_rating": "3.91",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": -570,
+          "death_year": -495
+        },
+        "author_meta": {
+          "birth_year": -570,
+          "death_year": -495,
+          "main_genre": "mathematics",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Pythagoras",
+        "page_id": 23275,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Pythagoras| ",
+          "570s BC births",
+          "490s BC deaths",
+          "6th-century BC mathematicians",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek mathematicians",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek geometers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek music theorists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political refugees",
+          "Ancient Greek shamans",
+          "Ancient occultists",
+          "Ancient Samians",
+          "Pythagoreans",
+          "Founders of religions",
+          "Numerologists",
+          "Pythagoreans of Magna Graecia",
+          "6th-century BC religious leaders",
+          "5th-century BC religious leaders"
+        ],
+        "birth_year": -570,
+        "death_year": -495
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "203707"
+        ],
+        "target_person": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": -570,
+          "death_year": -495
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Søren Kierkegaard",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I will follow this with a sketch which involves the demoniacal. The legend of Agnes and the Merman will serve my purpose."
+        ],
+        "commentaries": [
+          "The author references the legend of Agnes and the Merman as a source for a sketch involving the demoniacal, indicating its use as a narrative framework."
+        ],
+        "canonical_author": "Søren Kierkegaard"
+      },
+      "goodreads_match": {
+        "author_id": "6172",
+        "name": "Soren Kierkegaard",
+        "average_rating": "4.08",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": 1813,
+          "death_year": 1855,
+          "main_genre": "Philosophy",
+          "nationality": "Danish"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Søren Kierkegaard",
+        "birth_year": 1813,
+        "death_year": 1855
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6172"
+        ],
+        "target_person": {
+          "title": "Søren Kierkegaard",
+          "birth_year": 1813,
+          "death_year": 1855
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Daub",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "what Daub38 means when he says that a soldier who stands alone at his post with a loaded gun in a stormy night beside a powder-magazine … will get strange thoughts into his head"
+        ],
+        "commentaries": [
+          "The author references Daub to illustrate the kind of profound and terrifying thoughts one might have in a moment of extreme isolation and danger, using this as an analogy for comprehending life's horror as a precursor to faith."
+        ],
+        "canonical_author": "Daub"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Karl Daub",
+          "page_id": 230141,
+          "infoboxes": [],
+          "categories": [
+            "19th-century German Protestant theologians",
+            "19th-century German philosophers",
+            "1765 births",
+            "1836 deaths",
+            "19th-century German male writers",
+            "19th-century German writers",
+            "German male non-fiction writers",
+            "Hegelian philosophers",
+            "Academic staff of Heidelberg University",
+            "German idealists"
+          ],
+          "birth_year": 1765,
+          "death_year": 1836
+        },
+        "author_meta": {
+          "birth_year": 1765,
+          "death_year": 1836,
+          "main_genre": "Philosophy",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Karl Daub",
+        "page_id": 230141,
+        "infoboxes": [],
+        "categories": [
+          "19th-century German Protestant theologians",
+          "19th-century German philosophers",
+          "1765 births",
+          "1836 deaths",
+          "19th-century German male writers",
+          "19th-century German writers",
+          "German male non-fiction writers",
+          "Hegelian philosophers",
+          "Academic staff of Heidelberg University",
+          "German idealists"
+        ],
+        "birth_year": 1765,
+        "death_year": 1836
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Karl Daub",
+          "page_id": 230141,
+          "infoboxes": [],
+          "categories": [
+            "19th-century German Protestant theologians",
+            "19th-century German philosophers",
+            "1765 births",
+            "1836 deaths",
+            "19th-century German male writers",
+            "19th-century German writers",
+            "German male non-fiction writers",
+            "Hegelian philosophers",
+            "Academic staff of Heidelberg University",
+            "German idealists"
+          ],
+          "birth_year": 1765,
+          "death_year": 1836
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristophanes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Let us imagine such an Aristophanes, such a Voltaire, a little altered, for he is at the same time a sympathetic nature, he loves existence, he loves men, and he knows that even though the reproof of laughter will perhaps educate a saved young race, yet in the contemporary generation a multitude of men will be ruined."
+        ],
+        "commentaries": [
+          "The author references Aristophanes as a figure whose method of reproof through laughter could be ethically motivated, using him as an archetype to explore the dilemma of whether to speak out or keep silent."
+        ],
+        "canonical_author": "Aristophanes"
+      },
+      "goodreads_match": {
+        "author_id": "1011",
+        "name": "Aristophanes",
+        "average_rating": "3.88",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Aristophanes",
+          "page_id": 1028,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Aristophanes| ",
+            "440s BC births",
+            "Year of birth unknown",
+            "380s BC deaths",
+            "Year of death unknown",
+            "4th-century BC Athenians",
+            "4th-century BC Greek poets",
+            "5th-century BC Athenians",
+            "5th-century BC Greek poets",
+            "Ancient Athenian dramatists and playwrights",
+            "Ancient Greek satirists",
+            "Satirical dramatists and playwrights",
+            "Old Comic poets",
+            "Writers of lost works"
+          ],
+          "birth_year": -446,
+          "death_year": -386
+        },
+        "author_meta": {
+          "birth_year": -446,
+          "death_year": -386,
+          "main_genre": "Comedy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristophanes",
+        "page_id": 1028,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Aristophanes| ",
+          "440s BC births",
+          "Year of birth unknown",
+          "380s BC deaths",
+          "Year of death unknown",
+          "4th-century BC Athenians",
+          "4th-century BC Greek poets",
+          "5th-century BC Athenians",
+          "5th-century BC Greek poets",
+          "Ancient Athenian dramatists and playwrights",
+          "Ancient Greek satirists",
+          "Satirical dramatists and playwrights",
+          "Old Comic poets",
+          "Writers of lost works"
+        ],
+        "birth_year": -446,
+        "death_year": -386
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1011"
+        ],
+        "target_person": {
+          "title": "Aristophanes",
+          "page_id": 1028,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Aristophanes| ",
+            "440s BC births",
+            "Year of birth unknown",
+            "380s BC deaths",
+            "Year of death unknown",
+            "4th-century BC Athenians",
+            "4th-century BC Greek poets",
+            "5th-century BC Athenians",
+            "5th-century BC Greek poets",
+            "Ancient Athenian dramatists and playwrights",
+            "Ancient Greek satirists",
+            "Satirical dramatists and playwrights",
+            "Old Comic poets",
+            "Writers of lost works"
+          ],
+          "birth_year": -446,
+          "death_year": -386
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cumberland",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Thus Cumberland's Jew83is also a demon notwithstanding he does what is good."
+        ],
+        "commentaries": [
+          "The author references Cumberland's character 'the Jew' as an example of a demoniacal nature despite performing good actions."
+        ],
+        "canonical_author": "Cumberland"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Richard Cumberland (philosopher)",
+          "page_id": 538876,
+          "infoboxes": [],
+          "categories": [
+            "1631 births",
+            "1718 deaths",
+            "17th-century writers in Latin",
+            "Alumni of Magdalene College, Cambridge",
+            "Anglican philosophers",
+            "Bishops of Peterborough",
+            "Doctors of Divinity",
+            "17th-century English philosophers",
+            "Fellows of Magdalene College, Cambridge",
+            "People educated at St Paul's School, London",
+            "People from the City of London",
+            "18th-century Church of England bishops",
+            "17th-century Church of England bishops"
+          ],
+          "birth_year": 1631,
+          "death_year": 1718
+        },
+        "author_meta": {
+          "birth_year": 1732,
+          "death_year": 1811,
+          "main_genre": "Drama",
+          "nationality": "British"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Richard Cumberland (philosopher)",
+        "page_id": 538876,
+        "infoboxes": [],
+        "categories": [
+          "1631 births",
+          "1718 deaths",
+          "17th-century writers in Latin",
+          "Alumni of Magdalene College, Cambridge",
+          "Anglican philosophers",
+          "Bishops of Peterborough",
+          "Doctors of Divinity",
+          "17th-century English philosophers",
+          "Fellows of Magdalene College, Cambridge",
+          "People educated at St Paul's School, London",
+          "People from the City of London",
+          "18th-century Church of England bishops",
+          "17th-century Church of England bishops"
+        ],
+        "birth_year": 1631,
+        "death_year": 1718
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Richard Cumberland (philosopher)",
+          "page_id": 538876,
+          "infoboxes": [],
+          "categories": [
+            "1631 births",
+            "1718 deaths",
+            "17th-century writers in Latin",
+            "Alumni of Magdalene College, Cambridge",
+            "Anglican philosophers",
+            "Bishops of Peterborough",
+            "Doctors of Divinity",
+            "17th-century English philosophers",
+            "Fellows of Magdalene College, Cambridge",
+            "People educated at St Paul's School, London",
+            "People from the City of London",
+            "18th-century Church of England bishops",
+            "17th-century Church of England bishops"
+          ],
+          "birth_year": 1631,
+          "death_year": 1718
+        }
+      }
+    }
+  ]
+}

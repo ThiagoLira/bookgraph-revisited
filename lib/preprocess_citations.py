@@ -246,7 +246,52 @@ def merge_similar_citations(citations: List[Citation]) -> List[Citation]:
     return merged
 
 
+# Known non-person authors to remove (lowercased)
+NON_PERSON_BLOCKLIST = {
+    "unknown", "thinkers", "poets", "lord", "dionysus", "the bible",
+    "elders of zion", "jewish authors", "christian authors",
+    "epicureans", "stoics", "pythagorean sect", "greek philosophers",
+    "ancient authors", "various authors", "anonymous",
+    "hamlet", "faust", "don quixote",
+}
+
+# Patterns that indicate a group noun rather than a person
+_GROUP_SUFFIXES = re.compile(
+    r"^the\s+\w+s$"           # "the Stoics", "the Greeks"
+    r"|ists$"                  # "Marxists", "Platonists" (no first name)
+    r"|ians$"                  # "Cartesians", "Freudians" (no first name)
+    r"|ers$",                  # "thinkers", "philosophers" (no first name)
+    re.IGNORECASE,
+)
+
+
+def filter_non_person_authors(citations: List[Citation]) -> List[Citation]:
+    """Remove citations where the author is not a real named individual."""
+    result: List[Citation] = []
+    for cit in citations:
+        author = (cit.get("author") or "").strip()
+        author_lower = author.lower()
+
+        # Blocklist check
+        if author_lower in NON_PERSON_BLOCKLIST:
+            continue
+
+        # All-caps single word (e.g. "UNKNOWN", "LORD")
+        if author.isupper() and " " not in author.strip():
+            continue
+
+        # Group noun patterns — only apply when there's no first name
+        # (i.e. single word or "the X" pattern)
+        has_first_name = len(author.split()) >= 2 and not author_lower.startswith("the ")
+        if not has_first_name and _GROUP_SUFFIXES.search(author_lower):
+            continue
+
+        result.append(cit)
+    return result
+
+
 HEURISTICS: List[Heuristic] = [
+    filter_non_person_authors,
     placeholder_heuristic,
     collapse_author_only,
     collapse_variant_titles,

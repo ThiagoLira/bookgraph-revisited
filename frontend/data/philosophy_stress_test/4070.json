@@ -1,0 +1,2237 @@
+{
+  "source": {
+    "title": "Man s Search for Meaning",
+    "authors": [
+      "Viktor E. Frankl"
+    ],
+    "goodreads_id": "4070",
+    "calibre_id": null,
+    "publication_year": 1946,
+    "author_metadata": {
+      "birth_year": 1905,
+      "death_year": 1997,
+      "title": "Viktor E. Frankl"
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Schopenhauer",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "The meager pleasures of camp life provided a kind of negative happiness—“freedom from suffering” as Schopenhauer put it—and even that in a relative way only.",
+          "Now we can understand Schopenhauer when he said that mankind was apparently doomed to vacillate eternally between the two extremes of distress and boredom."
+        ],
+        "commentaries": [
+          "The author references Schopenhauer's concept of negative happiness to describe the relief from suffering experienced in the camp.",
+          "The author references Schopenhauer's philosophical idea about the human condition oscillating between distress and boredom to illustrate the existential vacuum."
+        ],
+        "canonical_author": "Schopenhauer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Arthur Schopenhauer",
+        "page_id": 700,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Arthur Schopenhauer| ",
+          "1788 births",
+          "1860 deaths",
+          "19th-century atheists",
+          "19th-century German philosophers",
+          "Academic staff of the Humboldt University of Berlin",
+          "German animal rights scholars",
+          "Anti-natalists",
+          "Atheist philosophers",
+          "Burials at Frankfurt Main Cemetery",
+          "German epistemologists",
+          "German atheists",
+          "German ethicists",
+          "German people of Dutch descent",
+          "German scholars of Buddhism",
+          "Idealists",
+          "Kantian philosophers",
+          "German philosophers of art",
+          "Philosophers of pessimism",
+          "Philosophers of psychology",
+          "University of Göttingen alumni",
+          "Writers from Gdańsk"
+        ],
+        "birth_year": 1788,
+        "death_year": 1860
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11682"
+        ],
+        "target_person": {
+          "title": "Arthur Schopenhauer",
+          "page_id": 700,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Arthur Schopenhauer| ",
+            "1788 births",
+            "1860 deaths",
+            "19th-century atheists",
+            "19th-century German philosophers",
+            "Academic staff of the Humboldt University of Berlin",
+            "German animal rights scholars",
+            "Anti-natalists",
+            "Atheist philosophers",
+            "Burials at Frankfurt Main Cemetery",
+            "German epistemologists",
+            "German atheists",
+            "German ethicists",
+            "German people of Dutch descent",
+            "German scholars of Buddhism",
+            "Idealists",
+            "Kantian philosophers",
+            "German philosophers of art",
+            "Philosophers of pessimism",
+            "Philosophers of psychology",
+            "University of Göttingen alumni",
+            "Writers from Gdańsk"
+          ],
+          "birth_year": 1788,
+          "death_year": 1860
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Alfred Adler",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "or a quest for power, as Alfred Adler taught"
+        ],
+        "commentaries": [
+          "The author references Adler's psychological theory as another contrasting view to Frankl's central thesis."
+        ],
+        "canonical_author": "Alfred Adler"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Alfred Adler",
+        "page_id": 81590,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "20th-century Austrian psychologists",
+          "20th-century non-fiction writers",
+          "Adlerian psychology| ",
+          "Austrian psychiatrists",
+          "Psychiatrists from Austria-Hungary",
+          "Austrian socialists",
+          "Austrian non-fiction writers",
+          "Jewish non-fiction writers",
+          "Jewish physicians",
+          "Jewish psychologists",
+          "Jewish socialists",
+          "Jews who immigrated to the United States to escape Nazism",
+          "Austrian emigrants to the United States",
+          "University of Vienna alumni",
+          "Austrian people of Hungarian-Jewish descent",
+          "People from Rudolfsheim-Fünfhaus",
+          "Burials at the Vienna Central Cemetery",
+          "19th-century Austrian Jews",
+          "20th-century Austrian Jews",
+          "Adler family",
+          "1870 births",
+          "1937 deaths"
+        ],
+        "birth_year": 1870,
+        "death_year": 1937
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "97579"
+        ],
+        "target_person": {
+          "title": "Alfred Adler",
+          "page_id": 81590,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "20th-century Austrian psychologists",
+            "20th-century non-fiction writers",
+            "Adlerian psychology| ",
+            "Austrian psychiatrists",
+            "Psychiatrists from Austria-Hungary",
+            "Austrian socialists",
+            "Austrian non-fiction writers",
+            "Jewish non-fiction writers",
+            "Jewish physicians",
+            "Jewish psychologists",
+            "Jewish socialists",
+            "Jews who immigrated to the United States to escape Nazism",
+            "Austrian emigrants to the United States",
+            "University of Vienna alumni",
+            "Austrian people of Hungarian-Jewish descent",
+            "People from Rudolfsheim-Fünfhaus",
+            "Burials at the Vienna Central Cemetery",
+            "19th-century Austrian Jews",
+            "20th-century Austrian Jews",
+            "Adler family",
+            "1870 births",
+            "1937 deaths"
+          ],
+          "birth_year": 1870,
+          "death_year": 1937
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lessing",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I think it was Lessing who once said, “There are things which must cause you to lose your reason or you have none to lose.”"
+        ],
+        "commentaries": [
+          "The author references Lessing as the source of a philosophical statement about reason and abnormal situations, using it to frame the prisoners' psychological reactions."
+        ],
+        "canonical_author": "Lessing"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gotthold Ephraim Lessing",
+        "page_id": 12305,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Gotthold Ephraim Lessing| ",
+          "1729 births",
+          "1781 deaths",
+          "18th-century German dramatists and playwrights",
+          "18th-century German Protestant theologians",
+          "18th-century German poets",
+          "18th-century German philosophers",
+          "Christian poets",
+          "Enlightenment philosophers",
+          "German Christians",
+          "German male non-fiction writers",
+          "Members of the Prussian Academy of Sciences",
+          "People from Kamenz",
+          "Scholars from the Electorate of Saxony",
+          "People of the Age of Enlightenment",
+          "Protestant philosophers",
+          "Leipzig University alumni",
+          "University of Wittenberg alumni",
+          "Wolfenbüttel",
+          "German Enlightenment",
+          "German Freemasons",
+          "German male poets",
+          "German male dramatists and playwrights",
+          "Vossische Zeitung people",
+          "Spinozists",
+          "Poets from the Electorate of Saxony"
+        ],
+        "birth_year": 1729,
+        "death_year": 1781
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Gotthold Ephraim Lessing",
+          "page_id": 12305,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Gotthold Ephraim Lessing| ",
+            "1729 births",
+            "1781 deaths",
+            "18th-century German dramatists and playwrights",
+            "18th-century German Protestant theologians",
+            "18th-century German poets",
+            "18th-century German philosophers",
+            "Christian poets",
+            "Enlightenment philosophers",
+            "German Christians",
+            "German male non-fiction writers",
+            "Members of the Prussian Academy of Sciences",
+            "People from Kamenz",
+            "Scholars from the Electorate of Saxony",
+            "People of the Age of Enlightenment",
+            "Protestant philosophers",
+            "Leipzig University alumni",
+            "University of Wittenberg alumni",
+            "Wolfenbüttel",
+            "German Enlightenment",
+            "German Freemasons",
+            "German male poets",
+            "German male dramatists and playwrights",
+            "Vossische Zeitung people",
+            "Spinozists",
+            "Poets from the Electorate of Saxony"
+          ],
+          "birth_year": 1729,
+          "death_year": 1781
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Man’s Search for Meaning",
+        "author": "Frankl",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "In Man’s Search for Meaning, he hastens to add that suffering is not necessary to find meaning, only that “meaning is possible in spite of suffering.”",
+          "The soldier attributed his transformation to reading Man’s Search for Meaning."
+        ],
+        "commentaries": [
+          "The author directly quotes and discusses a key idea from Frankl's book 'Man’s Search for Meaning'.",
+          "The author recounts an anecdote where a soldier's psychological healing is attributed to his reading of Frankl's book."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "3389674",
+        "title_without_series": "Man's Search for Meaning",
+        "text_reviews_count": 2,
+        "book_id": "18217461",
+        "average_rating": 4.33,
+        "title": "Man's Search for Meaning",
+        "ratings_count": 16,
+        "author_ids": [
+          "2782"
+        ],
+        "authors": [
+          "Viktor E. Frankl"
+        ],
+        "description": "Psychiatrist Viktor Frankl's memoir has riveted generations of readers with its descriptions of life in Nazi death camps and its lessons for spiritual survival. Between 1942 and 1945 Frankl labored in four different camps, including Auschwitz, while his parents, brother, and pregnant wife perished. Based on his own experience and the experiences of others he treated later in his practice, Frankl argues that we cannot avoid suffering but we can choose how to cope with it, find meaning in it, and move forward...",
+        "link": "https://www.goodreads.com/book/show/18217461-man-s-search-for-meaning",
+        "wikipedia_match": {
+          "title": "Viktor Frankl",
+          "page_id": 177316,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "20th-century Austrian physicians",
+            "20th-century Austrian non-fiction writers",
+            "Austrian neurologists",
+            "Austrian psychiatrists",
+            "Existential therapists",
+            "Humanistic psychologists",
+            "Logotherapy",
+            "Psychology writers",
+            "Writers about the Holocaust",
+            "Auschwitz concentration camp survivors",
+            "Dachau concentration camp survivors",
+            "Theresienstadt Ghetto survivors",
+            "Academic staff of the University of Vienna",
+            "Jewish Austrian writers",
+            "Jewish non-fiction writers",
+            "Jewish existentialists",
+            "Jewish philosophers",
+            "Jewish physicians",
+            "Jewish psychologists",
+            "Knights Commander of the Order of Merit of the Federal Republic of Germany",
+            "Recipients of the Austrian Decoration for Science and Art",
+            "Recipients of the Grand Decoration with Star for Services to the Republic of Austria",
+            "Scientists from Vienna",
+            "People from Leopoldstadt",
+            "Burials at the Vienna Central Cemetery",
+            "1905 births",
+            "1997 deaths"
+          ],
+          "birth_year": 1905,
+          "death_year": 1997
+        },
+        "original_year": 1946,
+        "author_meta": {
+          "birth_year": 1905,
+          "death_year": 1997,
+          "title": "Viktor E. Frankl"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Viktor Frankl",
+        "page_id": 177316,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "20th-century Austrian physicians",
+          "20th-century Austrian non-fiction writers",
+          "Austrian neurologists",
+          "Austrian psychiatrists",
+          "Existential therapists",
+          "Humanistic psychologists",
+          "Logotherapy",
+          "Psychology writers",
+          "Writers about the Holocaust",
+          "Auschwitz concentration camp survivors",
+          "Dachau concentration camp survivors",
+          "Theresienstadt Ghetto survivors",
+          "Academic staff of the University of Vienna",
+          "Jewish Austrian writers",
+          "Jewish non-fiction writers",
+          "Jewish existentialists",
+          "Jewish philosophers",
+          "Jewish physicians",
+          "Jewish psychologists",
+          "Knights Commander of the Order of Merit of the Federal Republic of Germany",
+          "Recipients of the Austrian Decoration for Science and Art",
+          "Recipients of the Grand Decoration with Star for Services to the Republic of Austria",
+          "Scientists from Vienna",
+          "People from Leopoldstadt",
+          "Burials at the Vienna Central Cemetery",
+          "1905 births",
+          "1997 deaths"
+        ],
+        "birth_year": 1905,
+        "death_year": 1997
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "18217461",
+        "target_author_ids": [
+          "2782"
+        ],
+        "target_person": {
+          "title": "Viktor Frankl",
+          "page_id": 177316,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "20th-century Austrian physicians",
+            "20th-century Austrian non-fiction writers",
+            "Austrian neurologists",
+            "Austrian psychiatrists",
+            "Existential therapists",
+            "Humanistic psychologists",
+            "Logotherapy",
+            "Psychology writers",
+            "Writers about the Holocaust",
+            "Auschwitz concentration camp survivors",
+            "Dachau concentration camp survivors",
+            "Theresienstadt Ghetto survivors",
+            "Academic staff of the University of Vienna",
+            "Jewish Austrian writers",
+            "Jewish non-fiction writers",
+            "Jewish existentialists",
+            "Jewish philosophers",
+            "Jewish physicians",
+            "Jewish psychologists",
+            "Knights Commander of the Order of Merit of the Federal Republic of Germany",
+            "Recipients of the Austrian Decoration for Science and Art",
+            "Recipients of the Grand Decoration with Star for Services to the Republic of Austria",
+            "Scientists from Vienna",
+            "People from Leopoldstadt",
+            "Burials at the Vienna Central Cemetery",
+            "1905 births",
+            "1997 deaths"
+          ],
+          "birth_year": 1905,
+          "death_year": 1997
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Allport",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This conviction is supported by Allport who once said, “As the focus of striving shifts from the conflict to selfless goals, the life as a whole becomes sounder even though the neurosis may never completely disappear” (op. cit., p. 95)."
+        ],
+        "commentaries": [
+          "The author cites Allport's statement to support the idea that shifting focus to selfless goals improves overall life soundness, even if neurosis persists."
+        ],
+        "canonical_author": "Allport"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gordon Allport",
+        "page_id": 1117598,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1897 births",
+          "1967 deaths",
+          "Glenville High School alumni",
+          "People from Parke County, Indiana",
+          "20th-century American psychologists",
+          "Personality trait theorists|*",
+          "Psychologists of religion",
+          "Presidents of the American Psychological Association",
+          "Harvard University Department of Psychology faculty",
+          "Harvard College alumni",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Writers about religion and science",
+          "APA Distinguished Scientific Award for an Early Career Contribution to Psychology recipients"
+        ],
+        "birth_year": 1897,
+        "death_year": 1967
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "98919"
+        ],
+        "target_person": {
+          "title": "Gordon Allport",
+          "page_id": 1117598,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1897 births",
+            "1967 deaths",
+            "Glenville High School alumni",
+            "People from Parke County, Indiana",
+            "20th-century American psychologists",
+            "Personality trait theorists|*",
+            "Psychologists of religion",
+            "Presidents of the American Psychological Association",
+            "Harvard University Department of Psychology faculty",
+            "Harvard College alumni",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Writers about religion and science",
+            "APA Distinguished Scientific Award for an Early Career Contribution to Psychology recipients"
+          ],
+          "birth_year": 1897,
+          "death_year": 1967
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Magic Mountain",
+        "author": "Thomas Mann",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In this connection we are reminded of Thomas Mann’s The Magic Mountain, which contains some very pointed psychological remarks."
+        ],
+        "commentaries": [
+          "The author references the novel to draw a parallel between the psychological state of tuberculosis patients in a sanatorium and that of prisoners in a concentration camp, both experiencing a provisional existence without a clear future or goal."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0679772871",
+        "work_id": "647489",
+        "title_without_series": "The Magic Mountain",
+        "publication_year": 1996,
+        "isbn13": "9780679772873",
+        "publisher": "Vintage",
+        "text_reviews_count": 1007,
+        "format": "Paperback",
+        "book_id": "88077",
+        "average_rating": 4.14,
+        "num_pages": 706,
+        "title": "The Magic Mountain",
+        "ratings_count": 21536,
+        "author_ids": [
+          "19405",
+          "60286"
+        ],
+        "authors": [
+          "Thomas Mann",
+          "John E. Woods"
+        ],
+        "description": "In this dizzyingly rich novel of ideas, Mann uses a sanatorium in the Swiss Alps, a community devoted exclusively to sickness, as a microcosm for Europe, which in the years before 1914 was already exhibiting the first symptoms of its own terminal irrationality. The Magic Mountain is a monumental work of erudition and irony, sexual tension and intellectual ferment, a book that pulses with life in the midst of death.",
+        "link": "https://www.goodreads.com/book/show/88077.The_Magic_Mountain",
+        "wikipedia_match": {
+          "title": "Thomas Mann",
+          "page_id": 30085,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Thomas Mann| ",
+            "1875 births",
+            "1955 deaths",
+            "19th-century German novelists",
+            "19th-century German short story writers",
+            "20th-century German novelists",
+            "20th-century German short story writers",
+            "Bisexual male writers",
+            "Bisexual novelists",
+            "Emigrants from Nazi Germany",
+            "Immigrants to Switzerland",
+            "Exilliteratur writers",
+            "German anti-fascists",
+            "German autobiographers",
+            "Immigrants to the United States",
+            "20th-century German essayists",
+            "German Lutherans",
+            "German male novelists",
+            "German male short story writers",
+            "German Nobel laureates",
+            "German people of Brazilian descent",
+            "German people of Portuguese descent",
+            "LGBTQ academics",
+            "LGBTQ Nobel laureates",
+            "German LGBTQ novelists",
+            "Ludwig Maximilian University of Munich alumni",
+            "Modernist writers",
+            "Nobel laureates in Literature",
+            "Writers from the German Empire",
+            "People from the Weimar Republic"
+          ],
+          "birth_year": 1875,
+          "death_year": 1955
+        },
+        "original_year": 1924,
+        "author_meta": {
+          "birth_year": 1875,
+          "death_year": 1955,
+          "description": null,
+          "title": "Thomas Mann"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Thomas Mann",
+        "page_id": 30085,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Thomas Mann| ",
+          "1875 births",
+          "1955 deaths",
+          "19th-century German novelists",
+          "19th-century German short story writers",
+          "20th-century German novelists",
+          "20th-century German short story writers",
+          "Bisexual male writers",
+          "Bisexual novelists",
+          "Emigrants from Nazi Germany",
+          "Immigrants to Switzerland",
+          "Exilliteratur writers",
+          "German anti-fascists",
+          "German autobiographers",
+          "Immigrants to the United States",
+          "20th-century German essayists",
+          "German Lutherans",
+          "German male novelists",
+          "German male short story writers",
+          "German Nobel laureates",
+          "German people of Brazilian descent",
+          "German people of Portuguese descent",
+          "LGBTQ academics",
+          "LGBTQ Nobel laureates",
+          "German LGBTQ novelists",
+          "Ludwig Maximilian University of Munich alumni",
+          "Modernist writers",
+          "Nobel laureates in Literature",
+          "Writers from the German Empire",
+          "People from the Weimar Republic"
+        ],
+        "birth_year": 1875,
+        "death_year": 1955
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "88077",
+        "target_author_ids": [
+          "19405",
+          "60286"
+        ],
+        "target_person": {
+          "title": "Thomas Mann",
+          "page_id": 30085,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Thomas Mann| ",
+            "1875 births",
+            "1955 deaths",
+            "19th-century German novelists",
+            "19th-century German short story writers",
+            "20th-century German novelists",
+            "20th-century German short story writers",
+            "Bisexual male writers",
+            "Bisexual novelists",
+            "Emigrants from Nazi Germany",
+            "Immigrants to Switzerland",
+            "Exilliteratur writers",
+            "German anti-fascists",
+            "German autobiographers",
+            "Immigrants to the United States",
+            "20th-century German essayists",
+            "German Lutherans",
+            "German male novelists",
+            "German male short story writers",
+            "German Nobel laureates",
+            "German people of Brazilian descent",
+            "German people of Portuguese descent",
+            "LGBTQ academics",
+            "LGBTQ Nobel laureates",
+            "German LGBTQ novelists",
+            "Ludwig Maximilian University of Munich alumni",
+            "Modernist writers",
+            "Nobel laureates in Literature",
+            "Writers from the German Empire",
+            "People from the Weimar Republic"
+          ],
+          "birth_year": 1875,
+          "death_year": 1955
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Existential Psychotherapy",
+        "author": "Irvin D. Yalom",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "As Irvin D. Yalom of Stanford University states in Existential Psychotherapy: “Of forty consecutive patients applying for therapy at a psychiatric outpatient clinic … twelve (30 percent) had some major problem involving meaning (as adjudged from self-ratings, therapists, or independent judges).”"
+        ],
+        "commentaries": [
+          "The author references Yalom's book to provide statistical evidence that meaninglessness is a significant issue in clinical populations."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0465021476",
+        "publication_day": 8,
+        "work_id": "713498",
+        "title_without_series": "Existential Psychotherapy",
+        "publication_year": 1980,
+        "isbn13": "9780465021475",
+        "publisher": "Basic Books",
+        "publication_month": 12,
+        "text_reviews_count": 78,
+        "format": "Hardcover",
+        "book_id": "21032",
+        "average_rating": 4.36,
+        "num_pages": 544,
+        "title": "Existential Psychotherapy",
+        "ratings_count": 2984,
+        "author_ids": [
+          "909675"
+        ],
+        "authors": [
+          "Irvin D. Yalom"
+        ],
+        "description": "The noted Stanford University psychiatrist distills the essence of a wide range of therapies into a masterful, creative synthesis, opening up a new way of understanding each person's confrontation with four ultimate concerns: isolation, meaninglessness, death, and freedom.",
+        "link": "https://www.goodreads.com/book/show/21032.Existential_Psychotherapy",
+        "wikipedia_match": {
+          "title": "Irvin D. Yalom",
+          "page_id": 8989836,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1931 births",
+            "American psychiatrists",
+            "Boston University School of Medicine alumni",
+            "Group psychotherapists",
+            "Jewish American scientists",
+            "Jewish physicians",
+            "Jewish American philosophers",
+            "Living people",
+            "Stanford University School of Medicine faculty",
+            "Existential therapists",
+            "American male writers",
+            "Center for Advanced Study in the Behavioral Sciences fellows",
+            "George Washington University alumni"
+          ],
+          "birth_year": 1931,
+          "death_year": null
+        },
+        "original_year": 1980,
+        "author_meta": {
+          "birth_year": 1931,
+          "death_year": null,
+          "description": null,
+          "title": "Irvin D. Yalom"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Irvin D. Yalom",
+        "page_id": 8989836,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1931 births",
+          "American psychiatrists",
+          "Boston University School of Medicine alumni",
+          "Group psychotherapists",
+          "Jewish American scientists",
+          "Jewish physicians",
+          "Jewish American philosophers",
+          "Living people",
+          "Stanford University School of Medicine faculty",
+          "Existential therapists",
+          "American male writers",
+          "Center for Advanced Study in the Behavioral Sciences fellows",
+          "George Washington University alumni"
+        ],
+        "birth_year": 1931,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "21032",
+        "target_author_ids": [
+          "909675"
+        ],
+        "target_person": {
+          "title": "Irvin D. Yalom",
+          "page_id": 8989836,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1931 births",
+            "American psychiatrists",
+            "Boston University School of Medicine alumni",
+            "Group psychotherapists",
+            "Jewish American scientists",
+            "Jewish physicians",
+            "Jewish American philosophers",
+            "Living people",
+            "Stanford University School of Medicine faculty",
+            "Existential therapists",
+            "American male writers",
+            "Center for Advanced Study in the Behavioral Sciences fellows",
+            "George Washington University alumni"
+          ],
+          "birth_year": 1931,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Frankl",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Several of my colleagues in camp who were trained in psychoanalysis often spoke of a “regression” in the camp inmate—a retreat to a more primitive form of mental life.",
+          "He drew strength from loving thoughts of his wife and his deep desire to finish his book on logotherapy."
+        ],
+        "commentaries": [
+          "The author references his colleagues' use of psychoanalytic concepts, implying a familiarity with psychoanalytic literature, but no specific book or author is cited. Since Frankl is the author of the overall work, this is a self-reference to his own ideas or experiences, not a citation of an external book. However, the instruction is to extract citations that refer to books or book authors mentioned as sources of ideas. Here, 'psychoanalysis' is mentioned, but no specific psychoanalyst or book is named. Therefore, this should not be extracted as a citation. The excerpt does not mention any external books or authors by name. The only potential reference is to psychoanalysis, which is a field, not a specific book or author. Thus, the citations array should be empty.",
+          "The author references Frankl's own work-in-progress, a book on logotherapy, as a source of meaning and motivation for him during his imprisonment."
+        ],
+        "canonical_author": "Frankl"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Viktor Frankl",
+        "page_id": 177316,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "20th-century Austrian physicians",
+          "20th-century Austrian non-fiction writers",
+          "Austrian neurologists",
+          "Austrian psychiatrists",
+          "Existential therapists",
+          "Humanistic psychologists",
+          "Logotherapy",
+          "Psychology writers",
+          "Writers about the Holocaust",
+          "Auschwitz concentration camp survivors",
+          "Dachau concentration camp survivors",
+          "Theresienstadt Ghetto survivors",
+          "Academic staff of the University of Vienna",
+          "Jewish Austrian writers",
+          "Jewish non-fiction writers",
+          "Jewish existentialists",
+          "Jewish philosophers",
+          "Jewish physicians",
+          "Jewish psychologists",
+          "Knights Commander of the Order of Merit of the Federal Republic of Germany",
+          "Recipients of the Austrian Decoration for Science and Art",
+          "Recipients of the Grand Decoration with Star for Services to the Republic of Austria",
+          "Scientists from Vienna",
+          "People from Leopoldstadt",
+          "Burials at the Vienna Central Cemetery",
+          "1905 births",
+          "1997 deaths"
+        ],
+        "birth_year": 1905,
+        "death_year": 1997
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Viktor Frankl",
+          "page_id": 177316,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "20th-century Austrian physicians",
+            "20th-century Austrian non-fiction writers",
+            "Austrian neurologists",
+            "Austrian psychiatrists",
+            "Existential therapists",
+            "Humanistic psychologists",
+            "Logotherapy",
+            "Psychology writers",
+            "Writers about the Holocaust",
+            "Auschwitz concentration camp survivors",
+            "Dachau concentration camp survivors",
+            "Theresienstadt Ghetto survivors",
+            "Academic staff of the University of Vienna",
+            "Jewish Austrian writers",
+            "Jewish non-fiction writers",
+            "Jewish existentialists",
+            "Jewish philosophers",
+            "Jewish physicians",
+            "Jewish psychologists",
+            "Knights Commander of the Order of Merit of the Federal Republic of Germany",
+            "Recipients of the Austrian Decoration for Science and Art",
+            "Recipients of the Grand Decoration with Star for Services to the Republic of Austria",
+            "Scientists from Vienna",
+            "People from Leopoldstadt",
+            "Burials at the Vienna Central Cemetery",
+            "1905 births",
+            "1997 deaths"
+          ],
+          "birth_year": 1905,
+          "death_year": 1997
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Karl Bühler",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "midway between an “aha” experience along the lines of Karl Bühler’s concept"
+        ],
+        "commentaries": [
+          "The author references Karl Bühler's concept of the 'aha' experience as a theoretical framework to help locate the cognition of meaning."
+        ],
+        "canonical_author": "Karl Bühler"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Karl Bühler",
+        "page_id": 17289634,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1879 births",
+          "1963 deaths",
+          "People from Rhein-Neckar-Kreis",
+          "People from the Grand Duchy of Baden",
+          "German psychologists",
+          "Austrian psychologists",
+          "20th-century American psychologists",
+          "Communication theorists",
+          "German expatriates in Austria",
+          "Emigrants from Nazi Germany to the United States",
+          "Refugees in Norway",
+          "German expatriates in Norway",
+          "German semioticians",
+          "University of Southern California alumni"
+        ],
+        "birth_year": 1879,
+        "death_year": 1963
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Karl Bühler",
+          "page_id": 17289634,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1879 births",
+            "1963 deaths",
+            "People from Rhein-Neckar-Kreis",
+            "People from the Grand Duchy of Baden",
+            "German psychologists",
+            "Austrian psychologists",
+            "20th-century American psychologists",
+            "Communication theorists",
+            "German expatriates in Austria",
+            "Emigrants from Nazi Germany to the United States",
+            "Refugees in Norway",
+            "German expatriates in Norway",
+            "German semioticians",
+            "University of Southern California alumni"
+          ],
+          "birth_year": 1879,
+          "death_year": 1963
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Resurrection",
+        "author": "Tolstoy",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Those of us who saw the film called Resurrection—taken from a book by Tolstoy—years ago, may have had similar thoughts."
+        ],
+        "commentaries": [
+          "The author references Tolstoy's book 'Resurrection' as the source material for a film that depicted a man meeting death with courage, which prompted philosophical reflections in his youth."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "505000523X",
+        "publication_day": 1,
+        "work_id": "1491227",
+        "title_without_series": "Resurrection",
+        "publication_year": 1989,
+        "isbn13": "9785050005236",
+        "publisher": "Raduga Publishers",
+        "publication_month": 12,
+        "text_reviews_count": 2,
+        "book_id": "1146275",
+        "average_rating": 4.1,
+        "num_pages": 495,
+        "title": "Resurrection",
+        "ratings_count": 3,
+        "author_ids": [
+          "128382"
+        ],
+        "authors": [
+          "Leo Tolstoy"
+        ],
+        "description": "Il principe Nechljudov riconosce nella prostituta Ljubasa, accusata in un processo per omicidio, la contadina Katjusa Maslova, che egli aveva sedotto dieci anni prima, provocandone la rovina. Oppresso dai sensi di colpa, si adopera per salvare la donna e, con lei, la propria anima. Da un <>realmente avvenuto prende spunto l'ultimo grande romanzo di Tolstoj, che e soprattutto una riflessione sull'ineluttabilita del male, sull'ingiustizia universale della sofferenza, alla quale l'uomo puo opporre solo la pros...",
+        "link": "https://www.goodreads.com/book/show/1146275.Resurrection",
+        "original_year": 1899,
+        "author_meta": {
+          "birth_year": 1828,
+          "death_year": 1910,
+          "main_genre": "novel",
+          "nationality": "Russian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Leo Tolstoy",
+        "birth_year": 1828,
+        "death_year": 1910
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1146275",
+        "target_author_ids": [
+          "128382"
+        ],
+        "target_person": {
+          "title": "Leo Tolstoy",
+          "birth_year": 1828,
+          "death_year": 1910
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dostoevski",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "If someone now asked of us the truth of Dostoevski’s statement that flatly defines man as a being who can get used to anything, we would reply, “Yes, a man can get used to anything, but do not ask us how.”",
+          "Dostoevski said once, “There is only one thing that I dread: not to be worthy of my sufferings.”"
+        ],
+        "commentaries": [
+          "The author references Dostoevski's philosophical statement about human adaptability, using it to frame the prisoners' extreme experiences in Auschwitz, while noting they could confirm its truth but not explain the process.",
+          "The author quotes Dostoevski to illustrate the idea that one can be worthy of one's suffering, a concept that resonated with him when observing the behavior of martyrs in the concentration camp."
+        ],
+        "canonical_author": "Dostoevski"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Fyodor Dostoevsky",
+        "page_id": 11625,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Fyodor Dostoyevsky| ",
+          "1821 births",
+          "1881 deaths",
+          "Dostoyevsky family|Fyodor",
+          "19th-century journalists from the Russian Empire",
+          "19th-century short story writers from the Russian Empire",
+          "19th-century translators from the Russian Empire",
+          "Anti-Polish sentiment",
+          "Christian novelists",
+          "Christian radicals",
+          "Corresponding members of the Saint Petersburg Academy of Sciences",
+          "Critics of atheism",
+          "Critics of the Catholic Church",
+          "19th-century diarists from the Russian Empire",
+          "Eastern Orthodox writers",
+          "Eastern Orthodox philosophers",
+          "Engineers from the Russian Empire",
+          "Essayists from the Russian Empire",
+          "Lay theologians",
+          "Letter writers from the Russian Empire",
+          "19th-century letter writers",
+          "Literary critics from the Russian Empire",
+          "Male writers from the Russian Empire",
+          "19th-century memoirists from the Russian Empire",
+          "Military Engineering-Technical University alumni",
+          "Novelists from the Russian Empire",
+          "19th-century non-fiction writers from the Russian Empire",
+          "Philosophers from the Russian Empire",
+          "Magazine editors from the Russian Empire",
+          "Russian male essayists"
+        ],
+        "birth_year": 1821,
+        "death_year": 1881
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "17062421"
+        ],
+        "target_person": {
+          "title": "Fyodor Dostoevsky",
+          "page_id": 11625,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Fyodor Dostoyevsky| ",
+            "1821 births",
+            "1881 deaths",
+            "Dostoyevsky family|Fyodor",
+            "19th-century journalists from the Russian Empire",
+            "19th-century short story writers from the Russian Empire",
+            "19th-century translators from the Russian Empire",
+            "Anti-Polish sentiment",
+            "Christian novelists",
+            "Christian radicals",
+            "Corresponding members of the Saint Petersburg Academy of Sciences",
+            "Critics of atheism",
+            "Critics of the Catholic Church",
+            "19th-century diarists from the Russian Empire",
+            "Eastern Orthodox writers",
+            "Eastern Orthodox philosophers",
+            "Engineers from the Russian Empire",
+            "Essayists from the Russian Empire",
+            "Lay theologians",
+            "Letter writers from the Russian Empire",
+            "19th-century letter writers",
+            "Literary critics from the Russian Empire",
+            "Male writers from the Russian Empire",
+            "19th-century memoirists from the Russian Empire",
+            "Military Engineering-Technical University alumni",
+            "Novelists from the Russian Empire",
+            "19th-century non-fiction writers from the Russian Empire",
+            "Philosophers from the Russian Empire",
+            "Magazine editors from the Russian Empire",
+            "Russian male essayists"
+          ],
+          "birth_year": 1821,
+          "death_year": 1881
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Freud",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Life is not primarily a quest for pleasure, as Freud believed"
+        ],
+        "commentaries": [
+          "The author references Freud's psychological theory as a contrasting view to Frankl's idea about the quest for meaning."
+        ],
+        "canonical_author": "Freud"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sigmund Freud",
+        "page_id": 26743,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Sigmund Freud| ",
+          "19th-century Austrian male writers",
+          "20th-century Austrian male writers",
+          "1856 births",
+          "1939 deaths",
+          "19th-century Austrian physicians",
+          "19th-century Austrian writers",
+          "20th-century Austrian writers",
+          "Narcissism writers",
+          "Austrian Ashkenazi Jews",
+          "19th-century Austrian Jews",
+          "Austrian logicians",
+          "Austrian Lutherans",
+          "Austrian atheists",
+          "Austrian neurologists",
+          "Austrian people of Ukrainian-Jewish descent",
+          "Austrian secular Jews",
+          "Jews from Austria-Hungary",
+          "Critics of religions",
+          "Deaths by euthanasia",
+          "Drug-related deaths in London",
+          "People cremated at Golders Green Crematorium",
+          "Foreign members of the Royal Society",
+          "Freud family|Sigmund",
+          "History of psychiatry",
+          "Jewish atheists",
+          "Jewish Austrian writers",
+          "Jewish Czech writers",
+          "Jewish emigrants from Austria after the Anschluss to the United Kingdom",
+          "Jewish physicians"
+        ],
+        "birth_year": 1856,
+        "death_year": 1939
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "10017"
+        ],
+        "target_person": {
+          "title": "Sigmund Freud",
+          "page_id": 26743,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Sigmund Freud| ",
+            "19th-century Austrian male writers",
+            "20th-century Austrian male writers",
+            "1856 births",
+            "1939 deaths",
+            "19th-century Austrian physicians",
+            "19th-century Austrian writers",
+            "20th-century Austrian writers",
+            "Narcissism writers",
+            "Austrian Ashkenazi Jews",
+            "19th-century Austrian Jews",
+            "Austrian logicians",
+            "Austrian Lutherans",
+            "Austrian atheists",
+            "Austrian neurologists",
+            "Austrian people of Ukrainian-Jewish descent",
+            "Austrian secular Jews",
+            "Jews from Austria-Hungary",
+            "Critics of religions",
+            "Deaths by euthanasia",
+            "Drug-related deaths in London",
+            "People cremated at Golders Green Crematorium",
+            "Foreign members of the Royal Society",
+            "Freud family|Sigmund",
+            "History of psychiatry",
+            "Jewish atheists",
+            "Jewish Austrian writers",
+            "Jewish Czech writers",
+            "Jewish emigrants from Austria after the Anschluss to the United Kingdom",
+            "Jewish physicians"
+          ],
+          "birth_year": 1856,
+          "death_year": 1939
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Doctor and the Soul: An Introduction to Logotherapy",
+        "author": "Viktor E. Frankl",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "the English translation of which was published by Alfred A. Knopf, New York, in 1955, under the title The Doctor and the Soul: An Introduction to Logotherapy.",
+          "In 1946 he reconstructed and revised the book that was destroyed when he was first deported (The Doctor and the Soul), and that same year—in only nine days—he wrote Man’s Search for Meaning."
+        ],
+        "commentaries": [
+          "The author references his own first book, providing its publication details.",
+          "The author notes the post-war reconstruction of Frankl's earlier book 'The Doctor and the Soul' and the rapid writing of 'Man’s Search for Meaning'."
+        ]
+      },
+      "goodreads_match": {
+        "title": "The Doctor and the Soul: An Introduction to Logotherapy",
+        "authors": [
+          "Viktor E. Frankl"
+        ],
+        "original_year": 1946,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": null,
+        "description": "A foundational work of logotherapy by Viktor Frankl, originally written before his deportation to concentration camps and reconstructed in 1946. The book explores the application of logotherapy to medical practice, particularly psychiatry.",
+        "book_id": "web_58b4a69b",
+        "author_meta": {
+          "birth_year": 1905,
+          "death_year": 1997,
+          "title": "Viktor E. Frankl"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Viktor E. Frankl",
+        "birth_year": 1905,
+        "death_year": 1997
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_58b4a69b",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Viktor E. Frankl",
+          "birth_year": 1905,
+          "death_year": 1997
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Human Person",
+        "author": "Magda B. Arnold",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Magda B. Arnold and John A. Gasson, The Human Person, Ronald Press, New York, 1954, p. 618."
+        ],
+        "commentaries": [
+          "The author cites this book as a reference, including co-author and publication details."
+        ]
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Magda B. Arnold",
+        "birth_year": 1903,
+        "death_year": 2002
+      },
+      "edge": {
+        "target_type": "error",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Magda B. Arnold",
+          "birth_year": 1903,
+          "death_year": 2002
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Psychotherapy and Existentialism",
+        "author": "Viktor E. Frankl",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "See also Viktor E. Frankl, Psychotherapy and Existentialism, New York, Simon and Schuster, 1967."
+        ],
+        "commentaries": [
+          "The author references this book in a footnote, indicating it as a supplementary source related to logotherapy and existentialism."
+        ]
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Viktor E. Frankl",
+        "birth_year": 1905,
+        "death_year": 1997
+      },
+      "edge": {
+        "target_type": "error",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Viktor E. Frankl",
+          "birth_year": 1905,
+          "death_year": 1997
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Nietzsche",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "Frankl approvingly quotes the words of Nietzsche: “He who has a Why to live for can bear almost any How.”",
+          "Nietzsche’s words, “He who has a why to live for can bear with almost any how,” could be the guiding motto for all psychotherapeutic and psychohygienic efforts regarding prisoners.",
+          "And I quoted from Nietzsche: “Was mich nicht umbringt, macht mich stärker.” (That which does not kill me, makes me stronger.)",
+          "There is much wisdom in the words of Nietzsche: “He who has a why to live for can bear almost any how.”"
+        ],
+        "commentaries": [
+          "The author cites Nietzsche's philosophy as a source of Frankl's key idea about survival and meaning.",
+          "The author cites Nietzsche's philosophical idea as a guiding principle for providing psychological support to prisoners, emphasizing the importance of having a purpose to endure suffering.",
+          "The author quotes a well-known aphorism by Nietzsche to illustrate the idea that suffering can lead to greater strength.",
+          "The author quotes Nietzsche's aphorism to support the argument that finding meaning in life is crucial for survival and mental health, and suggests it as a motto for psychotherapy."
+        ],
+        "canonical_author": "Nietzsche"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "page_id": 10671,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Friedrich Nietzsche| ",
+          "1844 births",
+          "1900 deaths",
+          "People from Lützen",
+          "People from the Province of Saxony",
+          "Former Lutherans",
+          "19th-century German non-fiction writers",
+          "19th-century German male writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German male musicians",
+          "19th-century Prussian people",
+          "Aphorists",
+          "German critics of Christianity",
+          "Determinists",
+          "Existentialists",
+          "German classical philologists",
+          "Hellenists",
+          "German metaphysicians",
+          "German philosophers of art",
+          "Philosophers of time",
+          "Philosophers of nihilism",
+          "German philosophy writers",
+          "Writers from Saxony-Anhalt",
+          "Leipzig University alumni",
+          "University of Bonn alumni",
+          "Academic staff of the University of Basel",
+          "People associated with the University of Basel",
+          "Prussian Army personnel",
+          "German military personnel of the Franco-Prussian War"
+        ],
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1938"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Max Wertheimer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and a Gestalt perception, say, along the lines of Max Wertheimer’s theory."
+        ],
+        "commentaries": [
+          "The author references Max Wertheimer's theory of Gestalt perception as another theoretical model to describe the perception of meaning."
+        ],
+        "canonical_author": "Max Wertheimer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Max Wertheimer",
+        "page_id": 286150,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1880 births",
+          "1943 deaths",
+          "Charles University alumni",
+          "Humboldt University of Berlin alumni",
+          "University of Würzburg alumni",
+          "Gestalt psychologists",
+          "Czech Jews",
+          "Jewish emigrants from Nazi Germany to the United States",
+          "Scientists from New Rochelle, New York",
+          "Health professionals from Prague",
+          "The New School faculty",
+          "Naturalized citizens of the United States"
+        ],
+        "birth_year": 1880,
+        "death_year": 1943
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Max Wertheimer",
+          "page_id": 286150,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1880 births",
+            "1943 deaths",
+            "Charles University alumni",
+            "Humboldt University of Berlin alumni",
+            "University of Würzburg alumni",
+            "Gestalt psychologists",
+            "Czech Jews",
+            "Jewish emigrants from Nazi Germany to the United States",
+            "Scientists from New Rochelle, New York",
+            "Health professionals from Prague",
+            "The New School faculty",
+            "Naturalized citizens of the United States"
+          ],
+          "birth_year": 1880,
+          "death_year": 1943
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Unheard Cry for Meaning",
+        "author": "Viktor E. Frankl",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Cf. Viktor E. Frankl, The Unheard Cry for Meaning, New York, Simon and Schuster, 1978, pp. 42–43."
+        ],
+        "commentaries": [
+          "The author cites this work by Frankl, likely to compare or support a point, referencing specific pages."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0671228919",
+        "publication_day": 15,
+        "work_id": "124628",
+        "title_without_series": "The Unheard Cry for Meaning: Psychotherapy and Humanism",
+        "publication_year": 1979,
+        "isbn13": "9780671228910",
+        "publisher": "Touchstone/Simon & Schuster",
+        "publication_month": 5,
+        "text_reviews_count": 1,
+        "book_id": "2469962",
+        "average_rating": 4.12,
+        "title": "The Unheard Cry for Meaning: Psychotherapy and Humanism",
+        "ratings_count": 6,
+        "author_ids": [
+          "2782"
+        ],
+        "authors": [
+          "Viktor E. Frankl"
+        ],
+        "description": "In these selected essays, Viktor E. Franklone of the most influential thinkers of our timeillustrates the vital importance of the human dimension in psychotherapy, brilliantly celebrating each individual's unique potential.",
+        "link": "https://www.goodreads.com/book/show/2469962.The_Unheard_Cry_for_Meaning",
+        "original_year": 1978,
+        "author_meta": {
+          "birth_year": 1905,
+          "death_year": 1997,
+          "title": "Viktor E. Frankl"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Viktor E. Frankl",
+        "birth_year": 1905,
+        "death_year": 1997
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "2469962",
+        "target_author_ids": [
+          "2782"
+        ],
+        "target_person": {
+          "title": "Viktor E. Frankl",
+          "birth_year": 1905,
+          "death_year": 1997
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Human Person",
+        "author": "John A. Gasson",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Magda B. Arnold and John A. Gasson, The Human Person, Ronald Press, New York, 1954, p. 618."
+        ],
+        "commentaries": [
+          "The author cites this book as a reference, including co-author and publication details."
+        ]
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John A. Gasson",
+        "birth_year": 1920,
+        "death_year": 2006
+      },
+      "edge": {
+        "target_type": "error",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "John A. Gasson",
+          "birth_year": 1920,
+          "death_year": 2006
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Individual and His Religion",
+        "author": "Gordon W. Allport",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "A statement consistent with this is found in Gordon W. Allport’s book, The Individual and His Religion: “The neurotic who learns to laugh at himself may be on the way to self-management, perhaps to cure.”"
+        ],
+        "commentaries": [
+          "The author cites Allport's book to support the idea that self-detachment through humor can aid in managing neurosis, directly quoting a passage that aligns with the logotherapeutic technique of paradoxical intention."
+        ]
+      },
+      "goodreads_match": {
+        "title": "The Individual and His Religion",
+        "authors": [
+          "Gordon W. Allport"
+        ],
+        "original_year": 1950,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": null,
+        "description": "A psychological study of religious sentiment and its role in personality development.",
+        "book_id": "web_c09b5648",
+        "author_meta": {
+          "birth_year": 1897,
+          "death_year": 1967,
+          "main_genre": "Psychology",
+          "nationality": "American"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Gordon W. Allport",
+        "birth_year": 1897,
+        "death_year": 1967
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_c09b5648",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Gordon W. Allport",
+          "birth_year": 1897,
+          "death_year": 1967
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Pursuit of Meaning",
+        "author": "Joseph B. Fabry",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "See also Joseph B. Fabry, The Pursuit of Meaning, New York, Harper and Row, 1980."
+        ],
+        "commentaries": [
+          "The author references this book in a footnote-style citation, suggesting it as additional reading on the topic of meaning."
+        ]
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Joseph B. Fabry",
+        "birth_year": 1914,
+        "death_year": 1999
+      },
+      "edge": {
+        "target_type": "error",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Joseph B. Fabry",
+          "birth_year": 1914,
+          "death_year": 1999
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "LeBon",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "We are indebted to the Second World War for enriching our knowledge of the 'psychopathology of the masses' (if I may quote a variation of the well-known phrase and title of a book by LeBon)"
+        ],
+        "commentaries": [
+          "The author references LeBon's book title as a known concept, using it to frame the psychological impact of the war and concentration camps."
+        ],
+        "canonical_author": "Lebon"
+      },
+      "goodreads_match": {
+        "title": "Psychologie des Foules",
+        "authors": [
+          "Gustave Le Bon"
+        ],
+        "original_year": 1895,
+        "birth_year": 1841,
+        "death_year": 1931,
+        "nationality": "French",
+        "description": "Foundational work in crowd psychology, analyzing how individuals behave differently in crowds. The English title is 'The Crowd: A Study of the Popular Mind'.",
+        "book_id": "web_33f6d0ab",
+        "author_meta": {
+          "birth_year": 1841,
+          "death_year": 1931,
+          "description": null,
+          "title": "Gustave Le Bon"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Gustave Le Bon",
+        "birth_year": 1841,
+        "death_year": 1931
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_33f6d0ab",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Gustave Le Bon",
+          "birth_year": 1841,
+          "death_year": 1931
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Ethics",
+        "author": "Spinoza",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "What does Spinoza say in his Ethics? —“Affectus, qui passio est, desinit esse passio simulatque eius claram et distinctam formamus ideam.” Emotion, which is suffering, ceases to be suffering as soon as we form a clear and precise picture of it.",
+          "\"Sed omnia praeclara tam difficilia quam rara sunt\" (but everything great is just as difficult to realize as it is rare to find) reads the last sentence of the Ethics of Spinoza."
+        ],
+        "commentaries": [
+          "The author directly quotes from Spinoza's 'Ethics' to support his psychological method of objectifying suffering to overcome it.",
+          "The author quotes the final sentence of Spinoza's 'Ethics' to support the point that great and exemplary actions are rare, referencing it in the context of discussing exceptional individuals like saints."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0140435719",
+        "publication_day": 27,
+        "work_id": "1218789",
+        "title_without_series": "Ethics",
+        "publication_year": 1996,
+        "isbn13": "9780140435719",
+        "publisher": "Penguin Classics",
+        "publication_month": 6,
+        "text_reviews_count": 201,
+        "format": "Paperback",
+        "book_id": "205218",
+        "average_rating": 4.01,
+        "num_pages": 186,
+        "title": "Ethics",
+        "ratings_count": 9491,
+        "author_ids": [
+          "122092",
+          "122102",
+          "68786",
+          "5809623"
+        ],
+        "authors": [
+          "Baruch Spinoza",
+          "Edwin M. Curley",
+          "Stuart Hampshire",
+          "Edwin Curley"
+        ],
+        "description": "A profoundly beautiful and uniquely insightful description of the universe, Benedict de Spinoza's Ethics is one of the masterpieces of Enlightenment-era philosophy. This Penguin Classics edition is edited and translated from the Latin by Edwin Curley, with an introduction by Stuart Hampshire.\nPublished shortly after his death, the Ethicsis undoubtedly Spinoza's greatest work - an elegant, fully cohesive cosmology derived from first principles, providing a coherent picture of reality, and a guide to the mean...",
+        "link": "https://www.goodreads.com/book/show/205218.Ethics",
+        "wikipedia_match": {
+          "title": "Baruch Spinoza",
+          "page_id": 3408,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1632 births",
+            "1677 deaths",
+            "Baruch Spinoza| ",
+            "17th-century Jewish biblical scholars",
+            "17th-century Jewish theologians",
+            "17th-century writers in Latin",
+            "17th-century Sephardi Jews",
+            "17th-century Dutch philosophers",
+            "Censorship in Judaism",
+            "Censorship in the Netherlands",
+            "Critics of Judaism",
+            "Dutch critics of religions",
+            "Dutch Enlightenment",
+            "Critics of the Catholic Church",
+            "Descartes scholars",
+            "Determinists",
+            "Dutch ethicists",
+            "Dutch logicians",
+            "Dutch people of Portuguese descent",
+            "Dutch people of Portuguese-Jewish descent",
+            "Dutch Sephardi Jews",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Freethought",
+            "Heresy in Judaism",
+            "Jewish philosophers",
+            "Jewish skeptics",
+            "Jewish translators of the Bible",
+            "Metaphilosophers",
+            "Metaphysicians"
+          ],
+          "birth_year": 1632,
+          "death_year": 1677
+        },
+        "original_year": 1677,
+        "author_meta": {
+          "birth_year": 1632,
+          "death_year": 1677,
+          "description": null,
+          "title": "Baruch Spinoza"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "page_id": 3408,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1632 births",
+          "1677 deaths",
+          "Baruch Spinoza| ",
+          "17th-century Jewish biblical scholars",
+          "17th-century Jewish theologians",
+          "17th-century writers in Latin",
+          "17th-century Sephardi Jews",
+          "17th-century Dutch philosophers",
+          "Censorship in Judaism",
+          "Censorship in the Netherlands",
+          "Critics of Judaism",
+          "Dutch critics of religions",
+          "Dutch Enlightenment",
+          "Critics of the Catholic Church",
+          "Descartes scholars",
+          "Determinists",
+          "Dutch ethicists",
+          "Dutch logicians",
+          "Dutch people of Portuguese descent",
+          "Dutch people of Portuguese-Jewish descent",
+          "Dutch Sephardi Jews",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Freethought",
+          "Heresy in Judaism",
+          "Jewish philosophers",
+          "Jewish skeptics",
+          "Jewish translators of the Bible",
+          "Metaphilosophers",
+          "Metaphysicians"
+        ],
+        "birth_year": 1632,
+        "death_year": 1677
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "205218",
+        "target_author_ids": [
+          "122092",
+          "122102",
+          "68786",
+          "5809623"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "page_id": 3408,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1632 births",
+            "1677 deaths",
+            "Baruch Spinoza| ",
+            "17th-century Jewish biblical scholars",
+            "17th-century Jewish theologians",
+            "17th-century writers in Latin",
+            "17th-century Sephardi Jews",
+            "17th-century Dutch philosophers",
+            "Censorship in Judaism",
+            "Censorship in the Netherlands",
+            "Critics of Judaism",
+            "Dutch critics of religions",
+            "Dutch Enlightenment",
+            "Critics of the Catholic Church",
+            "Descartes scholars",
+            "Determinists",
+            "Dutch ethicists",
+            "Dutch logicians",
+            "Dutch people of Portuguese descent",
+            "Dutch people of Portuguese-Jewish descent",
+            "Dutch Sephardi Jews",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Freethought",
+            "Heresy in Judaism",
+            "Jewish philosophers",
+            "Jewish skeptics",
+            "Jewish translators of the Bible",
+            "Metaphilosophers",
+            "Metaphysicians"
+          ],
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Konrad Lorenz",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Konrad Lorenz might have had something similar in mind when he developed the concept of a biological a priori"
+        ],
+        "commentaries": [
+          "The author references Konrad Lorenz's concept of a biological a priori, suggesting a parallel to the logotherapeutic view on the biological foundation of values."
+        ],
+        "canonical_author": "Konrad Lorenz"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Konrad Lorenz",
+        "page_id": 17077,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Konrad Lorenz| ",
+          "1903 births",
+          "1989 deaths",
+          "Austrian ornithologists",
+          "Austrian Nazis",
+          "Austrian Nobel laureates",
+          "Nobel laureates from Austria-Hungary",
+          "Columbia College, Columbia University alumni",
+          "Ethologists",
+          "German Army officers of World War II",
+          "Austrian military doctors",
+          "Scientists from Vienna",
+          "University of Vienna alumni",
+          "Academic staff of the University of Vienna",
+          "Academic staff of the University of Königsberg",
+          "20th-century Austrian zoologists",
+          "World War II prisoners of war held by the Soviet Union",
+          "Austrian prisoners of war",
+          "Members of the Austrian Academy of Sciences",
+          "Nobel laureates in Physiology or Medicine",
+          "Foreign members of the Royal Society",
+          "Foreign associates of the National Academy of Sciences",
+          "Recipients of the Austrian Decoration for Science and Art",
+          "Kalinga Prize recipients",
+          "Grand Crosses with Star and Sash of the Order of Merit of the Federal Republic of Germany",
+          "Recipients of the Pour le Mérite (civil class)",
+          "Max Planck Society people",
+          "Austrian military personnel of World War II",
+          "International members of the American Philosophical Society",
+          "Members of the Royal Swedish Academy of Sciences"
+        ],
+        "birth_year": 1903,
+        "death_year": 1989
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8674"
+        ],
+        "target_person": {
+          "title": "Konrad Lorenz",
+          "page_id": 17077,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Konrad Lorenz| ",
+            "1903 births",
+            "1989 deaths",
+            "Austrian ornithologists",
+            "Austrian Nazis",
+            "Austrian Nobel laureates",
+            "Nobel laureates from Austria-Hungary",
+            "Columbia College, Columbia University alumni",
+            "Ethologists",
+            "German Army officers of World War II",
+            "Austrian military doctors",
+            "Scientists from Vienna",
+            "University of Vienna alumni",
+            "Academic staff of the University of Vienna",
+            "Academic staff of the University of Königsberg",
+            "20th-century Austrian zoologists",
+            "World War II prisoners of war held by the Soviet Union",
+            "Austrian prisoners of war",
+            "Members of the Austrian Academy of Sciences",
+            "Nobel laureates in Physiology or Medicine",
+            "Foreign members of the Royal Society",
+            "Foreign associates of the National Academy of Sciences",
+            "Recipients of the Austrian Decoration for Science and Art",
+            "Kalinga Prize recipients",
+            "Grand Crosses with Star and Sash of the Order of Merit of the Federal Republic of Germany",
+            "Recipients of the Pour le Mérite (civil class)",
+            "Max Planck Society people",
+            "Austrian military personnel of World War II",
+            "International members of the American Philosophical Society",
+            "Members of the Royal Swedish Academy of Sciences"
+          ],
+          "birth_year": 1903,
+          "death_year": 1989
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Rilke",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the opportunities which caused the poet Rilke to write, “Wie viel ist aufzuleiden!” (How much suffering there is to get through!)."
+        ],
+        "commentaries": [
+          "The author cites the poet Rilke as a source for the idea of 'getting through suffering' as a task, using a direct quotation to illustrate a philosophical point about confronting suffering."
+        ],
+        "canonical_author": "Rilke"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Rainer Maria Rilke",
+        "page_id": 26408,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Rainer Maria Rilke| ",
+          "1875 births",
+          "1926 deaths",
+          "19th-century Austrian male writers",
+          "19th-century Austrian poets",
+          "20th-century Austrian novelists",
+          "20th-century Austrian poets",
+          "Analysands of Lou Andreas-Salomé",
+          "Austrian expatriates in France",
+          "Austrian expatriates in Switzerland",
+          "Austrian people of German Bohemian descent",
+          "Austrian male poets",
+          "Writers from Austria-Hungary",
+          "Austro-Hungarian military personnel of World War I",
+          "Deaths from leukemia in Switzerland",
+          "French-language poets",
+          "German-language poets",
+          "Modernist poets",
+          "Writers from Prague",
+          "Sonneteers",
+          "Austrian male novelists",
+          "French-language Austrian writers"
+        ],
+        "birth_year": 1875,
+        "death_year": 1926
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7906"
+        ],
+        "target_person": {
+          "title": "Rainer Maria Rilke",
+          "page_id": 26408,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Rainer Maria Rilke| ",
+            "1875 births",
+            "1926 deaths",
+            "19th-century Austrian male writers",
+            "19th-century Austrian poets",
+            "20th-century Austrian novelists",
+            "20th-century Austrian poets",
+            "Analysands of Lou Andreas-Salomé",
+            "Austrian expatriates in France",
+            "Austrian expatriates in Switzerland",
+            "Austrian people of German Bohemian descent",
+            "Austrian male poets",
+            "Writers from Austria-Hungary",
+            "Austro-Hungarian military personnel of World War I",
+            "Deaths from leukemia in Switzerland",
+            "French-language poets",
+            "German-language poets",
+            "Modernist poets",
+            "Writers from Prague",
+            "Sonneteers",
+            "Austrian male novelists",
+            "French-language Austrian writers"
+          ],
+          "birth_year": 1875,
+          "death_year": 1926
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "thinkers",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "proclaimed as the final wisdom by so many thinkers"
+        ],
+        "commentaries": [
+          "The author references thinkers collectively as sources who have proclaimed love as the final wisdom."
+        ],
+        "canonical_author": "Thinkers"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "thinkers"
+      },
+      "edge": {
+        "target_type": "error",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "thinkers"
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "poets",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "for the first time in my life I saw the truth as it is set into song by so many poets"
+        ],
+        "commentaries": [
+          "The author references poets collectively as sources who have sung about the truth of love being the ultimate human goal."
+        ],
+        "canonical_author": "Poets"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "poets"
+      },
+      "edge": {
+        "target_type": "error",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "poets"
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bismarck",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "To the others of us, the mediocre and the half-hearted, the words of Bismarck could be applied: “Life is like being at the dentist. You always think that the worst is still to come, and yet it is over already.”"
+        ],
+        "commentaries": [
+          "The author applies a quote attributed to Bismarck to describe the pessimistic outlook of many prisoners in the concentration camp."
+        ],
+        "canonical_author": "Bismarck"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Bismarck",
+        "birth_year": 1815,
+        "death_year": -1898
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Bismarck",
+          "birth_year": 1815,
+          "death_year": -1898
+        }
+      }
+    }
+  ]
+}

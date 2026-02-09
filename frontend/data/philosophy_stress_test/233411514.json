@@ -1,0 +1,1709 @@
+{
+  "source": {
+    "title": "Meditations",
+    "authors": [
+      "Marcus Aurelius"
+    ],
+    "goodreads_id": "233411514",
+    "calibre_id": null,
+    "publication_year": 180
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Heraclitus",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "Heraclitus, after so many speculations on the conflagration of the universe, was filled with water and died smeared all over with cow dung.",
+          "Always remember the saying of Heraclitus, that the death of earth is to become water, and the death of water is to become air, and the death of air is to become fire, and reversely.",
+          "like sleeping men, who are, according to Heraclitus, laborers and cooperators in the things that take place in the universe.",
+          "so many great orators, and so many noble philosophers, Heraclitus, Pythagoras, Socrates;",
+          "Alexander and Gaius and Pompeius, what are they in comparison with Diogenes and Heraclitus and Socrates?"
+        ],
+        "commentaries": [
+          "The author mentions Heraclitus in the context of his philosophical speculations about the universe, using his death as an example of mortality.",
+          "The author directly quotes a philosophical saying by Heraclitus to support the theme of constant change and transformation in the universe.",
+          "The author references Heraclitus's idea that even those who are unaware are participants in the universe's workings.",
+          "The author lists Heraclitus among noble philosophers of the past, implying his philosophical stature.",
+          "The author references Heraclitus as a philosopher whose understanding of things and causes is presented as more valuable than the pursuits of powerful rulers."
+        ],
+        "canonical_author": "Heraclitus"
+      },
+      "goodreads_match": {
+        "author_id": "77989",
+        "name": "Heraclitus",
+        "average_rating": "4.21",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Heraclitus",
+          "page_id": 13792,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Heraclitus| ",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek philosophers",
+            "530s BC births",
+            "470s BC deaths",
+            "Ancient Ephesians",
+            "Ancient Greek cosmologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Deaths from edema",
+            "Ancient Greek epistemologists",
+            "Natural philosophers",
+            "Ontologists",
+            "Philosophers of ancient Ionia",
+            "Ancient Greek philosophers of mind",
+            "Philosophers of religion",
+            "Philosophers of time",
+            "Ancient Greek political philosophers",
+            "Presocratic philosophers"
+          ],
+          "birth_year": -535,
+          "death_year": -475
+        },
+        "author_meta": {
+          "birth_year": -535,
+          "death_year": -475,
+          "main_genre": "philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Heraclitus",
+        "page_id": 13792,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Heraclitus| ",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek philosophers",
+          "530s BC births",
+          "470s BC deaths",
+          "Ancient Ephesians",
+          "Ancient Greek cosmologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Deaths from edema",
+          "Ancient Greek epistemologists",
+          "Natural philosophers",
+          "Ontologists",
+          "Philosophers of ancient Ionia",
+          "Ancient Greek philosophers of mind",
+          "Philosophers of religion",
+          "Philosophers of time",
+          "Ancient Greek political philosophers",
+          "Presocratic philosophers"
+        ],
+        "birth_year": -535,
+        "death_year": -475
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "77989"
+        ],
+        "target_person": {
+          "title": "Heraclitus",
+          "page_id": 13792,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Heraclitus| ",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek philosophers",
+            "530s BC births",
+            "470s BC deaths",
+            "Ancient Ephesians",
+            "Ancient Greek cosmologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Deaths from edema",
+            "Ancient Greek epistemologists",
+            "Natural philosophers",
+            "Ontologists",
+            "Philosophers of ancient Ionia",
+            "Ancient Greek philosophers of mind",
+            "Philosophers of religion",
+            "Philosophers of time",
+            "Ancient Greek political philosophers",
+            "Presocratic philosophers"
+          ],
+          "birth_year": -535,
+          "death_year": -475
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Republic",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "nor yet expect Plato’s Republic:"
+        ],
+        "commentaries": [
+          "The author references Plato's Republic as an idealistic political construct, advising against waiting for such grand societal transformations and instead focusing on small, immediate improvements."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "1625515",
+        "publisher": "Wordsworth Editions",
+        "author_ids": [
+          "879"
+        ],
+        "isbn13": "9781853264832",
+        "publication_day": 5,
+        "publication_month": 4,
+        "average_rating": 3.91,
+        "title_without_series": "Republic",
+        "book_id": "1613389",
+        "ratings_count": 45,
+        "isbn": "1853264830",
+        "title": "Republic",
+        "publication_year": 1997,
+        "text_reviews_count": 3,
+        "format": "Paperback",
+        "authors": [
+          "Plato"
+        ],
+        "description": "A newly designed second edition of the classic translation of Plato's timeless work, \"The Republic,\" by the author of \"The Closing of the American Mind.\"",
+        "link": "https://www.goodreads.com/book/show/1613389.Republic",
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        },
+        "original_year": -400,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1613389",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 6,
+        "contexts": [
+          "In contrast to Plato and Aristotle, for whom the highest realities were spiritual or ideational, the Stoics held that the essence of reality was material",
+          "From Plato: “‘The man who has an elevated mind and takes a view of all time and of all substance, do you suppose it possible for him to think that human life is anything great?’ ‘It is not possible,’ he said. ‘Such a man then will think that death also is no evil.’ ‘Certainly not.’”",
+          "From Plato: “I would make this man a sufficient answer, which is this: You are mistaken if you think that a man who is good for anything at all ought to consider the risks of life or death, but rather should consider only in all that he does, whether he is doing what is just or unjust, and the works of a good or a bad man.",
+          "This a fine saying of Plato: That he who is discoursing about men should look also at earthly things as if he viewed them from some higher place; should look at them in their assemblies, armies, agricultural labors, marriages, treaties, births, deaths, noise of the courts of justice, desert places, various nations of barbarians, feasts, lamentations, markets, a mixture of all things and an orderly combination of contraries.",
+          "For you will find just what Plato says, “Dwelling within the walls of a city as in a shepherd’s fold on a mountain,” and milking flocks.",
+          "Contemplate the formative principles (forms) of things bare of their coverings;"
+        ],
+        "commentaries": [
+          "The author references Plato as a philosophical figure whose ideas about spiritual realities are contrasted with Stoic materialism.",
+          "The author directly quotes Plato, presenting a philosophical argument about the insignificance of human life and death from an elevated perspective.",
+          "The author quotes Plato on the priority of acting justly over fearing death or other risks.",
+          "The author highlights a saying from Plato advocating for a detached, philosophical perspective on human affairs and the variety of life.",
+          "The author references Plato as a source of an idea, using a paraphrase or quotation about the nature of dwelling in a city.",
+          "The author references Plato's theory of forms as a philosophical concept to consider."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": {
+        "author_id": "879",
+        "name": "Plato",
+        "average_rating": "3.99",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        },
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Iliad",
+        "author": "Homer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "For all such things as these “are produced in the season of spring,” as the poet says;"
+        ],
+        "commentaries": [
+          "The author quotes a line from Homer's Iliad (Book 6, line 146) to illustrate the transient nature of human generations, comparing them to leaves that grow and fall."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "3293141",
+        "publisher": "Book Sales, Inc.",
+        "author_ids": [
+          "903"
+        ],
+        "isbn13": "9781848373259",
+        "publication_day": 30,
+        "publication_month": 6,
+        "num_pages": 414,
+        "average_rating": 3.83,
+        "title_without_series": "Iliad",
+        "book_id": "7105277",
+        "ratings_count": 69,
+        "isbn": "1848373252",
+        "title": "Iliad",
+        "publication_year": 2009,
+        "text_reviews_count": 9,
+        "format": "Paperback",
+        "authors": [
+          "Homer"
+        ],
+        "description": "This groundbreaking English version by Robert Fagles is the most important recent translation of Homer's great epic poem. The verse translation has been hailed by scholars as the new standard, providing an Iliad that delights modern sensibility and aesthetic without sacrificing the grandeur and particular genius of Homer's own style and language. The Iliad is one of the two great epics of Homer, and is typically described as one of the greatest war stories of all time, but to say the Iliad is a war story do...",
+        "link": "https://www.goodreads.com/book/show/7105277-iliad",
+        "original_year": -800,
+        "author_meta": {
+          "birth_year": -850,
+          "death_year": null,
+          "main_genre": "Epic poetry",
+          "nationality": "Ancient Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -750
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "7105277",
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -750
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The poet says that law rules all, but in truth there are only elements."
+        ],
+        "commentaries": [
+          "The author references Homer as a poet who made a statement about law, but then offers a philosophical correction."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": {
+        "author_id": "903",
+        "name": "Homer",
+        "average_rating": "3.78",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": -850,
+          "death_year": null,
+          "main_genre": "Epic poetry",
+          "nationality": "Ancient Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -750
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -750
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Diogenes",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Alexander and Gaius and Pompeius, what are they in comparison with Diogenes and Heraclitus and Socrates?",
+          "for this purpose, too, Diogenes used to take from these writers."
+        ],
+        "commentaries": [
+          "The author compares historical rulers unfavorably to the philosophers Diogenes, Heraclitus, and Socrates, implying their ideas and way of life were superior.",
+          "The author references Diogenes as a source, noting he drew upon the plain-speaking style of old comedy to remind men against insolence."
+        ],
+        "canonical_author": "Diogenes"
+      },
+      "goodreads_match": {
+        "author_id": "5752152",
+        "name": "Diogenes Laertius",
+        "average_rating": "4.12",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Diogenes",
+          "page_id": 234264,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Diogenes| ",
+            "410s BC births",
+            "323 BC deaths",
+            "4th-century BC Greek philosophers",
+            "Ancient Greek ethicists",
+            "Ancient Greek slaves and freedmen",
+            "Ancient Pontic Greeks",
+            "Ascetics",
+            "Cosmopolitanism",
+            "Cynic philosophers",
+            "Metic philosophers in Classical Athens",
+            "People from Sinop, Turkey",
+            "Philosophers and tutors of Alexander the Great"
+          ],
+          "birth_year": null,
+          "death_year": -323
+        },
+        "author_meta": {
+          "birth_year": -412,
+          "death_year": -323,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Diogenes",
+        "page_id": 234264,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Diogenes| ",
+          "410s BC births",
+          "323 BC deaths",
+          "4th-century BC Greek philosophers",
+          "Ancient Greek ethicists",
+          "Ancient Greek slaves and freedmen",
+          "Ancient Pontic Greeks",
+          "Ascetics",
+          "Cosmopolitanism",
+          "Cynic philosophers",
+          "Metic philosophers in Classical Athens",
+          "People from Sinop, Turkey",
+          "Philosophers and tutors of Alexander the Great"
+        ],
+        "birth_year": -412,
+        "death_year": -323
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5752152"
+        ],
+        "target_person": {
+          "title": "Diogenes",
+          "page_id": 234264,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Diogenes| ",
+            "410s BC births",
+            "323 BC deaths",
+            "4th-century BC Greek philosophers",
+            "Ancient Greek ethicists",
+            "Ancient Greek slaves and freedmen",
+            "Ancient Pontic Greeks",
+            "Ascetics",
+            "Cosmopolitanism",
+            "Cynic philosophers",
+            "Metic philosophers in Classical Athens",
+            "People from Sinop, Turkey",
+            "Philosophers and tutors of Alexander the Great"
+          ],
+          "birth_year": -412,
+          "death_year": -323
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Democritus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And lice destroyed Democritus;"
+        ],
+        "commentaries": [
+          "The author references the death of Democritus, the philosopher, as an illustration of human mortality and the futility of earthly concerns."
+        ],
+        "canonical_author": "Democritus"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Democritus",
+          "page_id": 8211,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Abderites",
+            "Ancient Greek atomist philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek metaphysicians",
+            "Presocratic philosophers",
+            "460s BC births",
+            "370s BC deaths",
+            "5th-century BC Greek mathematicians",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": -460,
+          "death_year": -370
+        },
+        "author_meta": {
+          "birth_year": -460,
+          "death_year": -370,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Democritus",
+        "page_id": 8211,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Abderites",
+          "Ancient Greek atomist philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek metaphysicians",
+          "Presocratic philosophers",
+          "460s BC births",
+          "370s BC deaths",
+          "5th-century BC Greek mathematicians",
+          "4th-century BC Greek mathematicians"
+        ],
+        "birth_year": -460,
+        "death_year": -370
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Democritus",
+          "page_id": 8211,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Abderites",
+            "Ancient Greek atomist philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek metaphysicians",
+            "Presocratic philosophers",
+            "460s BC births",
+            "370s BC deaths",
+            "5th-century BC Greek mathematicians",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": -460,
+          "death_year": -370
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Archimedes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "besides these, Eudoxus, Hipparchus, Archimedes, and other men of acute natural talents, great minds, lovers of labor, versatile, confident, mockers even of the perishable and ephemeral life of man, as Menippus and such as are like him."
+        ],
+        "commentaries": [
+          "The author includes Archimedes as a figure known for acute natural talents and a great mind."
+        ],
+        "canonical_author": "Archimedes"
+      },
+      "goodreads_match": {
+        "author_id": "661188",
+        "name": "Archimedes",
+        "average_rating": "4.00",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Archimedes",
+          "page_id": 1844,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Archimedes| ",
+            "3rd-century BC Greek writers",
+            "People from Syracuse, Sicily",
+            "Ancient Greek engineers",
+            "Ancient Greek inventors",
+            "Ancient Greek geometers",
+            "Ancient Greek physicists",
+            "Hellenistic-era philosophers",
+            "Doric Greek writers",
+            "Sicilian Greeks",
+            "Mathematicians from Sicily",
+            "Scientists from Sicily",
+            "Ancient Greek murder victims",
+            "Ancient Syracusans",
+            "Fluid dynamicists",
+            "Buoyancy",
+            "280s BC births",
+            "210s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "3rd-century BC Greek mathematicians",
+            "3rd-century BC Syracusans"
+          ],
+          "birth_year": -287,
+          "death_year": -212
+        },
+        "author_meta": {
+          "birth_year": -287,
+          "death_year": -212,
+          "main_genre": "Mathematics",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Archimedes",
+        "page_id": 1844,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Archimedes| ",
+          "3rd-century BC Greek writers",
+          "People from Syracuse, Sicily",
+          "Ancient Greek engineers",
+          "Ancient Greek inventors",
+          "Ancient Greek geometers",
+          "Ancient Greek physicists",
+          "Hellenistic-era philosophers",
+          "Doric Greek writers",
+          "Sicilian Greeks",
+          "Mathematicians from Sicily",
+          "Scientists from Sicily",
+          "Ancient Greek murder victims",
+          "Ancient Syracusans",
+          "Fluid dynamicists",
+          "Buoyancy",
+          "280s BC births",
+          "210s BC deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "3rd-century BC Greek mathematicians",
+          "3rd-century BC Syracusans"
+        ],
+        "birth_year": -287,
+        "death_year": -212
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "661188"
+        ],
+        "target_person": {
+          "title": "Archimedes",
+          "page_id": 1844,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Archimedes| ",
+            "3rd-century BC Greek writers",
+            "People from Syracuse, Sicily",
+            "Ancient Greek engineers",
+            "Ancient Greek inventors",
+            "Ancient Greek geometers",
+            "Ancient Greek physicists",
+            "Hellenistic-era philosophers",
+            "Doric Greek writers",
+            "Sicilian Greeks",
+            "Mathematicians from Sicily",
+            "Scientists from Sicily",
+            "Ancient Greek murder victims",
+            "Ancient Syracusans",
+            "Fluid dynamicists",
+            "Buoyancy",
+            "280s BC births",
+            "210s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "3rd-century BC Greek mathematicians",
+            "3rd-century BC Syracusans"
+          ],
+          "birth_year": -287,
+          "death_year": -212
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Theophrastus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Theophrastus, in his comparison of bad acts—such a comparison as one would make in accordance with the common notions of mankind—says, like a true philosopher, that offenses committed through desire are more blamable than those committed through anger."
+        ],
+        "commentaries": [
+          "The author cites Theophrastus's philosophical opinion on the relative blameworthiness of offenses motivated by desire versus anger, presenting it as a wise and common-sense view."
+        ],
+        "canonical_author": "Theophrastus"
+      },
+      "goodreads_match": {
+        "author_id": "185668",
+        "name": "Theophrastus",
+        "average_rating": "3.66",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Theophrastus",
+          "page_id": 98409,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "370s BC births",
+            "280s BC deaths",
+            "4th-century BC Greek philosophers",
+            "4th-century BC philosophers",
+            "3rd-century BC Greek philosophers",
+            "Ancient Eresians",
+            "Ancient Greek biologists",
+            "Ancient Greek botanists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greek science writers",
+            "Peripatetic philosophers",
+            "Natural philosophers",
+            "Ancient Greek grammarians",
+            "Hellenistic-era philosophers in Athens",
+            "Metic philosophers in Classical Athens"
+          ],
+          "birth_year": -371,
+          "death_year": -287
+        },
+        "author_meta": {
+          "birth_year": -371,
+          "death_year": -287,
+          "main_genre": "Philosophy/Botany",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Theophrastus",
+        "page_id": 98409,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "370s BC births",
+          "280s BC deaths",
+          "4th-century BC Greek philosophers",
+          "4th-century BC philosophers",
+          "3rd-century BC Greek philosophers",
+          "Ancient Eresians",
+          "Ancient Greek biologists",
+          "Ancient Greek botanists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ancient Greek science writers",
+          "Peripatetic philosophers",
+          "Natural philosophers",
+          "Ancient Greek grammarians",
+          "Hellenistic-era philosophers in Athens",
+          "Metic philosophers in Classical Athens"
+        ],
+        "birth_year": -371,
+        "death_year": -287
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "185668"
+        ],
+        "target_person": {
+          "title": "Theophrastus",
+          "page_id": 98409,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "370s BC births",
+            "280s BC deaths",
+            "4th-century BC Greek philosophers",
+            "4th-century BC philosophers",
+            "3rd-century BC Greek philosophers",
+            "Ancient Eresians",
+            "Ancient Greek biologists",
+            "Ancient Greek botanists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greek science writers",
+            "Peripatetic philosophers",
+            "Natural philosophers",
+            "Ancient Greek grammarians",
+            "Hellenistic-era philosophers in Athens",
+            "Metic philosophers in Classical Athens"
+          ],
+          "birth_year": -371,
+          "death_year": -287
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Antoninus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Do everything as a disciple of Antoninus."
+        ],
+        "commentaries": [
+          "The author instructs the reader to model their actions after Antoninus, referencing his character and conduct as an exemplary standard."
+        ],
+        "canonical_author": "Antoninus"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Antoninus Pius",
+          "page_id": 1256,
+          "infoboxes": [
+            "royalty"
+          ],
+          "categories": [
+            "Antoninus Pius| ",
+            "86 births",
+            "161 deaths",
+            "2nd-century Gallo-Roman people",
+            "2nd-century Roman emperors",
+            "Adult adoptees",
+            "Aelii",
+            "Ancient Roman adoptees",
+            "Arrii",
+            "Aurelii Fulvi",
+            "Burials at the Castel Sant'Angelo",
+            "Deified Roman emperors",
+            "Gaulish people",
+            "2nd-century Roman consuls",
+            "Imperial Roman praetors",
+            "Nerva–Antonine dynasty",
+            "People from Gallia Narbonensis",
+            "People from Lanuvio",
+            "Roman governors of Asia",
+            "Roman quaestors",
+            "Roman pharaohs"
+          ],
+          "birth_year": 86,
+          "death_year": 161
+        },
+        "author_meta": {
+          "birth_year": 86,
+          "death_year": 161,
+          "main_genre": "Philosophy/Stoicism",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Antoninus Pius",
+        "page_id": 1256,
+        "infoboxes": [
+          "royalty"
+        ],
+        "categories": [
+          "Antoninus Pius| ",
+          "86 births",
+          "161 deaths",
+          "2nd-century Gallo-Roman people",
+          "2nd-century Roman emperors",
+          "Adult adoptees",
+          "Aelii",
+          "Ancient Roman adoptees",
+          "Arrii",
+          "Aurelii Fulvi",
+          "Burials at the Castel Sant'Angelo",
+          "Deified Roman emperors",
+          "Gaulish people",
+          "2nd-century Roman consuls",
+          "Imperial Roman praetors",
+          "Nerva–Antonine dynasty",
+          "People from Gallia Narbonensis",
+          "People from Lanuvio",
+          "Roman governors of Asia",
+          "Roman quaestors",
+          "Roman pharaohs"
+        ],
+        "birth_year": 86,
+        "death_year": 161
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Antoninus Pius",
+          "page_id": 1256,
+          "infoboxes": [
+            "royalty"
+          ],
+          "categories": [
+            "Antoninus Pius| ",
+            "86 births",
+            "161 deaths",
+            "2nd-century Gallo-Roman people",
+            "2nd-century Roman emperors",
+            "Adult adoptees",
+            "Aelii",
+            "Ancient Roman adoptees",
+            "Arrii",
+            "Aurelii Fulvi",
+            "Burials at the Castel Sant'Angelo",
+            "Deified Roman emperors",
+            "Gaulish people",
+            "2nd-century Roman consuls",
+            "Imperial Roman praetors",
+            "Nerva–Antonine dynasty",
+            "People from Gallia Narbonensis",
+            "People from Lanuvio",
+            "Roman governors of Asia",
+            "Roman quaestors",
+            "Roman pharaohs"
+          ],
+          "birth_year": 86,
+          "death_year": 161
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pythagoras",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "so many great orators, and so many noble philosophers, Heraclitus, Pythagoras, Socrates;"
+        ],
+        "commentaries": [
+          "The author includes Pythagoras as an example of a noble philosopher from former times."
+        ],
+        "canonical_author": "Pythagoras"
+      },
+      "goodreads_match": {
+        "author_id": "203707",
+        "name": "Pythagoras",
+        "average_rating": "3.91",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": -570,
+          "death_year": -495
+        },
+        "author_meta": {
+          "birth_year": -570,
+          "death_year": -495,
+          "main_genre": "mathematics",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Pythagoras",
+        "page_id": 23275,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Pythagoras| ",
+          "570s BC births",
+          "490s BC deaths",
+          "6th-century BC mathematicians",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek mathematicians",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek geometers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek music theorists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political refugees",
+          "Ancient Greek shamans",
+          "Ancient occultists",
+          "Ancient Samians",
+          "Pythagoreans",
+          "Founders of religions",
+          "Numerologists",
+          "Pythagoreans of Magna Graecia",
+          "6th-century BC religious leaders",
+          "5th-century BC religious leaders"
+        ],
+        "birth_year": -570,
+        "death_year": -495
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "203707"
+        ],
+        "target_person": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": -570,
+          "death_year": -495
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Chrysippus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "But do not play the kind of mean and ridiculous part that Chrysippus speaks of in his play.",
+          "How many a Chrysippus, how many a Socrates, how many an Epictetus has time already swallowed up?"
+        ],
+        "commentaries": [
+          "The author alludes to a play by Chrysippus to caution against adopting a foolish role.",
+          "The author references Chrysippus as a philosopher whose ideas or existence has been lost to time, using him as an example of the transient nature of human life."
+        ],
+        "canonical_author": "Chrysippus"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Chrysippus",
+          "page_id": 37143,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "270s BC births",
+            "200s BC deaths",
+            "3rd-century BC Greek philosophers",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Hellenistic-era philosophers from Anatolia",
+            "Philosophical theists",
+            "Stoic philosophers",
+            "Deaths from laughter",
+            "Phoenician philosophers",
+            "3rd-century BC Greek mathematicians",
+            "3rd-century BC Phoenician people"
+          ],
+          "birth_year": -279,
+          "death_year": -206
+        },
+        "author_meta": {
+          "birth_year": -279,
+          "death_year": -206,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Chrysippus",
+        "page_id": 37143,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "270s BC births",
+          "200s BC deaths",
+          "3rd-century BC Greek philosophers",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Hellenistic-era philosophers from Anatolia",
+          "Philosophical theists",
+          "Stoic philosophers",
+          "Deaths from laughter",
+          "Phoenician philosophers",
+          "3rd-century BC Greek mathematicians",
+          "3rd-century BC Phoenician people"
+        ],
+        "birth_year": -279,
+        "death_year": -206
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Chrysippus",
+          "page_id": 37143,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "270s BC births",
+            "200s BC deaths",
+            "3rd-century BC Greek philosophers",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Hellenistic-era philosophers from Anatolia",
+            "Philosophical theists",
+            "Stoic philosophers",
+            "Deaths from laughter",
+            "Phoenician philosophers",
+            "3rd-century BC Greek mathematicians",
+            "3rd-century BC Phoenician people"
+          ],
+          "birth_year": -279,
+          "death_year": -206
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Socrates",
+        "note": null,
+        "count": 11,
+        "contexts": [
+          "And that might be applied to him which is recorded of Socrates, that he was able both to abstain from, and to enjoy, those things which many are too weak to abstain from, and cannot enjoy without excess.",
+          "and other lice killed Socrates.",
+          "as Socrates said, has detached itself from the persuasions of sense, has submitted itself to the gods, and cares for mankind",
+          "so many great orators, and so many noble philosophers, Heraclitus, Pythagoras, Socrates;",
+          "How many a Chrysippus, how many a Socrates, how many an Epictetus has time already swallowed up?",
+          "Alexander and Gaius and Pompeius, what are they in comparison with Diogenes and Heraclitus and Socrates?",
+          "Socrates used to call the opinions of the many by the name of Lamiae [ghouls], bugbears to frighten children.",
+          "Socrates excused himself to Perdiccas for not going to him, saying, “It is because I would not perish by the worst of all ends,” that is, I would not receive a favor and then be unable to return it.",
+          "Consider what a man Socrates was when he dressed himself in a skin, after Xanthippe had taken his cloak and gone out, and what Socrates said to his friends who were ashamed of him and drew back from him when they saw him dressed thus.",
+          "Socrates used to say, “‘What do you want? Souls of rational men or irrational?’ ‘Souls of rational men.’ ‘Of what rational men? Sound or unsound?’ ‘Sound.’ ‘Why then do you not seek for them?’ ‘Because we have them.’ ‘Why then do you fight and quarrel?’”",
+          "Consider then what Crates says of Xenocrates himself."
+        ],
+        "commentaries": [
+          "The author references Socrates as a historical figure whose qualities of moderation and self-control are comparable to those of his adoptive father.",
+          "The author references the death of Socrates, using it as another example to underscore the inevitability and commonality of death.",
+          "The author references Socrates as a source of philosophical ideas regarding the detachment from sensory persuasions and submission to the gods.",
+          "The author mentions Socrates as one of the esteemed philosophers of the past.",
+          "The author references Socrates as a philosopher whose ideas or existence has been lost to time, using him as an example of the transient nature of human life.",
+          "The author cites Socrates as a prime example of a philosopher who was acquainted with the true nature of things, in contrast to worldly rulers.",
+          "The author references a saying of Socrates comparing popular opinions to frightening monsters.",
+          "The author recounts an anecdote about Socrates explaining his refusal to visit Perdiccas.",
+          "The author references an anecdote about Socrates' character and his response to his friends' shame.",
+          "The author quotes a Socratic dialogue on the nature of rational souls and conflict.",
+          "The author references the philosopher Crates as a source of wisdom, though no specific book or work is named."
+        ],
+        "canonical_author": "Socrates"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Socrates",
+          "page_id": 25664190,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Socrates| ",
+            "5th-century BC Athenians",
+            "5th-century BC Greek philosophers",
+            "4th-century BC executions",
+            "470s BC births",
+            "399 BC deaths",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political philosophers",
+            "Ancient Greeks accused of sacrilege",
+            "Characters in the Divine Comedy",
+            "Critics of religions",
+            "Executed ancient Greek people",
+            "Executed philosophers",
+            "Family of Socrates",
+            "Forced suicides",
+            "Irony theorists",
+            "People executed by ancient Athens",
+            "People executed by poison",
+            "People executed for heresy",
+            "Philosophers of education",
+            "Classical theism",
+            "Male suicides",
+            "Suicides by poison"
+          ],
+          "birth_year": -470,
+          "death_year": -399
+        },
+        "author_meta": {
+          "birth_year": -470,
+          "death_year": -399,
+          "main_genre": "philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Socrates",
+        "page_id": 25664190,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Socrates| ",
+          "5th-century BC Athenians",
+          "5th-century BC Greek philosophers",
+          "4th-century BC executions",
+          "470s BC births",
+          "399 BC deaths",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political philosophers",
+          "Ancient Greeks accused of sacrilege",
+          "Characters in the Divine Comedy",
+          "Critics of religions",
+          "Executed ancient Greek people",
+          "Executed philosophers",
+          "Family of Socrates",
+          "Forced suicides",
+          "Irony theorists",
+          "People executed by ancient Athens",
+          "People executed by poison",
+          "People executed for heresy",
+          "Philosophers of education",
+          "Classical theism",
+          "Male suicides",
+          "Suicides by poison"
+        ],
+        "birth_year": -470,
+        "death_year": -399
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Socrates",
+          "page_id": 25664190,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Socrates| ",
+            "5th-century BC Athenians",
+            "5th-century BC Greek philosophers",
+            "4th-century BC executions",
+            "470s BC births",
+            "399 BC deaths",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political philosophers",
+            "Ancient Greeks accused of sacrilege",
+            "Characters in the Divine Comedy",
+            "Critics of religions",
+            "Executed ancient Greek people",
+            "Executed philosophers",
+            "Family of Socrates",
+            "Forced suicides",
+            "Irony theorists",
+            "People executed by ancient Athens",
+            "People executed by poison",
+            "People executed for heresy",
+            "Philosophers of education",
+            "Classical theism",
+            "Male suicides",
+            "Suicides by poison"
+          ],
+          "birth_year": -470,
+          "death_year": -399
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cicero",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Later in the Republic and early in the Empire, currents of Stoic thought ran through the writings of prominent thinkers such as Cicero, Cato, and Seneca."
+        ],
+        "commentaries": [
+          "The author mentions Cicero as a prominent Roman thinker whose writings were influenced by Stoic philosophy."
+        ],
+        "canonical_author": "Cicero"
+      },
+      "goodreads_match": {
+        "author_id": "13755",
+        "name": "Marcus Tullius Cicero",
+        "average_rating": "3.94",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Cicero",
+          "page_id": 6046,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Cicero| ",
+            "106 BC births",
+            "43 BC deaths",
+            "2nd-century BC Romans",
+            "1st-century BC executions",
+            "1st-century BC philosophers",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Academic skeptics",
+            "Ancient landowners",
+            "Ancient Roman equites",
+            "Ancient Roman exiles",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Ancient Roman scholars of religion",
+            "Classical humanists",
+            "Deaths by edged and bladed weapons",
+            "Executed ancient Roman people",
+            "Executed philosophers",
+            "Executed writers",
+            "Golden Age Latin writers",
+            "Letter writers in Latin",
+            "Optimates",
+            "People executed by the Roman Republic",
+            "People from Arpino",
+            "Plebeian aediles",
+            "Philosophers of Roman Italy",
+            "Recipients of ancient Roman pardons",
+            "Roman governors of Cilicia"
+          ],
+          "birth_year": -106,
+          "death_year": -43
+        },
+        "author_meta": {
+          "birth_year": 1891,
+          "death_year": 1970
+        }
+      },
+      "wikipedia_match": {
+        "title": "Cicero",
+        "page_id": 6046,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Cicero| ",
+          "106 BC births",
+          "43 BC deaths",
+          "2nd-century BC Romans",
+          "1st-century BC executions",
+          "1st-century BC philosophers",
+          "1st-century BC Roman augurs",
+          "1st-century BC Roman consuls",
+          "1st-century BC writers in Latin",
+          "Academic skeptics",
+          "Ancient landowners",
+          "Ancient Roman equites",
+          "Ancient Roman exiles",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Ancient Roman scholars of religion",
+          "Classical humanists",
+          "Deaths by edged and bladed weapons",
+          "Executed ancient Roman people",
+          "Executed philosophers",
+          "Executed writers",
+          "Golden Age Latin writers",
+          "Letter writers in Latin",
+          "Optimates",
+          "People executed by the Roman Republic",
+          "People from Arpino",
+          "Plebeian aediles",
+          "Philosophers of Roman Italy",
+          "Recipients of ancient Roman pardons",
+          "Roman governors of Cilicia"
+        ],
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Cicero",
+          "page_id": 6046,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Cicero| ",
+            "106 BC births",
+            "43 BC deaths",
+            "2nd-century BC Romans",
+            "1st-century BC executions",
+            "1st-century BC philosophers",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Academic skeptics",
+            "Ancient landowners",
+            "Ancient Roman equites",
+            "Ancient Roman exiles",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Ancient Roman scholars of religion",
+            "Classical humanists",
+            "Deaths by edged and bladed weapons",
+            "Executed ancient Roman people",
+            "Executed philosophers",
+            "Executed writers",
+            "Golden Age Latin writers",
+            "Letter writers in Latin",
+            "Optimates",
+            "People executed by the Roman Republic",
+            "People from Arpino",
+            "Plebeian aediles",
+            "Philosophers of Roman Italy",
+            "Recipients of ancient Roman pardons",
+            "Roman governors of Cilicia"
+          ],
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    }
+  ]
+}

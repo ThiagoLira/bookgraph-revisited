@@ -1,0 +1,4162 @@
+{
+  "source": {
+    "title": "The Genealogy of Morals",
+    "authors": [
+      "Friedrich Nietzsche"
+    ],
+    "goodreads_id": "234139935",
+    "calibre_id": null,
+    "publication_year": 1997,
+    "author_metadata": {
+      "birth_year": 1844,
+      "death_year": 1900,
+      "description": null,
+      "title": "Friedrich Nietzsche"
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Virchow",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The Celts, if I may make a parenthetic statement, were throughout a blonde race; and it is wrong to connect, as Virchow still connects, those traces of an essentially dark-haired population which are to be seen on the more elaborate ethnographical maps of Germany with any Celtic ancestry or with any admixture of Celtic blood: in this context it is rather the pre-Aryan population of Germany which surges up to these districts."
+        ],
+        "commentaries": [
+          "The author disputes Virchow's ethnographical connection of dark-haired populations in Germany with Celtic ancestry, arguing instead for a pre-Aryan origin."
+        ],
+        "canonical_author": "Virchow"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Rudolf Virchow",
+        "page_id": 140752,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Rudolf Virchow| ",
+          "1821 births",
+          "1902 deaths",
+          "People from Świdwin",
+          "People from the Province of Pomerania",
+          "German Protestants",
+          "German Progress Party politicians",
+          "German Free-minded Party politicians",
+          "Members of the Prussian House of Representatives",
+          "Members of the 5th Reichstag of the German Empire",
+          "Members of the 6th Reichstag of the German Empire",
+          "Members of the 7th Reichstag of the German Empire",
+          "Members of the 8th Reichstag of the German Empire",
+          "German anthropologists",
+          "German radicals",
+          "19th-century German biologists",
+          "German pathologists",
+          "Germ theory denialists",
+          "Academic staff of the Humboldt University of Berlin",
+          "Physicians of the Charité",
+          "Corresponding members of the Saint Petersburg Academy of Sciences",
+          "Foreign associates of the National Academy of Sciences",
+          "Foreign members of the Royal Society",
+          "Recipients of the Pour le Mérite (civil class)",
+          "German prehistorians",
+          "Recipients of the Copley Medal",
+          "University of Würzburg alumni",
+          "Academic staff of the University of Würzburg",
+          "Members of the Royal Swedish Academy of Sciences",
+          "19th-century German writers"
+        ],
+        "birth_year": 1821,
+        "death_year": 1902
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Rudolf Virchow",
+          "page_id": 140752,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Rudolf Virchow| ",
+            "1821 births",
+            "1902 deaths",
+            "People from Świdwin",
+            "People from the Province of Pomerania",
+            "German Protestants",
+            "German Progress Party politicians",
+            "German Free-minded Party politicians",
+            "Members of the Prussian House of Representatives",
+            "Members of the 5th Reichstag of the German Empire",
+            "Members of the 6th Reichstag of the German Empire",
+            "Members of the 7th Reichstag of the German Empire",
+            "Members of the 8th Reichstag of the German Empire",
+            "German anthropologists",
+            "German radicals",
+            "19th-century German biologists",
+            "German pathologists",
+            "Germ theory denialists",
+            "Academic staff of the Humboldt University of Berlin",
+            "Physicians of the Charité",
+            "Corresponding members of the Saint Petersburg Academy of Sciences",
+            "Foreign associates of the National Academy of Sciences",
+            "Foreign members of the Royal Society",
+            "Recipients of the Pour le Mérite (civil class)",
+            "German prehistorians",
+            "Recipients of the Copley Medal",
+            "University of Würzburg alumni",
+            "Academic staff of the University of Würzburg",
+            "Members of the Royal Swedish Academy of Sciences",
+            "19th-century German writers"
+          ],
+          "birth_year": 1821,
+          "death_year": 1902
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Tolstoi",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "at the most the metapolitics of St. Petersburg and the 'pity' of Tolstoi."
+        ],
+        "commentaries": [
+          "The author mentions Tolstoi's concept of 'pity' as a symptom of nihilistic, silenced life within a historical framework."
+        ],
+        "canonical_author": "Tolstoi"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Leo Tolstoy",
+        "page_id": 18622119,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Leo Tolstoy| ",
+          "1828 births",
+          "1910 deaths",
+          "19th-century dramatists and playwrights from the Russian Empire",
+          "19th-century Eastern Orthodox Christians",
+          "19th-century educators from the Russian Empire",
+          "19th-century essayists",
+          "19th-century journalists from the Russian Empire",
+          "19th-century letter writers",
+          "19th-century male writers from the Russian Empire",
+          "19th-century non-fiction writers from the Russian Empire",
+          "19th-century novelists from the Russian Empire",
+          "19th-century short story writers from the Russian Empire",
+          "20th-century anarchists",
+          "20th-century Eastern Orthodox Christians",
+          "20th-century letter writers",
+          "20th-century Russian essayists",
+          "20th-century Russian diarists",
+          "20th-century Russian dramatists and playwrights",
+          "20th-century Russian educators",
+          "20th-century Russian journalists",
+          "20th-century Russian male writers",
+          "20th-century Russian novelists",
+          "20th-century Russian short story writers",
+          "Anarchist writers",
+          "Anarcho-pacifists",
+          "Art critics from the Russian Empire",
+          "Articles containing video clips",
+          "Children's writers from the Russian Empire",
+          "Christian anarchists"
+        ],
+        "birth_year": 1828,
+        "death_year": 1910
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "15189870"
+        ],
+        "target_person": {
+          "title": "Leo Tolstoy",
+          "page_id": 18622119,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Leo Tolstoy| ",
+            "1828 births",
+            "1910 deaths",
+            "19th-century dramatists and playwrights from the Russian Empire",
+            "19th-century Eastern Orthodox Christians",
+            "19th-century educators from the Russian Empire",
+            "19th-century essayists",
+            "19th-century journalists from the Russian Empire",
+            "19th-century letter writers",
+            "19th-century male writers from the Russian Empire",
+            "19th-century non-fiction writers from the Russian Empire",
+            "19th-century novelists from the Russian Empire",
+            "19th-century short story writers from the Russian Empire",
+            "20th-century anarchists",
+            "20th-century Eastern Orthodox Christians",
+            "20th-century letter writers",
+            "20th-century Russian essayists",
+            "20th-century Russian diarists",
+            "20th-century Russian dramatists and playwrights",
+            "20th-century Russian educators",
+            "20th-century Russian journalists",
+            "20th-century Russian male writers",
+            "20th-century Russian novelists",
+            "20th-century Russian short story writers",
+            "Anarchist writers",
+            "Anarcho-pacifists",
+            "Art critics from the Russian Empire",
+            "Articles containing video clips",
+            "Children's writers from the Russian Empire",
+            "Christian anarchists"
+          ],
+          "birth_year": 1828,
+          "death_year": 1910
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Will to Power, an Attempt at a Transvaluation of All Values",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I refer for this to a work which I am preparing: The Will to Power, an Attempt at a Transvaluation of All Values."
+        ],
+        "commentaries": [
+          "The author references his own forthcoming work as a place where he will handle certain modern spiritual complexities more thoroughly."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0394704371",
+        "publication_day": 17,
+        "work_id": "25192319",
+        "title_without_series": "The Will to Power",
+        "publication_year": 2011,
+        "isbn13": "9780394704371",
+        "publisher": "Vintage Books",
+        "publication_month": 8,
+        "text_reviews_count": 113,
+        "format": "Paperback",
+        "book_id": "31785",
+        "average_rating": 4.04,
+        "num_pages": 575,
+        "title": "The Will to Power",
+        "ratings_count": 7295,
+        "author_ids": [
+          "1938",
+          "14824",
+          "47586"
+        ],
+        "authors": [
+          "Friedrich Nietzsche",
+          "Walter Kaufmann",
+          "R.J. Hollingdale"
+        ],
+        "description": "Nietzsche's notebooks, kept by him during his most productive years, offer a fascinating glimpse into the workshop and mind of a great thinker, and compare favorably with the notebooks of \u0001. The Will to Power, compiled from the notebooks, is one of the most famous books of the past hundred years, but few have studied it. Here, at last, is the first critical edition in any language.\nDown through the Nazi period The Will to Powerwas often mistakenly considered to be Nietzsche's crowning systematic labor; sinc...",
+        "link": "https://www.goodreads.com/book/show/31785.The_Will_to_Power",
+        "wikipedia_match": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        },
+        "original_year": 1901,
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "description": null,
+          "title": "Friedrich Nietzsche"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "page_id": 10671,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Friedrich Nietzsche| ",
+          "1844 births",
+          "1900 deaths",
+          "People from Lützen",
+          "People from the Province of Saxony",
+          "Former Lutherans",
+          "19th-century German non-fiction writers",
+          "19th-century German male writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German male musicians",
+          "19th-century Prussian people",
+          "Aphorists",
+          "German critics of Christianity",
+          "Determinists",
+          "Existentialists",
+          "German classical philologists",
+          "Hellenists",
+          "German metaphysicians",
+          "German philosophers of art",
+          "Philosophers of time",
+          "Philosophers of nihilism",
+          "German philosophy writers",
+          "Writers from Saxony-Anhalt",
+          "Leipzig University alumni",
+          "University of Bonn alumni",
+          "Academic staff of the University of Basel",
+          "People associated with the University of Basel",
+          "Prussian Army personnel",
+          "German military personnel of the Franco-Prussian War"
+        ],
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "31785",
+        "target_author_ids": [
+          "1938",
+          "14824",
+          "47586"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Goethe",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "makes itself a bad science in the 'labyrinth of the breast,' to use Goethe's phrase",
+          "the most subtle and brilliant spirits, such as Goethe, such as Hafiz, have even seen in this a further charm of life.",
+          "Homer would not have created an Achilles, nor Goethe a Faust, if Homer had been an Achilles or if Goethe had been a Faust.",
+          "Goethe has maintained that there are only thirty-six tragic situations: we would infer from that, did we not know otherwise, that Goethe was no ascetic priest.",
+          "one must have a higher conception of Mephistopheles than Goethe had, who found it necessary to diminish his Mephistopheles in order to magnify his 'inner Faust.'"
+        ],
+        "commentaries": [
+          "The author quotes Goethe's phrase to metaphorically describe the internal, tortuous workings of the bad conscience within the individual.",
+          "The author references Goethe as an example of a brilliant spirit who viewed the balance between sensuality and chastity as a charm of life, not a tragic conflict.",
+          "The author references Goethe as another example of an artist whose creative work (Faust) is distinct from his own personal reality, supporting a general thesis about artistic separation.",
+          "The author references Goethe's assertion about the limited number of tragic situations, using it to contrast Goethe's perspective with that of an ascetic priest.",
+          "The author critiques Goethe's portrayal of Mephistopheles in Faust, arguing it was diminished to elevate the character of Faust."
+        ],
+        "canonical_author": "Goethe"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Johann Wolfgang von Goethe",
+        "page_id": 19242322,
+        "infoboxes": [
+          "writer",
+          "officeholder "
+        ],
+        "categories": [
+          "Johann Wolfgang von Goethe| ",
+          "1749 births",
+          "1832 deaths",
+          "18th-century German educators",
+          "18th-century essayists",
+          "18th-century German civil servants",
+          "18th-century German dramatists and playwrights",
+          "18th-century German male writers",
+          "18th-century German novelists",
+          "18th-century German philosophers",
+          "18th-century German poets",
+          "18th-century historians",
+          "18th-century travel writers",
+          "19th-century German educators",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German civil servants",
+          "19th-century German diplomats",
+          "19th-century German dramatists and playwrights",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German poets",
+          "19th-century historians",
+          "19th-century travel writers",
+          "Color scientists",
+          "Enlightenment philosophers",
+          "Epic poets",
+          "Epigrammatists"
+        ],
+        "birth_year": 1749,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "285217"
+        ],
+        "target_person": {
+          "title": "Johann Wolfgang von Goethe",
+          "page_id": 19242322,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Johann Wolfgang von Goethe| ",
+            "1749 births",
+            "1832 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German civil servants",
+            "18th-century German dramatists and playwrights",
+            "18th-century German male writers",
+            "18th-century German novelists",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century historians",
+            "18th-century travel writers",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German civil servants",
+            "19th-century German diplomats",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century historians",
+            "19th-century travel writers",
+            "Color scientists",
+            "Enlightenment philosophers",
+            "Epic poets",
+            "Epigrammatists"
+          ],
+          "birth_year": 1749,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "World as Will and Idea",
+        "author": "Arthur Schopenhauer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Let us listen, for instance, to one of the most expressive among the countless passages which he has written in honour of the æsthetic state (World as Will and Idea, i. 231)"
+        ],
+        "commentaries": [
+          "The author quotes a specific passage from Schopenhauer's book to illustrate his description of the aesthetic state as a painless escape from the will."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "3212390",
+        "title_without_series": "The World As Will And Idea (Vol. 1 of 3)",
+        "text_reviews_count": 1,
+        "book_id": "18886731",
+        "average_rating": 4.16,
+        "title": "The World As Will And Idea (Vol. 1 of 3)",
+        "ratings_count": 64,
+        "author_ids": [
+          "11682"
+        ],
+        "authors": [
+          "Arthur Schopenhauer"
+        ],
+        "description": "This book was converted from its physical edition to the digital format by a community of volunteers. You may find it for free on the web. Purchase of the Kindle edition includes wireless delivery.",
+        "link": "https://www.goodreads.com/book/show/18886731-the-world-as-will-and-idea",
+        "wikipedia_match": {
+          "title": "Arthur Schopenhauer",
+          "page_id": 700,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Arthur Schopenhauer| ",
+            "1788 births",
+            "1860 deaths",
+            "19th-century atheists",
+            "19th-century German philosophers",
+            "Academic staff of the Humboldt University of Berlin",
+            "German animal rights scholars",
+            "Anti-natalists",
+            "Atheist philosophers",
+            "Burials at Frankfurt Main Cemetery",
+            "German epistemologists",
+            "German atheists",
+            "German ethicists",
+            "German people of Dutch descent",
+            "German scholars of Buddhism",
+            "Idealists",
+            "Kantian philosophers",
+            "German philosophers of art",
+            "Philosophers of pessimism",
+            "Philosophers of psychology",
+            "University of Göttingen alumni",
+            "Writers from Gdańsk"
+          ],
+          "birth_year": 1788,
+          "death_year": 1860
+        },
+        "original_year": 1819,
+        "author_meta": {
+          "birth_year": 1788,
+          "death_year": 1860,
+          "description": null,
+          "title": "Arthur Schopenhauer"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Arthur Schopenhauer",
+        "page_id": 700,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Arthur Schopenhauer| ",
+          "1788 births",
+          "1860 deaths",
+          "19th-century atheists",
+          "19th-century German philosophers",
+          "Academic staff of the Humboldt University of Berlin",
+          "German animal rights scholars",
+          "Anti-natalists",
+          "Atheist philosophers",
+          "Burials at Frankfurt Main Cemetery",
+          "German epistemologists",
+          "German atheists",
+          "German ethicists",
+          "German people of Dutch descent",
+          "German scholars of Buddhism",
+          "Idealists",
+          "Kantian philosophers",
+          "German philosophers of art",
+          "Philosophers of pessimism",
+          "Philosophers of psychology",
+          "University of Göttingen alumni",
+          "Writers from Gdańsk"
+        ],
+        "birth_year": 1788,
+        "death_year": 1860
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "18886731",
+        "target_author_ids": [
+          "11682"
+        ],
+        "target_person": {
+          "title": "Arthur Schopenhauer",
+          "page_id": 700,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Arthur Schopenhauer| ",
+            "1788 births",
+            "1860 deaths",
+            "19th-century atheists",
+            "19th-century German philosophers",
+            "Academic staff of the Humboldt University of Berlin",
+            "German animal rights scholars",
+            "Anti-natalists",
+            "Atheist philosophers",
+            "Burials at Frankfurt Main Cemetery",
+            "German epistemologists",
+            "German atheists",
+            "German ethicists",
+            "German people of Dutch descent",
+            "German scholars of Buddhism",
+            "Idealists",
+            "Kantian philosophers",
+            "German philosophers of art",
+            "Philosophers of pessimism",
+            "Philosophers of psychology",
+            "University of Göttingen alumni",
+            "Writers from Gdańsk"
+          ],
+          "birth_year": 1788,
+          "death_year": 1860
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Descartes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Up to the present what great philosophers have been married? Heracleitus, Plato, Descartes, Spinoza, Leibnitz, Kant, Schopenhauer—they were not married, and, further, one cannot imagine them as married."
+        ],
+        "commentaries": [
+          "The author mentions Descartes as an example of a great philosopher who was not married, reinforcing the claim that philosophers avoid marriage."
+        ],
+        "canonical_author": "Descartes"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "René Descartes",
+        "page_id": 25525,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "René Descartes| ",
+          "Cartesianism|*",
+          "1596 births",
+          "1650 deaths",
+          "17th-century French mathematicians",
+          "17th-century French philosophers",
+          "17th-century French scientists",
+          "17th-century French non-fiction writers",
+          "17th-century writers in Latin",
+          "17th-century French male writers",
+          "17th-century Roman Catholics",
+          "Age of Enlightenment",
+          "Aphorists",
+          "Augustinian philosophers",
+          "Burials at Saint-Germain-des-Prés (abbey)",
+          "Catholic philosophers",
+          "French consciousness researchers and theorists",
+          "Constructed language creators",
+          "Critics of animal rights",
+          "Deaths from pneumonia in Sweden",
+          "Dualists",
+          "Enlightenment philosophers",
+          "French emigrants",
+          "Immigrants to the Dutch Republic",
+          "French ethicists",
+          "French expatriates in Sweden",
+          "French expatriates in the Dutch Republic",
+          "French logicians",
+          "French mercenaries",
+          "French music theorists"
+        ],
+        "birth_year": 1596,
+        "death_year": 1650
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "36556"
+        ],
+        "target_person": {
+          "title": "René Descartes",
+          "page_id": 25525,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "René Descartes| ",
+            "Cartesianism|*",
+            "1596 births",
+            "1650 deaths",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "17th-century French scientists",
+            "17th-century French non-fiction writers",
+            "17th-century writers in Latin",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Aphorists",
+            "Augustinian philosophers",
+            "Burials at Saint-Germain-des-Prés (abbey)",
+            "Catholic philosophers",
+            "French consciousness researchers and theorists",
+            "Constructed language creators",
+            "Critics of animal rights",
+            "Deaths from pneumonia in Sweden",
+            "Dualists",
+            "Enlightenment philosophers",
+            "French emigrants",
+            "Immigrants to the Dutch Republic",
+            "French ethicists",
+            "French expatriates in Sweden",
+            "French expatriates in the Dutch Republic",
+            "French logicians",
+            "French mercenaries",
+            "French music theorists"
+          ],
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Buddha",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Every philosopher would say, as Buddha said, when the birth of a son was announced to him: 'Râhoula has been born to me, a fetter has been forged for me' (Râhoula means here 'a little demon')"
+        ],
+        "commentaries": [
+          "The author quotes Buddha's reaction to the birth of his son to illustrate the philosopher's view of family life as a fetter or obstacle to freedom."
+        ],
+        "canonical_author": "Buddha"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "The Buddha",
+        "page_id": 3395,
+        "infoboxes": [
+          "religious biography",
+          "Chinese"
+        ],
+        "categories": [
+          "Gautama Buddha| ",
+          "5th-century BC Indian people",
+          "5th century BC in religion",
+          "5th-century BC Indian philosophers",
+          "6th-century BC Indian people",
+          "6th-century BC Indian philosophers",
+          "Avatars of Vishnu",
+          "Buddhas",
+          "Classical humanists",
+          "Founders of religions",
+          "Indian ethicists",
+          "Indian political philosophers",
+          "Prophets in Ahmadiyya",
+          "Miracle workers",
+          "National heroes of Nepal",
+          "Philosophers of mind",
+          "Philosophers of pessimism",
+          "Ascetics",
+          "Social philosophers",
+          "Year of birth unknown",
+          "Year of death unknown",
+          "Journey to the West characters",
+          "Seven Buddhas of the Past",
+          "Deified men",
+          "Shakyas",
+          "Indian princes",
+          "Deified Indian men"
+        ],
+        "birth_year": -563,
+        "death_year": -483
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2167493"
+        ],
+        "target_person": {
+          "title": "The Buddha",
+          "page_id": 3395,
+          "infoboxes": [
+            "religious biography",
+            "Chinese"
+          ],
+          "categories": [
+            "Gautama Buddha| ",
+            "5th-century BC Indian people",
+            "5th century BC in religion",
+            "5th-century BC Indian philosophers",
+            "6th-century BC Indian people",
+            "6th-century BC Indian philosophers",
+            "Avatars of Vishnu",
+            "Buddhas",
+            "Classical humanists",
+            "Founders of religions",
+            "Indian ethicists",
+            "Indian political philosophers",
+            "Prophets in Ahmadiyya",
+            "Miracle workers",
+            "National heroes of Nepal",
+            "Philosophers of mind",
+            "Philosophers of pessimism",
+            "Ascetics",
+            "Social philosophers",
+            "Year of birth unknown",
+            "Year of death unknown",
+            "Journey to the West characters",
+            "Seven Buddhas of the Past",
+            "Deified men",
+            "Shakyas",
+            "Indian princes",
+            "Deified Indian men"
+          ],
+          "birth_year": -563,
+          "death_year": -483
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Renan",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "one of those scented mannikins-about-town of history, a thing half-priest, half-satyr (Renan parfum)"
+        ],
+        "commentaries": [
+          "The author derisively references Ernest Renan as a type of 'contemplative' historian, characterized by a perfumed, hypocritical aestheticism."
+        ],
+        "canonical_author": "Renan"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Renan",
+        "birth_year": 1823,
+        "death_year": 1892
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "9809310"
+        ],
+        "target_person": {
+          "title": "Renan",
+          "birth_year": 1823,
+          "death_year": 1892
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Immanuel Kant",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "Kant thought that he showed honour to art when he favoured and placed in the foreground those of the predicates of the beautiful, which constitute the honour of knowledge: impersonality and universality.",
+          "I need only mention Plato, Spinoza, La Rochefoucauld, and Kant—four minds as mutually different as is possible, but united on one point; their contempt of pity.",
+          "By the bye, even in the Kantian idea of \"the intellegible character of things\" there remains a trace of that schism, so dear to the heart of the ascetic, that schism which likes to turn reason against reason; in fact, \"intelligible character\" means in Kant a kind of quality in things of which the intellect comprehends this much, that for it, the intellect, it is absolutely incomprehensible.",
+          "with regard to the humiliating and deteriorating effect of which Kant has made a remarkable confession, 'it annihilates my own importance'",
+          "Kant for the derivation of his Categorical Imperative, his own belief certainly not having come to him from this source."
+        ],
+        "commentaries": [
+          "The author references Kant's philosophical ideas on beauty, critiquing his definition of the beautiful as that which pleases without interest.",
+          "The author cites Kant as one of several historical philosophers unanimously holding a contempt for pity, in contrast to the modern exaggerated estimation of it.",
+          "The author critiques Kant's concept of the 'intelligible character of things' as an example of the ascetic tendency to set reason against itself, viewing it as a remnant of ascetic ideology in philosophy.",
+          "The author cites Kant's personal confession about astronomy's effect on human self-importance as an example of science fostering contempt for humanity.",
+          "The author questions the origins of Kant's Categorical Imperative, suggesting it did not arise from the reasoning Kant presented."
+        ],
+        "canonical_author": "Immanuel Kant"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Immanuel Kant",
+        "page_id": 14631,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Immanuel Kant| ",
+          "1724 births",
+          "1804 deaths",
+          "18th-century anthropologists",
+          "18th-century essayists",
+          "18th-century German male writers",
+          "18th-century German philosophers",
+          "18th-century German writers",
+          "18th-century Prussian people",
+          "19th-century German anthropologists",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German philosophers",
+          "19th-century Prussian people",
+          "19th-century social scientists",
+          "Academic staff of the University of Königsberg",
+          "Age of Enlightenment",
+          "Enlightenment philosophers",
+          "German epistemologists",
+          "German agnostics",
+          "German ethicists",
+          "German idealists",
+          "German logicians",
+          "German Lutherans",
+          "German male non-fiction writers",
+          "German political philosophers",
+          "Humor researchers",
+          "Idealists"
+        ],
+        "birth_year": 1724,
+        "death_year": 1804
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11038"
+        ],
+        "target_person": {
+          "title": "Immanuel Kant",
+          "page_id": 14631,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Immanuel Kant| ",
+            "1724 births",
+            "1804 deaths",
+            "18th-century anthropologists",
+            "18th-century essayists",
+            "18th-century German male writers",
+            "18th-century German philosophers",
+            "18th-century German writers",
+            "18th-century Prussian people",
+            "19th-century German anthropologists",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German philosophers",
+            "19th-century Prussian people",
+            "19th-century social scientists",
+            "Academic staff of the University of Königsberg",
+            "Age of Enlightenment",
+            "Enlightenment philosophers",
+            "German epistemologists",
+            "German agnostics",
+            "German ethicists",
+            "German idealists",
+            "German logicians",
+            "German Lutherans",
+            "German male non-fiction writers",
+            "German political philosophers",
+            "Humor researchers",
+            "Idealists"
+          ],
+          "birth_year": 1724,
+          "death_year": 1804
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Schopenhauer",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "I had to place myself in a state of abstraction, in which I was almost alone with my great teacher Schopenhauer",
+          "So, for example, did Richard Wagner take, \"when the time had come,\" the philosopher Schopenhauer for his covering man in front, for his rampart. Who would consider it even thinkable, that he would have had the courage for an ascetic ideal, without the support afforded him by the philosophy of Schopenhauer, without the authority of Schopenhauer, which dominated Europe in the seventies?",
+          "Let us now apply this interpretation to gauge correctly the case of Schopenhauer, which we have already mentioned: in his case, the sight of the beautiful acted manifestly like a resolving irritant on the chief power of his nature (the power of contemplation and of intense penetration); so that this strength exploded and became suddenly master of his consciousness."
+        ],
+        "commentaries": [
+          "The author references Schopenhauer as his great teacher, whose ideas on the value of 'un-egoistic' instincts like pity he engaged with and fundamentally opposed, seeing them as a danger and a symptom of decline.",
+          "The author argues that Wagner relied on Schopenhauer's philosophy as a protective authority to justify his turn toward ascetic ideals in his later work.",
+          "The author discusses Schopenhauer's aesthetic theory, specifically his response to beauty, to critique and expand upon the relationship between sensuality and the aesthetic state."
+        ],
+        "canonical_author": "Schopenhauer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Arthur Schopenhauer",
+        "page_id": 700,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Arthur Schopenhauer| ",
+          "1788 births",
+          "1860 deaths",
+          "19th-century atheists",
+          "19th-century German philosophers",
+          "Academic staff of the Humboldt University of Berlin",
+          "German animal rights scholars",
+          "Anti-natalists",
+          "Atheist philosophers",
+          "Burials at Frankfurt Main Cemetery",
+          "German epistemologists",
+          "German atheists",
+          "German ethicists",
+          "German people of Dutch descent",
+          "German scholars of Buddhism",
+          "Idealists",
+          "Kantian philosophers",
+          "German philosophers of art",
+          "Philosophers of pessimism",
+          "Philosophers of psychology",
+          "University of Göttingen alumni",
+          "Writers from Gdańsk"
+        ],
+        "birth_year": 1788,
+        "death_year": 1860
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11682"
+        ],
+        "target_person": {
+          "title": "Arthur Schopenhauer",
+          "page_id": 700,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Arthur Schopenhauer| ",
+            "1788 births",
+            "1860 deaths",
+            "19th-century atheists",
+            "19th-century German philosophers",
+            "Academic staff of the Humboldt University of Berlin",
+            "German animal rights scholars",
+            "Anti-natalists",
+            "Atheist philosophers",
+            "Burials at Frankfurt Main Cemetery",
+            "German epistemologists",
+            "German atheists",
+            "German ethicists",
+            "German people of Dutch descent",
+            "German scholars of Buddhism",
+            "Idealists",
+            "Kantian philosophers",
+            "German philosophers of art",
+            "Philosophers of pessimism",
+            "Philosophers of psychology",
+            "University of Göttingen alumni",
+            "Writers from Gdańsk"
+          ],
+          "birth_year": 1788,
+          "death_year": 1860
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Luther",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "(To say nothing at all of Reason, which even Luther chose to call Frau Klüglin,[2] the sly whore.)"
+        ],
+        "commentaries": [
+          "The author mentions Luther as a historical figure who disparaged reason, using this as a person reference without citing a specific book."
+        ],
+        "canonical_author": "Luther"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Martin Luther",
+        "page_id": 7567080,
+        "infoboxes": [
+          "theologian",
+          "religious biography"
+        ],
+        "categories": [
+          "Martin Luther| ",
+          "1483 births",
+          "1546 deaths",
+          "16th-century apocalypticists",
+          "16th-century Christian mystics",
+          "16th-century German Lutheran clergy",
+          "16th-century German translators",
+          "16th-century German male writers",
+          "16th-century German Protestant theologians",
+          "16th-century writers in Latin",
+          "Academic staff of the University of Wittenberg",
+          "Anglican saints",
+          "Antisemitism in Germany",
+          "Augustinian friars",
+          "Burials at All Saints' Church, Wittenberg",
+          "Christian critics of Islam",
+          "Christian Hebraists",
+          "German classical composers of church music",
+          "Converts to Lutheranism from Roman Catholicism",
+          "Critics of Judaism",
+          "Critics of the Catholic Church",
+          "Former Roman Catholics",
+          "Founders of religions",
+          "German Christian mystics",
+          "German Lutheran hymnwriters",
+          "German Lutheran theologians",
+          "German male non-fiction writers",
+          "German translation scholars",
+          "Latin–German translators",
+          "Lutheran saints"
+        ],
+        "birth_year": 1483,
+        "death_year": 1546
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "29874"
+        ],
+        "target_person": {
+          "title": "Martin Luther",
+          "page_id": 7567080,
+          "infoboxes": [
+            "theologian",
+            "religious biography"
+          ],
+          "categories": [
+            "Martin Luther| ",
+            "1483 births",
+            "1546 deaths",
+            "16th-century apocalypticists",
+            "16th-century Christian mystics",
+            "16th-century German Lutheran clergy",
+            "16th-century German translators",
+            "16th-century German male writers",
+            "16th-century German Protestant theologians",
+            "16th-century writers in Latin",
+            "Academic staff of the University of Wittenberg",
+            "Anglican saints",
+            "Antisemitism in Germany",
+            "Augustinian friars",
+            "Burials at All Saints' Church, Wittenberg",
+            "Christian critics of Islam",
+            "Christian Hebraists",
+            "German classical composers of church music",
+            "Converts to Lutheranism from Roman Catholicism",
+            "Critics of Judaism",
+            "Critics of the Catholic Church",
+            "Former Roman Catholics",
+            "Founders of religions",
+            "German Christian mystics",
+            "German Lutheran hymnwriters",
+            "German Lutheran theologians",
+            "German male non-fiction writers",
+            "German translation scholars",
+            "Latin–German translators",
+            "Lutheran saints"
+          ],
+          "birth_year": 1483,
+          "death_year": 1546
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Value of Life",
+        "author": "E. Dühring",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "(E. Dühring, Value of Life; Course of Philosophy, and passim.)"
+        ],
+        "commentaries": [
+          "The author cites Dühring's works as examples of a scientific tendency to rehabilitate reactive emotions like revenge under the guise of justice, and he critiques Dühring's proposition about the origin of justice."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Der Werth des Lebens",
+        "authors": [
+          "Eugen Karl Dühring"
+        ],
+        "original_year": 1865,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A philosophical work by Eugen Dühring on the value of life, referenced by Nietzsche in his critique of Dühring's philosophical system.",
+        "book_id": "web_bf8e077d",
+        "author_meta": {
+          "birth_year": 1833,
+          "death_year": 1921
+        }
+      },
+      "wikipedia_match": {
+        "title": "Eugen Karl Dühring",
+        "birth_year": 1833,
+        "death_year": 1921
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_bf8e077d",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Eugen Karl Dühring",
+          "birth_year": 1833,
+          "death_year": 1921
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Beyond Good and Evil",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "I remember the passage which came to my pen on another occasion (Beyond Good and Evil, Aph. 195)",
+          "what I exactly mean by that dangerous motto which is inscribed on the body of my last book: Beyond Good and Evil",
+          "gentleness was then a subject for shame, just as hardness is now (compare Beyond Good and Evil, Aph. 260)."
+        ],
+        "commentaries": [
+          "The author references his own earlier work to support his argument about the Jewish revolt in morals.",
+          "The author cites his own previous book, 'Beyond Good and Evil,' as containing a motto that clarifies his argument about values.",
+          "The author references his own earlier work to support a historical contrast in moral valuations."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1495428265",
+        "publication_day": 4,
+        "work_id": "338580",
+        "title_without_series": "Beyond Good and Evil",
+        "publication_year": 2014,
+        "isbn13": "9781495428265",
+        "publisher": "Createspace",
+        "publication_month": 2,
+        "text_reviews_count": 1,
+        "format": "Paperback",
+        "book_id": "20833764",
+        "average_rating": 4.01,
+        "num_pages": 102,
+        "title": "Beyond Good and Evil",
+        "ratings_count": 11,
+        "author_ids": [
+          "1938"
+        ],
+        "authors": [
+          "Friedrich Nietzsche"
+        ],
+        "description": "In Beyond Good and Evil, Nietzsche accuses past philosophers of lacking critical sense and blindly accepting dogmatic premises in their consideration of morality. Specifically, he accuses them of founding grand metaphysical systems upon the faith that the good man is the opposite of the evil man, rather than just a different expression of the same basic impulses that find more direct expression in the evil man. The work moves into the realm \"beyond good and evil\" in the sense of leaving behind the tradition...",
+        "link": "https://www.goodreads.com/book/show/20833764-beyond-good-and-evil",
+        "wikipedia_match": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        },
+        "original_year": 1886,
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "description": null,
+          "title": "Friedrich Nietzsche"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "page_id": 10671,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Friedrich Nietzsche| ",
+          "1844 births",
+          "1900 deaths",
+          "People from Lützen",
+          "People from the Province of Saxony",
+          "Former Lutherans",
+          "19th-century German non-fiction writers",
+          "19th-century German male writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German male musicians",
+          "19th-century Prussian people",
+          "Aphorists",
+          "German critics of Christianity",
+          "Determinists",
+          "Existentialists",
+          "German classical philologists",
+          "Hellenists",
+          "German metaphysicians",
+          "German philosophers of art",
+          "Philosophers of time",
+          "Philosophers of nihilism",
+          "German philosophy writers",
+          "Writers from Saxony-Anhalt",
+          "Leipzig University alumni",
+          "University of Bonn alumni",
+          "Academic staff of the University of Basel",
+          "People associated with the University of Basel",
+          "Prussian Army personnel",
+          "German military personnel of the Franco-Prussian War"
+        ],
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "20833764",
+        "target_author_ids": [
+          "1938"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Darwin",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "but he had read Darwin:—and so in his philosophy the Darwinian beast and that pink of modernity, the demure weakling and dilettante, who 'bites no longer,' shake hands politely in a fashion that is at least instructive"
+        ],
+        "commentaries": [
+          "The author references Darwin as a source of ideas that influenced Dr. Rée's philosophy, contrasting the Darwinian beast with modern weakness."
+        ],
+        "canonical_author": "Darwin"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Charles Darwin",
+        "page_id": 8145410,
+        "infoboxes": [
+          "person",
+          "writer",
+          "scientist"
+        ],
+        "categories": [
+          "Charles Darwin| ",
+          "1809 births",
+          "1882 deaths",
+          "19th-century British biologists",
+          "19th-century English writers",
+          "19th-century Anglicans",
+          "19th-century English naturalists",
+          "19th-century English geologists",
+          "Alumni of Christ's College, Cambridge",
+          "Alumni of the University of Edinburgh",
+          "Botanists with author abbreviations",
+          "British carcinologists",
+          "British evolutionary biologists",
+          "British science communicators",
+          "Burials at Westminster Abbey",
+          "Circumnavigators of the globe",
+          "Coleopterists",
+          "Darwin–Wedgwood family",
+          "Deaths from coronary thrombosis",
+          "English abolitionists",
+          "English agnostics",
+          "English Anglicans",
+          "English entomologists",
+          "English justices of the peace",
+          "English sceptics",
+          "English travel writers",
+          "Ethologists",
+          "Fellows of the Linnean Society of London",
+          "Fellows of the Royal Entomological Society",
+          "Fellows of the Royal Geographical Society"
+        ],
+        "birth_year": 1809,
+        "death_year": 1882
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "12793"
+        ],
+        "target_person": {
+          "title": "Charles Darwin",
+          "page_id": 8145410,
+          "infoboxes": [
+            "person",
+            "writer",
+            "scientist"
+          ],
+          "categories": [
+            "Charles Darwin| ",
+            "1809 births",
+            "1882 deaths",
+            "19th-century British biologists",
+            "19th-century English writers",
+            "19th-century Anglicans",
+            "19th-century English naturalists",
+            "19th-century English geologists",
+            "Alumni of Christ's College, Cambridge",
+            "Alumni of the University of Edinburgh",
+            "Botanists with author abbreviations",
+            "British carcinologists",
+            "British evolutionary biologists",
+            "British science communicators",
+            "Burials at Westminster Abbey",
+            "Circumnavigators of the globe",
+            "Coleopterists",
+            "Darwin–Wedgwood family",
+            "Deaths from coronary thrombosis",
+            "English abolitionists",
+            "English agnostics",
+            "English Anglicans",
+            "English entomologists",
+            "English justices of the peace",
+            "English sceptics",
+            "English travel writers",
+            "Ethologists",
+            "Fellows of the Linnean Society of London",
+            "Fellows of the Royal Entomological Society",
+            "Fellows of the Royal Geographical Society"
+          ],
+          "birth_year": 1809,
+          "death_year": 1882
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Stendhal",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Compare this definition with this other one, made by a real 'spectator' and 'artist'—by Stendhal, who once called the beautiful une promesse de bonheur."
+        ],
+        "commentaries": [
+          "The author cites Stendhal's contrasting definition of beauty as a 'promise of happiness' to challenge Kant's notion of disinterested pleasure."
+        ],
+        "canonical_author": "Stendhal"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Stendhal",
+        "page_id": 26773,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Stendhal| ",
+          "1783 births",
+          "1842 deaths",
+          "19th-century French novelists",
+          "19th-century French short story writers",
+          "19th-century French writers",
+          "19th-century pseudonymous writers",
+          "Burials at Montmartre Cemetery",
+          "Conseil d'État (France)",
+          "French agnostics",
+          "French biographers",
+          "French male essayists",
+          "French male novelists",
+          "French male short story writers",
+          "French military personnel of the Napoleonic Wars",
+          "French psychological fiction writers",
+          "French travel writers",
+          "French male biographers",
+          "Writers of the Romantic era",
+          "Writers from Grenoble",
+          "Rossini scholars"
+        ],
+        "birth_year": 1783,
+        "death_year": 1842
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1481537"
+        ],
+        "target_person": {
+          "title": "Stendhal",
+          "page_id": 26773,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Stendhal| ",
+            "1783 births",
+            "1842 deaths",
+            "19th-century French novelists",
+            "19th-century French short story writers",
+            "19th-century French writers",
+            "19th-century pseudonymous writers",
+            "Burials at Montmartre Cemetery",
+            "Conseil d'État (France)",
+            "French agnostics",
+            "French biographers",
+            "French male essayists",
+            "French male novelists",
+            "French male short story writers",
+            "French military personnel of the Napoleonic Wars",
+            "French psychological fiction writers",
+            "French travel writers",
+            "French male biographers",
+            "Writers of the Romantic era",
+            "Writers from Grenoble",
+            "Rossini scholars"
+          ],
+          "birth_year": 1783,
+          "death_year": 1842
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dante",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Dante, as it seems to me, made a crass mistake when with awe-inspiring ingenuity he placed that inscription over the gate of his hell, \"Me too made eternal love\""
+        ],
+        "commentaries": [
+          "The author critiques Dante's inscription on the gate of hell, suggesting an alternative that would better fit the Christian concept of Paradise, thereby engaging with Dante's work as a point of philosophical and theological debate."
+        ],
+        "canonical_author": "Dante"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Dante",
+        "birth_year": 1265,
+        "death_year": 1321
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5031312"
+        ],
+        "target_person": {
+          "title": "Dante",
+          "birth_year": 1265,
+          "death_year": 1321
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Theognis",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "They name themselves, for instance, \"the truthful\": this is first done by the Greek nobility whose mouthpiece is found in Theognis, the Megarian poet."
+        ],
+        "commentaries": [
+          "The author cites Theognis as the mouthpiece of the Greek nobility, using his poetry to illustrate how the aristocracy identified themselves as 'the truthful'."
+        ],
+        "canonical_author": "Theognis"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Theognis",
+        "birth_year": -570,
+        "death_year": -485
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7136903"
+        ],
+        "target_person": {
+          "title": "Theognis",
+          "birth_year": -570,
+          "death_year": -485
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Eth.",
+        "author": "Spinoza",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "\"The antithesis of gaudium,\" said he at last to himself,—\"A sadness accompanied by the recollection of a past event which has turned out contrary to all expectation\" (Eth. III., Propos. XVIII. Schol. i. ii.)."
+        ],
+        "commentaries": [
+          "The author directly quotes from Spinoza's 'Ethics' to illustrate Spinoza's definition of remorse, aligning it with the author's argument about the historical understanding of punishment and guilt."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0140435719",
+        "publication_day": 27,
+        "work_id": "1218789",
+        "title_without_series": "Ethics",
+        "publication_year": 1996,
+        "isbn13": "9780140435719",
+        "publisher": "Penguin Classics",
+        "publication_month": 6,
+        "text_reviews_count": 201,
+        "format": "Paperback",
+        "book_id": "205218",
+        "average_rating": 4.01,
+        "num_pages": 186,
+        "title": "Ethics",
+        "ratings_count": 9491,
+        "author_ids": [
+          "122092",
+          "122102",
+          "68786",
+          "5809623"
+        ],
+        "authors": [
+          "Baruch Spinoza",
+          "Edwin M. Curley",
+          "Stuart Hampshire",
+          "Edwin Curley"
+        ],
+        "description": "A profoundly beautiful and uniquely insightful description of the universe, Benedict de Spinoza's Ethics is one of the masterpieces of Enlightenment-era philosophy. This Penguin Classics edition is edited and translated from the Latin by Edwin Curley, with an introduction by Stuart Hampshire.\nPublished shortly after his death, the Ethicsis undoubtedly Spinoza's greatest work - an elegant, fully cohesive cosmology derived from first principles, providing a coherent picture of reality, and a guide to the mean...",
+        "link": "https://www.goodreads.com/book/show/205218.Ethics",
+        "wikipedia_match": {
+          "title": "Baruch Spinoza",
+          "page_id": 3408,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1632 births",
+            "1677 deaths",
+            "Baruch Spinoza| ",
+            "17th-century Jewish biblical scholars",
+            "17th-century Jewish theologians",
+            "17th-century writers in Latin",
+            "17th-century Sephardi Jews",
+            "17th-century Dutch philosophers",
+            "Censorship in Judaism",
+            "Censorship in the Netherlands",
+            "Critics of Judaism",
+            "Dutch critics of religions",
+            "Dutch Enlightenment",
+            "Critics of the Catholic Church",
+            "Descartes scholars",
+            "Determinists",
+            "Dutch ethicists",
+            "Dutch logicians",
+            "Dutch people of Portuguese descent",
+            "Dutch people of Portuguese-Jewish descent",
+            "Dutch Sephardi Jews",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Freethought",
+            "Heresy in Judaism",
+            "Jewish philosophers",
+            "Jewish skeptics",
+            "Jewish translators of the Bible",
+            "Metaphilosophers",
+            "Metaphysicians"
+          ],
+          "birth_year": 1632,
+          "death_year": 1677
+        },
+        "original_year": 1677,
+        "author_meta": {
+          "birth_year": 1632,
+          "death_year": 1677,
+          "description": null,
+          "title": "Baruch Spinoza"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "page_id": 3408,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1632 births",
+          "1677 deaths",
+          "Baruch Spinoza| ",
+          "17th-century Jewish biblical scholars",
+          "17th-century Jewish theologians",
+          "17th-century writers in Latin",
+          "17th-century Sephardi Jews",
+          "17th-century Dutch philosophers",
+          "Censorship in Judaism",
+          "Censorship in the Netherlands",
+          "Critics of Judaism",
+          "Dutch critics of religions",
+          "Dutch Enlightenment",
+          "Critics of the Catholic Church",
+          "Descartes scholars",
+          "Determinists",
+          "Dutch ethicists",
+          "Dutch logicians",
+          "Dutch people of Portuguese descent",
+          "Dutch people of Portuguese-Jewish descent",
+          "Dutch Sephardi Jews",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Freethought",
+          "Heresy in Judaism",
+          "Jewish philosophers",
+          "Jewish skeptics",
+          "Jewish translators of the Bible",
+          "Metaphilosophers",
+          "Metaphysicians"
+        ],
+        "birth_year": 1632,
+        "death_year": 1677
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "205218",
+        "target_author_ids": [
+          "122092",
+          "122102",
+          "68786",
+          "5809623"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "page_id": 3408,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1632 births",
+            "1677 deaths",
+            "Baruch Spinoza| ",
+            "17th-century Jewish biblical scholars",
+            "17th-century Jewish theologians",
+            "17th-century writers in Latin",
+            "17th-century Sephardi Jews",
+            "17th-century Dutch philosophers",
+            "Censorship in Judaism",
+            "Censorship in the Netherlands",
+            "Critics of Judaism",
+            "Dutch critics of religions",
+            "Dutch Enlightenment",
+            "Critics of the Catholic Church",
+            "Descartes scholars",
+            "Determinists",
+            "Dutch ethicists",
+            "Dutch logicians",
+            "Dutch people of Portuguese descent",
+            "Dutch people of Portuguese-Jewish descent",
+            "Dutch Sephardi Jews",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Freethought",
+            "Heresy in Judaism",
+            "Jewish philosophers",
+            "Jewish skeptics",
+            "Jewish translators of the Bible",
+            "Metaphilosophers",
+            "Metaphysicians"
+          ],
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Old Testament",
+        "author": "Unknown",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The Old Testament—yes, that is something quite different, all honour to the Old Testament! I find therein great men, an heroic landscape, and one of the rarest phenomena in the world, the incomparable naïveté of the strong heart; further still, I find a people."
+        ],
+        "commentaries": [
+          "The author praises the Old Testament for its heroic qualities, strong characters, and the portrayal of a people, contrasting it favorably with the New Testament."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0679451021",
+        "publication_day": 5,
+        "work_id": "922887",
+        "title_without_series": "Holy Bible: Old Testament",
+        "publication_year": 1996,
+        "isbn13": "9780679451020",
+        "publisher": "Everyman's Library",
+        "publication_month": 11,
+        "text_reviews_count": 13,
+        "format": "Hardcover",
+        "book_id": "937911",
+        "average_rating": 3.58,
+        "num_pages": 1440,
+        "title": "Holy Bible: Old Testament",
+        "ratings_count": 59,
+        "author_ids": [
+          "5158478"
+        ],
+        "authors": [
+          "Anonymous"
+        ],
+        "description": "(Book Jacket Status: Jacketed)",
+        "link": "https://www.goodreads.com/book/show/937911.Holy_Bible",
+        "original_year": -200,
+        "author_meta": {
+          "birth_year": null,
+          "death_year": null,
+          "description": null,
+          "title": "Anonymous 4"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Anonymous"
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "937911",
+        "target_author_ids": [
+          "5158478"
+        ],
+        "target_person": {
+          "title": "Anonymous"
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "New Testament",
+        "author": "Unknown",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I do not like the 'New Testament'; it almost upsets me that I stand so isolated in my taste so far as concerns this valued, this over-valued Scripture; the taste of two thousand years is against me; but what boots it!"
+        ],
+        "commentaries": [
+          "The author criticizes the New Testament as an overvalued scripture, expressing a strong personal dislike for its content and style, and positioning himself against two millennia of prevailing taste."
+        ]
+      },
+      "goodreads_match": {
+        "title": "New Testament",
+        "authors": [
+          "Various authors (Apostles, Evangelists)"
+        ],
+        "original_year": 50,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Greco-Roman/Jewish",
+        "description": "The second part of the Christian Bible, containing the Gospels, Acts, Epistles, and Revelation, written in Greek between approximately 50-100 AD.",
+        "book_id": "web_f6ba0fcc",
+        "author_meta": {
+          "birth_year": -10,
+          "death_year": 100,
+          "main_genre": "Religious",
+          "nationality": "Jewish"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Various authors (Apostles, Evangelists)",
+        "birth_year": -10,
+        "death_year": 100
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_f6ba0fcc",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Various authors (Apostles, Evangelists)",
+          "birth_year": -10,
+          "death_year": 100
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 9,
+        "contexts": [
+          "I need only mention Plato, Spinoza, La Rochefoucauld, and Kant—four minds as mutually different as is possible, but united on one point; their contempt of pity.",
+          "or a petty subconscious enmity and rancour against Christianity (and Plato), that has conceivably never crossed the threshold of consciousness?",
+          "Up to the present what great philosophers have been married? Heracleitus, Plato, Descartes, Spinoza, Leibnitz, Kant, Schopenhauer—they were not married, and, further, one cannot imagine them as married.",
+          "Such, e.g., was the Greek; Plato shows it in a hundred places, Plato, who knew his contemporaries—and himself.",
+          "The real lie, the genuine, determined, \"honest\" lie (on whose value you can listen to Plato) would prove too tough and strong an article for them by a long way",
+          "from that Christian belief, which was also Plato's belief, the belief that God is truth, that truth is divine....",
+          "Plato's instinct felt this––Plato, the greatest enemy of art which Europe has produced up to the present.",
+          "Thucydides' morals are the same as those that exploded everywhere with Plato.",
+          "we would condemn Plato for his pia fraus"
+        ],
+        "commentaries": [
+          "The author cites Plato as one of several historical philosophers unanimously holding a contempt for pity, in contrast to the modern exaggerated estimation of it.",
+          "The author mentions Plato as a possible target of subconscious enmity among English psychologists, grouping him with Christianity as an object of resentment.",
+          "The author includes Plato in a list of unmarried philosophers to argue that marriage is typically incompatible with the philosophical life.",
+          "The author references Plato as an authority on the nature of Greek oligarchies and their internal tensions.",
+          "The author cites Plato's concept of the 'honest lie' as a philosophical standard against which modern dishonesty is measured.",
+          "The author references Plato as holding a belief that truth is divine, linking him to the Christian metaphysical tradition that underpins the ascetic ideal.",
+          "The author references Plato as an intellectual figure whose instinct recognized art's fundamental opposition to the ascetic ideal, positioning him as art's greatest enemy.",
+          "The author cites Plato's moral influence, noting its widespread impact in contrast to other historical periods.",
+          "The author criticizes Plato for employing pious fraud, indicating a negative judgment on his philosophical methods."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Epicurus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "\"This is the painless state which Epicurus praised as the highest good and as the state of the gods; we are during that moment freed from the vile pressure of the will, we celebrate the Sabbath of the will's hard labour, the wheel of Ixion stands still.\""
+        ],
+        "commentaries": [
+          "The author notes that Schopenhauer, in his writing, references Epicurus's praise of the painless state as the highest good, linking it to the aesthetic state."
+        ],
+        "canonical_author": "Epicurus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Epicurus",
+        "page_id": 10073,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "4th-century BC Greek philosophers",
+          "3rd-century BC Greek philosophers",
+          "341 BC births",
+          "270 BC deaths",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Samians",
+          "Empiricists",
+          "Epicurean philosophers",
+          "Greek male writers",
+          "Materialists",
+          "Philosophers of death",
+          "Hellenistic-era philosophers in Athens"
+        ],
+        "birth_year": -341,
+        "death_year": -270
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "114041"
+        ],
+        "target_person": {
+          "title": "Epicurus",
+          "page_id": 10073,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "4th-century BC Greek philosophers",
+            "3rd-century BC Greek philosophers",
+            "341 BC births",
+            "270 BC deaths",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Samians",
+            "Empiricists",
+            "Epicurean philosophers",
+            "Greek male writers",
+            "Materialists",
+            "Philosophers of death",
+            "Hellenistic-era philosophers in Athens"
+          ],
+          "birth_year": -341,
+          "death_year": -270
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Leibnitz",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Up to the present what great philosophers have been married? Heracleitus, Plato, Descartes, Spinoza, Leibnitz, Kant, Schopenhauer—they were not married, and, further, one cannot imagine them as married."
+        ],
+        "commentaries": [
+          "The author references Leibnitz among other philosophers who were not married, supporting the idea that marriage is a hindrance to philosophical achievement."
+        ],
+        "canonical_author": "Leibnitz"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gottfried Wilhelm Leibniz",
+        "page_id": 12281,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Gottfried Wilhelm Leibniz| ",
+          "1646 births",
+          "1716 deaths",
+          "17th-century German mathematicians",
+          "17th-century German philosophers",
+          "17th-century German scientists",
+          "17th-century German writers",
+          "17th-century German male writers",
+          "17th-century writers in Latin",
+          "17th-century German inventors",
+          "18th-century German mathematicians",
+          "18th-century German philosophers",
+          "18th-century German physicists",
+          "18th-century German scientists",
+          "18th-century German writers",
+          "18th-century German male writers",
+          "18th-century writers in Latin",
+          "18th-century German inventors",
+          "Constructed language creators",
+          "Determinists",
+          "Enlightenment philosophers",
+          "Fellows of the Royal Society",
+          "German librarians",
+          "German logicians",
+          "German Lutherans",
+          "German philologists",
+          "German political philosophers",
+          "German Protestants",
+          "French-language German writers",
+          "Leipzig University alumni"
+        ],
+        "birth_year": 1646,
+        "death_year": 1716
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1340566"
+        ],
+        "target_person": {
+          "title": "Gottfried Wilhelm Leibniz",
+          "page_id": 12281,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Gottfried Wilhelm Leibniz| ",
+            "1646 births",
+            "1716 deaths",
+            "17th-century German mathematicians",
+            "17th-century German philosophers",
+            "17th-century German scientists",
+            "17th-century German writers",
+            "17th-century German male writers",
+            "17th-century writers in Latin",
+            "17th-century German inventors",
+            "18th-century German mathematicians",
+            "18th-century German philosophers",
+            "18th-century German physicists",
+            "18th-century German scientists",
+            "18th-century German writers",
+            "18th-century German male writers",
+            "18th-century writers in Latin",
+            "18th-century German inventors",
+            "Constructed language creators",
+            "Determinists",
+            "Enlightenment philosophers",
+            "Fellows of the Royal Society",
+            "German librarians",
+            "German logicians",
+            "German Lutherans",
+            "German philologists",
+            "German political philosophers",
+            "German Protestants",
+            "French-language German writers",
+            "Leipzig University alumni"
+          ],
+          "birth_year": 1646,
+          "death_year": 1716
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Buckle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The extent of the mischief which is caused by this prejudice (once it is free of all trammels except those of its own malice), particularly to Ethics and History, is shown by the notorious case of Buckle: it was in Buckle that that plebeianism of the modern spirit, which is of English origin, broke out once again from its malignant soil with all the violence of a slimy volcano, and with that salted, rampant, and vulgar eloquence with which up to the present time all volcanoes have spoken."
+        ],
+        "commentaries": [
+          "The author criticizes Buckle as a notorious example of the detrimental influence of democratic prejudice on ethics and history, associating him with a plebeian and vulgar modern spirit."
+        ],
+        "canonical_author": "Buckle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Henry Thomas Buckle",
+        "page_id": 306083,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1821 births",
+          "1862 deaths",
+          "English male non-fiction writers",
+          "19th-century English historians",
+          "19th-century English male writers",
+          "19th-century British chess players",
+          "19th-century English sportsmen"
+        ],
+        "birth_year": 1821,
+        "death_year": 1862
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6545294"
+        ],
+        "target_person": {
+          "title": "Henry Thomas Buckle",
+          "page_id": 306083,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1821 births",
+            "1862 deaths",
+            "English male non-fiction writers",
+            "19th-century English historians",
+            "19th-century English male writers",
+            "19th-century British chess players",
+            "19th-century English sportsmen"
+          ],
+          "birth_year": 1821,
+          "death_year": 1862
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Heracleitus",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Henceforth man is to be counted as one of the most unexpected and sensational lucky shots in the game of the 'big baby' of Heracleitus, whether he be called Zeus or Chance",
+          "Up to the present what great philosophers have been married? Heracleitus, Plato, Descartes, Spinoza, Leibnitz, Kant, Schopenhauer—they were not married, and, further, one cannot imagine them as married.",
+          "I grant that when Heracleitus retreated to the courts and cloisters of the colossal temple of Artemis, that \"wilderness\" was worthier; why do we lack such temples?"
+        ],
+        "commentaries": [
+          "The author references Heracleitus's philosophical concept of play or chance to describe man's emergence as a fortuitous accident in the cosmos.",
+          "The author lists Heracleitus among philosophers who were not married, using this to support the idea that marriage is a hindrance to the philosophical optimum.",
+          "The author references Heracleitus as a historical example of a philosopher who sought solitude in a temple, illustrating the ideal conditions for philosophical thought."
+        ],
+        "canonical_author": "Heracleitus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Heraclitus",
+        "page_id": 13792,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Heraclitus| ",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek philosophers",
+          "530s BC births",
+          "470s BC deaths",
+          "Ancient Ephesians",
+          "Ancient Greek cosmologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Deaths from edema",
+          "Ancient Greek epistemologists",
+          "Natural philosophers",
+          "Ontologists",
+          "Philosophers of ancient Ionia",
+          "Ancient Greek philosophers of mind",
+          "Philosophers of religion",
+          "Philosophers of time",
+          "Ancient Greek political philosophers",
+          "Presocratic philosophers"
+        ],
+        "birth_year": -535,
+        "death_year": -475
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "77989"
+        ],
+        "target_person": {
+          "title": "Heraclitus",
+          "page_id": 13792,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Heraclitus| ",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek philosophers",
+            "530s BC births",
+            "470s BC deaths",
+            "Ancient Ephesians",
+            "Ancient Greek cosmologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Deaths from edema",
+            "Ancient Greek epistemologists",
+            "Natural philosophers",
+            "Ontologists",
+            "Philosophers of ancient Ionia",
+            "Ancient Greek philosophers of mind",
+            "Philosophers of religion",
+            "Philosophers of time",
+            "Ancient Greek political philosophers",
+            "Presocratic philosophers"
+          ],
+          "birth_year": -535,
+          "death_year": -475
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Semper",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Gothic, rococo (according to Semper)"
+        ],
+        "commentaries": [
+          "The author references Semper as an authority on architectural styles, specifically regarding the classification of Gothic and rococo."
+        ],
+        "canonical_author": "Semper"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gottfried Semper",
+        "page_id": 76252,
+        "infoboxes": [
+          "architect"
+        ],
+        "categories": [
+          "1803 births",
+          "1879 deaths",
+          "Academic staff of ETH Zurich",
+          "19th-century German architects",
+          "Academic staff of the Dresden Academy of Fine Arts",
+          "Architecture educators",
+          "German architecture writers",
+          "Architectural theoreticians",
+          "People from Hamburg",
+          "People of the Revolutions of 1848",
+          "Recipients of the Pour le Mérite (civil class)",
+          "University of Göttingen alumni",
+          "Ludwig Maximilian University of Munich alumni",
+          "Burials in the Protestant Cemetery, Rome",
+          "German expatriates in Switzerland",
+          "German male non-fiction writers",
+          "Richard Wagner",
+          "People educated at the Gelehrtenschule des Johanneums",
+          "Semperoper"
+        ],
+        "birth_year": 1803,
+        "death_year": 1879
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "653677"
+        ],
+        "target_person": {
+          "title": "Gottfried Semper",
+          "page_id": 76252,
+          "infoboxes": [
+            "architect"
+          ],
+          "categories": [
+            "1803 births",
+            "1879 deaths",
+            "Academic staff of ETH Zurich",
+            "19th-century German architects",
+            "Academic staff of the Dresden Academy of Fine Arts",
+            "Architecture educators",
+            "German architecture writers",
+            "Architectural theoreticians",
+            "People from Hamburg",
+            "People of the Revolutions of 1848",
+            "Recipients of the Pour le Mérite (civil class)",
+            "University of Göttingen alumni",
+            "Ludwig Maximilian University of Munich alumni",
+            "Burials in the Protestant Cemetery, Rome",
+            "German expatriates in Switzerland",
+            "German male non-fiction writers",
+            "Richard Wagner",
+            "People educated at the Gelehrtenschule des Johanneums",
+            "Semperoper"
+          ],
+          "birth_year": 1803,
+          "death_year": 1879
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John the Apostle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "it is sufficient to carry one's mind back to the Johannian Apocalypse, that most obscene of all the written outbursts, which has revenge on its conscience."
+        ],
+        "commentaries": [
+          "The author references the Johannian Apocalypse (the Book of Revelation) as a written outburst embodying Jewish resentment and revenge against Rome."
+        ],
+        "canonical_author": "John the Apostle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John the Apostle",
+        "page_id": 38938,
+        "infoboxes": [
+          "Saint"
+        ],
+        "categories": [
+          "John the Apostle| ",
+          "AD 6 births",
+          "Year of death unknown",
+          "Christian saints from the New Testament",
+          "1st-century Christian theologians",
+          "1st-century Christian mystics",
+          "2nd-century Christian theologians",
+          "2nd-century Christian mystics",
+          "Anglican saints",
+          "Angelic visionaries",
+          "Book of Revelation",
+          "Jewish Christian mystics",
+          "Ancient letter writers",
+          "Family of Jesus",
+          "Twelve Apostles",
+          "Saints from the Holy Land",
+          "Ancient Jewish fishermen",
+          "People from Bethsaida",
+          "People from Roman Judea",
+          "Christian miracle workers",
+          "Colosseum",
+          "Prophets in the Druze faith",
+          "People in the Gospel of John",
+          "People in the Gospel of Luke",
+          "People in the Gospel of Matthew"
+        ],
+        "birth_year": 6,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "John the Apostle",
+          "page_id": 38938,
+          "infoboxes": [
+            "Saint"
+          ],
+          "categories": [
+            "John the Apostle| ",
+            "AD 6 births",
+            "Year of death unknown",
+            "Christian saints from the New Testament",
+            "1st-century Christian theologians",
+            "1st-century Christian mystics",
+            "2nd-century Christian theologians",
+            "2nd-century Christian mystics",
+            "Anglican saints",
+            "Angelic visionaries",
+            "Book of Revelation",
+            "Jewish Christian mystics",
+            "Ancient letter writers",
+            "Family of Jesus",
+            "Twelve Apostles",
+            "Saints from the Holy Land",
+            "Ancient Jewish fishermen",
+            "People from Bethsaida",
+            "People from Roman Judea",
+            "Christian miracle workers",
+            "Colosseum",
+            "Prophets in the Druze faith",
+            "People in the Gospel of John",
+            "People in the Gospel of Luke",
+            "People in the Gospel of Matthew"
+          ],
+          "birth_year": 6,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Joyful Wisdom",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "and here I quote my Joyful Wisdom, cp. Book V. Aph. 344: \"The man who is truthful in that daring and extreme fashion, which is the presupposition of the faith in science, asserts thereby a different world from that of life, nature, and history; and in so far as he asserts the existence of that different world, come, must he not similarly repudiate its counterpart, this world, our world?\"",
+          "(If this seems too laconically expressed, I recommend the reader to peruse again that passage from the Joyful Wisdom which bears the title, \"How far we also are still pious,\" Aph. 344, and best of all the whole fifth book of that work, as well as the Preface to The Dawn of Day.)",
+          "The answer stands in my Joyful Wisdom, Aph. 357"
+        ],
+        "commentaries": [
+          "The author quotes directly from his own book, 'Joyful Wisdom', to support his argument about the metaphysical belief underlying science.",
+          "The author references his book 'Joyful Wisdom' and its specific aphorism, suggesting the reader consult it for further elaboration on the critique of truth's value.",
+          "The author cites a specific aphorism from his own earlier book to answer the question of what triumphed over the Christian God."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1410204820",
+        "publication_day": 1,
+        "work_id": "2382792",
+        "title_without_series": "The Joyful Wisdom",
+        "publication_year": 2003,
+        "isbn13": "9781410204820",
+        "publisher": "University Press of the Pacific",
+        "publication_month": 4,
+        "text_reviews_count": 3,
+        "format": "Paperback",
+        "book_id": "685691",
+        "average_rating": 4.26,
+        "num_pages": 380,
+        "title": "The Joyful Wisdom",
+        "ratings_count": 22,
+        "author_ids": [
+          "1938"
+        ],
+        "authors": [
+          "Friedrich Nietzsche"
+        ],
+        "description": "CONTENTSJest, Ruse and Revenge: A Prelude in RhymeBook FirstBook SecondBook ThirdBook Fourth: Sanctus JanuariusBook Fifth: We Fearless OnesAppendix: Songs of Prince Free-as-a-Bird",
+        "link": "https://www.goodreads.com/book/show/685691.The_Joyful_Wisdom",
+        "original_year": 1882,
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "description": null,
+          "title": "Friedrich Nietzsche"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "685691",
+        "target_author_ids": [
+          "1938"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thomas of Aquinas",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "it is better that it should be explicitly attested by an authority who in such matters is not to be disparaged, Thomas of Aquinas, the great teacher and saint. \"Beati in regno celesti\" says he, as gently as a lamb, \"videbunt pœnas damnatorum, ut beatitudo illis magis complaceat.\""
+        ],
+        "commentaries": [
+          "The author cites Thomas Aquinas as an authoritative source to define the nature of blessedness in Paradise, quoting his Latin text to support the argument about the joy derived from witnessing the punishment of the damned."
+        ],
+        "canonical_author": "Thomas Of Aquinas"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thomas Aquinas",
+        "page_id": 21490957,
+        "infoboxes": [
+          "saint",
+          "philosopher"
+        ],
+        "categories": [
+          "Thomas Aquinas| ",
+          "1225 births",
+          "1274 deaths",
+          "13th-century Christian mystics",
+          "13th-century Christian saints",
+          "13th-century Italian jurists",
+          "13th-century Italian philosophers",
+          "13th-century Italian Roman Catholic priests",
+          "13th-century Italian Roman Catholic theologians",
+          "13th-century Italian writers",
+          "13th-century writers in Latin",
+          "Angelic visionaries",
+          "Anglican saints",
+          "Aristotelian philosophers",
+          "Burials at the Church of the Jacobins",
+          "Characters in the Divine Comedy",
+          "Catholic philosophers",
+          "Christian anti-Gnosticism",
+          "Christian apologists",
+          "Christian critics of Islam",
+          "Christian ethicists",
+          "Classical theism",
+          "Critics of atheism",
+          "Doctors of the Church",
+          "Dominican mystics",
+          "Dominican saints",
+          "Dominican theologians",
+          "History of magic",
+          "International law scholars",
+          "Italian Dominicans"
+        ],
+        "birth_year": 1225,
+        "death_year": 1274
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "158904"
+        ],
+        "target_person": {
+          "title": "Thomas Aquinas",
+          "page_id": 21490957,
+          "infoboxes": [
+            "saint",
+            "philosopher"
+          ],
+          "categories": [
+            "Thomas Aquinas| ",
+            "1225 births",
+            "1274 deaths",
+            "13th-century Christian mystics",
+            "13th-century Christian saints",
+            "13th-century Italian jurists",
+            "13th-century Italian philosophers",
+            "13th-century Italian Roman Catholic priests",
+            "13th-century Italian Roman Catholic theologians",
+            "13th-century Italian writers",
+            "13th-century writers in Latin",
+            "Angelic visionaries",
+            "Anglican saints",
+            "Aristotelian philosophers",
+            "Burials at the Church of the Jacobins",
+            "Characters in the Divine Comedy",
+            "Catholic philosophers",
+            "Christian anti-Gnosticism",
+            "Christian apologists",
+            "Christian critics of Islam",
+            "Christian ethicists",
+            "Classical theism",
+            "Critics of atheism",
+            "Doctors of the Church",
+            "Dominican mystics",
+            "Dominican saints",
+            "Dominican theologians",
+            "History of magic",
+            "International law scholars",
+            "Italian Dominicans"
+          ],
+          "birth_year": 1225,
+          "death_year": 1274
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hesiod",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I have once called attention to the embarrassment of Hesiod, when he conceived the series of social ages, and endeavoured to express them in gold, silver, and bronze."
+        ],
+        "commentaries": [
+          "The author references Hesiod's conceptualization of social ages (the Ages of Man) as an example of an attempt to reconcile the contradictory nature of the Homeric world, noting Hesiod's 'embarrassment' and his method of splitting one age into two."
+        ],
+        "canonical_author": "Hesiod"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hesiod",
+        "page_id": 13700,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Hesiod| ",
+          "8th-century BC births",
+          "8th-century BC Greek poets",
+          "Ancient Boeotian poets",
+          "Ancient Greek didactic poets",
+          "Year of death unknown",
+          "8th-century BC philosophers",
+          "7th-century BC Greek philosophers"
+        ],
+        "birth_year": -750,
+        "death_year": -650
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1691"
+        ],
+        "target_person": {
+          "title": "Hesiod",
+          "page_id": 13700,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Hesiod| ",
+            "8th-century BC births",
+            "8th-century BC Greek poets",
+            "Ancient Boeotian poets",
+            "Ancient Greek didactic poets",
+            "Year of death unknown",
+            "8th-century BC philosophers",
+            "7th-century BC Greek philosophers"
+          ],
+          "birth_year": -750,
+          "death_year": -650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Socrates",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as for that exception of a Socrates—the malicious Socrates married himself, it seems, ironice, just to prove this very rule."
+        ],
+        "commentaries": [
+          "The author mentions Socrates as a rare married philosopher, suggesting his marriage was ironic and intended to prove the rule that philosophers avoid marriage."
+        ],
+        "canonical_author": "Socrates"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Socrates",
+        "page_id": 25664190,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Socrates| ",
+          "5th-century BC Athenians",
+          "5th-century BC Greek philosophers",
+          "4th-century BC executions",
+          "470s BC births",
+          "399 BC deaths",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political philosophers",
+          "Ancient Greeks accused of sacrilege",
+          "Characters in the Divine Comedy",
+          "Critics of religions",
+          "Executed ancient Greek people",
+          "Executed philosophers",
+          "Family of Socrates",
+          "Forced suicides",
+          "Irony theorists",
+          "People executed by ancient Athens",
+          "People executed by poison",
+          "People executed for heresy",
+          "Philosophers of education",
+          "Classical theism",
+          "Male suicides",
+          "Suicides by poison"
+        ],
+        "birth_year": -470,
+        "death_year": -399
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Socrates",
+          "page_id": 25664190,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Socrates| ",
+            "5th-century BC Athenians",
+            "5th-century BC Greek philosophers",
+            "4th-century BC executions",
+            "470s BC births",
+            "399 BC deaths",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political philosophers",
+            "Ancient Greeks accused of sacrilege",
+            "Characters in the Divine Comedy",
+            "Critics of religions",
+            "Executed ancient Greek people",
+            "Executed philosophers",
+            "Family of Socrates",
+            "Forced suicides",
+            "Irony theorists",
+            "People executed by ancient Athens",
+            "People executed by poison",
+            "People executed for heresy",
+            "Philosophers of education",
+            "Classical theism",
+            "Male suicides",
+            "Suicides by poison"
+          ],
+          "birth_year": -470,
+          "death_year": -399
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Shakespeare",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the nonsense of vegetarianism—which, however, have in their favour the authority of Sir Christopher in Shakespeare"
+        ],
+        "commentaries": [
+          "The author mentions Shakespeare as providing an authoritative example (through the character Sir Christopher) used to support vegetarianism, within a list of potential causes of physiological depression."
+        ],
+        "canonical_author": "Shakespeare"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "William Shakespeare",
+        "page_id": 32897,
+        "infoboxes": [
+          "person",
+          "writer "
+        ],
+        "categories": [
+          "William Shakespeare| ",
+          "1564 births",
+          "1616 deaths",
+          "16th-century English male actors",
+          "English male stage actors",
+          "English male Shakespearean actors",
+          "16th-century English dramatists and playwrights",
+          "16th-century English male writers",
+          "17th-century English dramatists and playwrights",
+          "16th-century English poets",
+          "Burials in Warwickshire",
+          "17th-century English poets",
+          "17th-century English male writers",
+          "English Renaissance dramatists",
+          "People educated at King Edward VI School, Stratford-upon-Avon",
+          "Male actors from Stratford-upon-Avon",
+          "People of the Elizabethan era",
+          "Shakespeare family",
+          "Sonneteers",
+          "King's Men (playing company)",
+          "17th-century English male actors",
+          "English male dramatists and playwrights",
+          "English male poets",
+          "Writers from Warwickshire",
+          "Burials at Church of the Holy Trinity, Stratford-upon-Avon"
+        ],
+        "birth_year": 1564,
+        "death_year": 1616
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "947"
+        ],
+        "target_person": {
+          "title": "William Shakespeare",
+          "page_id": 32897,
+          "infoboxes": [
+            "person",
+            "writer "
+          ],
+          "categories": [
+            "William Shakespeare| ",
+            "1564 births",
+            "1616 deaths",
+            "16th-century English male actors",
+            "English male stage actors",
+            "English male Shakespearean actors",
+            "16th-century English dramatists and playwrights",
+            "16th-century English male writers",
+            "17th-century English dramatists and playwrights",
+            "16th-century English poets",
+            "Burials in Warwickshire",
+            "17th-century English poets",
+            "17th-century English male writers",
+            "English Renaissance dramatists",
+            "People educated at King Edward VI School, Stratford-upon-Avon",
+            "Male actors from Stratford-upon-Avon",
+            "People of the Elizabethan era",
+            "Shakespeare family",
+            "Sonneteers",
+            "King's Men (playing company)",
+            "17th-century English male actors",
+            "English male dramatists and playwrights",
+            "English male poets",
+            "Writers from Warwickshire",
+            "Burials at Church of the Holy Trinity, Stratford-upon-Avon"
+          ],
+          "birth_year": 1564,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "La Rochefoucauld",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I need only mention Plato, Spinoza, La Rochefoucauld, and Kant—four minds as mutually different as is possible, but united on one point; their contempt of pity."
+        ],
+        "commentaries": [
+          "The author cites La Rochefoucauld as one of several historical philosophers unanimously holding a contempt for pity, in contrast to the modern exaggerated estimation of it."
+        ],
+        "canonical_author": "La Rochefoucauld"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "François de La Rochefoucauld (writer)",
+        "page_id": 287047,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1613 births",
+          "1680 deaths",
+          "17th-century French writers",
+          "17th-century French male writers",
+          "Aphorists",
+          "Dukes of La Rochefoucauld",
+          "17th-century French letter writers",
+          "French male non-fiction writers",
+          "French Roman Catholics",
+          "Literary peers",
+          "Prisoners of the Bastille",
+          "17th-century French memoirists",
+          "House of La Rochefoucauld",
+          "People from the Province of Île-de-France"
+        ],
+        "birth_year": 1613,
+        "death_year": 1680
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7428903"
+        ],
+        "target_person": {
+          "title": "François de La Rochefoucauld (writer)",
+          "page_id": 287047,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1613 births",
+            "1680 deaths",
+            "17th-century French writers",
+            "17th-century French male writers",
+            "Aphorists",
+            "Dukes of La Rochefoucauld",
+            "17th-century French letter writers",
+            "French male non-fiction writers",
+            "French Roman Catholics",
+            "Literary peers",
+            "Prisoners of the Bastille",
+            "17th-century French memoirists",
+            "House of La Rochefoucauld",
+            "People from the Province of Île-de-France"
+          ],
+          "birth_year": 1613,
+          "death_year": 1680
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "\"sweeter than honey,\" did Homer call it?",
+          "What, do you think, was the mood with which Homer makes his gods look down upon the fates of men?",
+          "there is no lesser authority than that of the Homeric Zeus for making them realise occasionally that they are taking life too casually.",
+          "Homer would not have created an Achilles, nor Goethe a Faust, if Homer had been an Achilles or if Goethe had been a Faust.",
+          "Plato versus Homer, that is the complete, the true antagonism––on the one side, the whole–hearted 'transcendental,' the great defamer of life; on the other, its involuntary panegyrist, the golden nature."
+        ],
+        "commentaries": [
+          "The author references Homer as an authority on the concept of revenge, quoting a phrase attributed to him to contrast with the language used by the 'good and righteous'.",
+          "The author references Homer's depiction of the Greek gods taking pleasure in watching human suffering, particularly during the Trojan War, as a form of divine entertainment.",
+          "The author references Homer's Zeus as an authoritative figure whose words illustrate the Greek perspective on human folly versus sin.",
+          "The author uses Homer as an example to illustrate the principle that an artist is eternally separate from the real subjects they depict in their work.",
+          "The author contrasts Homer with Plato, presenting Homer as an involuntary celebrant of life, in opposition to Plato's transcendental, life-defaming philosophy."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Dawn of Day",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "(cp. Dawn of Day, Aphs.",
+          "I have put it forward in the Dawn of Day, Aph. 18.",
+          "(If this seems too laconically expressed, I recommend the reader to peruse again that passage from the Joyful Wisdom which bears the title, \"How far we also are still pious,\" Aph. 344, and best of all the whole fifth book of that work, as well as the Preface to The Dawn of Day.)"
+        ],
+        "commentaries": [
+          "The author cross-references his own work 'Dawn of Day' for further elaboration on the concept of 'morality of custom.'",
+          "The author cites his own previous book to reinforce the idea that progress historically required martyrdom.",
+          "The author mentions the preface to his book 'The Dawn of Day' as additional reading to understand the problem of the value of truth."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1492205532",
+        "publication_day": 19,
+        "work_id": "440175",
+        "title_without_series": "The Dawn of Day",
+        "publication_year": 2013,
+        "isbn13": "9781492205531",
+        "publisher": "Createspace Independent Publishing Platform",
+        "publication_month": 8,
+        "text_reviews_count": 1,
+        "format": "Paperback",
+        "book_id": "19534694",
+        "average_rating": 4.16,
+        "num_pages": 214,
+        "title": "The Dawn of Day",
+        "ratings_count": 7,
+        "author_ids": [
+          "1938"
+        ],
+        "authors": [
+          "Friedrich Nietzsche"
+        ],
+        "description": "When Nietzsche called his book The Dawn of Day, he was far from giving it a merely fanciful title to attract the attention of that large section of the public which judges books by their titles rather than by their contents. The Dawn of Day represents, figuratively, the dawn of Nietzsche's own philosophy. Hitherto he had been considerably influenced in his outlook, if not in his actual thoughts, by Schopenhauer, Wagner, and perhaps also Comte. Human, all-too-Human, belongs to a period of transition. After h...",
+        "link": "https://www.goodreads.com/book/show/19534694-the-dawn-of-day",
+        "wikipedia_match": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        },
+        "original_year": 1881,
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "description": null,
+          "title": "Friedrich Nietzsche"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "page_id": 10671,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Friedrich Nietzsche| ",
+          "1844 births",
+          "1900 deaths",
+          "People from Lützen",
+          "People from the Province of Saxony",
+          "Former Lutherans",
+          "19th-century German non-fiction writers",
+          "19th-century German male writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German male musicians",
+          "19th-century Prussian people",
+          "Aphorists",
+          "German critics of Christianity",
+          "Determinists",
+          "Existentialists",
+          "German classical philologists",
+          "Hellenists",
+          "German metaphysicians",
+          "German philosophers of art",
+          "Philosophers of time",
+          "Philosophers of nihilism",
+          "German philosophy writers",
+          "Writers from Saxony-Anhalt",
+          "Leipzig University alumni",
+          "University of Bonn alumni",
+          "Academic staff of the University of Basel",
+          "People associated with the University of Basel",
+          "Prussian Army personnel",
+          "German military personnel of the Franco-Prussian War"
+        ],
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "19534694",
+        "target_author_ids": [
+          "1938"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pascal",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as far as the intellect is concerned, Pascal's principle, \"il faut s'abêtir.\""
+        ],
+        "commentaries": [
+          "The author references Pascal's principle as an example of a method to reduce consciousness and combat depression, placing it within a discussion of ascetic practices."
+        ],
+        "canonical_author": "Pascal"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Blaise Pascal",
+        "page_id": 4068,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Blaise Pascal| ",
+          "1623 births",
+          "1662 deaths",
+          "Writers from Clermont-Ferrand",
+          "French Roman Catholic writers",
+          "17th-century French writers",
+          "17th-century French male writers",
+          "17th-century French mathematicians",
+          "17th-century French philosophers",
+          "Aphorists",
+          "Christian apologists",
+          "Christian humanists",
+          "Roman Catholic mystics",
+          "Critics of atheism",
+          "Converts to Roman Catholicism",
+          "Dualists",
+          "French fluid dynamicists",
+          "French mathematicians",
+          "French physicists",
+          "17th-century French theologians",
+          "17th-century Christian mystics",
+          "People with hypochondriasis",
+          "Jansenists",
+          "French probability theorists",
+          "Catholic philosophers",
+          "17th-century Roman Catholics",
+          "Burials at Saint-Étienne-du-Mont",
+          "Cartesianism",
+          "Scientists from Clermont-Ferrand",
+          "Philosophers of pessimism"
+        ],
+        "birth_year": 1623,
+        "death_year": 1662
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "10994"
+        ],
+        "target_person": {
+          "title": "Blaise Pascal",
+          "page_id": 4068,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Blaise Pascal| ",
+            "1623 births",
+            "1662 deaths",
+            "Writers from Clermont-Ferrand",
+            "French Roman Catholic writers",
+            "17th-century French writers",
+            "17th-century French male writers",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "Aphorists",
+            "Christian apologists",
+            "Christian humanists",
+            "Roman Catholic mystics",
+            "Critics of atheism",
+            "Converts to Roman Catholicism",
+            "Dualists",
+            "French fluid dynamicists",
+            "French mathematicians",
+            "French physicists",
+            "17th-century French theologians",
+            "17th-century Christian mystics",
+            "People with hypochondriasis",
+            "Jansenists",
+            "French probability theorists",
+            "Catholic philosophers",
+            "17th-century Roman Catholics",
+            "Burials at Saint-Étienne-du-Mont",
+            "Cartesianism",
+            "Scientists from Clermont-Ferrand",
+            "Philosophers of pessimism"
+          ],
+          "birth_year": 1623,
+          "death_year": 1662
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Feuerbach",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Just remember with what enthusiasm Wagner followed in the footsteps of Feuerbach. Feuerbach's motto of \"healthy sensuality\" rang in the ears of Wagner during the thirties and forties of the century, as it did in the ears of many Germans (they dubbed themselves \"Young Germans\"), like the word of redemption."
+        ],
+        "commentaries": [
+          "The author references Feuerbach as an intellectual influence on Wagner, specifically noting his motto of 'healthy sensuality' as a guiding principle Wagner initially embraced."
+        ],
+        "canonical_author": "Feuerbach"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Ludwig Feuerbach",
+        "page_id": 39658852,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1804 births",
+          "1872 deaths",
+          "19th-century atheists",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German philosophers",
+          "Atheist philosophers",
+          "German critics of Christianity",
+          "Critics of religions",
+          "German epistemologists",
+          "German anthropologists",
+          "German atheists",
+          "German humanists",
+          "German male non-fiction writers",
+          "Heidelberg University alumni",
+          "Materialists",
+          "Ontologists",
+          "People from Landshut",
+          "People from the Electorate of Bavaria",
+          "German philosophers of culture",
+          "German philosophers of education",
+          "German philosophers of history",
+          "German philosophers of mind",
+          "German philosophers of religion",
+          "German political philosophers",
+          "Theorists on Western civilization",
+          "University of Erlangen–Nuremberg alumni"
+        ],
+        "birth_year": 1804,
+        "death_year": 1872
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "85920"
+        ],
+        "target_person": {
+          "title": "Ludwig Feuerbach",
+          "page_id": 39658852,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1804 births",
+            "1872 deaths",
+            "19th-century atheists",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German philosophers",
+            "Atheist philosophers",
+            "German critics of Christianity",
+            "Critics of religions",
+            "German epistemologists",
+            "German anthropologists",
+            "German atheists",
+            "German humanists",
+            "German male non-fiction writers",
+            "Heidelberg University alumni",
+            "Materialists",
+            "Ontologists",
+            "People from Landshut",
+            "People from the Electorate of Bavaria",
+            "German philosophers of culture",
+            "German philosophers of education",
+            "German philosophers of history",
+            "German philosophers of mind",
+            "German philosophers of religion",
+            "German political philosophers",
+            "Theorists on Western civilization",
+            "University of Erlangen–Nuremberg alumni"
+          ],
+          "birth_year": 1804,
+          "death_year": 1872
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sebastian Bach",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as Sebastian Bach has testified in undying and outrageous words in the dedication of his High Mass"
+        ],
+        "commentaries": [
+          "The author cites Bach's dedication of his High Mass as an example of the slavish humility of artists to their public."
+        ],
+        "canonical_author": "Sebastian Bach"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Johann Sebastian Bach",
+        "page_id": 9906294,
+        "infoboxes": [
+          "classical composer"
+        ],
+        "categories": [
+          "Johann Sebastian Bach| ",
+          "1685 births",
+          "1750 deaths",
+          "18th-century German classical composers",
+          "18th-century German male musicians",
+          "18th-century German keyboardists",
+          "Articles containing video clips",
+          "Bach family|Johann Sebastian Bach",
+          "Burials at St. Thomas Church, Leipzig",
+          "Cantors",
+          "Composers for pipe organ",
+          "Composers for harpsichord",
+          "Deaths from surgical complications",
+          "German Baroque composers",
+          "German blind people",
+          "German classical composers of church music",
+          "German classical organists",
+          "German Lutherans",
+          "German male classical composers",
+          "German male classical organists",
+          "Musicians from Leipzig",
+          "Oratorio composers",
+          "Organ improvisers",
+          "Organists and composers in the North German tradition",
+          "People celebrated in the Lutheran liturgical calendar",
+          "People from Eisenach",
+          "People from Saxe-Eisenach",
+          "Thomaskantors",
+          "Musicians from the Electorate of Saxony"
+        ],
+        "birth_year": 1685,
+        "death_year": 1750
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "115200"
+        ],
+        "target_person": {
+          "title": "Johann Sebastian Bach",
+          "page_id": 9906294,
+          "infoboxes": [
+            "classical composer"
+          ],
+          "categories": [
+            "Johann Sebastian Bach| ",
+            "1685 births",
+            "1750 deaths",
+            "18th-century German classical composers",
+            "18th-century German male musicians",
+            "18th-century German keyboardists",
+            "Articles containing video clips",
+            "Bach family|Johann Sebastian Bach",
+            "Burials at St. Thomas Church, Leipzig",
+            "Cantors",
+            "Composers for pipe organ",
+            "Composers for harpsichord",
+            "Deaths from surgical complications",
+            "German Baroque composers",
+            "German blind people",
+            "German classical composers of church music",
+            "German classical organists",
+            "German Lutherans",
+            "German male classical composers",
+            "German male classical organists",
+            "Musicians from Leipzig",
+            "Oratorio composers",
+            "Organ improvisers",
+            "Organists and composers in the North German tradition",
+            "People celebrated in the Lutheran liturgical calendar",
+            "People from Eisenach",
+            "People from Saxe-Eisenach",
+            "Thomaskantors",
+            "Musicians from the Electorate of Saxony"
+          ],
+          "birth_year": 1685,
+          "death_year": 1750
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Herbert Spencer",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "How much more logical is that contrary theory (it is not the truer for that) which is represented, for instance, by Herbert Spencer, who places the concept \"good\" as essentially similar to the concept \"useful,\" \"purposive,\" so that in the judgments \"good\" and \"bad\" mankind is simply summarising and investing with a sanction its unforgotten and unforgettable experiences concerning the \"useful-purposive\" and the \"mischievous-non-purposive.\"",
+          "life itself has been defined (by Herbert Spencer) as an increasingly effective internal adaptation to external circumstances."
+        ],
+        "commentaries": [
+          "The author references Herbert Spencer's theory that equates 'good' with 'useful' and 'purposive', presenting it as a coherent but incorrect alternative explanation for the origin of moral judgments.",
+          "The author cites Herbert Spencer's definition of life as an example of a theory that fails to grasp the essence of life as a will to power, critiquing it as a product of modern misarchism."
+        ],
+        "canonical_author": "Herbert Spencer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Herbert Spencer",
+        "page_id": 248859,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Herbert Spencer| ",
+          "19th-century British economists",
+          "19th-century English philosophers",
+          "20th-century English philosophers",
+          "1820 births",
+          "1903 deaths",
+          "British anti-suffragists",
+          "British male feminists",
+          "English ethicists",
+          "Burials at Highgate Cemetery",
+          "Economic sociologists",
+          "English agnostics",
+          "English anthropologists",
+          "English biologists",
+          "English feminist writers",
+          "English libertarians",
+          "English male non-fiction writers",
+          "English political philosophers",
+          "English political writers",
+          "English rhetoricians",
+          "English sociologists",
+          "Functionalism (social theory)",
+          "History of libertarianism",
+          "Lamarckism",
+          "Libertarian economists",
+          "Libertarian theorists",
+          "Male critics of feminism",
+          "People from Derby",
+          "Philosophers of culture",
+          "Philosophers of economics"
+        ],
+        "birth_year": 1820,
+        "death_year": 1903
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "52666"
+        ],
+        "target_person": {
+          "title": "Herbert Spencer",
+          "page_id": 248859,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Herbert Spencer| ",
+            "19th-century British economists",
+            "19th-century English philosophers",
+            "20th-century English philosophers",
+            "1820 births",
+            "1903 deaths",
+            "British anti-suffragists",
+            "British male feminists",
+            "English ethicists",
+            "Burials at Highgate Cemetery",
+            "Economic sociologists",
+            "English agnostics",
+            "English anthropologists",
+            "English biologists",
+            "English feminist writers",
+            "English libertarians",
+            "English male non-fiction writers",
+            "English political philosophers",
+            "English political writers",
+            "English rhetoricians",
+            "English sociologists",
+            "Functionalism (social theory)",
+            "History of libertarianism",
+            "Lamarckism",
+            "Libertarian economists",
+            "Libertarian theorists",
+            "Male critics of feminism",
+            "People from Derby",
+            "Philosophers of culture",
+            "Philosophers of economics"
+          ],
+          "birth_year": 1820,
+          "death_year": 1903
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thucydides",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Thucydides' morals are the same as those that exploded everywhere with Plato."
+        ],
+        "commentaries": [
+          "The author references Thucydides' moral views, comparing them to those of Plato, as part of a discussion on historical moral systems."
+        ],
+        "canonical_author": "Thucydides"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thucydides",
+        "page_id": 30864,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "470s BC births",
+          "400s BC deaths",
+          "5th-century BC Athenians",
+          "5th-century BC Greek historians",
+          "Ancient Athenian generals",
+          "Ancient Athenian historians",
+          "Classical-era Greek historians",
+          "Ancient Greek merchants",
+          "Ancient Thracian Greeks",
+          "Athenians of the Peloponnesian War",
+          "Attic Greek writers",
+          "Ostracized Athenians",
+          "Philaidae",
+          "Political realists",
+          "Ancient Greek military writers"
+        ],
+        "birth_year": -460,
+        "death_year": -400
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "957"
+        ],
+        "target_person": {
+          "title": "Thucydides",
+          "page_id": 30864,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "470s BC births",
+            "400s BC deaths",
+            "5th-century BC Athenians",
+            "5th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Classical-era Greek historians",
+            "Ancient Greek merchants",
+            "Ancient Thracian Greeks",
+            "Athenians of the Peloponnesian War",
+            "Attic Greek writers",
+            "Ostracized Athenians",
+            "Philaidae",
+            "Political realists",
+            "Ancient Greek military writers"
+          ],
+          "birth_year": -460,
+          "death_year": -400
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Spinoza",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "I need only mention Plato, Spinoza, La Rochefoucauld, and Kant—four minds as mutually different as is possible, but united on one point; their contempt of pity.",
+          "when he actually made as a matter of principle 'disinterested malice' (or, to use Spinoza's expression, the sympathia malevolens) into a normal characteristic of man",
+          "This truth came insidiously enough to the consciousness of Spinoza (to the disgust of his commentators, who (like Kuno Fischer, for instance) give themselves no end of trouble to misunderstand him on this point), when one afternoon (as he sat raking up who knows what memory) he indulged in the question of what was really left for him personally of the celebrated morsus conscientiæ—Spinoza, who had relegated \"good and evil\" to the sphere of human imagination, and indignantly defended the honour of his \"free\" God against those blasphemers who affirmed that God did everything sub ratione boni (\"but this was tantamount to subordinating God to fate, and would really be the greatest of all absurdities\").",
+          "Up to the present what great philosophers have been married? Heracleitus, Plato, Descartes, Spinoza, Leibnitz, Kant, Schopenhauer—they were not married, and, further, one cannot imagine them as married."
+        ],
+        "commentaries": [
+          "The author cites Spinoza as one of several historical philosophers unanimously holding a contempt for pity, in contrast to the modern exaggerated estimation of it.",
+          "The author references Spinoza's concept of 'sympathia malevolens' (malevolent sympathy) to describe a primal, disinterested cruelty in mankind.",
+          "The author references Spinoza's philosophical views on good and evil and the concept of conscience, using him as an example of a thinker who understood punishment and guilt in a non-moralistic, fatalistic manner.",
+          "The author cites Spinoza as part of a list of philosophers who remained unmarried, illustrating the philosopher's shudder at marriage."
+        ],
+        "canonical_author": "Spinoza"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "page_id": 3408,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1632 births",
+          "1677 deaths",
+          "Baruch Spinoza| ",
+          "17th-century Jewish biblical scholars",
+          "17th-century Jewish theologians",
+          "17th-century writers in Latin",
+          "17th-century Sephardi Jews",
+          "17th-century Dutch philosophers",
+          "Censorship in Judaism",
+          "Censorship in the Netherlands",
+          "Critics of Judaism",
+          "Dutch critics of religions",
+          "Dutch Enlightenment",
+          "Critics of the Catholic Church",
+          "Descartes scholars",
+          "Determinists",
+          "Dutch ethicists",
+          "Dutch logicians",
+          "Dutch people of Portuguese descent",
+          "Dutch people of Portuguese-Jewish descent",
+          "Dutch Sephardi Jews",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Freethought",
+          "Heresy in Judaism",
+          "Jewish philosophers",
+          "Jewish skeptics",
+          "Jewish translators of the Bible",
+          "Metaphilosophers",
+          "Metaphysicians"
+        ],
+        "birth_year": 1632,
+        "death_year": 1677
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "122092"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "page_id": 3408,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1632 births",
+            "1677 deaths",
+            "Baruch Spinoza| ",
+            "17th-century Jewish biblical scholars",
+            "17th-century Jewish theologians",
+            "17th-century writers in Latin",
+            "17th-century Sephardi Jews",
+            "17th-century Dutch philosophers",
+            "Censorship in Judaism",
+            "Censorship in the Netherlands",
+            "Critics of Judaism",
+            "Dutch critics of religions",
+            "Dutch Enlightenment",
+            "Critics of the Catholic Church",
+            "Descartes scholars",
+            "Determinists",
+            "Dutch ethicists",
+            "Dutch logicians",
+            "Dutch people of Portuguese descent",
+            "Dutch people of Portuguese-Jewish descent",
+            "Dutch Sephardi Jews",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Freethought",
+            "Heresy in Judaism",
+            "Jewish philosophers",
+            "Jewish skeptics",
+            "Jewish translators of the Bible",
+            "Metaphilosophers",
+            "Metaphysicians"
+          ],
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Don Quixote",
+        "author": "Miguel de Cervantes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "(The reader will perhaps remember Don Quixote at the court of the Duchess: we read nowadays the whole of Don Quixote with a bitter taste in the mouth, almost with a sensation of torture, a fact which would appear very strange and very incomprehensible to the author and his contemporaries—they read it with the best conscience in the world as the gayest of books; they almost died with laughing at it.)"
+        ],
+        "commentaries": [
+          "The author contrasts the modern reader's pained reaction to the cruelty in 'Don Quixote' with the original audience's perception of it as a purely humorous work."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "121842",
+        "title_without_series": "Don Quixote",
+        "text_reviews_count": 4,
+        "book_id": "6012840",
+        "average_rating": 3.85,
+        "title": "Don Quixote",
+        "ratings_count": 49,
+        "author_ids": [
+          "4037220"
+        ],
+        "authors": [
+          "Miguel de Cervantes Saavedra"
+        ],
+        "description": "Don Quixotehas become so entranced by reading chivalric romances, that he determines to become a knight-errant himself. In the company of his faithful squire, Sancho Panza, his exploits blossom in all sorts of wonderful ways. While Quixote's fancy often leads him astray - he tilts at windmills, imagining them to be giants - Sancho acquires cunning and a certain sagacity. Sane madman and wise fool, they roam the world together, and together they have haunted readers' imaginations for nearly four hundred year...",
+        "link": "https://www.goodreads.com/book/show/6012840-don-quixote",
+        "original_year": 1605,
+        "author_meta": {
+          "birth_year": 1547,
+          "death_year": 1616,
+          "main_genre": "novel",
+          "nationality": "Spanish"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Miguel de Cervantes Saavedra",
+        "birth_year": 1547,
+        "death_year": 1616
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "6012840",
+        "target_author_ids": [
+          "4037220"
+        ],
+        "target_person": {
+          "title": "Miguel de Cervantes Saavedra",
+          "birth_year": 1547,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hafiz",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the most subtle and brilliant spirits, such as Goethe, such as Hafiz, have even seen in this a further charm of life."
+        ],
+        "commentaries": [
+          "The author references Hafiz alongside Goethe as an example of a brilliant spirit who found charm in the balance between sensuality and chastity."
+        ],
+        "canonical_author": "Hafiz"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hafiz",
+        "birth_year": 1931,
+        "death_year": 2006
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Hafiz",
+          "birth_year": 1931,
+          "death_year": 2006
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Human, all-too-Human, a Book for Free Minds",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "in that collection of aphorisms entitled Human, all-too-Human, a Book for Free Minds"
+        ],
+        "commentaries": [
+          "The author references his own earlier work as the first expression of his thoughts on the genealogy of moral prejudices."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Human, All Too Human: A Book for Free Spirits",
+        "authors": [
+          "Friedrich Nietzsche"
+        ],
+        "original_year": 1878,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A collection of aphorisms by Friedrich Nietzsche, marking his transition to a more critical and analytical philosophical style, divided into nine sections covering various topics including metaphysics, morality, and art.",
+        "book_id": "web_2a3db613",
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "description": null,
+          "title": "Friedrich Nietzsche"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_2a3db613",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Course of Philosophy",
+        "author": "E. Dühring",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "(E. Dühring, Value of Life; Course of Philosophy, and passim.)"
+        ],
+        "commentaries": [
+          "The author references this book alongside 'Value of Life' to illustrate Dühring's philosophical arguments, which he opposes regarding the basis of justice in reactive feelings."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Cursus der Philosophie als streng wissenschaftlicher Weltanschauung und Lebensgestaltung",
+        "authors": [
+          "Eugen Karl Dühring"
+        ],
+        "original_year": 1875,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "Dühring's major philosophical work presenting his system of philosophy, which Friedrich Nietzsche critiques in 'On the Genealogy of Morals'. The work is commonly referred to as 'Course of Philosophy' in English translations.",
+        "book_id": "web_9386c3c4",
+        "author_meta": {
+          "birth_year": 1833,
+          "death_year": 1921
+        }
+      },
+      "wikipedia_match": {
+        "title": "Eugen Karl Dühring",
+        "birth_year": 1833,
+        "death_year": 1921
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_9386c3c4",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Eugen Karl Dühring",
+          "birth_year": 1833,
+          "death_year": 1921
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Origin of the Moral Emotions",
+        "author": "Paul Rée",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The title of the book was The Origin of the Moral Emotions; its author, Dr. Paul Rée; the year of its appearance, 1877."
+        ],
+        "commentaries": [
+          "The author identifies this book as the direct impulse for publishing his own hypotheses on morality, describing it as a clear, well-written, and precocious work that presented a perverse moral philosophy antithetical to his own ideas, which attracted him magnetically."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Der Ursprung der moralischen Empfindungen",
+        "authors": [
+          "Paul Rée"
+        ],
+        "original_year": 1877,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A philosophical work by Paul Rée that argues morality originates from social utility rather than divine command or reason. It influenced Nietzsche's thinking on morality.",
+        "book_id": "web_b371c3d4",
+        "author_meta": {
+          "birth_year": 1849,
+          "canonical_name": "Paul Rée",
+          "death_year": 1901
+        }
+      },
+      "wikipedia_match": {
+        "title": "Paul Rée",
+        "birth_year": 1849,
+        "death_year": 1901
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_b371c3d4",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Paul Rée",
+          "birth_year": 1849,
+          "death_year": 1901
+        }
+      }
+    }
+  ]
+}

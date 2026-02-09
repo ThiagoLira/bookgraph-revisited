@@ -1,0 +1,1906 @@
+{
+  "source": {
+    "title": "Essays of Francis Bacon",
+    "authors": [
+      "Francis Bacon"
+    ],
+    "goodreads_id": "677923",
+    "calibre_id": null,
+    "publication_year": 1597
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Lucian",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "The contemplative atheist is rare: a Diagoras, a Bion, a Lucian perhaps, and some others;",
+          "Lucan noteth well the state of Rome before the Civil War, Hinc usura vorax, rapidumque in tempore foenus, Hinc concussa fides, et multis utile bellum."
+        ],
+        "commentaries": [
+          "The author lists Lucian as an example of a rare contemplative atheist, though notes such individuals are often mislabeled.",
+          "The author cites Lucan's observation on the conditions in Rome prior to the Civil War as an illustration of the economic and social factors that lead to sedition."
+        ],
+        "canonical_author": "Lucian"
+      },
+      "goodreads_match": {
+        "author_id": "305177",
+        "name": "Lucian of Samosata",
+        "average_rating": "4.00",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": 125,
+          "death_year": 180,
+          "main_genre": "Satire",
+          "nationality": "Syrian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Lucian",
+        "birth_year": 125,
+        "death_year": 180
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "305177"
+        ],
+        "target_person": {
+          "title": "Lucian",
+          "birth_year": 125,
+          "death_year": 180
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Democritus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the school of Leucippus and Democritus and Epicurus."
+        ],
+        "commentaries": [
+          "The author references the philosophical school founded by Leucippus, Democritus, and Epicurus, noting it is often accused of atheism but actually demonstrates religious principles."
+        ],
+        "canonical_author": "Democritus"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Democritus",
+          "page_id": 8211,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Abderites",
+            "Ancient Greek atomist philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek metaphysicians",
+            "Presocratic philosophers",
+            "460s BC births",
+            "370s BC deaths",
+            "5th-century BC Greek mathematicians",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": -460,
+          "death_year": -370
+        },
+        "author_meta": {
+          "birth_year": -460,
+          "death_year": -370,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Democritus",
+        "page_id": 8211,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Abderites",
+          "Ancient Greek atomist philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek metaphysicians",
+          "Presocratic philosophers",
+          "460s BC births",
+          "370s BC deaths",
+          "5th-century BC Greek mathematicians",
+          "4th-century BC Greek mathematicians"
+        ],
+        "birth_year": -460,
+        "death_year": -370
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Democritus",
+          "page_id": 8211,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Abderites",
+            "Ancient Greek atomist philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek metaphysicians",
+            "Presocratic philosophers",
+            "460s BC births",
+            "370s BC deaths",
+            "5th-century BC Greek mathematicians",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": -460,
+          "death_year": -370
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Albert Durer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "A man cannot tell whether Apelles, or Albert Durer, were the more trifler; whereof the one, would make a personage by geometrical proportions; the other, by taking the best parts out of divers faces, to make one excellent."
+        ],
+        "commentaries": [
+          "The author references the artist Albrecht Dürer as an example of one who composes ideal faces by combining parts, critiquing this method as likely to please only the painter."
+        ],
+        "canonical_author": "Albert Durer"
+      },
+      "goodreads_match": {
+        "author_id": "2945054",
+        "name": "Albert Durer",
+        "average_rating": "4.50",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Albrecht Dürer",
+          "page_id": 2402,
+          "infoboxes": [
+            "artist",
+            "person"
+          ],
+          "categories": [
+            "Albrecht Dürer| ",
+            "1471 births",
+            "1528 deaths",
+            "15th-century German engravers",
+            "15th-century German painters",
+            "16th-century German engravers",
+            "16th-century German painters",
+            "Artist authors",
+            "Artists from Nuremberg",
+            "Catholic decorative artists",
+            "Catholic engravers",
+            "Catholic painters",
+            "German animal artists",
+            "German draughtsmen",
+            "German Lutherans",
+            "German male painters",
+            "German manuscript illuminators",
+            "German people of Hungarian descent",
+            "German printmakers",
+            "German Renaissance painters",
+            "German Roman Catholics",
+            "Heraldic artists",
+            "Mathematical artists",
+            "People celebrated in the Lutheran liturgical calendar",
+            "Woodcut designers"
+          ],
+          "birth_year": 1471,
+          "death_year": 1528
+        },
+        "author_meta": {
+          "birth_year": 1471,
+          "death_year": 1528,
+          "main_genre": "Northern Renaissance Art",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Albrecht Dürer",
+        "page_id": 2402,
+        "infoboxes": [
+          "artist",
+          "person"
+        ],
+        "categories": [
+          "Albrecht Dürer| ",
+          "1471 births",
+          "1528 deaths",
+          "15th-century German engravers",
+          "15th-century German painters",
+          "16th-century German engravers",
+          "16th-century German painters",
+          "Artist authors",
+          "Artists from Nuremberg",
+          "Catholic decorative artists",
+          "Catholic engravers",
+          "Catholic painters",
+          "German animal artists",
+          "German draughtsmen",
+          "German Lutherans",
+          "German male painters",
+          "German manuscript illuminators",
+          "German people of Hungarian descent",
+          "German printmakers",
+          "German Renaissance painters",
+          "German Roman Catholics",
+          "Heraldic artists",
+          "Mathematical artists",
+          "People celebrated in the Lutheran liturgical calendar",
+          "Woodcut designers"
+        ],
+        "birth_year": 1471,
+        "death_year": 1528
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2945054"
+        ],
+        "target_person": {
+          "title": "Albrecht Dürer",
+          "page_id": 2402,
+          "infoboxes": [
+            "artist",
+            "person"
+          ],
+          "categories": [
+            "Albrecht Dürer| ",
+            "1471 births",
+            "1528 deaths",
+            "15th-century German engravers",
+            "15th-century German painters",
+            "16th-century German engravers",
+            "16th-century German painters",
+            "Artist authors",
+            "Artists from Nuremberg",
+            "Catholic decorative artists",
+            "Catholic engravers",
+            "Catholic painters",
+            "German animal artists",
+            "German draughtsmen",
+            "German Lutherans",
+            "German male painters",
+            "German manuscript illuminators",
+            "German people of Hungarian descent",
+            "German printmakers",
+            "German Renaissance painters",
+            "German Roman Catholics",
+            "Heraldic artists",
+            "Mathematical artists",
+            "People celebrated in the Lutheran liturgical calendar",
+            "Woodcut designers"
+          ],
+          "birth_year": 1471,
+          "death_year": 1528
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Homer hath these verses: At domus AEneae cunctis dominabitur oris, Et nati natorum, et qui nascentur ab illis.",
+          "Certainly there be, whose fortunes are like Homer's verses, that have a slide and easiness more than the verses of other poets; as Plutarch saith of Timoleon's fortune, in respect of that of Agesilaus or Epaminondas."
+        ],
+        "commentaries": [
+          "The author quotes verses from Homer, presenting them as a prophecy of the Roman Empire's dominion.",
+          "The author references Homer's verses as a metaphor for a smooth and easy fortune, citing Plutarch's comparison of Timoleon's fortune to that of Agesilaus or Epaminondas."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": {
+        "author_id": "903",
+        "name": "Homer",
+        "average_rating": "3.78",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": -850,
+          "death_year": null,
+          "main_genre": "Epic poetry",
+          "nationality": "Ancient Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -750
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -750
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Nicholas Machiavel",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "And one of the doctors of Italy, Nicholas Machiavel, had the confidence to put in writing, almost in plain terms, That the Christian faith, had given up good men, in prey to those that are tyrannical and unjust.",
+          "as Machiavel well noteth (though in an evil-favored instance)"
+        ],
+        "commentaries": [
+          "The author references Machiavelli's written critique of Christian morality as an example of a dangerous error regarding the virtue of goodness.",
+          "The author references Machiavel as an authority to support the argument about the force of custom, specifically noting his observation about not trusting nature or words without custom, though critiquing the example used."
+        ],
+        "canonical_author": "Nicholas Machiavel"
+      },
+      "goodreads_match": {
+        "author_id": "8249713",
+        "name": "Nicolas Machiavel",
+        "average_rating": "3.80",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Niccolò Machiavelli",
+          "page_id": 21444,
+          "infoboxes": [
+            "philosopher "
+          ],
+          "categories": [
+            "Niccolò Machiavelli| ",
+            "1469 births",
+            "1527 deaths",
+            "15th-century Italian philosophers",
+            "16th-century Italian philosophers",
+            "16th-century Italian male writers",
+            "16th-century Italian dramatists and playwrights",
+            "15th-century people from the Republic of Florence",
+            "16th-century people from the Republic of Florence",
+            "15th-century Italian historians",
+            "16th-century Italian historians",
+            "16th-century Italian diplomats",
+            "Italian political writers",
+            "Italian military writers",
+            "Military theorists",
+            "Philosophers of war",
+            "Political realists",
+            "Politicians from Florence",
+            "Writers from Florence",
+            "Italian male non-fiction writers",
+            "Machiavellianism",
+            "Writers from the Republic of Florence",
+            "Diplomats from Florence",
+            "Burials at Basilica of Santa Croce, Florence",
+            "Consequentialists",
+            "Italian political philosophers",
+            "Italian Renaissance writers"
+          ],
+          "birth_year": 1469,
+          "death_year": 1527
+        },
+        "author_meta": {
+          "birth_year": 1469,
+          "death_year": 1527,
+          "main_genre": "Political philosophy",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Niccolò Machiavelli",
+        "page_id": 21444,
+        "infoboxes": [
+          "philosopher "
+        ],
+        "categories": [
+          "Niccolò Machiavelli| ",
+          "1469 births",
+          "1527 deaths",
+          "15th-century Italian philosophers",
+          "16th-century Italian philosophers",
+          "16th-century Italian male writers",
+          "16th-century Italian dramatists and playwrights",
+          "15th-century people from the Republic of Florence",
+          "16th-century people from the Republic of Florence",
+          "15th-century Italian historians",
+          "16th-century Italian historians",
+          "16th-century Italian diplomats",
+          "Italian political writers",
+          "Italian military writers",
+          "Military theorists",
+          "Philosophers of war",
+          "Political realists",
+          "Politicians from Florence",
+          "Writers from Florence",
+          "Italian male non-fiction writers",
+          "Machiavellianism",
+          "Writers from the Republic of Florence",
+          "Diplomats from Florence",
+          "Burials at Basilica of Santa Croce, Florence",
+          "Consequentialists",
+          "Italian political philosophers",
+          "Italian Renaissance writers"
+        ],
+        "birth_year": 1469,
+        "death_year": 1527
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8249713"
+        ],
+        "target_person": {
+          "title": "Niccolò Machiavelli",
+          "page_id": 21444,
+          "infoboxes": [
+            "philosopher "
+          ],
+          "categories": [
+            "Niccolò Machiavelli| ",
+            "1469 births",
+            "1527 deaths",
+            "15th-century Italian philosophers",
+            "16th-century Italian philosophers",
+            "16th-century Italian male writers",
+            "16th-century Italian dramatists and playwrights",
+            "15th-century people from the Republic of Florence",
+            "16th-century people from the Republic of Florence",
+            "15th-century Italian historians",
+            "16th-century Italian historians",
+            "16th-century Italian diplomats",
+            "Italian political writers",
+            "Italian military writers",
+            "Military theorists",
+            "Philosophers of war",
+            "Political realists",
+            "Politicians from Florence",
+            "Writers from Florence",
+            "Italian male non-fiction writers",
+            "Machiavellianism",
+            "Writers from the Republic of Florence",
+            "Diplomats from Florence",
+            "Burials at Basilica of Santa Croce, Florence",
+            "Consequentialists",
+            "Italian political philosophers",
+            "Italian Renaissance writers"
+          ],
+          "birth_year": 1469,
+          "death_year": 1527
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Virgil",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "Virgil, giving the pedigree of Fame, saith, she was sister to the Giants: Illam Terra parens, irra irritata deorum, Extremam (ut perhibent) Coeo Enceladoque sororem Progenuit.",
+          "for (as Virgil saith) It never troubles a wolf, how many the sheep be.",
+          "you shall attain to Virgil's character which he gives to ancient Italy: Terra potens armis atque ubere glebae.",
+          "That the usurer is the drone, that Virgil speaketh of; Ignavum fucos pecus a praesepibus arcent."
+        ],
+        "commentaries": [
+          "The author cites Virgil's poetic description of Fame's lineage to illustrate that seditious rumors are relics of past conflicts and preludes to future ones.",
+          "The author cites Virgil to illustrate that numerical superiority in an army is insignificant if the soldiers lack courage.",
+          "The author quotes a line from Virgil's work to describe the ideal state of a country, using it as a literary reference to support his argument about agricultural and military strength.",
+          "The author cites Virgil's description of a drone to characterize the usurer as lazy and unproductive."
+        ],
+        "canonical_author": "Virgil"
+      },
+      "goodreads_match": {
+        "author_id": "919",
+        "name": "Virgil",
+        "average_rating": "3.83",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": -70,
+          "death_year": -19,
+          "main_genre": "epic poetry",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Virgil",
+        "birth_year": -70,
+        "death_year": -19
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "919"
+        ],
+        "target_person": {
+          "title": "Virgil",
+          "birth_year": -70,
+          "death_year": -19
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Guicciardini",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And the like was done by that league (which Guicciardini saith was the security of Italy) made between Ferdinando King of Naples, Lorenzius Medici, and Ludovicus Sforza, potentates, the one of Florence, the other of Milan."
+        ],
+        "commentaries": [
+          "The author references Guicciardini as the source for the claim that a specific league ensured the security of Italy."
+        ],
+        "canonical_author": "Guicciardini"
+      },
+      "goodreads_match": {
+        "author_id": "97466",
+        "name": "Francesco Guicciardini",
+        "average_rating": "3.93",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Francesco Guicciardini",
+          "page_id": 697938,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1483 births",
+            "1540 deaths",
+            "Writers from Florence",
+            "Politicians from Florence",
+            "Italian Renaissance writers",
+            "16th-century people from the Republic of Florence",
+            "16th-century Italian historians",
+            "16th-century Italian male writers",
+            "Italian male non-fiction writers"
+          ],
+          "birth_year": 1483,
+          "death_year": 1540
+        },
+        "author_meta": {
+          "birth_year": 1483,
+          "death_year": 1540,
+          "main_genre": "History/Political Philosophy",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Francesco Guicciardini",
+        "page_id": 697938,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1483 births",
+          "1540 deaths",
+          "Writers from Florence",
+          "Politicians from Florence",
+          "Italian Renaissance writers",
+          "16th-century people from the Republic of Florence",
+          "16th-century Italian historians",
+          "16th-century Italian male writers",
+          "Italian male non-fiction writers"
+        ],
+        "birth_year": 1483,
+        "death_year": 1540
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "97466"
+        ],
+        "target_person": {
+          "title": "Francesco Guicciardini",
+          "page_id": 697938,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1483 births",
+            "1540 deaths",
+            "Writers from Florence",
+            "Politicians from Florence",
+            "Italian Renaissance writers",
+            "16th-century people from the Republic of Florence",
+            "16th-century Italian historians",
+            "16th-century Italian male writers",
+            "Italian male non-fiction writers"
+          ],
+          "birth_year": 1483,
+          "death_year": 1540
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bion",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The contemplative atheist is rare: a Diagoras, a Bion, a Lucian perhaps, and some others;"
+        ],
+        "commentaries": [
+          "The author lists Bion as an example of a rare contemplative atheist, though notes such individuals are often mislabeled."
+        ],
+        "canonical_author": "Bion"
+      },
+      "goodreads_match": {
+        "author_id": "1662",
+        "name": "Bion of Smyrna",
+        "average_rating": "4.00",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Bion of Borysthenes",
+          "page_id": 1572206,
+          "infoboxes": [],
+          "categories": [
+            "4th-century BC births",
+            "3rd-century BC deaths",
+            "3rd-century BC Greek philosophers",
+            "Ancient Greek slaves and freedmen",
+            "Ancient Pontic Greeks",
+            "Cynic philosophers",
+            "Hellenistic-era philosophers in Athens"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -325,
+          "death_year": -245,
+          "main_genre": "Bucolic Poetry",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Bion",
+        "page_id": 1572206,
+        "infoboxes": [],
+        "categories": [
+          "4th-century BC births",
+          "3rd-century BC deaths",
+          "3rd-century BC Greek philosophers",
+          "Ancient Greek slaves and freedmen",
+          "Ancient Pontic Greeks",
+          "Cynic philosophers",
+          "Hellenistic-era philosophers in Athens"
+        ],
+        "birth_year": -325,
+        "death_year": -250
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1662"
+        ],
+        "target_person": {
+          "title": "Bion",
+          "page_id": 1572206,
+          "infoboxes": [],
+          "categories": [
+            "4th-century BC births",
+            "3rd-century BC deaths",
+            "3rd-century BC Greek philosophers",
+            "Ancient Greek slaves and freedmen",
+            "Ancient Pontic Greeks",
+            "Cynic philosophers",
+            "Hellenistic-era philosophers in Athens"
+          ],
+          "birth_year": -325,
+          "death_year": -250
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Titus Livius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as Titus Livius noteth, in the case of Antiochus and the AEtolians, There are sometimes great effects, of cross lies;"
+        ],
+        "commentaries": [
+          "The author references Livy's historical account to illustrate how strategic falsehoods can produce significant outcomes in diplomacy."
+        ],
+        "canonical_author": "Titus Livius"
+      },
+      "goodreads_match": {
+        "author_id": "14577687",
+        "name": "Livy",
+        "average_rating": "4.00",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": -59,
+          "death_year": 17,
+          "main_genre": "History",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Titus Livius",
+        "birth_year": -59,
+        "death_year": 17
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "14577687"
+        ],
+        "target_person": {
+          "title": "Titus Livius",
+          "birth_year": -59,
+          "death_year": 17
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Diagoras",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The contemplative atheist is rare: a Diagoras, a Bion, a Lucian perhaps, and some others;"
+        ],
+        "commentaries": [
+          "The author lists Diagoras as an example of a rare contemplative atheist, though notes such individuals are often mislabeled."
+        ],
+        "canonical_author": "Diagoras"
+      },
+      "goodreads_match": {
+        "author_id": "8076174",
+        "name": "Diagoras of Melos",
+        "average_rating": "4.05",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": -500,
+          "death_year": null,
+          "main_genre": "Philosophy/Poetry",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Diagoras",
+        "birth_year": -480,
+        "death_year": -410
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8076174"
+        ],
+        "target_person": {
+          "title": "Diagoras",
+          "birth_year": -480,
+          "death_year": -410
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Montaigne",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And therefore Montaigne saith prettily, when he inquired the reason, why the word of the lie should be such a disgrace, and such an odious charge? Saith he, If it be well weighed, to say that a man lieth, is as much to say, as that he is brave towards God, and a coward towards men."
+        ],
+        "commentaries": [
+          "The author quotes Montaigne's reasoning on why lying is considered disgraceful, using it to support the argument about the shame of falsehood."
+        ],
+        "canonical_author": "Montaigne"
+      },
+      "goodreads_match": {
+        "author_id": "17241",
+        "name": "Michel de Montaigne",
+        "average_rating": "4.16",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Michel de Montaigne",
+          "page_id": 44307,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1533 births",
+            "1592 deaths",
+            "People from Guyenne",
+            "16th-century French historians",
+            "16th-century French male writers",
+            "16th-century French philosophers",
+            "16th-century travel writers",
+            "Christian humanists",
+            "College of Guienne alumni",
+            "Deaths from peritonsillar abscess",
+            "French autobiographers",
+            "French book and manuscript collectors",
+            "French male essayists",
+            "French male writers",
+            "French nobility",
+            "French people of Spanish-Jewish descent",
+            "French Renaissance humanists",
+            "French Roman Catholic writers",
+            "French sceptics",
+            "French travel writers",
+            "Mayors of Bordeaux",
+            "People from Dordogne",
+            "French philosophers of education",
+            "French philosophers of science",
+            "Prisoners of the Bastille",
+            "Skeptic philosophers",
+            "Writers from Nouvelle-Aquitaine",
+            "16th-century essayists",
+            "16th-century French writers"
+          ],
+          "birth_year": 1533,
+          "death_year": 1592
+        },
+        "author_meta": {
+          "birth_year": 1533,
+          "death_year": 1592,
+          "main_genre": "essays",
+          "nationality": "French"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Michel de Montaigne",
+        "page_id": 44307,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1533 births",
+          "1592 deaths",
+          "People from Guyenne",
+          "16th-century French historians",
+          "16th-century French male writers",
+          "16th-century French philosophers",
+          "16th-century travel writers",
+          "Christian humanists",
+          "College of Guienne alumni",
+          "Deaths from peritonsillar abscess",
+          "French autobiographers",
+          "French book and manuscript collectors",
+          "French male essayists",
+          "French male writers",
+          "French nobility",
+          "French people of Spanish-Jewish descent",
+          "French Renaissance humanists",
+          "French Roman Catholic writers",
+          "French sceptics",
+          "French travel writers",
+          "Mayors of Bordeaux",
+          "People from Dordogne",
+          "French philosophers of education",
+          "French philosophers of science",
+          "Prisoners of the Bastille",
+          "Skeptic philosophers",
+          "Writers from Nouvelle-Aquitaine",
+          "16th-century essayists",
+          "16th-century French writers"
+        ],
+        "birth_year": 1533,
+        "death_year": 1592
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "17241"
+        ],
+        "target_person": {
+          "title": "Michel de Montaigne",
+          "page_id": 44307,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1533 births",
+            "1592 deaths",
+            "People from Guyenne",
+            "16th-century French historians",
+            "16th-century French male writers",
+            "16th-century French philosophers",
+            "16th-century travel writers",
+            "Christian humanists",
+            "College of Guienne alumni",
+            "Deaths from peritonsillar abscess",
+            "French autobiographers",
+            "French book and manuscript collectors",
+            "French male essayists",
+            "French male writers",
+            "French nobility",
+            "French people of Spanish-Jewish descent",
+            "French Renaissance humanists",
+            "French Roman Catholic writers",
+            "French sceptics",
+            "French travel writers",
+            "Mayors of Bordeaux",
+            "People from Dordogne",
+            "French philosophers of education",
+            "French philosophers of science",
+            "Prisoners of the Bastille",
+            "Skeptic philosophers",
+            "Writers from Nouvelle-Aquitaine",
+            "16th-century essayists",
+            "16th-century French writers"
+          ],
+          "birth_year": 1533,
+          "death_year": 1592
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Solomon",
+        "note": null,
+        "count": 13,
+        "contexts": [
+          "And Solomon, I am sure, saith, It is the glory of a man, to pass by an offence.",
+          "as Solomon saith, A wise son rejoiceth the father, but an ungracious son shames the mother.",
+          "As Solomon saith, To respect persons is not good; for such a man will transgress for a piece of bread.",
+          "Solomon hath pronounced, that in counsel is stability.",
+          "But Solomon saith, Prudens advertit ad gressus suos; stultus divertit ad dolos.",
+          "So saith Solomon, Where much is, there are many to consume it; and what hath the owner, but the sight of it with his eyes?",
+          "As Solomon saith, Riches are as a strong hold, in the imagination of the rich man.",
+          "Harken also to Solomon, and beware of hasty gathering of riches; Qui festinat ad divitias, non erit insons.",
+          "Solomon saith, He that considereth the wind, shall not sow, and he that looketh to the clouds, shall not reap.",
+          "Solomon saith, He that praiseth his friend aloud, rising early, it shall be to him no better than a curse.",
+          "So with Solomon, Fons turbatus, et vena corrupta, est justus cadens in causa sua coram adversario.",
+          "Let judges also remember, that Solomon's throne was supported by lions on both sides: let them be lions, but yet lions under the throne; being circumspect that they do not check or oppose any points of sovereignty.",
+          "Of Vicissitude Of Things SOLOMON saith, There is no new thing upon the earth."
+        ],
+        "commentaries": [
+          "The author cites Solomon's wisdom to support the argument that forgiveness is superior to revenge.",
+          "The author quotes a proverb attributed to Solomon to illustrate the differential and sometimes unworthy affection of parents towards their children.",
+          "The author quotes Solomon to support the argument that facility (easily yielding to importunity or idle respects) is worse than bribery, as it leads to constant transgression.",
+          "The author cites Solomon as an authority to support the argument that counsel provides stability in governance.",
+          "The author cites Solomon as a source of wisdom, quoting a Latin proverb to contrast the prudent and the foolish.",
+          "The author cites Solomon to support the argument that great riches have no real use for their owner beyond being seen.",
+          "The author references Solomon to illustrate the idea that riches provide a sense of security only in the mind of the wealthy.",
+          "The author invokes Solomon's warning against the rapid accumulation of wealth, implying it leads to guilt.",
+          "The author quotes a proverb attributed to Solomon to support the argument that being overly cautious about timing and opportunity is detrimental to business.",
+          "The author cites Solomon to warn against excessive or ill-timed praise, framing it as potentially harmful.",
+          "The author cites Solomon, a biblical figure and traditional author of wisdom literature, to support the argument that a corrupt judge does more harm than individual crimes.",
+          "The author references the biblical figure Solomon as a source of imagery for the proper relationship between judges and sovereign authority.",
+          "The author cites Solomon's biblical statement as the foundational premise for an essay on change and oblivion."
+        ],
+        "canonical_author": "Solomon"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Solomon in Islam",
+          "page_id": 406685,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Solomon|Islam",
+            "Hebrew Bible prophets of the Quran"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -1011,
+          "death_year": -931,
+          "main_genre": "Wisdom Literature",
+          "nationality": "Israelite"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Solomon",
+        "page_id": 406685,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Solomon|Islam",
+          "Hebrew Bible prophets of the Quran"
+        ],
+        "birth_year": -990,
+        "death_year": -931
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Solomon",
+          "page_id": 406685,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Solomon|Islam",
+            "Hebrew Bible prophets of the Quran"
+          ],
+          "birth_year": -990,
+          "death_year": -931
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Seneca",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "Nay, Seneca adds niceness and satiety: Cogita quamdiu eadem feceris; mori velle, non tantum fortis aut miser, sed etiam fastidiosus potest.",
+          "IT WAS an high speech of Seneca (after the manner of the Stoics), that the good things, which belong to prosperity, are to be wished; but the good things, that belong to adversity, are to be admired.",
+          "Seneca the tragedian hath these verses: —Venient annis Saecula seris, quibus Oceanus Vincula rerum laxet, et ingens Pateat Tellus, Tiphysque novos Detegat orbes; nec sit terris Ultima Thule: a prophecy of the discovery of America.",
+          "As that of Seneca's verse.",
+          "Seneca saith well, That anger is like ruin, which breaks itself upon that it falls."
+        ],
+        "commentaries": [
+          "The author cites Seneca to add the idea that weariness of life can be a reason for death, beyond courage or misery.",
+          "The author quotes Seneca's Stoic maxim to introduce a discussion on the virtues revealed by adversity.",
+          "The author quotes verses from Seneca the tragedian, interpreting them as a prophecy of the discovery of America.",
+          "The author mentions Seneca in a general sense, citing his verse as an example to illustrate a point about probable conjectures turning into prophecies.",
+          "The author quotes Seneca to illustrate the self-destructive nature of anger."
+        ],
+        "canonical_author": "Seneca"
+      },
+      "goodreads_match": {
+        "author_id": "4918776",
+        "name": "Seneca",
+        "average_rating": "4.19",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Seneca the Younger",
+          "page_id": 75150,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Seneca the Younger| ",
+            "0s BC births",
+            "Year of birth uncertain",
+            "65 deaths",
+            "1st-century executions",
+            "1st-century philosophers",
+            "1st-century Romans",
+            "1st-century writers in Latin",
+            "Ancient Roman tragic dramatists",
+            "Suicides in Ancient Rome",
+            "Annaei",
+            "Ethicists",
+            "Executed philosophers",
+            "Executed writers",
+            "Forced suicides",
+            "Letter writers in Latin",
+            "Male dramatists and playwrights",
+            "Male essayists",
+            "Members of the Pisonian conspiracy",
+            "People executed by the Roman Empire",
+            "People from Córdoba, Spain",
+            "Ancient Roman encyclopedists",
+            "Ancient Roman satirists",
+            "Roman-era Stoic philosophers",
+            "Romans from Hispania",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome",
+            "Roman-era philosophers in Rome",
+            "Characters in the Divine Comedy",
+            "Male suicides"
+          ],
+          "birth_year": -4,
+          "death_year": 65
+        },
+        "author_meta": {
+          "birth_year": -4,
+          "death_year": 65,
+          "main_genre": "Philosophy",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Seneca the Younger",
+        "page_id": 75150,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Seneca the Younger| ",
+          "0s BC births",
+          "Year of birth uncertain",
+          "65 deaths",
+          "1st-century executions",
+          "1st-century philosophers",
+          "1st-century Romans",
+          "1st-century writers in Latin",
+          "Ancient Roman tragic dramatists",
+          "Suicides in Ancient Rome",
+          "Annaei",
+          "Ethicists",
+          "Executed philosophers",
+          "Executed writers",
+          "Forced suicides",
+          "Letter writers in Latin",
+          "Male dramatists and playwrights",
+          "Male essayists",
+          "Members of the Pisonian conspiracy",
+          "People executed by the Roman Empire",
+          "People from Córdoba, Spain",
+          "Ancient Roman encyclopedists",
+          "Ancient Roman satirists",
+          "Roman-era Stoic philosophers",
+          "Romans from Hispania",
+          "Silver Age Latin writers",
+          "Suffect consuls of Imperial Rome",
+          "Roman-era philosophers in Rome",
+          "Characters in the Divine Comedy",
+          "Male suicides"
+        ],
+        "birth_year": -4,
+        "death_year": 65
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "4918776"
+        ],
+        "target_person": {
+          "title": "Seneca the Younger",
+          "page_id": 75150,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Seneca the Younger| ",
+            "0s BC births",
+            "Year of birth uncertain",
+            "65 deaths",
+            "1st-century executions",
+            "1st-century philosophers",
+            "1st-century Romans",
+            "1st-century writers in Latin",
+            "Ancient Roman tragic dramatists",
+            "Suicides in Ancient Rome",
+            "Annaei",
+            "Ethicists",
+            "Executed philosophers",
+            "Executed writers",
+            "Forced suicides",
+            "Letter writers in Latin",
+            "Male dramatists and playwrights",
+            "Male essayists",
+            "Members of the Pisonian conspiracy",
+            "People executed by the Roman Empire",
+            "People from Córdoba, Spain",
+            "Ancient Roman encyclopedists",
+            "Ancient Roman satirists",
+            "Roman-era Stoic philosophers",
+            "Romans from Hispania",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome",
+            "Roman-era philosophers in Rome",
+            "Characters in the Divine Comedy",
+            "Male suicides"
+          ],
+          "birth_year": -4,
+          "death_year": 65
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Celsus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Celsus could never have spoken it as a physician, had he not been a wise man withal, when he giveth it for one of the great precepts of health and lasting, that a man do vary, and interchange contraries, but with an inclination to the more benign extreme..."
+        ],
+        "commentaries": [
+          "The author references Celsus as a source of medical wisdom, specifically his precept on balancing contraries for health."
+        ],
+        "canonical_author": "Celsus"
+      },
+      "goodreads_match": {
+        "author_id": "998944",
+        "name": "Aulus Cornelius Celsus",
+        "average_rating": "3.65",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Aulus Cornelius Celsus",
+          "page_id": 1638933,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Silver Age Latin writers",
+            "Ancient Roman writers",
+            "1st-century Roman physicians",
+            "Cornelii",
+            "Ancient Roman encyclopedists",
+            "1st-century writers in Latin",
+            "20s BC births",
+            "50s deaths",
+            "Ancient surgeons",
+            "Year of birth uncertain",
+            "Year of death uncertain"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -25,
+          "death_year": 50,
+          "main_genre": "Medicine",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Celsus",
+        "page_id": 1638933,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Silver Age Latin writers",
+          "Ancient Roman writers",
+          "1st-century Roman physicians",
+          "Cornelii",
+          "Ancient Roman encyclopedists",
+          "1st-century writers in Latin",
+          "20s BC births",
+          "50s deaths",
+          "Ancient surgeons",
+          "Year of birth uncertain",
+          "Year of death uncertain"
+        ],
+        "birth_year": 130,
+        "death_year": 180
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "998944"
+        ],
+        "target_person": {
+          "title": "Celsus",
+          "page_id": 1638933,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Silver Age Latin writers",
+            "Ancient Roman writers",
+            "1st-century Roman physicians",
+            "Cornelii",
+            "Ancient Roman encyclopedists",
+            "1st-century writers in Latin",
+            "20s BC births",
+            "50s deaths",
+            "Ancient surgeons",
+            "Year of birth uncertain",
+            "Year of death uncertain"
+          ],
+          "birth_year": 130,
+          "death_year": 180
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Demosthenes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Question was asked of Demosthenes, what was the chief part of an orator? he answered, action; what next? action; what next again? action."
+        ],
+        "commentaries": [
+          "The author references the orator Demosthenes to support an argument about the paramount importance of bold action in rhetoric and civil affairs."
+        ],
+        "canonical_author": "Demosthenes"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Demosthenes",
+          "page_id": 46605,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Demosthenes| ",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Athenians",
+            "4th-century BC Greek politicians",
+            "Attic orators",
+            "People who died under the regency of Antipater",
+            "People with speech disorders",
+            "Philip II of Macedon",
+            "Greek politicians who died by suicide",
+            "Suicides by poison",
+            "Suicides in ancient Greece",
+            "4th-century BC diplomats",
+            "People associated with Alexander the Great"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        },
+        "author_meta": {
+          "birth_year": -384,
+          "death_year": -322,
+          "main_genre": "Oratory",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Demosthenes",
+        "page_id": 46605,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Demosthenes| ",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Athenians",
+          "4th-century BC Greek politicians",
+          "Attic orators",
+          "People who died under the regency of Antipater",
+          "People with speech disorders",
+          "Philip II of Macedon",
+          "Greek politicians who died by suicide",
+          "Suicides by poison",
+          "Suicides in ancient Greece",
+          "4th-century BC diplomats",
+          "People associated with Alexander the Great"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Demosthenes",
+          "page_id": 46605,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Demosthenes| ",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Athenians",
+            "4th-century BC Greek politicians",
+            "Attic orators",
+            "People who died under the regency of Antipater",
+            "People with speech disorders",
+            "Philip II of Macedon",
+            "Greek politicians who died by suicide",
+            "Suicides by poison",
+            "Suicides in ancient Greece",
+            "4th-century BC diplomats",
+            "People associated with Alexander the Great"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lucretius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Lucretius the poet, when he beheld the act of Agamemnon, that could endure the sacrificing of his own daughter, exclaimed: Tantum Religio potuit suadere malorum."
+        ],
+        "commentaries": [
+          "The author quotes Lucretius's poetic exclamation on the evils inspired by religion, using it to critique religiously motivated violence."
+        ],
+        "canonical_author": "Lucretius"
+      },
+      "goodreads_match": {
+        "author_id": "8143161",
+        "name": "Titus Lucretius Carus",
+        "average_rating": "4.00",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Lucretius",
+          "page_id": 37145,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "90s BC births",
+            "50s BC deaths",
+            "1st-century BC philosophers",
+            "1st-century BC Roman poets",
+            "Atomists",
+            "Didactic poets",
+            "Empiricists",
+            "Epic poets",
+            "Golden Age Latin writers",
+            "Lucretii",
+            "Metaphysicians",
+            "Natural philosophers",
+            "Roman-era Epicurean philosophers",
+            "Philosophers of Roman Italy"
+          ],
+          "birth_year": -99,
+          "death_year": -55
+        },
+        "author_meta": {
+          "birth_year": -94,
+          "death_year": -55,
+          "main_genre": "Philosophical Poetry",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Lucretius",
+        "page_id": 37145,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "90s BC births",
+          "50s BC deaths",
+          "1st-century BC philosophers",
+          "1st-century BC Roman poets",
+          "Atomists",
+          "Didactic poets",
+          "Empiricists",
+          "Epic poets",
+          "Golden Age Latin writers",
+          "Lucretii",
+          "Metaphysicians",
+          "Natural philosophers",
+          "Roman-era Epicurean philosophers",
+          "Philosophers of Roman Italy"
+        ],
+        "birth_year": -99,
+        "death_year": -55
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8143161"
+        ],
+        "target_person": {
+          "title": "Lucretius",
+          "page_id": 37145,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "90s BC births",
+            "50s BC deaths",
+            "1st-century BC philosophers",
+            "1st-century BC Roman poets",
+            "Atomists",
+            "Didactic poets",
+            "Empiricists",
+            "Epic poets",
+            "Golden Age Latin writers",
+            "Lucretii",
+            "Metaphysicians",
+            "Natural philosophers",
+            "Roman-era Epicurean philosophers",
+            "Philosophers of Roman Italy"
+          ],
+          "birth_year": -99,
+          "death_year": -55
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Apelles",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "A man cannot tell whether Apelles, or Albert Durer, were the more trifler; whereof the one, would make a personage by geometrical proportions; the other, by taking the best parts out of divers faces, to make one excellent."
+        ],
+        "commentaries": [
+          "The author references the painter Apelles as an example of an artist who relied on rigid rules rather than inspiration, comparing his method unfavorably to a more felicitous approach."
+        ],
+        "canonical_author": "Apelles"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Apelles",
+          "page_id": 187245,
+          "infoboxes": [
+            "artist"
+          ],
+          "categories": [
+            "Ancient Greek painters",
+            "Painters of Alexander the Great",
+            "Ancient Koans",
+            "4th-century BC Greek people",
+            "4th-century BC painters"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -380,
+          "death_year": -310,
+          "main_genre": "Painting",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Apelles",
+        "page_id": 187245,
+        "infoboxes": [
+          "artist"
+        ],
+        "categories": [
+          "Ancient Greek painters",
+          "Painters of Alexander the Great",
+          "Ancient Koans",
+          "4th-century BC Greek people",
+          "4th-century BC painters"
+        ],
+        "birth_year": -370,
+        "death_year": -306
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Apelles",
+          "page_id": 187245,
+          "infoboxes": [
+            "artist"
+          ],
+          "categories": [
+            "Ancient Greek painters",
+            "Painters of Alexander the Great",
+            "Ancient Koans",
+            "4th-century BC Greek people",
+            "4th-century BC painters"
+          ],
+          "birth_year": -370,
+          "death_year": -306
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plutarch",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Plutarch saith well to that purpose: Surely (saith he) I had rather a great deal, men should say, there was no such man at all, as Plutarch, than that they should say, that there was one Plutarch, that would eat his children as soon as they were born; as the poets speak of Saturn."
+        ],
+        "commentaries": [
+          "The author quotes Plutarch to emphasize that a dishonorable conception of God (superstition) is worse than atheism, using an analogy about reputation."
+        ],
+        "canonical_author": "Plutarch"
+      },
+      "goodreads_match": {
+        "author_id": "31015",
+        "name": "Plutarch",
+        "average_rating": "4.08",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Plutarch",
+          "page_id": 24517,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plutarch| ",
+            "46 births",
+            "120s deaths",
+            "1st-century Romans",
+            "2nd-century Romans",
+            "1st-century Greek philosophers",
+            "2nd-century Greek philosophers",
+            "1st-century historians",
+            "2nd-century historians",
+            "Ancient Roman antiquarians",
+            "Ancient Greek biographers",
+            "Ancient Greek essayists",
+            "Ancient Roman biographers",
+            "Greek-language historians from the Roman Empire",
+            "Ancient Boeotians",
+            "Middle Platonists",
+            "Roman-era Greek priests",
+            "Year of birth unknown",
+            "Historians of ancient Greece"
+          ],
+          "birth_year": 46,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -46,
+          "death_year": -120,
+          "main_genre": "biography",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plutarch",
+        "page_id": 24517,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plutarch| ",
+          "46 births",
+          "120s deaths",
+          "1st-century Romans",
+          "2nd-century Romans",
+          "1st-century Greek philosophers",
+          "2nd-century Greek philosophers",
+          "1st-century historians",
+          "2nd-century historians",
+          "Ancient Roman antiquarians",
+          "Ancient Greek biographers",
+          "Ancient Greek essayists",
+          "Ancient Roman biographers",
+          "Greek-language historians from the Roman Empire",
+          "Ancient Boeotians",
+          "Middle Platonists",
+          "Roman-era Greek priests",
+          "Year of birth unknown",
+          "Historians of ancient Greece"
+        ],
+        "birth_year": 46,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "31015"
+        ],
+        "target_person": {
+          "title": "Plutarch",
+          "page_id": 24517,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plutarch| ",
+            "46 births",
+            "120s deaths",
+            "1st-century Romans",
+            "2nd-century Romans",
+            "1st-century Greek philosophers",
+            "2nd-century Greek philosophers",
+            "1st-century historians",
+            "2nd-century historians",
+            "Ancient Roman antiquarians",
+            "Ancient Greek biographers",
+            "Ancient Greek essayists",
+            "Ancient Roman biographers",
+            "Greek-language historians from the Roman Empire",
+            "Ancient Boeotians",
+            "Middle Platonists",
+            "Roman-era Greek priests",
+            "Year of birth unknown",
+            "Historians of ancient Greece"
+          ],
+          "birth_year": 46,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Plato could have said no more.",
+          "so that as Plato had an imagination, That all knowledge was but remembrance;",
+          "It may be, Plato's great year, if the world should last so long, would have some effect; not in renewing the state of like individuals (for that is the fume of those, that conceive the celestial bodies have more accurate influences upon these things below, than indeed they have), but in gross."
+        ],
+        "commentaries": [
+          "The author compares a saying of Epicurus to what Plato might have said, implying the high quality and divinity of Epicurus's words.",
+          "The author references Plato's theory of knowledge as recollection to support a point about novelty and oblivion.",
+          "The author references Plato's concept of the 'great year' as a cyclical astronomical period that might have broad effects on the world, while dismissing the idea of precise astrological influences on individual events."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": {
+        "author_id": "879",
+        "name": "Plato",
+        "average_rating": "3.99",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        },
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    }
+  ]
+}
