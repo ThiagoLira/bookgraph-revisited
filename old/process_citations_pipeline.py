@@ -43,9 +43,9 @@ EXTRACT_CHUNK_SIZE = 50
 EXTRACT_MAX_CONCURRENCY = 20
 EXTRACT_MAX_CONTEXT = 6144
 EXTRACT_MAX_COMPLETION = 2048
-EXTRACT_MODEL_ID = "Qwen/Qwen3-30B-A3B"
+EXTRACT_MODEL_ID = "deepseek/deepseek-v3.2"
 
-AGENT_MODEL_ID = "qwen/qwen3-next-80b-a3b-instruct"
+AGENT_MODEL_ID = "deepseek/deepseek-v3.2"
 
 
 def find_txt_files(folder: Path, pattern: str = "*.txt") -> List[Path]:

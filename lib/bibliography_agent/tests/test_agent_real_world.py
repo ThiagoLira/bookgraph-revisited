@@ -27,7 +27,7 @@ REAL_CASES: List[Dict[str, str]] = [
 @pytest.mark.skip("Requires OpenRouter credentials and live LLM")
 def test_real_world_cases():
     agent = build_agent(
-        model="qwen/qwen3-next-80b-a3b-instruct",
+        model="deepseek/deepseek-v3.2",
         api_key="",
         base_url="https://openrouter.ai/api/v1",
         books_path="datasets/goodreads_books.json",

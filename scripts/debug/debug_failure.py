@@ -34,7 +34,7 @@ async def run_debug_test():
     # LLM Config
     base_url = os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")
     api_key = os.environ.get("OPENROUTER_API_KEY")
-    model_id = "qwen/qwen3-next-80b-a3b-instruct"
+    model_id = "deepseek/deepseek-v3.2"
 
     llm = build_llm(model=model_id, api_key=api_key, base_url=base_url)
     

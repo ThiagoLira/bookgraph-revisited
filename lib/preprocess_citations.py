@@ -248,11 +248,24 @@ def merge_similar_citations(citations: List[Citation]) -> List[Citation]:
 
 # Known non-person authors to remove (lowercased)
 NON_PERSON_BLOCKLIST = {
-    "unknown", "thinkers", "poets", "lord", "dionysus", "the bible",
-    "elders of zion", "jewish authors", "christian authors",
+    # Generic terms
+    "unknown", "anonymous", "various authors", "various", "editor", "editors",
+    "the author", "the editor", "narrator", "compiler",
+    # Group nouns
+    "thinkers", "poets", "philosophers", "scholars", "scientists", "writers",
+    "critics", "historians", "theologians", "mystics", "commentators",
     "epicureans", "stoics", "pythagorean sect", "greek philosophers",
-    "ancient authors", "various authors", "anonymous",
-    "hamlet", "faust", "don quixote",
+    "ancient authors", "jewish authors", "christian authors",
+    "elders of zion", "church fathers", "scholastics", "pre-socratics",
+    "cynics", "skeptics", "peripatetics", "neoplatonists", "atomists",
+    # Fictional / mythological characters
+    "hamlet", "faust", "don quixote", "zarathustra", "meursault",
+    "dionysus", "zeus", "athena", "apollo", "prometheus", "hermes",
+    "odysseus", "achilles", "oedipus", "antigone", "electra",
+    "satan", "god", "christ", "jesus", "allah", "buddha",
+    # Non-person references
+    "lord", "the bible", "the quran", "the torah", "the talmud",
+    "the koran", "the vedas", "the upanishads",
 }
 
 # Patterns that indicate a group noun rather than a person
@@ -260,9 +273,33 @@ _GROUP_SUFFIXES = re.compile(
     r"^the\s+\w+s$"           # "the Stoics", "the Greeks"
     r"|ists$"                  # "Marxists", "Platonists" (no first name)
     r"|ians$"                  # "Cartesians", "Freudians" (no first name)
-    r"|ers$",                  # "thinkers", "philosophers" (no first name)
+    r"|ers$"                   # "thinkers", "philosophers" (no first name)
+    r"|ites$"                  # "Jacobites", "Luddites" (no first name)
+    r"|ics$",                  # "Academics", "Skeptics" (no first name)
     re.IGNORECASE,
 )
+
+# "et al." pattern — indicates a group reference, not a single person
+_ET_AL_RE = re.compile(r"\bet\s+al\.?\s*$", re.IGNORECASE)
+
+
+def _load_author_aliases_for_normalization() -> Dict[str, str]:
+    """Load author aliases for normalization (variant -> canonical)."""
+    aliases_path = Path(__file__).resolve().parents[1] / "datasets" / "author_aliases.json"
+    mapping: Dict[str, str] = {}
+    if aliases_path.exists():
+        try:
+            raw = json.loads(aliases_path.read_text())
+            for canonical, variants in raw.items():
+                for v in variants:
+                    mapping[v.lower()] = canonical
+        except Exception:
+            pass
+    return mapping
+
+
+# Load once at module level
+_AUTHOR_ALIAS_NORMALIZATION = _load_author_aliases_for_normalization()
 
 
 def filter_non_person_authors(citations: List[Citation]) -> List[Citation]:
@@ -280,6 +317,14 @@ def filter_non_person_authors(citations: List[Citation]) -> List[Citation]:
         if author.isupper() and " " not in author.strip():
             continue
 
+        # Single character or very short (likely noise)
+        if len(author) <= 2:
+            continue
+
+        # "et al." references (group citations)
+        if _ET_AL_RE.search(author):
+            continue
+
         # Group noun patterns — only apply when there's no first name
         # (i.e. single word or "the X" pattern)
         has_first_name = len(author.split()) >= 2 and not author_lower.startswith("the ")
@@ -290,9 +335,29 @@ def filter_non_person_authors(citations: List[Citation]) -> List[Citation]:
     return result
 
 
+def normalize_author_aliases(citations: List[Citation]) -> List[Citation]:
+    """Normalize known author name variants to canonical forms.
+
+    Uses author_aliases.json to replace common variants like
+    "Dostoevski" -> "Fyodor Dostoevsky", "Nietzche" -> "Friedrich Nietzsche".
+    This reduces work for the LLM validation stage.
+    """
+    if not _AUTHOR_ALIAS_NORMALIZATION:
+        return citations
+
+    result: List[Citation] = []
+    for cit in citations:
+        author = (cit.get("author") or "").strip()
+        canonical = _AUTHOR_ALIAS_NORMALIZATION.get(author.lower())
+        if canonical and canonical != author:
+            cit = {**cit, "author": canonical, "canonical_author": author}
+        result.append(cit)
+    return result
+
+
 HEURISTICS: List[Heuristic] = [
     filter_non_person_authors,
-    placeholder_heuristic,
+    normalize_author_aliases,
     collapse_author_only,
     collapse_variant_titles,
     merge_similar_citations,

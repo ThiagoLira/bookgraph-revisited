@@ -24,6 +24,7 @@ from lib.bibliography_agent.bibliography_tool import (
     GoodreadsAuthorCatalog,
     SQLiteWikiPeopleIndex,
 )
+from lib.bibliography_agent.deterministic_queries import generate_queries_deterministic
 
 logger = logging.getLogger(__name__)
 
@@ -80,9 +81,11 @@ class CitationWorkflow(Workflow):
         llm: Optional[LLM] = None,
         timeout: Optional[float] = None,
         verbose: bool = False,
+        force_llm_queries: bool = False,
     ):
         super().__init__(timeout=timeout, verbose=verbose)
         self.verbose = verbose
+        self.force_llm_queries = force_llm_queries
         self.book_catalog = SQLiteGoodreadsCatalog(db_path=books_db_path, trace=verbose)
         self.author_catalog = GoodreadsAuthorCatalog(authors_path=authors_path)
 
@@ -132,26 +135,45 @@ class CitationWorkflow(Workflow):
 
         title = citation.get("title")
         author = citation.get("author")
+        mode = "book" if (title and title.strip()) else "author_only"
 
+        # Attempt 0: deterministic queries (unless --force-llm-queries)
+        # Attempt 1+: LLM-based queries (fallback for hard cases)
+        if retry_count == 0 and not self.force_llm_queries:
+            queries = generate_queries_deterministic(citation, self.author_aliases)
+            if queries:
+                logger.info(f"[workflow] Deterministic: {len(queries)} queries for '{author or title}' (mode={mode})")
+                if self.verbose:
+                    print(f"[Workflow] Deterministic Queries ({mode}): {queries}")
+                return QueriesGeneratedEvent(citation=citation, queries=queries, mode=mode)
+            # If deterministic returned nothing (empty author+title), fall through to LLM
+            logger.debug(f"[workflow] Deterministic returned no queries, falling through to LLM")
+
+        # LLM-based query generation (retries or force mode)
+        return await self._generate_queries_llm(citation, title, author, mode, retry_count)
+
+    async def _generate_queries_llm(
+        self,
+        citation: Dict[str, Any],
+        title: Optional[str],
+        author: Optional[str],
+        mode: str,
+        retry_count: int,
+    ) -> QueriesGeneratedEvent | StopEvent:
+        """LLM-based query generation. Used on retries or when forced."""
         # Expand author with aliases
         author_variants = [author] if author else []
         if author:
-            # Check for known aliases - get canonical name
             canonical = self.author_aliases.get(author.lower())
             if canonical and canonical != author:
                 author_variants.append(canonical)
                 logger.debug(f"[workflow] Expanded '{author}' -> canonical '{canonical}'")
-
-            # Also check if this IS the canonical, get variants
             for variant, canon in self.author_aliases.items():
                 if canon.lower() == author.lower() and variant != author.lower():
                     author_variants.append(variant.title())
 
-        mode = "book" if (title and title.strip()) else "author_only"
+        logger.debug(f"[workflow] LLM query gen: title='{title}', author='{author}', variants={author_variants}, mode={mode}, retry={retry_count}")
 
-        logger.debug(f"[workflow] Generating queries for: title='{title}', author='{author}', variants={author_variants}, mode={mode}, retry={retry_count}")
-
-        # Build context with author variants if available
         citation_context = dict(citation)
         if len(author_variants) > 1:
             citation_context["_author_variants"] = author_variants
@@ -190,31 +212,28 @@ class CitationWorkflow(Workflow):
                 response = await self.llm.astructured_predict(QueryList, PromptTemplate(prompt))
 
                 if self.verbose:
-                    print(f"[Workflow] Generated Queries ({mode}): {response.queries}")
+                    print(f"[Workflow] LLM Generated Queries ({mode}): {response.queries}")
 
-                logger.info(f"[workflow] Generated {len(response.queries)} queries for '{author or title}' (mode={mode})")
+                logger.info(f"[workflow] LLM generated {len(response.queries)} queries for '{author or title}' (mode={mode})")
                 return QueriesGeneratedEvent(citation=citation, queries=response.queries, mode=mode)
 
             except Exception as e:
                 error_msg = str(e)
-                logger.warning(f"[workflow] Query generation attempt {attempt+1}/{max_attempts} failed: {error_msg}")
+                logger.warning(f"[workflow] LLM query generation attempt {attempt+1}/{max_attempts} failed: {error_msg}")
 
                 if attempt < max_attempts - 1:
-                    # Retry with simplified prompt
                     prompt = (
                         f"Generate search queries for: author='{author}', title='{title}'.\n"
                         "Return a JSON object with a 'queries' field containing a list of objects.\n"
                         "Each object should have 'title' (string or null) and 'author' (string or null) fields.\n"
                         "Example: {{\"queries\": [{{\"title\": \"The Republic\", \"author\": \"Plato\"}}]}}"
                     )
-                    await asyncio.sleep(0.5)  # Brief delay before retry
+                    await asyncio.sleep(0.5)
                 else:
-                    # Final fallback: generate a basic query ourselves
                     logger.warning(f"[workflow] All LLM attempts failed, using basic fallback query for '{author}'")
                     basic_queries = []
                     if author:
                         basic_queries.append(SearchQuery(title=title or "", author=author))
-                        # Try last name only
                         parts = author.split()
                         if len(parts) > 1:
                             basic_queries.append(SearchQuery(title=title or "", author=parts[-1]))
@@ -337,6 +356,22 @@ class CitationWorkflow(Workflow):
         logger.debug(f"[workflow] Wikipedia search: {len(all_results)} candidates for '{citation.get('author')}'")
         return SearchResultsEvent(citation=citation, results=all_results, source="wikipedia", mode=ev.mode)
 
+    def _score_candidates(
+        self, citation: Dict[str, Any], candidates: List[Dict[str, Any]], mode: str
+    ) -> List[tuple]:
+        """Score candidates by fuzzy match. Returns [(score, index, candidate), ...] sorted desc."""
+        source_text = citation.get("title") if mode == "book" else citation.get("author")
+        if not source_text:
+            return [(0, i, c) for i, c in enumerate(candidates)]
+
+        scored = []
+        for i, c in enumerate(candidates):
+            target = c.get("title", "") if mode == "book" else c.get("title", c.get("name", ""))
+            score = fuzzy_token_sort_ratio(source_text, target)
+            scored.append((score, i, c))
+        scored.sort(key=lambda x: x[0], reverse=True)
+        return scored
+
     @step
     async def validate_matches(
         self, ctx: Context, ev: SearchResultsEvent
@@ -353,6 +388,41 @@ class CitationWorkflow(Workflow):
                 print("[Workflow] No candidates to validate.")
             logger.debug(f"[workflow] No {source} candidates to validate for '{citation.get('author')}'")
             return ValidationEvent(citation=citation, selected_result=None, source=source, mode=mode, reasoning="No candidates found.")
+
+        # --- Confidence gate: skip LLM when match is obvious ---
+        scored = self._score_candidates(citation, candidates, mode)
+        top_score, top_idx, top_candidate = scored[0]
+        second_score = scored[1][0] if len(scored) > 1 else 0
+
+        # High-confidence: top score >90 → skip LLM
+        if top_score > 90:
+            logger.info(f"[workflow] Confidence gate ({source}): top score {top_score} > 90, skipping LLM")
+            if self.verbose:
+                print(f"[Workflow] Confidence gate: score {top_score} > 90, skipping LLM for {source}")
+            return ValidationEvent(
+                citation=citation,
+                selected_result=top_candidate,
+                source=source,
+                mode=mode,
+                reasoning=f"Confidence gate: fuzzy score {top_score} (threshold 90)",
+            )
+
+        # Single clear winner: only one candidate above 70 and well ahead of second
+        above_70 = [(s, i, c) for s, i, c in scored if s > 70]
+        if len(above_70) == 1 and top_score - second_score > 15:
+            logger.info(f"[workflow] Confidence gate ({source}): single candidate above 70 (score={top_score}), skipping LLM")
+            if self.verbose:
+                print(f"[Workflow] Confidence gate: single clear winner score {top_score}, skipping LLM for {source}")
+            return ValidationEvent(
+                citation=citation,
+                selected_result=above_70[0][2],
+                source=source,
+                mode=mode,
+                reasoning=f"Confidence gate: single candidate above 70 with score {top_score}",
+            )
+
+        # --- Ambiguous case: call LLM ---
+        logger.debug(f"[workflow] Scores ambiguous ({source}): top={top_score}, second={second_score}, calling LLM")
 
         prompt = (
             f"You are a bibliography expert. Validate these candidates against the citation.\n"
@@ -384,7 +454,6 @@ class CitationWorkflow(Workflow):
 
         except Exception as e:
             logger.warning(f"[workflow] Structured predict failed: {e}")
-            # Fallback: Try direct completion with JSON parsing
             try:
                 raw_response = await self.llm.acomplete(
                     prompt + "\n\nRespond with JSON only: {\"reasoning\": \"...\", \"index\": N}"
@@ -398,23 +467,11 @@ class CitationWorkflow(Workflow):
                 logger.info(f"[workflow] JSON fallback succeeded: index={selected_index}")
             except Exception as e2:
                 logger.warning(f"[workflow] JSON fallback also failed: {e2}")
-                # Final fallback: pick highest fuzzy score
-                if candidates:
-                    source_text = citation.get("title") if mode == "book" else citation.get("author")
-                    if source_text:
-                        best_score = 0
-                        best_idx = -1
-                        for i, c in enumerate(candidates):
-                            target = c.get("title", "") if mode == "book" else c.get("title", c.get("name", ""))
-                            score = fuzzy_token_sort_ratio(source_text, target)
-                            if score > best_score and score > 70:  # Minimum threshold
-                                best_score = score
-                                best_idx = i
-
-                        if best_idx >= 0:
-                            selected_index = best_idx
-                            reasoning = f"Score fallback: picked index {selected_index} with score {best_score}"
-                            logger.info(f"[workflow] {reasoning}")
+                # Final fallback: use best fuzzy score
+                if top_score > 70:
+                    selected_index = top_idx
+                    reasoning = f"Score fallback: picked index {top_idx} with score {top_score}"
+                    logger.info(f"[workflow] {reasoning}")
 
         selected = None
         if isinstance(selected_index, int) and 0 <= selected_index < len(candidates):

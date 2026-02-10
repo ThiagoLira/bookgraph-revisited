@@ -239,6 +239,32 @@ OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
 
 ---
 
+## Deploying to Static Website
+
+The frontend is also hosted on a static website. When the user asks to deploy or update the live site, do the following:
+
+### Step 1: Copy the frontend
+```bash
+cp frontend/index.html /home/thiago/repos/thiagolira/_projects/book_graph_2/index.html
+```
+
+### Step 2: Commit and push in the static site repo
+```bash
+cd /home/thiago/repos/thiagolira/_projects/book_graph_2
+git add index.html
+git commit -m "Update BookGraph frontend"
+git push
+```
+
+**Credentials** (stored in `.env`):
+- Repo path: `/home/thiago/repos/thiagolira/_projects/book_graph_2`
+- Git user: `thlira15@gmail.com`
+- Git password/token: See `STATIC_SITE_GIT_PASS` in `.env`
+
+If git push asks for credentials, use the values from `.env`. The user may ask you to "deploy", "push to live", or "update the website" - this means run the above steps.
+
+---
+
 ## Troubleshooting
 
 ### "No ID in filename" warnings

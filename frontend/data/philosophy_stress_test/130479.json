@@ -6241,7 +6241,7 @@
           "University of Pennsylvania alumni",
           "American male non-fiction writers"
         ],
-        "birth_year": null,
+        "birth_year": 1952,
         "death_year": null
       },
       "edge": {
@@ -6261,7 +6261,7 @@
             "University of Pennsylvania alumni",
             "American male non-fiction writers"
           ],
-          "birth_year": null,
+          "birth_year": 1952,
           "death_year": null
         }
       }
@@ -9923,7 +9923,7 @@
           "Columbia College, Columbia University alumni"
         ],
         "birth_year": 1954,
-        "death_year": null
+        "death_year": 1280
       },
       "edge": {
         "target_type": "author",
@@ -9948,7 +9948,7 @@
             "Columbia College, Columbia University alumni"
           ],
           "birth_year": 1954,
-          "death_year": null
+          "death_year": 1280
         }
       }
     },
@@ -11073,7 +11073,7 @@
           "Scientists at PARC (company)"
         ],
         "birth_year": 1944,
-        "death_year": null
+        "death_year": 2016
       },
       "edge": {
         "target_type": "author",
@@ -11094,7 +11094,7 @@
             "Scientists at PARC (company)"
           ],
           "birth_year": 1944,
-          "death_year": null
+          "death_year": 2016
         }
       }
     },

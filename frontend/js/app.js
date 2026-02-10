@@ -8,7 +8,231 @@ import { LayoutEngine } from './layout.js';
 import { InteractionManager } from './interaction.js';
 import { TextLabelManager } from './text-renderer.js';
 import { TransitionManager } from './transitions.js';
+import d3 from './d3-imports.js';
 import { processData, loadDatasetRecords, loadDatasetIndex, slugifyTitle } from './data.js';
+
+// === Donut Chart Classification Helpers ===
+
+const CHART_COLORS = [
+  '#d4a574', '#a07850', '#c47a5a', '#8b9a6b',
+  '#7a8fa0', '#b07aa0', '#6b8a8a', '#c4956a', '#8a7a6a',
+];
+
+function classifyEpoch(birthYear) {
+  if (birthYear == null) return null;
+  if (birthYear < 500) return 'Ancient';
+  if (birthYear < 1000) return 'Early Medieval';
+  if (birthYear < 1300) return 'High Medieval';
+  if (birthYear < 1500) return 'Late Medieval';
+  if (birthYear < 1600) return 'Renaissance';
+  if (birthYear < 1800) return 'Enlightenment';
+  if (birthYear < 1870) return 'Romantic';
+  if (birthYear < 1945) return 'Modern';
+  return 'Contemporary';
+}
+
+const KNOWN_NATIONALITIES = new Set([
+  'German', 'French', 'English', 'British', 'Russian', 'Italian', 'American',
+  'Greek', 'Roman', 'Spanish', 'Austrian', 'Polish', 'Dutch', 'Swiss',
+  'Japanese', 'Chinese', 'Irish', 'Scottish', 'Czech', 'Swedish', 'Norwegian',
+  'Danish', 'Hungarian', 'Portuguese', 'Indian', 'Persian', 'Turkish',
+  'Belgian', 'Finnish', 'Romanian', 'Canadian', 'Australian', 'Argentine',
+  'Brazilian', 'Mexican', 'Colombian', 'Egyptian', 'Korean', 'Arab',
+]);
+
+function extractNationality(meta) {
+  if (meta.nationality) return meta.nationality;
+  if (meta.categories && Array.isArray(meta.categories)) {
+    for (const cat of meta.categories) {
+      for (const nat of KNOWN_NATIONALITIES) {
+        if (cat.includes(nat)) return nat;
+      }
+    }
+  }
+  return null;
+}
+
+const INFOBOX_TYPE_MAP = {
+  philosopher: 'Philosophy', theologian: 'Philosophy',
+  writer: 'Literature', poet: 'Literature', author: 'Literature',
+  scientist: 'Science', academic: 'Science', scholar: 'Science',
+  'medical person': 'Science', engineer: 'Science', economist: 'Science',
+  officeholder: 'Politics', royalty: 'Politics', 'military person': 'Politics',
+  saint: 'Religion', 'christian leader': 'Religion', clergy: 'Religion',
+  'religious biography': 'Religion',
+  artist: 'Arts', 'classical composer': 'Arts', 'musical artist': 'Arts',
+  architect: 'Arts',
+};
+
+function classifyType(meta) {
+  if (!meta.infoboxes || !Array.isArray(meta.infoboxes)) return null;
+  for (const raw of meta.infoboxes) {
+    const cleaned = raw.replace(/<!--[\s\S]*?-->/g, '').trim().toLowerCase();
+    if (INFOBOX_TYPE_MAP[cleaned]) return INFOBOX_TYPE_MAP[cleaned];
+  }
+  // Second pass: partial match for entries like "writer <!-- ... -->"
+  for (const raw of meta.infoboxes) {
+    const cleaned = raw.replace(/<!--[\s\S]*?-->/g, '').trim().toLowerCase();
+    for (const [key, val] of Object.entries(INFOBOX_TYPE_MAP)) {
+      if (cleaned.includes(key)) return val;
+    }
+  }
+  return 'Other';
+}
+
+function buildDistribution(values, maxBuckets = 7) {
+  const counts = new Map();
+  for (const v of values) {
+    if (v == null) continue;
+    counts.set(v, (counts.get(v) || 0) + 1);
+  }
+  let entries = Array.from(counts.entries()).sort((a, b) => b[1] - a[1]);
+  if (entries.length > maxBuckets) {
+    const top = entries.slice(0, maxBuckets - 1);
+    const rest = entries.slice(maxBuckets - 1).reduce((s, e) => s + e[1], 0);
+    top.push(['Other', rest]);
+    entries = top;
+  }
+  return entries; // [[label, count], ...]
+}
+
+function renderDonutChart(container, title, data, total) {
+  const size = 120;
+  const outerR = size / 2;
+  const innerR = outerR * 0.58;
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'donut-chart';
+
+  const titleEl = document.createElement('div');
+  titleEl.className = 'donut-chart-title';
+  titleEl.textContent = title;
+  wrapper.appendChild(titleEl);
+
+  const svgWrap = document.createElement('div');
+  svgWrap.className = 'donut-chart-ring';
+
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('width', size);
+  svg.setAttribute('height', size);
+  svg.setAttribute('viewBox', `0 0 ${size} ${size}`);
+
+  // Glow filter
+  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+  const filter = document.createElementNS('http://www.w3.org/2000/svg', 'filter');
+  filter.setAttribute('id', `glow-${title}`);
+  const blur = document.createElementNS('http://www.w3.org/2000/svg', 'feGaussianBlur');
+  blur.setAttribute('stdDeviation', '2.5');
+  blur.setAttribute('result', 'glow');
+  const merge = document.createElementNS('http://www.w3.org/2000/svg', 'feMerge');
+  const m1 = document.createElementNS('http://www.w3.org/2000/svg', 'feMergeNode');
+  m1.setAttribute('in', 'glow');
+  const m2 = document.createElementNS('http://www.w3.org/2000/svg', 'feMergeNode');
+  m2.setAttribute('in', 'SourceGraphic');
+  merge.appendChild(m1);
+  merge.appendChild(m2);
+  filter.appendChild(blur);
+  filter.appendChild(merge);
+  defs.appendChild(filter);
+  svg.appendChild(defs);
+
+  const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+  g.setAttribute('transform', `translate(${outerR},${outerR})`);
+
+  const pie = d3.pie().value(d => d[1]).sort(null).padAngle(0.03);
+  const arc = d3.arc().innerRadius(innerR).outerRadius(outerR).cornerRadius(2);
+  const arcHover = d3.arc().innerRadius(innerR - 2).outerRadius(outerR + 3).cornerRadius(2);
+  const arcs = pie(data);
+
+  // Center text group
+  const centerTotal = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+  centerTotal.setAttribute('text-anchor', 'middle');
+  centerTotal.setAttribute('dy', '0.35em');
+  centerTotal.setAttribute('fill', '#e8e6e3');
+  centerTotal.setAttribute('font-size', '18');
+  centerTotal.setAttribute('font-family', 'Cormorant Garamond, Georgia, serif');
+  centerTotal.textContent = total;
+  centerTotal.style.transition = 'opacity 0.2s ease';
+
+  const centerLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+  centerLabel.setAttribute('text-anchor', 'middle');
+  centerLabel.setAttribute('dy', '-0.3em');
+  centerLabel.setAttribute('fill', '#e8e6e3');
+  centerLabel.setAttribute('font-size', '11');
+  centerLabel.setAttribute('font-family', 'JetBrains Mono, monospace');
+  centerLabel.textContent = '';
+  centerLabel.style.opacity = '0';
+  centerLabel.style.transition = 'opacity 0.15s ease';
+
+  const centerCount = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+  centerCount.setAttribute('text-anchor', 'middle');
+  centerCount.setAttribute('dy', '1.1em');
+  centerCount.setAttribute('fill', '#d4a574');
+  centerCount.setAttribute('font-size', '13');
+  centerCount.setAttribute('font-family', 'JetBrains Mono, monospace');
+  centerCount.setAttribute('font-weight', '500');
+  centerCount.textContent = '';
+  centerCount.style.opacity = '0';
+  centerCount.style.transition = 'opacity 0.15s ease';
+
+  arcs.forEach((d, i) => {
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', arc(d));
+    path.setAttribute('fill', CHART_COLORS[i % CHART_COLORS.length]);
+    path.setAttribute('opacity', '0');
+    path.style.transition = 'opacity 0.2s ease, d 0.2s ease';
+    path.style.cursor = 'default';
+    path.setAttribute('filter', `url(#glow-${title})`);
+
+    // Staggered entrance animation
+    setTimeout(() => { path.setAttribute('opacity', '0.85'); }, 80 + i * 60);
+
+    path.addEventListener('mouseenter', () => {
+      path.setAttribute('d', arcHover(d));
+      path.setAttribute('opacity', '1');
+      centerTotal.style.opacity = '0';
+      centerLabel.textContent = d.data[0];
+      centerLabel.style.opacity = '1';
+      centerCount.textContent = d.data[1];
+      centerCount.style.opacity = '1';
+    });
+    path.addEventListener('mouseleave', () => {
+      path.setAttribute('d', arc(d));
+      path.setAttribute('opacity', '0.85');
+      centerTotal.style.opacity = '1';
+      centerLabel.style.opacity = '0';
+      centerCount.style.opacity = '0';
+    });
+
+    g.appendChild(path);
+  });
+
+  g.appendChild(centerTotal);
+  g.appendChild(centerLabel);
+  g.appendChild(centerCount);
+  svg.appendChild(g);
+  svgWrap.appendChild(svg);
+  wrapper.appendChild(svgWrap);
+
+  // Legend
+  const legend = document.createElement('div');
+  legend.className = 'donut-legend';
+  data.forEach(([label, count], i) => {
+    const item = document.createElement('div');
+    item.className = 'donut-legend-item';
+    const swatch = document.createElement('span');
+    swatch.className = 'donut-legend-swatch';
+    swatch.style.background = CHART_COLORS[i % CHART_COLORS.length];
+    const text = document.createElement('span');
+    text.textContent = label;
+    item.appendChild(swatch);
+    item.appendChild(text);
+    legend.appendChild(item);
+  });
+  wrapper.appendChild(legend);
+
+  container.appendChild(wrapper);
+}
 
 class BookGraphApp {
   constructor() {
@@ -30,6 +254,7 @@ class BookGraphApp {
     this.sourceBookMap = new Map();
     this.focusMode = false;
     this.focusedNode = null;
+    this.focusedBook = null;
     this.selectedNode = null;
     this.originalPositions = new Map();
     this.highlightState = {
@@ -87,6 +312,23 @@ class BookGraphApp {
       const datasets = await loadDatasetIndex();
       const select = document.getElementById('dataset-select');
 
+      // Store datasets for "All Libraries" loading
+      this._datasets = datasets;
+
+      // Add "All Libraries" option first
+      const allOpt = document.createElement('option');
+      allOpt.value = '__all__';
+      allOpt.textContent = 'All Libraries';
+      // Gather all covers with their full paths
+      const allCovers = [];
+      datasets.forEach(ds => {
+        if (ds.covers) {
+          ds.covers.forEach(c => allCovers.push(`${ds.path}/${c}`));
+        }
+      });
+      allOpt.setAttribute('data-covers-abs', JSON.stringify(allCovers));
+      select.appendChild(allOpt);
+
       datasets.forEach(ds => {
         const opt = document.createElement('option');
         opt.value = ds.path;
@@ -99,15 +341,17 @@ class BookGraphApp {
 
       select.addEventListener('change', () => {
         if (select.value) {
-          this._loadDataset(select.value);
+          if (select.value === '__all__') {
+            this._loadAllDatasets();
+          } else {
+            this._loadDataset(select.value);
+          }
         }
       });
 
-      // Load first dataset
-      if (datasets.length > 0) {
-        select.value = datasets[0].path;
-        this._loadDataset(datasets[0].path);
-      }
+      // Load "All Libraries" by default
+      select.value = '__all__';
+      this._loadAllDatasets();
     } catch (e) {
       console.error('Failed to load datasets:', e);
       document.getElementById('loading').textContent = 'Error loading datasets.json';
@@ -132,6 +376,8 @@ class BookGraphApp {
     this.selectedNode = null;
     this.labels.clear();
     this._clearHighlight();
+    this.closeCitationPanel();
+    this.hideDetailCard();
     this.closePanel();
 
     try {
@@ -175,6 +421,78 @@ class BookGraphApp {
       const offsetY = (vh - totalHeight * scale) / 2;
 
       // Small delay to let simulation settle
+      setTimeout(() => {
+        this.interaction.setTransform(offsetX, offsetY, scale, false);
+      }, 100);
+
+      document.getElementById('loading').style.display = 'none';
+    } catch (e) {
+      console.error(e);
+      document.getElementById('loading').textContent = 'Error loading data: ' + e.message;
+    }
+  }
+
+  async _loadAllDatasets() {
+    if (this.focusMode) {
+      this.exitFocusMode();
+    }
+
+    document.getElementById('hero').classList.add('hidden');
+    document.getElementById('loading').style.display = 'block';
+    document.getElementById('loading').textContent = 'Loading all libraries...';
+    document.getElementById('search').value = '';
+    document.getElementById('search-results').textContent = '';
+
+    this.selectedNode = null;
+    this.labels.clear();
+    this._clearHighlight();
+    this.closeCitationPanel();
+    this.hideDetailCard();
+    this.closePanel();
+
+    try {
+      // Load all datasets in parallel
+      const allRecords = [];
+      const batches = await Promise.all(
+        this._datasets.map(ds => loadDatasetRecords(ds.path))
+      );
+      for (const records of batches) {
+        allRecords.push(...records);
+      }
+
+      const result = processData(allRecords);
+
+      this.graphData = { authors: result.authors, links: result.links };
+      this.sourceBookMap = result.sourceBookMap;
+
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const { totalHeight, gridlines } = this.layout.computeTimeline(result.authors, vw);
+
+      this.labels.createLabels(result.authors);
+
+      // Render covers from all datasets using absolute paths
+      const select = document.getElementById('dataset-select');
+      const selectedOption = select.options[select.selectedIndex];
+      const absCoverPaths = JSON.parse(selectedOption.getAttribute('data-covers-abs') || '[]');
+      this._renderHeaderCoversAbsolute(absCoverPaths);
+
+      this.renderer.updateCircles(result.authors);
+      this.renderer.updateLines(result.links);
+      this.renderer.updateGridlines(gridlines, vw);
+
+      this.layout.startForceSimulation(result.authors, vw / 2, () => {
+        this.renderer.updateCircles(result.authors, this.highlightState);
+        this.renderer.updateLines(result.links, this.highlightState);
+        this.labels.updatePositions(result.authors, this.interaction.transform);
+        this._needsUpdate = true;
+      });
+
+      const fitK = vh / totalHeight;
+      const scale = Math.max(0.1, Math.min(fitK * 0.9, 1));
+      const offsetX = (vw - vw * scale) / 2;
+      const offsetY = (vh - totalHeight * scale) / 2;
+
       setTimeout(() => {
         this.interaction.setTransform(offsetX, offsetY, scale, false);
       }, 100);
@@ -284,10 +602,13 @@ class BookGraphApp {
 
   // === Focus Mode ===
 
-  enterFocusMode(node) {
+  enterFocusMode(node, book = null) {
     this.focusMode = true;
     this.focusedNode = node;
+    this.focusedBook = book;
     this.selectedNode = node;
+
+    const bookId = book ? book.data.id : null;
 
     // Store original positions
     this.originalPositions.clear();
@@ -295,18 +616,20 @@ class BookGraphApp {
       this.originalPositions.set(a.id, { x: a.x, y: a.y, fx: a.fx, fy: a.fy });
     }
 
-    // Find connected nodes
+    // Find connected nodes (filtered by source book if specified)
     const connectedIds = new Set([node.id]);
     const connectedNodes = [];
     this.graphData.links.forEach(l => {
       if (l.source.id === node.id) {
+        if (bookId && l.sourceBookIds && !l.sourceBookIds.has(bookId)) return;
         connectedIds.add(l.target.id);
         connectedNodes.push(l.target);
       }
     });
 
     // Update UI
-    document.getElementById('focus-author-name').textContent = node.name;
+    const focusLabel = book ? book.data.title : node.name;
+    document.getElementById('focus-author-name').textContent = focusLabel;
     document.getElementById('focus-count').textContent = connectedNodes.length;
     document.getElementById('focus-exit').classList.add('visible');
     document.getElementById('focus-info').classList.add('visible');
@@ -314,26 +637,31 @@ class BookGraphApp {
     // Stop simulation
     this.layout.stopSimulation();
 
-    // Compute radial layout in world coordinates
-    // Use the current viewport center in world space
+    // Store original zoom transform for exit restoration
+    const t = this.interaction.transform;
+    this.originalTransform = { x: t.x, y: t.y, k: t.k };
+
+    // Compute timeline-based focus layout (world coordinates)
     const vw = window.innerWidth;
     const vh = window.innerHeight;
-    const t = this.interaction.transform;
-    const worldCenterX = (vw / 2 - t.x) / t.k;
-    const worldCenterY = (vh / 2 - t.y) / t.k;
+    const targetPositions = this.layout.computeFocusLayout(node, connectedNodes);
 
-    const targetPositions = this.layout.computeFocusLayout(
-      node, connectedNodes, vw / t.k, vh / t.k
-    );
-
-    // Adjust: center at world viewport center
-    const layoutCenter = targetPositions.get(node.id);
-    const offsetX = worldCenterX - layoutCenter.x;
-    const offsetY = worldCenterY - layoutCenter.y;
+    // Auto-zoom to fit the sub-graph bounding box
+    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
     for (const [id, pos] of targetPositions) {
-      pos.x += offsetX;
-      pos.y += offsetY;
+      const n = this.graphData.authors.find(a => a.id === id);
+      const r = n ? n.r : 20;
+      minX = Math.min(minX, pos.x - r);
+      maxX = Math.max(maxX, pos.x + r);
+      minY = Math.min(minY, pos.y - r);
+      maxY = Math.max(maxY, pos.y + r);
     }
+    const pad = 100;
+    const scale = Math.min(vw / (maxX - minX + pad * 2), vh / (maxY - minY + pad * 2));
+    const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    setTimeout(() => {
+      this.interaction.setTransform(vw / 2 - cx * scale, vh / 2 - cy * scale, scale, true);
+    }, 50);
 
     // Highlight state for focus mode
     const dimmedIds = new Set();
@@ -343,13 +671,17 @@ class BookGraphApp {
       if (!connectedIds.has(a.id)) dimmedIds.add(a.id);
     }
     this.graphData.links.forEach((l, idx) => {
-      if (l.source.id === node.id) {
+      if (l.source.id === node.id && (!bookId || !l.sourceBookIds || l.sourceBookIds.has(bookId))) {
         highlightedLinkIndices.add(idx);
       } else {
         dimmedLinkIndices.add(idx);
       }
     });
-    this.highlightState = { dimmedIds, highlightedIds: connectedIds, dimmedLinkIndices, highlightedLinkIndices };
+    this.highlightState = {
+      dimmedIds, highlightedIds: connectedIds,
+      dimmedLinkIndices, highlightedLinkIndices,
+      dimAlpha: 0.03, dimLinkAlpha: 0.015,
+    };
 
     // Show labels for connected nodes
     this.labels.showOnly(connectedIds);
@@ -376,9 +708,9 @@ class BookGraphApp {
       600
     );
 
-    // Show panel for focused author (not on portrait mobile)
+    // Show citation panel for focused author/book (not on portrait mobile)
     if (!this._isPortraitMobile()) {
-      this.showPanel(node);
+      this.showCitationPanel(node, book);
     }
   }
 
@@ -387,6 +719,7 @@ class BookGraphApp {
 
     this.focusMode = false;
     this.focusedNode = null;
+    this.focusedBook = null;
     this.selectedNode = null;
 
     document.getElementById('focus-exit').classList.remove('visible');
@@ -402,6 +735,14 @@ class BookGraphApp {
     }
 
     this._clearHighlight();
+
+    // Restore the original zoom transform
+    if (this.originalTransform) {
+      const ot = this.originalTransform;
+      setTimeout(() => {
+        this.interaction.setTransform(ot.x, ot.y, ot.k, true);
+      }, 50);
+    }
 
     // Animate back
     this.transitions.animatePositions(
@@ -431,6 +772,8 @@ class BookGraphApp {
       this._needsUpdate = true;
     });
 
+    this.closeCitationPanel();
+    this.hideDetailCard();
     this.closePanel();
   }
 
@@ -441,6 +784,7 @@ class BookGraphApp {
   // === Panel ===
 
   showPanel(node) {
+    this.hideDetailCard();
     const panel = document.getElementById('info-panel');
     const isBook = node.id && node.id.startsWith('book:');
     const title = isBook ? node.title : node.name;
@@ -541,6 +885,200 @@ class BookGraphApp {
     document.getElementById('info-panel').classList.remove('visible');
   }
 
+  // === Citation Panel ===
+
+  showCitationPanel(node, book = null) {
+    const panel = document.getElementById('citation-panel');
+    const bookId = book ? book.data.id : null;
+
+    // Panel title: book title or author name
+    const titleEl = document.getElementById('citation-panel-title');
+    if (book) {
+      titleEl.innerHTML = `${this._esc(book.data.title)}<span class="citation-panel-subtitle">${this._esc(node.name)}</span>`;
+    } else {
+      titleEl.textContent = node.name;
+    }
+
+    // Find cited authors (filtered by source book if specified)
+    const citedAuthors = [];
+    const citedAuthorIds = new Set();
+    this.graphData.links.forEach(l => {
+      if (l.source.id === node.id && !citedAuthorIds.has(l.target.id)) {
+        if (bookId && l.sourceBookIds && !l.sourceBookIds.has(bookId)) return;
+        citedAuthorIds.add(l.target.id);
+        citedAuthors.push(l.target);
+      }
+    });
+
+    // Sort by birth year (oldest first), unknown at end
+    citedAuthors.sort((a, b) => {
+      const ya = a.meta && a.meta.birth_year ? a.meta.birth_year : Infinity;
+      const yb = b.meta && b.meta.birth_year ? b.meta.birth_year : Infinity;
+      return ya - yb;
+    });
+
+    // Collect cited works from those authors
+    const citedWorks = [];
+    citedAuthors.forEach(a => {
+      (a.books || []).forEach(b => {
+        citedWorks.push({
+          bookData: b.data,
+          authorName: a.name,
+          authorNode: a,
+          year: b.data.year
+        });
+      });
+    });
+
+    // Sort by year (oldest first), unknown at end
+    citedWorks.sort((a, b) => {
+      const ya = a.year != null ? a.year : Infinity;
+      const yb = b.year != null ? b.year : Infinity;
+      return ya - yb;
+    });
+
+    // Update counts
+    const counts = panel.querySelectorAll('.citation-col-count');
+    if (counts[0]) counts[0].textContent = citedAuthors.length;
+    if (counts[1]) counts[1].textContent = citedWorks.length;
+
+    // Render author list
+    const authorsList = document.getElementById('cited-authors-list');
+    authorsList.innerHTML = '';
+
+    if (citedAuthors.length === 0) {
+      authorsList.innerHTML = '<li class="citation-col-empty">No cited authors</li>';
+    } else {
+      citedAuthors.forEach(a => {
+        const li = document.createElement('li');
+        li.className = 'citation-list-item';
+        const years = a.meta && a.meta.birth_year
+          ? `${a.meta.birth_year}\u2013${a.meta.death_year || 'present'}`
+          : '';
+        const bookCount = (a.books || []).length;
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'citation-item-name';
+        nameSpan.textContent = a.name;
+        const metaSpan = document.createElement('span');
+        metaSpan.className = 'citation-item-meta';
+        metaSpan.textContent = `${years}${years && bookCount ? ' \u00B7 ' : ''}${bookCount} book${bookCount !== 1 ? 's' : ''}`;
+        li.appendChild(nameSpan);
+        li.appendChild(metaSpan);
+
+        li.addEventListener('click', () => {
+          authorsList.querySelectorAll('.citation-list-item').forEach(el => el.classList.remove('active'));
+          li.classList.add('active');
+          this.showPanel(a);
+        });
+        authorsList.appendChild(li);
+      });
+    }
+
+    // Render works list
+    const worksList = document.getElementById('cited-works-list');
+    worksList.innerHTML = '';
+
+    if (citedWorks.length === 0) {
+      worksList.innerHTML = '<li class="citation-col-empty">No cited works</li>';
+    } else {
+      citedWorks.forEach(w => {
+        const li = document.createElement('li');
+        li.className = 'citation-list-item';
+        const year = w.year || '';
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'citation-item-name';
+        nameSpan.textContent = w.bookData.title;
+        const metaSpan = document.createElement('span');
+        metaSpan.className = 'citation-item-meta';
+        metaSpan.textContent = `${year}${year && w.authorName ? ' \u00B7 ' : ''}${w.authorName}`;
+        li.appendChild(nameSpan);
+        li.appendChild(metaSpan);
+
+        li.addEventListener('click', () => {
+          worksList.querySelectorAll('.citation-list-item').forEach(el => el.classList.remove('active'));
+          li.classList.add('active');
+          this.showPanel(w.bookData);
+        });
+        worksList.appendChild(li);
+      });
+    }
+
+    // === Donut Charts ===
+    const chartsContainer = document.getElementById('citation-charts');
+    chartsContainer.innerHTML = '';
+
+    const epochs = citedAuthors.map(a => classifyEpoch(a.meta && a.meta.birth_year));
+    const nationalities = citedAuthors.map(a => extractNationality(a.meta || {}));
+    const types = citedAuthors.map(a => classifyType(a.meta || {}));
+
+    const epochDist = buildDistribution(epochs);
+    const natDist = buildDistribution(nationalities);
+    const typeDist = buildDistribution(types);
+
+    const hasCharts = epochDist.length >= 3 || natDist.length >= 3 || typeDist.length >= 3;
+
+    if (hasCharts) {
+      const desc = document.createElement('div');
+      desc.className = 'citation-charts-desc';
+      desc.textContent = `Distribution of ${citedAuthors.length} cited authors by historical period, origin, and field`;
+      chartsContainer.appendChild(desc);
+
+      const row = document.createElement('div');
+      row.className = 'citation-charts-row';
+
+      if (epochDist.length >= 3) renderDonutChart(row, 'Epoch', epochDist, epochDist.reduce((s, e) => s + e[1], 0));
+      if (natDist.length >= 3) renderDonutChart(row, 'Nationality', natDist, natDist.reduce((s, e) => s + e[1], 0));
+      if (typeDist.length >= 3) renderDonutChart(row, 'Type', typeDist, typeDist.reduce((s, e) => s + e[1], 0));
+
+      chartsContainer.appendChild(row);
+    }
+
+    chartsContainer.style.display = hasCharts ? '' : 'none';
+
+    panel.classList.add('visible');
+  }
+
+  closeCitationPanel() {
+    document.getElementById('citation-panel').classList.remove('visible');
+    document.getElementById('citation-charts').innerHTML = '';
+  }
+
+  // === Detail Card (compact right-side preview) ===
+
+  showDetailCard(node) {
+    const card = document.getElementById('detail-card');
+    const isBook = node.id && node.id.startsWith('book:');
+
+    document.getElementById('detail-card-type').textContent = isBook ? 'Book' : 'Author';
+    document.getElementById('detail-card-title').textContent = isBook ? node.title : node.name;
+
+    const meta = node.meta || {};
+    let metaText = '';
+    if (isBook) {
+      const authors = meta.authors ? (Array.isArray(meta.authors) ? meta.authors.join(', ') : meta.authors) : '';
+      metaText = [node.year, authors].filter(Boolean).join(' \u00B7 ');
+    } else {
+      if (meta.birth_year) {
+        metaText = `${meta.birth_year}\u2013${meta.death_year || 'present'}`;
+      }
+    }
+    document.getElementById('detail-card-meta').textContent = metaText;
+
+    // Clicking the card opens the full detail panel
+    card.onclick = () => {
+      this.hideDetailCard();
+      this.showPanel(node);
+    };
+
+    card.classList.add('visible');
+  }
+
+  hideDetailCard() {
+    const card = document.getElementById('detail-card');
+    card.classList.remove('visible');
+    card.onclick = null;
+  }
+
   _esc(text) {
     const div = document.createElement('div');
     div.textContent = text;
@@ -596,8 +1134,6 @@ class BookGraphApp {
     if (!shelfContainer) {
       shelfContainer = document.createElement('div');
       shelfContainer.id = 'header-shelf';
-      shelfContainer.style.display = 'flex';
-      shelfContainer.style.gap = '8px';
       headerCov.parentNode.insertBefore(shelfContainer, headerCov);
     }
     shelfContainer.innerHTML = '';
@@ -610,9 +1146,7 @@ class BookGraphApp {
         e.stopPropagation();
         const target = this.sourceBookMap.get(slug);
         if (target) {
-          this.selectedNode = target.authorNode;
-          this.highlightAuthor(target.authorNode);
-          this.showPanel(target.bookData);
+          this.enterFocusMode(target.authorNode, target.bookCircle || null);
         }
       });
     };
@@ -645,6 +1179,48 @@ class BookGraphApp {
       };
       img.src = coverPath;
     }
+  }
+
+  _renderHeaderCoversAbsolute(coverPaths) {
+    const headerCov = document.getElementById('header-cover');
+    headerCov.style.display = 'none';
+    headerCov.src = '';
+
+    let shelfContainer = document.getElementById('header-shelf');
+    if (!shelfContainer) {
+      shelfContainer = document.createElement('div');
+      shelfContainer.id = 'header-shelf';
+      headerCov.parentNode.insertBefore(shelfContainer, headerCov);
+    }
+    shelfContainer.innerHTML = '';
+
+    coverPaths.forEach(fullPath => {
+      const img = document.createElement('img');
+      img.className = 'cover-image';
+      img.onload = function () {
+        if (this.naturalWidth > 50 && this.naturalHeight > 50) {
+          this.style.display = 'block';
+        } else {
+          this.remove();
+        }
+      };
+      img.onerror = function () { this.remove(); };
+      img.style.display = 'none';
+      img.src = fullPath;
+
+      const filename = fullPath.split('/').pop() || '';
+      const slug = filename.replace(/\.[^/.]+$/, '');
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const target = this.sourceBookMap.get(slug);
+        if (target) {
+          this.enterFocusMode(target.authorNode, target.bookCircle || null);
+        }
+      });
+
+      shelfContainer.appendChild(img);
+    });
   }
 }
 

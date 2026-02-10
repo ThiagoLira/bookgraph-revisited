@@ -27,7 +27,7 @@ for p in (CURRENT_DIR, REPO_ROOT):
 
 from lib.bibliography_agent.agent import build_agent
 
-DEFAULT_MODEL = "qwen/qwen3-next-80b-a3b-instruct"
+DEFAULT_MODEL = "deepseek/deepseek-v3.2"
 DEFAULT_BASE_URL = "https://openrouter.ai/api/v1"
 DEFAULT_API_KEY = os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENAI_API_KEY")
 

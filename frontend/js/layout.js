@@ -105,43 +105,39 @@ export class LayoutEngine {
   }
 
   /**
-   * Compute radial focus layout.
+   * Compute timeline-based focus layout (sub-graph view).
+   * Y positions come from the timeline scale, X positions use a brief
+   * force simulation for collision avoidance around the center node's X.
    * @param {Object} centerNode - The focused author node
    * @param {Array} connectedNodes - Connected author nodes (excluding center)
-   * @param {number} viewportWidth - Viewport width
-   * @param {number} viewportHeight - Viewport height
-   * @returns {Map<string, {x, y}>} Target positions by node ID
+   * @returns {Map<string, {x, y}>} Target positions by node ID (world coords)
    */
-  computeFocusLayout(centerNode, connectedNodes, viewportWidth, viewportHeight) {
-    const targetPositions = new Map();
+  computeFocusLayout(centerNode, connectedNodes) {
+    const allNodes = [centerNode, ...connectedNodes];
+    const centerX = centerNode.x;
 
-    const centerX = viewportWidth / 2;
-    const centerY = viewportHeight / 2;
+    // Create temp proxy objects (don't mutate real nodes)
+    const tempNodes = allNodes.map(n => ({
+      id: n.id,
+      r: n.r,
+      x: centerX,
+      y: this.yScale ? this.yScale(n.year || 1900) : n.y,
+    }));
 
-    targetPositions.set(centerNode.id, { x: centerX, y: centerY });
+    const targetY = new Map(tempNodes.map(tn => [tn.id, tn.y]));
 
-    const count = connectedNodes.length;
-    const nodesPerRing = 25;
-    const baseRadius = Math.min(viewportWidth, viewportHeight) * 0.25;
-    const ringSpacing = 100;
+    // Brief force simulation: pin Y to timeline, spread X via collision
+    const sim = d3.forceSimulation(tempNodes)
+      .force('y', d3.forceY(d => targetY.get(d.id)).strength(1))
+      .force('x', d3.forceX(centerX).strength(0.03))
+      .force('collide', d3.forceCollide(d => d.r + 40))
+      .stop();
 
-    connectedNodes.forEach((n, i) => {
-      const ringIndex = Math.floor(i / nodesPerRing);
-      const posInRing = i % nodesPerRing;
-      const nodesInThisRing = Math.min(nodesPerRing, count - ringIndex * nodesPerRing);
+    for (let i = 0; i < 300; i++) sim.tick();
 
-      const radius = baseRadius + ringIndex * ringSpacing;
-      const angleStep = (2 * Math.PI) / nodesInThisRing;
-      const angleOffset = ringIndex * 0.3;
-      const angle = angleStep * posInRing - Math.PI / 2 + angleOffset;
-
-      targetPositions.set(n.id, {
-        x: centerX + Math.cos(angle) * radius,
-        y: centerY + Math.sin(angle) * radius,
-      });
-    });
-
-    return targetPositions;
+    const result = new Map();
+    tempNodes.forEach(tn => result.set(tn.id, { x: tn.x, y: tn.y }));
+    return result;
   }
 
   stopSimulation() {

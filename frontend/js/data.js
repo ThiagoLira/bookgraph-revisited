@@ -54,6 +54,7 @@ export function processData(records) {
       commentaries: []
     });
     const srcAuthorNode = authorMap.get(srcAuth);
+    srcAuthorNode.isSource = true;
 
     if (src.author_meta) srcAuthorNode.meta = src.author_meta;
 
@@ -66,6 +67,8 @@ export function processData(records) {
     };
     srcAuthorNode.books.push(srcBook);
     bookMap.set(srcBook.id, srcBook);
+
+    const authorRefRe = /\b(The|the) author\b/g;
 
     (rec.citations || []).forEach(cit => {
       const match = cit.goodreads_match || {};
@@ -88,13 +91,20 @@ export function processData(records) {
         if (Object.keys(authorMeta).length > 0 && (authorMeta.birth_year || authorMeta.death_year)) citedAuthorNode.meta = authorMeta;
         else if (Object.keys(wikiAuthorMeta).length > 0) citedAuthorNode.meta = wikiAuthorMeta;
 
+        // Preserve wiki enrichment fields (infoboxes, categories, nationality, genre)
+        const person1 = (cit.edge && cit.edge.target_person) || wiki;
+        if (person1.infoboxes) citedAuthorNode.meta.infoboxes = person1.infoboxes;
+        if (person1.categories) citedAuthorNode.meta.categories = person1.categories;
+        if (authorMeta.nationality) citedAuthorNode.meta.nationality = authorMeta.nationality;
+        if (authorMeta.main_genre) citedAuthorNode.meta.main_genre = authorMeta.main_genre;
+
         const citedBook = {
           id: `book:${cit.edge.target_book_id}`,
           title: match.title || "Unknown",
           year: citedYear,
           isSource: false,
           meta: match,
-          commentaries: cit.raw.commentaries || []
+          commentaries: (cit.raw.commentaries || []).map(c => c.replace(authorRefRe, srcAuth))
         };
 
         if (!citedAuthorNode.books.find(b => b.id === citedBook.id)) {
@@ -111,9 +121,16 @@ export function processData(records) {
         if (Object.keys(authorMeta).length > 0) authNode.meta = authorMeta;
         else if (Object.keys(wikiAuthorMeta).length > 0) authNode.meta = wikiAuthorMeta;
 
+        // Preserve wiki enrichment fields (infoboxes, categories, nationality, genre)
+        const person2 = (cit.edge && cit.edge.target_person) || wiki;
+        if (person2.infoboxes) authNode.meta.infoboxes = person2.infoboxes;
+        if (person2.categories) authNode.meta.categories = person2.categories;
+        if (authorMeta.nationality) authNode.meta.nationality = authorMeta.nationality;
+        if (authorMeta.main_genre) authNode.meta.main_genre = authorMeta.main_genre;
+
         if (cit.raw.commentaries) {
           if (!authNode.commentaries) authNode.commentaries = [];
-          authNode.commentaries.push(...cit.raw.commentaries);
+          authNode.commentaries.push(...cit.raw.commentaries.map(c => c.replace(authorRefRe, srcAuth)));
         }
       }
     });
@@ -173,21 +190,21 @@ export function processData(records) {
     (a.books || []).forEach(b => {
       if (b.data && b.data.isSource && b.data.title) {
         const slug = slugifyTitle(b.data.title);
-        sourceBookMap.set(slug, { authorNode: a, bookData: b.data });
+        sourceBookMap.set(slug, { authorNode: a, bookData: b.data, bookCircle: b });
       }
     });
   });
 
-  // Build links (author → author edges)
+  // Build links (author → author edges, tracking which source books produced each)
   const authorNodeMap = new Map(authors.map(a => [a.name, a]));
-  const linkSet = new Set();
-  const links = [];
+  const linkMap = new Map();
 
   records.forEach(rec => {
     const src = rec.source;
     const srcName = normalizeAuthor(Array.isArray(src.authors) ? src.authors[0] : src.authors);
     const srcNode = authorNodeMap.get(srcName);
     if (!srcNode) return;
+    const srcBookId = `book:${src.goodreads_id}`;
 
     (rec.citations || []).forEach(cit => {
       let targetName = null;
@@ -204,14 +221,16 @@ export function processData(records) {
         const targetNode = authorNodeMap.get(targetName);
         if (targetNode && targetNode !== srcNode) {
           const key = `${srcName}|${targetName}`;
-          if (!linkSet.has(key)) {
-            linkSet.add(key);
-            links.push({ source: srcNode, target: targetNode });
+          if (!linkMap.has(key)) {
+            linkMap.set(key, { source: srcNode, target: targetNode, sourceBookIds: new Set() });
           }
+          linkMap.get(key).sourceBookIds.add(srcBookId);
         }
       }
     });
   });
+
+  const links = Array.from(linkMap.values());
 
   // Estimate years for cited authors with missing metadata
   authors.forEach(a => {

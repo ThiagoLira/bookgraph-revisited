@@ -38006,12 +38006,14 @@
         "book_id": "web_817c142f",
         "author_meta": {
           "death_year": 1719,
-          "canonical_name": "Antoine Hamilton"
+          "canonical_name": "Antoine Hamilton",
+          "birth_year": 1862
         }
       },
       "wikipedia_match": {
         "title": "Antoine Hamilton",
-        "death_year": 1719
+        "death_year": 1719,
+        "birth_year": 1862
       },
       "edge": {
         "target_type": "book",
@@ -38019,7 +38021,8 @@
         "target_author_ids": [],
         "target_person": {
           "title": "Antoine Hamilton",
-          "death_year": 1719
+          "death_year": 1719,
+          "birth_year": 1862
         }
       }
     },

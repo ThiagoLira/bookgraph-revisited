@@ -1,0 +1,2250 @@
+{
+  "source": {
+    "title": "How to Spot a Fascist",
+    "authors": [
+      "Umberto Eco"
+    ],
+    "goodreads_id": "53293368",
+    "calibre_id": null
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "Mein Kampf",
+        "author": "Hitler",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Mein Kampf is the complete manifesto of a political programme."
+        ],
+        "commentaries": [
+          "The author cites Mein Kampf as the definitive ideological text of Nazism, contrasting its systematic philosophy with the ideological incoherence of Italian Fascism."
+        ]
+      },
+      "goodreads_match": {
+        "title_without_series": "Mein Kampf",
+        "ratings_count": 16837,
+        "isbn13": "9780395083628",
+        "num_pages": 384,
+        "average_rating": 3.13,
+        "work_id": "2049624",
+        "book_id": "54270",
+        "author_ids": [
+          "30691"
+        ],
+        "publisher": "Houghton Mifflin Company",
+        "isbn": "0395083621",
+        "text_reviews_count": 1396,
+        "title": "Mein Kampf",
+        "authors": [
+          "Adolf Hitler"
+        ],
+        "description": "Madman, tyrant, animal - history has given Adolf Hitler many names. In Mein Kampf (My Struggle), often called the Nazi bible, Hitler describes his life, frustrations, ideals, and dreams. Born to an impoverished couple in a small town in Austria, the young Adolf grew up with the fervent desire to become a painter. The death of his parents and outright rejection from art schools in Vienna forced him into underpaid work as a labourer. During the First World War, Hitler served in the infantry and was decorated....",
+        "link": "https://www.goodreads.com/book/show/54270.Mein_Kampf",
+        "original_year": 1192,
+        "author_meta": {
+          "birth_year": 1889,
+          "death_year": 1945,
+          "main_genre": "political manifesto",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": null,
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "54270",
+        "target_author_ids": [
+          "30691"
+        ],
+        "target_person": null
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pat Robertson",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The latest example of this obsession with conspiracies is Pat Robertson’s book The New World Order."
+        ],
+        "commentaries": [
+          "The author cites Pat Robertson’s book as a contemporary manifestation of the Ur-Fascist obsession with international conspiracies, particularly as a tool for xenophobic mobilization."
+        ],
+        "canonical_author": "Pat Robertson"
+      },
+      "goodreads_match": {
+        "author_id": "8001",
+        "name": "Pat Robertson",
+        "average_rating": "3.45",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Pat Robertson",
+          "page_id": 49908,
+          "infoboxes": [
+            "person",
+            "military person"
+          ],
+          "categories": [
+            "Pat Robertson| ",
+            "1930 births",
+            "2023 deaths",
+            "20th-century American businesspeople",
+            "20th-century American male writers",
+            "20th-century American non-fiction writers",
+            "20th-century apocalypticists",
+            "20th-century Baptists",
+            "21st-century American businesspeople",
+            "21st-century American male writers",
+            "21st-century American non-fiction writers",
+            "21st-century apocalypticists",
+            "21st-century Baptists",
+            "American anti-abortion activists",
+            "American Charismatics",
+            "American Christian Zionists",
+            "American critics of Islam",
+            "American evangelicals",
+            "American male non-fiction writers",
+            "American racehorse owners and breeders",
+            "American religious writers",
+            "American television evangelists",
+            "Anti-pornography activists",
+            "Baptists from New York (state)",
+            "Baptists from Virginia",
+            "Baptist writers",
+            "Candidates in the 1988 United States presidential election",
+            "Christian critics of Islam",
+            "Christian fundamentalists",
+            "Christian Old Earth creationists"
+          ],
+          "birth_year": 1930,
+          "death_year": 2023
+        },
+        "author_meta": {
+          "birth_year": 1930,
+          "death_year": 1954
+        }
+      },
+      "wikipedia_match": {
+        "title": "Pat Robertson",
+        "page_id": 49908,
+        "infoboxes": [
+          "person",
+          "military person"
+        ],
+        "categories": [
+          "Pat Robertson| ",
+          "1930 births",
+          "2023 deaths",
+          "20th-century American businesspeople",
+          "20th-century American male writers",
+          "20th-century American non-fiction writers",
+          "20th-century apocalypticists",
+          "20th-century Baptists",
+          "21st-century American businesspeople",
+          "21st-century American male writers",
+          "21st-century American non-fiction writers",
+          "21st-century apocalypticists",
+          "21st-century Baptists",
+          "American anti-abortion activists",
+          "American Charismatics",
+          "American Christian Zionists",
+          "American critics of Islam",
+          "American evangelicals",
+          "American male non-fiction writers",
+          "American racehorse owners and breeders",
+          "American religious writers",
+          "American television evangelists",
+          "Anti-pornography activists",
+          "Baptists from New York (state)",
+          "Baptists from Virginia",
+          "Baptist writers",
+          "Candidates in the 1988 United States presidential election",
+          "Christian critics of Islam",
+          "Christian fundamentalists",
+          "Christian Old Earth creationists"
+        ],
+        "birth_year": 1930,
+        "death_year": 2023
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8001"
+        ],
+        "target_person": {
+          "title": "Pat Robertson",
+          "page_id": 49908,
+          "infoboxes": [
+            "person",
+            "military person"
+          ],
+          "categories": [
+            "Pat Robertson| ",
+            "1930 births",
+            "2023 deaths",
+            "20th-century American businesspeople",
+            "20th-century American male writers",
+            "20th-century American non-fiction writers",
+            "20th-century apocalypticists",
+            "20th-century Baptists",
+            "21st-century American businesspeople",
+            "21st-century American male writers",
+            "21st-century American non-fiction writers",
+            "21st-century apocalypticists",
+            "21st-century Baptists",
+            "American anti-abortion activists",
+            "American Charismatics",
+            "American Christian Zionists",
+            "American critics of Islam",
+            "American evangelicals",
+            "American male non-fiction writers",
+            "American racehorse owners and breeders",
+            "American religious writers",
+            "American television evangelists",
+            "Anti-pornography activists",
+            "Baptists from New York (state)",
+            "Baptists from Virginia",
+            "Baptist writers",
+            "Candidates in the 1988 United States presidential election",
+            "Christian critics of Islam",
+            "Christian fundamentalists",
+            "Christian Old Earth creationists"
+          ],
+          "birth_year": 1930,
+          "death_year": 2023
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Giovanni Gentile",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The article on Fascism signed by Mussolini for the Enciclopedia Treccani was written or fundamentally inspired by Giovanni Gentile, but it reflected a late-Hegelian notion of the 'ethical and absolute state' that Mussolini never completely realised."
+        ],
+        "commentaries": [
+          "The author attributes the philosophical framing of Fascism in the Enciclopedia Treccani to Gentile, emphasizing that Mussolini himself lacked a coherent philosophy and merely adopted Gentile’s Hegelian ideas rhetorically."
+        ],
+        "canonical_author": "Giovanni Gentile"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Giovanni Gentile",
+          "page_id": 776738,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "Giovanni Gentile| ",
+            "1875 births",
+            "1944 deaths",
+            "People from Castelvetrano",
+            "20th-century Italian philosophers",
+            "Continental philosophers",
+            "Critics of Freemasonry",
+            "Education ministers of Italy",
+            "Mussolini Cabinet",
+            "Christian philosophers",
+            "Fascist writers",
+            "Hegelian philosophers",
+            "Historians of fascism",
+            "Idealists",
+            "Italian fascists",
+            "Italian anti-communists",
+            "Members of the Royal Academy of Italy",
+            "People of the Italian Social Republic",
+            "Members of the Senate of the Kingdom of Italy",
+            "Academic staff of the University of Pisa",
+            "20th-century Italian politicians",
+            "Burials at Basilica of Santa Croce, Florence",
+            "Deaths by firearm in Italy",
+            "Assassinated Italian politicians",
+            "Politicians assassinated in the 1940s"
+          ],
+          "birth_year": 1875,
+          "death_year": 1944
+        },
+        "author_meta": {
+          "birth_year": 1875,
+          "death_year": 1944
+        }
+      },
+      "wikipedia_match": {
+        "title": "Giovanni Gentile",
+        "page_id": 776738,
+        "infoboxes": [
+          "officeholder",
+          "philosopher"
+        ],
+        "categories": [
+          "Giovanni Gentile| ",
+          "1875 births",
+          "1944 deaths",
+          "People from Castelvetrano",
+          "20th-century Italian philosophers",
+          "Continental philosophers",
+          "Critics of Freemasonry",
+          "Education ministers of Italy",
+          "Mussolini Cabinet",
+          "Christian philosophers",
+          "Fascist writers",
+          "Hegelian philosophers",
+          "Historians of fascism",
+          "Idealists",
+          "Italian fascists",
+          "Italian anti-communists",
+          "Members of the Royal Academy of Italy",
+          "People of the Italian Social Republic",
+          "Members of the Senate of the Kingdom of Italy",
+          "Academic staff of the University of Pisa",
+          "20th-century Italian politicians",
+          "Burials at Basilica of Santa Croce, Florence",
+          "Deaths by firearm in Italy",
+          "Assassinated Italian politicians",
+          "Politicians assassinated in the 1940s"
+        ],
+        "birth_year": 1875,
+        "death_year": 1944
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Giovanni Gentile",
+          "page_id": 776738,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "Giovanni Gentile| ",
+            "1875 births",
+            "1944 deaths",
+            "People from Castelvetrano",
+            "20th-century Italian philosophers",
+            "Continental philosophers",
+            "Critics of Freemasonry",
+            "Education ministers of Italy",
+            "Mussolini Cabinet",
+            "Christian philosophers",
+            "Fascist writers",
+            "Hegelian philosophers",
+            "Historians of fascism",
+            "Idealists",
+            "Italian fascists",
+            "Italian anti-communists",
+            "Members of the Royal Academy of Italy",
+            "People of the Italian Social Republic",
+            "Members of the Senate of the Kingdom of Italy",
+            "Academic staff of the University of Pisa",
+            "20th-century Italian politicians",
+            "Burials at Basilica of Santa Croce, Florence",
+            "Deaths by firearm in Italy",
+            "Assassinated Italian politicians",
+            "Politicians assassinated in the 1940s"
+          ],
+          "birth_year": 1875,
+          "death_year": 1944
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Antonio Gramsci",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Gramsci remained in prison until his death, Matteotti and the Rosselli brothers were murdered, the free press suppressed, the labour unions dismantled, and political dissidents confined to remote islands."
+        ],
+        "commentaries": [
+          "The author mentions Gramsci as a victim of Fascist repression, using his fate to illustrate the regime’s intolerance despite its apparent ideological chaos."
+        ],
+        "canonical_author": "Antonio Gramsci"
+      },
+      "goodreads_match": {
+        "author_id": "2438",
+        "name": "Antonio Gramsci",
+        "average_rating": "4.08",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Antonio Gramsci",
+          "page_id": 56244,
+          "infoboxes": [
+            "philosopher",
+            "officeholder "
+          ],
+          "categories": [
+            "Antonio Gramsci| ",
+            "1891 births",
+            "1937 deaths",
+            "20th-century Italian philosophers",
+            "20th-century Italian politicians",
+            "Arbëreshë people",
+            "Burials in the Protestant Cemetery, Rome",
+            "Critics of religions",
+            "Economics writers",
+            "Ecofeminists",
+            "Secular humanists",
+            "Executive Committee of the Communist International",
+            "Italian anti-capitalists",
+            "Italian anti-fascists",
+            "Italian atheists",
+            "Italian Aventinian secessionists",
+            "Italian critics of Christianity",
+            "Italian environmentalists",
+            "Italian feminists",
+            "Italian male journalists",
+            "Italian Marxists",
+            "Italian newspaper editors",
+            "Italian newspaper founders",
+            "Italian people of Albanian descent",
+            "Italian people of Arbëreshë descent",
+            "Italian people who died in prison custody",
+            "Italian political philosophers",
+            "Italian socialists",
+            "Italian Socialist Party politicians",
+            "Journalists who died while in prison custody"
+          ],
+          "birth_year": 1891,
+          "death_year": 1937
+        },
+        "author_meta": {
+          "birth_year": 1891,
+          "death_year": 1937
+        }
+      },
+      "wikipedia_match": {
+        "title": "Antonio Gramsci",
+        "page_id": 56244,
+        "infoboxes": [
+          "philosopher",
+          "officeholder "
+        ],
+        "categories": [
+          "Antonio Gramsci| ",
+          "1891 births",
+          "1937 deaths",
+          "20th-century Italian philosophers",
+          "20th-century Italian politicians",
+          "Arbëreshë people",
+          "Burials in the Protestant Cemetery, Rome",
+          "Critics of religions",
+          "Economics writers",
+          "Ecofeminists",
+          "Secular humanists",
+          "Executive Committee of the Communist International",
+          "Italian anti-capitalists",
+          "Italian anti-fascists",
+          "Italian atheists",
+          "Italian Aventinian secessionists",
+          "Italian critics of Christianity",
+          "Italian environmentalists",
+          "Italian feminists",
+          "Italian male journalists",
+          "Italian Marxists",
+          "Italian newspaper editors",
+          "Italian newspaper founders",
+          "Italian people of Albanian descent",
+          "Italian people of Arbëreshë descent",
+          "Italian people who died in prison custody",
+          "Italian political philosophers",
+          "Italian socialists",
+          "Italian Socialist Party politicians",
+          "Journalists who died while in prison custody"
+        ],
+        "birth_year": 1891,
+        "death_year": 1937
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2438"
+        ],
+        "target_person": {
+          "title": "Antonio Gramsci",
+          "page_id": 56244,
+          "infoboxes": [
+            "philosopher",
+            "officeholder "
+          ],
+          "categories": [
+            "Antonio Gramsci| ",
+            "1891 births",
+            "1937 deaths",
+            "20th-century Italian philosophers",
+            "20th-century Italian politicians",
+            "Arbëreshë people",
+            "Burials in the Protestant Cemetery, Rome",
+            "Critics of religions",
+            "Economics writers",
+            "Ecofeminists",
+            "Secular humanists",
+            "Executive Committee of the Communist International",
+            "Italian anti-capitalists",
+            "Italian anti-fascists",
+            "Italian atheists",
+            "Italian Aventinian secessionists",
+            "Italian critics of Christianity",
+            "Italian environmentalists",
+            "Italian feminists",
+            "Italian male journalists",
+            "Italian Marxists",
+            "Italian newspaper editors",
+            "Italian newspaper founders",
+            "Italian people of Albanian descent",
+            "Italian people of Arbëreshë descent",
+            "Italian people who died in prison custody",
+            "Italian political philosophers",
+            "Italian socialists",
+            "Italian Socialist Party politicians",
+            "Journalists who died while in prison custody"
+          ],
+          "birth_year": 1891,
+          "death_year": 1937
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Julius Evola",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Add the cult of Celtic mythology and the mysticism of the Grail (completely extraneous to official Fascism), and you get one of the most respected gurus of Fascism, Julius Evola.",
+          "The most important theorist of the new Italian right, Julius Evola, mixed the Grail with the Protocols of the Elders of Zion, and alchemy with the Holy Roman Empire."
+        ],
+        "commentaries": [
+          "The author references Julius Evola as an influential figure whose esoteric, non-official ideas were absorbed into broader Fascist thought, though not part of mainstream Italian Fascism.",
+          "The author cites Julius Evola as a key theorist whose syncretic ideology blended occult, traditionalist, and antisemitic elements to form a foundation for the Italian right."
+        ],
+        "canonical_author": "Julius Evola"
+      },
+      "goodreads_match": {
+        "author_id": "82974",
+        "name": "Julius Evola",
+        "average_rating": "4.22",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Julius Evola",
+          "page_id": 290392,
+          "infoboxes": [
+            "philosopher",
+            "military person"
+          ],
+          "categories": [
+            "Julius Evola| ",
+            "1898 births",
+            "1974 deaths",
+            "20th-century Italian artists",
+            "20th-century Italian historians",
+            "20th-century Italian male writers",
+            "20th-century Italian non-fiction writers",
+            "20th-century Italian philosophers",
+            "20th-century Italian politicians",
+            "20th-century occultists",
+            "Anti-Americanism",
+            "Antisemitism in Italy",
+            "Anti-Masonry in Italy",
+            "Atlantis proponents",
+            "Conservative Revolutionary movement",
+            "Counter-revolutionaries",
+            "Critics of Freemasonry",
+            "Critics of the Catholic Church",
+            "Critics of Theosophy",
+            "Dada",
+            "Dadaists",
+            "Fascist writers",
+            "Idealists",
+            "Italian anti-capitalists",
+            "Italian anti-communists",
+            "Italian conspiracy theorists",
+            "Italian critics of Christianity",
+            "Italian esotericists",
+            "Italian eugenicists",
+            "Italian military personnel of World War I"
+          ],
+          "birth_year": 1898,
+          "death_year": 1974
+        },
+        "author_meta": {
+          "birth_year": 1898,
+          "death_year": 1974
+        }
+      },
+      "wikipedia_match": {
+        "title": "Julius Evola",
+        "page_id": 290392,
+        "infoboxes": [
+          "philosopher",
+          "military person"
+        ],
+        "categories": [
+          "Julius Evola| ",
+          "1898 births",
+          "1974 deaths",
+          "20th-century Italian artists",
+          "20th-century Italian historians",
+          "20th-century Italian male writers",
+          "20th-century Italian non-fiction writers",
+          "20th-century Italian philosophers",
+          "20th-century Italian politicians",
+          "20th-century occultists",
+          "Anti-Americanism",
+          "Antisemitism in Italy",
+          "Anti-Masonry in Italy",
+          "Atlantis proponents",
+          "Conservative Revolutionary movement",
+          "Counter-revolutionaries",
+          "Critics of Freemasonry",
+          "Critics of the Catholic Church",
+          "Critics of Theosophy",
+          "Dada",
+          "Dadaists",
+          "Fascist writers",
+          "Idealists",
+          "Italian anti-capitalists",
+          "Italian anti-communists",
+          "Italian conspiracy theorists",
+          "Italian critics of Christianity",
+          "Italian esotericists",
+          "Italian eugenicists",
+          "Italian military personnel of World War I"
+        ],
+        "birth_year": 1898,
+        "death_year": 1974
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "82974"
+        ],
+        "target_person": {
+          "title": "Julius Evola",
+          "page_id": 290392,
+          "infoboxes": [
+            "philosopher",
+            "military person"
+          ],
+          "categories": [
+            "Julius Evola| ",
+            "1898 births",
+            "1974 deaths",
+            "20th-century Italian artists",
+            "20th-century Italian historians",
+            "20th-century Italian male writers",
+            "20th-century Italian non-fiction writers",
+            "20th-century Italian philosophers",
+            "20th-century Italian politicians",
+            "20th-century occultists",
+            "Anti-Americanism",
+            "Antisemitism in Italy",
+            "Anti-Masonry in Italy",
+            "Atlantis proponents",
+            "Conservative Revolutionary movement",
+            "Counter-revolutionaries",
+            "Critics of Freemasonry",
+            "Critics of the Catholic Church",
+            "Critics of Theosophy",
+            "Dada",
+            "Dadaists",
+            "Fascist writers",
+            "Idealists",
+            "Italian anti-capitalists",
+            "Italian anti-communists",
+            "Italian conspiracy theorists",
+            "Italian critics of Christianity",
+            "Italian esotericists",
+            "Italian eugenicists",
+            "Italian military personnel of World War I"
+          ],
+          "birth_year": 1898,
+          "death_year": 1974
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Joseph Goebbels",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "From the statement attributed to Goebbels (‘When I hear talk of culture, I take out my pistol’)"
+        ],
+        "commentaries": [
+          "The author cites Goebbels’ quoted remark to exemplify the Fascist disdain for intellectual and cultural critique as a form of weakness or betrayal."
+        ],
+        "canonical_author": "Joseph Goebbels"
+      },
+      "goodreads_match": {
+        "author_id": "281832",
+        "name": "Joseph Goebbels",
+        "average_rating": "3.65",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Joseph Goebbels",
+          "page_id": 15777,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "Joseph Goebbels| ",
+            "1897 births",
+            "1945 suicides",
+            "1945 deaths",
+            "20th-century chancellors of Germany",
+            "20th-century German diarists",
+            "20th-century philologists",
+            "Adolf Hitler",
+            "Antisemitism in Germany",
+            "Filicides in Germany",
+            "Gauleiters",
+            "German anti-capitalists",
+            "German conspiracy theorists",
+            "German far-right politicians",
+            "German fascists",
+            "German mass murderers",
+            "German murderers of children",
+            "German nationalists",
+            "German Nazi propagandists",
+            "German philologists",
+            "German people of Dutch descent",
+            "German people of World War II",
+            "German politicians who died by suicide",
+            "German politicians with disabilities",
+            "Goebbels family|Joseph",
+            "Government ministers of Nazi Germany",
+            "Government ministers with disabilities",
+            "Heidelberg University alumni",
+            "Holocaust perpetrators",
+            "Joint suicides by Nazis"
+          ],
+          "birth_year": 1897,
+          "death_year": 1945
+        },
+        "author_meta": {
+          "birth_year": 1897,
+          "death_year": 1945
+        }
+      },
+      "wikipedia_match": {
+        "title": "Joseph Goebbels",
+        "page_id": 15777,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "Joseph Goebbels| ",
+          "1897 births",
+          "1945 suicides",
+          "1945 deaths",
+          "20th-century chancellors of Germany",
+          "20th-century German diarists",
+          "20th-century philologists",
+          "Adolf Hitler",
+          "Antisemitism in Germany",
+          "Filicides in Germany",
+          "Gauleiters",
+          "German anti-capitalists",
+          "German conspiracy theorists",
+          "German far-right politicians",
+          "German fascists",
+          "German mass murderers",
+          "German murderers of children",
+          "German nationalists",
+          "German Nazi propagandists",
+          "German philologists",
+          "German people of Dutch descent",
+          "German people of World War II",
+          "German politicians who died by suicide",
+          "German politicians with disabilities",
+          "Goebbels family|Joseph",
+          "Government ministers of Nazi Germany",
+          "Government ministers with disabilities",
+          "Heidelberg University alumni",
+          "Holocaust perpetrators",
+          "Joint suicides by Nazis"
+        ],
+        "birth_year": 1897,
+        "death_year": 1945
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "281832"
+        ],
+        "target_person": {
+          "title": "Joseph Goebbels",
+          "page_id": 15777,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "Joseph Goebbels| ",
+            "1897 births",
+            "1945 suicides",
+            "1945 deaths",
+            "20th-century chancellors of Germany",
+            "20th-century German diarists",
+            "20th-century philologists",
+            "Adolf Hitler",
+            "Antisemitism in Germany",
+            "Filicides in Germany",
+            "Gauleiters",
+            "German anti-capitalists",
+            "German conspiracy theorists",
+            "German far-right politicians",
+            "German fascists",
+            "German mass murderers",
+            "German murderers of children",
+            "German nationalists",
+            "German Nazi propagandists",
+            "German philologists",
+            "German people of Dutch descent",
+            "German people of World War II",
+            "German politicians who died by suicide",
+            "German politicians with disabilities",
+            "Goebbels family|Joseph",
+            "Government ministers of Nazi Germany",
+            "Government ministers with disabilities",
+            "Heidelberg University alumni",
+            "Holocaust perpetrators",
+            "Joint suicides by Nazis"
+          ],
+          "birth_year": 1897,
+          "death_year": 1945
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Wittgenstein",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "According to Wittgenstein, what happens with the notion of ‘Fascism’ is what happens with the notion of ‘play.’",
+          "I would say that the ideology of this censorship through noise can be expressed, with apologies to Wittgenstein, by saying, 'Whereof one cannot speak, thereof one must talk a great deal.'"
+        ],
+        "commentaries": [
+          "The author cites Wittgenstein’s concept of 'family resemblances' in games to explain how Fascism functions as a loosely defined category with overlapping but non-universal traits.",
+          "The author invokes Wittgenstein’s famous aphorism to reframe it as a critique of media overload, using it as a conceptual tool to describe how excessive speech obscures meaningful discourse."
+        ],
+        "canonical_author": "Wittgenstein"
+      },
+      "goodreads_match": {
+        "author_id": "7672",
+        "name": "Ludwig Wittgenstein",
+        "average_rating": "4.13",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Ludwig Wittgenstein",
+          "page_id": 17741,
+          "infoboxes": [
+            "philosopher",
+            "military person"
+          ],
+          "categories": [
+            "Ludwig Wittgenstein| ",
+            "1889 births",
+            "1951 deaths",
+            "20th-century Austrian philosophers",
+            "Alumni of Trinity College, Cambridge",
+            "Analytic philosophers",
+            "Austrian expatriates in the United Kingdom",
+            "Austrian logicians",
+            "Austrian people of Jewish descent",
+            "Austro-Hungarian military personnel of World War I",
+            "Bertrand Russell Professors of Philosophy",
+            "Cambridge University Moral Sciences Club",
+            "Deaths from prostate cancer in England",
+            "Fellows of Trinity College, Cambridge",
+            "Jewish philosophers",
+            "LGBTQ philosophers",
+            "Linguistic turn",
+            "Metaphilosophers",
+            "Naturalised citizens of the United Kingdom",
+            "Ordinary language philosophy",
+            "People associated with the University of Manchester",
+            "Austrian philosophers of language",
+            "Philosophers of logic",
+            "Philosophers of mathematics",
+            "Philosophers of psychology",
+            "Technische Universität Berlin alumni",
+            "Wittgenstein family|Ludwig",
+            "Wittgensteinian philosophers| ",
+            "World War I prisoners of war held by Italy",
+            "Philosophers of religion"
+          ],
+          "birth_year": 1889,
+          "death_year": 1951
+        },
+        "author_meta": {
+          "birth_year": 1889,
+          "death_year": 1951
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ludwig Wittgenstein",
+        "page_id": 17741,
+        "infoboxes": [
+          "philosopher",
+          "military person"
+        ],
+        "categories": [
+          "Ludwig Wittgenstein| ",
+          "1889 births",
+          "1951 deaths",
+          "20th-century Austrian philosophers",
+          "Alumni of Trinity College, Cambridge",
+          "Analytic philosophers",
+          "Austrian expatriates in the United Kingdom",
+          "Austrian logicians",
+          "Austrian people of Jewish descent",
+          "Austro-Hungarian military personnel of World War I",
+          "Bertrand Russell Professors of Philosophy",
+          "Cambridge University Moral Sciences Club",
+          "Deaths from prostate cancer in England",
+          "Fellows of Trinity College, Cambridge",
+          "Jewish philosophers",
+          "LGBTQ philosophers",
+          "Linguistic turn",
+          "Metaphilosophers",
+          "Naturalised citizens of the United Kingdom",
+          "Ordinary language philosophy",
+          "People associated with the University of Manchester",
+          "Austrian philosophers of language",
+          "Philosophers of logic",
+          "Philosophers of mathematics",
+          "Philosophers of psychology",
+          "Technische Universität Berlin alumni",
+          "Wittgenstein family|Ludwig",
+          "Wittgensteinian philosophers| ",
+          "World War I prisoners of war held by Italy",
+          "Philosophers of religion"
+        ],
+        "birth_year": 1889,
+        "death_year": 1951
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7672"
+        ],
+        "target_person": {
+          "title": "Ludwig Wittgenstein",
+          "page_id": 17741,
+          "infoboxes": [
+            "philosopher",
+            "military person"
+          ],
+          "categories": [
+            "Ludwig Wittgenstein| ",
+            "1889 births",
+            "1951 deaths",
+            "20th-century Austrian philosophers",
+            "Alumni of Trinity College, Cambridge",
+            "Analytic philosophers",
+            "Austrian expatriates in the United Kingdom",
+            "Austrian logicians",
+            "Austrian people of Jewish descent",
+            "Austro-Hungarian military personnel of World War I",
+            "Bertrand Russell Professors of Philosophy",
+            "Cambridge University Moral Sciences Club",
+            "Deaths from prostate cancer in England",
+            "Fellows of Trinity College, Cambridge",
+            "Jewish philosophers",
+            "LGBTQ philosophers",
+            "Linguistic turn",
+            "Metaphilosophers",
+            "Naturalised citizens of the United Kingdom",
+            "Ordinary language philosophy",
+            "People associated with the University of Manchester",
+            "Austrian philosophers of language",
+            "Philosophers of logic",
+            "Philosophers of mathematics",
+            "Philosophers of psychology",
+            "Technische Universität Berlin alumni",
+            "Wittgenstein family|Ludwig",
+            "Wittgensteinian philosophers| ",
+            "World War I prisoners of war held by Italy",
+            "Philosophers of religion"
+          ],
+          "birth_year": 1889,
+          "death_year": 1951
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Orwell",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "'Newspeak' was invented by Orwell in 1984, as the official language of Ingsoc, the English Socialist movement, but elements of Ur-Fascism are common to different forms of dictatorship."
+        ],
+        "commentaries": [
+          "The author cites Orwell's 1984 as the origin of the term 'Newspeak' and draws a parallel between its use in totalitarian regimes and Ur-Fascist language control."
+        ],
+        "canonical_author": "Orwell"
+      },
+      "goodreads_match": {
+        "author_id": "3706",
+        "name": "George Orwell",
+        "average_rating": "4.02",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "George Orwell",
+          "page_id": 11891,
+          "infoboxes": [
+            "person",
+            "writer"
+          ],
+          "categories": [
+            "George Orwell| ",
+            "1903 births",
+            "1950 deaths",
+            "20th-century atheists",
+            "20th-century deaths from tuberculosis",
+            "20th-century English diarists",
+            "20th-century English essayists",
+            "20th-century English journalists",
+            "20th-century English historians",
+            "20th-century English male writers",
+            "20th-century English non-fiction writers",
+            "20th-century English novelists",
+            "20th-century English philosophers",
+            "20th-century English poets",
+            "20th-century pseudonymous writers",
+            "Administrators in British Burma",
+            "Anti-Stalinist left",
+            "Aphorists",
+            "Atheist philosophers",
+            "BBC radio presenters",
+            "English anti-communists",
+            "British Anti-Francoists",
+            "British critics of Christianity",
+            "British critics of religions",
+            "British free speech activists",
+            "British Home Guard soldiers",
+            "British investigative journalists",
+            "British literary theorists",
+            "English male essayists",
+            "British opinion journalists"
+          ],
+          "birth_year": 1903,
+          "death_year": 1950
+        },
+        "author_meta": {
+          "birth_year": 1903,
+          "death_year": 1936
+        }
+      },
+      "wikipedia_match": {
+        "title": "George Orwell",
+        "page_id": 11891,
+        "infoboxes": [
+          "person",
+          "writer"
+        ],
+        "categories": [
+          "George Orwell| ",
+          "1903 births",
+          "1950 deaths",
+          "20th-century atheists",
+          "20th-century deaths from tuberculosis",
+          "20th-century English diarists",
+          "20th-century English essayists",
+          "20th-century English journalists",
+          "20th-century English historians",
+          "20th-century English male writers",
+          "20th-century English non-fiction writers",
+          "20th-century English novelists",
+          "20th-century English philosophers",
+          "20th-century English poets",
+          "20th-century pseudonymous writers",
+          "Administrators in British Burma",
+          "Anti-Stalinist left",
+          "Aphorists",
+          "Atheist philosophers",
+          "BBC radio presenters",
+          "English anti-communists",
+          "British Anti-Francoists",
+          "British critics of Christianity",
+          "British critics of religions",
+          "British free speech activists",
+          "British Home Guard soldiers",
+          "British investigative journalists",
+          "British literary theorists",
+          "English male essayists",
+          "British opinion journalists"
+        ],
+        "birth_year": 1903,
+        "death_year": 1950
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3706"
+        ],
+        "target_person": {
+          "title": "George Orwell",
+          "page_id": 11891,
+          "infoboxes": [
+            "person",
+            "writer"
+          ],
+          "categories": [
+            "George Orwell| ",
+            "1903 births",
+            "1950 deaths",
+            "20th-century atheists",
+            "20th-century deaths from tuberculosis",
+            "20th-century English diarists",
+            "20th-century English essayists",
+            "20th-century English journalists",
+            "20th-century English historians",
+            "20th-century English male writers",
+            "20th-century English non-fiction writers",
+            "20th-century English novelists",
+            "20th-century English philosophers",
+            "20th-century English poets",
+            "20th-century pseudonymous writers",
+            "Administrators in British Burma",
+            "Anti-Stalinist left",
+            "Aphorists",
+            "Atheist philosophers",
+            "BBC radio presenters",
+            "English anti-communists",
+            "British Anti-Francoists",
+            "British critics of Christianity",
+            "British critics of religions",
+            "British free speech activists",
+            "British Home Guard soldiers",
+            "British investigative journalists",
+            "British literary theorists",
+            "English male essayists",
+            "British opinion journalists"
+          ],
+          "birth_year": 1903,
+          "death_year": 1950
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "For Whom the Bell Tolls",
+        "author": "Hemingway",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "If you reread Hemingway’s For Whom the Bell Tolls, you will discover that Robert Jordan identifies his enemies with the Fascists even when he is thinking of the Spanish Falangists."
+        ],
+        "commentaries": [
+          "The author cites Hemingway’s novel as evidence that the term 'Fascist' was used broadly during the Spanish Civil War to describe enemy forces, even when they were technically Falangists."
+        ]
+      },
+      "goodreads_match": {
+        "title_without_series": "For Whom the Bell Tolls",
+        "ratings_count": 339,
+        "isbn13": "9781117066035",
+        "num_pages": 503,
+        "publication_day": 1,
+        "average_rating": 3.96,
+        "work_id": "2252079",
+        "book_id": "42425",
+        "author_ids": [
+          "1455"
+        ],
+        "publication_year": 1940,
+        "publication_month": 1,
+        "publisher": "P. F. Collier and Sons",
+        "isbn": "1117066037",
+        "text_reviews_count": 31,
+        "title": "For Whom the Bell Tolls",
+        "authors": [
+          "Ernest Hemingway"
+        ],
+        "description": "From the cover of the first edition:\nInto this great new novel--nearly twice as long as \"A Farewell to Arms\"--Ernest Hemingway has poured the fullness of his experience, the perfection of his art. A novel of wartime Spain, in which a young American and a Spanish girl live a lifetime of love and courage in four momentous days, it speaks with final and unforgettable power for the truth--the truth of war and life in our time.\nWith Robert Jordan already behind the enemy lines on his dangerous mission--to join f...",
+        "link": "https://www.goodreads.com/book/show/42425.For_Whom_the_Bell_Tolls",
+        "original_year": 1940,
+        "author_meta": {
+          "birth_year": 1899,
+          "death_year": 1961
+        }
+      },
+      "wikipedia_match": null,
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "42425",
+        "target_author_ids": [
+          "1455"
+        ],
+        "target_person": null
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "from Aristotle onwards, philosophers have called prudence."
+        ],
+        "commentaries": [
+          "The author references Aristotle as the origin of the classical philosophical concept of prudence (phronesis) as a cardinal virtue essential to ethical judgment."
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": {
+        "author_id": "2192",
+        "name": "Aristotle",
+        "average_rating": "3.93",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        },
+        "author_meta": {
+          "birth_year": -384,
+          "death_year": -322,
+          "main_genre": "philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "How to Spot a Fascist",
+        "author": "Umberto Eco",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Umberto Eco: How to Spot a Fascist trans. Richard Dixon and Alastair McEwen"
+        ],
+        "commentaries": [
+          "The author cites Umberto Eco's work as the source of the essay, noting its translation history and publication context within Harvill Secker's series."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Ur-Fascism",
+        "authors": [
+          "Umberto Eco"
+        ],
+        "original_year": 1995,
+        "birth_year": 1932,
+        "death_year": 2016,
+        "nationality": "Italian",
+        "description": "An essay by Umberto Eco originally published in The New York Review of Books in 1995, titled 'Ur-Fascism,' which outlines 14 characteristics of fascist ideology. The cited text 'How to Spot a Fascist' is a popular paraphrase or adaptation of this essay, often circulated online and sometimes misattributed as a standalone work. The translation mentioned (Richard Dixon and Alastair McEwen) refers to later English-language publications of Eco's collected essays.",
+        "book_id": "web_3f6e9216",
+        "author_meta": {
+          "birth_year": 1932,
+          "death_year": 2016
+        }
+      },
+      "wikipedia_match": null,
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_3f6e9216",
+        "target_author_ids": [],
+        "target_person": null
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Joseph de Maistre",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the Italian right has recently widened its syllabus by putting together De Maistre, Guenon, and Gramsci"
+        ],
+        "commentaries": [
+          "The author mentions De Maistre as one of the thinkers incorporated into the Italian right’s ideological mix, highlighting the syncretic nature of their thought."
+        ],
+        "canonical_author": "Joseph De Maistre"
+      },
+      "goodreads_match": {
+        "author_id": "188705",
+        "name": "Joseph de Maistre",
+        "average_rating": "3.91",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Joseph de Maistre",
+          "page_id": 213143,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1753 births",
+            "1821 deaths",
+            "18th-century French writers",
+            "18th-century Italian writers",
+            "18th-century Italian male writers",
+            "18th-century philosophers",
+            "19th-century French writers",
+            "19th-century Italian writers",
+            "Ambassadors of Italy to Russia",
+            "Conservatism in France",
+            "Conservatism in Italy",
+            "Critics of atheism",
+            "Reactionary",
+            "Christian humanists",
+            "French counter-revolutionaries",
+            "French monarchists",
+            "French medievalists",
+            "French nationalists",
+            "19th-century French philosophers",
+            "18th-century French philosophers",
+            "French political philosophers",
+            "French Ultra-royalists",
+            "French Roman Catholics",
+            "Italian counter-revolutionaries",
+            "Italian monarchists",
+            "Italian medievalists",
+            "Italian nationalists",
+            "18th-century Italian philosophers",
+            "19th-century Italian philosophers",
+            "Italian political philosophers"
+          ],
+          "birth_year": 1753,
+          "death_year": 1821
+        },
+        "author_meta": {
+          "birth_year": 1753,
+          "death_year": 1821
+        }
+      },
+      "wikipedia_match": {
+        "title": "Joseph de Maistre",
+        "page_id": 213143,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1753 births",
+          "1821 deaths",
+          "18th-century French writers",
+          "18th-century Italian writers",
+          "18th-century Italian male writers",
+          "18th-century philosophers",
+          "19th-century French writers",
+          "19th-century Italian writers",
+          "Ambassadors of Italy to Russia",
+          "Conservatism in France",
+          "Conservatism in Italy",
+          "Critics of atheism",
+          "Reactionary",
+          "Christian humanists",
+          "French counter-revolutionaries",
+          "French monarchists",
+          "French medievalists",
+          "French nationalists",
+          "19th-century French philosophers",
+          "18th-century French philosophers",
+          "French political philosophers",
+          "French Ultra-royalists",
+          "French Roman Catholics",
+          "Italian counter-revolutionaries",
+          "Italian monarchists",
+          "Italian medievalists",
+          "Italian nationalists",
+          "18th-century Italian philosophers",
+          "19th-century Italian philosophers",
+          "Italian political philosophers"
+        ],
+        "birth_year": 1753,
+        "death_year": 1821
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "188705"
+        ],
+        "target_person": {
+          "title": "Joseph de Maistre",
+          "page_id": 213143,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1753 births",
+            "1821 deaths",
+            "18th-century French writers",
+            "18th-century Italian writers",
+            "18th-century Italian male writers",
+            "18th-century philosophers",
+            "19th-century French writers",
+            "19th-century Italian writers",
+            "Ambassadors of Italy to Russia",
+            "Conservatism in France",
+            "Conservatism in Italy",
+            "Critics of atheism",
+            "Reactionary",
+            "Christian humanists",
+            "French counter-revolutionaries",
+            "French monarchists",
+            "French medievalists",
+            "French nationalists",
+            "19th-century French philosophers",
+            "18th-century French philosophers",
+            "French political philosophers",
+            "French Ultra-royalists",
+            "French Roman Catholics",
+            "Italian counter-revolutionaries",
+            "Italian monarchists",
+            "Italian medievalists",
+            "Italian nationalists",
+            "18th-century Italian philosophers",
+            "19th-century Italian philosophers",
+            "Italian political philosophers"
+          ],
+          "birth_year": 1753,
+          "death_year": 1821
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Saint Augustine",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "you will even find Saint Augustine, who, as far as I know, was not a Fascist.",
+          "the example of Saint Augustine could still provide a good ideal for the world of politics and television."
+        ],
+        "commentaries": [
+          "The author references Saint Augustine as an example of an unexpected and historically incongruous figure co-opted into New Age fascist-adjacent thought.",
+          "The author cites Saint Augustine as a moral and philosophical model for addressing the loss of silence in modern media and political culture."
+        ],
+        "canonical_author": "Saint Augustine"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Augustine of Hippo",
+          "page_id": 2030,
+          "infoboxes": [
+            "saint",
+            "philosopher"
+          ],
+          "categories": [
+            "Augustine of Hippo| ",
+            "354 births",
+            "430 deaths",
+            "4th-century Berber people",
+            "4th-century bishops in Roman North Africa",
+            "4th-century Christian theologians",
+            "4th-century philosophers",
+            "4th-century Romans",
+            "4th-century writers in Latin",
+            "5th-century Berber people",
+            "5th-century bishops in Roman North Africa",
+            "5th-century Christian saints",
+            "5th-century Christian theologians",
+            "5th-century philosophers",
+            "5th-century Western Romans",
+            "5th-century writers in Latin",
+            "African philosophers",
+            "Amillennialism",
+            "Ancient Roman Christian mystics",
+            "Ancient Roman philosophers",
+            "Ancient Roman rhetoricians",
+            "Anglican saints",
+            "Augustinian Order| ",
+            "Augustinian philosophers",
+            "Aurelii|Augustinus",
+            "Autobiographers",
+            "Berber Christians",
+            "Burials at San Pietro in Ciel d'Oro",
+            "Catholic philosophers",
+            "Catholic saints"
+          ],
+          "birth_year": 354,
+          "death_year": 430
+        },
+        "author_meta": {
+          "birth_year": -354,
+          "death_year": -430,
+          "main_genre": "Theology",
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Augustine of Hippo",
+        "page_id": 2030,
+        "infoboxes": [
+          "saint",
+          "philosopher"
+        ],
+        "categories": [
+          "Augustine of Hippo| ",
+          "354 births",
+          "430 deaths",
+          "4th-century Berber people",
+          "4th-century bishops in Roman North Africa",
+          "4th-century Christian theologians",
+          "4th-century philosophers",
+          "4th-century Romans",
+          "4th-century writers in Latin",
+          "5th-century Berber people",
+          "5th-century bishops in Roman North Africa",
+          "5th-century Christian saints",
+          "5th-century Christian theologians",
+          "5th-century philosophers",
+          "5th-century Western Romans",
+          "5th-century writers in Latin",
+          "African philosophers",
+          "Amillennialism",
+          "Ancient Roman Christian mystics",
+          "Ancient Roman philosophers",
+          "Ancient Roman rhetoricians",
+          "Anglican saints",
+          "Augustinian Order| ",
+          "Augustinian philosophers",
+          "Aurelii|Augustinus",
+          "Autobiographers",
+          "Berber Christians",
+          "Burials at San Pietro in Ciel d'Oro",
+          "Catholic philosophers",
+          "Catholic saints"
+        ],
+        "birth_year": 354,
+        "death_year": 430
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Augustine of Hippo",
+          "page_id": 2030,
+          "infoboxes": [
+            "saint",
+            "philosopher"
+          ],
+          "categories": [
+            "Augustine of Hippo| ",
+            "354 births",
+            "430 deaths",
+            "4th-century Berber people",
+            "4th-century bishops in Roman North Africa",
+            "4th-century Christian theologians",
+            "4th-century philosophers",
+            "4th-century Romans",
+            "4th-century writers in Latin",
+            "5th-century Berber people",
+            "5th-century bishops in Roman North Africa",
+            "5th-century Christian saints",
+            "5th-century Christian theologians",
+            "5th-century philosophers",
+            "5th-century Western Romans",
+            "5th-century writers in Latin",
+            "African philosophers",
+            "Amillennialism",
+            "Ancient Roman Christian mystics",
+            "Ancient Roman philosophers",
+            "Ancient Roman rhetoricians",
+            "Anglican saints",
+            "Augustinian Order| ",
+            "Augustinian philosophers",
+            "Aurelii|Augustinus",
+            "Autobiographers",
+            "Berber Christians",
+            "Burials at San Pietro in Ciel d'Oro",
+            "Catholic philosophers",
+            "Catholic saints"
+          ],
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Franklin Delano Roosevelt",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "I yield the floor to Franklin Delano Roosevelt: 'The victory of the American people and their allies will be a victory against Fascism and the blind alley of despotism that it represents' (23 September 1944).",
+          "Once more I yield the floor to Roosevelt: 'I dare to say that if American democracy ceased to progress as a living force, seeking night and day by peaceful means to improve the condition of our citizens, the power of Fascism would grow in our country' (4 November 1938)."
+        ],
+        "commentaries": [
+          "The author quotes Roosevelt’s speech to illustrate how 'Fascism' was used as a unifying moral label during World War II, extending its application beyond Nazi Germany to encompass other authoritarian regimes.",
+          "The author quotes Roosevelt to underscore the fragility of democracy and the danger of complacency in the face of rising Fascism."
+        ],
+        "canonical_author": "Franklin Delano Roosevelt"
+      },
+      "goodreads_match": {
+        "author_id": "219075",
+        "name": "Franklin D. Roosevelt",
+        "average_rating": "4.00",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": 1882,
+          "death_year": 1945,
+          "main_genre": "political writing",
+          "nationality": "American"
+        }
+      },
+      "wikipedia_match": null,
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "219075"
+        ],
+        "target_person": null
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "René Guénon",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the Italian right has recently widened its syllabus by putting together De Maistre, Guenon, and Gramsci"
+        ],
+        "commentaries": [
+          "The author cites Guénon as part of a deliberately incongruous grouping of thinkers, illustrating the eclectic and contradictory nature of contemporary right-wing syncretism."
+        ],
+        "canonical_author": "René Guénon"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "René Guénon",
+          "page_id": 685895,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1886 births",
+            "1951 deaths",
+            "20th-century French philosophers",
+            "Converts to Sunni Islam from Roman Catholicism",
+            "Critics of Theosophy",
+            "Critics of Spiritualism",
+            "French Freemasons",
+            "French esotericists",
+            "French male writers",
+            "French Sufis",
+            "Islamic philosophers",
+            "French metaphysicians",
+            "Neo-Vedanta",
+            "Traditionalist School",
+            "Writers from Blois"
+          ],
+          "birth_year": 1886,
+          "death_year": 1951
+        },
+        "author_meta": {
+          "birth_year": 1882,
+          "death_year": 1941
+        }
+      },
+      "wikipedia_match": {
+        "title": "René Guénon",
+        "page_id": 685895,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1886 births",
+          "1951 deaths",
+          "20th-century French philosophers",
+          "Converts to Sunni Islam from Roman Catholicism",
+          "Critics of Theosophy",
+          "Critics of Spiritualism",
+          "French Freemasons",
+          "French esotericists",
+          "French male writers",
+          "French Sufis",
+          "Islamic philosophers",
+          "French metaphysicians",
+          "Neo-Vedanta",
+          "Traditionalist School",
+          "Writers from Blois"
+        ],
+        "birth_year": 1886,
+        "death_year": 1951
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "René Guénon",
+          "page_id": 685895,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1886 births",
+            "1951 deaths",
+            "20th-century French philosophers",
+            "Converts to Sunni Islam from Roman Catholicism",
+            "Critics of Theosophy",
+            "Critics of Spiritualism",
+            "French Freemasons",
+            "French esotericists",
+            "French male writers",
+            "French Sufis",
+            "Islamic philosophers",
+            "French metaphysicians",
+            "Neo-Vedanta",
+            "Traditionalist School",
+            "Writers from Blois"
+          ],
+          "birth_year": 1886,
+          "death_year": 1951
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ezra Pound",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Add to Italian Fascism a dash of radical anti-Capitalism (which never appealed to Mussolini), and you get Ezra Pound."
+        ],
+        "commentaries": [
+          "The author cites Ezra Pound as an example of a figure who blended Fascist aesthetics with radical economic ideas foreign to Mussolini’s regime, illustrating the flexible boundaries of Fascist identity."
+        ],
+        "canonical_author": "Ezra Pound"
+      },
+      "goodreads_match": {
+        "author_id": "30055",
+        "name": "Ezra Pound",
+        "average_rating": "3.95",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Ezra Pound",
+          "page_id": 44203,
+          "infoboxes": [],
+          "categories": [
+            "Ezra Pound| ",
+            "1885 births",
+            "1972 deaths",
+            "20th-century American essayists",
+            "20th-century American male writers",
+            "20th-century American poets",
+            "20th-century American translators",
+            "American anti-capitalists",
+            "American art critics",
+            "American art historians",
+            "20th-century American classical composers",
+            "American broadcasters for Nazi Germany",
+            "American collaborators with Fascist Italy",
+            "American conspiracy theorists",
+            "American expatriates in England",
+            "American expatriates in France",
+            "American expatriates in Italy",
+            "20th-century American historians",
+            "American literary critics",
+            "American magazine editors",
+            "American male essayists",
+            "American male non-fiction writers",
+            "American modernist poets",
+            "American Nazis",
+            "American opera composers",
+            "American pamphleteers",
+            "American people of English descent",
+            "American prisoners and detainees",
+            "American segregationists",
+            "American sinologists"
+          ],
+          "birth_year": 1885,
+          "death_year": 1972
+        },
+        "author_meta": {
+          "birth_year": 1885,
+          "death_year": 1972,
+          "main_genre": "poetry",
+          "nationality": "American"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ezra Pound",
+        "page_id": 44203,
+        "infoboxes": [],
+        "categories": [
+          "Ezra Pound| ",
+          "1885 births",
+          "1972 deaths",
+          "20th-century American essayists",
+          "20th-century American male writers",
+          "20th-century American poets",
+          "20th-century American translators",
+          "American anti-capitalists",
+          "American art critics",
+          "American art historians",
+          "20th-century American classical composers",
+          "American broadcasters for Nazi Germany",
+          "American collaborators with Fascist Italy",
+          "American conspiracy theorists",
+          "American expatriates in England",
+          "American expatriates in France",
+          "American expatriates in Italy",
+          "20th-century American historians",
+          "American literary critics",
+          "American magazine editors",
+          "American male essayists",
+          "American male non-fiction writers",
+          "American modernist poets",
+          "American Nazis",
+          "American opera composers",
+          "American pamphleteers",
+          "American people of English descent",
+          "American prisoners and detainees",
+          "American segregationists",
+          "American sinologists"
+        ],
+        "birth_year": 1885,
+        "death_year": 1972
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "30055"
+        ],
+        "target_person": {
+          "title": "Ezra Pound",
+          "page_id": 44203,
+          "infoboxes": [],
+          "categories": [
+            "Ezra Pound| ",
+            "1885 births",
+            "1972 deaths",
+            "20th-century American essayists",
+            "20th-century American male writers",
+            "20th-century American poets",
+            "20th-century American translators",
+            "American anti-capitalists",
+            "American art critics",
+            "American art historians",
+            "20th-century American classical composers",
+            "American broadcasters for Nazi Germany",
+            "American collaborators with Fascist Italy",
+            "American conspiracy theorists",
+            "American expatriates in England",
+            "American expatriates in France",
+            "American expatriates in Italy",
+            "20th-century American historians",
+            "American literary critics",
+            "American magazine editors",
+            "American male essayists",
+            "American male non-fiction writers",
+            "American modernist poets",
+            "American Nazis",
+            "American opera composers",
+            "American pamphleteers",
+            "American people of English descent",
+            "American prisoners and detainees",
+            "American segregationists",
+            "American sinologists"
+          ],
+          "birth_year": 1885,
+          "death_year": 1972
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Franco Fortini",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And now I should like to close with a poem by Franco Fortini: On the parapet of the bridge The heads of hanged men In the water of the fountain The drool of hanged men On the cobbles of the market The fingernails of men shot down On the dry grass of the meadow The teeth of men shot down Bite the air bite the stones Our flesh is the flesh of men no more Bite the air bite the stones Our hearts are the hearts of men no more."
+        ],
+        "commentaries": [
+          "The author invokes Fortini's poem as a haunting memorial to victims of Fascism, using it to reinforce the moral imperative to remember and resist."
+        ],
+        "canonical_author": "Franco Fortini"
+      },
+      "goodreads_match": {
+        "author_id": "677807",
+        "name": "Franco Fortini",
+        "average_rating": "3.84",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Franco Fortini",
+          "page_id": 31429799,
+          "infoboxes": [],
+          "categories": [
+            "Italian male poets",
+            "1917 births",
+            "1994 deaths",
+            "Italian socialists",
+            "Writers from Florence",
+            "20th-century Italian translators",
+            "20th-century Italian poets",
+            "20th-century Italian male writers"
+          ],
+          "birth_year": 1917,
+          "death_year": 1994
+        },
+        "author_meta": {
+          "birth_year": 1917,
+          "death_year": 1994,
+          "main_genre": "poetry",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Franco Fortini",
+        "page_id": 31429799,
+        "infoboxes": [],
+        "categories": [
+          "Italian male poets",
+          "1917 births",
+          "1994 deaths",
+          "Italian socialists",
+          "Writers from Florence",
+          "20th-century Italian translators",
+          "20th-century Italian poets",
+          "20th-century Italian male writers"
+        ],
+        "birth_year": 1917,
+        "death_year": 1994
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "677807"
+        ],
+        "target_person": {
+          "title": "Franco Fortini",
+          "page_id": 31429799,
+          "infoboxes": [],
+          "categories": [
+            "Italian male poets",
+            "1917 births",
+            "1994 deaths",
+            "Italian socialists",
+            "Writers from Florence",
+            "20th-century Italian translators",
+            "20th-century Italian poets",
+            "20th-century Italian male writers"
+          ],
+          "birth_year": 1917,
+          "death_year": 1994
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ionesco",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Ionesco once said that only words count and all the rest is idle chatter."
+        ],
+        "commentaries": [
+          "The author invokes Ionesco’s aphorism to support the argument that linguistic habits reveal underlying cultural sentiments, using it as a conceptual foundation for analyzing the use of the term 'Fascism'."
+        ],
+        "canonical_author": "Ionesco"
+      },
+      "goodreads_match": {
+        "author_id": "7689",
+        "name": "Eugene Ionesco",
+        "average_rating": "3.91",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Eugène Ionesco",
+          "page_id": 72590,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Eugène Ionesco| ",
+            "1909 births",
+            "1994 deaths",
+            "People from Slatina, Romania",
+            "Carol I National College alumni",
+            "20th-century French dramatists and playwrights",
+            "20th-century Romanian dramatists and playwrights",
+            "French people of Romanian descent",
+            "Romanian people of Greek descent",
+            "French people of Greek descent",
+            "Romanian people of French descent",
+            "French literary critics",
+            "Absurdist writers",
+            "Members of the Académie Française",
+            "Members of the Romanian Academy elected posthumously",
+            "Pataphysicians",
+            "Recipients of the Pour le Mérite (civil class)",
+            "French-language Romanian writers",
+            "Saint Sava National College alumni",
+            "Theatre of the Absurd",
+            "University of Bucharest alumni",
+            "Burials at Montparnasse Cemetery",
+            "Jerusalem Prize recipients",
+            "Romanian expatriates in France",
+            "Naturalized citizens of France"
+          ],
+          "birth_year": 1909,
+          "death_year": 1994
+        },
+        "author_meta": {
+          "birth_year": 1909,
+          "death_year": 1994,
+          "main_genre": "theatre",
+          "nationality": "Romanian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Eugène Ionesco",
+        "page_id": 72590,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Eugène Ionesco| ",
+          "1909 births",
+          "1994 deaths",
+          "People from Slatina, Romania",
+          "Carol I National College alumni",
+          "20th-century French dramatists and playwrights",
+          "20th-century Romanian dramatists and playwrights",
+          "French people of Romanian descent",
+          "Romanian people of Greek descent",
+          "French people of Greek descent",
+          "Romanian people of French descent",
+          "French literary critics",
+          "Absurdist writers",
+          "Members of the Académie Française",
+          "Members of the Romanian Academy elected posthumously",
+          "Pataphysicians",
+          "Recipients of the Pour le Mérite (civil class)",
+          "French-language Romanian writers",
+          "Saint Sava National College alumni",
+          "Theatre of the Absurd",
+          "University of Bucharest alumni",
+          "Burials at Montparnasse Cemetery",
+          "Jerusalem Prize recipients",
+          "Romanian expatriates in France",
+          "Naturalized citizens of France"
+        ],
+        "birth_year": 1909,
+        "death_year": 1994
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7689"
+        ],
+        "target_person": {
+          "title": "Eugène Ionesco",
+          "page_id": 72590,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Eugène Ionesco| ",
+            "1909 births",
+            "1994 deaths",
+            "People from Slatina, Romania",
+            "Carol I National College alumni",
+            "20th-century French dramatists and playwrights",
+            "20th-century Romanian dramatists and playwrights",
+            "French people of Romanian descent",
+            "Romanian people of Greek descent",
+            "French people of Greek descent",
+            "Romanian people of French descent",
+            "French literary critics",
+            "Absurdist writers",
+            "Members of the Académie Française",
+            "Members of the Romanian Academy elected posthumously",
+            "Pataphysicians",
+            "Recipients of the Pour le Mérite (civil class)",
+            "French-language Romanian writers",
+            "Saint Sava National College alumni",
+            "Theatre of the Absurd",
+            "University of Bucharest alumni",
+            "Burials at Montparnasse Cemetery",
+            "Jerusalem Prize recipients",
+            "Romanian expatriates in France",
+            "Naturalized citizens of France"
+          ],
+          "birth_year": 1909,
+          "death_year": 1994
+        }
+      }
+    }
+  ]
+}

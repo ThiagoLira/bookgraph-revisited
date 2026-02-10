@@ -5,7 +5,7 @@ Wrapper scripts for common tasks, split by purpose.
 
 Pipeline runners (`runners/pipeline/`)
 --------------------------------------
-- `pipeline_calibre_openrouter.sh` – drives `calibre_citations_pipeline.py` against OpenRouter with Qwen3-Next for both extraction and Goodreads agent. Defaults to `~/OneDrive/Documents/calibre_goodreads`, forces Goodreads ID `61535`, and reads `OPENROUTER_API_KEY` (autoloads `.env`).
+- `pipeline_calibre_openrouter.sh` – drives `calibre_citations_pipeline.py` against OpenRouter with DeepSeek V3.2 for both extraction and Goodreads agent. Defaults to `~/OneDrive/Documents/calibre_goodreads`, forces Goodreads ID `61535`, and reads `OPENROUTER_API_KEY` (autoloads `.env`).
 - `pipeline_full_openrouter.sh` – full three-stage pipeline over `books/` using OpenRouter for extraction + agent.
 - `pipeline_single_openrouter.sh` – run `run_single_file.py` against OpenRouter for a single TXT file.
 - `pipeline_extract_local.sh` – local llama.cpp extraction against `http://localhost:8080/v1` with test API key; handy for smoke tests.

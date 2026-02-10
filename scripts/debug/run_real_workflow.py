@@ -47,7 +47,7 @@ async def run_real_test():
         print("Error: OPENROUTER_API_KEY not found in environment or .env")
         return
 
-    model_id = "qwen/qwen3-next-80b-a3b-instruct"
+    model_id = "deepseek/deepseek-v3.2"
 
     print(f"Initializing Workflow with model: {model_id} via {base_url}")
     llm = build_llm(model=model_id, api_key=api_key, base_url=base_url)

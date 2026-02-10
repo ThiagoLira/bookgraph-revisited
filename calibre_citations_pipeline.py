@@ -191,7 +191,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--extract-model",
-        default="Qwen/Qwen3-30B-A3B",
+        default="deepseek/deepseek-v3.2",
         help="Model ID for extraction stage.",
     )
     parser.add_argument(
@@ -218,7 +218,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--agent-model",
-        default="qwen/qwen3-next-80b-a3b-instruct",
+        default="deepseek/deepseek-v3.2",
         help="Model ID for bibliography agent.",
     )
     parser.add_argument(

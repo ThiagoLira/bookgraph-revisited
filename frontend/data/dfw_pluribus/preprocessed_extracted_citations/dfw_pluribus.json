@@ -1,0 +1,444 @@
+{
+  "source": "dfw_pluribus.json",
+  "total": 31,
+  "citations": [
+    {
+      "title": "My Cousin, My Gastroenterologist",
+      "author": "Mark Leyner",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "that his book has commercials. That Gilder vastly underestimates the intractability of the mess. Its hopelessness. Our fatigue. My attitude, reading Gilder, is sardonic, aloof, jaded. My reading of Gilder is televisual. I am in the aura. Well, but at least Gilder is unironic. In this respect he's like a cool summer breeze compared to Mark Leyner, the young New Jersey writer whose 1990 My Cousin, My Gastroenterologist is the biggest thing for campus hipsters since The Dharma Bums."
+      ],
+      "commentaries": [
+        "The author cites Leyner's novel as a prime example of ironic, televisual literature that celebrates the very media saturation it critiques, positioning it as a counterpart to Gilder's unironic tone."
+      ]
+    },
+    {
+      "title": "",
+      "author": "William T. Vollmann",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "William T. Vollmann's You Bright and Risen Angels",
+        "Vollmann's 1989 The Rainbow Stories has Sonys as characters in Heideggerian parables"
+      ],
+      "commentaries": [
+        "The author cites Vollmann's novel as a post-1985 example of image-fiction, using pop-cultural myths as a fictional world.",
+        "The author cites Vollmann's work as using consumer electronics as characters in philosophical fiction, emblematic of image-fiction's concerns."
+      ],
+      "canonical_author": "William T. Vollmann"
+    },
+    {
+      "title": "",
+      "author": "Michael Martone",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Michael Martone's 1990 Fort Wayne Is Seventh on Hitler's List is a tight cycle of stories about the Midwest's pop-culture giants - James Dean, Colonel Sanders, Dillinger - the whole project of which, spelled out in a preface about image-fiction's legal woes, involves 'questioning the border between fact and fiction when in the presence of fame.'"
+      ],
+      "commentaries": [
+        "The author cites Martone's work as explicitly engaging with the tension between fact and fiction in the context of fame, a core theme of image-fiction."
+      ],
+      "canonical_author": "Michael Martone"
+    },
+    {
+      "title": "",
+      "author": "C. Wright Mills",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the world of small business [whose virtues were the Hugh Beaumontish ones of 'self-possession, probity, and sound judgment'] had long since been . . . superseded by what C. Wright Mills called 'the managerial demiurge,'"
+      ],
+      "commentaries": [
+        "The author references C. Wright Mills to anchor a sociological critique of mid-century American values, using Mills' concept of the 'managerial demiurge' to explain the obsolescence of traditional patriarchal ideals portrayed on TV."
+      ],
+      "canonical_author": "C. Wright Mills"
+    },
+    {
+      "title": "",
+      "author": "de Tocqueville",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "by 1830 de Tocqueville had already diagnosed American culture as peculiarly devoted to easy sensation and mass-marketed entertainment, \"spectacles vehement and untutored and rude\" that aimed \"to stir the passions more than to gratify the taste."
+      ],
+      "commentaries": [
+        "The author cites de Tocqueville's 19th-century analysis to argue that concerns about mass entertainment and low aesthetic standards predate television, framing TV as a continuation of a long-standing cultural trend rather than its cause."
+      ],
+      "canonical_author": "De Tocqueville"
+    },
+    {
+      "title": "",
+      "author": "Stanley Cavell",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the reader's \"willingness to be pleased\""
+      ],
+      "commentaries": [
+        "The author cites Cavell's concept to frame the audience's passive reception of media, using it as a philosophical anchor for discussing television's influence on literary expectations."
+      ],
+      "canonical_author": "Stanley Cavell"
+    },
+    {
+      "title": "",
+      "author": "William Gaddis",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the Gaddis of The Recognitions"
+      ],
+      "commentaries": [
+        "The author references Gaddis's The Recognitions as a seminal postmodern text that helped legitimize the use of cultural and technological references in high literature."
+      ],
+      "canonical_author": "William Gaddis"
+    },
+    {
+      "title": "",
+      "author": "Thomas Pynchon",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "the Pynchon of The Crying of Lot 49",
+        "The seminal novels of Pynchon and DeLillo revolve metaphorically off the concept of interference: the more connections, the more chaos, and the harder it is to cull any meaning from the seas of signed."
+      ],
+      "commentaries": [
+        "The author cites Pynchon's novel as emblematic of the postmodern turn toward decoding mass cultural symbols, linking it to the broader movement of treating pop culture as mythic material.",
+        "The author cites Pynchon's novels as foundational works that use the metaphor of interference to explore chaos and meaninglessness in a hyper-connected world."
+      ],
+      "canonical_author": "Thomas Pynchon"
+    },
+    {
+      "title": "",
+      "author": "Stephen Dobyns",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "See for instance Stephen Dobyns's 1980 \"Arrested Saturday Night\": This is how it happened: Peg and Bob had invited Jack and Roxanne over to their house to watch the TV, and on the big screen they saw Peg and Bob, Jack and Roxanne watching themselves watch themselves on progressively smaller TVs...."
+      ],
+      "commentaries": [
+        "The author cites Dobyns's poem as an early literary example of self-reflexive television consciousness, illustrating the internalization of media surveillance into narrative structure."
+      ],
+      "canonical_author": "Stephen Dobyns"
+    },
+    {
+      "title": "",
+      "author": "Mark C. Miller",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Advertising scholar Mark C. Miller puts it succinctly: \"TV has gone beyond the explicit celebration of commodities to the implicit reinforcement of that spectatorial posture which TV requires of us.\"",
+        "As Mark C. Miller puts it, contemporary television \"no longer solicits our rapt absorption or hearty agreement, but - like the ads that subsidize it - actually flatters us for the very boredom and distrust it inspires in us.\"\n[20] Miller's 1986 \"Deride and Conquer,\" the best essay ever written on network advertising, details vividly an example of bow TV's contemporary appeal to the lone viewer works."
+      ],
+      "commentaries": [
+        "The author cites Miller as an authoritative voice summarizing how television advertising has evolved to reinforce passive spectatorship rather than promote specific products.",
+        "The author cites Miller's essay as a key analysis of how television advertising uses irony to appeal to viewer cynicism, positioning the essay as a definitive critique of network advertising."
+      ],
+      "canonical_author": "Mark C. Miller"
+    },
+    {
+      "title": "",
+      "author": "Stephen Dixon",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Stephen Dixon's Movies: Seventeen Stories"
+      ],
+      "commentaries": [
+        "The author cites Dixon's collection as part of the late-eighties image-fiction movement, treating film and media as central themes."
+      ],
+      "canonical_author": "Stephen Dixon"
+    },
+    {
+      "title": "",
+      "author": "George Gilder",
+      "note": null,
+      "count": 7,
+      "contexts": [
+        "Enter media futurologist George Gilder, a Hudson Institute Senior Fellow and author of 1990's Life after Television: The Coming Transformation of Media and American Life.",
+        "The single most fascinating thing about Life after Television is that it's a book with commercials.",
+        "The book's also largely a work of fiction, plus is a heart-rending dramatization of why anti-TV conservatives, motivated by simple convictions like 'Television is at heart a totalitarian medium' whose 'system is an alien and corrosive force in democratic capitalism' are going to be of little help with our ultraradical TV problems...",
+        "television as we know and suffer it is 'a technology with supreme powers but deadly flaws.'",
+        "The fibrous TC 'will forever break the broadcast bottleneck' of television's one-active-many-passive structure of image-propagation.",
+        "With artful programming of telecomputers, you could spend a day interacting on the screen with Henry Kissinger, Kim Basinger, or Billy Graham.",
+        "Leyner's fiction is, in this regard, an eloquent reply to Gilder's prediction that our TV-culture problems can be resolved by the dismantling of images into discrete chunks we can recombine as we fancy."
+      ],
+      "commentaries": [
+        "The author cites Gilder's book as a representative example of technologically optimistic conservatism, highlighting its commercial framing and flawed faith in tech solutions to cultural problems.",
+        "The author references Gilder's book to critique its fusion of corporate advertising and intellectual discourse, treating it as a cultural artifact of late-capitalist media ideology.",
+        "The author uses Gilder's book to illustrate how conservative technological optimism misdiagnoses media culture by reducing complex social issues to technical fixes.",
+        "The author quotes Gilder's characterization of television to expose the paradox of blaming media's problems on outdated technology while ignoring deeper cultural complicity.",
+        "The author cites Gilder's vision of the telecomputer to satirize the myth of technological liberation, suggesting it merely repackages passive consumption as interactive illusion.",
+        "The author references Gilder's speculative scenarios to underscore the eerie commodification of human presence and the flattening of cultural meaning into consumable media experiences.",
+        "The author cites Gilder as a predictive voice on television culture, positioning Leyner's fiction as a direct counter-response to Gilder's technological optimism."
+      ],
+      "canonical_author": "George Gilder"
+    },
+    {
+      "title": "",
+      "author": "Newton Minow",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "vast wasteland"
+      ],
+      "commentaries": [
+        "The author references Newton Minow’s famous label of television as a 'vast wasteland' to show how early critical disdain for TV became ingrained in the cultural consciousness of younger generations, shaping their ironic relationship with the medium."
+      ],
+      "canonical_author": "Newton Minow"
+    },
+    {
+      "title": "",
+      "author": "Mark Fowler",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "just another appliance, a toaster with pictures."
+      ],
+      "commentaries": [
+        "The author quotes Mark Fowler’s dismissive characterization of television as 'a toaster with pictures' to illustrate the cultural blindness among some viewers and critics toward TV’s profound influence on perception and identity."
+      ],
+      "canonical_author": "Mark Fowler"
+    },
+    {
+      "title": "",
+      "author": "R. D. Laing",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "doubtless a Yale Contemporary Culture dissertation is underway on R. D. Laing and just this episode."
+      ],
+      "commentaries": [
+        "The author references R. D. Laing as a theoretical figure whose work on identity and reality is being applied to analyze a television episode, implying Laing's ideas are foundational to interpreting the episode's psychological layers."
+      ],
+      "canonical_author": "R. D. Laing"
+    },
+    {
+      "title": "",
+      "author": "Octavio Paz",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "It was an example of what Octavio Paz calls 'meta-irony,'"
+      ],
+      "commentaries": [
+        "The author references Paz's concept of 'meta-irony' to distinguish Duchamp's theoretical critique of art categories from contemporary fiction's use of pop culture as emotional and mimetic device."
+      ],
+      "canonical_author": "Octavio Paz"
+    },
+    {
+      "title": "",
+      "author": "Don DeLillo",
+      "note": null,
+      "count": 5,
+      "contexts": [
+        "The true prophet of this shift in U.S. fiction, though, was the prenominate Don DeLillo... DeLillo's 1985 White Noise sounded to fledgling fictionists a kind of televisual clarion-call.",
+        "These are the very questions DeLillo's poor schmuck of a popologist was asking back in '85 about America, that most photographed of barns: 'What was the barn like before it was photographed?' he said. 'What did it look like, how was it different from other barns, how was it similar to other barns? We can't answer these questions because we've lead the signs, seen the people snapping the pictures. We can't get outside the aura. We're part of the aura. We're here, we're now.'",
+        "the DeLillo of Great Jones Street",
+        "DeLillo's own fictional hologram of Oswald in Libra",
+        "The seminal novels of Pynchon and DeLillo revolve metaphorically off the concept of interference: the more connections, the more chaos, and the harder it is to cull any meaning from the seas of signed."
+      ],
+      "commentaries": [
+        "The author elevates DeLillo's White Noise as the defining literary response to television culture, citing its depiction of media-saturated perception as a turning point in postmodern fiction.",
+        "The author invokes DeLillo’s fictional popologist to frame the central dilemma of postmodern media saturation — the impossibility of accessing reality outside mediated signs.",
+        "The author cites DeLillo's novel as an early example of imagist tactics in postmodern fiction, using pop culture as a subject.",
+        "The author cites DeLillo's novel as a key post-1985 work of image-fiction, fictionalizing a real historical figure through media-saturated perception.",
+        "The author cites DeLillo's novels as foundational works that use the metaphor of interference to explore chaos and meaninglessness in a hyper-connected world."
+      ],
+      "canonical_author": "Don Delillo"
+    },
+    {
+      "title": "",
+      "author": "A. M. Homes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "A. M. Homes's 1990 The Safely of Objects features a stormy love affair between a boy and a Barbie doll"
+      ],
+      "commentaries": [
+        "The author cites Homes's novel as a representative work of the emerging image-fiction subgenre, blurring reality and pop-culture artifacts."
+      ],
+      "canonical_author": "A. M. Homes"
+    },
+    {
+      "title": "",
+      "author": "Mark Leyner",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Mark Leyner's 1990 campus smash My Cousin, My Gastroenterologist, less a novel than what the book's jacket-copy describes as 'a fiction analogue of the best drug you ever took,' features everything from meditations on the color of Carefree Panty Shields wrappers to 'Big Squirrel, the TV kiddie-show host and kung fu mercenary,' to NFL instant replays in an 'X-ray vision which shows leaping skeletons in a bluish void surrounded by 75,000 roaring skulls.'"
+      ],
+      "commentaries": [
+        "The author cites Leyner's work as an extreme example of image-fiction, collapsing media, consumer culture, and surrealism into a single narrative."
+      ],
+      "canonical_author": "Mark Leyner"
+    },
+    {
+      "title": "",
+      "author": "John Barth",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "I think particularly of the Barth of The End of the Road and The Sot-Weed Factor"
+      ],
+      "commentaries": [
+        "The author cites Barth's novels as foundational works of postmodern fiction that integrated pop culture and metafictional techniques, positioning him as a key figure in the literary shift toward media-conscious narrative."
+      ],
+      "canonical_author": "John Barth"
+    },
+    {
+      "title": "",
+      "author": "Bill Knott",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Knott's 1983 \"Crash Course\": I strap a TV monitor on my chest so that all who approach can see themselves and respond appropriately."
+      ],
+      "commentaries": [
+        "The author references Knott's poem as a literal embodiment of televised self-awareness, using it to demonstrate how postmodern literature began to treat the act of watching as a subject rather than a backdrop."
+      ],
+      "canonical_author": "Bill Knott"
+    },
+    {
+      "title": "",
+      "author": "Jay Cantor",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Jay Cantor's Krazy Kat"
+      ],
+      "commentaries": [
+        "The author cites Cantor's work as a post-1985 instance of image-fiction, using pop-culture icons as narrative subjects."
+      ],
+      "canonical_author": "Jay Cantor"
+    },
+    {
+      "title": "",
+      "author": "Lewis Hyde",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "as essayist Lewis Hyde points out, all self-mocking irony is \"Sincerity, with a motive.\"",
+        "As Hyde puts it, \"Irony has only emergency use. Carried over time, it is the voice of the trapped who have come to enjoy their cage.\""
+      ],
+      "commentaries": [
+        "The author cites Lewis Hyde as an authority on the nature of self-mocking irony, using his insight to support the argument that irony functions as a strategic form of sincerity.",
+        "The author cites Hyde to illustrate how sustained irony becomes a self-perpetuating trap, functioning as a weary, entrenched posture rather than a liberating critique."
+      ],
+      "canonical_author": "Lewis Hyde"
+    },
+    {
+      "title": "",
+      "author": "Max Apple",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Max Apple, whose seventies short story 'The Oranging of America' projected an interior life onto the figure of Howard Johnson",
+        "Apple's Propheteers"
+      ],
+      "commentaries": [
+        "The author references Apple's story as an early use of imagist tactics, anthropomorphizing a pop-culture figure to explore interiority.",
+        "The author cites Apple's novel as a post-1985 example of image-fiction, imagining private lives of public figures."
+      ],
+      "canonical_author": "Max Apple"
+    },
+    {
+      "title": "",
+      "author": "Stendhal",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Not the Stendhalian mirror reflecting the blue sky and mud puddle."
+      ],
+      "commentaries": [
+        "The author references Stendhal's metaphor of the mirror to contrast it with television's reflective nature, implying Stendhal's concept is a literary touchstone for understanding representation."
+      ],
+      "canonical_author": "Stendhal"
+    },
+    {
+      "title": "",
+      "author": "Socrates",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "E unibus pluram.",
+        "As Socrates argued..."
+      ],
+      "commentaries": [
+        "The author invokes the Latin phrase 'E unibus pluram' (One from many), traditionally associated with Socrates in philosophical discourse on individuality and society, though it is actually a modern inversion of the U.S. motto 'E pluribus unum'; here, it is used ironically to reflect the paradox of solitude amidst mass media consumption.",
+        "The excerpt references Socrates as a source of philosophical insight, though no specific work is named, implying his ideas are invoked as foundational to the discussion of self and belief."
+      ],
+      "canonical_author": "Socrates"
+    },
+    {
+      "title": "",
+      "author": "Voltaire",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The Voltaire of Candide, for instance, uses a bisensuous irony that would do Ed Rabel proud, having Candide and Pangloss run around smiling and saying \"All for the best, the best of all worlds\" amid war-dead, pogroms, rampant nastiness."
+      ],
+      "commentaries": [
+        "The author references Voltaire's Candide as an early example of ironic, satirical technique that prefigures television's aesthetic of detached observation amid chaos."
+      ],
+      "canonical_author": "Voltaire"
+    },
+    {
+      "title": "",
+      "author": "Emerson",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "the gaze of millions.",
+        "carries the holiday in his eye."
+      ],
+      "commentaries": [
+        "The author cites Emerson as the originator of the concept of 'the gaze of millions,' using it to frame the psychological burden of being watched on television and to contrast the rare individuals capable of enduring such scrutiny.",
+        "The author references Emerson's phrase 'carries the holiday in his eye' to describe the rare, transcendent individuals who appear unself-conscious before the camera, embodying an illusion of freedom from self-awareness."
+      ],
+      "canonical_author": "Emerson"
+    },
+    {
+      "title": "",
+      "author": "Balzac",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "And let's not even talk about Balzac."
+      ],
+      "commentaries": [
+        "The author invokes Balzac implicitly as a precursor to modernist and postmodernist techniques, suggesting his realism already contained the seeds of media-saturated narrative forms."
+      ],
+      "canonical_author": "Balzac"
+    },
+    {
+      "title": "",
+      "author": "Coover",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "the Coover of Burning",
+        "Coover's A Night at the Movies, or You Must Remember This"
+      ],
+      "commentaries": [
+        "The author cites Coover's work as an early instance of treating mass media and watching as fertile fictional subjects.",
+        "The author cites Coover's work again as part of the late-eighties surge in image-fiction, blending film and fiction."
+      ],
+      "canonical_author": "Coover"
+    },
+    {
+      "title": "",
+      "author": "Plato",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "You can, trace the opposition between what persons do and ought to desire at least as far back as Plato's chariot or the Prodigal's return."
+      ],
+      "commentaries": [
+        "The author cites Plato's chariot as an ancient philosophical metaphor for internal conflict between desire and moral duty, positioning it as a historical precursor to modern media-induced guilt."
+      ],
+      "canonical_author": "Plato"
+    }
+  ]
+}

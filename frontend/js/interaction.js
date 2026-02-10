@@ -72,6 +72,14 @@ export class InteractionManager {
       };
     }
 
+    // Citation panel close
+    const citationPanelClose = document.getElementById('citation-panel-close');
+    if (citationPanelClose) {
+      citationPanelClose.addEventListener('click', () => {
+        this.app.exitFocusMode();
+      });
+    }
+
     // Focus exit button
     const focusExit = document.getElementById('focus-exit');
     if (focusExit) {
@@ -207,22 +215,30 @@ export class InteractionManager {
       if (this.app.focusMode) {
         // In focus mode
         if (hit.author && this.app.focusedNode && this.app.focusedNode.id === hit.author.id) {
-          // Double-click center exits (or clicking center)
+          // Clicking center node exits focus mode
           this.app.exitFocusMode();
         } else if (hit.book) {
-          this.app.showPanel(hit.book.data);
+          this.app.showDetailCard(hit.book.data);
         } else if (hit.author) {
-          this.app.showPanel(hit.author);
+          this.app.showDetailCard(hit.author);
         }
       } else {
         // Normal mode
-        if (hit.book) {
-          this.app.enterFocusMode(hit.author);
-          if (!this._isPortraitMobile()) {
-            this.app.showPanel(hit.book.data);
-          }
-        } else if (hit.author) {
-          this.app.enterFocusMode(hit.author);
+        if (hit.author.isSource) {
+          // Source nodes — enter focus mode
+          // If a specific source book was clicked, scope to that book
+          const sourceBook = (hit.book && hit.book.data && hit.book.data.isSource) ? hit.book : null;
+          this.app.enterFocusMode(hit.author, sourceBook);
+        } else if (hit.book) {
+          // Cited book — show detail directly
+          this.app.selectedNode = hit.author;
+          this.app.highlightAuthor(hit.author);
+          this.app.showPanel(hit.book.data);
+        } else {
+          // Cited author — show detail directly
+          this.app.selectedNode = hit.author;
+          this.app.highlightAuthor(hit.author);
+          this.app.showPanel(hit.author);
         }
       }
     } else {

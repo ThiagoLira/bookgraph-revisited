@@ -16730,14 +16730,15 @@
         "book_id": "web_f362b4d2",
         "author_meta": {
           "birth_year": 1988,
-          "death_year": null,
+          "death_year": 1590,
           "main_genre": "Technology & Business",
           "nationality": "American"
         }
       },
       "wikipedia_match": {
         "title": "Felix Priebatsch",
-        "birth_year": 1988
+        "birth_year": 1988,
+        "death_year": 1590
       },
       "edge": {
         "target_type": "book",
@@ -16745,7 +16746,8 @@
         "target_author_ids": [],
         "target_person": {
           "title": "Felix Priebatsch",
-          "birth_year": 1988
+          "birth_year": 1988,
+          "death_year": 1590
         }
       }
     },

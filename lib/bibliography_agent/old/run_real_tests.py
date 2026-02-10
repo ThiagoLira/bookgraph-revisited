@@ -46,7 +46,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model",
-        default="qwen/qwen3-next-80b-a3b-instruct",
+        default="deepseek/deepseek-v3.2",
         help="Model identifier for the agent.",
     )
     parser.add_argument(

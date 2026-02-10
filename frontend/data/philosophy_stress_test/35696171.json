@@ -2871,7 +2871,7 @@
           "Serbian people of German descent"
         ],
         "birth_year": 1937,
-        "death_year": null
+        "death_year": 2010
       },
       "edge": {
         "target_type": "author",
@@ -2918,7 +2918,7 @@
             "Serbian people of German descent"
           ],
           "birth_year": 1937,
-          "death_year": null
+          "death_year": 2010
         }
       }
     },
@@ -3042,7 +3042,7 @@
           "Fellows of the American Physical Society"
         ],
         "birth_year": 1960,
-        "death_year": null
+        "death_year": 1911
       },
       "edge": {
         "target_type": "author",
@@ -3073,7 +3073,7 @@
             "Fellows of the American Physical Society"
           ],
           "birth_year": 1960,
-          "death_year": null
+          "death_year": 1911
         }
       }
     },
@@ -5042,8 +5042,8 @@
           "Personality psychologists",
           "20th-century American psychologists"
         ],
-        "birth_year": null,
-        "death_year": null
+        "birth_year": 1824,
+        "death_year": 1889
       },
       "edge": {
         "target_type": "person",
@@ -5063,8 +5063,8 @@
             "Personality psychologists",
             "20th-century American psychologists"
           ],
-          "birth_year": null,
-          "death_year": null
+          "birth_year": 1824,
+          "death_year": 1889
         }
       }
     },
@@ -7315,7 +7315,8 @@
       },
       "wikipedia_match": {
         "title": "Lodge",
-        "birth_year": 1935
+        "birth_year": 1935,
+        "death_year": 1625
       },
       "edge": {
         "target_type": "author",
@@ -7325,7 +7326,8 @@
         ],
         "target_person": {
           "title": "Lodge",
-          "birth_year": 1935
+          "birth_year": 1935,
+          "death_year": 1625
         }
       }
     },
@@ -7816,7 +7818,8 @@
       },
       "wikipedia_match": {
         "title": "Brink",
-        "birth_year": 1958
+        "birth_year": 1958,
+        "death_year": 2015
       },
       "edge": {
         "target_type": "author",
@@ -7826,7 +7829,8 @@
         ],
         "target_person": {
           "title": "Brink",
-          "birth_year": 1958
+          "birth_year": 1958,
+          "death_year": 2015
         }
       }
     },
@@ -15427,7 +15431,8 @@
       },
       "wikipedia_match": {
         "title": "Fischer",
-        "birth_year": 1935
+        "birth_year": 1935,
+        "death_year": 1897
       },
       "edge": {
         "target_type": "author",
@@ -15437,7 +15442,8 @@
         ],
         "target_person": {
           "title": "Fischer",
-          "birth_year": 1935
+          "birth_year": 1935,
+          "death_year": 1897
         }
       }
     },
@@ -16140,7 +16146,8 @@
       },
       "wikipedia_match": {
         "title": "Malcolm Potts",
-        "birth_year": 1935
+        "birth_year": 1935,
+        "death_year": 2025
       },
       "edge": {
         "target_type": "book",
@@ -16151,7 +16158,8 @@
         ],
         "target_person": {
           "title": "Malcolm Potts",
-          "birth_year": 1935
+          "birth_year": 1935,
+          "death_year": 2025
         }
       }
     },
@@ -16665,7 +16673,7 @@
           "Jewish American women writers"
         ],
         "birth_year": 1956,
-        "death_year": null
+        "death_year": 1972
       },
       "edge": {
         "target_type": "author",
@@ -16701,7 +16709,7 @@
             "Jewish American women writers"
           ],
           "birth_year": 1956,
-          "death_year": null
+          "death_year": 1972
         }
       }
     },
@@ -20821,7 +20829,7 @@
           "Members of the German National Academy of Sciences Leopoldina"
         ],
         "birth_year": 1964,
-        "death_year": null
+        "death_year": 2023
       },
       "edge": {
         "target_type": "author",
@@ -20843,7 +20851,7 @@
             "Members of the German National Academy of Sciences Leopoldina"
           ],
           "birth_year": 1964,
-          "death_year": null
+          "death_year": 2023
         }
       }
     },
@@ -24165,7 +24173,7 @@
           "1944 births"
         ],
         "birth_year": 1944,
-        "death_year": null
+        "death_year": 2022
       },
       "edge": {
         "target_type": "author",
@@ -24199,7 +24207,7 @@
             "1944 births"
           ],
           "birth_year": 1944,
-          "death_year": null
+          "death_year": 2022
         }
       }
     },

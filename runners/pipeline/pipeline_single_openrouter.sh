@@ -21,16 +21,16 @@ fi
 
 if [[ $# -gt 0 ]] && [[ "$1" == "-h" || "$1" == "--help" ]]; then
   cat <<'EOF'
-Usage: ./pipeline_single_openrouter.sh [INPUT_TXT] [CHUNK_SIZE] [MAX_CONCURRENCY] [MAX_CONTEXT] [MAX_COMPLETION] [MODEL] [BASE_URL]
+Usage: ./pipeline_single_openrouter.sh [INPUT_TXT] [CHUNK_SIZE] [AGENT_CONCURRENCY] [MAX_CONTEXT] [EXTRACT_CONCURRENCY] [MODEL] [BASE_URL]
 
 Defaults:
-  INPUT_TXT       books/susan_sample.txt
-  CHUNK_SIZE      50
-  MAX_CONCURRENCY 20
-  MAX_CONTEXT     6144
-  MAX_COMPLETION  2048
-  MODEL           qwen/qwen3-next-80b-a3b-instruct
-  BASE_URL        https://openrouter.ai/api/v1
+  INPUT_TXT           books/susan_sample.txt
+  CHUNK_SIZE          50
+  AGENT_CONCURRENCY   20   (max concurrent citation-resolution workflows)
+  MAX_CONTEXT         6144
+  EXTRACT_CONCURRENCY 20   (max concurrent extraction requests)
+  MODEL               deepseek/deepseek-v3.2
+  BASE_URL            https://openrouter.ai/api/v1
 
 Reads OPENROUTER_API_KEY from the environment (load via .env automatically).
 EOF
@@ -39,10 +39,10 @@ fi
 
 INPUT_PATH="${1:-$PROJECT_ROOT/books/susan_sample.txt}"
 CHUNK_SIZE="${2:-50}"
-MAX_CONCURRENCY="${3:-20}"
+AGENT_CONCURRENCY="${3:-20}"
 MAX_CONTEXT="${4:-6144}"
-MAX_COMPLETION="${5:-2048}"
-MODEL_NAME="${6:-qwen/qwen3-next-80b-a3b-instruct}"
+EXTRACT_CONCURRENCY="${5:-20}"
+MODEL_NAME="${6:-deepseek/deepseek-v3.2}"
 BASE_URL="${7:-https://openrouter.ai/api/v1}"
 
 RUN_TS="$(date +%Y%m%d-%H%M%S)"
@@ -51,20 +51,20 @@ mkdir -p "$OUTPUT_DIR"
 RUN_LOG="$OUTPUT_DIR/run_single_file.log"
 
 echo "Running run_single_file.py against $BASE_URL" >&2
-echo "  Input file:        $INPUT_PATH" >&2
-echo "  Chunk size:        $CHUNK_SIZE" >&2
-echo "  Max concurrency:   $MAX_CONCURRENCY" >&2
-echo "  Max context:       $MAX_CONTEXT" >&2
-echo "  Max completion:    $MAX_COMPLETION" >&2
-echo "  Model:             $MODEL_NAME" >&2
-echo "  Output directory:  $OUTPUT_DIR" >&2
+echo "  Input file:           $INPUT_PATH" >&2
+echo "  Chunk size:           $CHUNK_SIZE" >&2
+echo "  Agent concurrency:    $AGENT_CONCURRENCY" >&2
+echo "  Extract concurrency:  $EXTRACT_CONCURRENCY" >&2
+echo "  Max context:          $MAX_CONTEXT" >&2
+echo "  Model:                $MODEL_NAME" >&2
+echo "  Output directory:     $OUTPUT_DIR" >&2
 
 set +e
 uv run "$PROJECT_ROOT/run_single_file.py" "$INPUT_PATH" \
   --chunk-size "$CHUNK_SIZE" \
-  --max-concurrency "$MAX_CONCURRENCY" \
+  --agent-concurrency "$AGENT_CONCURRENCY" \
+  --extract-concurrency "$EXTRACT_CONCURRENCY" \
   --max-context-per-request "$MAX_CONTEXT" \
-  --max-completion-tokens "$MAX_COMPLETION" \
   --base-url "$BASE_URL" \
   --api-key "$OPENROUTER_API_KEY" \
   --model "$MODEL_NAME" \

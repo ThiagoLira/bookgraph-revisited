@@ -1,0 +1,2151 @@
+{
+  "source": {
+    "title": "What I Believe",
+    "authors": [
+      "Bertrand Russell"
+    ],
+    "goodreads_id": "67354",
+    "calibre_id": null,
+    "publication_year": 2004,
+    "author_metadata": {
+      "birth_year": 1872,
+      "death_year": 1970,
+      "main_genre": "philosophy",
+      "nationality": "British"
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Socrates",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Russell agreed with Mill that Socrates dissatisfied is a better man than the fool satisfied."
+        ],
+        "commentaries": [
+          "The author cites Socrates as a philosophical reference point for valuing intellectual and moral integrity over mere pleasure, via Mill's formulation."
+        ],
+        "canonical_author": "Socrates"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Socrates",
+        "page_id": 25664190,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Socrates| ",
+          "5th-century BC Athenians",
+          "5th-century BC Greek philosophers",
+          "4th-century BC executions",
+          "470s BC births",
+          "399 BC deaths",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political philosophers",
+          "Ancient Greeks accused of sacrilege",
+          "Characters in the Divine Comedy",
+          "Critics of religions",
+          "Executed ancient Greek people",
+          "Executed philosophers",
+          "Family of Socrates",
+          "Forced suicides",
+          "Irony theorists",
+          "People executed by ancient Athens",
+          "People executed by poison",
+          "People executed for heresy",
+          "Philosophers of education",
+          "Classical theism",
+          "Male suicides",
+          "Suicides by poison"
+        ],
+        "birth_year": -470,
+        "death_year": -399
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Socrates",
+          "page_id": 25664190,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Socrates| ",
+            "5th-century BC Athenians",
+            "5th-century BC Greek philosophers",
+            "4th-century BC executions",
+            "470s BC births",
+            "399 BC deaths",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political philosophers",
+            "Ancient Greeks accused of sacrilege",
+            "Characters in the Divine Comedy",
+            "Critics of religions",
+            "Executed ancient Greek people",
+            "Executed philosophers",
+            "Family of Socrates",
+            "Forced suicides",
+            "Irony theorists",
+            "People executed by ancient Athens",
+            "People executed by poison",
+            "People executed for heresy",
+            "Philosophers of education",
+            "Classical theism",
+            "Male suicides",
+            "Suicides by poison"
+          ],
+          "birth_year": -470,
+          "death_year": -399
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "History of Western Philosophy",
+        "author": "Bertrand Russell",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In the middle 1950s, his History of Western Philosophy was a treat to teenage schoolboys bored to death with the slog of O Level."
+        ],
+        "commentaries": [
+          "The author recalls Russell's History of Western Philosophy as an influential and accessible work that shaped young readers' views on philosophy and religion."
+        ]
+      },
+      "goodreads_match": {
+        "publication_day": 2,
+        "publication_month": 2,
+        "book_id": "31796",
+        "work_id": "1167354",
+        "publisher": "Routledge",
+        "average_rating": 4.06,
+        "author_ids": [
+          "17854"
+        ],
+        "text_reviews_count": 34,
+        "title_without_series": "History of Western Philosophy",
+        "publication_year": 2004,
+        "format": "Paperback",
+        "title": "History of Western Philosophy",
+        "isbn13": "9780415325059",
+        "isbn": "0415325056",
+        "num_pages": 792,
+        "ratings_count": 402,
+        "authors": [
+          "Bertrand Russell"
+        ],
+        "description": "First published in 1946, History of Western Philosophywent on to become the best-selling philosophy book of the twentieth century. A dazzlingly ambitious project, it remains unchallenged to this day as the ultimate introduction to Western philosophy. Providing a sophisticated overview of the ideas that have perplexed people from time immemorial, it is 'long on wit, intelligence and curmudgeonly scepticism', as the New York Timesnoted, and it is this, coupled with the sheer brilliance of its scholarship, tha...",
+        "link": "https://www.goodreads.com/book/show/31796.History_of_Western_Philosophy",
+        "wikipedia_match": {
+          "title": "Bertrand Russell",
+          "page_id": 4163,
+          "infoboxes": [
+            "philosopher",
+            "officeholder",
+            "Bertrand Russell}}"
+          ],
+          "categories": [
+            "Bertrand Russell| ",
+            "1872 births",
+            "1970 deaths",
+            "19th-century atheists",
+            "20th-century atheists",
+            "19th-century British writers",
+            "19th-century British mathematicians",
+            "19th-century British philosophers",
+            "20th-century British writers",
+            "20th-century British mathematicians",
+            "20th-century British philosophers",
+            "Academics of the London School of Economics",
+            "Alumni of Trinity College, Cambridge",
+            "Analytic philosophers",
+            "Anti–Vietnam War activists",
+            "Atheist philosophers",
+            "British atheism activists",
+            "British anti–World War I activists",
+            "Consequentialists",
+            "Campaign for Nuclear Disarmament",
+            "British critics of Christianity",
+            "Critics of religions",
+            "Critics of work and the work ethic",
+            "De Morgan Medallists",
+            "Deaths from influenza",
+            "European democratic socialists",
+            "Earls in the Peerage of the United Kingdom",
+            "Empiricists",
+            "British agnostics",
+            "British anti-communists"
+          ],
+          "birth_year": 1872,
+          "death_year": 1970
+        },
+        "original_year": 1945,
+        "author_meta": {
+          "birth_year": 1872,
+          "death_year": 1970,
+          "main_genre": "philosophy",
+          "nationality": "British"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Bertrand Russell",
+        "page_id": 4163,
+        "infoboxes": [
+          "philosopher",
+          "officeholder",
+          "Bertrand Russell}}"
+        ],
+        "categories": [
+          "Bertrand Russell| ",
+          "1872 births",
+          "1970 deaths",
+          "19th-century atheists",
+          "20th-century atheists",
+          "19th-century British writers",
+          "19th-century British mathematicians",
+          "19th-century British philosophers",
+          "20th-century British writers",
+          "20th-century British mathematicians",
+          "20th-century British philosophers",
+          "Academics of the London School of Economics",
+          "Alumni of Trinity College, Cambridge",
+          "Analytic philosophers",
+          "Anti–Vietnam War activists",
+          "Atheist philosophers",
+          "British atheism activists",
+          "British anti–World War I activists",
+          "Consequentialists",
+          "Campaign for Nuclear Disarmament",
+          "British critics of Christianity",
+          "Critics of religions",
+          "Critics of work and the work ethic",
+          "De Morgan Medallists",
+          "Deaths from influenza",
+          "European democratic socialists",
+          "Earls in the Peerage of the United Kingdom",
+          "Empiricists",
+          "British agnostics",
+          "British anti-communists"
+        ],
+        "birth_year": 1872,
+        "death_year": 1970
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "31796",
+        "target_author_ids": [
+          "17854"
+        ],
+        "target_person": {
+          "title": "Bertrand Russell",
+          "page_id": 4163,
+          "infoboxes": [
+            "philosopher",
+            "officeholder",
+            "Bertrand Russell}}"
+          ],
+          "categories": [
+            "Bertrand Russell| ",
+            "1872 births",
+            "1970 deaths",
+            "19th-century atheists",
+            "20th-century atheists",
+            "19th-century British writers",
+            "19th-century British mathematicians",
+            "19th-century British philosophers",
+            "20th-century British writers",
+            "20th-century British mathematicians",
+            "20th-century British philosophers",
+            "Academics of the London School of Economics",
+            "Alumni of Trinity College, Cambridge",
+            "Analytic philosophers",
+            "Anti–Vietnam War activists",
+            "Atheist philosophers",
+            "British atheism activists",
+            "British anti–World War I activists",
+            "Consequentialists",
+            "Campaign for Nuclear Disarmament",
+            "British critics of Christianity",
+            "Critics of religions",
+            "Critics of work and the work ethic",
+            "De Morgan Medallists",
+            "Deaths from influenza",
+            "European democratic socialists",
+            "Earls in the Peerage of the United Kingdom",
+            "Empiricists",
+            "British agnostics",
+            "British anti-communists"
+          ],
+          "birth_year": 1872,
+          "death_year": 1970
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Freud",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Rivers thought Freud exaggerated his insights, but had no doubt that we are all much more at the mercy of hidden impulses than we like to think. So did Russell. In particular, Russell came close to believing that human beings were instinctively impelled to destruction for its own sake, something that Freud’s account of the ‘death wish’ also suggests."
+        ],
+        "commentaries": [
+          "The author references Freud's concept of the 'death wish' as a psychological framework Russell adopted to explain human destructive impulses."
+        ],
+        "canonical_author": "Freud"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sigmund Freud",
+        "page_id": 26743,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Sigmund Freud| ",
+          "19th-century Austrian male writers",
+          "20th-century Austrian male writers",
+          "1856 births",
+          "1939 deaths",
+          "19th-century Austrian physicians",
+          "19th-century Austrian writers",
+          "20th-century Austrian writers",
+          "Narcissism writers",
+          "Austrian Ashkenazi Jews",
+          "19th-century Austrian Jews",
+          "Austrian logicians",
+          "Austrian Lutherans",
+          "Austrian atheists",
+          "Austrian neurologists",
+          "Austrian people of Ukrainian-Jewish descent",
+          "Austrian secular Jews",
+          "Jews from Austria-Hungary",
+          "Critics of religions",
+          "Deaths by euthanasia",
+          "Drug-related deaths in London",
+          "People cremated at Golders Green Crematorium",
+          "Foreign members of the Royal Society",
+          "Freud family|Sigmund",
+          "History of psychiatry",
+          "Jewish atheists",
+          "Jewish Austrian writers",
+          "Jewish Czech writers",
+          "Jewish emigrants from Austria after the Anschluss to the United Kingdom",
+          "Jewish physicians"
+        ],
+        "birth_year": 1856,
+        "death_year": 1939
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "10017"
+        ],
+        "target_person": {
+          "title": "Sigmund Freud",
+          "page_id": 26743,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Sigmund Freud| ",
+            "19th-century Austrian male writers",
+            "20th-century Austrian male writers",
+            "1856 births",
+            "1939 deaths",
+            "19th-century Austrian physicians",
+            "19th-century Austrian writers",
+            "20th-century Austrian writers",
+            "Narcissism writers",
+            "Austrian Ashkenazi Jews",
+            "19th-century Austrian Jews",
+            "Austrian logicians",
+            "Austrian Lutherans",
+            "Austrian atheists",
+            "Austrian neurologists",
+            "Austrian people of Ukrainian-Jewish descent",
+            "Austrian secular Jews",
+            "Jews from Austria-Hungary",
+            "Critics of religions",
+            "Deaths by euthanasia",
+            "Drug-related deaths in London",
+            "People cremated at Golders Green Crematorium",
+            "Foreign members of the Royal Society",
+            "Freud family|Sigmund",
+            "History of psychiatry",
+            "Jewish atheists",
+            "Jewish Austrian writers",
+            "Jewish Czech writers",
+            "Jewish emigrants from Austria after the Anschluss to the United Kingdom",
+            "Jewish physicians"
+          ],
+          "birth_year": 1856,
+          "death_year": 1939
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Rousseau",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Rousseau is, of course, the great protagonist of this view in Europe.",
+          "Rousseau has got used to these things, and does not regard them as against nature."
+        ],
+        "commentaries": [
+          "The author cites Rousseau as the principal historical advocate of the view that opposes the 'unnatural' application of science to human life.",
+          "The author uses Rousseau as an example of someone whose conception of 'nature' is shaped by personal experience and historical context, without citing a specific work."
+        ],
+        "canonical_author": "Rousseau"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Rousseau",
+        "birth_year": 1712,
+        "death_year": 1778
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7994"
+        ],
+        "target_person": {
+          "title": "Rousseau",
+          "birth_year": 1712,
+          "death_year": 1778
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John Dewey",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "he accused the American pragmatist John Dewey of ‘impiety’ in suggesting that nature was somehow infused with human purpose."
+        ],
+        "commentaries": [
+          "The author cites Dewey as a thinker whose views on nature Russell criticized, using this to illustrate Russell's rejection of anthropocentric interpretations of nature."
+        ],
+        "canonical_author": "John Dewey"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Dewey",
+        "page_id": 16187,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "John Dewey| ",
+          "1859 births",
+          "1952 deaths",
+          "19th-century American philosophers",
+          "19th-century atheists",
+          "20th-century American philosophers",
+          "20th-century atheists",
+          "American atheists",
+          "American democratic socialists",
+          "American humanists",
+          "American logicians",
+          "American political philosophers",
+          "Analytic philosophers",
+          "Atheist philosophers",
+          "American epistemologists",
+          "Georgists",
+          "Ontologists",
+          "American philosophers of art",
+          "American philosophers of mind",
+          "American philosophers of science",
+          "American philosophers of technology",
+          "Pragmatists",
+          "Vermont socialists",
+          "19th-century educational theorists",
+          "19th-century psychologists",
+          "20th-century American educational theorists",
+          "20th-century American psychologists",
+          "Education in Chicago",
+          "Functionalist psychologists",
+          "19th-century American writers"
+        ],
+        "birth_year": 1859,
+        "death_year": 1952
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "42738"
+        ],
+        "target_person": {
+          "title": "John Dewey",
+          "page_id": 16187,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "John Dewey| ",
+            "1859 births",
+            "1952 deaths",
+            "19th-century American philosophers",
+            "19th-century atheists",
+            "20th-century American philosophers",
+            "20th-century atheists",
+            "American atheists",
+            "American democratic socialists",
+            "American humanists",
+            "American logicians",
+            "American political philosophers",
+            "Analytic philosophers",
+            "Atheist philosophers",
+            "American epistemologists",
+            "Georgists",
+            "Ontologists",
+            "American philosophers of art",
+            "American philosophers of mind",
+            "American philosophers of science",
+            "American philosophers of technology",
+            "Pragmatists",
+            "Vermont socialists",
+            "19th-century educational theorists",
+            "19th-century psychologists",
+            "20th-century American educational theorists",
+            "20th-century American psychologists",
+            "Education in Chicago",
+            "Functionalist psychologists",
+            "19th-century American writers"
+          ],
+          "birth_year": 1859,
+          "death_year": 1952
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Brave New World",
+        "author": "Huxley",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "or be turned into the docile creatures imagined in Huxley’s Brave New World - a book that was probably inspired by Russell’s Icarus — genetically engineered to fit into our social roles, and fed drugs that would achieve whatever eugenics had not."
+        ],
+        "commentaries": [
+          "The author references Huxley’s novel as a dystopian vision potentially inspired by Russell’s Icarus, illustrating fears of technological control and dehumanization."
+        ]
+      },
+      "goodreads_match": {
+        "book_id": "17713856",
+        "work_id": "3204877",
+        "publisher": "RosettaBooks, LLC.",
+        "average_rating": 3.97,
+        "author_ids": [
+          "3487"
+        ],
+        "text_reviews_count": 3,
+        "title_without_series": "Brave New World",
+        "publication_year": 2010,
+        "format": "ebook",
+        "title": "Brave New World",
+        "isbn13": "9780795311253",
+        "isbn": "0795311257",
+        "num_pages": 192,
+        "ratings_count": 30,
+        "authors": [
+          "Aldous Huxley"
+        ],
+        "description": "Huxley's bleak future prophesized in Brave New World was a capitalist civilization which had been reconstituted through scientific and psychological engineering, a world in which people are genetically designed to be passive and useful to the ruling class. Satirical and disturbing, Brave New World is set some 600 years ahead, in \"this year of stability, A.F. 632\"--the A.F. standing for After Ford, meaning the godlike Henry Ford. \"Community, Identity, Stability,\" is the motto. Reproduction is controlled thro...",
+        "link": "https://www.goodreads.com/book/show/17713856-brave-new-world",
+        "wikipedia_match": {
+          "title": "Aldous Huxley",
+          "page_id": 628,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Aldous Huxley| ",
+            "1894 births",
+            "1963 deaths",
+            "20th-century English essayists",
+            "20th-century English novelists",
+            "20th-century English philosophers",
+            "20th-century English short story writers",
+            "20th-century mystics",
+            "Alumni of Balliol College, Oxford",
+            "Anti-consumerists",
+            "Bates method",
+            "British philosophers of culture",
+            "British philosophers of mind",
+            "British psychedelic drug advocates",
+            "British satirical novelists",
+            "Burials in Surrey",
+            "Deaths from laryngeal cancer in the United States",
+            "Deaths from throat cancer in California",
+            "Duke University faculty",
+            "English agnostics",
+            "English emigrants to the United States",
+            "English male essayists",
+            "English male novelists",
+            "English male poets",
+            "English male short story writers",
+            "English pacifists",
+            "English people of Cornish descent",
+            "English satirists",
+            "English science fiction writers",
+            "English travel writers"
+          ],
+          "birth_year": 1894,
+          "death_year": 1963
+        },
+        "original_year": 1932,
+        "author_meta": {
+          "birth_year": 1894,
+          "canonical_name": "Aldous Huxley",
+          "death_year": 1963
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aldous Huxley",
+        "page_id": 628,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Aldous Huxley| ",
+          "1894 births",
+          "1963 deaths",
+          "20th-century English essayists",
+          "20th-century English novelists",
+          "20th-century English philosophers",
+          "20th-century English short story writers",
+          "20th-century mystics",
+          "Alumni of Balliol College, Oxford",
+          "Anti-consumerists",
+          "Bates method",
+          "British philosophers of culture",
+          "British philosophers of mind",
+          "British psychedelic drug advocates",
+          "British satirical novelists",
+          "Burials in Surrey",
+          "Deaths from laryngeal cancer in the United States",
+          "Deaths from throat cancer in California",
+          "Duke University faculty",
+          "English agnostics",
+          "English emigrants to the United States",
+          "English male essayists",
+          "English male novelists",
+          "English male poets",
+          "English male short story writers",
+          "English pacifists",
+          "English people of Cornish descent",
+          "English satirists",
+          "English science fiction writers",
+          "English travel writers"
+        ],
+        "birth_year": 1894,
+        "death_year": 1963
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "17713856",
+        "target_author_ids": [
+          "3487"
+        ],
+        "target_person": {
+          "title": "Aldous Huxley",
+          "page_id": 628,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Aldous Huxley| ",
+            "1894 births",
+            "1963 deaths",
+            "20th-century English essayists",
+            "20th-century English novelists",
+            "20th-century English philosophers",
+            "20th-century English short story writers",
+            "20th-century mystics",
+            "Alumni of Balliol College, Oxford",
+            "Anti-consumerists",
+            "Bates method",
+            "British philosophers of culture",
+            "British philosophers of mind",
+            "British psychedelic drug advocates",
+            "British satirical novelists",
+            "Burials in Surrey",
+            "Deaths from laryngeal cancer in the United States",
+            "Deaths from throat cancer in California",
+            "Duke University faculty",
+            "English agnostics",
+            "English emigrants to the United States",
+            "English male essayists",
+            "English male novelists",
+            "English male poets",
+            "English male short story writers",
+            "English pacifists",
+            "English people of Cornish descent",
+            "English satirists",
+            "English science fiction writers",
+            "English travel writers"
+          ],
+          "birth_year": 1894,
+          "death_year": 1963
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Republic",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "What I mean may become plain by comparison with Plato's Republic."
+        ],
+        "commentaries": [
+          "The author invokes Plato's Republic as a conceptual contrast to illustrate the individualistic focus of Christian morality, suggesting it offers a more socially oriented vision of the good life."
+        ]
+      },
+      "goodreads_match": {
+        "publication_day": 28,
+        "publication_month": 10,
+        "book_id": "23508839",
+        "work_id": "1625515",
+        "publisher": "Open Road Media",
+        "average_rating": 3.91,
+        "author_ids": [
+          "879"
+        ],
+        "text_reviews_count": 3,
+        "title_without_series": "The Republic",
+        "publication_year": 2014,
+        "format": "Kindle Edition",
+        "title": "The Republic",
+        "num_pages": 320,
+        "ratings_count": 157,
+        "authors": [
+          "Plato"
+        ],
+        "description": "Plato's most famous work and the bedrock of Western philosophy\nWritten in the form of a Socratic dialogue, The Republic is an investigation into the nature of an ideal society. In this far-reaching and profoundly influential treatise, Plato explores the concept of justice, the connection between politics and psychology, the difference between words and what they represent, and the roles of art and education, among many other topics. A towering achievement of philosophical insight, The Republic is as relevan...",
+        "link": "https://www.goodreads.com/book/show/23508839-the-republic",
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        },
+        "original_year": -400,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "23508839",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "David Copperfield",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "David Copperfield and Oliver Twist are by no means imaginary."
+        ],
+        "commentaries": [
+          "The author references David Copperfield as a literary example of childhood cruelty, implying the character illustrates real societal patterns."
+        ],
+        "canonical_author": "David Copperfield"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "David Copperfield",
+        "birth_year": 1956
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "161701"
+        ],
+        "target_person": {
+          "title": "David Copperfield",
+          "birth_year": 1956
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lao-Tze",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In Asia, Lao-Tze has set it forth even more persuasively, and 2400 years sooner."
+        ],
+        "commentaries": [
+          "The author cites Lao-Tze as an early voice on the concept of nature, referencing his views without naming a specific text."
+        ],
+        "canonical_author": "Lao-Tze"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Laozi",
+        "page_id": 65119,
+        "infoboxes": [
+          "philosopher",
+          "Chinese"
+        ],
+        "categories": [
+          "Laozi| ",
+          "6th-century BC Chinese philosophers",
+          "Chinese political philosophers",
+          "Deified Chinese men",
+          "Deities in Chinese folk religion",
+          "Founders of religions",
+          "Journey to the West characters",
+          "Investiture of the Gods characters",
+          "Metaphysicians",
+          "Asian people whose existence is disputed",
+          "Philosophers of mind",
+          "Proto-anarchists",
+          "Social philosophers",
+          "Taoist immortals",
+          "Zhou dynasty philosophers",
+          "Zhou dynasty Taoists",
+          "Taoist deities"
+        ],
+        "birth_year": -604,
+        "death_year": -531
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Laozi",
+          "page_id": 65119,
+          "infoboxes": [
+            "philosopher",
+            "Chinese"
+          ],
+          "categories": [
+            "Laozi| ",
+            "6th-century BC Chinese philosophers",
+            "Chinese political philosophers",
+            "Deified Chinese men",
+            "Deities in Chinese folk religion",
+            "Founders of religions",
+            "Journey to the West characters",
+            "Investiture of the Gods characters",
+            "Metaphysicians",
+            "Asian people whose existence is disputed",
+            "Philosophers of mind",
+            "Proto-anarchists",
+            "Social philosophers",
+            "Taoist immortals",
+            "Zhou dynasty philosophers",
+            "Zhou dynasty Taoists",
+            "Taoist deities"
+          ],
+          "birth_year": -604,
+          "death_year": -531
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bentham",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Bentham supposed that the whole of morality could be derived from ‘enlightened self-interest’, and that a person who always acted with a view to his own maximum satisfaction in the long run would always act rightly."
+        ],
+        "commentaries": [
+          "The author cites Bentham's utilitarian theory of morality as a position he rejects, noting that it fails to account for moral actions beyond self-interest."
+        ],
+        "canonical_author": "Bentham"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Jeremy Bentham",
+        "page_id": 46038,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1748 births",
+          "1832 deaths",
+          "People with Asperger syndrome",
+          "18th century in LGBTQ history",
+          "18th-century atheists",
+          "19th-century atheists",
+          "18th-century British philosophers",
+          "19th-century British philosophers",
+          "18th-century English writers",
+          "18th-century English male writers",
+          "19th-century English writers",
+          "Animal rights scholars",
+          "Atheist philosophers",
+          "British ethicists",
+          "British reformers",
+          "British social liberals",
+          "Consequentialists",
+          "English atheists",
+          "English human rights activists",
+          "English male non-fiction writers",
+          "English philosophers",
+          "English political philosophers",
+          "Jeremy Bentham",
+          "English autistic people",
+          "LGBTQ history in the United Kingdom",
+          "Mummies",
+          "People associated with University College London",
+          "People educated at Westminster School, London",
+          "People from the City of London",
+          "Philosophers of law"
+        ],
+        "birth_year": 1748,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "59867"
+        ],
+        "target_person": {
+          "title": "Jeremy Bentham",
+          "page_id": 46038,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1748 births",
+            "1832 deaths",
+            "People with Asperger syndrome",
+            "18th century in LGBTQ history",
+            "18th-century atheists",
+            "19th-century atheists",
+            "18th-century British philosophers",
+            "19th-century British philosophers",
+            "18th-century English writers",
+            "18th-century English male writers",
+            "19th-century English writers",
+            "Animal rights scholars",
+            "Atheist philosophers",
+            "British ethicists",
+            "British reformers",
+            "British social liberals",
+            "Consequentialists",
+            "English atheists",
+            "English human rights activists",
+            "English male non-fiction writers",
+            "English philosophers",
+            "English political philosophers",
+            "Jeremy Bentham",
+            "English autistic people",
+            "LGBTQ history in the United Kingdom",
+            "Mummies",
+            "People associated with University College London",
+            "People educated at Westminster School, London",
+            "People from the City of London",
+            "Philosophers of law"
+          ],
+          "birth_year": 1748,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Daedalus",
+        "author": "Haldane",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "J. B. S. Haldane’s Daedalus, had offered an optimistic view of what science would do for humanity in the future; Russell riposted with Icarus, to point out that Daedalus’s son learned how to fly, but not how to fly intelligently."
+        ],
+        "commentaries": [
+          "The author presents Haldane’s Daedalus as a counterpoint to Russell’s Icarus, framing it as an optimistic vision of science that Russell deliberately challenged."
+        ]
+      },
+      "goodreads_match": {
+        "book_id": "11473864",
+        "work_id": "2977713",
+        "publisher": "E. P. Dutton",
+        "average_rating": 3.89,
+        "author_ids": [
+          "13264692"
+        ],
+        "text_reviews_count": 1,
+        "title_without_series": "Daedalus, Or, Science and the Future",
+        "publication_year": 1926,
+        "title": "Daedalus, Or, Science and the Future",
+        "ratings_count": 4,
+        "authors": [
+          "J.B.S. Haldane"
+        ],
+        "description": "Daedalus; or, Science and the Future is a book by the British scientist J. B. S. Haldane, published in England in 1924. It was the text of a lecture read to the Heretics Society, an intellectual club at Cambridge University on 4 February 1923.\nHaldane uses the Greek myth of Daedalus as a symbol for the revolutionary nature of science with particular regard to his own discipline of biology.\n\"The chemical or physical inventor is always a Prometheus. There is no great invention, from fire to flying, which has....",
+        "link": "https://www.goodreads.com/book/show/11473864-daedalus-or-science-and-the-future",
+        "original_year": 1923,
+        "author_meta": {
+          "birth_year": 1892,
+          "death_year": 1964,
+          "canonical_name": "J. B. S. Haldane"
+        }
+      },
+      "wikipedia_match": {
+        "title": "J.B.S. Haldane",
+        "birth_year": 1892,
+        "death_year": 1964
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "11473864",
+        "target_author_ids": [
+          "13264692"
+        ],
+        "target_person": {
+          "title": "J.B.S. Haldane",
+          "birth_year": 1892,
+          "death_year": 1964
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hume",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Or, as Hume put it with the sharpness that Russell relished, ‘reason is and ought to be the slave of the passions’."
+        ],
+        "commentaries": [
+          "The author cites Hume's formulation to illustrate Russell's empiricist view of reason as subordinate to desire."
+        ],
+        "canonical_author": "Hume"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hume",
+        "birth_year": 1711,
+        "death_year": -1776
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "45726"
+        ],
+        "target_person": {
+          "title": "Hume",
+          "birth_year": 1711,
+          "death_year": -1776
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Why I am not a Christian",
+        "author": "Bertrand Russell",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Why I am not a Christian was an even more valuable weapon against authority."
+        ],
+        "commentaries": [
+          "The author cites Why I am not a Christian as a key text Russell used to challenge religious authority, particularly among young readers."
+        ]
+      },
+      "goodreads_match": {
+        "book_id": "51782",
+        "work_id": "1043242",
+        "publisher": "Routledge",
+        "average_rating": 4.02,
+        "author_ids": [
+          "17854",
+          "17871"
+        ],
+        "text_reviews_count": 37,
+        "title_without_series": "Why I Am Not a Christian",
+        "publication_year": 2004,
+        "format": "Paperback",
+        "title": "Why I Am Not a Christian",
+        "isbn13": "9780415325103",
+        "isbn": "0415325102",
+        "num_pages": 223,
+        "ratings_count": 377,
+        "authors": [
+          "Bertrand Russell",
+          "Simon Blackburn"
+        ],
+        "description": "While its tone is playful and frivolous, this book poses tough questions over the nature of religion and belief.\nReligion provides comfortable responses to the questions that have always beset humankind - why are we here, what is the point of being alive, how ought we to behave? Russell snatches that comfort away, leaving us instead with other, more troublesome alternatives: responsibility, autonomy, self-awareness. He tells us that the time to live is now, the place to live is here, and the way to be happy...",
+        "link": "https://www.goodreads.com/book/show/51782.Why_I_Am_Not_a_Christian",
+        "wikipedia_match": {
+          "title": "Bertrand Russell",
+          "page_id": 4163,
+          "infoboxes": [
+            "philosopher",
+            "officeholder",
+            "Bertrand Russell}}"
+          ],
+          "categories": [
+            "Bertrand Russell| ",
+            "1872 births",
+            "1970 deaths",
+            "19th-century atheists",
+            "20th-century atheists",
+            "19th-century British writers",
+            "19th-century British mathematicians",
+            "19th-century British philosophers",
+            "20th-century British writers",
+            "20th-century British mathematicians",
+            "20th-century British philosophers",
+            "Academics of the London School of Economics",
+            "Alumni of Trinity College, Cambridge",
+            "Analytic philosophers",
+            "Anti–Vietnam War activists",
+            "Atheist philosophers",
+            "British atheism activists",
+            "British anti–World War I activists",
+            "Consequentialists",
+            "Campaign for Nuclear Disarmament",
+            "British critics of Christianity",
+            "Critics of religions",
+            "Critics of work and the work ethic",
+            "De Morgan Medallists",
+            "Deaths from influenza",
+            "European democratic socialists",
+            "Earls in the Peerage of the United Kingdom",
+            "Empiricists",
+            "British agnostics",
+            "British anti-communists"
+          ],
+          "birth_year": 1872,
+          "death_year": 1970
+        },
+        "original_year": 1957,
+        "author_meta": {
+          "birth_year": 1872,
+          "death_year": 1970,
+          "main_genre": "philosophy",
+          "nationality": "British"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Bertrand Russell",
+        "page_id": 4163,
+        "infoboxes": [
+          "philosopher",
+          "officeholder",
+          "Bertrand Russell}}"
+        ],
+        "categories": [
+          "Bertrand Russell| ",
+          "1872 births",
+          "1970 deaths",
+          "19th-century atheists",
+          "20th-century atheists",
+          "19th-century British writers",
+          "19th-century British mathematicians",
+          "19th-century British philosophers",
+          "20th-century British writers",
+          "20th-century British mathematicians",
+          "20th-century British philosophers",
+          "Academics of the London School of Economics",
+          "Alumni of Trinity College, Cambridge",
+          "Analytic philosophers",
+          "Anti–Vietnam War activists",
+          "Atheist philosophers",
+          "British atheism activists",
+          "British anti–World War I activists",
+          "Consequentialists",
+          "Campaign for Nuclear Disarmament",
+          "British critics of Christianity",
+          "Critics of religions",
+          "Critics of work and the work ethic",
+          "De Morgan Medallists",
+          "Deaths from influenza",
+          "European democratic socialists",
+          "Earls in the Peerage of the United Kingdom",
+          "Empiricists",
+          "British agnostics",
+          "British anti-communists"
+        ],
+        "birth_year": 1872,
+        "death_year": 1970
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "51782",
+        "target_author_ids": [
+          "17854",
+          "17871"
+        ],
+        "target_person": {
+          "title": "Bertrand Russell",
+          "page_id": 4163,
+          "infoboxes": [
+            "philosopher",
+            "officeholder",
+            "Bertrand Russell}}"
+          ],
+          "categories": [
+            "Bertrand Russell| ",
+            "1872 births",
+            "1970 deaths",
+            "19th-century atheists",
+            "20th-century atheists",
+            "19th-century British writers",
+            "19th-century British mathematicians",
+            "19th-century British philosophers",
+            "20th-century British writers",
+            "20th-century British mathematicians",
+            "20th-century British philosophers",
+            "Academics of the London School of Economics",
+            "Alumni of Trinity College, Cambridge",
+            "Analytic philosophers",
+            "Anti–Vietnam War activists",
+            "Atheist philosophers",
+            "British atheism activists",
+            "British anti–World War I activists",
+            "Consequentialists",
+            "Campaign for Nuclear Disarmament",
+            "British critics of Christianity",
+            "Critics of religions",
+            "Critics of work and the work ethic",
+            "De Morgan Medallists",
+            "Deaths from influenza",
+            "European democratic socialists",
+            "Earls in the Peerage of the United Kingdom",
+            "Empiricists",
+            "British agnostics",
+            "British anti-communists"
+          ],
+          "birth_year": 1872,
+          "death_year": 1970
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Principles of Social Reconstruction",
+        "author": "Bertrand Russell",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Much that is taken for granted in What I Believe is argued for at some length in The Principles of Social Reconstruction.",
+          "He was deeply opposed to the war and, as a member of the Union for Democratic Control early in the war and later as a leading figure in the No-Conscription Fellowship, he worked unceasingly to bring the war to an early end... Russell gave a strikingly successful series of lectures on The Principles of Social Reconstruction."
+        ],
+        "commentaries": [
+          "The author identifies The Principles of Social Reconstruction as the foundational text from which key ideas in What I Believe are derived.",
+          "The author notes that Russell's lectures on The Principles of Social Reconstruction formed the basis of his political philosophy, linking them directly to his activism."
+        ]
+      },
+      "goodreads_match": {
+        "publication_day": 16,
+        "publication_month": 7,
+        "book_id": "1418240",
+        "work_id": "3127315",
+        "publisher": "Routledge",
+        "average_rating": 3.9,
+        "author_ids": [
+          "17854"
+        ],
+        "text_reviews_count": 6,
+        "title_without_series": "Principles of Social Reconstruction",
+        "publication_year": 2005,
+        "format": "Paperback",
+        "title": "Principles of Social Reconstruction",
+        "isbn13": "9780415143493",
+        "isbn": "0415143497",
+        "ratings_count": 49,
+        "authors": [
+          "Bertrand Russell"
+        ],
+        "description": "This book, originally entitled Why Men Fight, is generally seen as the fullest expression of Russell's political philosophy. Russell argues that after the experience of the Great War the individualistic approach of traditional liberalism had reached its limits. Political theory must be based on the motivating forces of creativity and impulse, rather than on competition. Both are best fostered in the family, in education, and in religion - each of which Russell proceeds to discuss. The ideas expressed in Pri...",
+        "link": "https://www.goodreads.com/book/show/1418240.Principles_of_Social_Reconstruction",
+        "wikipedia_match": {
+          "title": "Bertrand Russell",
+          "page_id": 4163,
+          "infoboxes": [
+            "philosopher",
+            "officeholder",
+            "Bertrand Russell}}"
+          ],
+          "categories": [
+            "Bertrand Russell| ",
+            "1872 births",
+            "1970 deaths",
+            "19th-century atheists",
+            "20th-century atheists",
+            "19th-century British writers",
+            "19th-century British mathematicians",
+            "19th-century British philosophers",
+            "20th-century British writers",
+            "20th-century British mathematicians",
+            "20th-century British philosophers",
+            "Academics of the London School of Economics",
+            "Alumni of Trinity College, Cambridge",
+            "Analytic philosophers",
+            "Anti–Vietnam War activists",
+            "Atheist philosophers",
+            "British atheism activists",
+            "British anti–World War I activists",
+            "Consequentialists",
+            "Campaign for Nuclear Disarmament",
+            "British critics of Christianity",
+            "Critics of religions",
+            "Critics of work and the work ethic",
+            "De Morgan Medallists",
+            "Deaths from influenza",
+            "European democratic socialists",
+            "Earls in the Peerage of the United Kingdom",
+            "Empiricists",
+            "British agnostics",
+            "British anti-communists"
+          ],
+          "birth_year": 1872,
+          "death_year": 1970
+        },
+        "original_year": 1916,
+        "author_meta": {
+          "birth_year": 1872,
+          "death_year": 1970,
+          "main_genre": "philosophy",
+          "nationality": "British"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Bertrand Russell",
+        "page_id": 4163,
+        "infoboxes": [
+          "philosopher",
+          "officeholder",
+          "Bertrand Russell}}"
+        ],
+        "categories": [
+          "Bertrand Russell| ",
+          "1872 births",
+          "1970 deaths",
+          "19th-century atheists",
+          "20th-century atheists",
+          "19th-century British writers",
+          "19th-century British mathematicians",
+          "19th-century British philosophers",
+          "20th-century British writers",
+          "20th-century British mathematicians",
+          "20th-century British philosophers",
+          "Academics of the London School of Economics",
+          "Alumni of Trinity College, Cambridge",
+          "Analytic philosophers",
+          "Anti–Vietnam War activists",
+          "Atheist philosophers",
+          "British atheism activists",
+          "British anti–World War I activists",
+          "Consequentialists",
+          "Campaign for Nuclear Disarmament",
+          "British critics of Christianity",
+          "Critics of religions",
+          "Critics of work and the work ethic",
+          "De Morgan Medallists",
+          "Deaths from influenza",
+          "European democratic socialists",
+          "Earls in the Peerage of the United Kingdom",
+          "Empiricists",
+          "British agnostics",
+          "British anti-communists"
+        ],
+        "birth_year": 1872,
+        "death_year": 1970
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1418240",
+        "target_author_ids": [
+          "17854"
+        ],
+        "target_person": {
+          "title": "Bertrand Russell",
+          "page_id": 4163,
+          "infoboxes": [
+            "philosopher",
+            "officeholder",
+            "Bertrand Russell}}"
+          ],
+          "categories": [
+            "Bertrand Russell| ",
+            "1872 births",
+            "1970 deaths",
+            "19th-century atheists",
+            "20th-century atheists",
+            "19th-century British writers",
+            "19th-century British mathematicians",
+            "19th-century British philosophers",
+            "20th-century British writers",
+            "20th-century British mathematicians",
+            "20th-century British philosophers",
+            "Academics of the London School of Economics",
+            "Alumni of Trinity College, Cambridge",
+            "Analytic philosophers",
+            "Anti–Vietnam War activists",
+            "Atheist philosophers",
+            "British atheism activists",
+            "British anti–World War I activists",
+            "Consequentialists",
+            "Campaign for Nuclear Disarmament",
+            "British critics of Christianity",
+            "Critics of religions",
+            "Critics of work and the work ethic",
+            "De Morgan Medallists",
+            "Deaths from influenza",
+            "European democratic socialists",
+            "Earls in the Peerage of the United Kingdom",
+            "Empiricists",
+            "British agnostics",
+            "British anti-communists"
+          ],
+          "birth_year": 1872,
+          "death_year": 1970
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "To please these moralists, a life of torture is inflicted upon millions of human beings who ought never to have existed, merely because it is supposed that sexual intercourse is wicked unless accompanied by desire for offspring, but not wicked when this desire is present, even though the offspring is humanly certain to be wretched.",
+          "When Plato wanted to describe the good life, he described a whole community, not an individual; he did so in order to define justice, which is an essentially social conception."
+        ],
+        "commentaries": [
+          "The author implicitly contrasts contemporary moral dogma with ancient philosophical traditions, suggesting that Plato’s views on reproduction and ethics are being misapplied or ignored in modern religious morality.",
+          "The author cites Plato as a foundational thinker who linked the good life to social justice, using his political philosophy to contrast individualistic moral frameworks."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John Stuart Mill",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In those ways, he was less admirable than John Stuart Mill."
+        ],
+        "commentaries": [
+          "The author contrasts Russell's critical practice with Mill's, citing Mill as a more admirable exemplar of intellectual fairness."
+        ],
+        "canonical_author": "John Stuart Mill"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Stuart Mill",
+        "page_id": 15626,
+        "infoboxes": [
+          "officeholder",
+          "philosopher",
+          "economist "
+        ],
+        "categories": [
+          "John Stuart Mill| ",
+          "1806 births",
+          "1873 deaths",
+          "19th-century English essayists",
+          "19th-century English philosophers",
+          "19th-century English writers",
+          "19th-century British autobiographers",
+          "Anglo-Scots",
+          "British classical liberal economists",
+          "British free speech activists",
+          "British radicals",
+          "British male feminists",
+          "British philosophers of logic",
+          "British philosophers of mind",
+          "British philosophy writers",
+          "British social liberals",
+          "British social philosophers",
+          "Consequentialists",
+          "Empiricists",
+          "English agnostics",
+          "English autobiographers",
+          "English ethicists",
+          "English feminist writers",
+          "English libertarians",
+          "English logicians",
+          "English male essayists",
+          "English male non-fiction writers",
+          "English non-fiction writers",
+          "English people of Scottish descent",
+          "English philosophers of language"
+        ],
+        "birth_year": 1806,
+        "death_year": 1873
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "57651"
+        ],
+        "target_person": {
+          "title": "John Stuart Mill",
+          "page_id": 15626,
+          "infoboxes": [
+            "officeholder",
+            "philosopher",
+            "economist "
+          ],
+          "categories": [
+            "John Stuart Mill| ",
+            "1806 births",
+            "1873 deaths",
+            "19th-century English essayists",
+            "19th-century English philosophers",
+            "19th-century English writers",
+            "19th-century British autobiographers",
+            "Anglo-Scots",
+            "British classical liberal economists",
+            "British free speech activists",
+            "British radicals",
+            "British male feminists",
+            "British philosophers of logic",
+            "British philosophers of mind",
+            "British philosophy writers",
+            "British social liberals",
+            "British social philosophers",
+            "Consequentialists",
+            "Empiricists",
+            "English agnostics",
+            "English autobiographers",
+            "English ethicists",
+            "English feminist writers",
+            "English libertarians",
+            "English logicians",
+            "English male essayists",
+            "English male non-fiction writers",
+            "English non-fiction writers",
+            "English people of Scottish descent",
+            "English philosophers of language"
+          ],
+          "birth_year": 1806,
+          "death_year": 1873
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Savonarola",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the influence of revivalists, from Savonarola downwards, has always been very transitory."
+        ],
+        "commentaries": [
+          "The author cites Savonarola as a historical example of a moralist whose influence through exhortation was temporary."
+        ],
+        "canonical_author": "Savonarola"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Girolamo Savonarola",
+        "page_id": 50139,
+        "infoboxes": [
+          "nobility",
+          "philosopher"
+        ],
+        "categories": [
+          "Girolamo Savonarola| ",
+          "Executed Roman Catholic priests",
+          "Italian Roman Catholics",
+          "Italian torture victims",
+          "Italian Dominicans",
+          "People excommunicated by the Catholic Church",
+          "People executed by the Papal States by burning",
+          "People executed for heresy",
+          "Religious leaders from Ferrara",
+          "Heads of state of Florence",
+          "University of Ferrara alumni",
+          "1452 births",
+          "1498 deaths",
+          "15th-century Italian Roman Catholic priests",
+          "Proto-Protestants",
+          "Dominican Order in Florence",
+          "Friars of San Marco, Florence",
+          "People of the Italian War of 1494–1495"
+        ],
+        "birth_year": 1452,
+        "death_year": 1498
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "580629"
+        ],
+        "target_person": {
+          "title": "Girolamo Savonarola",
+          "page_id": 50139,
+          "infoboxes": [
+            "nobility",
+            "philosopher"
+          ],
+          "categories": [
+            "Girolamo Savonarola| ",
+            "Executed Roman Catholic priests",
+            "Italian Roman Catholics",
+            "Italian torture victims",
+            "Italian Dominicans",
+            "People excommunicated by the Catholic Church",
+            "People executed by the Papal States by burning",
+            "People executed for heresy",
+            "Religious leaders from Ferrara",
+            "Heads of state of Florence",
+            "University of Ferrara alumni",
+            "1452 births",
+            "1498 deaths",
+            "15th-century Italian Roman Catholic priests",
+            "Proto-Protestants",
+            "Dominican Order in Florence",
+            "Friars of San Marco, Florence",
+            "People of the Italian War of 1494–1495"
+          ],
+          "birth_year": 1452,
+          "death_year": 1498
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Icarus",
+        "author": "Bertrand Russell",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "In Icarus I expressed my fears; in the following pages I have expressed my hopes.",
+          "Russell riposted with Icarus, to point out that Daedalus’s son learned how to fly, but not how to fly intelligently."
+        ],
+        "commentaries": [
+          "The author references Russell's book Icarus as a counterpart to What I Believe, highlighting Russell's dual perspective on humanity's use of science.",
+          "The author cites Russell’s own pamphlet Icarus as a pessimistic rebuttal to technological optimism, warning of science’s potential for destruction."
+        ]
+      },
+      "goodreads_match": {
+        "book_id": "3304679",
+        "work_id": "3341601",
+        "average_rating": 3.77,
+        "author_ids": [
+          "17854"
+        ],
+        "text_reviews_count": 8,
+        "title_without_series": "Icarus or the Future of Science",
+        "title": "Icarus or the Future of Science",
+        "isbn13": "9780851240558",
+        "isbn": "0851240550",
+        "ratings_count": 30,
+        "authors": [
+          "Bertrand Russell"
+        ],
+        "link": "https://www.goodreads.com/book/show/3304679-icarus-or-the-future-of-science",
+        "wikipedia_match": {
+          "title": "Bertrand Russell",
+          "page_id": 4163,
+          "infoboxes": [
+            "philosopher",
+            "officeholder",
+            "Bertrand Russell}}"
+          ],
+          "categories": [
+            "Bertrand Russell| ",
+            "1872 births",
+            "1970 deaths",
+            "19th-century atheists",
+            "20th-century atheists",
+            "19th-century British writers",
+            "19th-century British mathematicians",
+            "19th-century British philosophers",
+            "20th-century British writers",
+            "20th-century British mathematicians",
+            "20th-century British philosophers",
+            "Academics of the London School of Economics",
+            "Alumni of Trinity College, Cambridge",
+            "Analytic philosophers",
+            "Anti–Vietnam War activists",
+            "Atheist philosophers",
+            "British atheism activists",
+            "British anti–World War I activists",
+            "Consequentialists",
+            "Campaign for Nuclear Disarmament",
+            "British critics of Christianity",
+            "Critics of religions",
+            "Critics of work and the work ethic",
+            "De Morgan Medallists",
+            "Deaths from influenza",
+            "European democratic socialists",
+            "Earls in the Peerage of the United Kingdom",
+            "Empiricists",
+            "British agnostics",
+            "British anti-communists"
+          ],
+          "birth_year": 1872,
+          "death_year": 1970
+        },
+        "original_year": 1959,
+        "author_meta": {
+          "birth_year": 1872,
+          "death_year": 1970,
+          "main_genre": "philosophy",
+          "nationality": "British"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Bertrand Russell",
+        "page_id": 4163,
+        "infoboxes": [
+          "philosopher",
+          "officeholder",
+          "Bertrand Russell}}"
+        ],
+        "categories": [
+          "Bertrand Russell| ",
+          "1872 births",
+          "1970 deaths",
+          "19th-century atheists",
+          "20th-century atheists",
+          "19th-century British writers",
+          "19th-century British mathematicians",
+          "19th-century British philosophers",
+          "20th-century British writers",
+          "20th-century British mathematicians",
+          "20th-century British philosophers",
+          "Academics of the London School of Economics",
+          "Alumni of Trinity College, Cambridge",
+          "Analytic philosophers",
+          "Anti–Vietnam War activists",
+          "Atheist philosophers",
+          "British atheism activists",
+          "British anti–World War I activists",
+          "Consequentialists",
+          "Campaign for Nuclear Disarmament",
+          "British critics of Christianity",
+          "Critics of religions",
+          "Critics of work and the work ethic",
+          "De Morgan Medallists",
+          "Deaths from influenza",
+          "European democratic socialists",
+          "Earls in the Peerage of the United Kingdom",
+          "Empiricists",
+          "British agnostics",
+          "British anti-communists"
+        ],
+        "birth_year": 1872,
+        "death_year": 1970
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "3304679",
+        "target_author_ids": [
+          "17854"
+        ],
+        "target_person": {
+          "title": "Bertrand Russell",
+          "page_id": 4163,
+          "infoboxes": [
+            "philosopher",
+            "officeholder",
+            "Bertrand Russell}}"
+          ],
+          "categories": [
+            "Bertrand Russell| ",
+            "1872 births",
+            "1970 deaths",
+            "19th-century atheists",
+            "20th-century atheists",
+            "19th-century British writers",
+            "19th-century British mathematicians",
+            "19th-century British philosophers",
+            "20th-century British writers",
+            "20th-century British mathematicians",
+            "20th-century British philosophers",
+            "Academics of the London School of Economics",
+            "Alumni of Trinity College, Cambridge",
+            "Analytic philosophers",
+            "Anti–Vietnam War activists",
+            "Atheist philosophers",
+            "British atheism activists",
+            "British anti–World War I activists",
+            "Consequentialists",
+            "Campaign for Nuclear Disarmament",
+            "British critics of Christianity",
+            "Critics of religions",
+            "Critics of work and the work ethic",
+            "De Morgan Medallists",
+            "Deaths from influenza",
+            "European democratic socialists",
+            "Earls in the Peerage of the United Kingdom",
+            "Empiricists",
+            "British agnostics",
+            "British anti-communists"
+          ],
+          "birth_year": 1872,
+          "death_year": 1970
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Philosophy of Leibniz",
+        "author": "Leibniz",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Note 1 See my Philosophy of Leibniz, Chapter XV."
+        ],
+        "commentaries": [
+          "The author cites Leibniz's work as a reference point for a philosophical point, indicating it as a source of structured argumentation."
+        ]
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gottfried Wilhelm Leibniz",
+        "birth_year": 1646,
+        "death_year": 1716
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Gottfried Wilhelm Leibniz",
+          "birth_year": 1646,
+          "death_year": 1716
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Oliver Twist",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "David Copperfield and Oliver Twist are by no means imaginary."
+        ],
+        "commentaries": [
+          "The author references Oliver Twist as a literary example of childhood cruelty, implying the character illustrates real societal patterns."
+        ],
+        "canonical_author": "Oliver Twist"
+      },
+      "goodreads_match": {
+        "title": "Oliver Twist",
+        "authors": [
+          "Charles Dickens"
+        ],
+        "original_year": 1837,
+        "birth_year": 0,
+        "death_year": 0,
+        "nationality": "British",
+        "description": "A novel by Charles Dickens, originally published as a serial from 1837 to 1839, depicting the harsh realities of poverty and the criminal underworld in Victorian London.",
+        "book_id": "web_03725be1",
+        "author_meta": {
+          "birth_year": 1812,
+          "death_year": 1870,
+          "main_genre": "fiction",
+          "nationality": "English"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Charles Dickens",
+        "birth_year": 1812,
+        "death_year": 1870
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_03725be1",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Charles Dickens",
+          "birth_year": 1812,
+          "death_year": 1870
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ahmes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Perhaps in the times of Ahmes the multiplication table was exciting."
+        ],
+        "commentaries": [
+          "The author invokes Ahmes as a historical reference point to contrast the perceived excitement of early mathematical discovery with the perceived dullness of completed physical science."
+        ],
+        "canonical_author": "Ahmes"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Ahmes",
+        "birth_year": 1932,
+        "death_year": 2004
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Ahmes",
+          "birth_year": 1932,
+          "death_year": 2004
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Shelley",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Shelley’s poems afford an illustration of this conception applied to societies; the moment comes when everybody is converted, the ‘anarchs’ fly, and ‘the world’s great age begins anew’."
+        ],
+        "commentaries": [
+          "The author references Shelley’s poetry as a literary embodiment of the Christian-inspired belief in sudden, catastrophic societal transformation toward salvation."
+        ],
+        "canonical_author": "Shelley"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Shelley",
+        "birth_year": 1792,
+        "death_year": 1822
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "17178779"
+        ],
+        "target_person": {
+          "title": "Shelley",
+          "birth_year": 1792,
+          "death_year": 1822
+        }
+      }
+    }
+  ]
+}

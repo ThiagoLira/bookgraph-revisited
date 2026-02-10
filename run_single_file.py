@@ -67,7 +67,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model",
-        default="qwen/qwen3-next-80b-a3b-instruct",
+        default="deepseek/deepseek-v3.2",
         help="Model ID.",
     )
 
@@ -86,6 +86,23 @@ def parse_args() -> argparse.Namespace:
         "--goodreads-id",
         default="manual_run",
         help="Override Goodreads ID.",
+    )
+    parser.add_argument(
+        "--agent-concurrency",
+        type=int,
+        default=20,
+        help="Max concurrent agent workflows for citation resolution (default: 20).",
+    )
+    parser.add_argument(
+        "--extract-concurrency",
+        type=int,
+        default=20,
+        help="Max concurrent extraction requests (default: 20).",
+    )
+    parser.add_argument(
+        "--force-llm-queries",
+        action="store_true",
+        help="Force LLM-based query generation for all citations (bypass deterministic).",
     )
 
     return parser.parse_args()
@@ -115,7 +132,9 @@ async def run(args: argparse.Namespace):
         agent_base_url=args.base_url,
         agent_api_key=args.api_key,
         agent_model=args.model,
-        
+        agent_concurrency=args.agent_concurrency,
+        extract_concurrency=args.extract_concurrency,
+
         # Default DB paths relative to repo root
         books_db=str(REPO_ROOT / "datasets/books_index.db"),
         authors_json=str(REPO_ROOT / "datasets/goodreads_book_authors.json"),
@@ -127,7 +146,8 @@ async def run(args: argparse.Namespace):
         # legacy_dates_json is now the same as dates_json, so we can omit it or pass None
         legacy_dates_json=None,
         
-        debug_trace=True
+        debug_trace=True,
+        force_llm_queries=args.force_llm_queries,
     )
     
     pipeline = BookPipeline(config)

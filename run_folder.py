@@ -113,7 +113,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model",
-        default="qwen/qwen3-next-80b-a3b-instruct",
+        default="deepseek/deepseek-v3.2",
         help="Model ID.",
     )
     parser.add_argument(
@@ -128,6 +128,18 @@ def parse_args() -> argparse.Namespace:
         help="Number of files to process in parallel (be careful with API limits).",
     )
     parser.add_argument(
+        "--agent-concurrency",
+        type=int,
+        default=20,
+        help="Max concurrent agent workflows for citation resolution (default: 20).",
+    )
+    parser.add_argument(
+        "--extract-concurrency",
+        type=int,
+        default=20,
+        help="Max concurrent extraction requests (default: 20).",
+    )
+    parser.add_argument(
         "--verbose", "-v",
         action="store_true",
         help="Enable verbose debug logging to console.",
@@ -136,6 +148,11 @@ def parse_args() -> argparse.Namespace:
         "--dry-run",
         action="store_true",
         help="Validate config and show what would be processed without running.",
+    )
+    parser.add_argument(
+        "--force-llm-queries",
+        action="store_true",
+        help="Force LLM-based query generation for all citations (bypass deterministic).",
     )
 
     return parser.parse_args()
@@ -264,12 +281,15 @@ async def run(args: argparse.Namespace):
         agent_base_url=args.base_url,
         agent_api_key=args.api_key,
         agent_model=args.model,
+        agent_concurrency=args.agent_concurrency,
+        extract_concurrency=args.extract_concurrency,
 
         books_db=str(REPO_ROOT / "datasets/books_index.db"),
         authors_json=str(REPO_ROOT / "datasets/goodreads_book_authors.json"),
         wiki_db=str(REPO_ROOT / "datasets/wiki_people_index.db"),
 
-        debug_trace=args.verbose
+        debug_trace=args.verbose,
+        force_llm_queries=args.force_llm_queries,
     )
 
     pipeline = BookPipeline(config)

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run calibre_citations_pipeline.py against OpenRouter using Qwen3-Next for extraction and metadata agent.
+# Run calibre_citations_pipeline.py against OpenRouter using DeepSeek V3.2 for extraction and metadata agent.
 
 set -euo pipefail
 
@@ -13,8 +13,8 @@ Usage: ./pipeline_calibre_openrouter.sh [CALIBRE_LIBRARY_DIR] [OUTPUT_DIR]
 Environment:
   OPENROUTER_API_KEY   Required. Read from .env if present.
   OPENROUTER_BASE_URL  Optional. Defaults to https://openrouter.ai/api/v1
-  EXTRACT_MODEL        Optional. Defaults to qwen/qwen3-next-80b-a3b-instruct
-  AGENT_MODEL          Optional. Defaults to qwen/qwen3-next-80b-a3b-instruct
+  EXTRACT_MODEL        Optional. Defaults to deepseek/deepseek-v3.2
+  AGENT_MODEL          Optional. Defaults to deepseek/deepseek-v3.2
   AGENT_MAX_WORKERS    Optional. Defaults to 5
 Defaults:
   CALIBRE_LIBRARY_DIR  $HOME/OneDrive/Documents/calibre_goodreads
@@ -40,8 +40,8 @@ LIBRARY_DIR="${1:-/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos
 OUTPUT_DIR="${2:-}"
 
 BASE_URL="${OPENROUTER_BASE_URL:-https://openrouter.ai/api/v1}"
-EXTRACT_MODEL="${EXTRACT_MODEL:-qwen/qwen3-next-80b-a3b-instruct}"
-AGENT_MODEL="${AGENT_MODEL:-qwen/qwen3-next-80b-a3b-instruct}"
+EXTRACT_MODEL="${EXTRACT_MODEL:-deepseek/deepseek-v3.2}"
+AGENT_MODEL="${AGENT_MODEL:-deepseek/deepseek-v3.2}"
 AGENT_MAX_WORKERS="${AGENT_MAX_WORKERS:-10}"
 EXTRACT_CHUNK_SIZE="${EXTRACT_CHUNK_SIZE:-50}"
 EXTRACT_MAX_CONTEXT="${EXTRACT_MAX_CONTEXT:-12288}"
@@ -67,7 +67,7 @@ fi
 
 CMD+=("$LIBRARY_DIR")
 
-echo "Running calibre_citations_pipeline.py with OpenRouter + Qwen3-Next..."
+echo "Running calibre_citations_pipeline.py with OpenRouter + DeepSeek V3.2..."
 echo "  Library dir     : $LIBRARY_DIR"
 if [[ -n "$OUTPUT_DIR" ]]; then
   echo "  Output dir      : $OUTPUT_DIR"

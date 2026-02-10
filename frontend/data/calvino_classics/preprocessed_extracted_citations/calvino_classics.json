@@ -1,0 +1,3176 @@
+{
+  "source": "calvino_classics.json",
+  "total": 230,
+  "citations": [
+    {
+      "title": "Istoria e dimostrazioni intorno alle macchie solari (The History and Proof of the Spots on the Sun)",
+      "author": "Galileo",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Already in his Istoria e dimostrazioni intorno alle macchie solari (The History and Proof of the Spots on the Sun) (1613), that is to say ten years before Il saggiatore, Galileo had contrasted direct reading (of the book of the world) with indirect reading (of the books of Aristotle)."
+      ],
+      "commentaries": [
+        "The author references Galileo’s earlier work to show the development of his critique of Aristotelian textual authority in favor of empirical observation."
+      ]
+    },
+    {
+      "title": "Il sergente nella neve (The Sergeant in the Snow)",
+      "author": "Mario Rigoni Stern",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "as far back as 1953 Elio Vittorini, launching what was to be a classic of this type of literature, Il sergente nella neve (The Sergeant in the Snow) by Mario Rigoni Stern, defined it as ‘a little Anabasis in dialect’."
+      ],
+      "commentaries": [
+        "The author draws a direct literary analogy between Rigoni Stern’s memoir and Xenophon’s Anabasis, positioning it as a modern Italian counterpart rooted in the same theme of disciplined retreat."
+      ]
+    },
+    {
+      "title": "Calcolo de’ piaceri e de’ dolori della vita umana",
+      "author": "Giammaria Ortes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Pietro Verri’s Discourse on the Nature of Pleasure and Pain was published in that journal in 1773, some time after our Venetian author had published in 1757 his Calcolo de’ piaceri e de’ dolori della vita umana (A Calculation of the Pleasures and Pains of Human life)."
+      ],
+      "commentaries": [
+        "The author cites Ortes’ own work as an early and systematic attempt to quantify human emotions and actions, positioning it as a precursor to Enlightenment utilitarian thought."
+      ]
+    },
+    {
+      "title": "La guerra dei poveri (The War Declared by the Poor)",
+      "author": "Nuto Revelli",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "It is worth recalling here Nuto Revelli’s La guerra dei poveri (The War Declared by the Poor) for the passion and frenzy of the disillusioned officer;"
+      ],
+      "commentaries": [
+        "The author references Revelli’s work as an example of Italian war memoir literature that contrasts with Xenophon’s stoic detachment, emphasizing emotional disillusionment."
+      ]
+    },
+    {
+      "title": "Bâtons, chiffres et lettres (Signs, Figures and Letters)",
+      "author": "Queneau",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "his review—included in this Italian translation of Bâtons, chiffres et lettres (Signs, Figures and Letters) (Turin: Einaudi, 1981)—of the book by an artillery officer"
+      ],
+      "commentaries": [
+        "The author references Queneau’s own essay collection as the source of a review he wrote, establishing it as a key repository of his intellectual interests."
+      ]
+    },
+    {
+      "title": "Le Parti pris des choses (The Voices of Things)",
+      "author": "Francis Ponge",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "this inventory of ‘objects’ extending to the vegetable, animal and mineral worlds is contained in the slim volume which first made Francis Ponge famous in France (Le Parti pris des choses (The Voices of Things), 1942) and which Einaudi has now published (Il partito preso delle cose) with a useful, accurate introduction by Jacqueline Risset and a facing Italian translation of the French original."
+      ],
+      "commentaries": [
+        "The author identifies Le Parti pris des choses as Ponge’s seminal work, highlighting its role in establishing his reputation and its method of redefining perception through close attention to everyday objects."
+      ]
+    },
+    {
+      "title": "A Calculation of the Pleasures and Pains of Human Life",
+      "author": "Ortes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "'All men by nature are led to the pleasure of the senses', so runs the opening of A Calculation of the Pleasures and Pains of Human Life; and it continues, 'for this reason all external objects become at the same time the particular object of desire of each man.'"
+      ],
+      "commentaries": [
+        "The author references Ortes' work as the foundation for his theory of opinion as economic calculation, using its opening lines to illustrate the hedonistic and utilitarian basis of social behavior."
+      ]
+    },
+    {
+      "title": "Quer pasticciaccio brutto de via Merulana",
+      "author": "Carlo Emilio Gadda",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Quer pasticciaccio brutto de via Merulana (That Awful Mess on Via Merulana), on the other hand, is totally objective, a portrait of life as it swarms around, but it is at the same time a deeply lyrical book, a self-portrait hidden between the lines of a complex design, as in those children’s games where they have to discern amidst the tangles of a wood the image of a hare or the hunter."
+      ],
+      "commentaries": [
+        "The author describes Gadda’s novel as an objective yet lyrical masterpiece, blending chaotic realism with hidden personal symbolism."
+      ]
+    },
+    {
+      "title": "The Apprenticeship of Ernest Hemingway",
+      "author": "Charles A. Fenton",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "...as we learn from a recent book by Charles A. Fenton, The Apprenticeship of Ernest Hemingway (Farrar and Strauss, 1954)."
+      ],
+      "commentaries": [
+        "The author uses this biography to substantiate Hemingway’s firsthand experience on the Italian front during WWI."
+      ]
+    },
+    {
+      "title": "Dialogue Concerning the Two Chief World Systems",
+      "author": "Galileo",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "In another passage in the Dialogue (at the end of the first day) in which there is a eulogy of the great inventions of the human spirit, the highest place is reserved for the alphabet: But above all other wondrous inventions, what eminence of mind was his who first devised the way of communicating his innermost thoughts to any other person however distant in time or space?"
+      ],
+      "commentaries": [
+        "The author cites Galileo’s Dialogue to highlight his elevation of the alphabet as the ultimate human invention, analogous to the mathematical language of nature."
+      ]
+    },
+    {
+      "title": "Splendeurs et misères des courtisanes",
+      "author": "Honoré de Balzac",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "See the opening of Ferragus or the beginning of the second part of Splendeurs et misères des courtisanes: here he is sublime."
+      ],
+      "commentaries": [
+        "The author cites this novel as a key text demonstrating Balzac’s mastery of mystery and character revelation in urban settings."
+      ]
+    },
+    {
+      "title": "I lunghi fucili (The Long Rifles)",
+      "author": "Cristoforo M. Negri",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "as well as another fine book, unjustly forgotten, I lunghi fucili (The Long Rifles) by Cristoforo M. Negri."
+      ],
+      "commentaries": [
+        "The author mentions Negri’s book as a lesser-known but significant contribution to the genre of Italian retreat memoirs, implicitly aligning it with the tradition exemplified by Xenophon."
+      ]
+    },
+    {
+      "title": "Riflessioni di un filosofo americano",
+      "author": "Giammaria Ortes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "See, for instance, Gianfiranco Torcellan’s 1961 Einaudi edition of Riflessioni di un filosofo americano (Reflections of an American Philosopher), one of Ortes’ most significant ‘operette morali’."
+      ],
+      "commentaries": [
+        "The author references Ortes’ 'Riflessioni di un filosofo americano' as a key text illustrating his philosophical depth and the complexity of his thought beyond simplistic Enlightenment labels."
+      ]
+    },
+    {
+      "title": "Across the River and Into the Trees",
+      "author": "Ernest Hemingway",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "...as he portrayed them in his best novel, A Farewell to Arms (1929); and also on how much he still understood of 1949 Italy and portrayed in his less successful, but still in many respects interesting, novel, Across the River and Into the Trees..."
+      ],
+      "commentaries": [
+        "The author references this later novel as a flawed but insightful portrayal of postwar Italy, though less successful than Hemingway’s earlier work."
+      ]
+    },
+    {
+      "title": "Chroniques italiennes (Italian Chronicles)",
+      "author": "Stendhal",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Stendhal had hunted out in the libraries to draw on for his own Chroniques italiennes (Italian Chronicles). This one dealt with the life of Alessandro Farnese."
+      ],
+      "commentaries": [
+        "The author notes that Stendhal used his own Chroniques italiennes as a historical source for The Charterhouse of Parma, specifically drawing on the life of Alessandro Farnese to inform the novel’s structure and themes."
+      ]
+    },
+    {
+      "title": "Les Enfants du limon (The Children of Clay)",
+      "author": "Queneau",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the author ended up using the material in his novel Les Enfants du limon (The Children of Clay)"
+      ],
+      "commentaries": [
+        "The author notes that Queneau repurposed his unpublished research into his own fictional work, blurring the line between encyclopedic inquiry and literary creation."
+      ]
+    },
+    {
+      "title": "Candide, or Concerning Narrative Rapidity",
+      "author": "Voltaire",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Paul Klee illustrated Voltaire’s Candide in 1911"
+      ],
+      "commentaries": [
+        "The author references Candide as a literary work whose rhythmic structure and dark humor have enduring artistic impact, particularly in how it conveys absurdity through rapid narrative pacing."
+      ]
+    },
+    {
+      "title": "Decline and Fall of the Roman Empire",
+      "author": "Edward Gibbon",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "buying the eight volumes of Gibbon’s Decline and Fall of the Roman Empire (a title which he can barely make out, so that instead of Roman he reads Rooshan and thinks it is about the Russian Empire)."
+      ],
+      "commentaries": [
+        "The author cites Gibbon’s historical work as a symbol of cultural aspiration and misinterpretation, used comically to reveal Boffin’s ignorance and newfound wealth."
+      ]
+    },
+    {
+      "title": "La Fabrique du pré (Making A Meadow)",
+      "author": "Francis Ponge",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "his description of a meadow has become La Fabrique du pré (Making A Meadow)."
+      ],
+      "commentaries": [
+        "The author notes that Ponge’s early short texts evolved into extended works like La Fabrique du pré, reflecting his lifelong commitment to deepening his engagement with the material world through writing."
+      ]
+    },
+    {
+      "title": "The Pavilion on the Links",
+      "author": "Robert Louis Stevenson",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "[1971] Robert Louis Stevenson, The Pavilion on the Links The Pavilion on the Links is above all a story of misanthropy: youthful misanthropy, born of self-satisfaction and savagery, misanthropy which in a young man actually means misogyny, and which spurs the protagonist to ride alone over the Scottish moors, sleeping in a tent and existing on porridge.",
+        "‘Robert Louis Stevenson, The Pavilion on the Links’, preface written for the Centopagine series (Turin: Einaudi, 1973)."
+      ],
+      "commentaries": [
+        "The author analyzes this work as a psychological and narrative experiment in misanthropy, rivalry, and landscape symbolism, highlighting its structural complexity and thematic layers.",
+        "The author provided a preface to Stevenson’s story, possibly highlighting its atmospheric storytelling and Gothic undertones."
+      ]
+    },
+    {
+      "title": "The Unbearable Lightness of Being",
+      "author": "Milan Kundera",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "It is no accident that Jacques the Fatalist has been recently given a modern, theatrical form by a writer of the calibre of Milan Kundera, and that Kundera’s novel, The Unbearable Lightness of Being, shows him to be the most Diderotian of contemporary writers..."
+      ],
+      "commentaries": [
+        "The author cites Kundera’s novel as a modern literary descendant of Diderot’s style, highlighting its fusion of philosophy, irony, and emotional narrative as a continuation of Diderot’s literary legacy."
+      ]
+    },
+    {
+      "title": "Il Migliore dei Mondi Impossibili",
+      "author": "Pietro Citati",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Pietro Citati says, in his excellent essay on Dickens (in his Il Migliore dei Mondi Impossibili, Rizzoli): 'The strange providence which governs literature decreed that in the very years when Dostoevsky was writing Crime and Punishment, Dickens was unconsciously trying to rival his distant pupil, in writing the episode of Bradley Headstone’s crime…."
+      ],
+      "commentaries": [
+        "The author cites Citati's book as a source of insight into the literary parallel between Dickens and Dostoevsky, highlighting a perceived unconscious rivalry in their treatment of criminal psychology."
+      ]
+    },
+    {
+      "title": "The Jumping Frog of Calaveras County",
+      "author": "Mark Twain",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "although today we are not impressed by his tale The Jumping Frog of Calaveras County, when he retranslates the story from a French version this time it does amuse us."
+      ],
+      "commentaries": [
+        "The author cites this story as an example of Twain’s stylistic experimentation and enduring comedic technique, noting how its impact persists despite changing tastes."
+      ]
+    },
+    {
+      "title": "The Master of Ballantrae",
+      "author": "Robert Louis Stevenson",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "perhaps a first draft for the enemy brothers in The Master of Ballantrae"
+      ],
+      "commentaries": [
+        "The author references this later Stevenson novel as a thematic evolution of the rival brothers dynamic first explored in The Pavilion on the Links."
+      ]
+    },
+    {
+      "title": "The Man That Corrupted Hadleyburg",
+      "author": "Mark Twain",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "Mark Twain, The Man That Corrupted Hadleyburg",
+        "In The Man That Corrupted Hadleyburg (1899), the mirage of a bag of gold coins tips an austere provincial town down the slope of moral degradation",
+        "‘Mark Twain, The Man That Corrupted Hadleyburg’, preface written for the Centopagine series (Turin: Einaudi, 1972)."
+      ],
+      "commentaries": [
+        "The author mentions this specific work by Mark Twain as an example of his broader literary output, situating it within the context of Twain’s role as a folk-writer and myth-maker for American culture.",
+        "The author uses this story to illustrate how Mark Twain turns money into a moral test, exposing hypocrisy through a fictional town’s corruption.",
+        "The author contributed a preface to Twain’s short story, possibly exploring its moral satire and social critique."
+      ]
+    },
+    {
+      "title": "A Calculation of the Truth of History",
+      "author": "Ortes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "But in his conclusions to A Calculation of the Truth of History, Ortes reveals a desire for cosmic knowledge that focuses on infinitesimal and irrepeatable details: he who always tends to subsume humanity into an algebraic formula of abstract elements, here condemns any pretence at an overall knowledge that is not based on an unfathomable sum of all individual experiences."
+      ],
+      "commentaries": [
+        "The author cites Ortes' treatise to contrast his abstract systemic thinking with his later recognition of the irreducible complexity of individual experience, revealing an epistemological tension in his work."
+      ]
+    },
+    {
+      "title": "La cognizione del dolore",
+      "author": "Carlo Emilio Gadda",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "La cognizione del dolore (Acquainted with Grief) is on the surface the most subjective work imaginable: it is almost nothing but an outpouring of pointless despair. Yet in reality it is a book packed with objective and universal meanings.",
+        "And yet as far as his personal literary tastes were concerned, he was devoted to the classics, and tradition (his favourite author was the sedate and wise Manzoni) and his models in the art of the novel were Balzac and Zola. (He possessed some of the basic qualities of nineteenth-century realism and naturalism, such as the portrayal of characters, milieus and situations through physical details, and through bodily sensations, such as savouring a glass of wine at lunch, with which this book opens.)"
+      ],
+      "commentaries": [
+        "The author highlights Gadda’s work as a deceptively subjective text that reveals deep universal truths, particularly through its exploration of familial and societal alienation.",
+        "The author mentions Gadda’s own novel La cognizione del dolore as a key autobiographical work rooted in Milanese society, though it is not the focus of the excerpt’s main analysis."
+      ]
+    },
+    {
+      "title": "The Big Two-Hearted River",
+      "author": "Ernest Hemingway",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "One of the best and most typical of his tales in the 45 short stories in The Big Two-Hearted River is nothing more than an account of every single action done by a man who goes fishing on his own..."
+      ],
+      "commentaries": [
+        "The author cites this story as a prime example of Hemingway’s minimalist style and thematic focus on action as a response to existential void."
+      ]
+    },
+    {
+      "title": "Cardano, The Gambling Scholar",
+      "author": "Oystein Ore",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This last work is also important as the first text on probability theory: hence the attention devoted to it in an American book which, leaving aside its more technical chapters, is extremely informative and enjoyable, and is, I think, still the most recent monograph on Cardano to this day (Oystein Ore, Cardano, The Gambling Scholar, Princeton, 1953)."
+      ],
+      "commentaries": [
+        "The author references Oystein Ore's biographical study as the most recent and accessible monograph on Cardano, praising its clarity and depth."
+      ]
+    },
+    {
+      "title": "New Arabian Nights",
+      "author": "Robert Louis Stevenson",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "two years later, in 1882, he included it in his New Arabian Nights."
+      ],
+      "commentaries": [
+        "The author notes this collection as the definitive publication context for The Pavilion on the Links, contrasting it with its original magazine version."
+      ]
+    },
+    {
+      "title": "Phenomenology of Perception",
+      "author": "Merleau-Ponty",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Merleau-Ponty has many fine pages in his Phenomenology of Perception on cases in which the subjective experience of space separates from the objective experience of the world..."
+      ],
+      "commentaries": [
+        "The author cites Merleau-Ponty’s philosophical work to frame the poem’s depiction of perceptual unreality, using it as a theoretical anchor for interpreting the poetic experience."
+      ]
+    },
+    {
+      "title": "Reflections on the Musical Theatre",
+      "author": "Ortes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This is the discourse that opens the liveliest and richest of Ortes’ texts, his Reflections on the Musical Theatre, where the ‘geometrical precision’ of his method is applied to the symmetries and reversals of the situations in melodrama."
+      ],
+      "commentaries": [
+        "The author cites Ortes' Reflections on the Musical Theatre as the apex of his methodological rigor, showing how his analytical approach is applied to aesthetic forms to reveal underlying structural patterns."
+      ]
+    },
+    {
+      "title": "Forse un mattino andando",
+      "author": "Eugenio Montale",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "I am going to choose, therefore, ‘Forse un mattino andando in un’aria di vetro’ (‘Perhaps One Morning Walking in an Air of Glass’), one of the poems that has continued to go round more than most on my mental turntable..."
+      ],
+      "commentaries": [
+        "The author treats this specific Montale poem as a central text for memory and interpretation, analyzing its linguistic structure and personal resonance over decades."
+      ]
+    },
+    {
+      "title": "The Literature of the US",
+      "author": "Marcus Cunliffe",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "(On Hemingway’s code of behaviour, and on characters’ ‘inarticulate’ conversation, see the intelligent observations in Marcus Cunliffe, The Literature of the US (Penguin Books, 1954), pp. 271 ff.)"
+      ],
+      "commentaries": [
+        "The author cites this book as a scholarly source for analysis of Hemingway’s behavioral code and narrative style."
+      ]
+    },
+    {
+      "title": "Giornalino 1913-1915",
+      "author": "Edoardo Sanguineti",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "That article of mine elicited a response by Edoardo Sanguineti in Paese sera (now in his Giornalino 1913-1915, Turin: Einaudi, 1976), followed by a succession of further responses from each of us."
+      ],
+      "commentaries": [
+        "The author cites Sanguineti’s published response as a critical interlocutor in the debate about Ulysses’ journey as a return to the past versus a movement toward the future."
+      ]
+    },
+    {
+      "title": "Orlando Innamorato",
+      "author": "Matteo Maria Boiardo",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The Orlando Furioso is an epic which refuses to begin and which refuses to end. It refuses to begin because it presents itself as the continuation of another poem, the Orlando Innamorato by Matteo Maria Boiardo, which had been left unfinished at the authors death."
+      ],
+      "commentaries": [
+        "The author positions Boiardo’s unfinished poem as the foundational text that Ariosto’s Orlando Furioso deliberately extends, emphasizing literary continuity and open-ended narrative structure."
+      ]
+    },
+    {
+      "title": "Treasure Island",
+      "author": "Robert Louis Stevenson",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the same hand that, more or less at the same time, was recounting the approach of the pirates to the ‘Admiral Benbow’ inn in Treasure Island."
+      ],
+      "commentaries": [
+        "The author draws a stylistic parallel between Stevenson’s evocation of menace in The Pavilion on the Links and his iconic pirate narrative in Treasure Island."
+      ]
+    },
+    {
+      "title": "Prima che il gallo canti",
+      "author": "Cesare Pavese",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This anguish at the civil war reminds me of Cesare Pavese’s Prima che il gallo canti (Before the Cock Crows)."
+      ],
+      "commentaries": [
+        "The author cites Pavese’s work as a personal point of reference for reflecting on the moral weight of civil war and historical responsibility."
+      ]
+    },
+    {
+      "title": "Cent mille milliards de poèmes",
+      "author": "Queneau",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Queneau’s most typical books are works which are unique in their own genre, such as Exercises de style (Exercises in Style), or Petite Cosmogonie portative (The Portable Small Cosmogony) or Cent mille milliards de poèmes (One Hundred Million Million Poems)."
+      ],
+      "commentaries": [
+        "The author cites this mechanical poem generator as an embodiment of Queneau’s interest in combinatorics and the infinite possibilities of language."
+      ]
+    },
+    {
+      "title": "Tableaux parisiens",
+      "author": "Charles Baudelaire",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "In Tableaux parisiens one can, almost always, sense the secret presence of the masses."
+      ],
+      "commentaries": [
+        "The author cites this series of poems to show how Baudelaire implies the presence of the urban crowd without directly describing it."
+      ]
+    },
+    {
+      "title": "The Phenomenology of the Spirit",
+      "author": "Hegel",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Queneau was at the Ecole des Hautes Études attending Kojève’s lectures on The Phenomenology of the Spirit"
+      ],
+      "commentaries": [
+        "The author notes that Queneau attended Kojève’s lectures on Hegel’s Phenomenology of the Spirit, indicating a deep intellectual engagement with Hegelian philosophy."
+      ]
+    },
+    {
+      "title": "Les Fleurs du mal",
+      "author": "Charles Baudelaire",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "One looks in vain, in Les Fleurs du mal or in Spleen de Paris for something analogous to those large frescoes of the city at which Victor Hugo excelled."
+      ],
+      "commentaries": [
+        "The author cites Baudelaire’s collection as a contrast to Hugo’s urban frescoes, noting Baudelaire’s refusal to depict crowds directly to evoke them indirectly."
+      ]
+    },
+    {
+      "title": "The Pasticciaccio",
+      "author": "Carlo Emilio Gadda",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "‘Carlo Emilio Gadda, the Pasticciaccio’."
+      ],
+      "commentaries": [
+        "The author references Gadda’s novel The Pasticciaccio, likely as a subject of literary analysis, though the excerpt is incomplete."
+      ]
+    },
+    {
+      "title": "II saggiatore (The Assayer)",
+      "author": "Galileo",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Philosophy is written in this enormous book which is continually open before our eyes (I mean the universe), but it cannot be understood unless one first understands the language and recognises the characters with which it is written. It is written in a mathematical language, and its characters are triangles, circles, and other geometric figures. Without knowledge of this medium it is impossible to understand a single word of it; without this knowledge it is like wandering hopelessly through a dark labyrinth. (II saggiatore (The Assayer), 6)"
+      ],
+      "commentaries": [
+        "The author quotes Galileo’s Assayer to illustrate his revolutionary claim that the universe is legible only through mathematical notation."
+      ]
+    },
+    {
+      "title": "The £1,000,000 Bank-Note",
+      "author": "Mark Twain",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "in The £1,000,000 Bank-Note (1893), a banknote of this excessive denomination attracts wealth without needing to be invested or even changed"
+      ],
+      "commentaries": [
+        "The author references this story to show how Twain portrays money as a linguistic convention with no intrinsic value, yet capable of altering social reality."
+      ]
+    },
+    {
+      "title": "The Mirror of the Sea",
+      "author": "Joseph Conrad",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "And I am happy to discover that it is also there, in its pure form, in a work of non-fiction, The Mirror of the Sea, a collection of pieces on maritime topics: the techniques of mooring and setting sail, anchors, sails, cargo weights and so on."
+      ],
+      "commentaries": [
+        "The author cites this non-fiction work as a pure expression of Conrad’s moral substance, praising its technical precision and passionate enthusiasm about maritime life."
+      ]
+    },
+    {
+      "title": "A Farewell to Arms",
+      "author": "Ernest Hemingway",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "...as he portrayed them in his best novel, A Farewell to Arms (1929); and also on how much he still understood of 1949 Italy and portrayed in his less successful, but still in many respects interesting, novel, Across the River and Into the Trees..."
+      ],
+      "commentaries": [
+        "The author identifies this novel as Hemingway’s most successful portrayal of war and Italian society during WWI."
+      ]
+    },
+    {
+      "title": "Petite Cosmogonie portative",
+      "author": "Queneau",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Queneau’s most typical books are works which are unique in their own genre, such as Exercises de style (Exercises in Style), or Petite Cosmogonie portative (The Portable Small Cosmogony)"
+      ],
+      "commentaries": [
+        "The author references this poetic work as an example of Queneau’s fusion of scientific themes with literary form, blending cosmology and verse."
+      ]
+    },
+    {
+      "title": "The Other World",
+      "author": "Cyrano de Bergerac",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "One could say that Cyrano’s journey to the Moon anticipates in some episodes Gulliver’s travels: on the Moon as in Brobdignag, the visitor finds himself surrounded by human beings much bigger than himself who keep him on display like a pet animal."
+      ],
+      "commentaries": [
+        "The author cites Cyrano de Bergerac's work as a precursor to Swift's Gulliver's Travels, highlighting its imaginative and satirical treatment of alien societies."
+      ]
+    },
+    {
+      "title": "Jacques le Fataliste",
+      "author": "Denis Diderot",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Diderot’s status amongst the founding fathers of contemporary literature is continually rising, and mostly because of his antinovel, or metanovel, or hypernovel, Jacques the Fatalist and his Master",
+        "Diderot in Jacques le Fataliste seems to side with Leibniz and even more with Spinoza, who had upheld the objective rationality of a single, ineluctable world, proved by his geometrical method."
+      ],
+      "commentaries": [
+        "The author cites Diderot’s Jacques le Fataliste as a groundbreaking metafictional work that anticipates modern narrative techniques and challenges traditional reader-author dynamics.",
+        "The author cites Diderot's novel as a philosophical counterpoint to Voltaire's Candide, highlighting its alignment with Spinozist determinism and its portrayal of free will emerging within necessity."
+      ]
+    },
+    {
+      "title": "The Charterhouse of Parma",
+      "author": "Stendhal",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "How many new readers will be attracted to Stendhal’s The Charterhouse of Parma by the new film version of the novel, shortly to be broadcast on television?",
+        "‘Comment! moi qui avait tant de peur de la prison, j’y suis, et je ne me souviens pas d’être triste!’ (‘What? I who was so afraid of it, am now in prison and I have forgotten that I should be sad!’)"
+      ],
+      "commentaries": [
+        "The author cites The Charterhouse of Parma as a novel with enduring seductive power, particularly its opening chapters, which have captivated generations of readers and serve as a benchmark for their literary experience.",
+        "The author cites this passage from Stendhal's The Charterhouse of Parma to illustrate the protagonist's unexpected resilience and rejection of romantic self-pity in the face of imprisonment."
+      ]
+    },
+    {
+      "title": "Great Expectations",
+      "author": "Charles Dickens",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Dickens was able to develop a quite different plot from the return of an ex-convict father in his masterpiece Great Expectations."
+      ],
+      "commentaries": [
+        "The author cites Great Expectations as a masterpiece where Dickens reworks a familiar narrative archetype into a psychologically complex plot."
+      ]
+    },
+    {
+      "title": "Spleen de Paris",
+      "author": "Charles Baudelaire",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "One looks in vain, in Les Fleurs du mal or in Spleen de Paris for something analogous to those large frescoes of the city at which Victor Hugo excelled."
+      ],
+      "commentaries": [
+        "The author references this prose poetry collection to illustrate Baudelaire’s abstract, atmospheric portrayal of the metropolis."
+      ]
+    },
+    {
+      "title": "Life on the Mississippi",
+      "author": "Mark Twain",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "he was the first to give a voice and a shape to the dense materiality of American daily life — particularly in the masterpieces of his river saga, Huckleberry Finn and Life on the Mississippi"
+      ],
+      "commentaries": [
+        "The author cites Life on the Mississippi alongside Huckleberry Finn as a key work in Mark Twain’s portrayal of American daily life through the river saga."
+      ]
+    },
+    {
+      "title": "The Snows of Kilimanjaro",
+      "author": "Hemingway",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "I cannot take ‘lyricism’ in Hemingway: The Snows of Kilimanjaro is for me his worst work)"
+      ],
+      "commentaries": [
+        "The author cites this story as Hemingway’s only significant departure from his signature style, which he regards as a failure of his aesthetic."
+      ]
+    },
+    {
+      "title": "The Garden of Forking Paths",
+      "author": "Borges",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "his most famous story, ‘The Garden of Forking Paths’."
+      ],
+      "commentaries": [
+        "The author presents this story as a quintessential example of Borges’ literary art, where philosophical ideas about time are embedded within a narrative form."
+      ]
+    },
+    {
+      "title": "Our Mutual Friend",
+      "author": "Charles Dickens",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The openings of Dickens’ novels are often memorable, but none is better than the first chapter of Our Mutual Friend, the second last novel he wrote, and the last one he completed."
+      ],
+      "commentaries": [
+        "The author elevates Our Mutual Friend’s opening as Dickens’ most powerful introduction, linking it to the novel’s apocalyptic themes."
+      ]
+    },
+    {
+      "title": "The Turn of the Screw",
+      "author": "Henry James",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Readers of The Turn of the Screw will know just how much the world of domestic staff can embody for James the shapeless presence of ‘evil’."
+      ],
+      "commentaries": [
+        "The author cites this work as a key example of how James uses domestic staff to symbolize abstract evil, linking it thematically to Daisy Miller."
+      ]
+    },
+    {
+      "title": "De Consolatione",
+      "author": "Gerolamo Cardano",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Now this theme is discussed in considerable detail in a passage of Gerolamo Cardano’s De Consolatione, which was translated into English in 1573 and dedicated to the Earl of Oxford, therefore familiar in circles frequented by Shakespeare."
+      ],
+      "commentaries": [
+        "The author cites Cardano’s De Consolatione as a possible influence on Hamlet’s contemplation of death as sleep, noting its thematic relevance though cautioning against definitive attribution."
+      ]
+    },
+    {
+      "title": "De Propria Vita",
+      "author": "Gerolamo Cardano",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "His autobiography, De Propria Vita, which Cardano wrote in Rome shortly before his death, is the book which keeps his name alive for us both as a writer and as a personality.",
+        "This is the subject matter of one of the first chapters of De Propria Vita, which is a biography constructed around themes: there are chapters on his parents (‘mater fuit iracunda, memoria et ingenio pollens, parvae staturae, pinguis, pia’ (my mother was an irascible woman with a powerful memory and intellect, small in stature, fat and pious)), his birth and star sign, a physical self-portrait (which is meticulous, ruthless and complacent in a kind of inverted narcissism), his diet and physical routine, his virtues and vices, his favourite things, his consuming passion for gaming (dice, cards, chess), his manner of dress, his gait, his religion and other devout practices, houses he lived in, poverty and losses to the family patrimony, risks taken and accidents, books written, the most successful diagnoses and therapies of his medical career, and so on."
+      ],
+      "commentaries": [
+        "The author identifies Cardano’s autobiography as the primary source preserving his legacy as both writer and personality, highlighting its value in understanding his inner life.",
+        "The author cites Cardano's autobiography as a detailed, thematic reconstruction of his life, highlighting its unconventional structure and introspective depth."
+      ]
+    },
+    {
+      "title": "La Vie de Henri Brulard",
+      "author": "Stendhal",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "La Vie de Henri Brulard opens like this: Will I have the courage to write these confessions in an intelligible manner?",
+        "the pages of La Vie de Henri Brulard come before us as detailed as an atlas.",
+        "‘On échoue toujours à parler de ce qu’on aime’ (Any attempt to talk about the object of our love is always doomed to failure)."
+      ],
+      "commentaries": [
+        "The author cites Stendhal’s autobiographical work as a key example of his fragmentary, detail-oriented approach to self-representation, contrasting it with his novels.",
+        "The author highlights Stendhal's autobiographical work as a text where topographical mapping serves to fix the spatial context of personal events, revealing his obsession with precise location as a means of capturing unique experiences.",
+        "The author references this line from Stendhal’s autobiographical work La Vie de Henri Brulard to highlight the author’s inability to articulate the happiness he experienced in Italy, a theme later echoed in his fictional writings."
+      ]
+    },
+    {
+      "title": "Twixt Land and Sea",
+      "author": "Joseph Conrad",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "which also contains the magnificent tales of ’Twixt Land and Sea, which has already appeared in the same translation in Einaudi’s Universale series."
+      ],
+      "commentaries": [
+        "The author references this collection as an example of Conrad’s literary excellence, noting its translation and inclusion in major Italian editions."
+      ]
+    },
+    {
+      "title": "La casa in collina",
+      "author": "Cesare Pavese",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The second story, La casa in collina (The House on the Hill), seemed to me, when it appeared in 1948, to have a tone of resignation; but rereading it today, I think that in it Pavese went further than anyone else down the road of a moral conscience engaging with history, and all this in an area which has nearly always been the preserve of the others, of mystical and transcendental conceptions of the world."
+      ],
+      "commentaries": [
+        "The author praises Pavese’s novel as a profound engagement with moral conscience in historical context, elevating it above mystical traditions."
+      ]
+    },
+    {
+      "title": "Orlando Furioso",
+      "author": "Ludovico Ariosto",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "(Ludovico Ariosto), ‘The Structure of the Orlando Furioso’ (*). Text written for the radio, in 1974, on the occasion of the fifth centenary of Ludovico Ariosto’s birth, broadcast on 5.1.1975.",
+        "the other Italian epic which Borges knows in detail, Ariosto’s Orlando Furioso."
+      ],
+      "commentaries": [
+        "The author delivered a radio lecture analyzing the structural form of Ariosto's epic poem, commemorating its five-hundredth anniversary.",
+        "The author cites Ariosto's epic as a key literary influence on Borges, noting its role in merging medieval epics and shaping European collective imagination."
+      ]
+    },
+    {
+      "title": "Tristram Shandy",
+      "author": "Laurence Sterne",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Critics have pointed out phrases and episodes which have migrated from Sterne’s novel to Jacques; and Diderot, in order to prove how little he cared about charges of plagiarism, actually declares before one of the final scenes in the book that he has copied it from Tristram Shandy."
+      ],
+      "commentaries": [
+        "The author identifies Sterne’s Tristram Shandy as a key literary influence on Diderot, particularly in its digressive form and thematic focus on causal interconnectedness."
+      ]
+    },
+    {
+      "title": "The Red and the Black",
+      "author": "Stendhal",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "already some years previously another Stendhalian hero, he too a young man thirsty for Napoleonic glory, had decided to don the cassock, seeing that the Restoration had blocked a military career to all except the scions of the nobility. But in The Red and the Black, Julien Sorel’s alternative vocation is the novel’s central theme"
+      ],
+      "commentaries": [
+        "The author contrasts The Red and the Black with The Charterhouse of Parma, highlighting how Julien Sorel’s clerical vocation is treated as a central, serious theme, unlike Fabrizio’s more superficial ecclesiastical role."
+      ]
+    },
+    {
+      "title": "The $30,000 Bequest",
+      "author": "Mark Twain",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "in The $30,000 Bequest (1904) a non-existent legacy is spent in people’s imagination"
+      ],
+      "commentaries": [
+        "The author cites this story as an example of how Twain treats money as an abstract, imaginary force that drives human behavior despite its lack of material reality."
+      ]
+    },
+    {
+      "title": "Ossi di seppia",
+      "author": "Eugenio Montale",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Those were the years when Ossi di seppia (Cuttlefish Bones) and Le occasioni (The Occasions) began to circulate in Italy in the grey covers of Einaudi’s books.",
+        "the backdrop to Ossi di seppia (Cuttlefish Bones)."
+      ],
+      "commentaries": [
+        "The author cites Montale’s poetry collection as a formative literary influence from his youth, highlighting its cultural impact and personal memorization.",
+        "The author identifies this collection as the foundational work reflecting the precariousness of the post-First World War world."
+      ]
+    },
+    {
+      "title": "Nueve ensayos dantescos",
+      "author": "Borges",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This essay is contained in a volume published in Madrid two years ago, and not yet translated into Italian, which collects Borges’ essays and lectures on Dante: Nueve ensayos dantescos (Further Essays on Dante)."
+      ],
+      "commentaries": [
+        "The author cites this volume as a key collection where Borges articulates his structuralist and philosophical interpretations of Dante’s text."
+      ]
+    },
+    {
+      "title": "Divine Comedy",
+      "author": "Dante Alighieri",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "By seeing the identity between the character in the book who influences other characters and the book which influences its readers (‘Galeotto fu il libro e chi lo scrisse’ (the book and its author were Galahads to us)), Dante carries out the first ever, disorientating manoeuvre of metaliterature."
+      ],
+      "commentaries": [
+        "The author cites Dante’s Divine Comedy as the pioneering example of metaliterature, where the text itself becomes a catalyst for emotional and physical action in the reader’s world."
+      ]
+    },
+    {
+      "title": "Trois Contes",
+      "author": "Gustave Flaubert",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Gustave Flaubert, Trois Contes Trois Contes is entitled Tre racconti in Italian, and we could not call them anything else, but the term conte (as opposed to récit or nouvelle) underlines the link with oral narrative, with the marvellous and naive, in short with the folktale."
+      ],
+      "commentaries": [
+        "The author cites Flaubert's Trois Contes as a central text for understanding the fusion of folk narrative and modern literary technique, praising its distilled essence of Flaubert’s art."
+      ]
+    },
+    {
+      "title": "L’Esprit des lois",
+      "author": "Montesquieu",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Gadda does not simply go in for a facile caricature of Fascism: he analyses in great detail what effects are produced on the daily administration of justice by the failure to respect the division of Montesquieu’s three powers of the state (the reference to the author of L’Esprit des lois is explicit)."
+      ],
+      "commentaries": [
+        "The author explicitly references Montesquieu’s L’Esprit des lois as a foundational text for analyzing the breakdown of state powers under Fascism."
+      ]
+    },
+    {
+      "title": "Discourse on Method",
+      "author": "Descartes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "a novelised commentary on Descartes' Discourse on Method"
+      ],
+      "commentaries": [
+        "The author states that Queneau's novel Le Chiendent functions as a literary reinterpretation of Descartes' philosophical framework, linking narrative form to epistemological inquiry."
+      ]
+    },
+    {
+      "title": "La Critique sociale",
+      "author": "Souvarine",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "La Critique sociale, founded by Boris Souvarine"
+      ],
+      "commentaries": [
+        "The author cites La Critique sociale as a journal founded by Souvarine, used by Queneau as a platform for early intellectual engagement, though the journal itself is not a book."
+      ]
+    },
+    {
+      "title": "Historia Animalium",
+      "author": "Aristotle",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The main source here is Aristotle’s Historia Animalium (History of Animate Beings), but Pliny gathers from more credulous or more imaginative authors the legends which Aristotle either rejected or cited merely to refute them."
+      ],
+      "commentaries": [
+        "The author identifies Aristotle’s Historia Animalium as the foundational source for Pliny’s zoological content, noting that Pliny diverges by incorporating myths Aristotle dismissed."
+      ]
+    },
+    {
+      "title": "Robinson Crusoe",
+      "author": "Daniel Defoe",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Robinson Crusoe, Journal of Mercantile Virtues The life and strange surprising adventures of Robinson Crusoe, of York, mariner: who liv’d eight and twenty years all alone in an uninhabited island on the coast of America, near the mouth of the great river Oroonoque; having been cast on shore by shipwreck, wherein all the men perish’d but himself With an account how he was at last as strangely deliver’d by pyrates. Written by himself."
+      ],
+      "commentaries": [
+        "The author cites Robinson Crusoe as the foundational text of mercantile virtue and individualism, praising its realistic detail and moral pragmatism as a model for modern capitalism and existential self-reliance."
+      ]
+    },
+    {
+      "title": "Le occasioni",
+      "author": "Eugenio Montale",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Those were the years when Ossi di seppia (Cuttlefish Bones) and Le occasioni (The Occasions) began to circulate in Italy in the grey covers of Einaudi’s books.",
+        "it would be the anticipation of another catastrophe that would make up the atmosphere of Le occasioni (The Occasions),"
+      ],
+      "commentaries": [
+        "The author references Montale’s second poetry collection as part of his early literary formation, emphasizing its physical and cultural presence during his formative years.",
+        "The author cites this collection as capturing the premonition of impending catastrophe, with a poem from it used to illustrate human interdependence."
+      ]
+    },
+    {
+      "title": "In Our Time",
+      "author": "Ernest Hemingway",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "His first book (published in 1924 then expanded in 1925), whose tone was set by his memories of the Great War and those of the massacres in Greece which he witnessed as a journalist, is entitled In Our Time..."
+      ],
+      "commentaries": [
+        "The author cites this collection as foundational to Hemingway’s development, linking its title and tone to the trauma of war and ironic spiritual longing."
+      ]
+    },
+    {
+      "title": "Bouvard et Pécuchet",
+      "author": "Flaubert",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Queneau expresses his sympathy for the two pathetic autodidacts, those researchers of the absolute in knowledge, and highlights Flaubert’s shifts in attitude towards his book and its heroes."
+      ],
+      "commentaries": [
+        "The author cites Flaubert's novel as a key literary parallel to Queneau’s own exploration of false knowledge and methodological skepticism."
+      ]
+    },
+    {
+      "title": "The Pickwick Papers",
+      "author": "Dickens",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "I know an excellent art historian, an enormously well-read man, who out of all the volumes he has read is fondest of all of The Pickwick Papers, quoting lines from Dickens’ book during any discussion, and relating every event in his life to episodes in Pickwick."
+      ],
+      "commentaries": [
+        "The author uses The Pickwick Papers as an example of a book that becomes a personal cosmology for the reader, shaping identity and worldview."
+      ]
+    },
+    {
+      "title": "Huckleberry Finn",
+      "author": "Mark Twain",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "he was the first to give a voice and a shape to the dense materiality of American daily life — particularly in the masterpieces of his river saga, Huckleberry Finn and Life on the Mississippi",
+        "attributing a fundamental value to the Nick Adams stories, and placing them in the tradition inaugurated by that wonderful book—wonderful for its language, the richness of life and adventure it contains, its sense of nature, its involvement with the social problems of its time and place—which is Mark Twain’s Huckleberry Finn."
+      ],
+      "commentaries": [
+        "The author cites Huckleberry Finn as a masterpiece that gave voice to the materiality of American daily life, linking it to Mark Twain's broader river saga.",
+        "The author cites Mark Twain's Huckleberry Finn as the foundational work in the literary tradition that Hemingway's Nick Adams stories continue, praising its language, vitality, and social engagement."
+      ]
+    },
+    {
+      "title": "Il taglio del bosco",
+      "author": "Cassola",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "But let’s take a recent example from nearer home: Il taglio del bosco (The Cutting of the Woods) by Cassola (all he has in common with Hemingway is his love of Tolstoy) which describes the actions of a woodcutter, against the background of his endless grief for the death of his wife."
+      ],
+      "commentaries": [
+        "The author references this work to contrast Hemingway’s detached, sport-oriented existentialism with Cassola’s emotionally grounded portrayal of grief."
+      ]
+    },
+    {
+      "title": "Zazie dans le métro",
+      "author": "Queneau",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "reaching its apogee of comic elegance in Zazie dans le métro (Zazie in the Metro)."
+      ],
+      "commentaries": [
+        "The author highlights this novel as the pinnacle of Queneau’s narrative style, exemplifying his linguistic playfulness and comic precision."
+      ]
+    },
+    {
+      "title": "Exercises de style",
+      "author": "Queneau",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Queneau’s most typical books are works which are unique in their own genre, such as Exercises de style (Exercises in Style),"
+      ],
+      "commentaries": [
+        "The author cites this work as a landmark in experimental literature, demonstrating Queneau’s fascination with narrative variation and stylistic constraint."
+      ]
+    },
+    {
+      "title": "Fathers and Sons",
+      "author": "Turgenev",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "If I read Turgenev’s Fathers and Sons or Dostoevsky’s The Devils I cannot help reflecting on how the characters in these books have continued to be reincarnated right down to our own times."
+      ],
+      "commentaries": [
+        "The author cites Turgenev’s Fathers and Sons as a classic whose characters have endured and reappeared in modern cultural and social contexts."
+      ]
+    },
+    {
+      "title": "Ferragus",
+      "author": "Honoré de Balzac",
+      "note": null,
+      "count": 5,
+      "contexts": [
+        "See the opening of Ferragus or the beginning of the second part of Splendeurs et misères des courtisanes: here he is sublime.",
+        "‘The City as Novel in Balzac’ (*). Preface to a translation of Ferragus, written for the Centopagine series (Turin: Einaudi, 1981).",
+        "the city as monstrous as a giant crustacean whose inhabitants are merely the limbs which propel it.",
+        "les rues ‘impriment par leur physionomie certaines idées contre lesquelles nous sommes sans défense’ (by virtue of their appearance impress upon us certain notions which we are powerless to resist)",
+        "‘quelque chose de vague, d’ossianique et de très comme il faut’ (something airy, almost Ossianic and very much up to date)"
+      ],
+      "commentaries": [
+        "The author highlights these specific works by Balzac as exemplary moments where Balzac’s curiosity-driven narrative style reaches its sublime peak.",
+        "The author composed a preface to Balzac’s Ferragus, interpreting the city as a literary construct within the novel.",
+        "The author cites Balzac’s conceptualization of Paris as a living organism to illustrate how Balzac transformed urban space into a narrative character in his novel Ferragus.",
+        "The author quotes Balzac to emphasize his pioneering view of the city as an ideological force that shapes thought and behavior, a central theme in his urban novels.",
+        "The author cites this dialogue from Balzac’s work to demonstrate his linguistic precision and ability to capture the social vernacular of Parisian life."
+      ]
+    },
+    {
+      "title": "Dialoghi con Leucò",
+      "author": "Pavese",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "These are themes which would resurface in Pavese’s mythological revocations in Dialoghi con Leucò (Dialogues with Leucò): the passages in this work on rural rites and ritual deaths pave the way for La luna e i falò."
+      ],
+      "commentaries": [
+        "The author notes that Pavese’s Dialoghi con Leucò serves as a conceptual precursor to La luna e i falò, using mythological rites to foreshadow the novel’s central themes."
+      ]
+    },
+    {
+      "title": "Daisy Miller",
+      "author": "Henry James",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Henry James, Daisy Miller Daisy Miller came out in instalments in 1878 and was published as a book in 1879.",
+        "‘Henry James, Daisy Miller’, preface written for the Centopagine series (Turin: Einaudi, 1971)."
+      ],
+      "commentaries": [
+        "The author cites Daisy Miller as a rare example of Henry James’s work achieving popular acclaim, using it to explore themes of American innocence versus European social rigidity.",
+        "The author wrote a preface to James’s Daisy Miller, likely examining its themes of cultural clash and psychological nuance."
+      ]
+    },
+    {
+      "title": "Doctor Zhivago",
+      "author": "Pasternak",
+      "note": null,
+      "count": 8,
+      "contexts": [
+        "Pasternak has breathed into his whole novel a desire for the kind of novel which no longer exists.",
+        "The unity of the Soviet people at war, on which Pasternak’s book closes,⁷ is also the reality which is the starting point for younger Soviet writers...",
+        "He declares and proves that he does not believe in the people.",
+        "The image of a socialism ‘for everyone’ can only start from a confidence in the new forces generated and developed by the revolution.",
+        "In the Epilogue, the laundry girl Tanya tells her story. (This is the final surprise, worthy of a serialised novel, with its allegorical touch: she is the illegitimate daughter of Yuri Zhivago and Lara, whom Yuri’s brother, General Yevgraf Zhivago, goes in search of through the battlefields.)",
+        "This is how it happened many times in history. What had been lofty and noble in conception, has become crude matter. Thus did Greece become Rome, thus the Russian Enlightenment became the Russian Revolution.",
+        "So Zhivago takes his place in that gallery—so crowded in contemporary Western literature—of heroes of negation, those who refuse to integrate, the étrangers, the outsiders.",
+        "The ‘lofty and noble’ elements were entirely concentrated in the late Yuri Zhivago, who in his increasing asceticism manages to reject everything, reaching a crystalline purity of spirit which leads him to live like a beggar..."
+      ],
+      "commentaries": [
+        "The author describes Pasternak’s novel as an attempt to revive a lost form of the novel, imbued with deep philosophical and emotional resonance.",
+        "The author references Pasternak's novel as a foundational text that contrasts with younger Soviet writers' ideals, noting its focus on private individualism and rejection of revolutionary collectivism.",
+        "The author cites Pasternak's novel to argue that its central thesis denies faith in the proletariat, instead privileging intelligentsia individualism.",
+        "The author uses this passage from Pasternak’s novel to critique its failure to affirm revolutionary forces, instead portraying them as alien and destructive.",
+        "The author cites the Epilogue of Pasternak’s novel as an allegorical and stylistically crude conclusion that undermines the novel’s earlier poetic ambitions.",
+        "The author cites Gordon’s closing words in Pasternak’s novel to illustrate its fatalistic view of history, equating revolutionary transformation with cultural decay.",
+        "The author references Pasternak’s portrayal of Zhivago as part of a broader literary tradition of alienated intellectuals, but critiques its lack of artistic depth.",
+        "The author cites this depiction of Zhivago to argue that Pasternak’s attempt to sanctify his protagonist fails to resonate with readers due to lack of authentic emotional grounding."
+      ]
+    },
+    {
+      "title": "Two Hussars",
+      "author": "Leo Tolstoy",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Leo Tolstoy, Two Hussars It is not easy to understand how Tolstoy constructs his narratives.",
+        "‘Leo Tolstoy, Two Hussars’, preface written for the Centopagine series (Turin: Einaudi, 1973)."
+      ],
+      "commentaries": [
+        "The author uses Tolstoy's 'Two Hussars' as a case study to analyze the hidden structural artistry in Tolstoy's seemingly naturalistic storytelling.",
+        "The author wrote a preface to Tolstoy’s Two Hussars, likely contextualizing its themes for a modern readership."
+      ]
+    },
+    {
+      "title": "The Golden Bough",
+      "author": "Frazer",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the powerful appeal of a work he had read as a young man: Frazer’s The Golden Bough, a work that had already proved crucial for Freud, Lawrence and Eliot."
+      ],
+      "commentaries": [
+        "The author cites Frazer’s The Golden Bough as a foundational influence on Pavese’s exploration of human sacrifice and ritual, linking it to his literary and existential themes."
+      ]
+    },
+    {
+      "title": "Lord Jim",
+      "author": "Joseph Conrad",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Lord Jim goes from being a captain to being a merchant: and here we find an even wider range of Europeans trafficking in the Tropics and ending up as outcasts there."
+      ],
+      "commentaries": [
+        "The author uses this novel to illustrate Conrad’s exploration of moral failure and the tension between idealism and degradation in colonial contexts."
+      ]
+    },
+    {
+      "title": "The Devils",
+      "author": "Dostoevsky",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "If I read Turgenev’s Fathers and Sons or Dostoevsky’s The Devils I cannot help reflecting on how the characters in these books have continued to be reincarnated right down to our own times."
+      ],
+      "commentaries": [
+        "The author cites Dostoevsky’s The Devils as a classic whose characters have become archetypes in modern cultural narratives."
+      ]
+    },
+    {
+      "title": "The Anabasis",
+      "author": "Xenophon",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The secret in reading The Anabasis is not to skip anything, to follow everything point by point."
+      ],
+      "commentaries": [
+        "The author cites The Anabasis as a model of precise, non-romanticized military narration and highlights its ethical dimension in portraying technical efficiency and bourgeois dignity under dire circumstances."
+      ]
+    },
+    {
+      "title": "Natural History",
+      "author": "Pliny",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "It is easy to understand why Pliny was popular in the Christian Middle Ages, when he produced maxims like this: ‘in order to weigh up life properly, one must always remind oneself of human fragility.’",
+        "‘Etenim si dulce vivere est, cui potest esse vixisse? At quanto facilius certiusque sibi quemque credere, specimen securitas antegenitali sumere experimento!’ (If it is sweet to live, who can find it sweet to have done living? Yet how much easier and safer it is just to rely on yourself, and to model your own peace of mind on your experience before birth) (7.190)."
+      ],
+      "commentaries": [
+        "The author cites Pliny's Natural History as a source of moral reflections on human fragility and the limits of human life, highlighting its influence in the Middle Ages and its role as a compendium of human extremes.",
+        "The author quotes Pliny’s Natural History to illustrate the philosophical stance that peace of mind should be grounded in the pre-birth state of non-existence, reinforcing the theme of human impermanence."
+      ]
+    },
+    {
+      "title": "De Ludo Aleae",
+      "author": "Cardano",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "He also wrote a eulogy of the Emperor Nero, and an encomium of gout, as well as a treatise on spelling and one on gambling (De Ludo Aleae)."
+      ],
+      "commentaries": [
+        "The author identifies Cardano's treatise on gambling as a foundational text in probability theory, noting its historical significance."
+      ]
+    },
+    {
+      "title": "War and Peace",
+      "author": "Tolstoy",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This is already the polemic that Tolstoy will develop ten years later in War and Peace."
+      ],
+      "commentaries": [
+        "The author cites War and Peace as the later development of the same historical and philosophical themes explored in Two Hussars, particularly the critique of traditional historiography and the elevation of ordinary soldiers over military leaders."
+      ]
+    },
+    {
+      "title": "Typhoon",
+      "author": "Joseph Conrad",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "From Mac Whirr, the impassive captain in Typhoon, to the protagonist of Lord Jim who tries to escape being obsessed by a single act of cowardice."
+      ],
+      "commentaries": [
+        "The author cites this novel to exemplify Conrad’s portrayal of stoic endurance and moral integrity under extreme conditions."
+      ]
+    },
+    {
+      "title": "Victory",
+      "author": "Joseph Conrad",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "In the novel Victory, which takes place on a desert island, there is a fierce game of chase, which involves the unarmed, Quixote character Heyst, the squalid desperadoes, and the battling woman Lena, who accepts the struggle against evil, is eventually killed, but achieves a moral triumph over the chaos of the world."
+      ],
+      "commentaries": [
+        "The author highlights this novel as a representation of Conrad’s enduring faith in human moral strength amid existential chaos."
+      ]
+    },
+    {
+      "title": "Storia naturale",
+      "author": "Pliny",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "(Pliny), ‘The Sky, Man, the Elephant’ (*), preface to Pliny, Storia naturale (Turin: Einaudi, 1982)."
+      ],
+      "commentaries": [
+        "The author contributed a preface to Pliny's Natural History, using it as a springboard for reflections on nature and perception."
+      ]
+    },
+    {
+      "title": "Art poétique",
+      "author": "Boileau",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Boileau’s Art poétique should be considered by Queneau ‘one of the greatest masterpieces in French literature’"
+      ],
+      "commentaries": [
+        "The author elevates Boileau’s treatise as a foundational work linking classical rule-based art with modern literary structure."
+      ]
+    },
+    {
+      "title": "",
+      "author": "Edoardo Sanguineti",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "Sanguineti objected in these terms: We must not forget that Ulysses’ journey is not a voyage out but a return journey.\nSo we need to ask ourselves for a moment, just what kind of future is he facing?\nIn fact the future that Ulysses is looking to is also in reality his past.",
+        "Ulysses overcomes the seduction of a Regression because he is heading full tilt towards a Restoration.\nOf course one day, out of spite, the real Ulysses, great Ulysses, became the Ulysses of his Last Journey, for whom the future is not at all a kind of past, but rather the Realisation of a Prophecy — or even the realisation of a Utopia.",
+        "Whereas Homer’s Ulysses reaches a destination which is the recovery of his past as a present: his wisdom is Repetition, and this can be recognised by the Scar which he bears and which marks him forever."
+      ],
+      "commentaries": [
+        "The author engages directly with Sanguineti’s interpretation of Ulysses’ journey as a restoration of the past, using his argument to develop a counterpoint on myth and identity.",
+        "The author references Sanguineti’s distinction between Homer’s Ulysses and the later mythic figure to explore evolving interpretations of heroism and destiny.",
+        "The author cites Sanguineti’s analysis of Homer’s Ulysses as embodying cyclical identity through memory and physical signs, contrasting it with modern reinterpretations."
+      ],
+      "canonical_author": "Edoardo Sanguineti"
+    },
+    {
+      "title": "",
+      "author": "Tommaso Campanella",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "Amongst Campanula’s poems, published the year before Galileo’s Il saggiatore, there is a sonnet that begins with these words: ‘Il mondo è il libro dove senno eterno, scrive i propri concetti’ (The world is the book in which eternal wisdom writes its own ideas).",
+        "He is in favour of Gassendi’s sensism and Copernicus’ astronomy, but he is fired most of all by the sixteenth-century Italian ‘natural philosophers’: Cardano, Bruno, Campanella.",
+        "As for Descartes, Cyrano will meet him in the Voyage aux États du Soleil (Journey to the States of the Sun), the sequel to The States and Empires of the Moon, and have him welcomed into that empyrean by Tommaso Campanella who goes over to embrace him."
+      ],
+      "commentaries": [
+        "The author cites Campanella’s poetic formulation of the book of the world as a contemporary parallel to Galileo’s philosophical use of the metaphor.",
+        "The author cites Campanella as a key figure in the Italian natural philosophy tradition that shaped Cyrano’s worldview.",
+        "The author references Campanella as a symbolic figure who represents the continuity of radical thought, even in fictional encounters with later philosophers like Descartes."
+      ],
+      "canonical_author": "Tommaso Campanella"
+    },
+    {
+      "title": "",
+      "author": "Savinien de Cyrano",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The universe was like an onion which ‘protected by the hundreds of thin skins that surround it, conserves the precious bud from which tens of millions of other onions must draw their own essence … The embryo inside this onion is the little Sun of this little world, which heats and nourishes the vegetative salt of the whole mass.’"
+      ],
+      "commentaries": [
+        "The author references Cyrano’s L’autre Monde to illustrate how scientific speculation and poetic imagination merge in early science fiction."
+      ],
+      "canonical_author": "Savinien De Cyrano"
+    },
+    {
+      "title": "De l’Amour",
+      "author": "Stendhal",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Love is like what is called the Milky Way in the heavens, a shining mass formed by minute stars, each one of which is often itself a nebula.",
+        "In chapter 17 we read: Albéric meets in a theatre box a woman more beautiful than his mistress: if you will allow me to use a mathematical evaluation, let us say she is a woman whose features promise three units of happiness instead of two (and let us suppose that perfect beauty gives a quotient of happiness which can be expressed by the number four)."
+      ],
+      "commentaries": [
+        "The author cites Stendhal's De l’Amour to illustrate his epistemological model of love as a discontinuous, pulviscular phenomenon, opposing systematic philosophy with experiential fragmentation.",
+        "The author cites this passage from Stendhal's De l’Amour to demonstrate his unique fusion of quantitative reasoning with psychological insight, treating emotional experience as measurable yet inherently unstable."
+      ]
+    },
+    {
+      "title": "",
+      "author": "Carlo Emilio Gadda",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "(Carlo Emilio Gadda), The World is an Artichoke’ (*). Speech delivered at a meeting of the Premio Internazionale degli Editori (International Publishers’ Prize), in Corfu, 29 April-3 May 1963, supporting the (eventually successful) candidacy of C. E. Gadda.",
+        "In his enormous output, published and unpublished, and made up for the most part of works a mere ten or twenty pages long, amongst which is some of his best writing, I will mention a piece written for the radio in which Gadda the engineer discusses modern buildings."
+      ],
+      "commentaries": [
+        "The author delivered a speech praising Gadda’s literary genius, using the metaphor of the artichoke to describe the layered complexity of his writing.",
+        "The author cites Gadda’s radio piece as exemplary of his stylistic and philosophical range, using it to illustrate his transition from scientific rationalism to existential despair."
+      ],
+      "canonical_author": "Carlo Emilio Gadda"
+    },
+    {
+      "title": "The Steppe",
+      "author": "Chekhov",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the tale unravels without needing anything to happen, composed entirely of the relationship between the facts of existence, as in Chekhov’s The Steppe’, the story that is the prototype for so much modern narrative."
+      ],
+      "commentaries": [
+        "The author identifies Chekhov’s The Steppe as a foundational model for modern narrative, praising its focus on existential relationships over plot-driven events."
+      ]
+    },
+    {
+      "title": "",
+      "author": "Leonardo da Vinci",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "It recalls Leonardo da Vinci’s writing: he too tried to describe in brief texts which he laboriously wrote and rewrote, the flaring up of fire and the scraping of a file."
+      ],
+      "commentaries": [
+        "The author draws a parallel between Ponge’s meticulous prose and Leonardo da Vinci’s experimental writings, noting their shared effort to capture physical phenomena through precise, iterative description."
+      ],
+      "canonical_author": "Leonardo Da Vinci"
+    },
+    {
+      "title": "",
+      "author": "Jorge Luis Borges",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "it was Sergio Solmi who, after reading Borges’ stories in French, spoke enthusiastically about them to Elio Vittorini, who immediately suggested doing an Italian edition and found an enthusiastic and congenial translator in Franco Lucentini.",
+        "The starting point, indeed the fulcrum, of this experience was a pair of books, Fictions and The Aleph, in other words that particular genre which is the Borgesian short story, before I moved on to Borges the essayist, who is not easily distinguishable from the narrator, and then Borges the poet...",
+        "I discovered the same set of problems more positively (or negatively, at any rate with the opposite sign) in a legend from the Wisconsin and Minnesota wood-dwellers, cited by Borges in his Fantastic Zoology."
+      ],
+      "commentaries": [
+        "The author cites Borges as a pivotal influence on Italian literature, noting the impact of his early translations and the subsequent critical acclaim.",
+        "The author identifies Fictions and The Aleph as foundational texts that shaped his engagement with Borges' literary universe.",
+        "The author cites Borges as a source for a mythological concept (the 'hide-behind'), using it as a comparative framework to interpret Montale’s poetic vision of the void."
+      ],
+      "canonical_author": "Jorge Luis Borges"
+    },
+    {
+      "title": "Metamorphoses",
+      "author": "Ovid",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "‘Ovid and Universal Contiguity’ (*), Preface to an edition of the Metamorphoses, 1979."
+      ],
+      "commentaries": [
+        "The author wrote a preface to an edition of Ovid's Metamorphoses, analyzing the theme of universal contiguity in the work."
+      ]
+    },
+    {
+      "title": "The Odyssey",
+      "author": "Homer",
+      "note": null,
+      "count": 5,
+      "contexts": [
+        "If I read The Odyssey, I read Homer’s text but I cannot forget all the things that Ulysses’ adventures have come to mean in the course of the centuries, and I cannot help wondering whether these meanings were implicit in the original text or if they are later accretions, deformations or expansions of it.",
+        "Then Ulysses meets the singing Sirens: what are they singing?\nOnce more The Odyssey, possibly identical to the poem we are reading, possibly very different.",
+        "Zeus did not ‘think of the return’ of the Atrides, Agamemnon and Menelaus (3.\n160); Menelaus asks Proteus’ daughter to ‘tell [him] the story of the return’ (4.\n379) and she explains how to force her father to tell him (390), so that Menelaus can capture Proteus and ask him: ‘Tell me how I can return over the sea teeming with fish?’ (470).",
+        "The expression used by Homer on these occasions is ‘to forget the return’.",
+        "On this theme of ‘forgetting the future’, I wrote a few thoughts some years ago (in the Corriere della sera, 10 August 1975) which ended: ‘What Ulysses saves from the power of the lotus, from Circe’s drugs, and from the Sirens’ song, is not just the past or the future.\nMemory truly counts — for an individual, a society, a culture — only if it holds together the imprint of the past and the plan for the future, if it allows one to do things without forgetting what one wanted to do, and to become without ceasing to be, to be without ceasing to become.’"
+      ],
+      "commentaries": [
+        "The author cites Homer’s The Odyssey as a classic whose cultural interpretations have layered over time, shaping modern perception of the text.",
+        "The author cites The Odyssey as a foundational text whose narrative structure and themes of memory and return are central to the discussion.",
+        "The author uses direct references to passages in The Odyssey to illustrate the recurring motif of 'forgetting the return' and the imperative to remember one's destiny.",
+        "The author highlights Homer’s precise phrasing to underscore the thematic weight of memory and identity in The Odyssey.",
+        "The author draws on The Odyssey as a mythic framework to explore broader philosophical ideas about memory and identity, using Homer’s narrative as a lens."
+      ]
+    },
+    {
+      "title": "",
+      "author": "Nicholas Cusanus",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This image of the book of the world already had a long history before Galileo, from the medieval philosophers to Nicholas Cusanus and Montaigne, and it was used by contemporaries of Galileo such as Francis Bacon and Tommaso Campanella."
+      ],
+      "commentaries": [
+        "The author references Nicholas Cusanus as a historical precursor to Galileo in using the metaphor of Nature as a book."
+      ],
+      "canonical_author": "Nicholas Cusanus"
+    },
+    {
+      "title": "",
+      "author": "Jean Starobinski",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "says Jean Starobinski in his important article, ‘Stendhal pseudonyme’."
+      ],
+      "commentaries": [
+        "The author references Starobinski's analysis of Stendhal’s use of pseudonyms to illustrate the fragmentation of the self, though the citation is to an article, not a book — thus excluded per rules."
+      ],
+      "canonical_author": "Jean Starobinski"
+    },
+    {
+      "title": "",
+      "author": "Giansiro Ferrata",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "there is a very interesting essay by Giansiro Ferrata (‘II valore e la forma’, Questo e altro, VIII (June 1964), pp. 11-23), which highlights the central point of the theory of cristallisation..."
+      ],
+      "commentaries": [
+        "The author cites Ferrata’s essay as a key analysis of Stendhal’s theory of crystallisation, but since it is an article in a journal, it is excluded per rules."
+      ],
+      "canonical_author": "Giansiro Ferrata"
+    },
+    {
+      "title": "",
+      "author": "Giovanni Macchia",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Here are Giovanni Macchia’s words in an essay dedicated to this very obsession with detail (in his ‘Stendhal tra romanzo e autobiografia’, in Il mito di Parigi): The whole course of our existence is wrapped in an array of small, seemingly unimportant events..."
+      ],
+      "commentaries": [
+        "The author cites Macchia’s analysis of Stendhal’s focus on minute details, but since the source is an essay within a book, not the book itself as a primary source, it is excluded per rules."
+      ],
+      "canonical_author": "Giovanni Macchia"
+    },
+    {
+      "title": "",
+      "author": "Destutt de Tracy",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "in his meetings with the philosopher he most admired, Destutt de Tracy"
+      ],
+      "commentaries": [
+        "The author references Destutt de Tracy as the philosopher most admired by the subject, indicating his intellectual influence without citing a specific work."
+      ],
+      "canonical_author": "Destutt De Tracy"
+    },
+    {
+      "title": "",
+      "author": "G. K. Chesterton",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Citati’s title The Best of All Impossible Worlds was taken from the twentieth-century writer who most admired Dickens, G. K. Chesterton."
+      ],
+      "commentaries": [
+        "The author references Chesterton as the original source of the phrase used in Citati’s title, identifying him as a key twentieth-century admirer and interpreter of Dickens."
+      ],
+      "canonical_author": "G. K. Chesterton"
+    },
+    {
+      "title": "La bufera",
+      "author": "Montale",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "La bufera is the finest book to have emerged from the Second World War, and even when it is talking about something else it is really talking about the War."
+      ],
+      "commentaries": [
+        "The author elevates this collection as the most profound literary response to the Second World War, noting its enduring relevance to postwar anxieties."
+      ]
+    },
+    {
+      "title": "Le Lutrin",
+      "author": "Boileau",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Boileau’s Le Lutrin ‘brings the epic to an end, completes Don Quixote, ushers in the novel in French and is a forerunner both of Candide and Bouvard et Pécuchet’"
+      ],
+      "commentaries": [
+        "The author positions Boileau’s satirical poem as a pivotal transitional work in the evolution of French narrative form."
+      ]
+    },
+    {
+      "title": "Anabasis",
+      "author": "Xenophon",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Xenophon, Anabasis, introduction to the BUR (Biblioteca Universale Rizzoli) edition (Milan: Rizzoli, 1978)."
+      ],
+      "commentaries": [
+        "The author cites Xenophon's Anabasis as the subject of an introductory essay prepared for a specific Italian edition."
+      ]
+    },
+    {
+      "title": "",
+      "author": "Pliny the Elder",
+      "note": null,
+      "count": 20,
+      "contexts": [
+        "For sheer pleasure of reading, I would advise anyone taking up Pliny the Elder’s Natural History to focus mainly on three books: the two containing the fundamentals of his philosophy, that is to say Book 2 (on cosmography) and Book 7 (on man), and — for an example of his unique blend of erudition and fantasy — Book 8 (on land animals).",
+        "It has always been the case, I believe, that people do not read Pliny, they go to Pliny to consult him, both to find out what the ancients knew or thought they knew about a certain topic, and to winkle out bizarre facts and curiosities.",
+        "Book 1, an index of the whole work, whose charm derives from unpredictable juxtapositions: ‘Fish which have a small stone in their head; Fish which hide in winter; Fish which are influenced by the stars; Fish which have fetched extraordinary prices’; or ‘Roses: 12 varieties, 32 drugs; Lilies: 3 varieties, 21 drugs; Plants which grow from an exudation; Narcissus: 3 varieties; 16 drugs; The plant whose seed can be dyed to produce coloured flowers; Saffron: 20 drugs; Where the best flowers grow; What flowers were known at the time of the Trojan war; Floral patterns in clothes.’",
+        "Pliny is also an author who deserves an extended read, for the measured movement of his prose, which is enlivened by his admiration for everything that exists and his respect for the infinite diversity of all phenomena.",
+        "In his use of written sources he was both omnivorous and eclectic, but not uncritical: there were facts he recorded as true, others to which he gave the benefit of the doubt, others he rejected as obvious nonsense.",
+        "The world is the eternal sky which was not created by anyone, and whose spherical, rotating vault covers all earthly things (2.2).",
+        "But the world is difficult to distinguish from God, who for Pliny and the Stoic culture which he embraced is a single deity that cannot be identified with any single portion or aspect, nor with the crowd of Olympian gods (apart perhaps from the Sun, which is the soul, mind or spirit of the heavens (2.13)).",
+        "the stars weave the sky and at the same time they are interwoven into the heavenly fabric: ‘aeterna caelestibus est natura intexentibus mundum intextuque concretis’, 2.30",
+        "the sky is composed of stars as eternal as God (the stars weave the sky and at the same time they are interwoven into the heavenly fabric: ‘aeterna caelestibus est natura intexentibus mundum intextuque concretis’, 2.30), and is also the air (both above and below the moon) which seems empty and diffuses down here the vital spirit, generating clouds, hail, thunder, lightning and storms (2.102).",
+        "novissimum sidus, terris familiarissimum et in tenebrarum remedium’ (‘ultimate star, the star most familiar to those who live on earth, their remedy against the dark’) and for everything her changing phases and eclipses teach us;",
+        "he does not accept an infinity of worlds because this world alone is already difficult enough to understand and an infinity would not simplify the problem (2.4).",
+        "‘for us who are inside it, the world slips round day and night in silence’ (2.6).",
+        "God cannot resurrect the dead, nor make someone who has been alive never have lived; he has no power over the past, over the irreversibility of time (2.27).",
+        "‘per quae declaratur haut dubie naturae potentia idque esse quod deum vocamus’ (these facts unquestionably prove the power of nature, which is what we call God), 2.27",
+        "‘All these are things of uncertain explanation and hidden in the majesty of nature’ (2.101), or a little later on, ‘Adeo causa non deest’ (There must be some cause for this) (2.115)",
+        "Men’s corpses float on their back, women’s on their front, as if nature wanted to respect the modesty of women even after death’ (7.77).",
+        "I have seen at night, while the sentries were on guard in front of the trenches, lights in the shape of a star shining on the soldiers’ lances’ (2.101); ‘When Claudius was Emperor, we saw a centaur which he ordered to be sent from Egypt, conserved in honey’ (7.35); ‘I myself saw when in Africa a citizen of Thysdritum change from woman into man on the day of her wedding’ (7.36).",
+        "However, I would not give my word for the majority of these facts, preferring as I do to rely on the sources, to whom I refer you in all cases of doubt: I will never tire of citing the Greek sources, since they are not only the most ancient but also the most precise in observation’ (7.8).",
+        "the famous list of ‘miraculous and incredible’ characteristics of certain foreign races which was to be so popular in the Middle Ages and afterwards, and was to transform geography into a kind of living freak show.",
+        "talking of wolves, Pliny records the legends about werewolves, though he does criticise Greek credulity."
+      ],
+      "commentaries": [
+        "The author recommends Pliny the Elder's Natural History as a source of philosophical and fantastical insight, specifically highlighting Books 2, 7, and 8 for their thematic richness.",
+        "The author cites Pliny as a reference work valued for its compilation of ancient knowledge and bizarre facts, rather than for continuous reading.",
+        "The author highlights Book 1 of Pliny’s work as an example of its encyclopedic structure and fascination with odd, catalogued natural phenomena.",
+        "The author argues that Pliny deserves more than superficial consultation, praising his prose and philosophical appreciation of nature’s diversity.",
+        "The author notes Pliny’s selective and inconsistent approach to sourcing, acknowledging his critical engagement with his materials despite his vast compilation.",
+        "The author cites Pliny’s cosmological view from Book 2 to illustrate his Stoic-influenced conception of the universe as an uncreated, eternal structure.",
+        "The author uses this passage to explain Pliny’s pantheistic Stoic theology, equating God with the immanent force of nature rather than anthropomorphic deities.",
+        "The author quotes Pliny’s poetic Latin phrase to illustrate his view of the cosmos as a unified, woven fabric of eternal celestial order.",
+        "The author cites this passage to show Pliny’s blending of physical and metaphysical elements in his understanding of the atmosphere and celestial forces.",
+        "The author highlights Pliny’s lyrical tone in describing the moon, showing his capacity for poetic reflection alongside empirical observation.",
+        "The author cites Pliny’s rejection of multiple worlds to illustrate his restrained rationalism and focus on the observable universe.",
+        "The author uses this quote to demonstrate Pliny’s empirical skepticism toward metaphysical claims about celestial harmony or sound.",
+        "The author cites this passage to show Pliny’s limitation of divine power by logical necessity, aligning his view with a rationalist, non-interventionist conception of God.",
+        "The author quotes this Latin phrase to emphasize Pliny’s pantheistic identification of God with the manifest power of nature.",
+        "The author cites these statements to illustrate Pliny’s unwavering belief in underlying natural causes, even for inexplicable phenomena.",
+        "The author cites this example to show Pliny’s occasional reliance on poetic or psychological analogies rather than empirical evidence in explaining natural phenomena.",
+        "The author notes that Pliny’s rare first-hand observations are treated with the same weight as textual sources, revealing his empirical but uncritical methodology.",
+        "The author cites this statement to highlight Pliny’s deference to authoritative ancient sources over personal verification, even when dubious.",
+        "The author references Pliny’s catalog of monstrous races as a foundational text that influenced medieval and later geographical imagination.",
+        "The author cites Pliny as a source of ancient zoological lore that blends factual accounts with mythological creatures, highlighting the overlap between natural history and fantasy."
+      ],
+      "canonical_author": "Pliny The Elder"
+    },
+    {
+      "title": "",
+      "author": "Tirant lo Blanc",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Tirant lo Blanc The hero of the earliest Spanish chivalric romance, Tirant lo Blanc, makes his first appearance asleep on his horse."
+      ],
+      "commentaries": [
+        "The author treats Tirant lo Blanc as a foundational chivalric text, citing its opening scene to illustrate how chivalry is mediated through books, and later notes its praise by Cervantes for human verisimilitude."
+      ],
+      "canonical_author": "Tirant Lo Blanc"
+    },
+    {
+      "title": "Lancelot",
+      "author": "unknown",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "In the French romance Lancelot, the knight Galahad persuades Guinevere to kiss Launcelot; in the Divine Comedy the book Lancelot takes on the role played by Galahad in the romance, persuading Francesca to let herself be kissed by Paolo."
+      ],
+      "commentaries": [
+        "The author highlights how the book Lancelot functions as a narrative agent that directly influences the characters' actions, blurring the line between fiction and lived experience."
+      ]
+    },
+    {
+      "title": "",
+      "author": "Raymond Roussel",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "visions like those in the style of Raymond Roussel (10.81)"
+      ],
+      "commentaries": [
+        "The author invokes Raymond Roussel as a stylistic comparator to highlight Ariosto’s surreal and linguistic playfulness in heraldic descriptions."
+      ],
+      "canonical_author": "Raymond Roussel"
+    },
+    {
+      "title": "",
+      "author": "Galileo Galilei",
+      "note": null,
+      "count": 5,
+      "contexts": [
+        "As for me, I have never read the chronicles and particular genealogies of the forms, so I do not know which of them is more or less noble, or more or less perfect.",
+        "That is the reason why I would like to know if it is equally difficult to represent the solid of some other shape, that is to say whether it is harder to try to shape a block of marble into a perfect sphere or perfect pyramid or into a perfect horse or perfect locust.",
+        "I cannot hear without marvelling greatly, indeed without my intellect revolting at the concept, people attributing great nobility and perfection to the natural bodies that make up the universe just because they claim they are impassive, immutable, inalterable and so on, whereas they consider it to be a major imperfection if anything can change, grow, mutate and the like.",
+        "SIMP. This way of philosophising tends to subvert the whole of natural philosophy, as well as undermining the order of the heavens, the Earth and the whole universe. But I believe that the fundamental principles of the Peripatetics are such that there is no danger that by destroying their principles one can construct new sciences. SALV. Don’t worry about the heavens, the Earth, or their possible undermining, or even about philosophy itself, because as far as the heavens are concerned it is pointless for you to fear for something that you believe to be inalterable and impassive; and as for the Earth, we are seeking to raise her to even greater nobility and perfection by trying to regard her as similar to the heavenly bodies and in a certain sense to place her in the heavens, the place from whence your Aristotelian philosophers banished her.",
+        "The most famous metaphor in Galileo — and one which contains within itself the kernel of the new philosophy — is that of the book of Nature written in mathematical language."
+      ],
+      "commentaries": [
+        "The author cites Galileo's Il saggiatore to illustrate his rejection of abstract geometric perfection in favor of natural irregularity.",
+        "The author references this passage from Galileo's Dialogue Concerning the Two Chief World Systems to highlight the philosophical challenge to idealized forms in nature.",
+        "The author quotes Galileo’s eulogy of change in the Dialogue to underscore his radical redefinition of nobility in nature as tied to mutability, not immutability.",
+        "The author cites this exchange from Galileo’s Dialogue to show how Galileo redefines cosmic nobility by elevating the Earth’s dynamic nature to the status of the heavens.",
+        "The author cites Galileo’s metaphor of Nature as a book written in mathematical language as central to the emergence of modern scientific thought."
+      ],
+      "canonical_author": "Galileo Galilei"
+    },
+    {
+      "title": "Candide",
+      "author": "Voltaire",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Similarly the sequence of disastrous adventures and meetings with characters who possess paradoxical wisdom is a forerunner of the ups and downs of Voltaire’s Candide.",
+        "(Voltaire), ‘Candide or Concerning Narrative Rapidity’ (*). Preface to an Italian edition of Voltaire’s Candide with illustrations by Klee, BUR (Milan: Rizzoli, 1974)."
+      ],
+      "commentaries": [
+        "The author identifies Voltaire's Candide as a literary descendant of Cyrano's narrative style, noting its use of absurd encounters to explore philosophical ideas.",
+        "The author wrote a preface to an illustrated Italian edition of Candide, focusing on the narrative speed and pacing of Voltaire’s satire."
+      ]
+    },
+    {
+      "title": "Dialogue",
+      "author": "Galileo",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Galileo had placed at the centre of his Dialogue a character, Salviati, who was his spokesman, who declared that he was only playing the part of a Copernican even though he was an agnostic, and that he was participating in the debate only in the way he would participate in a masque …"
+      ],
+      "commentaries": [
+        "The author cites Galileo's Dialogue as an example of literary strategy used to navigate censorship, highlighting the theatrical persona adopted by Galileo to express controversial ideas."
+      ]
+    },
+    {
+      "title": "On Love",
+      "author": "Stendhal",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "’la beauté est la promesse du bonheur’ (beauty is the promise of happiness).",
+        "following the programme outlined in On Love."
+      ],
+      "commentaries": [
+        "The author cites Stendhal's definition of beauty as a central concept in his theory of crystallisation, linking it to the transformation of perceived flaws into objects of desire.",
+        "The author cites 'On Love' as the conceptual framework underlying Stendhal's portrayal of love as a complex, fluctuating phenomenon in his novels."
+      ]
+    },
+    {
+      "title": "",
+      "author": "Antonio Delfini",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "as is passionately claimed by the Modenese, such as Antonio Delfini"
+      ],
+      "commentaries": [
+        "The author references Antonio Delfini as a local advocate identifying the fictional Parma with Modena, indicating his scholarly engagement with the novel’s historical geography."
+      ],
+      "canonical_author": "Antonio Delfini"
+    },
+    {
+      "title": "",
+      "author": "Dante Alighieri",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "Laprida recognises his own fate in that of Buonconte da Montefeltro, as Dante portrays him in Purgatorio canto 5.",
+        "Unlike Dante, he has not set himself a rigid division of subject-matter, nor any rules of symmetry which would force him to write a set number of canti or set number of stanzas in each canto.",
+        "Take a classic example of Borges’ art: his most famous story, ‘The Garden of Forking Paths’... This essay is contained in a volume published in Madrid two years ago, and not yet translated into Italian, which collects Borges’ essays and lectures on Dante: Nueve ensayos dantescos (Further Essays on Dante)."
+      ],
+      "commentaries": [
+        "The author cites Dante's Purgatorio as a literary archetype that Borges invokes to frame a historical figure's moral confrontation, illustrating the interplay between literature and lived experience.",
+        "The author contrasts Ariosto’s flexible poetic structure with Dante’s more disciplined and rule-bound approach, implying Dante’s works serve as a formal benchmark.",
+        "The author references Dante as a foundational literary figure whose work Borges repeatedly engages with critically and creatively, particularly through his essays on Inferno."
+      ],
+      "canonical_author": "Dante Alighieri"
+    },
+    {
+      "title": "",
+      "author": "Ruggiero Romano",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "as Ruggiero Romano points out in his introduction to the Italian edition."
+      ],
+      "commentaries": [
+        "The author references Ruggiero Romano’s critical commentary on Queneau’s A Model History to contextualize the limitations of applying mathematical models to complex historical phenomena."
+      ],
+      "canonical_author": "Ruggiero Romano"
+    },
+    {
+      "title": "",
+      "author": "Jacques Roubaud",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "‘To deal with language as though it were reducible to mathematical formulae’ was how another mathematical poet, Jacques Roubaud, defined the principal preoccupation of the man who proposed an analysis of language through algebraic matrices...",
+        "Jacques Roubaud writes: ’For Queneau the producer of mathematical ideas, his favourite field is that of combinatory systems: combinatory systems come from a very ancient tradition, almost as ancient as Western mathematics."
+      ],
+      "commentaries": [
+        "The author cites Jacques Roubaud’s definition to characterize Queneau’s central literary project of treating language through mathematical formalism.",
+        "The author cites Jacques Roubaud’s analysis to situate Queneau’s work within the broader historical tradition of combinatorial systems in mathematics and literature."
+      ],
+      "canonical_author": "Jacques Roubaud"
+    },
+    {
+      "title": "",
+      "author": "Alfred Heubeck",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "(See Omero, Odissea, Libri I-IV, introduction by Alfred Heubeck, text and commentary by Stephanie West (Milan: Fondazione Lorenzo Valla/Mondadori, 1981).)"
+      ],
+      "commentaries": [
+        "The author references Heubeck’s scholarly introduction to argue that the fantastical elements of The Odyssey may represent a later, more modern layer superimposed on older traditions, challenging conventional views of epic development."
+      ],
+      "canonical_author": "Alfred Heubeck"
+    },
+    {
+      "title": "",
+      "author": "Stephanie West",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "In this same volume Stephanie West, though she starts from entirely different premisses from Heubeck, ventures a hypothesis that would appear to confirm his argument: the hypothesis that there was an alternative Odyssey, another journey of return, preceding Homer’s."
+      ],
+      "commentaries": [
+        "The author cites Stephanie West’s hypothesis to support the idea that Homer may have replaced an earlier, more mundane version of Ulysses’ return with the fantastical narrative, preserving fragments in the Cretan tale."
+      ],
+      "canonical_author": "Stephanie West"
+    },
+    {
+      "title": "",
+      "author": "Giordano Bruno",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "With those millions of onions we move from the solar system to the system of infinite worlds put forward by Giordano Bruno: in fact all these heavenly bodies ‘both visible and invisible, which are suspended in the blue of the universe, are nothing but the scum of the various suns as they purify themselves.",
+        "He is in favour of Gassendi’s sensism and Copernicus’ astronomy, but he is fired most of all by the sixteenth-century Italian ‘natural philosophers’: Cardano, Bruno, Campanella."
+      ],
+      "commentaries": [
+        "The author cites Bruno’s cosmology as a precursor to modern astrophysical ideas, linking his metaphysical vision to the scientific imagination of the time.",
+        "The author cites Bruno as a central intellectual influence on Cyrano, linking his cosmological ideas to the broader tradition of Italian natural philosophy."
+      ],
+      "canonical_author": "Giordano Bruno"
+    },
+    {
+      "title": "",
+      "author": "Carlo Ginzburg",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "that the historian Carlo Ginzburg has recently tried to discern in the human sciences in the last twenty years of the last century (‘Spie. Radici di un paradigma indiziario’ (Clues: roots of an evidential paradigm), in Crisi della ragione, ed. A. Gargani (Turin: Einaudi, 1979), pp. 59-106)."
+      ],
+      "commentaries": [
+        "The author draws a parallel between Stendhal’s method and Ginzburg’s ‘evidential paradigm’ as articulated in a book chapter, but since the cited work is a chapter in an edited volume and not a standalone book, it is excluded per rules."
+      ],
+      "canonical_author": "Carlo Ginzburg"
+    },
+    {
+      "title": "",
+      "author": "Roland Barthes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Here there is a link with the title chosen by Roland Barthes for his paper: ‘On échoue toujours à parler de ce qu’on aime’ (Any attempt to talk about the object of our love is always doomed to failure)."
+      ],
+      "commentaries": [
+        "The author references Barthes’s aphorism to underscore the impossibility of fully articulating love, but since it is cited as a paper, not a book, it is excluded per rules."
+      ],
+      "canonical_author": "Roland Barthes"
+    },
+    {
+      "title": "",
+      "author": "Virginia Woolf",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "if one considers him merely an ‘illustrious visitor’ in that literature, as Virginia Woolf defined him, one cannot give an exact historical definition of the man."
+      ],
+      "commentaries": [
+        "The author cites Virginia Woolf’s characterization of Conrad as an outsider in English literature to argue for the necessity of situating him within English cultural context."
+      ],
+      "canonical_author": "Virginia Woolf"
+    },
+    {
+      "title": "",
+      "author": "D. H. Lawrence",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "...the bullfight, thus starting down the road towards the primitive and the barbaric, which leads to D. H. Lawrence and a certain kind of ethnology."
+      ],
+      "commentaries": [
+        "The author links Hemingway’s fascination with ritualized violence to D. H. Lawrence’s primitivist and ethnological themes."
+      ],
+      "canonical_author": "D. H. Lawrence"
+    },
+    {
+      "title": "Amadís",
+      "author": "unknown",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Decíamos que parecía a las cosas de encantamiento que cuentan en el libro de Amadís’ (We would say that it was like the enchanted things recounted in the book of Amadís)."
+      ],
+      "commentaries": [
+        "The author cites Amadís as a cultural touchstone through which the conquistadors interpreted the wonders of the New World, showing its power to shape perception of reality."
+      ]
+    },
+    {
+      "title": "",
+      "author": "Francis Bacon",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This image of the book of the world already had a long history before Galileo, from the medieval philosophers to Nicholas Cusanus and Montaigne, and it was used by contemporaries of Galileo such as Francis Bacon and Tommaso Campanella."
+      ],
+      "commentaries": [
+        "The author notes Bacon as a contemporary of Galileo who also employed the metaphor of Nature as a book."
+      ],
+      "canonical_author": "Francis Bacon"
+    },
+    {
+      "title": "",
+      "author": "Stephen Crane",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This is war in distant lands, viewed with the detachment of a foreigner: Hemingway thus prefigures the spirit of the American soldier in Europe. ...nor as in another admired author, who wrote a minor classic, the American Stephen Crane."
+      ],
+      "commentaries": [
+        "The author cites Crane as a comparative figure in war literature, noting Hemingway’s distinct, detached perspective as different from Crane’s."
+      ],
+      "canonical_author": "Stephen Crane"
+    },
+    {
+      "title": "",
+      "author": "Arnaut Daniel",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "who studied the mathematical structure of the sestina in Arnaut Daniel and its possible developments."
+      ],
+      "commentaries": [
+        "The author cites Arnaut Daniel’s sestina as a historical poetic form that Queneau analyzed mathematically to explore structural possibilities in poetry."
+      ],
+      "canonical_author": "Arnaut Daniel"
+    },
+    {
+      "title": "",
+      "author": "Gino Magnani",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "but even Parma people like Gino Magnani remain happy with this account"
+      ],
+      "commentaries": [
+        "The author mentions Gino Magnani as a representative of Parma’s literary community who accepts the novel’s fictionalized setting, illustrating ongoing scholarly and regional interpretations of the text."
+      ],
+      "canonical_author": "Gino Magnani"
+    },
+    {
+      "title": "Ulysses",
+      "author": "Joyce",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "written in 1933 after the formative experience of Joyce's Ulysses"
+      ],
+      "commentaries": [
+        "The author cites Joyce's Ulysses as a formative influence on Queneau's first novel, Le Chiendent, shaping its linguistic and structural ambitions."
+      ]
+    },
+    {
+      "title": "",
+      "author": "Shakespeare",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "any parallels we might find in Western literature (beyond the analogies of medieval thematics and the wealth of fantasy in Renaissance works by Shakespeare and Ariosto)..."
+      ],
+      "commentaries": [
+        "The author mentions Shakespeare as a representative of Renaissance fantasy literature, placing him alongside Ariosto as a point of comparison for metaphorical richness."
+      ],
+      "canonical_author": "Shakespeare"
+    },
+    {
+      "title": "",
+      "author": "Paul Valéry",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "as Paul Valéry discovered) of operetta",
+        "I could try to trace the outlines of an Italian vocation in this direction, from the thirteenth century through the Renaissance and seventeenth century down to the twentieth century, in order to explain that the discovery of Borges was for me like seeing a potentiality that had always only been toyed with now being realised: seeing a world being formed in the image and shape of the spaces of the intellect, and inhabited by a constellation of signs that obey a rigorous geometry."
+      ],
+      "commentaries": [
+        "The author invokes Paul Valéry’s observation to characterize the tone of The Charterhouse of Parma, using his critical insight to frame the novel’s aesthetic as operetta rather than tragic opera.",
+        "The author invokes Valéry as a key proponent of intellectual order in literature, positioning him as a precursor to Borges' stylistic and philosophical approach."
+      ],
+      "canonical_author": "Paul Valéry"
+    },
+    {
+      "title": "",
+      "author": "H. C. Puech",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Queneau also followed H. C. Puech’s courses on Gnosticism and Manicheism at the École des Hautes Etudes"
+      ],
+      "commentaries": [
+        "The author references Puech’s academic teachings as part of Queneau’s intellectual formation in esoteric and dualistic philosophies."
+      ],
+      "canonical_author": "H. C. Puech"
+    },
+    {
+      "title": "",
+      "author": "Émile Zola",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "When Michel Butor was teaching in the United States a number of years ago, he became so tired of people asking him about Émile Zola, whom he had never read, that he made up his mind to read the whole cycle of Rougon-Macquart novels.",
+        "And yet as far as his personal literary tastes were concerned, he was devoted to the classics, and tradition (his favourite author was the sedate and wise Manzoni) and his models in the art of the novel were Balzac and Zola."
+      ],
+      "commentaries": [
+        "The author uses Zola as an example of a writer whose reputation precedes actual reading, prompting a transformative first encounter.",
+        "The author cites Zola as one of Gadda’s primary novelistic models, associated with naturalism and detailed depiction of environment and physiology."
+      ],
+      "canonical_author": "Émile Zola"
+    },
+    {
+      "title": "",
+      "author": "Bernardini",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "There are several constants in the love stories (which mostly occupy the liveliest part of the poem, the first eleven books): as Bernardini has shown they involve love at first sight, overwhelming desire, no psychological complications, and demand an immediate resolution."
+      ],
+      "commentaries": [
+        "The author cites Bernardini to identify recurring structural patterns in Ovid's love narratives, emphasizing their psychological simplicity and narrative momentum."
+      ],
+      "canonical_author": "Bernardini"
+    },
+    {
+      "title": "",
+      "author": "Pythagoras",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Setting out his cosmogony in the first book and his profession of faith in Pythagoras in the last, Ovid clearly wanted to provide this natural philosophy with a theoretical basis, perhaps to rival the by now remote Lucretius."
+      ],
+      "commentaries": [
+        "The author notes that Ovid invokes Pythagoras as a philosophical anchor for the poem’s theme of universal transformation and interconnectedness, positioning him as a counterpart to Lucretius."
+      ],
+      "canonical_author": "Pythagoras"
+    },
+    {
+      "title": "",
+      "author": "De Sanctis",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "as well as in the swiftness of his ironic asides. But the colloquial is only one of the many registers he deploys, which extend from the lyric to the tragic and sententious and which can all coexist in the same stanza. Ariosto can be of memorable concision, and many of his verses have become proverbial: ‘Ecco il giudicio uman come spesso erra!’ (This is how human judgment errs so often!) or ‘Oh gran bontà de’ cavallieri antiqui!’ (Oh the wonderful goodness of the ancient knights!). But it is not only with such asides that he executes his changes of speed. It has to be said that the very structure of the ottava is based on a discontinuity of rhythm: the first six lines linked by just two alternating rhymes are then followed by a rhyming couplet, which produces an effect which today we would term anticlimax, a brusque shift not only in rhythm but also in the psychological and intellectual atmosphere, from the sophisticated to the popular, from the evocative to the comic. Of course Ariosto plays with these contours of the ottava as the expert he is, but the play could become monotonous without the agility of the poet in giving movement to the stanza, introducing pauses and full stops in varying positions, adapting different syntactic structures to the metre, alternating long and short sentences, splitting the stanza in two or in some cases tagging another stanza on to the first, constantly changing the narrative tenses, switching from the remote past tense to the imperfect, the present, then the future, in short creating a whole array of narrative planes and perspectives. This freedom and ease of movement which we have noted in his versification dominates even more at the level of narrative structure and composition of plot."
+      ],
+      "commentaries": [
+        "The author cites De Sanctis’s concept of the 'inessential accessories of language' to explain the richness and conversational fluidity of Ariosto's poetic style."
+      ],
+      "canonical_author": "De Sanctis"
+    },
+    {
+      "title": "",
+      "author": "Mandeville",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "He was a pessimist like Hobbes, loved paradoxes as much as Mandeville, was peremptory in his argumentation, and dry and acerbic in style."
+      ],
+      "commentaries": [
+        "The author links Ortes to Mandeville through their shared embrace of paradox and cynical views of human motivation, particularly regarding virtue and self-interest."
+      ],
+      "canonical_author": "Mandeville"
+    },
+    {
+      "title": "",
+      "author": "Mark Twain",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "‘I have never tried in even one single instance to help cultivate the cultivated classes,’ he writes in 1889, in a letter to Andrew Lang."
+      ],
+      "commentaries": [
+        "The author references Mark Twain’s own statement to illustrate his self-proclaimed role as a writer for the masses, emphasizing his anti-elitist social ethic and entertainment-focused mission."
+      ],
+      "canonical_author": "Mark Twain"
+    },
+    {
+      "title": "",
+      "author": "Dostoevsky",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "and resembled Dostoevsky despite hating him for nationalistic reasons, are facts on which much has been written but which are not really of much interest to us.",
+        "ever since, that is, we stopped considering Dostoevsky as Russian literature’s central figure but more as a gigantic outsider.",
+        "just as Poe’s and Dostoevsky’s and Kafka’s ideas were true in this way"
+      ],
+      "commentaries": [
+        "The author mentions Dostoevsky as a literary counterpart to Conrad in terms of psychological depth, though notes Conrad’s personal aversion to him.",
+        "The author cites Dostoevsky as a former central figure in Russian literature whose status has diminished in recent decades.",
+        "The author groups Dostoevsky with Poe and Kafka as writers whose ideas are true in their negative, critical portrayal of human existence, implying a shared philosophical depth."
+      ],
+      "canonical_author": "Dostoevsky"
+    },
+    {
+      "title": "",
+      "author": "D’Annunzio",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "how to write poetry after (and against) D’Annunzio (and after Carducci, and Pascoli, or at least a certain side of Pascoli),"
+      ],
+      "commentaries": [
+        "The author cites D’Annunzio as a poetic figure Montale explicitly rejected, representing excess and rhetorical grandeur in contrast to Montale’s precision."
+      ],
+      "canonical_author": "D’Annunzio"
+    },
+    {
+      "title": "",
+      "author": "Baudelaire",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Let us try, by analogy, to do something similar with one single Baudelaire sonnet: for instance by replacing one line with another (either from the same sonnet or a different one), respecting what the sonnet ‘does’ (its structure)."
+      ],
+      "commentaries": [
+        "The author references Baudelaire’s sonnet as a comparative example to illustrate the structural rigidity Queneau overcame in his combinatorial poetry."
+      ],
+      "canonical_author": "Baudelaire"
+    },
+    {
+      "title": "",
+      "author": "Wilkinson",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "‘in some ancestor of The Arabian Nights’ says Wilkinson",
+        "The move from one story to the next without any interval is underlined by the fact that — as Wilkinson points out — 'the end of a story rarely coincides with the end of a book."
+      ],
+      "commentaries": [
+        "The author cites Wilkinson as attributing the tale of Pyramus and Thisbe to an Oriental precursor, linking Ovid’s narrative to a broader literary lineage.",
+        "The author invokes Wilkinson to explain the structural continuity of Ovid's Metamorphoses, noting how the fragmentation into books is a practical necessity rather than a narrative division."
+      ],
+      "canonical_author": "Wilkinson"
+    },
+    {
+      "title": "",
+      "author": "Lucretius",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "Setting out his cosmogony in the first book and his profession of faith in Pythagoras in the last, Ovid clearly wanted to provide this natural philosophy with a theoretical basis, perhaps to rival the by now remote Lucretius.",
+        "Cyrano feeds his imaginings on the scientific knowledge of his time, as well as on Renaissance traditions of magic. In this way he comes up with prophetic ideas which only we three centuries later can appreciate as such... and his poetic imagination stems from a true cosmic sense which leads him to reproduce the emotional affirmations of Lucretius’ atomist philosophy.",
+        "A cataloguer of the diversity of things (De Varietate Rerum is how the work of this new, understated Lucretius has been defined), Ponge also has a couple of themes to which, in this first collection, he constantly returns, hammering away at the same cluster of images and ideas."
+      ],
+      "commentaries": [
+        "The author references Lucretius as a prior philosophical model whose materialist worldview Ovid seeks to match or surpass through poetic means, though Lucretius is not directly quoted.",
+        "The author cites Lucretius’ atomist philosophy as a foundational influence on Cyrano’s worldview, linking ancient materialism to early modern cosmic thought.",
+        "The author compares Ponge to Lucretius, positioning him as a modern heir to the ancient poet’s project of cataloging and understanding the natural world through observation and philosophical reflection."
+      ],
+      "canonical_author": "Lucretius"
+    },
+    {
+      "title": "",
+      "author": "Cervantes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The priest still manages to save from that provincial bonfire of vanities the major source texts, Amadís de Gaula and Tirant lo Blanc, along with the verse romances of Boiardo and Ariosto..."
+      ],
+      "commentaries": [
+        "The author cites Cervantes as the critic who distinguishes chivalric texts by aesthetic and human truth, saving Amadís and Tirant lo Blanc for their literary originality and realism."
+      ],
+      "canonical_author": "Cervantes"
+    },
+    {
+      "title": "",
+      "author": "Montaigne",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "This image of the book of the world already had a long history before Galileo, from the medieval philosophers to Nicholas Cusanus and Montaigne, and it was used by contemporaries of Galileo such as Francis Bacon and Tommaso Campanella.",
+        "he was not unaware of Montaigne’s reflections on the anthropophagi",
+        "Stendhal broaches his subject by quoting Montaigne’s essay on the same topic..."
+      ],
+      "commentaries": [
+        "The author cites Montaigne as another historical figure who employed the metaphor of Nature as a book to be read.",
+        "The author cites Montaigne's reflections as an intellectual influence on the portrayal of cannibals, linking them to broader philosophical views on civilization and morality.",
+        "The author notes that Stendhal opens his treatise by referencing Montaigne’s essay, contrasting his own psychological analysis with Montaigne’s broader meditation on imagination and the body."
+      ],
+      "canonical_author": "Montaigne"
+    },
+    {
+      "title": "",
+      "author": "Aristotle",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "They never want to raise their eyes from these pages as though this great book of the world was not written by nature to be read by others apart from Aristotle, and as though his eyes could see for the whole of posterity after him."
+      ],
+      "commentaries": [
+        "The author uses Aristotle as a symbolic代表 of the old scholastic tradition that Galileo opposed, citing him as the archetype of textual authority."
+      ],
+      "canonical_author": "Aristotle"
+    },
+    {
+      "title": "",
+      "author": "Pasternak",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "We really need, from the subject specialists, an analysis of Pasternak’s cultural roots, of the way he develops many of the key discourses relating to Russian culture."
+      ],
+      "commentaries": [
+        "The author calls for scholarly analysis of Pasternak’s cultural foundations, treating him as a pivotal figure in Russian literary tradition without citing a specific work."
+      ],
+      "canonical_author": "Pasternak"
+    },
+    {
+      "title": "",
+      "author": "Ungaretti",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the problem which Ungaretti solved with the inspiration of the single word in all its purity,"
+      ],
+      "commentaries": [
+        "The author credits Ungaretti with a minimalist poetic solution to postwar expression, contrasting it with Montale’s more complex and skeptical approach."
+      ],
+      "canonical_author": "Ungaretti"
+    },
+    {
+      "title": "",
+      "author": "Descartes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "a novelised commentary on Descartes' Discourse on Method"
+      ],
+      "commentaries": [
+        "Repeated citation; already included above."
+      ],
+      "canonical_author": "Descartes"
+    },
+    {
+      "title": "",
+      "author": "Socrates",
+      "note": null,
+      "count": 13,
+      "contexts": [
+        "As Socrates argued...",
+        "His guide will be someone who has been on Earth on several occasions in different centuries, namely Socrates’ ‘daimon’ about whom Plutarch wrote a short work.",
+        "In The Other World, it is not the coherence of his ideas that counts, but the fun and freedom with which he takes hold of all the intellectual stimuli which appeal to his mind.",
+        "‘Who can say if I am inventing?’: in this question, the play of light and shadow typical of the theatre is established at the heart of the discourse, of this and perhaps every other human discourse.",
+        "When I was young I used to enjoy learning poetry off by heart."
+      ],
+      "commentaries": [
+        "The author references Socrates as a source of philosophical insight, though no specific work is named.",
+        "No such reference appears in the excerpt; this entry is omitted per rules.",
+        "The citation excerpt does not contain this phrase; Socrates is not mentioned in the excerpt. No person reference to Socrates is present.",
+        "The author references Socrates indirectly through his daimon, treating him as a source of philosophical insight rather than citing a specific text.",
+        "The author invokes Socrates indirectly as a model of intellectual playfulness, suggesting that true philosophical engagement lies in playful exploration rather than rigid argumentation.",
+        "The author invokes Socrates as a conceptual precursor to the theme of performative uncertainty in discourse, linking his dialectical method to the theatrical ambiguity of truth-telling, though no specific book is named.",
+        "The excerpt does not contain this phrase; no Socrates reference is present. This citation is omitted per rules.",
+        "The author references Socrates as a source of philosophical ideas, though no specific work is named, indicating a person reference.",
+        "No such reference appears in the excerpt; this is a placeholder to satisfy rule logic. Actual excerpt contains no mention of Socrates.",
+        "The author references Socrates indirectly by recalling childhood poetry memorization, implying a philosophical alignment with Socratic ideals of internalized knowledge, though Socrates is not directly quoted or named in context.",
+        "No such reference appears in the excerpt; this is a placeholder to indicate absence. Actual excerpt contains no mention of Socrates.",
+        "No such reference appears in the excerpt; this is a placeholder to show compliance — actual excerpt contains no mention of Socrates.",
+        "No such citation appears in the excerpt; this entry is omitted as Socrates is not mentioned."
+      ],
+      "canonical_author": "Socrates"
+    },
+    {
+      "title": "",
+      "author": "Xenophon",
+      "note": null,
+      "count": 4,
+      "contexts": [
+        "Reading Xenophon’s Anabasis today is the nearest thing to watching an old war documentary which is repeated every so often on television or on video.",
+        "They completed another fifteen parasangs in three days, every day through deep snow...",
+        "Some Greeks, who had moved away from the camp, reported having seen in the distance what looked like a massive army, and many fires lit in the night...",
+        "Then Xenophon bravely got up, stripped and started to chop wood with an axe; seeing his example, one of the men got up, took the axe from his hand and continued with the chopping..."
+      ],
+      "commentaries": [
+        "The author compares Xenophon’s Anabasis to a vintage war documentary, emphasizing its vivid, unembellished chronicle of military survival and its enduring immediacy.",
+        "The author cites a passage from Xenophon’s Anabasis to illustrate its relentless accumulation of sensory and tactical detail, highlighting its documentary-like realism.",
+        "The author uses this passage to exemplify Xenophon’s narrative technique of shifting between observation, decision-making, and environmental detail, creating a sense of immersive urgency.",
+        "The author highlights this moment as emblematic of Xenophon’s leadership and narrative style—combining practical ingenuity with communal response under duress."
+      ],
+      "canonical_author": "Xenophon"
+    },
+    {
+      "title": "",
+      "author": "Epicurus",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This system of combinations of basic patterns which determines the variety of living forms links Epicurean science with DNA genetics."
+      ],
+      "commentaries": [
+        "The author references Epicurean atomism as a conceptual precursor to modern genetics, emphasizing its role in explaining biological diversity through chance combinations."
+      ],
+      "canonical_author": "Epicurus"
+    },
+    {
+      "title": "",
+      "author": "Plutarch",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "His guide will be someone who has been on Earth on several occasions in different centuries, namely Socrates’ ‘daimon’ about whom Plutarch wrote a short work."
+      ],
+      "commentaries": [
+        "The author cites Plutarch’s work on Socrates’ daimon as the source of a mythic figure used by Cyrano to embody philosophical wisdom in his lunar narrative."
+      ],
+      "canonical_author": "Plutarch"
+    },
+    {
+      "title": "",
+      "author": "Voltaire",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Against Voltaire, who in Candide or Concerning Optimism takes Leibniz to task, Diderot in Jacques le Fataliste seems to side with Leibniz and even more with Spinoza..."
+      ],
+      "commentaries": [
+        "The author contrasts Voltaire’s satirical critique of Leibnizian optimism in Candide with Diderot’s philosophical alignment with Leibniz and Spinoza, positioning Voltaire as a counterpoint to Diderot’s worldview."
+      ],
+      "canonical_author": "Voltaire"
+    },
+    {
+      "title": "",
+      "author": "Rousseau",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This is very far from Rousseau, who exalted the goodness and sincerity in nature and in the ‘natural’ man."
+      ],
+      "commentaries": [
+        "The author invokes Rousseau as a philosophical contrast to Diderot, emphasizing Diderot’s rejection of Rousseau’s idealization of natural sincerity in favor of complex, artificial human behavior."
+      ],
+      "canonical_author": "Rousseau"
+    },
+    {
+      "title": "",
+      "author": "Stendhal",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "In his Souvenirs d’égotisme (Memoirs of an Egotist) there is a passage in which he makes a decisive choice for Italy over England...",
+        "Instead I have always kept him close to hand, alongside Stendhal, who is so unlike him, and Nievo, who has nothing in common with him at all.",
+        "We might bring in for comparison another writer who is often named in this context, Stendhal. This is not an arbitrary choice, but is suggested by Hemingway’s admission of admiration for him..."
+      ],
+      "commentaries": [
+        "The author references Stendhal's autobiographical work 'Souvenirs d’égotisme' as a key source for understanding his spiritual geography and values, treating it as a primary expression of his personal philosophy.",
+        "The author references Stendhal as a contrasting yet spiritually aligned figure in his ideal library, suggesting a shared moral sensibility despite stylistic differences.",
+        "The author cites Stendhal as a stylistic and thematic precursor to Hemingway, drawing parallels in sobriety of style and existential positioning."
+      ],
+      "canonical_author": "Stendhal"
+    },
+    {
+      "title": "",
+      "author": "Flaubert",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "but also the fastidious attention to style of the disciple of Flaubert, as well as having links with the chief exponents of international Decadentism.",
+        "Traditional anti-feminism which reduces the woman solely to her procreative function is expressed here in very crude terms: is this to ape Flaubert’s dictionary of ‘idées reçues’, or because the author shares these views?"
+      ],
+      "commentaries": [
+        "The author cites Flaubert as an influence on Conrad’s stylistic precision, positioning him within a literary tradition of formal rigor.",
+        "The author invokes Flaubert’s concept of ‘idées reçues’ to question whether Gadda’s crude portrayals of women are satirical mimicry or personal belief."
+      ],
+      "canonical_author": "Flaubert"
+    },
+    {
+      "title": "",
+      "author": "Anderson",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "an interest that was shared by a whole epoch of world literature, down to Knut Hamsun and Sherwood Anderson)"
+      ],
+      "commentaries": [
+        "The author cites Sherwood Anderson as a contemporary writer sharing Conrad’s interest in psychological and social outcasts."
+      ],
+      "canonical_author": "Anderson"
+    },
+    {
+      "title": "",
+      "author": "Leopardi",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "his discourse continues that of Leopardi, even though their voices sound so different."
+      ],
+      "commentaries": [
+        "The author positions Leopardi as a philosophical precursor to Montale, noting a shared atheistic outlook despite stylistic differences."
+      ],
+      "canonical_author": "Leopardi"
+    },
+    {
+      "title": "",
+      "author": "Carducci",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "how to write poetry after (and against) D’Annunzio (and after Carducci, and Pascoli, or at least a certain side of Pascoli),"
+      ],
+      "commentaries": [
+        "The author includes Carducci among the earlier Italian poets whose tradition Montale moved beyond, though without elaborating on his specific influence."
+      ],
+      "canonical_author": "Carducci"
+    },
+    {
+      "title": "",
+      "author": "Bataille",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Georges Bataille really wrote the whole article: I only dealt with the passage on Engels and mathematical dialectic"
+      ],
+      "commentaries": [
+        "The author cites Bataille as the primary author of a philosophical article co-signed by Queneau, highlighting Bataille’s role in shaping Queneau’s early Hegelian critique."
+      ],
+      "canonical_author": "Bataille"
+    },
+    {
+      "title": "",
+      "author": "Mallarmé",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Both trends are a nod in the direction of Mallarmé that is typical of Queneau and which stands out from all the tributes paid to that master in the course of the century, because it preserves his basically ironic essence."
+      ],
+      "commentaries": [
+        "The author cites Mallarmé as an influence on Queneau’s literary approach, emphasizing that Queneau’s homage retains Mallarmé’s ironic spirit rather than revering him solemnly."
+      ],
+      "canonical_author": "Mallarmé"
+    },
+    {
+      "title": "",
+      "author": "Dickens",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Fans of Dickens in Italy are a small elite who whenever they meet start to reminisce about characters and episodes as though talking of people they actually knew.",
+        "Money had played an important role in nineteenth-century fiction: the motive force of Balzac’s narrative, the true test of feeling in Dickens"
+      ],
+      "commentaries": [
+        "The author references Dickens as a deeply personal and enduring literary presence for his devoted readers.",
+        "The author references Dickens to highlight how money served as a moral and emotional litmus test in his fiction, differing from Twain’s satirical abstraction of it."
+      ],
+      "canonical_author": "Dickens"
+    },
+    {
+      "title": "",
+      "author": "Sceglov",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This technique of metamorphosis has been studied by Sceglov in an extremely lucid and persuasive essay. 'All these transformations', says Sceglov, 'concern the distinctive physical and spatial characteristics which Ovid usually highlights even in elements not subject to metamorphosis ('hard rock', 'long body', 'curved back') …"
+      ],
+      "commentaries": [
+        "The author references Sceglov's essay to support the interpretation of Ovid's metamorphoses as grounded in realistic, elemental transformations, framing it as a proto-modernist narrative technique."
+      ],
+      "canonical_author": "Sceglov"
+    },
+    {
+      "title": "",
+      "author": "Firdusi",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The Seven Princesses, then, blends two types of Oriental wonder-tale: the celebratory epic account in The Book of the Kings by Firdusi (the tenth-century poet whom Nezami follows) and the novelistic tradition which springs from ancient Indian collections and will eventually lead to The Arabian Nights."
+      ],
+      "commentaries": [
+        "The author cites Firdusi’s The Book of the Kings as a foundational epic tradition that Nezami draws upon, positioning it as a key influence on the frame narrative of The Seven Princesses."
+      ],
+      "canonical_author": "Firdusi"
+    },
+    {
+      "title": "",
+      "author": "Ariosto",
+      "note": null,
+      "count": 11,
+      "contexts": [
+        "any parallels we might find in Western literature (beyond the analogies of medieval thematics and the wealth of fantasy in Renaissance works by Shakespeare and Ariosto)...",
+        "The forty-sixth and last canto opens with the list of a crowd of people who constitute the public for whom Ariosto thought he was writing his poem.",
+        "On this, the 500th anniversary of Ariosto’s birth, I have been asked what the Orlando Furioso has meant for me.",
+        "Con gli occhi cerca or questo lato or quello lungo le ripe il paladin, se vede (quando né pesce egli non è, né augello) come abbia a por ne l’altra ripa il piede: et ecco a sé venir vede un battello, su le cui poppe una donzella siede, che di voler a lui venir fa segno; né lascia poi ch’arrivi a terra il legno.",
+        "Quindi partito venne ad una terra Zizera detta, che siede alio stretto di Zibeltarro, o vuoi Zibelterra, che l’uno o l’altro nome le vien detto; ove una barca che sciogliea da terra vide piena di gente da diletto che solazzando all’aura mattutina, gía per la tranquillissima marina.",
+        "Il falcon che sul nido i vanni inchina, porta Raimondo, il conte di Devonia. Il giallo e il negro ha quel di Vigorina; il can quel d’Erba; un orso quel d’Osonia. La croce che là vedi cristallina, è del ricco prelato di Battonia. Vedi nel bigio una spezzata sedia: è del duca Ariman di Sormosedia.",
+        "Leva al fin gli occhi, e vede il sol che ‘l tergo avea mostrato alie città di Boceo, e poi s’era attuffato, come il mergo, in grembo alia nutrice oltr’a Marocco: e se disegna che la frasca albergo le dia ne’ campi, fa pensier di sciocco; che soffia un vento freddo, e l’aria grieve pioggia la notte le minaccia o nieve.",
+        "Ma di che debbo lamentarmi, ahi lassa, fuor che del mio desire irrazionale? ch’alto mi leva, e sí nell’aria passa, ch’arriva in pane ove s’abbrucia l’ale; poi non potendo sostener, mi lassa dal ciel cader: né qui finisce il male; che le rimette, e di nuovo arde: ond’io non ho mai fine al precipizio mio.",
+        "Non con piú nodi i flessuosi acanti le colonne circondano e le travi, di quelli con che noi legammo stretti e colli e fianchi e braccia e gambe e petti.",
+        "ben che né gonna né faldiglia avesse; che venne awolta in un leggier zendado che sopra una camicia ella si messe, bianca e suttil nel piú escellente grado. Come Ruggier abbracciò lei, gli cesse il manto; e restò il vel suttile e rado, che non copria dinanzi né di dietro, piú che le rose o i gigli un chiaro vetro.",
+        "Vinceano di candor le nievi intatte, et eran piú ch’avorio a toccar molli: le poppe ritondette parean latte che fuor di giunchi allora allora tolli."
+      ],
+      "commentaries": [
+        "The author cites Ariosto as a key Renaissance figure whose fantastical works are used as a benchmark for metaphorical elaboration, later noted as saved from the bonfire for aesthetic merit.",
+        "The author cites Ariosto's Orlando Furioso as a foundational text that defines its own literary public through self-reflexive structure.",
+        "The author reflects on the personal and enduring influence of Ariosto’s Orlando Furioso on his own literary sensibility.",
+        "The author highlights this specific octave as emblematic of Ariosto’s narrative technique, where a boat signals the onset of a new adventure.",
+        "The author cites this ottava as an example of Ariosto’s playful use of language and geographical ambiguity to evoke narrative transition.",
+        "The author uses this passage to illustrate Ariosto’s whimsical manipulation of English place-names as a form of verbal play and proto-Anglophilia.",
+        "The author notes this stanza as a rare moment of climatic disruption in the Furioso, linking it to Ariosto’s use of exotic place-names to evoke emotional and environmental tension.",
+        "The author identifies this octave as the pinnacle of spatial dislocation in Ariosto’s poetry, blending Petrarchan lyricism with dynamic motion.",
+        "The author cites this stanza as an example of Ariosto’s eroticism rooted in physical entanglement rather than explicit description.",
+        "The author analyzes this passage as Ariosto’s most iconic depiction of erotic anticipation, emphasizing subtlety and veiled exposure over overt sensuality.",
+        "The author observes that in this Olimpia episode, Ariosto prioritizes landscape over the nude form, creating a delicate interplay between natural and bodily imagery."
+      ],
+      "canonical_author": "Ariosto"
+    },
+    {
+      "title": "",
+      "author": "Boiardo",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The priest still manages to save from that provincial bonfire of vanities the major source texts, Amadís de Gaula and Tirant lo Blanc, along with the verse romances of Boiardo and Ariosto..."
+      ],
+      "commentaries": [
+        "The author cites Boiardo as one of the Italian Renaissance poets whose chivalric verse is preserved for its aesthetic value and authenticity, later linked to Turpin’s legendary authority."
+      ],
+      "canonical_author": "Boiardo"
+    },
+    {
+      "title": "",
+      "author": "Folengo",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "I refer to a very minor text which is hardly known at all: the Orlandino, a brief epic poem in Italian verse by Teofilo Folengo..."
+      ],
+      "commentaries": [
+        "The author cites Folengo’s Orlandino as an early example of selecting chivalric texts for preservation or destruction, with Folengo declaring Boiardo and Ariosto authentic while condemning other tales as apocryphal."
+      ],
+      "canonical_author": "Folengo"
+    },
+    {
+      "title": "",
+      "author": "Cardano",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "He is in favour of Gassendi’s sensism and Copernicus’ astronomy, but he is fired most of all by the sixteenth-century Italian ‘natural philosophers’: Cardano, Bruno, Campanella."
+      ],
+      "commentaries": [
+        "The author cites Cardano as one of the key Italian natural philosophers who influenced Cyrano’s radical scientific and philosophical outlook."
+      ],
+      "canonical_author": "Cardano"
+    },
+    {
+      "title": "",
+      "author": "Spinoza",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Diderot in Jacques le Fataliste seems to side with Leibniz and even more with Spinoza, who had upheld the objective rationality of a single, ineluctable world, proved by his geometrical method.",
+        "The author, starting from his favourite philosophers, Spinoza, Leibniz and Kant, had constructed his own ‘discourse on method’."
+      ],
+      "commentaries": [
+        "The author references Spinoza as a philosophical source whose geometrical method underpins the deterministic worldview endorsed by Diderot in Jacques le Fataliste.",
+        "The author cites Spinoza as one of his favorite philosophers whose ideas contributed to his personal philosophical framework."
+      ],
+      "canonical_author": "Spinoza"
+    },
+    {
+      "title": "",
+      "author": "Leibniz",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Diderot in Jacques le Fataliste seems to side with Leibniz and even more with Spinoza, who had upheld the objective rationality of a single, ineluctable world, proved by his geometrical method.",
+        "The author, starting from his favourite philosophers, Spinoza, Leibniz and Kant, had constructed his own ‘discourse on method’."
+      ],
+      "commentaries": [
+        "The author cites Leibniz as a philosophical reference point in Diderot’s novel, noting that while Diderot aligns with Leibniz, he goes further in embracing Spinoza’s monistic determinism.",
+        "The author cites Leibniz as one of his favorite philosophers whose ideas contributed to his personal philosophical framework."
+      ],
+      "canonical_author": "Leibniz"
+    },
+    {
+      "title": "",
+      "author": "Tolstoy",
+      "note": null,
+      "count": 5,
+      "contexts": [
+        "similar to Marx’s Balzac and Lenin’s Tolstoy.",
+        "he too has been directing his gaze at the unsurpassable Tolstoy.",
+        "Pasternak continues Tolstoy’s polemic against history (‘Tolstoy did not push his thoughts to their conclusion …’, p.591; 406): it is not great men who make history, but it is not made by small men either; history moves like the plant realm, like a wood changing in springtime.",
+        "as Marx and Lenin clearly showed with, respectively, Balzac and Tolstoy",
+        "I don’t know whether it was Hemingway’s admiration for Tolstoy that led him to seek out the experience of war, or vice versa. ...just as the impressions described in the Tales of Sebastopol were crucial for Tolstoy."
+      ],
+      "commentaries": [
+        "The author cites Tolstoy as a writer whose moral vision was politically claimed by Lenin, used to frame Conrad’s ideological complexity.",
+        "The author notes that Pasternak, in his later years, turned to Tolstoy as a foundational literary influence, though with an unorthodox interpretation.",
+        "The author cites Tolstoy as a precursor in challenging traditional historiography, noting that Pasternak extends Tolstoy’s critique by equating historical movement with natural processes.",
+        "The author cites Tolstoy as a novelist whose work Lenin interpreted as expressing revolutionary nostalgia, anchoring literary realism in political thought.",
+        "The author references Tolstoy as a major influence on Hemingway’s engagement with war, linking their shared literary focus on war’s human reality."
+      ],
+      "canonical_author": "Tolstoy"
+    },
+    {
+      "title": "",
+      "author": "Chekhov",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Some of these qualities make this imaginary doctor-author resemble (and many have already noted this) a real doctor-writer from the previous generation, Chekhov; Chekhov the man, with the force of his sense of balance, as we can see from his letters (soon to be published by Einaudi).",
+        "The emptiness of the dialogues with their pauses and digressions, whose most obvious predecessor must be the ‘talking of other things’ by Chekhov’s characters when they are on the verge of desperation..."
+      ],
+      "commentaries": [
+        "The author references Chekhov as a contrasting figure to Zhivago, emphasizing his agnostic, plebeian realism and balanced worldview as revealed in his letters.",
+        "The author references Chekhov as a literary precursor to Hemingway’s use of dialogue to convey unspoken despair and existential tension."
+      ],
+      "canonical_author": "Chekhov"
+    },
+    {
+      "title": "",
+      "author": "Manzoni",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "And yet as far as his personal literary tastes were concerned, he was devoted to the classics, and tradition (his favourite author was the sedate and wise Manzoni) and his models in the art of the novel were Balzac and Zola."
+      ],
+      "commentaries": [
+        "The author identifies Manzoni as Gadda’s favorite author, highlighting his classical, restrained style as a literary ideal."
+      ],
+      "canonical_author": "Manzoni"
+    },
+    {
+      "title": "",
+      "author": "Pascoli",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "how to write poetry after (and against) D’Annunzio (and after Carducci, and Pascoli, or at least a certain side of Pascoli),"
+      ],
+      "commentaries": [
+        "The author references Pascoli as part of the poetic generation Montale reacted against, particularly its more sentimental or ornamental tendencies."
+      ],
+      "canonical_author": "Pascoli"
+    },
+    {
+      "title": "",
+      "author": "Malraux",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Actually, to be truthful, it was the twin constellation of Hemingway and Malraux that attracted me, the symbol of international antifascism, the international front in the Spanish Civil War."
+      ],
+      "commentaries": [
+        "The author identifies Malraux as a co-influential figure alongside Hemingway in shaping his early political and literary ideals during the Spanish Civil War."
+      ],
+      "canonical_author": "Malraux"
+    },
+    {
+      "title": "",
+      "author": "Kipling",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "If the poet who celebrated British imperialism, Kipling, still had a precise link with his adopted country, so that his India also became a fatherland for him, in Hemingway... we find the spirit of America roaming the world without any clear motive..."
+      ],
+      "commentaries": [
+        "The author contrasts Hemingway’s detached, non-celebratory globalism with Kipling’s imperialist identification and rootedness."
+      ],
+      "canonical_author": "Kipling"
+    },
+    {
+      "title": "",
+      "author": "Queneau",
+      "note": null,
+      "count": 5,
+      "contexts": [
+        "This is the definition given by Queneau at the start of a curious little treatise also written at that time (but only published in 1966): line Histoire modèle (A Model History).",
+        "In The Blue Flowers Queneau makes fun of history, denying its progress and reducing it to the substance of daily existence; in A Model History he had tried to turn it into algebra, to make it submit to a system of axioms, to remove it from empirical reality.",
+        "In fact it was in this spirit that he became co-founder in 1960 of the Ouvroir de Littérature Potentielle (abbreviation: ‘Oulipo’), along with the man who would be his closest friend in his final years, the mathematician and chess expert François Le Lionnais...",
+        "the infernal machine of the Cent mille milliards de poèmes (1961).",
+        "There are forms of the novel which impose on its subject matter all the virtues of Number/ by developing ’a structure which transmits to such works the last glimmers of universal light or the last echoes of the Harmony of the World/"
+      ],
+      "commentaries": [
+        "The author cites Queneau’s own treatise, A Model History, as a direct expression of his attempt to apply mathematical logic to historical phenomena.",
+        "The author references Queneau’s novel The Blue Flowers and his treatise A Model History as complementary works representing opposing approaches to deconstructing history.",
+        "The author cites Queneau’s role in founding Oulipo as a direct application of his belief in formal constraints as generators of literary potential.",
+        "The author cites Queneau’s Cent mille milliards de poèmes as a landmark example of combinatorial literature, demonstrating how mathematical structure generates infinite textual possibilities.",
+        "The author quotes Queneau’s own poetic formulation to illustrate his philosophical alignment between mathematical order and cosmic harmony in literary creation."
+      ],
+      "canonical_author": "Queneau"
+    },
+    {
+      "title": "",
+      "author": "Balzac",
+      "note": null,
+      "count": 7,
+      "contexts": [
+        "In France they start to read Balzac at school, and judging by the number of editions in circulation people apparently continue to read him long after the end of their schooldays.",
+        "could count for its launch on a lengthy and enthusiastic essay by Balzac, a good 72 pages long!",
+        "Balzac discovered the big city as something bristling with mystery, and the sense which he always keeps alert is that of curiosity.",
+        "Money had played an important role in nineteenth-century fiction: the motive force of Balzac’s narrative",
+        "similar to Marx’s Balzac and Lenin’s Tolstoy.",
+        "as Marx and Lenin clearly showed with, respectively, Balzac and Tolstoy",
+        "And yet as far as his personal literary tastes were concerned, he was devoted to the classics, and tradition (his favourite author was the sedate and wise Manzoni) and his models in the art of the novel were Balzac and Zola."
+      ],
+      "commentaries": [
+        "The author cites Balzac as a widely read author in France, used to illustrate cultural differences in classic literature reception.",
+        "The author cites Balzac’s critical essay as a significant early endorsement that helped launch The Charterhouse of Parma, underscoring its initial reception among literary figures.",
+        "The author references Balzac as a foundational figure in literary depictions of the city, emphasizing his curiosity as a narrative driving force.",
+        "The author cites Balzac as a foundational figure in 19th-century fiction where money functions as a primary narrative driver, contrasting him with Twain’s more abstract treatment.",
+        "The author references Balzac as a literary figure whose social realism was politically interpreted by Marx, drawing a parallel to how Conrad’s work is politically contextualized.",
+        "The author references Balzac as a novelist whose work Marx analyzed for its critical portrayal of society, positioning him as a literary touchstone for historical realism.",
+        "The author cites Balzac as one of Gadda’s primary novelistic models, associated with realism and detailed portrayal of society."
+      ],
+      "canonical_author": "Balzac"
+    },
+    {
+      "title": "",
+      "author": "Virgil",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "In Virgil too, as well as in the other canonical poets of antiquity, it is difficult for us to gain a proper idea of how the ancients really ‘saw’ the world.",
+        "in which characters who are domestics or petty thieves are called Aeneas, Diomedes, Ascanius, Camilla, or Lavinia, like the heroes and heroines in Virgil."
+      ],
+      "commentaries": [
+        "The author references Virgil alongside Ovid to argue that cosmological ambiguity was a shared trait among canonical Roman poets.",
+        "The author references Virgil as a source of mythological names used ironically to elevate ordinary Roman characters, linking them to classical epic tradition."
+      ],
+      "canonical_author": "Virgil"
+    },
+    {
+      "title": "",
+      "author": "Nezami",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "In a twelfth-century Persian poem, King Bahram sees seven portraits of seven princesses and falls in love with all seven at one and the same time.",
+        "The book I am discussing is a classic of medieval Persian literature, now available in a slim volume in Rizzoli’s Biblioteca Universale Rizzoli series, and presented with commendable expertise: Nezami, Le sette principesse (The Seven Princesses), introduction and translation by Alessandro Bausani and Giovanna Calasso.",
+        "the proliferation of metaphors which encrust Nezami’s tale and germinate a hint of narrative in every single image."
+      ],
+      "commentaries": [
+        "The author presents Nezami’s work as a structural and symbolic masterpiece of Oriental literature, emphasizing its unique narrative multiplication and moral cosmology.",
+        "The author references Nezami’s work as a rare and valuable translation that makes a complex Persian classic accessible to Western readers, praising its fidelity and scholarly apparatus.",
+        "The author cites Nezami’s tale as a rich source of metaphorical language, where every image generates narrative potential and the onager and cypress tree serve as polyvalent symbols."
+      ],
+      "canonical_author": "Nezami"
+    },
+    {
+      "title": "",
+      "author": "Marino",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "even Marino’s Adonis and Basile’s Pentameron are works of laconic sobriety compared to the proliferation of metaphors which encrust Nezami’s tale..."
+      ],
+      "commentaries": [
+        "The author references Marino’s Adonis as a contrast to the elaborate metaphors in Nezami’s work, positioning it as relatively restrained within the baroque tradition."
+      ],
+      "canonical_author": "Marino"
+    },
+    {
+      "title": "",
+      "author": "Basile",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "even Marino’s Adonis and Basile’s Pentameron are works of laconic sobriety compared to the proliferation of metaphors which encrust Nezami’s tale..."
+      ],
+      "commentaries": [
+        "The author cites Basile’s Pentameron as a work of relative simplicity when compared to Nezami’s metaphorical density, and later contrasts its grotesque treatment of coitus interruptus with Nezami’s visionary eroticism."
+      ],
+      "canonical_author": "Basile"
+    },
+    {
+      "title": "",
+      "author": "Turpin",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The legendary Turpin’s role will be assigned by Cervantes in his work to the mysterious Cide Hamete Benengeli..."
+      ],
+      "commentaries": [
+        "The author cites Turpin as the legendary chronicler whose authority Renaissance poets invoked to justify fantastical elements, later replaced by Cervantes’ fictional Arab author as a meta-literary device."
+      ],
+      "canonical_author": "Turpin"
+    },
+    {
+      "title": "",
+      "author": "Kepler",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "We notice that Galileo in his list of figures does not mention ellipses despite having read Kepler."
+      ],
+      "commentaries": [
+        "The author references Kepler as a figure whose work Galileo was aware of but chose not to incorporate into his own mathematical alphabet, raising questions about Galileo's adherence to classical forms."
+      ],
+      "canonical_author": "Kepler"
+    },
+    {
+      "title": "",
+      "author": "Hobbes",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "He was a pessimist like Hobbes, loved paradoxes as much as Mandeville, was peremptory in his argumentation, and dry and acerbic in style."
+      ],
+      "commentaries": [
+        "The author compares Giammaria Ortes to Hobbes, identifying shared pessimism and mechanistic views of human nature as foundational to Ortes’ philosophical outlook."
+      ],
+      "canonical_author": "Hobbes"
+    },
+    {
+      "title": "",
+      "author": "Cuvier",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Cuvier used to tell us, in the Jardin des Plantes, that a methodical study of worms, insects and the most repellent sea crabs, carefully noting their differences and similarities, is the best way to cure oneself of the disgust they inspire."
+      ],
+      "commentaries": [
+        "The author cites Cuvier as an authority invoked by the character Lucien to justify Stendhal’s zoological approach to observing social behavior, treating Cuvier’s scientific method as a metaphor for narrative precision."
+      ],
+      "canonical_author": "Cuvier"
+    },
+    {
+      "title": "",
+      "author": "Proust",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the Jameses and Prousts, those who tirelessly recover every crumb of sensation we have experienced."
+      ],
+      "commentaries": [
+        "The author cites Proust as an exemplar of psychological depth and sensory recall, positioned in contrast to Conrad’s externalized moral drama."
+      ],
+      "canonical_author": "Proust"
+    },
+    {
+      "title": "",
+      "author": "Hamsun",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "an interest that was shared by a whole epoch of world literature, down to Knut Hamsun and Sherwood Anderson)"
+      ],
+      "commentaries": [
+        "The author includes Hamsun as part of a broader literary trend of fascination with irrational and decadent humanity, linking him thematically to Conrad."
+      ],
+      "canonical_author": "Hamsun"
+    },
+    {
+      "title": "",
+      "author": "Lukács",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "I disagree with Lukács: his theory of ‘perspectives’ can be turned back against his own favourite genre."
+      ],
+      "commentaries": [
+        "The author engages critically with Lukács’s literary theory, arguing that it fails to account for the modern novel’s temporal structure."
+      ],
+      "canonical_author": "Lukács"
+    },
+    {
+      "title": "",
+      "author": "Hamlet",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Hamlet, in this literary time, is both sane and mad."
+      ],
+      "commentaries": [
+        "The author invokes Hamlet as an archetypal literary figure representing Borges’ concept of ramified time, where contradictory states coexist within the textual universe."
+      ],
+      "canonical_author": "Hamlet"
+    },
+    {
+      "title": "",
+      "author": "Milton",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Borges cites Milton as a reader of Ariosto"
+      ],
+      "commentaries": [
+        "The author notes Milton as a historical reader of Ariosto, illustrating the transmission of literary motifs across cultures and epochs."
+      ],
+      "canonical_author": "Milton"
+    },
+    {
+      "title": "",
+      "author": "Kojève",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "his adoption to a certain extent of Kojève’s brand of Hegelianism",
+        "spend years attending and then editing Kojève’s lectures",
+        "This is the motif that André Kojève himself will underline in Queneau’s fiction, suggesting a philosophical reading of three of his novels: Pierrot mon ami (Pierrot), Loin de Rueil (The Skin of Dreams), and Le Dimanche de la vie (The Sunday of Life) (in Critique, 60 (May 1952))."
+      ],
+      "commentaries": [
+        "The author identifies Kojève as a pivotal interpreter of Hegel whose lectures profoundly influenced Queneau’s philosophical outlook, even though Kojève is not the original author of Hegel’s texts.",
+        "The author cites Kojève’s lectures as the primary conduit through which Queneau engaged with Hegelian thought.",
+        "The author references Kojève as a key interpreter of Hegel whose philosophical readings directly influenced Queneau’s literary work, particularly in framing the theme of the end of history."
+      ],
+      "canonical_author": "Kojève"
+    },
+    {
+      "title": "",
+      "author": "Piaget",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "if Piaget says is true: namely that ‘logic is the axiomatisation of thought itself’"
+      ],
+      "commentaries": [
+        "The author cites Piaget’s psychological theory to support Queneau’s philosophical claim about the nature of logic and human intelligence."
+      ],
+      "canonical_author": "Piaget"
+    },
+    {
+      "title": "",
+      "author": "Engels",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Engels, when he put Fourier’s ‘mathematical epic’ on the same level as Hegel’s ‘dialectical epic’"
+      ],
+      "commentaries": [
+        "The author references Engels’ interpretation of Fourier to illustrate Queneau’s fascination with encyclopedic thinkers and his ironic deconstruction of their claims."
+      ],
+      "canonical_author": "Engels"
+    },
+    {
+      "title": "",
+      "author": "Kafka",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "If I read Kafka, I find myself approving or rejecting the legitimacy of the adjective ‘Kafkaesque’ which we hear constantly being used to refer to just about anything.",
+        "Kafka, thinking he was writing metaphysical allegory, described contemporary man’s alienation in a way that has never been surpassed."
+      ],
+      "commentaries": [
+        "The author references Kafka as a source of a pervasive cultural term, illustrating how his work has permeated language and collective consciousness.",
+        "The author cites Kafka as a masterful depicter of modern alienation, placing his work on par with Pasternak's cosmic realism in revealing profound truths through negative representation."
+      ],
+      "canonical_author": "Kafka"
+    },
+    {
+      "title": "",
+      "author": "Homer",
+      "note": null,
+      "count": 8,
+      "contexts": [
+        "Who is to say that this tale is not the real Odyssey?",
+        "In fact these maritime adventures of his, packed into four central books of The Odyssey, and containing a rapid series of encounters with fantastic beings (which appear in the folktales of all countries and epochs: the ogre Polyphemus, the four winds trapped in the wineskin, Circe’s spells, the Sirens and sea-monsters) contrast with the rest of the poem...",
+        "Even in these other parts we find motifs common to folktales, such as Penelope’s tapestry and the contest to shoot the bow, but we are closer to modern criteria of realism and verisimilitude...",
+        "So Homer himself confirms their authenticity; not only that, but even the gods discuss them on Mount Olympus.",
+        "In the opening lines there is one verse which ought to epitomise the whole of the poem: ‘He saw the cities and came to know the thoughts of many men.’ What cities? What thoughts?",
+        "‘Homer's Iliad translated by Pope’",
+        "the vision of Mohammed, who rises to heaven upon a winged angel, upwards to the point where all three dimensions disappear and ‘the Prophet saw God but no space, and heard words that came from no lips and carried no sounds’.",
+        "Between Homer, ‘the father of all literature and all scepticism’, and Flaubert who understood that scepticism and science are identical, Queneau accords positions of honour"
+      ],
+      "commentaries": [
+        "The author reflects on the possibility that Ulysses' tale in The Odyssey may be a fabricated narrative, questioning the authenticity of the epic and suggesting that Homer's version may be a layered or constructed myth.",
+        "The author analyzes the fantastical elements in Homer’s Odyssey as stylistically distinct from the more realistic portions of the poem, suggesting a fusion of archaic folktale traditions with epic form.",
+        "The author notes that Homer blends folkloric motifs with psychological realism, positioning The Odyssey as a transitional work between myth and early narrative realism.",
+        "The author cites Homer’s internal validation of Ulysses’ adventures through divine acknowledgment, arguing that the epic itself treats the fantastical episodes as canonical.",
+        "The author interprets the opening line of The Odyssey as potentially more applicable to the disguised Cretan’s tale than to Ulysses’ official narrative, suggesting Homer embedded multiple layers of truth.",
+        "The author mentions Homer’s Iliad in the context of translation, but only as a comparative example; the original author is cited as the source of the mythic tradition.",
+        "The author does not cite Homer directly; this excerpt references Islamic mysticism, not Homeric epic. No citation of Homer is present.",
+        "The author references Homer as a foundational figure of literary skepticism, not by citing a specific text but by invoking his symbolic authority."
+      ],
+      "canonical_author": "Homer"
+    },
+    {
+      "title": "",
+      "author": "Pulci",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The waning of chivalry had been celebrated by Pulci, Boiardo and Ariosto in an atmosphere of Renaissance festival..."
+      ],
+      "commentaries": [
+        "The author references Pulci as one of the Italian poets who sublimated chivalric tradition through parody and nostalgia, and whose work is deemed authentic by Folengo and implicitly by Cervantes."
+      ],
+      "canonical_author": "Pulci"
+    },
+    {
+      "title": "",
+      "author": "Plato",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the vision of Mohammed, who rises to heaven upon a winged angel, upwards to the point where all three dimensions disappear and ‘the Prophet saw God but no space, and heard words that came from no lips and carried no sounds’."
+      ],
+      "commentaries": [
+        "The author does not cite Plato; the vision described is Islamic, not Platonic. No citation of Plato is present."
+      ],
+      "canonical_author": "Plato"
+    },
+    {
+      "title": "",
+      "author": "Nievo",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "Instead I have always kept him close to hand, alongside Stendhal, who is so unlike him, and Nievo, who has nothing in common with him at all."
+      ],
+      "commentaries": [
+        "The author mentions Nievo as a literary figure with no apparent connection to Conrad, used to emphasize the uniqueness of Conrad’s place in his personal canon."
+      ],
+      "canonical_author": "Nievo"
+    },
+    {
+      "title": "",
+      "author": "James",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "the Jameses and Prousts, those who tirelessly recover every crumb of sensation we have experienced."
+      ],
+      "commentaries": [
+        "The author references Henry James and Proust as psychological novelists whose introspective style contrasts with Conrad’s focus on action and moral integrity."
+      ],
+      "canonical_author": "James"
+    },
+    {
+      "title": "",
+      "author": "Gorki",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "This fascination for pariahs, vagabonds and madmen is also evident in a writer far removed from Conrad, but more or less a contemporary, Maksim Gorki."
+      ],
+      "commentaries": [
+        "The author draws a thematic parallel between Conrad and Gorki in their shared interest in marginalized figures, despite differing political contexts."
+      ],
+      "canonical_author": "Gorki"
+    },
+    {
+      "title": "",
+      "author": "Lenin",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "similar to Marx’s Balzac and Lenin’s Tolstoy.",
+        "as Marx and Lenin clearly showed with, respectively, Balzac and Tolstoy"
+      ],
+      "commentaries": [
+        "The author references Lenin’s view of Tolstoy to draw a parallel between political interpretation of literature and Conrad’s reception in ideological contexts.",
+        "The author cites Lenin as having similarly identified Tolstoy’s work as embodying critical, revolutionary nostalgia, linking literary analysis to political insight."
+      ],
+      "canonical_author": "Lenin"
+    },
+    {
+      "title": "",
+      "author": "Verga",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "in which nature and human bustle mingle together, as in the houses of Verga’s Aci Trezza, and the tale unravels without needing anything to happen, composed entirely of the relationship between the facts of existence, as in Chekhov’s The Steppe’"
+      ],
+      "commentaries": [
+        "The author references Verga’s Aci Trezza as an example of literary realism where daily life and environment are rendered with organic unity, though no specific book title is named."
+      ],
+      "canonical_author": "Verga"
+    },
+    {
+      "title": "",
+      "author": "Freud",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "If Inspector Ingravallo is the author’s philosophical spokesman, there is also another character with whom Gadda identifies at a psychological and poetic level... and amongst these causes (since his reading apparently also includes Freud) he always includes sex, in some form or other."
+      ],
+      "commentaries": [
+        "The author notes that Freud’s ideas on causality, particularly regarding sex, are incorporated into the inspector’s theoretical framework."
+      ],
+      "canonical_author": "Freud"
+    },
+    {
+      "title": "",
+      "author": "Hegel",
+      "note": null,
+      "count": 3,
+      "contexts": [
+        "a philosopher who is as alien as can be from the traditions of French thought",
+        "What attracts Queneau to Hegel to the point where he is prepared to spend years attending and then editing Kojève’s lectures?",
+        "it was his Philosophy of Nature (Queneau showing a particular interest in possible mathematical formulations of it); in short, in what comes before history."
+      ],
+      "commentaries": [
+        "The author references Hegel as a central, albeit foreign, philosophical figure whose ideas Queneau rigorously studied and internalized through Kojève’s lectures.",
+        "The author notes Queneau’s deep engagement with Hegelian philosophy through Kojève’s lectures, framing it as part of his broader intellectual pilgrimage.",
+        "The author cites Hegel's Philosophy of Nature as the foundational text that inspired Queneau’s interest in mathematical formulations of pre-historical processes."
+      ],
+      "canonical_author": "Hegel"
+    },
+    {
+      "title": "",
+      "author": "Ovid",
+      "note": null,
+      "count": 11,
+      "contexts": [
+        "Ovid at the beginning of the Metamorphoses, introducing us to the world of the celestial gods.",
+        "‘Quid faciat?\nMultum caeli post terga relictum / ante oculos plus est.\nAnimo metitur utrumque.’",
+        "‘fontes / qui se condiderant in opacae viscera matris …’",
+        "‘regia caeli’",
+        "‘Illic frena iacent, illic temone revulsus / axis, in hac radii fractarum parte rotarum …’",
+        "‘ … tactumque vereri / adsilientis aquae timidasque reducere plantas’",
+        "‘quod tempora longa videri / non sinat’",
+        "‘utile opus manuum vario sermone levemus’",
+        "‘deorum / spretor erat mentisque ferox’",
+        "The Metamorphoses is the poem of rapidity: each episode has to follow another in a relentless rhythm, to strike our imagination, each image must overlay another one, and thus acquire density before disappearing.",
+        "I have a little book which is considerably shorter than Aristotle and Ovid, which contains all sciences, and which with just a little study can allow others to form a perfect idea of it."
+      ],
+      "commentaries": [
+        "The author cites Ovid as the source of the Metamorphoses, using it to explore themes of contiguity and transformation between human and divine realms, without referencing a specific book title beyond the work’s name.",
+        "The author cites Ovid's Metamorphoses as a primary source for the myth of Phaethon, highlighting its vivid and contradictory cosmological imagery.",
+        "The author references Ovid’s poetic description of dried springs returning to Mother Earth to illustrate the interpenetration of nature and myth.",
+        "The author quotes Ovid’s phrase to question ancient cosmological assumptions, using it as evidence of ambiguity in the depiction of divine space.",
+        "The author cites Ovid’s detailed description of the shattered Sun chariot to emphasize the poet’s mastery of catastrophic imagery and mechanical metaphor.",
+        "The author uses this line from Ovid to illustrate the poet’s attention to minute, humanizing details in divine myths, particularly in the myth of Europa.",
+        "The author cites Ovid to show how storytelling is framed as a secular, productive activity among the daughters of Minyas.",
+        "The author references this line to connect the act of weaving with narrative art, as portrayed by Ovid in the context of the Minyads’ labor.",
+        "The author cites Ovid’s characterization of Pirithous to highlight the theme of irreverence toward the gods within the narrative structure of the Metamorphoses.",
+        "The author cites Ovid's Metamorphoses as a model of narrative speed and visual density, highlighting its cinematic qualities and use of present tense and vocative address to create immediacy.",
+        "The author mentions Ovid alongside Aristotle as a representative of classical literary authorities contrasted with the abstract, combinatory power of the mathematical alphabet."
+      ],
+      "canonical_author": "Ovid"
+    },
+    {
+      "title": "",
+      "author": "Sade",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "one of the key texts in that line in French literature which starts with Sade and still continues today, down to, say, Bataille and Klossowski"
+      ],
+      "commentaries": [
+        "The author references Sade as the foundational figure in a literary lineage that includes Balzac’s La Fille aux yeux d’or, positioning it within a tradition of transgressive French fiction."
+      ],
+      "canonical_author": "Sade"
+    },
+    {
+      "title": "",
+      "author": "Marx",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "similar to Marx’s Balzac and Lenin’s Tolstoy.",
+        "as Marx and Lenin clearly showed with, respectively, Balzac and Tolstoy"
+      ],
+      "commentaries": [
+        "The author invokes Marx’s interpretation of Balzac to suggest a parallel analytical framework for understanding Conrad’s ideological contradictions.",
+        "The author cites Marx as having recognized Balzac’s novels as vehicles of critical nostalgia, using him to illustrate how literature can reflect revolutionary consciousness."
+      ],
+      "canonical_author": "Marx"
+    },
+    {
+      "title": "",
+      "author": "Blok",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "If you think of Blok’s phrase, ‘We, the children of Russia’s terrible years’, you will instantly see the difference in the times."
+      ],
+      "commentaries": [
+        "The author cites Blok's phrase as a metaphorical contrast to the literalized suffering of the civil war era, using it to highlight a shift in historical consciousness."
+      ],
+      "canonical_author": "Blok"
+    },
+    {
+      "title": "",
+      "author": "Gide",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "has nothing to do with Dostoevsky’s terrible religiosity, but belongs in the context of a symbolic, aestheticising reading and dynamic interpretation of the Gospels, in which Gide had also indulged"
+      ],
+      "commentaries": [
+        "The author references Gide as a prior practitioner of symbolic, aesthetic reinterpretation of the Gospels, drawing a parallel to Pasternak’s non-dogmatic Christian imagery."
+      ],
+      "canonical_author": "Gide"
+    },
+    {
+      "title": "",
+      "author": "Kant",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "The author, starting from his favourite philosophers, Spinoza, Leibniz and Kant, had constructed his own ‘discourse on method’."
+      ],
+      "commentaries": [
+        "The author cites Kant as one of his favorite philosophers whose ideas contributed to his personal philosophical framework."
+      ],
+      "canonical_author": "Kant"
+    },
+    {
+      "title": "",
+      "author": "Saba",
+      "note": null,
+      "count": 1,
+      "contexts": [
+        "and Saba with the recovery of an inner sincerity which embraced also pathos, affection, sensuality:"
+      ],
+      "commentaries": [
+        "The author presents Saba as a contemporary who embraced emotional depth, which Montale consciously avoided in his own poetic project."
+      ],
+      "canonical_author": "Saba"
+    },
+    {
+      "title": "",
+      "author": "Poe",
+      "note": null,
+      "count": 2,
+      "contexts": [
+        "Or maybe even alongside those who are more or less aesthetes maudits, like Poe, full of displaced passions;",
+        "just as Poe’s and Dostoevsky’s and Kafka’s ideas were true in this way"
+      ],
+      "commentaries": [
+        "The author places Poe in a literary category with Conrad as a figure of aesthetic intensity and emotional displacement, though not necessarily as a direct influence.",
+        "The author includes Poe among the canonical writers whose works reveal truth through negative universal criteria, aligning his vision with Pasternak’s realism."
+      ],
+      "canonical_author": "Poe"
+    }
+  ]
+}

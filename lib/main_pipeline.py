@@ -97,6 +97,7 @@ class PipelineConfig:
     legacy_dates_json: Optional[str] = None  # legacy no longer needed by default
 
     debug_trace: bool = False
+    force_llm_queries: bool = False
 
 class BookPipeline:
     def __init__(self, config: PipelineConfig):
@@ -119,6 +120,7 @@ class BookPipeline:
             llm=self.llm,
             verbose=self.config.debug_trace,
             timeout=120.0,
+            force_llm_queries=self.config.force_llm_queries,
         )
 
         # Keep reference to wiki catalog for enricher
@@ -550,14 +552,19 @@ class BookPipeline:
             wiki_match = metadata.get("wikipedia_match")
 
             # --- ENRICHMENT ---
+            # Skip enrichment calls when fallback already provided the data
             enrichment = {}
 
-            # 1. Enrich Book (get publication year)
             target_title = metadata.get("title") or cit.get("title")
             target_authors = metadata.get("authors") or [cit.get("author")]
             target_author_name = target_authors[0] if target_authors else None
 
-            if target_book_id and target_title:
+            # 1. Enrich Book (get publication year)
+            # Use fallback-provided original_year if available, otherwise call enricher
+            if metadata.get("original_year"):
+                enrichment["original_year"] = metadata["original_year"]
+                logger.debug(f"[enrich] Book year from fallback: {target_title} -> {metadata['original_year']}")
+            elif target_book_id and target_title:
                 try:
                     year = await self.enricher.enrich_book(str(target_book_id), target_title, target_author_name or "")
                     if year:
@@ -574,7 +581,25 @@ class BookPipeline:
                     logger.warning(f"[enrich] Book enrichment (no ID) failed: {e}")
 
             # 2. Enrich Author (get birth/death years)
-            if target_author_name:
+            # Use fallback-provided birth/death years if available
+            fallback_has_bio = metadata.get("birth_year") or metadata.get("death_year")
+            if fallback_has_bio:
+                auth_meta = {
+                    k: metadata[k] for k in ("birth_year", "death_year", "nationality", "main_genre")
+                    if metadata.get(k)
+                }
+                if auth_meta:
+                    stats["enrichment_success"] += 1
+                    enrichment["author_meta"] = auth_meta
+                    logger.debug(f"[enrich] Author from fallback: {target_author_name} -> birth={auth_meta.get('birth_year')}, death={auth_meta.get('death_year')}")
+
+                    if not wiki_match:
+                        wiki_match = {"title": target_author_name}
+                    if auth_meta.get("birth_year") and not wiki_match.get("birth_year"):
+                        wiki_match["birth_year"] = auth_meta["birth_year"]
+                    if auth_meta.get("death_year") and not wiki_match.get("death_year"):
+                        wiki_match["death_year"] = auth_meta["death_year"]
+            elif target_author_name:
                 try:
                     auth_meta = await self.enricher.enrich_author(target_author_name)
                     if auth_meta:

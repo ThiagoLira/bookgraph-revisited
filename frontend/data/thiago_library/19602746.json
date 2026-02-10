@@ -1,0 +1,4586 @@
+{
+  "source": {
+    "title": "The Enneads",
+    "authors": [
+      "Plotinus"
+    ],
+    "goodreads_id": "19602746",
+    "author_ids": [],
+    "description": null,
+    "goodreads": {
+      "book_id": "19602746",
+      "author_ids": [],
+      "title": "The Enneads",
+      "authors": [
+        "Plotinus"
+      ],
+      "publication_year": null
+    },
+    "calibre": {
+      "id": 35,
+      "path": "/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos/calibre_bookgraph/Plotinus/The Enneads (Classics) (35)",
+      "txt_path": "/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos/calibre_bookgraph/Plotinus/The Enneads (Classics) (35)/The Enneads (Classics) - Plotinus.txt",
+      "epub_path": "/Users/thlira/Library/CloudStorage/OneDrive-Pessoal/Documentos/calibre_bookgraph/Plotinus/The Enneads (Classics) (35)/The Enneads (Classics) - Plotinus.epub",
+      "description": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "count": 41,
+        "excerpts": [
+          "Readers are reminded that ‘we read’ translates ‘he says’ of the text, and always indicates a reference to Plato, whose name does not appear in the translation except where it was written by Plotinus: and that all matter shown in brackets is added by the translator for clearness’ sake, and therefore is not canonical.",
+          "an expression borrowed from Plato187 and applied more than once to the supreme vision (V. 3, 17, 29; V. 5, 7, 35; VI. 7, 36, 18).",
+          "That the soul ‘falls’ from a higher condition (and thereby constitutes itself as soul) is a notion which Plotinus inherits from Plato himself and the Platonic tradition, but which, as usual, he probes more deeply than his predecessors.",
+          "To Plato, unmistakably, there are two distinct orders of virtue, and the civic does not suffice for Likeness: ‘Likeness to God’, he says, ‘is a flight from this world’s ways and things’:21 in dealing with the qualities of good citizenship he does not use the simple term Virtue but adds the distinguishing word civic: and elsewhere he declares all the virtues without exception to be purifications.",
+          "It falls into two parts, the first (ch. 1–4) concerned with establishing the Platonic ideal of the exercise of the Intellect against Aristotelian, Epicurean and Stoic alternatives"
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": {
+        "author_id": "879",
+        "name": "Plato",
+        "average_rating": "3.99",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -428,
+        "death_year": -348
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Timaeus",
+        "author": "Plato",
+        "count": 14,
+        "excerpts": [
+          "The second part of the treatise (ch. 6–7) contributes a commentary on certain relevant Platonic texts (Theaetetus 176A, Timaeus 47E, 41B)",
+          "In the Timaeus9 the creating God bestows the essential of the Soul, but it is the divinities moving in the Cosmos (the stars) that infuse the powerful affections holding from Necessity – our impulse and our desire, our sense of pleasure and of pain – and that lower phase of the Soul in which such experiences originate.",
+          "From Plato come their punishments, their rivers of the underworld, and the changing from body to body; as for the plurality they assert in the Intellectual Realm – the Authentic Existent, the Intellectual-Principle, the Second Creator and the Soul – all this is taken over from the Timaeus, where we read:52 ‘As many Ideal-Forms as the Divine Mind beheld dwelling within the Veritably Living Being, so many the Maker resolved should be contained in this All.’",
+          "Important Platonic texts on the personal daimon are the myth of Republic X (620DE) and the end of the Timaeus (90A).",
+          "This leads to an important exegesis of Timaeus 50 BC (CH. 11–13), and a presentation of matter as the Poverty of the Symposium myth (ch. 14)."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 3.87,
+        "format": "Paperback",
+        "book_id": "11027411",
+        "author_ids": [
+          "879",
+          "105505"
+        ],
+        "work_id": "13446943",
+        "text_reviews_count": 1,
+        "title_without_series": "Timaeus",
+        "ratings_count": 2,
+        "publisher": "Library of Liberal Arts/Bobbs-Merrill (Indianapolis)",
+        "publication_year": 1980,
+        "num_pages": 143,
+        "title": "Timaeus",
+        "authors": [
+          "Plato",
+          "Francis Macdonald Cornford"
+        ],
+        "description": "This text is extracted from Cornford's longer Plato's Cosmology.\nTimaeus (c. 360 BCE) is one of Plato's dialogs, mostly in the form of a long monologue given by the title character. It puts forward speculation on the nature of the physical world & human beings. It's followed by the dialog Critias. Speakers are Socrates, Timaeus of Locri, Hermocrates & Critias. Some believe that it isn't the Critias of the 30 Tyrants who appears, but his grandfather of the same name. The dialog takes place the day after Socr...",
+        "link": "https://www.goodreads.com/book/show/11027411-timaeus",
+        "original_year": -360,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "11027411",
+        "target_author_ids": [
+          "879",
+          "105505"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Phaedrus",
+        "author": "Plato",
+        "count": 12,
+        "excerpts": [
+          "this short essay discusses Platonic dialectic as an ideal method of ascent to intelligible reality, basing itself on the Phaedrus myth and Diotima’s speech in the Symposium.",
+          "Based broadly on Diotima’s speech in the Symposium and on the myth of the Phaedrus, it seeks the source of physical beauty in the intelligible, and the source of that in the Good itself.",
+          "Platonists were in a difficult position, since Plato had really not addressed the problem adequately (in the Phaedrus myth, the myth of Er in the Republic) 1.",
+          "Plato, who must be our guide in this question, speaks in the Phaedrus76 of this God, Zeus, as the Great Leader – though elsewhere77 he seems to rank him as one of three – but in the Philebus78 he speaks more plainly when he says that there is in Zeus not only a royal Soul, but also a royal Intellect.",
+          "The Charioteer (the Leading Principle of the Soul, in the Phaedrus Myth)138 gives the two horses (its two dissonant faculties) what he has seen and they, taking that gift, showed that they were hungry for what made that vision"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0140449744",
+        "average_rating": 3.91,
+        "format": "Paperback",
+        "book_id": "1328",
+        "author_ids": [
+          "879",
+          "214801"
+        ],
+        "work_id": "42939687",
+        "text_reviews_count": 15,
+        "title_without_series": "Phaedrus",
+        "publication_day": 25,
+        "ratings_count": 179,
+        "publication_month": 8,
+        "publisher": "Penguin Classics",
+        "publication_year": 2005,
+        "num_pages": 176,
+        "title": "Phaedrus",
+        "isbn13": "9780140449747",
+        "authors": [
+          "Plato",
+          "C.J. Rowe"
+        ],
+        "description": "Phaedrus is widely recognized as one of Plato's most profound and beautiful works. It takes the form of a dialogue between Socrates and Phaedrus and its ostensible subject is love, especially homoerotic love. This new translation is accompanied by an introduction, further reading, and full notes on the text and translation that discuss the structure of the dialogue and elucidate issues that might puzzle the modern reader.",
+        "link": "https://www.goodreads.com/book/show/1328.Phaedrus",
+        "original_year": -369,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1328",
+        "target_author_ids": [
+          "879",
+          "214801"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Symposium",
+        "author": "Plato",
+        "count": 7,
+        "excerpts": [
+          "this short essay discusses Platonic dialectic as an ideal method of ascent to intelligible reality, basing itself on the Phaedrus myth and Diotima’s speech in the Symposium.",
+          "Based broadly on Diotima’s speech in the Symposium and on the myth of the Phaedrus, it seeks the source of physical beauty in the intelligible, and the source of that in the Good itself.",
+          "The Spirit-Kind is treated in the Symposium where, with much about the others, we learn of Eros – Love – born to Penia – Poverty – and Poros – Possession – who is son of Metis – Resource – at Aphrodite’s birth feast.",
+          "This leads to an important exegesis of Timaeus 50 BC (CH. 11–13), and a presentation of matter as the Poverty of the Symposium myth (ch. 14).",
+          "inspired ultimately by Diotima’s speech in the Symposium (210Aff.)."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0141023848",
+        "average_rating": 4.01,
+        "format": "Paperback",
+        "book_id": "1197922",
+        "author_ids": [
+          "879"
+        ],
+        "work_id": "1488719",
+        "text_reviews_count": 17,
+        "title_without_series": "The Symposium",
+        "publication_day": 25,
+        "ratings_count": 148,
+        "publication_month": 8,
+        "publisher": "Penguin",
+        "publication_year": 2005,
+        "num_pages": 107,
+        "title": "The Symposium",
+        "isbn13": "9780141023847",
+        "authors": [
+          "Plato"
+        ],
+        "description": "Plato's retelling of the discourses between Socrates and his friends on such subjects as love and desire, truth and illusion, spiritual transcendence and the qualities of a good ruler, profoundly affected the ways in which we view human relationships, society and leadership - and shaped the whole tradition of Western philosophy.",
+        "link": "https://www.goodreads.com/book/show/1197922.The_Symposium",
+        "original_year": -380,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1197922",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Life-sketch of Plotinus",
+        "author": "Porphyry",
+        "count": 6,
+        "excerpts": [
+          "Longi-nus, as may be learned from Porphyry’s Life-sketch of Plotinus, so little grasped Plotinus’ manner of expression as to judge ruinously erroneous the most faithful transcripts that could be: a version which should reproduce such a style as disconcerted and misled the most widely read contemporary critic of Greek letters would not be a translation in any useful sense of the word, or at least would not be English or would not be readable.",
+          "On the other hand, however, there is no denying that Porphyry’s Life leaves a host of questions unanswered.",
+          "composed (on Porphyry’s evidence) before his arrival, and so unconnected with Plotinus’ dissuading of him from suicide (cf. Life, ch. 11).",
+          "(cf. Life, ch. 16)",
+          "This is an early treatise, which Porphyry seems to connect with an incident before his arrival involving the conjuring up of Plotinus’ guardian spirit or daimon (Life, ch."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0674994841",
+        "average_rating": 4.22,
+        "format": "Hardcover",
+        "book_id": "721824",
+        "author_ids": [
+          "14704",
+          "246588",
+          "384109"
+        ],
+        "work_id": "41211933",
+        "text_reviews_count": 4,
+        "title_without_series": "Ennead 1/On the Life of Plotinus",
+        "publication_day": 1,
+        "ratings_count": 27,
+        "publication_month": 1,
+        "publisher": "Harvard University Press (Cambridge)/Wm Heinemann (London)",
+        "publication_year": 1969,
+        "num_pages": 368,
+        "title": "Ennead 1/On the Life of Plotinus",
+        "isbn13": "9780674994843",
+        "authors": [
+          "Plotinus",
+          "Porphyry",
+          "A.H. Armstrong"
+        ],
+        "description": "Plotinus (204/5-270) was the 1st Neoplatonic philosopher. His writings were edited by his disciple Porphyry, who published them many years after his master's death in six sets of nine treatises each (the Enneads). Plotinus regarded Plato as his master. His own philosophy is an original development of the Platonism of the 1st two centuries of the Christian era & the closely related thought of the Neopythagoreans, with some influences from Aristotle & his followers & the Stoics, whose writings he knew well bu...",
+        "link": "https://www.goodreads.com/book/show/721824.Ennead_1_On_the_Life_of_Plotinus",
+        "original_year": 250,
+        "author_meta": {
+          "birth_year": 204,
+          "death_year": 270
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plotinus",
+        "birth_year": 204,
+        "death_year": 270,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "721824",
+        "target_author_ids": [
+          "14704",
+          "246588",
+          "384109"
+        ],
+        "target_person": {
+          "title": "Plotinus",
+          "birth_year": 204,
+          "death_year": 270
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Republic",
+        "author": "Plato",
+        "count": 6,
+        "excerpts": [
+          "Basing himself on the different descriptions of the virtues in the Phaedo (69 BC) and in Republic IV",
+          "Platonists were in a difficult position, since Plato had really not addressed the problem adequately (in the Phaedrus myth, the myth of Er in the Republic) 1.",
+          "Important Platonic texts on the personal daimon are the myth of Republic X (620DE) and the end of the Timaeus (90A).",
+          "a Platonic doctrine (cf. Phaedo 81F–82B, Rep. X 620, Tim. 91–92)",
+          "This is actually a quotation of Rep X 617 e 3."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "9380816375",
+        "average_rating": 3.91,
+        "format": "Paperback",
+        "book_id": "18242296",
+        "author_ids": [
+          "879"
+        ],
+        "work_id": "1625515",
+        "text_reviews_count": 1,
+        "title_without_series": "The Republic",
+        "ratings_count": 5,
+        "publisher": "Maple Press",
+        "publication_year": 2010,
+        "num_pages": 342,
+        "title": "The Republic",
+        "isbn13": "9789380816371",
+        "authors": [
+          "Plato"
+        ],
+        "description": "The Republic, written in 380BC by the great philosopher and thinker Plato, is the longest and greatest of his works. Originally titled as politeria, meaning 'City-State governance' in Greek, it actually proposes a Just society ruled by a philosopher- the King and the guardian. Written in the form of dialogues between his teacher Socrates and various Athenians, it discusses the meaning of Justice and its nature, and goes on to examine whether or not the Just society. Along the way are the discussions on immo...",
+        "link": "https://www.goodreads.com/book/show/18242296-the-republic",
+        "original_year": -400,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "18242296",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Philebus",
+        "author": "Plato",
+        "count": 4,
+        "excerpts": [
+          "Plato, who must be our guide in this question, speaks in the Phaedrus76 of this God, Zeus, as the Great Leader – though elsewhere77 he seems to rank him as one of three – but in the Philebus78 he speaks more plainly when he says that there is in Zeus not only a royal Soul, but also a royal Intellect.",
+          "So far, so good: but what of the passage in the Philebus9 taken to imply that the other souls are parts of the All-Soul?",
+          "It is in view, probably, of this difficulty that Plato in the Philebus80 makes pleasure an element in the Term",
+          "Philebus 30A."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "140655863X",
+        "average_rating": 3.8,
+        "format": "Paperback",
+        "book_id": "2769393",
+        "author_ids": [
+          "879",
+          "13395658"
+        ],
+        "work_id": "895626",
+        "text_reviews_count": 2,
+        "title_without_series": "Philebus",
+        "publication_day": 1,
+        "ratings_count": 3,
+        "publication_month": 8,
+        "publisher": "Dodo Press",
+        "publication_year": 2007,
+        "num_pages": 144,
+        "title": "Philebus",
+        "isbn13": "9781406558630",
+        "authors": [
+          "Plato",
+          "Benjamin Jowett"
+        ],
+        "description": "Plato (428/427 BC-348/347 BC), whose original name was Aristocles, was an ancient Greek philosopher, the second of the great trio of ancient Greeks - succeeding Socrates and preceding Aristotle - who between them laid the philosophical foundations of Western culture. Plato was also a mathematician, writer of philosophical dialogues, and founder of the Academy in Athens, the first institution of higher learning in the western world. Plato is widely believed to have been a student of Socrates and to have been...",
+        "link": "https://www.goodreads.com/book/show/2769393-philebus",
+        "original_year": -360,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "2769393",
+        "target_author_ids": [
+          "879",
+          "13395658"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Purifications",
+        "author": "Empedocles",
+        "count": 4,
+        "excerpts": [
+          "Empedocles in identifying his ‘elements’ with Matter is refuted by their decay.",
+          "Empedocles92 – where he says that it is law for faulty souls to descend to this sphere, and that he himself was here because he turned ‘a deserter, wandered from God, in slavery to a raving discord’",
+          "In the Cavern of Plato and in the Cave of Empedocles, I discern this universe",
+          "Actually a reference to the Love and Strife of Empedocles (e.g. Fr. B 17, 19–20 D–F)."
+        ],
+        "canonical_author": "Empedocles"
+      },
+      "goodreads_match": {
+        "author_id": "501843",
+        "name": "Empedocles",
+        "average_rating": "3.87",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Empedocles",
+          "page_id": 9553,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Deaths from fire",
+            "5th-century BC Greek philosophers",
+            "5th-century BC Greek poets",
+            "Ancient Acragantines",
+            "Ancient Greek shamans",
+            "Pluralist philosophers",
+            "Ancient Greek physicists",
+            "Philosophers of Magna Graecia",
+            "Natural philosophers",
+            "Philosophers of science",
+            "Presocratic philosophers",
+            "Sicilian Greeks",
+            "490s BC births",
+            "430s BC deaths",
+            "Mount Etna",
+            "Miracle workers"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -494,
+          "death_year": -434
+        }
+      },
+      "wikipedia_match": {
+        "title": "Empedocles",
+        "page_id": 9553,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Deaths from fire",
+          "5th-century BC Greek philosophers",
+          "5th-century BC Greek poets",
+          "Ancient Acragantines",
+          "Ancient Greek shamans",
+          "Pluralist philosophers",
+          "Ancient Greek physicists",
+          "Philosophers of Magna Graecia",
+          "Natural philosophers",
+          "Philosophers of science",
+          "Presocratic philosophers",
+          "Sicilian Greeks",
+          "490s BC births",
+          "430s BC deaths",
+          "Mount Etna",
+          "Miracle workers"
+        ],
+        "birth_year": -494,
+        "death_year": -434
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "501843"
+        ],
+        "target_person": {
+          "title": "Empedocles",
+          "page_id": 9553,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Deaths from fire",
+            "5th-century BC Greek philosophers",
+            "5th-century BC Greek poets",
+            "Ancient Acragantines",
+            "Ancient Greek shamans",
+            "Pluralist philosophers",
+            "Ancient Greek physicists",
+            "Philosophers of Magna Graecia",
+            "Natural philosophers",
+            "Philosophers of science",
+            "Presocratic philosophers",
+            "Sicilian Greeks",
+            "490s BC births",
+            "430s BC deaths",
+            "Mount Etna",
+            "Miracle workers"
+          ],
+          "birth_year": -494,
+          "death_year": -434
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Theaetetus",
+        "author": "Plato",
+        "count": 3,
+        "excerpts": [
+          "Taking his start from Theaetetus 176A and the Platonist ideal of ‘likeness to God’",
+          "The second part of the treatise (ch. 6–7) contributes a commentary on certain relevant Platonic texts (Theaetetus 176A, Timaeus 47E, 41B)",
+          "Again, a reference to Theaet. 176AB."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0140444505",
+        "average_rating": 4.14,
+        "format": "Paperback",
+        "book_id": "340960",
+        "author_ids": [
+          "879",
+          "608211"
+        ],
+        "work_id": "1195353",
+        "text_reviews_count": 53,
+        "title_without_series": "Theaetetus",
+        "publication_day": 26,
+        "ratings_count": 3321,
+        "publication_month": 3,
+        "publisher": "Penguin Classics",
+        "publication_year": 1987,
+        "num_pages": 272,
+        "title": "Theaetetus",
+        "isbn13": "9780140444506",
+        "authors": [
+          "Plato",
+          "Robin A.H. Waterfield"
+        ],
+        "description": "Set immediately prior to the trial and execution of Socrates in 399 BC, Theaetetus shows the great philosopher considering the nature of knowledge itself, in a debate with the geometrician Theodorus and his young follower Theaetetus. Their dialogue covers many questions, such as: is knowledge purely subjective, composed of the ever-changing flow of impressions we receive from the outside world? Is it better thought of as 'true belief'? Or is it, as many modern philosophers argue, 'justified true belief', in...",
+        "link": "https://www.goodreads.com/book/show/340960.Theaetetus",
+        "original_year": -369,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "340960",
+        "target_author_ids": [
+          "879",
+          "608211"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Phaedo",
+        "author": "Plato",
+        "count": 3,
+        "excerpts": [
+          "Basing himself on the different descriptions of the virtues in the Phaedo (69 BC) and in Republic IV",
+          "The title, literally ‘concerning the daemon allotted to us’, contains a reference to Phaedo 107D.",
+          "36a Cf. Phaedo 81BC."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "019953893X",
+        "average_rating": 4.01,
+        "format": "Paperback",
+        "book_id": "6747115",
+        "author_ids": [
+          "879",
+          "217095"
+        ],
+        "work_id": "45543438",
+        "text_reviews_count": 5,
+        "title_without_series": "Phaedo",
+        "publication_day": 1,
+        "ratings_count": 70,
+        "publication_month": 4,
+        "publisher": "Oxford University Press, USA",
+        "publication_year": 2009,
+        "num_pages": 105,
+        "title": "Phaedo",
+        "isbn13": "9780199538935",
+        "authors": [
+          "Plato",
+          "David Gallop"
+        ],
+        "description": "The Phaedo is acknowledged to be one of Plato's masterpieces, showing him both as a philosopher and as a dramatist at the height of his powers. For its moving account of the execution of Socrates, the Phaedo ranks among the supreme literary achievements of antiquity. It is also a document crucial to the understanding of many ideas deeply ingrained in western culture, and provides one of the best introductions to Plato's thought. This new edition is eminently suitable for readers new to Plato, offering a rea...",
+        "link": "https://www.goodreads.com/book/show/6747115-phaedo",
+        "original_year": -380,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "6747115",
+        "target_author_ids": [
+          "879",
+          "217095"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Numenius",
+        "count": 3,
+        "excerpts": [
+          "for example, he transcribed and arranged nearly all the works of Numenius, and was not far from having most of them off by heart.",
+          "This seems to be a reference, not so much to Gnostics, as to the Neopythagorean Numenius, a philosopher who had a considerable influence on Plotinus, and who made this distinction between his First and Second Gods (cf.",
+          "71 This term is used by Numenius to describe the cosmos (Frs 11; 21 Des Places)."
+        ],
+        "canonical_author": "Numenius"
+      },
+      "goodreads_match": {
+        "author_id": "15286250",
+        "name": "Numenius of Apamea",
+        "average_rating": "4.00",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "author_meta": {
+          "birth_year": 150,
+          "death_year": 200
+        }
+      },
+      "wikipedia_match": {
+        "title": "Numenius",
+        "birth_year": 150,
+        "death_year": 200,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "15286250"
+        ],
+        "target_person": {
+          "title": "Numenius",
+          "birth_year": 150,
+          "death_year": 200
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Sophist",
+        "author": "Plato",
+        "count": 2,
+        "excerpts": [
+          "The last two chapters then describe dialectic, drawing on Republic VII, Phaedrus, and Sophist, and claim its superiority to Aristotelian and Stoic systems of logic.",
+          "A basic philosophical proposition, going back to Plato, Soph. 247DE and 248C."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "087220202X",
+        "average_rating": 4.1,
+        "format": "Paperback",
+        "book_id": "26995",
+        "author_ids": [
+          "879",
+          "13851"
+        ],
+        "work_id": "27656",
+        "text_reviews_count": 40,
+        "title_without_series": "Sophist",
+        "publication_day": 15,
+        "ratings_count": 1391,
+        "publication_month": 10,
+        "publisher": "Hackett Publishing Company, Inc.",
+        "publication_year": 1993,
+        "num_pages": 144,
+        "title": "Sophist",
+        "isbn13": "9780872202023",
+        "authors": [
+          "Plato",
+          "Nicholas P. White"
+        ],
+        "description": "A fluent and accurate new translation of the dialogue that, of all Plato's works, has seemed to speak most directly to the interests of contemporary and analytical philosophers. White's extensive introduction explores the dialogue's central themes, its connection with related discussions in other dialogues, and its implicaiton for the interpretation of Plato's metaphysics.",
+        "link": "https://www.goodreads.com/book/show/26995.Sophist",
+        "original_year": -360,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "26995",
+        "target_author_ids": [
+          "879",
+          "13851"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "De Anima",
+        "author": "Aristotle",
+        "count": 2,
+        "excerpts": [
+          "Aristotle criticized this concept in the De Anima, and Plotinus would agree with him.",
+          "Plotinus here makes use of Aristotle’s doctrine of the identity of Intellect with its objects, cf. De An. III 4, 430a 2\n5; III 7, 431b 17."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0140444718",
+        "average_rating": 4.03,
+        "format": "Paperback",
+        "book_id": "794501",
+        "author_ids": [
+          "2192",
+          "406514"
+        ],
+        "work_id": "350514",
+        "text_reviews_count": 58,
+        "title_without_series": "De Anima",
+        "publication_day": 29,
+        "ratings_count": 3645,
+        "publication_month": 7,
+        "publisher": "Penguin Books",
+        "publication_year": 2004,
+        "num_pages": 254,
+        "title": "De Anima",
+        "isbn13": "9780140444711",
+        "authors": [
+          "Aristotle",
+          "Hugh Lawson-Tancred"
+        ],
+        "description": "'The soul is, so to speak, the first principle of living things. We seek to contemplate and know its nature and substance'\nFor the Pre-Socratic philosophers the soul was the source of movement and sensation, while for Plato it was the seat of being, metaphysically distinct from the body that it was forced temporarily to inhabit. Plato's student Aristotle was determined to test the truth of both these beliefs against the emerging sciences of logic and biology. His examination of the huge variety of living or...",
+        "link": "https://www.goodreads.com/book/show/794501.De_Anima",
+        "original_year": -349,
+        "author_meta": {
+          "birth_year": -384,
+          "death_year": -322
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "birth_year": -384,
+        "death_year": -322,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "794501",
+        "target_author_ids": [
+          "2192",
+          "406514"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Jules Simon",
+        "count": 2,
+        "excerpts": [
+          "The Triad, it must never under any stress be forgotten, is The Divinity, and each Hypostasis is Divine: the All-Soul, as Jules Simon well remarks, is the expression of the outgoing energy of the Divinity as the Intellectual-Principle is the expression of the Godhead’s self-pent Thought or Vision.",
+          "‘Matter’, says Jules Simon, ‘is rather a demand of thought than a reality of existence’:"
+        ],
+        "canonical_author": "Jules Simon"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Jules Simon",
+          "page_id": 174692,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1814 births",
+            "1896 deaths",
+            "Politicians from Lorient",
+            "Politicians of the French Third Republic",
+            "French life senators",
+            "Members of the Académie Française",
+            "École Normale Supérieure alumni",
+            "French interior ministers"
+          ],
+          "birth_year": 1814,
+          "death_year": 1896
+        },
+        "author_meta": {
+          "birth_year": 1814,
+          "death_year": 1896
+        }
+      },
+      "wikipedia_match": {
+        "title": "Jules Simon",
+        "page_id": 174692,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "1814 births",
+          "1896 deaths",
+          "Politicians from Lorient",
+          "Politicians of the French Third Republic",
+          "French life senators",
+          "Members of the Académie Française",
+          "École Normale Supérieure alumni",
+          "French interior ministers"
+        ],
+        "birth_year": 1814,
+        "death_year": 1896
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Jules Simon",
+          "page_id": 174692,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1814 births",
+            "1896 deaths",
+            "Politicians from Lorient",
+            "Politicians of the French Third Republic",
+            "French life senators",
+            "Members of the Académie Française",
+            "École Normale Supérieure alumni",
+            "French interior ministers"
+          ],
+          "birth_year": 1814,
+          "death_year": 1896
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "MacKenna",
+        "count": 2,
+        "excerpts": [
+          "MacKenna prudently translates, ‘a going forth from the self’, in which the voluntary tension is emphasized at the expense of the passivity and malleability.",
+          "Plotinus normally distinguishes Soul from Intellect pretty clearly, in ways specified well enough by MacKenna in his introductory remarks (p. xxxiii)."
+        ],
+        "canonical_author": "Mackenna"
+      },
+      "goodreads_match": {
+        "author_id": "14707",
+        "name": "Stephen MacKenna",
+        "average_rating": "4.02",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Stephen MacKenna",
+          "page_id": 10303328,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1872 births",
+            "1934 deaths",
+            "English people of Irish descent",
+            "English translators",
+            "Irish nationalists",
+            "20th-century Irish translators",
+            "Greek–English translators",
+            "Writers from Liverpool"
+          ],
+          "birth_year": 1872,
+          "death_year": 1934
+        },
+        "author_meta": {
+          "birth_year": 1872,
+          "death_year": 1934
+        }
+      },
+      "wikipedia_match": {
+        "title": "Stephen MacKenna",
+        "page_id": 10303328,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1872 births",
+          "1934 deaths",
+          "English people of Irish descent",
+          "English translators",
+          "Irish nationalists",
+          "20th-century Irish translators",
+          "Greek–English translators",
+          "Writers from Liverpool"
+        ],
+        "birth_year": 1872,
+        "death_year": 1934
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "14707"
+        ],
+        "target_person": {
+          "title": "Stephen MacKenna",
+          "page_id": 10303328,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1872 births",
+            "1934 deaths",
+            "English people of Irish descent",
+            "English translators",
+            "Irish nationalists",
+            "20th-century Irish translators",
+            "Greek–English translators",
+            "Writers from Liverpool"
+          ],
+          "birth_year": 1872,
+          "death_year": 1934
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Chrysippus",
+        "count": 2,
+        "excerpts": [
+          "but he had also to take cognizance, as did his predecessors, of the powerful Stoic challenge to theories of free will laid down by Chrysippus in particular – ‘no effect without a cause’.",
+          "It was significantly refined, however, by Chrysippus."
+        ],
+        "canonical_author": "Chrysippus"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Chrysippus",
+          "page_id": 37143,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "270s BC births",
+            "200s BC deaths",
+            "3rd-century BC Greek philosophers",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Hellenistic-era philosophers from Anatolia",
+            "Philosophical theists",
+            "Stoic philosophers",
+            "Deaths from laughter",
+            "Phoenician philosophers",
+            "3rd-century BC Greek mathematicians",
+            "3rd-century BC Phoenician people"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -279,
+          "death_year": -206
+        }
+      },
+      "wikipedia_match": {
+        "title": "Chrysippus",
+        "page_id": 37143,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "270s BC births",
+          "200s BC deaths",
+          "3rd-century BC Greek philosophers",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Hellenistic-era philosophers from Anatolia",
+          "Philosophical theists",
+          "Stoic philosophers",
+          "Deaths from laughter",
+          "Phoenician philosophers",
+          "3rd-century BC Greek mathematicians",
+          "3rd-century BC Phoenician people"
+        ],
+        "birth_year": -279,
+        "death_year": -206
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Chrysippus",
+          "page_id": 37143,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "270s BC births",
+            "200s BC deaths",
+            "3rd-century BC Greek philosophers",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Hellenistic-era philosophers from Anatolia",
+            "Philosophical theists",
+            "Stoic philosophers",
+            "Deaths from laughter",
+            "Phoenician philosophers",
+            "3rd-century BC Greek mathematicians",
+            "3rd-century BC Phoenician people"
+          ],
+          "birth_year": -279,
+          "death_year": -206
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "count": 2,
+        "excerpts": [
+          "It falls into two parts, the first (ch. 1–4) concerned with establishing the Platonic ideal of the exercise of the Intellect against Aristotelian, Epicurean and Stoic alternatives",
+          "Notable here is Plotinus’ use of Aristotle as a source for his criticism of earlier philosophers (ch. 6–7), before turning his criticism on Aristotle himself."
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": {
+        "author_id": "2192",
+        "name": "Aristotle",
+        "average_rating": "3.93",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        },
+        "author_meta": {
+          "birth_year": -384,
+          "death_year": -322
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Epicurus",
+        "count": 2,
+        "excerpts": [
+          "It falls into two parts, the first (ch. 1–4) concerned with establishing the Platonic ideal of the exercise of the Intellect against Aristotelian, Epicurean and Stoic alternatives",
+          "Epicurus denies a Providence and recommends pleasure and its enjoyment, all that is left to us: but the doctrine under discussion is still more wanton; it carps at Providence and the Lord of Providence;"
+        ],
+        "canonical_author": "Epicurus"
+      },
+      "goodreads_match": {
+        "author_id": "114041",
+        "name": "Epicurus",
+        "average_rating": "3.94",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Epicurus",
+          "page_id": 10073,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "4th-century BC Greek philosophers",
+            "3rd-century BC Greek philosophers",
+            "341 BC births",
+            "270 BC deaths",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Samians",
+            "Empiricists",
+            "Epicurean philosophers",
+            "Greek male writers",
+            "Materialists",
+            "Philosophers of death",
+            "Hellenistic-era philosophers in Athens"
+          ],
+          "birth_year": -341,
+          "death_year": -270
+        },
+        "author_meta": {
+          "birth_year": -341,
+          "death_year": -270
+        }
+      },
+      "wikipedia_match": {
+        "title": "Epicurus",
+        "page_id": 10073,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "4th-century BC Greek philosophers",
+          "3rd-century BC Greek philosophers",
+          "341 BC births",
+          "270 BC deaths",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Samians",
+          "Empiricists",
+          "Epicurean philosophers",
+          "Greek male writers",
+          "Materialists",
+          "Philosophers of death",
+          "Hellenistic-era philosophers in Athens"
+        ],
+        "birth_year": -341,
+        "death_year": -270
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "114041"
+        ],
+        "target_person": {
+          "title": "Epicurus",
+          "page_id": 10073,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "4th-century BC Greek philosophers",
+            "3rd-century BC Greek philosophers",
+            "341 BC births",
+            "270 BC deaths",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Samians",
+            "Empiricists",
+            "Epicurean philosophers",
+            "Greek male writers",
+            "Materialists",
+            "Philosophers of death",
+            "Hellenistic-era philosophers in Athens"
+          ],
+          "birth_year": -341,
+          "death_year": -270
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Heraclitus",
+        "count": 2,
+        "excerpts": [
+          "Heraclitus,91 who urges the examination of this matter, tells of ‘compulsory alternation from contrary to contrary’, speaks of ascent and descent, says that ‘change reposes’, and that ‘it is weariness to keep toiling at the same things and to be always overcome by them’",
+          "the ‘solace by flight’ of Heraclitus"
+        ],
+        "canonical_author": "Heraclitus"
+      },
+      "goodreads_match": {
+        "author_id": "77989",
+        "name": "Heraclitus",
+        "average_rating": "4.21",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Heraclitus",
+          "page_id": 13792,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Heraclitus| ",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek philosophers",
+            "530s BC births",
+            "470s BC deaths",
+            "Ancient Ephesians",
+            "Ancient Greek cosmologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Deaths from edema",
+            "Ancient Greek epistemologists",
+            "Natural philosophers",
+            "Ontologists",
+            "Philosophers of ancient Ionia",
+            "Ancient Greek philosophers of mind",
+            "Philosophers of religion",
+            "Philosophers of time",
+            "Ancient Greek political philosophers",
+            "Presocratic philosophers"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -535,
+          "death_year": -475
+        }
+      },
+      "wikipedia_match": {
+        "title": "Heraclitus",
+        "page_id": 13792,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Heraclitus| ",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek philosophers",
+          "530s BC births",
+          "470s BC deaths",
+          "Ancient Ephesians",
+          "Ancient Greek cosmologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Deaths from edema",
+          "Ancient Greek epistemologists",
+          "Natural philosophers",
+          "Ontologists",
+          "Philosophers of ancient Ionia",
+          "Ancient Greek philosophers of mind",
+          "Philosophers of religion",
+          "Philosophers of time",
+          "Ancient Greek political philosophers",
+          "Presocratic philosophers"
+        ],
+        "birth_year": -535,
+        "death_year": -475
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "77989"
+        ],
+        "target_person": {
+          "title": "Heraclitus",
+          "page_id": 13792,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Heraclitus| ",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek philosophers",
+            "530s BC births",
+            "470s BC deaths",
+            "Ancient Ephesians",
+            "Ancient Greek cosmologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Deaths from edema",
+            "Ancient Greek epistemologists",
+            "Natural philosophers",
+            "Ontologists",
+            "Philosophers of ancient Ionia",
+            "Ancient Greek philosophers of mind",
+            "Philosophers of religion",
+            "Philosophers of time",
+            "Ancient Greek political philosophers",
+            "Presocratic philosophers"
+          ],
+          "birth_year": -535,
+          "death_year": -475
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Bible",
+        "author": "null",
+        "count": 1,
+        "excerpts": [
+          "I’ve become a Christian, and read my Bible like George Moore and Mr. Wesley."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 4.58,
+        "format": "Paperback",
+        "book_id": "8901416",
+        "author_ids": [
+          "5158478"
+        ],
+        "work_id": "17133328",
+        "text_reviews_count": 1,
+        "title_without_series": "The Holy Bible",
+        "ratings_count": 1,
+        "title": "The Holy Bible",
+        "authors": [
+          "Anonymous"
+        ],
+        "description": "American Standard Version\nThe Old Testament\n* Genesis\n* Exodus\n* Leviticus\n* Numbers\n* Deuteronomy\n* Joshua\n* Judges\n* Ruth\n* 1 Samuel\n* 2 Samuel\n* 1 Kings\n* 2 Kings\n* 1 Chronicles\n* 2 Chronicles\n* Ezra\n* Nehemiah\n* Esther\n* Job\n* Psalms\n* Proverbs\n* Ecclesiastes\n* Song of Solomon\n* Isaiah\n* Jeremiah\n* Lamentations\n* Ezekiel\n* Daniel\n* Hosea\n* Joel\n* Amos\n* Obadiah\n* Jonah\n* Micah\n* Nahum\n* Habakkuk\n* Zephaniah\n* Haggai\n* Zechariah\n* Malachi\nThe New Testament\n* Matthew\n* Mark\n* Luke\n* John\n* Acts\n* Romans\n*...",
+        "link": "https://www.goodreads.com/book/show/8901416-the-holy-bible",
+        "original_year": 100
+      },
+      "wikipedia_match": {
+        "title": "Anonymous",
+        "birth_year": null,
+        "death_year": null,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "8901416",
+        "target_author_ids": [
+          "5158478"
+        ],
+        "target_person": {
+          "title": "Anonymous",
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Cloud of Unknowing",
+        "author": "null",
+        "count": 1,
+        "excerpts": [
+          "to the Cloud of Unknowing, to Nicholas of Cusa’s Docta Ignorantia, to the Dark Night of the Soul of John of the Cross."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0140441085",
+        "average_rating": 4.2,
+        "format": "Paperback",
+        "book_id": "1654615",
+        "author_ids": [
+          "5158478"
+        ],
+        "work_id": "234352",
+        "text_reviews_count": 2,
+        "title_without_series": "The Cloud of Unknowing",
+        "publication_day": 30,
+        "ratings_count": 11,
+        "publication_month": 5,
+        "publisher": "Penguin Classics",
+        "publication_year": 1961,
+        "num_pages": 144,
+        "title": "The Cloud of Unknowing",
+        "isbn13": "9780140441086",
+        "authors": [
+          "Anonymous"
+        ],
+        "description": "And therefore take good heed unto time, how that thou dispendest it: for nothing is more precious than time. In one little time, as little as it is, may heaven be won and lost. A token it is that time is precious: for God, that is given of time, giveth never two times together, but each one after other. And this He doth, for He will not reverse the order or the ordinal course in the cause of His creation. For time is made for man, and not man for time.",
+        "link": "https://www.goodreads.com/book/show/1654615.The_Cloud_of_Unknowing",
+        "original_year": 1375
+      },
+      "wikipedia_match": {
+        "title": "Anonymous",
+        "birth_year": null,
+        "death_year": null,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1654615",
+        "target_author_ids": [
+          "5158478"
+        ],
+        "target_person": {
+          "title": "Anonymous",
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Dark Night of the Soul",
+        "author": "John of the Cross",
+        "count": 1,
+        "excerpts": [
+          "to the Cloud of Unknowing, to Nicholas of Cusa’s Docta Ignorantia, to the Dark Night of the Soul of John of the Cross."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "162793247X",
+        "average_rating": 4.21,
+        "format": "ebook",
+        "book_id": "18185654",
+        "author_ids": [
+          "1911605"
+        ],
+        "work_id": "3109870",
+        "text_reviews_count": 4,
+        "title_without_series": "Dark Night of the Soul",
+        "publication_day": 1,
+        "ratings_count": 33,
+        "publication_month": 7,
+        "publisher": "Start Publishing LLC",
+        "publication_year": 2013,
+        "num_pages": 112,
+        "title": "Dark Night of the Soul",
+        "isbn13": "9781627932479",
+        "authors": [
+          "San Juan de la Cruz"
+        ],
+        "description": "While imprisoned in a tiny prison cell for his attempts to reform the Church, sixteenth-century Spanish mystic John of the Cross composed many of his now classic poems of the soul's longing for God. Written on a scroll smuggled to him by one of his guards, his songs are the ultimate expression of the spiritual seeker's journey from estranged despair to blissful union with the divineAfter escaping his captors, John fell into a state of profound ecstasy and wrote Dark Night of the Soul. Later, he added an imp...",
+        "link": "https://www.goodreads.com/book/show/18185654-dark-night-of-the-soul",
+        "original_year": 1584,
+        "author_meta": {
+          "birth_year": 1542,
+          "death_year": 1591
+        }
+      },
+      "wikipedia_match": {
+        "title": "San Juan de la Cruz",
+        "birth_year": 1542,
+        "death_year": 1591,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "18185654",
+        "target_author_ids": [
+          "1911605"
+        ],
+        "target_person": {
+          "title": "San Juan de la Cruz",
+          "birth_year": 1542,
+          "death_year": 1591
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Alcibiades I",
+        "author": "Plato",
+        "count": 1,
+        "excerpts": [
+          "Plotinus is in fact particularly interested in the status of the ‘we’ (hemeis), as he calls it, even to the extent of causing difficulties for the traditional Platonic doctrine of the soul (as the seat of the personality – the doctrine of Plato’s Alcibiades I), and of reincarnation."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 3.75,
+        "book_id": "19422258",
+        "author_ids": [
+          "879"
+        ],
+        "work_id": "49313710",
+        "text_reviews_count": 1,
+        "title_without_series": "Alcibiades I",
+        "ratings_count": 7,
+        "title": "Alcibiades I",
+        "authors": [
+          "Plato"
+        ],
+        "link": "https://www.goodreads.com/book/show/19422258-alcibiades-i",
+        "original_year": -390,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "19422258",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Republic X",
+        "author": "Plato",
+        "count": 1,
+        "excerpts": [
+          "Plotinus, as a Platonist, is committed to the autonomy of at least the highest part of the soul (taking his guidance from the Myth of Er in Republic X, and in particular the striking phrase, ‘Virtue owns no master’, at X 617E)"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1853264830",
+        "average_rating": 3.91,
+        "format": "Paperback",
+        "book_id": "1613389",
+        "author_ids": [
+          "879"
+        ],
+        "work_id": "1625515",
+        "text_reviews_count": 3,
+        "title_without_series": "Republic",
+        "publication_day": 5,
+        "ratings_count": 45,
+        "publication_month": 4,
+        "publisher": "Wordsworth Editions",
+        "publication_year": 1997,
+        "title": "Republic",
+        "isbn13": "9781853264832",
+        "authors": [
+          "Plato"
+        ],
+        "description": "A newly designed second edition of the classic translation of Plato's timeless work, \"The Republic,\" by the author of \"The Closing of the American Mind.\"",
+        "link": "https://www.goodreads.com/book/show/1613389.Republic",
+        "original_year": -400,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1613389",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "the Life",
+        "author": "Porphyry",
+        "count": 1,
+        "excerpts": [
+          "An early treatise, actually entitled by Porphyry in the Life, more accurately, ‘On the Two Kinds of Matter’"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0674994841",
+        "average_rating": 4.22,
+        "format": "Hardcover",
+        "book_id": "721824",
+        "author_ids": [
+          "14704",
+          "246588",
+          "384109"
+        ],
+        "work_id": "41211933",
+        "text_reviews_count": 4,
+        "title_without_series": "Ennead 1/On the Life of Plotinus",
+        "publication_day": 1,
+        "ratings_count": 27,
+        "publication_month": 1,
+        "publisher": "Harvard University Press (Cambridge)/Wm Heinemann (London)",
+        "publication_year": 1969,
+        "num_pages": 368,
+        "title": "Ennead 1/On the Life of Plotinus",
+        "isbn13": "9780674994843",
+        "authors": [
+          "Plotinus",
+          "Porphyry",
+          "A.H. Armstrong"
+        ],
+        "description": "Plotinus (204/5-270) was the 1st Neoplatonic philosopher. His writings were edited by his disciple Porphyry, who published them many years after his master's death in six sets of nine treatises each (the Enneads). Plotinus regarded Plato as his master. His own philosophy is an original development of the Platonism of the 1st two centuries of the Christian era & the closely related thought of the Neopythagoreans, with some influences from Aristotle & his followers & the Stoics, whose writings he knew well bu...",
+        "link": "https://www.goodreads.com/book/show/721824.Ennead_1_On_the_Life_of_Plotinus",
+        "original_year": 250,
+        "author_meta": {
+          "birth_year": 204,
+          "death_year": 270
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plotinus",
+        "birth_year": 204,
+        "death_year": 270,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "721824",
+        "target_author_ids": [
+          "14704",
+          "246588",
+          "384109"
+        ],
+        "target_person": {
+          "title": "Plotinus",
+          "birth_year": 204,
+          "death_year": 270
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Banquet",
+        "author": "Plato",
+        "count": 1,
+        "excerpts": [
+          "A cardinal passage is that in The Banquet60 where we are told Eros was not a child of Aphrodite but born on the day of Aphrodite’s birth, Penia, Poverty, being the mother, and Poros, Possession, being the father."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0141023848",
+        "average_rating": 4.01,
+        "format": "Paperback",
+        "book_id": "1197922",
+        "author_ids": [
+          "879"
+        ],
+        "work_id": "1488719",
+        "text_reviews_count": 17,
+        "title_without_series": "The Symposium",
+        "publication_day": 25,
+        "ratings_count": 148,
+        "publication_month": 8,
+        "publisher": "Penguin",
+        "publication_year": 2005,
+        "num_pages": 107,
+        "title": "The Symposium",
+        "isbn13": "9780141023847",
+        "authors": [
+          "Plato"
+        ],
+        "description": "Plato's retelling of the discourses between Socrates and his friends on such subjects as love and desire, truth and illusion, spiritual transcendence and the qualities of a good ruler, profoundly affected the ways in which we view human relationships, society and leadership - and shaped the whole tradition of Western philosophy.",
+        "link": "https://www.goodreads.com/book/show/1197922.The_Symposium",
+        "original_year": -380,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1197922",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Physics",
+        "author": "Aristotle",
+        "count": 1,
+        "excerpts": [
+          "apart from that of Aristotle in Physics, IV. 10–14"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0192823108",
+        "average_rating": 3.97,
+        "format": "Paperback",
+        "book_id": "366330",
+        "author_ids": [
+          "2192",
+          "83971",
+          "608211"
+        ],
+        "work_id": "3264667",
+        "text_reviews_count": 40,
+        "title_without_series": "Physics",
+        "publication_day": 28,
+        "ratings_count": 2948,
+        "publication_month": 3,
+        "publisher": "Oxford University Press, USA",
+        "publication_year": 1996,
+        "num_pages": 384,
+        "title": "Physics",
+        "isbn13": "9780192823106",
+        "authors": [
+          "Aristotle",
+          "David Bostock",
+          "Robin A.H. Waterfield"
+        ],
+        "description": "For many centuries, Aristotle's Physics was the essential starting point for anyone who wished to study the natural sciences. Now, in the first translation into English since 1930, Aristotle's thought is presented accurately, with a lucid introduction and extensive notes to explain the general structure of each section of the book, and shed light on particular problems. It simplifies and expands the style of the original, making for easier reading and better comprehension.",
+        "link": "https://www.goodreads.com/book/show/366330.Physics",
+        "original_year": -340,
+        "author_meta": {
+          "birth_year": -384,
+          "death_year": -322
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "birth_year": -384,
+        "death_year": -322,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "366330",
+        "target_author_ids": [
+          "2192",
+          "83971",
+          "608211"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "In Tim.",
+        "author": "Proclus",
+        "count": 1,
+        "excerpts": [
+          "(Proclus, In Tim. iii, p. 103, 28–32)"
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0948366125",
+        "average_rating": 4.71,
+        "book_id": "1648859",
+        "author_ids": [
+          "186050",
+          "45583"
+        ],
+        "work_id": "42262215",
+        "text_reviews_count": 1,
+        "title_without_series": "The Commentaries Of Proclus On The Timaeus Of Plato",
+        "ratings_count": 14,
+        "publisher": "Chthonios Books",
+        "title": "The Commentaries Of Proclus On The Timaeus Of Plato",
+        "isbn13": "9780948366123",
+        "authors": [
+          "Proclus",
+          "Thomas Taylor"
+        ],
+        "link": "https://www.goodreads.com/book/show/1648859.The_Commentaries_Of_Proclus_On_The_Timaeus_Of_Plato",
+        "original_year": 450,
+        "author_meta": {
+          "birth_year": 412,
+          "death_year": 485
+        }
+      },
+      "wikipedia_match": {
+        "title": "Proclus",
+        "birth_year": 412,
+        "death_year": 485,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1648859",
+        "target_author_ids": [
+          "186050",
+          "45583"
+        ],
+        "target_person": {
+          "title": "Proclus",
+          "birth_year": 412,
+          "death_year": 485
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Protagoras",
+        "author": "Plato",
+        "count": 1,
+        "excerpts": [
+          "Actually a quotation of a line of the poet Simonides, as quoted in Plato’s Protagoras 341 e 3."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0872200949",
+        "average_rating": 3.93,
+        "format": "Paperback",
+        "book_id": "848993",
+        "author_ids": [
+          "879",
+          "904",
+          "439960"
+        ],
+        "work_id": "2356381",
+        "text_reviews_count": 53,
+        "title_without_series": "Protagoras",
+        "publication_day": 15,
+        "ratings_count": 1220,
+        "publication_month": 3,
+        "publisher": "Hackett Publishing Company, Inc.",
+        "publication_year": 1992,
+        "num_pages": 59,
+        "title": "Protagoras",
+        "isbn13": "9780872200944",
+        "authors": [
+          "Plato",
+          "Stanley Lombardo",
+          "Karen Bell"
+        ],
+        "description": "Lombardo and Bell have translated this important early dialogue on virtue, wisdom, and the nature of Sophistic teaching into an idiom remarkable for its liveliness and subtlety. Michael Frede has provided a substantial introduction that illuminates the dialogue's perennial interest, its Athenian political background, and the particular difficulties and ironic nuances of its argument.",
+        "link": "https://www.goodreads.com/book/show/848993.Protagoras",
+        "original_year": -390,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "848993",
+        "target_author_ids": [
+          "879",
+          "904",
+          "439960"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "De Generatione et Corruptione",
+        "author": "Aristotle",
+        "count": 1,
+        "excerpts": [
+          "95 An Aristotelian doctrine, cf. De Gen. et Corr. A 7, 323 b 6ff. Plotinus has this passage in mind throughout the present chapter."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "1425000878",
+        "average_rating": 3.62,
+        "book_id": "1315167",
+        "author_ids": [
+          "2192"
+        ],
+        "work_id": "1304468",
+        "text_reviews_count": 4,
+        "title_without_series": "On Generation and Corruption",
+        "publication_day": 4,
+        "ratings_count": 52,
+        "publication_month": 9,
+        "publication_year": 2007,
+        "num_pages": 160,
+        "title": "On Generation and Corruption",
+        "isbn13": "9781425000875",
+        "authors": [
+          "Aristotle"
+        ],
+        "description": "Further, we are to study growth and 'alteration'. We must inquire what each of them is; and whether 'alteration' is to be identified with coming-to-be, or whether to these different names there correspond two separate processes with distinct natures.",
+        "link": "https://www.goodreads.com/book/show/1315167.On_Generation_and_Corruption",
+        "original_year": -336,
+        "author_meta": {
+          "birth_year": -384,
+          "death_year": -322
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "birth_year": -384,
+        "death_year": -322,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1315167",
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Laws",
+        "author": "Plato",
+        "count": 1,
+        "excerpts": [
+          "A reference to Laws I 644 DE."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "0226671100",
+        "average_rating": 4.05,
+        "format": "Paperback",
+        "book_id": "30578",
+        "author_ids": [
+          "879",
+          "163269"
+        ],
+        "work_id": "1108078",
+        "text_reviews_count": 23,
+        "title_without_series": "The Laws of Plato",
+        "publication_day": 15,
+        "ratings_count": 1438,
+        "publication_month": 3,
+        "publisher": "University Of Chicago Press",
+        "publication_year": 1988,
+        "num_pages": 576,
+        "title": "The Laws of Plato",
+        "isbn13": "9780226671109",
+        "authors": [
+          "Plato",
+          "Thomas L. Pangle"
+        ],
+        "description": "The Laws, Plato's longest dialogue, has for centuries been recognized as the most comprehensive exposition of the practicalconsequences of his philosophy, a necessary corrective to the more visionary and utopian Republic. In this animated encounter between a foreign philosopher and a powerful statesman, not only do we see reflected, in Plato's own thought, eternal questions of the relation between political theory and practice, but we also witness the working out of a detailed plan for a new political order...",
+        "link": "https://www.goodreads.com/book/show/30578.The_Laws_of_Plato",
+        "original_year": -360,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "30578",
+        "target_author_ids": [
+          "879",
+          "163269"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Epistles",
+        "author": "Plato",
+        "count": 1,
+        "excerpts": [
+          "dependent on such Platonic passages as Symp. 210E and Ep. VII 341CD."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 3.69,
+        "book_id": "13611921",
+        "author_ids": [
+          "879"
+        ],
+        "work_id": "27316993",
+        "text_reviews_count": 4,
+        "title_without_series": "Thirteen Epistles of Plato",
+        "ratings_count": 11,
+        "publisher": "Clarendon",
+        "publication_year": 1925,
+        "title": "Thirteen Epistles of Plato",
+        "authors": [
+          "Plato"
+        ],
+        "description": "Plato (circa 427-347 B.C.) was a famous Greek philosopher who is largely responsible for Western philosophy as we know it today. Plato was mentored by Socrates and much of his writings were based off of dialogues between Socrates and others. Plato also was the teacher of many philosophers with the most famous amongst them being Arisotle.\nThis version of Plato's The Letters includes a table of contents.",
+        "link": "https://www.goodreads.com/book/show/13611921-thirteen-epistles-of-plato",
+        "original_year": -350,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "13611921",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Parmenides",
+        "author": "Plato",
+        "count": 1,
+        "excerpts": [
+          "A composite reference to Parm. 142A and Rep. VI 509 B."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "094105196X",
+        "average_rating": 4.02,
+        "format": "Paperback",
+        "book_id": "381185",
+        "author_ids": [
+          "879",
+          "6485033"
+        ],
+        "work_id": "370973",
+        "text_reviews_count": 41,
+        "title_without_series": "Parmenides",
+        "publication_day": 1,
+        "ratings_count": 1142,
+        "publication_month": 1,
+        "publisher": "Focus",
+        "publication_year": 1996,
+        "num_pages": 96,
+        "title": "Parmenides",
+        "isbn13": "9780941051965",
+        "authors": [
+          "Plato",
+          "Keith Whitaker"
+        ],
+        "description": "This is an English translation of one of the more challenging and enigmatic of Plato's dialogues between Socrates and Parmenides and Zeno of Elea, that begins with Zeno defending his treatise of Parmenidean monism against those partisans of plurality.\nFocus Philosophical Library translations are close to and are non-interpretative of the original text, with the notes and a glossary intending to provide the reader with some sense of the terms and the concepts as they were understood by Plato's immediate audi...",
+        "link": "https://www.goodreads.com/book/show/381185.Parmenides",
+        "original_year": -340,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -428,
+        "death_year": -348,
+        "page_id": null,
+        "infoboxes": [],
+        "categories": []
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "381185",
+        "target_author_ids": [
+          "879",
+          "6485033"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -428,
+          "death_year": -348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "George Moore",
+        "count": 1,
+        "excerpts": [
+          "I’ve become a Christian, and read my Bible like George Moore and Mr. Wesley."
+        ],
+        "canonical_author": "George Moore"
+      },
+      "goodreads_match": {
+        "author_id": "5348195",
+        "name": "George Moore",
+        "average_rating": "3.66",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "George Moore (novelist)",
+          "page_id": 205928,
+          "infoboxes": [
+            "writer <!-- For more information see [[:Template:Infobox Writer/doc]]. -->"
+          ],
+          "categories": [
+            "1852 births",
+            "1933 deaths",
+            "19th-century Irish novelists",
+            "19th-century Irish poets",
+            "19th-century Irish short story writers",
+            "19th-century Anglo-Irish people",
+            "20th-century Irish male writers",
+            "20th-century Irish novelists",
+            "20th-century Irish poets",
+            "20th-century Anglo-Irish people",
+            "20th-century Irish short story writers",
+            "19th-century Irish memoirists",
+            "19th-century Irish dramatists and playwrights",
+            "20th-century Irish dramatists and playwrights",
+            "Alumni of St Mary's College, Oscott",
+            "Académie Julian alumni",
+            "Irish male dramatists and playwrights",
+            "Irish male novelists",
+            "Irish male short story writers",
+            "Moore family (Mayo)",
+            "Writers from County Mayo",
+            "Victorian poets",
+            "People from Carnacon",
+            "Irish satirical novelists"
+          ],
+          "birth_year": 1852,
+          "death_year": 1933
+        },
+        "author_meta": {
+          "birth_year": 1852,
+          "death_year": 1933
+        }
+      },
+      "wikipedia_match": {
+        "title": "George Moore (novelist)",
+        "page_id": 205928,
+        "infoboxes": [
+          "writer <!-- For more information see [[:Template:Infobox Writer/doc]]. -->"
+        ],
+        "categories": [
+          "1852 births",
+          "1933 deaths",
+          "19th-century Irish novelists",
+          "19th-century Irish poets",
+          "19th-century Irish short story writers",
+          "19th-century Anglo-Irish people",
+          "20th-century Irish male writers",
+          "20th-century Irish novelists",
+          "20th-century Irish poets",
+          "20th-century Anglo-Irish people",
+          "20th-century Irish short story writers",
+          "19th-century Irish memoirists",
+          "19th-century Irish dramatists and playwrights",
+          "20th-century Irish dramatists and playwrights",
+          "Alumni of St Mary's College, Oscott",
+          "Académie Julian alumni",
+          "Irish male dramatists and playwrights",
+          "Irish male novelists",
+          "Irish male short story writers",
+          "Moore family (Mayo)",
+          "Writers from County Mayo",
+          "Victorian poets",
+          "People from Carnacon",
+          "Irish satirical novelists"
+        ],
+        "birth_year": 1852,
+        "death_year": 1933
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5348195"
+        ],
+        "target_person": {
+          "title": "George Moore (novelist)",
+          "page_id": 205928,
+          "infoboxes": [
+            "writer <!-- For more information see [[:Template:Infobox Writer/doc]]. -->"
+          ],
+          "categories": [
+            "1852 births",
+            "1933 deaths",
+            "19th-century Irish novelists",
+            "19th-century Irish poets",
+            "19th-century Irish short story writers",
+            "19th-century Anglo-Irish people",
+            "20th-century Irish male writers",
+            "20th-century Irish novelists",
+            "20th-century Irish poets",
+            "20th-century Anglo-Irish people",
+            "20th-century Irish short story writers",
+            "19th-century Irish memoirists",
+            "19th-century Irish dramatists and playwrights",
+            "20th-century Irish dramatists and playwrights",
+            "Alumni of St Mary's College, Oscott",
+            "Académie Julian alumni",
+            "Irish male dramatists and playwrights",
+            "Irish male novelists",
+            "Irish male short story writers",
+            "Moore family (Mayo)",
+            "Writers from County Mayo",
+            "Victorian poets",
+            "People from Carnacon",
+            "Irish satirical novelists"
+          ],
+          "birth_year": 1852,
+          "death_year": 1933
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Mr. Wesley",
+        "count": 1,
+        "excerpts": [
+          "I’ve become a Christian, and read my Bible like George Moore and Mr. Wesley."
+        ],
+        "canonical_author": "Mr. Wesley"
+      },
+      "goodreads_match": {
+        "author_id": "151350",
+        "name": "John Wesley",
+        "average_rating": "4.11",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Charles Wesley",
+          "page_id": 177551,
+          "infoboxes": [
+            "clergy"
+          ],
+          "categories": [
+            "1707 births",
+            "1788 deaths",
+            "18th-century Anglican theologians",
+            "18th-century English composers",
+            "18th-century English Anglican priests",
+            "18th-century English Christian theologians",
+            "18th-century English male writers",
+            "18th-century English musicians",
+            "18th-century English non-fiction writers",
+            "18th-century evangelicals",
+            "18th-century hymnwriters",
+            "Alumni of Christ Church, Oxford",
+            "Anglican saints",
+            "Arminian ministers",
+            "Arminian writers",
+            "British chaplains",
+            "Burials at St Marylebone Parish Church",
+            "Church of England hymnwriters",
+            "English Anglican missionaries",
+            "English evangelicals",
+            "English male non-fiction writers",
+            "English Methodist hymnwriters",
+            "English Methodist missionaries",
+            "English religious writers",
+            "Evangelical Anglican theologians",
+            "Evangelical Anglican hymnwriters",
+            "English evangelists",
+            "Lutheran saints",
+            "Methodist missionaries in the United States",
+            "Methodist theologians"
+          ],
+          "birth_year": 1707,
+          "death_year": 1788
+        },
+        "author_meta": {
+          "birth_year": 1707,
+          "death_year": 1788
+        }
+      },
+      "wikipedia_match": {
+        "title": "Charles Wesley",
+        "page_id": 177551,
+        "infoboxes": [
+          "clergy"
+        ],
+        "categories": [
+          "1707 births",
+          "1788 deaths",
+          "18th-century Anglican theologians",
+          "18th-century English composers",
+          "18th-century English Anglican priests",
+          "18th-century English Christian theologians",
+          "18th-century English male writers",
+          "18th-century English musicians",
+          "18th-century English non-fiction writers",
+          "18th-century evangelicals",
+          "18th-century hymnwriters",
+          "Alumni of Christ Church, Oxford",
+          "Anglican saints",
+          "Arminian ministers",
+          "Arminian writers",
+          "British chaplains",
+          "Burials at St Marylebone Parish Church",
+          "Church of England hymnwriters",
+          "English Anglican missionaries",
+          "English evangelicals",
+          "English male non-fiction writers",
+          "English Methodist hymnwriters",
+          "English Methodist missionaries",
+          "English religious writers",
+          "Evangelical Anglican theologians",
+          "Evangelical Anglican hymnwriters",
+          "English evangelists",
+          "Lutheran saints",
+          "Methodist missionaries in the United States",
+          "Methodist theologians"
+        ],
+        "birth_year": 1707,
+        "death_year": 1788
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "151350"
+        ],
+        "target_person": {
+          "title": "Charles Wesley",
+          "page_id": 177551,
+          "infoboxes": [
+            "clergy"
+          ],
+          "categories": [
+            "1707 births",
+            "1788 deaths",
+            "18th-century Anglican theologians",
+            "18th-century English composers",
+            "18th-century English Anglican priests",
+            "18th-century English Christian theologians",
+            "18th-century English male writers",
+            "18th-century English musicians",
+            "18th-century English non-fiction writers",
+            "18th-century evangelicals",
+            "18th-century hymnwriters",
+            "Alumni of Christ Church, Oxford",
+            "Anglican saints",
+            "Arminian ministers",
+            "Arminian writers",
+            "British chaplains",
+            "Burials at St Marylebone Parish Church",
+            "Church of England hymnwriters",
+            "English Anglican missionaries",
+            "English evangelicals",
+            "English male non-fiction writers",
+            "English Methodist hymnwriters",
+            "English Methodist missionaries",
+            "English religious writers",
+            "Evangelical Anglican theologians",
+            "Evangelical Anglican hymnwriters",
+            "English evangelists",
+            "Lutheran saints",
+            "Methodist missionaries in the United States",
+            "Methodist theologians"
+          ],
+          "birth_year": 1707,
+          "death_year": 1788
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "W. K. Magee",
+        "count": 1,
+        "excerpts": [
+          "and the Anglo-Irish scholar and essayist W. K. Magee (‘John Eglinton’), who had left the Irish Free State for opposite reasons to those of MacKenna, but who got on with him quite well none the less."
+        ],
+        "canonical_author": "W. K. Magee"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "William Kirkpatrick Magee",
+          "page_id": 48625085,
+          "infoboxes": [],
+          "categories": [
+            "1868 births",
+            "1961 deaths",
+            "Writers from Dublin (city)",
+            "People educated at The High School, Dublin",
+            "Alumni of Trinity College Dublin",
+            "20th-century Anglo-Irish people"
+          ],
+          "birth_year": 1868,
+          "death_year": 1961
+        },
+        "author_meta": {
+          "birth_year": 1868,
+          "death_year": 1961
+        }
+      },
+      "wikipedia_match": {
+        "title": "William Kirkpatrick Magee",
+        "page_id": 48625085,
+        "infoboxes": [],
+        "categories": [
+          "1868 births",
+          "1961 deaths",
+          "Writers from Dublin (city)",
+          "People educated at The High School, Dublin",
+          "Alumni of Trinity College Dublin",
+          "20th-century Anglo-Irish people"
+        ],
+        "birth_year": 1868,
+        "death_year": 1961
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "William Kirkpatrick Magee",
+          "page_id": 48625085,
+          "infoboxes": [],
+          "categories": [
+            "1868 births",
+            "1961 deaths",
+            "Writers from Dublin (city)",
+            "People educated at The High School, Dublin",
+            "Alumni of Trinity College Dublin",
+            "20th-century Anglo-Irish people"
+          ],
+          "birth_year": 1868,
+          "death_year": 1961
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Caird",
+        "count": 1,
+        "excerpts": [
+          "In certain aspects this sphere of the Intelligibles would be best named The Spiritual Universe: Caird agrees with Whittaker in finding it closely like Dante’s conception of the circle of angels and blessed spirits gathered in contemplation and service round the throne of God."
+        ],
+        "canonical_author": "Caird"
+      },
+      "goodreads_match": {
+        "author_id": "248454",
+        "name": "John Caird",
+        "average_rating": "3.90",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Edward Caird",
+          "page_id": 937527,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1835 births",
+            "1908 deaths",
+            "Alumni of the University of Glasgow",
+            "Alumni of Balliol College, Oxford",
+            "Academics of the University of Glasgow",
+            "Idealists",
+            "Masters of Balliol College, Oxford",
+            "Fellows of Merton College, Oxford",
+            "Fellows of the Royal Society of Edinburgh",
+            "Fellows of the British Academy",
+            "People from Greenock",
+            "People educated at Greenock Academy",
+            "19th-century Scottish philosophers",
+            "20th-century Scottish philosophers",
+            "Scottish suffragists",
+            "Presidents of Co-operative Congress",
+            "Burials at St Sepulchre's Cemetery"
+          ],
+          "birth_year": 1835,
+          "death_year": 1908
+        },
+        "author_meta": {
+          "birth_year": 1835,
+          "death_year": 1908
+        }
+      },
+      "wikipedia_match": {
+        "title": "Edward Caird",
+        "page_id": 937527,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1835 births",
+          "1908 deaths",
+          "Alumni of the University of Glasgow",
+          "Alumni of Balliol College, Oxford",
+          "Academics of the University of Glasgow",
+          "Idealists",
+          "Masters of Balliol College, Oxford",
+          "Fellows of Merton College, Oxford",
+          "Fellows of the Royal Society of Edinburgh",
+          "Fellows of the British Academy",
+          "People from Greenock",
+          "People educated at Greenock Academy",
+          "19th-century Scottish philosophers",
+          "20th-century Scottish philosophers",
+          "Scottish suffragists",
+          "Presidents of Co-operative Congress",
+          "Burials at St Sepulchre's Cemetery"
+        ],
+        "birth_year": 1835,
+        "death_year": 1908
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "248454"
+        ],
+        "target_person": {
+          "title": "Edward Caird",
+          "page_id": 937527,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1835 births",
+            "1908 deaths",
+            "Alumni of the University of Glasgow",
+            "Alumni of Balliol College, Oxford",
+            "Academics of the University of Glasgow",
+            "Idealists",
+            "Masters of Balliol College, Oxford",
+            "Fellows of Merton College, Oxford",
+            "Fellows of the Royal Society of Edinburgh",
+            "Fellows of the British Academy",
+            "People from Greenock",
+            "People educated at Greenock Academy",
+            "19th-century Scottish philosophers",
+            "20th-century Scottish philosophers",
+            "Scottish suffragists",
+            "Presidents of Co-operative Congress",
+            "Burials at St Sepulchre's Cemetery"
+          ],
+          "birth_year": 1835,
+          "death_year": 1908
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Philo",
+        "count": 1,
+        "excerpts": [
+          "It is doubtful whether we ought to apply to this ‘rapture’ the term ËKσΤασis, which is very rarely found in Plotinus and does not necessarily bear the sense which it bore for Philo and which it will later receive from the Christian mystics, the sense of ‘ecstasy’:"
+        ],
+        "canonical_author": "Philo"
+      },
+      "goodreads_match": {
+        "author_id": "4631823",
+        "name": "Philo of Alexandria",
+        "average_rating": "4.01",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Philo",
+          "page_id": 210191,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Philo| ",
+            "20s BC births",
+            "50s deaths",
+            "1st-century BCE Jews",
+            "1st-century BC Romans",
+            "1st-century Jews",
+            "1st-century people",
+            "1st-century Romans",
+            "Middle Platonists",
+            "Hellenistic Jewish writers",
+            "Jewish philosophers",
+            "Jews of Roman Alexandria",
+            "Metaphysicians",
+            "Philosophers of Judaism",
+            "Philosophers in ancient Alexandria",
+            "1st-century Greek philosophers"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": 1906,
+          "death_year": 1971
+        }
+      },
+      "wikipedia_match": {
+        "title": "Philo",
+        "page_id": 210191,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Philo| ",
+          "20s BC births",
+          "50s deaths",
+          "1st-century BCE Jews",
+          "1st-century BC Romans",
+          "1st-century Jews",
+          "1st-century people",
+          "1st-century Romans",
+          "Middle Platonists",
+          "Hellenistic Jewish writers",
+          "Jewish philosophers",
+          "Jews of Roman Alexandria",
+          "Metaphysicians",
+          "Philosophers of Judaism",
+          "Philosophers in ancient Alexandria",
+          "1st-century Greek philosophers"
+        ],
+        "birth_year": 1906,
+        "death_year": 1971
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "4631823"
+        ],
+        "target_person": {
+          "title": "Philo",
+          "page_id": 210191,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Philo| ",
+            "20s BC births",
+            "50s deaths",
+            "1st-century BCE Jews",
+            "1st-century BC Romans",
+            "1st-century Jews",
+            "1st-century people",
+            "1st-century Romans",
+            "Middle Platonists",
+            "Hellenistic Jewish writers",
+            "Jewish philosophers",
+            "Jews of Roman Alexandria",
+            "Metaphysicians",
+            "Philosophers of Judaism",
+            "Philosophers in ancient Alexandria",
+            "1st-century Greek philosophers"
+          ],
+          "birth_year": 1906,
+          "death_year": 1971
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Alexander of Aphrodisias",
+        "count": 1,
+        "excerpts": [
+          "later Peripatetic speculation (particularly by Alexander of Aphrodisias) as to the contents of the Aristotelian Nous."
+        ],
+        "canonical_author": "Alexander Of Aphrodisias"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Alexander of Aphrodisias",
+          "page_id": 1599,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "2nd-century Greek philosophers",
+            "Greek-language commentators on Aristotle",
+            "Roman-era Peripatetic philosophers",
+            "Roman-era philosophers in Athens",
+            "Roman-era students in Athens",
+            "People from Aphrodisias"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": 200,
+          "death_year": 215
+        }
+      },
+      "wikipedia_match": {
+        "title": "Alexander of Aphrodisias",
+        "page_id": 1599,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "2nd-century Greek philosophers",
+          "Greek-language commentators on Aristotle",
+          "Roman-era Peripatetic philosophers",
+          "Roman-era philosophers in Athens",
+          "Roman-era students in Athens",
+          "People from Aphrodisias"
+        ],
+        "birth_year": 200,
+        "death_year": 215
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Alexander of Aphrodisias",
+          "page_id": 1599,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "2nd-century Greek philosophers",
+            "Greek-language commentators on Aristotle",
+            "Roman-era Peripatetic philosophers",
+            "Roman-era philosophers in Athens",
+            "Roman-era students in Athens",
+            "People from Aphrodisias"
+          ],
+          "birth_year": 200,
+          "death_year": 215
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "E. R. Dodds",
+        "count": 1,
+        "excerpts": [
+          "On this topic, some remarks of E. R. Dodds are worth quoting at length:9 Plotinus distinguishes sensation from perception more clearly than any previous thinker, and he has noticed that there are sensations which do not reach consciousness (IV."
+        ],
+        "canonical_author": "E. R. Dodds"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "E. R. Dodds",
+          "page_id": 3368569,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1893 births",
+            "1979 deaths",
+            "People from Banbridge",
+            "People educated at St Andrew's College, Dublin",
+            "People educated at Campbell College",
+            "Alumni of University College, Oxford",
+            "Irish classical scholars",
+            "Scholars of Greek mythology and religion",
+            "Parapsychologists",
+            "20th-century Irish autobiographers",
+            "Classical scholars of the University of Reading",
+            "Classical scholars of the University of Birmingham",
+            "Regius Professors of Greek (University of Oxford)",
+            "Presidents of the Classical Association"
+          ],
+          "birth_year": 1893,
+          "death_year": 1979
+        },
+        "author_meta": {
+          "birth_year": 1893,
+          "death_year": 1979
+        }
+      },
+      "wikipedia_match": {
+        "title": "E. R. Dodds",
+        "page_id": 3368569,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1893 births",
+          "1979 deaths",
+          "People from Banbridge",
+          "People educated at St Andrew's College, Dublin",
+          "People educated at Campbell College",
+          "Alumni of University College, Oxford",
+          "Irish classical scholars",
+          "Scholars of Greek mythology and religion",
+          "Parapsychologists",
+          "20th-century Irish autobiographers",
+          "Classical scholars of the University of Reading",
+          "Classical scholars of the University of Birmingham",
+          "Regius Professors of Greek (University of Oxford)",
+          "Presidents of the Classical Association"
+        ],
+        "birth_year": 1893,
+        "death_year": 1979
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "E. R. Dodds",
+          "page_id": 3368569,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1893 births",
+            "1979 deaths",
+            "People from Banbridge",
+            "People educated at St Andrew's College, Dublin",
+            "People educated at Campbell College",
+            "Alumni of University College, Oxford",
+            "Irish classical scholars",
+            "Scholars of Greek mythology and religion",
+            "Parapsychologists",
+            "20th-century Irish autobiographers",
+            "Classical scholars of the University of Reading",
+            "Classical scholars of the University of Birmingham",
+            "Regius Professors of Greek (University of Oxford)",
+            "Presidents of the Classical Association"
+          ],
+          "birth_year": 1893,
+          "death_year": 1979
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Leibniz",
+        "count": 1,
+        "excerpts": [
+          "Plotinus distinguishes sensation from perception more clearly than any previous thinker, and he has noticed that there are sensations which do not reach consciousness (IV.4, 8 and V. 1, 12), thus anticipating the ‘petites perceptions’ of Leibniz."
+        ],
+        "canonical_author": "Leibniz"
+      },
+      "goodreads_match": {
+        "author_id": "1340566",
+        "name": "Gottfried Wilhelm Leibniz",
+        "average_rating": "3.86",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Gottfried Wilhelm Leibniz",
+          "page_id": 12281,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Gottfried Wilhelm Leibniz| ",
+            "1646 births",
+            "1716 deaths",
+            "17th-century German mathematicians",
+            "17th-century German philosophers",
+            "17th-century German scientists",
+            "17th-century German writers",
+            "17th-century German male writers",
+            "17th-century writers in Latin",
+            "17th-century German inventors",
+            "18th-century German mathematicians",
+            "18th-century German philosophers",
+            "18th-century German physicists",
+            "18th-century German scientists",
+            "18th-century German writers",
+            "18th-century German male writers",
+            "18th-century writers in Latin",
+            "18th-century German inventors",
+            "Constructed language creators",
+            "Determinists",
+            "Enlightenment philosophers",
+            "Fellows of the Royal Society",
+            "German librarians",
+            "German logicians",
+            "German Lutherans",
+            "German philologists",
+            "German political philosophers",
+            "German Protestants",
+            "French-language German writers",
+            "Leipzig University alumni"
+          ],
+          "birth_year": 1646,
+          "death_year": 1716
+        },
+        "author_meta": {
+          "birth_year": 1646,
+          "death_year": 1716
+        }
+      },
+      "wikipedia_match": {
+        "title": "Gottfried Wilhelm Leibniz",
+        "page_id": 12281,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Gottfried Wilhelm Leibniz| ",
+          "1646 births",
+          "1716 deaths",
+          "17th-century German mathematicians",
+          "17th-century German philosophers",
+          "17th-century German scientists",
+          "17th-century German writers",
+          "17th-century German male writers",
+          "17th-century writers in Latin",
+          "17th-century German inventors",
+          "18th-century German mathematicians",
+          "18th-century German philosophers",
+          "18th-century German physicists",
+          "18th-century German scientists",
+          "18th-century German writers",
+          "18th-century German male writers",
+          "18th-century writers in Latin",
+          "18th-century German inventors",
+          "Constructed language creators",
+          "Determinists",
+          "Enlightenment philosophers",
+          "Fellows of the Royal Society",
+          "German librarians",
+          "German logicians",
+          "German Lutherans",
+          "German philologists",
+          "German political philosophers",
+          "German Protestants",
+          "French-language German writers",
+          "Leipzig University alumni"
+        ],
+        "birth_year": 1646,
+        "death_year": 1716
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1340566"
+        ],
+        "target_person": {
+          "title": "Gottfried Wilhelm Leibniz",
+          "page_id": 12281,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Gottfried Wilhelm Leibniz| ",
+            "1646 births",
+            "1716 deaths",
+            "17th-century German mathematicians",
+            "17th-century German philosophers",
+            "17th-century German scientists",
+            "17th-century German writers",
+            "17th-century German male writers",
+            "17th-century writers in Latin",
+            "17th-century German inventors",
+            "18th-century German mathematicians",
+            "18th-century German philosophers",
+            "18th-century German physicists",
+            "18th-century German scientists",
+            "18th-century German writers",
+            "18th-century German male writers",
+            "18th-century writers in Latin",
+            "18th-century German inventors",
+            "Constructed language creators",
+            "Determinists",
+            "Enlightenment philosophers",
+            "Fellows of the Royal Society",
+            "German librarians",
+            "German logicians",
+            "German Lutherans",
+            "German philologists",
+            "German political philosophers",
+            "German Protestants",
+            "French-language German writers",
+            "Leipzig University alumni"
+          ],
+          "birth_year": 1646,
+          "death_year": 1716
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Freud",
+        "count": 1,
+        "excerpts": [
+          "He also recognises in one place (IV.8, 8) the existence of unconscious desire (and here he begins to approach Freud)."
+        ],
+        "canonical_author": "Freud"
+      },
+      "goodreads_match": {
+        "author_id": "10017",
+        "name": "Sigmund Freud",
+        "average_rating": "3.81",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Sigmund Freud",
+          "page_id": 26743,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Sigmund Freud| ",
+            "19th-century Austrian male writers",
+            "20th-century Austrian male writers",
+            "1856 births",
+            "1939 deaths",
+            "19th-century Austrian physicians",
+            "19th-century Austrian writers",
+            "20th-century Austrian writers",
+            "Narcissism writers",
+            "Austrian Ashkenazi Jews",
+            "19th-century Austrian Jews",
+            "Austrian logicians",
+            "Austrian Lutherans",
+            "Austrian atheists",
+            "Austrian neurologists",
+            "Austrian people of Ukrainian-Jewish descent",
+            "Austrian secular Jews",
+            "Jews from Austria-Hungary",
+            "Critics of religions",
+            "Deaths by euthanasia",
+            "Drug-related deaths in London",
+            "People cremated at Golders Green Crematorium",
+            "Foreign members of the Royal Society",
+            "Freud family|Sigmund",
+            "History of psychiatry",
+            "Jewish atheists",
+            "Jewish Austrian writers",
+            "Jewish Czech writers",
+            "Jewish emigrants from Austria after the Anschluss to the United Kingdom",
+            "Jewish physicians"
+          ],
+          "birth_year": 1856,
+          "death_year": 1939
+        },
+        "author_meta": {
+          "birth_year": 1856,
+          "death_year": 1939
+        }
+      },
+      "wikipedia_match": {
+        "title": "Sigmund Freud",
+        "page_id": 26743,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Sigmund Freud| ",
+          "19th-century Austrian male writers",
+          "20th-century Austrian male writers",
+          "1856 births",
+          "1939 deaths",
+          "19th-century Austrian physicians",
+          "19th-century Austrian writers",
+          "20th-century Austrian writers",
+          "Narcissism writers",
+          "Austrian Ashkenazi Jews",
+          "19th-century Austrian Jews",
+          "Austrian logicians",
+          "Austrian Lutherans",
+          "Austrian atheists",
+          "Austrian neurologists",
+          "Austrian people of Ukrainian-Jewish descent",
+          "Austrian secular Jews",
+          "Jews from Austria-Hungary",
+          "Critics of religions",
+          "Deaths by euthanasia",
+          "Drug-related deaths in London",
+          "People cremated at Golders Green Crematorium",
+          "Foreign members of the Royal Society",
+          "Freud family|Sigmund",
+          "History of psychiatry",
+          "Jewish atheists",
+          "Jewish Austrian writers",
+          "Jewish Czech writers",
+          "Jewish emigrants from Austria after the Anschluss to the United Kingdom",
+          "Jewish physicians"
+        ],
+        "birth_year": 1856,
+        "death_year": 1939
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "10017"
+        ],
+        "target_person": {
+          "title": "Sigmund Freud",
+          "page_id": 26743,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Sigmund Freud| ",
+            "19th-century Austrian male writers",
+            "20th-century Austrian male writers",
+            "1856 births",
+            "1939 deaths",
+            "19th-century Austrian physicians",
+            "19th-century Austrian writers",
+            "20th-century Austrian writers",
+            "Narcissism writers",
+            "Austrian Ashkenazi Jews",
+            "19th-century Austrian Jews",
+            "Austrian logicians",
+            "Austrian Lutherans",
+            "Austrian atheists",
+            "Austrian neurologists",
+            "Austrian people of Ukrainian-Jewish descent",
+            "Austrian secular Jews",
+            "Jews from Austria-Hungary",
+            "Critics of religions",
+            "Deaths by euthanasia",
+            "Drug-related deaths in London",
+            "People cremated at Golders Green Crematorium",
+            "Foreign members of the Royal Society",
+            "Freud family|Sigmund",
+            "History of psychiatry",
+            "Jewish atheists",
+            "Jewish Austrian writers",
+            "Jewish Czech writers",
+            "Jewish emigrants from Austria after the Anschluss to the United Kingdom",
+            "Jewish physicians"
+          ],
+          "birth_year": 1856,
+          "death_year": 1939
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Origen",
+        "count": 1,
+        "excerpts": [
+          "Origen, it is true, put in writing nothing but the treatise On the Spirit-Beings, and in Gallienus’ reign that entitled The King the Sole Creator."
+        ],
+        "canonical_author": "Origen"
+      },
+      "goodreads_match": {
+        "author_id": "299395",
+        "name": "Origen",
+        "average_rating": "4.12",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Origen",
+          "page_id": 22702,
+          "infoboxes": [
+            "philosopher",
+            "saint"
+          ],
+          "categories": [
+            "Origen| ",
+            "184 births",
+            "253 deaths",
+            "2nd-century Egyptian people",
+            "3rd-century Egyptian people",
+            "3rd-century Greek philosophers",
+            "3rd-century writers",
+            "Amillennialism",
+            "Ancient Christians involved in controversies",
+            "Anglican saints",
+            "Christian anti-Gnosticism",
+            "Christian apologists",
+            "Christian ascetics",
+            "Christian pacifists",
+            "Christian universalist theologians",
+            "Church Fathers",
+            "Egyptian theologians",
+            "Hermeneutists",
+            "Writers of late antiquity",
+            "Middle Platonists",
+            "Oriental Orthodox saints",
+            "People celebrated in the Lutheran liturgical calendar",
+            "People declared heretics by the first seven ecumenical councils",
+            "Philosophers in ancient Alexandria",
+            "Roman-era Greeks",
+            "Systematic theologians"
+          ],
+          "birth_year": 184,
+          "death_year": 253
+        },
+        "author_meta": {
+          "birth_year": 184,
+          "death_year": 253
+        }
+      },
+      "wikipedia_match": {
+        "title": "Origen",
+        "page_id": 22702,
+        "infoboxes": [
+          "philosopher",
+          "saint"
+        ],
+        "categories": [
+          "Origen| ",
+          "184 births",
+          "253 deaths",
+          "2nd-century Egyptian people",
+          "3rd-century Egyptian people",
+          "3rd-century Greek philosophers",
+          "3rd-century writers",
+          "Amillennialism",
+          "Ancient Christians involved in controversies",
+          "Anglican saints",
+          "Christian anti-Gnosticism",
+          "Christian apologists",
+          "Christian ascetics",
+          "Christian pacifists",
+          "Christian universalist theologians",
+          "Church Fathers",
+          "Egyptian theologians",
+          "Hermeneutists",
+          "Writers of late antiquity",
+          "Middle Platonists",
+          "Oriental Orthodox saints",
+          "People celebrated in the Lutheran liturgical calendar",
+          "People declared heretics by the first seven ecumenical councils",
+          "Philosophers in ancient Alexandria",
+          "Roman-era Greeks",
+          "Systematic theologians"
+        ],
+        "birth_year": 184,
+        "death_year": 253
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "299395"
+        ],
+        "target_person": {
+          "title": "Origen",
+          "page_id": 22702,
+          "infoboxes": [
+            "philosopher",
+            "saint"
+          ],
+          "categories": [
+            "Origen| ",
+            "184 births",
+            "253 deaths",
+            "2nd-century Egyptian people",
+            "3rd-century Egyptian people",
+            "3rd-century Greek philosophers",
+            "3rd-century writers",
+            "Amillennialism",
+            "Ancient Christians involved in controversies",
+            "Anglican saints",
+            "Christian anti-Gnosticism",
+            "Christian apologists",
+            "Christian ascetics",
+            "Christian pacifists",
+            "Christian universalist theologians",
+            "Church Fathers",
+            "Egyptian theologians",
+            "Hermeneutists",
+            "Writers of late antiquity",
+            "Middle Platonists",
+            "Oriental Orthodox saints",
+            "People celebrated in the Lutheran liturgical calendar",
+            "People declared heretics by the first seven ecumenical councils",
+            "Philosophers in ancient Alexandria",
+            "Roman-era Greeks",
+            "Systematic theologians"
+          ],
+          "birth_year": 184,
+          "death_year": 253
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Stephen MacKenna",
+        "count": 1,
+        "excerpts": [
+          "It is a particular privilege for me as an Irishman to present this version of Stephen MacKenna’s great translation of Plotinus to the world as a Penguin Classic."
+        ],
+        "canonical_author": "Stephen Mackenna"
+      },
+      "goodreads_match": {
+        "author_id": "14707",
+        "name": "Stephen MacKenna",
+        "average_rating": "4.02",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Stephen MacKenna",
+          "page_id": 10303328,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1872 births",
+            "1934 deaths",
+            "English people of Irish descent",
+            "English translators",
+            "Irish nationalists",
+            "20th-century Irish translators",
+            "Greek–English translators",
+            "Writers from Liverpool"
+          ],
+          "birth_year": 1872,
+          "death_year": 1934
+        },
+        "author_meta": {
+          "birth_year": 1872,
+          "death_year": 1934
+        }
+      },
+      "wikipedia_match": {
+        "title": "Stephen MacKenna",
+        "page_id": 10303328,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1872 births",
+          "1934 deaths",
+          "English people of Irish descent",
+          "English translators",
+          "Irish nationalists",
+          "20th-century Irish translators",
+          "Greek–English translators",
+          "Writers from Liverpool"
+        ],
+        "birth_year": 1872,
+        "death_year": 1934
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "14707"
+        ],
+        "target_person": {
+          "title": "Stephen MacKenna",
+          "page_id": 10303328,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1872 births",
+            "1934 deaths",
+            "English people of Irish descent",
+            "English translators",
+            "Irish nationalists",
+            "20th-century Irish translators",
+            "Greek–English translators",
+            "Writers from Liverpool"
+          ],
+          "birth_year": 1872,
+          "death_year": 1934
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "A. H. Armstrong",
+        "count": 1,
+        "excerpts": [
+          "Furthermore, it happens that we have now in English, in the Loeb Classical Library series, from the pen of one of the greatest of contemporary Plotinian scholars, A. H. Armstrong, a very accurate translation which would make a further attempt at a translation of Plotinus into English a task both daunting and superfluous"
+        ],
+        "canonical_author": "A. H. Armstrong"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "A. H. Armstrong",
+          "page_id": 4171614,
+          "infoboxes": [],
+          "categories": [
+            "1909 births",
+            "1997 deaths",
+            "British scholars of ancient Greek philosophy",
+            "British philosophy academics",
+            "English historians of philosophy",
+            "Alumni of Jesus College, Cambridge",
+            "Academics of Swansea University",
+            "Academics of Cardiff University",
+            "Academics of the University of Liverpool",
+            "Fellows of the British Academy",
+            "English Roman Catholics",
+            "Translators of philosophy",
+            "20th-century English translators"
+          ],
+          "birth_year": 1909,
+          "death_year": 1997
+        },
+        "author_meta": {
+          "birth_year": 1909,
+          "death_year": 1997
+        }
+      },
+      "wikipedia_match": {
+        "title": "A. H. Armstrong",
+        "page_id": 4171614,
+        "infoboxes": [],
+        "categories": [
+          "1909 births",
+          "1997 deaths",
+          "British scholars of ancient Greek philosophy",
+          "British philosophy academics",
+          "English historians of philosophy",
+          "Alumni of Jesus College, Cambridge",
+          "Academics of Swansea University",
+          "Academics of Cardiff University",
+          "Academics of the University of Liverpool",
+          "Fellows of the British Academy",
+          "English Roman Catholics",
+          "Translators of philosophy",
+          "20th-century English translators"
+        ],
+        "birth_year": 1909,
+        "death_year": 1997
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "A. H. Armstrong",
+          "page_id": 4171614,
+          "infoboxes": [],
+          "categories": [
+            "1909 births",
+            "1997 deaths",
+            "British scholars of ancient Greek philosophy",
+            "British philosophy academics",
+            "English historians of philosophy",
+            "Alumni of Jesus College, Cambridge",
+            "Academics of Swansea University",
+            "Academics of Cardiff University",
+            "Academics of the University of Liverpool",
+            "Fellows of the British Academy",
+            "English Roman Catholics",
+            "Translators of philosophy",
+            "20th-century English translators"
+          ],
+          "birth_year": 1909,
+          "death_year": 1997
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Anaxagoras",
+        "count": 1,
+        "excerpts": [
+          "Anaxagoras, in identifying his ‘primal-combination’ with Matter – to which he allots no mere aptness to any and every nature or quality but the effective possession of all – withdraws in this way the very Intellectual-Principle he had introduced; for this Mind is not to him the bestower of shape, of Forming Idea; and it is coeval with Matter, not its prior."
+        ],
+        "canonical_author": "Anaxagoras"
+      },
+      "goodreads_match": {
+        "author_id": "1985353",
+        "name": "Anaxagoras",
+        "average_rating": "3.86",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Anaxagoras",
+          "page_id": 1737,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "500s BC births",
+            "420s BC deaths",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek metaphysicians",
+            "Characters in the Divine Comedy",
+            "Metic philosophers in Classical Athens",
+            "Military personnel of the Achaemenid Empire",
+            "Natural philosophers",
+            "People from Clazomenae",
+            "Philosophers of ancient Ionia",
+            "Pluralist philosophers",
+            "5th-century BC Greek mathematicians",
+            "Greek exiles",
+            "Ancient Greeks accused of sacrilege"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -500,
+          "death_year": -428
+        }
+      },
+      "wikipedia_match": {
+        "title": "Anaxagoras",
+        "page_id": 1737,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "500s BC births",
+          "420s BC deaths",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek physicists",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek metaphysicians",
+          "Characters in the Divine Comedy",
+          "Metic philosophers in Classical Athens",
+          "Military personnel of the Achaemenid Empire",
+          "Natural philosophers",
+          "People from Clazomenae",
+          "Philosophers of ancient Ionia",
+          "Pluralist philosophers",
+          "5th-century BC Greek mathematicians",
+          "Greek exiles",
+          "Ancient Greeks accused of sacrilege"
+        ],
+        "birth_year": -500,
+        "death_year": -428
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1985353"
+        ],
+        "target_person": {
+          "title": "Anaxagoras",
+          "page_id": 1737,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "500s BC births",
+            "420s BC deaths",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek metaphysicians",
+            "Characters in the Divine Comedy",
+            "Metic philosophers in Classical Athens",
+            "Military personnel of the Achaemenid Empire",
+            "Natural philosophers",
+            "People from Clazomenae",
+            "Philosophers of ancient Ionia",
+            "Pluralist philosophers",
+            "5th-century BC Greek mathematicians",
+            "Greek exiles",
+            "Ancient Greeks accused of sacrilege"
+          ],
+          "birth_year": -500,
+          "death_year": -428
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Anaximander",
+        "count": 1,
+        "excerpts": [
+          "Those who (with Anaximander) make the base to be ‘the infinite’ must define the term."
+        ],
+        "canonical_author": "Anaximander"
+      },
+      "goodreads_match": {
+        "author_id": "6534909",
+        "name": "Anaximander",
+        "average_rating": "3.60",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Anaximander",
+          "page_id": 1168,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "6th-century BC Greek philosophers",
+            "610s BC births",
+            "Year of birth unknown",
+            "540s BC deaths",
+            "Year of death unknown",
+            "Ancient Greek astronomers",
+            "Ancient Greek cartographers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Ancient Milesians",
+            "Natural philosophers",
+            "Philosophers of ancient Ionia",
+            "Presocratic philosophers",
+            "6th-century BC geographers",
+            "6th-century BC astronomers"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -610,
+          "death_year": -546
+        }
+      },
+      "wikipedia_match": {
+        "title": "Anaximander",
+        "page_id": 1168,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "6th-century BC Greek philosophers",
+          "610s BC births",
+          "Year of birth unknown",
+          "540s BC deaths",
+          "Year of death unknown",
+          "Ancient Greek astronomers",
+          "Ancient Greek cartographers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Ancient Milesians",
+          "Natural philosophers",
+          "Philosophers of ancient Ionia",
+          "Presocratic philosophers",
+          "6th-century BC geographers",
+          "6th-century BC astronomers"
+        ],
+        "birth_year": -610,
+        "death_year": -546
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6534909"
+        ],
+        "target_person": {
+          "title": "Anaximander",
+          "page_id": 1168,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "6th-century BC Greek philosophers",
+            "610s BC births",
+            "Year of birth unknown",
+            "540s BC deaths",
+            "Year of death unknown",
+            "Ancient Greek astronomers",
+            "Ancient Greek cartographers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Ancient Milesians",
+            "Natural philosophers",
+            "Philosophers of ancient Ionia",
+            "Presocratic philosophers",
+            "6th-century BC geographers",
+            "6th-century BC astronomers"
+          ],
+          "birth_year": -610,
+          "death_year": -546
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Democritus",
+        "count": 1,
+        "excerpts": [
+          "Atoms again (Democritus) cannot meet the need of a base."
+        ],
+        "canonical_author": "Democritus"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Democritus",
+          "page_id": 8211,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Abderites",
+            "Ancient Greek atomist philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek metaphysicians",
+            "Presocratic philosophers",
+            "460s BC births",
+            "370s BC deaths",
+            "5th-century BC Greek mathematicians",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -460,
+          "death_year": -370
+        }
+      },
+      "wikipedia_match": {
+        "title": "Democritus",
+        "page_id": 8211,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Abderites",
+          "Ancient Greek atomist philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek metaphysicians",
+          "Presocratic philosophers",
+          "460s BC births",
+          "370s BC deaths",
+          "5th-century BC Greek mathematicians",
+          "4th-century BC Greek mathematicians"
+        ],
+        "birth_year": -460,
+        "death_year": -370
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Democritus",
+          "page_id": 8211,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Abderites",
+            "Ancient Greek atomist philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek metaphysicians",
+            "Presocratic philosophers",
+            "460s BC births",
+            "370s BC deaths",
+            "5th-century BC Greek mathematicians",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": -460,
+          "death_year": -370
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pythagoras",
+        "count": 1,
+        "excerpts": [
+          "reveals neither more nor less than Pythagoras and his school seem to me to convey on this as on many other matters"
+        ],
+        "canonical_author": "Pythagoras"
+      },
+      "goodreads_match": {
+        "author_id": "203707",
+        "name": "Pythagoras",
+        "average_rating": "3.91",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -570,
+          "death_year": -495
+        }
+      },
+      "wikipedia_match": {
+        "title": "Pythagoras",
+        "page_id": 23275,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Pythagoras| ",
+          "570s BC births",
+          "490s BC deaths",
+          "6th-century BC mathematicians",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek mathematicians",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek geometers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek music theorists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political refugees",
+          "Ancient Greek shamans",
+          "Ancient occultists",
+          "Ancient Samians",
+          "Pythagoreans",
+          "Founders of religions",
+          "Numerologists",
+          "Pythagoreans of Magna Graecia",
+          "6th-century BC religious leaders",
+          "5th-century BC religious leaders"
+        ],
+        "birth_year": -570,
+        "death_year": -495
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "203707"
+        ],
+        "target_person": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": -570,
+          "death_year": -495
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Xenocrates",
+        "count": 1,
+        "excerpts": [
+          "The distinction between Gods and daemons is an old subject of discussion in Platonism, going back to Xenocrates."
+        ],
+        "canonical_author": "Xenocrates"
+      },
+      "goodreads_match": {
+        "wikipedia_match": {
+          "title": "Xenocrates",
+          "page_id": 171850,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Chalcedonians",
+            "Ancient Greek metaphysicians",
+            "Greek educators",
+            "Metic philosophers in Classical Athens",
+            "390s BC births",
+            "310s BC deaths",
+            "Philosophers and tutors of Alexander the Great",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -396,
+          "death_year": -314
+        }
+      },
+      "wikipedia_match": {
+        "title": "Xenocrates",
+        "page_id": 171850,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Chalcedonians",
+          "Ancient Greek metaphysicians",
+          "Greek educators",
+          "Metic philosophers in Classical Athens",
+          "390s BC births",
+          "310s BC deaths",
+          "Philosophers and tutors of Alexander the Great",
+          "4th-century BC Greek mathematicians"
+        ],
+        "birth_year": -396,
+        "death_year": -314
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Xenocrates",
+          "page_id": 171850,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Chalcedonians",
+            "Ancient Greek metaphysicians",
+            "Greek educators",
+            "Metic philosophers in Classical Athens",
+            "390s BC births",
+            "310s BC deaths",
+            "Philosophers and tutors of Alexander the Great",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": -396,
+          "death_year": -314
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Parmenides",
+        "count": 1,
+        "excerpts": [
+          "A reference to Parmenides, Fr. 3 D–K."
+        ],
+        "canonical_author": "Parmenides"
+      },
+      "goodreads_match": {
+        "author_id": "357208",
+        "name": "Parmenides",
+        "average_rating": "3.89",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Parmenides",
+          "page_id": 23575,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "5th-century BC Greek poets",
+            "510s BC births",
+            "450s BC deaths",
+            "Eleatic philosophers",
+            "Ancient Greek epistemologists",
+            "Lucanian Greeks",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ontologists",
+            "Philosophers of Magna Graecia",
+            "Ancient Greek philosophers of mind",
+            "People from the Province of Salerno"
+          ],
+          "birth_year": null,
+          "death_year": null
+        },
+        "author_meta": {
+          "birth_year": -515,
+          "death_year": -450
+        }
+      },
+      "wikipedia_match": {
+        "title": "Parmenides",
+        "page_id": 23575,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "5th-century BC Greek philosophers",
+          "5th-century BC Greek poets",
+          "510s BC births",
+          "450s BC deaths",
+          "Eleatic philosophers",
+          "Ancient Greek epistemologists",
+          "Lucanian Greeks",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ontologists",
+          "Philosophers of Magna Graecia",
+          "Ancient Greek philosophers of mind",
+          "People from the Province of Salerno"
+        ],
+        "birth_year": -515,
+        "death_year": -450
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "357208"
+        ],
+        "target_person": {
+          "title": "Parmenides",
+          "page_id": 23575,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "5th-century BC Greek poets",
+            "510s BC births",
+            "450s BC deaths",
+            "Eleatic philosophers",
+            "Ancient Greek epistemologists",
+            "Lucanian Greeks",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ontologists",
+            "Philosophers of Magna Graecia",
+            "Ancient Greek philosophers of mind",
+            "People from the Province of Salerno"
+          ],
+          "birth_year": -515,
+          "death_year": -450
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hippolytus",
+        "count": 1,
+        "excerpts": [
+          "The doctrine of Souls as bolai, ‘rays’, is attributed to Gnostics by Hippolytus, Ref.\n117, 16ff.\nWend."
+        ],
+        "canonical_author": "Hippolytus"
+      },
+      "goodreads_match": {
+        "author_id": "1934856",
+        "name": "Hippolytus of Rome",
+        "average_rating": "4.02",
+        "works_count": null,
+        "fans_count": null,
+        "link": null,
+        "wikipedia_match": {
+          "title": "Hippolytus of Rome",
+          "page_id": 73313,
+          "infoboxes": [
+            "saint ",
+            "theologian"
+          ],
+          "categories": [
+            "Hippolytus of Rome| ",
+            "170 births",
+            "235 deaths",
+            "2nd-century Romans",
+            "3rd-century antipopes",
+            "3rd-century apocalypticists",
+            "3rd-century Italian bishops",
+            "3rd-century Christian martyrs",
+            "3rd-century Romans",
+            "3rd-century Christian theologians",
+            "Ancient Christians involved in controversies",
+            "Christian anti-Gnosticism",
+            "Catholicism-related controversies",
+            "Church Fathers",
+            "Greek popes",
+            "Historians of the Catholic Church",
+            "Middle Platonists",
+            "Legendary Romans"
+          ],
+          "birth_year": 170,
+          "death_year": 235
+        },
+        "author_meta": {
+          "birth_year": 170,
+          "death_year": 235
+        }
+      },
+      "wikipedia_match": {
+        "title": "Hippolytus of Rome",
+        "page_id": 73313,
+        "infoboxes": [
+          "saint ",
+          "theologian"
+        ],
+        "categories": [
+          "Hippolytus of Rome| ",
+          "170 births",
+          "235 deaths",
+          "2nd-century Romans",
+          "3rd-century antipopes",
+          "3rd-century apocalypticists",
+          "3rd-century Italian bishops",
+          "3rd-century Christian martyrs",
+          "3rd-century Romans",
+          "3rd-century Christian theologians",
+          "Ancient Christians involved in controversies",
+          "Christian anti-Gnosticism",
+          "Catholicism-related controversies",
+          "Church Fathers",
+          "Greek popes",
+          "Historians of the Catholic Church",
+          "Middle Platonists",
+          "Legendary Romans"
+        ],
+        "birth_year": 170,
+        "death_year": 235
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1934856"
+        ],
+        "target_person": {
+          "title": "Hippolytus of Rome",
+          "page_id": 73313,
+          "infoboxes": [
+            "saint ",
+            "theologian"
+          ],
+          "categories": [
+            "Hippolytus of Rome| ",
+            "170 births",
+            "235 deaths",
+            "2nd-century Romans",
+            "3rd-century antipopes",
+            "3rd-century apocalypticists",
+            "3rd-century Italian bishops",
+            "3rd-century Christian martyrs",
+            "3rd-century Romans",
+            "3rd-century Christian theologians",
+            "Ancient Christians involved in controversies",
+            "Christian anti-Gnosticism",
+            "Catholicism-related controversies",
+            "Church Fathers",
+            "Greek popes",
+            "Historians of the Catholic Church",
+            "Middle Platonists",
+            "Legendary Romans"
+          ],
+          "birth_year": 170,
+          "death_year": 235
+        }
+      }
+    }
+  ],
+  "total": 52
+}

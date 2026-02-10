@@ -1,35 +1,2751 @@
 {
-  "Laozi": ["Lao-Tze", "Lao Tzu", "Lao-tzu", "Lao Tse"],
-  "Confucius": ["Kong Qiu", "K'ung-fu-tzu", "Kongzi"],
-  "Plato": ["Platon"],
-  "Aristotle": ["Aristoteles"],
-  "Fyodor Dostoevsky": ["Dostoyevsky", "Dostoevski", "Dostoievsky"],
-  "Leo Tolstoy": ["Lev Tolstoy", "Tolstoi"],
-  "Friedrich Nietzsche": ["Nietzche"],
-  "Søren Kierkegaard": ["Soren Kierkegaard", "Kierkegard"],
-  "Jean-Paul Sartre": ["Sartre", "J.P. Sartre"],
-  "Michel de Montaigne": ["Montaigne"],
-  "Marcus Aurelius": ["Marcus Aurelius Antoninus"],
-  "Seneca": ["Seneca the Younger", "Lucius Annaeus Seneca"],
-  "Epictetus": ["Epictetos"],
-  "René Descartes": ["Rene Descartes", "Descartes"],
-  "Immanuel Kant": ["I. Kant"],
-  "Georg Wilhelm Friedrich Hegel": ["Hegel", "G.W.F. Hegel"],
-  "Arthur Schopenhauer": ["Schopenhauer"],
-  "John Stuart Mill": ["J.S. Mill", "J. S. Mill"],
-  "Bertrand Russell": ["B. Russell"],
-  "Ludwig Wittgenstein": ["Wittgenstein"],
-  "Martin Heidegger": ["Heidegger"],
-  "Sigmund Freud": ["S. Freud", "Freud"],
-  "Carl Jung": ["C.G. Jung", "Carl Gustav Jung"],
-  "Homer": ["Homeros"],
-  "Virgil": ["Vergil", "Publius Vergilius Maro"],
-  "Dante Alighieri": ["Dante"],
-  "William Shakespeare": ["Shakespeare"],
-  "Johann Wolfgang von Goethe": ["Goethe", "J.W. Goethe"],
-  "Franz Kafka": ["Kafka"],
-  "James Joyce": ["Joyce"],
-  "Marcel Proust": ["Proust"],
-  "Albert Camus": ["Camus"],
-  "Simone de Beauvoir": ["de Beauvoir", "Beauvoir"]
+  "A. M. Homes": [
+    "A.M. Homes"
+  ],
+  "A. S. Byatt": [
+    "A.S. Byatt"
+  ],
+  "A.A. Milne": [
+    "A. A. Milne"
+  ],
+  "A.W. Brian Simpson": [
+    "A. W. Brian Simpson"
+  ],
+  "Abd al-Rahman ibn Muhammad Ibn Khaldun": [
+    "Ibn Khaldun"
+  ],
+  "Abraham Lincoln": [
+    "Lincoln"
+  ],
+  "Abraham Ortelius": [
+    "Ortelius"
+  ],
+  "Abū al-Ṭayyib al-Mutanabbī": [
+    "Abu-t-Tayyib al-Mutanabbi"
+  ],
+  "Adam Gopnik": [
+    "Gopnik, Adam"
+  ],
+  "Adam Zagajewski": [
+    "Zagajewski"
+  ],
+  "Adlai Stevenson II": [
+    "Adlai Stevenson"
+  ],
+  "Adolf Glunz": [
+    "Glunz"
+  ],
+  "Adolf Hitler": [
+    "Hitler"
+  ],
+  "Adolphe Napoléon Didron": [
+    "Didron"
+  ],
+  "Adrianus Turnebus": [
+    "Turnebus"
+  ],
+  "Agesilaus II": [
+    "Agesilaus"
+  ],
+  "Alain Robbe-Grillet": [
+    "Robbe-Grillet"
+  ],
+  "Alain-René Lesage": [
+    "Lesage"
+  ],
+  "Albert Camus": [
+    "Camus"
+  ],
+  "Albert Einstein": [
+    "Einstein"
+  ],
+  "Albrecht Dürer": [
+    "Albert Durer"
+  ],
+  "Aldous Huxley": [
+    "Huxley"
+  ],
+  "Aldus Manutius": [
+    "Aldus"
+  ],
+  "Aleksandr Shcherbakov": [
+    "Shcherbakov"
+  ],
+  "Alessandro Cagliostro": [
+    "Cagliostro"
+  ],
+  "Alessandro Manzoni": [
+    "Manzoni"
+  ],
+  "Alexander Alekseyevich Svechin": [
+    "Svechin"
+  ],
+  "Alexander Herzen": [
+    "Herzen"
+  ],
+  "Alexander Luria": [
+    "Luria"
+  ],
+  "Alexander Morris Carr-Saunders": [
+    "Carr-Saunders"
+  ],
+  "Alexander Nehamas": [
+    "Nehamas"
+  ],
+  "Alexander Pushkin": [
+    "Pushkin"
+  ],
+  "Alexander the Great": [
+    "Alexander"
+  ],
+  "Alexandre Dumas": [
+    "Dumas"
+  ],
+  "Alexei Rykov": [
+    "Rykov"
+  ],
+  "Alexis de Tocqueville": [
+    "de Tocqueville"
+  ],
+  "Alexius Meinong": [
+    "Meinong"
+  ],
+  "Alfonso Reyes": [
+    "Reyes"
+  ],
+  "Alfred Grosser": [
+    "Grosser"
+  ],
+  "Alfred Kroeber": [
+    "Kroeber"
+  ],
+  "Alfred North Whitehead": [
+    "Whitehead"
+  ],
+  "Alfred Rieber": [
+    "Alfred J. Rieber"
+  ],
+  "Alfred Rosenberg": [
+    "Rosenberg"
+  ],
+  "Alfred Tarski": [
+    "Tarski"
+  ],
+  "Alfred von Schlieffen": [
+    "Schlieffen"
+  ],
+  "Alfred, Lord Tennyson": [
+    "Alfred Tennyson"
+  ],
+  "Algirdas Julien Greimas": [
+    "Greimas"
+  ],
+  "Allan Bloom": [
+    "Bloom"
+  ],
+  "Allen Ginsberg": [
+    "Ginsberg"
+  ],
+  "Allen W. Dulles": [
+    "Allen Dulles",
+    "Allan W. Dulles"
+  ],
+  "Ambrose Bierce": [
+    "Bierce"
+  ],
+  "Andrew Hammel": [
+    "Hammel"
+  ],
+  "Andrew J. Bacevich": [
+    "Andrew Bacevich"
+  ],
+  "Andrew Pickering": [
+    "Pickering"
+  ],
+  "André Breton": [
+    "Breton"
+  ],
+  "André Gide": [
+    "Gide"
+  ],
+  "Aniruddh D. Patel": [
+    "Patel"
+  ],
+  "Anna Akhmatova": [
+    "Akhmatova"
+  ],
+  "Anselm of Canterbury": [
+    "Saint Anselm of Canterbury"
+  ],
+  "Anthony Ashley-Cooper, 3rd Earl of Shaftesbury": [
+    "Lord Shaftesbury"
+  ],
+  "Antoine de Rivarol": [
+    "Rivarol"
+  ],
+  "Antoine François Prévost d'Exiles": [
+    "Prévost d'Exiles"
+  ],
+  "Antoine Galland": [
+    "Galland"
+  ],
+  "Antoine Hamilton": [
+    "Hamilton"
+  ],
+  "Antoine-Joseph Pernety": [
+    "Dom Pernety",
+    "Pernety"
+  ],
+  "Anton Chekhov": [
+    "Chekhov"
+  ],
+  "Anton Webern": [
+    "Webern"
+  ],
+  "Antoninus Pius": [
+    "Antoninus"
+  ],
+  "Antonio de Guevara": [
+    "Guevara"
+  ],
+  "Antonio Gramsci": [
+    "Gramsci"
+  ],
+  "Apollodorus of Athens": [
+    "Apollodorus"
+  ],
+  "Apollonius of Tyana": [
+    "Apollonius"
+  ],
+  "Archytas": [
+    "Archytas the Pythagorean"
+  ],
+  "Aristarchus of Samos": [
+    "Aristarchus"
+  ],
+  "Aristotle": [
+    "Aristoteles"
+  ],
+  "Arnold Brackman": [
+    "Brackman"
+  ],
+  "Arnold Chikobava": [
+    "Chikobava"
+  ],
+  "Arnold Kaufmann": [
+    "Kaufmann"
+  ],
+  "Arnold Schoenberg": [
+    "Schoenberg"
+  ],
+  "Artaxerxes II": [
+    "Artaxerxes"
+  ],
+  "Arthur Conan Doyle": [
+    "Conan Doyle"
+  ],
+  "Arthur Eddington": [
+    "Eddington"
+  ],
+  "Arthur Hallam": [
+    "Hallam"
+  ],
+  "Arthur Machen": [
+    "Machen"
+  ],
+  "Arthur Rimbaud": [
+    "Rimbaud"
+  ],
+  "Arthur Rosenberg": [
+    "A. Rosenberg"
+  ],
+  "Arthur Schopenhauer": [
+    "Schopenhauer"
+  ],
+  "Arthur Stanley Eddington": [
+    "Eddington"
+  ],
+  "Athanasius of Alexandria": [
+    "Athanasius"
+  ],
+  "Auguste Comte": [
+    "Comte"
+  ],
+  "Augustin Barruel": [
+    "Abbé Barruel"
+  ],
+  "Augustin Thierry": [
+    "A. Thierry"
+  ],
+  "Augustin-Louis Cauchy": [
+    "Cauchy"
+  ],
+  "Augustine of Hippo": [
+    "Augustine",
+    "Augustin"
+  ],
+  "Aulus Cornelius Celsus": [
+    "Celsus"
+  ],
+  "Averroes": [
+    "Averroes (Ibn-Rushd)"
+  ],
+  "Baldassare Castiglione": [
+    "Castiglione"
+  ],
+  "Baldassarre Castiglione": [
+    "Castiglione"
+  ],
+  "Baltasar Gracián": [
+    "Gracián"
+  ],
+  "Baroness Emma Orczy": [
+    "Orczy"
+  ],
+  "Barry Eichengreen": [
+    "Eichengreen"
+  ],
+  "Barthélemy d'Herbelot de Molainville": [
+    "Barthelemy d'Herbelot"
+  ],
+  "Bartolus de Saxoferrato": [
+    "Bartolus"
+  ],
+  "Baruch Spinoza": [
+    "Spinoza"
+  ],
+  "Beatus of Liébana": [
+    "Beatus de Liébana"
+  ],
+  "Beau Brummell": [
+    "Beau Brummel"
+  ],
+  "Benedetto Croce": [
+    "Croce"
+  ],
+  "Benedict Humphrey Sumner": [
+    "B. H. Sumner"
+  ],
+  "Benjamin Constant": [
+    "Constant, Benjamin"
+  ],
+  "Benjamin Disraeli": [
+    "Disraeli"
+  ],
+  "Benjamin Jowett": [
+    "Jowett"
+  ],
+  "Benjamin Peirce": [
+    "Peirce"
+  ],
+  "Benoit B. Mandelbrot": [
+    "B. Mandelbrot"
+  ],
+  "Beppe Fenoglio": [
+    "Fenoglio"
+  ],
+  "Bernard Le Bouyer de Fontenelle": [
+    "Fontenelle"
+  ],
+  "Bernard Le Bovier de Fontenelle": [
+    "Fontenelle"
+  ],
+  "Bernhard Riemann": [
+    "Riemann"
+  ],
+  "Bertolt Brecht": [
+    "Brecht"
+  ],
+  "Bertram Wolfe": [
+    "Bertram D. Wolfe"
+  ],
+  "Bertrand Russell": [
+    "B. Russell"
+  ],
+  "Bias of Priene": [
+    "Bias"
+  ],
+  "Bill Clinton": [
+    "W. J. Clinton"
+  ],
+  "Blaise Pascal": [
+    "Pascal"
+  ],
+  "Boris Pasternak": [
+    "Pasternak"
+  ],
+  "Bryan A. Garner": [
+    "Bryan Garner"
+  ],
+  "Buddy Bregman": [
+    "Bregman"
+  ],
+  "C. P. Snow": [
+    "C.P. Snow"
+  ],
+  "C.S. Lewis": [
+    "C. S. Lewis"
+  ],
+  "Caesar Baronius": [
+    "Baron."
+  ],
+  "Calpurnius Siculus": [
+    "Calpurnius"
+  ],
+  "Carl Jung": [
+    "C.G. Jung",
+    "Carl Gustav Jung",
+    "Jung"
+  ],
+  "Carl von Clausewitz": [
+    "Clausewitz"
+  ],
+  "Carlo Emilio Gadda": [
+    "Gadda"
+  ],
+  "Cato the Younger": [
+    "Cato"
+  ],
+  "Cesar A. Hidalgo": [
+    "Hidalgo"
+  ],
+  "Charles Baudelaire": [
+    "Baudelaire"
+  ],
+  "Charles Darwin": [
+    "Darwin"
+  ],
+  "Charles de Gaulle": [
+    "de Gaulle"
+  ],
+  "Charles Dickens": [
+    "Dickens"
+  ],
+  "Charles E. Osgood": [
+    "Osgood"
+  ],
+  "Charles Fourier": [
+    "Fourier"
+  ],
+  "Charles Renouvier": [
+    "Renouvier"
+  ],
+  "Charles Sanders Peirce": [
+    "C. S. Peirce"
+  ],
+  "Charles Wesley": [
+    "Mr. Wesley"
+  ],
+  "Christian August Vulpius": [
+    "Vulpius"
+  ],
+  "Christian Goldbach": [
+    "Goldbach"
+  ],
+  "Christian Welzel": [
+    "Welzel"
+  ],
+  "Christine Stansell": [
+    "Stansell"
+  ],
+  "Christopher Hitchens": [
+    "Hitchens"
+  ],
+  "Christopher Isherwood": [
+    "Isherwood"
+  ],
+  "Claude Adrien Helvétius": [
+    "Helvetius"
+  ],
+  "Claude Debussy": [
+    "Debussy"
+  ],
+  "Claude Lévi-Strauss": [
+    "Lévi-Strauss"
+  ],
+  "Claudian": [
+    "Claudianus"
+  ],
+  "Claudius Claudianus": [
+    "Claudius"
+  ],
+  "Clément Marot": [
+    "Marot"
+  ],
+  "Comte de Lautreamont": [
+    "Lautréamont"
+  ],
+  "Comte de Lautréamont": [
+    "Lautréamont"
+  ],
+  "Confucius": [
+    "Kong Qiu",
+    "K'ung-fu-tzu",
+    "Kongzi"
+  ],
+  "Constantin François de Chassebœuf, comte de Volney": [
+    "Constantin-François de Chassebœuf, comte de Volney"
+  ],
+  "Constantine P. Cavafy": [
+    "Constantine Cavafy"
+  ],
+  "Cornel West": [
+    "West"
+  ],
+  "Cornelis de Kiewiet": [
+    "Kiewiet"
+  ],
+  "Curtis Carlson": [
+    "Carlson"
+  ],
+  "Cyrus Teed": [
+    "Cyrus Reed Teed"
+  ],
+  "Czeslaw Milosz": [
+    "Milosz"
+  ],
+  "César Hidalgo": [
+    "Hidalgo"
+  ],
+  "D. W. Brogan": [
+    "Brogan"
+  ],
+  "Dani Filth": [
+    "Dick Filth",
+    "D. Filth"
+  ],
+  "Daniel C. Dennett": [
+    "Dennett"
+  ],
+  "Daniel Defoe": [
+    "Defoe"
+  ],
+  "Daniel Dennett": [
+    "Dennett"
+  ],
+  "Daniel Everett": [
+    "Everett"
+  ],
+  "Danila Comastri Montanari": [
+    "Montanari"
+  ],
+  "Danilo Kiš": [
+    "Kiš"
+  ],
+  "Dante Alighieri": [
+    "Dante"
+  ],
+  "Darrin McMahon": [
+    "McMahon"
+  ],
+  "David Albert": [
+    "Albert"
+  ],
+  "David Efron": [
+    "Efron, David"
+  ],
+  "David Friedrich Strauss": [
+    "David Strauss"
+  ],
+  "David Hume": [
+    "Hume"
+  ],
+  "David Kellogg Lewis": [
+    "D. K. Lewis"
+  ],
+  "David Ruelle": [
+    "Ruelle"
+  ],
+  "David Wootton": [
+    "Wootton"
+  ],
+  "Debora Spar": [
+    "Debora L. Spar"
+  ],
+  "Denis Diderot": [
+    "Diderot"
+  ],
+  "Denis Dutton": [
+    "Dutton"
+  ],
+  "Denis the Carthusian": [
+    "Dionysius the Carthusian"
+  ],
+  "Denis Vairasse": [
+    "Vairasse"
+  ],
+  "Dennis L. Meadows": [
+    "Donella Meadows"
+  ],
+  "Desmond Lee": [
+    "H. D. P. Lee"
+  ],
+  "Diego de Torres Villarroel": [
+    "Torres Villarroel"
+  ],
+  "Dmitri Volkogonov": [
+    "D. Volkogonov",
+    "Volkogonov"
+  ],
+  "Don DeLillo": [
+    "DeLillo"
+  ],
+  "Donald Rayfield": [
+    "D. Rayfield"
+  ],
+  "Donella H. Meadows": [
+    "Donella Meadows"
+  ],
+  "Douglas Lenat": [
+    "Lenat"
+  ],
+  "Douglas R. Hofstadter": [
+    "Douglas Hofstadter"
+  ],
+  "Dwight D. Eisenhower": [
+    "Eisenhower"
+  ],
+  "E. T. A. Hoffmann": [
+    "Hoffmann"
+  ],
+  "E.M. Forster": [
+    "E. M. Forster"
+  ],
+  "Eden Phillpotts": [
+    "Phillpotts"
+  ],
+  "Edgar Allan Poe": [
+    "Poe"
+  ],
+  "Edman Irwin Emerson": [
+    "Emerson"
+  ],
+  "Edmund Husserl": [
+    "Husserl"
+  ],
+  "Eduard Burdzhalov": [
+    "E. N. Burdzhalov"
+  ],
+  "Edvard Radzinsky": [
+    "E. Radzinsky"
+  ],
+  "Edward Caird": [
+    "Caird"
+  ],
+  "Edward Gibbon": [
+    "Gibbon"
+  ],
+  "Edward Young": [
+    "Young"
+  ],
+  "Edwin A. Abbott": [
+    "Edwin Abbott"
+  ],
+  "Edwin Abbott Abbott": [
+    "Edwin Abbott"
+  ],
+  "Edwin M. Curley": [
+    "E. Curley"
+  ],
+  "Efraim Karsh": [
+    "Karsh"
+  ],
+  "El Cid": [
+    "El cantar de mio Cid"
+  ],
+  "Elias Canetti": [
+    "Canetti"
+  ],
+  "Elio Vittorini": [
+    "Vittorini"
+  ],
+  "Emanuel Swedenborg": [
+    "Swedenborg"
+  ],
+  "Emma Goldman": [
+    "Goldman, Emma"
+  ],
+  "Emmanuel Joseph Sieyès": [
+    "Abbé E. J. Siéyès"
+  ],
+  "Emmanuel-Joseph Sieyes": [
+    "Abbé E. J. Siéyès"
+  ],
+  "Enrique Rodriguez Larreta": [
+    "Enrique Larreta"
+  ],
+  "Epicharmus of Kos": [
+    "Epicharmus"
+  ],
+  "Epictetus": [
+    "Epictetos"
+  ],
+  "Eric M. Hammel": [
+    "Hammel"
+  ],
+  "Ernest Campbell Mossner": [
+    "E. C. Mossner"
+  ],
+  "Ernest Hemingway": [
+    "Hemingway"
+  ],
+  "Ernst Gombrich": [
+    "E. H. Gombrich"
+  ],
+  "Ernst Haeckel": [
+    "Haeckel"
+  ],
+  "Ernst Robert Curtius": [
+    "Curtius"
+  ],
+  "Esteban Echeverría": [
+    "Echeverria"
+  ],
+  "Etienne de La Boetie": [
+    "Estienne de la Boetie"
+  ],
+  "Eudoxus of Cnidus": [
+    "Eudoxus"
+  ],
+  "Eugen Hadamovsky": [
+    "Hadamovsky"
+  ],
+  "Eugen Karl Dühring": [
+    "E. Dühring"
+  ],
+  "Eugene Delacroix": [
+    "Delacroix"
+  ],
+  "Eugene Sue": [
+    "Sue, Eugène"
+  ],
+  "Eugenio Lecaldano": [
+    "Lecaldano"
+  ],
+  "Eugenio Montale": [
+    "Montale"
+  ],
+  "Eugène Delacroix": [
+    "Delacroix"
+  ],
+  "Eugène Ionesco": [
+    "Ionesco"
+  ],
+  "Eugène Sue": [
+    "Sue"
+  ],
+  "Ezra Pound": [
+    "Pound"
+  ],
+  "F. H. Bradley": [
+    "Francis Bradley"
+  ],
+  "F. M. Cornford": [
+    "Cornford",
+    "Francis Cornford"
+  ],
+  "F. Scott Fitzgerald": [
+    "Fitzgerald"
+  ],
+  "Farid ud-Din Attar": [
+    "Farid al-Oin Attar"
+  ],
+  "Felix Guattari": [
+    "Guattari"
+  ],
+  "Ferdinand Gregorovius": [
+    "Gregorovius"
+  ],
+  "Ferdinando Galiani": [
+    "Galiani",
+    "Abbé Galiani"
+  ],
+  "Fernando Baez": [
+    "Báez"
+  ],
+  "Fernando de Herrera": [
+    "Herrera"
+  ],
+  "Francesco De Sanctis": [
+    "Francisco de Sanctis"
+  ],
+  "Francesco Guicciardini": [
+    "Guicciardini"
+  ],
+  "Francis Bacon": [
+    "Bacon",
+    "Lord Bacon",
+    "Bacon, Francis"
+  ],
+  "Francis Fukuyama": [
+    "Fukuyama"
+  ],
+  "Francisco Cascales": [
+    "Cascales"
+  ],
+  "Francisco Cervantes de Salazar": [
+    "Cervantes"
+  ],
+  "Francisco de Quevedo": [
+    "Quevedo"
+  ],
+  "Francisco Petrone": [
+    "Petrone"
+  ],
+  "Francois Rabelais": [
+    "Rabelais"
+  ],
+  "Franklin Zimring": [
+    "Zimring"
+  ],
+  "Franz Brentano": [
+    "Brentano"
+  ],
+  "Franz Kafka": [
+    "Kafka"
+  ],
+  "François de La Rochefoucauld": [
+    "La Rochefoucauld"
+  ],
+  "François Rabelais": [
+    "Rabelais"
+  ],
+  "François-René de Chateaubriand": [
+    "Chateaubriand"
+  ],
+  "Frederick II, Holy Roman Emperor": [
+    "Frederick II"
+  ],
+  "Friedrich A. Hayek": [
+    "Friedrich Hayek"
+  ],
+  "Friedrich Buchholz": [
+    "Buchholz"
+  ],
+  "Friedrich Christoph Schlosser": [
+    "Friedrich Schlosser"
+  ],
+  "Friedrich Engels": [
+    "Engels"
+  ],
+  "Friedrich Georg Wilhelm von Struve": [
+    "Struve"
+  ],
+  "Friedrich Holderlin": [
+    "Hölderlin"
+  ],
+  "Friedrich Hölderlin": [
+    "Hölderlin"
+  ],
+  "Friedrich Meinecke": [
+    "Meinecke"
+  ],
+  "Friedrich Nietzsche": [
+    "Nietzche",
+    "Nietzsche"
+  ],
+  "Friedrich Schleiermacher": [
+    "Schleiermacher"
+  ],
+  "Frédéric Chopin": [
+    "Chopin"
+  ],
+  "Frédéric Ozanam": [
+    "Ozanam"
+  ],
+  "Fyodor Dostoevsky": [
+    "Dostoyevsky",
+    "Dostoevski",
+    "Dostoievsky",
+    "Dostoevsky"
+  ],
+  "G. H. Hardy": [
+    "G.H. Hardy",
+    "Hardy"
+  ],
+  "G. K. Chesterton": [
+    "Chesterton",
+    "G.K. Chesterton"
+  ],
+  "Gabriel de Foigny": [
+    "Foigny"
+  ],
+  "Gabriele D'Annunzio": [
+    "Gabriel D'Annunzio"
+  ],
+  "Gaius Julius Caesar": [
+    "Caesar"
+  ],
+  "Gaius Lucilius": [
+    "Lucilius"
+  ],
+  "Galileo Galilei": [
+    "Galileo"
+  ],
+  "Garcilaso de la Vega": [
+    "Garcilaso"
+  ],
+  "Gaston Bachelard": [
+    "Bachelard"
+  ],
+  "Gavriil Ilizarov": [
+    "Boris Ilizarov"
+  ],
+  "Gayatri Chakravorty Spivak": [
+    "Gayatri Spivak"
+  ],
+  "Georg Grimm": [
+    "Grimm"
+  ],
+  "Georg Wilhelm Friedrich Hegel": [
+    "Hegel",
+    "G.W.F. Hegel",
+    "Hegel, Friedrich"
+  ],
+  "George Berkeley": [
+    "Berkeley",
+    "Bishop Berkeley"
+  ],
+  "George Bernard Shaw": [
+    "Bernard Shaw"
+  ],
+  "George C. Marshall": [
+    "Marshall"
+  ],
+  "George F. Kennan": [
+    "G. Kennan"
+  ],
+  "George Gilder": [
+    "Gilder"
+  ],
+  "George Gordon Byron": [
+    "Byron"
+  ],
+  "George Orwell": [
+    "Orwell"
+  ],
+  "George Steiner": [
+    "Steiner, George"
+  ],
+  "Georges Bernanos": [
+    "Bernanos"
+  ],
+  "Georges Sorel": [
+    "Sorel"
+  ],
+  "Georges-Louis Leclerc, Comte de Buffon": [
+    "Leclerc de Buffon"
+  ],
+  "Giacomo Leopardi": [
+    "Leopardi",
+    "G. Leopardi"
+  ],
+  "Giambattista Marino": [
+    "Marino"
+  ],
+  "Gioachino Rossini": [
+    "Rossini"
+  ],
+  "Giosuè Carducci": [
+    "Carducci"
+  ],
+  "Giovanni Battista Piranesi": [
+    "Piranesi"
+  ],
+  "Giovanni Boccaccio": [
+    "Boccaccio"
+  ],
+  "Giovanni da Pian del Carpine": [
+    "Giovanni Pian del Carpine"
+  ],
+  "Giovanni Pico della Mirandola": [
+    "Pico della Mirandola"
+  ],
+  "Giulietto Chiesa": [
+    "Chiesa"
+  ],
+  "Giuseppe Battista": [
+    "Battista, Giuseppe"
+  ],
+  "Giuseppe Peano": [
+    "Peano"
+  ],
+  "Giuseppe Tomasi di Lampedusa": [
+    "Tomasi di Lampedusa"
+  ],
+  "Gnaeus Pompeius Trogus": [
+    "Trogus Pompeius"
+  ],
+  "Gordon Allport": [
+    "Allport"
+  ],
+  "Gottfried Semper": [
+    "Semper"
+  ],
+  "Gottfried Wilhelm Leibniz": [
+    "Leibniz"
+  ],
+  "Gotthold Ephraim Lessing": [
+    "Lessing",
+    "Ephraim Lessing"
+  ],
+  "Greg Lukianoff": [
+    "Lukianoff"
+  ],
+  "Gregg Easterbrook": [
+    "Easterbrook"
+  ],
+  "Grigory Orlov": [
+    "Orlov"
+  ],
+  "Guillaume Apollinaire": [
+    "Apollinaire"
+  ],
+  "Guillermo Cabrera Infante": [
+    "Cabrera Infante"
+  ],
+  "Gustav Fechner": [
+    "Gustav Theodor Fechner"
+  ],
+  "Gustav Friedrich Klemm": [
+    "Klemm"
+  ],
+  "Gustave Flaubert": [
+    "Flaubert"
+  ],
+  "Guy de Maupassant": [
+    "Maupassant"
+  ],
+  "H. G. Wells": [
+    "H.G. Wells",
+    "Wells"
+  ],
+  "H.D.P. Lee": [
+    "H. D. P. Lee"
+  ],
+  "H.J. Jackson": [
+    "H. J. Jackson"
+  ],
+  "Hanns Hörbiger": [
+    "Hörbiger"
+  ],
+  "Hans Jakob Christoffel von Grimmelshausen": [
+    "Grimmelshausen"
+  ],
+  "Hans Robert Jauss": [
+    "Jauss"
+  ],
+  "Hans-Georg Gadamer": [
+    "Georg Gadamer",
+    "Gadamer"
+  ],
+  "Hariulf of Oudenburg": [
+    "Hariulf"
+  ],
+  "Harrison Salisbury": [
+    "Harrison E. Salisbury"
+  ],
+  "Harry G. Frankfurt": [
+    "Harry Frankfurt"
+  ],
+  "Harwood Lawrence Childs": [
+    "H. L. Childs",
+    "Childs"
+  ],
+  "Heinrich Cornelius Agrippa von Nettesheim": [
+    "Agrippa of Nettesheim"
+  ],
+  "Heinrich Heine": [
+    "Heine"
+  ],
+  "Heinrich von Kleist": [
+    "Kleist"
+  ],
+  "Helmuth von Moltke the Elder": [
+    "Moltke"
+  ],
+  "Henri Bergson": [
+    "Bergson"
+  ],
+  "Henri Cartier-Bresson": [
+    "Cartier-Bresson"
+  ],
+  "Henrik Ibsen": [
+    "Ibsen",
+    "Ibsen, Henrik"
+  ],
+  "Henry David Thoreau": [
+    "Thoreau"
+  ],
+  "Henry James": [
+    "James"
+  ],
+  "Henry Louis Gates Jr.": [
+    "Gates"
+  ],
+  "Henry Thomas Buckle": [
+    "Buckle"
+  ],
+  "Henry Walter Bates": [
+    "Bate"
+  ],
+  "Herbert Giles": [
+    "Herbert Allen Giles"
+  ],
+  "Herbert Schiller": [
+    "Schiller"
+  ],
+  "Herbert Spencer": [
+    "Spencer"
+  ],
+  "Herman Melville": [
+    "Melville"
+  ],
+  "Hermann Hesse": [
+    "Hesse"
+  ],
+  "Hermann Lotze": [
+    "Lotze"
+  ],
+  "Hilaire Belloc": [
+    "Belloc"
+  ],
+  "Hilario Ascasubi": [
+    "Ascasubi"
+  ],
+  "Hilduin of Saint-Denis": [
+    "Hilduin"
+  ],
+  "Hippolytus of Rome": [
+    "Hippolytus"
+  ],
+  "Hiroaki Kuromiya": [
+    "H. Kuromiya"
+  ],
+  "Homer": [
+    "Homeros"
+  ],
+  "Honore de Balzac": [
+    "Balzac"
+  ],
+  "Honorius of Autun": [
+    "Honorious of Autun"
+  ],
+  "Honoré de Balzac": [
+    "Balzac"
+  ],
+  "Honoré Gabriel Riqueti, comte de Mirabeau": [
+    "Honoré Q. R. de Mirabeau"
+  ],
+  "Houston Stewart Chamberlain": [
+    "H. S. Chamberlain"
+  ],
+  "Hugo Grotius": [
+    "Grotius"
+  ],
+  "Huldrych Zwingli": [
+    "Zwingli"
+  ],
+  "Iamblichus of Chalcis": [
+    "Iamblichus"
+  ],
+  "Ian Grey": [
+    "I. Grey"
+  ],
+  "Ilya Ehrenburg": [
+    "Ehrenburg"
+  ],
+  "Immanuel Kant": [
+    "I. Kant",
+    "Kant"
+  ],
+  "Ioseb Iremashvili": [
+    "Iremashvili"
+  ],
+  "Irving Kristol": [
+    "Kristol"
+  ],
+  "Isaac Deutscher": [
+    "I. Deutscher"
+  ],
+  "Isaac Newton": [
+    "Newton"
+  ],
+  "Ivan Sergeyevich Gagarin": [
+    "Ivan S. Gagarin"
+  ],
+  "Ivan Turgenev": [
+    "Turgenev"
+  ],
+  "Ivan Vinogradov": [
+    "Vinogradov",
+    "Victor Vinogradov"
+  ],
+  "Ivor A. Richards": [
+    "I. A. Richards"
+  ],
+  "J. J. Katz": [
+    "Jerrold J. Katz"
+  ],
+  "J. R. R. Tolkien": [
+    "J.R.R. Tolkien"
+  ],
+  "J.A. Hobson": [
+    "John Hobson"
+  ],
+  "J.G. Ballard": [
+    "J. G. Ballard"
+  ],
+  "J.K. Rowling": [
+    "J. K. Rowling"
+  ],
+  "J.W. Dunne": [
+    "J. W. Dunne"
+  ],
+  "Ja'far al-Sadiq": [
+    "Ja’far al-Sadiq"
+  ],
+  "Jaakko Hintikka": [
+    "Hintikka"
+  ],
+  "Jack Kerouac": [
+    "Kerouac"
+  ],
+  "Jacob A. Riis": [
+    "Jacob Riis"
+  ],
+  "Jacob Bronowski": [
+    "J. Bronowski"
+  ],
+  "Jacob Grimm": [
+    "Grimm"
+  ],
+  "Jacques Derrida": [
+    "Derrida"
+  ],
+  "Jacques Maritain": [
+    "Maritain"
+  ],
+  "Jacques Vallée, Sieur Des Barreaux": [
+    "Des Barreaux"
+  ],
+  "Jacques-Antoine-Adrien Delort": [
+    "Delort"
+  ],
+  "Jakob Heine": [
+    "Heine"
+  ],
+  "James Cook": [
+    "Cook"
+  ],
+  "James D. McCawley": [
+    "McCawley"
+  ],
+  "James E. Lovelock": [
+    "James Lovelock",
+    "Lovelock"
+  ],
+  "James Fyfe": [
+    "Fyfe"
+  ],
+  "James George Frazer": [
+    "Frazer"
+  ],
+  "James Gleick": [
+    "Gleick"
+  ],
+  "James Harris": [
+    "J. Harris"
+  ],
+  "James Joyce": [
+    "Joyce"
+  ],
+  "James Watson": [
+    "Watson"
+  ],
+  "Jamie Miller": [
+    "J. Miller"
+  ],
+  "Jan van Eyck": [
+    "van Eyck"
+  ],
+  "Jean Anthelme Brillat-Savarin": [
+    "Brillat-Savarin"
+  ],
+  "Jean Baudrillard": [
+    "Baudrillard"
+  ],
+  "Jean Bodin": [
+    "Bodin"
+  ],
+  "Jean Bricmont": [
+    "Bricmont"
+  ],
+  "Jean Cocteau": [
+    "Cocteau"
+  ],
+  "Jean de La Bruyère": [
+    "La Bruyère"
+  ],
+  "Jean Dieudonné": [
+    "Dieudonné"
+  ],
+  "Jean Lecanuet": [
+    "Lecanuet"
+  ],
+  "Jean Piaget": [
+    "Piaget"
+  ],
+  "Jean Racine": [
+    "Racine"
+  ],
+  "Jean-Francois Lyotard": [
+    "Lyotard"
+  ],
+  "Jean-François Lyotard": [
+    "Lyotard"
+  ],
+  "Jean-Jacques Rousseau": [
+    "Rousseau"
+  ],
+  "Jean-Louis Guez de Balzac": [
+    "Guez de Balzac"
+  ],
+  "Jean-Paul Sartre": [
+    "Sartre",
+    "J.P. Sartre"
+  ],
+  "Jean-Pierre-Louis de Luchet": [
+    "Marquis de Luchet"
+  ],
+  "Jeffrey Brooks": [
+    "J. Brooks"
+  ],
+  "Jeremy Bentham": [
+    "Bentham"
+  ],
+  "Jerome": [
+    "Saint Jérôme"
+  ],
+  "Jerry A. Coyne": [
+    "Jerry Coyne"
+  ],
+  "Jerry A. Fodor": [
+    "Fodor, Jerry A."
+  ],
+  "Jesse Jackson": [
+    "Jackson"
+  ],
+  "Jesus in Islam": [
+    "Jesus"
+  ],
+  "Joachim du Bellay": [
+    "Du Bellay"
+  ],
+  "Johann Friedrich Herbart": [
+    "Herbart"
+  ],
+  "Johann Gottlieb Fichte": [
+    "J. G. Fichte"
+  ],
+  "Johann Gustav Droysen": [
+    "Droysen"
+  ],
+  "Johann Joachim Winckelmann": [
+    "Winckelmann"
+  ],
+  "Johann Nikolaus Forkel": [
+    "Forkel"
+  ],
+  "Johann Sebastian Bach": [
+    "Sebastian Bach",
+    "J. S. Bach"
+  ],
+  "Johann Wolfgang von Goethe": [
+    "Goethe",
+    "J.W. Goethe"
+  ],
+  "Johannes Kepler": [
+    "Kepler"
+  ],
+  "John   Reed": [
+    "John Reed"
+  ],
+  "John Calvin": [
+    "Calvin"
+  ],
+  "John Chrysostom": [
+    "St. Chrysostom"
+  ],
+  "John Cleves Symmes Jr.": [
+    "John Cleves Symmes"
+  ],
+  "John Edgar Wideman": [
+    "Wideman"
+  ],
+  "John H. Brown": [
+    "Brown"
+  ],
+  "John Locke": [
+    "Locke"
+  ],
+  "John Lukacs": [
+    "Lukács"
+  ],
+  "John Mandeville": [
+    "Sir John Mandeville"
+  ],
+  "John Maynard Keynes": [
+    "Keynes"
+  ],
+  "John Milton": [
+    "Milton"
+  ],
+  "John Mueller": [
+    "Mueller"
+  ],
+  "John of Damascus": [
+    "St John of Damascus"
+  ],
+  "John of Joinville": [
+    "Sire de Joinville"
+  ],
+  "John of the Cross": [
+    "Saint John of the Cross"
+  ],
+  "John Paul II": [
+    "Pope John Paul II"
+  ],
+  "John Rogers Searle": [
+    "J. Searle"
+  ],
+  "John Scotus Erigena": [
+    "Johannes Scotus Erigena"
+  ],
+  "John Scotus Eriugena": [
+    "Eriugena, John Scotus"
+  ],
+  "John Searle": [
+    "John R. Searle"
+  ],
+  "John Stewart Bell": [
+    "John S. Bell"
+  ],
+  "John Stuart Mill": [
+    "J.S. Mill",
+    "J. S. Mill"
+  ],
+  "John Tauler": [
+    "Johannes Tauler"
+  ],
+  "John Updike": [
+    "Updike"
+  ],
+  "Jonathan Culler": [
+    "Culler"
+  ],
+  "Jonathan Francis Bennett": [
+    "Jonathan Bennett"
+  ],
+  "Jonathan Haidt": [
+    "Haidt"
+  ],
+  "Jonathan Riley-Smith": [
+    "Riley-Smith"
+  ],
+  "Jonathan Swift": [
+    "Swift"
+  ],
+  "Jorge Luis Borges": [
+    "Borges"
+  ],
+  "Joris-Karl Huysmans": [
+    "Huysmans"
+  ],
+  "Joseph Addison": [
+    "Addison"
+  ],
+  "Joseph Brodsky": [
+    "Brodsky"
+  ],
+  "Joseph Conrad": [
+    "Conrad"
+  ],
+  "Joseph Goebbels": [
+    "Goebbels"
+  ],
+  "Joseph Orbeli": [
+    "Orbeli"
+  ],
+  "Joseph Ratzinger": [
+    "Ratzinger"
+  ],
+  "Joseph Stalin": [
+    "Stalin",
+    "J. V. Stalin",
+    "J. Stalin"
+  ],
+  "Joseph-Arthur de Gobineau": [
+    "Arthur de Gobineau"
+  ],
+  "Josephus": [
+    "Flavius Josephus"
+  ],
+  "Joshua S. Goldstein": [
+    "Joshua Goldstein"
+  ],
+  "José María Ramos Mejía": [
+    "Ramos Mejia"
+  ],
+  "José Ortega y Gasset": [
+    "Ortega y Gasset"
+  ],
+  "Juan Luis Vives": [
+    "Vives"
+  ],
+  "Juan-David Nasio": [
+    "Nasio"
+  ],
+  "Juba II": [
+    "Juba"
+  ],
+  "Jules Michelet": [
+    "Michelet"
+  ],
+  "Jules Verne": [
+    "Verne, Jules"
+  ],
+  "Julia Kristeva": [
+    "Kristeva, Julia",
+    "Kristeva"
+  ],
+  "Julien Benda": [
+    "Benda"
+  ],
+  "Julien Offray de La Mettrie": [
+    "La Mettrie"
+  ],
+  "Julius Caesar": [
+    "Caesar"
+  ],
+  "Jun'ichiro Tanizaki": [
+    "Junichiro Tanizaki"
+  ],
+  "Jun'ichirō Tanizaki": [
+    "Junichiro Tanizaki"
+  ],
+  "Juri Lotman": [
+    "Lotman"
+  ],
+  "Juvenal of Jerusalem": [
+    "Juvenal"
+  ],
+  "János Bolyai": [
+    "Bolyai"
+  ],
+  "Kamal al-Din Katibi Nishapuri": [
+    "Katibi"
+  ],
+  "Karen Horney": [
+    "Horney"
+  ],
+  "Karen Petrone": [
+    "Petrone"
+  ],
+  "Karl Daub": [
+    "Daub"
+  ],
+  "Karl Marx": [
+    "Marx"
+  ],
+  "Karl R. Popper": [
+    "Popper",
+    "Karl Popper"
+  ],
+  "Karl Weierstrass": [
+    "K. Weierstrass"
+  ],
+  "Karlheinz Stockhausen": [
+    "Stockhausen"
+  ],
+  "Katarzyna de Lazari-Radek": [
+    "de Lazari-Radek"
+  ],
+  "Keith F. Otterbein": [
+    "Otterbein"
+  ],
+  "Kevin Kelly": [
+    "Kelly"
+  ],
+  "Kishore Mahbubani": [
+    "Mahbubani"
+  ],
+  "Kurt Gödel": [
+    "Godel",
+    "Gödel"
+  ],
+  "Kurt Vonnegut Jr.": [
+    "Kurt Vonnegut, Jr.",
+    "Vonnegut",
+    "Kurt Vonnegut"
+  ],
+  "Lambert of Hersfeld": [
+    "Lampert of Hersfeld"
+  ],
+  "Laozi": [
+    "Lao-Tze",
+    "Lao Tzu",
+    "Lao-tzu",
+    "Lao Tse"
+  ],
+  "Larissa Vasilieva": [
+    "L. Vasilieva"
+  ],
+  "Laurence Plazenet": [
+    "L. Plazenet"
+  ],
+  "Laurence Sterne": [
+    "Sterne"
+  ],
+  "Lawrence Ferlinghetti": [
+    "Ferlinghetti"
+  ],
+  "Leo Strauss": [
+    "Strauss"
+  ],
+  "Leo Tolstoy": [
+    "Lev Tolstoy",
+    "Tolstoi",
+    "Tolstoy"
+  ],
+  "Leon Trotsky": [
+    "Trotsky"
+  ],
+  "Leonard Bloomfield": [
+    "L. Bloomfield"
+  ],
+  "Leonardo da Vinci": [
+    "Leonardo"
+  ],
+  "Leopoldo Lugones": [
+    "Leopolda Lugones"
+  ],
+  "Lillian Faderman": [
+    "Faderman"
+  ],
+  "Linda Hutcheon": [
+    "Hutcheon"
+  ],
+  "Liudprand of Cremona": [
+    "Liudprand"
+  ],
+  "Longinus": [
+    "Pseudo-Longinus"
+  ],
+  "Lord Byron": [
+    "Byron"
+  ],
+  "Louis Antoine de Bougainville": [
+    "Bougainville"
+  ],
+  "Louis Dimier": [
+    "Dimier"
+  ],
+  "Louis Hjelmslev": [
+    "Hjelmslev"
+  ],
+  "Louis Pauwels": [
+    "Pauwels"
+  ],
+  "Louis Segond": [
+    "Segond"
+  ],
+  "Louis-Ferdinand Céline": [
+    "Celine"
+  ],
+  "Louise Holborn": [
+    "Louise W. Holborn"
+  ],
+  "Luc de Clapiers, marquis de Vauvenargues": [
+    "Vauvenargues"
+  ],
+  "Luciano Anceschi": [
+    "Luigi Anceschi"
+  ],
+  "Luciano Berio": [
+    "Berio"
+  ],
+  "Ludovico Ariosto": [
+    "Ariosto"
+  ],
+  "Ludwig Feuerbach": [
+    "Feuerbach"
+  ],
+  "Ludwig van Beethoven": [
+    "Beethoven"
+  ],
+  "Ludwig Wittgenstein": [
+    "Wittgenstein"
+  ],
+  "Luigi Malerba": [
+    "Malerba"
+  ],
+  "Luigi Pirandello": [
+    "Pirandello"
+  ],
+  "Luis de Góngora": [
+    "Gongora",
+    "Góngora"
+  ],
+  "Luis de León": [
+    "Fray Luis de Leon"
+  ],
+  "László Moholy-Nagy": [
+    "Moholy-Nagy"
+  ],
+  "Léon Wieger": [
+    "Wieger"
+  ],
+  "Macedonio Fernández": [
+    "Macedonia Fernandez"
+  ],
+  "Maimonides": [
+    "Moses Maimonides"
+  ],
+  "Marc Dax": [
+    "Marc"
+  ],
+  "Marcel Proust": [
+    "Proust"
+  ],
+  "Marcelino Menéndez y Pelayo": [
+    "Menendez y Pelayo"
+  ],
+  "Marco Vignoli": [
+    "Vignoli"
+  ],
+  "Marcus Annaeus Lucanus": [
+    "Lucan"
+  ],
+  "Marcus Aurelius": [
+    "Marcus Aurelius Antoninus"
+  ],
+  "Marcus Fabius Quintilianus": [
+    "Quintilian"
+  ],
+  "Marcus Terentius Varro": [
+    "Varro"
+  ],
+  "Marcus Tullius Cicero": [
+    "Q. Cicero",
+    "Cicéron",
+    "Cicero"
+  ],
+  "Marcus Valerius Martialis": [
+    "Martial"
+  ],
+  "Margaret A. Boden": [
+    "Margaret Boden"
+  ],
+  "Margaret Mary Alacoque": [
+    "Marguerite Marie Alacoque"
+  ],
+  "Margarete Buber-Neumann": [
+    "Buber-Neumann"
+  ],
+  "Marguerite de Navarre": [
+    "Queen of Navarre"
+  ],
+  "Marie-Dominique Chenu": [
+    "Chenu"
+  ],
+  "Marina Tsvetaeva": [
+    "Tsvetaeva"
+  ],
+  "Mark Kurlansky": [
+    "Kurlansky"
+  ],
+  "Marquis de Condorcet": [
+    "Marie Jean Antoine Nicolas Caritat, Marquis de Condorcet"
+  ],
+  "Marquis de Sade": [
+    "Sade"
+  ],
+  "Marshall McLuhan": [
+    "McLuhan"
+  ],
+  "Martin Buber": [
+    "Buber"
+  ],
+  "Martin Feldstein": [
+    "Feldstein"
+  ],
+  "Martin Heidegger": [
+    "Heidegger",
+    "Heidegger, Martin"
+  ],
+  "Martin J. Rees": [
+    "Martin Rees"
+  ],
+  "Martin Luther": [
+    "Luther"
+  ],
+  "Marvin Minsky": [
+    "M. Minsky"
+  ],
+  "Mary Ann Glendon": [
+    "Glendon"
+  ],
+  "Mary Lamb": [
+    "Charles Lamb"
+  ],
+  "Maryanne Wolf": [
+    "M. Wolf"
+  ],
+  "Matt K. Lewis": [
+    "Lewis"
+  ],
+  "Maurice Barrès": [
+    "M. Barrès"
+  ],
+  "Max Beloff, Baron Beloff": [
+    "Max Beloff"
+  ],
+  "Max Jammer": [
+    "Jammer"
+  ],
+  "Max Tegmark": [
+    "Tegmark"
+  ],
+  "Maxim Gorky": [
+    "Gorky"
+  ],
+  "Meister Eckhart": [
+    "Johannes Eckhart"
+  ],
+  "Melissus of Samos": [
+    "Melissus"
+  ],
+  "Merle Fainsod": [
+    "Fainsod"
+  ],
+  "Methodius of Olympus": [
+    "Methodius"
+  ],
+  "Michael Knott": [
+    "Knott"
+  ],
+  "Michael Sandel": [
+    "Michael J. Sandel"
+  ],
+  "Michael T. Florinsky": [
+    "M. T. Florinsky"
+  ],
+  "Michel de Montaigne": [
+    "Montaigne"
+  ],
+  "Michel Foucault": [
+    "Foucault"
+  ],
+  "Michel Tapié": [
+    "Victor Lucien Tapié"
+  ],
+  "Mickey Spillane": [
+    "Spillane"
+  ],
+  "Miguel de Cervantes Saavedra": [
+    "Cervantes",
+    "Miguel de Cervantes"
+  ],
+  "Mikhail Bakhtin": [
+    "Bakhtin"
+  ],
+  "Mikhail Bakunin": [
+    "Bakunin"
+  ],
+  "Mikhail Lermontov": [
+    "Lermontov"
+  ],
+  "Mikhail Petrovich Artsybashev": [
+    "Mikhail Artsybashev"
+  ],
+  "Mikhail Zoshchenko": [
+    "Zoshchenko"
+  ],
+  "Militsa Nechkina": [
+    "M. V. Nechkina"
+  ],
+  "Milovan Djilas": [
+    "M. Djilas"
+  ],
+  "Miroslav Krleža": [
+    "Krleža"
+  ],
+  "Monroe Beardsley": [
+    "Beardsley"
+  ],
+  "Moritz Cantor": [
+    "Cantor"
+  ],
+  "Morris Hirsch": [
+    "Hirsch"
+  ],
+  "Moses de Leon": [
+    "Moses of Leon"
+  ],
+  "Mustafa Kemal Atatürk": [
+    "Kemal Atatürk"
+  ],
+  "Nadezhda Alliluyeva": [
+    "Alliluyeva"
+  ],
+  "Nadezhda Krupskaya": [
+    "Krupskaya"
+  ],
+  "Nadezhda Mandelstam": [
+    "N. Mandelstam"
+  ],
+  "Niccolo Machiavelli": [
+    "Machiavelli"
+  ],
+  "Niccolò Machiavelli": [
+    "Machiavelli"
+  ],
+  "Nicolas Boileau-Despréaux": [
+    "Boileau"
+  ],
+  "Nicolas de Condorcet": [
+    "Marie Jean Antoine Nicolas Caritat, Marquis de Condorcet"
+  ],
+  "Nicolas Emeric": [
+    "Niccolao Emeric"
+  ],
+  "Nicolas Malebranche": [
+    "Malebranche"
+  ],
+  "Nicolas Ruwet": [
+    "Ruwet, Nicolas",
+    "Ruwet"
+  ],
+  "Nicolaus Copernicus": [
+    "Copernicus"
+  ],
+  "Niels Bohr": [
+    "Bohr"
+  ],
+  "Nikolai A. Berdyaev": [
+    "Nicolas Berdyaev"
+  ],
+  "Nikolai Berdyaev": [
+    "Nicolas Berdyaev",
+    "Berdyaev"
+  ],
+  "Nikolai Chernyshevsky": [
+    "N. G. Chernyshevsky"
+  ],
+  "Nikolai Gogol": [
+    "Gogol"
+  ],
+  "Nikolai Krementsov": [
+    "N. Krementsov"
+  ],
+  "Nikolaus Poda von Neuhaus": [
+    "Neuhaus"
+  ],
+  "Noam Chomsky": [
+    "Chomsky, Noam",
+    "Chomsky",
+    "N. Chomsky"
+  ],
+  "Noretta Koertge": [
+    "Koertge, Noretta"
+  ],
+  "Numa Pompilius": [
+    "Numa"
+  ],
+  "Oleg Khlevniuk": [
+    "O. V. Khlevniuk"
+  ],
+  "Oleg V. Khlevniuk": [
+    "O. V. Khlevniuk"
+  ],
+  "Oona A. Hathaway": [
+    "Oona Hathaway"
+  ],
+  "Oscar I. Janowsky": [
+    "Oscar J. Janowsky"
+  ],
+  "Oscar Wilde": [
+    "Wilde, Oscar"
+  ],
+  "Osip Mandelstam": [
+    "Mandelstam"
+  ],
+  "Oswald Spengler": [
+    "Spengler"
+  ],
+  "Otto Bettmann": [
+    "Bettmann"
+  ],
+  "Otto Hoetzsch": [
+    "Hoetzsch"
+  ],
+  "Otto von Bismarck": [
+    "Bismarck"
+  ],
+  "Otto, Count of Vermandois": [
+    "Otto"
+  ],
+  "P. D. Ouspensky": [
+    "Ouspensky"
+  ],
+  "P. F. Strawson": [
+    "Strawson"
+  ],
+  "P. G. Wodehouse": [
+    "Wodehouse"
+  ],
+  "P.D. Ouspensky": [
+    "Ouspensky"
+  ],
+  "Pablo Neruda": [
+    "P. Neruda",
+    "Neruda"
+  ],
+  "Pablo Picasso": [
+    "Picasso"
+  ],
+  "Paolo Segneri": [
+    "Padre Segneri"
+  ],
+  "Paul Cohen": [
+    "Paul C. Cohen"
+  ],
+  "Paul Costa Jr.": [
+    "Costa"
+  ],
+  "Paul E. Meehl": [
+    "Paul Meehl"
+  ],
+  "Paul Hervieu": [
+    "Hervieu"
+  ],
+  "Paul Hollander": [
+    "Hollander, Paul"
+  ],
+  "Paul Karl Feyerabend": [
+    "Paul Feyerabend"
+  ],
+  "Paul Leutwein": [
+    "P. Leutwein"
+  ],
+  "Paul Rozin": [
+    "Rozin"
+  ],
+  "Paul Valéry": [
+    "Valéry"
+  ],
+  "Pedro Calderón de la Barca": [
+    "Calderón de la Barca"
+  ],
+  "Pedro de Medina": [
+    "Pedro da Medina"
+  ],
+  "Pedro Mata y Fontanet": [
+    "Pedro Mata"
+  ],
+  "Percy Bysshe Shelley": [
+    "Shelley"
+  ],
+  "Peter   Atkins": [
+    "Peter Atkins"
+  ],
+  "Petronius Arbiter": [
+    "Petronius"
+  ],
+  "Philip Babcock Gove": [
+    "P. Gove"
+  ],
+  "Philip E. Tetlock": [
+    "Tetlock"
+  ],
+  "Philippe de Commines": [
+    "Philip de Commines"
+  ],
+  "Philippe de Vitry": [
+    "Jacques de Vitry"
+  ],
+  "Pier Paolo Pasolini": [
+    "Pasolini"
+  ],
+  "Pierre Bayle": [
+    "Bayle"
+  ],
+  "Pierre Charron": [
+    "Charron"
+  ],
+  "Pierre Corneille": [
+    "Corneille"
+  ],
+  "Pierre de Savoye": [
+    "Savoy"
+  ],
+  "Pierre François Verhulst": [
+    "Verhulst"
+  ],
+  "Pierre Gassendi": [
+    "Gassendi"
+  ],
+  "Pierre-Simon Laplace": [
+    "Pierre Simon Laplace"
+  ],
+  "Pietro Bembo": [
+    "Cardinal Bembo"
+  ],
+  "Pilo Albertelli": [
+    "Albertelli"
+  ],
+  "Plato": [
+    "Platon"
+  ],
+  "Pliny the Elder": [
+    "Pliny"
+  ],
+  "Pope Gelasius I": [
+    "Gelasius"
+  ],
+  "Pope Gregory I": [
+    "Gregory I"
+  ],
+  "Porphyry of Tyre": [
+    "Porphyry"
+  ],
+  "Prosper-Olivier Lissagaray": [
+    "Olivier Lissagaray"
+  ],
+  "Pseudo-Apollodorus": [
+    "Apollodorus"
+  ],
+  "Pseudo-Dionysius the Areopagite": [
+    "Pseudo-Dionysius"
+  ],
+  "Publius Ovidius Naso": [
+    "Ovid"
+  ],
+  "R. J. Rummel": [
+    "Rummel"
+  ],
+  "R.H. Barrow": [
+    "R. H. Barrow"
+  ],
+  "R.H. Bruce Lockhart": [
+    "R. H. Bruce Lockhart"
+  ],
+  "R.W. Southern": [
+    "Southern"
+  ],
+  "Rachel Laudan": [
+    "Laudan"
+  ],
+  "Rainer Maria Rilke": [
+    "Rilke"
+  ],
+  "Ralph Kimball": [
+    "Kimball"
+  ],
+  "Ralph Waldo Emerson": [
+    "Emerson"
+  ],
+  "Ramon Llull": [
+    "Llull"
+  ],
+  "Ray Bradbury": [
+    "Bradbury"
+  ],
+  "Raymond Queneau": [
+    "Queneau"
+  ],
+  "Reginald Ivan Lovell": [
+    "Reginal Ivan Lovell"
+  ],
+  "René Descartes": [
+    "Rene Descartes",
+    "Descartes",
+    "R. Descartes"
+  ],
+  "Richard Cumberland": [
+    "Cumberland"
+  ],
+  "Richard Dedekind": [
+    "R. Dedekind"
+  ],
+  "Richard G. Wilkinson": [
+    "Richard Wilkinson"
+  ],
+  "Richard Gregory": [
+    "Richard L. Gregory"
+  ],
+  "Richard Hofstadter": [
+    "Hofstadter, Richard",
+    "Hofstadter"
+  ],
+  "Richard Langton Gregory": [
+    "Richard L. Gregory"
+  ],
+  "Richard Wagner": [
+    "Wagner"
+  ],
+  "Richard Wolin": [
+    "R. Wolin"
+  ],
+  "Robert  Burton": [
+    "Robert Burton"
+  ],
+  "Robert Browning": [
+    "Browning"
+  ],
+  "Robert C. Tucker": [
+    "R. C. Tucker"
+  ],
+  "Robert Coover": [
+    "Coover"
+  ],
+  "Robert Ericksen": [
+    "Ericksen"
+  ],
+  "Robert H. McNeal": [
+    "Robert McNeal"
+  ],
+  "Robert J. Gordon": [
+    "Robert Gordon"
+  ],
+  "Robert K. Merton": [
+    "Merton"
+  ],
+  "Robert Louis Stevenson": [
+    "R. L. Stevenson",
+    "Stevenson"
+  ],
+  "Robert Lowth": [
+    "Fr. R. Lowth"
+  ],
+  "Robert Nozick": [
+    "Nozick"
+  ],
+  "Robert Spence Hardy": [
+    "Hardy"
+  ],
+  "Robert Yewdall Jennings": [
+    "R. Yewdall Jennings"
+  ],
+  "Robin Hanson": [
+    "Hanson"
+  ],
+  "Robin Lakoff": [
+    "Lakoff"
+  ],
+  "Rodulfus Glaber": [
+    "Rodolfus Glaber",
+    "Rudolf Glaber"
+  ],
+  "Roger Joseph Boscovich": [
+    "Boscovich"
+  ],
+  "Roi Medvedev": [
+    "R. Medvedev"
+  ],
+  "Roland Frye": [
+    "Frye"
+  ],
+  "Roman Jakobson": [
+    "Jakobson"
+  ],
+  "Ronald Reagan": [
+    "Ronald W. Reagan"
+  ],
+  "Rose D. Friedman": [
+    "Milton Friedman"
+  ],
+  "Rosemary Sullivan": [
+    "R. Sullivan"
+  ],
+  "Roy Aleksandrovich Medvedev": [
+    "R. Medvedev"
+  ],
+  "Roy Medvedev": [
+    "R. Medvedev"
+  ],
+  "Rudolf Carnap": [
+    "Carnap"
+  ],
+  "Rudolf Virchow": [
+    "Virchow"
+  ],
+  "Rudyard Kipling": [
+    "Kipling, Rudyard"
+  ],
+  "Rupert Sheldrake": [
+    "Sheldrake"
+  ],
+  "Rush Limbaugh": [
+    "Limbaugh"
+  ],
+  "Ruth DeFries": [
+    "DeFries"
+  ],
+  "Rutilius Claudius Namatianus": [
+    "Rutilius"
+  ],
+  "Ruut Veenhoven": [
+    "Veenhoven"
+  ],
+  "Saint Alphonsus Liguori": [
+    "Saint Alphonsus de Liguori"
+  ],
+  "Saint Ambrose": [
+    "St. Ambrose"
+  ],
+  "Saint Bonaventure": [
+    "St. Bonaventure"
+  ],
+  "Saint Maddalena de' Pazzi": [
+    "Saint Maddalena de’ Pazzi"
+  ],
+  "Sally Satel": [
+    "Satel"
+  ],
+  "Sam Harris": [
+    "Harris"
+  ],
+  "Samuel Pepys": [
+    "Pepys"
+  ],
+  "Samuel Taylor Coleridge": [
+    "Coleridge"
+  ],
+  "Sandra G. Harding": [
+    "Sandra Harding"
+  ],
+  "Sarvepalli Radhakrishnan": [
+    "Radhakrishnan"
+  ],
+  "Sean Hannity": [
+    "Hannity"
+  ],
+  "Seneca": [
+    "Seneca the Younger",
+    "Lucius Annaeus Seneca"
+  ],
+  "Sergei Bakhrushin": [
+    "S. V. Bakhrushin"
+  ],
+  "Seth Lloyd": [
+    "Lloyd"
+  ],
+  "Sextus Propertius": [
+    "Propertius"
+  ],
+  "Sforza Pallavicino": [
+    "Cardinal Sforza Pallavicino"
+  ],
+  "Sheila Fitzpatrick": [
+    "S. Fitzpatrick"
+  ],
+  "Sigmund Freud": [
+    "S. Freud",
+    "Freud"
+  ],
+  "Simon Sebag Montefiore": [
+    "S. Sebag Montefiore"
+  ],
+  "Simone de Beauvoir": [
+    "de Beauvoir",
+    "Beauvoir"
+  ],
+  "Simonides of Ceos": [
+    "Simonides"
+  ],
+  "Sir Charles Wentworth Dilke": [
+    "Charles Dilke"
+  ],
+  "Sir John Hope Simpson": [
+    "Simpson"
+  ],
+  "Sir John Robert Seeley": [
+    "J. R. Seeley"
+  ],
+  "Slavoj Zizek": [
+    "S. Žižek"
+  ],
+  "Slavoj Žižek": [
+    "S. Žižek"
+  ],
+  "Solomon in Islam": [
+    "Solomon"
+  ],
+  "Solomon Lozovsky": [
+    "Lozovsky"
+  ],
+  "Soseki Natsume": [
+    "Natsume Soseki"
+  ],
+  "Speros Vryonis": [
+    "Vryonis"
+  ],
+  "St. John of the Cross": [
+    "Saint John of the Cross"
+  ],
+  "St. Margaret Mary Alacoque": [
+    "Marguerite Marie Alacoque"
+  ],
+  "Stanislav Andreski": [
+    "Andreski"
+  ],
+  "Stanislaw Jerzy Lec": [
+    "Stanislaw J. Lec"
+  ],
+  "Stanisław Jerzy Lec": [
+    "Stanislaw J. Lec"
+  ],
+  "Stenka Razin": [
+    "Razin"
+  ],
+  "Stephen Dobyns": [
+    "Dobyns"
+  ],
+  "Stephen Kotkin": [
+    "S. Kotkin"
+  ],
+  "Stephen MacKenna": [
+    "MacKenna"
+  ],
+  "Steven Pinker": [
+    "Pinker",
+    "S. Pinker"
+  ],
+  "Steven Rose": [
+    "Rose"
+  ],
+  "Strato of Lampsacus": [
+    "Strato"
+  ],
+  "Stéphane Lupasco": [
+    "Lupasco"
+  ],
+  "Stéphane Mallarmé": [
+    "Mallarmé",
+    "Mallarme"
+  ],
+  "Susan Sontag": [
+    "Sontag"
+  ],
+  "Susannah Heschel": [
+    "Heschel"
+  ],
+  "Svetlana Alliluyeva": [
+    "Alliluyeva"
+  ],
+  "Syd Cain": [
+    "Cain"
+  ],
+  "Sébastien-Roch Nicolas de Chamfort": [
+    "Chamfort"
+  ],
+  "Søren Kierkegaard": [
+    "Soren Kierkegaard",
+    "Kierkegard",
+    "Kierkegaard"
+  ],
+  "T. S. Eliot": [
+    "Eliot",
+    "T.S. Eliot"
+  ],
+  "Tacitus": [
+    "Cornelius Tacitus"
+  ],
+  "Teresa of Ávila": [
+    "Saint Teresa of Ávila"
+  ],
+  "Terry Gilliam": [
+    "Gilliam"
+  ],
+  "Tertullian": [
+    "Tertull."
+  ],
+  "Thales of Miletus": [
+    "Thales"
+  ],
+  "The Buddha": [
+    "Buddha"
+  ],
+  "Theodor Gomperz": [
+    "Gomperz"
+  ],
+  "Theodore M. Bernstein": [
+    "Theodore Bernstein"
+  ],
+  "Thietmar of Merseburg": [
+    "Thietmar"
+  ],
+  "Thomas Aquinas": [
+    "Saint Thomas Aquinas",
+    "Thomas of Aquinas",
+    "St. Thomas Aquinas"
+  ],
+  "Thomas Babington Macaulay": [
+    "Thomas Macaulay"
+  ],
+  "Thomas Browne": [
+    "Sir Thomas Browne",
+    "Browne"
+  ],
+  "Thomas Carlyle": [
+    "Carlyle"
+  ],
+  "Thomas De Quincey": [
+    "De Quincey"
+  ],
+  "Thomas de Quincey": [
+    "De Quincey"
+  ],
+  "Thomas Henry Huxley": [
+    "Huxley, Thomas",
+    "Huxley"
+  ],
+  "Thomas Hobbes": [
+    "Hobbes",
+    "Hobbes, Thomas"
+  ],
+  "Thomas Nagel": [
+    "Nagel"
+  ],
+  "Thomas Pynchon": [
+    "Pynchon"
+  ],
+  "Thomas Robert Malthus": [
+    "Thomas Malthus"
+  ],
+  "Thomas S. Kuhn": [
+    "Thomas Kuhn"
+  ],
+  "Thomas Sowell": [
+    "Sowell"
+  ],
+  "Timon of Phlius": [
+    "Timon"
+  ],
+  "Titus Lucretius Carus": [
+    "Lucretius"
+  ],
+  "Tommaso Campanella": [
+    "Campanella"
+  ],
+  "Tomáš Garrigue Masaryk": [
+    "Th. G. Masaryk"
+  ],
+  "Tomáš Masaryk": [
+    "Thomas Masaryk"
+  ],
+  "Torquato Accetto": [
+    "Accetto, Torquato"
+  ],
+  "Torquato Tasso": [
+    "Tasso"
+  ],
+  "Torrence Parsons": [
+    "Parsons"
+  ],
+  "Ugo Foscolo": [
+    "Foscolo"
+  ],
+  "Umberto Eco": [
+    "Eco"
+  ],
+  "V.S. Naipaul": [
+    "V. S. Naipaul"
+  ],
+  "Victor Hugo": [
+    "Hugo"
+  ],
+  "Victor J. Stenger": [
+    "Stenger"
+  ],
+  "Victor Kravchenko": [
+    "Kravchenko"
+  ],
+  "Viktor E. Frankl": [
+    "Frankl"
+  ],
+  "Viktor Frankl": [
+    "Frankl"
+  ],
+  "Vincenzo Bellini": [
+    "Bellini"
+  ],
+  "Virgil": [
+    "Vergil",
+    "Publius Vergilius Maro"
+  ],
+  "Vissarion Belinsky": [
+    "Belinsky"
+  ],
+  "Vladimir Lenin": [
+    "Lenin"
+  ],
+  "Vladimir Mayakovsky": [
+    "Mayakovsky"
+  ],
+  "Vladimir Nabokov": [
+    "Nabokov"
+  ],
+  "Vladimir Propp": [
+    "V. Y. Propp"
+  ],
+  "Vladimir Turaev": [
+    "Turaev"
+  ],
+  "Vyacheslav Molotov": [
+    "Molotov"
+  ],
+  "W. Averell Harriman": [
+    "Averell Harriman"
+  ],
+  "W. H. Auden": [
+    "Auden"
+  ],
+  "W.G. Sebald": [
+    "W. G. Sebald"
+  ],
+  "W.H. Matthews": [
+    "N Matthews"
+  ],
+  "Walt Whitman": [
+    "Whitman"
+  ],
+  "Walter Benjamin": [
+    "W. Benjamin"
+  ],
+  "Walter G. Krivitsky": [
+    "W. Krivitsky"
+  ],
+  "Walter Pater": [
+    "Pater"
+  ],
+  "Werner Heisenberg": [
+    "Heisenberg"
+  ],
+  "Widukind of Corvey": [
+    "Widukind"
+  ],
+  "Wilhelm Grimm": [
+    "Grimm"
+  ],
+  "Wilhelm Herzog": [
+    "Herzog"
+  ],
+  "Wilhelm Keitel": [
+    "Keitel"
+  ],
+  "Wilhelm Marr": [
+    "Marr"
+  ],
+  "Wilhelm von Humboldt": [
+    "Wilhelm v. Humboldt",
+    "Humboldt"
+  ],
+  "Wilkie Collins": [
+    "Collins"
+  ],
+  "William Blake": [
+    "Blake"
+  ],
+  "William Easterly": [
+    "Easterly"
+  ],
+  "William Faulkner": [
+    "Faulkner"
+  ],
+  "William Gaddis": [
+    "Gaddis"
+  ],
+  "William H. Dutton": [
+    "Dutton"
+  ],
+  "William H. Gass": [
+    "William Gass"
+  ],
+  "William Hazlitt": [
+    "Hazlitt"
+  ],
+  "William Henry Chamberlin": [
+    "W. H. Chamberlin"
+  ],
+  "William James": [
+    "James"
+  ],
+  "William K. Wimsatt": [
+    "Wimsatt"
+  ],
+  "William Kirkpatrick Magee": [
+    "W. K. Magee"
+  ],
+  "William Makepeace Thackeray": [
+    "Thackeray"
+  ],
+  "William Safire": [
+    "Safire"
+  ],
+  "William Shakespeare": [
+    "Shakespeare"
+  ],
+  "William Wordsworth": [
+    "Wordsworth"
+  ],
+  "Willie van Peer": [
+    "van Peer"
+  ],
+  "Winston S. Churchill": [
+    "W. S. Churchill",
+    "Winston Churchill",
+    "Churchill"
+  ],
+  "Works attributed to Florus": [
+    "Florus"
+  ],
+  "Xenophanes": [
+    "Xenophanes of Colophon"
+  ],
+  "Yevgeny Tarle": [
+    "E. V. Tarle"
+  ],
+  "Yuval Noah Harari": [
+    "Yuval Harari"
+  ],
+  "Zeno of Citium": [
+    "Zeno"
+  ],
+  "Zeno of Elea": [
+    "Zeno"
+  ],
+  "Álvaro de Mendaña de Neira": [
+    "Mendaña"
+  ],
+  "Édouard Drumont": [
+    "Drumont"
+  ],
+  "Édouard Dujardin": [
+    "Dujardin"
+  ],
+  "Édouard Lecanuet": [
+    "Father Edouard Lecanuet"
+  ],
+  "Émile Zola": [
+    "Zola"
+  ],
+  "Étienne Bonnot de Condillac": [
+    "Condillac"
+  ],
+  "Étienne de La Boétie": [
+    "Estienne de la Boetie"
+  ]
 }

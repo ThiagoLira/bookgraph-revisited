@@ -408,7 +408,7 @@ export class FallbackRenderer {
     for (const a of authors) {
       const isDimmed = hasDim && highlightState.dimmedIds.has(a.id);
       const isHighlighted = highlightState && highlightState.highlightedIds && highlightState.highlightedIds.has(a.id);
-      const alphaMultiplier = isDimmed ? 0.15 : 1.0;
+      const alphaMultiplier = isDimmed ? (highlightState.dimAlpha || 0.15) : 1.0;
 
       const i = offset * CIRCLE_FLOATS;
       this.circleData[i + 0] = a.x;
@@ -468,7 +468,8 @@ export class FallbackRenderer {
       const isHighlighted = highlightState && highlightState.highlightedLinkIndices && highlightState.highlightedLinkIndices.has(idx);
 
       const color = isHighlighted ? COLORS.edgeHighlight : COLORS.edge;
-      const alpha = isDimmed ? 0.08 : (isHighlighted ? 0.9 : 0.4);
+      const dimLinkAlpha = highlightState && highlightState.dimLinkAlpha != null ? highlightState.dimLinkAlpha : 0.08;
+      const alpha = isDimmed ? dimLinkAlpha : (isHighlighted ? 0.9 : 0.4);
       const width = isHighlighted ? 2 : 1;
 
       this.lineData[i + 0] = l.source.x;
