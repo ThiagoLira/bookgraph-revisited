@@ -15,6 +15,49 @@ if TYPE_CHECKING:
 
 logger = logging.getLogger(__name__)
 
+MAX_LIFESPAN = 120
+
+
+def validate_dates(birth, death):
+    """Sanitize a birth/death pair. Returns (birth, death) with fixes applied."""
+    if birth is None or death is None:
+        return birth, death
+
+    # Sign error on death: birth>0, death<0, plausible lifespan
+    if birth > 0 and death < 0 and 0 < (abs(death) - birth) < MAX_LIFESPAN:
+        return birth, abs(death)
+
+    # Sign error on birth: birth<0, death>0, plausible lifespan
+    if birth < 0 and death > 0 and 0 < (death - abs(birth)) < MAX_LIFESPAN:
+        return abs(birth), death
+
+    # Both negative but death < birth numerically (both signs wrong)
+    if birth < 0 and death < 0 and death < birth:
+        if 0 < (abs(death) - abs(birth)) < MAX_LIFESPAN:
+            return abs(birth), abs(death)
+        return None, None
+
+    # Implausible: birth>0, death<0, NOT plausible → null death
+    if birth > 0 and death < 0:
+        return birth, None
+
+    # Legitimate BC-to-AD boundary: birth<0, death>0, plausible BC lifespan
+    if birth < 0 and death > 0:
+        if 0 < (abs(birth) + death) < MAX_LIFESPAN:
+            return birth, death  # legitimate (e.g., Ovid: -43, 17)
+        return None, death  # implausible span
+
+    # birth > death, both positive → wrong person
+    if birth > 0 and death > 0 and birth > death:
+        return None, None
+
+    # Lifespan > 200 years → wrong person
+    if birth > 0 and death > 0 and (death - birth) > 200:
+        return None, None
+
+    return birth, death
+
+
 class MetadataEnricher:
     def __init__(
         self,
@@ -227,6 +270,15 @@ class MetadataEnricher:
             if meta:
                 logger.info(f"[enricher] LLM found bio for '{author_name}': birth={meta.get('birth_year')}, death={meta.get('death_year')}")
 
+        # Validate dates before caching (catches errors from all 4 sources)
+        if meta.get("birth_year") is not None or meta.get("death_year") is not None:
+            b, d = validate_dates(meta.get("birth_year"), meta.get("death_year"))
+            if b != meta.get("birth_year") or d != meta.get("death_year"):
+                logger.warning(f"[enricher] Date validation corrected {author_name}: "
+                              f"({meta.get('birth_year')},{meta.get('death_year')}) → ({b},{d})")
+                meta["birth_year"] = b
+                meta["death_year"] = d
+
         # Cache result
         if meta:
             self.authors_updates[author_name] = meta
@@ -273,6 +325,14 @@ class MetadataEnricher:
                 if text.endswith("```"):
                     text = text.rsplit("\n", 1)[0]
             data = json.loads(text)
+            # Validate dates from LLM
+            if data.get("birth_year") is not None or data.get("death_year") is not None:
+                b, d = validate_dates(data.get("birth_year"), data.get("death_year"))
+                if b != data.get("birth_year") or d != data.get("death_year"):
+                    logger.warning(f"[enricher] LLM bio date validation corrected {name}: "
+                                  f"({data.get('birth_year')},{data.get('death_year')}) → ({b},{d})")
+                    data["birth_year"] = b
+                    data["death_year"] = d
             return data
         except Exception as e:
             logger.error(f"[enricher] LLM author bio lookup error for '{name}': {e}")
@@ -335,6 +395,15 @@ class MetadataEnricher:
                  # Ensure authors is a list
                  if isinstance(metadata.get("authors"), str):
                      metadata["authors"] = [metadata["authors"]]
+
+            # Validate dates from LLM fallback
+            if metadata.get("birth_year") is not None or metadata.get("death_year") is not None:
+                b, d = validate_dates(metadata.get("birth_year"), metadata.get("death_year"))
+                if b != metadata.get("birth_year") or d != metadata.get("death_year"):
+                    logger.warning(f"[enricher] Fallback date validation corrected: "
+                                  f"({metadata.get('birth_year')},{metadata.get('death_year')}) → ({b},{d})")
+                    metadata["birth_year"] = b
+                    metadata["death_year"] = d
 
             logger.info(f"[enricher] Fallback result: match_type={match_type}, title={metadata.get('title')}, birth={metadata.get('birth_year')}")
             return data

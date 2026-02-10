@@ -241,27 +241,83 @@ OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
 
 ## Deploying to Static Website
 
-The frontend is also hosted on a static website. When the user asks to deploy or update the live site, do the following:
+The frontend is also hosted on a Blot.im static website. When the user asks to deploy or update the live site, do the following:
 
-### Step 1: Copy the frontend
+### Step 1: Copy the frontend files
 ```bash
+# Copy index.html
 cp frontend/index.html /home/thiago/repos/thiagolira/_projects/book_graph_2/index.html
+
+# Copy datasets.json
+cp frontend/datasets.json /home/thiago/repos/thiagolira/_projects/book_graph_2/datasets.json
+
+# Copy all data directories (citation JSONs, covers, etc.)
+for dir in $(ls frontend/data/); do
+  cp -r "frontend/data/$dir" /home/thiago/repos/thiagolira/_projects/book_graph_2/data/
+done
 ```
 
 ### Step 2: Commit and push in the static site repo
+
+The remote is Blot.im which requires inline credentials (it doesn't support interactive auth). URL-encode the `@` in the email as `%40`:
+
 ```bash
-cd /home/thiago/repos/thiagolira/_projects/book_graph_2
-git add index.html
-git commit -m "Update BookGraph frontend"
-git push
+cd /home/thiago/repos/thiagolira
+git add _projects/book_graph_2/
+git commit -m "Update BookGraph"
+git push "https://thlira15%40gmail.com:$(grep STATIC_SITE_GIT_PASS /home/thiago/repos/bookgraph-revisited/.env | cut -d= -f2)@blot.im/clients/git/end/thiagolira.git" master
 ```
 
 **Credentials** (stored in `.env`):
 - Repo path: `/home/thiago/repos/thiagolira/_projects/book_graph_2`
-- Git user: `thlira15@gmail.com`
+- Git remote: `https://blot.im/clients/git/end/thiagolira.git`
+- Git user: `thlira15@gmail.com` (URL-encode `@` as `%40` in push URL)
 - Git password/token: See `STATIC_SITE_GIT_PASS` in `.env`
 
-If git push asks for credentials, use the values from `.env`. The user may ask you to "deploy", "push to live", or "update the website" - this means run the above steps.
+The user may ask you to "deploy", "push to live", or "update the website" — this means run the above steps.
+
+---
+
+## Agent Skills & Workflows (.agent/)
+
+Before running pipeline commands manually, **always check `.agent/` for pre-built skills and workflows** that handle common tasks with proper defaults.
+
+### Discovering available skills
+
+```bash
+# List all skills (each has a SKILL.md with usage docs)
+ls .agent/skills/*/SKILL.md
+
+# List all workflows (step-by-step guides for multi-step tasks)
+ls .agent/workflows/
+```
+
+### Available skills
+
+| Skill | Path | Purpose |
+|-------|------|---------|
+| **calibre_query** | `.agent/skills/calibre_query/retrieve_books.py` | Fetch books from Calibre library → `input_books/libraries/` |
+| **goodreads_lookup** | `.agent/skills/goodreads_lookup/lookup_book.py` | Look up Goodreads IDs from local DB |
+
+### Available workflows
+
+| Workflow | Path | Purpose |
+|----------|------|---------|
+| **process_calibre** | `.agent/workflows/workflow_process_calibre.md` | Full Calibre → pipeline → frontend flow |
+| **process_folder** | `.agent/workflows/workflow_process_folder.md` | Run pipeline on a folder of books |
+| **process_single_file** | `.agent/workflows/workflow_process_single_file.md` | Run pipeline on one book |
+
+### When to use skills vs manual commands
+
+- **User says "process this book from Calibre"** → Read `workflow_process_calibre.md` and follow it
+- **User says "find the Goodreads ID for X"** → Use `goodreads_lookup` skill
+- **User says "grab books by Author from my library"** → Use `calibre_query` skill
+- **User says "run the pipeline on folder X"** → Read `workflow_process_folder.md` and follow it
+
+### Key paths
+
+- Calibre library: `/home/thiago/Onedrive/Ebooks Vault`
+- Static site repo: `/home/thiago/repos/thiagolira/_projects/book_graph_2`
 
 ---
 

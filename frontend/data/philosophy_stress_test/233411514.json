@@ -6,7 +6,18 @@
     ],
     "goodreads_id": "233411514",
     "calibre_id": null,
-    "publication_year": 180
+    "publication_year": 180,
+    "ratings_count": 277,
+    "text_reviews_count": 5,
+    "average_rating": 4.2,
+    "title_without_series": "Meditations",
+    "work_id": "31010",
+    "book_id": "8254877",
+    "author_ids": [
+      "17212"
+    ],
+    "description": "The emperor Marcus Aurelius, the proverbial philosopher-king, produced in Greek a Roman manual of piety, the Meditations, whose impact has been felt for ages since. Here, for our age, is his great work presented in its entirety, strongly introduced and freshly, elegantly translated.",
+    "link": "https://www.goodreads.com/book/show/8254877-meditations"
   },
   "citations": [
     {

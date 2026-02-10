@@ -12,7 +12,23 @@
       "death_year": 2004,
       "description": null,
       "title": "Susan Sontag"
-    }
+    },
+    "publication_day": 1,
+    "publisher": "Rosetta Books",
+    "publication_month": 1,
+    "isbn13": "9780795326998",
+    "ratings_count": 11,
+    "text_reviews_count": 2,
+    "isbn": "0795326998",
+    "average_rating": 3.83,
+    "title_without_series": "On Photography",
+    "work_id": "768174",
+    "book_id": "8015163",
+    "author_ids": [
+      "7907"
+    ],
+    "description": "First published in 1973, this is a study of the force of photographic images which are continually inserted between experience and reality. Sontag develops further the concept of 'transparency'. When anything can be photographed and photography has destroyed the boundaries and definitions of art, a viewer can approach a photograph freely with no expectations of discovering what it means. This collection of six lucid and invigorating essays, the most famous being \"In Plato's Cave\", make up a deep exploration...",
+    "link": "https://www.goodreads.com/book/show/8015163-on-photography"
   },
   "citations": [
     {

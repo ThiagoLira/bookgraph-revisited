@@ -11,7 +11,17 @@
       "birth_year": 1930,
       "death_year": 2019,
       "canonical_name": "Harold Bloom"
-    }
+    },
+    "ratings_count": 22,
+    "text_reviews_count": 1,
+    "average_rating": 3.88,
+    "title_without_series": "The Western Canon",
+    "work_id": "347796",
+    "book_id": "22551863",
+    "author_ids": [
+      "236"
+    ],
+    "link": "https://www.goodreads.com/book/show/22551863-the-western-canon"
   },
   "citations": [
     {

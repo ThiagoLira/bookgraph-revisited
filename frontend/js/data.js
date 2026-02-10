@@ -63,7 +63,8 @@ export function processData(records) {
       title: src.title,
       year: srcYear,
       isSource: true,
-      meta: src
+      meta: src,
+      commentaries: []
     };
     srcAuthorNode.books.push(srcBook);
     bookMap.set(srcBook.id, srcBook);
@@ -107,7 +108,14 @@ export function processData(records) {
           commentaries: (cit.raw.commentaries || []).map(c => c.replace(authorRefRe, srcAuth))
         };
 
-        if (!citedAuthorNode.books.find(b => b.id === citedBook.id)) {
+        const existingBook = citedAuthorNode.books.find(b => b.id === citedBook.id);
+        if (existingBook) {
+          // Merge commentaries into existing book (handles source books cited by other sources)
+          if (citedBook.commentaries && citedBook.commentaries.length) {
+            if (!existingBook.commentaries) existingBook.commentaries = [];
+            existingBook.commentaries.push(...citedBook.commentaries);
+          }
+        } else {
           citedAuthorNode.books.push(citedBook);
           bookMap.set(citedBook.id, citedBook);
         }

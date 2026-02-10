@@ -3,7 +3,9 @@ import copy
 import json
 import logging
 import os
+import re
 import unicodedata
+from collections import defaultdict
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Sequence
@@ -64,6 +66,24 @@ def _find_cached_author(name: str, cache: Dict[str, dict]) -> Optional[dict]:
         if SequenceMatcher(None, key, cached_key).ratio() >= 0.9:
             return cached_val
     return None
+
+
+def _normalize_title(title: str) -> str:
+    """Normalize a title for dedup comparison."""
+    t = title.lower().strip()
+    for prefix in ["the ", "a ", "an ", "de ", "on ", "les ", "la ", "le ", "il ", "el "]:
+        if t.startswith(prefix):
+            t = t[len(prefix):]
+    t = re.sub(r'[^\w\s]', '', t)
+    t = re.sub(r'\s+', ' ', t).strip()
+    return t
+
+
+def _is_real_gr_id(book_id) -> bool:
+    """Check if a book ID is a real Goodreads numeric ID (not web_ prefixed)."""
+    if book_id is None:
+        return False
+    return not str(book_id).startswith("web_")
 
 
 @dataclass
@@ -176,6 +196,12 @@ class BookPipeline:
                     book_match = matches[0]
 
                 if book_match:
+                    # Merge full catalog metadata (description, rating, pages, etc.)
+                    # into source, without overwriting fields already present
+                    for k, v in book_match.items():
+                        if v is not None and k not in enriched:
+                            enriched[k] = v
+
                     if not authors and book_match.get("authors"):
                         authors = book_match["authors"]
                         enriched["authors"] = authors
@@ -395,6 +421,94 @@ class BookPipeline:
         parts = key.split()
         if len(parts) > 1:
             cache[parts[-1]] = result_dict
+
+    def _dedup_resolved_citations(self, results: List[dict]) -> List[dict]:
+        """Merge citations that resolved to different editions of the same work.
+
+        Groups by (normalized_author, normalized_title). When a group has
+        citations with different book IDs, keeps the real Goodreads ID (or the
+        one with more contexts) and merges the others into it.
+        """
+        if not results:
+            return results
+
+        # Group by normalized (author, title) — only for citations with titles
+        groups = defaultdict(list)  # (author_norm, title_norm) -> [(idx, cit)]
+        for i, cit in enumerate(results):
+            raw = cit.get("raw", {})
+            title = raw.get("title", "")
+            if not title:
+                continue
+            author = _normalize_author(raw.get("canonical_author", raw.get("author", "?")))
+            norm = _normalize_title(title)
+            groups[(author, norm)].append((i, cit))
+
+        indices_to_remove = set()
+        merge_count = 0
+
+        for (author, norm_title), entries in groups.items():
+            if len(entries) < 2:
+                continue
+
+            # Check if there are actually different book IDs
+            book_ids = {cit.get("edge", {}).get("target_book_id") for _, cit in entries}
+            if len(book_ids) < 2:
+                continue
+
+            # Pick best keeper: prefer real GR ID, then most contexts
+            keeper_idx, keeper_cit = entries[0]
+            for idx, cit in entries[1:]:
+                kid = keeper_cit.get("edge", {}).get("target_book_id")
+                cid = cit.get("edge", {}).get("target_book_id")
+                k_real = _is_real_gr_id(kid)
+                c_real = _is_real_gr_id(cid)
+
+                if c_real and not k_real:
+                    keeper_idx, keeper_cit = idx, cit
+                elif not (k_real and not c_real):
+                    # Both same type — prefer more contexts
+                    if cit.get("raw", {}).get("count", 0) > keeper_cit.get("raw", {}).get("count", 0):
+                        keeper_idx, keeper_cit = idx, cit
+
+            # Merge all others into keeper
+            kr = keeper_cit.get("raw", {})
+            for idx, cit in entries:
+                if idx == keeper_idx:
+                    continue
+                dr = cit.get("raw", {})
+
+                # Merge contexts
+                existing = set(kr.get("contexts", []))
+                for ctx in dr.get("contexts", []):
+                    if ctx not in existing:
+                        kr.setdefault("contexts", []).append(ctx)
+                        existing.add(ctx)
+
+                # Merge commentaries
+                existing_comm = set(kr.get("commentaries", []))
+                for comm in dr.get("commentaries", []):
+                    if comm not in existing_comm:
+                        kr.setdefault("commentaries", []).append(comm)
+                        existing_comm.add(comm)
+
+                # Sum counts
+                kr["count"] = kr.get("count", 0) + dr.get("count", 0)
+
+                indices_to_remove.add(idx)
+                merge_count += 1
+
+                dupe_title = dr.get("title", "?")
+                dupe_id = cit.get("edge", {}).get("target_book_id")
+                keeper_id = keeper_cit.get("edge", {}).get("target_book_id")
+                logger.info(f"[dedup] Merged '{dupe_title}' (id={dupe_id}) into (id={keeper_id}) for author '{author}'")
+
+        if merge_count:
+            logger.info(f"[dedup] Post-resolution dedup: merged {merge_count} duplicate citations")
+            print(f"[pipeline] Post-resolution dedup: merged {merge_count} duplicate citations")
+            # Remove in reverse order to preserve indices
+            results = [cit for i, cit in enumerate(results) if i not in indices_to_remove]
+
+        return results
 
     async def _run_workflow(self, pre_path: Path, final_path: Path, meta: Dict[str, Any]):
         data = json.loads(pre_path.read_text())
@@ -664,6 +778,9 @@ class BookPipeline:
         print(f"  Fallback Success:   {stats['fallback_success']}")
         print(f"  Authors Enriched:   {stats['enrichment_success']}")
         print("="*50 + "\n")
+
+        # Post-resolution dedup: merge same-author/same-title with different book IDs
+        results = self._dedup_resolved_citations(results)
 
         # Flush enrichment updates
         logger.info("[pipeline] Saving enriched metadata...")

@@ -12,7 +12,24 @@
       "death_year": 1900,
       "description": null,
       "title": "Friedrich Nietzsche"
-    }
+    },
+    "publication_day": 27,
+    "publisher": "Oxford University Press",
+    "format": "paper",
+    "publication_month": 3,
+    "isbn13": "9780192831378",
+    "ratings_count": 5,
+    "text_reviews_count": 1,
+    "isbn": "0192831372",
+    "average_rating": 4.1,
+    "title_without_series": "On the Genealogy of Morals",
+    "work_id": "13751223",
+    "book_id": "1240851",
+    "author_ids": [
+      "1938"
+    ],
+    "description": "On the Genealogy of Morals: A Polemic by Way of Clarification & Supplement to My Last Book Beyond Good & Evil (1887) is a book about interpretation and the history of ethics which raises profoundly disquieting issues about the violence of both. This is the most sustained of Nietzsche's later works and offers one of the fullest expressions of his characteristic concerns. The\nintroduction places his ideas within the cultural context of his own time and stresses the relevance of his work for a contemporary aud...",
+    "link": "https://www.goodreads.com/book/show/1240851.On_the_Genealogy_of_Morals"
   },
   "citations": [
     {

@@ -708,9 +708,13 @@ class BookGraphApp {
       600
     );
 
-    // Show citation panel for focused author/book (not on portrait mobile)
-    if (!this._isPortraitMobile()) {
-      this.showCitationPanel(node, book);
+    // Show citation panel for focused author/book
+    this.showCitationPanel(node, book);
+
+    // Also show the info panel (right side) for the source book itself
+    // On portrait mobile, skip to avoid overlapping bottom sheets — user taps nodes instead
+    if (book && !this._isPortraitMobile()) {
+      this.showPanel(book.data);
     }
   }
 
@@ -1046,6 +1050,7 @@ class BookGraphApp {
   // === Detail Card (compact right-side preview) ===
 
   showDetailCard(node) {
+    this.closePanel();
     const card = document.getElementById('detail-card');
     const isBook = node.id && node.id.startsWith('book:');
 

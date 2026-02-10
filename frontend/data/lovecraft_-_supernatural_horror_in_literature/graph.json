@@ -11,7 +11,18 @@
       "birth_year": 1890,
       "death_year": 1937,
       "canonical_name": "H. P. Lovecraft"
-    }
+    },
+    "ratings_count": 3,
+    "text_reviews_count": 2,
+    "average_rating": 4.1,
+    "title_without_series": "Supernatural Horror in Literature:",
+    "work_id": "124218",
+    "book_id": "25121644",
+    "author_ids": [
+      "9494"
+    ],
+    "description": "Great modern American supernaturalist brilliantly surveys history of genre to 1930s, summarizing, evaluating scores of books, including works by Poe, Bierce, M.R. James, \"Monk\" Lewis, many others. Praised by critics as diverse as Edmund Wilson and Vincent Starrett.",
+    "link": "https://www.goodreads.com/book/show/25121644-supernatural-horror-in-literature"
   },
   "citations": [
     {

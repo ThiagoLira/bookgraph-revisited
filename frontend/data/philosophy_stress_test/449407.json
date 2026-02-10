@@ -12,7 +12,25 @@
       "death_year": 1662,
       "description": null,
       "title": "Blaise Pascal"
-    }
+    },
+    "publication_day": 3,
+    "publisher": "Createspace",
+    "format": "Paperback",
+    "publication_month": 6,
+    "isbn13": "9781499728194",
+    "ratings_count": 3,
+    "text_reviews_count": 1,
+    "isbn": "1499728190",
+    "average_rating": 3.96,
+    "title_without_series": "Pensees",
+    "work_id": "3102980",
+    "book_id": "22527418",
+    "num_pages": 116,
+    "author_ids": [
+      "10994"
+    ],
+    "description": "It might seem that about Blaise Pascal, and about the two works on which his fame is founded, everything that there is to say had been said. The details of his life are as fully known as we can expect to know them; his mathematical and physical discoveries have been treated many times; his religious sentiment and his theological views have been discussed again and again; and his prose style has been analysed by French critics down to the finest particular. But Pascal is one of those writers who will be and....",
+    "link": "https://www.goodreads.com/book/show/22527418-pensees"
   },
   "citations": [
     {

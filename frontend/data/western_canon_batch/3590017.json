@@ -12,7 +12,21 @@
       "death_year": 1794,
       "main_genre": "history",
       "nationality": "English"
-    }
+    },
+    "publisher": "Peter Fenelon Collier & Son (NY)",
+    "format": "hardcover",
+    "ratings_count": 6,
+    "text_reviews_count": 3,
+    "average_rating": 3.96,
+    "title_without_series": "The History of the Decline and Fall of the Roman Empire",
+    "work_id": "3209631",
+    "book_id": "3590017",
+    "num_pages": 692,
+    "author_ids": [
+      "11628"
+    ],
+    "description": "Six volumes.",
+    "link": "https://www.goodreads.com/book/show/3590017-the-history-of-the-decline-and-fall-of-the-roman-empire"
   },
   "citations": [
     {

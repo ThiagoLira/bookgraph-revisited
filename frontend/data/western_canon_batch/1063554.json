@@ -11,7 +11,23 @@
       "birth_year": 1912,
       "death_year": 1991,
       "canonical_name": "Northrop Frye"
-    }
+    },
+    "publisher": "Princeton University Press",
+    "format": "Paperback",
+    "isbn13": "9780691012988",
+    "ratings_count": 64,
+    "text_reviews_count": 9,
+    "isbn": "0691012989",
+    "average_rating": 4.07,
+    "title_without_series": "Anatomy of Criticism",
+    "work_id": "1050194",
+    "book_id": "1063554",
+    "num_pages": 383,
+    "author_ids": [
+      "58765"
+    ],
+    "description": "This book consists of \"essays\" on the possibility of a synoptic view of the scope, theory, principles, and techniques of literary criticism. The primary aim of the book is to give Northrop Frye's reasons for believing in such a synoptic view; its secondary aim is to provide a tentative version of it which will make enough sense to convince readers that \"a\" view, of the kind that the Frye outlines, is attainable.",
+    "link": "https://www.goodreads.com/book/show/1063554.Anatomy_of_Criticism"
   },
   "citations": [
     {

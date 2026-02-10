@@ -13,7 +13,26 @@
       "death_year": 1986,
       "description": null,
       "title": "Jorge Luis Borges"
-    }
+    },
+    "publication_day": 1,
+    "publisher": "University of Texas Press",
+    "format": "Paperback",
+    "publication_month": 1,
+    "isbn13": "9780292760028",
+    "ratings_count": 719,
+    "text_reviews_count": 15,
+    "isbn": "0292760027",
+    "average_rating": 4.36,
+    "title_without_series": "Other Inquisitions, 1937-1952",
+    "work_id": "709199",
+    "book_id": "929561",
+    "num_pages": 223,
+    "author_ids": [
+      "500",
+      "3907330"
+    ],
+    "description": "This remarkable book by one of the great writers of our time includes essays on a proposed universal language, a justification of suicide, a refutation of time, the nature of dreams, and the intricacies of linguistic forms. Borges comments on such literary figures as Pascal, Coleridge, Cervantes, Hawthorne, Whitman, Valery, Wilde, Shaw, and Kafka. With extraordinary grace and erudition, he ranges in time, place, and subject from Omar Khayyam to Joseph Conrad, from ancient China to modern England, from world...",
+    "link": "https://www.goodreads.com/book/show/929561.Other_Inquisitions_1937_1952"
   },
   "citations": [
     {

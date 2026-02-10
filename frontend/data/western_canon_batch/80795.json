@@ -14,7 +14,27 @@
       "death_year": 1957,
       "description": null,
       "title": "Erich Auerbach"
-    }
+    },
+    "publication_day": 27,
+    "publisher": "Princeton University Press",
+    "format": "Paperback",
+    "publication_month": 4,
+    "isbn13": "9780691113364",
+    "ratings_count": 2283,
+    "text_reviews_count": 82,
+    "isbn": "069111336X",
+    "average_rating": 4.24,
+    "title_without_series": "Mimesis: The Representation of Reality in Western Literature",
+    "work_id": "515821",
+    "book_id": "80795",
+    "num_pages": 616,
+    "author_ids": [
+      "17777",
+      "360476",
+      "24390"
+    ],
+    "description": "A half-century after its translation into English, Erich Auerbach's \"Mimesis\" still stands as a monumental achievement in literary criticism. A brilliant display of erudition, wit, and wisdom, his exploration of how great European writers from Homer to Virginia Woolf depicted reality has taught generations how to read Western literature. This new expanded edition includes a substantial essay in introduction by Edward Said as well as an essay, never before translated into English, in which Auerbach responds....",
+    "link": "https://www.goodreads.com/book/show/80795.Mimesis"
   },
   "citations": [
     {

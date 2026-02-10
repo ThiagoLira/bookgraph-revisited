@@ -12,7 +12,18 @@
       "death_year": null,
       "description": null,
       "title": "Richard Dawkins"
-    }
+    },
+    "ratings_count": 231,
+    "text_reviews_count": 16,
+    "average_rating": 4.12,
+    "title_without_series": "The Selfish Gene",
+    "work_id": "1746717",
+    "book_id": "30390901",
+    "author_ids": [
+      "1194"
+    ],
+    "description": "The million copy international bestseller, critically acclaimed and translated into over 25 languages.\nAs influential today as when it was first published, The Selfish Gene has become a classic exposition of evolutionary thought. Professor Dawkins articulates a gene's eye view of evolution - a view giving centre stage to these persistent units of information, and in which organisms can be seen as vehicles for their replication. This imaginative, powerful, and stylistically brilliant work not only brought th...",
+    "link": "https://www.goodreads.com/book/show/30390901-the-selfish-gene"
   },
   "citations": [
     {
