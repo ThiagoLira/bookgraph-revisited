@@ -72,5 +72,17 @@
         "covers": [
             "covers/cabbala_e_occultismo_nell_et_elisabettiana.jpg"
         ]
+    },
+    {
+        "name": "Western Canon Batch",
+        "path": "./data/western_canon_batch",
+        "covers": [
+            "covers/anatomy_of_criticism.jpg",
+            "covers/the_structure_of_scientific_revolutions.jpg",
+            "covers/the_history_of_the_decline_and_fall_of_the_roman_empire.jpg",
+            "covers/the_western_canon.jpg",
+            "covers/the_selfish_gene.jpg",
+            "covers/mimesis_the_representation_of_reality_in_western_literature.jpg"
+        ]
     }
 ]

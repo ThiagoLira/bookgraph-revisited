@@ -29,7 +29,7 @@
       "raw": {
         "title": "City of God",
         "author": "Augustine",
-        "count": 4,
+        "count": 5,
         "excerpts": [
           "Within the City of God, where Christ had ascended to reign in splendour, the saints and the martyrs already sat about Him upon their thrones.",
           "Augustine, City of God, 5.25.",
@@ -158,165 +158,6 @@
           ],
           "birth_year": 985,
           "death_year": 1047
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "City of God",
-        "author": "Augustine of Hippo",
-        "count": 4,
-        "excerpts": [
-          "It was this question, put by St Augustine many centuries before the Millennium, that had haunted Wulfstan in the wake of the St Brice’s Day massacre, and led him to see, in the rubble of a desecrated church, a possible proof of Antichrist’s imminence.",
-          "Better by far to affect a lofty blend of contempt and indifference: such had been the judgement of St Augustine, an authority not readily brooked.",
-          "After all, if the Africans, the very countrymen of St Augustine, could end up lost so utterly to Christendom that barely a Christian remained among them, then who was to say that the same terrible fate might not one day befall the people whom Gregory freely described as ‘our brothers – those who hold the empire beyond the sea in Constantinople’?",
-          "The question of whether an unworthy priest invalidated the miracle of the Mass was an ancient one, and orthodoxy – originally articulated, inevitably, by St Augustine – argued that it did not."
-        ],
-        "canonical_author": "Augustine of Hippo"
-      },
-      "goodreads_match": {
-        "author_id": "6819578",
-        "name": "Augustine of Hippo",
-        "average_rating": "3.91",
-        "works_count": null,
-        "fans_count": null,
-        "link": null,
-        "wikipedia_match": {
-          "title": "Augustine of Hippo",
-          "page_id": 2030,
-          "infoboxes": [
-            "saint",
-            "philosopher"
-          ],
-          "categories": [
-            "Augustine of Hippo| ",
-            "354 births",
-            "430 deaths",
-            "4th-century Berber people",
-            "4th-century bishops in Roman North Africa",
-            "4th-century Christian theologians",
-            "4th-century philosophers",
-            "4th-century Romans",
-            "4th-century writers in Latin",
-            "5th-century Berber people",
-            "5th-century bishops in Roman North Africa",
-            "5th-century Christian saints",
-            "5th-century Christian theologians",
-            "5th-century philosophers",
-            "5th-century Western Romans",
-            "5th-century writers in Latin",
-            "African philosophers",
-            "Amillennialism",
-            "Ancient Roman Christian mystics",
-            "Ancient Roman philosophers",
-            "Ancient Roman rhetoricians",
-            "Anglican saints",
-            "Augustinian Order| ",
-            "Augustinian philosophers",
-            "Aurelii|Augustinus",
-            "Autobiographers",
-            "Berber Christians",
-            "Burials at San Pietro in Ciel d'Oro",
-            "Catholic philosophers",
-            "Catholic saints"
-          ],
-          "birth_year": 354,
-          "death_year": 430
-        },
-        "author_meta": {
-          "birth_year": 354,
-          "death_year": 430
-        }
-      },
-      "wikipedia_match": {
-        "title": "Augustine of Hippo",
-        "page_id": 2030,
-        "infoboxes": [
-          "saint",
-          "philosopher"
-        ],
-        "categories": [
-          "Augustine of Hippo| ",
-          "354 births",
-          "430 deaths",
-          "4th-century Berber people",
-          "4th-century bishops in Roman North Africa",
-          "4th-century Christian theologians",
-          "4th-century philosophers",
-          "4th-century Romans",
-          "4th-century writers in Latin",
-          "5th-century Berber people",
-          "5th-century bishops in Roman North Africa",
-          "5th-century Christian saints",
-          "5th-century Christian theologians",
-          "5th-century philosophers",
-          "5th-century Western Romans",
-          "5th-century writers in Latin",
-          "African philosophers",
-          "Amillennialism",
-          "Ancient Roman Christian mystics",
-          "Ancient Roman philosophers",
-          "Ancient Roman rhetoricians",
-          "Anglican saints",
-          "Augustinian Order| ",
-          "Augustinian philosophers",
-          "Aurelii|Augustinus",
-          "Autobiographers",
-          "Berber Christians",
-          "Burials at San Pietro in Ciel d'Oro",
-          "Catholic philosophers",
-          "Catholic saints"
-        ],
-        "birth_year": 354,
-        "death_year": 430
-      },
-      "edge": {
-        "target_type": "author",
-        "target_book_id": null,
-        "target_author_ids": [
-          "6819578"
-        ],
-        "target_person": {
-          "title": "Augustine of Hippo",
-          "page_id": 2030,
-          "infoboxes": [
-            "saint",
-            "philosopher"
-          ],
-          "categories": [
-            "Augustine of Hippo| ",
-            "354 births",
-            "430 deaths",
-            "4th-century Berber people",
-            "4th-century bishops in Roman North Africa",
-            "4th-century Christian theologians",
-            "4th-century philosophers",
-            "4th-century Romans",
-            "4th-century writers in Latin",
-            "5th-century Berber people",
-            "5th-century bishops in Roman North Africa",
-            "5th-century Christian saints",
-            "5th-century Christian theologians",
-            "5th-century philosophers",
-            "5th-century Western Romans",
-            "5th-century writers in Latin",
-            "African philosophers",
-            "Amillennialism",
-            "Ancient Roman Christian mystics",
-            "Ancient Roman philosophers",
-            "Ancient Roman rhetoricians",
-            "Anglican saints",
-            "Augustinian Order| ",
-            "Augustinian philosophers",
-            "Aurelii|Augustinus",
-            "Autobiographers",
-            "Berber Christians",
-            "Burials at San Pietro in Ciel d'Oro",
-            "Catholic philosophers",
-            "Catholic saints"
-          ],
-          "birth_year": 354,
-          "death_year": 430
         }
       }
     },
@@ -545,7 +386,7 @@
       "raw": {
         "title": "City of God",
         "author": "Augustine of Hippo",
-        "count": 2,
+        "count": 6,
         "excerpts": [
           "North Africa, where St Augustine had written his great book on the City of God, had been under Saracen rule for many centuries; and now the local emir had imprisoned the leader of the church there, and beaten him, ‘as though he were a criminal’.",
           "426 St Augustine completes his book on the City of God."
@@ -892,66 +733,6 @@
           "title": "James E. Lovelock",
           "birth_year": 1919,
           "death_year": 2022
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "The City of God",
-        "author": "Augustine",
-        "count": 1,
-        "excerpts": [
-          "The great division in the affairs of the world, Augustine had argued, lay not between civilised and savage, Roman and barbarian, but between those earthly dominions of which Rome had been merely the most prominent example and a dominion incalculably greater and more glorious: the City of God."
-        ]
-      },
-      "goodreads_match": {
-        "isbn": "0679600876",
-        "average_rating": 3.89,
-        "format": "Hardcover",
-        "book_id": "900967",
-        "author_ids": [
-          "6819578"
-        ],
-        "work_id": "5814",
-        "text_reviews_count": 27,
-        "title_without_series": "The City of God",
-        "publication_day": 1,
-        "ratings_count": 196,
-        "publication_month": 2,
-        "publisher": "Random House",
-        "publication_year": 1994,
-        "num_pages": 892,
-        "title": "The City of God",
-        "isbn13": "9780679600879",
-        "authors": [
-          "Augustine of Hippo"
-        ],
-        "description": "One of the great cornerstones in the history of Christian philosophy, The City of God provides an insightful interpretation of the development of modern Western society and the origin of most Western thought. Contrasting earthly and heavenly cities--representing the omnipresent struggle between good and evil--Augustine explores human history in its relation to all eternity. In Thomas Merton's words, \"The City of God is the autobiography of the Church written by the most Catholic of her great saints.\"\nThis M...",
-        "link": "https://www.goodreads.com/book/show/900967.The_City_of_God",
-        "original_year": 426,
-        "author_meta": {
-          "birth_year": 354,
-          "death_year": 430
-        }
-      },
-      "wikipedia_match": {
-        "title": "Augustine of Hippo",
-        "birth_year": 354,
-        "death_year": 430,
-        "page_id": null,
-        "infoboxes": [],
-        "categories": []
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "900967",
-        "target_author_ids": [
-          "6819578"
-        ],
-        "target_person": {
-          "title": "Augustine of Hippo",
-          "birth_year": 354,
-          "death_year": 430
         }
       }
     },

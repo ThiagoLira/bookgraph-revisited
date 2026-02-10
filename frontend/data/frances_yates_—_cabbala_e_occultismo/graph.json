@@ -3064,8 +3064,8 @@
       "goodreads_match": null,
       "wikipedia_match": {
         "title": "Saint Augustine",
-        "birth_year": -354,
-        "death_year": -430
+        "birth_year": 354,
+        "death_year": 430
       },
       "edge": {
         "target_type": "author",
@@ -3075,8 +3075,8 @@
         ],
         "target_person": {
           "title": "Saint Augustine",
-          "birth_year": -354,
-          "death_year": -430
+          "birth_year": 354,
+          "death_year": 430
         }
       }
     },
@@ -4199,12 +4199,14 @@
         "title": "The Defence of Poesy",
         "author": "Philip Sidney",
         "note": null,
-        "count": 1,
+        "count": 2,
         "contexts": [
-          "Il parallelismo fu notato da Philip Sidney, che nella Difesa della poesia osserva: Agrippa sarà tanto felice di dimostrare la vanità delle Scienze quanto lo era Erasmo nel fare l’elogio della pazzia."
+          "Il parallelismo fu notato da Philip Sidney, che nella Difesa della poesia osserva: Agrippa sarà tanto felice di dimostrare la vanità delle Scienze quanto lo era Erasmo nel fare l’elogio della pazzia.",
+          "31 P. Sidney, A Defence of Poetry, a cura di J. A. Van Dorsten, Oxford 1966, pp. 49-50 [trad. i t. a cura di S. Policardi, La difesa della poesia, Cedam, Padova 1946, p. 83]."
         ],
         "commentaries": [
-          "The author notes that Philip Sidney observed the parallel between Agrippa and Erasmus in his work."
+          "The author notes that Philip Sidney observed the parallel between Agrippa and Erasmus in his work.",
+          "The excerpt cites a work by P. Sidney (Philip Sidney) in a bibliographic format, referencing his defense of poetry as a source."
         ]
       },
       "goodreads_match": {
@@ -4534,7 +4536,7 @@
         "title": "De harmonia mundi",
         "author": "Francesco Giorgi",
         "note": null,
-        "count": 13,
+        "count": 16,
         "contexts": [
           "Il Tetragramma divino e il nome di Gesù in una pagina dell’opera di Francesco Giorgi, De harmonia mundi, Venezia 1525.",
           "Le opere principali da lui pubblicate furono il De harmonia mundi2, prima edizione del 1525 (figura 8), e i Problemata, del 1536",
@@ -4547,7 +4549,9 @@
           "De harmonia mundi di Giorgi",
           "Scoprimmo, in un precedente capitolo, che una preziosa guida al significato della monas di Dee è rappresentata dal De harmonia mundi di Giorgi con le sue astruse combinazioni di numerologia, astrologia e Kabbalah.",
           "Francesco Giorgi che è preso di mira sia per il De harmonia mundi sia per i Problemata.",
-          "e aveva l’edizione del 1545 della versione latina del De harmonia mundi di Giorgi."
+          "e aveva l’edizione del 1545 della versione latina del De harmonia mundi di Giorgi.",
+          "Giorgi, De harmonia cit., I, 3, 1.",
+          "Diagramma per illustrare il discorso di Nicolas Le Fèvre de la Boderie nella traduzione francese, curata da Guy Le Fèvre de la Boderie, del libro di F. Giorgi, L’Harmonie du monde, Paris 1578."
         ],
         "commentaries": [
           "The author references a page from Giorgi's 'De harmonia mundi' that depicts the divine Tetragrammaton and the name of Jesus.",
@@ -4562,7 +4566,10 @@
           "The author cites Giorgi's book 'De harmonia mundi' as a source for the symbolism of dew and rain as symbols of God's mercy, and for the structure of the sefiroth.",
           "The author cites Giorgi's book as a valuable guide to understanding John Dee's Monas hieroglyphica.",
           "The author notes that Mersenne attacks Francesco Giorgi specifically for his work 'De harmonia mundi'.",
-          "The author states that Dee owned a 1545 Latin edition of Giorgi's 'De harmonia mundi'."
+          "The author states that Dee owned a 1545 Latin edition of Giorgi's 'De harmonia mundi'.",
+          "The author cites Giorgi's work in relation to harmonic theory and symbolism.",
+          "The author mentions a diagram from the French translation of Giorgi's work, 'L'Harmonie du monde', used to illustrate a discourse.",
+          "The author mentions the French translation of Giorgi's work, noting its role in disseminating his systematic Christian Kabbalistic ideas."
         ]
       },
       "goodreads_match": {
@@ -4874,8 +4881,8 @@
           "Pseudonymous writers",
           "Year of birth unknown"
         ],
-        "birth_year": 400,
-        "death_year": 50
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "author",
@@ -4908,8 +4915,8 @@
             "Pseudonymous writers",
             "Year of birth unknown"
           ],
-          "birth_year": 400,
-          "death_year": 50
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -7097,54 +7104,6 @@
     },
     {
       "raw": {
-        "title": "De occulta philosophia",
-        "author": "Heinrich Cornelius Agrippa",
-        "note": null,
-        "count": 2,
-        "contexts": [
-          "De occulta philosophia",
-          "Come hanno dimostrato persuasivamente gli autori di Saturn and Melancholy13, nella concezione della melanconia ispirata Dürer venne influenzato dall’esposizione che, nel De occulta philosophia, ne diede Agrippa"
-        ],
-        "commentaries": [
-          "The author references Agrippa's work, which is condemned by Bodin as a totally execrable book.",
-          "The author states that Dürer was influenced by Agrippa's exposition of inspired melancholy in this book."
-        ]
-      },
-      "goodreads_match": {
-        "title": "De occulta philosophia",
-        "authors": [
-          "Heinrich Cornelius Agrippa"
-        ],
-        "original_year": 1533,
-        "birth_year": null,
-        "death_year": null,
-        "nationality": "German",
-        "description": "Three-volume work on occult philosophy, magic, and Kabbalah by Renaissance polymath Heinrich Cornelius Agrippa. The first complete edition was published in 1533, though earlier manuscript versions circulated.",
-        "book_id": "web_90cd187a",
-        "author_meta": {
-          "birth_year": 1486,
-          "death_year": 1535,
-          "canonical_name": "Heinrich Cornelius Agrippa"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Heinrich Cornelius Agrippa",
-        "birth_year": 1486,
-        "death_year": 1535
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "web_90cd187a",
-        "target_author_ids": [],
-        "target_person": {
-          "title": "Heinrich Cornelius Agrippa",
-          "birth_year": 1486,
-          "death_year": 1535
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "The Hermetic Tradition in Renaissance Science",
         "author": "Frances Yates",
         "note": null,
@@ -9319,8 +9278,8 @@
           "Expatriate men's footballers in Saudi Arabia",
           "AFC Champions League Elite–winning players"
         ],
-        "birth_year": 1997,
-        "death_year": 1653
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "person",
@@ -9359,8 +9318,8 @@
             "Expatriate men's footballers in Saudi Arabia",
             "AFC Champions League Elite–winning players"
           ],
-          "birth_year": 1997,
-          "death_year": 1653
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -10597,52 +10556,6 @@
     },
     {
       "raw": {
-        "title": "De harmonia mundi",
-        "author": "Francesco Giorgi",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "Giorgi, De harmonia cit., I, 3, 1."
-        ],
-        "commentaries": [
-          "The author cites Giorgi's work in relation to harmonic theory and symbolism."
-        ]
-      },
-      "goodreads_match": {
-        "title": "De harmonia mundi totius cantica tria",
-        "authors": [
-          "Francesco Giorgi"
-        ],
-        "original_year": 1525,
-        "birth_year": null,
-        "death_year": null,
-        "nationality": "Italian",
-        "description": "A major work of Renaissance Christian Kabbalah and Neoplatonic philosophy, exploring mystical harmonies between the cosmos, the human soul, and divine principles.",
-        "book_id": "web_195a60ba",
-        "author_meta": {
-          "birth_year": 1466,
-          "death_year": 1540,
-          "canonical_name": "Francesco Giorgi"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Francesco Giorgi",
-        "birth_year": 1466,
-        "death_year": 1540
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "web_195a60ba",
-        "target_author_ids": [],
-        "target_person": {
-          "title": "Francesco Giorgi",
-          "birth_year": 1466,
-          "death_year": 1540
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "New Atlantis",
         "author": "Francis Bacon",
         "note": null,
@@ -10844,53 +10757,6 @@
     },
     {
       "raw": {
-        "title": "De harmonia mundi",
-        "author": "Francesco Giorgi",
-        "note": null,
-        "count": 2,
-        "contexts": [
-          "Diagramma per illustrare il discorso di Nicolas Le Fèvre de la Boderie nella traduzione francese, curata da Guy Le Fèvre de la Boderie, del libro di F. Giorgi, L’Harmonie du monde, Paris 1578."
-        ],
-        "commentaries": [
-          "The author mentions a diagram from the French translation of Giorgi's work, 'L'Harmonie du monde', used to illustrate a discourse.",
-          "The author mentions the French translation of Giorgi's work, noting its role in disseminating his systematic Christian Kabbalistic ideas."
-        ]
-      },
-      "goodreads_match": {
-        "title": "De harmonia mundi totius",
-        "authors": [
-          "Francesco Giorgi"
-        ],
-        "original_year": 1525,
-        "birth_year": 1466,
-        "death_year": 1540,
-        "nationality": "Italian",
-        "description": "A Renaissance philosophical work on universal harmony, blending Neoplatonism, Kabbalah, and Christian mysticism, first published in Venice in 1525.",
-        "book_id": "web_781c1cdb",
-        "author_meta": {
-          "birth_year": 1466,
-          "death_year": 1540,
-          "nationality": "Italian"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Francesco Giorgi",
-        "birth_year": 1466,
-        "death_year": 1540
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "web_781c1cdb",
-        "target_author_ids": [],
-        "target_person": {
-          "title": "Francesco Giorgi",
-          "birth_year": 1466,
-          "death_year": 1540
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "The Tragicall History of Doctor Faustus",
         "author": "C. Marlowe",
         "note": null,
@@ -10976,71 +10842,6 @@
         "target_person": {
           "title": "John Dee",
           "birth_year": 1527
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "The Defence of Poesy",
-        "author": "Philip Sidney",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "31 P. Sidney, A Defence of Poetry, a cura di J. A. Van Dorsten, Oxford 1966, pp. 49-50 [trad. i t. a cura di S. Policardi, La difesa della poesia, Cedam, Padova 1946, p. 83]."
-        ],
-        "commentaries": [
-          "The excerpt cites a work by P. Sidney (Philip Sidney) in a bibliographic format, referencing his defense of poetry as a source."
-        ]
-      },
-      "goodreads_match": {
-        "ratings_count": 667,
-        "publication_year": 1971,
-        "work_id": "294532",
-        "publication_day": 15,
-        "publication_month": 12,
-        "text_reviews_count": 25,
-        "format": "Paperback",
-        "isbn13": "9780199110223",
-        "title": "A Defence of Poetry",
-        "publisher": "Oxford University Press, USA",
-        "isbn": "0199110220",
-        "book_id": "303488",
-        "average_rating": 3.53,
-        "title_without_series": "A Defence of Poetry",
-        "author_ids": [
-          "13836",
-          "1941371"
-        ],
-        "num_pages": 112,
-        "authors": [
-          "Philip Sidney",
-          "J.A. Van Dorsten"
-        ],
-        "description": "Often seen as a key to understanding Elizabethan poetry, Sidney's persuasive treatise follows the rules of rhetoric in presenting evidence of the virtues of poetry. Sidney argues with wit and irony that poetry is the art which best teaches what is good and true.",
-        "link": "https://www.goodreads.com/book/show/303488.A_Defence_of_Poetry",
-        "original_year": 1595,
-        "author_meta": {
-          "birth_year": 1554,
-          "death_year": 1586,
-          "canonical_name": "Philip Sidney"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Philip Sidney",
-        "birth_year": 1554,
-        "death_year": 1586
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "303488",
-        "target_author_ids": [
-          "13836",
-          "1941371"
-        ],
-        "target_person": {
-          "title": "Philip Sidney",
-          "birth_year": 1554,
-          "death_year": 1586
         }
       }
     },
@@ -11139,7 +10940,7 @@
         "title": "De occulta philosophia",
         "author": "Heinrich Cornelius Agrippa",
         "note": null,
-        "count": 17,
+        "count": 19,
         "contexts": [
           "La fonte immediata di Dürer per la melanconia ispirata non era, comunque, Ficino, ma il De occulta philosophia di Agrippa.",
           "Bruno utilizzò immagini di magia e incantesimi reperiti nel De occulta philosophia",
@@ -11157,7 +10958,9 @@
           "Chapman presenta la melanconia ispirata e i suoi stadi, secondo l’esposizione del De occulta philosophia di Agrippa.",
           "Che la magia di Prospero rifletta l’influenza del De occulta philosophia di Agrippa venne messo in luce da Frank Kermode nel 1954, nella sua introduzione all’edizione Arden della Tempesta.",
           "Prospero usa il De occulta philosophia per evocare gli spiriti buoni (il nome di Ariel è menzionato nel libro di Agrippa)6",
-          "La conoscenza della trattazione della melanconia ispirata di Agrippa provenne a Milton direttamente dal De occulta philosophia (o dai Problemata pseudo-aristotelici)?"
+          "La conoscenza della trattazione della melanconia ispirata di Agrippa provenne a Milton direttamente dal De occulta philosophia (o dai Problemata pseudo-aristotelici)?",
+          "De occulta philosophia",
+          "Come hanno dimostrato persuasivamente gli autori di Saturn and Melancholy13, nella concezione della melanconia ispirata Dürer venne influenzato dall’esposizione che, nel De occulta philosophia, ne diede Agrippa"
         ],
         "commentaries": [
           "The excerpt identifies Agrippa's De occulta philosophia as the immediate source for Dürer's inspired melancholy.",
@@ -11176,7 +10979,9 @@
           "The author states that Chapman presents inspired melancholy and its stages according to the exposition found in Agrippa's book.",
           "The author notes that Frank Kermode highlighted the influence of Agrippa's work on the magic in Shakespeare's Prospero.",
           "The author states that Prospero uses Agrippa's book to summon good spirits, noting that the name Ariel appears in it.",
-          "The author questions whether Milton's knowledge of Agrippa's treatment of inspired melancholy came directly from the book 'De occulta philosophia'."
+          "The author questions whether Milton's knowledge of Agrippa's treatment of inspired melancholy came directly from the book 'De occulta philosophia'.",
+          "The author references Agrippa's work, which is condemned by Bodin as a totally execrable book.",
+          "The author states that Dürer was influenced by Agrippa's exposition of inspired melancholy in this book."
         ]
       },
       "goodreads_match": {

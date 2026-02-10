@@ -8112,8 +8112,8 @@
           "death_year": 1733
         },
         "author_meta": {
-          "birth_year": -1670,
-          "death_year": -1733,
+          "birth_year": 1670,
+          "death_year": 1733,
           "main_genre": "satire",
           "nationality": "Dutch"
         }
@@ -12812,8 +12812,8 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1564,
-          "death_year": -1616,
+          "birth_year": 1564,
+          "death_year": 1616,
           "main_genre": "drama",
           "nationality": "English"
         }
@@ -15575,8 +15575,8 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1608,
-          "death_year": -1674,
+          "birth_year": 1608,
+          "death_year": 1674,
           "main_genre": "poetry",
           "nationality": "English"
         }
@@ -24830,12 +24830,14 @@
         "title": "The Anabasis",
         "author": "Xenophon",
         "note": null,
-        "count": 1,
+        "count": 2,
         "contexts": [
-          "The secret in reading The Anabasis is not to skip anything, to follow everything point by point."
+          "The secret in reading The Anabasis is not to skip anything, to follow everything point by point.",
+          "Xenophon, Anabasis, introduction to the BUR (Biblioteca Universale Rizzoli) edition (Milan: Rizzoli, 1978)."
         ],
         "commentaries": [
-          "The author cites The Anabasis as a model of precise, non-romanticized military narration and highlights its ethical dimension in portraying technical efficiency and bourgeois dignity under dire circumstances."
+          "The author cites The Anabasis as a model of precise, non-romanticized military narration and highlights its ethical dimension in portraying technical efficiency and bourgeois dignity under dire circumstances.",
+          "The author cites Xenophon's Anabasis as the subject of an introductory essay prepared for a specific Italian edition."
         ]
       },
       "goodreads_match": {
@@ -25392,153 +25394,6 @@
         "target_book_id": null,
         "target_author_ids": [],
         "target_person": null
-      }
-    },
-    {
-      "raw": {
-        "title": "Anabasis",
-        "author": "Xenophon",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "Xenophon, Anabasis, introduction to the BUR (Biblioteca Universale Rizzoli) edition (Milan: Rizzoli, 1978)."
-        ],
-        "commentaries": [
-          "The author cites Xenophon's Anabasis as the subject of an introductory essay prepared for a specific Italian edition."
-        ]
-      },
-      "goodreads_match": {
-        "author_ids": [
-          "14805",
-          "5334643"
-        ],
-        "ratings_count": 14,
-        "text_reviews_count": 2,
-        "title": "Anabasis",
-        "book_id": "20657855",
-        "work_id": "309998",
-        "title_without_series": "Anabasis",
-        "average_rating": 4.08,
-        "authors": [
-          "Xenophon",
-          "H.G. Dakyns"
-        ],
-        "description": "In The Persian Expedition, Xenophon, a young Athenian noble who sought his destiny abroad, provides an enthralling eyewitness account of the attempt by a Greek mercenary army - the Ten Thousand - to help Prince Cyrus overthrow his brother and take the Persian throne. When the Greeks were then betrayed by their Persian employers, they were forced to march home through hundreds of miles of difficult terrain - adrift in a hostile country and under constant attack from the unforgiving Persians and warlike tribe...",
-        "link": "https://www.goodreads.com/book/show/20657855-anabasis",
-        "wikipedia_match": {
-          "title": "Xenophon",
-          "page_id": 34155,
-          "infoboxes": [
-            "person"
-          ],
-          "categories": [
-            "430s BC births",
-            "354 BC deaths",
-            "4th-century BC Greek philosophers",
-            "4th-century BC Greek historians",
-            "Ancient Athenian generals",
-            "Ancient Athenian historians",
-            "Ancient Athenian philosophers",
-            "Ancient Greek generals",
-            "Ancient Greek mercenaries",
-            "Ancient Greek military writers",
-            "Ancient Greek political philosophers",
-            "Attic Greek writers",
-            "Classical-era Greek historians",
-            "Classical horsemanship",
-            "Greco-Persian Wars",
-            "Military personnel of the Achaemenid Empire",
-            "Ostracized Athenians",
-            "Pupils of Socrates",
-            "Social philosophers",
-            "Writers on horsemanship",
-            "Memoirists",
-            "Ten Thousand-ancient mercenaries"
-          ],
-          "birth_year": -430,
-          "death_year": -354
-        },
-        "original_year": -400,
-        "author_meta": {
-          "birth_year": -430,
-          "death_year": -354,
-          "description": null,
-          "title": "Xenophon"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Xenophon",
-        "page_id": 34155,
-        "infoboxes": [
-          "person"
-        ],
-        "categories": [
-          "430s BC births",
-          "354 BC deaths",
-          "4th-century BC Greek philosophers",
-          "4th-century BC Greek historians",
-          "Ancient Athenian generals",
-          "Ancient Athenian historians",
-          "Ancient Athenian philosophers",
-          "Ancient Greek generals",
-          "Ancient Greek mercenaries",
-          "Ancient Greek military writers",
-          "Ancient Greek political philosophers",
-          "Attic Greek writers",
-          "Classical-era Greek historians",
-          "Classical horsemanship",
-          "Greco-Persian Wars",
-          "Military personnel of the Achaemenid Empire",
-          "Ostracized Athenians",
-          "Pupils of Socrates",
-          "Social philosophers",
-          "Writers on horsemanship",
-          "Memoirists",
-          "Ten Thousand-ancient mercenaries"
-        ],
-        "birth_year": -430,
-        "death_year": -354
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "20657855",
-        "target_author_ids": [
-          "14805",
-          "5334643"
-        ],
-        "target_person": {
-          "title": "Xenophon",
-          "page_id": 34155,
-          "infoboxes": [
-            "person"
-          ],
-          "categories": [
-            "430s BC births",
-            "354 BC deaths",
-            "4th-century BC Greek philosophers",
-            "4th-century BC Greek historians",
-            "Ancient Athenian generals",
-            "Ancient Athenian historians",
-            "Ancient Athenian philosophers",
-            "Ancient Greek generals",
-            "Ancient Greek mercenaries",
-            "Ancient Greek military writers",
-            "Ancient Greek political philosophers",
-            "Attic Greek writers",
-            "Classical-era Greek historians",
-            "Classical horsemanship",
-            "Greco-Persian Wars",
-            "Military personnel of the Achaemenid Empire",
-            "Ostracized Athenians",
-            "Pupils of Socrates",
-            "Social philosophers",
-            "Writers on horsemanship",
-            "Memoirists",
-            "Ten Thousand-ancient mercenaries"
-          ],
-          "birth_year": -430,
-          "death_year": -354
-        }
       }
     },
     {

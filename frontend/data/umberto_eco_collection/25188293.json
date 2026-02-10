@@ -61,7 +61,7 @@
           "death_year": 79
         },
         "author_meta": {
-          "birth_year": -23,
+          "birth_year": 23,
           "death_year": 79,
           "main_genre": "natural history",
           "nationality": "Roman"
@@ -2795,7 +2795,7 @@
           "death_year": 458
         },
         "author_meta": {
-          "birth_year": -55,
+          "birth_year": null,
           "death_year": 1994,
           "main_genre": "satire",
           "nationality": "Roman"
@@ -2816,8 +2816,8 @@
           "Year of birth unknown",
           "Participant in the Council of Ephesus"
         ],
-        "birth_year": 1937,
-        "death_year": 458
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "author",
@@ -2840,8 +2840,8 @@
             "Year of birth unknown",
             "Participant in the Council of Ephesus"
           ],
-          "birth_year": 1937,
-          "death_year": 458
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -3392,8 +3392,8 @@
           "death_year": 1768
         },
         "author_meta": {
-          "birth_year": -1717,
-          "death_year": -1768,
+          "birth_year": 1717,
+          "death_year": 1768,
           "main_genre": "art history",
           "nationality": "German"
         }
@@ -4610,7 +4610,7 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -5,
+          "birth_year": 5,
           "death_year": 67,
           "main_genre": "religious epistle",
           "nationality": "Jewish"
@@ -4820,8 +4820,8 @@
           "Spanish male poets",
           "Writers from Seville"
         ],
-        "birth_year": 1953,
-        "death_year": 1597
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "person",
@@ -4838,8 +4838,8 @@
             "Spanish male poets",
             "Writers from Seville"
           ],
-          "birth_year": 1953,
-          "death_year": 1597
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -6769,8 +6769,8 @@
         "nationality": "Italian",
         "description": "Raffaello Sanzio da Urbino, known as Raphael, was a renowned Italian painter and architect of the High Renaissance. He is celebrated for his clarity of form, ease of composition, and visual achievement of the Neoplatonic ideal of human grandeur. His painting 'The Marriage of the Virgin' (1504) is one of his early masterpieces.",
         "author_meta": {
-          "birth_year": -1483,
-          "death_year": -1520,
+          "birth_year": 1483,
+          "death_year": 1520,
           "main_genre": "painting",
           "nationality": "Italian"
         }
@@ -8817,7 +8817,7 @@
         },
         "original_year": 95,
         "author_meta": {
-          "birth_year": -35,
+          "birth_year": 35,
           "death_year": 100,
           "main_genre": "rhetoric",
           "nationality": "Roman"
@@ -8847,7 +8847,7 @@
           "Fabii",
           "1st-century educators"
         ],
-        "birth_year": -35,
+        "birth_year": 35,
         "death_year": 100
       },
       "edge": {
@@ -8881,7 +8881,7 @@
             "Fabii",
             "1st-century educators"
           ],
-          "birth_year": -35,
+          "birth_year": 35,
           "death_year": 100
         }
       }
@@ -10888,8 +10888,8 @@
           "16th-century Spanish military personnel",
           "Spanish military personnel killed in action"
         ],
-        "birth_year": 1539,
-        "death_year": 1536
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "author",
@@ -10914,8 +10914,8 @@
             "16th-century Spanish military personnel",
             "Spanish military personnel killed in action"
           ],
-          "birth_year": 1539,
-          "death_year": 1536
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -14153,8 +14153,8 @@
           "death_year": 1837
         },
         "author_meta": {
-          "birth_year": -1798,
-          "death_year": -1837,
+          "birth_year": 1798,
+          "death_year": 1837,
           "main_genre": "poetry",
           "nationality": "Italian"
         }
@@ -14600,8 +14600,8 @@
         "nationality": "Roman",
         "description": "Early Christian priest, theologian, and historian, best known for translating the Bible into Latin (the Vulgate). He is the patron saint of translators and famously advocated for translating sense rather than word-for-word, as reflected in the phrase 'non verbum e verbo sed sensum exprimere de sensu'.",
         "author_meta": {
-          "birth_year": -347,
-          "death_year": -420,
+          "birth_year": 347,
+          "death_year": 420,
           "main_genre": "theology",
           "nationality": "Roman"
         }

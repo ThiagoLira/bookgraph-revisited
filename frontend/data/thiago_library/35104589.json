@@ -184,97 +184,6 @@
     },
     {
       "raw": {
-        "title": "Works and Days",
-        "author": "Hesiod",
-        "count": 6,
-        "excerpts": [
-          "And in this way they join both the noble Hesiod and Homer. The former says that for the just the gods make the oaks",
-          "he’ll learn that Hesiod was really wise when he said that somehow ‘the half is more than the whole.’”26c",
-          "Won’t we believe Hesiod that when any of that class die, They become holy demons dwelling on earth,469 a Good, warders-off of evil, guardians of humans endowed with speech?”31",
-          "And rulers chosen from them won’t be guardians very apt at testing Hesiod’s races6 and yours—gold and silver and bronze and iron.",
-          "Then do you suppose that if he were able to help human beings toward virtue, the men in Homer’s time would have let him or Hesiod go around being rhapsodes and wouldn’t have clung to them rather than to their gold?"
-        ],
-        "canonical_author": "Hesiod"
-      },
-      "goodreads_match": {
-        "author_id": "1691",
-        "name": "Hesiod",
-        "average_rating": "3.76",
-        "works_count": null,
-        "fans_count": null,
-        "link": null,
-        "wikipedia_match": {
-          "title": "Hesiod",
-          "page_id": 13700,
-          "infoboxes": [
-            "writer"
-          ],
-          "categories": [
-            "Hesiod| ",
-            "8th-century BC births",
-            "8th-century BC Greek poets",
-            "Ancient Boeotian poets",
-            "Ancient Greek didactic poets",
-            "Year of death unknown",
-            "8th-century BC philosophers",
-            "7th-century BC Greek philosophers"
-          ],
-          "birth_year": null,
-          "death_year": null
-        },
-        "author_meta": {
-          "birth_year": -750,
-          "death_year": -650
-        }
-      },
-      "wikipedia_match": {
-        "title": "Hesiod",
-        "page_id": 13700,
-        "infoboxes": [
-          "writer"
-        ],
-        "categories": [
-          "Hesiod| ",
-          "8th-century BC births",
-          "8th-century BC Greek poets",
-          "Ancient Boeotian poets",
-          "Ancient Greek didactic poets",
-          "Year of death unknown",
-          "8th-century BC philosophers",
-          "7th-century BC Greek philosophers"
-        ],
-        "birth_year": -750,
-        "death_year": -650
-      },
-      "edge": {
-        "target_type": "author",
-        "target_book_id": null,
-        "target_author_ids": [
-          "1691"
-        ],
-        "target_person": {
-          "title": "Hesiod",
-          "page_id": 13700,
-          "infoboxes": [
-            "writer"
-          ],
-          "categories": [
-            "Hesiod| ",
-            "8th-century BC births",
-            "8th-century BC Greek poets",
-            "Ancient Boeotian poets",
-            "Ancient Greek didactic poets",
-            "Year of death unknown",
-            "8th-century BC philosophers",
-            "7th-century BC Greek philosophers"
-          ],
-          "birth_year": -750,
-          "death_year": -650
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "Apology",
         "author": "Plato",
         "count": 5,
@@ -405,7 +314,7 @@
       "raw": {
         "title": "Clouds",
         "author": "Aristophanes",
-        "count": 5,
+        "count": 7,
         "excerpts": [
           "The action of the Republic now becomes a formal response to the charge made in Aristophanes’ Clouds which showed Socrates leaving the scene and permitting the unjust speech to overcome the just one.",
           "In the Ecclesiazusae Aristophanes had attacked the public in the name of the private, and in the Clouds he had attacked philosophy in the name of poetry.",
@@ -1053,8 +962,8 @@
           "death_year": 1527
         },
         "author_meta": {
-          "birth_year": -1469,
-          "death_year": -1527
+          "birth_year": 1469,
+          "death_year": 1527
         }
       },
       "wikipedia_match": {
@@ -1599,67 +1508,6 @@
           "title": "Plato",
           "birth_year": -428,
           "death_year": -348
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "The Clouds",
-        "author": "Aristophanes",
-        "count": 2,
-        "excerpts": [
-          "In the Clouds, Strepsiades burns Socrates’ dwelling when he discovers that Socrates had taught his son things which threaten the sanctity of the family.",
-          "Aristophanes, in the Clouds, accused Socrates of teaching wise sons to beat unwise fathers."
-        ]
-      },
-      "goodreads_match": {
-        "isbn": "1420927590",
-        "average_rating": 3.76,
-        "format": "Paperback",
-        "book_id": "2237755",
-        "author_ids": [
-          "1011"
-        ],
-        "work_id": "1385905",
-        "text_reviews_count": 8,
-        "title_without_series": "The Clouds",
-        "publication_day": 1,
-        "ratings_count": 38,
-        "publication_month": 1,
-        "publisher": "Digireads.com",
-        "publication_year": 2006,
-        "num_pages": 96,
-        "title": "The Clouds",
-        "isbn13": "9781420927597",
-        "authors": [
-          "Aristophanes"
-        ],
-        "description": "The satire in this, one of the best known of all Aristophanes' comedies, is directed against the new schools of philosophy, or perhaps we should rather say dialectic, which had lately been introduced, mostly from abroad, at Athens. The doctrines held up to ridicule are those of the 'Sophists'-such men as Thrasymachus from Chalcedon in Bithynia, Gorgias from Leontini in Sicily, Protagoras from Abdera in Thrace, and other foreign scholars and rhetoricians who had flocked to Athens as the intellectual centre o...",
-        "link": "https://www.goodreads.com/book/show/2237755.The_Clouds",
-        "original_year": -423,
-        "author_meta": {
-          "birth_year": -446,
-          "death_year": -386
-        }
-      },
-      "wikipedia_match": {
-        "title": "Aristophanes",
-        "birth_year": -446,
-        "death_year": -386,
-        "page_id": null,
-        "infoboxes": [],
-        "categories": []
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "2237755",
-        "target_author_ids": [
-          "1011"
-        ],
-        "target_person": {
-          "title": "Aristophanes",
-          "birth_year": -446,
-          "death_year": -386
         }
       }
     },
@@ -2805,8 +2653,8 @@
           "death_year": 1616
         },
         "author_meta": {
-          "birth_year": -1564,
-          "death_year": -1616
+          "birth_year": 1564,
+          "death_year": 1616
         }
       },
       "wikipedia_match": {
@@ -3384,7 +3232,7 @@
       "raw": {
         "title": "the Laws",
         "author": "Plato",
-        "count": 1,
+        "count": 2,
         "excerpts": [
           "Plato himself came near to abandoning it in his latest work, the Laws . . ."
         ]
@@ -4161,72 +4009,9 @@
     },
     {
       "raw": {
-        "title": "Laws",
-        "author": "Plato",
-        "count": 1,
-        "excerpts": [
-          "“Rhythm” and harmonia are defined as follows in Laws, 664e: “... rhythm is the name given to the order of the motion, while, as for sound, the mixture of high and low would receive the name harmonia”"
-        ]
-      },
-      "goodreads_match": {
-        "isbn": "0226671100",
-        "average_rating": 4.05,
-        "format": "Paperback",
-        "book_id": "30578",
-        "author_ids": [
-          "879",
-          "163269"
-        ],
-        "work_id": "1108078",
-        "text_reviews_count": 23,
-        "title_without_series": "The Laws of Plato",
-        "publication_day": 15,
-        "ratings_count": 1438,
-        "publication_month": 3,
-        "publisher": "University Of Chicago Press",
-        "publication_year": 1988,
-        "num_pages": 576,
-        "title": "The Laws of Plato",
-        "isbn13": "9780226671109",
-        "authors": [
-          "Plato",
-          "Thomas L. Pangle"
-        ],
-        "description": "The Laws, Plato's longest dialogue, has for centuries been recognized as the most comprehensive exposition of the practicalconsequences of his philosophy, a necessary corrective to the more visionary and utopian Republic. In this animated encounter between a foreign philosopher and a powerful statesman, not only do we see reflected, in Plato's own thought, eternal questions of the relation between political theory and practice, but we also witness the working out of a detailed plan for a new political order...",
-        "link": "https://www.goodreads.com/book/show/30578.The_Laws_of_Plato",
-        "original_year": -360,
-        "author_meta": {
-          "birth_year": -427,
-          "death_year": -347
-        }
-      },
-      "wikipedia_match": {
-        "title": "Plato",
-        "birth_year": -428,
-        "death_year": -348,
-        "page_id": null,
-        "infoboxes": [],
-        "categories": []
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "30578",
-        "target_author_ids": [
-          "879",
-          "163269"
-        ],
-        "target_person": {
-          "title": "Plato",
-          "birth_year": -428,
-          "death_year": -348
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "Works and Days",
         "author": "Hesiod",
-        "count": 1,
+        "count": 7,
         "excerpts": [
           "Hesiod, Works and Days, 40"
         ]

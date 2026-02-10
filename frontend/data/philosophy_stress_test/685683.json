@@ -1569,7 +1569,7 @@
       "wikipedia_match": {
         "title": "Wagner",
         "birth_year": 1813,
-        "death_year": -430
+        "death_year": null
       },
       "edge": {
         "target_type": "person",
@@ -1578,7 +1578,7 @@
         "target_person": {
           "title": "Wagner",
           "birth_year": 1813,
-          "death_year": -430
+          "death_year": null
         }
       }
     },

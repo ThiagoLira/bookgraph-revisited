@@ -5753,7 +5753,7 @@
         },
         "author_meta": {
           "birth_year": 1564,
-          "death_year": -1616,
+          "death_year": 1616,
           "main_genre": "drama",
           "nationality": "English"
         }
@@ -9922,8 +9922,8 @@
           "Philosophers from New York (state)",
           "Columbia College, Columbia University alumni"
         ],
-        "birth_year": 1954,
-        "death_year": 1280
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "author",
@@ -9947,8 +9947,8 @@
             "Philosophers from New York (state)",
             "Columbia College, Columbia University alumni"
           ],
-          "birth_year": 1954,
-          "death_year": 1280
+          "birth_year": null,
+          "death_year": null
         }
       }
     },

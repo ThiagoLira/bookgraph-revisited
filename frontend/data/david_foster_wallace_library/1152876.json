@@ -4200,14 +4200,16 @@
         "title": "Crime and Punishment",
         "author": "Fyodor Dostoevsky",
         "note": null,
-        "count": 2,
+        "count": 3,
         "contexts": [
           "At least a third of this latest volume is given over to close readings of the stuff Dostoevsky produced in this amazing half decade—Crime and Punishment, The Gambler, The Idiot, The Eternal Husband, and Demons.",
-          "You need only compare the protagonists’ final conversions in Tolstoy’s The Death of Ivan Ilych and FMD’s Crime and Punishment in order to appreciate Dostoevsky’s ability to be moral without being moralistic."
+          "You need only compare the protagonists’ final conversions in Tolstoy’s The Death of Ivan Ilych and FMD’s Crime and Punishment in order to appreciate Dostoevsky’s ability to be moral without being moralistic.",
+          "in the acclaimed new Knopf translations by Richard Pevear and Larissa Volokhonsky, the prose (in, e.g., Crime and Punishment) is still often odd and starchy: “Enough!” he said resolutely and solemnly."
         ],
         "commentaries": [
           "The author notes that Joseph Frank dedicates substantial analysis to Dostoevsky’s Crime and Punishment as part of his effort to foreground the novels themselves in his biographical study.",
-          "The author contrasts Crime and Punishment with Tolstoy’s The Death of Ivan Ilych to highlight Dostoevsky’s nuanced, non-reductive treatment of moral and spiritual transformation."
+          "The author contrasts Crime and Punishment with Tolstoy’s The Death of Ivan Ilych to highlight Dostoevsky’s nuanced, non-reductive treatment of moral and spiritual transformation.",
+          "The author cites Crime and Punishment as an example of awkward English phrasing in modern translations, questioning the fidelity and readability of the rendered text."
         ]
       },
       "goodreads_match": {
@@ -4363,43 +4365,6 @@
           "birth_year": 1821,
           "death_year": 1881
         }
-      }
-    },
-    {
-      "raw": {
-        "title": "Crime and Punishment",
-        "author": "Fyodor Dostoevsky",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "in the acclaimed new Knopf translations by Richard Pevear and Larissa Volokhonsky, the prose (in, e.g., Crime and Punishment) is still often odd and starchy: “Enough!” he said resolutely and solemnly."
-        ],
-        "commentaries": [
-          "The author cites Crime and Punishment as an example of awkward English phrasing in modern translations, questioning the fidelity and readability of the rendered text."
-        ]
-      },
-      "goodreads_match": {
-        "title": "Crime and Punishment",
-        "authors": [
-          "Fyodor Dostoevsky"
-        ],
-        "original_year": 1866,
-        "birth_year": 1821,
-        "death_year": 1881,
-        "nationality": "Russian",
-        "description": "A classic Russian novel exploring themes of morality, guilt, and redemption through the story of a poor ex-student who commits a murder and grapples with its psychological consequences.",
-        "book_id": "web_0a840394",
-        "author_meta": {
-          "birth_year": 1821,
-          "death_year": 1857
-        }
-      },
-      "wikipedia_match": null,
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "web_0a840394",
-        "target_author_ids": [],
-        "target_person": null
       }
     },
     {
@@ -7047,14 +7012,16 @@
         "title": "Notes from Underground",
         "author": "Fyodor Dostoevsky",
         "note": null,
-        "count": 2,
+        "count": 3,
         "contexts": [
           "a very fine explicative reading of Notes, tracing the book’s genesis as a reply to the “rational egoism” made fashionable by N. G. Chernyshevsky’s What Is to Be Done?",
-          "Q.v. a random example from Pevear and Volkhonsky’s acclaimed new Knopf rendering of Notes from Underground: “Mr. Ferfichkin, tomorrow you will give me satisfaction for your present words!” I said loudly, pompously addressing Ferfichkin."
+          "Q.v. a random example from Pevear and Volkhonsky’s acclaimed new Knopf rendering of Notes from Underground: “Mr. Ferfichkin, tomorrow you will give me satisfaction for your present words!” I said loudly, pompously addressing Ferfichkin.",
+          "in 1957 one Joseph Frank, then thirty-eight, a Comparative Lit professor at Princeton, is preparing a lecture on existentialism, and he starts working his way through Fyodor Mikhailovich Dostoevsky’s Notes from Underground."
         ],
         "commentaries": [
           "The author references Dostoevsky's Notes from Underground as a key text whose parodic function and ideological context are central to Frank's biographical analysis.",
-          "The author uses a direct quote from the Pevear and Volokhonsky translation of Notes from Underground to critique the unnatural English syntax and stylistic choices in modern translations."
+          "The author uses a direct quote from the Pevear and Volokhonsky translation of Notes from Underground to critique the unnatural English syntax and stylistic choices in modern translations.",
+          "The author cites Dostoevsky’s Notes from Underground as the starting point for Joseph Frank’s scholarly engagement with Dostoevsky’s work, highlighting its psychological complexity and historical context."
         ]
       },
       "goodreads_match": {
@@ -8392,8 +8359,8 @@
         },
         "original_year": 1953,
         "author_meta": {
-          "birth_year": 1974,
-          "death_year": 1951
+          "birth_year": null,
+          "death_year": null
         }
       },
       "wikipedia_match": {
@@ -12930,176 +12897,6 @@
           ],
           "birth_year": 1894,
           "death_year": 1979
-        }
-      }
-    },
-    {
-      "raw": {
-        "title": "Notes from Underground",
-        "author": "Fyodor Dostoevsky",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "in 1957 one Joseph Frank, then thirty-eight, a Comparative Lit professor at Princeton, is preparing a lecture on existentialism, and he starts working his way through Fyodor Mikhailovich Dostoevsky’s Notes from Underground."
-        ],
-        "commentaries": [
-          "The author cites Dostoevsky’s Notes from Underground as the starting point for Joseph Frank’s scholarly engagement with Dostoevsky’s work, highlighting its psychological complexity and historical context."
-        ]
-      },
-      "goodreads_match": {
-        "isbn": "0141194863",
-        "isbn13": "9780141194868",
-        "work_id": "50717723",
-        "author_ids": [
-          "3137322"
-        ],
-        "average_rating": 4.16,
-        "title_without_series": "Notes from Underground",
-        "ratings_count": 62,
-        "title": "Notes from Underground",
-        "text_reviews_count": 7,
-        "book_id": "9474412",
-        "authors": [
-          "Fyodor Dostoevsky"
-        ],
-        "description": "Dostoevsky's most revolutionary novel, Notes from Underground marks the dividing line between nineteenth- and twentieth-century fiction, and between the visions of self each century embodied. One of the most remarkable characters in literature, the unnamed narrator is a former official who has defiantly withdrawn into an underground existence. In full retreat from society, he scrawls a passionate, obsessive, self-contradictory narrative that serves as a devastating attack on social utopianism and an asserti...",
-        "link": "https://www.goodreads.com/book/show/9474412-notes-from-underground",
-        "wikipedia_match": {
-          "title": "Fyodor Dostoevsky",
-          "page_id": 11625,
-          "infoboxes": [
-            "writer"
-          ],
-          "categories": [
-            "Fyodor Dostoyevsky| ",
-            "1821 births",
-            "1881 deaths",
-            "Dostoyevsky family|Fyodor",
-            "19th-century journalists from the Russian Empire",
-            "19th-century short story writers from the Russian Empire",
-            "19th-century translators from the Russian Empire",
-            "Anti-Polish sentiment",
-            "Christian novelists",
-            "Christian radicals",
-            "Corresponding members of the Saint Petersburg Academy of Sciences",
-            "Critics of atheism",
-            "Critics of the Catholic Church",
-            "19th-century diarists from the Russian Empire",
-            "Eastern Orthodox writers",
-            "Eastern Orthodox philosophers",
-            "Engineers from the Russian Empire",
-            "Essayists from the Russian Empire",
-            "Lay theologians",
-            "Letter writers from the Russian Empire",
-            "19th-century letter writers",
-            "Literary critics from the Russian Empire",
-            "Male writers from the Russian Empire",
-            "19th-century memoirists from the Russian Empire",
-            "Military Engineering-Technical University alumni",
-            "Novelists from the Russian Empire",
-            "19th-century non-fiction writers from the Russian Empire",
-            "Philosophers from the Russian Empire",
-            "Magazine editors from the Russian Empire",
-            "Russian male essayists"
-          ],
-          "birth_year": 1821,
-          "death_year": 1881
-        },
-        "original_year": 1864,
-        "author_meta": {
-          "birth_year": 1821,
-          "death_year": 1881,
-          "main_genre": "Literary Fiction",
-          "nationality": "Russian"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Fyodor Dostoevsky",
-        "page_id": 11625,
-        "infoboxes": [
-          "writer"
-        ],
-        "categories": [
-          "Fyodor Dostoyevsky| ",
-          "1821 births",
-          "1881 deaths",
-          "Dostoyevsky family|Fyodor",
-          "19th-century journalists from the Russian Empire",
-          "19th-century short story writers from the Russian Empire",
-          "19th-century translators from the Russian Empire",
-          "Anti-Polish sentiment",
-          "Christian novelists",
-          "Christian radicals",
-          "Corresponding members of the Saint Petersburg Academy of Sciences",
-          "Critics of atheism",
-          "Critics of the Catholic Church",
-          "19th-century diarists from the Russian Empire",
-          "Eastern Orthodox writers",
-          "Eastern Orthodox philosophers",
-          "Engineers from the Russian Empire",
-          "Essayists from the Russian Empire",
-          "Lay theologians",
-          "Letter writers from the Russian Empire",
-          "19th-century letter writers",
-          "Literary critics from the Russian Empire",
-          "Male writers from the Russian Empire",
-          "19th-century memoirists from the Russian Empire",
-          "Military Engineering-Technical University alumni",
-          "Novelists from the Russian Empire",
-          "19th-century non-fiction writers from the Russian Empire",
-          "Philosophers from the Russian Empire",
-          "Magazine editors from the Russian Empire",
-          "Russian male essayists"
-        ],
-        "birth_year": 1821,
-        "death_year": 1881
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "9474412",
-        "target_author_ids": [
-          "3137322"
-        ],
-        "target_person": {
-          "title": "Fyodor Dostoevsky",
-          "page_id": 11625,
-          "infoboxes": [
-            "writer"
-          ],
-          "categories": [
-            "Fyodor Dostoyevsky| ",
-            "1821 births",
-            "1881 deaths",
-            "Dostoyevsky family|Fyodor",
-            "19th-century journalists from the Russian Empire",
-            "19th-century short story writers from the Russian Empire",
-            "19th-century translators from the Russian Empire",
-            "Anti-Polish sentiment",
-            "Christian novelists",
-            "Christian radicals",
-            "Corresponding members of the Saint Petersburg Academy of Sciences",
-            "Critics of atheism",
-            "Critics of the Catholic Church",
-            "19th-century diarists from the Russian Empire",
-            "Eastern Orthodox writers",
-            "Eastern Orthodox philosophers",
-            "Engineers from the Russian Empire",
-            "Essayists from the Russian Empire",
-            "Lay theologians",
-            "Letter writers from the Russian Empire",
-            "19th-century letter writers",
-            "Literary critics from the Russian Empire",
-            "Male writers from the Russian Empire",
-            "19th-century memoirists from the Russian Empire",
-            "Military Engineering-Technical University alumni",
-            "Novelists from the Russian Empire",
-            "19th-century non-fiction writers from the Russian Empire",
-            "Philosophers from the Russian Empire",
-            "Magazine editors from the Russian Empire",
-            "Russian male essayists"
-          ],
-          "birth_year": 1821,
-          "death_year": 1881
         }
       }
     },

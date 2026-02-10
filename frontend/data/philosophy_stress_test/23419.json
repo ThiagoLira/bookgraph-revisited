@@ -584,7 +584,7 @@
         },
         "original_year": 64,
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "main_genre": "Philosophy/Tragedy",
           "nationality": "Roman"
@@ -628,7 +628,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -677,7 +677,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -954,8 +954,8 @@
           "death_year": null
         },
         "author_meta": {
-          "birth_year": -180,
-          "death_year": -240,
+          "birth_year": 180,
+          "death_year": 240,
           "main_genre": "Biography/Philosophy",
           "nationality": "Greek"
         }
@@ -1711,7 +1711,7 @@
         },
         "original_year": 65,
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "main_genre": "Philosophy",
           "nationality": "Roman"
@@ -1755,7 +1755,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -1803,7 +1803,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -2365,7 +2365,7 @@
         "description": "A philosophical letter of consolation written by Seneca to his mother Helvia during his exile in Corsica, addressing grief and the nature of misfortune.",
         "book_id": "web_fb1bfefe",
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "main_genre": "Philosophy/Tragedy",
           "nationality": "Roman"
@@ -2373,7 +2373,7 @@
       },
       "wikipedia_match": {
         "title": "Seneca",
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -2382,7 +2382,7 @@
         "target_author_ids": [],
         "target_person": {
           "title": "Seneca",
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -5125,8 +5125,8 @@
         },
         "original_year": 116,
         "author_meta": {
-          "birth_year": -56,
-          "death_year": -120,
+          "birth_year": 56,
+          "death_year": 120,
           "main_genre": "historiography",
           "nationality": "Roman"
         }

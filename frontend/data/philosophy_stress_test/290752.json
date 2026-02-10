@@ -2,14 +2,14 @@
   "source": {
     "title": "The Essays of Michel De Montaigne",
     "authors": [
-      "Marie le Jars de Gournay"
+      "Michel de Montaigne"
     ],
     "goodreads_id": "290752",
     "calibre_id": null,
     "publication_year": 1580,
     "author_metadata": {
-      "birth_year": 1565,
-      "death_year": 1645,
+      "birth_year": 1533,
+      "death_year": 1592,
       "main_genre": "Philosophical essays",
       "nationality": "French"
     }
@@ -342,7 +342,7 @@
           "Petronii",
           "Ancient Massaliotes"
         ],
-        "birth_year": -27,
+        "birth_year": 27,
         "death_year": 66
       },
       "edge": {
@@ -373,7 +373,7 @@
             "Petronii",
             "Ancient Massaliotes"
           ],
-          "birth_year": -27,
+          "birth_year": 27,
           "death_year": 66
         }
       }
@@ -459,7 +459,7 @@
         },
         "original_year": 65,
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "description": null,
           "title": "Seneca"
@@ -503,7 +503,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -551,7 +551,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -2294,7 +2294,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -2342,7 +2342,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -4427,7 +4427,7 @@
           "Silver Age Latin writers",
           "Writers from Rome"
         ],
-        "birth_year": -125,
+        "birth_year": 125,
         "death_year": 180
       },
       "edge": {
@@ -4453,7 +4453,7 @@
             "Silver Age Latin writers",
             "Writers from Rome"
           ],
-          "birth_year": -125,
+          "birth_year": 125,
           "death_year": 180
         }
       }
@@ -6365,8 +6365,8 @@
           "Historians from the Carolingian Empire",
           "9th-century astronomers"
         ],
-        "birth_year": 1728,
-        "death_year": 840
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "person",
@@ -6385,8 +6385,8 @@
             "Historians from the Carolingian Empire",
             "9th-century astronomers"
           ],
-          "birth_year": 1728,
-          "death_year": 840
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -6767,7 +6767,7 @@
         },
         "original_year": 64,
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "description": null,
           "title": "Seneca"
@@ -6811,7 +6811,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -6858,7 +6858,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -7116,7 +7116,7 @@
       "goodreads_match": null,
       "wikipedia_match": {
         "title": "St. Paul",
-        "birth_year": -5,
+        "birth_year": 5,
         "death_year": 67
       },
       "edge": {
@@ -7125,7 +7125,7 @@
         "target_author_ids": [],
         "target_person": {
           "title": "St. Paul",
-          "birth_year": -5,
+          "birth_year": 5,
           "death_year": 67
         }
       }
@@ -7741,7 +7741,7 @@
         "link": "https://www.goodreads.com/book/show/28232740-epigrams",
         "original_year": 80,
         "author_meta": {
-          "birth_year": -38,
+          "birth_year": 38,
           "death_year": 103,
           "main_genre": "epigram",
           "nationality": "Roman"
@@ -7749,7 +7749,7 @@
       },
       "wikipedia_match": {
         "title": "Marcus Valerius Martialis",
-        "birth_year": -38,
+        "birth_year": 38,
         "death_year": 103
       },
       "edge": {
@@ -7760,7 +7760,7 @@
         ],
         "target_person": {
           "title": "Marcus Valerius Martialis",
-          "birth_year": -38,
+          "birth_year": 38,
           "death_year": 103
         }
       }
@@ -10524,7 +10524,7 @@
         },
         "original_year": 64,
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "description": null,
           "title": "Seneca"
@@ -10568,7 +10568,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -10616,7 +10616,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -10787,7 +10787,7 @@
         },
         "original_year": 63,
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "description": null,
           "title": "Seneca"
@@ -10831,7 +10831,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -10879,7 +10879,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -11919,7 +11919,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -11966,7 +11966,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -12345,7 +12345,7 @@
         },
         "original_year": 64,
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "description": null,
           "title": "Seneca"
@@ -12389,7 +12389,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -12437,7 +12437,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -14475,7 +14475,7 @@
         "link": "https://www.goodreads.com/book/show/3295506-institutio-oratoria-books-1-3",
         "original_year": 95,
         "author_meta": {
-          "birth_year": -35,
+          "birth_year": 35,
           "death_year": 100,
           "main_genre": "rhetoric",
           "nationality": "Roman"
@@ -14483,7 +14483,7 @@
       },
       "wikipedia_match": {
         "title": "Marcus Fabius Quintilianus",
-        "birth_year": -35,
+        "birth_year": 35,
         "death_year": 100
       },
       "edge": {
@@ -14495,7 +14495,7 @@
         ],
         "target_person": {
           "title": "Marcus Fabius Quintilianus",
-          "birth_year": -35,
+          "birth_year": 35,
           "death_year": 100
         }
       }
@@ -14888,8 +14888,8 @@
           "Romans from Africa",
           "Septimii|Florens Tertullianus, Quintus"
         ],
-        "birth_year": -155,
-        "death_year": -220
+        "birth_year": 155,
+        "death_year": 220
       },
       "edge": {
         "target_type": "author",
@@ -14934,8 +14934,8 @@
             "Romans from Africa",
             "Septimii|Florens Tertullianus, Quintus"
           ],
-          "birth_year": -155,
-          "death_year": -220
+          "birth_year": 155,
+          "death_year": 220
         }
       }
     },
@@ -16353,7 +16353,7 @@
           "Fabii",
           "1st-century educators"
         ],
-        "birth_year": -35,
+        "birth_year": 35,
         "death_year": 100
       },
       "edge": {
@@ -16386,7 +16386,7 @@
             "Fabii",
             "1st-century educators"
           ],
-          "birth_year": -35,
+          "birth_year": 35,
           "death_year": 100
         }
       }
@@ -16969,7 +16969,7 @@
           "Year of birth uncertain",
           "Year of death uncertain"
         ],
-        "birth_year": -25,
+        "birth_year": 25,
         "death_year": 50
       },
       "edge": {
@@ -16997,7 +16997,7 @@
             "Year of birth uncertain",
             "Year of death uncertain"
           ],
-          "birth_year": -25,
+          "birth_year": 25,
           "death_year": 50
         }
       }
@@ -17931,16 +17931,16 @@
         "link": "https://www.goodreads.com/book/show/2321128.Latin_Christianity",
         "original_year": 1867,
         "author_meta": {
-          "birth_year": -155,
-          "death_year": -220,
+          "birth_year": 155,
+          "death_year": 220,
           "main_genre": "theology",
           "nationality": "Roman"
         }
       },
       "wikipedia_match": {
         "title": "Tertullian",
-        "birth_year": -155,
-        "death_year": -220
+        "birth_year": 155,
+        "death_year": 220
       },
       "edge": {
         "target_type": "book",
@@ -17952,8 +17952,8 @@
         ],
         "target_person": {
           "title": "Tertullian",
-          "birth_year": -155,
-          "death_year": -220
+          "birth_year": 155,
+          "death_year": 220
         }
       }
     },
@@ -18524,7 +18524,7 @@
         "description": "Seneca's tragedy 'Phaedra' (also known as 'Hippolytus'), written around 54 AD. It adapts Euripides' Greek tragedy 'Hippolytus', focusing on Phaedra's forbidden love for her stepson Hippolytus. The line 'Curae leves loquuntur, ingentes stupent' appears in Act II, Scene 3.",
         "book_id": "web_4f99a845",
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "main_genre": "Philosophy/Tragedy",
           "nationality": "Roman"
@@ -18532,7 +18532,7 @@
       },
       "wikipedia_match": {
         "title": "Lucius Annaeus Seneca",
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -18541,7 +18541,7 @@
         "target_author_ids": [],
         "target_person": {
           "title": "Lucius Annaeus Seneca",
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -21617,7 +21617,7 @@
         "description": "A collection of 124 letters written by Seneca the Younger, offering Stoic philosophy and moral advice to his friend Lucilius Junior.",
         "book_id": "web_909b83e9",
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "main_genre": "Philosophy/Tragedy",
           "nationality": "Roman"
@@ -21625,7 +21625,7 @@
       },
       "wikipedia_match": {
         "title": "Lucius Annaeus Seneca",
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -21634,7 +21634,7 @@
         "target_author_ids": [],
         "target_person": {
           "title": "Lucius Annaeus Seneca",
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }

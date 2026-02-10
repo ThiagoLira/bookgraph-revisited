@@ -1158,7 +1158,7 @@
       "wikipedia_match": {
         "title": "Hume",
         "birth_year": 1711,
-        "death_year": -1776
+        "death_year": 1776
       },
       "edge": {
         "target_type": "author",
@@ -1169,7 +1169,7 @@
         "target_person": {
           "title": "Hume",
           "birth_year": 1711,
-          "death_year": -1776
+          "death_year": 1776
         }
       }
     },

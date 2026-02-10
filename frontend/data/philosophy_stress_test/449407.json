@@ -431,7 +431,7 @@
           "death_year": 65
         },
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "main_genre": "Philosophy/Tragedy",
           "nationality": "Roman"
@@ -475,7 +475,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -522,7 +522,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -3277,7 +3277,7 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -20,
+          "birth_year": 20,
           "death_year": 50,
           "main_genre": "Philosophical/Theological Treatise",
           "nationality": "Jewish (Hellenistic)"
@@ -3285,7 +3285,7 @@
       },
       "wikipedia_match": {
         "title": "Philon d'Alexandrie",
-        "birth_year": -25,
+        "birth_year": 25,
         "death_year": 50
       },
       "edge": {
@@ -3296,7 +3296,7 @@
         ],
         "target_person": {
           "title": "Philon d'Alexandrie",
-          "birth_year": -25,
+          "birth_year": 25,
           "death_year": 50
         }
       }
@@ -5113,7 +5113,7 @@
         },
         "original_year": 64,
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65,
           "main_genre": "Philosophy",
           "nationality": "Roman"
@@ -5157,7 +5157,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -5205,7 +5205,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -5670,7 +5670,7 @@
         },
         "original_year": 95,
         "author_meta": {
-          "birth_year": -35,
+          "birth_year": 35,
           "death_year": 100,
           "main_genre": "rhetoric",
           "nationality": "Roman"
@@ -6397,7 +6397,7 @@
           "death_year": 79
         },
         "author_meta": {
-          "birth_year": -23,
+          "birth_year": 23,
           "death_year": 79,
           "main_genre": "natural history",
           "nationality": "Roman"
@@ -6986,7 +6986,7 @@
           "death_year": null
         },
         "author_meta": {
-          "birth_year": -25,
+          "birth_year": 25,
           "death_year": 50,
           "main_genre": "Medicine",
           "nationality": "Roman"

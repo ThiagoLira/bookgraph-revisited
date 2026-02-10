@@ -2166,7 +2166,7 @@
       "wikipedia_match": {
         "title": "Bismarck",
         "birth_year": 1815,
-        "death_year": -1898
+        "death_year": 1898
       },
       "edge": {
         "target_type": "person",
@@ -2175,7 +2175,7 @@
         "target_person": {
           "title": "Bismarck",
           "birth_year": 1815,
-          "death_year": -1898
+          "death_year": 1898
         }
       }
     }

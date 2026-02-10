@@ -32,7 +32,7 @@
         "link": null,
         "author_meta": {
           "birth_year": 1564,
-          "death_year": -1616,
+          "death_year": 1616,
           "main_genre": "drama",
           "nationality": "English"
         }
@@ -926,8 +926,8 @@
           "death_year": 220
         },
         "author_meta": {
-          "birth_year": -155,
-          "death_year": -220,
+          "birth_year": 155,
+          "death_year": 220,
           "main_genre": "theology",
           "nationality": "Roman"
         }
@@ -2310,8 +2310,8 @@
           "death_year": 253
         },
         "author_meta": {
-          "birth_year": -185,
-          "death_year": -254,
+          "birth_year": 185,
+          "death_year": 254,
           "main_genre": "theology",
           "nationality": "Alexandrian"
         }
@@ -7702,7 +7702,7 @@
         },
         "author_meta": {
           "birth_year": 1711,
-          "death_year": -1776,
+          "death_year": 1776,
           "main_genre": "philosophy",
           "nationality": "Scottish"
         }
@@ -8463,7 +8463,7 @@
         "link": "https://www.goodreads.com/book/show/1045017.The_Discourses",
         "original_year": 108,
         "author_meta": {
-          "birth_year": -50,
+          "birth_year": 50,
           "death_year": 135,
           "main_genre": "Philosophy",
           "nationality": "Greek"
@@ -8722,7 +8722,7 @@
           "death_year": 135
         },
         "author_meta": {
-          "birth_year": -50,
+          "birth_year": 50,
           "death_year": 135,
           "main_genre": "Philosophy",
           "nationality": "Greek"

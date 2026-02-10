@@ -3546,7 +3546,7 @@
           "Philosophers in ancient Alexandria",
           "People executed by the Roman Empire"
         ],
-        "birth_year": -10,
+        "birth_year": null,
         "death_year": 273
       },
       "edge": {
@@ -3581,7 +3581,7 @@
             "Philosophers in ancient Alexandria",
             "People executed by the Roman Empire"
           ],
-          "birth_year": -10,
+          "birth_year": null,
           "death_year": 273
         }
       }
@@ -4942,8 +4942,8 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1623,
-          "death_year": -1662,
+          "birth_year": 1623,
+          "death_year": 1662,
           "main_genre": "philosophy",
           "nationality": "French"
         }
@@ -6162,7 +6162,7 @@
           "Year of birth unknown"
         ],
         "birth_year": 400,
-        "death_year": -450
+        "death_year": 450
       },
       "edge": {
         "target_type": "author",
@@ -6196,7 +6196,7 @@
             "Year of birth unknown"
           ],
           "birth_year": 400,
-          "death_year": -450
+          "death_year": 450
         }
       }
     },
@@ -6466,8 +6466,8 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1225,
-          "death_year": -1274,
+          "birth_year": 1225,
+          "death_year": 1274,
           "main_genre": "theology",
           "nationality": "Italian"
         }
@@ -12600,8 +12600,8 @@
         },
         "original_year": 1921,
         "author_meta": {
-          "birth_year": 1974,
-          "death_year": 1951
+          "birth_year": null,
+          "death_year": null
         }
       },
       "wikipedia_match": {
@@ -17833,7 +17833,7 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1818,
+          "birth_year": 1818,
           "death_year": 1883,
           "main_genre": "philosophy",
           "nationality": "German"

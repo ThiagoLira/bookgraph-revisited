@@ -238,185 +238,6 @@
     },
     {
       "raw": {
-        "title": "The Metaphysics",
-        "author": "Aristotle",
-        "note": null,
-        "count": 1,
-        "contexts": [
-          "Aristotle.\nThe Metaphysics.\nLondon: Penguin Classics, 1999."
-        ],
-        "commentaries": [
-          "The author cites Aristotle’s foundational text, implying it is referenced for its philosophical treatment of being, truth, or essence."
-        ]
-      },
-      "goodreads_match": {
-        "title_without_series": "The Metaphysics",
-        "ratings_count": 171,
-        "isbn13": "9780140446197",
-        "num_pages": 528,
-        "publication_day": 29,
-        "average_rating": 4.01,
-        "work_id": "2479557",
-        "book_id": "771063",
-        "format": "Paperback",
-        "author_ids": [
-          "2192",
-          "406514"
-        ],
-        "publication_year": 1998,
-        "publication_month": 10,
-        "publisher": "Penguin Classics",
-        "isbn": "0140446192",
-        "text_reviews_count": 26,
-        "title": "The Metaphysics",
-        "authors": [
-          "Aristotle",
-          "Hugh Lawson-Tancred"
-        ],
-        "description": "Aristotle's probing inquiry into some of the fundamental problems of philosophy, The Metaphysicsis one of the classical Greek foundation-stones of western thought, translated from the with an introduction by Hugh Lawson-Tancred in Penguin Classics.\nThe Metaphysicspresents Aristotle's mature rejection of both the Platonic theory that what we perceive is just a pale reflection of reality and the hard-headed view that all processes are ultimately material. He argued instead that the reality or substance of thi...",
-        "link": "https://www.goodreads.com/book/show/771063.The_Metaphysics",
-        "wikipedia_match": {
-          "title": "Aristotle",
-          "page_id": 308,
-          "infoboxes": [
-            "philosopher"
-          ],
-          "categories": [
-            "Aristotle| ",
-            "Aristotelianism|*",
-            "384 BC births",
-            "322 BC deaths",
-            "4th-century BC Greek mathematicians",
-            "4th-century BC philosophers",
-            "4th-century BC Greek writers",
-            "Acting theorists",
-            "Ancient Greek biologists",
-            "Ancient Greek epistemologists",
-            "Ancient Greek ethicists",
-            "Ancient Greek logicians",
-            "Ancient Greek metaphysicians",
-            "Ancient Greek philosophers of language",
-            "Ancient Greek philosophers of mind",
-            "Ancient Greek physicists",
-            "Ancient Greek political philosophers",
-            "Ancient Greek political refugees",
-            "Ancient Greek philosophers of art",
-            "Ancient literary critics",
-            "Ancient Stagirites",
-            "Aphorists",
-            "Aristotelian philosophers",
-            "Attic Greek writers",
-            "Ancient Greek cosmologists",
-            "Classical theism",
-            "Characters in the Divine Comedy",
-            "Greek male writers",
-            "Greek geologists",
-            "Greek meteorologists"
-          ],
-          "birth_year": -384,
-          "death_year": -322
-        },
-        "original_year": -329,
-        "author_meta": {
-          "birth_year": -384,
-          "death_year": -322,
-          "main_genre": "philosophy",
-          "nationality": "Greek"
-        }
-      },
-      "wikipedia_match": {
-        "title": "Aristotle",
-        "page_id": 308,
-        "infoboxes": [
-          "philosopher"
-        ],
-        "categories": [
-          "Aristotle| ",
-          "Aristotelianism|*",
-          "384 BC births",
-          "322 BC deaths",
-          "4th-century BC Greek mathematicians",
-          "4th-century BC philosophers",
-          "4th-century BC Greek writers",
-          "Acting theorists",
-          "Ancient Greek biologists",
-          "Ancient Greek epistemologists",
-          "Ancient Greek ethicists",
-          "Ancient Greek logicians",
-          "Ancient Greek metaphysicians",
-          "Ancient Greek philosophers of language",
-          "Ancient Greek philosophers of mind",
-          "Ancient Greek physicists",
-          "Ancient Greek political philosophers",
-          "Ancient Greek political refugees",
-          "Ancient Greek philosophers of art",
-          "Ancient literary critics",
-          "Ancient Stagirites",
-          "Aphorists",
-          "Aristotelian philosophers",
-          "Attic Greek writers",
-          "Ancient Greek cosmologists",
-          "Classical theism",
-          "Characters in the Divine Comedy",
-          "Greek male writers",
-          "Greek geologists",
-          "Greek meteorologists"
-        ],
-        "birth_year": -384,
-        "death_year": -322
-      },
-      "edge": {
-        "target_type": "book",
-        "target_book_id": "771063",
-        "target_author_ids": [
-          "2192",
-          "406514"
-        ],
-        "target_person": {
-          "title": "Aristotle",
-          "page_id": 308,
-          "infoboxes": [
-            "philosopher"
-          ],
-          "categories": [
-            "Aristotle| ",
-            "Aristotelianism|*",
-            "384 BC births",
-            "322 BC deaths",
-            "4th-century BC Greek mathematicians",
-            "4th-century BC philosophers",
-            "4th-century BC Greek writers",
-            "Acting theorists",
-            "Ancient Greek biologists",
-            "Ancient Greek epistemologists",
-            "Ancient Greek ethicists",
-            "Ancient Greek logicians",
-            "Ancient Greek metaphysicians",
-            "Ancient Greek philosophers of language",
-            "Ancient Greek philosophers of mind",
-            "Ancient Greek physicists",
-            "Ancient Greek political philosophers",
-            "Ancient Greek political refugees",
-            "Ancient Greek philosophers of art",
-            "Ancient literary critics",
-            "Ancient Stagirites",
-            "Aphorists",
-            "Aristotelian philosophers",
-            "Attic Greek writers",
-            "Ancient Greek cosmologists",
-            "Classical theism",
-            "Characters in the Divine Comedy",
-            "Greek male writers",
-            "Greek geologists",
-            "Greek meteorologists"
-          ],
-          "birth_year": -384,
-          "death_year": -322
-        }
-      }
-    },
-    {
-      "raw": {
         "title": "Maxims and Thoughts",
         "author": "Chamfort",
         "note": null,
@@ -1955,7 +1776,7 @@
         "link": "https://www.goodreads.com/book/show/550463.Natural_History_Volume_IX",
         "original_year": 1952,
         "author_meta": {
-          "birth_year": -23,
+          "birth_year": 23,
           "death_year": 79,
           "main_genre": "natural history",
           "nationality": "Roman"
@@ -2826,8 +2647,8 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -354,
-          "death_year": -430,
+          "birth_year": 354,
+          "death_year": 430,
           "main_genre": "theology",
           "nationality": "Roman"
         }
@@ -3936,8 +3757,8 @@
           "Pseudonymous writers",
           "Year of birth unknown"
         ],
-        "birth_year": 400,
-        "death_year": 50
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "author",
@@ -3970,8 +3791,8 @@
             "Pseudonymous writers",
             "Year of birth unknown"
           ],
-          "birth_year": 400,
-          "death_year": 50
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -8667,7 +8488,7 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1475,
+          "birth_year": 1475,
           "death_year": 1564,
           "main_genre": "Sculpture",
           "nationality": "Italian"
@@ -11018,8 +10839,8 @@
           "Pseudonymous writers",
           "Year of birth unknown"
         ],
-        "birth_year": 400,
-        "death_year": 50
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "book",
@@ -11054,8 +10875,8 @@
             "Pseudonymous writers",
             "Year of birth unknown"
           ],
-          "birth_year": 400,
-          "death_year": 50
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -11760,8 +11581,8 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1711,
-          "death_year": -1776,
+          "birth_year": 1711,
+          "death_year": 1776,
           "main_genre": "philosophy",
           "nationality": "Scottish"
         }
@@ -11781,14 +11602,16 @@
         "title": "Metaphysics",
         "author": "Aristotle",
         "note": null,
-        "count": 2,
+        "count": 3,
         "contexts": [
           "let us content ourselves with that of Aristotle’s Metaphysics (V, 9, 1018a): two things that are supposed to be different are recognized as the same if they occupy the same portion of space at the same time.",
-          "Metaphysics (Aristotle), 184"
+          "Metaphysics (Aristotle), 184",
+          "Aristotle.\nThe Metaphysics.\nLondon: Penguin Classics, 1999."
         ],
         "commentaries": [
           "The author cites Aristotle’s Metaphysics as a foundational source for defining identity in the context of counterfeiting, using it to ground a practical criterion for sameness over abstract philosophical notions.",
-          "The author cites Aristotle's Metaphysics as a key source for philosophical inquiry into being and first principles."
+          "The author cites Aristotle's Metaphysics as a key source for philosophical inquiry into being and first principles.",
+          "The author cites Aristotle’s foundational text, implying it is referenced for its philosophical treatment of being, truth, or essence."
         ]
       },
       "goodreads_match": {
@@ -17996,8 +17819,8 @@
           "12th-century writers in Latin",
           "Latin commentators on Plato"
         ],
-        "birth_year": 1080,
-        "death_year": 1030
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "person",
@@ -18017,8 +17840,8 @@
             "12th-century writers in Latin",
             "Latin commentators on Plato"
           ],
-          "birth_year": 1080,
-          "death_year": 1030
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -19343,8 +19166,8 @@
           "death_year": 220
         },
         "author_meta": {
-          "birth_year": -155,
-          "death_year": -220,
+          "birth_year": 155,
+          "death_year": 220,
           "main_genre": "theology",
           "nationality": "Roman"
         }
@@ -20383,7 +20206,7 @@
           "death_year": null
         },
         "author_meta": {
-          "birth_year": -35,
+          "birth_year": 35,
           "death_year": 100,
           "main_genre": "rhetoric",
           "nationality": "Roman"
@@ -20413,7 +20236,7 @@
           "Fabii",
           "1st-century educators"
         ],
-        "birth_year": -35,
+        "birth_year": 35,
         "death_year": 100
       },
       "edge": {
@@ -20446,7 +20269,7 @@
             "Fabii",
             "1st-century educators"
           ],
-          "birth_year": -35,
+          "birth_year": 35,
           "death_year": 100
         }
       }
@@ -20951,7 +20774,7 @@
           "death_year": 79
         },
         "author_meta": {
-          "birth_year": -23,
+          "birth_year": 23,
           "death_year": 79,
           "main_genre": "natural history",
           "nationality": "Roman"
@@ -21079,8 +20902,8 @@
           "death_year": null
         },
         "author_meta": {
-          "birth_year": -46,
-          "death_year": -120,
+          "birth_year": 46,
+          "death_year": 120,
           "main_genre": "biography",
           "nationality": "Greek"
         }
@@ -21851,8 +21674,8 @@
           "Pseudonymous writers",
           "Year of birth unknown"
         ],
-        "birth_year": 400,
-        "death_year": 50
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "book",
@@ -21887,8 +21710,8 @@
             "Pseudonymous writers",
             "Year of birth unknown"
           ],
-          "birth_year": 400,
-          "death_year": 50
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -25105,8 +24928,8 @@
           "Pseudonymous writers",
           "Year of birth unknown"
         ],
-        "birth_year": 400,
-        "death_year": 50
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "book",
@@ -25139,8 +24962,8 @@
             "Pseudonymous writers",
             "Year of birth unknown"
           ],
-          "birth_year": 400,
-          "death_year": 50
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -25812,8 +25635,8 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1564,
-          "death_year": -1616,
+          "birth_year": 1564,
+          "death_year": 1616,
           "main_genre": "drama",
           "nationality": "English"
         }
@@ -28385,7 +28208,7 @@
           "death_year": 1994
         },
         "author_meta": {
-          "birth_year": -1902,
+          "birth_year": 1902,
           "death_year": 1994,
           "main_genre": "philosophy",
           "nationality": "Austrian-British"
@@ -28938,8 +28761,8 @@
         "description": "A polemical treatise by Saint Jerome against the views of Jovinian, who promoted the equality of married and celibate Christian life. Written in 393 AD, it is one of Jerome's most controversial works, defending asceticism and virginity.",
         "book_id": "web_75816b87",
         "author_meta": {
-          "birth_year": -347,
-          "death_year": -420,
+          "birth_year": 347,
+          "death_year": 420,
           "main_genre": "theology",
           "nationality": "Roman"
         }
@@ -30965,7 +30788,7 @@
         "nationality": "Roman Jewish",
         "description": "St. Paul, also known as Paul the Apostle, was an early Christian missionary and theologian whose epistles form a significant part of the New Testament. He is traditionally credited with writing 13 of the 27 books of the New Testament, including the First Epistle to the Corinthians and the Epistle to Titus.",
         "author_meta": {
-          "birth_year": -5,
+          "birth_year": 5,
           "death_year": 67,
           "main_genre": "religious epistle",
           "nationality": "Jewish-Roman"

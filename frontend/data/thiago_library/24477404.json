@@ -761,7 +761,7 @@
           "death_year": 65
         },
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       },
@@ -803,7 +803,7 @@
           "Characters in the Divine Comedy",
           "Male suicides"
         ],
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 65
       },
       "edge": {
@@ -850,7 +850,7 @@
             "Characters in the Divine Comedy",
             "Male suicides"
           ],
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       }
@@ -2449,7 +2449,7 @@
         "link": "https://www.goodreads.com/book/show/30228592-moral-letters-to-lucilius",
         "original_year": 64,
         "author_meta": {
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 65
         }
       },

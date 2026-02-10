@@ -1,0 +1,3739 @@
+{
+  "source": {
+    "title": "The Selfish Gene",
+    "authors": [
+      "Richard Dawkins"
+    ],
+    "goodreads_id": "61535",
+    "calibre_id": null,
+    "publication_year": 1976,
+    "author_metadata": {
+      "birth_year": 1941,
+      "death_year": null,
+      "description": null,
+      "title": "Richard Dawkins"
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "David Lack",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the chief architect of the selfish gene theory of family planning was the great ecologist David Lack."
+        ],
+        "commentaries": [
+          "The author identifies David Lack as the primary theorist behind the selfish gene explanation for reproductive strategies like clutch size."
+        ],
+        "canonical_author": "David Lack"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "David Lack",
+        "page_id": 550482,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1910 births",
+          "1973 deaths",
+          "Scientists from London",
+          "People educated at Gresham's School",
+          "Alumni of Magdalene College, Cambridge",
+          "British evolutionary biologists",
+          "English ornithologists",
+          "English ecologists",
+          "English Anglicans",
+          "Fellows of the Royal Society",
+          "Fellows of Trinity College, Oxford",
+          "20th-century British zoologists",
+          "Converts to Anglicanism from atheism or agnosticism",
+          "Modern synthesis (20th century)",
+          "Theistic evolutionists",
+          "Edward Grey Institute people",
+          "Presidents of the British Ecological Society"
+        ],
+        "birth_year": 1910,
+        "death_year": 1973
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "123662"
+        ],
+        "target_person": {
+          "title": "David Lack",
+          "page_id": 550482,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1910 births",
+            "1973 deaths",
+            "Scientists from London",
+            "People educated at Gresham's School",
+            "Alumni of Magdalene College, Cambridge",
+            "British evolutionary biologists",
+            "English ornithologists",
+            "English ecologists",
+            "English Anglicans",
+            "Fellows of the Royal Society",
+            "Fellows of Trinity College, Oxford",
+            "20th-century British zoologists",
+            "Converts to Anglicanism from atheism or agnosticism",
+            "Modern synthesis (20th century)",
+            "Theistic evolutionists",
+            "Edward Grey Institute people",
+            "Presidents of the British Ecological Society"
+          ],
+          "birth_year": 1910,
+          "death_year": 1973
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Karl Popper",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The analogy between scientific progress and genetic evolution by natural selection has been illuminated especially by Sir Karl Popper."
+        ],
+        "commentaries": [
+          "The author credits Popper with illuminating the analogy between scientific progress and genetic evolution by natural selection."
+        ],
+        "canonical_author": "Karl R. Popper"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Karl Popper",
+        "page_id": 16623,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Karl Popper| ",
+          "1902 births",
+          "1994 deaths",
+          "20th-century Austrian essayists",
+          "20th-century Austrian male writers",
+          "20th-century Austrian non-fiction writers",
+          "20th-century Austrian philosophers",
+          "20th-century British essayists",
+          "20th-century British male writers",
+          "20th-century British non-fiction writers",
+          "20th-century British philosophers",
+          "Academic staff of the University of Canterbury",
+          "Academics of the London School of Economics",
+          "Aristotelian philosophers",
+          "Austrian agnostics",
+          "Austrian logicians",
+          "Austrian male essayists",
+          "Austrian male non-fiction writers",
+          "Austrian political philosophers",
+          "Austrian social liberals",
+          "Austrian sociologists",
+          "British agnostics",
+          "British consciousness researchers and theorists",
+          "British ethicists",
+          "British historians of philosophy",
+          "British logicians",
+          "British male essayists",
+          "British male non-fiction writers",
+          "British people of Austrian-Jewish descent",
+          "British philosophers of education"
+        ],
+        "birth_year": 1902,
+        "death_year": 1994
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "14772624"
+        ],
+        "target_person": {
+          "title": "Karl Popper",
+          "page_id": 16623,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Karl Popper| ",
+            "1902 births",
+            "1994 deaths",
+            "20th-century Austrian essayists",
+            "20th-century Austrian male writers",
+            "20th-century Austrian non-fiction writers",
+            "20th-century Austrian philosophers",
+            "20th-century British essayists",
+            "20th-century British male writers",
+            "20th-century British non-fiction writers",
+            "20th-century British philosophers",
+            "Academic staff of the University of Canterbury",
+            "Academics of the London School of Economics",
+            "Aristotelian philosophers",
+            "Austrian agnostics",
+            "Austrian logicians",
+            "Austrian male essayists",
+            "Austrian male non-fiction writers",
+            "Austrian political philosophers",
+            "Austrian social liberals",
+            "Austrian sociologists",
+            "British agnostics",
+            "British consciousness researchers and theorists",
+            "British ethicists",
+            "British historians of philosophy",
+            "British logicians",
+            "British male essayists",
+            "British male non-fiction writers",
+            "British people of Austrian-Jewish descent",
+            "British philosophers of education"
+          ],
+          "birth_year": 1902,
+          "death_year": 1994
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Jacques Monod",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Jacques Monod made this point very well in his Herbert Spencer lecture, after wryly remarking: 'Another curious aspect of the theory of evolution is that everybody thinks he understands it!'"
+        ],
+        "commentaries": [
+          "The author cites Jacques Monod's lecture to support the point that evolution happens regardless of the replicators' efforts to prevent it."
+        ],
+        "canonical_author": "Jacques Monod"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Jacques Monod",
+        "page_id": 547527,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1910 births",
+          "1976 deaths",
+          "Academic staff of the Collège de France",
+          "French microbiologists",
+          "French geneticists",
+          "French biochemists",
+          "Nobel laureates in Physiology or Medicine",
+          "French Nobel laureates",
+          "French atheists",
+          "French humanists",
+          "French Resistance members",
+          "Foreign members of the Royal Society",
+          "Foreign associates of the National Academy of Sciences",
+          "History of genetics",
+          "Scientists from Paris",
+          "Burials at the Cimetière du Grand Jas",
+          "Pasteur Institute",
+          "Recipients of the Legion of Honour",
+          "Members of the Royal Swedish Academy of Sciences",
+          "Members of the American Philosophical Society",
+          "French people of American descent"
+        ],
+        "birth_year": 1910,
+        "death_year": 1976
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "275446"
+        ],
+        "target_person": {
+          "title": "Jacques Monod",
+          "page_id": 547527,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1910 births",
+            "1976 deaths",
+            "Academic staff of the Collège de France",
+            "French microbiologists",
+            "French geneticists",
+            "French biochemists",
+            "Nobel laureates in Physiology or Medicine",
+            "French Nobel laureates",
+            "French atheists",
+            "French humanists",
+            "French Resistance members",
+            "Foreign members of the Royal Society",
+            "Foreign associates of the National Academy of Sciences",
+            "History of genetics",
+            "Scientists from Paris",
+            "Burials at the Cimetière du Grand Jas",
+            "Pasteur Institute",
+            "Recipients of the Legion of Honour",
+            "Members of the Royal Swedish Academy of Sciences",
+            "Members of the American Philosophical Society",
+            "French people of American descent"
+          ],
+          "birth_year": 1910,
+          "death_year": 1976
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "V. C. Wynne-Edwards",
+        "note": null,
+        "count": 11,
+        "contexts": [
+          "brought out into the open in a famous book by V. C. Wynne-Edwards",
+          "This is because Wynne-Edwards, who has been mainly responsible for promulgating the idea of group selection, did so in the context of a theory of 'population regulation'.",
+          "This is where Wynne-Edwards parts company with orthodox evolutionary theorists.",
+          "A point that is not emphasized in the writings of Wynne-Edwards, or in Ardrey's popularization of his views, is that there is a large body of agreed facts that are not in dispute.",
+          "But even here there is less disagreement than you might think from reading his book.",
+          "Wynne-Edwards believes that animals who fight over territory are fighting over a token prize, rather than an actual prize like a bit of food.",
+          "Winning a territory is therefore, to Wynne-Edwards, like winning a ticket or licence to breed.",
+          "Wynne-Edwards interprets dominance hierarchies in a similar way.",
+          "Wynne-Edwards has an altogether more daring interpretation.",
+          "Perhaps the most startling of Wynne-Edwards's ideas is that of epideictic behaviour, a word that he coined himself.",
+          "For Wynne-Edwards, epideictic behaviour is deliberate massing in crowds to facilitate population estimation."
+        ],
+        "commentaries": [
+          "The author references Wynne-Edwards as the figure who explicitly presented the theory of group selection in a well-known book.",
+          "The author cites Wynne-Edwards as the promulgator of the group selection theory, specifically in the context of population regulation.",
+          "The author identifies Wynne-Edwards as holding a distinct theoretical position on the evolution of altruistic birth-control.",
+          "The author references the written works of Wynne-Edwards and notes a specific point of omission within them.",
+          "The author suggests that a reader of Wynne-Edwards's book might overestimate the level of disagreement on a specific point.",
+          "The author references Wynne-Edwards's theory on territorial behavior as a form of population regulation.",
+          "The author explains Wynne-Edwards's interpretation of territory as a breeding license.",
+          "The author describes how Wynne-Edwards applies his theory of population regulation to dominance hierarchies.",
+          "The author presents Wynne-Edwards's more radical group-selectionist interpretation of social rank and breeding rights.",
+          "The author introduces Wynne-Edwards's concept of epideictic behavior as a proposed mechanism for population census.",
+          "The author details Wynne-Edwards's specific hypothesis about the function of animal aggregations."
+        ],
+        "canonical_author": "V. C. Wynne-Edwards"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "V. C. Wynne-Edwards",
+        "page_id": 1601511,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1906 births",
+          "1997 deaths",
+          "Military personnel from Leeds",
+          "Royal Canadian Navy personnel of World War II",
+          "Royal Canadian Navy personnel",
+          "Scientists from Leeds",
+          "People educated at Rugby School",
+          "Alumni of New College, Oxford",
+          "Commanders of the Order of the British Empire",
+          "English biologists",
+          "Fellows of the Royal Society",
+          "Fellows of the Royal Society of Edinburgh",
+          "Academics of the University of Aberdeen",
+          "Academics of the University of Bristol",
+          "Academic staff of McGill University",
+          "20th-century English zoologists",
+          "Presidents of the British Ornithologists' Union"
+        ],
+        "birth_year": 1906,
+        "death_year": 1997
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "V. C. Wynne-Edwards",
+          "page_id": 1601511,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1906 births",
+            "1997 deaths",
+            "Military personnel from Leeds",
+            "Royal Canadian Navy personnel of World War II",
+            "Royal Canadian Navy personnel",
+            "Scientists from Leeds",
+            "People educated at Rugby School",
+            "Alumni of New College, Oxford",
+            "Commanders of the Order of the British Empire",
+            "English biologists",
+            "Fellows of the Royal Society",
+            "Fellows of the Royal Society of Edinburgh",
+            "Academics of the University of Aberdeen",
+            "Academics of the University of Bristol",
+            "Academic staff of McGill University",
+            "20th-century English zoologists",
+            "Presidents of the British Ornithologists' Union"
+          ],
+          "birth_year": 1906,
+          "death_year": 1997
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Garrett Hardin",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The American biologist Garrett Hardin used it to summarize the message of what may be called 'Sociobiology' or 'selfish genery'."
+        ],
+        "commentaries": [
+          "The author notes that Garrett Hardin used the phrase 'Nice guys finish first' to summarize the concepts of sociobiology or selfish genery."
+        ],
+        "canonical_author": "Garrett Hardin"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Garrett Hardin",
+        "page_id": 2025411,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1915 births",
+          "2003 suicides",
+          "2003 deaths",
+          "Scientists from Dallas",
+          "American ecologists",
+          "American non-fiction environmental writers",
+          "American social sciences writers",
+          "American demographers",
+          "American Eugenics Society members",
+          "American segregationists",
+          "American white nationalists",
+          "Suicides in California",
+          "Joint suicides",
+          "American sustainability advocates",
+          "University of California, Santa Barbara faculty",
+          "20th-century American essayists",
+          "Activists from Texas",
+          "Activists from California",
+          "Members of the American Philosophical Society",
+          "Ecofascism",
+          "Malthusians",
+          "20th-century American philosophers",
+          "American political philosophers",
+          "University of Chicago alumni",
+          "Stanford University alumni"
+        ],
+        "birth_year": 1915,
+        "death_year": 2003
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "83660"
+        ],
+        "target_person": {
+          "title": "Garrett Hardin",
+          "page_id": 2025411,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1915 births",
+            "2003 suicides",
+            "2003 deaths",
+            "Scientists from Dallas",
+            "American ecologists",
+            "American non-fiction environmental writers",
+            "American social sciences writers",
+            "American demographers",
+            "American Eugenics Society members",
+            "American segregationists",
+            "American white nationalists",
+            "Suicides in California",
+            "Joint suicides",
+            "American sustainability advocates",
+            "University of California, Santa Barbara faculty",
+            "20th-century American essayists",
+            "Activists from Texas",
+            "Activists from California",
+            "Members of the American Philosophical Society",
+            "Ecofascism",
+            "Malthusians",
+            "20th-century American philosophers",
+            "American political philosophers",
+            "University of Chicago alumni",
+            "Stanford University alumni"
+          ],
+          "birth_year": 1915,
+          "death_year": 2003
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "William Shakespeare",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This talk of laughing all the way to the bank reminds me of a delightful line from Shakespeare: The first thing we do, let's kill all the lawyers."
+        ],
+        "commentaries": [
+          "The author recalls a line from Shakespeare to humorously illustrate a point about lawyers and adversarial systems."
+        ],
+        "canonical_author": "William Shakespeare"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "William Shakespeare",
+        "page_id": 32897,
+        "infoboxes": [
+          "person",
+          "writer "
+        ],
+        "categories": [
+          "William Shakespeare| ",
+          "1564 births",
+          "1616 deaths",
+          "16th-century English male actors",
+          "English male stage actors",
+          "English male Shakespearean actors",
+          "16th-century English dramatists and playwrights",
+          "16th-century English male writers",
+          "17th-century English dramatists and playwrights",
+          "16th-century English poets",
+          "Burials in Warwickshire",
+          "17th-century English poets",
+          "17th-century English male writers",
+          "English Renaissance dramatists",
+          "People educated at King Edward VI School, Stratford-upon-Avon",
+          "Male actors from Stratford-upon-Avon",
+          "People of the Elizabethan era",
+          "Shakespeare family",
+          "Sonneteers",
+          "King's Men (playing company)",
+          "17th-century English male actors",
+          "English male dramatists and playwrights",
+          "English male poets",
+          "Writers from Warwickshire",
+          "Burials at Church of the Holy Trinity, Stratford-upon-Avon"
+        ],
+        "birth_year": 1564,
+        "death_year": 1616
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "947"
+        ],
+        "target_person": {
+          "title": "William Shakespeare",
+          "page_id": 32897,
+          "infoboxes": [
+            "person",
+            "writer "
+          ],
+          "categories": [
+            "William Shakespeare| ",
+            "1564 births",
+            "1616 deaths",
+            "16th-century English male actors",
+            "English male stage actors",
+            "English male Shakespearean actors",
+            "16th-century English dramatists and playwrights",
+            "16th-century English male writers",
+            "17th-century English dramatists and playwrights",
+            "16th-century English poets",
+            "Burials in Warwickshire",
+            "17th-century English poets",
+            "17th-century English male writers",
+            "English Renaissance dramatists",
+            "People educated at King Edward VI School, Stratford-upon-Avon",
+            "Male actors from Stratford-upon-Avon",
+            "People of the Elizabethan era",
+            "Shakespeare family",
+            "Sonneteers",
+            "King's Men (playing company)",
+            "17th-century English male actors",
+            "English male dramatists and playwrights",
+            "English male poets",
+            "Writers from Warwickshire",
+            "Burials at Church of the Holy Trinity, Stratford-upon-Avon"
+          ],
+          "birth_year": 1564,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Charles Darwin",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "The next important link in the argument, one that Darwin himself laid stress on (although he was talking about animals and plants, not molecules) is competition.",
+          "Incidentally, this was proved in Darwin's lifetime, and it caused Darwin great worry since in those days it was assumed that heredity was a blending process.",
+          "It has been understood ever since Darwin.",
+          "But now here is a very interesting point realized by Darwin, and clearly enunciated by Fisher.",
+          "He concluded, as had Darwin, that delayed reciprocal altruism can evolve in species that are capable of recognizing and remembering each other as individuals."
+        ],
+        "commentaries": [
+          "The author references Darwin's emphasis on competition as a key concept in evolution, extending it to replicator molecules.",
+          "The author references Darwin's personal concern about the blending theory of heredity, noting it was a source of worry during his lifetime.",
+          "The author references Darwin as the historical origin of the understanding of the evolutionary advantage of parental care.",
+          "The author notes that Darwin realized an interesting point about sexual selection.",
+          "The author notes that Williams's conclusion aligned with Darwin's earlier ideas on the evolution of delayed reciprocal altruism."
+        ],
+        "canonical_author": "Charles Darwin"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Charles Darwin",
+        "page_id": 8145410,
+        "infoboxes": [
+          "person",
+          "writer",
+          "scientist"
+        ],
+        "categories": [
+          "Charles Darwin| ",
+          "1809 births",
+          "1882 deaths",
+          "19th-century British biologists",
+          "19th-century English writers",
+          "19th-century Anglicans",
+          "19th-century English naturalists",
+          "19th-century English geologists",
+          "Alumni of Christ's College, Cambridge",
+          "Alumni of the University of Edinburgh",
+          "Botanists with author abbreviations",
+          "British carcinologists",
+          "British evolutionary biologists",
+          "British science communicators",
+          "Burials at Westminster Abbey",
+          "Circumnavigators of the globe",
+          "Coleopterists",
+          "Darwin–Wedgwood family",
+          "Deaths from coronary thrombosis",
+          "English abolitionists",
+          "English agnostics",
+          "English Anglicans",
+          "English entomologists",
+          "English justices of the peace",
+          "English sceptics",
+          "English travel writers",
+          "Ethologists",
+          "Fellows of the Linnean Society of London",
+          "Fellows of the Royal Entomological Society",
+          "Fellows of the Royal Geographical Society"
+        ],
+        "birth_year": 1809,
+        "death_year": 1882
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "12793"
+        ],
+        "target_person": {
+          "title": "Charles Darwin",
+          "page_id": 8145410,
+          "infoboxes": [
+            "person",
+            "writer",
+            "scientist"
+          ],
+          "categories": [
+            "Charles Darwin| ",
+            "1809 births",
+            "1882 deaths",
+            "19th-century British biologists",
+            "19th-century English writers",
+            "19th-century Anglicans",
+            "19th-century English naturalists",
+            "19th-century English geologists",
+            "Alumni of Christ's College, Cambridge",
+            "Alumni of the University of Edinburgh",
+            "Botanists with author abbreviations",
+            "British carcinologists",
+            "British evolutionary biologists",
+            "British science communicators",
+            "Burials at Westminster Abbey",
+            "Circumnavigators of the globe",
+            "Coleopterists",
+            "Darwin–Wedgwood family",
+            "Deaths from coronary thrombosis",
+            "English abolitionists",
+            "English agnostics",
+            "English Anglicans",
+            "English entomologists",
+            "English justices of the peace",
+            "English sceptics",
+            "English travel writers",
+            "Ethologists",
+            "Fellows of the Linnean Society of London",
+            "Fellows of the Royal Entomological Society",
+            "Fellows of the Royal Geographical Society"
+          ],
+          "birth_year": 1809,
+          "death_year": 1882
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Margaret Mead",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "to the gentle altruism of Margaret Mead's Arapesh."
+        ],
+        "commentaries": [
+          "The author references Mead's work on the Arapesh people as an example of gentle cultural altruism."
+        ],
+        "canonical_author": "Margaret Mead"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Margaret Mead",
+        "page_id": 19617,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1901 births",
+          "1978 deaths",
+          "20th-century American anthropologists",
+          "20th-century American Episcopalians",
+          "20th-century American non-fiction writers",
+          "20th-century American scientists",
+          "20th-century American women academics",
+          "20th-century American women scientists",
+          "20th-century American women writers",
+          "American anthropology writers",
+          "American curators",
+          "American systems scientists",
+          "American women anthropologists",
+          "American women curators",
+          "American women non-fiction writers",
+          "American women science writers",
+          "Barnard College alumni",
+          "Bateson family",
+          "Columbia University faculty",
+          "Cyberneticists",
+          "Deaths from pancreatic cancer in New York (state)",
+          "DePauw University alumni",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Graduate Women in Science members",
+          "Kalinga Prize recipients",
+          "Members of the American Philosophical Society",
+          "Members of the Society of Woman Geographers",
+          "Pacific studies",
+          "People associated with the American Museum of Natural History",
+          "Presidential Medal of Freedom recipients"
+        ],
+        "birth_year": 1901,
+        "death_year": 1978
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "61107"
+        ],
+        "target_person": {
+          "title": "Margaret Mead",
+          "page_id": 19617,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1901 births",
+            "1978 deaths",
+            "20th-century American anthropologists",
+            "20th-century American Episcopalians",
+            "20th-century American non-fiction writers",
+            "20th-century American scientists",
+            "20th-century American women academics",
+            "20th-century American women scientists",
+            "20th-century American women writers",
+            "American anthropology writers",
+            "American curators",
+            "American systems scientists",
+            "American women anthropologists",
+            "American women curators",
+            "American women non-fiction writers",
+            "American women science writers",
+            "Barnard College alumni",
+            "Bateson family",
+            "Columbia University faculty",
+            "Cyberneticists",
+            "Deaths from pancreatic cancer in New York (state)",
+            "DePauw University alumni",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Graduate Women in Science members",
+            "Kalinga Prize recipients",
+            "Members of the American Philosophical Society",
+            "Members of the Society of Woman Geographers",
+            "Pacific studies",
+            "People associated with the American Museum of Natural History",
+            "Presidential Medal of Freedom recipients"
+          ],
+          "birth_year": 1901,
+          "death_year": 1978
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Konrad Lorenz",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Konrad Lorenz has put this point well."
+        ],
+        "commentaries": [
+          "The author references Lorenz to support the argument that genes act as master programmers judged by survival, without citing a specific book."
+        ],
+        "canonical_author": "Konrad Lorenz"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Konrad Lorenz",
+        "page_id": 17077,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Konrad Lorenz| ",
+          "1903 births",
+          "1989 deaths",
+          "Austrian ornithologists",
+          "Austrian Nazis",
+          "Austrian Nobel laureates",
+          "Nobel laureates from Austria-Hungary",
+          "Columbia College, Columbia University alumni",
+          "Ethologists",
+          "German Army officers of World War II",
+          "Austrian military doctors",
+          "Scientists from Vienna",
+          "University of Vienna alumni",
+          "Academic staff of the University of Vienna",
+          "Academic staff of the University of Königsberg",
+          "20th-century Austrian zoologists",
+          "World War II prisoners of war held by the Soviet Union",
+          "Austrian prisoners of war",
+          "Members of the Austrian Academy of Sciences",
+          "Nobel laureates in Physiology or Medicine",
+          "Foreign members of the Royal Society",
+          "Foreign associates of the National Academy of Sciences",
+          "Recipients of the Austrian Decoration for Science and Art",
+          "Kalinga Prize recipients",
+          "Grand Crosses with Star and Sash of the Order of Merit of the Federal Republic of Germany",
+          "Recipients of the Pour le Mérite (civil class)",
+          "Max Planck Society people",
+          "Austrian military personnel of World War II",
+          "International members of the American Philosophical Society",
+          "Members of the Royal Swedish Academy of Sciences"
+        ],
+        "birth_year": 1903,
+        "death_year": 1989
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8674"
+        ],
+        "target_person": {
+          "title": "Konrad Lorenz",
+          "page_id": 17077,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Konrad Lorenz| ",
+            "1903 births",
+            "1989 deaths",
+            "Austrian ornithologists",
+            "Austrian Nazis",
+            "Austrian Nobel laureates",
+            "Nobel laureates from Austria-Hungary",
+            "Columbia College, Columbia University alumni",
+            "Ethologists",
+            "German Army officers of World War II",
+            "Austrian military doctors",
+            "Scientists from Vienna",
+            "University of Vienna alumni",
+            "Academic staff of the University of Vienna",
+            "Academic staff of the University of Königsberg",
+            "20th-century Austrian zoologists",
+            "World War II prisoners of war held by the Soviet Union",
+            "Austrian prisoners of war",
+            "Members of the Austrian Academy of Sciences",
+            "Nobel laureates in Physiology or Medicine",
+            "Foreign members of the Royal Society",
+            "Foreign associates of the National Academy of Sciences",
+            "Recipients of the Austrian Decoration for Science and Art",
+            "Kalinga Prize recipients",
+            "Grand Crosses with Star and Sash of the Order of Merit of the Federal Republic of Germany",
+            "Recipients of the Pour le Mérite (civil class)",
+            "Max Planck Society people",
+            "Austrian military personnel of World War II",
+            "International members of the American Philosophical Society",
+            "Members of the Royal Swedish Academy of Sciences"
+          ],
+          "birth_year": 1903,
+          "death_year": 1989
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Robert Trivers",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Meanwhile the theory had been extended, notably by John Maynard Smith and Robert Trivers."
+        ],
+        "commentaries": [
+          "The author notes that the theory was extended by this scientist during the period before the book was completed."
+        ],
+        "canonical_author": "Robert Trivers"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Robert Trivers",
+        "page_id": 2089648,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1943 births",
+          "Living people",
+          "American evolutionary biologists",
+          "Evolutionary psychologists",
+          "Human evolution theorists",
+          "Harvard University alumni",
+          "Harvard University faculty",
+          "University of California, Santa Cruz faculty",
+          "Rutgers University faculty",
+          "Fellows of the American Association for the Advancement of Science",
+          "Members of the Black Panther Party",
+          "Activists from California",
+          "Sociobiologists"
+        ],
+        "birth_year": 1943,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "156319"
+        ],
+        "target_person": {
+          "title": "Robert Trivers",
+          "page_id": 2089648,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1943 births",
+            "Living people",
+            "American evolutionary biologists",
+            "Evolutionary psychologists",
+            "Human evolution theorists",
+            "Harvard University alumni",
+            "Harvard University faculty",
+            "University of California, Santa Cruz faculty",
+            "Rutgers University faculty",
+            "Fellows of the American Association for the Advancement of Science",
+            "Members of the Black Panther Party",
+            "Activists from California",
+            "Sociobiologists"
+          ],
+          "birth_year": 1943,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Evolution of Cooperation",
+        "author": "Robert Axelrod",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "For these I took my inspiration from the two books in the field that have most excited me during the intervening years: Robert Axelrod's The Evolution of Cooperation"
+        ],
+        "commentaries": [
+          "The author cites this book as a primary source of inspiration for new chapters in the second edition, noting it offers hope for the future."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 6,
+        "author_ids": [
+          "151970"
+        ],
+        "publication_day": 1,
+        "ratings_count": 76,
+        "average_rating": 4.19,
+        "isbn13": "9780465021215",
+        "publisher": "Basic Books",
+        "title": "The Evolution Of Cooperation",
+        "title_without_series": "The Evolution Of Cooperation",
+        "book_id": "843436",
+        "format": "Paperback",
+        "num_pages": 256,
+        "work_id": "356829",
+        "publication_month": 10,
+        "publication_year": 1985,
+        "isbn": "0465021212",
+        "authors": [
+          "Robert Axelrod"
+        ],
+        "description": "This widely praised and much-discussed book explores how cooperation can emerge in a world of self-seeking egoists--whether superpowers, businesses, or individuals--when there is no central authority to police their actions.",
+        "link": "https://www.goodreads.com/book/show/843436.The_Evolution_Of_Cooperation",
+        "wikipedia_match": {
+          "title": "Robert Axelrod (political scientist)",
+          "page_id": 236408,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1943 births",
+            "American political scientists",
+            "Fellows of the American Academy of Arts and Sciences",
+            "American game theorists",
+            "American international relations scholars",
+            "Living people",
+            "MacArthur Fellows",
+            "University of California, Berkeley faculty",
+            "University of Chicago alumni",
+            "University of Michigan faculty",
+            "Gerald R. Ford School of Public Policy faculty",
+            "Yale Graduate School of Arts and Sciences alumni",
+            "Members of the United States National Academy of Sciences",
+            "Jefferson Science Fellows"
+          ],
+          "birth_year": 1943,
+          "death_year": null
+        },
+        "original_year": 1984,
+        "author_meta": {
+          "birth_year": 1943,
+          "death_year": null,
+          "description": null,
+          "title": "Robert Axelrod (political scientist)"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Robert Axelrod (political scientist)",
+        "page_id": 236408,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1943 births",
+          "American political scientists",
+          "Fellows of the American Academy of Arts and Sciences",
+          "American game theorists",
+          "American international relations scholars",
+          "Living people",
+          "MacArthur Fellows",
+          "University of California, Berkeley faculty",
+          "University of Chicago alumni",
+          "University of Michigan faculty",
+          "Gerald R. Ford School of Public Policy faculty",
+          "Yale Graduate School of Arts and Sciences alumni",
+          "Members of the United States National Academy of Sciences",
+          "Jefferson Science Fellows"
+        ],
+        "birth_year": 1943,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "843436",
+        "target_author_ids": [
+          "151970"
+        ],
+        "target_person": {
+          "title": "Robert Axelrod (political scientist)",
+          "page_id": 236408,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1943 births",
+            "American political scientists",
+            "Fellows of the American Academy of Arts and Sciences",
+            "American game theorists",
+            "American international relations scholars",
+            "Living people",
+            "MacArthur Fellows",
+            "University of California, Berkeley faculty",
+            "University of Chicago alumni",
+            "University of Michigan faculty",
+            "Gerald R. Ford School of Public Policy faculty",
+            "Yale Graduate School of Arts and Sciences alumni",
+            "Members of the United States National Academy of Sciences",
+            "Jefferson Science Fellows"
+          ],
+          "birth_year": 1943,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Colin Turnbull",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "from the utter selfishness of the Ik of Uganda, as described by Colin Turnbull,"
+        ],
+        "commentaries": [
+          "The author references Turnbull's description of the Ik people of Uganda as an example of extreme cultural selfishness."
+        ],
+        "canonical_author": "Colin Turnbull"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Colin Turnbull",
+        "page_id": 37807,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1924 births",
+          "1994 deaths",
+          "AIDS-related deaths in Virginia",
+          "Alumni of Magdalen College, Oxford",
+          "American Buddhist monks",
+          "20th-century American monks",
+          "American ethnomusicologists",
+          "American gay writers",
+          "American LGBTQ scientists",
+          "Banaras Hindu University alumni",
+          "British emigrants to the United States",
+          "British LGBTQ scientists",
+          "Converts to Buddhism",
+          "English anthropologists",
+          "English Buddhist monks",
+          "English LGBTQ writers",
+          "English people of Scottish descent",
+          "Gay scientists",
+          "Gay Buddhists",
+          "American LGBTQ military personnel",
+          "LGBTQ monks",
+          "LGBTQ people from London",
+          "LGBTQ people from Virginia",
+          "People educated at Westminster School, London",
+          "People from Lancaster County, Virginia",
+          "Royal Naval Volunteer Reserve personnel of World War II",
+          "Scientists from London",
+          "Writers from London",
+          "Writers from Virginia",
+          "20th-century American musicologists"
+        ],
+        "birth_year": 1924,
+        "death_year": 1994
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Colin Turnbull",
+          "page_id": 37807,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1924 births",
+            "1994 deaths",
+            "AIDS-related deaths in Virginia",
+            "Alumni of Magdalen College, Oxford",
+            "American Buddhist monks",
+            "20th-century American monks",
+            "American ethnomusicologists",
+            "American gay writers",
+            "American LGBTQ scientists",
+            "Banaras Hindu University alumni",
+            "British emigrants to the United States",
+            "British LGBTQ scientists",
+            "Converts to Buddhism",
+            "English anthropologists",
+            "English Buddhist monks",
+            "English LGBTQ writers",
+            "English people of Scottish descent",
+            "Gay scientists",
+            "Gay Buddhists",
+            "American LGBTQ military personnel",
+            "LGBTQ monks",
+            "LGBTQ people from London",
+            "LGBTQ people from Virginia",
+            "People educated at Westminster School, London",
+            "People from Lancaster County, Virginia",
+            "Royal Naval Volunteer Reserve personnel of World War II",
+            "Scientists from London",
+            "Writers from London",
+            "Writers from Virginia",
+            "20th-century American musicologists"
+          ],
+          "birth_year": 1924,
+          "death_year": 1994
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "A for Andromeda",
+        "author": "Fred Hoyle and John Elliot",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "A for Andromeda by Fred Hoyle and John Elliot is an exciting story, and, like all good science fiction, it has some interesting scientific points lying behind it."
+        ],
+        "commentaries": [
+          "The author references this science fiction book as an analogy to illustrate time-lag problems in communication and control, noting it contains interesting scientific points."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 26,
+        "author_ids": [
+          "199992",
+          "259400"
+        ],
+        "publication_day": 1,
+        "ratings_count": 331,
+        "average_rating": 3.56,
+        "isbn13": "9780285635883",
+        "publisher": "Souvenir Press",
+        "title": "A for Andromeda",
+        "title_without_series": "A for Andromeda",
+        "book_id": "530944",
+        "format": "Paperback",
+        "num_pages": 176,
+        "work_id": "518558",
+        "publication_month": 9,
+        "publication_year": 2012,
+        "isbn": "0285635883",
+        "authors": [
+          "Fred Hoyle",
+          "John Elliot"
+        ],
+        "description": "A new radio telescope picks up from the constellation of Andromeda a complex series of signals which prove to be a programme for a giant computer. After the computer is built it begins to relay information from Andromeda. Scientists find themselves possessing knowledge previously unknown to mankind, knowledge that could threaten the security of human life itself.",
+        "link": "https://www.goodreads.com/book/show/530944.A_for_Andromeda",
+        "original_year": 1962,
+        "author_meta": {
+          "birth_year": 1915,
+          "death_year": 2001,
+          "description": null,
+          "title": "Fred Hoyle"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Fred Hoyle",
+        "birth_year": 1915,
+        "death_year": 2001
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "530944",
+        "target_author_ids": [
+          "199992",
+          "259400"
+        ],
+        "target_person": {
+          "title": "Fred Hoyle",
+          "birth_year": 1915,
+          "death_year": 2001
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Geoffrey Chaucer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Geoffrey Chaucer could not hold a conversation with a modern Englishman, even though they are linked to each other by an unbroken chain of some twenty generations of Englishmen, each of whom could speak to his immediate neighbours in the chain as a son speaks to his father."
+        ],
+        "commentaries": [
+          "The author references Chaucer as an example of linguistic evolution over time, noting the change in language between his era and modern English."
+        ],
+        "canonical_author": "Geoffrey Chaucer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Geoffrey Chaucer",
+        "page_id": 12787,
+        "infoboxes": [
+          "person",
+          "writer"
+        ],
+        "categories": [
+          "Geoffrey Chaucer| ",
+          "1340s births",
+          "1400 deaths",
+          "14th-century English writers",
+          "Burials at Westminster Abbey",
+          "The Canterbury Tales",
+          "English Catholic poets",
+          "English civil servants",
+          "English Roman Catholic writers",
+          "English translators",
+          "English MPs 1386",
+          "People from the City of London",
+          "Writers from London",
+          "14th-century English poets",
+          "Medieval orientalists",
+          "14th-century translators",
+          "Poets from London",
+          "English satirical poets",
+          "British humorous poets",
+          "English satirists"
+        ],
+        "birth_year": null,
+        "death_year": 1400
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1838"
+        ],
+        "target_person": {
+          "title": "Geoffrey Chaucer",
+          "page_id": 12787,
+          "infoboxes": [
+            "person",
+            "writer"
+          ],
+          "categories": [
+            "Geoffrey Chaucer| ",
+            "1340s births",
+            "1400 deaths",
+            "14th-century English writers",
+            "Burials at Westminster Abbey",
+            "The Canterbury Tales",
+            "English Catholic poets",
+            "English civil servants",
+            "English Roman Catholic writers",
+            "English translators",
+            "English MPs 1386",
+            "People from the City of London",
+            "Writers from London",
+            "14th-century English poets",
+            "Medieval orientalists",
+            "14th-century translators",
+            "Poets from London",
+            "English satirical poets",
+            "British humorous poets",
+            "English satirists"
+          ],
+          "birth_year": null,
+          "death_year": 1400
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "J. B. S. Haldane",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "What R. A. Fisher, J.\nB. S. Haldane, and especially W. D. Hamilton realized, was that the same applies to other close relations-brothers and sisters, nephews and nieces, close cousins.",
+          "Even the great mathematical biologist J.\nB. S. Haldane (in a paper of 1955 in which he anticipated Hamilton by postulating the spread of a gene for saving close relatives from drowning) remarked:'... on the two occasions when I have pulled possibly drowning people out of the water (at an infinitesimal risk to myself) I had no time to make such calculations.'"
+        ],
+        "commentaries": [
+          "The author references Haldane as one of the scientists who realized the genetic basis for altruism among close relatives.",
+          "The author cites Haldane's personal anecdote from a 1955 paper to illustrate that animals do not consciously perform the complex calculations of kin selection, but act as if pre-programmed to do so."
+        ],
+        "canonical_author": "J. B. S. Haldane"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "J. B. S. Haldane",
+        "page_id": 62417,
+        "infoboxes": [
+          "scientist",
+          "military person"
+        ],
+        "categories": [
+          "1892 births",
+          "1964 deaths",
+          "20th-century English non-fiction writers",
+          "20th-century Indian biologists",
+          "20th-century Indian chemists",
+          "20th-century Indian non-fiction writers",
+          "Academics of University College London",
+          "Black Watch officers",
+          "British Army personnel of World War I",
+          "British evolutionary biologists",
+          "Communist Party of Great Britain members",
+          "Critics of Lamarckism",
+          "Deaths from colorectal cancer in India",
+          "English atheists",
+          "English biochemists",
+          "English Marxists",
+          "English emigrants to India",
+          "English geneticists",
+          "English people of Scottish descent",
+          "English physiologists",
+          "English political writers",
+          "Fellows of New College, Oxford",
+          "Fellows of the Royal Society",
+          "Fellows of Trinity College, Cambridge",
+          "Foreign associates of the National Academy of Sciences",
+          "Foreign members of the USSR Academy of Sciences",
+          "Fullerian Professors of Physiology",
+          "Haldane family|J. B. S",
+          "Honorary members of the USSR Academy of Sciences",
+          "Indian hunger strikers"
+        ],
+        "birth_year": 1892,
+        "death_year": 1964
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "J. B. S. Haldane",
+          "page_id": 62417,
+          "infoboxes": [
+            "scientist",
+            "military person"
+          ],
+          "categories": [
+            "1892 births",
+            "1964 deaths",
+            "20th-century English non-fiction writers",
+            "20th-century Indian biologists",
+            "20th-century Indian chemists",
+            "20th-century Indian non-fiction writers",
+            "Academics of University College London",
+            "Black Watch officers",
+            "British Army personnel of World War I",
+            "British evolutionary biologists",
+            "Communist Party of Great Britain members",
+            "Critics of Lamarckism",
+            "Deaths from colorectal cancer in India",
+            "English atheists",
+            "English biochemists",
+            "English Marxists",
+            "English emigrants to India",
+            "English geneticists",
+            "English people of Scottish descent",
+            "English physiologists",
+            "English political writers",
+            "Fellows of New College, Oxford",
+            "Fellows of the Royal Society",
+            "Fellows of Trinity College, Cambridge",
+            "Foreign associates of the National Academy of Sciences",
+            "Foreign members of the USSR Academy of Sciences",
+            "Fullerian Professors of Physiology",
+            "Haldane family|J. B. S",
+            "Honorary members of the USSR Academy of Sciences",
+            "Indian hunger strikers"
+          ],
+          "birth_year": 1892,
+          "death_year": 1964
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Extended Phenotype",
+        "author": "Richard Dawkins",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "My own attempt to do so is spelled out in The Extended Phenotype, the book that, more than anything else I have achieved in my professional life, is my pride and joy.",
+          "This chapter is a brief distillation of a few of the themes in that book, but really I'd almost rather you stopped reading now and switched to The Extended Phenotype!",
+          "In The Extended Phenotype I attempt to work out an answer to this difficult problem."
+        ],
+        "commentaries": [
+          "The author cites his own book as the primary work where he resolves the paradox of gene versus individual perspectives, expressing personal pride in it.",
+          "The author directly references his own book again, urging the reader to consult it for a fuller treatment of the themes discussed.",
+          "The author references his own earlier book as the source where he attempts to answer the question of why genes gang up into large vehicles."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 7,
+        "author_ids": [
+          "1194"
+        ],
+        "publication_day": 28,
+        "ratings_count": 41,
+        "average_rating": 4.07,
+        "isbn13": "9780192860880",
+        "publisher": "Oxford University Press, USA",
+        "title": "The Extended Phenotype",
+        "title_without_series": "The Extended Phenotype",
+        "book_id": "1504412",
+        "format": "Paperback",
+        "num_pages": 320,
+        "work_id": "59848",
+        "publication_month": 12,
+        "publication_year": 1989,
+        "isbn": "0192860887",
+        "authors": [
+          "Richard Dawkins"
+        ],
+        "description": "People commonly view evolution as a process of competition between individuals--known as \"survival of the fittest\"--with the individual representing the \"unit of selection.\" Richard Dawkins offers a controversial reinterpretation of that idea in The Extended Phenotype, now being reissued to coincide with the publication of the second edition of his highly-acclaimed The Selfish Gene. He proposes that we look at evolution as a battle between genes instead of between whole organisms. We can then view Nanges in...",
+        "link": "https://www.goodreads.com/book/show/1504412.The_Extended_Phenotype",
+        "wikipedia_match": {
+          "title": "Richard Dawkins",
+          "page_id": 25867,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1941 births",
+            "20th-century British biologists",
+            "20th-century British male writers",
+            "20th-century British non-fiction writers",
+            "20th-century atheists",
+            "21st-century British biologists",
+            "21st-century British male writers",
+            "21st-century British memoirists",
+            "21st-century British non-fiction writers",
+            "21st-century British philosophers",
+            "21st-century atheists",
+            "Alumni of Balliol College, Oxford",
+            "Articles containing video clips",
+            "Atheist feminists",
+            "British activists",
+            "British atheism activists",
+            "British atheists",
+            "British biologists",
+            "British critics of Christianity",
+            "British critics of Islam",
+            "British critics of postmodernism",
+            "British critics of religions",
+            "British education activists",
+            "British evolutionary biologists",
+            "British feminists",
+            "British humanists",
+            "British male feminists",
+            "British republicans",
+            "British sceptics",
+            "British science communicators"
+          ],
+          "birth_year": 1941,
+          "death_year": null
+        },
+        "original_year": 1982,
+        "author_meta": {
+          "birth_year": 1941,
+          "death_year": null,
+          "description": null,
+          "title": "Richard Dawkins"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Richard Dawkins",
+        "page_id": 25867,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1941 births",
+          "20th-century British biologists",
+          "20th-century British male writers",
+          "20th-century British non-fiction writers",
+          "20th-century atheists",
+          "21st-century British biologists",
+          "21st-century British male writers",
+          "21st-century British memoirists",
+          "21st-century British non-fiction writers",
+          "21st-century British philosophers",
+          "21st-century atheists",
+          "Alumni of Balliol College, Oxford",
+          "Articles containing video clips",
+          "Atheist feminists",
+          "British activists",
+          "British atheism activists",
+          "British atheists",
+          "British biologists",
+          "British critics of Christianity",
+          "British critics of Islam",
+          "British critics of postmodernism",
+          "British critics of religions",
+          "British education activists",
+          "British evolutionary biologists",
+          "British feminists",
+          "British humanists",
+          "British male feminists",
+          "British republicans",
+          "British sceptics",
+          "British science communicators"
+        ],
+        "birth_year": 1941,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1504412",
+        "target_author_ids": [
+          "1194"
+        ],
+        "target_person": {
+          "title": "Richard Dawkins",
+          "page_id": 25867,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1941 births",
+            "20th-century British biologists",
+            "20th-century British male writers",
+            "20th-century British non-fiction writers",
+            "20th-century atheists",
+            "21st-century British biologists",
+            "21st-century British male writers",
+            "21st-century British memoirists",
+            "21st-century British non-fiction writers",
+            "21st-century British philosophers",
+            "21st-century atheists",
+            "Alumni of Balliol College, Oxford",
+            "Articles containing video clips",
+            "Atheist feminists",
+            "British activists",
+            "British atheism activists",
+            "British atheists",
+            "British biologists",
+            "British critics of Christianity",
+            "British critics of Islam",
+            "British critics of postmodernism",
+            "British critics of religions",
+            "British education activists",
+            "British evolutionary biologists",
+            "British feminists",
+            "British humanists",
+            "British male feminists",
+            "British republicans",
+            "British sceptics",
+            "British science communicators"
+          ],
+          "birth_year": 1941,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "R. L. Trivers",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "R. L. Trivers, in 1972, neatly solved the problem with his concept of Parental Investment",
+          "I have made no secret of my debt in this book to the ideas of R. L. Trivers,"
+        ],
+        "commentaries": [
+          "The author credits Trivers with solving the problem of measuring parental investment, introducing his concept from 1972.",
+          "The author acknowledges a conceptual debt to the ideas of this individual, indicating they have been a source for the book's arguments."
+        ],
+        "canonical_author": "R. L. Trivers"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Robert Trivers",
+        "page_id": 2089648,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1943 births",
+          "Living people",
+          "American evolutionary biologists",
+          "Evolutionary psychologists",
+          "Human evolution theorists",
+          "Harvard University alumni",
+          "Harvard University faculty",
+          "University of California, Santa Cruz faculty",
+          "Rutgers University faculty",
+          "Fellows of the American Association for the Advancement of Science",
+          "Members of the Black Panther Party",
+          "Activists from California",
+          "Sociobiologists"
+        ],
+        "birth_year": 1943,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "156319"
+        ],
+        "target_person": {
+          "title": "Robert Trivers",
+          "page_id": 2089648,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1943 births",
+            "Living people",
+            "American evolutionary biologists",
+            "Evolutionary psychologists",
+            "Human evolution theorists",
+            "Harvard University alumni",
+            "Harvard University faculty",
+            "University of California, Santa Cruz faculty",
+            "Rutgers University faculty",
+            "Fellows of the American Association for the Advancement of Science",
+            "Members of the Black Panther Party",
+            "Activists from California",
+            "Sociobiologists"
+          ],
+          "birth_year": 1943,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "William Wordsworth",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "There was a whiff of revolution abroad, a streak of Wordsworth's blissful dawn."
+        ],
+        "commentaries": [
+          "The author uses a phrase from this poet to evoke the revolutionary mood of the time when the first edition was written."
+        ],
+        "canonical_author": "William Wordsworth"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "William Wordsworth",
+        "page_id": 33925,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "William Wordsworth| ",
+          "1770 births",
+          "1850 deaths",
+          "18th-century Christian mystics",
+          "18th-century English poets",
+          "18th-century English writers",
+          "18th-century English male writers",
+          "19th-century Christian mystics",
+          "19th-century English poets",
+          "19th-century English writers",
+          "19th-century English male writers",
+          "Alumni of St John's College, Cambridge",
+          "Anglican poets",
+          "Anglican writers",
+          "Burials in Cumbria",
+          "English Anglicans",
+          "English male poets",
+          "19th-century mystics",
+          "People associated with Durham University",
+          "People educated at Hawkshead Grammar School",
+          "People from Cockermouth",
+          "People from Grasmere (village)",
+          "Protestant mystics",
+          "Romantic poets",
+          "Sonneteers",
+          "Sports poets",
+          "Wordsworth family|William"
+        ],
+        "birth_year": 1770,
+        "death_year": 1850
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "64845"
+        ],
+        "target_person": {
+          "title": "William Wordsworth",
+          "page_id": 33925,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "William Wordsworth| ",
+            "1770 births",
+            "1850 deaths",
+            "18th-century Christian mystics",
+            "18th-century English poets",
+            "18th-century English writers",
+            "18th-century English male writers",
+            "19th-century Christian mystics",
+            "19th-century English poets",
+            "19th-century English writers",
+            "19th-century English male writers",
+            "Alumni of St John's College, Cambridge",
+            "Anglican poets",
+            "Anglican writers",
+            "Burials in Cumbria",
+            "English Anglicans",
+            "English male poets",
+            "19th-century mystics",
+            "People associated with Durham University",
+            "People educated at Hawkshead Grammar School",
+            "People from Cockermouth",
+            "People from Grasmere (village)",
+            "Protestant mystics",
+            "Romantic poets",
+            "Sonneteers",
+            "Sports poets",
+            "Wordsworth family|William"
+          ],
+          "birth_year": 1770,
+          "death_year": 1850
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ardrey",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "A point that is not emphasized in the writings of Wynne-Edwards, or in Ardrey's popularization of his views, is that there is a large body of agreed facts that are not in dispute.",
+          "Ardrey, incidentally, sees the Bruce effect as a population control mechanism!"
+        ],
+        "commentaries": [
+          "The author mentions Ardrey as the popularizer of Wynne-Edwards's views.",
+          "The author mentions Ardrey's interpretation of the Bruce effect as an alternative explanation to the one being presented."
+        ],
+        "canonical_author": "Ardrey"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Robert Ardrey",
+        "page_id": 2341134,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "American science writers",
+          "American paleoanthropologists",
+          "Human evolution theorists",
+          "20th-century American non-fiction writers",
+          "20th-century American dramatists and playwrights",
+          "American male dramatists and playwrights",
+          "20th-century American male writers",
+          "American male non-fiction writers",
+          "Screenwriters from Illinois",
+          "Writers from Chicago",
+          "Fellows of the Royal Society of Literature",
+          "University of Chicago alumni",
+          "1908 births",
+          "1980 deaths",
+          "20th-century American screenwriters",
+          "20th-century American anthropologists"
+        ],
+        "birth_year": 1908,
+        "death_year": 1980
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "183765"
+        ],
+        "target_person": {
+          "title": "Robert Ardrey",
+          "page_id": 2341134,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "American science writers",
+            "American paleoanthropologists",
+            "Human evolution theorists",
+            "20th-century American non-fiction writers",
+            "20th-century American dramatists and playwrights",
+            "American male dramatists and playwrights",
+            "20th-century American male writers",
+            "American male non-fiction writers",
+            "Screenwriters from Illinois",
+            "Writers from Chicago",
+            "Fellows of the Royal Society of Literature",
+            "University of Chicago alumni",
+            "1908 births",
+            "1980 deaths",
+            "20th-century American screenwriters",
+            "20th-century American anthropologists"
+          ],
+          "birth_year": 1908,
+          "death_year": 1980
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "W. D. Hamilton",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "but was made explicit by W. D. Hamilton and G. C. Williams in the sixties.",
+          "The essential concept Maynard Smith introduces is that of the evolutionarily stable strategy, an idea that he traces back to W. D. Hamilton and R. H. MacArthur.",
+          "What R. A. Fisher, J.\nB. S. Haldane, and especially W. D. Hamilton realized, was that the same applies to other close relations-brothers and sisters, nephews and nieces, close cousins.",
+          "His two papers of 1964 are among the most important contributions to social ethology ever written, and I have never been able to understand why they have been so neglected by ethologists (his name does not even appear in the index of two major text-books of ethology, both published in 1970)."
+        ],
+        "commentaries": [
+          "The author credits this individual with making the gene's-eye view of Darwinism explicit in the 1960s.",
+          "The author notes that Maynard Smith traces the concept of the evolutionarily stable strategy back to the ideas of W. D. Hamilton and R. H. MacArthur.",
+          "The author references Hamilton as a key scientist, especially noted for realizing the genetic basis for altruism among close relatives.",
+          "The author praises Hamilton's 1964 papers as highly important contributions to social ethology and expresses surprise at their neglect."
+        ],
+        "canonical_author": "W. D. Hamilton"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "W. D. Hamilton",
+        "page_id": 151959,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1936 births",
+          "2000 deaths",
+          "Alumni of St John's College, Cambridge",
+          "Alumni of the University of London",
+          "Alumni of the London School of Economics",
+          "Alumni of University College London",
+          "20th-century British zoologists",
+          "British evolutionary biologists",
+          "Evolutionary game theorists",
+          "Evolutionary psychologists",
+          "Fellows of the Royal Society",
+          "Fellows of New College, Oxford",
+          "Kyoto laureates in Basic Sciences",
+          "People educated at Tonbridge School",
+          "British population geneticists",
+          "Recipients of the National Order of Scientific Merit (Brazil)",
+          "Academic staff of the University of São Paulo",
+          "University of Michigan faculty",
+          "Scientists from Cairo",
+          "British people of New Zealand descent",
+          "International members of the American Philosophical Society"
+        ],
+        "birth_year": 1936,
+        "death_year": 2000
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "W. D. Hamilton",
+          "page_id": 151959,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1936 births",
+            "2000 deaths",
+            "Alumni of St John's College, Cambridge",
+            "Alumni of the University of London",
+            "Alumni of the London School of Economics",
+            "Alumni of University College London",
+            "20th-century British zoologists",
+            "British evolutionary biologists",
+            "Evolutionary game theorists",
+            "Evolutionary psychologists",
+            "Fellows of the Royal Society",
+            "Fellows of New College, Oxford",
+            "Kyoto laureates in Basic Sciences",
+            "People educated at Tonbridge School",
+            "British population geneticists",
+            "Recipients of the National Order of Scientific Merit (Brazil)",
+            "Academic staff of the University of São Paulo",
+            "University of Michigan faculty",
+            "Scientists from Cairo",
+            "British people of New Zealand descent",
+            "International members of the American Philosophical Society"
+          ],
+          "birth_year": 1936,
+          "death_year": 2000
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Beau Geste",
+        "author": "P. C. Wren",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and is named the Beau Geste Effect after the novel in which a similar tactic was used by a unit of the French Foreign Legion."
+        ],
+        "commentaries": [
+          "The author names the 'Beau Geste Effect' after the novel 'Beau Geste', noting that a similar tactic was used in the story."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 1,
+        "author_ids": [
+          "443003"
+        ],
+        "ratings_count": 15,
+        "average_rating": 3.97,
+        "title": "Beau Geste",
+        "title_without_series": "Beau Geste",
+        "book_id": "24332060",
+        "work_id": "1666567",
+        "authors": [
+          "P.C. Wren"
+        ],
+        "description": "French Legionnaires find one of their fortresses manned by dead men. Who could have done it? A flashback unravels the mystery of the three English Geste brothers. A classic, rip-roaring tale of adventure.",
+        "link": "https://www.goodreads.com/book/show/24332060-beau-geste",
+        "wikipedia_match": {
+          "title": "P. C. Wren",
+          "page_id": 1595227,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1875 births",
+            "1941 deaths",
+            "Alumni of St Catherine's College, Oxford",
+            "Writers from the London Borough of Lewisham",
+            "20th-century English novelists",
+            "English male novelists",
+            "20th-century English male writers",
+            "2nd Dragoon Guards (Queen's Bays) soldiers",
+            "Military personnel from the London Borough of Lewisham",
+            "19th-century British Army personnel",
+            "Indian Army personnel of World War I",
+            "British Indian Army officers",
+            "People from Deptford"
+          ],
+          "birth_year": 1875,
+          "death_year": 1941
+        },
+        "original_year": 1924,
+        "author_meta": {
+          "birth_year": 1875,
+          "death_year": 1941,
+          "description": null,
+          "title": "P. C. Wren"
+        }
+      },
+      "wikipedia_match": {
+        "title": "P. C. Wren",
+        "page_id": 1595227,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1875 births",
+          "1941 deaths",
+          "Alumni of St Catherine's College, Oxford",
+          "Writers from the London Borough of Lewisham",
+          "20th-century English novelists",
+          "English male novelists",
+          "20th-century English male writers",
+          "2nd Dragoon Guards (Queen's Bays) soldiers",
+          "Military personnel from the London Borough of Lewisham",
+          "19th-century British Army personnel",
+          "Indian Army personnel of World War I",
+          "British Indian Army officers",
+          "People from Deptford"
+        ],
+        "birth_year": 1875,
+        "death_year": 1941
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "24332060",
+        "target_author_ids": [
+          "443003"
+        ],
+        "target_person": {
+          "title": "P. C. Wren",
+          "page_id": 1595227,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1875 births",
+            "1941 deaths",
+            "Alumni of St Catherine's College, Oxford",
+            "Writers from the London Borough of Lewisham",
+            "20th-century English novelists",
+            "English male novelists",
+            "20th-century English male writers",
+            "2nd Dragoon Guards (Queen's Bays) soldiers",
+            "Military personnel from the London Borough of Lewisham",
+            "19th-century British Army personnel",
+            "Indian Army personnel of World War I",
+            "British Indian Army officers",
+            "People from Deptford"
+          ],
+          "birth_year": 1875,
+          "death_year": 1941
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John Maynard Smith",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Meanwhile the theory had been extended, notably by John Maynard Smith and Robert Trivers.",
+          "This has long been realized by ethologists in a vague sort of way, but it has taken J. Maynard Smith, not normally regarded as an ethologist, to express the idea forcefully and clearly.",
+          "If he had, my guess is that he would have made use of it, for it provides a natural way to express his ideas."
+        ],
+        "commentaries": [
+          "The author notes that the theory was extended by this scientist during the period before the book was completed.",
+          "The author credits J. Maynard Smith for forcefully and clearly expressing the idea of cost-benefit analysis in animal fighting decisions.",
+          "The author speculates that Trivers would have utilized Maynard Smith's concept of the evolutionarily stable strategy if it had been available at the time."
+        ],
+        "canonical_author": "John Maynard Smith"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Maynard Smith",
+        "page_id": 16233,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1920 births",
+          "2004 deaths",
+          "20th-century English mathematicians",
+          "21st-century English mathematicians",
+          "Academics of the University of Sussex",
+          "Academics of University College London",
+          "Alumni of Trinity College, Cambridge",
+          "Alumni of University College London",
+          "British evolutionary biologists",
+          "Evolutionary game theorists",
+          "Fellows of the Royal Society",
+          "English science writers",
+          "Deaths from lung cancer in England",
+          "English atheists",
+          "English biologists",
+          "English geneticists",
+          "English humanists",
+          "English communists",
+          "Foreign associates of the National Academy of Sciences",
+          "Kyoto laureates in Basic Sciences",
+          "Linnean Medallists",
+          "Modern synthesis (20th century)",
+          "People educated at Eton College",
+          "British population geneticists",
+          "Recipients of the Copley Medal",
+          "Royal Medal winners",
+          "Theoretical biologists",
+          "Writers from London",
+          "Presidents of the Cambridge Union",
+          "20th-century British biologists"
+        ],
+        "birth_year": 1920,
+        "death_year": 2004
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "23574"
+        ],
+        "target_person": {
+          "title": "John Maynard Smith",
+          "page_id": 16233,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1920 births",
+            "2004 deaths",
+            "20th-century English mathematicians",
+            "21st-century English mathematicians",
+            "Academics of the University of Sussex",
+            "Academics of University College London",
+            "Alumni of Trinity College, Cambridge",
+            "Alumni of University College London",
+            "British evolutionary biologists",
+            "Evolutionary game theorists",
+            "Fellows of the Royal Society",
+            "English science writers",
+            "Deaths from lung cancer in England",
+            "English atheists",
+            "English biologists",
+            "English geneticists",
+            "English humanists",
+            "English communists",
+            "Foreign associates of the National Academy of Sciences",
+            "Kyoto laureates in Basic Sciences",
+            "Linnean Medallists",
+            "Modern synthesis (20th century)",
+            "People educated at Eton College",
+            "British population geneticists",
+            "Recipients of the Copley Medal",
+            "Royal Medal winners",
+            "Theoretical biologists",
+            "Writers from London",
+            "Presidents of the Cambridge Union",
+            "20th-century British biologists"
+          ],
+          "birth_year": 1920,
+          "death_year": 2004
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Axelrod",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Axelrod comments that this apology 'goes well beyond a merely instrumental effort to prevent retaliation. It reflects moral regret for having violated a situation of trust, and it shows concern that someone might have been hurt.'",
+          "Axelrod also emphasizes the importance of predictability and ritual in maintaining a stable pattern of mutual trust.",
+          "Axelrod remarks that such 'rituals of perfunctory and routine firing sent a double message. To the high command they conveyed aggression, but to the enemy they conveyed peace.'"
+        ],
+        "commentaries": [
+          "The author cites Axelrod's commentary on a historical anecdote to illustrate the moral dimension of forgiveness in strategic interactions.",
+          "The author references Axelrod's emphasis on ritual and predictability as key factors in sustaining cooperative systems.",
+          "The author quotes Axelrod's analysis of ritualized behavior in trench warfare, highlighting its dual communicative function."
+        ],
+        "canonical_author": "Axelrod"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Robert Axelrod (political scientist)",
+        "page_id": 236408,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1943 births",
+          "American political scientists",
+          "Fellows of the American Academy of Arts and Sciences",
+          "American game theorists",
+          "American international relations scholars",
+          "Living people",
+          "MacArthur Fellows",
+          "University of California, Berkeley faculty",
+          "University of Chicago alumni",
+          "University of Michigan faculty",
+          "Gerald R. Ford School of Public Policy faculty",
+          "Yale Graduate School of Arts and Sciences alumni",
+          "Members of the United States National Academy of Sciences",
+          "Jefferson Science Fellows"
+        ],
+        "birth_year": 1943,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Robert Axelrod (political scientist)",
+          "page_id": 236408,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1943 births",
+            "American political scientists",
+            "Fellows of the American Academy of Arts and Sciences",
+            "American game theorists",
+            "American international relations scholars",
+            "Living people",
+            "MacArthur Fellows",
+            "University of California, Berkeley faculty",
+            "University of Chicago alumni",
+            "University of Michigan faculty",
+            "Gerald R. Ford School of Public Policy faculty",
+            "Yale Graduate School of Arts and Sciences alumni",
+            "Members of the United States National Academy of Sciences",
+            "Jefferson Science Fellows"
+          ],
+          "birth_year": 1943,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "J. R. Krebs",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This idea of animals pretending to be several animals at once has been suggested in another context by J. R. Krebs"
+        ],
+        "commentaries": [
+          "The author references J. R. Krebs as having suggested the idea of animals pretending to be multiple individuals in a different context."
+        ],
+        "canonical_author": "J. R. Krebs"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "J. R. Krebs",
+        "birth_year": 1945
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "902411"
+        ],
+        "target_person": {
+          "title": "J. R. Krebs",
+          "birth_year": 1945
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "A. Zahavi",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The theory was originally foreshadowed by N. Smythe but, pushed to its logical conclusion, it bears the unmistakeable signature of A. Zahavi."
+        ],
+        "commentaries": [
+          "The author credits A. Zahavi with pushing the stotting theory to its logical conclusion, giving it his distinctive signature."
+        ],
+        "canonical_author": "A. Zahavi"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Amotz Zahavi",
+        "page_id": 550532,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1928 births",
+          "2017 deaths",
+          "Evolutionary biologists",
+          "20th-century Israeli zoologists",
+          "Academic staff of Tel Aviv University",
+          "Israel Prize for special contribution to society and the State recipients",
+          "Jews from Mandatory Palestine",
+          "People from Petah Tikva"
+        ],
+        "birth_year": 1928,
+        "death_year": 2017
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "213003"
+        ],
+        "target_person": {
+          "title": "Amotz Zahavi",
+          "page_id": 550532,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1928 births",
+            "2017 deaths",
+            "Evolutionary biologists",
+            "20th-century Israeli zoologists",
+            "Academic staff of Tel Aviv University",
+            "Israel Prize for special contribution to society and the State recipients",
+            "Jews from Mandatory Palestine",
+            "People from Petah Tikva"
+          ],
+          "birth_year": 1928,
+          "death_year": 2017
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Insect Societies",
+        "author": "Edward O. Wilson",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "My favourite character in Wilson's The Insect Societies is Monomorium santschii."
+        ],
+        "commentaries": [
+          "The author references a specific species discussed in Edward Wilson's book 'The Insect Societies'."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 6,
+        "author_ids": [
+          "31624"
+        ],
+        "publication_day": 1,
+        "ratings_count": 71,
+        "average_rating": 4.43,
+        "isbn13": "9780674454958",
+        "publisher": "Belknap Press",
+        "title": "The Insect Societies",
+        "title_without_series": "The Insect Societies",
+        "book_id": "183818",
+        "format": "Paperback",
+        "num_pages": 548,
+        "work_id": "3030009",
+        "publication_month": 1,
+        "publication_year": 1971,
+        "isbn": "0674454952",
+        "authors": [
+          "Edward O. Wilson"
+        ],
+        "description": "Conducts a definitive study of the social structure and symbiotic relationships of termites, social wasps, bees, and ants.",
+        "link": "https://www.goodreads.com/book/show/183818.The_Insect_Societies",
+        "original_year": 1971,
+        "author_meta": {
+          "birth_year": 1929,
+          "death_year": 2021,
+          "title": "Edward O. Wilson"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Edward O. Wilson",
+        "birth_year": 1929,
+        "death_year": 2021
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "183818",
+        "target_author_ids": [
+          "31624"
+        ],
+        "target_person": {
+          "title": "Edward O. Wilson",
+          "birth_year": 1929,
+          "death_year": 2021
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "E. O. Wilson",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "to quote Edward Wilson's artfully macabre understatement, 'the one act for which she is uniquely specialized: slowly cutting off the head of her victim'."
+        ],
+        "commentaries": [
+          "The author quotes Edward Wilson's description of a parasitic ant queen's behavior."
+        ],
+        "canonical_author": "Edward Wilson"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "E. O. Wilson",
+        "page_id": 10313,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1929 births",
+          "2021 deaths",
+          "20th-century American male writers",
+          "20th-century American non-fiction writers",
+          "20th-century American novelists",
+          "20th-century American zoologists",
+          "21st-century American male writers",
+          "21st-century American non-fiction writers",
+          "21st-century American novelists",
+          "21st-century American zoologists",
+          "American autobiographers",
+          "American conservationists",
+          "American deists",
+          "American ecologists",
+          "American entomologists",
+          "American humanists",
+          "American male non-fiction writers",
+          "American male novelists",
+          "American naturalists",
+          "American non-fiction environmental writers",
+          "American science writers",
+          "American skeptics",
+          "Biogeographers",
+          "American critics of religions",
+          "Entomological writers",
+          "American ethologists",
+          "American evolutionary biologists",
+          "Fellows of the Ecological Society of America",
+          "Foreign members of the Royal Society",
+          "Harvard University alumni"
+        ],
+        "birth_year": 1929,
+        "death_year": 2021
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "4829328"
+        ],
+        "target_person": {
+          "title": "E. O. Wilson",
+          "page_id": 10313,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1929 births",
+            "2021 deaths",
+            "20th-century American male writers",
+            "20th-century American non-fiction writers",
+            "20th-century American novelists",
+            "20th-century American zoologists",
+            "21st-century American male writers",
+            "21st-century American non-fiction writers",
+            "21st-century American novelists",
+            "21st-century American zoologists",
+            "American autobiographers",
+            "American conservationists",
+            "American deists",
+            "American ecologists",
+            "American entomologists",
+            "American humanists",
+            "American male non-fiction writers",
+            "American male novelists",
+            "American naturalists",
+            "American non-fiction environmental writers",
+            "American science writers",
+            "American skeptics",
+            "Biogeographers",
+            "American critics of religions",
+            "Entomological writers",
+            "American ethologists",
+            "American evolutionary biologists",
+            "Fellows of the Ecological Society of America",
+            "Foreign members of the Royal Society",
+            "Harvard University alumni"
+          ],
+          "birth_year": 1929,
+          "death_year": 2021
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "G. C. Williams",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "but was made explicit by W. D. Hamilton and G. C. Williams in the sixties.",
+          "Socrates may or may not have a gene or two alive in the world today, as G. C. Williams has remarked, but who cares?",
+          "Williams briefly discussed the problem in his 1966 book, to which I have already referred."
+        ],
+        "commentaries": [
+          "The author credits this individual with making the gene's-eye view of Darwinism explicit in the 1960s.",
+          "The author cites G. C. Williams as the source of a remark about the genetic legacy of Socrates.",
+          "The author references Williams's 1966 book as having briefly discussed the problem of reciprocal altruism."
+        ],
+        "canonical_author": "G. C. Williams"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "G. C. Williams",
+        "birth_year": 1926,
+        "death_year": 2010
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "46667"
+        ],
+        "target_person": {
+          "title": "G. C. Williams",
+          "birth_year": 1926,
+          "death_year": 2010
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "A for Andromeda",
+        "author": "Fred Hoyle and John Elliot",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "A for Andromeda by Fred Hoyle and John Elliot is an exciting story, and, like all good science fiction, it has some interesting scientific points lying behind it."
+        ],
+        "commentaries": [
+          "The author references this science fiction book as an analogy to illustrate time-lag problems in communication and control, noting it contains interesting scientific points."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 26,
+        "author_ids": [
+          "199992",
+          "259400"
+        ],
+        "publication_day": 1,
+        "ratings_count": 331,
+        "average_rating": 3.56,
+        "isbn13": "9780285635883",
+        "publisher": "Souvenir Press",
+        "title": "A for Andromeda",
+        "title_without_series": "A for Andromeda",
+        "book_id": "530944",
+        "format": "Paperback",
+        "num_pages": 176,
+        "work_id": "518558",
+        "publication_month": 9,
+        "publication_year": 2012,
+        "isbn": "0285635883",
+        "authors": [
+          "Fred Hoyle",
+          "John Elliot"
+        ],
+        "description": "A new radio telescope picks up from the constellation of Andromeda a complex series of signals which prove to be a programme for a giant computer. After the computer is built it begins to relay information from Andromeda. Scientists find themselves possessing knowledge previously unknown to mankind, knowledge that could threaten the security of human life itself.",
+        "link": "https://www.goodreads.com/book/show/530944.A_for_Andromeda",
+        "original_year": 1962,
+        "author_meta": {
+          "birth_year": 1915,
+          "death_year": 2001,
+          "description": null,
+          "title": "Fred Hoyle"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Fred Hoyle",
+        "birth_year": 1915,
+        "death_year": 2001
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "530944",
+        "target_author_ids": [
+          "199992",
+          "259400"
+        ],
+        "target_person": {
+          "title": "Fred Hoyle",
+          "birth_year": 1915,
+          "death_year": 2001
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Social Contract",
+        "author": "Robert Ardrey",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "These are claims that could have been made for Lorenz's On Aggression, Ardrey's The Social Contract, and Eibl-Eihesfeldt's Love and Hate.",
+          "and popularized by Robert Ardrey in The Social Contract.",
+          "Robert Ardrey, in The Social Contract, used the group-selection theory to account for the whole of social order in general."
+        ],
+        "commentaries": [
+          "The author mentions this book alongside others that discuss human social traits but asserts their authors incorrectly interpreted evolutionary mechanisms.",
+          "The author states that Ardrey popularized the group selection theory through his book 'The Social Contract'.",
+          "The author notes that Ardrey applied the group selection theory broadly to explain social order in his book 'The Social Contract'."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 7,
+        "author_ids": [
+          "183765"
+        ],
+        "ratings_count": 70,
+        "average_rating": 4.12,
+        "isbn13": "9780689103476",
+        "publisher": "Atheneum (NY)",
+        "title": "The Social Contract: A Personal Inquiry into the Evolutionary Sources of Order and Disorder",
+        "title_without_series": "The Social Contract: A Personal Inquiry into the Evolutionary Sources of Order and Disorder",
+        "book_id": "993562",
+        "num_pages": 415,
+        "work_id": "979056",
+        "isbn": "0689103476",
+        "authors": [
+          "Robert Ardrey"
+        ],
+        "description": "\"Violation of biological command has been the failure of social man. Vertebrates though we may be, we have ignored the law of equal opportunity since civilization's earliest hours. Sexually reproducing beings though we are, we pretend today that the law of inequality does not exist. And enlightened though we may be, while we pursue the unattainable we make impossible the realizable.\"\nIn his two previous books, Robert Ardrey exploded a series of philosophical landmines. African Genesis (1961) fundamentally a...",
+        "link": "https://www.goodreads.com/book/show/993562.The_Social_Contract",
+        "original_year": 1970,
+        "author_meta": {
+          "birth_year": 1908,
+          "death_year": 1980,
+          "description": null,
+          "title": "Robert Ardrey"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Robert Ardrey",
+        "birth_year": 1908,
+        "death_year": 1980
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "993562",
+        "target_author_ids": [
+          "183765"
+        ],
+        "target_person": {
+          "title": "Robert Ardrey",
+          "birth_year": 1908,
+          "death_year": 1980
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "On Aggression",
+        "author": "Konrad Lorenz",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "These are claims that could have been made for Lorenz's On Aggression, Ardrey's The Social Contract, and Eibl-Eihesfeldt's Love and Hate.",
+          "Konrad Lorenz, in On Aggression, speaks of the 'species preserving' functions of aggressive behaviour",
+          "Indeed Konrad Lorenz, in On Aggression, stresses the restrained and gentlemanly nature of animal fighting."
+        ],
+        "commentaries": [
+          "The author references this book as an example of works that address human social behaviors but criticizes them for being fundamentally mistaken in their understanding of evolution.",
+          "The author cites Lorenz's book 'On Aggression' as an example where the group selection idea is implicitly used, noting Lorenz's unawareness that it contradicts orthodox Darwinian theory.",
+          "The author cites Lorenz's book to present the view that animal aggression is often formal and restrained, a perspective the author then proceeds to question and contextualize within evolutionary theory."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 36,
+        "author_ids": [
+          "8674"
+        ],
+        "publication_day": 23,
+        "ratings_count": 789,
+        "average_rating": 4.07,
+        "isbn13": "9780156687416",
+        "publisher": "Mariner Books",
+        "title": "On Aggression",
+        "title_without_series": "On Aggression",
+        "book_id": "1378136",
+        "format": "Paperback",
+        "num_pages": 324,
+        "work_id": "2030088",
+        "publication_month": 10,
+        "publication_year": 1974,
+        "isbn": "0156687410",
+        "authors": [
+          "Konrad Lorenz"
+        ],
+        "description": "This work has had significant impact on the social and biological sciences and is now a classic point of reference for investigations of behavioral patterns. Lorenz presents his findings on the mechanism of aggression and how animals control destructive drives in the interest of the species. Translated by Marjorie Kerr Wilson. A Helen and Kurt Wolff Book",
+        "link": "https://www.goodreads.com/book/show/1378136.On_Aggression",
+        "wikipedia_match": {
+          "title": "Konrad Lorenz",
+          "page_id": 17077,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Konrad Lorenz| ",
+            "1903 births",
+            "1989 deaths",
+            "Austrian ornithologists",
+            "Austrian Nazis",
+            "Austrian Nobel laureates",
+            "Nobel laureates from Austria-Hungary",
+            "Columbia College, Columbia University alumni",
+            "Ethologists",
+            "German Army officers of World War II",
+            "Austrian military doctors",
+            "Scientists from Vienna",
+            "University of Vienna alumni",
+            "Academic staff of the University of Vienna",
+            "Academic staff of the University of Königsberg",
+            "20th-century Austrian zoologists",
+            "World War II prisoners of war held by the Soviet Union",
+            "Austrian prisoners of war",
+            "Members of the Austrian Academy of Sciences",
+            "Nobel laureates in Physiology or Medicine",
+            "Foreign members of the Royal Society",
+            "Foreign associates of the National Academy of Sciences",
+            "Recipients of the Austrian Decoration for Science and Art",
+            "Kalinga Prize recipients",
+            "Grand Crosses with Star and Sash of the Order of Merit of the Federal Republic of Germany",
+            "Recipients of the Pour le Mérite (civil class)",
+            "Max Planck Society people",
+            "Austrian military personnel of World War II",
+            "International members of the American Philosophical Society",
+            "Members of the Royal Swedish Academy of Sciences"
+          ],
+          "birth_year": 1903,
+          "death_year": 1989
+        },
+        "original_year": 1963,
+        "author_meta": {
+          "birth_year": 1903,
+          "death_year": 1989,
+          "description": null,
+          "title": "Konrad Lorenz"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Konrad Lorenz",
+        "page_id": 17077,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Konrad Lorenz| ",
+          "1903 births",
+          "1989 deaths",
+          "Austrian ornithologists",
+          "Austrian Nazis",
+          "Austrian Nobel laureates",
+          "Nobel laureates from Austria-Hungary",
+          "Columbia College, Columbia University alumni",
+          "Ethologists",
+          "German Army officers of World War II",
+          "Austrian military doctors",
+          "Scientists from Vienna",
+          "University of Vienna alumni",
+          "Academic staff of the University of Vienna",
+          "Academic staff of the University of Königsberg",
+          "20th-century Austrian zoologists",
+          "World War II prisoners of war held by the Soviet Union",
+          "Austrian prisoners of war",
+          "Members of the Austrian Academy of Sciences",
+          "Nobel laureates in Physiology or Medicine",
+          "Foreign members of the Royal Society",
+          "Foreign associates of the National Academy of Sciences",
+          "Recipients of the Austrian Decoration for Science and Art",
+          "Kalinga Prize recipients",
+          "Grand Crosses with Star and Sash of the Order of Merit of the Federal Republic of Germany",
+          "Recipients of the Pour le Mérite (civil class)",
+          "Max Planck Society people",
+          "Austrian military personnel of World War II",
+          "International members of the American Philosophical Society",
+          "Members of the Royal Swedish Academy of Sciences"
+        ],
+        "birth_year": 1903,
+        "death_year": 1989
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1378136",
+        "target_author_ids": [
+          "8674"
+        ],
+        "target_person": {
+          "title": "Konrad Lorenz",
+          "page_id": 17077,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Konrad Lorenz| ",
+            "1903 births",
+            "1989 deaths",
+            "Austrian ornithologists",
+            "Austrian Nazis",
+            "Austrian Nobel laureates",
+            "Nobel laureates from Austria-Hungary",
+            "Columbia College, Columbia University alumni",
+            "Ethologists",
+            "German Army officers of World War II",
+            "Austrian military doctors",
+            "Scientists from Vienna",
+            "University of Vienna alumni",
+            "Academic staff of the University of Vienna",
+            "Academic staff of the University of Königsberg",
+            "20th-century Austrian zoologists",
+            "World War II prisoners of war held by the Soviet Union",
+            "Austrian prisoners of war",
+            "Members of the Austrian Academy of Sciences",
+            "Nobel laureates in Physiology or Medicine",
+            "Foreign members of the Royal Society",
+            "Foreign associates of the National Academy of Sciences",
+            "Recipients of the Austrian Decoration for Science and Art",
+            "Kalinga Prize recipients",
+            "Grand Crosses with Star and Sash of the Order of Merit of the Federal Republic of Germany",
+            "Recipients of the Pour le Mérite (civil class)",
+            "Max Planck Society people",
+            "Austrian military personnel of World War II",
+            "International members of the American Philosophical Society",
+            "Members of the Royal Swedish Academy of Sciences"
+          ],
+          "birth_year": 1903,
+          "death_year": 1989
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Tony Ashworth",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "His source is the research of the historian and sociologist Tony Ashworth."
+        ],
+        "commentaries": [
+          "The author cites Tony Ashworth as the source of historical research on the 'live-and-let-live' system during World War I."
+        ],
+        "canonical_author": "Tony Ashworth"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Tony Ashworth",
+        "page_id": 64980578,
+        "infoboxes": [
+          "rugby league biography"
+        ],
+        "categories": [
+          "1954 births",
+          "2019 deaths",
+          "Australian rugby league players",
+          "Manly Warringah Sea Eagles players",
+          "North Sydney Bears players",
+          "Rugby league wingers",
+          "Rugby league players from Sydney",
+          "20th-century Australian sportsmen"
+        ],
+        "birth_year": 1954,
+        "death_year": 2019
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Tony Ashworth",
+          "page_id": 64980578,
+          "infoboxes": [
+            "rugby league biography"
+          ],
+          "categories": [
+            "1954 births",
+            "2019 deaths",
+            "Australian rugby league players",
+            "Manly Warringah Sea Eagles players",
+            "North Sydney Bears players",
+            "Rugby league wingers",
+            "Rugby league players from Sydney",
+            "20th-century Australian sportsmen"
+          ],
+          "birth_year": 1954,
+          "death_year": 2019
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Sociobiology: The New Synthesis",
+        "author": "E. O. Wilson",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "E. O. Wilson, in his otherwise admirable Sociobiology: The New Synthesis, defines kin selection as a special case of group selection."
+        ],
+        "commentaries": [
+          "The author cites Wilson's book as an otherwise admirable work but criticizes its definition of kin selection."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 22,
+        "author_ids": [
+          "31624"
+        ],
+        "publication_day": 24,
+        "ratings_count": 1129,
+        "average_rating": 4.06,
+        "isbn13": "9780674002357",
+        "publisher": "Belknap Press: An Imprint of Harvard University Press",
+        "title": "Sociobiology: The New Synthesis",
+        "title_without_series": "Sociobiology: The New Synthesis",
+        "book_id": "183819",
+        "format": "Paperback",
+        "num_pages": 720,
+        "work_id": "177649",
+        "publication_month": 3,
+        "publication_year": 2000,
+        "isbn": "0674002350",
+        "authors": [
+          "Edward O. Wilson"
+        ],
+        "description": "View a collection of videos on Professor Wilson entitled \"On the Relation of Science and the Humanities\"\nHarvard University Press is proud to announce the re-release of the complete original version of Sociobiology: The New Synthesis--now available in paperback for the first time. When this classic work was first published in 1975, it created a new discipline and started a tumultuous round in the age-old nature versus nurture debate. Although voted by officers and fellows of the international Animal Behavio...",
+        "link": "https://www.goodreads.com/book/show/183819.Sociobiology",
+        "wikipedia_match": {
+          "title": "E. O. Wilson",
+          "page_id": 10313,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1929 births",
+            "2021 deaths",
+            "20th-century American male writers",
+            "20th-century American non-fiction writers",
+            "20th-century American novelists",
+            "20th-century American zoologists",
+            "21st-century American male writers",
+            "21st-century American non-fiction writers",
+            "21st-century American novelists",
+            "21st-century American zoologists",
+            "American autobiographers",
+            "American conservationists",
+            "American deists",
+            "American ecologists",
+            "American entomologists",
+            "American humanists",
+            "American male non-fiction writers",
+            "American male novelists",
+            "American naturalists",
+            "American non-fiction environmental writers",
+            "American science writers",
+            "American skeptics",
+            "Biogeographers",
+            "American critics of religions",
+            "Entomological writers",
+            "American ethologists",
+            "American evolutionary biologists",
+            "Fellows of the Ecological Society of America",
+            "Foreign members of the Royal Society",
+            "Harvard University alumni"
+          ],
+          "birth_year": 1929,
+          "death_year": 2021
+        },
+        "original_year": 1975,
+        "author_meta": {
+          "birth_year": 1929,
+          "death_year": 2021,
+          "title": "Edward O. Wilson"
+        }
+      },
+      "wikipedia_match": {
+        "title": "E. O. Wilson",
+        "page_id": 10313,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1929 births",
+          "2021 deaths",
+          "20th-century American male writers",
+          "20th-century American non-fiction writers",
+          "20th-century American novelists",
+          "20th-century American zoologists",
+          "21st-century American male writers",
+          "21st-century American non-fiction writers",
+          "21st-century American novelists",
+          "21st-century American zoologists",
+          "American autobiographers",
+          "American conservationists",
+          "American deists",
+          "American ecologists",
+          "American entomologists",
+          "American humanists",
+          "American male non-fiction writers",
+          "American male novelists",
+          "American naturalists",
+          "American non-fiction environmental writers",
+          "American science writers",
+          "American skeptics",
+          "Biogeographers",
+          "American critics of religions",
+          "Entomological writers",
+          "American ethologists",
+          "American evolutionary biologists",
+          "Fellows of the Ecological Society of America",
+          "Foreign members of the Royal Society",
+          "Harvard University alumni"
+        ],
+        "birth_year": 1929,
+        "death_year": 2021
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "183819",
+        "target_author_ids": [
+          "31624"
+        ],
+        "target_person": {
+          "title": "E. O. Wilson",
+          "page_id": 10313,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1929 births",
+            "2021 deaths",
+            "20th-century American male writers",
+            "20th-century American non-fiction writers",
+            "20th-century American novelists",
+            "20th-century American zoologists",
+            "21st-century American male writers",
+            "21st-century American non-fiction writers",
+            "21st-century American novelists",
+            "21st-century American zoologists",
+            "American autobiographers",
+            "American conservationists",
+            "American deists",
+            "American ecologists",
+            "American entomologists",
+            "American humanists",
+            "American male non-fiction writers",
+            "American male novelists",
+            "American naturalists",
+            "American non-fiction environmental writers",
+            "American science writers",
+            "American skeptics",
+            "Biogeographers",
+            "American critics of religions",
+            "Entomological writers",
+            "American ethologists",
+            "American evolutionary biologists",
+            "Fellows of the Ecological Society of America",
+            "Foreign members of the Royal Society",
+            "Harvard University alumni"
+          ],
+          "birth_year": 1929,
+          "death_year": 2021
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Gregor Mendel",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "It was the great achievement of Gregor Mendel to show that hereditary units can be treated in practice as indivisible and independent particles.",
+          "Mendel's discovery had already been published, and it could have rescued Darwin, but alas he never knew about it: nobody seems to have read it until years after Darwin and Mendel had both died."
+        ],
+        "commentaries": [
+          "The author references Mendel's work as a foundational achievement in genetics, noting his demonstration that hereditary units behave like particles.",
+          "The author mentions Mendel's discovery as a potential solution to Darwin's worries, highlighting the historical lack of awareness of Mendel's work during Darwin's time."
+        ],
+        "canonical_author": "Gregor Mendel"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gregor Mendel",
+        "page_id": 12562,
+        "infoboxes": [
+          "scientist",
+          "clergy"
+        ],
+        "categories": [
+          "Gregor Mendel| ",
+          "1822 births",
+          "1884 deaths",
+          "Botanists from the Austrian Empire",
+          "People from Nový Jičín District",
+          "People from Austrian Silesia",
+          "Silesian-German people",
+          "Augustinian friars",
+          "Austrian abbots",
+          "Austrian beekeepers",
+          "Austrian gardeners",
+          "Austrian geneticists",
+          "19th-century Austrian biologists",
+          "19th-century Austrian botanists",
+          "Botanists with author abbreviations",
+          "Czech beekeepers",
+          "Czech biologists",
+          "19th-century Czech botanists",
+          "Czech geneticists",
+          "Czech Roman Catholics",
+          "Catholic clergy scientists",
+          "Catholic philosophers",
+          "19th-century Austrian Roman Catholic priests",
+          "Palacký University Olomouc alumni",
+          "Deaths from nephritis",
+          "Burials at Brno Central Cemetery",
+          "Independent scientists"
+        ],
+        "birth_year": 1822,
+        "death_year": 1884
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Gregor Mendel",
+          "page_id": 12562,
+          "infoboxes": [
+            "scientist",
+            "clergy"
+          ],
+          "categories": [
+            "Gregor Mendel| ",
+            "1822 births",
+            "1884 deaths",
+            "Botanists from the Austrian Empire",
+            "People from Nový Jičín District",
+            "People from Austrian Silesia",
+            "Silesian-German people",
+            "Augustinian friars",
+            "Austrian abbots",
+            "Austrian beekeepers",
+            "Austrian gardeners",
+            "Austrian geneticists",
+            "19th-century Austrian biologists",
+            "19th-century Austrian botanists",
+            "Botanists with author abbreviations",
+            "Czech beekeepers",
+            "Czech biologists",
+            "19th-century Czech botanists",
+            "Czech geneticists",
+            "Czech Roman Catholics",
+            "Catholic clergy scientists",
+            "Catholic philosophers",
+            "19th-century Austrian Roman Catholic priests",
+            "Palacký University Olomouc alumni",
+            "Deaths from nephritis",
+            "Burials at Brno Central Cemetery",
+            "Independent scientists"
+          ],
+          "birth_year": 1822,
+          "death_year": 1884
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sir Ronald Fisher",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "one feels that Sir Ronald Fisher, the greatest biologist of the twentieth century, meant much the same thing in 1930 by his 'parental expenditure'",
+          "But now here is a very interesting point realized by Darwin, and clearly enunciated by Fisher.",
+          "They took the Fisher calculations on optimal sex ratios (which we looked at in the previous chapter) and re-worked them for the special case of the Hymenoptera."
+        ],
+        "commentaries": [
+          "The author suggests that Fisher's earlier idea of 'parental expenditure' from 1930 was conceptually similar to Trivers's later concept of Parental Investment.",
+          "The author states that Fisher clearly enunciated the point about sexual selection realized by Darwin.",
+          "The author mentions Fisher's foundational calculations on optimal sex ratios, which were applied by Trivers and Hare."
+        ],
+        "canonical_author": "Sir Ronald Fisher"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Ronald Fisher",
+        "page_id": 140824,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1890 births",
+          "1962 deaths",
+          "20th-century English mathematicians",
+          "Arthur Balfour Professors of Genetics",
+          "Academics of University College London",
+          "English Christians",
+          "Alumni of Gonville and Caius College, Cambridge",
+          "British biostatisticians",
+          "English Anglicans",
+          "British eugenicists",
+          "English geneticists",
+          "English statisticians",
+          "British evolutionary biologists",
+          "Fellows of Gonville and Caius College, Cambridge",
+          "Fellows of the Royal Society",
+          "Foreign associates of the National Academy of Sciences",
+          "History of genetics",
+          "Knights Bachelor",
+          "People educated at Harrow School",
+          "People from East Finchley",
+          "British population geneticists",
+          "Presidents of the Royal Statistical Society",
+          "Recipients of the Copley Medal",
+          "Rothamsted statisticians",
+          "Royal Medal winners",
+          "Modern synthesis (20th century)",
+          "Probability theorists",
+          "Theoretical biologists",
+          "British mathematical statisticians",
+          "Members of the American Philosophical Society"
+        ],
+        "birth_year": 1890,
+        "death_year": 1962
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Ronald Fisher",
+          "page_id": 140824,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1890 births",
+            "1962 deaths",
+            "20th-century English mathematicians",
+            "Arthur Balfour Professors of Genetics",
+            "Academics of University College London",
+            "English Christians",
+            "Alumni of Gonville and Caius College, Cambridge",
+            "British biostatisticians",
+            "English Anglicans",
+            "British eugenicists",
+            "English geneticists",
+            "English statisticians",
+            "British evolutionary biologists",
+            "Fellows of Gonville and Caius College, Cambridge",
+            "Fellows of the Royal Society",
+            "Foreign associates of the National Academy of Sciences",
+            "History of genetics",
+            "Knights Bachelor",
+            "People educated at Harrow School",
+            "People from East Finchley",
+            "British population geneticists",
+            "Presidents of the Royal Statistical Society",
+            "Recipients of the Copley Medal",
+            "Rothamsted statisticians",
+            "Royal Medal winners",
+            "Modern synthesis (20th century)",
+            "Probability theorists",
+            "Theoretical biologists",
+            "British mathematical statisticians",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1890,
+          "death_year": 1962
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "R. H. MacArthur",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The essential concept Maynard Smith introduces is that of the evolutionarily stable strategy, an idea that he traces back to W. D. Hamilton and R. H. MacArthur."
+        ],
+        "commentaries": [
+          "The author notes that Maynard Smith traces the concept of the evolutionarily stable strategy back to the ideas of W. D. Hamilton and R. H. MacArthur."
+        ],
+        "canonical_author": "R. H. Macarthur"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Robert H. MacArthur",
+        "page_id": 2308414,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1930 births",
+          "1972 deaths",
+          "American ecologists",
+          "Brown University alumni",
+          "Marlboro College alumni",
+          "Mathematical ecologists",
+          "Members of the United States National Academy of Sciences",
+          "Academics from Toronto",
+          "Princeton University faculty",
+          "University of Pennsylvania faculty",
+          "Yale University alumni",
+          "Deaths from kidney cancer"
+        ],
+        "birth_year": 1930,
+        "death_year": 1972
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Robert H. MacArthur",
+          "page_id": 2308414,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1930 births",
+            "1972 deaths",
+            "American ecologists",
+            "Brown University alumni",
+            "Marlboro College alumni",
+            "Mathematical ecologists",
+            "Members of the United States National Academy of Sciences",
+            "Academics from Toronto",
+            "Princeton University faculty",
+            "University of Pennsylvania faculty",
+            "Yale University alumni",
+            "Deaths from kidney cancer"
+          ],
+          "birth_year": 1930,
+          "death_year": 1972
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Trivers and Hare",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Trivers and Hare realized that the workers must try to bias the sex ratio in favour of females.",
+          "This is a matter that can be put to the test and that is what Trivers and Hare did, using a large number of species of ants."
+        ],
+        "commentaries": [
+          "The author cites Trivers and Hare for their insight into worker behavior regarding sex ratio manipulation in social insects.",
+          "The author notes that Trivers and Hare conducted empirical tests on ant species to investigate sex ratio conflicts."
+        ],
+        "canonical_author": "Trivers And Hare"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Trivers and Hare",
+        "birth_year": 1943
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "156319"
+        ],
+        "target_person": {
+          "title": "Trivers and Hare",
+          "birth_year": 1943
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Adaptation and Natural Selection",
+        "author": "G. C. Williams",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In this belief I am heavily influenced by G. C. Williams's great book Adaptation and Natural Selection."
+        ],
+        "commentaries": [
+          "The author states that his belief about the level of selection in evolution is heavily influenced by this book."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 2,
+        "author_ids": [
+          "46667"
+        ],
+        "ratings_count": 16,
+        "average_rating": 4.13,
+        "title": "Adaptation and Natural Selection",
+        "title_without_series": "Adaptation and Natural Selection",
+        "book_id": "19444315",
+        "work_id": "2071738",
+        "authors": [
+          "George C. Williams"
+        ],
+        "description": "Biological evolution is a fact--but the many conflicting theories of evolution remain controversial even today. In 1966, simple Darwinism, which holds that evolution functions primarily at the level of the individual organism, was threatened by opposing concepts such as group selection, a popular idea stating that evolution acts to select entire species rather than individuals. George Williams's famous argument in favor of the Darwinists struck a powerful blow to those in opposing camps. His Adaptation and....",
+        "link": "https://www.goodreads.com/book/show/19444315-adaptation-and-natural-selection",
+        "original_year": 1966,
+        "author_meta": {
+          "birth_year": 1926,
+          "death_year": 2010,
+          "description": null,
+          "title": "George C. Williams"
+        }
+      },
+      "wikipedia_match": {
+        "title": "George C. Williams",
+        "birth_year": 1926,
+        "death_year": 2010
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "19444315",
+        "target_author_ids": [
+          "46667"
+        ],
+        "target_person": {
+          "title": "George C. Williams",
+          "birth_year": 1926,
+          "death_year": 2010
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Love and Hate: The Natural History of Behavior Patterns",
+        "author": "Irenäus Eibl-Eibesfeldt",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "These are claims that could have been made for Lorenz's On Aggression, Ardrey's The Social Contract, and Eibl-Eihesfeldt's Love and Hate."
+        ],
+        "commentaries": [
+          "The author cites this book as part of a group that explores human social behaviors but argues they are flawed due to a misunderstanding of evolutionary principles."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Love and Hate: The Natural History of Behavior Patterns",
+        "authors": [
+          "Irenäus Eibl-Eibesfeldt"
+        ],
+        "original_year": 1970,
+        "birth_year": 1928,
+        "death_year": 2018,
+        "nationality": "Austrian",
+        "description": "A foundational work in human ethology by Irenäus Eibl-Eibesfeldt, exploring the biological roots of human social behaviors such as aggression, bonding, and communication through cross-cultural studies.",
+        "book_id": "web_edeb2826",
+        "author_meta": {
+          "birth_year": 1928,
+          "death_year": 2018,
+          "nationality": "Austrian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Irenäus Eibl-Eibesfeldt",
+        "birth_year": 1928,
+        "death_year": 2018
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_edeb2826",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Irenäus Eibl-Eibesfeldt",
+          "birth_year": 1928,
+          "death_year": 2018
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "J. Z. Young",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "As J. Z. Young has pointed out, the genes have to perform a task analogous to prediction."
+        ],
+        "commentaries": [
+          "The author cites J. Z. Young as a source for the idea that genes perform a predictive function."
+        ],
+        "canonical_author": "J. Z. Young"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "J. Z. Young",
+        "birth_year": 1907,
+        "death_year": 1997
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "J. Z. Young",
+          "birth_year": 1907,
+          "death_year": 1997
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "N. Smythe",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The theory was originally foreshadowed by N. Smythe but, pushed to its logical conclusion, it bears the unmistakeable signature of A. Zahavi."
+        ],
+        "commentaries": [
+          "The author notes that N. Smythe originally foreshadowed the theory of stotting behavior, which was later developed by A. Zahavi."
+        ],
+        "canonical_author": "N. Smythe"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "N. Smythe",
+        "birth_year": 1895,
+        "death_year": 1980
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7399173"
+        ],
+        "target_person": {
+          "title": "N. Smythe",
+          "birth_year": 1895,
+          "death_year": 1980
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Parker",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Parker and others showed how this asymmetry might have evolved from an originally isogamous state of affairs."
+        ],
+        "commentaries": [
+          "The author references Parker's work on the evolutionary origins of gamete size asymmetry."
+        ],
+        "canonical_author": "Parker"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Parker",
+        "birth_year": 1944
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Parker",
+          "birth_year": 1944
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "R. A. Fisher",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "The gene's-eye view of Darwinism is implicit in the writings of R. A. Fisher and the other great pioneers of neo-Darwinism in the early thirties",
+          "What R. A. Fisher, J.\nB. S. Haldane, and especially W. D. Hamilton realized, was that the same applies to other close relations-brothers and sisters, nephews and nieces, close cousins.",
+          "The explanation was first offered by R. A. Fisher."
+        ],
+        "commentaries": [
+          "The author states that the gene's-eye view is implicitly present in the writings of this scientist and other early neo-Darwinists.",
+          "The author references Fisher as one of the scientists who realized the genetic basis for altruism among close relatives.",
+          "The author credits Fisher with providing the initial explanation for why the numbers of males and females tend to be equal."
+        ],
+        "canonical_author": "R. A. Fisher"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Ronald Fisher",
+        "page_id": 140824,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1890 births",
+          "1962 deaths",
+          "20th-century English mathematicians",
+          "Arthur Balfour Professors of Genetics",
+          "Academics of University College London",
+          "English Christians",
+          "Alumni of Gonville and Caius College, Cambridge",
+          "British biostatisticians",
+          "English Anglicans",
+          "British eugenicists",
+          "English geneticists",
+          "English statisticians",
+          "British evolutionary biologists",
+          "Fellows of Gonville and Caius College, Cambridge",
+          "Fellows of the Royal Society",
+          "Foreign associates of the National Academy of Sciences",
+          "History of genetics",
+          "Knights Bachelor",
+          "People educated at Harrow School",
+          "People from East Finchley",
+          "British population geneticists",
+          "Presidents of the Royal Statistical Society",
+          "Recipients of the Copley Medal",
+          "Rothamsted statisticians",
+          "Royal Medal winners",
+          "Modern synthesis (20th century)",
+          "Probability theorists",
+          "Theoretical biologists",
+          "British mathematical statisticians",
+          "Members of the American Philosophical Society"
+        ],
+        "birth_year": 1890,
+        "death_year": 1962
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Ronald Fisher",
+          "page_id": 140824,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1890 births",
+            "1962 deaths",
+            "20th-century English mathematicians",
+            "Arthur Balfour Professors of Genetics",
+            "Academics of University College London",
+            "English Christians",
+            "Alumni of Gonville and Caius College, Cambridge",
+            "British biostatisticians",
+            "English Anglicans",
+            "British eugenicists",
+            "English geneticists",
+            "English statisticians",
+            "British evolutionary biologists",
+            "Fellows of Gonville and Caius College, Cambridge",
+            "Fellows of the Royal Society",
+            "Foreign associates of the National Academy of Sciences",
+            "History of genetics",
+            "Knights Bachelor",
+            "People educated at Harrow School",
+            "People from East Finchley",
+            "British population geneticists",
+            "Presidents of the Royal Statistical Society",
+            "Recipients of the Copley Medal",
+            "Rothamsted statisticians",
+            "Royal Medal winners",
+            "Modern synthesis (20th century)",
+            "Probability theorists",
+            "Theoretical biologists",
+            "British mathematical statisticians",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1890,
+          "death_year": 1962
+        }
+      }
+    }
+  ]
+}

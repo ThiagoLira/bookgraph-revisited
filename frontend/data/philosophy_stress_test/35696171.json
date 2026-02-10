@@ -1500,7 +1500,7 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -6,
+          "birth_year": 6,
           "death_year": 30,
           "main_genre": "Religious & Wisdom Literature",
           "nationality": "Jewish"
@@ -1508,7 +1508,7 @@
       },
       "wikipedia_match": {
         "title": "Jesus",
-        "birth_year": -4,
+        "birth_year": 4,
         "death_year": 30
       },
       "edge": {
@@ -1519,7 +1519,7 @@
         ],
         "target_person": {
           "title": "Jesus",
-          "birth_year": -4,
+          "birth_year": 4,
           "death_year": 30
         }
       }
@@ -3041,8 +3041,8 @@
           "Marshall Scholars",
           "Fellows of the American Physical Society"
         ],
-        "birth_year": 1960,
-        "death_year": 1911
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "author",
@@ -3072,8 +3072,8 @@
             "Marshall Scholars",
             "Fellows of the American Physical Society"
           ],
-          "birth_year": 1960,
-          "death_year": 1911
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -7315,8 +7315,8 @@
       },
       "wikipedia_match": {
         "title": "Lodge",
-        "birth_year": 1935,
-        "death_year": 1625
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "author",
@@ -7326,8 +7326,8 @@
         ],
         "target_person": {
           "title": "Lodge",
-          "birth_year": 1935,
-          "death_year": 1625
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -15431,8 +15431,8 @@
       },
       "wikipedia_match": {
         "title": "Fischer",
-        "birth_year": 1935,
-        "death_year": 1897
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "author",
@@ -15442,8 +15442,8 @@
         ],
         "target_person": {
           "title": "Fischer",
-          "birth_year": 1935,
-          "death_year": 1897
+          "birth_year": null,
+          "death_year": null
         }
       }
     },

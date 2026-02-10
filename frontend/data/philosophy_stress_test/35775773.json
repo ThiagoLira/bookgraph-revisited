@@ -16729,16 +16729,16 @@
         "description": "A scholarly article published in the collection 'Forschungen und Versuche zur Geschichte des Mittelalters und der Neuzeit' (1915), examining the Jewish policies of princely absolutism in the 17th and 18th centuries.",
         "book_id": "web_f362b4d2",
         "author_meta": {
-          "birth_year": 1988,
-          "death_year": 1590,
+          "birth_year": null,
+          "death_year": null,
           "main_genre": "Technology & Business",
           "nationality": "American"
         }
       },
       "wikipedia_match": {
         "title": "Felix Priebatsch",
-        "birth_year": 1988,
-        "death_year": 1590
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "book",
@@ -16746,8 +16746,8 @@
         "target_author_ids": [],
         "target_person": {
           "title": "Felix Priebatsch",
-          "birth_year": 1988,
-          "death_year": 1590
+          "birth_year": null,
+          "death_year": null
         }
       }
     },

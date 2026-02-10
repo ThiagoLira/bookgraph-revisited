@@ -1101,8 +1101,8 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -339,
-          "death_year": -397,
+          "birth_year": 339,
+          "death_year": 397,
           "main_genre": "theology",
           "nationality": "Roman"
         }
@@ -1534,8 +1534,8 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1564,
-          "death_year": -1616,
+          "birth_year": 1564,
+          "death_year": 1616,
           "main_genre": "drama",
           "nationality": "English"
         }
@@ -2104,8 +2104,8 @@
           "death_year": 577
         },
         "author_meta": {
-          "birth_year": -484,
-          "death_year": -577,
+          "birth_year": 484,
+          "death_year": 577,
           "main_genre": "hagiography",
           "nationality": "Irish"
         }
@@ -4309,8 +4309,8 @@
           "Pseudonymous writers",
           "Year of birth unknown"
         ],
-        "birth_year": 400,
-        "death_year": 50
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "book",
@@ -4343,8 +4343,8 @@
             "Pseudonymous writers",
             "Year of birth unknown"
           ],
-          "birth_year": 400,
-          "death_year": 50
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -6687,8 +6687,8 @@
         "description": "A 3rd-century Christian theological work by Hippolytus of Rome, also known as 'Refutation of All Heresies,' which critiques various heresies and includes philosophical discussions, including references to pre-Socratic thinkers like Democritus and atomism.",
         "book_id": "web_10c40856",
         "author_meta": {
-          "birth_year": -170,
-          "death_year": -235,
+          "birth_year": 170,
+          "death_year": 235,
           "main_genre": "theology",
           "nationality": "Roman"
         }
@@ -6863,7 +6863,7 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1904,
+          "birth_year": 1904,
           "death_year": 1967,
           "main_genre": "science",
           "nationality": "American"
@@ -9471,7 +9471,7 @@
           "death_year": 1994
         },
         "author_meta": {
-          "birth_year": -55,
+          "birth_year": null,
           "death_year": 1994,
           "main_genre": "satire",
           "nationality": "Roman"
@@ -9975,8 +9975,8 @@
           "death_year": 430
         },
         "author_meta": {
-          "birth_year": -354,
-          "death_year": -430,
+          "birth_year": 354,
+          "death_year": 430,
           "main_genre": "Theology",
           "nationality": "Roman"
         }
@@ -10344,8 +10344,8 @@
           "death_year": null
         },
         "author_meta": {
-          "birth_year": -46,
-          "death_year": -120,
+          "birth_year": 46,
+          "death_year": 120,
           "main_genre": "biography",
           "nationality": "Greek"
         }
@@ -11038,7 +11038,7 @@
         "link": "https://www.goodreads.com/book/show/28232740-epigrams",
         "original_year": 80,
         "author_meta": {
-          "birth_year": -38,
+          "birth_year": 38,
           "death_year": 103,
           "main_genre": "epigram",
           "nationality": "Roman"
@@ -11609,8 +11609,8 @@
         },
         "original_year": 110,
         "author_meta": {
-          "birth_year": -56,
-          "death_year": -120,
+          "birth_year": 56,
+          "death_year": 120,
           "main_genre": "historiography",
           "nationality": "Roman"
         }
@@ -11945,8 +11945,8 @@
         "description": "A theological treatise by Tertullian, an early Christian author, discussing the nature, origin, and immortality of the soul, written in Latin around 207 CE.",
         "book_id": "web_c78c19f0",
         "author_meta": {
-          "birth_year": -155,
-          "death_year": -220,
+          "birth_year": 155,
+          "death_year": 220,
           "main_genre": "theology",
           "nationality": "Roman"
         }
@@ -15226,7 +15226,7 @@
         },
         "original_year": 61,
         "author_meta": {
-          "birth_year": -39,
+          "birth_year": 39,
           "death_year": 65,
           "main_genre": "epic poetry",
           "nationality": "Roman"
@@ -17868,7 +17868,7 @@
         "fans_count": null,
         "link": null,
         "author_meta": {
-          "birth_year": -1818,
+          "birth_year": 1818,
           "death_year": 1883,
           "main_genre": "philosophy",
           "nationality": "German"
@@ -17965,8 +17965,8 @@
           "Pseudonymous writers",
           "Year of birth unknown"
         ],
-        "birth_year": 400,
-        "death_year": 50
+        "birth_year": null,
+        "death_year": null
       },
       "edge": {
         "target_type": "author",
@@ -17999,8 +17999,8 @@
             "Pseudonymous writers",
             "Year of birth unknown"
           ],
-          "birth_year": 400,
-          "death_year": 50
+          "birth_year": null,
+          "death_year": null
         }
       }
     },
@@ -19001,8 +19001,8 @@
           "death_year": 253
         },
         "author_meta": {
-          "birth_year": -185,
-          "death_year": -254,
+          "birth_year": 185,
+          "death_year": 254,
           "main_genre": "theology",
           "nationality": "Alexandrian"
         }
@@ -20014,8 +20014,8 @@
           "death_year": 120
         },
         "author_meta": {
-          "birth_year": -56,
-          "death_year": -120,
+          "birth_year": 56,
+          "death_year": 120,
           "main_genre": "historiography",
           "nationality": "Roman"
         }
@@ -21466,8 +21466,8 @@
           "death_year": null
         },
         "author_meta": {
-          "birth_year": -90,
-          "death_year": -168,
+          "birth_year": 90,
+          "death_year": 168,
           "main_genre": "astronomy",
           "nationality": "Greek"
         }
@@ -21498,8 +21498,8 @@
           "Claudii",
           "Epigrammatists of the Greek Anthology"
         ],
-        "birth_year": -90,
-        "death_year": -168
+        "birth_year": 90,
+        "death_year": 168
       },
       "edge": {
         "target_type": "author",
@@ -21533,8 +21533,8 @@
             "Claudii",
             "Epigrammatists of the Greek Anthology"
           ],
-          "birth_year": -90,
-          "death_year": -168
+          "birth_year": 90,
+          "death_year": 168
         }
       }
     },
@@ -22092,8 +22092,8 @@
         },
         "original_year": 150,
         "author_meta": {
-          "birth_year": -90,
-          "death_year": -168,
+          "birth_year": 90,
+          "death_year": 168,
           "main_genre": "astronomy",
           "nationality": "Greek"
         }
@@ -22124,8 +22124,8 @@
           "Claudii",
           "Epigrammatists of the Greek Anthology"
         ],
-        "birth_year": -90,
-        "death_year": -168
+        "birth_year": 90,
+        "death_year": 168
       },
       "edge": {
         "target_type": "book",
@@ -22163,8 +22163,8 @@
             "Claudii",
             "Epigrammatists of the Greek Anthology"
           ],
-          "birth_year": -90,
-          "death_year": -168
+          "birth_year": 90,
+          "death_year": 168
         }
       }
     },
@@ -23353,7 +23353,7 @@
           "death_year": 113
         },
         "author_meta": {
-          "birth_year": -61,
+          "birth_year": 61,
           "death_year": 113,
           "main_genre": "letters",
           "nationality": "Roman"

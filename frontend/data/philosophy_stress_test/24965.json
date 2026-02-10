@@ -109,8 +109,8 @@
           "death_year": null
         },
         "author_meta": {
-          "birth_year": -180,
-          "death_year": -240,
+          "birth_year": 180,
+          "death_year": 240,
           "main_genre": "Biography/Philosophy",
           "nationality": "Greek"
         }
