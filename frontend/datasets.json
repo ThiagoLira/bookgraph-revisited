@@ -13,7 +13,16 @@
             "covers/fear_and_trembling.jpg",
             "covers/enlightenment_now.jpg",
             "covers/pens_es.jpg",
-            "covers/essays_of_francis_bacon.jpg"
+            "covers/essays_of_francis_bacon.jpg",
+            "covers/ecce_homo.jpg",
+            "covers/the_genealogy_of_morals.jpg",
+            "covers/man_s_search_for_meaning.jpg",
+            "covers/on_photography.jpg",
+            "covers/justice_what_s_the_right_thing_to_do.jpg",
+            "covers/the_essays_of_michel_de_montaigne.jpg",
+            "covers/the_origins_of_totalitarianism.jpg",
+            "covers/other_inquisitions_1937_1952.jpg",
+            "covers/where_the_stress_falls.jpg"
         ]
     },
     {
@@ -55,6 +64,13 @@
         "path": "./data/what_i_believe",
         "covers": [
             "covers/what_i_believe.jpg"
+        ]
+    },
+    {
+        "name": "Frances Yates \u2014 Cabbala e Occultismo",
+        "path": "./data/frances_yates_\u2014_cabbala_e_occultismo",
+        "covers": [
+            "covers/cabbala_e_occultismo_nell_et_elisabettiana.jpg"
         ]
     }
 ]

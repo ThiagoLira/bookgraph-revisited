@@ -1,0 +1,2425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BookGraph Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0c;
+      --bg-warm: #0d0c0a;
+      --panel: #111113;
+      --panel-elevated: #18181b;
+      --text: #e8e6e3;
+      --text-muted: #6b6b6b;
+      --text-warm: #c4b8a5;
+      --accent: #d4a574;
+      --accent-glow: rgba(212, 165, 116, 0.15);
+      --accent-bright: #e8c4a0;
+
+      /* Node Colors - warmer palette */
+      --book-source: #c45c4a;
+      --book-cited: #4a6fa5;
+      --author-fill: rgba(212, 165, 116, 0.03);
+      --author-stroke: rgba(212, 165, 116, 0.15);
+
+      --edge: #2a2a2f;
+      --edge-highlight: var(--accent);
+
+      /* Citation card colors */
+      --card-bg: rgba(20, 20, 22, 0.7);
+      --card-border: rgba(212, 165, 116, 0.1);
+      --card-hover: rgba(212, 165, 116, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-y: auto;
+      overflow-x: hidden;
+      touch-action: pan-y;
+    }
+
+    /* Subtle noise texture overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      z-index: 9999;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 32px;
+      background: linear-gradient(180deg, rgba(10, 10, 12, 0.98) 0%, rgba(10, 10, 12, 0.9) 60%, transparent 100%);
+      display: flex;
+      justify-content: space-between;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    header>* {
+      pointer-events: auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-warm);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .cover-image {
+      height: 100px;
+      border-radius: 2px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(212, 165, 116, 0.1);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .cover-image:hover {
+      transform: scale(1.6) translateY(24px);
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.8);
+      z-index: 100;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .header-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-style: italic;
+      letter-spacing: 0.02em;
+    }
+
+    #controls {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    #loading {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+      color: var(--text-muted);
+      z-index: 100;
+      letter-spacing: 0.1em;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    #axis-group {
+      transition: opacity 0.4s ease;
+    }
+
+    .tick text {
+      fill: var(--text-muted);
+      font-size: 11px;
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .tick line {
+      stroke: var(--text-muted);
+    }
+
+    .link {
+      stroke: var(--edge);
+      stroke-width: 1;
+      stroke-opacity: 0.4;
+    }
+
+    .link.highlight {
+      stroke: var(--edge-highlight);
+      stroke-width: 2;
+      stroke-opacity: 0.9;
+    }
+
+    .link.dimmed {
+      stroke-opacity: 0.08;
+    }
+
+    .author-circle {
+      fill: var(--author-fill);
+      stroke: var(--author-stroke);
+      stroke-width: 1;
+      cursor: pointer;
+      transition: stroke 0.3s ease, fill 0.3s ease;
+    }
+
+    .author-group.highlight .author-circle {
+      stroke: var(--accent);
+      stroke-width: 2;
+      fill: var(--accent-glow);
+    }
+
+    .author-group.dimmed .author-circle {
+      opacity: 0.2;
+    }
+
+    .book-circle {
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .book-circle:hover {
+      transform: scale(1.3);
+      filter: brightness(1.3);
+    }
+
+    .label {
+      font-size: 12px;
+      font-family: "JetBrains Mono", monospace;
+      fill: var(--text-warm);
+      text-anchor: middle;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      letter-spacing: 0.02em;
+    }
+
+    .label.visible {
+      opacity: 1;
+    }
+
+    .search-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(212, 165, 116, 0.15);
+      border-radius: 2px;
+      padding: 10px 16px;
+      color: var(--text);
+      font-size: 14px;
+      font-family: "JetBrains Mono", monospace;
+      outline: none;
+      width: 220px;
+      transition: border-color 0.3s ease, background 0.3s ease;
+    }
+
+    .search-box:focus {
+      border-color: var(--accent);
+      background: rgba(212, 165, 116, 0.05);
+    }
+
+    .search-box::placeholder {
+      color: var(--text-muted);
+    }
+
+    /* === CITATION PANEL - The Star of the Show === */
+    #info-panel {
+      position: fixed;
+      right: -520px;
+      top: 0;
+      width: 520px;
+      height: 100vh;
+      background: var(--panel);
+      overflow-y: auto;
+      transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 20;
+      border-left: 1px solid rgba(212, 165, 116, 0.08);
+      display: flex;
+      flex-direction: column;
+    }
+
+    #info-panel.visible {
+      right: 0;
+    }
+
+    #info-panel::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+      background: linear-gradient(180deg, var(--accent-glow) 0%, transparent 100%);
+      pointer-events: none;
+    }
+
+    #panel-header {
+      position: relative;
+      padding: 40px 32px 24px;
+      border-bottom: 1px solid rgba(212, 165, 116, 0.08);
+      flex-shrink: 0;
+    }
+
+    #panel-type {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    #panel-title {
+      font-size: 28px;
+      font-weight: 400;
+      margin: 0;
+      line-height: 1.3;
+      color: var(--text);
+    }
+
+    #panel-meta {
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    #panel-close {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      background: none;
+      border: 1px solid rgba(212, 165, 116, 0.15);
+      color: var(--text-muted);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    #panel-close:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-glow);
+    }
+
+    #panel-content {
+      padding: 24px 32px 40px;
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    /* Stats row for books */
+    .panel-stats {
+      display: flex;
+      gap: 24px;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(212, 165, 116, 0.08);
+      margin-bottom: 20px;
+    }
+
+    .panel-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .panel-stat-value {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    .panel-stat-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    /* Description */
+    .panel-description {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--text);
+      margin-bottom: 32px;
+    }
+
+    /* === CITATION CARDS === */
+    .citations-section {
+      margin-top: 32px;
+    }
+
+    .citations-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(212, 165, 116, 0.08);
+    }
+
+    .citations-title {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin: 0;
+    }
+
+    .citations-count {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      background: rgba(212, 165, 116, 0.1);
+      padding: 3px 8px;
+      border-radius: 2px;
+    }
+
+    .citation-card {
+      position: relative;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .citation-card:hover {
+      background: var(--card-hover);
+      border-color: rgba(212, 165, 116, 0.25);
+      transform: translateX(-4px);
+    }
+
+    .citation-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .citation-card:hover::before {
+      opacity: 1;
+    }
+
+    .citation-card-inner {
+      padding: 20px 24px;
+    }
+
+    .citation-number {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      color: var(--text-muted);
+      opacity: 0.5;
+    }
+
+    .citation-quote {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      font-style: italic;
+      margin: 0;
+      padding-right: 32px;
+    }
+
+    .citation-quote::before {
+      content: open-quote;
+      font-size: 24px;
+      color: var(--accent);
+      opacity: 0.5;
+      margin-right: 4px;
+      line-height: 0;
+      vertical-align: -0.3em;
+    }
+
+    .citation-quote::after {
+      content: close-quote;
+      font-size: 24px;
+      color: var(--accent);
+      opacity: 0.5;
+      margin-left: 4px;
+      line-height: 0;
+      vertical-align: -0.3em;
+    }
+
+    /* Expandable citation card */
+    .citation-card.expandable .citation-quote {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .citation-card.expandable.expanded .citation-quote {
+      display: block;
+      -webkit-line-clamp: unset;
+    }
+
+    .citation-expand {
+      display: none;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(212, 165, 116, 0.1);
+    }
+
+    .citation-card.expandable .citation-expand {
+      display: block;
+    }
+
+    .citation-expand-btn {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      cursor: pointer;
+      padding: 0;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    .citation-expand-btn:hover {
+      opacity: 1;
+    }
+
+    .citation-card.expanded .citation-expand-btn {
+      display: none;
+    }
+
+    /* Link button */
+    .panel-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background: transparent;
+      border: 1px solid rgba(212, 165, 116, 0.2);
+      color: var(--accent);
+      text-decoration: none;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      margin-top: 24px;
+    }
+
+    .panel-link:hover {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+    }
+
+    .panel-link svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Hero Section */
+    #hero {
+      padding: 140px 40px 60px;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #hero h2 {
+      font-size: 36px;
+      font-weight: 400;
+      margin: 0 0 24px;
+      color: var(--text-warm);
+      letter-spacing: 0.02em;
+    }
+
+    #hero p {
+      color: var(--text-muted);
+      font-size: 17px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: relative;
+    }
+
+    .control-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+    }
+
+    #search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 6px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .author-group.search-match .author-circle {
+      stroke: var(--accent);
+      stroke-width: 2;
+    }
+
+    #hero.hidden {
+      display: none;
+    }
+
+    /* Mobile hint */
+    #mobile-hint {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--panel);
+      border: 1px solid rgba(212, 165, 116, 0.2);
+      color: var(--text-muted);
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      z-index: 100;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    #mobile-hint strong {
+      color: var(--accent);
+    }
+
+    #mobile-hint-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      margin-left: 12px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    /* ============================================
+       MOBILE RESPONSIVE STYLES
+       ============================================ */
+
+    /* Tablet breakpoint */
+    @media (max-width: 900px) {
+      #mobile-hint {
+        display: block;
+      }
+
+      header {
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+
+      .header-subtitle {
+        display: none;
+      }
+
+      #controls {
+        gap: 12px;
+      }
+
+      .search-box {
+        width: 160px;
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+
+      .cover-image {
+        height: 70px;
+      }
+
+      .cover-image:hover {
+        transform: scale(1.3) translateY(16px);
+      }
+
+      /* Panel - narrower on tablet */
+      #info-panel {
+        width: 400px;
+        right: -400px;
+      }
+
+      #info-panel.visible {
+        right: 0;
+      }
+
+      #panel-header {
+        padding: 24px 20px 16px;
+      }
+
+      #panel-content {
+        padding: 16px 20px 32px;
+      }
+
+      #panel-title {
+        font-size: 22px;
+      }
+
+      /* Focus mode controls */
+      #focus-exit {
+        top: 80px;
+        left: 16px;
+        padding: 10px 14px;
+        font-size: 11px;
+      }
+
+      #focus-info {
+        top: 80px;
+        font-size: 10px;
+        padding: 8px 14px;
+        max-width: 70%;
+      }
+    }
+
+    /* Phone breakpoint */
+    @media (max-width: 600px) {
+      header {
+        padding: 10px 12px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-content {
+        gap: 12px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 16px;
+        letter-spacing: 0.1em;
+      }
+
+      #controls {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .control-group {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .control-label {
+        font-size: 8px;
+      }
+
+      .search-box {
+        width: 100%;
+        min-width: 0;
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+
+      .cover-image {
+        height: 50px;
+      }
+
+      .cover-image:hover {
+        transform: none; /* Disable hover zoom on mobile */
+      }
+
+      /* Panel - full width on phone landscape */
+      #info-panel {
+        width: 100%;
+        right: -100%;
+      }
+
+      #info-panel.visible {
+        right: 0;
+      }
+
+      #panel-header {
+        padding: 20px 16px 12px;
+      }
+
+      #panel-content {
+        padding: 12px 16px 24px;
+      }
+
+      #panel-title {
+        font-size: 20px;
+        padding-right: 40px;
+      }
+
+      #panel-close {
+        top: 16px;
+        right: 16px;
+        width: 32px;
+        height: 32px;
+      }
+
+      #panel-type {
+        font-size: 9px;
+      }
+
+      .panel-description {
+        font-size: 15px;
+      }
+
+      .citation-card-inner {
+        padding: 14px 16px;
+      }
+
+      .citation-quote {
+        font-size: 14px;
+      }
+
+      /* Focus exit - corner button on mobile */
+      #focus-exit {
+        top: auto;
+        bottom: 20px;
+        left: 16px;
+        transform: none;
+        padding: 10px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        background: var(--panel);
+        border: 1px solid var(--accent);
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+      }
+
+      #focus-exit svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      /* Focus info - below header on mobile */
+      #focus-info {
+        top: 120px;
+        left: 12px;
+        right: 12px;
+        transform: none;
+        text-align: center;
+        font-size: 10px;
+        padding: 8px 12px;
+        max-width: none;
+      }
+
+      /* Hero section */
+      #hero {
+        padding: 100px 20px 40px;
+      }
+
+      #hero h2 {
+        font-size: 24px;
+      }
+
+      #hero p {
+        font-size: 14px;
+      }
+
+      /* Labels smaller on mobile */
+      .label {
+        font-size: 10px;
+      }
+
+      /* Smaller nodes for touch */
+      .focus-mode .label.visible {
+        stroke-width: 3px;
+      }
+    }
+
+    /* Portrait mode on phones - compact bottom sheet instead of full overlay */
+    @media (max-width: 600px) and (orientation: portrait) {
+      /* Panel becomes a bottom sheet taking only 45% height */
+      #info-panel {
+        width: 100%;
+        height: 45vh;
+        max-height: 45vh;
+        top: auto;
+        bottom: -45vh;
+        right: 0;
+        left: 0;
+        border-left: none;
+        border-top: 1px solid rgba(212, 165, 116, 0.15);
+        border-radius: 16px 16px 0 0;
+        transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      #info-panel.visible {
+        bottom: 0;
+        right: 0;
+      }
+
+      #info-panel::before {
+        height: 100px;
+        border-radius: 16px 16px 0 0;
+      }
+
+      /* Drag handle indicator */
+      #info-panel::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 36px;
+        height: 4px;
+        background: rgba(212, 165, 116, 0.3);
+        border-radius: 2px;
+      }
+
+      #panel-header {
+        padding: 20px 16px 10px;
+      }
+
+      #panel-title {
+        font-size: 18px;
+        padding-right: 36px;
+      }
+
+      #panel-close {
+        top: 12px;
+        right: 12px;
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+      }
+
+      #panel-meta {
+        font-size: 12px;
+        margin-top: 6px;
+      }
+
+      #panel-content {
+        padding: 8px 16px 20px;
+      }
+
+      .panel-stats {
+        gap: 16px;
+        padding: 10px 0;
+        margin-bottom: 12px;
+      }
+
+      .panel-description {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+        /* Limit description height in compact mode */
+        max-height: 80px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+
+      .citations-section {
+        margin-top: 16px;
+      }
+
+      .citations-header {
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+      }
+
+      .citation-card {
+        margin-bottom: 10px;
+      }
+
+      .citation-card-inner {
+        padding: 10px 12px;
+      }
+
+      .citation-quote {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      /* Focus exit - small icon button in corner */
+      #focus-exit {
+        bottom: auto;
+        top: 70px;
+        left: 12px;
+        padding: 0;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        justify-content: center;
+        gap: 0;
+      }
+
+      /* Hide text, show only icon */
+      #focus-exit .focus-exit-text {
+        display: none;
+      }
+
+      #focus-exit svg {
+        width: 16px;
+        height: 16px;
+        margin: 0;
+      }
+
+      /* Focus info - compact badge next to exit button, below header */
+      #focus-info {
+        top: 120px;
+        bottom: auto;
+        left: 56px;
+        right: auto;
+        transform: none;
+        padding: 6px 12px;
+        font-size: 9px;
+        border-radius: 12px;
+        white-space: nowrap;
+      }
+
+      /* Exit button also needs to be below header in portrait */
+      #focus-exit {
+        top: 116px;
+      }
+    }
+
+    /* Extra small phones */
+    @media (max-width: 380px) {
+      h1 {
+        font-size: 14px;
+      }
+
+      .cover-image {
+        height: 40px;
+      }
+
+      #panel-title {
+        font-size: 18px;
+      }
+    }
+
+    /* Extra small phones in landscape only - keep text button */
+    @media (max-width: 380px) and (orientation: landscape) {
+      #focus-exit {
+        padding: 10px 14px;
+        font-size: 10px;
+      }
+    }
+
+    /* Touch-specific: larger tap targets */
+    @media (pointer: coarse) {
+      .book-circle {
+        /* Ensure minimum tap target */
+        stroke: transparent;
+        stroke-width: 8px;
+      }
+
+      .author-circle {
+        stroke-width: 2px;
+      }
+
+      #panel-close {
+        width: 44px;
+        height: 44px;
+        font-size: 24px;
+      }
+
+      .panel-link {
+        padding: 14px 20px;
+        font-size: 13px;
+      }
+
+      .citation-expand-btn {
+        padding: 8px 0;
+        font-size: 12px;
+      }
+    }
+
+    /* Empty state for no citations */
+    .empty-citations {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+    }
+
+    .empty-citations-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+      opacity: 0.3;
+    }
+
+    /* Focus Mode */
+    .focus-mode .author-group {
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .focus-mode .author-group.hidden-in-focus {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .focus-mode .link {
+      stroke-opacity: 0.12 !important;
+      stroke-width: 1 !important;
+    }
+
+    .focus-mode {
+      cursor: grab;
+      touch-action: none; /* Allow custom touch handling */
+    }
+
+    .focus-mode:active {
+      cursor: grabbing;
+    }
+
+    .focus-mode .link.hidden-in-focus {
+      opacity: 0;
+    }
+
+    /* Hide timeline axis in focus mode - doesn't apply to radial layout */
+    .focus-mode #axis-group {
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    /* Labels in focus mode - add dark halo for readability */
+    .focus-mode .label.visible {
+      paint-order: stroke fill;
+      stroke: var(--bg);
+      stroke-width: 4px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    #focus-exit {
+      position: fixed;
+      top: 100px;
+      left: 32px;
+      background: var(--panel);
+      border: 1px solid rgba(212, 165, 116, 0.2);
+      color: var(--text);
+      padding: 12px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      display: none;
+      align-items: center;
+      gap: 8px;
+      z-index: 15;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #focus-exit:hover {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+    }
+
+    #focus-exit.visible {
+      display: flex;
+    }
+
+    #focus-exit svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Focus mode info badge */
+    #focus-info {
+      position: fixed;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--panel);
+      border: 1px solid rgba(212, 165, 116, 0.15);
+      color: var(--text-warm);
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      display: none;
+      z-index: 15;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #focus-info.visible {
+      display: block;
+    }
+
+    #focus-info strong {
+      color: var(--accent);
+    }
+
+    /* Scrollbar styling */
+    #info-panel::-webkit-scrollbar,
+    #panel-content::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    #info-panel::-webkit-scrollbar-track,
+    #panel-content::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    #info-panel::-webkit-scrollbar-thumb,
+    #panel-content::-webkit-scrollbar-thumb {
+      background: rgba(212, 165, 116, 0.2);
+      border-radius: 3px;
+    }
+
+    #info-panel::-webkit-scrollbar-thumb:hover,
+    #panel-content::-webkit-scrollbar-thumb:hover {
+      background: rgba(212, 165, 116, 0.4);
+    }
+
+    /* Animation for cards appearing */
+    @keyframes cardSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .citation-card {
+      animation: cardSlideIn 0.4s ease forwards;
+    }
+
+    .citation-card:nth-child(1) { animation-delay: 0.05s; }
+    .citation-card:nth-child(2) { animation-delay: 0.1s; }
+    .citation-card:nth-child(3) { animation-delay: 0.15s; }
+    .citation-card:nth-child(4) { animation-delay: 0.2s; }
+    .citation-card:nth-child(5) { animation-delay: 0.25s; }
+    .citation-card:nth-child(6) { animation-delay: 0.3s; }
+    .citation-card:nth-child(7) { animation-delay: 0.35s; }
+    .citation-card:nth-child(8) { animation-delay: 0.4s; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <img id="header-cover" class="cover-image" src="" style="display:none;" />
+      <div class="header-text">
+        <h1>BookGraph</h1>
+        <div class="header-subtitle" id="header-subtitle">Exploring Citation Networks</div>
+      </div>
+    </div>
+
+    <div id="controls">
+      <div class="control-group">
+        <span class="control-label">Library</span>
+        <select id="dataset-select" class="search-box" style="width: auto; cursor: pointer;">
+          <option value="" disabled selected>Select a library...</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <span class="control-label">Search authors & books</span>
+        <input type="text" class="search-box" placeholder="Type to search..." id="search">
+        <span id="search-results"></span>
+      </div>
+    </div>
+  </header>
+
+  <div id="hero">
+    <h2>Visualizing Literary Citation Networks</h2>
+    <p>Explore how authors reference each other across time. Each circle represents an author, containing their books.
+       Red circles are source texts being analyzed; blue circles are cited works.
+       The vertical axis represents time, from ancient texts at the bottom to modern works at the top.
+       Select a library above to begin exploring.</p>
+  </div>
+
+  <div id="loading">Loading...</div>
+
+  <div id="mobile-hint">
+    <strong>Tip:</strong> For the best experience, rotate to landscape or use a wider screen
+    <button id="mobile-hint-close">&times;</button>
+  </div>
+
+  <button id="focus-exit">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    <span class="focus-exit-text">Exit Focus</span>
+  </button>
+
+  <div id="focus-info">
+    <strong id="focus-author-name"></strong> &mdash; <strong id="focus-count"></strong> citations
+  </div>
+
+  <svg id="graph-svg">
+    <g id="axis-group"></g>
+    <g id="link-group"></g>
+    <g id="node-group"></g>
+  </svg>
+
+  <div id="info-panel">
+    <div id="panel-header">
+      <span id="panel-type">Book</span>
+      <h2 id="panel-title"></h2>
+      <div id="panel-meta"></div>
+      <button id="panel-close">&times;</button>
+    </div>
+    <div id="panel-content"></div>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    // Global variables
+    let graphData = { authors: [], links: [] };
+    let simulation = null;
+    let selectedNode = null;
+    let sourceBookMap = new Map();
+    let focusMode = false;
+    let focusedNode = null;
+    let originalPositions = new Map(); // Store original positions for exit
+    let isDragging = false;
+    let dragStart = { x: 0, y: 0 };
+    let panOffset = { x: 0, y: 0 };
+    let didDrag = false; // Track if an actual drag happened
+
+    const width = window.innerWidth;
+    let height = window.innerHeight;
+
+    const svg = d3.select("#graph-svg").attr("width", width).attr("height", height);
+    const axisGroup = d3.select("#axis-group");
+    const linkGroup = d3.select("#link-group");
+    const nodeGroup = d3.select("#node-group");
+
+    function slugifyTitle(title) {
+      return title.toLowerCase()
+        .replace(/[^a-z0-9]+/g, "_")
+        .replace(/^_+|_+$/g, "");
+    }
+
+    function renderHeaderCovers(dataDir, covers) {
+      const headerCov = document.getElementById("header-cover");
+      headerCov.style.display = "none";
+      headerCov.src = "";
+
+      let shelfContainer = document.getElementById("header-shelf");
+      if (!shelfContainer) {
+        shelfContainer = document.createElement("div");
+        shelfContainer.id = "header-shelf";
+        shelfContainer.style.display = "flex";
+        shelfContainer.style.gap = "8px";
+        headerCov.parentNode.insertBefore(shelfContainer, headerCov);
+      }
+      shelfContainer.innerHTML = "";
+
+      const attachCoverClick = (img, coverPath) => {
+        const filename = coverPath.split("/").pop() || "";
+        const slug = filename.replace(/\.[^/.]+$/, "");
+        img.style.cursor = "pointer";
+        img.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const target = sourceBookMap.get(slug);
+          if (target) {
+            selectedNode = target.authorNode;
+            highlight(target.authorNode);
+            showPanel(target.bookData);
+          }
+        });
+      };
+
+      if (covers && covers.length > 0) {
+        headerCov.style.display = "none";
+        covers.forEach(c => {
+          const img = document.createElement("img");
+          img.className = "cover-image";
+          img.onload = function() {
+            if (this.naturalWidth > 50 && this.naturalHeight > 50) {
+              this.style.display = "block";
+            } else {
+              this.remove();
+            }
+          };
+          img.onerror = function() {
+            this.remove();
+          };
+          img.style.display = "none";
+          img.src = `${dataDir}/${c}`;
+          attachCoverClick(img, c);
+          shelfContainer.appendChild(img);
+        });
+      } else {
+        const coverPath = `${dataDir}/cover.jpg`;
+        const img = new Image();
+        img.onload = () => {
+          headerCov.src = coverPath;
+          headerCov.style.display = "block";
+          attachCoverClick(headerCov, "cover.jpg");
+        };
+        img.src = coverPath;
+      }
+    }
+
+    async function loadDataset(dataDir) {
+      // Exit focus mode if active
+      if (focusMode) {
+        focusMode = false;
+        focusedNode = null;
+        document.getElementById("focus-exit").classList.remove("visible");
+        document.getElementById("focus-info").classList.remove("visible");
+        svg.classed("focus-mode", false);
+      }
+
+      document.getElementById("hero").classList.add("hidden");
+      document.getElementById("loading").style.display = "block";
+      document.getElementById("loading").textContent = "Loading " + dataDir + "...";
+
+      graphData = { authors: [], links: [] };
+      if (simulation) simulation.stop();
+      document.getElementById("search").value = "";
+      document.getElementById("search-results").textContent = "";
+      selectedNode = null;
+
+      axisGroup.selectAll("*").remove();
+      linkGroup.selectAll("*").remove();
+      nodeGroup.selectAll("*").remove();
+
+      const select = document.getElementById("dataset-select");
+      const selectedOption = select.options[select.selectedIndex];
+      const covers = selectedOption ? JSON.parse(selectedOption.getAttribute("data-covers") || "null") : null;
+
+      try {
+        const [manifest] = await Promise.all([
+          fetch(`${dataDir}/manifest.json`).then(r => r.json())
+        ]);
+
+        const files = [];
+        const batchSize = 3;
+
+        for (let i = 0; i < manifest.length; i += batchSize) {
+          const batch = manifest.slice(i, i + batchSize);
+          const results = await Promise.all(batch.map(f => fetch(`${dataDir}/${f}`).then(r => r.json())));
+          files.push(...results);
+        }
+        processData(files);
+        renderHeaderCovers(dataDir, covers);
+
+        document.getElementById("loading").style.display = "none";
+      } catch (e) {
+        console.error(e);
+        document.getElementById("loading").textContent = "Error loading data: " + e.message;
+      }
+    }
+
+    function parseYear(dateStr) {
+      if (!dateStr) return null;
+      if (typeof dateStr === 'number') return dateStr;
+      if (dateStr.toString().includes("BC")) return -parseInt(dateStr.replace(/\D/g, ''));
+      const d = new Date(dateStr);
+      return !isNaN(d.getFullYear()) ? d.getFullYear() : null;
+    }
+
+    function getBookYear(meta) {
+      if (meta.original_year !== undefined && meta.original_year !== null) return meta.original_year;
+      if (meta.publication_year) return meta.publication_year;
+      return null;
+    }
+
+    function normalizeAuthor(name) {
+      if (!name) return "Unknown";
+      let n = name.toString().trim();
+      if (n.includes(",")) {
+        const parts = n.split(",", 2);
+        if (parts.length === 2) n = `${parts[1].trim()} ${parts[0].trim()}`;
+      }
+      return n.replace(/\s+/g, " ");
+    }
+
+    function processData(records) {
+      const authorMap = new Map();
+      const bookMap = new Map();
+
+      records.forEach(rec => {
+        const src = rec.source;
+        const srcAuth = normalizeAuthor(Array.isArray(src.authors) ? src.authors[0] : src.authors);
+        const srcYear = getBookYear(src);
+
+        if (!authorMap.has(srcAuth)) authorMap.set(srcAuth, {
+          name: srcAuth, books: [], isSource: true, meta: {},
+          commentaries: []
+        });
+        const srcAuthorNode = authorMap.get(srcAuth);
+
+        if (src.author_meta) srcAuthorNode.meta = src.author_meta;
+
+        const srcBook = {
+          id: `book:${src.goodreads_id}`,
+          title: src.title,
+          year: srcYear,
+          isSource: true,
+          meta: src
+        };
+        srcAuthorNode.books.push(srcBook);
+        bookMap.set(srcBook.id, srcBook);
+
+        (rec.citations || []).forEach(cit => {
+          const match = cit.goodreads_match || {};
+          const wiki = cit.wikipedia_match || {};
+
+          const authorMeta = match.author_meta || {};
+          const wikiAuthorMeta = (wiki && (wiki.birth_year || wiki.death_year)) ? {
+            birth_year: wiki.birth_year,
+            death_year: wiki.death_year,
+            canonical_name: wiki.title
+          } : {};
+
+          if (cit.edge && cit.edge.target_book_id) {
+            const citedAuth = normalizeAuthor(match.authors && match.authors.length > 0 ? match.authors[0] : "Unknown");
+            const citedYear = getBookYear(match);
+
+            if (!authorMap.has(citedAuth)) authorMap.set(citedAuth, { name: citedAuth, books: [], meta: {}, commentaries: [] });
+            const citedAuthorNode = authorMap.get(citedAuth);
+
+            if (Object.keys(authorMeta).length > 0 && (authorMeta.birth_year || authorMeta.death_year)) citedAuthorNode.meta = authorMeta;
+            else if (Object.keys(wikiAuthorMeta).length > 0) citedAuthorNode.meta = wikiAuthorMeta;
+
+            const citedBook = {
+              id: `book:${cit.edge.target_book_id}`,
+              title: match.title || "Unknown",
+              year: citedYear,
+              isSource: false,
+              meta: match,
+              commentaries: cit.raw.commentaries || []
+            };
+
+            if (!citedAuthorNode.books.find(b => b.id === citedBook.id)) {
+              citedAuthorNode.books.push(citedBook);
+              bookMap.set(citedBook.id, citedBook);
+            }
+          }
+          else if (cit.edge && cit.edge.target_author_ids) {
+            const name = wiki.title || (match.authors && match.authors.length > 0 ? match.authors[0] : match.name) || "Unknown";
+            const normName = normalizeAuthor(name);
+            if (!authorMap.has(normName)) authorMap.set(normName, { name: normName, books: [], meta: {}, commentaries: [] });
+
+            const authNode = authorMap.get(normName);
+            if (Object.keys(authorMeta).length > 0) authNode.meta = authorMeta;
+            else if (Object.keys(wikiAuthorMeta).length > 0) authNode.meta = wikiAuthorMeta;
+
+            if (cit.raw.commentaries) {
+              if (!authNode.commentaries) authNode.commentaries = [];
+              authNode.commentaries.push(...cit.raw.commentaries);
+            }
+          }
+        });
+      });
+
+      const authors = Array.from(authorMap.values()).map(auth => {
+        let year = null;
+        const meta = auth.meta || {};
+
+        if (meta.birth_year) {
+          const endYear = meta.death_year || (meta.birth_year + 60);
+          year = (meta.birth_year + endYear) / 2;
+        }
+
+        if (year === null) {
+          const validBookYears = auth.books.map(b => b.year).filter(y => y !== null);
+          if (validBookYears.length > 0) {
+            year = validBookYears.reduce((a, b) => a + b, 0) / validBookYears.length;
+          }
+        }
+
+        const root = { children: auth.books.map(b => ({ ...b, value: 1 })) };
+        const pack = d3.pack().padding(2);
+
+        const hierarchy = d3.hierarchy(root).sum(d => d.value || 1);
+        hierarchy.children?.forEach(c => {
+          c.r = c.data.isSource ? 12 : 6;
+        });
+
+        const circles = (hierarchy.children || []).map(c => ({ r: c.r, data: c.data }));
+        d3.packSiblings(circles);
+
+        const enclosure = d3.packEnclose(circles);
+        const r = enclosure ? enclosure.r + 5 : (auth.isSource ? 10 : 5);
+
+        return {
+          commentaries: [...new Set(auth.commentaries)],
+          id: `author:${auth.name}`,
+          name: auth.name,
+          year: year,
+          r: r,
+          books: circles,
+          x: width / 2,
+          y: height / 2,
+          isSource: auth.isSource || false,
+          meta: auth.meta || {}
+        };
+      });
+
+      authors.forEach(a => {
+        if (a.year === null && a.isSource) {
+          a.year = 2000;
+        }
+      });
+      const validAuthors = authors;
+      sourceBookMap = new Map();
+      validAuthors.forEach(a => {
+        (a.books || []).forEach(b => {
+          if (b.data && b.data.isSource && b.data.title) {
+            const slug = slugifyTitle(b.data.title);
+            sourceBookMap.set(slug, { authorNode: a, bookData: b.data });
+          }
+        });
+      });
+
+      const authorNodeMap = new Map(validAuthors.map(a => [a.name, a]));
+      const linkSet = new Set();
+      const links = [];
+
+      records.forEach(rec => {
+        const src = rec.source;
+        const srcName = normalizeAuthor(Array.isArray(src.authors) ? src.authors[0] : src.authors);
+        const srcNode = authorNodeMap.get(srcName);
+
+        if (!srcNode) return;
+
+        (rec.citations || []).forEach(cit => {
+          let targetName = null;
+          const match = cit.goodreads_match || {};
+          const wiki = cit.wikipedia_match || {};
+
+          if (cit.edge && cit.edge.target_book_id) {
+            targetName = normalizeAuthor(match.authors && match.authors.length > 0 ? match.authors[0] : "Unknown");
+          } else if (cit.edge && cit.edge.target_author_ids) {
+            targetName = normalizeAuthor(wiki.title || (match.authors && match.authors.length > 0 ? match.authors[0] : match.name) || "Unknown");
+          }
+
+          if (targetName) {
+            const targetNode = authorNodeMap.get(targetName);
+            if (targetNode && targetNode !== srcNode) {
+              const key = `${srcName}|${targetName}`;
+              if (!linkSet.has(key)) {
+                linkSet.add(key);
+                links.push({ source: srcNode, target: targetNode });
+              }
+            }
+          }
+        });
+      });
+
+      // Estimate years for cited authors with missing metadata
+      validAuthors.forEach(a => {
+        if (a.year === null) {
+          const connectedSources = links
+            .filter(l => l.source === a || l.target === a)
+            .map(l => l.source === a ? l.target : l.source)
+            .filter(n => n.year);
+          if (connectedSources.length > 0) {
+            const avgYear = connectedSources.reduce((s, n) => s + n.year, 0) / connectedSources.length;
+            a.year = Math.round(avgYear - 40);
+          }
+        }
+      });
+
+      graphData.authors = validAuthors;
+      graphData.links = links;
+      initSimulation();
+    }
+
+    function initSimulation() {
+      const authors = graphData.authors;
+
+      const years = authors.map(a => a.year).filter(y => y !== null && !isNaN(y));
+      const minYear = Math.min(...years);
+      const maxYear = Math.max(...years);
+
+      // Assign median year to authors with unknown years
+      const medianYear = years.slice().sort((a, b) => a - b)[Math.floor(years.length / 2)];
+      authors.forEach(a => { if (a.year === null) a.year = medianYear; });
+
+      const splitYear = 1800;
+      const lowRes = 0.3;
+      const highRes = 8;
+
+      const ancientSpan = Math.max(0, splitYear - minYear);
+      const modernSpan = Math.max(0, maxYear - splitYear);
+
+      const ancientHeight = ancientSpan * lowRes;
+      const modernHeight = modernSpan * highRes;
+
+      const totalHeight = ancientHeight + modernHeight + 400;
+
+      svg.attr("height", totalHeight);
+
+      const yBottom = totalHeight - 100;
+      const ySplit = yBottom - ancientHeight;
+      const yTop = ySplit - modernHeight;
+
+      const yScale = d3.scaleLinear()
+        .domain([minYear, splitYear, maxYear])
+        .range([yBottom, ySplit, yTop]);
+
+      const yAxis = d3.axisRight(yScale)
+        .tickValues([
+          ...d3.range(Math.ceil(minYear / 100) * 100, splitYear, 100),
+          ...d3.range(splitYear, maxYear + 1, 10)
+        ])
+        .tickFormat(d => d < 0 ? `${-d} BC` : d)
+        .tickSize(-width);
+
+      axisGroup
+        .attr("transform", `translate(${width - 80}, 0)`)
+        .call(yAxis)
+        .call(g => g.select(".domain").remove())
+        .call(g => g.selectAll(".tick line")
+          .attr("stroke-opacity", 0.07)
+          .attr("stroke-dasharray", "2,2"));
+
+      authors.forEach(d => {
+        d.fy = yScale(d.year);
+        d.y = d.fy;
+      });
+
+      simulation = d3.forceSimulation(authors)
+        .force("x", d3.forceX(width / 2).strength(0.3))
+        .force("collide", d3.forceCollide(d => d.r + 5).iterations(2))
+        .on("tick", ticked);
+
+      function ticked() {
+        authors.forEach(d => {
+          d.x = Math.max(d.r + 10, Math.min(width - d.r - 10, d.x));
+        });
+
+        linkGroup.selectAll("line")
+          .data(graphData.links)
+          .join("line")
+          .attr("class", "link")
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        const authorSel = nodeGroup.selectAll(".author-group")
+          .data(authors, d => d.id)
+          .join(
+            enter => {
+              const g = enter.append("g")
+                .attr("class", "author-group")
+                .on("mouseenter", (e, d) => {
+                  if (!focusMode) highlight(d);
+                })
+                .on("mouseleave", () => {
+                  if (!focusMode) resetHighlight();
+                })
+                .on("click", (e, d) => {
+                  e.stopPropagation();
+
+                  if (focusMode) {
+                    // In focus mode, clicking another node shows its panel
+                    // Double-click on focused node exits
+                    if (focusedNode && focusedNode.id === d.id) {
+                      exitFocusMode();
+                    } else {
+                      showPanel(d);
+                    }
+                  } else {
+                    // Enter focus mode
+                    enterFocusMode(d);
+                  }
+                });
+
+              g.append("circle")
+                .attr("class", "author-circle")
+                .attr("r", d => d.r);
+
+              g.each(function (d) {
+                const group = d3.select(this);
+                if (d.books) {
+                  group.selectAll(".book-circle")
+                    .data(d.books)
+                    .join("circle")
+                    .attr("class", "book-circle")
+                    .attr("r", b => b.r)
+                    .attr("cx", b => b.x)
+                    .attr("cy", b => b.y)
+                    .attr("fill", b => b.data.isSource ? "var(--book-source)" : "var(--book-cited)")
+                    .on("mouseenter", (e, b) => {
+                      showTooltip(e, b.data.title);
+                    })
+                    .on("mouseleave", hideTooltip)
+                    .on("click", (e, b) => {
+                      e.stopPropagation();
+                      const wasInFocusMode = focusMode;
+                      // In normal mode, enter focus on the parent author
+                      // In focus mode, just show the book panel
+                      if (!focusMode) {
+                        const authorNode = d3.select(e.target.parentNode).datum();
+                        enterFocusMode(authorNode);
+                      }
+                      // On portrait mobile, only show panel if already in focus mode
+                      // (first tap enters focus mode without panel, second tap shows panel)
+                      if (!isPortraitMobile() || wasInFocusMode) {
+                        showPanel(b.data);
+                      }
+                    });
+                }
+              });
+
+              g.append("text")
+                .attr("class", "label")
+                .attr("y", d => -d.r - 10)
+                .text(d => d.name);
+
+              return g;
+            }
+          )
+          .attr("transform", d => `translate(${d.x},${d.y})`);
+      }
+    }
+
+    const tooltip = d3.select("body").append("div")
+      .style("position", "absolute")
+      .style("background", "rgba(17, 17, 19, 0.95)")
+      .style("padding", "8px 12px")
+      .style("border-radius", "4px")
+      .style("border", "1px solid rgba(212, 165, 116, 0.2)")
+      .style("pointer-events", "none")
+      .style("font-size", "13px")
+      .style("font-family", "Cormorant Garamond, serif")
+      .style("display", "none")
+      .style("z-index", "100")
+      .style("max-width", "280px")
+      .style("box-shadow", "0 8px 32px rgba(0,0,0,0.4)");
+
+    function showTooltip(e, text) {
+      tooltip.style("display", "block")
+        .text(text)
+        .style("left", (e.pageX + 12) + "px")
+        .style("top", (e.pageY - 12) + "px");
+    }
+    function hideTooltip() { tooltip.style("display", "none"); }
+
+    function highlight(d) {
+      if (focusMode) return; // Don't change highlight in focus mode
+      if (selectedNode && selectedNode.id !== d.id) return;
+
+      d3.selectAll(".author-group").classed("dimmed", true).classed("highlight", false);
+      d3.selectAll(".label").classed("visible", false);
+      d3.selectAll(".link").classed("dimmed", true).classed("highlight", false);
+
+      const sel = d3.selectAll(".author-group").filter(n => n.id === d.id);
+      sel.classed("dimmed", false).classed("highlight", true);
+      sel.select(".label").classed("visible", true);
+
+      const connectedIds = new Set();
+      connectedIds.add(d.id);
+
+      d3.selectAll(".link")
+        .filter(l => {
+          if (l.source.id === d.id) {
+            connectedIds.add(l.target.id);
+            return true;
+          }
+          return false;
+        })
+        .classed("dimmed", false)
+        .classed("highlight", true)
+        .raise();
+
+      // Only show label for hovered node, not all connections
+      // This prevents the label overlap issue
+      d3.selectAll(".author-group")
+        .filter(n => connectedIds.has(n.id))
+        .classed("dimmed", false)
+        .classed("highlight", true);
+      // Don't auto-show all connected labels anymore
+    }
+
+    function resetHighlight() {
+      if (selectedNode || focusMode) return;
+
+      d3.selectAll(".author-group").classed("dimmed", false).classed("highlight", false);
+      d3.selectAll(".label").classed("visible", false);
+      d3.selectAll(".link").classed("dimmed", false).classed("highlight", false);
+    }
+
+    function isPortraitMobile() {
+      return window.innerWidth <= 600 && window.innerHeight > window.innerWidth;
+    }
+
+    function enterFocusMode(node) {
+      focusMode = true;
+      focusedNode = node;
+      selectedNode = node;
+      panOffset = { x: 0, y: 0 };
+
+      // Store original positions
+      originalPositions.clear();
+      graphData.authors.forEach(a => {
+        originalPositions.set(a.id, { x: a.x, y: a.y, fx: a.fx, fy: a.fy });
+      });
+
+      // Find connected nodes (outbound only for clarity)
+      const connectedIds = new Set([node.id]);
+      const connectedNodes = [node];
+
+      graphData.links.forEach(l => {
+        if (l.source.id === node.id) {
+          connectedIds.add(l.target.id);
+          connectedNodes.push(l.target);
+        }
+      });
+
+      // Update UI
+      document.getElementById("focus-author-name").textContent = node.name;
+      document.getElementById("focus-count").textContent = connectedNodes.length - 1;
+      document.getElementById("focus-exit").classList.add("visible");
+      document.getElementById("focus-info").classList.add("visible");
+      svg.classed("focus-mode", true);
+
+      // Hide non-connected nodes and links
+      d3.selectAll(".author-group")
+        .classed("hidden-in-focus", d => !connectedIds.has(d.id))
+        .classed("dimmed", false)
+        .classed("highlight", d => connectedIds.has(d.id))
+        .classed("focus-center", d => d.id === node.id);
+
+      d3.selectAll(".link")
+        .classed("hidden-in-focus", l => l.source.id !== node.id)
+        .classed("dimmed", false)
+        .classed("highlight", l => l.source.id === node.id);
+
+      // Show labels for all connected nodes
+      d3.selectAll(".label")
+        .classed("visible", function() {
+          const d = d3.select(this.parentNode).datum();
+          return connectedIds.has(d.id);
+        });
+
+      // Calculate radial layout
+      const centerX = width / 2;
+      const viewportTop = window.scrollY + 200;
+      const centerY = viewportTop + (window.innerHeight - 200) / 2;
+
+      // Stop existing simulation
+      if (simulation) simulation.stop();
+
+      // Position central node
+      node.fx = centerX;
+      node.fy = centerY;
+      node.x = centerX;
+      node.y = centerY;
+
+      // Position connected nodes in radial pattern with multiple rings for large sets
+      const others = connectedNodes.filter(n => n.id !== node.id);
+      const count = others.length;
+
+      // Calculate how many rings we need (max ~25 per ring for readability)
+      const nodesPerRing = 25;
+      const ringCount = Math.ceil(count / nodesPerRing);
+      const baseRadius = Math.min(width, window.innerHeight) * 0.25;
+      const ringSpacing = 100; // pixels between rings
+
+      others.forEach((n, i) => {
+        // Determine which ring this node belongs to
+        const ringIndex = Math.floor(i / nodesPerRing);
+        const posInRing = i % nodesPerRing;
+        const nodesInThisRing = Math.min(nodesPerRing, count - ringIndex * nodesPerRing);
+
+        const radius = baseRadius + ringIndex * ringSpacing;
+        const angleStep = (2 * Math.PI) / nodesInThisRing;
+        const angleOffset = ringIndex * 0.3; // Offset each ring slightly for visual variety
+        const angle = angleStep * posInRing - Math.PI / 2 + angleOffset;
+
+        n.fx = centerX + Math.cos(angle) * radius;
+        n.fy = centerY + Math.sin(angle) * radius;
+        n.x = n.fx;
+        n.y = n.fy;
+      });
+
+      // Smooth scroll to center
+      window.scrollTo({
+        top: centerY - window.innerHeight / 2,
+        behavior: 'smooth'
+      });
+
+      // Update positions with animation
+      d3.selectAll(".author-group")
+        .transition()
+        .duration(600)
+        .ease(d3.easeCubicOut)
+        .attr("transform", d => `translate(${d.x},${d.y})`);
+
+      d3.selectAll(".link")
+        .filter(l => l.source.id === node.id)
+        .transition()
+        .duration(600)
+        .ease(d3.easeCubicOut)
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+      // Show panel for focused node (but not on portrait mobile - too intrusive)
+      if (!isPortraitMobile()) {
+        showPanel(node);
+      }
+    }
+
+    function exitFocusMode() {
+      if (!focusMode) return;
+
+      focusMode = false;
+      focusedNode = null;
+      selectedNode = null;
+
+      // Hide UI elements
+      document.getElementById("focus-exit").classList.remove("visible");
+      document.getElementById("focus-info").classList.remove("visible");
+      svg.classed("focus-mode", false);
+
+      // Restore original positions
+      graphData.authors.forEach(a => {
+        const orig = originalPositions.get(a.id);
+        if (orig) {
+          a.fx = orig.fx;
+          a.fy = orig.fy;
+          a.x = orig.x;
+          a.y = orig.y;
+        }
+      });
+
+      // Show all nodes
+      d3.selectAll(".author-group")
+        .classed("hidden-in-focus", false)
+        .classed("dimmed", false)
+        .classed("highlight", false)
+        .classed("focus-center", false);
+
+      d3.selectAll(".link")
+        .classed("hidden-in-focus", false)
+        .classed("dimmed", false)
+        .classed("highlight", false);
+
+      d3.selectAll(".label").classed("visible", false);
+
+      // Animate back to original positions
+      d3.selectAll(".author-group")
+        .transition()
+        .duration(600)
+        .ease(d3.easeCubicOut)
+        .attr("transform", d => `translate(${d.x},${d.y})`);
+
+      d3.selectAll(".link")
+        .transition()
+        .duration(600)
+        .ease(d3.easeCubicOut)
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+      // Close panel
+      document.getElementById("info-panel").classList.remove("visible");
+
+      // Restart simulation
+      if (simulation) {
+        simulation.alpha(0.3).restart();
+      }
+    }
+
+    // Focus exit button handler
+    document.getElementById("focus-exit").addEventListener("click", (e) => {
+      e.stopPropagation();
+      exitFocusMode();
+    });
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function showPanel(node) {
+      const panel = document.getElementById("info-panel");
+      const isBook = node.id && node.id.startsWith("book:");
+      const title = isBook ? node.title : node.name;
+      const meta = node.meta || {};
+
+      // Panel type label
+      document.getElementById("panel-type").textContent = isBook ? "Book" : "Author";
+      document.getElementById("panel-title").textContent = title;
+
+      // Meta line
+      let metaText = "";
+      if (isBook) {
+        const authors = meta.authors ? (Array.isArray(meta.authors) ? meta.authors.join(", ") : meta.authors) : "Unknown Author";
+        metaText = `${node.year || "Unknown Year"} \u00B7 ${authors}`;
+      } else {
+        if (meta.birth_year) {
+          metaText = `${meta.birth_year} \u2013 ${meta.death_year || "Present"}`;
+        }
+      }
+      document.getElementById("panel-meta").textContent = metaText;
+
+      // Content
+      const content = document.getElementById("panel-content");
+      let html = "";
+
+      // Stats row for books
+      if (isBook && (meta.average_rating || meta.num_pages || meta.publisher)) {
+        html += `<div class="panel-stats">`;
+        if (meta.average_rating) {
+          html += `<div class="panel-stat">
+            <span class="panel-stat-value">\u2605 ${meta.average_rating}</span>
+            <span class="panel-stat-label">Rating</span>
+          </div>`;
+        }
+        if (meta.num_pages) {
+          html += `<div class="panel-stat">
+            <span class="panel-stat-value">${meta.num_pages}</span>
+            <span class="panel-stat-label">Pages</span>
+          </div>`;
+        }
+        if (meta.publisher) {
+          html += `<div class="panel-stat">
+            <span class="panel-stat-value">${escapeHtml(meta.publisher)}</span>
+            <span class="panel-stat-label">Publisher</span>
+          </div>`;
+        }
+        html += `</div>`;
+      }
+
+      // Description
+      if (meta.description) {
+        html += `<div class="panel-description">${escapeHtml(meta.description)}</div>`;
+      }
+
+      // Citations / Commentaries section
+      const commentaries = node.commentaries || [];
+      if (commentaries.length > 0) {
+        html += `<div class="citations-section">`;
+        html += `<div class="citations-header">
+          <h3 class="citations-title">${isBook ? "Author Commentary" : "Referenced As"}</h3>
+          <span class="citations-count">${commentaries.length} citation${commentaries.length > 1 ? 's' : ''}</span>
+        </div>`;
+
+        commentaries.forEach((c, i) => {
+          const isLong = c.length > 200;
+          const cardClass = isLong ? "citation-card expandable" : "citation-card";
+
+          html += `<div class="${cardClass}" data-index="${i}">
+            <div class="citation-card-inner">
+              <span class="citation-number">${String(i + 1).padStart(2, '0')}</span>
+              <p class="citation-quote">${escapeHtml(c)}</p>
+              ${isLong ? `<div class="citation-expand">
+                <button class="citation-expand-btn" onclick="this.closest('.citation-card').classList.add('expanded')">Read more</button>
+              </div>` : ''}
+            </div>
+          </div>`;
+        });
+
+        html += `</div>`;
+      } else if (!isBook) {
+        // Empty state for authors with no citations
+        html += `<div class="empty-citations">
+          <div class="empty-citations-icon">\u{1F4DA}</div>
+          <p>No direct citations found</p>
+        </div>`;
+      }
+
+      // External link
+      const link = meta.link || meta.url;
+      if (link) {
+        html += `<a href="${escapeHtml(link)}" target="_blank" class="panel-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          View on Goodreads
+        </a>`;
+      }
+
+      content.innerHTML = html;
+      panel.classList.add("visible");
+    }
+
+    document.getElementById("panel-close").onclick = () => {
+      document.getElementById("info-panel").classList.remove("visible");
+      selectedNode = null;
+      resetHighlight();
+    };
+
+    // Drag to pan in focus mode
+    svg.on("mousedown", (e) => {
+      if (focusMode) {
+        isDragging = true;
+        didDrag = false;
+        dragStart = { x: e.clientX, y: e.clientY };
+        svg.style("cursor", "grabbing");
+      }
+    });
+
+    svg.on("mousemove", (e) => {
+      if (isDragging && focusMode) {
+        const dx = e.clientX - dragStart.x;
+        const dy = e.clientY - dragStart.y;
+
+        // Only count as drag if moved more than 3 pixels
+        if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+          didDrag = true;
+        }
+
+        // Move all nodes that have fixed positions (focus mode nodes)
+        graphData.authors.forEach(a => {
+          if (a.fx !== undefined && a.fx !== null) {
+            a.fx += dx;
+            a.fy += dy;
+            a.x = a.fx;
+            a.y = a.fy;
+          }
+        });
+
+        // Update positions immediately
+        d3.selectAll(".author-group")
+          .attr("transform", d => `translate(${d.x},${d.y})`);
+
+        d3.selectAll(".link")
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        dragStart = { x: e.clientX, y: e.clientY };
+      }
+    });
+
+    svg.on("mouseup", () => {
+      isDragging = false;
+      svg.style("cursor", null);
+    });
+
+    svg.on("mouseleave", () => {
+      isDragging = false;
+      svg.style("cursor", null);
+    });
+
+    // Touch support for mobile drag-to-pan
+    svg.on("touchstart", (e) => {
+      if (focusMode && e.touches.length === 1) {
+        isDragging = true;
+        didDrag = false;
+        const touch = e.touches[0];
+        dragStart = { x: touch.clientX, y: touch.clientY };
+      }
+    }, { passive: true });
+
+    svg.on("touchmove", (e) => {
+      if (isDragging && focusMode && e.touches.length === 1) {
+        const touch = e.touches[0];
+        const dx = touch.clientX - dragStart.x;
+        const dy = touch.clientY - dragStart.y;
+
+        if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+          didDrag = true;
+        }
+
+        graphData.authors.forEach(a => {
+          if (a.fx !== undefined && a.fx !== null) {
+            a.fx += dx;
+            a.fy += dy;
+            a.x = a.fx;
+            a.y = a.fy;
+          }
+        });
+
+        d3.selectAll(".author-group")
+          .attr("transform", d => `translate(${d.x},${d.y})`);
+
+        d3.selectAll(".link")
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        dragStart = { x: touch.clientX, y: touch.clientY };
+
+        // Prevent page scroll while dragging in focus mode
+        if (didDrag) {
+          e.preventDefault();
+        }
+      }
+    }, { passive: false });
+
+    svg.on("touchend", () => {
+      isDragging = false;
+    });
+
+    svg.on("click", (e) => {
+      // Don't exit focus if we were dragging
+      if (didDrag) {
+        didDrag = false;
+        return;
+      }
+
+      if (focusMode) {
+        exitFocusMode();
+      } else {
+        selectedNode = null;
+        resetHighlight();
+        document.getElementById("info-panel").classList.remove("visible");
+      }
+    });
+
+    let searchTimeout = null;
+    document.getElementById("search").addEventListener("input", (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      const resultsEl = document.getElementById("search-results");
+
+      if (searchTimeout) clearTimeout(searchTimeout);
+
+      if (!query) {
+        d3.selectAll(".author-group").classed("dimmed", false).classed("search-match", false);
+        d3.selectAll(".label").classed("visible", false);
+        resultsEl.textContent = "";
+        return;
+      }
+
+      searchTimeout = setTimeout(() => {
+        const matches = [];
+
+        d3.selectAll(".author-group").each(function(d) {
+          const authorMatch = d.name.toLowerCase().includes(query);
+          const bookMatch = d.books.some(b => b.data.title.toLowerCase().includes(query));
+          const isMatch = authorMatch || bookMatch;
+
+          d3.select(this).classed("dimmed", !isMatch);
+          d3.select(this).classed("search-match", isMatch);
+          d3.select(this).select(".label").classed("visible", isMatch);
+
+          if (isMatch) {
+            let score = 0;
+            if (d.name.toLowerCase() === query) score = 100;
+            else if (d.name.toLowerCase().startsWith(query)) score = 80;
+            else if (authorMatch) score = 60;
+            else score = 40;
+
+            matches.push({ node: d, element: this, score, authorMatch });
+          }
+        });
+
+        matches.sort((a, b) => b.score - a.score);
+
+        if (matches.length > 0) {
+          resultsEl.textContent = `${matches.length} match${matches.length > 1 ? 'es' : ''} found`;
+
+          const best = matches[0];
+          const y = best.node.y || best.node.fy;
+          if (y !== undefined) {
+            window.scrollTo({
+              top: y - window.innerHeight / 3,
+              behavior: 'smooth'
+            });
+          }
+
+          selectedNode = best.node;
+          highlight(best.node);
+        } else {
+          resultsEl.textContent = "No matches";
+        }
+      }, 200);
+    });
+
+    document.getElementById("search").addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        e.target.value = "";
+        e.target.dispatchEvent(new Event("input"));
+      }
+    });
+
+    // Global keyboard handler
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && focusMode) {
+        exitFocusMode();
+      }
+    });
+
+    // Mobile hint close
+    document.getElementById("mobile-hint-close").addEventListener("click", () => {
+      document.getElementById("mobile-hint").style.display = "none";
+    });
+
+    async function init() {
+      try {
+        const datasets = await fetch("datasets.json").then(r => r.json());
+        const select = document.getElementById("dataset-select");
+
+        datasets.forEach(ds => {
+          const opt = document.createElement("option");
+          opt.value = ds.path;
+          opt.textContent = ds.name;
+          if (ds.covers) {
+            opt.setAttribute("data-covers", JSON.stringify(ds.covers));
+          }
+          select.appendChild(opt);
+        });
+
+        select.addEventListener("change", () => {
+          if (select.value) {
+            loadDataset(select.value);
+          }
+        });
+
+        if (datasets.length > 0) {
+          select.value = datasets[0].path;
+          loadDataset(datasets[0].path);
+        }
+      } catch (e) {
+        console.error("Failed to load datasets:", e);
+        document.getElementById("loading").textContent = "Error loading datasets.json";
+      }
+    }
+
+    init();
+  </script>
+</body>
+
+</html>
