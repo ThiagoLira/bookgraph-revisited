@@ -35,6 +35,17 @@ export function normalizeAuthor(name) {
   return n.replace(/\s+/g, " ");
 }
 
+function normalizeTitle(title) {
+  if (!title) return '';
+  return title.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')  // strip diacritics
+    .replace(/^(the|a|an|la|le|les|el|los|las|der|die|das)\s+/i, '')
+    .replace(/[''`ʼ]/g, "'")
+    .replace(/[""«»]/g, '"')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 /**
  * Process raw pipeline JSON records into graph data.
  * @param {Array} records - Array of pipeline output JSON objects
@@ -143,6 +154,35 @@ export function processData(records) {
       }
     });
   });
+
+  // Dedup books within each author by normalized title (merges different editions)
+  for (const [, authNode] of authorMap) {
+    if (authNode.books.length <= 1) continue;
+    const titleGroups = new Map();
+    for (const book of authNode.books) {
+      const key = normalizeTitle(book.title);
+      if (!titleGroups.has(key)) titleGroups.set(key, []);
+      titleGroups.get(key).push(book);
+    }
+    const deduped = [];
+    for (const [, group] of titleGroups) {
+      if (group.length === 1) { deduped.push(group[0]); continue; }
+      // Keep the book with richest metadata
+      group.sort((a, b) => Object.keys(b.meta || {}).length - Object.keys(a.meta || {}).length);
+      const best = group[0];
+      for (let i = 1; i < group.length; i++) {
+        // Merge commentaries
+        if (group[i].commentaries && group[i].commentaries.length) {
+          if (!best.commentaries) best.commentaries = [];
+          best.commentaries.push(...group[i].commentaries);
+        }
+        // Redirect old ID in bookMap
+        bookMap.set(group[i].id, best);
+      }
+      deduped.push(best);
+    }
+    authNode.books = deduped;
+  }
 
   const authors = Array.from(authorMap.values()).map(auth => {
     let year = null;
