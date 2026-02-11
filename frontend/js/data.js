@@ -155,17 +155,18 @@ export function processData(records) {
     });
   });
 
-  // Dedup books within each author by normalized title (merges different editions)
+  // Dedup books within each author by work_id (definitive) with title fallback
   for (const [, authNode] of authorMap) {
     if (authNode.books.length <= 1) continue;
-    const titleGroups = new Map();
+    const groups = new Map();
     for (const book of authNode.books) {
-      const key = normalizeTitle(book.title);
-      if (!titleGroups.has(key)) titleGroups.set(key, []);
-      titleGroups.get(key).push(book);
+      const workId = book.meta && book.meta.work_id;
+      const key = workId ? `work:${workId}` : `title:${normalizeTitle(book.title)}`;
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(book);
     }
     const deduped = [];
-    for (const [, group] of titleGroups) {
+    for (const [, group] of groups) {
       if (group.length === 1) { deduped.push(group[0]); continue; }
       // Keep the book with richest metadata
       group.sort((a, b) => Object.keys(b.meta || {}).length - Object.keys(a.meta || {}).length);

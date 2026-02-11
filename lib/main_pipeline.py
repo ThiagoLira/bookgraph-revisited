@@ -422,19 +422,98 @@ class BookPipeline:
         if len(parts) > 1:
             cache[parts[-1]] = result_dict
 
+    def _merge_into_keeper(self, keeper_cit: dict, donor_cit: dict):
+        """Merge a donor citation's raw data (contexts, commentaries, count) into keeper."""
+        kr = keeper_cit.get("raw", {})
+        dr = donor_cit.get("raw", {})
+
+        # Merge contexts
+        existing = set(kr.get("contexts", []))
+        for ctx in dr.get("contexts", []):
+            if ctx not in existing:
+                kr.setdefault("contexts", []).append(ctx)
+                existing.add(ctx)
+
+        # Merge commentaries
+        existing_comm = set(kr.get("commentaries", []))
+        for comm in dr.get("commentaries", []):
+            if comm not in existing_comm:
+                kr.setdefault("commentaries", []).append(comm)
+                existing_comm.add(comm)
+
+        # Sum counts
+        kr["count"] = kr.get("count", 0) + dr.get("count", 0)
+
+    def _pick_best_keeper(self, entries: List[tuple]) -> tuple:
+        """Pick the best citation to keep from a group: prefer real GR ID, then most contexts."""
+        keeper_idx, keeper_cit = entries[0]
+        for idx, cit in entries[1:]:
+            kid = keeper_cit.get("edge", {}).get("target_book_id")
+            cid = cit.get("edge", {}).get("target_book_id")
+            k_real = _is_real_gr_id(kid)
+            c_real = _is_real_gr_id(cid)
+
+            if c_real and not k_real:
+                keeper_idx, keeper_cit = idx, cit
+            elif not (k_real and not c_real):
+                # Both same type — prefer more contexts
+                if cit.get("raw", {}).get("count", 0) > keeper_cit.get("raw", {}).get("count", 0):
+                    keeper_idx, keeper_cit = idx, cit
+        return keeper_idx, keeper_cit
+
     def _dedup_resolved_citations(self, results: List[dict]) -> List[dict]:
         """Merge citations that resolved to different editions of the same work.
 
-        Groups by (normalized_author, normalized_title). When a group has
-        citations with different book IDs, keeps the real Goodreads ID (or the
-        one with more contexts) and merges the others into it.
+        Pass 1: Groups by work_id (definitive — all editions share the same
+        Goodreads work_id).  Pass 2: Groups remaining citations by
+        (normalized_author, normalized_title) to catch duplicates without
+        work_id (e.g. web_ IDs).
         """
         if not results:
             return results
 
-        # Group by normalized (author, title) — only for citations with titles
-        groups = defaultdict(list)  # (author_norm, title_norm) -> [(idx, cit)]
+        indices_to_remove: Set[int] = set()
+        merge_count = 0
+
+        # --- Pass 1: Group by work_id (definitive) ---
+        work_id_groups: Dict[str, List[tuple]] = defaultdict(list)
         for i, cit in enumerate(results):
+            wid = (cit.get("goodreads_match") or {}).get("work_id")
+            if wid:
+                work_id_groups[str(wid)].append((i, cit))
+
+        for wid, entries in work_id_groups.items():
+            if len(entries) < 2:
+                continue
+
+            book_ids = {cit.get("edge", {}).get("target_book_id") for _, cit in entries}
+            if len(book_ids) < 2:
+                continue
+
+            keeper_idx, keeper_cit = self._pick_best_keeper(entries)
+
+            for idx, cit in entries:
+                if idx == keeper_idx:
+                    continue
+                self._merge_into_keeper(keeper_cit, cit)
+                indices_to_remove.add(idx)
+                merge_count += 1
+
+                dupe_title = cit.get("raw", {}).get("title", "?")
+                dupe_id = cit.get("edge", {}).get("target_book_id")
+                keeper_id = keeper_cit.get("edge", {}).get("target_book_id")
+                logger.info(f"[dedup] Merged '{dupe_title}' (id={dupe_id}) into (id={keeper_id}) by work_id={wid}")
+
+        if merge_count:
+            logger.info(f"[dedup] Pass 1 (work_id): merged {merge_count} duplicate citations")
+            print(f"[pipeline] Post-resolution dedup pass 1 (work_id): merged {merge_count} duplicates")
+
+        # --- Pass 2: Group remaining by (author, title) ---
+        title_merge_count = 0
+        groups: Dict[tuple, List[tuple]] = defaultdict(list)
+        for i, cit in enumerate(results):
+            if i in indices_to_remove:
+                continue
             raw = cit.get("raw", {})
             title = raw.get("title", "")
             if not title:
@@ -443,69 +522,34 @@ class BookPipeline:
             norm = _normalize_title(title)
             groups[(author, norm)].append((i, cit))
 
-        indices_to_remove = set()
-        merge_count = 0
-
         for (author, norm_title), entries in groups.items():
             if len(entries) < 2:
                 continue
 
-            # Check if there are actually different book IDs
             book_ids = {cit.get("edge", {}).get("target_book_id") for _, cit in entries}
             if len(book_ids) < 2:
                 continue
 
-            # Pick best keeper: prefer real GR ID, then most contexts
-            keeper_idx, keeper_cit = entries[0]
-            for idx, cit in entries[1:]:
-                kid = keeper_cit.get("edge", {}).get("target_book_id")
-                cid = cit.get("edge", {}).get("target_book_id")
-                k_real = _is_real_gr_id(kid)
-                c_real = _is_real_gr_id(cid)
+            keeper_idx, keeper_cit = self._pick_best_keeper(entries)
 
-                if c_real and not k_real:
-                    keeper_idx, keeper_cit = idx, cit
-                elif not (k_real and not c_real):
-                    # Both same type — prefer more contexts
-                    if cit.get("raw", {}).get("count", 0) > keeper_cit.get("raw", {}).get("count", 0):
-                        keeper_idx, keeper_cit = idx, cit
-
-            # Merge all others into keeper
-            kr = keeper_cit.get("raw", {})
             for idx, cit in entries:
                 if idx == keeper_idx:
                     continue
-                dr = cit.get("raw", {})
-
-                # Merge contexts
-                existing = set(kr.get("contexts", []))
-                for ctx in dr.get("contexts", []):
-                    if ctx not in existing:
-                        kr.setdefault("contexts", []).append(ctx)
-                        existing.add(ctx)
-
-                # Merge commentaries
-                existing_comm = set(kr.get("commentaries", []))
-                for comm in dr.get("commentaries", []):
-                    if comm not in existing_comm:
-                        kr.setdefault("commentaries", []).append(comm)
-                        existing_comm.add(comm)
-
-                # Sum counts
-                kr["count"] = kr.get("count", 0) + dr.get("count", 0)
-
+                self._merge_into_keeper(keeper_cit, cit)
                 indices_to_remove.add(idx)
-                merge_count += 1
+                title_merge_count += 1
 
-                dupe_title = dr.get("title", "?")
+                dupe_title = cit.get("raw", {}).get("title", "?")
                 dupe_id = cit.get("edge", {}).get("target_book_id")
                 keeper_id = keeper_cit.get("edge", {}).get("target_book_id")
                 logger.info(f"[dedup] Merged '{dupe_title}' (id={dupe_id}) into (id={keeper_id}) for author '{author}'")
 
-        if merge_count:
-            logger.info(f"[dedup] Post-resolution dedup: merged {merge_count} duplicate citations")
-            print(f"[pipeline] Post-resolution dedup: merged {merge_count} duplicate citations")
-            # Remove in reverse order to preserve indices
+        if title_merge_count:
+            logger.info(f"[dedup] Pass 2 (title): merged {title_merge_count} duplicate citations")
+            print(f"[pipeline] Post-resolution dedup pass 2 (title): merged {title_merge_count} duplicates")
+
+        total_merged = merge_count + title_merge_count
+        if total_merged:
             results = [cit for i, cit in enumerate(results) if i not in indices_to_remove]
 
         return results
