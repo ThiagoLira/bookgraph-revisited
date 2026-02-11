@@ -61,6 +61,9 @@ export class TextLabelManager {
         continue;
       }
 
+      // Reset inline opacity so CSS .visible class takes effect
+      el.style.opacity = '';
+
       el.style.left = sx + 'px';
       el.style.top = sy + 'px';
 
