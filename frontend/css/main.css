@@ -185,6 +185,30 @@ h1 {
   color: var(--text-warm);
 }
 
+.info-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 165, 116, 0.15);
+  background: none;
+  color: var(--text-muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 8px;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+}
+
+.info-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
 /* Title + controls on first row, shelf on second */
 .header-text {
   display: flex;
@@ -201,14 +225,28 @@ h1 {
   margin-left: auto;
 }
 
+#shelf-section {
+  order: 3;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.shelf-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
 #header-shelf {
   display: grid;
   grid-template-rows: 60px 60px;
   grid-auto-flow: column;
   grid-auto-columns: auto;
   gap: 6px;
-  order: 3;
-  flex-basis: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   padding: 2px 0;
@@ -1128,6 +1166,137 @@ h1 {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* === INFO OVERLAY === */
+#info-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#info-overlay.visible {
+  display: flex;
+}
+
+.info-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.info-card {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid rgba(212, 165, 116, 0.12);
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.info-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: 1px solid rgba(212, 165, 116, 0.15);
+  color: var(--text-muted);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.info-close:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.info-card h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  color: var(--text-warm);
+  letter-spacing: 0.05em;
+}
+
+.info-card > p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+.info-section:last-child {
+  margin-bottom: 0;
+}
+
+.info-section h3 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+
+.info-section p {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-section strong {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-section li {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 2px 0 2px 16px;
+  position: relative;
+}
+
+.info-section li::before {
+  content: "\b7";
+  position: absolute;
+  left: 4px;
+  color: var(--accent);
+}
+
+.color-source {
+  color: var(--book-source);
+}
+
+.color-cited {
+  color: var(--book-cited);
+}
+
 /* ============================================
    MOBILE RESPONSIVE STYLES
    ============================================ */
@@ -1446,6 +1615,18 @@ h1 {
 
 /* Portrait mode phones - bottom sheet panels */
 @media (max-width: 600px) and (orientation: portrait) {
+  #info-overlay {
+    align-items: flex-end;
+  }
+
+  .info-card {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    max-height: 70vh;
+    padding: 24px 20px;
+  }
+
   #citation-panel {
     width: 100%;
     height: 55vh;

@@ -357,8 +357,39 @@ class BookGraphApp {
       document.getElementById('loading').textContent = 'Error loading datasets.json';
     }
 
+    this._initInfoOverlay();
+
     // Start render loop
     this._renderLoop();
+  }
+
+  _initInfoOverlay() {
+    const overlay = document.getElementById('info-overlay');
+    const closeBtn = document.getElementById('info-close');
+    const backdrop = document.getElementById('info-backdrop');
+    const infoBtn = document.getElementById('info-btn');
+
+    const dismiss = () => {
+      overlay.classList.remove('visible');
+      localStorage.setItem('bookgraph-info-dismissed', '1');
+    };
+
+    closeBtn.addEventListener('click', dismiss);
+    backdrop.addEventListener('click', dismiss);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay.classList.contains('visible')) {
+        dismiss();
+      }
+    });
+
+    infoBtn.addEventListener('click', () => {
+      overlay.classList.add('visible');
+    });
+
+    // Auto-show on first visit
+    if (!localStorage.getItem('bookgraph-info-dismissed')) {
+      overlay.classList.add('visible');
+    }
   }
 
   async _loadDataset(dataDir) {
@@ -1141,7 +1172,7 @@ class BookGraphApp {
     if (!shelfContainer) {
       shelfContainer = document.createElement('div');
       shelfContainer.id = 'header-shelf';
-      headerCov.parentNode.insertBefore(shelfContainer, headerCov);
+      document.getElementById('shelf-section').appendChild(shelfContainer);
     }
     shelfContainer.innerHTML = '';
 
@@ -1197,7 +1228,7 @@ class BookGraphApp {
     if (!shelfContainer) {
       shelfContainer = document.createElement('div');
       shelfContainer.id = 'header-shelf';
-      headerCov.parentNode.insertBefore(shelfContainer, headerCov);
+      document.getElementById('shelf-section').appendChild(shelfContainer);
     }
     shelfContainer.innerHTML = '';
 
