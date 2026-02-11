@@ -242,19 +242,18 @@ h1 {
 }
 
 #header-shelf {
-  display: grid;
-  grid-template-rows: 60px 60px;
-  grid-auto-flow: column;
-  grid-auto-columns: auto;
+  display: flex;
+  flex-wrap: wrap;
   gap: 6px;
-  overflow-x: auto;
-  overflow-y: hidden;
+  max-height: 134px;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 2px 0;
   scrollbar-width: thin;
 }
 
 #header-shelf::-webkit-scrollbar {
-  height: 4px;
+  width: 4px;
 }
 
 #header-shelf::-webkit-scrollbar-thumb {
@@ -1332,7 +1331,7 @@ h1 {
   }
 
   #header-shelf {
-    grid-template-rows: 50px;
+    max-height: 56px;
   }
 
   .cover-image {
@@ -1444,7 +1443,8 @@ h1 {
 
   /* Cover shelf: single scrollable row */
   #header-shelf {
-    grid-template-rows: 40px;
+    flex-wrap: nowrap;
+    max-height: none;
     gap: 4px;
     max-width: 100%;
     overflow-x: auto;
@@ -1637,12 +1637,17 @@ h1 {
     border-right: none;
     border-top: 1px solid rgba(212, 165, 116, 0.15);
     border-radius: 16px 16px 0 0;
-    transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   #citation-panel.visible {
     bottom: 0;
     left: 0;
+  }
+
+  #citation-panel.expanded {
+    height: 90vh;
+    max-height: 90vh;
   }
 
   #citation-panel::before {
@@ -1677,6 +1682,7 @@ h1 {
 
   .citation-panel-header {
     padding: 20px 16px 10px;
+    touch-action: none;
   }
 
   .citation-panel-header h2 {
@@ -1703,12 +1709,17 @@ h1 {
     border-left: none;
     border-top: 1px solid rgba(212, 165, 116, 0.15);
     border-radius: 16px 16px 0 0;
-    transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   #info-panel.visible {
     bottom: 0;
     right: 0;
+  }
+
+  #info-panel.expanded {
+    height: 90vh;
+    max-height: 90vh;
   }
 
   #info-panel::before {
@@ -1731,6 +1742,7 @@ h1 {
 
   #panel-header {
     padding: 20px 16px 10px;
+    touch-action: none;
   }
 
   #panel-title {

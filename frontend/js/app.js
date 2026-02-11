@@ -690,7 +690,11 @@ class BookGraphApp {
       maxY = Math.max(maxY, pos.y + r);
     }
     const pad = 100;
-    const scale = Math.min(vw / (maxX - minX + pad * 2), vh / (maxY - minY + pad * 2));
+    const fitScale = Math.min(vw / (maxX - minX + pad * 2), vh / (maxY - minY + pad * 2));
+    // Enforce a minimum scale so labels stay readable with many citations
+    const numCited = connectedNodes.length;
+    const minScale = numCited > 60 ? 0.35 : numCited > 30 ? 0.3 : 0.2;
+    const scale = Math.max(fitScale, minScale);
     const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
     setTimeout(() => {
       this.interaction.setTransform(vw / 2 - cx * scale, vh / 2 - cy * scale, scale, true);
@@ -919,7 +923,9 @@ class BookGraphApp {
   }
 
   closePanel() {
-    document.getElementById('info-panel').classList.remove('visible');
+    const panel = document.getElementById('info-panel');
+    panel.classList.remove('visible');
+    panel.classList.remove('expanded');
   }
 
   // === Citation Panel ===
@@ -1076,7 +1082,9 @@ class BookGraphApp {
   }
 
   closeCitationPanel() {
-    document.getElementById('citation-panel').classList.remove('visible');
+    const panel = document.getElementById('citation-panel');
+    panel.classList.remove('visible');
+    panel.classList.remove('expanded');
     document.getElementById('citation-charts').innerHTML = '';
   }
 
@@ -1130,10 +1138,45 @@ class BookGraphApp {
     this.tooltipEl.style.display = 'block';
     this.tooltipEl.style.left = (x + 12) + 'px';
     this.tooltipEl.style.top = (y - 12) + 'px';
+    this.tooltipEl.style.transform = '';
   }
 
   hideTooltip() {
     this.tooltipEl.style.display = 'none';
+    this.tooltipEl.style.transform = '';
+  }
+
+  _attachCoverEvents(img, coverPath) {
+    const filename = coverPath.split('/').pop() || '';
+    const slug = filename.replace(/\.[^/.]+$/, '');
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const target = this.sourceBookMap.get(slug);
+      if (target) {
+        this.enterFocusMode(target.authorNode, target.bookCircle || null);
+      }
+    });
+    img.addEventListener('mouseenter', () => {
+      const target = this.sourceBookMap.get(slug);
+      if (!target) return;
+      const title = (target.bookCircle && target.bookCircle.data) ? target.bookCircle.data.title : slug.replace(/_/g, ' ');
+      const author = target.authorNode ? target.authorNode.name : '';
+      this.tooltipEl.textContent = author ? title + ' \u2014 ' + author : title;
+      this.tooltipEl.style.display = 'block';
+      this.tooltipEl.style.transform = '';
+      const rect = img.getBoundingClientRect();
+      const tipRect = this.tooltipEl.getBoundingClientRect();
+      const margin = 8;
+      let left = rect.left + rect.width / 2 - tipRect.width / 2;
+      left = Math.max(margin, Math.min(left, window.innerWidth - tipRect.width - margin));
+      this.tooltipEl.style.left = left + 'px';
+      this.tooltipEl.style.top = (rect.bottom + 8) + 'px';
+    });
+    img.addEventListener('mouseleave', () => {
+      this.tooltipEl.style.display = 'none';
+      this.tooltipEl.style.transform = '';
+    });
   }
 
   // === Axis Overlay ===
@@ -1176,19 +1219,6 @@ class BookGraphApp {
     }
     shelfContainer.innerHTML = '';
 
-    const attachCoverClick = (img, coverPath) => {
-      const filename = coverPath.split('/').pop() || '';
-      const slug = filename.replace(/\.[^/.]+$/, '');
-      img.style.cursor = 'pointer';
-      img.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const target = this.sourceBookMap.get(slug);
-        if (target) {
-          this.enterFocusMode(target.authorNode, target.bookCircle || null);
-        }
-      });
-    };
-
     if (covers && covers.length > 0) {
       headerCov.style.display = 'none';
       covers.forEach(c => {
@@ -1204,7 +1234,7 @@ class BookGraphApp {
         img.onerror = function () { this.remove(); };
         img.style.display = 'none';
         img.src = `${dataDir}/${c}`;
-        attachCoverClick(img, c);
+        this._attachCoverEvents(img, c);
         shelfContainer.appendChild(img);
       });
     } else {
@@ -1213,7 +1243,7 @@ class BookGraphApp {
       img.onload = () => {
         headerCov.src = coverPath;
         headerCov.style.display = 'block';
-        attachCoverClick(headerCov, 'cover.jpg');
+        this._attachCoverEvents(headerCov, 'cover.jpg');
       };
       img.src = coverPath;
     }
@@ -1246,16 +1276,7 @@ class BookGraphApp {
       img.style.display = 'none';
       img.src = fullPath;
 
-      const filename = fullPath.split('/').pop() || '';
-      const slug = filename.replace(/\.[^/.]+$/, '');
-      img.style.cursor = 'pointer';
-      img.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const target = this.sourceBookMap.get(slug);
-        if (target) {
-          this.enterFocusMode(target.authorNode, target.bookCircle || null);
-        }
-      });
+      this._attachCoverEvents(img, fullPath);
 
       shelfContainer.appendChild(img);
     });

@@ -89,9 +89,13 @@ export class LayoutEngine {
   startForceSimulation(authors, centerX, onTick) {
     if (this.simulation) this.simulation.stop();
 
+    const isMobile = window.innerWidth <= 600;
+    const xStrength = isMobile ? 0.15 : 0.3;
+    const collidePad = isMobile ? 10 : 5;
+
     this.simulation = d3.forceSimulation(authors)
-      .force("x", d3.forceX(centerX).strength(0.3))
-      .force("collide", d3.forceCollide(d => d.r + 5).iterations(2))
+      .force("x", d3.forceX(centerX).strength(xStrength))
+      .force("collide", d3.forceCollide(d => d.r + collidePad).iterations(2))
       .on("tick", () => {
         // Clamp X positions
         const w = centerX * 2; // approximate viewport width
@@ -115,6 +119,16 @@ export class LayoutEngine {
   computeFocusLayout(centerNode, connectedNodes) {
     const allNodes = [centerNode, ...connectedNodes];
     const centerX = centerNode.x;
+    const n = connectedNodes.length;
+
+    // Scale padding and spread based on citation count —
+    // more citations need more spacing so labels remain readable
+    const basePad = 40;
+    const extraPad = n > 50 ? 30 : n > 20 ? 15 : 0;
+    const collidePad = basePad + extraPad;
+
+    // Weaker X centering for large graphs to allow wider spread
+    const xStrength = n > 50 ? 0.015 : n > 20 ? 0.02 : 0.03;
 
     // Create temp proxy objects (don't mutate real nodes)
     const tempNodes = allNodes.map(n => ({
@@ -129,8 +143,8 @@ export class LayoutEngine {
     // Brief force simulation: pin Y to timeline, spread X via collision
     const sim = d3.forceSimulation(tempNodes)
       .force('y', d3.forceY(d => targetY.get(d.id)).strength(1))
-      .force('x', d3.forceX(centerX).strength(0.03))
-      .force('collide', d3.forceCollide(d => d.r + 40))
+      .force('x', d3.forceX(centerX).strength(xStrength))
+      .force('collide', d3.forceCollide(d => d.r + collidePad))
       .stop();
 
     for (let i = 0; i < 300; i++) sim.tick();

@@ -96,6 +96,18 @@ export class InteractionManager {
         document.getElementById('mobile-hint').style.display = 'none';
       });
     }
+
+    // Mobile bottom sheet drag-to-dismiss
+    this._setupPanelDrag(
+      document.getElementById('citation-panel'),
+      80,
+      () => this.app.exitFocusMode()
+    );
+    this._setupPanelDrag(
+      document.getElementById('info-panel'),
+      80,
+      () => { this.app.closePanel(); this.app.clearSelection(); }
+    );
   }
 
   /**
@@ -166,6 +178,116 @@ export class InteractionManager {
 
   _isPortraitMobile() {
     return window.innerWidth <= 600 && window.innerHeight > window.innerWidth;
+  }
+
+  /**
+   * Set up touch drag on a bottom sheet panel.
+   * Drag up to expand to ~90vh, drag down to dismiss.
+   * Only activates in portrait mobile mode.
+   * @param {HTMLElement} panel - The panel element
+   * @param {number} headerHeight - Max touch-start Y offset from panel top to initiate drag
+   * @param {Function} onClose - Called when the panel is dismissed
+   */
+  _setupPanelDrag(panel, headerHeight, onClose) {
+    if (!panel) return;
+
+    let startY, deltaY, isDragging, startTime, expanded;
+
+    const onTouchMove = (e) => {
+      e.preventDefault();
+      deltaY = e.touches[0].clientY - startY;
+
+      if (expanded) {
+        // When expanded, only allow dragging down (positive deltaY)
+        const clamped = Math.max(0, deltaY);
+        panel.style.transform = `translateY(${clamped}px)`;
+      } else {
+        // Default state: allow both directions
+        panel.style.transform = `translateY(${deltaY}px)`;
+      }
+    };
+
+    const endDrag = (action) => {
+      isDragging = false;
+      panel.removeEventListener('touchmove', onTouchMove);
+      const ease = 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)';
+
+      if (action === 'dismiss') {
+        panel.style.transition = ease;
+        panel.style.transform = 'translateY(100%)';
+        setTimeout(() => {
+          panel.style.transition = '';
+          panel.style.transform = '';
+          panel.classList.remove('expanded');
+          expanded = false;
+          onClose();
+        }, 300);
+      } else if (action === 'expand') {
+        expanded = true;
+        panel.classList.add('expanded');
+        panel.style.transition = ease;
+        panel.style.transform = '';
+        setTimeout(() => { panel.style.transition = ''; }, 300);
+      } else if (action === 'collapse') {
+        expanded = false;
+        panel.classList.remove('expanded');
+        panel.style.transition = ease;
+        panel.style.transform = '';
+        setTimeout(() => { panel.style.transition = ''; }, 300);
+      } else {
+        // snap back
+        panel.style.transition = ease;
+        panel.style.transform = '';
+        setTimeout(() => { panel.style.transition = ''; }, 300);
+      }
+      deltaY = 0;
+    };
+
+    panel.addEventListener('touchstart', (e) => {
+      if (!this._isPortraitMobile()) return;
+      if (!panel.classList.contains('visible')) return;
+      const rect = panel.getBoundingClientRect();
+      if (e.touches[0].clientY - rect.top > headerHeight) return;
+
+      startY = e.touches[0].clientY;
+      startTime = Date.now();
+      deltaY = 0;
+      isDragging = true;
+      expanded = panel.classList.contains('expanded');
+      panel.style.transition = 'none';
+      panel.addEventListener('touchmove', onTouchMove, { passive: false });
+    }, { passive: true });
+
+    panel.addEventListener('touchend', () => {
+      if (!isDragging) return;
+      const elapsed = Math.max(Date.now() - startTime, 1);
+      const velocity = deltaY / elapsed; // px/ms, negative = upward
+
+      if (expanded) {
+        // Expanded: drag down to collapse or dismiss
+        if (deltaY > 150 || velocity > 0.5) {
+          endDrag('dismiss');
+        } else if (deltaY > 60 || velocity > 0.3) {
+          endDrag('collapse');
+        } else {
+          endDrag('snapback');
+        }
+      } else {
+        // Default: drag up to expand, drag down to dismiss
+        if (deltaY < -60 || velocity < -0.3) {
+          endDrag('expand');
+        } else if (deltaY > 80 || velocity > 0.5) {
+          endDrag('dismiss');
+        } else {
+          endDrag('snapback');
+        }
+      }
+    });
+
+    panel.addEventListener('touchcancel', () => {
+      if (!isDragging) return;
+      endDrag('snapback');
+    });
   }
 
   _onMouseMove(e) {
