@@ -416,7 +416,8 @@ class BookGraphApp {
 
       // Auto-fit: zoom to show the full timeline
       const fitK = vh / totalHeight;
-      const scale = Math.max(0.1, Math.min(fitK * 0.9, 1));
+      const fitMul = this._isPortraitMobile() ? 1.8 : 0.9;
+      const scale = Math.max(0.1, Math.min(fitK * fitMul, 1));
       const offsetX = (vw - vw * scale) / 2;
       const offsetY = (vh - totalHeight * scale) / 2;
 
@@ -489,7 +490,8 @@ class BookGraphApp {
       });
 
       const fitK = vh / totalHeight;
-      const scale = Math.max(0.1, Math.min(fitK * 0.9, 1));
+      const fitMul = this._isPortraitMobile() ? 1.8 : 0.9;
+      const scale = Math.max(0.1, Math.min(fitK * fitMul, 1));
       const offsetX = (vw - vw * scale) / 2;
       const offsetY = (vh - totalHeight * scale) / 2;
 
