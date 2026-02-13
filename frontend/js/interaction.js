@@ -151,6 +151,13 @@ export class InteractionManager {
   hitTest(screenX, screenY) {
     const world = this.screenToWorld(screenX, screenY);
     const authors = this.app.graphData.authors;
+    const k = this.transform.k;
+
+    // On touch devices, ensure a minimum tap target of 22 screen pixels,
+    // converted to world coordinates. Clamp so hit areas don't overlap
+    // at extreme zoom-out.
+    const isTouch = this._isTouch();
+    const minTapWorld = isTouch ? 22 / k : 0;
 
     // Check authors (and nested books) from front to back
     for (let i = authors.length - 1; i >= 0; i--) {
@@ -159,7 +166,8 @@ export class InteractionManager {
       const dy = world.y - a.y;
       const distToAuthor = Math.sqrt(dx * dx + dy * dy);
 
-      if (distToAuthor <= a.r) {
+      const authorHitR = a.r + Math.min(minTapWorld, a.r * 2);
+      if (distToAuthor <= authorHitR) {
         // Check individual books within this author
         if (a.books) {
           for (let j = a.books.length - 1; j >= 0; j--) {
@@ -168,9 +176,8 @@ export class InteractionManager {
             const by = world.y - (a.y + b.y);
             const distToBook = Math.sqrt(bx * bx + by * by);
 
-            // Add touch margin for coarse pointers
-            const touchMargin = this._isTouch() ? 8 : 0;
-            if (distToBook <= b.r + touchMargin) {
+            const bookHitR = b.r + Math.min(minTapWorld, b.r * 2);
+            if (distToBook <= bookHitR) {
               return { author: a, book: b };
             }
           }
@@ -334,7 +341,7 @@ export class InteractionManager {
   _onClick(e) {
     // Debounce duplicate clicks (d3-zoom can cause double-fire)
     const now = performance.now();
-    if (now - (this._lastClickTime || 0) < 50) return;
+    if (now - (this._lastClickTime || 0) < 200) return;
     this._lastClickTime = now;
 
     const rect = this.canvas.getBoundingClientRect();

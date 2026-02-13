@@ -1459,6 +1459,18 @@ h1 {
     display: none;
   }
 
+  /* Fix pointer-events: display:contents on .header-content breaks the
+     header > * cascade, so grandchildren need explicit pointer-events */
+  .header-text,
+  #shelf-section,
+  #controls {
+    pointer-events: auto;
+  }
+
+  #header-shelf {
+    touch-action: pan-x;
+  }
+
   h1 {
     font-size: 14px;
     letter-spacing: 0.1em;
@@ -1616,8 +1628,10 @@ h1 {
   }
 }
 
-/* Portrait mode phones - bottom sheet panels */
+/* Portrait mode phones — bottom sheet panels */
 @media (max-width: 600px) and (orientation: portrait) {
+
+  /* --- Info overlay --- */
   #info-overlay {
     align-items: flex-end;
   }
@@ -1630,6 +1644,7 @@ h1 {
     padding: 24px 20px;
   }
 
+  /* --- Citation panel (bottom sheet, 85vh) --- */
   #citation-panel {
     width: 100%;
     height: 85vh;
@@ -1640,24 +1655,17 @@ h1 {
     border-right: none;
     border-top: 1px solid rgba(212, 165, 116, 0.15);
     border-radius: 16px 16px 0 0;
-    transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition:
+      bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+      height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  #citation-panel.visible {
-    bottom: 0;
-    left: 0;
-  }
+  #citation-panel.visible { bottom: 0; left: 0; }
+  #citation-panel.expanded { height: 90vh; max-height: 90vh; }
+  #citation-panel::before { height: 100px; border-radius: 16px 16px 0 0; }
 
-  #citation-panel.expanded {
-    height: 90vh;
-    max-height: 90vh;
-  }
-
-  #citation-panel::before {
-    height: 100px;
-    border-radius: 16px 16px 0 0;
-  }
-
+  /* Drag handle */
   #citation-panel::after {
     content: "";
     position: absolute;
@@ -1670,10 +1678,24 @@ h1 {
     border-radius: 2px;
   }
 
-  #citation-charts {
-    display: none;
+  #citation-charts { display: none; }
+
+  .citation-panel-header {
+    padding: 20px 16px 10px;
+    touch-action: none;
   }
 
+  .citation-panel-header h2 { font-size: 18px; padding-right: 36px; }
+
+  #citation-panel-close {
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  /* Single scroll container with overscroll containment */
   .citation-panel-body {
     flex-direction: column;
     overflow-y: auto;
@@ -1686,6 +1708,20 @@ h1 {
     flex-shrink: 0;
   }
 
+  /* Sticky section headers */
+  .citation-col h3 {
+    position: sticky;
+    top: 0;
+    background: rgba(18, 18, 20, 0.97);
+    z-index: 1;
+    padding: 14px 16px 10px;
+    margin: 0 -16px;
+    border-bottom: 2px solid rgba(212, 165, 116, 0.3);
+    font-size: 13px;
+    letter-spacing: 0.18em;
+  }
+
+  /* Decorative separator between citation columns */
   .citation-col:first-child {
     border-right: none;
     border-bottom: none;
@@ -1704,22 +1740,9 @@ h1 {
     border-radius: 1px;
   }
 
-  .citation-col:last-child {
-    padding-top: 24px;
-  }
+  .citation-col:last-child { padding-top: 24px; }
 
-  .citation-col h3 {
-    position: sticky;
-    top: 0;
-    background: rgba(18, 18, 20, 0.97);
-    z-index: 1;
-    padding: 14px 16px 10px;
-    margin: 0 -16px;
-    border-bottom: 2px solid rgba(212, 165, 116, 0.3);
-    font-size: 13px;
-    letter-spacing: 0.18em;
-  }
-
+  /* Card-style citation items */
   .citation-list-item {
     background: rgba(25, 25, 28, 0.8);
     border: 1px solid rgba(212, 165, 116, 0.12);
@@ -1728,28 +1751,9 @@ h1 {
     padding: 12px 14px;
   }
 
-  .citation-list-item:hover {
-    border-left-color: rgba(212, 165, 116, 0.12);
-  }
+  .citation-list-item:hover { border-left-color: rgba(212, 165, 116, 0.12); }
 
-  .citation-panel-header {
-    padding: 20px 16px 10px;
-    touch-action: none;
-  }
-
-  .citation-panel-header h2 {
-    font-size: 18px;
-    padding-right: 36px;
-  }
-
-  #citation-panel-close {
-    top: 12px;
-    right: 12px;
-    width: 28px;
-    height: 28px;
-    font-size: 16px;
-  }
-
+  /* --- Info panel (bottom sheet, 65vh) --- */
   #info-panel {
     width: 100%;
     height: 65vh;
@@ -1761,25 +1765,17 @@ h1 {
     border-left: none;
     border-top: 1px solid rgba(212, 165, 116, 0.15);
     border-radius: 16px 16px 0 0;
-    transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition:
+      bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+      height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  #info-panel.visible {
-    bottom: 0;
-    right: 0;
-  }
+  #info-panel.visible { bottom: 0; right: 0; }
+  #info-panel.expanded { height: 90vh; max-height: 90vh; }
+  #info-panel::before { height: 100px; border-radius: 16px 16px 0 0; }
 
-  #info-panel.expanded {
-    height: 90vh;
-    max-height: 90vh;
-  }
-
-  #info-panel::before {
-    height: 100px;
-    border-radius: 16px 16px 0 0;
-  }
-
-  /* Drag handle indicator */
+  /* Drag handle */
   #info-panel::after {
     content: "";
     position: absolute;
@@ -1797,10 +1793,9 @@ h1 {
     touch-action: none;
   }
 
-  #panel-title {
-    font-size: 22px;
-    padding-right: 36px;
-  }
+  #panel-title { font-size: 22px; padding-right: 36px; }
+  #panel-meta { font-size: 12px; margin-top: 6px; }
+  #panel-content { padding: 8px 16px 20px; }
 
   #panel-close {
     top: 12px;
@@ -1808,15 +1803,6 @@ h1 {
     width: 28px;
     height: 28px;
     font-size: 16px;
-  }
-
-  #panel-meta {
-    font-size: 12px;
-    margin-top: 6px;
-  }
-
-  #panel-content {
-    padding: 8px 16px 20px;
   }
 
   .panel-stats {
@@ -1836,64 +1822,43 @@ h1 {
     -webkit-box-orient: unset;
   }
 
-  .citations-section {
-    margin-top: 16px;
-  }
+  .citations-section { margin-top: 16px; }
+  .citations-header { margin-bottom: 12px; padding-bottom: 8px; }
+  .citation-card { margin-bottom: 10px; }
+  .citation-card-inner { padding: 10px 12px; }
+  .citation-quote { font-size: 13px; line-height: 1.5; }
 
-  .citations-header {
-    margin-bottom: 12px;
-    padding-bottom: 8px;
-  }
-
-  .citation-card {
-    margin-bottom: 10px;
-  }
-
-  .citation-card-inner {
-    padding: 10px 12px;
-  }
-
-  .citation-quote {
-    font-size: 13px;
-    line-height: 1.5;
-  }
-
+  /* --- Focus mode UI (bottom-positioned, clear of header) --- */
   #focus-exit {
-    bottom: auto;
-    top: 70px;
+    top: auto;
+    bottom: 80px;
     left: 12px;
     padding: 0;
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     justify-content: center;
     gap: 0;
   }
 
-  #focus-exit .focus-exit-text {
-    display: none;
-  }
+  #focus-exit .focus-exit-text { display: none; }
 
   #focus-exit svg {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin: 0;
   }
 
   #focus-info {
-    top: 120px;
-    bottom: auto;
-    left: 56px;
+    top: auto;
+    bottom: 80px;
+    left: 64px;
     right: auto;
     transform: none;
     padding: 6px 12px;
     font-size: 9px;
     border-radius: 12px;
     white-space: nowrap;
-  }
-
-  #focus-exit {
-    top: 116px;
   }
 }
 
