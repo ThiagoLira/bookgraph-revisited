@@ -65,11 +65,14 @@ export class LayoutEngine {
       year,
     }));
 
-    // Assign Y positions
+    // Assign Y positions + initial X
+    const isMobile = viewportWidth <= 600;
+    this._worldWidth = isMobile ? viewportWidth * 2 : viewportWidth;
+    const initialX = isMobile ? viewportWidth : viewportWidth / 2;
     authors.forEach(d => {
       d.fy = this.yScale(d.year);
       d.y = d.fy;
-      d.x = viewportWidth / 2;
+      d.x = initialX;
     });
 
     return {
@@ -90,20 +93,26 @@ export class LayoutEngine {
     if (this.simulation) this.simulation.stop();
 
     const isMobile = window.innerWidth <= 600;
-    const xStrength = isMobile ? 0.15 : 0.3;
-    const collidePad = isMobile ? 10 : 5;
+    // Mobile: moderate centering + large collision padding → clean funnel
+    const xStrength = isMobile ? 0.03 : 0.3;
+    const collidePad = isMobile ? 25 : 5;
+    const collideIter = isMobile ? 5 : 2;
 
     this.simulation = d3.forceSimulation(authors)
       .force("x", d3.forceX(centerX).strength(xStrength))
-      .force("collide", d3.forceCollide(d => d.r + collidePad).iterations(2))
-      .on("tick", () => {
-        // Clamp X positions
-        const w = centerX * 2; // approximate viewport width
-        authors.forEach(d => {
-          d.x = Math.max(d.r + 10, Math.min(w - d.r - 10, d.x));
-        });
-        if (onTick) onTick();
-      });
+      .force("collide", d3.forceCollide(d => d.r + collidePad).iterations(collideIter));
+
+    // Mobile: run synchronous ticks so nodes are spread before zoom computes
+    if (isMobile) {
+      this.simulation.stop();
+      for (let i = 0; i < 200; i++) this.simulation.tick();
+      if (onTick) onTick();
+      this.simulation.alpha(0.3).restart();
+    }
+
+    this.simulation.on("tick", () => {
+      if (onTick) onTick();
+    });
 
     return this.simulation;
   }

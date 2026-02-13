@@ -340,17 +340,9 @@ export class InteractionManager {
           // Clicking center node exits focus mode
           this.app.exitFocusMode();
         } else if (hit.book) {
-          if (this.app._isPortraitMobile()) {
-            this.app.showPanel(hit.book.data);
-          } else {
-            this.app.showDetailCard(hit.book.data);
-          }
+          this.app.showPanel(hit.book.data);
         } else if (hit.author) {
-          if (this.app._isPortraitMobile()) {
-            this.app.showPanel(hit.author);
-          } else {
-            this.app.showDetailCard(hit.author);
-          }
+          this.app.showPanel(hit.author);
         }
       } else {
         // Normal mode

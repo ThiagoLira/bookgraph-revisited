@@ -104,8 +104,8 @@ body::before {
 #axis-overlay {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 100px;
+  left: 0;
+  width: 100%;
   height: 100%;
   pointer-events: none;
   z-index: 2;
@@ -113,7 +113,6 @@ body::before {
 
 .axis-tick {
   position: absolute;
-  right: 12px;
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   color: #999;
@@ -269,6 +268,7 @@ h1 {
   border: 1px solid rgba(212, 165, 116, 0.1);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
   cursor: pointer;
+  object-fit: contain;
 }
 
 .cover-image:hover {
@@ -1441,16 +1441,18 @@ h1 {
     gap: 8px;
   }
 
-  /* Cover shelf: single scrollable row */
+  /* Cover shelf: single scrollable row with snap */
   #header-shelf {
     flex-wrap: nowrap;
     max-height: none;
-    gap: 4px;
+    gap: 6px;
     max-width: 100%;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: visible;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    padding: 4px 0;
   }
 
   #header-shelf::-webkit-scrollbar {
@@ -1487,7 +1489,8 @@ h1 {
   }
 
   .cover-image {
-    height: 40px;
+    height: 72px;
+    scroll-snap-align: start;
   }
 
   .cover-image:hover {
@@ -1629,10 +1632,10 @@ h1 {
 
   #citation-panel {
     width: 100%;
-    height: 55vh;
-    max-height: 55vh;
+    height: 85vh;
+    max-height: 85vh;
     top: auto;
-    bottom: -55vh;
+    bottom: -85vh;
     left: 0;
     border-right: none;
     border-top: 1px solid rgba(212, 165, 116, 0.15);
@@ -1677,7 +1680,48 @@ h1 {
 
   .citation-col:first-child {
     border-right: none;
-    border-bottom: 1px solid rgba(212, 165, 116, 0.06);
+    border-bottom: none;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .citation-col:first-child::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: rgba(212, 165, 116, 0.3);
+    margin: 24px auto 0;
+    border-radius: 1px;
+  }
+
+  .citation-col:last-child {
+    padding-top: 24px;
+  }
+
+  .citation-col h3 {
+    position: sticky;
+    top: 0;
+    background: rgba(18, 18, 20, 0.97);
+    z-index: 1;
+    padding: 14px 16px 10px;
+    margin: 0 -16px;
+    border-bottom: 2px solid rgba(212, 165, 116, 0.3);
+    font-size: 13px;
+    letter-spacing: 0.18em;
+  }
+
+  .citation-list-item {
+    background: rgba(25, 25, 28, 0.8);
+    border: 1px solid rgba(212, 165, 116, 0.12);
+    border-radius: 10px;
+    margin: 0 12px 10px;
+    padding: 12px 14px;
+  }
+
+  .citation-list-item:hover {
+    border-left-color: rgba(212, 165, 116, 0.12);
   }
 
   .citation-panel-header {
@@ -1700,10 +1744,10 @@ h1 {
 
   #info-panel {
     width: 100%;
-    height: 45vh;
-    max-height: 45vh;
+    height: 65vh;
+    max-height: 65vh;
     top: auto;
-    bottom: -45vh;
+    bottom: -65vh;
     right: 0;
     left: 0;
     border-left: none;
@@ -1746,7 +1790,7 @@ h1 {
   }
 
   #panel-title {
-    font-size: 18px;
+    font-size: 22px;
     padding-right: 36px;
   }
 
@@ -1774,14 +1818,14 @@ h1 {
   }
 
   .panel-description {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.7;
     margin-bottom: 16px;
-    max-height: 80px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+    max-height: none;
+    overflow: visible;
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
   }
 
   .citations-section {
@@ -1852,7 +1896,7 @@ h1 {
   }
 
   .cover-image {
-    height: 40px;
+    height: 56px;
   }
 
   #panel-title {

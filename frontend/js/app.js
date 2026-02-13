@@ -435,26 +435,24 @@ class BookGraphApp {
       // Update renderer buffers
       this.renderer.updateCircles(result.authors);
       this.renderer.updateLines(result.links);
-      this.renderer.updateGridlines(gridlines, vw);
+      const worldWidth = this.layout._worldWidth || vw;
+      this.renderer.updateGridlines(gridlines, worldWidth);
 
       // Start force simulation
-      this.layout.startForceSimulation(result.authors, vw / 2, () => {
+      const isMobile = vw <= 600;
+      const centerX = isMobile ? vw : vw / 2;
+      this.layout.startForceSimulation(result.authors, centerX, () => {
+        this._graphRightEdge = Math.max(...result.authors.map(a => a.x + a.r)) + 30;
         this.renderer.updateCircles(result.authors, this.highlightState);
         this.renderer.updateLines(result.links, this.highlightState);
         this.labels.updatePositions(result.authors, this.interaction.transform);
         this._needsUpdate = true;
       });
 
-      // Auto-fit: zoom to show the full timeline
-      const fitK = vh / totalHeight;
-      const fitMul = this._isPortraitMobile() ? 1.8 : 0.9;
-      const scale = Math.max(0.1, Math.min(fitK * fitMul, 1));
-      const offsetX = (vw - vw * scale) / 2;
-      const offsetY = (vh - totalHeight * scale) / 2;
-
-      // Small delay to let simulation settle
+      // Zoom after sync pre-ticks (nodes already spread)
       setTimeout(() => {
-        this.interaction.setTransform(offsetX, offsetY, scale, false);
+        const initialTransform = this._computeInitialZoom(result.authors, vw, vh, totalHeight);
+        this.interaction.setTransform(initialTransform.x, initialTransform.y, initialTransform.k, false);
       }, 100);
 
       document.getElementById('loading').style.display = 'none';
@@ -511,23 +509,23 @@ class BookGraphApp {
 
       this.renderer.updateCircles(result.authors);
       this.renderer.updateLines(result.links);
-      this.renderer.updateGridlines(gridlines, vw);
+      const worldWidth2 = this.layout._worldWidth || vw;
+      this.renderer.updateGridlines(gridlines, worldWidth2);
 
-      this.layout.startForceSimulation(result.authors, vw / 2, () => {
+      const isMobile2 = vw <= 600;
+      const centerX2 = isMobile2 ? vw : vw / 2;
+      this.layout.startForceSimulation(result.authors, centerX2, () => {
+        this._graphRightEdge = Math.max(...result.authors.map(a => a.x + a.r)) + 30;
         this.renderer.updateCircles(result.authors, this.highlightState);
         this.renderer.updateLines(result.links, this.highlightState);
         this.labels.updatePositions(result.authors, this.interaction.transform);
         this._needsUpdate = true;
       });
 
-      const fitK = vh / totalHeight;
-      const fitMul = this._isPortraitMobile() ? 1.8 : 0.9;
-      const scale = Math.max(0.1, Math.min(fitK * fitMul, 1));
-      const offsetX = (vw - vw * scale) / 2;
-      const offsetY = (vh - totalHeight * scale) / 2;
-
+      // Zoom after sync pre-ticks (nodes already spread)
       setTimeout(() => {
-        this.interaction.setTransform(offsetX, offsetY, scale, false);
+        const initialTransform = this._computeInitialZoom(result.authors, vw, vh, totalHeight);
+        this.interaction.setTransform(initialTransform.x, initialTransform.y, initialTransform.k, false);
       }, 100);
 
       document.getElementById('loading').style.display = 'none';
@@ -636,6 +634,16 @@ class BookGraphApp {
   // === Focus Mode ===
 
   enterFocusMode(node, book = null) {
+    const wasInFocus = this.focusMode;
+
+    // If already in focus mode, restore original positions before re-entering
+    if (wasInFocus && this.originalPositions.size > 0) {
+      for (const a of this.graphData.authors) {
+        const orig = this.originalPositions.get(a.id);
+        if (orig) { a.x = orig.x; a.y = orig.y; a.fx = orig.fx; a.fy = orig.fy; }
+      }
+    }
+
     this.focusMode = true;
     this.focusedNode = node;
     this.focusedBook = book;
@@ -643,10 +651,12 @@ class BookGraphApp {
 
     const bookId = book ? book.data.id : null;
 
-    // Store original positions
-    this.originalPositions.clear();
-    for (const a of this.graphData.authors) {
-      this.originalPositions.set(a.id, { x: a.x, y: a.y, fx: a.fx, fy: a.fy });
+    // Store original positions only from the global layout, not from a previous focus
+    if (!wasInFocus) {
+      this.originalPositions.clear();
+      for (const a of this.graphData.authors) {
+        this.originalPositions.set(a.id, { x: a.x, y: a.y, fx: a.fx, fy: a.fy });
+      }
     }
 
     // Find connected nodes (filtered by source book if specified)
@@ -694,11 +704,20 @@ class BookGraphApp {
     // Enforce a minimum scale so labels stay readable with many citations
     const numCited = connectedNodes.length;
     const minScale = numCited > 60 ? 0.35 : numCited > 30 ? 0.3 : 0.2;
-    const scale = Math.max(fitScale, minScale);
+    const overviewScale = Math.max(fitScale, minScale);
     const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+
+    // Cinematic two-step zoom: first show full subgraph, then zoom to focused node
+    const focusScale = Math.min(1.2, overviewScale * 2.5);
+    const focusX = node.x, focusY = node.y;
+    // Step 1: zoom out to show full subgraph scope
     setTimeout(() => {
-      this.interaction.setTransform(vw / 2 - cx * scale, vh / 2 - cy * scale, scale, true);
+      this.interaction.setTransform(vw / 2 - cx * overviewScale, vh / 2 - cy * overviewScale, overviewScale, true);
     }, 50);
+    // Step 2: zoom in to center on focused node
+    setTimeout(() => {
+      this.interaction.setTransform(vw / 2 - focusX * focusScale, vh / 2 - focusY * focusScale, focusScale, true);
+    }, 1250);
 
     // Highlight state for focus mode
     const dimmedIds = new Set();
@@ -820,6 +839,41 @@ class BookGraphApp {
 
   _isPortraitMobile() {
     return window.innerWidth <= 600 && window.innerHeight > window.innerWidth;
+  }
+
+  /**
+   * Compute initial zoom transform.
+   * Desktop: fit the full timeline.
+   * Mobile: zoom to the modern era (post-1800) where most nodes cluster,
+   * so nodes are large enough to read. Users can pan to see the rest.
+   */
+  _computeInitialZoom(authors, vw, vh, totalHeight) {
+    if (this._isPortraitMobile() && this.layout.yScale) {
+      // Mobile: bird's-eye overview — show full graph so user sees the shape
+      const pad = 80;
+      const minX = Math.min(...authors.map(a => a.x));
+      const maxX = Math.max(...authors.map(a => a.x));
+      const minY = Math.min(...authors.map(a => a.fy || a.y));
+      const maxY = Math.max(...authors.map(a => a.fy || a.y));
+      const scaleX = vw / (maxX - minX + pad);
+      const scaleY = vh / (maxY - minY + pad);
+      const scale = Math.max(0.12, Math.min(Math.min(scaleX, scaleY), 0.8));
+      const cx = (minX + maxX) / 2;
+      const cy = (minY + maxY) / 2;
+      return {
+        x: vw / 2 - cx * scale,
+        y: vh / 2 - cy * scale,
+        k: scale
+      };
+    }
+    // Desktop: fit full timeline
+    const fitK = vh / totalHeight;
+    const scale = Math.max(0.1, Math.min(fitK * 0.9, 1));
+    return {
+      x: (vw - vw * scale) / 2,
+      y: (vh - totalHeight * scale) / 2,
+      k: scale
+    };
   }
 
   // === Panel ===
@@ -1186,8 +1240,21 @@ class BookGraphApp {
 
     const { x: tx, y: ty, k } = transform;
     const vh = window.innerHeight;
+    const vw = window.innerWidth;
+
+    // On mobile portrait: pin axis labels to right edge of screen
+    // On desktop: position past the right end of gridlines
+    const isMobilePortrait = vw <= 600 && vh > vw;
+    const gridRightScreen = vw * k + tx;
+    const screenX = isMobilePortrait
+      ? vw - 38
+      : Math.min(gridRightScreen + 80, vw - 10);
 
     this.axisOverlay.innerHTML = '';
+
+    // Minimum vertical spacing between labels (prevents overlap when zoomed out)
+    const minSpacing = 28;
+    let lastRenderedY = -Infinity;
 
     for (const year of this.layout.tickValues) {
       const worldY = this.layout.yScale(year);
@@ -1196,9 +1263,18 @@ class BookGraphApp {
       // Viewport culling
       if (screenY < -20 || screenY > vh + 20) continue;
 
+      // Density filter: skip labels too close to the previous one
+      if (Math.abs(screenY - lastRenderedY) < minSpacing) continue;
+      lastRenderedY = screenY;
+
       const tick = document.createElement('div');
       tick.className = 'axis-tick';
       tick.style.top = screenY + 'px';
+      if (isMobilePortrait) {
+        tick.style.right = '8px';
+      } else {
+        tick.style.left = screenX + 'px';
+      }
       tick.textContent = year < 0 ? `${-year} BC` : year;
       this.axisOverlay.appendChild(tick);
     }
