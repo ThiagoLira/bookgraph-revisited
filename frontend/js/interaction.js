@@ -72,11 +72,15 @@ export class InteractionManager {
       };
     }
 
-    // Citation panel close
+    // Citation panel close — on mobile just close panel, keep focus mode
     const citationPanelClose = document.getElementById('citation-panel-close');
     if (citationPanelClose) {
       citationPanelClose.addEventListener('click', () => {
-        this.app.exitFocusMode();
+        if (this.app._isPortraitMobile()) {
+          this.app.closeCitationPanel();
+        } else {
+          this.app.exitFocusMode();
+        }
       });
     }
 
@@ -97,11 +101,17 @@ export class InteractionManager {
       });
     }
 
-    // Mobile bottom sheet drag-to-dismiss
+    // Mobile bottom sheet drag-to-dismiss — keep focus mode, just close panel
     this._setupPanelDrag(
       document.getElementById('citation-panel'),
       80,
-      () => this.app.exitFocusMode()
+      () => {
+        if (this.app._isPortraitMobile()) {
+          this.app.closeCitationPanel();
+        } else {
+          this.app.exitFocusMode();
+        }
+      }
     );
     this._setupPanelDrag(
       document.getElementById('info-panel'),
@@ -366,7 +376,13 @@ export class InteractionManager {
     } else {
       // Clicked empty space
       if (this.app.focusMode) {
-        this.app.exitFocusMode();
+        if (this.app._isPortraitMobile()) {
+          // On mobile: close panels but stay in focus mode
+          this.app.closeCitationPanel();
+          this.app.closePanel();
+        } else {
+          this.app.exitFocusMode();
+        }
       } else {
         this.app.closePanel();
         this.app.clearSelection();

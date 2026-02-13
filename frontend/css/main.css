@@ -1676,6 +1676,14 @@ h1 {
 
   .citation-panel-body {
     flex-direction: column;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .citation-col {
+    overflow-y: visible;
+    flex-shrink: 0;
   }
 
   .citation-col:first-child {
