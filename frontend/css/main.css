@@ -1463,11 +1463,13 @@ h1 {
      header > * cascade, so grandchildren need explicit pointer-events */
   .header-text,
   #shelf-section,
+  #header-shelf,
   #controls {
     pointer-events: auto;
   }
 
-  #header-shelf {
+  #header-shelf,
+  #header-shelf .cover-image {
     touch-action: pan-x;
   }
 
@@ -1695,60 +1697,44 @@ h1 {
     font-size: 16px;
   }
 
-  /* Single scroll container with overscroll containment */
+  /* Both columns visible, each independently scrollable */
   .citation-panel-body {
     flex-direction: column;
+    overflow: hidden;
+  }
+
+  .citation-col {
+    flex: 1 1 0;
+    min-height: 0;
     overflow-y: auto;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
   }
 
-  .citation-col {
-    overflow-y: visible;
-    flex-shrink: 0;
+  .citation-col:first-child {
+    border-right: none;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.12);
   }
 
-  /* Sticky section headers */
   .citation-col h3 {
     position: sticky;
     top: 0;
     background: rgba(18, 18, 20, 0.97);
     z-index: 1;
-    padding: 14px 16px 10px;
-    margin: 0 -16px;
-    border-bottom: 2px solid rgba(212, 165, 116, 0.3);
-    font-size: 13px;
+    padding: 12px 16px 8px;
+    margin: 0;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.15);
+    font-size: 12px;
     letter-spacing: 0.18em;
   }
-
-  /* Decorative separator between citation columns */
-  .citation-col:first-child {
-    border-right: none;
-    border-bottom: none;
-    padding-bottom: 12px;
-    margin-bottom: 0;
-    position: relative;
-  }
-
-  .citation-col:first-child::after {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 2px;
-    background: rgba(212, 165, 116, 0.3);
-    margin: 24px auto 0;
-    border-radius: 1px;
-  }
-
-  .citation-col:last-child { padding-top: 24px; }
 
   /* Card-style citation items */
   .citation-list-item {
     background: rgba(25, 25, 28, 0.8);
     border: 1px solid rgba(212, 165, 116, 0.12);
     border-radius: 10px;
-    margin: 0 12px 10px;
-    padding: 12px 14px;
+    margin: 6px 12px;
+    padding: 10px 14px;
   }
 
   .citation-list-item:hover { border-left-color: rgba(212, 165, 116, 0.12); }
@@ -1833,26 +1819,29 @@ h1 {
     top: auto;
     bottom: 80px;
     left: 12px;
-    padding: 0;
-    border-radius: 50%;
-    width: 44px;
+    padding: 8px 16px;
+    border-radius: 22px;
+    width: auto;
     height: 44px;
-    justify-content: center;
-    gap: 0;
+    gap: 6px;
+    font-size: 12px;
+    background: var(--panel);
+    border: 1px solid var(--accent);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
   }
 
-  #focus-exit .focus-exit-text { display: none; }
+  #focus-exit .focus-exit-text { display: inline; }
 
   #focus-exit svg {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     margin: 0;
   }
 
   #focus-info {
     top: auto;
-    bottom: 80px;
-    left: 64px;
+    bottom: 130px;
+    left: 12px;
     right: auto;
     transform: none;
     padding: 6px 12px;
