@@ -84,5 +84,9 @@
             "covers/the_selfish_gene.jpg",
             "covers/mimesis_the_representation_of_reality_in_western_literature.jpg"
         ]
+    },
+    {
+        "name": "The Hero With a Thousand Faces",
+        "path": "./data/the_hero_with_a_thousand_faces"
     }
 ]
