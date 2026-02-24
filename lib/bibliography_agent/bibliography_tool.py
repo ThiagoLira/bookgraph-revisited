@@ -16,6 +16,14 @@ from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Optional
 if TYPE_CHECKING:  # pragma: no cover
     from llama_index.core.tools import FunctionTool
 
+# Infoboxes that indicate sport/entertainment — deprioritized in Wikipedia ranking.
+_BAD_WIKI_INFOBOXES = {
+    "football biography", "ice hockey player", "cricketer",
+    "rugby biography", "cyclist", "boxer", "tennis biography",
+    "baseball biography", "basketball biography", "nfl player",
+    "handball biography", "volleyball biography",
+}
+
 BOOKS_DB_PATH = Path("datasets/books_index.db")
 AUTHORS_PATH = Path("datasets/goodreads_book_authors.json")
 WIKI_PEOPLE_DB_PATH = Path("datasets/wiki_people_index.db")
@@ -345,11 +353,17 @@ class SQLiteWikiPeopleIndex:
 
         # Re-rank candidates
         # 1. Exact title match (case-insensitive)
-        # 2. Page ID (lower is usually more important/older)
+        # 2. Penalize sport/entertainment infoboxes
+        # 3. Page ID (lower is usually more important/older)
         def rank_score(c):
             is_exact = c["title"].lower() == name.lower()
+            has_bad_infobox = any(
+                ib.lower() in _BAD_WIKI_INFOBOXES
+                for ib in (c.get("infoboxes") or [])
+            )
             return (
                 0 if is_exact else 1,
+                1 if has_bad_infobox else 0,
                 c["page_id"] if c["page_id"] else float('inf')
             )
             

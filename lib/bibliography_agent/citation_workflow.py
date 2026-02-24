@@ -70,6 +70,15 @@ class ValidationResult(BaseModel):
     reasoning: str = Field(..., description="Reasoning for the selection.")
     index: int = Field(..., description="Index of the selected match in the provided list, or -1 if none are good.")
 
+# Infoboxes that indicate a sport/entertainment person — almost never the right
+# match for a citation in a scholarly book.
+BAD_WIKI_INFOBOXES = {
+    "football biography", "ice hockey player", "cricketer",
+    "rugby biography", "cyclist", "boxer", "tennis biography",
+    "baseball biography", "basketball biography", "nfl player",
+    "handball biography", "volleyball biography",
+}
+
 # --- Workflow ---
 
 class CitationWorkflow(Workflow):
@@ -82,10 +91,12 @@ class CitationWorkflow(Workflow):
         timeout: Optional[float] = None,
         verbose: bool = False,
         force_llm_queries: bool = False,
+        source_pub_year: Optional[int] = None,
     ):
         super().__init__(timeout=timeout, verbose=verbose)
         self.verbose = verbose
         self.force_llm_queries = force_llm_queries
+        self.source_pub_year = source_pub_year
         self.book_catalog = SQLiteGoodreadsCatalog(db_path=books_db_path, trace=verbose)
         self.author_catalog = GoodreadsAuthorCatalog(authors_path=authors_path)
 
@@ -389,6 +400,28 @@ class CitationWorkflow(Workflow):
             logger.debug(f"[workflow] No {source} candidates to validate for '{citation.get('author')}'")
             return ValidationEvent(citation=citation, selected_result=None, source=source, mode=mode, reasoning="No candidates found.")
 
+        # --- Wikipedia candidate filtering (pre-scoring) ---
+        if source == "wikipedia":
+            orig_count = len(candidates)
+            # Filter anachronistic: person born after the source book was published
+            if self.source_pub_year:
+                candidates = [
+                    c for c in candidates
+                    if not c.get("birth_year") or c["birth_year"] <= self.source_pub_year
+                ]
+            # Filter sport/entertainment infoboxes
+            candidates = [
+                c for c in candidates
+                if not any(
+                    ib.lower() in BAD_WIKI_INFOBOXES
+                    for ib in (c.get("infoboxes") or [])
+                )
+            ]
+            if len(candidates) < orig_count:
+                logger.info(f"[workflow] Wiki pre-filter: {orig_count} -> {len(candidates)} candidates (anachronistic/sport removal)")
+            if not candidates:
+                return ValidationEvent(citation=citation, selected_result=None, source=source, mode=mode, reasoning="All candidates filtered (anachronistic or sport/entertainment).")
+
         # --- Confidence gate: skip LLM when match is obvious ---
         scored = self._score_candidates(citation, candidates, mode)
         top_score, top_idx, top_candidate = scored[0]
@@ -427,8 +460,17 @@ class CitationWorkflow(Workflow):
         prompt = (
             f"You are a bibliography expert. Validate these candidates against the citation.\n"
             f"Citation: {json.dumps(citation, ensure_ascii=False)}\n"
-            f"Candidates ({source}):\n"
         )
+
+        # Include citation contexts for disambiguation clues
+        contexts = citation.get("contexts", [])[:3]
+        if contexts:
+            prompt += "Context from the source book:\n"
+            for ctx_text in contexts:
+                prompt += f'  - "{ctx_text[:200]}"\n'
+            prompt += "\n"
+
+        prompt += f"Candidates ({source}):\n"
         for i, c in enumerate(candidates):
             prompt += f"[{i}] {json.dumps(c, ensure_ascii=False)}\n"
 

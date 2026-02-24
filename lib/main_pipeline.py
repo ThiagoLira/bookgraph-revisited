@@ -555,6 +555,9 @@ class BookPipeline:
         return results
 
     async def _run_workflow(self, pre_path: Path, final_path: Path, meta: Dict[str, Any]):
+        # Set source publication year for anachronistic filtering
+        self.workflow.source_pub_year = meta.get("publication_year")
+
         data = json.loads(pre_path.read_text())
         citations = data.get("citations", [])
 
