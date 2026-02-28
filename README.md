@@ -2,17 +2,20 @@
 
 A high-performance pipeline for extracting, resolving, and visualizing book and author citations from large text corpora.
 
+![BookGraph Explorer](screenshot.png)
+
 ## Overview
 
 This system processes raw text files (books) to find citations of other books and authors. It uses LLMs for extraction, a specialized validation agent to resolve citations against Goodreads/Wikipedia, and an automatic web fallback for obscure references.
 
 **Key Features:**
-*   **Pipeline Architecture**: Modular `BookPipeline` that handles extraction, preprocessing, and resolution.
-*   **LLM Extraction**: Uses prompt-based extraction (compatible with OpenAI-like APIs).
-*   **Agentic Resolution**: A `CitationWorkflow` (LlamaIndex-based) that searches fuzzy matches and validates them with an LLM.
-*   **Web Resolution Fallback**: Automatic fallback to agentic web search (using LLM knowledge) when local resolution fails.
+*   **4-Stage Pipeline**: Modular `BookPipeline` — enrich, extract, clean, resolve.
+*   **LLM Extraction**: Prompt-based extraction via OpenRouter (OpenAI-compatible API).
+*   **Agentic Resolution**: A `CitationWorkflow` (LlamaIndex Workflow) that searches fuzzy matches and validates them with an LLM.
+*   **Web Resolution Fallback**: Automatic fallback to LLM knowledge when local databases fail.
 *   **Calibre Integration**: Native support for processing Calibre libraries, leveraging existing metadata.
-*   **Checkpointing**: Pipeline saves progress and can resume from interruptions.
+*   **Checkpointing**: Pipeline saves progress every 5 citations and can resume from interruptions.
+*   **Persistent Enrichment**: Publication dates and author metadata accumulate across runs in both JSON and SQL.
 *   **Visualization**: D3.js frontend with focus mode for exploring dense citation networks.
 
 ## Architecture
@@ -20,18 +23,18 @@ This system processes raw text files (books) to find citations of other books an
 ```mermaid
 flowchart TD
     %% ── Input ──────────────────────────────────────────────
-    INPUT[/"📁 Input: .txt files<br/>(Title_GoodreadsID.txt)"/]
+    INPUT[/"Input: .txt files<br/>(Title_GoodreadsID.txt)"/]
     INPUT --> ENRICH
 
     %% ── Stage 0: Source Enrichment ─────────────────────────
-    subgraph STAGE0["Stage 0 — Source Metadata Enrichment  (_enrich_source_metadata in main_pipeline.py)"]
-        ENRICH["_enrich_source_metadata()<br/>called once per book before extraction"]
-        ENRICH --> GR_LOOKUP["Goodreads Catalog<br/>SQLiteGoodreadsCatalog.find_books()<br/>FTS5 title match → top 3<br/>prefer exact book_id match,<br/>fallback to best title match"]
-        GR_LOOKUP -->|"authors[], pub_year"| ENRICH_MERGE["Merge into<br/>source_metadata dict"]
-        ENRICH -->|"authors or pub_year<br/>still missing?"| LLM_SOURCE["LLM Fallback<br/>(acomplete → JSON)<br/>prompt: 'Provide metadata for<br/>book titled ...'<br/>→ {author, publication_year}"]
-        LLM_SOURCE -->|"author, year"| ENRICH_MERGE
-        ENRICH_MERGE --> AUTHOR_META_SRC["enrich_author(primary_author)<br/>same 4-source cascade as Stage 4<br/>including validate_dates() gate"]
-        AUTHOR_META_SRC -->|"birth/death years<br/>(date-validated)"| ENRICHED_META[/"Enriched source_metadata<br/>{title, authors, publication_year,<br/>author_metadata: {birth_year,<br/>death_year, ...}}"/]
+    subgraph STAGE0["Stage 0 — Source Metadata Enrichment"]
+        ENRICH["_enrich_source_metadata()"]
+        ENRICH --> GR_LOOKUP["Goodreads Catalog<br/>FTS5 title match"]
+        GR_LOOKUP -->|"authors, pub_year"| ENRICH_MERGE["Merge into<br/>source_metadata"]
+        ENRICH -->|"still missing?"| LLM_SOURCE["LLM Fallback<br/>(acomplete → JSON)"]
+        LLM_SOURCE --> ENRICH_MERGE
+        ENRICH_MERGE --> AUTHOR_META_SRC["enrich_author()<br/>4-source cascade"]
+        AUTHOR_META_SRC --> ENRICHED_META[/"Enriched source_metadata"/]
     end
 
     ENRICHED_META --> EXTRACT
@@ -39,135 +42,78 @@ flowchart TD
     %% ── Stage 1: Extraction ───────────────────────────────
     subgraph STAGE1["Stage 1 — LLM Extraction  (extract_citations.py)"]
         EXTRACT["process_book()"]
-        EXTRACT --> SENT["NLTK sent_tokenize()<br/>split full text into sentences"]
-        SENT --> CHUNK["build_chunks()<br/>token-budget aware,<br/>≤50 sentences/chunk,<br/>respects max_context_per_request"]
-        CHUNK --> PARALLEL_LLM["Async LLM calls<br/>(semaphore = extract_concurrency)<br/>OpenAI-compatible API<br/>model from PipelineConfig"]
-        PARALLEL_LLM -->|"JSON schema enforced<br/>via response_format"| PARSE["Pydantic parse<br/>ModelChunkCitations<br/>→ list of {title?, author?,<br/>contexts[], commentaries[]}"]
-        PARSE -->|"retry ×2 on<br/>parse failure"| PARALLEL_LLM
-        PARSE --> RAW_OUT[/"raw_extracted_citations/<br/>BookID.json<br/>{chunks: [{citations: [...]}]}<br/>one file per source book"/]
+        EXTRACT --> SENT["NLTK sent_tokenize()"]
+        SENT --> CHUNK["build_chunks()<br/>token-budget aware"]
+        CHUNK --> PARALLEL_LLM["Async LLM calls<br/>(semaphore-limited)"]
+        PARALLEL_LLM -->|"JSON schema enforced"| PARSE["Pydantic parse<br/>→ {title?, author?,<br/>contexts[], commentaries[]}"]
+        PARSE -->|"retry x2"| PARALLEL_LLM
+        PARSE --> RAW_OUT[/"raw_extracted_citations/<br/>BookID.json"/]
     end
 
-    RAW_OUT --> PREPROCESS
+    RAW_OUT --> CLEAN
 
-    %% ── Stage 2: Preprocessing ────────────────────────────
-    subgraph STAGE2["Stage 2 — Heuristic Preprocessing  (preprocess_citations.py)"]
-        PREPROCESS["preprocess_data()<br/>deterministic, no LLM calls"]
-        PREPROCESS --> FLATTEN["Flatten chunks →<br/>single flat citation list<br/>aggregate counts per (title, author)"]
-        FLATTEN --> DEDUP_EXACT["deduplicate_exact()<br/>case-insensitive (title, author)<br/>merge contexts + commentaries"]
-        DEDUP_EXACT --> H1["filter_non_person_authors()<br/>blocklist: 'Various', 'Anonymous'...<br/>pattern filter: all-caps, groups,<br/>'The X Institute', etc."]
-        H1 --> H2["collapse_author_only()<br/>if author appears both with<br/>and without title → merge<br/>author-only into titled entry"]
-        H2 --> H3["collapse_variant_titles()<br/>normalize 'The X' vs 'X',<br/>'A X' vs 'X' prefixes"]
-        H3 --> H4["merge_similar_citations()<br/>SequenceMatcher ≥0.85 on titles<br/>within same author group"]
-        H4 --> SELF_REF["drop_self_references()<br/>remove citations matching<br/>source_title or source_authors"]
-        SELF_REF --> PRE_OUT[/"preprocessed_extracted_citations/<br/>BookID.json<br/>{total: N, citations: [...]}<br/>⚠️ dedup here is on RAW titles,<br/>before Goodreads resolution —<br/>'Republic' and 'The Republic'<br/>may survive as separate entries"/]
+    %% ── Stage 2: Cleaning ───────────────────────────────
+    subgraph STAGE2["Stage 2 — Heuristic + LLM Cleaning  (clean_citations.py)"]
+        CLEAN["clean_citations()"]
+        CLEAN --> FLATTEN["Flatten chunks →<br/>single citation list"]
+        FLATTEN --> DEDUP["deduplicate_exact()"]
+        DEDUP --> H_CHAIN["Heuristic chain:<br/>filter_non_person →<br/>collapse_author_only →<br/>collapse_variant_titles →<br/>merge_similar →<br/>drop_self_references"]
+        H_CHAIN --> VAL_LLM["LLM batch validation<br/>keep / fix / remove"]
+        VAL_LLM --> CLEANED_OUT[/"cleaned_citations/<br/>BookID.json"/]
     end
 
-    PRE_OUT --> VALIDATE
+    CLEANED_OUT --> WORKFLOW
 
-    %% ── Stage 3: LLM Validation ──────────────────────────
-    subgraph STAGE3["Stage 3 — LLM Batch Validation  (validate_citations.py)"]
-        VALIDATE["validate_citations()"]
-        VALIDATE --> BATCH["Split into batches<br/>(≤30 citations each)"]
-        BATCH --> VAL_LLM["Async LLM calls<br/>(semaphore = validate_concurrency)<br/>per-batch prompt with<br/>source_title + source_authors<br/>for context"]
-        VAL_LLM -->|"JSON array response"| VAL_PARSE["Parse per-citation decisions:<br/>keep / fix / remove"]
-        VAL_PARSE -->|"fix"| APPLY_FIX["Apply corrections<br/>(author name spelling,<br/>title correction,<br/>misattribution fix)"]
-        VAL_PARSE -->|"remove"| LOG_REMOVE["Log removal reason<br/>(non-person, fictional,<br/>generic concept, etc.)"]
-        VAL_PARSE -->|"keep"| PASS_THROUGH["Pass through unchanged"]
-        APPLY_FIX --> VAL_OUT
-        PASS_THROUGH --> VAL_OUT
-        VAL_OUT[/"validated_citations/<br/>BookID.json<br/>{total: N, validation_stats:<br/>{removed, fixed, kept},<br/>citations: [...]}"/]
-    end
+    %% ── Stage 3: Resolution ────────────────────────────
+    subgraph STAGE3["Stage 3 — Resolution + Enrichment + Dedup"]
 
-    VAL_OUT --> WORKFLOW
+        WORKFLOW["_run_workflow()<br/>CheckpointManager +<br/>AuthorCache"]
+        WORKFLOW --> CACHE_CHECK{"Author cache hit?"}
+        CACHE_CHECK -->|"hit"| CACHE_RESULT["Use cached result"]
+        CACHE_CHECK -->|"miss"| CIT_WORKFLOW["CitationWorkflow.run()"]
 
-    %% ── Stage 4: Citation Workflow ────────────────────────
-    subgraph STAGE4["Stage 4 — Agentic Resolution + Enrichment + Dedup  (citation_workflow.py + main_pipeline.py + metadata_enricher.py)"]
-
-        WORKFLOW["_run_workflow()<br/>loads checkpoint if exists,<br/>seeds author_cache from<br/>checkpoint results"]
-        WORKFLOW --> CACHE_CHECK{"Per-book author_cache hit?<br/>(author-only citation,<br/>no title field)<br/>lookup: _find_cached_author()<br/>exact match on _normalize_author()<br/>or SequenceMatcher ≥0.9"}
-        CACHE_CHECK -->|"hit"| CACHE_RESULT["deep copy cached result_dict<br/>replace raw field with<br/>current citation's raw data"]
-        CACHE_CHECK -->|"miss"| CIT_WORKFLOW["CitationWorkflow.run()<br/>(LlamaIndex Workflow,<br/>timeout=120s)"]
-
-        subgraph WF_INNER["CitationWorkflow Steps  (citation_workflow.py)"]
+        subgraph WF["CitationWorkflow Steps"]
             direction TB
-            GEN_Q["generate_queries()<br/>attempt 0: deterministic<br/>(deterministic_queries.py:<br/>author_aliases lookup,<br/>title/author SearchQuery pairs)<br/>attempt ≥1: LLM → structured<br/>QueryList with title/author variants"]
-            GEN_Q --> SEARCH_GR["search_goodreads()<br/>SQLiteGoodreadsCatalog<br/>FTS5 full-text search<br/>→ top 5 by fuzzy score<br/>each query run independently"]
-            GEN_Q --> SEARCH_WIKI["search_wikipedia()<br/>SQLiteWikiPeopleIndex<br/>FTS5 full-text search<br/>→ top 5 by fuzzy score"]
-            SEARCH_GR --> VALIDATE_GR["validate_matches()<br/>LLM structured_predict()<br/>→ MatchDecision: best index<br/>or -1 (no match)<br/>prompt includes all candidates"]
-            SEARCH_WIKI --> VALIDATE_WIKI["validate_matches()<br/>LLM structured_predict()<br/>→ best index or -1"]
-            VALIDATE_GR -->|"if LLM says -1:<br/>fallback to fuzzy ≥70"| AGG["aggregate_results()<br/>combine best GR match<br/>+ best Wiki match<br/>→ match_type: book/person/<br/>not_found"]
-            VALIDATE_WIKI --> AGG
-            AGG -->|"not_found &<br/>retry_count < 3"| GEN_Q
-            AGG -->|"match found or<br/>retries exhausted"| WF_RESULT["Return {match_type,<br/>metadata: {book_id, title,<br/>authors, author_ids,<br/>wikipedia_match, ...}}"]
+            GEN_Q["generate_queries()<br/>attempt 0: deterministic<br/>attempt 1+: LLM"]
+            GEN_Q --> SEARCH_GR["search_goodreads()<br/>FTS5"]
+            GEN_Q --> SEARCH_WIKI["search_wikipedia()<br/>FTS5"]
+            SEARCH_GR --> VALIDATE_M["validate_matches()<br/>LLM structured_predict()"]
+            SEARCH_WIKI --> VALIDATE_M
+            VALIDATE_M --> AGG["aggregate_results()"]
+            AGG -->|"not_found &<br/>retries < 3"| GEN_Q
+            AGG --> WF_OUT["Return match"]
         end
 
-        CIT_WORKFLOW --> WF_INNER
-        WF_INNER --> FALLBACK_CHECK{"match_type ==<br/>not_found / unknown<br/>/ error ?"}
-        FALLBACK_CHECK -->|"yes"| WEB_FALLBACK["resolve_citation_fallback()<br/>(metadata_enricher.py)<br/>LLM prompt with source context:<br/>source_title, source_year,<br/>citation title/author/contexts<br/>→ JSON: match_type + metadata<br/>generates web_ synthetic ID<br/>via md5 hash if book match"]
-        FALLBACK_CHECK -->|"no: book or person<br/>already resolved"| ENRICH_STEP
+        CIT_WORKFLOW --> WF
+        WF --> FB_CHECK{"not_found?"}
+        FB_CHECK -->|"yes"| FALLBACK["LLM Fallback<br/>resolve_citation_fallback()"]
+        FB_CHECK -->|"no"| ENRICH_S
 
-        WEB_FALLBACK --> VALIDATE_FB_DATES["🛡️ validate_dates()<br/>on fallback metadata<br/>birth_year / death_year<br/>before returning from<br/>resolve_citation_fallback()"]
-        VALIDATE_FB_DATES -->|"book or person<br/>(corrected dates)"| ENRICH_STEP
-        VALIDATE_FB_DATES -->|"still not_found"| ENRICH_STEP
+        FALLBACK --> ENRICH_S
 
-        subgraph ENRICHMENT["Metadata Enrichment  (metadata_enricher.py)"]
-            ENRICH_STEP["Enrich resolved citation<br/>skip enricher calls if<br/>fallback already provided data"]
-
-            ENRICH_STEP -->|"need original_year"| ENRICH_BOOK["enrich_book(book_id, title, author)<br/>4-source cascade:<br/>1. Cache: dates_cache[book_id]<br/>2. Goodreads scraper:<br/>   get_original_publication_date()<br/>   handles 'BC' string → negative int<br/>   skips web_ and manual_run IDs<br/>3. Wikipedia web:<br/>   wiki.get_book_info(title)<br/>   parse year from date strings<br/>4. LLM fallback:<br/>   _lookup_book_year(title, author)<br/>   regex extract -?\\d{3,4}<br/>→ caches to dates_updates[book_id]"]
-
-            ENRICH_STEP -->|"need birth/death"| ENRICH_AUTHOR["enrich_author(author_name)<br/>4-source cascade + validation"]
-            ENRICH_AUTHOR --> EA_CACHE{"authors_cache<br/>or authors_updates<br/>has author_name?"}
-            EA_CACHE -->|"hit"| EA_CACHED["Return cached meta dict<br/>⚠️ entries cached BEFORE<br/>validate_dates() was added<br/>are NOT retroactively fixed.<br/>Use scripts/fix_metadata_errors.py<br/>to clean old cache entries."]
-            EA_CACHE -->|"miss"| EA_WIKI_DB["Source 2: Local Wiki DB<br/>wiki_catalog.find_people(<br/>  name=author_name, limit=1)<br/>→ birth_year, death_year,<br/>  canonical_name from title field"]
-            EA_WIKI_DB -->|"found"| EA_CHOKEPOINT
-            EA_WIKI_DB -->|"miss or error"| EA_WIKI_WEB["Source 3: Wikipedia Web Scraper<br/>wiki.get_person_dates(author_name)<br/>→ parse 'born'/'died' strings<br/>regex \\d{3,4} for year extraction<br/>detect BC/BCE suffix → negate year<br/>skip if response has 'error' key<br/>or raw HTML dump >500 chars"]
-            EA_WIKI_WEB -->|"found"| EA_CHOKEPOINT
-            EA_WIKI_WEB -->|"miss or error"| EA_LLM["Source 4: LLM Fallback<br/>_lookup_author_bio(name)<br/>→ JSON: {birth_year, death_year,<br/>  main_genre, nationality}<br/>strips markdown code fences"]
-            EA_LLM --> EA_LLM_VALIDATE["🛡️ validate_dates()<br/>on LLM bio response<br/>BEFORE returning to<br/>enrich_author() caller<br/>⚠️ LLM path is validated<br/>TWICE: here + chokepoint"]
-            EA_LLM_VALIDATE --> EA_CHOKEPOINT
-
-            EA_CHOKEPOINT["🛡️ validate_dates() — CHOKEPOINT<br/>runs on ALL non-cached results<br/>before cache write. Checks:<br/>• birth>0, death<0, plausible → flip death sign<br/>• birth<0, death>0, plausible → flip birth sign<br/>• both<0, death < birth → flip both if plausible, else null<br/>• birth>0, death<0, implausible → null death<br/>• BC-to-AD: birth<0, death>0,<br/>  abs(birth)+death < 120 → keep (legit BC person)<br/>  else → null birth<br/>• birth>death, both>0 → null both (wrong person)<br/>• lifespan > 200 years → null both (wrong person)<br/>corrections logged as WARNING"]
-            EA_CHOKEPOINT --> EA_CACHE_WRITE["Cache write:<br/>authors_updates[name] = meta<br/>authors_cache[name] = meta<br/>(in-memory, flushed later<br/>by enricher.save())"]
-            EA_CACHE_WRITE --> EA_MERGE_WIKI["Merge birth/death into<br/>wiki_match / target_person<br/>only if not already present"]
-
-            ENRICH_BOOK --> BUILD_EDGE_PREP
-            EA_CACHED --> BUILD_EDGE_PREP
-            EA_MERGE_WIKI --> BUILD_EDGE_PREP
-            BUILD_EDGE_PREP["metadata.update(enrichment)<br/>merge original_year +<br/>author_meta into metadata"]
+        subgraph ENR["Metadata Enrichment"]
+            ENRICH_S["Enrich citation"]
+            ENRICH_S --> E_BOOK["enrich_book()<br/>Cache → Goodreads scraper →<br/>Wikipedia → LLM"]
+            ENRICH_S --> E_AUTH["enrich_author()<br/>Cache → Local Wiki DB →<br/>Wikipedia web → LLM<br/>→ validate_dates()"]
+            E_BOOK --> BUILD
+            E_AUTH --> BUILD
+            BUILD["build_result_dict()"]
         end
-
-        BUILD_EDGE["Build result_dict:<br/>{raw: citation,<br/> goodreads_match: metadata or null,<br/> wikipedia_match: wiki_match,<br/> edge: {target_type,<br/>  target_book_id,<br/>  target_author_ids[],<br/>  target_person: wiki_match}}"]
-        BUILD_EDGE_PREP --> BUILD_EDGE
 
         CACHE_RESULT --> RESULTS
-        BUILD_EDGE --> ADD_AUTHOR_CACHE["_add_to_author_cache()<br/>cache by _normalize_author(name)<br/>also cache bare last name<br/>for fuzzy matching later<br/>(e.g. 'Plutarch' from<br/>'Lucius Mestrius Plutarch')"]
-        ADD_AUTHOR_CACHE --> RESULTS["Append to results[]"]
-        RESULTS -->|"every 5 results"| CHECKPOINT[("💾 .checkpoint.json<br/>{source: meta,<br/>citations: results,<br/>complete: false}")]
-
-        RESULTS --> STATS_REPORT["Print resolution summary:<br/>total, cache_hits,<br/>workflow_success (% rate),<br/>not_found, errors,<br/>fallback_triggered/success,<br/>enrichment_success"]
-
-        STATS_REPORT --> POST_DEDUP["🔀 _dedup_resolved_citations(results)<br/>POST-RESOLUTION DEDUP<br/>catches duplicates that survive<br/>Stage 2 preprocessing because<br/>they only become identical after<br/>Goodreads/Wikipedia resolution.<br/><br/>1. Group by (norm_author, norm_title):<br/>   _normalize_author(): strip accents,<br/>   lowercase, remove ./comma,<br/>   strip 'St.'/'Saint' prefix<br/>   _normalize_title(): lowercase,<br/>   strip articles (the/a/an/de/<br/>   les/la/le/il/el), rm punctuation<br/>2. Skip groups with < 2 entries<br/>   or all same book_id<br/>3. Pick keeper per group:<br/>   prefer real GR ID over web_ prefix<br/>   (_is_real_gr_id check)<br/>   if tie: prefer more raw.count<br/>4. Merge into keeper:<br/>   contexts[] (deduplicated via set)<br/>   commentaries[] (deduplicated)<br/>   count = sum of all counts<br/>5. Remove merged duplicates<br/>6. Log each merge + total count"]
-
-        POST_DEDUP --> SAVE_ENRICHER["enricher.save()<br/>flush dates_updates →<br/>  dates_json (disk)<br/>flush authors_updates →<br/>  author_meta_json (disk)<br/>both sorted + indented JSON"]
+        BUILD --> RESULTS["Append to results"]
+        RESULTS -->|"every 5"| CKPT[("checkpoint.json")]
+        RESULTS --> DEDUP_POST["dedup_resolved_citations()"]
+        DEDUP_POST --> SAVE["enricher.save()<br/>→ JSON + SQL"]
     end
 
-    SAVE_ENRICHER --> FINAL_OUT[/"final_citations_metadata_goodreads/<br/>BookID.json<br/>{source: {title, authors,<br/>publication_year, author_metadata},<br/>citations: [{raw, goodreads_match,<br/>wikipedia_match, edge}]}<br/>dates validated, duplicates merged"/]
+    SAVE --> FINAL[/"final_citations_metadata_goodreads/<br/>BookID.json"/]
+    FINAL --> REGISTER
 
-    FINAL_OUT --> CLEANUP["Remove .checkpoint.json<br/>(only on successful completion)"]
-    CLEANUP --> REGISTER
-
-    %% ── Frontend Registration ─────────────────────────────
-    subgraph FRONTEND["Frontend"]
-        REGISTER["register_dataset.py<br/>copy JSONs to frontend/data/<br/>create manifest.json listing files"]
-        REGISTER --> DATASETS_JSON[/"datasets.json<br/>{name, path, covers[]}"/]
-        REGISTER --> MANIFEST[/"data/library_name/manifest.json<br/>['book1.json', 'book2.json']"/]
-        MANIFEST --> D3["D3.js Visualization<br/>index.html<br/>loadDataset → processData → render"]
-        DATASETS_JSON --> D3
+    subgraph FE["Frontend"]
+        REGISTER["register_dataset.py"]
+        REGISTER --> D3["D3.js Visualization"]
     end
-
-    %% ── Maintenance Scripts (post-hoc) ────────────────────
-    FINAL_OUT -.->|"retroactive fix<br/>for old data"| MAINT_FIX["scripts/fix_metadata_errors.py<br/>applies same validate_dates() logic<br/>to authors_metadata.json +<br/>all frontend JSON files<br/>--dry-run to preview"]
-    FINAL_OUT -.->|"retroactive dedup<br/>for old data"| MAINT_DEDUP["scripts/dedup_citations.py<br/>applies same dedup logic<br/>to frontend JSON files<br/>--dry-run to preview"]
 
     %% ── Styling ───────────────────────────────────────────
     classDef stage fill:#1a1a2e,stroke:#d4a574,color:#e8e6e3
@@ -175,16 +121,102 @@ flowchart TD
     classDef llm fill:#2d1b3d,stroke:#b48ead,color:#e8e6e3
     classDef db fill:#1b2d2a,stroke:#a3be8c,color:#e8e6e3
     classDef checkpoint fill:#2d2a1b,stroke:#ebcb8b,color:#e8e6e3
-    classDef validation fill:#2d1b1b,stroke:#bf616a,color:#e8e6e3
-    classDef maintenance fill:#1b1b2d,stroke:#88c0d0,color:#c9d1d9,stroke-dasharray: 5 5
 
-    class STAGE0,STAGE1,STAGE2,STAGE3,STAGE4 stage
-    class INPUT,RAW_OUT,PRE_OUT,VAL_OUT,FINAL_OUT,ENRICHED_META io
-    class PARALLEL_LLM,VAL_LLM,LLM_SOURCE,GEN_Q,VALIDATE_GR,VALIDATE_WIKI,WEB_FALLBACK,EA_LLM llm
-    class GR_LOOKUP,SEARCH_GR,SEARCH_WIKI,EA_WIKI_DB db
-    class CHECKPOINT checkpoint
-    class VALIDATE_FB_DATES,EA_LLM_VALIDATE,EA_CHOKEPOINT,POST_DEDUP validation
-    class MAINT_FIX,MAINT_DEDUP maintenance
+    class STAGE0,STAGE1,STAGE2,STAGE3 stage
+    class INPUT,RAW_OUT,CLEANED_OUT,FINAL,ENRICHED_META io
+    class PARALLEL_LLM,VAL_LLM,LLM_SOURCE,GEN_Q,VALIDATE_M,FALLBACK llm
+    class GR_LOOKUP,SEARCH_GR,SEARCH_WIKI db
+    class CKPT checkpoint
+```
+
+## Data Architecture
+
+All persistent data lives in `datasets/`. The pipeline reads from these at startup and writes back enriched results at the end of each run. JSON files are the primary format; SQL tables mirror them for fast querying.
+
+```mermaid
+flowchart LR
+    %% ── Nodes ─────────────────────────────────────────────
+    subgraph DATASETS["datasets/"]
+        direction TB
+
+        subgraph GR_DATA["Goodreads Corpus  (~32 GB)"]
+            GR_JSON[("goodreads_books.json<br/>9.2 GB · JSON lines<br/>~2.4M books")]
+            GR_AUTHORS_JSON[("goodreads_book_authors.json<br/>105 MB · JSON lines<br/>author_id → name, ratings")]
+            GR_PARQUET[("goodreads_books.parquet<br/>2.3 GB · columnar<br/>same data, fast analytics")]
+            BOOKS_DB[("books_index.db<br/>20 GB · SQLite<br/>FTS5 index + books table")]
+        end
+
+        subgraph WIKI_DATA["Wikipedia Corpus  (~2.7 GB)"]
+            WIKI_DB[("wiki_people_index.db<br/>2.7 GB · SQLite<br/>FTS5 index of people<br/>+ author_overrides table")]
+        end
+
+        subgraph ENRICHMENT["Enrichment Cache  (grows each run)"]
+            DATES_JSON[("original_publication_dates.json<br/>71 KB · {book_id → year}<br/>3,655 entries")]
+            AUTHORS_META[("authors_metadata.json<br/>725 KB · {name → bio}<br/>5,254 entries")]
+            ALIASES_JSON[("author_aliases.json<br/>42 KB · {canonical → variants}<br/>hand-curated")]
+        end
+    end
+
+    %% ── Pipeline reads ────────────────────────────────────
+    subgraph PIPELINE["Pipeline Components"]
+        direction TB
+        CATALOG["SQLiteGoodreadsCatalog<br/>(bibliography_tool.py)"]
+        WIKI_CAT["SQLiteWikiPeopleIndex<br/>(bibliography_tool.py)"]
+        GR_AUTH_CAT["GoodreadsAuthorCatalog<br/>(bibliography_tool.py)"]
+        DET_Q["DeterministicQueryGenerator<br/>(deterministic_queries.py)"]
+        ALIAS_REG["AuthorAliasRegistry<br/>(author_aliases.py)"]
+        ENRICHER["MetadataEnricher<br/>(metadata_enricher.py)"]
+    end
+
+    subgraph SQL_TABLES["SQL Tables (inside DBs)"]
+        direction TB
+        BOOKS_FTS["books_fts<br/>FTS5: title, authors, data"]
+        BOOKS_TBL["books<br/>book_id, data, original_publication_year"]
+        PUB_DATES_TBL["publication_dates<br/>book_id, year, source"]
+        PEOPLE_FTS["people_fts<br/>FTS5: title, data"]
+        OVERRIDES_TBL["author_overrides<br/>name, birth/death, genre, nationality"]
+    end
+
+    %% ── Build-time connections ────────────────────────────
+    GR_JSON -.->|"build_goodreads_index.py<br/>(one-time)"| BOOKS_DB
+    GR_AUTHORS_JSON -.->|"denormalized into"| BOOKS_DB
+
+    %% ── DB contains tables ───────────────────────────────
+    BOOKS_DB --- BOOKS_FTS
+    BOOKS_DB --- BOOKS_TBL
+    BOOKS_DB --- PUB_DATES_TBL
+    WIKI_DB --- PEOPLE_FTS
+    WIKI_DB --- OVERRIDES_TBL
+
+    %% ── Runtime reads ─────────────────────────────────────
+    BOOKS_FTS -->|"FTS5 MATCH"| CATALOG
+    BOOKS_TBL -->|"book_id lookup"| CATALOG
+    PUB_DATES_TBL -->|"date lookup"| ENRICHER
+    PEOPLE_FTS -->|"FTS5 MATCH"| WIKI_CAT
+    OVERRIDES_TBL -->|"birth/death override"| WIKI_CAT
+    GR_AUTHORS_JSON -->|"author search"| GR_AUTH_CAT
+    ALIASES_JSON -->|"canonical + variants"| ALIAS_REG
+    ALIASES_JSON -->|"expand queries"| DET_Q
+    DATES_JSON -->|"date cache (read)"| ENRICHER
+    AUTHORS_META -->|"author cache (read)"| ENRICHER
+
+    %% ── Runtime writes (enricher.save()) ──────────────────
+    ENRICHER -->|"new dates"| DATES_JSON
+    ENRICHER -->|"new dates"| PUB_DATES_TBL
+    ENRICHER -->|"new author bios"| AUTHORS_META
+    ENRICHER -->|"new overrides"| OVERRIDES_TBL
+
+    %% ── Styling ───────────────────────────────────────────
+    classDef db fill:#1b2d2a,stroke:#a3be8c,color:#e8e6e3
+    classDef json fill:#2d2a1b,stroke:#ebcb8b,color:#e8e6e3
+    classDef code fill:#1a1a2e,stroke:#d4a574,color:#e8e6e3
+    classDef sql fill:#1b1b2d,stroke:#88c0d0,color:#c9d1d9
+    classDef corpus fill:#0d1117,stroke:#4a6fa5,color:#c9d1d9
+
+    class BOOKS_DB,WIKI_DB db
+    class DATES_JSON,AUTHORS_META,ALIASES_JSON,GR_JSON,GR_AUTHORS_JSON,GR_PARQUET json
+    class CATALOG,WIKI_CAT,GR_AUTH_CAT,DET_Q,ALIAS_REG,ENRICHER code
+    class BOOKS_FTS,BOOKS_TBL,PUB_DATES_TBL,PEOPLE_FTS,OVERRIDES_TBL sql
 ```
 
 ## Setup
@@ -192,7 +224,7 @@ flowchart TD
 ### Prerequisites
 *   Python 3.10+
 *   `uv` (Universal Python Package Manager)
-*   LLM API Provider (e.g., OpenRouter)
+*   OpenRouter API key
 
 ### Installation
 
@@ -207,7 +239,6 @@ flowchart TD
     Create a `.env` file:
     ```bash
     OPENROUTER_API_KEY="sk-..."
-    OPENROUTER_BASE_URL="https://openrouter.ai/api/v1"
     ```
 
 ---
@@ -283,22 +314,13 @@ uv run python run_single_file.py evaluation/DFW-PLURIBUS.txt \
 
 ---
 
-### Workflow 3: Folder Batch (Quick)
+### Workflow 3: Calibre Pipeline (Direct)
 
-Process any folder of `.txt` files:
+Process a Calibre library directly (reads `metadata.db` for Goodreads IDs):
 
 ```bash
-uv run python run_folder.py datasets/test_books/ --workers 5
+uv run python calibre_citations_pipeline.py /path/to/calibre/library --workers 5
 ```
-
-**Options:**
-| Flag | Description |
-|------|-------------|
-| `--workers N` | Parallel file processing (default: 1) |
-| `--dry-run` | Preview without processing |
-| `--verbose` | Debug logging to console |
-| `--pattern "*.md"` | Change file pattern |
-| `--model "gpt-4o"` | Use different LLM |
 
 ---
 
@@ -309,17 +331,79 @@ After running the pipeline:
 ```
 outputs/folder_runs/run_YYYYMMDD-HHMMSS/
 ├── pipeline.log                              # Full debug log
-├── raw_extracted_citations/                  # Step 1: Raw LLM output
-│   └── Book_Title_12345.json
-├── preprocessed_extracted_citations/         # Step 2: Cleaned
-│   └── Book_Title_12345.json
-└── final_citations_metadata_goodreads/       # Step 3: Final (for frontend)
-    └── Book_Title_12345.json
+├── raw_extracted_citations/                  # Stage 1: Raw LLM output
+│   └── 12345.json
+├── cleaned_citations/                        # Stage 2: Cleaned + validated
+│   └── 12345.json
+└── final_citations_metadata_goodreads/       # Stage 3: Resolved (for frontend)
+    └── 12345.json
 ```
 
 ### Checkpoint Recovery
 
-If the pipeline is interrupted, a `.checkpoint.json` file is saved. Simply re-run the same command to resume from where it left off.
+If the pipeline is interrupted, a `.checkpoint.json` file is saved in the final output directory. Re-run the same command to resume from where it left off.
+
+---
+
+## Project Structure
+
+```
+bookgraph-revisited/
+├── run_single_file.py              # CLI: single book
+├── run_folder.py                   # CLI: batch folder
+├── calibre_citations_pipeline.py   # CLI: Calibre library
+│
+├── lib/
+│   ├── main_pipeline.py            # BookPipeline orchestrator (4 stages)
+│   ├── cli_common.py               # Shared CLI args, config builder, logging
+│   ├── llm_client.py               # LLMConfig dataclass, OpenRouter client
+│   │
+│   ├── extract_citations.py        # Stage 1: LLM extraction
+│   ├── clean_citations.py          # Stage 2: heuristic + LLM cleaning
+│   ├── metadata_enricher.py        # Enrichment: dates + author bios
+│   │
+│   ├── text_utils.py               # Shared normalization & fuzzy matching
+│   ├── author_aliases.py           # AuthorAliasRegistry
+│   ├── checkpoint.py               # CheckpointManager (crash recovery)
+│   ├── author_cache.py             # Per-book author result cache
+│   ├── dedup.py                    # Post-resolution deduplication
+│   ├── edge_builder.py             # Build structured result dicts
+│   │
+│   ├── goodreads_scraper.py        # Web scraper for publication dates
+│   ├── wikipedia_agent.py          # Wikipedia lookup for dates/bios
+│   │
+│   └── bibliography_agent/
+│       ├── citation_workflow.py    # LlamaIndex Workflow (resolution)
+│       ├── deterministic_queries.py # Rule-based query generation
+│       ├── bibliography_tool.py    # Goodreads/Wikipedia FTS5 catalogs
+│       └── events.py               # Workflow event types
+│
+├── datasets/                       # Core data (see Data Architecture)
+│   ├── books_index.db              # Goodreads FTS5 index (20 GB)
+│   ├── wiki_people_index.db        # Wikipedia people FTS5 (2.7 GB)
+│   ├── goodreads_books.json        # Raw Goodreads dump (9.2 GB)
+│   ├── goodreads_book_authors.json # Author metadata (105 MB)
+│   ├── author_aliases.json         # Name variant mappings
+│   ├── authors_metadata.json       # Enriched author bios (grows)
+│   └── original_publication_dates.json  # Publication dates (grows)
+│
+├── frontend/
+│   ├── index.html                  # D3.js visualization
+│   ├── js/                         # Modular JS (app, renderer, etc.)
+│   ├── css/main.css                # Styling
+│   └── data/                       # Registered datasets
+│
+├── scripts/                        # Utilities, fixes, scanners
+│   ├── register_dataset.py         # Register output for frontend
+│   ├── build_goodreads_index.py    # Build books_index.db
+│   ├── build_wiki_people_index.py  # Build wiki_people_index.db
+│   └── ...                         # 60+ maintenance scripts
+│
+└── .agent/                         # AI agent skills & workflows
+    ├── skills/calibre_query/       # Query Calibre library
+    ├── skills/goodreads_lookup/    # Lookup Goodreads IDs
+    └── workflows/                  # Step-by-step workflow guides
+```
 
 ---
 
@@ -350,24 +434,22 @@ If the pipeline is interrupted, a `.checkpoint.json` file is saved. Simply re-ru
    }
    ```
 
-### Adding Book Covers
-
-1. Create `frontend/data/my_dataset/covers/`
-2. Add images named like: `book_title_slugified.jpg`
-3. Reference in `datasets.json` `"covers"` array
-
 ---
 
 ## Configuration
 
-### Pipeline Config (`run_folder.py`)
+### Pipeline Config
 
 | Option | Default | Description |
 |--------|---------|-------------|
 | `--workers` | 1 | Parallel file processing |
 | `--chunk-size` | 50 | Sentences per extraction chunk |
-| `--model` | deepseek/deepseek-v3.2 | LLM model ID |
+| `--model` | deepseek/deepseek-v3.2 | LLM model ID (via OpenRouter) |
 | `--base-url` | OpenRouter | API endpoint |
+| `--agent-concurrency` | 20 | Concurrent citation resolution workflows |
+| `--extract-concurrency` | 20 | Concurrent extraction requests |
+| `--force-llm-queries` | false | Bypass deterministic query generation |
+| `--verbose` | false | Debug logging |
 
 ### Author Aliases (`datasets/author_aliases.json`)
 
@@ -389,17 +471,28 @@ Maps variant spellings to canonical names for better matching:
 
 | File | Purpose |
 |------|---------|
-| `run_folder.py` | Main CLI for batch processing |
-| `lib/main_pipeline.py` | Pipeline orchestration, checkpointing |
-| `lib/extract_citations.py` | LLM extraction prompts |
-| `lib/bibliography_agent/citation_workflow.py` | Resolution agent |
-| `lib/metadata_enricher.py` | Goodreads/Wikipedia enrichment |
-| `frontend/index.html` | D3.js visualization (single file) |
-| `scripts/register_dataset.py` | Frontend data registration |
+| `lib/main_pipeline.py` | Pipeline orchestration, config, stage routing |
+| `lib/cli_common.py` | Shared CLI utilities (all 3 entry points use this) |
+| `lib/llm_client.py` | LLMConfig + OpenRouter client factories |
+| `lib/extract_citations.py` | LLM extraction prompts & chunking |
+| `lib/clean_citations.py` | Combined heuristic + LLM citation cleaning |
+| `lib/bibliography_agent/citation_workflow.py` | LlamaIndex resolution agent |
+| `lib/bibliography_agent/bibliography_tool.py` | Goodreads/Wikipedia FTS5 catalogs |
+| `lib/metadata_enricher.py` | 4-source enrichment cascade + SQL sync |
+| `lib/text_utils.py` | Normalization: authors, titles, fuzzy matching |
+| `lib/author_aliases.py` | AuthorAliasRegistry (canonical ↔ variants) |
+| `lib/checkpoint.py` | CheckpointManager for crash recovery |
+| `lib/dedup.py` | Post-resolution dedup (merge editions) |
+
+### Running Tests
+
+```bash
+uv run pytest lib/bibliography_agent/tests/ -x -q
+```
 
 ### Frontend Customization
 
-Edit CSS variables in `frontend/index.html`:
+Edit CSS variables in `frontend/css/main.css`:
 
 ```css
 :root {
@@ -418,7 +511,7 @@ Edit CSS variables in `frontend/index.html`:
 Add Goodreads IDs to filenames: `Book_Title_12345.txt`
 
 ### Pipeline rate limited
-Reduce workers: `--workers 2`
+Reduce concurrency: `--agent-concurrency 5 --extract-concurrency 5`
 
 ### Empty frontend graph
 1. Check `manifest.json` lists your files
