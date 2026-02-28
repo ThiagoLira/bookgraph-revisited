@@ -12,7 +12,7 @@ logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
 sys.path.append(os.getcwd())
 
 from lib.bibliography_agent.citation_workflow import CitationWorkflow
-from lib.bibliography_agent.agent import build_llm
+from lib.llm_client import LLMConfig, build_llama_llm
 
 async def run_real_test():
     input_file = Path("/Users/thlira/Documents/bookgraph-revisited/calibre_outputs/calibre_bookgraph/preprocessed_extracted_citations/61535.json")
@@ -50,7 +50,7 @@ async def run_real_test():
     model_id = "deepseek/deepseek-v3.2"
 
     print(f"Initializing Workflow with model: {model_id} via {base_url}")
-    llm = build_llm(model=model_id, api_key=api_key, base_url=base_url)
+    llm = build_llama_llm(LLMConfig(model=model_id, api_key=api_key, base_url=base_url))
     
     workflow = CitationWorkflow(
         books_db_path=books_db,

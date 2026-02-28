@@ -1,12 +1,13 @@
 import json
 import asyncio
 import re
+import sqlite3
 from pathlib import Path
 from typing import Dict, Any, Optional, TYPE_CHECKING
 import logging
 
 from llama_index.core.llms import LLM
-from lib.bibliography_agent.llm_utils import build_llm
+from lib.llm_client import LLMConfig, build_llama_llm
 from lib.goodreads_scraper import get_original_publication_date
 from lib.wikipedia_agent import WikipediaLookup
 
@@ -58,12 +59,28 @@ def validate_dates(birth, death):
     return birth, death
 
 
+def _standardize_author_meta(meta: dict) -> dict:
+    """Ensure author metadata follows the standard schema."""
+    result = {
+        "birth_year": meta.get("birth_year"),
+        "death_year": meta.get("death_year"),
+        "main_genre": meta.get("main_genre"),
+        "nationality": meta.get("nationality"),
+    }
+    if meta.get("canonical_name"):
+        result["canonical_name"] = meta["canonical_name"]
+    elif meta.get("title"):
+        result["canonical_name"] = meta["title"]
+    return result
+
+
 class MetadataEnricher:
     def __init__(
         self,
         dates_path: str,
         authors_path: str,
         legacy_dates_path: Optional[str] = None,
+        books_db: Optional[str] = None,
         llm: Optional[LLM] = None,
         auto_update: bool = True,
         wiki_catalog: Optional["SQLiteWikiPeopleIndex"] = None,
@@ -71,19 +88,33 @@ class MetadataEnricher:
         self.dates_path = Path(dates_path)
         self.authors_path = Path(authors_path)
         self.auto_update = auto_update
-        self.llm = llm or build_llm()
+        self.llm = llm or build_llama_llm(LLMConfig())
 
         # Local wiki people index (fast, offline)
         self.wiki_catalog = wiki_catalog
+
+        # Connect to books_index.db for publication_dates table
+        self._books_conn: Optional[sqlite3.Connection] = None
+        if books_db and Path(books_db).exists():
+            try:
+                self._books_conn = sqlite3.connect(books_db)
+                self._books_conn.execute("SELECT 1 FROM publication_dates LIMIT 1")
+            except sqlite3.OperationalError:
+                self._books_conn = None
 
         # Load legacy cache first (Read-Only layer)
         self.dates_cache = {}
         if legacy_dates_path:
              self.dates_cache = self._load_json(Path(legacy_dates_path))
 
-        # Load local cache (overrides legacy if collision)
+        # Load local JSON cache (overrides legacy if collision)
         local_dates = self._load_json(self.dates_path)
         self.dates_cache.update(local_dates)
+
+        # Load dates from SQL table (overrides JSON if collision — SQL is the freshest source)
+        if self._books_conn:
+            sql_dates = self._load_sql_dates()
+            self.dates_cache.update(sql_dates)
 
         self.authors_cache = self._load_json(self.authors_path)
 
@@ -94,7 +125,7 @@ class MetadataEnricher:
         # Wiki Lookup (web scraper - slow, online)
         self.wiki = WikipediaLookup()
 
-        logger.info(f"[enricher] Initialized. Cache sizes: dates={len(self.dates_cache)}, authors={len(self.authors_cache)}, local_wiki={'yes' if wiki_catalog else 'no'}")
+        logger.info(f"[enricher] Initialized. Cache sizes: dates={len(self.dates_cache)}, authors={len(self.authors_cache)}, sql_dates={'yes' if self._books_conn else 'no'}, local_wiki={'yes' if wiki_catalog else 'no'}")
 
     def _load_json(self, path: Path) -> Dict[str, Any]:
         if not path.exists():
@@ -104,13 +135,39 @@ class MetadataEnricher:
         except Exception:
             return {}
 
+    def _load_sql_dates(self) -> Dict[str, int]:
+        """Load publication dates from the SQL table."""
+        if not self._books_conn:
+            return {}
+        try:
+            cur = self._books_conn.execute("SELECT book_id, year FROM publication_dates")
+            return {str(row[0]): row[1] for row in cur.fetchall()}
+        except sqlite3.OperationalError:
+            return {}
+
     def save(self):
-        """Flush updates to disk."""
+        """Flush updates to disk (JSON files + SQL tables)."""
         if self.dates_updates and self.auto_update:
             self.dates_cache.update(self.dates_updates)
             self.dates_path.parent.mkdir(parents=True, exist_ok=True)
             self.dates_path.write_text(json.dumps(self.dates_cache, indent=2, sort_keys=True))
             logger.info(f"[enricher] Saved {len(self.dates_updates)} date updates to {self.dates_path}")
+
+            # Also sync to SQL publication_dates table
+            if self._books_conn:
+                sql_count = 0
+                for book_id, year in self.dates_updates.items():
+                    if year is not None:
+                        self._books_conn.execute(
+                            "INSERT INTO publication_dates (book_id, year, source) VALUES (?, ?, ?) "
+                            "ON CONFLICT(book_id) DO UPDATE SET year=excluded.year, source=excluded.source",
+                            (str(book_id), int(year), "enricher"),
+                        )
+                        sql_count += 1
+                self._books_conn.commit()
+                if sql_count:
+                    logger.info(f"[enricher] Synced {sql_count} publication dates to SQL table")
+
             self.dates_updates = {}
 
         if self.authors_updates and self.auto_update:
@@ -118,6 +175,23 @@ class MetadataEnricher:
             self.authors_path.parent.mkdir(parents=True, exist_ok=True)
             self.authors_path.write_text(json.dumps(self.authors_cache, indent=2, sort_keys=True))
             logger.info(f"[enricher] Saved {len(self.authors_updates)} author updates to {self.authors_path}")
+
+            # Also sync to SQL overrides table
+            if self.wiki_catalog:
+                sql_count = 0
+                for name, meta in self.authors_updates.items():
+                    self.wiki_catalog.upsert_override(
+                        name=name,
+                        birth_year=meta.get("birth_year"),
+                        death_year=meta.get("death_year"),
+                        main_genre=meta.get("main_genre"),
+                        nationality=meta.get("nationality"),
+                        canonical_name=meta.get("canonical_name"),
+                    )
+                    sql_count += 1
+                if sql_count:
+                    logger.info(f"[enricher] Synced {sql_count} author overrides to SQL table")
+
             self.authors_updates = {}
 
     async def enrich_book(self, book_id: str, title: str, author: str) -> int | None:
@@ -279,15 +353,17 @@ class MetadataEnricher:
                 meta["birth_year"] = b
                 meta["death_year"] = d
 
-        # Cache result
+        # Cache result with standardized schema
         if meta:
-            self.authors_updates[author_name] = meta
-            self.authors_cache[author_name] = meta
+            std = _standardize_author_meta(meta)
+            self.authors_updates[author_name] = std
+            self.authors_cache[author_name] = std
         else:
             logger.warning(f"[enricher] Failed to find bio for: {author_name}")
             # Cache negative result to avoid repeated lookups
-            self.authors_updates[author_name] = {}
-            self.authors_cache[author_name] = {}
+            neg = _standardize_author_meta({})
+            self.authors_updates[author_name] = neg
+            self.authors_cache[author_name] = neg
 
         return meta or {}
 

@@ -4,11 +4,14 @@ This document helps AI agents quickly understand how to work with BookGraph.
 
 ## Project Overview
 
-BookGraph extracts citations from books (who does the author reference?) and visualizes them as an interactive graph. The pipeline:
+BookGraph extracts citations from books (who does the author reference?) and visualizes them as an interactive graph. The pipeline has 4 stages:
 
+0. **Enrich** source book metadata (author, publication year)
 1. **Extract** citations from text using LLM
-2. **Resolve** citations against Goodreads/Wikipedia databases
-3. **Visualize** in a D3.js frontend
+2. **Clean** citations (heuristics + LLM validation, single stage)
+3. **Resolve** citations against Goodreads/Wikipedia, enrich, deduplicate
+
+All LLM calls go through **OpenRouter** (no local models).
 
 ---
 
@@ -24,6 +27,17 @@ uv run python run_folder.py <INPUT_FOLDER> --workers 5
 uv run python run_folder.py <INPUT_FOLDER> --dry-run
 ```
 
+### Process a single file
+```bash
+uv run python run_single_file.py path/to/book.txt \
+    --book-title "Title" --author "Author" --goodreads-id 12345
+```
+
+### Process a Calibre library directly
+```bash
+uv run python calibre_citations_pipeline.py /path/to/calibre/library
+```
+
 ### Register output for frontend visualization
 ```bash
 uv run python scripts/register_dataset.py <OUTPUT_DIR> --name "Display Name"
@@ -32,6 +46,11 @@ uv run python scripts/register_dataset.py <OUTPUT_DIR> --name "Display Name"
 ### Serve the frontend
 ```bash
 cd frontend && python -m http.server 8000
+```
+
+### Run tests
+```bash
+uv run pytest lib/bibliography_agent/tests/ -x -q
 ```
 
 ---
@@ -87,13 +106,87 @@ After running `run_folder.py`, outputs go to `outputs/folder_runs/run_YYYYMMDD-H
 ```
 outputs/folder_runs/run_20260128-123456/
 ├── pipeline.log                          # Full debug log
-├── raw_extracted_citations/              # Step 1: Raw LLM extraction
-│   └── Book_Title_12345.json
-├── preprocessed_extracted_citations/     # Step 2: Cleaned/deduplicated
-│   └── Book_Title_12345.json
-└── final_citations_metadata_goodreads/   # Step 3: Resolved with metadata
-    └── Book_Title_12345.json             # ← This is what the frontend uses
+├── raw_extracted_citations/              # Stage 1: Raw LLM extraction
+│   └── 12345.json
+├── cleaned_citations/                    # Stage 2: Cleaned + validated
+│   └── 12345.json
+└── final_citations_metadata_goodreads/   # Stage 3: Resolved with metadata
+    └── 12345.json                        #   ← This is what the frontend uses
 ```
+
+---
+
+## Code Architecture
+
+### Entry Points (all use `lib/cli_common.py` for shared config)
+
+| Script | Purpose |
+|--------|---------|
+| `run_single_file.py` | Single book processing |
+| `run_folder.py` | Batch folder processing with parallel workers |
+| `calibre_citations_pipeline.py` | Calibre library processing (reads metadata.db) |
+
+### Core Pipeline
+
+| Module | Purpose |
+|--------|---------|
+| `lib/main_pipeline.py` | `BookPipeline` + `PipelineConfig` — orchestrates 4 stages |
+| `lib/cli_common.py` | Shared CLI args, `build_config_from_args()`, `setup_logging()` |
+| `lib/llm_client.py` | `LLMConfig` dataclass, `build_llama_llm()`, `build_async_openai()` |
+
+### Stage 1: Extraction
+| Module | Purpose |
+|--------|---------|
+| `lib/extract_citations.py` | Chunk text, call LLM, parse structured citations |
+
+### Stage 2: Cleaning
+| Module | Purpose |
+|--------|---------|
+| `lib/clean_citations.py` | Heuristic filters + LLM validation (merged stage) |
+
+### Stage 3: Resolution & Enrichment
+| Module | Purpose |
+|--------|---------|
+| `lib/bibliography_agent/citation_workflow.py` | LlamaIndex Workflow: query → search → validate → aggregate |
+| `lib/bibliography_agent/deterministic_queries.py` | Rule-based query generation (attempt 0, no LLM) |
+| `lib/bibliography_agent/bibliography_tool.py` | `SQLiteGoodreadsCatalog`, `GoodreadsAuthorCatalog`, `SQLiteWikiPeopleIndex` |
+| `lib/bibliography_agent/events.py` | Workflow event types |
+| `lib/metadata_enricher.py` | 4-source cascade: cache → scraper → Wikipedia → LLM |
+| `lib/goodreads_scraper.py` | Web scraper for original publication dates |
+| `lib/wikipedia_agent.py` | Wikipedia lookup for dates and bios |
+
+### Shared Utilities
+| Module | Purpose |
+|--------|---------|
+| `lib/text_utils.py` | `normalize_author()`, `normalize_title()`, `fuzzy_ratio()`, `is_similar()` |
+| `lib/author_aliases.py` | `AuthorAliasRegistry`: canonical ↔ variants lookup |
+| `lib/checkpoint.py` | `CheckpointManager`: save/load/remove crash-recovery state |
+| `lib/author_cache.py` | `AuthorCache`: per-book cache for author-only citations |
+| `lib/dedup.py` | `dedup_resolved_citations()`: merge duplicate editions post-resolution |
+| `lib/edge_builder.py` | `build_result_dict()`: structured output with edge metadata |
+
+### Data Files
+
+| File | Size | Purpose | Read by | Written by |
+|------|------|---------|---------|------------|
+| `datasets/books_index.db` | 20 GB | Goodreads FTS5 index | `SQLiteGoodreadsCatalog` | `build_goodreads_index.py` (one-time) |
+| `datasets/wiki_people_index.db` | 2.7 GB | Wikipedia people FTS5 + `author_overrides` table | `SQLiteWikiPeopleIndex` | `build_wiki_people_index.py` + `MetadataEnricher.save()` |
+| `datasets/goodreads_books.json` | 9.2 GB | Raw Goodreads book catalog | Index builder | External (UCSD dataset) |
+| `datasets/goodreads_book_authors.json` | 105 MB | Author ID → name mapping | `GoodreadsAuthorCatalog` | External |
+| `datasets/author_aliases.json` | 42 KB | Name variants → canonical | `AuthorAliasRegistry`, `DeterministicQueryGenerator` | Hand-edited |
+| `datasets/authors_metadata.json` | 725 KB | Author bios (grows per run) | `MetadataEnricher` | `MetadataEnricher.save()` |
+| `datasets/original_publication_dates.json` | 71 KB | Book dates (grows per run) | `MetadataEnricher` | `MetadataEnricher.save()` |
+
+### SQL Tables Inside the DBs
+
+**`books_index.db`**:
+- `books_fts` — FTS5 virtual table (title, authors, book_id, data)
+- `books` — Regular table (book_id, data JSON, original_publication_year)
+- `publication_dates` — Enrichment cache (book_id, year, source)
+
+**`wiki_people_index.db`**:
+- `people_fts` — FTS5 virtual table (title, data JSON)
+- `author_overrides` — Birth/death/genre/nationality overrides (synced from authors_metadata.json)
 
 ---
 
@@ -115,47 +208,36 @@ This automatically:
 ### Option 2: Manual setup
 
 1. Create folder: `frontend/data/my_dataset/`
-
 2. Copy final JSON files there
-
 3. Create `manifest.json`:
 ```json
 ["book1.json", "book2.json"]
 ```
-
 4. Add to `frontend/datasets.json`:
 ```json
 {
     "name": "My Dataset",
     "path": "./data/my_dataset",
-    "covers": ["covers/book_cover.jpg"]  // optional
+    "covers": ["covers/book_cover.jpg"]
 }
 ```
-
-### Adding book covers
-
-1. Create `frontend/data/my_dataset/covers/`
-2. Add cover images (JPG/PNG)
-3. Name them like the book title slugified: `the_republic.jpg`
-4. Reference in `datasets.json` under `"covers"` array
 
 ---
 
 ## Frontend Architecture
 
-The frontend is a single-file D3.js application: `frontend/index.html`
+The frontend is a modular D3.js application under `frontend/`.
 
-### Key sections in index.html:
-
-| Lines (approx) | Section |
-|----------------|---------|
-| 1-700 | CSS styles and variables |
-| 700-720 | HTML structure |
-| 720-900 | Data loading and processing |
-| 900-1100 | D3 force simulation and rendering |
-| 1100-1250 | Focus mode (radial zoom view) |
-| 1250-1350 | Panel display (showPanel function) |
-| 1350-1450 | Search and keyboard handlers |
+### Key files:
+| File | Purpose |
+|------|---------|
+| `index.html` | HTML shell |
+| `js/app.js` | Main controller, UI state, data loading |
+| `js/renderer.js` | D3.js WebGL rendering |
+| `js/data.js` | Dataset loading and manifest management |
+| `js/interaction.js` | Mouse/keyboard handlers |
+| `js/layout.js` | Graph layout algorithms |
+| `css/main.css` | All styling |
 
 ### CSS variables (theming):
 ```css
@@ -164,15 +246,6 @@ The frontend is a single-file D3.js application: `frontend/index.html`
 --book-source: #c45c4a;   /* Red - source books */
 --book-cited: #4a6fa5;    /* Blue - cited books */
 ```
-
-### Key JavaScript functions:
-
-- `loadDataset(path)` - Loads and processes a dataset
-- `processData(records)` - Builds the graph from JSON
-- `enterFocusMode(node)` - Zoom into author's citation network
-- `exitFocusMode()` - Return to full view
-- `showPanel(node)` - Display book/author details in sidebar
-- `highlight(node)` - Highlight connected nodes on hover
 
 ### Data flow:
 ```
@@ -189,16 +262,14 @@ datasets.json → manifest.json → [book1.json, book2.json, ...] → processDat
 # 2. Rename files to include Goodreads IDs
 # 3. Run pipeline
 uv run python run_folder.py /path/to/txt/files --workers 5
-
 # 4. Register for frontend
 uv run python scripts/register_dataset.py outputs/folder_runs/run_* --name "My Books"
-
 # 5. View
 cd frontend && python -m http.server 8000
 ```
 
 ### Re-run a failed/interrupted pipeline
-The pipeline now has checkpointing. Just run the same command again - it will resume from the last checkpoint.
+Just run the same command again — the checkpoint system resumes from the last saved state.
 
 ### Debug a specific book's citations
 ```bash
@@ -210,48 +281,16 @@ uv run python run_single_file.py path/to/book.txt \
     --verbose
 ```
 
-### Modify frontend styling
-Edit CSS variables in `frontend/index.html` (lines 12-37) for colors/theming.
-
-### Add new citation card styling
-Look for `.citation-card` in the CSS section (~line 400-520).
-
----
-
-## Environment Setup
-
-### Required environment variables (.env file):
-```bash
-OPENROUTER_API_KEY=sk-or-...
-OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
-```
-
-### Key dependencies (managed by uv):
-- `llama-index` - Agent framework
-- `openai` - LLM API client
-- `pydantic` - Data validation
-- `tqdm` - Progress bars
-
-### Database files (in `datasets/`):
-- `goodreads_books.db` - SQLite index of Goodreads books
-- `wiki_people.db` - SQLite index of Wikipedia people
-- `author_aliases.json` - Maps variant spellings to canonical names
-
 ---
 
 ## Deploying to Static Website
 
-The frontend is also hosted on a Blot.im static website. When the user asks to deploy or update the live site, do the following:
+The frontend is hosted on a Blot.im static website. When the user asks to deploy or update the live site:
 
 ### Step 1: Copy the frontend files
 ```bash
-# Copy index.html
 cp frontend/index.html /home/thiago/repos/thiagolira/_projects/book_graph_2/index.html
-
-# Copy datasets.json
 cp frontend/datasets.json /home/thiago/repos/thiagolira/_projects/book_graph_2/datasets.json
-
-# Copy all data directories (citation JSONs, covers, etc.)
 for dir in $(ls frontend/data/); do
   cp -r "frontend/data/$dir" /home/thiago/repos/thiagolira/_projects/book_graph_2/data/
 done
@@ -259,7 +298,7 @@ done
 
 ### Step 2: Commit and push in the static site repo
 
-The remote is Blot.im which requires inline credentials (it doesn't support interactive auth). URL-encode the `@` in the email as `%40`:
+The remote is Blot.im which requires inline credentials. URL-encode the `@` in the email as `%40`:
 
 ```bash
 cd /home/thiago/repos/thiagolira
@@ -281,16 +320,6 @@ The user may ask you to "deploy", "push to live", or "update the website" — th
 ## Agent Skills & Workflows (.agent/)
 
 Before running pipeline commands manually, **always check `.agent/` for pre-built skills and workflows** that handle common tasks with proper defaults.
-
-### Discovering available skills
-
-```bash
-# List all skills (each has a SKILL.md with usage docs)
-ls .agent/skills/*/SKILL.md
-
-# List all workflows (step-by-step guides for multi-step tasks)
-ls .agent/workflows/
-```
 
 ### Available skills
 
@@ -321,6 +350,22 @@ ls .agent/workflows/
 
 ---
 
+## Environment Setup
+
+### Required environment variables (.env file):
+```bash
+OPENROUTER_API_KEY=sk-or-...
+```
+
+### Key dependencies (managed by uv):
+- `llama-index` - Agent framework for CitationWorkflow
+- `openai` - AsyncOpenAI client for extraction
+- `pydantic` - Data validation
+- `nltk` - Sentence tokenization
+- `tqdm` - Progress bars
+
+---
+
 ## Troubleshooting
 
 ### "No ID in filename" warnings
@@ -328,8 +373,8 @@ Add Goodreads IDs to filenames: `Book_Title_12345.txt`
 
 ### Pipeline hangs on a book
 Check `pipeline.log` for the specific error. Common issues:
-- Rate limiting (reduce `--workers`)
-- Timeout on large books (increase chunk size)
+- Rate limiting (reduce `--agent-concurrency`)
+- Timeout on large books (workflow timeout is 120s per citation)
 
 ### Frontend shows empty graph
 1. Check browser console for errors

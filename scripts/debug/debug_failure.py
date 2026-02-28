@@ -10,7 +10,7 @@ logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
 sys.path.append(os.getcwd())
 
 from lib.bibliography_agent.citation_workflow import CitationWorkflow
-from lib.bibliography_agent.agent import build_llm
+from lib.llm_client import LLMConfig, build_llama_llm
 
 async def run_debug_test():
     citation = {"title": "Of the Farm", "author": "John Updike"}
@@ -36,7 +36,7 @@ async def run_debug_test():
     api_key = os.environ.get("OPENROUTER_API_KEY")
     model_id = "deepseek/deepseek-v3.2"
 
-    llm = build_llm(model=model_id, api_key=api_key, base_url=base_url)
+    llm = build_llama_llm(LLMConfig(model=model_id, api_key=api_key, base_url=base_url))
     
     workflow = CitationWorkflow(
         books_db_path=books_db,

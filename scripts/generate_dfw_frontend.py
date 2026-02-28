@@ -12,8 +12,8 @@ from typing import Dict, Any
 
 from llama_index.core import Settings
 from lib.bibliography_agent.citation_workflow import CitationWorkflow
-from lib.bibliography_agent.llm_utils import build_llm
-from lib.metadata_enricher import MetadataEnricher, build_llm as build_enricher_llm
+from lib.llm_client import LLMConfig, build_llama_llm
+from lib.metadata_enricher import MetadataEnricher
 from lib.logging_config import setup_logging
 
 # Setup Logging
@@ -51,7 +51,7 @@ async def main():
     people_db = repo_root / "datasets/wiki_people_index.db"
     authors_json = repo_root / "datasets/goodreads_book_authors.json"
     
-    llm = build_llm(model=model, api_key=api_key, base_url=base_url)
+    llm = build_llama_llm(LLMConfig(model=model, api_key=api_key, base_url=base_url))
 
     # Init Workflow
     workflow = CitationWorkflow(
@@ -63,7 +63,7 @@ async def main():
     )
     
     # Init Enricher
-    enricher_llm = build_llm(model=model, api_key=api_key, base_url=base_url)
+    enricher_llm = build_llama_llm(LLMConfig(model=model, api_key=api_key, base_url=base_url))
     
     # Use temp paths to force live lookup
     dates_json = repo_root / "datasets/temp_dfw_dates.json"

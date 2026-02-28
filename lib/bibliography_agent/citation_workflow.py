@@ -3,7 +3,6 @@ import json
 import re
 import logging
 from typing import Any, Dict, List, Optional, Set, Union
-from difflib import SequenceMatcher
 from pathlib import Path
 
 from llama_index.core.workflow import (
@@ -26,29 +25,10 @@ from lib.bibliography_agent.bibliography_tool import (
 )
 from lib.bibliography_agent.deterministic_queries import generate_queries_deterministic
 
+from lib.text_utils import fuzzy_ratio as fuzzy_token_sort_ratio
+from lib.author_aliases import AuthorAliasRegistry
+
 logger = logging.getLogger(__name__)
-
-# --- Helpers ---
-
-def fuzzy_token_sort_ratio(s1: str, s2: str) -> int:
-    """
-    Mimics fuzzywuzzy.token_sort_ratio using difflib.
-    1. Tokenize and lower case.
-    2. Sort tokens.
-    3. Rejoin.
-    4. Calculate ratio.
-    """
-    if not s1 or not s2:
-        return 0
-
-    tokens1 = sorted(re.findall(r'\w+', s1.lower()))
-    tokens2 = sorted(re.findall(r'\w+', s2.lower()))
-
-    sorted_s1 = " ".join(tokens1)
-    sorted_s2 = " ".join(tokens2)
-
-    matcher = SequenceMatcher(None, sorted_s1, sorted_s2)
-    return int(matcher.ratio() * 100)
 
 from lib.bibliography_agent.events import (
     QueriesGeneratedEvent,
@@ -98,17 +78,11 @@ class CitationWorkflow(Workflow):
 
         self.llm = llm or OpenAI(model="gpt-4o-mini")
 
-        # Load author aliases
-        self.author_aliases = {}
-        aliases_path = Path("datasets/author_aliases.json")
-        if aliases_path.exists():
-            raw = json.loads(aliases_path.read_text())
-            # Build reverse mapping: variant -> canonical
-            for canonical, variants in raw.items():
-                self.author_aliases[canonical.lower()] = canonical
-                for v in variants:
-                    self.author_aliases[v.lower()] = canonical
-            logger.info(f"[workflow] Loaded {len(self.author_aliases)} author aliases")
+        # Load author aliases via shared registry
+        self.alias_registry = AuthorAliasRegistry()
+        # Legacy compatibility: deterministic_queries expects variant.lower() -> canonical dict
+        self.author_aliases = self.alias_registry.reverse_map
+        logger.info(f"[workflow] Loaded {len(self.alias_registry)} author aliases")
 
         logger.info(f"[workflow] Initialized. Books DB: {books_db_path}, Wiki DB: {'yes' if self.wiki_catalog else 'no'}")
 
@@ -162,15 +136,9 @@ class CitationWorkflow(Workflow):
     ) -> QueriesGeneratedEvent | StopEvent:
         """LLM-based query generation. Used on retries or when forced."""
         # Expand author with aliases
-        author_variants = [author] if author else []
-        if author:
-            canonical = self.author_aliases.get(author.lower())
-            if canonical and canonical != author:
-                author_variants.append(canonical)
-                logger.debug(f"[workflow] Expanded '{author}' -> canonical '{canonical}'")
-            for variant, canon in self.author_aliases.items():
-                if canon.lower() == author.lower() and variant != author.lower():
-                    author_variants.append(variant.title())
+        author_variants = self.alias_registry.expand_for_search(author) if author else [author] if author else []
+        if author and len(author_variants) > 1:
+            logger.debug(f"[workflow] Expanded '{author}' -> {author_variants[1:]}")
 
         logger.debug(f"[workflow] LLM query gen: title='{title}', author='{author}', variants={author_variants}, mode={mode}, retry={retry_count}")
 

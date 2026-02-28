@@ -11,88 +11,16 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
 from lib.bibliography_agent.events import SearchQuery
-
-
-# Articles to strip from the beginning of titles (case-insensitive)
-LEADING_ARTICLES = [
-    # English
-    "the ", "a ", "an ",
-    # French
-    "le ", "la ", "les ", "l'", "un ", "une ",
-    # German
-    "der ", "die ", "das ", "ein ", "eine ",
-    # Spanish
-    "el ", "los ", "las ",
-    # Italian
-    "il ", "lo ", "la ", "i ", "gli ", "le ",
-    # Portuguese
-    "o ", "os ", "as ",
-]
-
-# Subtitle separators (split title on first occurrence)
-SUBTITLE_SEPARATORS = [": ", " — ", " – ", " - "]
-
-# Name particles to strip
-NAME_PARTICLES = ["von ", "de ", "la ", "van ", "du ", "di ", "del ", "della ", "al-", "ibn "]
-
-
-def _strip_subtitle(title: str) -> Optional[str]:
-    """Remove subtitle from title. Returns None if no subtitle found."""
-    for sep in SUBTITLE_SEPARATORS:
-        idx = title.find(sep)
-        if idx > 0:
-            return title[:idx].strip()
-    return None
-
-
-def _strip_leading_article(title: str) -> Optional[str]:
-    """Remove leading article from title. Returns None if no article found."""
-    lower = title.lower()
-    for article in LEADING_ARTICLES:
-        if lower.startswith(article):
-            stripped = title[len(article):].strip()
-            if stripped:
-                return stripped
-    return None
-
-
-def _extract_last_name(author: str) -> Optional[str]:
-    """Extract last name from author. Returns None if single-word name."""
-    parts = author.strip().split()
-    if len(parts) > 1:
-        return parts[-1]
-    return None
-
-
-def _swap_comma_format(author: str) -> Optional[str]:
-    """Convert 'Last, First' to 'First Last'. Returns None if no comma."""
-    if ", " in author:
-        parts = author.split(", ", 1)
-        if len(parts) == 2 and parts[0].strip() and parts[1].strip():
-            return f"{parts[1].strip()} {parts[0].strip()}"
-    return None
-
-
-def _strip_particles(author: str) -> Optional[str]:
-    """Remove name particles (von, de, etc.). Returns None if no particle found."""
-    lower = author.lower()
-    for particle in NAME_PARTICLES:
-        # Check if particle appears as a word boundary in the name
-        idx = lower.find(f" {particle}")
-        if idx >= 0:
-            # Remove the particle
-            before = author[:idx].strip()
-            after = author[idx + len(particle) + 1:].strip()
-            result = f"{before} {after}".strip() if before else after
-            if result and result.lower() != author.lower():
-                return result
-    # Also check if name starts with a particle
-    for particle in NAME_PARTICLES:
-        if lower.startswith(particle):
-            result = author[len(particle):].strip()
-            if result:
-                return result
-    return None
+from lib.text_utils import (
+    LEADING_ARTICLES,
+    SUBTITLE_SEPARATORS,
+    NAME_PARTICLES,
+    strip_subtitle as _strip_subtitle,
+    strip_leading_article as _strip_leading_article,
+    extract_last_name as _extract_last_name,
+    swap_comma_format as _swap_comma_format,
+    strip_particles as _strip_particles,
+)
 
 
 def _get_alias_variants(

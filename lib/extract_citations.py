@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Library for extracting book and author citations from local LLM responses."""
+"""Library for extracting book and author citations from LLM responses."""
 
 from __future__ import annotations
 
@@ -137,8 +137,8 @@ class ExtractionConfig:
     input_path: Path
     chunk_size: int = 15
     max_concurrency: int = 10
-    base_url: str = "http://localhost:8080/v1"
-    api_key: str = "test"
+    base_url: str = "https://openrouter.ai/api/v1"
+    api_key: str = ""
     model: str = "deepseek/deepseek-v3.2"
     max_completion_tokens: int = 4096
     max_context_per_request: int = 8192  # Total context window per request (input + output)

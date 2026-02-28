@@ -12,6 +12,9 @@ import re
 from pathlib import Path
 from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence
 
+from lib.text_utils import normalize_text, normalize_title, is_similar
+from lib.author_aliases import AuthorAliasRegistry
+
 
 Citation = Dict[str, Any]
 Heuristic = Callable[[List[Citation]], List[Citation]]
@@ -71,10 +74,6 @@ def deduplicate_exact(citations: Iterable[Citation]) -> List[Citation]:
     return deduped
 
 
-def placeholder_heuristic(citations: List[Citation]) -> List[Citation]:
-    """Placeholder for future merging heuristics."""
-    return citations
-
 
 def collapse_author_only(citations: List[Citation]) -> List[Citation]:
     """
@@ -104,23 +103,7 @@ def collapse_author_only(citations: List[Citation]) -> List[Citation]:
     return result
 
 
-def normalize_text(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip().casefold()
-
-
-def normalize_title(title: str) -> str:
-    """
-    Normalize titles for loose dedup:
-    - Lowercase/strip
-    - Split on common separators (:, -, _, (, [) and take the leading chunk
-    - Collapse non-alphanumerics to spaces
-    """
-    lowered = title.strip().casefold()
-    for sep in (":", "-", "_", "(", "["):
-        if sep in lowered:
-            lowered = lowered.split(sep, 1)[0]
-    cleaned = re.sub(r"[^a-z0-9]+", " ", lowered)
-    return cleaned.strip()
+## normalize_text and normalize_title are imported from lib.text_utils
 
 
 def collapse_variant_titles(citations: List[Citation]) -> List[Citation]:
@@ -178,17 +161,9 @@ def drop_self_references(
 def merge_similar_citations(citations: List[Citation]) -> List[Citation]:
     """
     Aggressively merge citations that have very similar titles and authors.
-    Uses difflib.SequenceMatcher.
+    Uses is_similar from text_utils.
     """
-    from difflib import SequenceMatcher
-
-    def is_similar(a: str, b: str, threshold: float = 0.9) -> bool:
-        if not a and not b: return True
-        if not a or not b: return False
-        return SequenceMatcher(None, a, b).ratio() > threshold
-
     def is_similar_title(a: str, b: str) -> bool:
-        # Lower threshold for titles to catch "The X" vs "X" or typos
         return is_similar(normalize_title(a), normalize_title(b), threshold=0.85)
 
     def is_similar_author(a: str, b: str) -> bool:
@@ -283,23 +258,15 @@ _GROUP_SUFFIXES = re.compile(
 _ET_AL_RE = re.compile(r"\bet\s+al\.?\s*$", re.IGNORECASE)
 
 
-def _load_author_aliases_for_normalization() -> Dict[str, str]:
-    """Load author aliases for normalization (variant -> canonical)."""
-    aliases_path = Path(__file__).resolve().parents[1] / "datasets" / "author_aliases.json"
-    mapping: Dict[str, str] = {}
-    if aliases_path.exists():
-        try:
-            raw = json.loads(aliases_path.read_text())
-            for canonical, variants in raw.items():
-                for v in variants:
-                    mapping[v.lower()] = canonical
-        except Exception:
-            pass
-    return mapping
+# Module-level registry (lazy singleton)
+_ALIAS_REGISTRY: AuthorAliasRegistry | None = None
 
 
-# Load once at module level
-_AUTHOR_ALIAS_NORMALIZATION = _load_author_aliases_for_normalization()
+def _get_alias_registry() -> AuthorAliasRegistry:
+    global _ALIAS_REGISTRY
+    if _ALIAS_REGISTRY is None:
+        _ALIAS_REGISTRY = AuthorAliasRegistry()
+    return _ALIAS_REGISTRY
 
 
 def filter_non_person_authors(citations: List[Citation]) -> List[Citation]:
@@ -338,17 +305,18 @@ def filter_non_person_authors(citations: List[Citation]) -> List[Citation]:
 def normalize_author_aliases(citations: List[Citation]) -> List[Citation]:
     """Normalize known author name variants to canonical forms.
 
-    Uses author_aliases.json to replace common variants like
+    Uses AuthorAliasRegistry to replace common variants like
     "Dostoevski" -> "Fyodor Dostoevsky", "Nietzche" -> "Friedrich Nietzsche".
     This reduces work for the LLM validation stage.
     """
-    if not _AUTHOR_ALIAS_NORMALIZATION:
+    registry = _get_alias_registry()
+    if len(registry) == 0:
         return citations
 
     result: List[Citation] = []
     for cit in citations:
         author = (cit.get("author") or "").strip()
-        canonical = _AUTHOR_ALIAS_NORMALIZATION.get(author.lower())
+        canonical = registry.canonical(author)
         if canonical and canonical != author:
             cit = {**cit, "author": canonical, "canonical_author": author}
         result.append(cit)

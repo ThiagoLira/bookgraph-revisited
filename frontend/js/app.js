@@ -536,6 +536,15 @@ class BookGraphApp {
   }
 
   _renderLoop() {
+    // If we're using WebGPU, we want continuous frames for the shader time animation
+    if (this.renderer && this.renderer.circlePipeline) {
+      this._needsUpdate = true;
+      // Also update the uniforms every frame so time advances
+      if (this.renderer.dirty === false) {
+        this.renderer._updateViewUniforms();
+      }
+    }
+
     if (this._needsUpdate || this.renderer.dirty || this.transitions.isAnimating) {
       this.renderer.render();
       this._needsUpdate = false;

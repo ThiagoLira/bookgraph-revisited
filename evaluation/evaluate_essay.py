@@ -11,7 +11,7 @@ repo_root = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(repo_root))
 
 from lib.bibliography_agent.citation_workflow import CitationWorkflow
-from lib.bibliography_agent.llm_utils import build_llm
+from lib.llm_client import LLMConfig, build_llama_llm
 from llama_index.core import Settings
 import logging
 from lib.logging_config import setup_logging

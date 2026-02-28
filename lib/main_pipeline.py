@@ -1,28 +1,24 @@
 import asyncio
-import copy
 import json
 import logging
-import os
-import re
-import unicodedata
-from collections import defaultdict
-from difflib import SequenceMatcher
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set, Sequence
+from typing import Any, Dict, List, Optional, Sequence
 from dataclasses import dataclass
 
 from lib.extract_citations import (
     ExtractionConfig,
-    ProgressCallback,
     process_book,
     write_output,
 )
-from .preprocess_citations import preprocess_data
-from .validate_citations import validate_citations
+from lib.clean_citations import clean_citations
 from lib.bibliography_agent.citation_workflow import CitationWorkflow
-from lib.bibliography_agent.llm_utils import build_llm
-from lib.bibliography_agent.bibliography_tool import SQLiteWikiPeopleIndex, SQLiteGoodreadsCatalog
+from lib.bibliography_agent.bibliography_tool import SQLiteGoodreadsCatalog
 from lib.metadata_enricher import MetadataEnricher
+from lib.llm_client import LLMConfig, build_llama_llm
+from lib.checkpoint import CheckpointManager
+from lib.author_cache import AuthorCache
+from lib.dedup import dedup_resolved_citations
+from lib.edge_builder import build_result_dict
 
 # Configure module logger
 logger = logging.getLogger(__name__)
@@ -37,71 +33,22 @@ def progress_iter_items(iterable: Sequence[Any], **kwargs: Any) -> Sequence[Any]
         return iterable
     return tqdm(iterable, **kwargs)
 
-def _normalize_author(name: str) -> str:
-    """Normalize author name for cache lookup.
-
-    Strips accents, lowercases, removes periods/commas, and strips common
-    prefixes like 'St.' or 'Saint'.
-    """
-    # Strip accents
-    name = unicodedata.normalize('NFD', name)
-    name = ''.join(c for c in name if unicodedata.category(c) != 'Mn')
-    # Lowercase, strip periods/commas, normalize whitespace
-    name = name.lower().replace('.', '').replace(',', '').strip()
-    name = ' '.join(name.split())
-    # Strip common prefixes
-    for prefix in ('st ', 'saint '):
-        if name.startswith(prefix):
-            name = name[len(prefix):]
-    return name
-
-
-def _find_cached_author(name: str, cache: Dict[str, dict]) -> Optional[dict]:
-    """Look up an author in the cache, with fuzzy fallback."""
-    key = _normalize_author(name)
-    if key in cache:
-        return cache[key]
-    # Fuzzy fallback: check existing keys with SequenceMatcher
-    for cached_key, cached_val in cache.items():
-        if SequenceMatcher(None, key, cached_key).ratio() >= 0.9:
-            return cached_val
-    return None
-
-
-def _normalize_title(title: str) -> str:
-    """Normalize a title for dedup comparison."""
-    t = title.lower().strip()
-    for prefix in ["the ", "a ", "an ", "de ", "on ", "les ", "la ", "le ", "il ", "el "]:
-        if t.startswith(prefix):
-            t = t[len(prefix):]
-    t = re.sub(r'[^\w\s]', '', t)
-    t = re.sub(r'\s+', ' ', t).strip()
-    return t
-
-
-def _is_real_gr_id(book_id) -> bool:
-    """Check if a book ID is a real Goodreads numeric ID (not web_ prefixed)."""
-    if book_id is None:
-        return False
-    return not str(book_id).startswith("web_")
 
 
 @dataclass
 class PipelineConfig:
+    # LLM Endpoints
+    extract_llm: LLMConfig = None  # type: ignore[assignment]  # for extraction (local/cheap)
+    agent_llm: LLMConfig = None  # type: ignore[assignment]  # for workflow, validation, enrichment
+
     # Extraction
-    extract_base_url: str = "http://localhost:8080/v1"
-    extract_api_key: str = "test"
-    extract_model: str = "deepseek/deepseek-v3.2"
     extract_chunk_size: int = 50
     extract_max_context: int = 6144
     extract_max_completion: int = 2048
+    extract_concurrency: int = 20
 
     # Workflow
-    agent_base_url: str = "https://openrouter.ai/api/v1"
-    agent_api_key: str = ""
-    agent_model: str = "deepseek/deepseek-v3.2"
     agent_concurrency: int = 20
-    extract_concurrency: int = 20
 
     # Validation
     validate_concurrency: int = 5
@@ -114,10 +61,17 @@ class PipelineConfig:
     # Enrichment Paths
     dates_json: str = "datasets/original_publication_dates.json"
     author_meta_json: str = "datasets/authors_metadata.json"
-    legacy_dates_json: Optional[str] = None  # legacy no longer needed by default
+    legacy_dates_json: Optional[str] = None
 
     debug_trace: bool = False
     force_llm_queries: bool = False
+
+    def __post_init__(self):
+        if self.extract_llm is None:
+            self.extract_llm = LLMConfig()
+        if self.agent_llm is None:
+            self.agent_llm = LLMConfig()
+
 
 class BookPipeline:
     def __init__(self, config: PipelineConfig):
@@ -127,11 +81,7 @@ class BookPipeline:
 
     def _setup_workflow(self):
         # Initialize LLM and Workflow once
-        self.llm = build_llm(
-            model=self.config.agent_model,
-            api_key=self.config.agent_api_key,
-            base_url=self.config.agent_base_url
-        )
+        self.llm = build_llama_llm(self.config.agent_llm)
 
         self.workflow = CitationWorkflow(
             books_db_path=self.config.books_db,
@@ -154,9 +104,10 @@ class BookPipeline:
             dates_path=self.config.dates_json,
             authors_path=self.config.author_meta_json,
             legacy_dates_path=self.config.legacy_dates_json,
+            books_db=self.config.books_db,
             llm=self.llm,
             auto_update=True,
-            wiki_catalog=self.wiki_catalog  # Pass local wiki DB to enricher
+            wiki_catalog=self.wiki_catalog,
         )
 
     async def _enrich_source_metadata(self, source_metadata: Dict[str, Any], book_id: str) -> Dict[str, Any]:
@@ -286,9 +237,8 @@ class BookPipeline:
         stages:
         0. Enrich source metadata (author, publication year)
         1. Extract (LLM) -> raw_dir
-        2. Preprocess (Heuristic) -> pre_dir
-        3. Validate (LLM) -> val_dir
-        4. Workflow (Agent) -> final_dir
+        2. Clean (Heuristics + LLM validation) -> cleaned_dir
+        3. Resolve (Workflow + enrichment + dedup) -> final_dir
         """
         # 0. Enrich source metadata first
         logger.info(f"[pipeline] Enriching source metadata for: {source_metadata.get('title', book_id)}")
@@ -296,19 +246,19 @@ class BookPipeline:
         source_metadata = await self._enrich_source_metadata(source_metadata, book_id)
 
         raw_dir = output_dir / "raw_extracted_citations"
-        pre_dir = output_dir / "preprocessed_extracted_citations"
-        val_dir = output_dir / "validated_citations"
+        cleaned_dir = output_dir / "cleaned_citations"
         final_dir = output_dir / "final_citations_metadata_goodreads"
 
         raw_dir.mkdir(parents=True, exist_ok=True)
-        pre_dir.mkdir(parents=True, exist_ok=True)
-        val_dir.mkdir(parents=True, exist_ok=True)
+        cleaned_dir.mkdir(parents=True, exist_ok=True)
         final_dir.mkdir(parents=True, exist_ok=True)
 
         raw_path = raw_dir / f"{book_id}.json"
-        pre_path = pre_dir / f"{book_id}.json"
-        val_path = val_dir / f"{book_id}.json"
+        cleaned_path = cleaned_dir / f"{book_id}.json"
         final_path = final_dir / f"{book_id}.json"
+
+        # Backward compat: check old directories for existing results
+        legacy_val_path = output_dir / "validated_citations" / f"{book_id}.json"
 
         # 1. Extraction
         if not raw_path.exists() or force:
@@ -316,23 +266,20 @@ class BookPipeline:
             print(f"[pipeline] Extracting {book_id}...")
             await self._run_extraction(input_text_path, raw_path)
 
-        # 2. Preprocess
-        if not pre_path.exists() or force:
-             logger.info(f"[pipeline] Preprocessing {book_id}...")
-             print(f"[pipeline] Preprocessing {book_id}...")
-             self._run_preprocessing(raw_path, pre_path, source_metadata)
+        # 2. Clean (heuristics + LLM validation, single stage)
+        if not cleaned_path.exists() and not legacy_val_path.exists() or force:
+            logger.info(f"[pipeline] Cleaning {book_id}...")
+            print(f"[pipeline] Cleaning {book_id}...")
+            await self._run_cleaning(raw_path, cleaned_path, source_metadata)
 
-        # 3. Validate
-        if not val_path.exists() or force:
-             logger.info(f"[pipeline] Validating {book_id}...")
-             print(f"[pipeline] Validating {book_id}...")
-             await self._run_validation(pre_path, val_path, source_metadata)
+        # Determine which cleaned file to use for workflow
+        workflow_input = cleaned_path if cleaned_path.exists() else legacy_val_path
 
-        # 4. Workflow
+        # 3. Resolve (Workflow)
         if not final_path.exists() or force:
              logger.info(f"[pipeline] Running Workflow {book_id}...")
              print(f"[pipeline] Running Workflow {book_id}...")
-             await self._run_workflow(val_path, final_path, source_metadata)
+             await self._run_workflow(workflow_input, final_path, source_metadata)
 
         return final_path
 
@@ -343,10 +290,10 @@ class BookPipeline:
             max_concurrency=self.config.extract_concurrency,
             max_context_per_request=self.config.extract_max_context,
             max_completion_tokens=self.config.extract_max_completion,
-            base_url=self.config.extract_base_url,
-            api_key=self.config.extract_api_key,
-            model=self.config.extract_model,
-            tokenizer_name=self.config.extract_model,
+            base_url=self.config.extract_llm.base_url,
+            api_key=self.config.extract_llm.api_key,
+            model=self.config.extract_llm.model,
+            tokenizer_name=self.config.extract_llm.model,
         )
 
         # Optional progress bar for chunks
@@ -365,216 +312,43 @@ class BookPipeline:
         finally:
             if pbar: pbar.close()
 
-    def _run_preprocessing(self, raw_path: Path, pre_path: Path, meta: Dict[str, Any]):
+    async def _run_cleaning(self, raw_path: Path, cleaned_path: Path, meta: Dict[str, Any]):
+        """Combined heuristic preprocessing + LLM validation in a single stage."""
         raw_data = json.loads(raw_path.read_text())
-        processed = preprocess_data(
+
+        result = await clean_citations(
             raw_data,
             source_name=raw_path.name,
             source_title=meta.get("title"),
-            source_authors=meta.get("authors")
-        )
-        pre_path.write_text(json.dumps(processed, indent=2, ensure_ascii=False))
-
-    async def _run_validation(self, pre_path: Path, val_path: Path, meta: Dict[str, Any]):
-        data = json.loads(pre_path.read_text())
-        citations = data.get("citations", [])
-        source_title = meta.get("title", "")
-        source_authors = meta.get("authors", [])
-
-        if not citations:
-            val_path.write_text(json.dumps(data, indent=2, ensure_ascii=False))
-            return
-
-        validated, stats = await validate_citations(
-            citations,
-            source_title,
-            source_authors,
-            base_url=self.config.agent_base_url,
-            api_key=self.config.agent_api_key,
-            model=self.config.agent_model,
-            concurrency=self.config.validate_concurrency,
+            source_authors=meta.get("authors"),
+            llm_config=self.config.agent_llm,
+            validate_concurrency=self.config.validate_concurrency,
         )
 
-        output = {
-            "source": data.get("source", pre_path.name),
-            "total": len(validated),
-            "validation_stats": stats,
-            "citations": validated,
-        }
-        val_path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
+        cleaned_path.write_text(json.dumps(result, indent=2, ensure_ascii=False))
 
-        logger.info(f"[pipeline] Validation: {len(citations)} → {len(validated)} citations "
-                     f"(removed={stats['removed']}, fixed={stats['fixed']})")
-        print(f"[pipeline] Validation: {len(citations)} → {len(validated)} citations "
-              f"(removed={stats['removed']}, fixed={stats['fixed']})")
-
-    def _save_checkpoint(self, path: Path, meta: Dict, results: List):
-        """Save checkpoint with partial results."""
-        path.write_text(json.dumps({"source": meta, "citations": results, "complete": False}, indent=2, ensure_ascii=False))
-        logger.debug(f"[pipeline] Checkpoint saved: {len(results)} citations")
-
-    def _add_to_author_cache(self, cache: Dict[str, dict], author_name: str, result_dict: dict):
-        """Add a resolved result to the author cache, including bare last-name variant."""
-        key = _normalize_author(author_name)
-        cache[key] = result_dict
-        # Also cache bare last name for fuzzy matching (e.g. "Plutarch" from "Lucius Plutarch")
-        parts = key.split()
-        if len(parts) > 1:
-            cache[parts[-1]] = result_dict
-
-    def _merge_into_keeper(self, keeper_cit: dict, donor_cit: dict):
-        """Merge a donor citation's raw data (contexts, commentaries, count) into keeper."""
-        kr = keeper_cit.get("raw", {})
-        dr = donor_cit.get("raw", {})
-
-        # Merge contexts
-        existing = set(kr.get("contexts", []))
-        for ctx in dr.get("contexts", []):
-            if ctx not in existing:
-                kr.setdefault("contexts", []).append(ctx)
-                existing.add(ctx)
-
-        # Merge commentaries
-        existing_comm = set(kr.get("commentaries", []))
-        for comm in dr.get("commentaries", []):
-            if comm not in existing_comm:
-                kr.setdefault("commentaries", []).append(comm)
-                existing_comm.add(comm)
-
-        # Sum counts
-        kr["count"] = kr.get("count", 0) + dr.get("count", 0)
-
-    def _pick_best_keeper(self, entries: List[tuple]) -> tuple:
-        """Pick the best citation to keep from a group: prefer real GR ID, then most contexts."""
-        keeper_idx, keeper_cit = entries[0]
-        for idx, cit in entries[1:]:
-            kid = keeper_cit.get("edge", {}).get("target_book_id")
-            cid = cit.get("edge", {}).get("target_book_id")
-            k_real = _is_real_gr_id(kid)
-            c_real = _is_real_gr_id(cid)
-
-            if c_real and not k_real:
-                keeper_idx, keeper_cit = idx, cit
-            elif not (k_real and not c_real):
-                # Both same type — prefer more contexts
-                if cit.get("raw", {}).get("count", 0) > keeper_cit.get("raw", {}).get("count", 0):
-                    keeper_idx, keeper_cit = idx, cit
-        return keeper_idx, keeper_cit
-
-    def _dedup_resolved_citations(self, results: List[dict]) -> List[dict]:
-        """Merge citations that resolved to different editions of the same work.
-
-        Pass 1: Groups by work_id (definitive — all editions share the same
-        Goodreads work_id).  Pass 2: Groups remaining citations by
-        (normalized_author, normalized_title) to catch duplicates without
-        work_id (e.g. web_ IDs).
-        """
-        if not results:
-            return results
-
-        indices_to_remove: Set[int] = set()
-        merge_count = 0
-
-        # --- Pass 1: Group by work_id (definitive) ---
-        work_id_groups: Dict[str, List[tuple]] = defaultdict(list)
-        for i, cit in enumerate(results):
-            wid = (cit.get("goodreads_match") or {}).get("work_id")
-            if wid:
-                work_id_groups[str(wid)].append((i, cit))
-
-        for wid, entries in work_id_groups.items():
-            if len(entries) < 2:
-                continue
-
-            book_ids = {cit.get("edge", {}).get("target_book_id") for _, cit in entries}
-            if len(book_ids) < 2:
-                continue
-
-            keeper_idx, keeper_cit = self._pick_best_keeper(entries)
-
-            for idx, cit in entries:
-                if idx == keeper_idx:
-                    continue
-                self._merge_into_keeper(keeper_cit, cit)
-                indices_to_remove.add(idx)
-                merge_count += 1
-
-                dupe_title = cit.get("raw", {}).get("title", "?")
-                dupe_id = cit.get("edge", {}).get("target_book_id")
-                keeper_id = keeper_cit.get("edge", {}).get("target_book_id")
-                logger.info(f"[dedup] Merged '{dupe_title}' (id={dupe_id}) into (id={keeper_id}) by work_id={wid}")
-
-        if merge_count:
-            logger.info(f"[dedup] Pass 1 (work_id): merged {merge_count} duplicate citations")
-            print(f"[pipeline] Post-resolution dedup pass 1 (work_id): merged {merge_count} duplicates")
-
-        # --- Pass 2: Group remaining by (author, title) ---
-        title_merge_count = 0
-        groups: Dict[tuple, List[tuple]] = defaultdict(list)
-        for i, cit in enumerate(results):
-            if i in indices_to_remove:
-                continue
-            raw = cit.get("raw", {})
-            title = raw.get("title", "")
-            if not title:
-                continue
-            author = _normalize_author(raw.get("canonical_author", raw.get("author", "?")))
-            norm = _normalize_title(title)
-            groups[(author, norm)].append((i, cit))
-
-        for (author, norm_title), entries in groups.items():
-            if len(entries) < 2:
-                continue
-
-            book_ids = {cit.get("edge", {}).get("target_book_id") for _, cit in entries}
-            if len(book_ids) < 2:
-                continue
-
-            keeper_idx, keeper_cit = self._pick_best_keeper(entries)
-
-            for idx, cit in entries:
-                if idx == keeper_idx:
-                    continue
-                self._merge_into_keeper(keeper_cit, cit)
-                indices_to_remove.add(idx)
-                title_merge_count += 1
-
-                dupe_title = cit.get("raw", {}).get("title", "?")
-                dupe_id = cit.get("edge", {}).get("target_book_id")
-                keeper_id = keeper_cit.get("edge", {}).get("target_book_id")
-                logger.info(f"[dedup] Merged '{dupe_title}' (id={dupe_id}) into (id={keeper_id}) for author '{author}'")
-
-        if title_merge_count:
-            logger.info(f"[dedup] Pass 2 (title): merged {title_merge_count} duplicate citations")
-            print(f"[pipeline] Post-resolution dedup pass 2 (title): merged {title_merge_count} duplicates")
-
-        total_merged = merge_count + title_merge_count
-        if total_merged:
-            results = [cit for i, cit in enumerate(results) if i not in indices_to_remove]
-
-        return results
+        total_raw = sum(len(c.get("citations", [])) for c in raw_data.get("chunks", []))
+        total_clean = result["total"]
+        stats = result.get("validation_stats", {})
+        logger.info(f"[pipeline] Cleaning: {total_raw} raw → {total_clean} cleaned "
+                     f"(removed={stats.get('removed', 0)}, fixed={stats.get('fixed', 0)})")
+        print(f"[pipeline] Cleaning: {total_raw} raw → {total_clean} cleaned "
+              f"(removed={stats.get('removed', 0)}, fixed={stats.get('fixed', 0)})")
 
     async def _run_workflow(self, pre_path: Path, final_path: Path, meta: Dict[str, Any]):
         data = json.loads(pre_path.read_text())
         citations = data.get("citations", [])
 
         if not citations:
-            # Write empty result
             final_path.write_text(json.dumps({"source": meta, "citations": []}, indent=2))
             return
 
-        # Checkpoint support
-        checkpoint_path = final_path.with_suffix('.checkpoint.json')
+        # Checkpoint and author cache
+        ckpt = CheckpointManager(final_path.with_suffix('.checkpoint.json'))
+        existing_results, processed_keys = ckpt.load()
 
-        # Load existing checkpoint if resuming
-        existing_results = []
-        processed_keys = set()
-        if checkpoint_path.exists():
-            checkpoint = json.loads(checkpoint_path.read_text())
-            existing_results = checkpoint.get("citations", [])
-            processed_keys = {(r["raw"].get("author"), r["raw"].get("title")) for r in existing_results}
-            logger.info(f"[pipeline] Resuming from checkpoint: {len(existing_results)} already processed")
-            print(f"[pipeline] Resuming from checkpoint: {len(existing_results)} already processed")
+        author_cache = AuthorCache()
+        author_cache.seed_from_results(existing_results)
 
         # Filter out already-processed citations
         citations_to_process = [
@@ -582,23 +356,8 @@ class BookPipeline:
             if (cit.get("author"), cit.get("title")) not in processed_keys
         ]
 
-        # --- Per-book resolution cache ---
-        # Caches fully-resolved result_dicts keyed by normalized author name.
-        # For author-only citations (no title): full cache hit -> skip workflow.
-        # For book citations: not cached (title-specific), run workflow normally.
-        author_cache: Dict[str, dict] = {}
-
-        # Seed cache from checkpoint results
-        for r in existing_results:
-            raw = r.get("raw", {})
-            author = raw.get("author")
-            if author:
-                self._add_to_author_cache(author_cache, author, r)
-
-        # Prepare tasks
         sem = asyncio.Semaphore(self.config.agent_concurrency)
 
-        # Stats for logging
         stats = {
             "total": len(citations),
             "cache_hits": 0,
@@ -611,8 +370,7 @@ class BookPipeline:
 
         # Count already-processed successes from checkpoint
         for r in existing_results:
-            edge = r.get("edge", {})
-            target_type = edge.get("target_type", "unknown")
+            target_type = r.get("edge", {}).get("target_type", "unknown")
             if target_type not in ["not_found", "unknown", "error"]:
                 stats["workflow_success"] += 1
 
@@ -627,189 +385,169 @@ class BookPipeline:
                     logger.debug(f"[workflow] Full citation that failed: {json.dumps(cit, ensure_ascii=False)}")
                     return (cit, {"error": str(e), "match_type": "error"})
 
-        # Separate citations into cache-hittable (author-only) and must-run (has title)
+        # Separate author-only cache hits from citations needing workflow
         cached_results: List[dict] = []
         citations_needing_workflow: List[dict] = []
 
         for cit in citations_to_process:
-            author = cit.get("author")
-            title = cit.get("title")
-            is_author_only = author and not title
-
-            if is_author_only and author:
-                cached = _find_cached_author(author, author_cache)
-                if cached:
-                    # Full cache hit for author-only citation
-                    cloned = copy.deepcopy(cached)
-                    cloned["raw"] = cit  # Use the current citation's raw data
-                    cached_results.append(cloned)
-                    stats["cache_hits"] += 1
-                    logger.info(f"[cache] Hit for author-only citation: '{author}'")
-                    continue
-
-            citations_needing_workflow.append(cit)
+            cached = author_cache.find_for_author_only(cit)
+            if cached:
+                cached_results.append(cached)
+                stats["cache_hits"] += 1
+            else:
+                citations_needing_workflow.append(cit)
 
         logger.info(f"[cache] {stats['cache_hits']} cache hits, {len(citations_needing_workflow)} citations need workflow")
 
         pbar = tqdm(total=len(citations_to_process), desc="  Resolving Citations", leave=False) if tqdm else None
-
-        # Count cached results in progress bar
         if pbar and cached_results:
             pbar.update(len(cached_results))
 
         tasks = [process_safe(cit) for cit in citations_needing_workflow]
-        results = list(existing_results)  # Start with checkpoint results
-        results.extend(cached_results)  # Add cache hits
+        results = list(existing_results)
+        results.extend(cached_results)
 
-        # Use as_completed to update progress bar as items finish
         for future in asyncio.as_completed(tasks):
             cit, res = await future
 
             match_type = res.get("match_type", "unknown")
             metadata = res.get("metadata", {})
-            had_error = "error" in res
 
-            if had_error:
+            if "error" in res:
                 stats["workflow_error"] += 1
             elif match_type not in ["not_found", "unknown", "error"]:
                 stats["workflow_success"] += 1
 
-            # --- FALLBACK: Trigger for errors, not_found, or unknown ---
+            # Fallback for unresolved citations
             if match_type in ["not_found", "unknown", "error"]:
-                stats["fallback_triggered"] += 1
-                logger.info(f"[fallback] Triggering for: title='{cit.get('title')}', author='{cit.get('author')}' (reason: {match_type})")
-
-                try:
-                    fallback_res = await self.enricher.resolve_citation_fallback(cit, meta)
-                    fallback_match = fallback_res.get("match_type", "not_found")
-
-                    if fallback_match in ["book", "person"]:
-                        stats["fallback_success"] += 1
-                        match_type = fallback_match
-                        metadata = fallback_res.get("metadata", {})
-                        logger.info(f"[fallback] Success: {match_type} - {metadata.get('title') or metadata.get('authors', ['?'])[0] if metadata.get('authors') else '?'}")
-
-                        # Generate synthetic ID for books without one
-                        if match_type == "book" and not metadata.get("book_id"):
-                            import hashlib
-                            slug = f"{metadata.get('title', '')}{metadata.get('original_year', '')}"
-                            metadata["book_id"] = f"web_{hashlib.md5(slug.encode()).hexdigest()[:8]}"
-                    else:
-                        logger.debug(f"[fallback] No match found for: {cit.get('author')}")
-                except Exception as e:
-                    logger.error(f"[fallback] Error during fallback: {e}")
-
-            # Build Edge
-            target_book_id = metadata.get("book_id")
-            target_author_ids = []
-            if metadata.get("author_id"):
-                 target_author_ids.append(str(metadata.get("author_id")))
-            elif metadata.get("author_ids"):
-                 target_author_ids = [str(a) for a in metadata.get("author_ids")]
+                match_type, metadata = await self._try_fallback(cit, meta, match_type, metadata, stats)
 
             wiki_match = metadata.get("wikipedia_match")
 
-            # --- ENRICHMENT ---
-            # Skip enrichment calls when fallback already provided the data
-            enrichment = {}
+            # Enrichment
+            wiki_match = await self._enrich_citation(cit, match_type, metadata, wiki_match, stats)
 
-            target_title = metadata.get("title") or cit.get("title")
-            target_authors = metadata.get("authors") or [cit.get("author")]
-            target_author_name = target_authors[0] if target_authors else None
+            result_dict = build_result_dict(cit, match_type, metadata, wiki_match)
+            results.append(result_dict)
 
-            # 1. Enrich Book (get publication year)
-            # Use fallback-provided original_year if available, otherwise call enricher
-            if metadata.get("original_year"):
-                enrichment["original_year"] = metadata["original_year"]
-                logger.debug(f"[enrich] Book year from fallback: {target_title} -> {metadata['original_year']}")
-            elif target_book_id and target_title:
-                try:
-                    year = await self.enricher.enrich_book(str(target_book_id), target_title, target_author_name or "")
-                    if year:
-                        enrichment["original_year"] = year
-                        logger.debug(f"[enrich] Book year: {target_title} -> {year}")
-                except Exception as e:
-                    logger.warning(f"[enrich] Book enrichment failed: {e}")
-            elif match_type == "book" and target_title:
-                 try:
-                     year = await self.enricher.enrich_book(None, target_title, target_author_name or "")
-                     if year:
-                        enrichment["original_year"] = year
-                 except Exception as e:
-                    logger.warning(f"[enrich] Book enrichment (no ID) failed: {e}")
+            # Cache for future author-only citations
+            author = cit.get("author")
+            if author and match_type != "error":
+                author_cache.add(author, result_dict)
 
-            # 2. Enrich Author (get birth/death years)
-            # Use fallback-provided birth/death years if available
-            fallback_has_bio = metadata.get("birth_year") or metadata.get("death_year")
-            if fallback_has_bio:
-                auth_meta = {
-                    k: metadata[k] for k in ("birth_year", "death_year", "nationality", "main_genre")
-                    if metadata.get(k)
-                }
+            if len(results) % 5 == 0:
+                ckpt.save(meta, results)
+
+            if pbar: pbar.update(1)
+
+        if pbar: pbar.close()
+
+        # Summary
+        logger.info(f"[pipeline] Resolution Stats: {json.dumps(stats)}")
+        self._print_resolution_summary(stats)
+
+        # Post-resolution dedup
+        results = dedup_resolved_citations(results)
+
+        # Flush enrichment updates
+        logger.info("[pipeline] Saving enriched metadata...")
+        print("[pipeline] Saving enriched metadata...")
+        self.enricher.save()
+
+        output = {"source": meta, "citations": results}
+        final_path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
+        ckpt.remove()
+
+    async def _try_fallback(self, cit: dict, meta: dict, match_type: str,
+                            metadata: dict, stats: dict) -> tuple:
+        """Try enricher fallback for unresolved citations. Returns (match_type, metadata)."""
+        stats["fallback_triggered"] += 1
+        logger.info(f"[fallback] Triggering for: title='{cit.get('title')}', author='{cit.get('author')}' (reason: {match_type})")
+
+        try:
+            fallback_res = await self.enricher.resolve_citation_fallback(cit, meta)
+            fallback_match = fallback_res.get("match_type", "not_found")
+
+            if fallback_match in ["book", "person"]:
+                stats["fallback_success"] += 1
+                match_type = fallback_match
+                metadata = fallback_res.get("metadata", {})
+
+                # Generate synthetic ID for books without one
+                if match_type == "book" and not metadata.get("book_id"):
+                    import hashlib
+                    slug = f"{metadata.get('title', '')}{metadata.get('original_year', '')}"
+                    metadata["book_id"] = f"web_{hashlib.md5(slug.encode()).hexdigest()[:8]}"
+            else:
+                logger.debug(f"[fallback] No match found for: {cit.get('author')}")
+        except Exception as e:
+            logger.error(f"[fallback] Error during fallback: {e}")
+
+        return match_type, metadata
+
+    async def _enrich_citation(self, cit: dict, match_type: str, metadata: dict,
+                               wiki_match: Optional[dict], stats: dict) -> Optional[dict]:
+        """Enrich a resolved citation with publication year and author bio. Returns wiki_match."""
+        enrichment = {}
+        target_title = metadata.get("title") or cit.get("title")
+        target_authors = metadata.get("authors") or [cit.get("author")]
+        target_author_name = target_authors[0] if target_authors else None
+        target_book_id = metadata.get("book_id")
+
+        # 1. Enrich Book (publication year)
+        if metadata.get("original_year"):
+            enrichment["original_year"] = metadata["original_year"]
+        elif target_book_id and target_title:
+            try:
+                year = await self.enricher.enrich_book(str(target_book_id), target_title, target_author_name or "")
+                if year:
+                    enrichment["original_year"] = year
+            except Exception as e:
+                logger.warning(f"[enrich] Book enrichment failed: {e}")
+        elif match_type == "book" and target_title:
+            try:
+                year = await self.enricher.enrich_book(None, target_title, target_author_name or "")
+                if year:
+                    enrichment["original_year"] = year
+            except Exception as e:
+                logger.warning(f"[enrich] Book enrichment (no ID) failed: {e}")
+
+        # 2. Enrich Author (birth/death years)
+        fallback_has_bio = metadata.get("birth_year") or metadata.get("death_year")
+        if fallback_has_bio:
+            auth_meta = {
+                k: metadata[k] for k in ("birth_year", "death_year", "nationality", "main_genre")
+                if metadata.get(k)
+            }
+            if auth_meta:
+                stats["enrichment_success"] += 1
+                enrichment["author_meta"] = auth_meta
+                if not wiki_match:
+                    wiki_match = {"title": target_author_name}
+                if auth_meta.get("birth_year") and not wiki_match.get("birth_year"):
+                    wiki_match["birth_year"] = auth_meta["birth_year"]
+                if auth_meta.get("death_year") and not wiki_match.get("death_year"):
+                    wiki_match["death_year"] = auth_meta["death_year"]
+        elif target_author_name:
+            try:
+                auth_meta = await self.enricher.enrich_author(target_author_name)
                 if auth_meta:
                     stats["enrichment_success"] += 1
                     enrichment["author_meta"] = auth_meta
-                    logger.debug(f"[enrich] Author from fallback: {target_author_name} -> birth={auth_meta.get('birth_year')}, death={auth_meta.get('death_year')}")
-
                     if not wiki_match:
                         wiki_match = {"title": target_author_name}
                     if auth_meta.get("birth_year") and not wiki_match.get("birth_year"):
                         wiki_match["birth_year"] = auth_meta["birth_year"]
                     if auth_meta.get("death_year") and not wiki_match.get("death_year"):
                         wiki_match["death_year"] = auth_meta["death_year"]
-            elif target_author_name:
-                try:
-                    auth_meta = await self.enricher.enrich_author(target_author_name)
-                    if auth_meta:
-                        stats["enrichment_success"] += 1
-                        enrichment["author_meta"] = auth_meta
-                        logger.debug(f"[enrich] Author: {target_author_name} -> birth={auth_meta.get('birth_year')}, death={auth_meta.get('death_year')}")
+            except Exception as e:
+                logger.warning(f"[enrich] Author enrichment failed for '{target_author_name}': {e}")
 
-                        # IMPORTANT: Merge author dates into wiki_match / target_person
-                        if not wiki_match:
-                            wiki_match = {"title": target_author_name}
+        metadata.update(enrichment)
+        return wiki_match
 
-                        # Only add dates if not already present
-                        if auth_meta.get("birth_year") and not wiki_match.get("birth_year"):
-                            wiki_match["birth_year"] = auth_meta["birth_year"]
-                        if auth_meta.get("death_year") and not wiki_match.get("death_year"):
-                            wiki_match["death_year"] = auth_meta["death_year"]
-                except Exception as e:
-                    logger.warning(f"[enrich] Author enrichment failed for '{target_author_name}': {e}")
-
-            # Merge enrichment into metadata
-            metadata.update(enrichment)
-
-            result_dict = {
-                "raw": cit,
-                "goodreads_match": metadata if match_type == "book" else None,
-                "wikipedia_match": wiki_match,
-                "edge": {
-                    "target_type": match_type,
-                    "target_book_id": target_book_id,
-                    "target_author_ids": target_author_ids,
-                    "target_person": wiki_match  # Now includes enriched birth/death
-                }
-            }
-            results.append(result_dict)
-
-            # Add to author cache for future citations in this book
-            author = cit.get("author")
-            if author and match_type not in ["error"]:
-                self._add_to_author_cache(author_cache, author, result_dict)
-
-            # Save checkpoint every 5 results
-            if len(results) % 5 == 0:
-                self._save_checkpoint(checkpoint_path, meta, results)
-
-            if pbar: pbar.update(1)
-
-        if pbar: pbar.close()
-
-        # Log stats
-        logger.info(f"[pipeline] Resolution Stats: {json.dumps(stats)}")
-
-        # Print summary report
+    @staticmethod
+    def _print_resolution_summary(stats: dict):
         print("\n" + "="*50)
         print("           RESOLUTION SUMMARY")
         print("="*50)
@@ -822,22 +560,3 @@ class BookPipeline:
         print(f"  Fallback Success:   {stats['fallback_success']}")
         print(f"  Authors Enriched:   {stats['enrichment_success']}")
         print("="*50 + "\n")
-
-        # Post-resolution dedup: merge same-author/same-title with different book IDs
-        results = self._dedup_resolved_citations(results)
-
-        # Flush enrichment updates
-        logger.info("[pipeline] Saving enriched metadata...")
-        print("[pipeline] Saving enriched metadata...")
-        self.enricher.save()
-
-        output = {
-            "source": meta,
-            "citations": results
-        }
-        final_path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
-
-        # Remove checkpoint after successful completion
-        if checkpoint_path.exists():
-            checkpoint_path.unlink()
-            logger.info("[pipeline] Checkpoint removed after successful completion")

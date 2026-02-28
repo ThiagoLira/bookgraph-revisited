@@ -11,7 +11,7 @@ struct ViewUniforms {
   transform: mat3x3f,
   resolution: vec2f,
   pixel_ratio: f32,
-  _pad: f32,
+  time: f32,
 };
 
 @group(0) @binding(0) var<uniform> view: ViewUniforms;
@@ -76,12 +76,31 @@ fn vs_main(
 fn fs_main(in: VertexOutput) -> @location(0) vec4f {
   let dist = length(in.local_pos);
   let aa = 1.0;
+  
+  // Flat circle with anti-aliased edge
   let fill_edge = smoothstep(in.radius_px + aa, in.radius_px - aa, dist);
+  
+  // Base color
+  let base_color = in.fill_color;
+  
+  // Dynamic Rim Lighting (Material inner glow)
+  // Distance normalized from center (0) to edge (1)
+  let norm_dist = dist / in.radius_px;
+  // Create a rim pulse that flows outward over time
+  let pulse_phase = view.time * 2.0 - norm_dist * 4.0;
+  let pulse = (sin(pulse_phase) * 0.5 + 0.5);
+  
+  // Apply lighting strongly near the edge, subtly inside
+  let edge_glow = smoothstep(0.7, 1.0, norm_dist) * 0.15 * pulse;
+  let inner_highlight = smoothstep(0.0, 0.4, norm_dist) * 0.05 * pulse;
+  
+  let lighted_color = base_color + vec3f(edge_glow + inner_highlight);
+
   let inner_edge = in.radius_px - in.stroke_width_px;
   let stroke_mask = smoothstep(inner_edge - aa, inner_edge + aa, dist)
                   * smoothstep(in.radius_px + aa, in.radius_px - aa, dist);
 
-  let fill = vec4f(in.fill_color, in.fill_alpha * fill_edge);
+  let fill = vec4f(lighted_color, in.fill_alpha * fill_edge);
   let stroke = vec4f(in.stroke_color, in.stroke_alpha * stroke_mask);
 
   let out_alpha = stroke.a + fill.a * (1.0 - stroke.a);
@@ -98,7 +117,7 @@ struct ViewUniforms {
   transform: mat3x3f,
   resolution: vec2f,
   pixel_ratio: f32,
-  _pad: f32,
+  time: f32,
 };
 
 @group(0) @binding(0) var<uniform> view: ViewUniforms;
@@ -283,8 +302,8 @@ export class GraphRenderer {
           arrayStride: CIRCLE_BYTES,
           stepMode: 'instance',
           attributes: [
-            { shaderLocation: 0, offset: 0,  format: 'float32x2' },  // center
-            { shaderLocation: 1, offset: 8,  format: 'float32' },    // radius
+            { shaderLocation: 0, offset: 0, format: 'float32x2' },  // center
+            { shaderLocation: 1, offset: 8, format: 'float32' },    // radius
             { shaderLocation: 2, offset: 12, format: 'float32x3' },  // fillColor
             { shaderLocation: 3, offset: 24, format: 'float32' },    // fillAlpha
             { shaderLocation: 4, offset: 28, format: 'float32x3' },  // strokeColor
@@ -318,8 +337,8 @@ export class GraphRenderer {
           arrayStride: LINE_BYTES,
           stepMode: 'instance',
           attributes: [
-            { shaderLocation: 0, offset: 0,  format: 'float32x2' },  // posA
-            { shaderLocation: 1, offset: 8,  format: 'float32x2' },  // posB
+            { shaderLocation: 0, offset: 0, format: 'float32x2' },  // posA
+            { shaderLocation: 1, offset: 8, format: 'float32x2' },  // posB
             { shaderLocation: 2, offset: 16, format: 'float32x3' },  // color
             { shaderLocation: 3, offset: 28, format: 'float32' },    // alpha
             { shaderLocation: 4, offset: 32, format: 'float32' },    // width
@@ -385,11 +404,11 @@ export class GraphRenderer {
     data[9] = y * this.dpr;
     data[10] = 1;
     data[11] = 0; // padding
-    // resolution + pixelRatio
+    // resolution + pixelRatio + time
     data[12] = this.width;
     data[13] = this.height;
     data[14] = this.dpr;
-    data[15] = 0;
+    data[15] = performance.now() / 1000.0; // Pass current time in seconds
 
     this.device.queue.writeBuffer(this.viewUniformBuffer, 0, data);
     this.dirty = true;

@@ -54,8 +54,7 @@ def _to_float(value: Any) -> Optional[float]:
         return None
 
 
-def _normalize(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip().casefold()
+from lib.text_utils import normalize_text as _normalize
 
 
 def _format_match_data(book: Dict[str, Any]) -> Dict[str, Any]:
@@ -269,27 +268,58 @@ class SQLiteWikiPeopleIndex:
             )
         self._conn = sqlite3.connect(self.db_path)
         self._conn.row_factory = sqlite3.Row
-        
-        # Load overrides
-        self.overrides = {}
-        overrides_path = Path("datasets/authors_metadata.json")
-        if overrides_path.exists():
-            try:
-                with overrides_path.open("r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    # Normalize keys for case-insensitive lookup
-                    for name, meta in data.items():
-                        self.overrides[name.lower()] = meta
-                if trace:
-                    print(f"[wiki_people_tool] Loaded {len(self.overrides)} author overrides")
-            except Exception as e:
-                print(f"[wiki_people_tool] Error loading overrides: {e}")
-        
+
+        # Check if author_overrides table exists
+        self._has_overrides_table = False
+        try:
+            self._conn.execute("SELECT 1 FROM author_overrides LIMIT 1")
+            self._has_overrides_table = True
+            if trace:
+                count = self._conn.execute("SELECT COUNT(*) FROM author_overrides").fetchone()[0]
+                print(f"[wiki_people_tool] author_overrides table available ({count} entries)")
+        except sqlite3.OperationalError:
+            if trace:
+                print("[wiki_people_tool] No author_overrides table found, overrides disabled")
+
         if trace:
             print(f"[wiki_people_tool] Connected to {self.db_path}")
 
     def _fts_escape(self, text: str) -> str:
         return text.replace('"', '""')
+
+    def _get_override(self, name: str) -> Optional[Dict[str, Any]]:
+        """Look up an author override from the SQL table."""
+        if not self._has_overrides_table:
+            return None
+        try:
+            row = self._conn.execute(
+                "SELECT birth_year, death_year, main_genre, nationality, canonical_name "
+                "FROM author_overrides WHERE LOWER(name) = ?",
+                (name.lower(),),
+            ).fetchone()
+            if row:
+                return dict(row)
+        except sqlite3.OperationalError:
+            pass
+        return None
+
+    def upsert_override(self, name: str, birth_year=None, death_year=None,
+                        main_genre=None, nationality=None, canonical_name=None) -> None:
+        """Insert or update an author override in the SQL table."""
+        if not self._has_overrides_table:
+            return
+        self._conn.execute(
+            "INSERT INTO author_overrides (name, birth_year, death_year, main_genre, nationality, canonical_name) "
+            "VALUES (?, ?, ?, ?, ?, ?) "
+            "ON CONFLICT(name) DO UPDATE SET "
+            "birth_year=COALESCE(excluded.birth_year, birth_year), "
+            "death_year=COALESCE(excluded.death_year, death_year), "
+            "main_genre=COALESCE(excluded.main_genre, main_genre), "
+            "nationality=COALESCE(excluded.nationality, nationality), "
+            "canonical_name=COALESCE(excluded.canonical_name, canonical_name)",
+            (name, birth_year, death_year, main_genre, nationality, canonical_name),
+        )
+        self._conn.commit()
 
     def find_people(self, name: str, limit: int = 5) -> List[Dict[str, Any]]:
         if not name:
@@ -318,17 +348,18 @@ class SQLiteWikiPeopleIndex:
             try:
                 payload = json.loads(row["data"])
                 title = payload.get("title")
-                
-                # Check for override (perfect match, case-insensitive)
+
                 birth_year = payload.get("birth_year")
                 death_year = payload.get("death_year")
-                
-                if title and title.lower() in self.overrides:
-                    override = self.overrides[title.lower()]
-                    birth_year = override.get("birth_year")
-                    death_year = override.get("death_year")
-                    if self.trace:
-                        print(f"[wiki_people_tool] Applied override for {title}: {birth_year}-{death_year}")
+
+                # Check SQL overrides table (case-insensitive)
+                if title and self._has_overrides_table:
+                    override = self._get_override(title)
+                    if override:
+                        birth_year = override.get("birth_year") or birth_year
+                        death_year = override.get("death_year") or death_year
+                        if self.trace:
+                            print(f"[wiki_people_tool] Applied override for {title}: {birth_year}-{death_year}")
 
                 candidates.append(
                     {
@@ -360,179 +391,3 @@ class SQLiteWikiPeopleIndex:
         if self.trace:
             print(f"[wiki_people_tool] Returned {len(results)} matches in {duration:.3f}s")
         return results
-
-
-def create_wiki_people_lookup_tool(
-    *,
-    description: Optional[str] = None,
-    trace: bool = False,
-    db_path: Path | str = WIKI_PEOPLE_DB_PATH,
-    catalog: Optional[Any] = None,
-) -> "FunctionTool":
-    try:
-        from llama_index.core.tools import FunctionTool
-    except ImportError as exc:  # pragma: no cover
-        raise ImportError(
-            "llama-index is required to build the Wikipedia people lookup tool. "
-            "Install it via `uv sync` or `pip install llama-index`."
-        ) from exc
-
-    catalog_obj = catalog or SQLiteWikiPeopleIndex(db_path=db_path, trace=trace)
-
-    def lookup_person(name: str, limit: int = 5) -> Dict[str, Any]:
-        norm_limit = min(limit, 20)
-        matches = catalog_obj.find_people(name, norm_limit)
-        if trace:
-            print(
-                "[wiki_people_tool] lookup_person\n",
-                json.dumps(
-                    {"query": name, "matches_found": len(matches), "matches": matches},
-                    indent=2,
-                    ensure_ascii=False,
-                ),
-            )
-        return {"query": {"name": name, "limit": norm_limit}, "matches_found": len(matches), "matches": matches}
-
-    tool_description = description or (
-        "Searches a local Wikipedia people index by name. "
-        "Returns titles, page_ids, infobox roles, and categories to help disambiguate identity."
-    )
-    return FunctionTool.from_defaults(
-        fn=lookup_person,
-        name="wikipedia_person_lookup",
-        description=tool_description,
-    )
-
-
-def create_book_lookup_tool(
-    *,
-    description: Optional[str] = None,
-    trace: bool = False,
-    db_path: Path | str = BOOKS_DB_PATH,
-    catalog: Optional[Any] = None,
-) -> "FunctionTool":
-    """Build a LlamaIndex FunctionTool that verifies if a Goodreads book exists."""
-    try:
-        from llama_index.core.tools import FunctionTool
-    except ImportError as exc:  # pragma: no cover
-        raise ImportError(
-            "llama-index is required to build the Goodreads lookup tool. "
-            "Install it via `uv sync` or `pip install llama-index`."
-        ) from exc
-
-    catalog_obj = catalog or SQLiteGoodreadsCatalog(
-        db_path=db_path,
-        trace=trace,
-    )
-
-    def lookup_book(
-        title: Optional[str] = None,
-        author: Optional[str] = None,
-        limit: int = 5,
-    ) -> Dict[str, Any]:
-        if trace:
-            print(
-                "[goodreads_tool] lookup_book call "
-                f"title={title!r} author={author!r} limit={limit}"
-            )
-        if not title and not author:
-            raise ValueError("Provide at least a title or author.")
-
-        seen_ids = set()
-        matches: List[Dict[str, Any]] = []
-
-        def add_candidates(reason: str, candidates: List[Dict[str, Any]]) -> None:
-            if trace:
-                print(
-                    f"[goodreads_tool] add_candidates via {reason}: "
-                    f"{len(candidates)} rows"
-                )
-            for entry in candidates:
-                book_id = entry.get("book_id")
-                if not book_id or book_id in seen_ids:
-                    continue
-                seen_ids.add(book_id)
-                matches.append(entry)
-                if len(matches) >= limit:
-                    break
-
-        capped_limit = min(limit, 20)
-        if title:
-            add_candidates(
-                "title-only",
-                catalog_obj.find_books(title=title, author=None, limit=capped_limit),
-            )
-        if len(matches) < limit and author:
-            add_candidates(
-                "author-only",
-                catalog_obj.find_books(title=None, author=author, limit=capped_limit),
-            )
-
-        if trace:
-            print(
-                "[goodreads_tool] lookup results:\n",
-                json.dumps(
-                    {"query": {"title": title, "author": author}, "matches": matches},
-                    indent=2,
-                    ensure_ascii=False,
-                ),
-            )
-        return {
-            "query": {"title": title, "author": author, "limit": limit},
-            "matches_found": len(matches),
-            "matches": matches,
-        }
-
-    tool_description = description or (
-        "Searches Goodreads edition metadata by title or author (one field per call)."
-    )
-    return FunctionTool.from_defaults(
-        fn=lookup_book,
-        name="goodreads_book_lookup",
-        description=tool_description,
-    )
-
-
-def create_author_lookup_tool(
-    *,
-    authors_path: Path | str = AUTHORS_PATH,
-    description: Optional[str] = None,
-    trace: bool = False,
-) -> "FunctionTool":
-    try:
-        from llama_index.core.tools import FunctionTool
-    except ImportError as exc:  # pragma: no cover
-        raise ImportError(
-            "llama-index is required to build the Goodreads lookup tool. "
-            "Install it via `uv sync` or `pip install llama-index`."
-        ) from exc
-
-    catalog = GoodreadsAuthorCatalog(authors_path=authors_path)
-
-    def lookup_author(author: Optional[str] = None, limit: int = 5) -> Dict[str, Any]:
-        norm_limit = min(limit, 20)
-        matches = catalog.find_authors(author or "", limit=norm_limit)
-        if trace:
-            print(
-                "[goodreads_tool] lookup_author\n",
-                json.dumps(
-                    {"query": author, "matches_found": len(matches), "matches": matches},
-                    indent=2,
-                    ensure_ascii=False,
-                ),
-            )
-        return {
-            "query": {"author": author, "limit": norm_limit},
-            "matches_found": len(matches),
-            "matches": matches,
-        }
-
-    tool_description = description or (
-        "Searches Goodreads author metadata. Use when only the author is known and "
-        "you need to disambiguate identities."
-    )
-    return FunctionTool.from_defaults(
-        fn=lookup_author,
-        name="goodreads_author_lookup",
-        description=tool_description,
-    )
