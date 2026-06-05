@@ -20,6 +20,7 @@ def parse_args():
     parser.add_argument("input_dir", type=Path, help="Path to the pipeline output directory (containing final_citations...).")
     parser.add_argument("--name", required=True, help="Display name for the dataset in the UI.")
     parser.add_argument("--target-dir", type=Path, help="Where to store the frontend data (default: inside input_dir or frontend/data).")
+    parser.add_argument("--build", action="store_true", help="After registering, run the offline bake (frontend/build/build.mjs) for this dataset.")
     return parser.parse_args()
 
 def main():
@@ -117,6 +118,13 @@ def main():
         json.dump(datasets, f, indent=4)
         
     print("Done. Frontend updated.")
+
+    if args.build:
+        import subprocess
+        slug = dest_dir.name
+        build_script = repo_root / "frontend" / "build" / "build.mjs"
+        print(f"Baking dataset '{slug}' ...")
+        subprocess.run(["node", str(build_script), "--dataset", slug], cwd=repo_root, check=False)
 
 if __name__ == "__main__":
     main()

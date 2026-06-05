@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
-build/
+/build/
 develop-eggs/
 dist/
 downloads/
@@ -58,8 +58,16 @@ htmlcov/
 !web-search-agent/**/*.json
 !frontend/datasets.json
 !frontend/data/**/*.json
+!datasets/nationality_regions.json
+!datasets/nationality_overrides.json
+!datasets/author_images.json
+!frontend/build/package.json
+!frontend/build/package-lock.json
 profile_runs/
 profiling/
+
+# Node (frontend build tooling)
+node_modules/
 
 # Unified Output Directory
 outputs/

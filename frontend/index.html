@@ -1,137 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>BookGraph Explorer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>BookGraph — Citation Networks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
-
 <body>
   <canvas id="graph-canvas"></canvas>
 
-  <div id="label-overlay"></div>
-  <div id="axis-overlay"></div>
-  <div id="tooltip"></div>
-
-  <header>
-    <div class="header-content">
-      <img id="header-cover" class="cover-image" src="" style="display:none;" />
-      <div class="header-text">
-        <h1>BookGraph <a href="https://github.com/ThiagoLira/bookgraph-revisited" target="_blank" class="github-link" title="View on GitHub"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a><button class="info-btn" id="info-btn" title="About this visualization">?</button></h1>
-        <div class="header-subtitle" id="header-subtitle">Exploring Citation Networks</div>
-      </div>
-      <div id="shelf-section">
-        <span class="shelf-label">Source Books</span>
-      </div>
+  <!-- Top bar -->
+  <header id="topbar">
+    <div class="brand">
+      <span class="brand-mark">BOOKGRAPH</span>
+      <span class="brand-sub">citation networks</span>
     </div>
-
-    <div id="controls">
-      <div class="control-group">
-        <span class="control-label">Library</span>
-        <select id="dataset-select" class="search-box" style="width: auto; cursor: pointer;">
-          <option value="" disabled selected>Select a library...</option>
-        </select>
+    <div class="controls">
+      <div class="select-wrap">
+        <select id="library-select" aria-label="Select library"></select>
       </div>
-      <div class="control-group">
-        <span class="control-label">Search authors & books</span>
-        <input type="text" class="search-box" placeholder="Type to search..." id="search">
-        <span id="search-results"></span>
+      <div class="search-wrap">
+        <input id="search-input" type="text" placeholder="Search authors & works…" autocomplete="off" spellcheck="false" />
+        <div id="search-results"></div>
       </div>
+      <a class="gh-link" href="https://github.com/ThiagoLira/bookgraph-revisited" target="_blank" rel="noopener" title="View on GitHub" aria-label="GitHub">
+        <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
     </div>
   </header>
 
-  <div id="hero">
-    <h2>Visualizing Literary Citation Networks</h2>
-    <p>Explore how authors reference each other across time. Each circle represents an author, containing their books.
-       Red circles are source texts being analyzed; blue circles are cited works.
-       The vertical axis represents time, from ancient texts at the bottom to modern works at the top.
-       Select a library above to begin exploring.</p>
-  </div>
-
-  <div id="loading">Loading...</div>
-
-  <div id="mobile-hint">
-    <strong>Tip:</strong> Pinch to zoom, drag to pan
-    <button id="mobile-hint-close">&times;</button>
-  </div>
-
-  <button id="focus-exit">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M19 12H5M12 19l-7-7 7-7"/>
-    </svg>
-    <span class="focus-exit-text">Exit Focus</span>
-  </button>
-
-  <div id="focus-info">
-    <strong id="focus-author-name"></strong> &mdash; <strong id="focus-count"></strong> citations
-  </div>
-
-  <div id="citation-panel">
-    <div class="citation-panel-header">
-      <h2 id="citation-panel-title"></h2>
-      <button id="citation-panel-close">&times;</button>
-    </div>
-    <div id="citation-charts"></div>
-    <div class="citation-panel-body">
-      <div class="citation-col">
-        <h3>Cited Authors <span class="citation-col-count"></span></h3>
-        <ul id="cited-authors-list"></ul>
-      </div>
-      <div class="citation-col">
-        <h3>Cited Works <span class="citation-col-count"></span></h3>
-        <ul id="cited-works-list"></ul>
-      </div>
+  <!-- Intro overlay -->
+  <div id="intro">
+    <div class="intro-card">
+      <h1>Citation Networks</h1>
+      <p>Each circle is an <strong>author</strong>, holding their books. Vertical position is <strong>time</strong> — antiquity below, today above. Color marks the author's <strong>region of origin</strong>.</p>
+      <p class="intro-hint">Pick a library to begin · drag to pan · scroll to zoom · click an author to explore who they cite.</p>
     </div>
   </div>
 
-  <div id="detail-card">
-    <span id="detail-card-type"></span>
-    <h3 id="detail-card-title"></h3>
-    <div id="detail-card-meta"></div>
-  </div>
-
-  <div id="info-panel">
-    <div id="panel-header">
-      <span id="panel-type">Book</span>
-      <h2 id="panel-title"></h2>
-      <div id="panel-meta"></div>
-      <button id="panel-close">&times;</button>
+  <!-- Citation navigation panel (left) -->
+  <aside id="citation-panel" class="panel" aria-hidden="true">
+    <div class="panel-head">
+      <button id="nav-back" class="nav-back" title="Back" hidden>←</button>
+      <div class="panel-head-text">
+        <div class="panel-eyebrow">Citations</div>
+        <h2 id="citation-title"></h2>
+      </div>
+      <button class="panel-close" data-close="citation">×</button>
     </div>
-    <div id="panel-content"></div>
-  </div>
-
-  <div id="info-overlay">
-    <div class="info-backdrop" id="info-backdrop"></div>
-    <div class="info-card">
-      <button class="info-close" id="info-close">&times;</button>
-      <h2>BookGraph Explorer</h2>
-      <p>An interactive citation network showing how books reference each other across centuries.</p>
-      <div class="info-section">
-        <h3>Controls</h3>
-        <ul>
-          <li>Scroll or pinch to zoom, drag to pan</li>
-          <li>Click a <span class="color-source">red circle</span> to explore its citations</li>
-          <li>Click a <span class="color-cited">blue circle</span> for book details</li>
-        </ul>
-      </div>
-      <div class="info-section">
-        <h3>Book Shelf</h3>
-        <p>The cover images above are the source books from the library &mdash; click any cover to focus on its citation network.</p>
-      </div>
-      <div class="info-section">
-        <h3>Data Sources</h3>
-        <p>Citations are AI-extracted from source texts and matched against <strong>Goodreads</strong>. Author metadata comes from <strong>Wikipedia</strong>.</p>
-      </div>
+    <div class="cite-tabs">
+      <button class="cite-tab is-active" data-tab="cites">Cites</button>
+      <button class="cite-tab" data-tab="citedby">Cited by</button>
     </div>
-  </div>
+    <div class="panel-body">
+      <section class="cite-section" id="sec-authors">
+        <h3 class="cite-h">Authors</h3>
+        <ul id="list-authors" class="cite-list"></ul>
+      </section>
+      <section class="cite-section" id="sec-works">
+        <h3 class="cite-h">Works</h3>
+        <ul id="list-works" class="cite-list"></ul>
+      </section>
+    </div>
+  </aside>
+
+  <!-- Detail panel (right) -->
+  <aside id="detail-panel" class="panel" aria-hidden="true">
+    <button class="panel-close" data-close="detail">×</button>
+    <div class="panel-body" id="detail-body"></div>
+  </aside>
+
+  <!-- Legend -->
+  <div id="legend"></div>
+
+  <!-- Loading -->
+  <div id="loading" hidden><div class="spinner"></div></div>
 
   <script type="module" src="js/app.js"></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f0fa675c55964a0ea4e6fea27112a643"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
-
 </html>

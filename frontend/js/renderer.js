@@ -1,646 +1,293 @@
 /**
- * renderer.js — WebGPU instanced renderer for BookGraph.
- *
- * Renders circles (author enclosures + book dots) and lines (citation edges)
- * using two instanced draw calls per frame.
+ * renderer.js — Canvas 2D renderer. Reads fixed baked positions; no physics.
+ * Draws timeline gridlines, edges, nested author/book circles, author photos
+ * (fade-in on zoom), labels (LOD), and focus/hover/region dimming.
  */
 
-// WGSL shaders as inline strings (avoids fetch for no-build-step setup)
-const CIRCLE_WGSL = `
-struct ViewUniforms {
-  transform: mat3x3f,
-  resolution: vec2f,
-  pixel_ratio: f32,
-  time: f32,
-};
+const PHOTO_ZOOM = 1.5; // start loading/showing portraits past this scale
+const LABEL_MIN_PX = 13; // show author label when on-screen radius exceeds this
+const DIM = 0.07;
+const HOVER_DIM = 0.22;
 
-@group(0) @binding(0) var<uniform> view: ViewUniforms;
-
-struct CircleInstance {
-  @location(0) center: vec2f,
-  @location(1) radius: f32,
-  @location(2) fill_color: vec3f,
-  @location(3) fill_alpha: f32,
-  @location(4) stroke_color: vec3f,
-  @location(5) stroke_alpha: f32,
-  @location(6) stroke_width: f32,
-};
-
-struct VertexOutput {
-  @builtin(position) position: vec4f,
-  @location(0) local_pos: vec2f,
-  @location(1) fill_color: vec3f,
-  @location(2) fill_alpha: f32,
-  @location(3) stroke_color: vec3f,
-  @location(4) stroke_alpha: f32,
-  @location(5) radius_px: f32,
-  @location(6) stroke_width_px: f32,
-};
-
-const QUAD_VERTS = array<vec2f, 6>(
-  vec2f(-1.0, -1.0),
-  vec2f( 1.0, -1.0),
-  vec2f(-1.0,  1.0),
-  vec2f(-1.0,  1.0),
-  vec2f( 1.0, -1.0),
-  vec2f( 1.0,  1.0),
-);
-
-@vertex
-fn vs_main(
-  @builtin(vertex_index) vertex_index: u32,
-  instance: CircleInstance,
-) -> VertexOutput {
-  let local = QUAD_VERTS[vertex_index];
-  let world_pos = vec3f(instance.center, 1.0);
-  let screen_pos = view.transform * world_pos;
-  let k = view.transform[0][0];
-  let radius_px = instance.radius * k;
-  let expand = radius_px + instance.stroke_width * k + 1.5;
-  let pos_px = screen_pos.xy + local * expand;
-  let ndc = (pos_px / view.resolution) * 2.0 - 1.0;
-
-  var out: VertexOutput;
-  out.position = vec4f(ndc.x, -ndc.y, 0.0, 1.0);
-  out.local_pos = local * expand;
-  out.fill_color = instance.fill_color;
-  out.fill_alpha = instance.fill_alpha;
-  out.stroke_color = instance.stroke_color;
-  out.stroke_alpha = instance.stroke_alpha;
-  out.radius_px = radius_px;
-  out.stroke_width_px = instance.stroke_width * k;
-  return out;
-}
-
-@fragment
-fn fs_main(in: VertexOutput) -> @location(0) vec4f {
-  let dist = length(in.local_pos);
-  let aa = 1.0;
-  
-  // Flat circle with anti-aliased edge
-  let fill_edge = smoothstep(in.radius_px + aa, in.radius_px - aa, dist);
-  
-  // Base color
-  let base_color = in.fill_color;
-  
-  // Dynamic Rim Lighting (Material inner glow)
-  // Distance normalized from center (0) to edge (1)
-  let norm_dist = dist / in.radius_px;
-  // Create a rim pulse that flows outward over time
-  let pulse_phase = view.time * 2.0 - norm_dist * 4.0;
-  let pulse = (sin(pulse_phase) * 0.5 + 0.5);
-  
-  // Apply lighting strongly near the edge, subtly inside
-  let edge_glow = smoothstep(0.7, 1.0, norm_dist) * 0.15 * pulse;
-  let inner_highlight = smoothstep(0.0, 0.4, norm_dist) * 0.05 * pulse;
-  
-  let lighted_color = base_color + vec3f(edge_glow + inner_highlight);
-
-  let inner_edge = in.radius_px - in.stroke_width_px;
-  let stroke_mask = smoothstep(inner_edge - aa, inner_edge + aa, dist)
-                  * smoothstep(in.radius_px + aa, in.radius_px - aa, dist);
-
-  let fill = vec4f(lighted_color, in.fill_alpha * fill_edge);
-  let stroke = vec4f(in.stroke_color, in.stroke_alpha * stroke_mask);
-
-  let out_alpha = stroke.a + fill.a * (1.0 - stroke.a);
-  if (out_alpha < 0.001) {
-    discard;
-  }
-  let out_rgb = (stroke.rgb * stroke.a + fill.rgb * fill.a * (1.0 - stroke.a)) / out_alpha;
-  return vec4f(out_rgb, out_alpha);
-}
-`;
-
-const LINE_WGSL = `
-struct ViewUniforms {
-  transform: mat3x3f,
-  resolution: vec2f,
-  pixel_ratio: f32,
-  time: f32,
-};
-
-@group(0) @binding(0) var<uniform> view: ViewUniforms;
-
-struct LineInstance {
-  @location(0) pos_a: vec2f,
-  @location(1) pos_b: vec2f,
-  @location(2) color: vec3f,
-  @location(3) alpha: f32,
-  @location(4) width: f32,
-};
-
-struct VertexOutput {
-  @builtin(position) position: vec4f,
-  @location(0) edge_dist: f32,
-  @location(1) color: vec3f,
-  @location(2) alpha: f32,
-  @location(3) half_width_px: f32,
-};
-
-const QUAD_VERTS = array<vec2f, 6>(
-  vec2f(0.0, -1.0),
-  vec2f(1.0, -1.0),
-  vec2f(0.0,  1.0),
-  vec2f(0.0,  1.0),
-  vec2f(1.0, -1.0),
-  vec2f(1.0,  1.0),
-);
-
-@vertex
-fn vs_main(
-  @builtin(vertex_index) vertex_index: u32,
-  instance: LineInstance,
-) -> VertexOutput {
-  let vert = QUAD_VERTS[vertex_index];
-  let a_world = vec3f(instance.pos_a, 1.0);
-  let b_world = vec3f(instance.pos_b, 1.0);
-  let a_screen = (view.transform * a_world).xy;
-  let b_screen = (view.transform * b_world).xy;
-
-  let dir = b_screen - a_screen;
-  let len = length(dir);
-  var normal: vec2f;
-  if (len < 0.001) {
-    normal = vec2f(0.0, 1.0);
-  } else {
-    let d = dir / len;
-    normal = vec2f(-d.y, d.x);
-  }
-
-  let k = view.transform[0][0];
-  let half_width = max(instance.width * k * 0.5, 0.5);
-  let expand = half_width + 1.0;
-  let pos_on_line = mix(a_screen, b_screen, vert.x);
-  let pos_px = pos_on_line + normal * vert.y * expand;
-  let ndc = (pos_px / view.resolution) * 2.0 - 1.0;
-
-  var out: VertexOutput;
-  out.position = vec4f(ndc.x, -ndc.y, 0.0, 1.0);
-  out.edge_dist = vert.y * expand;
-  out.color = instance.color;
-  out.alpha = instance.alpha;
-  out.half_width_px = half_width;
-  return out;
-}
-
-@fragment
-fn fs_main(in: VertexOutput) -> @location(0) vec4f {
-  let dist = abs(in.edge_dist);
-  let aa = smoothstep(in.half_width_px + 1.0, in.half_width_px - 0.5, dist);
-  let a = in.alpha * aa;
-  if (a < 0.001) {
-    discard;
-  }
-  return vec4f(in.color, a);
-}
-`;
-
-// Circle instance layout: center(2f) + radius(1f) + fillColor(3f) + fillAlpha(1f)
-//                        + strokeColor(3f) + strokeAlpha(1f) + strokeWidth(1f) = 12 floats = 48 bytes
-const CIRCLE_FLOATS = 12;
-const CIRCLE_BYTES = CIRCLE_FLOATS * 4;
-
-// Line instance layout: posA(2f) + posB(2f) + color(3f) + alpha(1f) + width(1f) = 9 floats = 36 bytes
-const LINE_FLOATS = 9;
-const LINE_BYTES = LINE_FLOATS * 4;
-
-// Colors (matching CSS variables)
-const COLORS = {
-  bookSource: [0.769, 0.361, 0.290],    // #c45c4a
-  bookCited: [0.290, 0.435, 0.647],     // #4a6fa5
-  authorFill: [0.831, 0.647, 0.455],    // gold-ish, very low alpha
-  authorStroke: [0.831, 0.647, 0.455],   // gold-ish
-  edge: [0.165, 0.165, 0.184],          // #2a2a2f
-  edgeHighlight: [0.831, 0.647, 0.455], // --accent
-  bg: [0.039, 0.039, 0.047],            // #0a0a0c
-};
-
-export class GraphRenderer {
-  constructor(canvas) {
+export class Renderer {
+  constructor(canvas, store) {
     this.canvas = canvas;
-    this.device = null;
-    this.context = null;
-    this.format = null;
-
-    // Pipelines
-    this.circlePipeline = null;
-    this.linePipeline = null;
-
-    // Buffers
-    this.viewUniformBuffer = null;
-    this.circleBuffer = null;
-    this.lineBuffer = null;
-    this.bindGroup = null;
-
-    // Instance counts
-    this.circleCount = 0;
-    this.lineCount = 0;
-
-    // CPU-side data arrays (for partial updates)
-    this.circleData = null;
-    this.lineData = null;
-
-    // View transform (from d3-zoom)
-    this.transform = { x: 0, y: 0, k: 1 };
-
-    // Dirty flag — only submit GPU work when needed
-    this.dirty = true;
+    this.ctx = canvas.getContext("2d");
+    this.store = store;
+    this.dpr = Math.min(window.devicePixelRatio || 1, 2);
+    this.graph = null;
+    this.images = new Map(); // id -> {img, alpha, status}
+    this._raf = null;
+    this._loadsThisFrame = 0;
+    this.resize();
   }
 
-  async init() {
-    if (!navigator.gpu) {
-      throw new Error('WebGPU not supported');
+  setGraph(graph) {
+    this.graph = graph;
+    this.images.clear();
+    this.scheduleDraw();
+  }
+
+  resize() {
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    this.dpr = Math.min(window.devicePixelRatio || 1, 2);
+    this.canvas.width = w * this.dpr;
+    this.canvas.height = h * this.dpr;
+    this.canvas.style.width = w + "px";
+    this.canvas.style.height = h + "px";
+    this.W = w;
+    this.H = h;
+    this.scheduleDraw();
+  }
+
+  scheduleDraw() {
+    if (this._raf) return;
+    this._raf = requestAnimationFrame(() => {
+      this._raf = null;
+      this.draw();
+    });
+  }
+
+  // ---- alpha logic --------------------------------------------------------
+  _nodeAlpha(node) {
+    const s = this.store;
+    if (s.regionFilter) return node.region === s.regionFilter ? 1 : DIM;
+    if (s.focus) return s.focus.relatedIds.has(node.id) ? 1 : DIM;
+    if (s.hover) {
+      if (node === s.hover) return 1;
+      return s.hover.out.some((l) => l.target === node) || s.hover.in.some((l) => l.source === node)
+        ? 1
+        : HOVER_DIM;
+    }
+    return 1;
+  }
+
+  _edgeAlpha(link) {
+    const s = this.store;
+    if (s.regionFilter) {
+      return link.source.region === s.regionFilter || link.target.region === s.regionFilter ? 0.18 : 0.02;
+    }
+    if (s.focus) {
+      const c = s.focus.centerId;
+      return link.source.id === c || link.target.id === c ? 0.45 : 0.015;
+    }
+    if (s.hover) {
+      return link.source === s.hover || link.target === s.hover ? 0.4 : 0.02;
+    }
+    return 0.07;
+  }
+
+  // ---- main draw ----------------------------------------------------------
+  draw() {
+    const ctx = this.ctx;
+    const t = this.store.transform;
+    ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
+    ctx.clearRect(0, 0, this.W, this.H);
+    if (!this.graph || !t) return;
+
+    this._loadsThisFrame = 0;
+    let animating = false;
+
+    const m = 80;
+    const vx0 = (-t.x - m) / t.k;
+    const vy0 = (-t.y - m) / t.k;
+    const vx1 = (this.W - t.x + m) / t.k;
+    const vy1 = (this.H - t.y + m) / t.k;
+
+    ctx.save();
+    ctx.translate(t.x, t.y);
+    ctx.scale(t.k, t.k);
+
+    this._drawGridlines(ctx, vx0, vx1, vy0, vy1, t.k);
+    this._drawEdges(ctx, vx0, vy0, vx1, vy1);
+
+    for (const a of this.graph.authors) {
+      if (a.x + a.r < vx0 || a.x - a.r > vx1 || a.y + a.r < vy0 || a.y - a.r > vy1) continue;
+      const alpha = this._nodeAlpha(a);
+      if (this._drawAuthor(ctx, a, alpha, t.k)) animating = true;
+    }
+    ctx.restore();
+
+    this._drawLabels(ctx, t, vx0, vy0, vx1, vy1);
+    this._drawYearAxis(ctx, t);
+
+    if (animating) this.scheduleDraw();
+  }
+
+  _drawGridlines(ctx, vx0, vx1, vy0, vy1, k) {
+    const lines = this.graph.meta.gridlines || [];
+    ctx.lineWidth = 1 / k;
+    ctx.strokeStyle = "rgba(236,228,214,0.05)";
+    ctx.beginPath();
+    for (const g of lines) {
+      if (g.y < vy0 || g.y > vy1) continue;
+      ctx.moveTo(vx0, g.y);
+      ctx.lineTo(vx1, g.y);
+    }
+    ctx.stroke();
+  }
+
+  _drawEdges(ctx, vx0, vy0, vx1, vy1) {
+    const k = this.store.transform.k;
+    const focused = !!this.store.focus;
+    for (const l of this.graph.links) {
+      const a = this._edgeAlpha(l);
+      if (a < 0.02) continue;
+      const s = l.source, t2 = l.target;
+      if (
+        (s.x < vx0 && t2.x < vx0) || (s.x > vx1 && t2.x > vx1) ||
+        (s.y < vy0 && t2.y < vy0) || (s.y > vy1 && t2.y > vy1)
+      ) continue;
+      ctx.globalAlpha = a;
+      ctx.strokeStyle = focused ? "#d4a574" : "rgba(180,170,150,1)";
+      ctx.lineWidth = (a > 0.3 ? 1.3 : 0.7) / k;
+      ctx.beginPath();
+      ctx.moveTo(s.x, s.y);
+      ctx.lineTo(t2.x, t2.y);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  _drawAuthor(ctx, a, alpha, k) {
+    let animating = false;
+    ctx.globalAlpha = alpha;
+
+    // On hover, temporarily hide the portrait and reveal the book circles inside
+    // (so they can be seen and clicked).
+    const wantPhoto = k > PHOTO_ZOOM && a.image_url && alpha > 0.5 && this.store.hover !== a;
+    let entry = this.images.get(a.id);
+    if (wantPhoto && !entry && this._loadsThisFrame < 8) entry = this._loadImage(a);
+    const photoReady = entry && entry.status === "ok";
+
+    if (photoReady && wantPhoto) {
+      if (entry.alpha < 1) { entry.alpha = Math.min(1, entry.alpha + 0.08); animating = true; }
+      const pa = entry.alpha;
+      if (pa < 1) this._drawHull(ctx, a, alpha * (1 - pa), k);
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
+      ctx.clip();
+      const img = entry.img;
+      const d = a.r * 2;
+      const scale = Math.max(d / img.width, d / img.height);
+      const iw = img.width * scale, ih = img.height * scale;
+      ctx.globalAlpha = alpha * pa;
+      ctx.drawImage(img, a.x - iw / 2, a.y - ih / 2, iw, ih);
+      ctx.restore();
+      ctx.globalAlpha = alpha;
+      ctx.lineWidth = Math.max(1.5 / k, a.r * 0.04);
+      ctx.strokeStyle = a.color;
+      ctx.beginPath();
+      ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
+      ctx.stroke();
+    } else {
+      this._drawHull(ctx, a, alpha, k);
+      if (wantPhoto && entry && entry.status === "loading") animating = true;
     }
 
-    const adapter = await navigator.gpu.requestAdapter();
-    if (!adapter) {
-      throw new Error('No WebGPU adapter found');
+    if (this.store.selected === a) {
+      ctx.globalAlpha = 1;
+      ctx.lineWidth = 2.5 / k;
+      ctx.strokeStyle = "#ece4d6";
+      ctx.beginPath();
+      ctx.arc(a.x, a.y, a.r + 4 / k, 0, Math.PI * 2);
+      ctx.stroke();
     }
-
-    this.device = await adapter.requestDevice();
-    this.context = this.canvas.getContext('webgpu');
-    this.format = navigator.gpu.getPreferredCanvasFormat();
-
-    this.context.configure({
-      device: this.device,
-      format: this.format,
-      alphaMode: 'premultiplied',
-    });
-
-    this._resize();
-    this._createPipelines();
-    this._createViewBuffer();
+    ctx.globalAlpha = 1;
+    return animating;
   }
 
-  _resize() {
-    const dpr = window.devicePixelRatio || 1;
-    const w = this.canvas.clientWidth;
-    const h = this.canvas.clientHeight;
-    this.canvas.width = w * dpr;
-    this.canvas.height = h * dpr;
-    this.width = w * dpr;
-    this.height = h * dpr;
-    this.dpr = dpr;
-    this.dirty = true;
-  }
+  _drawHull(ctx, a, alpha, k) {
+    ctx.globalAlpha = alpha * 0.13;
+    ctx.fillStyle = a.color;
+    ctx.beginPath();
+    ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = alpha * 0.4;
+    ctx.lineWidth = 1 / k;
+    ctx.strokeStyle = a.color;
+    ctx.stroke();
 
-  handleResize() {
-    this._resize();
-    this._updateViewUniforms();
-  }
-
-  _createPipelines() {
-    // Circle pipeline
-    const circleModule = this.device.createShaderModule({ code: CIRCLE_WGSL });
-    this.circlePipeline = this.device.createRenderPipeline({
-      layout: 'auto',
-      vertex: {
-        module: circleModule,
-        entryPoint: 'vs_main',
-        buffers: [{
-          arrayStride: CIRCLE_BYTES,
-          stepMode: 'instance',
-          attributes: [
-            { shaderLocation: 0, offset: 0, format: 'float32x2' },  // center
-            { shaderLocation: 1, offset: 8, format: 'float32' },    // radius
-            { shaderLocation: 2, offset: 12, format: 'float32x3' },  // fillColor
-            { shaderLocation: 3, offset: 24, format: 'float32' },    // fillAlpha
-            { shaderLocation: 4, offset: 28, format: 'float32x3' },  // strokeColor
-            { shaderLocation: 5, offset: 40, format: 'float32' },    // strokeAlpha
-            { shaderLocation: 6, offset: 44, format: 'float32' },    // strokeWidth
-          ],
-        }],
-      },
-      fragment: {
-        module: circleModule,
-        entryPoint: 'fs_main',
-        targets: [{
-          format: this.format,
-          blend: {
-            color: { srcFactor: 'src-alpha', dstFactor: 'one-minus-src-alpha', operation: 'add' },
-            alpha: { srcFactor: 'one', dstFactor: 'one-minus-src-alpha', operation: 'add' },
-          },
-        }],
-      },
-      primitive: { topology: 'triangle-list' },
-    });
-
-    // Line pipeline
-    const lineModule = this.device.createShaderModule({ code: LINE_WGSL });
-    this.linePipeline = this.device.createRenderPipeline({
-      layout: 'auto',
-      vertex: {
-        module: lineModule,
-        entryPoint: 'vs_main',
-        buffers: [{
-          arrayStride: LINE_BYTES,
-          stepMode: 'instance',
-          attributes: [
-            { shaderLocation: 0, offset: 0, format: 'float32x2' },  // posA
-            { shaderLocation: 1, offset: 8, format: 'float32x2' },  // posB
-            { shaderLocation: 2, offset: 16, format: 'float32x3' },  // color
-            { shaderLocation: 3, offset: 28, format: 'float32' },    // alpha
-            { shaderLocation: 4, offset: 32, format: 'float32' },    // width
-          ],
-        }],
-      },
-      fragment: {
-        module: lineModule,
-        entryPoint: 'fs_main',
-        targets: [{
-          format: this.format,
-          blend: {
-            color: { srcFactor: 'src-alpha', dstFactor: 'one-minus-src-alpha', operation: 'add' },
-            alpha: { srcFactor: 'one', dstFactor: 'one-minus-src-alpha', operation: 'add' },
-          },
-        }],
-      },
-      primitive: { topology: 'triangle-list' },
-    });
-  }
-
-  _createViewBuffer() {
-    // mat3x3f in WebGPU = 3 × vec3f = 48 bytes (each column is vec3f padded to 16 bytes)
-    // + resolution(2f) + pixelRatio(1f) + pad(1f) = 16 bytes
-    // Total = 48 + 16 = 64 bytes
-    this.viewUniformBuffer = this.device.createBuffer({
-      size: 64,
-      usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST,
-    });
-
-    // Create bind groups for both pipelines (they share the same uniform layout)
-    this.circleBindGroup = this.device.createBindGroup({
-      layout: this.circlePipeline.getBindGroupLayout(0),
-      entries: [{ binding: 0, resource: { buffer: this.viewUniformBuffer } }],
-    });
-    this.lineBindGroup = this.device.createBindGroup({
-      layout: this.linePipeline.getBindGroupLayout(0),
-      entries: [{ binding: 0, resource: { buffer: this.viewUniformBuffer } }],
-    });
-  }
-
-  _updateViewUniforms() {
-    const { x, y, k } = this.transform;
-    // mat3x3f stored as 3 columns, each padded to 16 bytes (vec4 alignment)
-    // Column 0: [k, 0, 0, pad]
-    // Column 1: [0, k, 0, pad]
-    // Column 2: [tx, ty, 1, pad]
-    const data = new Float32Array(16); // 64 bytes
-    // Scale must be in device pixels to match u_resolution
-    const kd = k * this.dpr;
-    // Column 0
-    data[0] = kd;
-    data[1] = 0;
-    data[2] = 0;
-    data[3] = 0; // padding
-    // Column 1
-    data[4] = 0;
-    data[5] = kd;
-    data[6] = 0;
-    data[7] = 0; // padding
-    // Column 2
-    data[8] = x * this.dpr;
-    data[9] = y * this.dpr;
-    data[10] = 1;
-    data[11] = 0; // padding
-    // resolution + pixelRatio + time
-    data[12] = this.width;
-    data[13] = this.height;
-    data[14] = this.dpr;
-    data[15] = performance.now() / 1000.0; // Pass current time in seconds
-
-    this.device.queue.writeBuffer(this.viewUniformBuffer, 0, data);
-    this.dirty = true;
-  }
-
-  setTransform(transform) {
-    this.transform = transform;
-    this._updateViewUniforms();
-  }
-
-  /**
-   * Build circle instance buffer from graph data.
-   * @param {Array} authors - Author nodes with x, y, r, books[], isSource
-   * @param {Object} highlightState - { dimmedIds: Set, highlightedIds: Set }
-   */
-  updateCircles(authors, highlightState = null) {
-    // Count total circles: 1 enclosure + N books per author
-    let totalCircles = 0;
-    for (const a of authors) {
-      totalCircles++; // author enclosure
-      totalCircles += a.books ? a.books.length : 0; // book circles
-    }
-
-    // Allocate or reallocate CPU buffer
-    if (!this.circleData || this.circleData.length < totalCircles * CIRCLE_FLOATS) {
-      this.circleData = new Float32Array(totalCircles * CIRCLE_FLOATS);
-    }
-
-    const hasDim = highlightState && highlightState.dimmedIds && highlightState.dimmedIds.size > 0;
-
-    let offset = 0;
-    for (const a of authors) {
-      const isDimmed = hasDim && highlightState.dimmedIds.has(a.id);
-      const isHighlighted = highlightState && highlightState.highlightedIds && highlightState.highlightedIds.has(a.id);
-      const alphaMultiplier = isDimmed ? (highlightState.dimAlpha || 0.15) : 1.0;
-
-      // Author enclosure circle
-      const i = offset * CIRCLE_FLOATS;
-      this.circleData[i + 0] = a.x;                    // center x
-      this.circleData[i + 1] = a.y;                    // center y
-      this.circleData[i + 2] = a.r;                    // radius
-      this.circleData[i + 3] = COLORS.authorFill[0];   // fill R
-      this.circleData[i + 4] = COLORS.authorFill[1];   // fill G
-      this.circleData[i + 5] = COLORS.authorFill[2];   // fill B
-      this.circleData[i + 6] = 0.03 * alphaMultiplier; // fill alpha
-      this.circleData[i + 7] = COLORS.authorStroke[0]; // stroke R
-      this.circleData[i + 8] = COLORS.authorStroke[1]; // stroke G
-      this.circleData[i + 9] = COLORS.authorStroke[2]; // stroke B
-      this.circleData[i + 10] = (isHighlighted ? 1.0 : 0.15) * alphaMultiplier; // stroke alpha
-      this.circleData[i + 11] = isHighlighted ? 2 : 1; // stroke width
-      offset++;
-
-      // Book circles within this author
-      if (a.books) {
-        for (const b of a.books) {
-          const j = offset * CIRCLE_FLOATS;
-          const color = b.data.isSource ? COLORS.bookSource : COLORS.bookCited;
-          this.circleData[j + 0] = a.x + b.x;            // center x (world = author pos + packed offset)
-          this.circleData[j + 1] = a.y + b.y;            // center y
-          this.circleData[j + 2] = b.r;                   // radius
-          this.circleData[j + 3] = color[0];              // fill R
-          this.circleData[j + 4] = color[1];              // fill G
-          this.circleData[j + 5] = color[2];              // fill B
-          this.circleData[j + 6] = 1.0 * alphaMultiplier; // fill alpha
-          this.circleData[j + 7] = 0;                     // stroke R (no stroke)
-          this.circleData[j + 8] = 0;                     // stroke G
-          this.circleData[j + 9] = 0;                     // stroke B
-          this.circleData[j + 10] = 0;                    // stroke alpha
-          this.circleData[j + 11] = 0;                    // stroke width
-          offset++;
+    const books = a.books || [];
+    if (!books.length) {
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = a.color;
+      ctx.beginPath();
+      ctx.arc(a.x, a.y, Math.min(a.r, 4), 0, Math.PI * 2);
+      ctx.fill();
+    } else {
+      for (const b of books) {
+        ctx.globalAlpha = alpha;
+        ctx.fillStyle = a.color;
+        ctx.beginPath();
+        ctx.arc(a.x + b.x, a.y + b.y, b.r, 0, Math.PI * 2);
+        ctx.fill();
+        if (b.is_source) {
+          ctx.globalAlpha = alpha * 0.9;
+          ctx.lineWidth = 1.5 / k;
+          ctx.strokeStyle = "#ece4d6";
+          ctx.stroke();
         }
       }
     }
-
-    this.circleCount = offset;
-
-    // Create or update GPU buffer
-    const byteLength = offset * CIRCLE_BYTES;
-    if (!this.circleBuffer || this.circleBuffer.size < byteLength) {
-      if (this.circleBuffer) this.circleBuffer.destroy();
-      this.circleBuffer = this.device.createBuffer({
-        size: Math.max(byteLength, 64),
-        usage: GPUBufferUsage.VERTEX | GPUBufferUsage.COPY_DST,
-      });
-    }
-    this.device.queue.writeBuffer(this.circleBuffer, 0, this.circleData, 0, offset * CIRCLE_FLOATS);
-    this.dirty = true;
+    ctx.globalAlpha = alpha;
   }
 
-  /**
-   * Build line instance buffer from graph links.
-   * @param {Array} links - Array of { source, target } with x,y positions
-   * @param {Object} highlightState - { dimmedLinkIndices: Set, highlightedLinkIndices: Set }
-   */
-  updateLines(links, highlightState = null) {
-    if (!this.lineData || this.lineData.length < links.length * LINE_FLOATS) {
-      this.lineData = new Float32Array(links.length * LINE_FLOATS);
-    }
-
-    const hasDim = highlightState && highlightState.dimmedLinkIndices && highlightState.dimmedLinkIndices.size > 0;
-
-    for (let idx = 0; idx < links.length; idx++) {
-      const l = links[idx];
-      const i = idx * LINE_FLOATS;
-      const isDimmed = hasDim && highlightState.dimmedLinkIndices.has(idx);
-      const isHighlighted = highlightState && highlightState.highlightedLinkIndices && highlightState.highlightedLinkIndices.has(idx);
-
-      const color = isHighlighted ? COLORS.edgeHighlight : COLORS.edge;
-      const dimLinkAlpha = highlightState && highlightState.dimLinkAlpha != null ? highlightState.dimLinkAlpha : 0.08;
-      const alpha = isDimmed ? dimLinkAlpha : (isHighlighted ? 0.9 : 0.4);
-      const width = isHighlighted ? 2 : 1;
-
-      this.lineData[i + 0] = l.source.x;
-      this.lineData[i + 1] = l.source.y;
-      this.lineData[i + 2] = l.target.x;
-      this.lineData[i + 3] = l.target.y;
-      this.lineData[i + 4] = color[0];
-      this.lineData[i + 5] = color[1];
-      this.lineData[i + 6] = color[2];
-      this.lineData[i + 7] = alpha;
-      this.lineData[i + 8] = width;
-    }
-
-    this.lineCount = links.length;
-
-    const byteLength = links.length * LINE_BYTES;
-    if (!this.lineBuffer || this.lineBuffer.size < byteLength) {
-      if (this.lineBuffer) this.lineBuffer.destroy();
-      this.lineBuffer = this.device.createBuffer({
-        size: Math.max(byteLength, 64),
-        usage: GPUBufferUsage.VERTEX | GPUBufferUsage.COPY_DST,
-      });
-    }
-    if (links.length > 0) {
-      this.device.queue.writeBuffer(this.lineBuffer, 0, this.lineData, 0, links.length * LINE_FLOATS);
-    }
-    this.dirty = true;
+  _loadImage(a) {
+    const entry = { img: new Image(), alpha: 0, status: "loading" };
+    entry.img.crossOrigin = "anonymous";
+    entry.img.onload = () => { entry.status = "ok"; this.scheduleDraw(); };
+    entry.img.onerror = () => { entry.status = "err"; };
+    entry.img.src = a.image_url;
+    this.images.set(a.id, entry);
+    this._loadsThisFrame++;
+    return entry;
   }
 
-  /**
-   * Update axis gridlines as line instances.
-   * @param {Array} gridlines - Array of { y, width } in world coords, spanning the viewport
-   */
-  updateGridlines(gridlines, worldWidth) {
-    if (!gridlines || gridlines.length === 0) {
-      this.gridlineCount = 0;
-      return;
+  _drawLabels(ctx, t, vx0, vy0, vx1, vy1) {
+    ctx.textAlign = "center";
+    ctx.textBaseline = "top";
+    for (const a of this.graph.authors) {
+      if (a.x < vx0 || a.x > vx1 || a.y < vy0 || a.y > vy1) continue;
+      const onScreenR = a.r * t.k;
+      const isKey = a === this.store.selected || a === this.store.hover ||
+        (this.store.focus && this.store.focus.relatedIds.has(a.id));
+      if (onScreenR < LABEL_MIN_PX && !isKey) continue;
+      const alpha = this._nodeAlpha(a);
+      if (alpha < 0.3 && !isKey) continue;
+      const sx = a.x * t.k + t.x;
+      const sy = (a.y + a.r) * t.k + t.y + 5;
+      const fs = isKey ? 14 : 12.5;
+      ctx.font = `500 ${fs}px "Cormorant Garamond", serif`;
+      ctx.globalAlpha = Math.min(1, alpha + 0.15);
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = "rgba(20,17,13,0.85)";
+      ctx.strokeText(a.name, sx, sy);
+      ctx.fillStyle = isKey ? "#ece4d6" : "#cfc4b0";
+      ctx.fillText(a.name, sx, sy);
     }
-
-    if (!this.gridlineData || this.gridlineData.length < gridlines.length * LINE_FLOATS) {
-      this.gridlineData = new Float32Array(gridlines.length * LINE_FLOATS);
-    }
-
-    for (let idx = 0; idx < gridlines.length; idx++) {
-      const g = gridlines[idx];
-      const i = idx * LINE_FLOATS;
-      this.gridlineData[i + 0] = 0;            // posA.x
-      this.gridlineData[i + 1] = g.y;          // posA.y
-      this.gridlineData[i + 2] = worldWidth;    // posB.x
-      this.gridlineData[i + 3] = g.y;          // posB.y
-      this.gridlineData[i + 4] = 0.42;         // color R (--text-muted)
-      this.gridlineData[i + 5] = 0.42;         // color G
-      this.gridlineData[i + 6] = 0.42;         // color B
-      this.gridlineData[i + 7] = 0.07;         // alpha
-      this.gridlineData[i + 8] = 0.5;          // width
-    }
-
-    this.gridlineCount = gridlines.length;
-
-    const byteLength = gridlines.length * LINE_BYTES;
-    if (!this.gridlineBuffer || this.gridlineBuffer.size < byteLength) {
-      if (this.gridlineBuffer) this.gridlineBuffer.destroy();
-      this.gridlineBuffer = this.device.createBuffer({
-        size: Math.max(byteLength, 64),
-        usage: GPUBufferUsage.VERTEX | GPUBufferUsage.COPY_DST,
-      });
-    }
-    this.device.queue.writeBuffer(this.gridlineBuffer, 0, this.gridlineData, 0, gridlines.length * LINE_FLOATS);
-    this.dirty = true;
+    ctx.globalAlpha = 1;
   }
 
-  render() {
-    if (!this.device || !this.context) return;
-
-    const textureView = this.context.getCurrentTexture().createView();
-    const encoder = this.device.createCommandEncoder();
-
-    const pass = encoder.beginRenderPass({
-      colorAttachments: [{
-        view: textureView,
-        clearValue: { r: COLORS.bg[0], g: COLORS.bg[1], b: COLORS.bg[2], a: 1 },
-        loadOp: 'clear',
-        storeOp: 'store',
-      }],
-    });
-
-    // Draw gridlines first (behind everything)
-    if (this.gridlineCount > 0 && this.gridlineBuffer) {
-      pass.setPipeline(this.linePipeline);
-      pass.setBindGroup(0, this.lineBindGroup);
-      pass.setVertexBuffer(0, this.gridlineBuffer);
-      pass.draw(6, this.gridlineCount);
+  _drawYearAxis(ctx, t) {
+    const lines = this.graph.meta.gridlines || [];
+    ctx.textAlign = "right";
+    ctx.textBaseline = "middle";
+    ctx.font = '11px "JetBrains Mono", monospace';
+    const x = this.W - 12;
+    let lastY = -1e9;
+    for (const g of lines) {
+      const sy = g.y * t.k + t.y;
+      if (sy < 60 || sy > this.H - 8) continue;
+      if (Math.abs(sy - lastY) < 26) continue;
+      lastY = sy;
+      const label = g.year < 0 ? `${-g.year} BC` : `${g.year}`;
+      ctx.globalAlpha = 0.55;
+      ctx.fillStyle = "#8a7f6e";
+      ctx.fillText(label, x, sy);
     }
-
-    // Draw lines (edges)
-    if (this.lineCount > 0 && this.lineBuffer) {
-      pass.setPipeline(this.linePipeline);
-      pass.setBindGroup(0, this.lineBindGroup);
-      pass.setVertexBuffer(0, this.lineBuffer);
-      pass.draw(6, this.lineCount);
-    }
-
-    // Draw circles (nodes)
-    if (this.circleCount > 0 && this.circleBuffer) {
-      pass.setPipeline(this.circlePipeline);
-      pass.setBindGroup(0, this.circleBindGroup);
-      pass.setVertexBuffer(0, this.circleBuffer);
-      pass.draw(6, this.circleCount);
-    }
-
-    pass.end();
-    this.device.queue.submit([encoder.finish()]);
-    this.dirty = false;
-  }
-
-  destroy() {
-    if (this.circleBuffer) this.circleBuffer.destroy();
-    if (this.lineBuffer) this.lineBuffer.destroy();
-    if (this.gridlineBuffer) this.gridlineBuffer.destroy();
-    if (this.viewUniformBuffer) this.viewUniformBuffer.destroy();
-    if (this.device) this.device.destroy();
+    ctx.globalAlpha = 1;
   }
 }
-
-export { COLORS };

@@ -40,12 +40,15 @@ uv run python calibre_citations_pipeline.py /path/to/calibre/library
 
 ### Register output for frontend visualization
 ```bash
-uv run python scripts/register_dataset.py <OUTPUT_DIR> --name "Display Name"
+uv run python scripts/register_dataset.py <OUTPUT_DIR> --name "Display Name" --build
+# --build runs the offline bake. Without it, bake manually:
+#   node frontend/build/build.mjs --dataset <slug>     (or --all)
 ```
 
 ### Serve the frontend
 ```bash
-cd frontend && python -m http.server 8000
+cd frontend && python -m http.server 8000          # → http://localhost:8000/  (open /frontend/ if served from repo root)
+# or: python scripts/serve.py 8011                 # threaded + gzip, binds 0.0.0.0
 ```
 
 ### Run tests
@@ -205,51 +208,75 @@ This automatically:
 - Creates `manifest.json`
 - Updates `frontend/datasets.json`
 
+**Then BAKE the dataset** (required — the frontend only loads baked datasets):
+```bash
+node frontend/build/build.mjs --dataset my_book_collection
+# or pass --build to register_dataset.py to do it automatically:
+uv run python scripts/register_dataset.py <DIR> --name "My Books" --build
+```
+
 ### Option 2: Manual setup
 
 1. Create folder: `frontend/data/my_dataset/`
-2. Copy final JSON files there
-3. Create `manifest.json`:
-```json
-["book1.json", "book2.json"]
-```
-4. Add to `frontend/datasets.json`:
-```json
-{
-    "name": "My Dataset",
-    "path": "./data/my_dataset",
-    "covers": ["covers/book_cover.jpg"]
-}
-```
+2. Copy final stage-3 JSON files there
+3. Create `manifest.json`: `["book1.json", "book2.json"]`
+4. Add to `frontend/datasets.json`: `{ "name": "My Dataset", "path": "./data/my_dataset" }`
+5. Bake it: `node frontend/build/build.mjs --dataset my_dataset`
 
 ---
 
 ## Frontend Architecture
 
-The frontend is a modular D3.js application under `frontend/`.
+The frontend is a vanilla **Canvas 2D** app under `frontend/` (rewritten 2026-06; the
+old WebGPU/D3-force-simulation version is gone). Node positions are **pre-computed
+offline** (no runtime physics); the browser just draws fixed coordinates.
 
-### Key files:
+### Two phases
+
+**1. Offline bake** (`frontend/build/`, Node + d3) — run after registering a dataset:
+```bash
+cd frontend/build && npm install        # one-time
+node build.mjs --all                    # bake every dataset + merged "All Libraries"
+node build.mjs --dataset <slug>         # bake just one
+#   flags: --skip-images (fast, but NULLS portraits), --rebuild-images
+```
+For each `frontend/data/<slug>/` it reads the stage-3 JSON (via `manifest.json`) and writes:
+- `baked.json` — lean render payload: `{meta, authors[], links[]}` with fixed `x/y/r`,
+  `region`, `color`, `image_url`, years. **This is all the initial render needs.**
+- `details.json` — heavy text (book/author descriptions + commentaries), **lazy-loaded**
+  by the frontend after first paint (keeps initial load small).
+
+It also sets `"baked": true` on the dataset's `frontend/datasets.json` entry and creates a
+merged `_all` ("All Libraries"). Bake modules:
 | File | Purpose |
 |------|---------|
-| `index.html` | HTML shell |
-| `js/app.js` | Main controller, UI state, data loading |
-| `js/renderer.js` | D3.js WebGL rendering |
-| `js/data.js` | Dataset loading and manifest management |
-| `js/interaction.js` | Mouse/keyboard handlers |
-| `js/layout.js` | Graph layout algorithms |
-| `css/main.css` | All styling |
+| `build/build.mjs` | CLI orchestrator |
+| `build/graph_model.mjs` | Stage-3 JSON → authors/links (dedup, link aggregation) |
+| `build/layout.mjs` | Y = time scale, X = collision-relaxed spacing, inner-book circle packing |
+| `build/nationality.mjs` | nationality → region (reads `datasets/nationality_regions.json` + `datasets/nationality_overrides.json` + Wikipedia categories) |
+| `build/images.mjs` | Wikipedia portrait thumbnails, cached in `datasets/author_images.json` |
 
-### CSS variables (theming):
-```css
---bg: #0a0a0c;           /* Background */
---accent: #d4a574;        /* Highlight color (amber) */
---book-source: #c45c4a;   /* Red - source books */
---book-cited: #4a6fa5;    /* Blue - cited books */
-```
+**2. Runtime** (`frontend/js/`, vanilla + d3 from CDN for zoom/quadtree only):
+| File | Purpose |
+|------|---------|
+| `js/app.js` | Bootstrap: load baked dataset, wire modules |
+| `js/data.js` | Fetch `baked.json` (+ lazy `details.json`), build adjacency |
+| `js/state.js` | Central state + pub/sub (selection, focus, back-stack) |
+| `js/renderer.js` | Canvas 2D: gridlines, edges, author/book circles, portrait fade-in on zoom, focus dimming |
+| `js/interaction.js` | d3-zoom pan/zoom, quadtree hit-test, `flyTo` navigation |
+| `js/panels.js` | Detail panel + citation-navigation panel + legend + search |
+| `js/d3-imports.js` | d3 v7 (loaded from jsdelivr CDN) |
+| `css/main.css` | All styling (Cormorant Garamond + JetBrains Mono via Google Fonts) |
 
-### Data flow:
-```
-datasets.json → manifest.json → [book1.json, book2.json, ...] → processData() → D3 render
+Color = author nationality grouped into ~12 regions (`datasets/nationality_regions.json`).
+Y axis = time (author birth year / work year). Click an author → both panels open + graph
+flies to it; click a cited author/work row to walk the citation chain (back-stack to return).
+
+### Serving locally
+```bash
+bash scripts/launch_frontend.sh            # python http.server on :8000  → http://localhost:8000/frontend/
+# OR a threaded server that also gzips (faster for the large _all payload):
+python scripts/serve.py 8011               # → http://localhost:8011/frontend/  (binds 0.0.0.0)
 ```
 
 ---
@@ -262,8 +289,8 @@ datasets.json → manifest.json → [book1.json, book2.json, ...] → processDat
 # 2. Rename files to include Goodreads IDs
 # 3. Run pipeline
 uv run python run_folder.py /path/to/txt/files --workers 5
-# 4. Register for frontend
-uv run python scripts/register_dataset.py outputs/folder_runs/run_* --name "My Books"
+# 4. Register for frontend + bake
+uv run python scripts/register_dataset.py outputs/folder_runs/run_* --name "My Books" --build
 # 5. View
 cd frontend && python -m http.server 8000
 ```

@@ -1,5 +1,10 @@
 [
     {
+        "name": "All Libraries",
+        "path": "./data/_all",
+        "baked": true
+    },
+    {
         "name": "Famous Non-Fiction Books",
         "path": "./data/philosophy_stress_test",
         "covers": [
@@ -23,14 +28,16 @@
             "covers/the_origins_of_totalitarianism.jpg",
             "covers/other_inquisitions_1937_1952.jpg",
             "covers/where_the_stress_falls.jpg"
-        ]
+        ],
+        "baked": true
     },
     {
         "name": "Stalin's Library: A Dictator and His Books",
         "path": "./data/stalin_library",
         "covers": [
             "covers/stalin_s_library_a_dictator_and_his_books.jpg"
-        ]
+        ],
+        "baked": true
     },
     {
         "name": "Umberto Eco Collection",
@@ -41,7 +48,8 @@
             "covers/mouse_or_rat_translation_as_negotiation.jpg",
             "covers/on_the_shoulders_of_giants.jpg",
             "covers/how_to_spot_a_fascist.jpg"
-        ]
+        ],
+        "baked": true
     },
     {
         "name": "David Foster Wallace Library",
@@ -50,28 +58,32 @@
             "covers/consider_the_lobster_and_other.jpg",
             "covers/david_foster_wallace_the_last_interview_and_other.jpg",
             "covers/a_supposedly_fun_thing_i_ll_never_do.jpg"
-        ]
+        ],
+        "baked": true
     },
     {
         "name": "Lovecraft - Supernatural Horror in Literature",
         "path": "./data/lovecraft_-_supernatural_horror_in_literature",
         "covers": [
             "covers/supernatural_horror_in_literature.jpg"
-        ]
+        ],
+        "baked": true
     },
     {
         "name": "What I Believe",
         "path": "./data/what_i_believe",
         "covers": [
             "covers/what_i_believe.jpg"
-        ]
+        ],
+        "baked": true
     },
     {
-        "name": "Frances Yates \u2014 Cabbala e Occultismo",
-        "path": "./data/frances_yates_\u2014_cabbala_e_occultismo",
+        "name": "Frances Yates — Cabbala e Occultismo",
+        "path": "./data/frances_yates_—_cabbala_e_occultismo",
         "covers": [
             "covers/cabbala_e_occultismo_nell_et_elisabettiana.jpg"
-        ]
+        ],
+        "baked": true
     },
     {
         "name": "Western Canon Batch",
@@ -83,10 +95,12 @@
             "covers/the_western_canon.jpg",
             "covers/the_selfish_gene.jpg",
             "covers/mimesis_the_representation_of_reality_in_western_literature.jpg"
-        ]
+        ],
+        "baked": true
     },
     {
         "name": "The Hero With a Thousand Faces",
-        "path": "./data/the_hero_with_a_thousand_faces"
+        "path": "./data/the_hero_with_a_thousand_faces",
+        "baked": true
     }
 ]

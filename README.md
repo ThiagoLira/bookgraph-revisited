@@ -16,7 +16,7 @@ This system processes raw text files (books) to find citations of other books an
 *   **Calibre Integration**: Native support for processing Calibre libraries, leveraging existing metadata.
 *   **Checkpointing**: Pipeline saves progress every 5 citations and can resume from interruptions.
 *   **Persistent Enrichment**: Publication dates and author metadata accumulate across runs in both JSON and SQL.
-*   **Visualization**: D3.js frontend with focus mode for exploring dense citation networks.
+*   **Visualization**: Canvas 2D frontend with a pre-baked timeline layout (nodes colored by author nationality, portraits that fade in on zoom) and focus mode for exploring dense citation networks.
 
 ## Architecture
 
@@ -283,13 +283,18 @@ uv run python run_folder.py input_books/libraries/my_library_20260128 --dry-run
 uv run python run_folder.py input_books/libraries/my_library_20260128 --workers 5
 ```
 
-#### Step 4: Register for frontend
+#### Step 4: Register for frontend + bake the layout
 
 ```bash
 uv run python scripts/register_dataset.py \
     outputs/folder_runs/run_20260128-123456 \
-    --name "My Personal Library"
+    --name "My Personal Library" --build
 ```
+
+`--build` runs the **offline bake** (`frontend/build/build.mjs`) that pre-computes node
+positions, nationality colors, and author portraits into `frontend/data/<slug>/baked.json`.
+The Canvas 2D frontend only loads baked datasets. (One-time: `cd frontend/build && npm install`.)
+To (re)bake everything incl. the merged "All Libraries" view: `node frontend/build/build.mjs --all`.
 
 #### Step 5: View the visualization
 
