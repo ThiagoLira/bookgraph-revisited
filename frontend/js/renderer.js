@@ -4,7 +4,7 @@
  * (fade-in on zoom), labels (LOD), and focus/hover/region dimming.
  */
 
-const PHOTO_ZOOM = 1.5; // start loading/showing portraits past this scale
+const PHOTO_ZOOM = 0.85; // start loading/showing portraits past this scale (earlier)
 const LABEL_MIN_PX = 13; // show author label when on-screen radius exceeds this
 const DIM = 0.07;
 const HOVER_DIM = 0.22;
@@ -154,9 +154,9 @@ export class Renderer {
     let animating = false;
     ctx.globalAlpha = alpha;
 
-    // On hover, temporarily hide the portrait and reveal the book circles inside
-    // (so they can be seen and clicked).
-    const wantPhoto = k > PHOTO_ZOOM && a.image_url && alpha > 0.5 && this.store.hover !== a;
+    // Default node = a plain ball. Zoom in -> portrait. Hover -> reveal books.
+    const isHovered = this.store.hover === a;
+    const wantPhoto = k > PHOTO_ZOOM && a.image_url && alpha > 0.5 && !isHovered;
     let entry = this.images.get(a.id);
     if (wantPhoto && !entry && this._loadsThisFrame < 8) entry = this._loadImage(a);
     const photoReady = entry && entry.status === "ok";
@@ -164,7 +164,7 @@ export class Renderer {
     if (photoReady && wantPhoto) {
       if (entry.alpha < 1) { entry.alpha = Math.min(1, entry.alpha + 0.08); animating = true; }
       const pa = entry.alpha;
-      if (pa < 1) this._drawHull(ctx, a, alpha * (1 - pa), k);
+      if (pa < 1) this._drawPlainBall(ctx, a, alpha * (1 - pa), k);
       ctx.save();
       ctx.beginPath();
       ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
@@ -182,8 +182,10 @@ export class Renderer {
       ctx.beginPath();
       ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
       ctx.stroke();
+    } else if (isHovered && a.books && a.books.length) {
+      this._drawBooks(ctx, a, alpha, k); // reveal books on hover
     } else {
-      this._drawHull(ctx, a, alpha, k);
+      this._drawPlainBall(ctx, a, alpha, k);
       if (wantPhoto && entry && entry.status === "loading") animating = true;
     }
 
@@ -199,7 +201,30 @@ export class Renderer {
     return animating;
   }
 
-  _drawHull(ctx, a, alpha, k) {
+  _drawPlainBall(ctx, a, alpha, k) {
+    ctx.globalAlpha = alpha;
+    ctx.fillStyle = a.color;
+    ctx.beginPath();
+    ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
+    ctx.fill();
+    // subtle edge for depth
+    ctx.globalAlpha = alpha * 0.35;
+    ctx.lineWidth = 1 / k;
+    ctx.strokeStyle = "rgba(0,0,0,0.45)";
+    ctx.stroke();
+    // source authors get a light ring to stand out
+    if (a.is_source) {
+      ctx.globalAlpha = alpha * 0.85;
+      ctx.lineWidth = 1.6 / k;
+      ctx.strokeStyle = "#ece4d6";
+      ctx.beginPath();
+      ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = alpha;
+  }
+
+  _drawBooks(ctx, a, alpha, k) {
     ctx.globalAlpha = alpha * 0.13;
     ctx.fillStyle = a.color;
     ctx.beginPath();

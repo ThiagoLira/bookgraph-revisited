@@ -212,6 +212,17 @@ export class Panels {
     this.interaction.flyTo(node);
   }
 
+  // Preview a citation on the right panel only — no camera move, no change to
+  // the current selection/focus/left panel.
+  _previewAuthor(node) {
+    this._renderAuthorDetail(node);
+    this.elDetail.classList.add("open");
+    this.elDetail.setAttribute("aria-hidden", "false");
+  }
+  _previewBook(book, author) {
+    this._renderBookDetail({ book, author });
+  }
+
   // ---- citation panel -----------------------------------------------------
   _renderCitation(node) {
     if (!node) return;
@@ -301,7 +312,7 @@ export class Panels {
     row.appendChild(el("span", "cite-name", esc(node.name)));
     row.appendChild(el("span", "cite-year", fmtYear(node.year)));
     if (count > 1) row.appendChild(el("span", "cite-count", `×${count}`));
-    row.addEventListener("click", () => this._navTo(node));
+    row.addEventListener("click", () => this._previewAuthor(node));
     return row;
   }
 
@@ -312,9 +323,7 @@ export class Panels {
     name.innerHTML = `${esc(book.title)} <span style="color:var(--muted);font-family:var(--mono);font-size:10.5px">— ${esc(author.name)}</span>`;
     row.appendChild(name);
     row.appendChild(el("span", "cite-year", fmtYear(book.year)));
-    row.addEventListener("click", () => {
-      this.store.selectBook(book, author);
-    });
+    row.addEventListener("click", () => this._previewBook(book, author));
     return row;
   }
 
@@ -383,8 +392,7 @@ export class Panels {
     body.scrollTop = 0;
   }
 
-  _renderBookDetail() {
-    const sb = this.store.selectedBook;
+  _renderBookDetail(sb = this.store.selectedBook) {
     if (!sb) return;
     const { book, author } = sb;
     const body = $("detail-body");
