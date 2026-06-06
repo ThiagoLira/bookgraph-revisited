@@ -74,6 +74,7 @@ export class Interaction {
     const [sx, sy] = this._screen(e);
     const hit = this.hitTest(sx, sy);
     this.store.setHover(hit ? hit.author : null);
+    this.store.setHoverBook(hit && hit.book ? { book: hit.book, author: hit.author } : null);
     this.canvas.classList.toggle("pointer", !!hit);
     this.renderer.scheduleDraw();
   }

@@ -9,6 +9,7 @@ export class Store {
     this.graph = null;
     this.transform = null; // d3 zoomTransform
     this.hover = null; // author node
+    this.hoverBook = null; // { book, author }
     this.selected = null; // author node
     this.selectedBook = null; // {book, author}
     this.focus = null; // { centerId, relatedIds: Set<string> }
@@ -44,6 +45,14 @@ export class Store {
     if (this.hover === node) return;
     this.hover = node;
     this.emit("hover");
+  }
+
+  setHoverBook(payload) {
+    const same = (this.hoverBook && payload && this.hoverBook.book === payload.book) ||
+      (!this.hoverBook && !payload);
+    if (same) return;
+    this.hoverBook = payload; // { book, author } | null
+    this.emit("hoverBook");
   }
 
   _computeFocus(node) {

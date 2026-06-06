@@ -316,6 +316,18 @@ html, body {
 .bp-title.src { font-style: italic; }
 .bp-year { font-family: var(--mono); font-size: 10px; color: var(--muted); flex-shrink: 0; }
 
+/* ---- Per-book tooltip ---- */
+#book-tooltip {
+  position: fixed; z-index: 36; display: none; pointer-events: none;
+  transform: translateX(-50%);
+  background: var(--bg-2); border: 1px solid var(--panel-border); border-radius: 6px;
+  box-shadow: var(--shadow); padding: 4px 9px; max-width: 280px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  font-family: var(--serif); font-size: 15px; color: var(--ink);
+}
+#book-tooltip.open { display: block; }
+#book-tooltip .tt-year { font-family: var(--mono); font-size: 10px; color: var(--muted); margin-left: 7px; }
+
 /* ---- Loading ---- */
 #loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 50; background: rgba(20,16,12,0.4); }
 #loading[hidden] { display: none; } /* id selector beats UA [hidden]{display:none}, so re-assert it */

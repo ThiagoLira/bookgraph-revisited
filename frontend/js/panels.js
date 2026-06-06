@@ -44,6 +44,11 @@ export class Panels {
     this.popover.addEventListener("mouseenter", () => clearTimeout(this._popTimer));
     this.popover.addEventListener("mouseleave", () => this._hidePopover());
 
+    // Per-book title tooltip (shown when hovering an inner book ball).
+    this.tooltip = el("div");
+    this.tooltip.id = "book-tooltip";
+    document.body.appendChild(this.tooltip);
+
     document.querySelectorAll(".panel-close").forEach((b) =>
       b.addEventListener("click", () => {
         if (b.dataset.close === "detail") this.closeDetail();
@@ -70,7 +75,8 @@ export class Panels {
         if (this.store.selected) this._renderCitation(this.store.selected);
       }
       else if (reason === "hover") this._onHover();
-      else if (reason === "transform") this._hidePopover(0);
+      else if (reason === "hoverBook") this._onHoverBook();
+      else if (reason === "transform") { this._hidePopover(0); this._hideTooltip(); }
     });
   }
 
@@ -120,6 +126,26 @@ export class Panels {
     const top = Math.max(64, Math.min(window.innerHeight - ph - 8, sy - 28));
     this.popover.style.left = left + "px";
     this.popover.style.top = top + "px";
+  }
+
+  _onHoverBook() {
+    const hb = this.store.hoverBook;
+    if (!hb) {
+      this._hideTooltip();
+      return;
+    }
+    const t = this.store.transform;
+    const sx = (hb.author.x + hb.book.x) * t.k + t.x;
+    const sy = (hb.author.y + hb.book.y) * t.k + t.y;
+    const r = hb.book.r * t.k;
+    this.tooltip.innerHTML = `${esc(hb.book.title)}<span class="tt-year">${fmtYear(hb.book.year)}</span>`;
+    this.tooltip.classList.add("open");
+    this.tooltip.style.left = sx + "px";
+    this.tooltip.style.top = sy - r - this.tooltip.offsetHeight - 7 + "px";
+  }
+
+  _hideTooltip() {
+    this.tooltip.classList.remove("open");
   }
 
   _hidePopover(delay = 160) {

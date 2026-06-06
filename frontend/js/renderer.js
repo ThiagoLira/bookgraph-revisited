@@ -243,13 +243,20 @@ export class Renderer {
       ctx.arc(a.x, a.y, Math.min(a.r, 4), 0, Math.PI * 2);
       ctx.fill();
     } else {
+      const hb = this.store.hoverBook;
       for (const b of books) {
+        const isHB = hb && hb.book === b;
         ctx.globalAlpha = alpha;
         ctx.fillStyle = a.color;
         ctx.beginPath();
         ctx.arc(a.x + b.x, a.y + b.y, b.r, 0, Math.PI * 2);
         ctx.fill();
-        if (b.is_source) {
+        if (isHB) {
+          ctx.globalAlpha = 1;
+          ctx.lineWidth = 2.5 / k;
+          ctx.strokeStyle = "#d4a574";
+          ctx.stroke();
+        } else if (b.is_source) {
           ctx.globalAlpha = alpha * 0.9;
           ctx.lineWidth = 1.5 / k;
           ctx.strokeStyle = "#ece4d6";
