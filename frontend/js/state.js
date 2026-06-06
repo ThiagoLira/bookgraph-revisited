@@ -69,6 +69,11 @@ export class Store {
     this.emit("selectBook");
   }
 
+  clearBook() {
+    this.selectedBook = null;
+    this.emit("select"); // re-render citation (unfiltered) + author detail
+  }
+
   back() {
     const prev = this.backStack.pop();
     if (prev) {

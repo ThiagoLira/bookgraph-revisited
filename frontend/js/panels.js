@@ -3,8 +3,6 @@
  * library selector, search. Subscribes to the store and re-renders.
  */
 
-import { citedWorks } from "./data.js";
-
 const $ = (id) => document.getElementById(id);
 
 function el(tag, cls, html) {
@@ -67,7 +65,10 @@ export class Panels {
     store.subscribe((reason) => {
       if (reason === "graph") this._onGraph();
       else if (reason === "select") this._onSelect();
-      else if (reason === "selectBook") this._renderBookDetail();
+      else if (reason === "selectBook") {
+        this._renderBookDetail();
+        if (this.store.selected) this._renderCitation(this.store.selected);
+      }
       else if (reason === "hover") this._onHover();
       else if (reason === "transform") this._hidePopover(0);
     });
@@ -217,13 +218,24 @@ export class Panels {
     $("citation-title").textContent = node.name;
     this.elBack.hidden = this.store.backStack.length === 0;
 
-    const hasOut = node.out.length > 0;
+    // Work filter: clicking one of this author's source books narrows the
+    // "Cites" lists to the citations that came from THAT book.
+    const sb = this.store.selectedBook;
+    const workFilter = sb && sb.author === node && sb.book.is_source ? sb.book : null;
+    this._renderFilterLine(workFilter);
+    if (workFilter) this.citeTab = "cites"; // filtering only applies to outgoing citations
+
+    const outLinks = workFilter
+      ? node.out.filter((l) => l.source_book_ids && l.source_book_ids.includes(workFilter.id))
+      : node.out;
+    const hasOut = outLinks.length > 0;
     const hasIn = node.in.length > 0;
+
     const tabCites = document.querySelector('.cite-tab[data-tab="cites"]');
     const tabCitedBy = document.querySelector('.cite-tab[data-tab="citedby"]');
     tabCites.disabled = !hasOut;
-    tabCitedBy.disabled = !hasIn;
-    if (this.citeTab === "cites" && !hasOut && hasIn) this.citeTab = "citedby";
+    tabCitedBy.disabled = !hasIn || !!workFilter;
+    if (this.citeTab === "cites" && !hasOut && hasIn && !workFilter) this.citeTab = "citedby";
     if (this.citeTab === "citedby" && !hasIn && hasOut) this.citeTab = "cites";
     tabCites.classList.toggle("is-active", this.citeTab === "cites");
     tabCitedBy.classList.toggle("is-active", this.citeTab === "citedby");
@@ -237,21 +249,49 @@ export class Panels {
     if (this.citeTab === "cites") {
       $("sec-works").style.display = "";
       if (!hasOut) {
-        authorsUl.appendChild(el("li", "cite-empty", "This author's works weren't analyzed, so we don't know who they cite. Try the “Cited by” tab."));
+        authorsUl.appendChild(
+          el("li", "cite-empty", workFilter
+            ? "No resolved citations from this work."
+            : "This author's works weren't analyzed, so we don't know who they cite. Try the “Cited by” tab.")
+        );
       }
-      for (const l of node.out) {
-        authorsUl.appendChild(this._authorRow(l.target, l.count, regions));
-      }
-      const works = citedWorks(node);
+      for (const l of outLinks) authorsUl.appendChild(this._authorRow(l.target, l.count, regions));
+      const works = this._worksFromLinks(outLinks);
       if (!works.length) worksUl.appendChild(el("li", "cite-empty", "No specific works resolved."));
-      for (const w of works) {
-        worksUl.appendChild(this._workRow(w.book, w.author, regions));
-      }
+      for (const w of works) worksUl.appendChild(this._workRow(w.book, w.author, regions));
     } else {
       $("sec-works").style.display = "none";
-      for (const l of node.in) {
-        authorsUl.appendChild(this._authorRow(l.source, l.count, regions));
+      for (const l of node.in) authorsUl.appendChild(this._authorRow(l.source, l.count, regions));
+    }
+  }
+
+  _worksFromLinks(links) {
+    const seen = new Set();
+    const works = [];
+    for (const l of links) {
+      for (const b of l.target.books) {
+        if (b.is_source || seen.has(b.id)) continue;
+        seen.add(b.id);
+        works.push({ book: b, author: l.target });
       }
+    }
+    works.sort((a, b) => (a.book.year ?? 0) - (b.book.year ?? 0));
+    return works;
+  }
+
+  _renderFilterLine(workFilter) {
+    const elf = $("citation-filter");
+    if (!elf) return;
+    if (workFilter) {
+      elf.hidden = false;
+      elf.innerHTML = `Citations filtered on work: <em>${esc(workFilter.title)}</em> <button class="filter-clear" title="Clear filter">×</button>`;
+      elf.querySelector(".filter-clear").addEventListener("click", (e) => {
+        e.stopPropagation();
+        this.store.clearBook();
+      });
+    } else {
+      elf.hidden = true;
+      elf.innerHTML = "";
     }
   }
 
