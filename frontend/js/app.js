@@ -63,9 +63,8 @@ async function init() {
     console.warn("No baked datasets found. Run: node frontend/build/build.mjs --all");
     return;
   }
-  // Prefer "All Libraries" if present, else the first.
+  // Always load the merged "All Libraries" graph — no per-library selection.
   const initial = datasets.find((d) => d.path.endsWith("/_all")) || datasets[0];
-  panels.renderLibrarySelector(datasets, initial.path, (path) => loadLibrary(path, datasets));
   await loadLibrary(initial.path, datasets);
 }
 
