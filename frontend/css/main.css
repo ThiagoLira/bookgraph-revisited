@@ -272,6 +272,31 @@ html, body {
 .commentary::before { content: "“"; color: var(--accent); }
 .commentary::after { content: "”"; color: var(--accent); }
 
+/* Per-citer provenance groups ("Cited in context") */
+.cite-group { margin: 0 0 18px; }
+.cite-group:last-child { margin-bottom: 4px; }
+.cite-group-head {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em;
+  color: var(--muted); margin: 0 0 8px;
+}
+.cite-group-author { color: var(--accent); cursor: pointer; }
+.cite-group-author:hover { text-decoration: underline; }
+.cite-group-src { font-style: italic; }
+.cite-group-head .cite-count { margin-left: 6px; }
+.cite-rawtitle { font-family: var(--mono); font-size: 10.5px; color: var(--faint); margin: 0 0 7px; }
+.context-quote {
+  font-family: var(--serif); font-size: 15px; line-height: 1.5; color: var(--ink-dim);
+  border-left: 2px solid var(--accent); padding: 2px 0 2px 12px; margin: 0 0 10px;
+}
+.context-quote::before { content: "“"; color: var(--accent); }
+.context-quote::after { content: "”"; color: var(--accent); }
+.cite-note {
+  font-size: 13px; line-height: 1.45; color: var(--muted); font-style: italic;
+  margin: 0 0 10px; padding-left: 14px;
+}
+.cite-more { font-family: var(--mono); font-size: 10.5px; color: var(--accent); cursor: pointer; margin: 2px 0 0 14px; }
+.cite-more:hover { text-decoration: underline; }
+
 .detail-link {
   display: inline-block; margin: 6px 18px 18px; font-family: var(--mono); font-size: 11px;
   color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); padding-bottom: 2px;

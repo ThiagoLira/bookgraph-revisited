@@ -293,7 +293,7 @@ export class Panels {
         );
       }
       for (const l of outLinks) authorsUl.appendChild(this._authorRow(l.target, l.count, regions));
-      const works = this._worksFromLinks(outLinks);
+      const works = this._worksFromLinks(outLinks, workFilter);
       if (!works.length) worksUl.appendChild(el("li", "cite-empty", "No specific works resolved."));
       for (const w of works) worksUl.appendChild(this._workRow(w.book, w.author, regions));
     } else {
@@ -302,18 +302,88 @@ export class Panels {
     }
   }
 
-  _worksFromLinks(links) {
+  _worksFromLinks(links, workFilter = null) {
     const seen = new Set();
     const works = [];
     for (const l of links) {
-      for (const b of l.target.books) {
-        if (b.is_source || seen.has(b.id)) continue;
-        seen.add(b.id);
-        works.push({ book: b, author: l.target });
+      if (l.citations && l.citations.length) {
+        // Per-citation provenance: list only works this author actually cited
+        // (optionally narrowed to citations coming from one source book).
+        const byId = new Map(l.target.books.map((b) => [b.id, b]));
+        for (const c of l.citations) {
+          if (!c.tb || seen.has(c.tb)) continue;
+          if (workFilter && c.sb !== workFilter.id) continue;
+          const b = byId.get(c.tb);
+          if (!b || b.is_source) continue;
+          seen.add(c.tb);
+          works.push({ book: b, author: l.target });
+        }
+      } else {
+        // details.json not loaded yet (or legacy bake): fall back to every
+        // non-source work of the linked author.
+        for (const b of l.target.books) {
+          if (b.is_source || seen.has(b.id)) continue;
+          seen.add(b.id);
+          works.push({ book: b, author: l.target });
+        }
       }
     }
     works.sort((a, b) => (a.book.year ?? 0) - (b.book.year ?? 0));
     return works;
+  }
+
+  // ---- per-citation provenance --------------------------------------------
+  // Group the citations arriving at `targetAuthor` by citing author. With a
+  // book: only citations of that specific work; without: author-level
+  // citations (invoked by name / work didn't resolve to a book).
+  _citationGroups(targetAuthor, book = null) {
+    const groups = [];
+    for (const l of targetAuthor.in || []) {
+      const cits = (l.citations || []).filter((c) => (book ? c.tb === book.id : !c.tb));
+      if (!cits.length) continue;
+      groups.push({ src: l.source, cits, total: cits.reduce((s, c) => s + (c.n || 1), 0) });
+    }
+    groups.sort((a, b) => b.total - a.total);
+    return groups;
+  }
+
+  _renderCitationGroups(body, groups, { showRawTitles = false } = {}) {
+    const s = el("div", "detail-section");
+    s.appendChild(el("h4", null, "Cited in context"));
+    for (const g of groups) {
+      const box = el("div", "cite-group");
+      const head = el("div", "cite-group-head");
+      const name = el("span", "cite-group-author", esc(g.src.name));
+      name.addEventListener("click", () => this._navTo(g.src));
+      head.appendChild(name);
+      const srcTitles = [...new Set(g.cits.map((c) => this.graph.bookById?.get(c.sb)?.title).filter(Boolean))];
+      if (srcTitles.length) head.appendChild(el("span", "cite-group-src", ` · ${esc(srcTitles.join(" · "))}`));
+      if (g.total > 1) head.appendChild(el("span", "cite-count", `×${g.total}`));
+      box.appendChild(head);
+
+      if (showRawTitles) {
+        const raw = [...new Set(g.cits.map((c) => c.t).filter(Boolean))];
+        if (raw.length) box.appendChild(el("div", "cite-rawtitle", `cited: ${esc(raw.join(" · "))}`));
+      }
+
+      const quotes = [...new Set(g.cits.flatMap((c) => c.q || []))];
+      const notes = [...new Set(g.cits.flatMap((c) => c.c || []))];
+      const QMAX = 4, NMAX = 3;
+      for (const q of quotes.slice(0, QMAX)) box.appendChild(el("p", "context-quote", esc(q)));
+      for (const n of notes.slice(0, NMAX)) box.appendChild(el("p", "cite-note", esc(n)));
+      const more = Math.max(0, quotes.length - QMAX) + Math.max(0, notes.length - NMAX);
+      if (more > 0) {
+        const moreEl = el("p", "cite-more", `+ ${more} more`);
+        moreEl.addEventListener("click", () => {
+          moreEl.remove();
+          for (const q of quotes.slice(QMAX)) box.appendChild(el("p", "context-quote", esc(q)));
+          for (const n of notes.slice(NMAX)) box.appendChild(el("p", "cite-note", esc(n)));
+        });
+        box.appendChild(moreEl);
+      }
+      s.appendChild(box);
+    }
+    body.appendChild(s);
   }
 
   _renderFilterLine(workFilter) {
@@ -409,7 +479,13 @@ export class Panels {
       body.appendChild(s);
     }
 
-    if (a.commentaries && a.commentaries.length) {
+    // Author-level citations (invoked by name, or the cited work didn't
+    // resolve to a book — raw titles shown). Grouped by citing author; falls
+    // back to the pooled commentary list when details haven't loaded.
+    const groups = this._citationGroups(a, null);
+    if (groups.length) {
+      this._renderCitationGroups(body, groups, { showRawTitles: true });
+    } else if (a.commentaries && a.commentaries.length) {
       const s = el("div", "detail-section");
       s.appendChild(el("h4", null, "Cited in context"));
       for (const c of a.commentaries.slice(0, 6)) s.appendChild(el("p", "commentary", esc(c)));
@@ -451,7 +527,12 @@ export class Panels {
       s.appendChild(el("p", "detail-desc", esc(book.description)));
       body.appendChild(s);
     }
-    if (book.commentaries && book.commentaries.length) {
+    // Grouped per-citer provenance (verbatim passages + commentary). Falls back
+    // to the pooled commentary list when details haven't loaded / legacy bakes.
+    const groups = book.is_source ? [] : this._citationGroups(author, book);
+    if (groups.length) {
+      this._renderCitationGroups(body, groups);
+    } else if (book.commentaries && book.commentaries.length) {
       const s = el("div", "detail-section");
       s.appendChild(el("h4", null, "Cited in context"));
       for (const c of book.commentaries.slice(0, 8)) s.appendChild(el("p", "commentary", esc(c)));

@@ -26,6 +26,7 @@ export async function loadBaked(path) {
     a._labelLower = a.name.toLowerCase();
   }
   const resolved = [];
+  const linkByKey = new Map();
   for (const l of links) {
     const s = authorById.get(l.source);
     const t = authorById.get(l.target);
@@ -34,6 +35,7 @@ export async function loadBaked(path) {
     s.out.push(link);
     t.in.push(link);
     resolved.push(link);
+    linkByKey.set(`${l.source}|${l.target}`, link);
   }
 
   // Sort adjacency by year for readable lists.
@@ -53,10 +55,11 @@ export async function loadBaked(path) {
     }
   }
 
-  // Lazy-load heavy detail text (descriptions + commentaries) in the background
-  // so the initial graph render isn't blocked by it.
-  const detailsReady = fetch(`${path}/details.json`)
-    .then((r) => (r.ok ? r.json() : { authors: {}, books: {} }))
+  // Lazy-load heavy detail text (descriptions + commentaries + per-citation
+  // provenance) in the background so the initial graph render isn't blocked.
+  const graph = { meta, authors, links: resolved, authorById, bookById, searchIndex, detailsLoaded: false };
+  graph.detailsReady = fetch(`${path}/details.json`)
+    .then((r) => (r.ok ? r.json() : { authors: {}, books: {}, links: {} }))
     .then((det) => {
       for (const [id, d] of Object.entries(det.authors || {})) {
         const a = authorById.get(id);
@@ -66,11 +69,18 @@ export async function loadBaked(path) {
         const b = bookById.get(id);
         if (b) { b.description = d.description; b.commentaries = d.commentaries || []; }
       }
+      // Attach per-citation provenance to its link:
+      // [{sb, tb, t, n, q: [verbatim contexts], c: [commentaries]}]
+      for (const [key, cits] of Object.entries(det.links || {})) {
+        const link = linkByKey.get(key);
+        if (link) link.citations = cits;
+      }
+      graph.detailsLoaded = true;
       return true;
     })
     .catch(() => false);
 
-  return { meta, authors, links: resolved, authorById, searchIndex, detailsReady };
+  return graph;
 }
 
 /** Cited works for an author = non-source books on the authors it links out to. */

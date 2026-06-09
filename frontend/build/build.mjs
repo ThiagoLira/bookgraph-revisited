@@ -127,7 +127,7 @@ async function bakeRecords(records, slug, ctx) {
 // Split heavy detail text (descriptions + commentaries) out of the render
 // payload so the initial graph download stays small; details lazy-load.
 function splitDetails(baked) {
-  const details = { authors: {}, books: {} };
+  const details = { authors: {}, books: {}, links: {} };
   for (const a of baked.authors) {
     if ((a.description && a.description.length) || (a.commentaries && a.commentaries.length)) {
       details.authors[a.id] = { description: a.description || null, commentaries: a.commentaries || [] };
@@ -141,6 +141,14 @@ function splitDetails(baked) {
       delete b.description;
       delete b.commentaries;
     }
+  }
+  // Per-citation provenance (source book -> target work, verbatim contexts,
+  // commentary) keyed by "sourceAuthorId|targetAuthorId".
+  for (const l of baked.links) {
+    if (l.citations && l.citations.length) {
+      details.links[`${l.source}|${l.target}`] = l.citations;
+    }
+    delete l.citations;
   }
   return details;
 }

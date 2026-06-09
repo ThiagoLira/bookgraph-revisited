@@ -166,6 +166,9 @@ export function buildGraph(records) {
   });
 
   // Dedup books within each author by work_id (definitive) with title fallback.
+  // bookIdRemap records dropped-duplicate id -> kept id so per-citation
+  // target_book references (built below) still resolve after dedup.
+  const bookIdRemap = new Map();
   for (const node of authorMap.values()) {
     if (node.books.length <= 1) continue;
     const groups = new Map();
@@ -186,6 +189,7 @@ export function buildGraph(records) {
       for (let i = 1; i < group.length; i++) {
         if (group[i].commentaries.length) best.commentaries.push(...group[i].commentaries);
         best.is_source = best.is_source || group[i].is_source;
+        bookIdRemap.set(group[i].id, best.id);
       }
       deduped.push(best);
     }
@@ -231,7 +235,11 @@ export function buildGraph(records) {
     const srcName = normalizeAuthor(Array.isArray(src.authors) ? src.authors[0] : src.authors);
     const srcNode = nodeByName.get(srcName);
     if (!srcNode) return;
-    const srcBookId = `book:${src.goodreads_id ?? src.book_id}`;
+    // Remap through book dedup: if this source book merged into an existing
+    // node (e.g. it was already in the graph as a cited work), reference the
+    // surviving id — otherwise source_book_ids / citation sb dangle.
+    let srcBookId = `book:${src.goodreads_id ?? src.book_id}`;
+    if (bookIdRemap.has(srcBookId)) srcBookId = bookIdRemap.get(srcBookId);
 
     (rec.citations || []).forEach((cit) => {
       const match = cit.goodreads_match || {};
@@ -249,11 +257,29 @@ export function buildGraph(records) {
       if (!targetNode || targetNode === srcNode) return;
       const key = `${srcName}|${targetName}`;
       if (!linkMap.has(key)) {
-        linkMap.set(key, { source: srcNode.id, target: targetNode.id, source_book_ids: new Set(), count: 0 });
+        linkMap.set(key, { source: srcNode.id, target: targetNode.id, source_book_ids: new Set(), count: 0, citations: [] });
       }
       const l = linkMap.get(key);
       l.source_book_ids.add(srcBookId);
       l.count += cit.raw?.count || 1;
+
+      // Per-citation provenance: which source book cited which target work,
+      // with the verbatim passages (contexts) and LLM commentary. Shipped via
+      // details.json and rendered as grouped "cited by X in Y" sections.
+      let targetBookId = cit.edge?.target_book_id ? `book:${cit.edge.target_book_id}` : null;
+      if (targetBookId && bookIdRemap.has(targetBookId)) targetBookId = bookIdRemap.get(targetBookId);
+      const contexts = [...new Set(cit.raw?.contexts || [])];
+      const commentaries = [...new Set((cit.raw?.commentaries || []).map((c) => c.replace(authorRefRe, srcName)))];
+      if (contexts.length || commentaries.length || targetBookId) {
+        l.citations.push({
+          sb: srcBookId,
+          tb: targetBookId,
+          t: cit.raw?.title || null,
+          n: cit.raw?.count || 1,
+          q: contexts,
+          c: commentaries,
+        });
+      }
     });
   });
 
@@ -262,6 +288,7 @@ export function buildGraph(records) {
     target: l.target,
     count: l.count,
     source_book_ids: [...l.source_book_ids],
+    citations: l.citations,
   }));
 
   return { authors, links };
