@@ -1,0 +1,1791 @@
+{
+  "source": {
+    "title": "The Histories",
+    "authors": [
+      "Herodotus"
+    ],
+    "goodreads_id": "pg2707",
+    "calibre_id": null,
+    "format": "Paperback",
+    "num_pages": 599,
+    "title_without_series": "The Histories",
+    "average_rating": 3.97,
+    "author_ids": [
+      "901"
+    ],
+    "ratings_count": 6,
+    "book_id": "12770242",
+    "publisher": "Penguin",
+    "text_reviews_count": 3,
+    "work_id": "488198",
+    "publication_year": 1960,
+    "description": "Book I (Clio)\nRulers of Lydia\nHow Gyges took the kingdom from Candaules\nThe singer Arion's ride on the dolphin\nSolon's answer to Croesus's question\nCroesus's & his son Atys\nCroesus's test of the oracles\nOracle of Delphi's answer to Croesus\nPeisistratos as tyrant of Athens\nRise of Sparta\nCroesus's & Cyrus II of Persia\nRulers of the Medes\nDeioces' rise over the Medes\nAstyages's attempt to destroy Cyrus & Cyrus's rise to power\nHarpagus tricked & his revenge against Astyages\nPersian culture\nHistory & geography....",
+    "link": "https://www.goodreads.com/book/show/12770242-the-histories",
+    "author_metadata": {
+      "birth_year": -484,
+      "death_year": -425,
+      "main_genre": "history",
+      "nationality": "Greek"
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Pythagoras",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Salmoxis [...] was a slave of Pythagoras the son of Mnesarchos."
+        ],
+        "commentaries": [
+          "The author mentions that Salmoxis was a slave of Pythagoras, identifying the philosopher as a source of influence on Salmoxis's teachings."
+        ],
+        "canonical_author": "Pythagoras"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pythagoras",
+        "page_id": 23275,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Pythagoras| ",
+          "570s BC births",
+          "490s BC deaths",
+          "6th-century BC mathematicians",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek mathematicians",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek geometers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek music theorists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political refugees",
+          "Ancient Greek shamans",
+          "Ancient occultists",
+          "Ancient Samians",
+          "Pythagoreans",
+          "Founders of religions",
+          "Numerologists",
+          "Pythagoreans of Magna Graecia",
+          "6th-century BC religious leaders",
+          "5th-century BC religious leaders"
+        ],
+        "birth_year": -570,
+        "death_year": -495
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "203707"
+        ],
+        "target_person": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": -570,
+          "death_year": -495
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hesiod",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "for Hesiod and Homer I suppose were four hundred years before my time and not more, and these are they who made a theogony for the Hellenes and gave the titles to the gods and distributed to them honours and arts, and set forth their forms",
+          "Hesiod however has spoken of Hyperboreans"
+        ],
+        "commentaries": [
+          "Herodotus names Hesiod and Homer as the poets who systematized Greek theology and attributed names and forms to the gods.",
+          "The author notes that Hesiod has spoken of Hyperboreans."
+        ],
+        "canonical_author": "Hesiod"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hesiod",
+        "page_id": 13700,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Hesiod| ",
+          "8th-century BC births",
+          "8th-century BC Greek poets",
+          "Ancient Boeotian poets",
+          "Ancient Greek didactic poets",
+          "Year of death unknown",
+          "8th-century BC philosophers",
+          "7th-century BC Greek philosophers"
+        ],
+        "birth_year": -750,
+        "death_year": -650
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1691"
+        ],
+        "target_person": {
+          "title": "Hesiod",
+          "page_id": 13700,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Hesiod| ",
+            "8th-century BC births",
+            "8th-century BC Greek poets",
+            "Ancient Boeotian poets",
+            "Ancient Greek didactic poets",
+            "Year of death unknown",
+            "8th-century BC philosophers",
+            "7th-century BC Greek philosophers"
+          ],
+          "birth_year": -750,
+          "death_year": -650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Aristotle in quoting these words writes {Thouriou} for {'Alikarnesseos} (\"Herodotus of Thurii\")"
+        ],
+        "commentaries": [
+          "The author notes that Aristotle, when quoting Herodotus, uses a different ethnic designation."
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aeschylus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "From this story and from no other Æschylus the son of Euphorion took this which I shall say, wherein he differs from all the preceding poets; he represented namely that Artemis was the daughter of Demeter."
+        ],
+        "commentaries": [
+          "The author notes that Aeschylus derived a specific mythological detail from this Egyptian story, differing from earlier poets."
+        ],
+        "canonical_author": "Aeschylus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aeschylus",
+        "page_id": 2023,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Aeschylus| ",
+          "5th-century BC Greek poets",
+          "520s BC births",
+          "450s BC deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Ancient Greek tragic poets",
+          "Ancient Greeks accused of sacrilege",
+          "Greek people of the Greco-Persian Wars",
+          "Battle of Marathon",
+          "Accidental deaths in Italy",
+          "Deaths due to animal attacks",
+          "Bird attacks"
+        ],
+        "birth_year": -525,
+        "death_year": -456
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "990"
+        ],
+        "target_person": {
+          "title": "Aeschylus",
+          "page_id": 2023,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Aeschylus| ",
+            "5th-century BC Greek poets",
+            "520s BC births",
+            "450s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Greek tragic poets",
+            "Ancient Greeks accused of sacrilege",
+            "Greek people of the Greco-Persian Wars",
+            "Battle of Marathon",
+            "Accidental deaths in Italy",
+            "Deaths due to animal attacks",
+            "Bird attacks"
+          ],
+          "birth_year": -525,
+          "death_year": -456
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Archilochus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "of him moreover Archilochos the Parian, who lived about that time, made mention in a trimeter iambic verse."
+        ],
+        "commentaries": [
+          "The author notes that Archilochos the Parian mentioned Gyges in a trimeter iambic verse."
+        ],
+        "canonical_author": "Archilochos"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Archilochus",
+        "page_id": 78336,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "680s BC births",
+          "640s BC deaths",
+          "Ionic Greek poets",
+          "Ancient Greek iambic poets",
+          "7th-century BC Greek poets",
+          "Ancient Thasos",
+          "Ancient Parians",
+          "Epigrammatists of the Greek Anthology"
+        ],
+        "birth_year": -680,
+        "death_year": -645
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1385130"
+        ],
+        "target_person": {
+          "title": "Archilochus",
+          "page_id": 78336,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "680s BC births",
+            "640s BC deaths",
+            "Ionic Greek poets",
+            "Ancient Greek iambic poets",
+            "7th-century BC Greek poets",
+            "Ancient Thasos",
+            "Ancient Parians",
+            "Epigrammatists of the Greek Anthology"
+          ],
+          "birth_year": -680,
+          "death_year": -645
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pindar",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "I think that Pindar spoke rightly in his verse, when he said that \"of all things law is king.\"",
+          "28 [ {nomon panton basilea pheras einai}: but {nomos} in this fragment of Pindar is rather the natural law by which the strong prevail over the weak.]"
+        ],
+        "commentaries": [
+          "The author quotes Pindar's verse as a supporting authority for the argument that custom is universally respected.",
+          "The author references a fragment of Pindar to discuss the meaning of 'nomos' as natural law."
+        ],
+        "canonical_author": "Pindar"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pindar",
+        "page_id": 79616,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "510s BC births",
+          "430s BC deaths",
+          "5th-century BC Greek poets",
+          "Ancient Boeotian poets",
+          "Sports poets",
+          "Ancient Thebans",
+          "Doric Greek poets",
+          "Nine Lyric Poets",
+          "Proxenoi",
+          "Wikipedia articles containing unlinked shortened footnotes"
+        ],
+        "birth_year": -522,
+        "death_year": -443
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8340"
+        ],
+        "target_person": {
+          "title": "Pindar",
+          "page_id": 79616,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "510s BC births",
+            "430s BC deaths",
+            "5th-century BC Greek poets",
+            "Ancient Boeotian poets",
+            "Sports poets",
+            "Ancient Thebans",
+            "Doric Greek poets",
+            "Nine Lyric Poets",
+            "Proxenoi",
+            "Wikipedia articles containing unlinked shortened footnotes"
+          ],
+          "birth_year": -522,
+          "death_year": -443
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sappho",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Thus was Rhodopis set free, and she remained in Egypt and by her beauty won so much liking that she made great gain of money for one like Rhodopis, though not enough to suffice for the cost of such a pyramid as this. ... As for Charaxos, when after redeeming Rhodopis he returned back to Mytilene, Sappho in an ode violently abused him."
+        ],
+        "commentaries": [
+          "The author identifies Sappho as the lyric poet and brother of Charaxos, noting that she composed an ode attacking him."
+        ],
+        "canonical_author": "Sappho"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sappho",
+        "page_id": 27784,
+        "infoboxes": [],
+        "categories": [
+          "Sappho| ",
+          "6th-century BC Greek women",
+          "6th-century BC Greek poets",
+          "6th-century BC women writers",
+          "7th-century BC births",
+          "7th-century BC Greek women",
+          "7th-century BC Greek poets",
+          "7th-century BC women poets",
+          "Aeolic Greek poets",
+          "Ancient Eresians",
+          "Ancient Greek erotic poets",
+          "Ancient Greek women poets",
+          "Ancient Greek LGBTQ people",
+          "Ancient Mytileneans",
+          "Greek women composers",
+          "Historical figures with ambiguous or disputed sexuality",
+          "Nine Lyric Poets",
+          "Poets from ancient Lesbos",
+          "Lesbian history"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "59712"
+        ],
+        "target_person": {
+          "title": "Sappho",
+          "page_id": 27784,
+          "infoboxes": [],
+          "categories": [
+            "Sappho| ",
+            "6th-century BC Greek women",
+            "6th-century BC Greek poets",
+            "6th-century BC women writers",
+            "7th-century BC births",
+            "7th-century BC Greek women",
+            "7th-century BC Greek poets",
+            "7th-century BC women poets",
+            "Aeolic Greek poets",
+            "Ancient Eresians",
+            "Ancient Greek erotic poets",
+            "Ancient Greek women poets",
+            "Ancient Greek LGBTQ people",
+            "Ancient Mytileneans",
+            "Greek women composers",
+            "Historical figures with ambiguous or disputed sexuality",
+            "Nine Lyric Poets",
+            "Poets from ancient Lesbos",
+            "Lesbian history"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plutarch",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and we know from Plutarch that this reading existed in his time as a variation."
+        ],
+        "commentaries": [
+          "The author states that Plutarch attests to this variant reading."
+        ],
+        "canonical_author": "Plutarch"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plutarch",
+        "page_id": 24517,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plutarch| ",
+          "46 births",
+          "120s deaths",
+          "1st-century Romans",
+          "2nd-century Romans",
+          "1st-century Greek philosophers",
+          "2nd-century Greek philosophers",
+          "1st-century historians",
+          "2nd-century historians",
+          "Ancient Roman antiquarians",
+          "Ancient Greek biographers",
+          "Ancient Greek essayists",
+          "Ancient Roman biographers",
+          "Greek-language historians from the Roman Empire",
+          "Ancient Boeotians",
+          "Middle Platonists",
+          "Roman-era Greek priests",
+          "Year of birth unknown",
+          "Historians of ancient Greece"
+        ],
+        "birth_year": 46,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "31015"
+        ],
+        "target_person": {
+          "title": "Plutarch",
+          "page_id": 24517,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plutarch| ",
+            "46 births",
+            "120s deaths",
+            "1st-century Romans",
+            "2nd-century Romans",
+            "1st-century Greek philosophers",
+            "2nd-century Greek philosophers",
+            "1st-century historians",
+            "2nd-century historians",
+            "Ancient Roman antiquarians",
+            "Ancient Greek biographers",
+            "Ancient Greek essayists",
+            "Ancient Roman biographers",
+            "Greek-language historians from the Roman Empire",
+            "Ancient Boeotians",
+            "Middle Platonists",
+            "Roman-era Greek priests",
+            "Year of birth unknown",
+            "Historians of ancient Greece"
+          ],
+          "birth_year": 46,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sextus Empiricus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "(Sext. Empir. ii. 23.)"
+        ],
+        "commentaries": [
+          "The author references Sextus Empiricus as a source for a similar story told of the Chians."
+        ],
+        "canonical_author": "Sextus Empiricus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sextus Empiricus",
+        "page_id": 177582,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "2nd-century Greek philosophers",
+          "Roman-era Skeptic philosophers",
+          "2nd-century Roman physicians",
+          "2nd-century Greek physicians",
+          "Ancient Greek epistemologists",
+          "Pyrrhonism"
+        ],
+        "birth_year": 160,
+        "death_year": 210
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "302857"
+        ],
+        "target_person": {
+          "title": "Sextus Empiricus",
+          "page_id": 177582,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "2nd-century Greek philosophers",
+            "Roman-era Skeptic philosophers",
+            "2nd-century Roman physicians",
+            "2nd-century Greek physicians",
+            "Ancient Greek epistemologists",
+            "Pyrrhonism"
+          ],
+          "birth_year": 160,
+          "death_year": 210
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aesop",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "By descent she was of Thrace, and she was a slave of Iadmon the son of Hephaistopolis a Samian, and a fellow-slave of Esop the maker of fables;"
+        ],
+        "commentaries": [
+          "The author mentions Esop as a maker of fables and a fellow-slave of Rhodopis, providing background on his servitude and the subsequent blood-money for his death."
+        ],
+        "canonical_author": "Esop"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aesop",
+        "page_id": 20012109,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "620s BC births",
+          "560s BC deaths",
+          "6th-century BC executions",
+          "6th-century BC Greek writers",
+          "7th-century BC Greek people",
+          "Ancient Greek slaves and freedmen",
+          "Ancient Samians",
+          "Fabulists",
+          "Storytellers"
+        ],
+        "birth_year": 1976,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "12452"
+        ],
+        "target_person": {
+          "title": "Aesop",
+          "page_id": 20012109,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "620s BC births",
+            "560s BC deaths",
+            "6th-century BC executions",
+            "6th-century BC Greek writers",
+            "7th-century BC Greek people",
+            "Ancient Greek slaves and freedmen",
+            "Ancient Samians",
+            "Fabulists",
+            "Storytellers"
+          ],
+          "birth_year": 1976,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "History of the Peloponnesian War",
+        "author": "Thucydides",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "cp. Thuc. iii. 53, {ta de pseude elegkhon ekhei}."
+        ],
+        "commentaries": [
+          "The author cites a passage from Thucydides as a parallel for the Greek phrase being discussed."
+        ]
+      },
+      "goodreads_match": {
+        "format": "Paperback",
+        "num_pages": 648,
+        "title_without_series": "History of the Peloponnesian War",
+        "average_rating": 3.87,
+        "title": "History of the Peloponnesian War",
+        "author_ids": [
+          "957",
+          "192810"
+        ],
+        "ratings_count": 54,
+        "book_id": "4593395",
+        "publisher": "Penguin Books (London)",
+        "text_reviews_count": 3,
+        "work_id": "804111",
+        "publication_year": 1972,
+        "authors": [
+          "Thucydides",
+          "Rex Warner"
+        ],
+        "description": "Thucydides' book is now entitled History of the Peloponnesian War. His entire contribution to history & historiography is contained in this dense history of the 27-year war between Athens & allies against Sparta & its allies. It breaks off near the end of the 21st year. Thucydides believed the war represented an event of unparalleled magnitude. He intended his account to serve as \"a possession for all time.\"\nThucydides is regarded as one of the 1st true historians. Like his predecessor Herodotus, he places....",
+        "link": "https://www.goodreads.com/book/show/4593395-history-of-the-peloponnesian-war",
+        "wikipedia_match": {
+          "title": "Thucydides",
+          "page_id": 30864,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "470s BC births",
+            "400s BC deaths",
+            "5th-century BC Athenians",
+            "5th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Classical-era Greek historians",
+            "Ancient Greek merchants",
+            "Ancient Thracian Greeks",
+            "Athenians of the Peloponnesian War",
+            "Attic Greek writers",
+            "Ostracized Athenians",
+            "Philaidae",
+            "Political realists",
+            "Ancient Greek military writers"
+          ],
+          "birth_year": -460,
+          "death_year": -400
+        },
+        "original_year": -410,
+        "author_meta": {
+          "birth_year": -460,
+          "death_year": -400,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Thucydides",
+        "page_id": 30864,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "470s BC births",
+          "400s BC deaths",
+          "5th-century BC Athenians",
+          "5th-century BC Greek historians",
+          "Ancient Athenian generals",
+          "Ancient Athenian historians",
+          "Classical-era Greek historians",
+          "Ancient Greek merchants",
+          "Ancient Thracian Greeks",
+          "Athenians of the Peloponnesian War",
+          "Attic Greek writers",
+          "Ostracized Athenians",
+          "Philaidae",
+          "Political realists",
+          "Ancient Greek military writers"
+        ],
+        "birth_year": -460,
+        "death_year": -400
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "4593395",
+        "target_author_ids": [
+          "957",
+          "192810"
+        ],
+        "target_person": {
+          "title": "Thucydides",
+          "page_id": 30864,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "470s BC births",
+            "400s BC deaths",
+            "5th-century BC Athenians",
+            "5th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Classical-era Greek historians",
+            "Ancient Greek merchants",
+            "Ancient Thracian Greeks",
+            "Athenians of the Peloponnesian War",
+            "Attic Greek writers",
+            "Ostracized Athenians",
+            "Philaidae",
+            "Political realists",
+            "Ancient Greek military writers"
+          ],
+          "birth_year": -460,
+          "death_year": -400
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Iliad",
+        "author": "Homer",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "I suppose that Homer also had heard this story, but since it was not so suitable to the composition of his poem as the other which he followed, he dismissed it finally, making it clear at the same time that he was acquainted with that story also: and according to the manner in which he described the wanderings of Alexander in the Iliad (nor did he elsewhere retract that which he had said) it is clear that when he brought Helen he was carried out of his course, wandering to various lands, and that he came among other places to Sidon in Phenicia.",
+          "Il. vi. 289."
+        ],
+        "commentaries": [
+          "The author discusses Homer's knowledge of the story and his use of it in the Iliad, noting that Homer was aware of the version involving Egypt but chose to adapt it for his poem.",
+          "The author refers to the sixth book of Homer's Iliad."
+        ]
+      },
+      "goodreads_match": {
+        "format": "Paperback",
+        "num_pages": 414,
+        "isbn": "1848373252",
+        "title_without_series": "Iliad",
+        "average_rating": 3.83,
+        "title": "Iliad",
+        "publication_day": 30,
+        "author_ids": [
+          "903"
+        ],
+        "ratings_count": 69,
+        "publication_month": 6,
+        "book_id": "7105277",
+        "publisher": "Book Sales, Inc.",
+        "isbn13": "9781848373259",
+        "text_reviews_count": 9,
+        "work_id": "3293141",
+        "publication_year": 2009,
+        "authors": [
+          "Homer"
+        ],
+        "description": "This groundbreaking English version by Robert Fagles is the most important recent translation of Homer's great epic poem. The verse translation has been hailed by scholars as the new standard, providing an Iliad that delights modern sensibility and aesthetic without sacrificing the grandeur and particular genius of Homer's own style and language. The Iliad is one of the two great epics of Homer, and is typically described as one of the greatest war stories of all time, but to say the Iliad is a war story do...",
+        "link": "https://www.goodreads.com/book/show/7105277-iliad",
+        "original_year": -800,
+        "author_meta": {
+          "birth_year": -850,
+          "death_year": -800,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "7105277",
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 7,
+        "contexts": [
+          "where the MS. has {es ton Euphreten}, and vii. 133 {Xerxes}.] 333 [ For example in the index of proper names attached to Stein's annotated edition (Berlin, 1882), to which I am under obligation, having checked my own by it, I find that I have marked upwards of two hundred mistakes or oversights: no doubt I have been saved by it from at least as many.]",
+          "Elsewhere (that is in Homer) the word always means \"helper,\" and Stein translates it here, \"thou shalt be protector and patron of Tegea\" (in the place of Orestes).",
+          "I think that Homer or one of the poets who were before him invented the name and introduced it into his verse.",
+          "the river Maiander",
+          "for Hesiod and Homer I suppose were four hundred years before my time and not more, and these are they who made a theogony for the Hellenes and gave the titles to the gods and distributed to them honours and arts, and set forth their forms",
+          "Some of those who have seen these carvings conjecture that the figure is that of Memnon, but herein they are very far from the truth.",
+          "By these lines and by this passage it is also most clearly shown that the 'Cyprian Epic' was not written by Homer but by some other man: for in this it is said that on the third day after leaving Sparta Alexander came to Ilion bringing with him Helen, having had a 'gently-blowing wind and a smooth sea,' whereas in the Iliad it says that he wandered from his course when he brought her."
+        ],
+        "commentaries": [
+          "The author references Stein's annotated edition of Homer, which he consulted for his work.",
+          "The author references Homer as the source where the word 'epitarrothos' is always used as 'helper', and notes Stein's translation based on that meaning.",
+          "The author speculates that Homer or an earlier poet invented the name 'Ocean' and introduced it into poetry.",
+          "The author references the Maiander river, likely as a geographical comparison found in Homer's works.",
+          "Herodotus names Homer alongside Hesiod as the key poets who shaped Greek religious understanding.",
+          "The author notes that some people mistakenly identify the carved figure as Memnon, a character from Homeric epic, but the author dismisses this as incorrect.",
+          "The author argues that the 'Cyprian Epic' was not written by Homer, contrasting its account with Homer's Iliad."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The History of Herodotus",
+        "author": "Herodotus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The aim of the translator has been above all things faithfulness—faithfulness to the manner of expression and to the structure of sentences, as well as to the meaning of the Author."
+        ],
+        "commentaries": [
+          "The translator discusses his approach to rendering Herodotus's work faithfully."
+        ]
+      },
+      "goodreads_match": {
+        "title_without_series": "The history of Herodotus — Volume 1",
+        "average_rating": 4.15,
+        "title": "The history of Herodotus — Volume 1",
+        "publication_day": 30,
+        "author_ids": [
+          "901",
+          "3009608"
+        ],
+        "ratings_count": 305,
+        "publication_month": 3,
+        "book_id": "11085879",
+        "text_reviews_count": 8,
+        "work_id": "14003670",
+        "publication_year": 2011,
+        "authors": [
+          "Herodotus",
+          "G.C. Macaulay"
+        ],
+        "link": "https://www.goodreads.com/book/show/11085879-the-history-of-herodotus-volume-1",
+        "original_year": -450,
+        "author_meta": {
+          "birth_year": -484,
+          "death_year": -425,
+          "main_genre": "history",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Herodotus",
+        "birth_year": -484,
+        "death_year": -425
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "11085879",
+        "target_author_ids": [
+          "901",
+          "3009608"
+        ],
+        "target_person": {
+          "title": "Herodotus",
+          "birth_year": -484,
+          "death_year": -425
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Solon",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "and of them one was Solon the Athenian, who after he had made laws for the Athenians at their bidding, left his native country for ten years and sailed away saying that he desired to visit various lands, in order that he might not be compelled to repeal any of the laws which he had proposed.",
+          "After Solon had departed, a great retribution from God came upon Croesus, probably because he judged himself to be the happiest of all men.",
+          "the saying of Solon, how he had said with divine inspiration that no one of the living might be called happy.",
+          "Now Solon the Athenian received from Egypt this law"
+        ],
+        "commentaries": [
+          "The author mentions Solon as a wise man who visited Croesus and is known for his laws and travels.",
+          "Solon is mentioned as a historical figure who visited Croesus and whose departure precedes the retribution; no specific book is cited.",
+          "The author relates that Croesus recalls Solon's maxim about happiness while standing on the pyre.",
+          "The author notes that Solon the Athenian adopted a law from Egypt and enacted it for the Athenians."
+        ],
+        "canonical_author": "Solon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Solon",
+        "page_id": 58230,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "6th-century BC Greek poets",
+          "6th-century BC Athenians",
+          "Ancient Greek elegiac poets",
+          "Archaic Athens",
+          "Ancient legislators",
+          "Greek exiles",
+          "Pederasty in ancient Greece",
+          "Seven Sages of Greece",
+          "630s BC births",
+          "550s BC deaths",
+          "Eponymous archons",
+          "Family of Plato",
+          "6th-century BC Greek politicians",
+          "7th-century BC Greek philosophers",
+          "6th-century BC Greek philosophers"
+        ],
+        "birth_year": -630,
+        "death_year": -560
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Solon",
+          "page_id": 58230,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "6th-century BC Greek poets",
+            "6th-century BC Athenians",
+            "Ancient Greek elegiac poets",
+            "Archaic Athens",
+            "Ancient legislators",
+            "Greek exiles",
+            "Pederasty in ancient Greece",
+            "Seven Sages of Greece",
+            "630s BC births",
+            "550s BC deaths",
+            "Eponymous archons",
+            "Family of Plato",
+            "6th-century BC Greek politicians",
+            "7th-century BC Greek philosophers",
+            "6th-century BC Greek philosophers"
+          ],
+          "birth_year": -630,
+          "death_year": -560
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hesychius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Hesychius says, {euzonos, me ekhon phortion}."
+        ],
+        "commentaries": [
+          "The author cites Hesychius to define the word 'euzonos' as 'light-armed' or not carrying a burden."
+        ],
+        "canonical_author": "Hesychius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hesychius",
+        "death_year": 490
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "4219903"
+        ],
+        "target_person": {
+          "title": "Hesychius",
+          "death_year": 490
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hecataeus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "And formerly when Hecataios the historian was in Thebes, and had traced his descent and connected his family with a god in the sixteenth generation before, the priests of Zeus did for him much the same as they did for me (though I had not traced my descent).",
+          "The reasoning is obscure because it alludes to theories (of Hecataios and other writers) which are presumed to be already known to the reader."
+        ],
+        "commentaries": [
+          "The author mentions Hecataios as a fellow historian who traced his genealogy and interacted with the priests, but does not cite a specific book.",
+          "The author mentions that the reasoning alludes to theories of Hecataios, which are presumed to be known to the reader."
+        ],
+        "canonical_author": "Hecataios"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hecataeus of Miletus",
+        "page_id": 220378,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Early Greek historians",
+          "Ancient Greek mythographers",
+          "Ancient Greek geographers",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Historians from ancient Anatolia",
+          "Ancient Milesians",
+          "6th-century BC Greek writers",
+          "5th-century BC Greek historians",
+          "550s BC births",
+          "470s BC deaths",
+          "Historians from the Achaemenid Empire",
+          "Classical-era Greek historians",
+          "Ancient Greek historians known only from secondary sources",
+          "5th-century BC geographers",
+          "6th-century BC geographers",
+          "6th-century BC historians"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Hecataeus of Miletus",
+          "page_id": 220378,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Early Greek historians",
+            "Ancient Greek mythographers",
+            "Ancient Greek geographers",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Historians from ancient Anatolia",
+            "Ancient Milesians",
+            "6th-century BC Greek writers",
+            "5th-century BC Greek historians",
+            "550s BC births",
+            "470s BC deaths",
+            "Historians from the Achaemenid Empire",
+            "Classical-era Greek historians",
+            "Ancient Greek historians known only from secondary sources",
+            "5th-century BC geographers",
+            "6th-century BC geographers",
+            "6th-century BC historians"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bias of Priene",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This was the counsel given by Bias of Priene after the Ionians had been ruined;"
+        ],
+        "commentaries": [
+          "The author reports the counsel given by Bias of Priene to the Ionians."
+        ],
+        "canonical_author": "Bias Of Priene"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Bias of Priene",
+        "page_id": 1067391,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "6th-century BC Greek philosophers",
+          "Seven Sages of Greece"
+        ],
+        "birth_year": 1963,
+        "death_year": 1986
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Bias of Priene",
+          "page_id": 1067391,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "6th-century BC Greek philosophers",
+            "Seven Sages of Greece"
+          ],
+          "birth_year": 1963,
+          "death_year": 1986
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thales of Miletus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "according to the account which prevails among the Hellenes, Thales the Milesian enabled him to pass his army across.",
+          "but a good counsel too was given before the ruin of Ionia by Thales a man of Miletos, who was by descent of Phenician race."
+        ],
+        "commentaries": [
+          "The author recounts a popular Hellenic story crediting Thales with devising a method to divert the river Halys for Croesus's army, though he himself doubts this account.",
+          "The author reports the counsel given by Thales to the Ionians."
+        ],
+        "canonical_author": "Thales Of Miletus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thales of Miletus",
+        "page_id": 30072,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "6th-century BC Greek philosophers",
+          "620s BC births",
+          "540s BC deaths",
+          "Ancient Greek astronomers",
+          "Ancient Greek geometers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ancient Milesians",
+          "Epistemologists",
+          "Metaphilosophers",
+          "Metaphysicians",
+          "Metaphysics writers",
+          "Natural philosophers",
+          "Ontologists",
+          "Philosophers of ancient Ionia",
+          "Philosophers of education",
+          "Philosophers of mathematics",
+          "Philosophers of mind",
+          "Philosophers of science",
+          "Presocratic philosophers",
+          "Seven Sages of Greece",
+          "6th-century BC mathematicians",
+          "6th-century BC astronomers"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5045465"
+        ],
+        "target_person": {
+          "title": "Thales of Miletus",
+          "page_id": 30072,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "6th-century BC Greek philosophers",
+            "620s BC births",
+            "540s BC deaths",
+            "Ancient Greek astronomers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Milesians",
+            "Epistemologists",
+            "Metaphilosophers",
+            "Metaphysicians",
+            "Metaphysics writers",
+            "Natural philosophers",
+            "Ontologists",
+            "Philosophers of ancient Ionia",
+            "Philosophers of education",
+            "Philosophers of mathematics",
+            "Philosophers of mind",
+            "Philosophers of science",
+            "Presocratic philosophers",
+            "Seven Sages of Greece",
+            "6th-century BC mathematicians",
+            "6th-century BC astronomers"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Odyssey",
+        "author": "Homer",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "And in the Odyssey also he has made mention of it in these verses: 'Such had the daughter of Zeus, such drugs of exquisite cunning, Good, which to her the wife of Thon, Polydamna, had given, Dwelling in Egypt, the land where the bountiful meadow produces Drugs more than all lands else, many good being mixed, many evil.'",
+          "Od. iv. 227.",
+          "there is a verse of Homer in the Odyssey supporting my opinion, which runs this:— \"Also the Libyan land, where the sheep very quickly grow hornèd,\""
+        ],
+        "commentaries": [
+          "The author cites Homer's Odyssey as evidence that Homer knew of Alexander's wandering to Egypt, quoting specific lines.",
+          "The author references the Odyssey, noting that some consider these references interpolations, but the author argues that Homer retains traces of the legend of Helen in Egypt.",
+          "The author quotes a verse from Homer's Odyssey to support his opinion about hornless oxen in cold regions."
+        ]
+      },
+      "goodreads_match": {
+        "format": "Paperback",
+        "num_pages": 320,
+        "isbn": "1848373244",
+        "title_without_series": "Odyssey",
+        "average_rating": 3.73,
+        "title": "Odyssey",
+        "publication_day": 29,
+        "author_ids": [
+          "903"
+        ],
+        "ratings_count": 47,
+        "publication_month": 6,
+        "book_id": "8214389",
+        "publisher": "Packages",
+        "isbn13": "9781848373242",
+        "text_reviews_count": 9,
+        "work_id": "3356006",
+        "publication_year": 2009,
+        "authors": [
+          "Homer"
+        ],
+        "description": "The Odyssey is, quite simply, the story of Odysseus, who wants to go home. But Poseidon, god of oceans, doesn't want him to make it back across the wine-dark sea to his wife, Penelope, son, Telemachus, and their high-roofed home at Ithaca. The story is told in easy-going, beautiful poetry; the characters speak naturally, the action happens briskly. Even the gods come across as real people, despite the divine powers they exercise constantly.",
+        "link": "https://www.goodreads.com/book/show/8214389-odyssey",
+        "original_year": -700,
+        "author_meta": {
+          "birth_year": -850,
+          "death_year": -800,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "8214389",
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Athenaeus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Athenaeus says that Sappho attacked the mistress of Charaxos; but here {min} can hardly refer to any one but Charaxos himself, who doubtless would be included in the same condemnation."
+        ],
+        "commentaries": [
+          "The author cites Athenaeus's statement about Sappho's attack on Charaxos's mistress."
+        ],
+        "canonical_author": "Athenaeus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Athenaeus",
+        "page_id": 166983,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Ancient Greek food writers",
+          "Ancient Roman antiquarians",
+          "Naucratians",
+          "2nd-century births",
+          "3rd-century deaths",
+          "Compilers of works of quotations",
+          "Ancient Greek grammarians",
+          "Ancient Greek rhetoricians",
+          "3rd-century Greek writers",
+          "Year of birth unknown"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "4528146"
+        ],
+        "target_person": {
+          "title": "Athenaeus",
+          "page_id": 166983,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Ancient Greek food writers",
+            "Ancient Roman antiquarians",
+            "Naucratians",
+            "2nd-century births",
+            "3rd-century deaths",
+            "Compilers of works of quotations",
+            "Ancient Greek grammarians",
+            "Ancient Greek rhetoricians",
+            "3rd-century Greek writers",
+            "Year of birth unknown"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Epigonoi",
+        "author": "Homer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and so also has Homer in the poem of the \"Epigonoi,\" at least if Homer was really the composer of that Epic."
+        ],
+        "commentaries": [
+          "The author mentions that Homer has spoken of Hyperboreans in the poem \"Epigonoi,\" with a caveat about Homer's authorship."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Epigonoi",
+        "authors": [
+          "Homer"
+        ],
+        "original_year": -600,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Ancient Greek",
+        "description": "Lost ancient Greek epic poem, part of the Theban cycle, traditionally attributed to Homer.",
+        "book_id": "web_1a6a4c1d",
+        "author_meta": {
+          "birth_year": -850,
+          "death_year": -800,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_1a6a4c1d",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Arimaspeia",
+        "author": "Aristeas",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Aristeas however the son of Caÿstrobios, a man of Proconnesos, said in the verses which he composed, that he came to the land of the Issedonians being possessed by Phoebus, and that beyond the Issedonians dwelt Arimaspians, a one-eyed race, and beyond these the gold-guarding griffins, and beyond them the Hyperboreans extending as far as the sea"
+        ],
+        "commentaries": [
+          "The author cites Aristeas's poems (the Arimaspeia) as a source of geographical claims about the lands beyond Scythia, noting that Aristeas's account differs from the report of the Scythians."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Arimaspeia",
+        "authors": [
+          "Aristeas"
+        ],
+        "original_year": -650,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Greek",
+        "description": "A lost epic poem by Aristeas of Proconnesus, describing his journey to the Issedones and the legendary peoples beyond, including the one-eyed Arimaspians and gold-guarding griffins.",
+        "book_id": "web_03d1e038",
+        "author_meta": {
+          "birth_year": 1964,
+          "death_year": 2013,
+          "canonical_name": "Aristea Bougatsou"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristeas",
+        "birth_year": 1964,
+        "death_year": 2013
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_03d1e038",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Aristeas",
+          "birth_year": 1964,
+          "death_year": 2013
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristeas",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "As to Aristeas who composed this, I have said already whence he was; and I will tell also the tale which I heard about him in Proconnesos and Kyzicos.",
+          "and even Aristeas, the man of whom I was making mention just now, even he, I say, did not allege, although he was composing verse, that he went further than the Issedonians"
+        ],
+        "commentaries": [
+          "The author refers to Aristeas as the composer of verses, and proceeds to relate a story about his life and disappearance.",
+          "The author mentions Aristeas again, noting that he did not claim to have traveled beyond the Issedonians, and that he relied on hearsay for accounts of lands further away."
+        ],
+        "canonical_author": "Aristeas"
+      },
+      "goodreads_match": {
+        "title": "Arimaspeia",
+        "authors": [
+          "Aristeas of Proconnesus"
+        ],
+        "original_year": -700,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Greek",
+        "description": "A lost epic poem by Aristeas of Proconnesus describing his travels among the Issedones and other northern peoples, frequently referenced by Herodotus in The Histories.",
+        "book_id": "web_7c2bd2e4",
+        "author_meta": {
+          "birth_year": -650,
+          "death_year": null,
+          "main_genre": "epic poetry",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristeas of Proconnesus",
+        "birth_year": -650
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_7c2bd2e4",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Aristeas of Proconnesus",
+          "birth_year": -650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Geography",
+        "author": "Strabo",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This view is confirmed by the fact that Strabo relates the same thing with regard to the island of Philai just above Elephantine."
+        ],
+        "commentaries": [
+          "The author mentions Strabo's account as supporting the interpretation of the location described in Herodotus."
+        ]
+      },
+      "goodreads_match": {
+        "isbn": "386539051X",
+        "title_without_series": "Geographica",
+        "average_rating": 4.56,
+        "title": "Geographica",
+        "author_ids": [
+          "219320"
+        ],
+        "ratings_count": 4,
+        "book_id": "6045475",
+        "isbn13": "9783865390516",
+        "text_reviews_count": 1,
+        "work_id": "6221062",
+        "authors": [
+          "Strabo"
+        ],
+        "description": "\"'Geographica' potrebbe essere considerato il punto di partenza di un viaggio alla scoperta di un viaggio alla scoperta del mondo da parte di ciascun lettore. Il nostro viaggio ha inizio dall'originale dell'universo e della nascita della Terra, il pianeta vivente. Terra, acqua e atmosfera forniscono il nutrimento per la complessa evoluzione degli organismi viventi culminata nella comparsa dell'uomo. La storia geologica, influenzata dalle mutevoli forze naturali, fa posto poco alla volta ai documenti della s...",
+        "link": "https://www.goodreads.com/book/show/6045475-geographica",
+        "wikipedia_match": {
+          "title": "Strabo",
+          "page_id": 52121,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "60s BC births",
+            "24 deaths",
+            "1st-century BC historians",
+            "Ancient Greek geographers",
+            "Ancient Roman geographers",
+            "Roman-era Greeks",
+            "Greek-language historians from the Roman Empire",
+            "Ancient Pontic Greeks",
+            "People from Amasya",
+            "Roman Pontus",
+            "Historians from Roman Anatolia",
+            "1st-century geographers",
+            "1st-century BC geographers",
+            "1st-century historians"
+          ],
+          "birth_year": -63,
+          "death_year": 24
+        },
+        "original_year": -6,
+        "author_meta": {
+          "birth_year": -63,
+          "death_year": 24,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Strabo",
+        "page_id": 52121,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "60s BC births",
+          "24 deaths",
+          "1st-century BC historians",
+          "Ancient Greek geographers",
+          "Ancient Roman geographers",
+          "Roman-era Greeks",
+          "Greek-language historians from the Roman Empire",
+          "Ancient Pontic Greeks",
+          "People from Amasya",
+          "Roman Pontus",
+          "Historians from Roman Anatolia",
+          "1st-century geographers",
+          "1st-century BC geographers",
+          "1st-century historians"
+        ],
+        "birth_year": -63,
+        "death_year": 24
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "6045475",
+        "target_author_ids": [
+          "219320"
+        ],
+        "target_person": {
+          "title": "Strabo",
+          "page_id": 52121,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "60s BC births",
+            "24 deaths",
+            "1st-century BC historians",
+            "Ancient Greek geographers",
+            "Ancient Roman geographers",
+            "Roman-era Greeks",
+            "Greek-language historians from the Roman Empire",
+            "Ancient Pontic Greeks",
+            "People from Amasya",
+            "Roman Pontus",
+            "Historians from Roman Anatolia",
+            "1st-century geographers",
+            "1st-century BC geographers",
+            "1st-century historians"
+          ],
+          "birth_year": -63,
+          "death_year": 24
+        }
+      }
+    }
+  ]
+}

@@ -93,3 +93,6 @@ profile.stats
 # Temporary files
 /tmp/
 *.tmp
+
+# Gutenberg source texts (re-downloadable via scripts/gutenberg_fetch.py)
+gutenberg_downloads/*.txt

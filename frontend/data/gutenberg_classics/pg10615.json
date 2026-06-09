@@ -1,0 +1,1382 @@
+{
+  "source": {
+    "title": "An Essay Concerning Human Understanding",
+    "authors": [
+      "John Locke"
+    ],
+    "goodreads_id": "pg10615",
+    "calibre_id": null,
+    "format": "Paperback",
+    "text_reviews_count": 1,
+    "author_ids": [
+      "51746"
+    ],
+    "publication_day": 1,
+    "num_pages": 623,
+    "book_id": "1479156",
+    "isbn13": "9780879759179",
+    "work_id": "1689887",
+    "isbn": "0879759178",
+    "publication_month": 12,
+    "title_without_series": "An Essay Concerning Human Understanding",
+    "publisher": "Prometheus Books",
+    "ratings_count": 12,
+    "publication_year": 1995,
+    "average_rating": 3.82,
+    "description": "What is known? And how do we come to know it? These are the primary points of focus for metaphysics and epistemology, respectively. Here, in one of the classic works of early-modern empiricist philosophy, John Locke (1632-1704) attempts to answer these basic human questions by moving away from the rationalist notion of innate ideas to establish the concept of the tabula rasa in which the mind is initially impressed with ideas through perception of the external world of substance. The formation of basic idea...",
+    "link": "https://www.goodreads.com/book/show/1479156.An_Essay_Concerning_Human_Understanding",
+    "author_metadata": {
+      "birth_year": 1632,
+      "death_year": 1704,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Socrates",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "it is certain that Socrates asleep and Socrates awake is not the same person; but his soul when he sleeps, and Socrates the man, consisting of body and soul, when he is waking, are two persons",
+          "Socrates, Pilate, St. Austin, and Caesar Borgia, to be the same man.",
+          "as I once met with one, who was persuaded his had been the SOUL of Socrates (how reasonably I will not dispute; this I know, that in the post he filled, which was no inconsiderable one, he passed for a very rational man, and the press has shown that he wanted not parts or learning;)—would any one say, that he, being not conscious of any of Socrates’s actions or thoughts, could be the same PERSON with Socrates?",
+          "if Socrates and the present mayor of Queenborough agree, they are the same person: if the same Socrates waking and sleeping do not partake of the same consciousness, Socrates waking and sleeping is not the same person."
+        ],
+        "commentaries": [
+          "The author uses Socrates as an example to illustrate the problem of personal identity when consciousness is absent during sleep.",
+          "The author lists Socrates as an example of a historical figure to illustrate a point about personal identity.",
+          "The author mentions a person who believed his soul was that of Socrates, using this as an example to discuss personal identity and consciousness.",
+          "The author uses Socrates as an example to illustrate his theory of personal identity, arguing that personal identity depends on consciousness, not substance."
+        ],
+        "canonical_author": "Socrates"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Socrates",
+        "page_id": 25664190,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Socrates| ",
+          "5th-century BC Athenians",
+          "5th-century BC Greek philosophers",
+          "4th-century BC executions",
+          "470s BC births",
+          "399 BC deaths",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political philosophers",
+          "Ancient Greeks accused of sacrilege",
+          "Characters in the Divine Comedy",
+          "Critics of religions",
+          "Executed ancient Greek people",
+          "Executed philosophers",
+          "Family of Socrates",
+          "Forced suicides",
+          "Irony theorists",
+          "People executed by ancient Athens",
+          "People executed by poison",
+          "People executed for heresy",
+          "Philosophers of education",
+          "Classical theism",
+          "Male suicides",
+          "Suicides by poison"
+        ],
+        "birth_year": -470,
+        "death_year": -399
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "302836"
+        ],
+        "target_person": {
+          "title": "Socrates",
+          "page_id": 25664190,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Socrates| ",
+            "5th-century BC Athenians",
+            "5th-century BC Greek philosophers",
+            "4th-century BC executions",
+            "470s BC births",
+            "399 BC deaths",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political philosophers",
+            "Ancient Greeks accused of sacrilege",
+            "Characters in the Divine Comedy",
+            "Critics of religions",
+            "Executed ancient Greek people",
+            "Executed philosophers",
+            "Family of Socrates",
+            "Forced suicides",
+            "Irony theorists",
+            "People executed by ancient Athens",
+            "People executed by poison",
+            "People executed for heresy",
+            "Philosophers of education",
+            "Classical theism",
+            "Male suicides",
+            "Suicides by poison"
+          ],
+          "birth_year": -470,
+          "death_year": -399
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Julius Caesar",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I ask whether a blind man, who distinguished his years either by the heat of summer, or cold of winter; by the smell of any flower of the spring, or taste of any fruit of the autumn, would not have a better measure of time than the Romans had before the reformation of their calendar by Julius Caesar"
+        ],
+        "commentaries": [
+          "The author refers to Julius Caesar as the reformer of the Roman calendar, using this as a historical example of an improved measure of time."
+        ],
+        "canonical_author": "Julius Caesar"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Julius Caesar",
+        "page_id": 15924,
+        "infoboxes": [
+          "person",
+          "officeholder "
+        ],
+        "categories": [
+          "Julius Caesar| ",
+          "100 BC births",
+          "44 BC deaths",
+          "1st-century BC historians",
+          "1st-century BC Roman augurs",
+          "1st-century BC Roman consuls",
+          "1st-century BC writers in Latin",
+          "Ancient assassinated people",
+          "Ancient Roman dictators",
+          "Ancient Roman military writers",
+          "Ancient Roman triumphators",
+          "Ancient Roman writers",
+          "Assassinated ancient Roman politicians",
+          "Assassinated heads of state in Europe",
+          "Assassinated military personnel",
+          "Characters in Book VI of the Aeneid",
+          "Characters in the Divine Comedy",
+          "Cleopatra",
+          "Correspondents of Cicero",
+          "Curule aediles",
+          "Deaths by stabbing in ancient Rome",
+          "Deified ancient Roman men",
+          "First Triumvirate",
+          "Flamines Dialis",
+          "Golden Age Latin writers",
+          "Illeists",
+          "Julii Caesares|Gaius",
+          "Memoirists",
+          "People captured by pirates",
+          "Pontifices maximi of the Roman Republic"
+        ],
+        "birth_year": -100,
+        "death_year": -44
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "16535395"
+        ],
+        "target_person": {
+          "title": "Julius Caesar",
+          "page_id": 15924,
+          "infoboxes": [
+            "person",
+            "officeholder "
+          ],
+          "categories": [
+            "Julius Caesar| ",
+            "100 BC births",
+            "44 BC deaths",
+            "1st-century BC historians",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Ancient assassinated people",
+            "Ancient Roman dictators",
+            "Ancient Roman military writers",
+            "Ancient Roman triumphators",
+            "Ancient Roman writers",
+            "Assassinated ancient Roman politicians",
+            "Assassinated heads of state in Europe",
+            "Assassinated military personnel",
+            "Characters in Book VI of the Aeneid",
+            "Characters in the Divine Comedy",
+            "Cleopatra",
+            "Correspondents of Cicero",
+            "Curule aediles",
+            "Deaths by stabbing in ancient Rome",
+            "Deified ancient Roman men",
+            "First Triumvirate",
+            "Flamines Dialis",
+            "Golden Age Latin writers",
+            "Illeists",
+            "Julii Caesares|Gaius",
+            "Memoirists",
+            "People captured by pirates",
+            "Pontifices maximi of the Roman Republic"
+          ],
+          "birth_year": -100,
+          "death_year": -44
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pythagoras",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Whether Euphorbus and Pythagoras, having had the same soul, were the same men, though they lived several ages asunder?"
+        ],
+        "commentaries": [
+          "The author references Pythagoras in discussing the idea of identity and the transmigration of souls."
+        ],
+        "canonical_author": "Pythagoras"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pythagoras",
+        "page_id": 23275,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Pythagoras| ",
+          "570s BC births",
+          "490s BC deaths",
+          "6th-century BC mathematicians",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek mathematicians",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek geometers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek music theorists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political refugees",
+          "Ancient Greek shamans",
+          "Ancient occultists",
+          "Ancient Samians",
+          "Pythagoreans",
+          "Founders of religions",
+          "Numerologists",
+          "Pythagoreans of Magna Graecia",
+          "6th-century BC religious leaders",
+          "5th-century BC religious leaders"
+        ],
+        "birth_year": -570,
+        "death_year": -495
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "203707"
+        ],
+        "target_person": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": -570,
+          "death_year": -495
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "I ask, then, whether Castor and Pollux, thus with only one soul between them, which thinks and perceives in one what the other is never conscious of, nor is concerned for, are not two as distinct PERSONS as Castor and Hercules, or as Socrates and Plato were?",
+          "Could we suppose two distinct incommunicable consciousnesses acting the same body, the one constantly by day, the other by night; and, on the other side, the same consciousness, acting by intervals, two distinct bodies: I ask, in the first case, whether the day and the night—man would not be two as distinct persons as Socrates and Plato?"
+        ],
+        "commentaries": [
+          "The author references Plato as a named individual to draw a comparison between distinct persons in a thought experiment about the soul and personal identity.",
+          "The author references Plato as a distinct person to contrast with Socrates in a hypothetical scenario about personal identity."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Aristotle was certainly a knowing man, but nobody ever thought him so because he blindly embraced, and confidently vented the opinions of another."
+        ],
+        "commentaries": [
+          "The author cites Aristotle as an example of someone who was a true knower because he employed his own reason, not because he merely followed others."
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "René Descartes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "yet those philosophers who are of opinion that infinite space is possessed by God’s infinite omnipresence, as well as infinite duration by his eternal existence, must be allowed to have as clear an idea of infinite space as of infinite duration; though neither of them, I think, has any positive idea of infinity in either case."
+        ],
+        "commentaries": [
+          "The author refers to philosophers, likely including Descartes, who argue that infinite space is occupied by God's omnipresence, but does not specify a particular book."
+        ],
+        "canonical_author": "René Descartes"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "René Descartes",
+        "page_id": 25525,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "René Descartes| ",
+          "Cartesianism|*",
+          "1596 births",
+          "1650 deaths",
+          "17th-century French mathematicians",
+          "17th-century French philosophers",
+          "17th-century French scientists",
+          "17th-century French non-fiction writers",
+          "17th-century writers in Latin",
+          "17th-century French male writers",
+          "17th-century Roman Catholics",
+          "Age of Enlightenment",
+          "Aphorists",
+          "Augustinian philosophers",
+          "Burials at Saint-Germain-des-Prés (abbey)",
+          "Catholic philosophers",
+          "French consciousness researchers and theorists",
+          "Constructed language creators",
+          "Critics of animal rights",
+          "Deaths from pneumonia in Sweden",
+          "Dualists",
+          "Enlightenment philosophers",
+          "French emigrants",
+          "Immigrants to the Dutch Republic",
+          "French ethicists",
+          "French expatriates in Sweden",
+          "French expatriates in the Dutch Republic",
+          "French logicians",
+          "French mercenaries",
+          "French music theorists"
+        ],
+        "birth_year": 1596,
+        "death_year": 1650
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "36556"
+        ],
+        "target_person": {
+          "title": "René Descartes",
+          "page_id": 25525,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "René Descartes| ",
+            "Cartesianism|*",
+            "1596 births",
+            "1650 deaths",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "17th-century French scientists",
+            "17th-century French non-fiction writers",
+            "17th-century writers in Latin",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Aphorists",
+            "Augustinian philosophers",
+            "Burials at Saint-Germain-des-Prés (abbey)",
+            "Catholic philosophers",
+            "French consciousness researchers and theorists",
+            "Constructed language creators",
+            "Critics of animal rights",
+            "Deaths from pneumonia in Sweden",
+            "Dualists",
+            "Enlightenment philosophers",
+            "French emigrants",
+            "Immigrants to the Dutch Republic",
+            "French ethicists",
+            "French expatriates in Sweden",
+            "French expatriates in the Dutch Republic",
+            "French logicians",
+            "French mercenaries",
+            "French music theorists"
+          ],
+          "birth_year": 1596,
+          "death_year": 1650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Blaise Pascal",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "It is reported of that prodigy of parts, Monsieur Pascal, that till the decay of his health had impaired his memory, he forgot nothing of what he had done, read, or thought, in any part of his rational age."
+        ],
+        "commentaries": [
+          "The author cites Pascal as an example of prodigious memory, noting that his memory was nearly perfect until his health declined."
+        ],
+        "canonical_author": "Blaise Pascal"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Blaise Pascal",
+        "page_id": 4068,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Blaise Pascal| ",
+          "1623 births",
+          "1662 deaths",
+          "Writers from Clermont-Ferrand",
+          "French Roman Catholic writers",
+          "17th-century French writers",
+          "17th-century French male writers",
+          "17th-century French mathematicians",
+          "17th-century French philosophers",
+          "Aphorists",
+          "Christian apologists",
+          "Christian humanists",
+          "Roman Catholic mystics",
+          "Critics of atheism",
+          "Converts to Roman Catholicism",
+          "Dualists",
+          "French fluid dynamicists",
+          "French mathematicians",
+          "French physicists",
+          "17th-century French theologians",
+          "17th-century Christian mystics",
+          "People with hypochondriasis",
+          "Jansenists",
+          "French probability theorists",
+          "Catholic philosophers",
+          "17th-century Roman Catholics",
+          "Burials at Saint-Étienne-du-Mont",
+          "Cartesianism",
+          "Scientists from Clermont-Ferrand",
+          "Philosophers of pessimism"
+        ],
+        "birth_year": 1623,
+        "death_year": 1662
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "10994"
+        ],
+        "target_person": {
+          "title": "Blaise Pascal",
+          "page_id": 4068,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Blaise Pascal| ",
+            "1623 births",
+            "1662 deaths",
+            "Writers from Clermont-Ferrand",
+            "French Roman Catholic writers",
+            "17th-century French writers",
+            "17th-century French male writers",
+            "17th-century French mathematicians",
+            "17th-century French philosophers",
+            "Aphorists",
+            "Christian apologists",
+            "Christian humanists",
+            "Roman Catholic mystics",
+            "Critics of atheism",
+            "Converts to Roman Catholicism",
+            "Dualists",
+            "French fluid dynamicists",
+            "French mathematicians",
+            "French physicists",
+            "17th-century French theologians",
+            "17th-century Christian mystics",
+            "People with hypochondriasis",
+            "Jansenists",
+            "French probability theorists",
+            "Catholic philosophers",
+            "17th-century Roman Catholics",
+            "Burials at Saint-Étienne-du-Mont",
+            "Cartesianism",
+            "Scientists from Clermont-Ferrand",
+            "Philosophers of pessimism"
+          ],
+          "birth_year": 1623,
+          "death_year": 1662
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Marcus Tullius Cicero",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and so Cicero, Nihil habet natura praestantius, quam honestatem, quam laudem, quam dignitatem, quam decus, which he tells you are all names for the same thing."
+        ],
+        "commentaries": [
+          "The author cites Cicero to illustrate that virtue, praise, honor, and dignity are considered synonymous by ancient philosophers."
+        ],
+        "canonical_author": "Marcus Tullius Cicero"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Tullius Cicero",
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Marcus Tullius Cicero",
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Horace",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And that durare is applied to the idea of hardness, as well as that of existence, we see in Horace, Epod. xvi. ferro duravit secula."
+        ],
+        "commentaries": [
+          "The author cites Horace's use of the word 'durare' to illustrate the connection between the ideas of hardness and existence."
+        ],
+        "canonical_author": "Horace"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Horace",
+        "birth_year": -65,
+        "death_year": -8
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3341504"
+        ],
+        "target_person": {
+          "title": "Horace",
+          "birth_year": -65,
+          "death_year": -8
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Solomon in Islam",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "But whether any one will take space to be only a RELATION resulting from the existence of other beings at a distance; or whether they will think the words of the most knowing King Solomon, ‘The heaven, and the heaven of heavens, cannot contain thee;’ or those more emphatical ones of the inspired philosopher St. Paul, ‘In him we live, move, and have our being,’ are to be understood in a literal sense, I leave every one to consider: only our idea of space is, I think, such as I have mentioned, and distinct from that of body.",
+          "Solomon, whose understanding was filled and enlarged with wisdom, seems to have other thoughts when he says, ‘Heaven, and the heaven of heavens, cannot contain thee.’"
+        ],
+        "commentaries": [
+          "The author quotes King Solomon as a source of a saying about the heavens not containing God, using it to discuss the idea of space.",
+          "The author quotes Solomon as a wise figure to support the argument that God is not confined by matter or space."
+        ],
+        "canonical_author": "Solomon In Islam"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Solomon in Islam",
+        "page_id": 406685,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Solomon|Islam",
+          "Hebrew Bible prophets of the Quran"
+        ],
+        "birth_year": -1011,
+        "death_year": -931
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Solomon in Islam",
+          "page_id": 406685,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Solomon|Islam",
+            "Hebrew Bible prophets of the Quran"
+          ],
+          "birth_year": -1011,
+          "death_year": -931
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Virgil",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Sunt sua praemia laudi, says Virgil;"
+        ],
+        "commentaries": [
+          "The author quotes Virgil to support the idea that virtue and praise are closely linked."
+        ],
+        "canonical_author": "Virgil"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Virgil",
+        "birth_year": -70,
+        "death_year": -19
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "919"
+        ],
+        "target_person": {
+          "title": "Virgil",
+          "birth_year": -70,
+          "death_year": -19
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "St. Augustine",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Socrates, Pilate, St. Austin, and Caesar Borgia, to be the same man."
+        ],
+        "commentaries": [
+          "The author lists St. Augustine (referred to as St. Austin) as an example of a historical figure to illustrate a point about personal identity."
+        ],
+        "canonical_author": "St. Augustine"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "St. Augustine",
+        "birth_year": 354,
+        "death_year": 430
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6819578"
+        ],
+        "target_person": {
+          "title": "St. Augustine",
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Aeneid",
+        "author": "Virgil",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the proper answer would be, that these verses were about the middle of the ninth book of his AEneids, and that they have been always constantly in the same place ever since Virgil was printed"
+        ],
+        "commentaries": [
+          "The author uses Virgil's AEneids as an example to illustrate the concept of place, noting that the verses of Nisus and Euryalus are located in the ninth book and have remained in the same place since the work was printed."
+        ]
+      },
+      "goodreads_match": {
+        "format": "Hardcover",
+        "text_reviews_count": 2,
+        "author_ids": [
+          "919",
+          "8124"
+        ],
+        "num_pages": 397,
+        "book_id": "24782569",
+        "work_id": "288738",
+        "title": "Aeneid",
+        "title_without_series": "Aeneid",
+        "publisher": "Heritage Press",
+        "ratings_count": 5,
+        "publication_year": 1944,
+        "average_rating": 3.81,
+        "authors": [
+          "Virgil",
+          "John Dryden"
+        ],
+        "description": "Illustrated by Carlotta Petrina. Black cloth, front cover stamped in blind with Petrina illus; slipcase; 6-3/4\" x 10-1/2\".",
+        "link": "https://www.goodreads.com/book/show/24782569-aeneid",
+        "original_year": -18,
+        "author_meta": {
+          "birth_year": -70,
+          "death_year": -19,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Virgil",
+        "birth_year": -70,
+        "death_year": -19
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "24782569",
+        "target_author_ids": [
+          "919",
+          "8124"
+        ],
+        "target_person": {
+          "title": "Virgil",
+          "birth_year": -70,
+          "death_year": -19
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Discourse Concerning the Nature of Man",
+        "author": "Lowde",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Of this the ingenious author of the Discourse Concerning the Nature of Man has given me a late instance, to mention no other."
+        ],
+        "commentaries": [
+          "The author references this work as a source of a recent misunderstanding of his own views."
+        ]
+      },
+      "goodreads_match": {
+        "title": "A Discourse Concerning the Nature of Man",
+        "authors": [
+          "James Lowde"
+        ],
+        "original_year": 1694,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "English",
+        "description": "A philosophical work by James Lowde, critiqued by John Locke in An Essay Concerning Human Understanding.",
+        "book_id": "web_2e26c894",
+        "author_meta": {
+          "birth_year": 1965
+        }
+      },
+      "wikipedia_match": {
+        "title": "James Lowde",
+        "birth_year": 1965
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_2e26c894",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "James Lowde",
+          "birth_year": 1965
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "St. Paul",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "as St. Paul tells us all nations did after God (Acts xvii. 27)",
+          "But whether any one will take space to be only a RELATION resulting from the existence of other beings at a distance; or whether they will think the words of the most knowing King Solomon, ‘The heaven, and the heaven of heavens, cannot contain thee;’ or those more emphatical ones of the inspired philosopher St. Paul, ‘In him we live, move, and have our being,’ are to be understood in a literal sense, I leave every one to consider: only our idea of space is, I think, such as I have mentioned, and distinct from that of body.",
+          "‘It is better to marry than to burn,’ says St. Paul, where we may see what it is that chiefly drives men into the enjoyments of a conjugal life."
+        ],
+        "commentaries": [
+          "The author references St. Paul's statement in Acts to support the idea that all nations groped after God.",
+          "The author quotes St. Paul as a source of a saying about living and moving in God, using it to discuss the idea of space.",
+          "The author quotes St. Paul to illustrate that present uneasiness (burning) drives action more than prospective good."
+        ],
+        "canonical_author": "St. Paul"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "St. Paul",
+        "birth_year": 5,
+        "death_year": 67
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "15282814"
+        ],
+        "target_person": {
+          "title": "St. Paul",
+          "birth_year": 5,
+          "death_year": 67
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Peregr. Baumgarten",
+        "author": "Baumgarten",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "A remarkable passage to this purpose, out of the voyage of Baumgarten, which is a book not every day to be met with, I shall set down at large, in the language it is published in."
+        ],
+        "commentaries": [
+          "The author quotes a passage from Baumgarten's travel book to illustrate a moral practice among the Saracens."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Peregrinatio in Aegyptum, Arabiam, Palaestinam, & Syriam",
+        "authors": [
+          "Martin Baumgarten"
+        ],
+        "original_year": 1594,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "",
+        "description": "Travel account of Martin Baumgarten's pilgrimage to Egypt, Arabia, Palestine, and Syria, referenced by John Locke in An Essay Concerning Human Understanding.",
+        "book_id": "web_77cb56a8",
+        "author_meta": {
+          "birth_year": 1939,
+          "death_year": 2015,
+          "main_genre": "crime",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Martin Baumgarten",
+        "birth_year": 1939,
+        "death_year": 2015
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_77cb56a8",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Martin Baumgarten",
+          "birth_year": 1939,
+          "death_year": 2015
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "De Veritate",
+        "author": "Edward Herbert",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "When I had written this, being informed that my Lord Herbert had, in his book De Veritate, assigned these innate principles, I presently consulted him, hoping to find in a man of so great parts, something that might satisfy me in this point, and put an end to my inquiry."
+        ],
+        "commentaries": [
+          "The author references Lord Herbert's book 'De Veritate' as a source that enumerates innate principles; he consults it to resolve his doubts about innate ideas."
+        ]
+      },
+      "goodreads_match": {
+        "title": "De Veritate",
+        "authors": [
+          "Edward Herbert"
+        ],
+        "original_year": 1624,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "English",
+        "description": "A philosophical treatise by Edward Herbert, 1st Baron Herbert of Cherbury, arguing for innate principles and natural religion.",
+        "book_id": "web_70b758ae",
+        "author_meta": {
+          "birth_year": 1583,
+          "death_year": 1648,
+          "canonical_name": "Edward Herbert, 1st Baron Herbert of Cherbury"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Edward Herbert",
+        "birth_year": 1583,
+        "death_year": 1648
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_70b758ae",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Edward Herbert",
+          "birth_year": 1583,
+          "death_year": 1648
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "St. Peter",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "since he hath given them (as St. Peter says) [words in Greek], whatsoever is necessary for the conveniences of life and information of virtue"
+        ],
+        "commentaries": [
+          "The author quotes St. Peter as a biblical authority to support the claim that God has provided sufficient knowledge for human needs."
+        ],
+        "canonical_author": "St. Peter"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "St. Peter",
+        "birth_year": 1,
+        "death_year": 64
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "St. Peter",
+          "birth_year": 1,
+          "death_year": 64
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Moses",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "For, as in the history of the creation delivered by Moses, I can imagine that light existed three days before the sun was, or had any motion, barely by thinking that the duration of light before the sun was created was so long as (IF the sun had moved then as it doth now) would have been equal to three of his diurnal revolutions;"
+        ],
+        "commentaries": [
+          "The author references Moses as the source of the biblical creation narrative, using the account to illustrate a point about measuring duration."
+        ],
+        "canonical_author": "Moses"
+      },
+      "goodreads_match": {
+        "title": "The Book of Genesis",
+        "authors": [
+          "Moses"
+        ],
+        "original_year": -1400,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Israelite",
+        "description": "First book of the Hebrew Bible and the Christian Old Testament, traditionally attributed to Moses, containing the creation narrative and early history of humanity.",
+        "book_id": "web_4b3bd7e6",
+        "author_meta": {
+          "birth_year": 1730,
+          "canonical_name": "Moses Harris",
+          "death_year": 1788,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Moses",
+        "birth_year": 1730,
+        "death_year": 1788
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_4b3bd7e6",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Moses",
+          "birth_year": 1730,
+          "death_year": 1788
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Garcilasso de la Vega",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And Garcilasso de la Vega tells us of a people in Peru which were wont to fat and eat the children they got on their female captives, whom they kept as concubines for that purpose, and when they were past breeding, the mothers themselves were killed too and eaten."
+        ],
+        "commentaries": [
+          "The author cites Garcilasso de la Vega as a source for an example of moral practices among a Peruvian people."
+        ],
+        "canonical_author": "Garcilasso De La Vega"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Garcilasso de la Vega",
+        "birth_year": 1503,
+        "death_year": 1536
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "104713"
+        ],
+        "target_person": {
+          "title": "Garcilasso de la Vega",
+          "birth_year": 1503,
+          "death_year": 1536
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Molyneux",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "To which purpose I shall here insert a problem of that very ingenious and studious promoter of real knowledge, the learned and worthy Mr. Molineux, which he was pleased to send me in a letter some months since; and it is this:—\"Suppose a man BORN blind, and now adult, and taught by his TOUCH to distinguish between a cube and a sphere of the same metal, and nighly of the same bigness, so as to tell, when he felt one and the other, which is the cube, which the sphere."
+        ],
+        "commentaries": [
+          "The author cites a problem sent to him by Mr. Molyneux in a letter, which he then discusses and agrees with."
+        ],
+        "canonical_author": "Molyneux"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "William Molyneux",
+        "page_id": 2351829,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1656 births",
+          "1698 deaths",
+          "17th-century Anglo-Irish people",
+          "Alumni of Trinity College Dublin",
+          "Irish constitutional law",
+          "Irish MPs 1692–1693",
+          "Irish MPs 1695–1699",
+          "17th-century Irish philosophers",
+          "Irish philosophers",
+          "Natural philosophers",
+          "Members of the Parliament of Ireland (pre-1801) for Dublin University",
+          "Writers from County Dublin",
+          "Surveyors General of Ireland",
+          "Fellows of the Royal Society",
+          "Donegall Lecturers of Mathematics at Trinity College Dublin",
+          "Politicians from County Dublin"
+        ],
+        "birth_year": 1656,
+        "death_year": 1698
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "William Molyneux",
+          "page_id": 2351829,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1656 births",
+            "1698 deaths",
+            "17th-century Anglo-Irish people",
+            "Alumni of Trinity College Dublin",
+            "Irish constitutional law",
+            "Irish MPs 1692–1693",
+            "Irish MPs 1695–1699",
+            "17th-century Irish philosophers",
+            "Irish philosophers",
+            "Natural philosophers",
+            "Members of the Parliament of Ireland (pre-1801) for Dublin University",
+            "Writers from County Dublin",
+            "Surveyors General of Ireland",
+            "Fellows of the Royal Society",
+            "Donegall Lecturers of Mathematics at Trinity College Dublin",
+            "Politicians from County Dublin"
+          ],
+          "birth_year": 1656,
+          "death_year": 1698
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lowde",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "And whatever authority the learned Mr. Lowde places in his Old English Dictionary, I daresay it nowhere tells him (if I should appeal to it) that the same action is not in credit, called and counted a virtue, in one place, which, being in disrepute, passes for and under the name of vice in another.",
+          "Had Mr. Lowde considered this, he would have found it little to his purpose to have quoted this passage in a sense I used it not; and would I imagine have spared the application he subjoins to it, as not very necessary.",
+          "Though I am forced to differ from him in these apprehensions he has expressed, in the latter end of his preface, concerning what I had said about virtue and vice, yet we are better agreed than he thinks in what he says in his third chapter (p. 78) concerning “natural inscription and innate notions.”"
+        ],
+        "commentaries": [
+          "The author mentions Mr. Lowde as a learned person who uses an Old English Dictionary, but does not cite a specific book by Lowde here.",
+          "The author continues to discuss Mr. Lowde's misinterpretation of his work, without naming a specific book by Lowde.",
+          "The author references Lowde's preface and third chapter, but does not name a specific book title here."
+        ],
+        "canonical_author": "Lowde"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lowde",
+        "birth_year": 1969
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Lowde",
+          "birth_year": 1969
+        }
+      }
+    }
+  ]
+}

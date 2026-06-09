@@ -1,0 +1,2463 @@
+{
+  "source": {
+    "title": "Lives of the Most Eminent Painters, Sculptors and Architects",
+    "authors": [
+      "Giorgio Vasari"
+    ],
+    "goodreads_id": "pg25326",
+    "calibre_id": null,
+    "author_ids": [
+      "136635",
+      "645119"
+    ],
+    "book_id": "19219723",
+    "ratings_count": 8,
+    "average_rating": 3.38,
+    "work_id": "27264036",
+    "title_without_series": "Lives of the Most Eminent Painters Sculptors and Architects Vol. 01 (of 10), Cimabue to Agnolo Gaddi",
+    "text_reviews_count": 1,
+    "link": "https://www.goodreads.com/book/show/19219723-lives-of-the-most-eminent-painters-sculptors-and-architects-vol-01-of",
+    "author_metadata": {
+      "birth_year": 1511,
+      "death_year": 1574,
+      "canonical_name": "Giorgio Vasari"
+    },
+    "publication_year": 1550
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Giovanni Boccaccio",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Messer Giovanni Boccaccio wrote about him"
+        ],
+        "commentaries": [
+          "The author notes that Boccaccio wrote about Giotto's wit."
+        ],
+        "canonical_author": "Giovanni Boccaccio"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Giovanni Boccaccio",
+        "page_id": 12957,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Giovanni Boccaccio| ",
+          "1313 births",
+          "1375 deaths",
+          "14th-century Italian diplomats",
+          "14th-century Italian historians",
+          "14th-century Italian poets",
+          "14th-century Neo-Latin writers",
+          "14th-century people from the Republic of Florence",
+          "14th-century Roman Catholics",
+          "14th-century writers in Latin",
+          "Deaths from edema",
+          "Italian male poets",
+          "Italian Renaissance humanists",
+          "Italian Renaissance writers",
+          "Italian Roman Catholic writers",
+          "Medieval Latin-language poets",
+          "People from Certaldo"
+        ],
+        "birth_year": 1313,
+        "death_year": 1375
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "29227"
+        ],
+        "target_person": {
+          "title": "Giovanni Boccaccio",
+          "page_id": 12957,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Giovanni Boccaccio| ",
+            "1313 births",
+            "1375 deaths",
+            "14th-century Italian diplomats",
+            "14th-century Italian historians",
+            "14th-century Italian poets",
+            "14th-century Neo-Latin writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century Roman Catholics",
+            "14th-century writers in Latin",
+            "Deaths from edema",
+            "Italian male poets",
+            "Italian Renaissance humanists",
+            "Italian Renaissance writers",
+            "Italian Roman Catholic writers",
+            "Medieval Latin-language poets",
+            "People from Certaldo"
+          ],
+          "birth_year": 1313,
+          "death_year": 1375
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Giotto",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Stefano, painter of Florence and disciple of Giotto, was so excellent, that he not only surpassed all the others who had laboured in the art before him, but outstripped his own master himself by so much that he was held, and deservedly, the best of all the painters who had lived up to that time, as his works clearly demonstrate.",
+          "This is seen in Andrea Pisano, who, practising sculpture in the time of Giotto, made so great improvement in this art, that both in practice and in theory he was esteemed the greatest man that the Tuscans had had up to his times in this profession, and above all in casting in bronze."
+        ],
+        "commentaries": [
+          "The author mentions Stefano as a disciple of Giotto, comparing his work directly to that of his master.",
+          "The author mentions Giotto as the contemporary and influence on Andrea Pisano's work."
+        ],
+        "canonical_author": "Giotto"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Giotto",
+        "page_id": 27729289,
+        "infoboxes": [
+          "artist"
+        ],
+        "categories": [
+          "Giotto di Bondone| ",
+          "Paintings by Giotto| ",
+          "1267 births",
+          "1337 deaths",
+          "13th-century Italian architects",
+          "13th-century Italian painters",
+          "14th-century Italian architects",
+          "14th-century Italian painters",
+          "14th-century people from the Republic of Florence",
+          "Catholic painters",
+          "Church frescos in Italy",
+          "Fresco painters",
+          "Gothic architects",
+          "Gothic painters",
+          "Italian male painters",
+          "Italian Roman Catholics",
+          "Painters from Tuscany",
+          "Trecento painters"
+        ],
+        "birth_year": 1267,
+        "death_year": 1337
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "47882"
+        ],
+        "target_person": {
+          "title": "Giotto",
+          "page_id": 27729289,
+          "infoboxes": [
+            "artist"
+          ],
+          "categories": [
+            "Giotto di Bondone| ",
+            "Paintings by Giotto| ",
+            "1267 births",
+            "1337 deaths",
+            "13th-century Italian architects",
+            "13th-century Italian painters",
+            "14th-century Italian architects",
+            "14th-century Italian painters",
+            "14th-century people from the Republic of Florence",
+            "Catholic painters",
+            "Church frescos in Italy",
+            "Fresco painters",
+            "Gothic architects",
+            "Gothic painters",
+            "Italian male painters",
+            "Italian Roman Catholics",
+            "Painters from Tuscany",
+            "Trecento painters"
+          ],
+          "birth_year": 1267,
+          "death_year": 1337
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Giovanni Villani",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "he died at the age of seventy, in 1300, at the very time when Giovanni Villani began to write the Universal History of his times.",
+          "as Giovanni Villani relates in his History."
+        ],
+        "commentaries": [
+          "The author mentions Giovanni Villani as the writer of a Universal History, noting that he began this work at the time of Arnolfo's death.",
+          "The author cites Giovanni Villani's History as a source for the portrayal of Cardinal Niccola da Prato."
+        ],
+        "canonical_author": "Giovanni Villani"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Giovanni Villani",
+        "page_id": 490837,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "13th-century births",
+          "1348 deaths",
+          "14th-century Italian historians",
+          "14th-century deaths from plague (disease)",
+          "14th-century people from the Republic of Florence",
+          "Italian chroniclers",
+          "Economic history of Italy",
+          "History of banking",
+          "Italian bankers",
+          "Medieval bankers",
+          "Italian republicans",
+          "13th-century Italian businesspeople",
+          "14th-century Italian businesspeople",
+          "14th-century Italian diplomats"
+        ],
+        "birth_year": null,
+        "death_year": 1348
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3401631"
+        ],
+        "target_person": {
+          "title": "Giovanni Villani",
+          "page_id": 490837,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "13th-century births",
+            "1348 deaths",
+            "14th-century Italian historians",
+            "14th-century deaths from plague (disease)",
+            "14th-century people from the Republic of Florence",
+            "Italian chroniclers",
+            "Economic history of Italy",
+            "History of banking",
+            "Italian bankers",
+            "Medieval bankers",
+            "Italian republicans",
+            "13th-century Italian businesspeople",
+            "14th-century Italian businesspeople",
+            "14th-century Italian diplomats"
+          ],
+          "birth_year": null,
+          "death_year": 1348
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Petrarch",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And the same Petrarch, in a Latin epistle in the fifth book of his _Familiar Letters_, says these words: \"Atque (ut a veteribus ad nova, ab externis ad nostra transgrediar) duos ego novi pictores egregios, nec formosos, Joctum Florentinum civem, cujus inter modernos fama ingens est, et Simonem Senensem. Novi scultores aliquot,\" etc."
+        ],
+        "commentaries": [
+          "The author quotes Petrarch's Familiar Letters to show Petrarch's praise of Giotto."
+        ],
+        "canonical_author": "Petrarch"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Petrarch",
+        "page_id": 23734,
+        "infoboxes": [
+          "writer <!-- For more information see [[:Template:Infobox Writer/doc]]. -->"
+        ],
+        "categories": [
+          "Petrarch| ",
+          "Italian Renaissance humanists",
+          "Italian Renaissance writers",
+          "1304 births",
+          "1374 deaths",
+          "Italian bibliophiles",
+          "Christian humanists",
+          "Italian male poets",
+          "Italian Roman Catholic writers",
+          "People from Arezzo",
+          "Rhetoricians",
+          "Sonneteers",
+          "14th-century Italian historians",
+          "14th-century Italian poets",
+          "14th-century Italian writers",
+          "14th-century writers in Latin",
+          "14th-century Neo-Latin writers",
+          "Proto-Protestants",
+          "Latin-language Italian writers",
+          "Ambassadors to the Republic of Venice",
+          "People of the War of the Straits"
+        ],
+        "birth_year": 1304,
+        "death_year": 1374
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Petrarch",
+          "page_id": 23734,
+          "infoboxes": [
+            "writer <!-- For more information see [[:Template:Infobox Writer/doc]]. -->"
+          ],
+          "categories": [
+            "Petrarch| ",
+            "Italian Renaissance humanists",
+            "Italian Renaissance writers",
+            "1304 births",
+            "1374 deaths",
+            "Italian bibliophiles",
+            "Christian humanists",
+            "Italian male poets",
+            "Italian Roman Catholic writers",
+            "People from Arezzo",
+            "Rhetoricians",
+            "Sonneteers",
+            "14th-century Italian historians",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century writers in Latin",
+            "14th-century Neo-Latin writers",
+            "Proto-Protestants",
+            "Latin-language Italian writers",
+            "Ambassadors to the Republic of Venice",
+            "People of the War of the Straits"
+          ],
+          "birth_year": 1304,
+          "death_year": 1374
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lorenzo Ghiberti",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I, by reason of certain records that I have seen, and of certain memoirs of good authority written by Lorenzo Ghiberti and by Domenico del Ghirlandajo, hold it as true that he was rather the son of Stefano than of Giotto."
+        ],
+        "commentaries": [
+          "The author cites memoirs written by Lorenzo Ghiberti as evidence for his claim about Maso's parentage."
+        ],
+        "canonical_author": "Lorenzo Ghiberti"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lorenzo Ghiberti",
+        "page_id": 160930,
+        "infoboxes": [
+          "artist"
+        ],
+        "categories": [
+          "Italian Renaissance sculptors",
+          "Italian Roman Catholics",
+          "Sculptors from Florence",
+          "Italian goldsmiths",
+          "1378 births",
+          "1455 deaths",
+          "Artist authors",
+          "Italian male sculptors",
+          "15th-century people from the Republic of Florence",
+          "Burials at Basilica of Santa Croce, Florence",
+          "15th-century Italian sculptors",
+          "Catholic sculptors"
+        ],
+        "birth_year": 1378,
+        "death_year": 1455
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Lorenzo Ghiberti",
+          "page_id": 160930,
+          "infoboxes": [
+            "artist"
+          ],
+          "categories": [
+            "Italian Renaissance sculptors",
+            "Italian Roman Catholics",
+            "Sculptors from Florence",
+            "Italian goldsmiths",
+            "1378 births",
+            "1455 deaths",
+            "Artist authors",
+            "Italian male sculptors",
+            "15th-century people from the Republic of Florence",
+            "Burials at Basilica of Santa Croce, Florence",
+            "15th-century Italian sculptors",
+            "Catholic sculptors"
+          ],
+          "birth_year": 1378,
+          "death_year": 1455
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cennino d'Andrea Cennini",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Cennino di Drea Cennini of Colle di Valdelsa, who, having very great affection for the art, wrote a book describing the methods of working in fresco, in distemper, in size, and in gum, and, besides, how illuminating is done, and all the methods of applying gold; which book is in the hands of Giuliano, goldsmith of Siena, an excellent master and a friend of these arts.",
+          "And in the beginning of this his book he treated of the nature of colours, both the minerals and the earth-colours, according as he learnt from Agnolo his master, wishing, for the reason perchance that he did not succeed in learning to paint perfectly, at least to know the nature of the colours, the distempers, the sizes, and the application of gesso, and what colours we must guard against as harmful in making the mixtures, and in short many other considerations whereof there is no need to discourse, there being to-day a perfect knowledge of all those matters which he held as great and very rare secrets in those times.",
+          "This Cennino, in the first chapter of his said book, speaking of himself, uses these very words: \"I, Cennino di Drea Cennini, of Colle di Valdelsa, was instructed in the said art for twelve years by Agnolo di Taddeo of Florence, my master, who learnt the said art from Taddeo, his father, who was held at baptism by Giotto and was his disciple for four-and-twenty years; which Giotto transmuted the art of painting from Greek into Latin, and brought it to the modern manner, and had it for certain more perfected than anyone ever had it.\""
+        ],
+        "commentaries": [
+          "The author describes Cennini's book on painting techniques and notes its current owner.",
+          "The author comments on the content of Cennini's book, noting its treatment of colors and techniques.",
+          "The author quotes directly from Cennini's book, citing his own words about his training and Giotto's influence."
+        ],
+        "canonical_author": "Cennino Di Drea Cennini"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cennino Cennini",
+        "page_id": 1423806,
+        "infoboxes": [],
+        "categories": [
+          "1360s births",
+          "1440 deaths",
+          "People from Colle di Val d'Elsa",
+          "14th-century Italian painters",
+          "Italian male painters",
+          "15th-century Italian painters",
+          "Painters from Tuscany",
+          "Italian Renaissance painters",
+          "Art technological sources"
+        ],
+        "birth_year": 1370,
+        "death_year": 1440
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cennino Cennini",
+          "page_id": 1423806,
+          "infoboxes": [],
+          "categories": [
+            "1360s births",
+            "1440 deaths",
+            "People from Colle di Val d'Elsa",
+            "14th-century Italian painters",
+            "Italian male painters",
+            "15th-century Italian painters",
+            "Painters from Tuscany",
+            "Italian Renaissance painters",
+            "Art technological sources"
+          ],
+          "birth_year": 1370,
+          "death_year": 1440
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Diodorus Siculus",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "as Diodorus relates, calling them by the Greek names (that did not yet exist), Jove, Juno, and Ops.",
+          "copiously described by Diodorus, and proved by the stern commandment made by Moses in the Exodus from Egypt",
+          "as Diodorus tells; that the Egyptians took them from the Ethiopians, and, from them, the Greeks"
+        ],
+        "commentaries": [
+          "The author cites Diodorus as a source for the story of Semiramis and the statues in Babylon.",
+          "The author references Diodorus's description of the tomb of King Osimandyas.",
+          "The author cites Diodorus on the origin of statues among the Ethiopians and their transmission to the Greeks."
+        ],
+        "canonical_author": "Diodorus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Diodorus Siculus",
+        "page_id": 99425,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1st-century BC Greek writers",
+          "1st-century BC historians",
+          "30s BC deaths",
+          "90s BC births",
+          "Classical geography",
+          "Hellenistic-era historians",
+          "Historians from Magna Graecia",
+          "Sicilian Greeks",
+          "Works about mining",
+          "Historians of Phoenicia"
+        ],
+        "birth_year": -90,
+        "death_year": -30
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "174548"
+        ],
+        "target_person": {
+          "title": "Diodorus Siculus",
+          "page_id": 99425,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1st-century BC Greek writers",
+            "1st-century BC historians",
+            "30s BC deaths",
+            "90s BC births",
+            "Classical geography",
+            "Hellenistic-era historians",
+            "Historians from Magna Graecia",
+            "Sicilian Greeks",
+            "Works about mining",
+            "Historians of Phoenicia"
+          ],
+          "birth_year": -90,
+          "death_year": -30
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cimabue",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "And, as was told in the Life of Cimabue, a commentator of Dante, who lived at the same time as Giotto, said: \"Giotto was and is the most eminent among painters in the same city of Florence, and his works bear testimony for him in Rome, in Naples, in Avignon, in Florence, in Padua, and in many other parts of the world.\"",
+          "a device that Buonamico had seen in the works that had been made in the same city by Cimabue."
+        ],
+        "commentaries": [
+          "The author references a commentator of Dante mentioned in the Life of Cimabue.",
+          "The author notes that Buonamico borrowed a device from works by Cimabue."
+        ],
+        "canonical_author": "Cimabue"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cimabue",
+        "page_id": 6991,
+        "infoboxes": [
+          "artist"
+        ],
+        "categories": [
+          "1240s births",
+          "1302 deaths",
+          "13th-century Italian painters",
+          "14th-century Italian painters",
+          "Italian Roman Catholics",
+          "Painters from Florence",
+          "Gothic painters",
+          "Italian male painters",
+          "Italian mosaic artists"
+        ],
+        "birth_year": null,
+        "death_year": 1302
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cimabue",
+          "page_id": 6991,
+          "infoboxes": [
+            "artist"
+          ],
+          "categories": [
+            "1240s births",
+            "1302 deaths",
+            "13th-century Italian painters",
+            "14th-century Italian painters",
+            "Italian Roman Catholics",
+            "Painters from Florence",
+            "Gothic painters",
+            "Italian male painters",
+            "Italian mosaic artists"
+          ],
+          "birth_year": null,
+          "death_year": 1302
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pliny the Elder",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "the greater prices cited in particular by Pliny",
+          "But according to what Pliny writes, this came to Egypt from Gyges the Lydian, who, being by the fire and gazing at his own shadow, suddenly, with some charcoal in his hand, drew his own outline on the wall.",
+          "And from that age, for a time, outlines only were wont to be used, with no body of colour, as the same Pliny confirms"
+        ],
+        "commentaries": [
+          "The author references Pliny as a source for the high prices of sculptures.",
+          "The author cites Pliny's account of the origin of drawing from shadow outlines.",
+          "The author references Pliny's confirmation of the early use of outlines without colour."
+        ],
+        "canonical_author": "Pliny The Elder"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pliny the Elder",
+        "page_id": 44920,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Ancient Roman admirals",
+          "Ancient Roman antiquarians",
+          "Ancient Roman soldiers",
+          "Classical geography",
+          "Classical Latin literature",
+          "People from Como",
+          "Ancient Roman scientists",
+          "Philosophers of Roman Italy",
+          "Ancient Roman botanists",
+          "Ancient Roman encyclopedists",
+          "Ancient Roman geographers",
+          "Ancient Roman philosophers",
+          "Silver Age Latin writers",
+          "1st-century Romans",
+          "20s births",
+          "Year of birth uncertain",
+          "79 deaths",
+          "Plinii",
+          "1st-century geographers",
+          "Deaths in the eruption of Mount Vesuvius in 79 AD"
+        ],
+        "birth_year": 23,
+        "death_year": 79
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "302386"
+        ],
+        "target_person": {
+          "title": "Pliny the Elder",
+          "page_id": 44920,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Ancient Roman admirals",
+            "Ancient Roman antiquarians",
+            "Ancient Roman soldiers",
+            "Classical geography",
+            "Classical Latin literature",
+            "People from Como",
+            "Ancient Roman scientists",
+            "Philosophers of Roman Italy",
+            "Ancient Roman botanists",
+            "Ancient Roman encyclopedists",
+            "Ancient Roman geographers",
+            "Ancient Roman philosophers",
+            "Silver Age Latin writers",
+            "1st-century Romans",
+            "20s births",
+            "Year of birth uncertain",
+            "79 deaths",
+            "Plinii",
+            "1st-century geographers",
+            "Deaths in the eruption of Mount Vesuvius in 79 AD"
+          ],
+          "birth_year": 23,
+          "death_year": 79
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Leon Battista Alberti",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as our Leon Batista Alberti testifies"
+        ],
+        "commentaries": [
+          "The author notes that Alberti testifies to the antiquity of art among the Etruscans."
+        ],
+        "canonical_author": "Leon Battista Alberti"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Leon Battista Alberti",
+        "page_id": 18031,
+        "infoboxes": [
+          "artist"
+        ],
+        "categories": [
+          "Leon Battista Alberti",
+          "1404 births",
+          "1472 deaths",
+          "15th-century antiquarians",
+          "15th-century Genoese people",
+          "15th-century Italian architects",
+          "15th-century Italian mathematicians",
+          "15th-century Italian painters",
+          "15th-century Italian philosophers",
+          "15th-century Italian poets",
+          "15th-century Italian Roman Catholic priests",
+          "15th-century Italian sculptors",
+          "15th-century writers in Latin",
+          "Architectural theoreticians",
+          "Artist authors",
+          "Catholic philosophers",
+          "Catholic poets",
+          "Italian architecture writers",
+          "Italian cryptographers",
+          "Italian male non-fiction writers",
+          "Italian male painters",
+          "Italian male poets",
+          "Italian male sculptors",
+          "Italian medallists",
+          "Italian philosophers of art",
+          "Italian Renaissance architects",
+          "Italian Renaissance humanists",
+          "Italian Renaissance painters",
+          "Italian Renaissance writers",
+          "Italian Roman Catholic writers"
+        ],
+        "birth_year": 1404,
+        "death_year": 1472
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "198388"
+        ],
+        "target_person": {
+          "title": "Leon Battista Alberti",
+          "page_id": 18031,
+          "infoboxes": [
+            "artist"
+          ],
+          "categories": [
+            "Leon Battista Alberti",
+            "1404 births",
+            "1472 deaths",
+            "15th-century antiquarians",
+            "15th-century Genoese people",
+            "15th-century Italian architects",
+            "15th-century Italian mathematicians",
+            "15th-century Italian painters",
+            "15th-century Italian philosophers",
+            "15th-century Italian poets",
+            "15th-century Italian Roman Catholic priests",
+            "15th-century Italian sculptors",
+            "15th-century writers in Latin",
+            "Architectural theoreticians",
+            "Artist authors",
+            "Catholic philosophers",
+            "Catholic poets",
+            "Italian architecture writers",
+            "Italian cryptographers",
+            "Italian male non-fiction writers",
+            "Italian male painters",
+            "Italian male poets",
+            "Italian male sculptors",
+            "Italian medallists",
+            "Italian philosophers of art",
+            "Italian Renaissance architects",
+            "Italian Renaissance humanists",
+            "Italian Renaissance painters",
+            "Italian Renaissance writers",
+            "Italian Roman Catholic writers"
+          ],
+          "birth_year": 1404,
+          "death_year": 1472
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lorenzo di Cione Ghiberti",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And if that is true, and I hold it as of the truest, which Lorenzo di Cione Ghiberti has left in writing, Giotto made not only the model of this campanile, but also part of those scenes in marble wherein are the beginnings of all the arts, in sculpture and in relief."
+        ],
+        "commentaries": [
+          "The author cites Ghiberti's written testimony about Giotto's work on the campanile."
+        ],
+        "canonical_author": "Lorenzo Di Cione Ghiberti"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lorenzo Ghiberti",
+        "page_id": 160930,
+        "infoboxes": [
+          "artist"
+        ],
+        "categories": [
+          "Italian Renaissance sculptors",
+          "Italian Roman Catholics",
+          "Sculptors from Florence",
+          "Italian goldsmiths",
+          "1378 births",
+          "1455 deaths",
+          "Artist authors",
+          "Italian male sculptors",
+          "15th-century people from the Republic of Florence",
+          "Burials at Basilica of Santa Croce, Florence",
+          "15th-century Italian sculptors",
+          "Catholic sculptors"
+        ],
+        "birth_year": 1378,
+        "death_year": 1455
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Lorenzo Ghiberti",
+          "page_id": 160930,
+          "infoboxes": [
+            "artist"
+          ],
+          "categories": [
+            "Italian Renaissance sculptors",
+            "Italian Roman Catholics",
+            "Sculptors from Florence",
+            "Italian goldsmiths",
+            "1378 births",
+            "1455 deaths",
+            "Artist authors",
+            "Italian male sculptors",
+            "15th-century people from the Republic of Florence",
+            "Burials at Basilica of Santa Croce, Florence",
+            "15th-century Italian sculptors",
+            "Catholic sculptors"
+          ],
+          "birth_year": 1378,
+          "death_year": 1455
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dante Alighieri",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "And the scenes from the Apocalypse that he made in one of the said chapels are said to have been inventions of Dante; and this may be also true of those at Assisi, so greatly renowned, whereof there has been enough said above.",
+          "he was much honoured by Petrarca, both he and his works, so greatly that it is read in Petrarca's testament that he left to Signor Francesco da Carrara, Lord of Padua, among other things held by him in the highest veneration, a picture by the hand of Giotto containing a Madonna, as something rare and very dear to him.",
+          "On the other wall he made Hell, with the abysses, centres, and other things described by Dante, of whom Andrea was an ardent student.",
+          "he left his brother Bernardo to execute by himself a Hell in the Campo Santo, which is described by Dante"
+        ],
+        "commentaries": [
+          "Vasari notes that some of Giotto's scenes from the Apocalypse are said to have been inventions of Dante, and that they may have discussed these matters.",
+          "The author mentions that Giotto was honored by Petrarch, and references Petrarch's testament.",
+          "The author notes that Andrea Orcagna was an ardent student of Dante and used his descriptions of Hell as inspiration for his fresco.",
+          "The author mentions that the Hell painted by Bernardo is described by Dante."
+        ],
+        "canonical_author": "Dante Alighieri"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Dante Alighieri",
+        "page_id": 8169,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Dante Alighieri| ",
+          "1265 births",
+          "1321 deaths",
+          "13th-century Italian poets",
+          "13th-century Italian writers",
+          "14th-century Italian poets",
+          "14th-century Italian writers",
+          "14th-century people from the Republic of Florence",
+          "14th-century writers in Latin",
+          "Catholic poets",
+          "Characters in the Divine Comedy",
+          "Culture in Florence",
+          "Demonologists",
+          "Epic poets",
+          "Italian apothecaries",
+          "Italian exiles",
+          "Italian-language poets",
+          "Italian male poets",
+          "Italian political philosophers",
+          "Italian Roman Catholic writers",
+          "Latin-language Italian writers",
+          "Medieval Latin-language poets",
+          "Politicians from Florence",
+          "Sonneteers",
+          "Writers from Florence"
+        ],
+        "birth_year": 1265,
+        "death_year": 1321
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5031312"
+        ],
+        "target_person": {
+          "title": "Dante Alighieri",
+          "page_id": 8169,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Dante Alighieri| ",
+            "1265 births",
+            "1321 deaths",
+            "13th-century Italian poets",
+            "13th-century Italian writers",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century writers in Latin",
+            "Catholic poets",
+            "Characters in the Divine Comedy",
+            "Culture in Florence",
+            "Demonologists",
+            "Epic poets",
+            "Italian apothecaries",
+            "Italian exiles",
+            "Italian-language poets",
+            "Italian male poets",
+            "Italian political philosophers",
+            "Italian Roman Catholic writers",
+            "Latin-language Italian writers",
+            "Medieval Latin-language poets",
+            "Politicians from Florence",
+            "Sonneteers",
+            "Writers from Florence"
+          ],
+          "birth_year": 1265,
+          "death_year": 1321
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cennino Cennini",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as it is written by Cennino di Drea Cennini, painter of Colle di Valdelsa"
+        ],
+        "commentaries": [
+          "The author references Cennino Cennini's writings as a source for the details of Taddeo Gaddi's training under Giotto."
+        ],
+        "canonical_author": "Cennino Cennini"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cennino Cennini",
+        "page_id": 1423806,
+        "infoboxes": [],
+        "categories": [
+          "1360s births",
+          "1440 deaths",
+          "People from Colle di Val d'Elsa",
+          "14th-century Italian painters",
+          "Italian male painters",
+          "15th-century Italian painters",
+          "Painters from Tuscany",
+          "Italian Renaissance painters",
+          "Art technological sources"
+        ],
+        "birth_year": null,
+        "death_year": 1440
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cennino Cennini",
+          "page_id": 1423806,
+          "infoboxes": [],
+          "categories": [
+            "1360s births",
+            "1440 deaths",
+            "People from Colle di Val d'Elsa",
+            "14th-century Italian painters",
+            "Italian male painters",
+            "15th-century Italian painters",
+            "Painters from Tuscany",
+            "Italian Renaissance painters",
+            "Art technological sources"
+          ],
+          "birth_year": null,
+          "death_year": 1440
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Decameron",
+        "author": "Giovanni Boccaccio",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "celebrated for his jokes by Messer Giovanni Boccaccio in his _Decameron_"
+        ],
+        "commentaries": [
+          "The author notes that Buffalmacco is celebrated for his jokes in Boccaccio's Decameron."
+        ]
+      },
+      "goodreads_match": {
+        "publisher": "Doubleday",
+        "author_ids": [
+          "29227"
+        ],
+        "isbn": "0385000545",
+        "book_id": "51801",
+        "ratings_count": 3,
+        "publication_year": 2000,
+        "average_rating": 3.86,
+        "work_id": "1320474",
+        "isbn13": "9780385000543",
+        "title_without_series": "Decameron",
+        "title": "Decameron",
+        "format": "Hardcover",
+        "text_reviews_count": 1,
+        "authors": [
+          "Giovanni Boccaccio"
+        ],
+        "description": "Ammiratore di Dante e devoto amico di Petrarca, Boccaccio si iscrive nella trilogia dei grandi autori italiani del Trecento. Primo capolavoro di prosa narrativa che folgora e conquista la societa dell'Europa moderna, Il Decameron narra le cento novelle che sette gentili fanciulle e tre cortesi giovani, rufugiati sulle colline fiesolane per evitare il contagio della terribile peste che nel 1348 infierisce su Firenze, si raccontano lungo il corso di dieci giornate. Piu di cinquecento opere d'arte dei secoli X...",
+        "link": "https://www.goodreads.com/book/show/51801.Decameron",
+        "wikipedia_match": {
+          "title": "Giovanni Boccaccio",
+          "page_id": 12957,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Giovanni Boccaccio| ",
+            "1313 births",
+            "1375 deaths",
+            "14th-century Italian diplomats",
+            "14th-century Italian historians",
+            "14th-century Italian poets",
+            "14th-century Neo-Latin writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century Roman Catholics",
+            "14th-century writers in Latin",
+            "Deaths from edema",
+            "Italian male poets",
+            "Italian Renaissance humanists",
+            "Italian Renaissance writers",
+            "Italian Roman Catholic writers",
+            "Medieval Latin-language poets",
+            "People from Certaldo"
+          ],
+          "birth_year": 1313,
+          "death_year": 1375
+        },
+        "original_year": 1349,
+        "author_meta": {
+          "birth_year": 1313,
+          "death_year": 1375,
+          "main_genre": "poetry",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Giovanni Boccaccio",
+        "page_id": 12957,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Giovanni Boccaccio| ",
+          "1313 births",
+          "1375 deaths",
+          "14th-century Italian diplomats",
+          "14th-century Italian historians",
+          "14th-century Italian poets",
+          "14th-century Neo-Latin writers",
+          "14th-century people from the Republic of Florence",
+          "14th-century Roman Catholics",
+          "14th-century writers in Latin",
+          "Deaths from edema",
+          "Italian male poets",
+          "Italian Renaissance humanists",
+          "Italian Renaissance writers",
+          "Italian Roman Catholic writers",
+          "Medieval Latin-language poets",
+          "People from Certaldo"
+        ],
+        "birth_year": 1313,
+        "death_year": 1375
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "51801",
+        "target_author_ids": [
+          "29227"
+        ],
+        "target_person": {
+          "title": "Giovanni Boccaccio",
+          "page_id": 12957,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Giovanni Boccaccio| ",
+            "1313 births",
+            "1375 deaths",
+            "14th-century Italian diplomats",
+            "14th-century Italian historians",
+            "14th-century Italian poets",
+            "14th-century Neo-Latin writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century Roman Catholics",
+            "14th-century writers in Latin",
+            "Deaths from edema",
+            "Italian male poets",
+            "Italian Renaissance humanists",
+            "Italian Renaissance writers",
+            "Italian Roman Catholic writers",
+            "Medieval Latin-language poets",
+            "People from Certaldo"
+          ],
+          "birth_year": 1313,
+          "death_year": 1375
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Michelangelo Poliziano",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "made by that divine man, Messer Angelo Poliziano"
+        ],
+        "commentaries": [
+          "The author quotes verses (epitaph) composed by Poliziano in honor of Giotto."
+        ],
+        "canonical_author": "Michelangelo Poliziano"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Poliziano",
+        "page_id": 764674,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1454 births",
+          "1494 deaths",
+          "People from Montepulciano",
+          "15th-century LGBTQ people",
+          "Italian gay writers",
+          "Gay poets",
+          "Italian LGBTQ poets",
+          "Italian Renaissance humanists",
+          "Italian male poets",
+          "Neo-Latin poets",
+          "15th-century writers in Latin",
+          "Greek–Latin translators",
+          "15th-century Italian poets",
+          "15th-century translators",
+          "Translators of Homer",
+          "Italian Renaissance writers",
+          "Medieval Italian LGBTQ people"
+        ],
+        "birth_year": 1454,
+        "death_year": 1494
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "122543"
+        ],
+        "target_person": {
+          "title": "Poliziano",
+          "page_id": 764674,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1454 births",
+            "1494 deaths",
+            "People from Montepulciano",
+            "15th-century LGBTQ people",
+            "Italian gay writers",
+            "Gay poets",
+            "Italian LGBTQ poets",
+            "Italian Renaissance humanists",
+            "Italian male poets",
+            "Neo-Latin poets",
+            "15th-century writers in Latin",
+            "Greek–Latin translators",
+            "15th-century Italian poets",
+            "15th-century translators",
+            "Translators of Homer",
+            "Italian Renaissance writers",
+            "Medieval Italian LGBTQ people"
+          ],
+          "birth_year": 1454,
+          "death_year": 1494
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Ethics",
+        "author": "Aristotle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the said figure of S. Thomas is placed between Plato, who is showing him the _Timæus_, and Aristotle, who is showing him the _Ethics_."
+        ],
+        "commentaries": [
+          "The author describes Aristotle as showing his book Ethics to Saint Thomas Aquinas in a painting."
+        ]
+      },
+      "goodreads_match": {
+        "author_ids": [
+          "2192"
+        ],
+        "book_id": "18046635",
+        "ratings_count": 472,
+        "average_rating": 3.91,
+        "work_id": "2919427",
+        "num_pages": 273,
+        "title_without_series": "Ethics",
+        "title": "Ethics",
+        "format": "Kindle Edition",
+        "text_reviews_count": 11,
+        "authors": [
+          "Aristotle"
+        ],
+        "description": "The Nicomachean Ethics is a name normally given to Aristotle's best known work on ethics. The English version of the title derives from Greek Ethika Nikomakheia, transliterated Ethika Nikomacheia, which is sometimes also given in the genitive form as Ethikon Nikomakheion, Ethikon Nikomacheion. The Latin translations are Ethica Nicomachea or De Moribus ad Nicomachum. The work, which plays a preeminent role in defining Aristotelian ethics, consists of 10 books, originally separate scrolls, & is understood to....",
+        "link": "https://www.goodreads.com/book/show/18046635-ethics",
+        "wikipedia_match": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        },
+        "original_year": -349,
+        "author_meta": {
+          "birth_year": -384,
+          "death_year": -322,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "18046635",
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Arnolfo",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "For the Universal Church he painted the Church of S. Maria del Fiore, not as it stands to-day, but as he had drawn it from the model and design that the architect Arnolfo had left in the Office of Works for the guidance of those who had to continue the building after him; of which models, by reason of the little care of the Wardens of Works of S. Maria del Fiore, as it has been said in another place, there would be no memorial for us if Simone had not left it painted in this work."
+        ],
+        "commentaries": [
+          "The author states that Simone painted the church based on the model and design left by the architect Arnolfo."
+        ],
+        "canonical_author": "Arnolfo"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Arnolfo di Cambio",
+        "page_id": 313104,
+        "infoboxes": [
+          "person/wikidata"
+        ],
+        "categories": [
+          "1240 births",
+          "14th-century deaths",
+          "People from Colle di Val d'Elsa",
+          "Architects of cathedrals",
+          "Gothic architects",
+          "Gothic sculptors",
+          "13th-century people from the Republic of Florence",
+          "13th-century Italian architects",
+          "13th-century Italian sculptors",
+          "Italian male sculptors"
+        ],
+        "birth_year": 1240,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Arnolfo di Cambio",
+          "page_id": 313104,
+          "infoboxes": [
+            "person/wikidata"
+          ],
+          "categories": [
+            "1240 births",
+            "14th-century deaths",
+            "People from Colle di Val d'Elsa",
+            "Architects of cathedrals",
+            "Gothic architects",
+            "Gothic sculptors",
+            "13th-century people from the Republic of Florence",
+            "13th-century Italian architects",
+            "13th-century Italian sculptors",
+            "Italian male sculptors"
+          ],
+          "birth_year": 1240,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Divine Comedy",
+        "author": "Dante Alighieri",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as Dante demonstrates in his _Commedia_, wherein, alluding in the eleventh canto of the _Purgatorio_ to this very inscription on the tomb, he said: Credette Cimabue nella pittura Tener lo campo, ed hora ha Giotto il grido, Si che la fama di colui s' oscura."
+        ],
+        "commentaries": [
+          "The author cites Dante's Commedia as a source that references Cimabue's fame being overshadowed by Giotto."
+        ],
+        "canonical_author": "Dante"
+      },
+      "goodreads_match": {
+        "publisher": "Heritage Press",
+        "author_ids": [
+          "5031312"
+        ],
+        "book_id": "18300354",
+        "ratings_count": 1,
+        "publication_year": 1944,
+        "average_rating": 4.06,
+        "work_id": "809248",
+        "num_pages": 492,
+        "title_without_series": "The Divine Comedy",
+        "title": "The Divine Comedy",
+        "format": "Hardcover",
+        "text_reviews_count": 1,
+        "authors": [
+          "Dante Alighieri"
+        ],
+        "description": "Comes with book box.",
+        "link": "https://www.goodreads.com/book/show/18300354-the-divine-comedy",
+        "wikipedia_match": {
+          "title": "Dante Alighieri",
+          "page_id": 8169,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Dante Alighieri| ",
+            "1265 births",
+            "1321 deaths",
+            "13th-century Italian poets",
+            "13th-century Italian writers",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century writers in Latin",
+            "Catholic poets",
+            "Characters in the Divine Comedy",
+            "Culture in Florence",
+            "Demonologists",
+            "Epic poets",
+            "Italian apothecaries",
+            "Italian exiles",
+            "Italian-language poets",
+            "Italian male poets",
+            "Italian political philosophers",
+            "Italian Roman Catholic writers",
+            "Latin-language Italian writers",
+            "Medieval Latin-language poets",
+            "Politicians from Florence",
+            "Sonneteers",
+            "Writers from Florence"
+          ],
+          "birth_year": 1265,
+          "death_year": 1321
+        },
+        "original_year": 1320,
+        "author_meta": {
+          "birth_year": 1265,
+          "death_year": 1321,
+          "main_genre": "poetry",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Dante Alighieri",
+        "page_id": 8169,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Dante Alighieri| ",
+          "1265 births",
+          "1321 deaths",
+          "13th-century Italian poets",
+          "13th-century Italian writers",
+          "14th-century Italian poets",
+          "14th-century Italian writers",
+          "14th-century people from the Republic of Florence",
+          "14th-century writers in Latin",
+          "Catholic poets",
+          "Characters in the Divine Comedy",
+          "Culture in Florence",
+          "Demonologists",
+          "Epic poets",
+          "Italian apothecaries",
+          "Italian exiles",
+          "Italian-language poets",
+          "Italian male poets",
+          "Italian political philosophers",
+          "Italian Roman Catholic writers",
+          "Latin-language Italian writers",
+          "Medieval Latin-language poets",
+          "Politicians from Florence",
+          "Sonneteers",
+          "Writers from Florence"
+        ],
+        "birth_year": 1265,
+        "death_year": 1321
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "18300354",
+        "target_author_ids": [
+          "5031312"
+        ],
+        "target_person": {
+          "title": "Dante Alighieri",
+          "page_id": 8169,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Dante Alighieri| ",
+            "1265 births",
+            "1321 deaths",
+            "13th-century Italian poets",
+            "13th-century Italian writers",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century writers in Latin",
+            "Catholic poets",
+            "Characters in the Divine Comedy",
+            "Culture in Florence",
+            "Demonologists",
+            "Epic poets",
+            "Italian apothecaries",
+            "Italian exiles",
+            "Italian-language poets",
+            "Italian male poets",
+            "Italian political philosophers",
+            "Italian Roman Catholic writers",
+            "Latin-language Italian writers",
+            "Medieval Latin-language poets",
+            "Politicians from Florence",
+            "Sonneteers",
+            "Writers from Florence"
+          ],
+          "birth_year": 1265,
+          "death_year": 1321
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Purgatorio",
+        "author": "Dante Alighieri",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Of these two excellent illuminators Dante makes mention in the eleventh canto of the _Purgatorio_, where he is talking of the vainglorious, in these verses: O, dissi a lui, non se' tu Oderigi, L'onor d'Agobbio, e l'onor di quell'arte Che alluminare è chiamata in Parigi? Frate, diss'egli, più ridon le carte Che pennelleggia Franco Bolognese; L'onor è tutto suo, e mio in parte."
+        ],
+        "commentaries": [
+          "Vasari quotes Dante's Purgatorio to mention the illuminators Oderigi and Franco Bolognese."
+        ],
+        "canonical_author": "Dante"
+      },
+      "goodreads_match": {
+        "publisher": "Asociacion Dante Alighieri",
+        "author_ids": [
+          "5031312",
+          "3409722"
+        ],
+        "book_id": "15853202",
+        "ratings_count": 4,
+        "publication_year": 2003,
+        "average_rating": 4.01,
+        "work_id": "2377265",
+        "num_pages": 444,
+        "title_without_series": "Purgatorio",
+        "title": "Purgatorio",
+        "text_reviews_count": 1,
+        "authors": [
+          "Dante Alighieri",
+          "Angel J. Battistessa"
+        ],
+        "description": "El interes por la persona y la obra de Dante en la Republica Argentina apunta desde los comienzos de la nacionalidad. Angel J. Battistessa lo ha destacado en Esteban Echeverrria \"el primer escritor rioplatense con vision local\" y \"en las generaciones que dieron libre tributo a la ejemplaridad etica del universal vate de Italia\". Esradista, gobernante y poligrafo, a fines del siglo pasado Bartolome Mitre encontro horas para la traduccion del \"sacro poema\". En las universidades y otros centros de ensenanza Da...",
+        "link": "https://www.goodreads.com/book/show/15853202-purgatorio",
+        "wikipedia_match": {
+          "title": "Dante Alighieri",
+          "page_id": 8169,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Dante Alighieri| ",
+            "1265 births",
+            "1321 deaths",
+            "13th-century Italian poets",
+            "13th-century Italian writers",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century writers in Latin",
+            "Catholic poets",
+            "Characters in the Divine Comedy",
+            "Culture in Florence",
+            "Demonologists",
+            "Epic poets",
+            "Italian apothecaries",
+            "Italian exiles",
+            "Italian-language poets",
+            "Italian male poets",
+            "Italian political philosophers",
+            "Italian Roman Catholic writers",
+            "Latin-language Italian writers",
+            "Medieval Latin-language poets",
+            "Politicians from Florence",
+            "Sonneteers",
+            "Writers from Florence"
+          ],
+          "birth_year": 1265,
+          "death_year": 1321
+        },
+        "original_year": 1321,
+        "author_meta": {
+          "birth_year": 1265,
+          "death_year": 1321,
+          "main_genre": "poetry",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Dante Alighieri",
+        "page_id": 8169,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Dante Alighieri| ",
+          "1265 births",
+          "1321 deaths",
+          "13th-century Italian poets",
+          "13th-century Italian writers",
+          "14th-century Italian poets",
+          "14th-century Italian writers",
+          "14th-century people from the Republic of Florence",
+          "14th-century writers in Latin",
+          "Catholic poets",
+          "Characters in the Divine Comedy",
+          "Culture in Florence",
+          "Demonologists",
+          "Epic poets",
+          "Italian apothecaries",
+          "Italian exiles",
+          "Italian-language poets",
+          "Italian male poets",
+          "Italian political philosophers",
+          "Italian Roman Catholic writers",
+          "Latin-language Italian writers",
+          "Medieval Latin-language poets",
+          "Politicians from Florence",
+          "Sonneteers",
+          "Writers from Florence"
+        ],
+        "birth_year": 1265,
+        "death_year": 1321
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "15853202",
+        "target_author_ids": [
+          "5031312",
+          "3409722"
+        ],
+        "target_person": {
+          "title": "Dante Alighieri",
+          "page_id": 8169,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Dante Alighieri| ",
+            "1265 births",
+            "1321 deaths",
+            "13th-century Italian poets",
+            "13th-century Italian writers",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century writers in Latin",
+            "Catholic poets",
+            "Characters in the Divine Comedy",
+            "Culture in Florence",
+            "Demonologists",
+            "Epic poets",
+            "Italian apothecaries",
+            "Italian exiles",
+            "Italian-language poets",
+            "Italian male poets",
+            "Italian political philosophers",
+            "Italian Roman Catholic writers",
+            "Latin-language Italian writers",
+            "Medieval Latin-language poets",
+            "Politicians from Florence",
+            "Sonneteers",
+            "Writers from Florence"
+          ],
+          "birth_year": 1265,
+          "death_year": 1321
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Franco Sacchetti",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "according to what Franco Sacchetti relates, as follows."
+        ],
+        "commentaries": [
+          "The author cites Franco Sacchetti as the source for the anecdote about the ape."
+        ],
+        "canonical_author": "Franco Sacchetti"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Franco Sacchetti",
+        "page_id": 1846185,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1330s births",
+          "1400s deaths",
+          "Italian poets",
+          "Italian male poets",
+          "Italian novelists",
+          "14th-century people from the Republic of Florence",
+          "Writers from Florence",
+          "Italian male novelists"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Franco Sacchetti",
+          "page_id": 1846185,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1330s births",
+            "1400s deaths",
+            "Italian poets",
+            "Italian male poets",
+            "Italian novelists",
+            "14th-century people from the Republic of Florence",
+            "Writers from Florence",
+            "Italian male novelists"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Francesco Petrarca",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "in which tomb is laid to rest the body of Messer Cino d' Angibolgi, Doctor of Laws, and a very famous scholar in his time, as Messer Francesco Petrarca testifies in that sonnet: Piangete, donne, e con voi pianga Amore; and also in the fourth chapter of the _Triumph of Love_, where he says: Ecco Cin da Pistoia, Guitton d'Arezzo, Che di non esser primo par ch'ira aggia.",
+          "Very great, then, was that good-fortune of Simone, to live at the time of Messer Francesco Petrarca and to chance to find that most amorous poet at the Court of Avignon, desirous of having the image of Madonna Laura by the hand of Maestro Simone, because, having received it as beautiful as he had desired, he made memory of him in two sonnets, whereof one begins: Per mirar Policleto a prova fiso Con gli altri che ebber fama di quell'arte; and the second: Quando giunse a Simon l'alto concetto Ch'a mio nome gli pose in man lo stile.",
+          "he was much honoured by Petrarca, both he and his works, so greatly that it is read in Petrarca's testament that he left to Signor Francesco da Carrara, Lord of Padua, among other things held by him in the highest veneration, a picture by the hand of Giotto containing a Madonna, as something rare and very dear to him."
+        ],
+        "commentaries": [
+          "The author cites Petrarch's sonnet and Triumph of Love as testimony to Cino d'Angibolgi's fame.",
+          "The author mentions that Petrarch wrote two sonnets about Simone's portrait of Laura, which brought fame to the painter.",
+          "The author references Petrarch's testament as a source for Giotto's honor."
+        ],
+        "canonical_author": "Francesco Petrarca"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Francesco Petrarca",
+        "birth_year": 1304,
+        "death_year": 1374
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "72460"
+        ],
+        "target_person": {
+          "title": "Francesco Petrarca",
+          "birth_year": 1304,
+          "death_year": 1374
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "by Homer's time sculpture and painting are seen to have been perfected, as it is proved, in discoursing of the shield of Achilles, by that divine poet, who shows it to us carved and painted, rather than described, with every form of art."
+        ],
+        "commentaries": [
+          "The author cites Homer's description of the shield of Achilles as evidence of the perfection of sculpture and painting in his time."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Domenico del Ghirlandajo",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I, by reason of certain records that I have seen, and of certain memoirs of good authority written by Lorenzo Ghiberti and by Domenico del Ghirlandajo, hold it as true that he was rather the son of Stefano than of Giotto."
+        ],
+        "commentaries": [
+          "The author cites memoirs written by Domenico del Ghirlandajo as evidence for his claim about Maso's parentage."
+        ],
+        "canonical_author": "Domenico Del Ghirlandajo"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Domenico Ghirlandaio",
+        "page_id": 199689,
+        "infoboxes": [
+          "artist"
+        ],
+        "categories": [
+          "Italian Renaissance painters",
+          "Painters from Florence",
+          "Fresco painters",
+          "1448 births",
+          "1494 deaths",
+          "Paintings by Domenico Ghirlandaio| ",
+          "15th-century people from the Republic of Florence",
+          "Church frescos in Italy",
+          "Italian Roman Catholics",
+          "Italian male painters",
+          "Quattrocento painters",
+          "Catholic painters",
+          "15th-century Italian painters"
+        ],
+        "birth_year": 1448,
+        "death_year": 1494
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Domenico Ghirlandaio",
+          "page_id": 199689,
+          "infoboxes": [
+            "artist"
+          ],
+          "categories": [
+            "Italian Renaissance painters",
+            "Painters from Florence",
+            "Fresco painters",
+            "1448 births",
+            "1494 deaths",
+            "Paintings by Domenico Ghirlandaio| ",
+            "15th-century people from the Republic of Florence",
+            "Church frescos in Italy",
+            "Italian Roman Catholics",
+            "Italian male painters",
+            "Quattrocento painters",
+            "Catholic painters",
+            "15th-century Italian painters"
+          ],
+          "birth_year": 1448,
+          "death_year": 1494
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lucian",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as Lucian shows us"
+        ],
+        "commentaries": [
+          "The author mentions Lucian as showing that Apelles was an investigator of slander and false favour."
+        ],
+        "canonical_author": "Lucian"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lucian",
+        "birth_year": 125,
+        "death_year": 180
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "305177"
+        ],
+        "target_person": {
+          "title": "Lucian",
+          "birth_year": 125,
+          "death_year": 180
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Michelangelo Buonarroti",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This work was much praised by the craftsmen of painting, and in particular by Michelagnolo Buonarroti, who declared, as was said another time, that the quality of this painted story could not be more like to the truth than it is."
+        ],
+        "commentaries": [
+          "The author reports that Michelangelo praised a painting by Giotto."
+        ],
+        "canonical_author": "Michelagnolo Buonarroti"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Michelangelo Buonarroti",
+        "birth_year": 1568,
+        "death_year": 1646
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "182763"
+        ],
+        "target_person": {
+          "title": "Michelangelo Buonarroti",
+          "birth_year": 1568,
+          "death_year": 1646
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Timaeus",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the said figure of S. Thomas is placed between Plato, who is showing him the _Timæus_, and Aristotle, who is showing him the _Ethics_."
+        ],
+        "commentaries": [
+          "The author describes Plato as showing his book Timæus to Saint Thomas Aquinas in a painting."
+        ]
+      },
+      "goodreads_match": {
+        "author_ids": [
+          "879"
+        ],
+        "book_id": "27824819",
+        "ratings_count": 2,
+        "average_rating": 3.87,
+        "work_id": "13446943",
+        "title_without_series": "Timaeus",
+        "title": "Timaeus",
+        "text_reviews_count": 1,
+        "authors": [
+          "Plato"
+        ],
+        "description": "-- A Classic -- Includes Active Table of Contents -- Includes Religious Illustrations\nOF all the writings of Plato the Timaeus is the most obscure and repulsive to the modern reader, and has nevertheless had the greatest influence over the ancient and mediaeval world. The obscurity arises in the infancy of physical science, out of the confusion of theological, mathematical, and physiological notions, out of the desire to conceive the whole of nature without any adequate knowledge of the parts, and from a gr...",
+        "link": "https://www.goodreads.com/book/show/27824819-timaeus",
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        },
+        "original_year": -360,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "27824819",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lactantius Firmianus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Lactantius Firmianus, by way of fable, attributes it to Prometheus, who, in the manner of Almighty God, shaped man's image out of mud; and from him, he declares, the art of statuary came."
+        ],
+        "commentaries": [
+          "The author mentions Lactantius Firmianus's fable attributing the origin of statuary to Prometheus."
+        ],
+        "canonical_author": "Lactantius Firmianus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lactantius Firmianus",
+        "birth_year": 250,
+        "death_year": 325
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "480705"
+        ],
+        "target_person": {
+          "title": "Lactantius Firmianus",
+          "birth_year": 250,
+          "death_year": 325
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Familiar Letters",
+        "author": "Francesco Petrarca",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "These sonnets, in truth, together with the mention made of him in one of his _Familiar Letters_, in the fifth book, which begins: \"Non sum nescius,\" have given more fame to the poor life of Maestro Simone than all his own works have ever done or ever will, seeing that they must at some time perish, whereas the writings of so great a man will live for eternal ages."
+        ],
+        "commentaries": [
+          "The author notes that Petrarch's mention of Simone in his Familiar Letters contributed more to the painter's fame than his own works."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Familiar Letters (Epistolae familiares)",
+        "authors": [
+          "Francesco Petrarca"
+        ],
+        "original_year": 1350,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Italian",
+        "description": "A collection of letters written by Petrarch between approximately 1325 and 1366, widely circulated in manuscript form before 1550. The work is referenced in Vasari's Lives for its mention of the painter Simone Martini.",
+        "book_id": "web_04be8c19",
+        "author_meta": {
+          "birth_year": 1304,
+          "death_year": 1374,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Francesco Petrarca",
+        "birth_year": 1304,
+        "death_year": 1374
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_04be8c19",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Francesco Petrarca",
+          "birth_year": 1304,
+          "death_year": 1374
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Three Hundred Stories",
+        "author": "Franco Sacchetti",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Franco Sacchetti, in his three hundred Stories, relates many of them that are very beautiful."
+        ],
+        "commentaries": [
+          "The author refers to Sacchetti's collection of stories as a source for Giotto's witty sayings."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Il Trecentonovelle",
+        "authors": [
+          "Franco Sacchetti"
+        ],
+        "original_year": 1390,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Italian",
+        "description": "A collection of 300 short stories, similar to Boccaccio's Decameron, written in the late 14th century.",
+        "book_id": "web_98728a12",
+        "author_meta": {
+          "birth_year": null,
+          "death_year": null,
+          "main_genre": null,
+          "nationality": null,
+          "canonical_name": "Franco Sacchetti"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Franco Sacchetti"
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_98728a12",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Franco Sacchetti"
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Nuova Cronica",
+        "author": "Giovanni Villani",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the Florentines determined, as Giovanni Villani relates in his History, to build a principal church in their city"
+        ],
+        "commentaries": [
+          "The author cites Giovanni Villani's History as a source for the Florentines' decision to build Santa Maria del Fiore."
+        ]
+      },
+      "goodreads_match": {
+        "author_ids": [
+          "3401631",
+          "231677",
+          "1542387"
+        ],
+        "book_id": "12192319",
+        "ratings_count": 1,
+        "average_rating": 3.33,
+        "work_id": "14073327",
+        "isbn13": "2940022403541",
+        "title_without_series": "Villani's Chronicle; being selections from the first nine books of the Croniche Fiorentine. Translated by Rose E. Selfe, and edited by Philip H. Wicksteed",
+        "title": "Villani's Chronicle; being selections from the first nine books of the Croniche Fiorentine. Translated by Rose E. Selfe, and edited by Philip H. Wicksteed",
+        "text_reviews_count": 1,
+        "authors": [
+          "Giovanni Villani",
+          "Rose E. Selfe",
+          "Philip H. Wicksteed"
+        ],
+        "description": "This book is called the New Chronicle, in which many past things are treated of, and especially the roots and origins of the city of Florence; then all the changes through which it has passed and shall pass in the course of time: begun to be compiled in the year of the Incarnation of Jesus Christ, 1300.",
+        "link": "https://www.goodreads.com/book/show/12192319-villani-s-chronicle-being-selections-from-the-first-nine-books-of-the-c",
+        "wikipedia_match": {
+          "title": "Giovanni Villani",
+          "page_id": 490837,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "13th-century births",
+            "1348 deaths",
+            "14th-century Italian historians",
+            "14th-century deaths from plague (disease)",
+            "14th-century people from the Republic of Florence",
+            "Italian chroniclers",
+            "Economic history of Italy",
+            "History of banking",
+            "Italian bankers",
+            "Medieval bankers",
+            "Italian republicans",
+            "13th-century Italian businesspeople",
+            "14th-century Italian businesspeople",
+            "14th-century Italian diplomats"
+          ],
+          "birth_year": null,
+          "death_year": 1348
+        },
+        "original_year": 1906,
+        "author_meta": {
+          "birth_year": null,
+          "death_year": 1348,
+          "main_genre": null,
+          "nationality": null,
+          "canonical_name": "Giovanni Villani"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Giovanni Villani",
+        "page_id": 490837,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "13th-century births",
+          "1348 deaths",
+          "14th-century Italian historians",
+          "14th-century deaths from plague (disease)",
+          "14th-century people from the Republic of Florence",
+          "Italian chroniclers",
+          "Economic history of Italy",
+          "History of banking",
+          "Italian bankers",
+          "Medieval bankers",
+          "Italian republicans",
+          "13th-century Italian businesspeople",
+          "14th-century Italian businesspeople",
+          "14th-century Italian diplomats"
+        ],
+        "birth_year": null,
+        "death_year": 1348
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "12192319",
+        "target_author_ids": [
+          "3401631",
+          "231677",
+          "1542387"
+        ],
+        "target_person": {
+          "title": "Giovanni Villani",
+          "page_id": 490837,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "13th-century births",
+            "1348 deaths",
+            "14th-century Italian historians",
+            "14th-century deaths from plague (disease)",
+            "14th-century people from the Republic of Florence",
+            "Italian chroniclers",
+            "Economic history of Italy",
+            "History of banking",
+            "Italian bankers",
+            "Medieval bankers",
+            "Italian republicans",
+            "13th-century Italian businesspeople",
+            "14th-century Italian businesspeople",
+            "14th-century Italian diplomats"
+          ],
+          "birth_year": null,
+          "death_year": 1348
+        }
+      }
+    }
+  ]
+}

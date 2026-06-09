@@ -1,0 +1,3903 @@
+{
+  "source": {
+    "title": "Discourses on Livy",
+    "authors": [
+      "Niccolò Machiavelli"
+    ],
+    "goodreads_id": "pg10827",
+    "calibre_id": null,
+    "text_reviews_count": 1,
+    "author_ids": [
+      "16201",
+      "3951759",
+      "314661"
+    ],
+    "work_id": "162187",
+    "ratings_count": 5,
+    "average_rating": 4.03,
+    "book_id": "19056977",
+    "title_without_series": "Discourses on Livy",
+    "description": "Few figures in intellectual history have proved as notorious and ambiguous as Niccolo Machiavelli. But while his treatise The Princemade his name synonymous with autocratic ruthlessness and cynical manipulation, The Discourses(c. 1517) shows a radically different outlook on the world of politics.In this carefully argued commentary on Livy's history of republican Rome, Machiavelli proposed a system of government that would uphold civic freedom and security by instilling the virtues of active citizenship, and...",
+    "link": "https://www.goodreads.com/book/show/19056977-discourses-on-livy",
+    "author_metadata": {
+      "birth_year": 1469,
+      "death_year": 1527,
+      "main_genre": null,
+      "nationality": null
+    },
+    "publication_year": 1531
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Chion and Leonidas of Heraclea, disciples of Plato, conspired against the despots Clearchus and Satirus."
+        ],
+        "commentaries": [
+          "The author mentions that Chion and Leonidas were disciples of Plato, referencing Plato as their teacher."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Tacitus",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "the cause given by Cornelius Tacitus when he says, that “men are readier to pay back injuries than benefits, since to requite a benefit is felt to be a burthen, to return an injury a gain.”",
+          "Though, indeed, this is a golden sentence Of Cornelius Tacitus, wherein he says that “_the past should have our reverence, the present our obedience, and that we should wish for good princes, but put up with any._”",
+          "And yet Cornelius Tacitus, with whom many other authors are agreed, pronounces a contrary opinion where he says, “In governing a multitude it avails more to punish than to be compliant.”"
+        ],
+        "commentaries": [
+          "The author references a statement by Tacitus to support his argument that princes and peoples are often ungrateful due to avarice or suspicion.",
+          "The author quotes a sentence from Tacitus as a golden rule for princes and subjects.",
+          "The author cites Tacitus's opinion on governing a multitude, contrasting it with other views."
+        ],
+        "canonical_author": "Tacitus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Tacitus",
+        "page_id": 19594563,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "Tacitus| ",
+          "1st-century Gallo-Roman people",
+          "1st-century writers in Latin",
+          "1st-century historians",
+          "2nd-century Gallo-Roman people",
+          "2nd-century historians",
+          "2nd-century writers in Latin",
+          "50s births",
+          "120s deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Cornelii",
+          "Latin historians",
+          "Roman governors of Asia",
+          "Ancient Roman biographers",
+          "Senators of the Roman Empire",
+          "Silver Age Latin writers",
+          "Suffect consuls of Imperial Rome"
+        ],
+        "birth_year": 56,
+        "death_year": 120
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2936846"
+        ],
+        "target_person": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sallust",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "and recognize the truth of those words which Sallust puts in the mouth of Cæsar, that “_all ill actions have their origin in fair beginnings._”",
+          "Of this most terrible and cruel species of warfare Sallust speaks at the end of his history of the war with Jugurtha, where in mentioning that after the defeat of Jugurtha the movement of the Gauls into Italy began to be noticed, he observes that “_in the wars of the Romans with other nations the struggle was for mastery; but that always in their wars with the Gauls the struggle on both sides was for life._”"
+        ],
+        "commentaries": [
+          "The author references Sallust's words attributed to Caesar to support the observation that ambitious actions often start with seemingly fair intentions.",
+          "The author quotes Sallust's history of the Jugurthine War to illustrate the nature of wars of extermination."
+        ],
+        "canonical_author": "Sallust"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sallust",
+        "page_id": 161420,
+        "infoboxes": [
+          "person",
+          "military person"
+        ],
+        "categories": [
+          "86 BC births",
+          "30s BC deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "1st-century BC historians",
+          "1st-century BC Romans",
+          "Roman Republican soldiers",
+          "Golden Age Latin writers",
+          "Latin historians",
+          "Sallustii"
+        ],
+        "birth_year": -86,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "185771"
+        ],
+        "target_person": {
+          "title": "Sallust",
+          "page_id": 161420,
+          "infoboxes": [
+            "person",
+            "military person"
+          ],
+          "categories": [
+            "86 BC births",
+            "30s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "1st-century BC historians",
+            "1st-century BC Romans",
+            "Roman Republican soldiers",
+            "Golden Age Latin writers",
+            "Latin historians",
+            "Sallustii"
+          ],
+          "birth_year": -86,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Francesco Sforza",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And if Francesco Sforza, who was accounted a wise ruler, on becoming Duke of Milan erected a fortress in that city, I say that herein he was unwise, and that the event has shown the building of this fortress to have been hurtful and not helpful to his heirs."
+        ],
+        "commentaries": [
+          "The author cites Francesco Sforza as an example of a ruler who unwisely built a fortress, which ultimately harmed his heirs."
+        ],
+        "canonical_author": "Francesco Sforza"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Francesco I Sforza",
+        "page_id": 11623,
+        "infoboxes": [
+          "royalty"
+        ],
+        "categories": [
+          "1401 births",
+          "1466 deaths",
+          "15th-century dukes of Milan",
+          "15th-century condottieri",
+          "Burials at Milan Cathedral",
+          "House of Sforza|Francesco 1",
+          "Knights of the Garter",
+          "People from the Province of Pisa",
+          "Republic of Venice generals"
+        ],
+        "birth_year": 1401,
+        "death_year": 1466
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "114524"
+        ],
+        "target_person": {
+          "title": "Francesco I Sforza",
+          "page_id": 11623,
+          "infoboxes": [
+            "royalty"
+          ],
+          "categories": [
+            "1401 births",
+            "1466 deaths",
+            "15th-century dukes of Milan",
+            "15th-century condottieri",
+            "Burials at Milan Cathedral",
+            "House of Sforza|Francesco 1",
+            "Knights of the Garter",
+            "People from the Province of Pisa",
+            "Republic of Venice generals"
+          ],
+          "birth_year": 1401,
+          "death_year": 1466
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Xenophon",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "This necessity for using deceit is taught by Xenophon in his life of Cyrus; for the very first expedition on which Cyrus is sent, against the King of Armenia, is seen to teem with fraud; and it is by fraud, and not by force, that he is represented as having acquired his kingdom; so that the only inference to be drawn from his conduct, as Xenophon describes it, is, that the prince who would accomplish great things must have learned how to deceive.",
+          "Among whom Xenophon has taken great pains to show what honours, and victories, and how fair a fame accrued to Cyrus from his being kindly and gracious, without taint of pride, or cruelty, or luxury, or any other of those vices which cast a stain upon men’s lives.",
+          "Xenophon, whom I have already cited, while giving many instances of the humanity of Cyrus, conforms closely to what Livius tells us of Valerius.",
+          "which were possessed by Valerius, and which are described by Xenophon as existing in Cyrus."
+        ],
+        "commentaries": [
+          "The author cites Xenophon's life of Cyrus to support the argument that fraud is necessary for rising to high fortunes.",
+          "The author references Xenophon's writings on Cyrus as an example of humane leadership.",
+          "The author references Xenophon as a source for examples of humane leadership, comparing his portrayal of Cyrus to Livy's account of Valerius.",
+          "The author references Xenophon's description of Cyrus's qualities as an example of affability and kindliness."
+        ],
+        "canonical_author": "Xenophon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Xenophon",
+        "page_id": 34155,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "430s BC births",
+          "354 BC deaths",
+          "4th-century BC Greek philosophers",
+          "4th-century BC Greek historians",
+          "Ancient Athenian generals",
+          "Ancient Athenian historians",
+          "Ancient Athenian philosophers",
+          "Ancient Greek generals",
+          "Ancient Greek mercenaries",
+          "Ancient Greek military writers",
+          "Ancient Greek political philosophers",
+          "Attic Greek writers",
+          "Classical-era Greek historians",
+          "Classical horsemanship",
+          "Greco-Persian Wars",
+          "Military personnel of the Achaemenid Empire",
+          "Ostracized Athenians",
+          "Pupils of Socrates",
+          "Social philosophers",
+          "Writers on horsemanship",
+          "Memoirists",
+          "Ten Thousand-ancient mercenaries"
+        ],
+        "birth_year": -430,
+        "death_year": -354
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "14805"
+        ],
+        "target_person": {
+          "title": "Xenophon",
+          "page_id": 34155,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "430s BC births",
+            "354 BC deaths",
+            "4th-century BC Greek philosophers",
+            "4th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Ancient Athenian philosophers",
+            "Ancient Greek generals",
+            "Ancient Greek mercenaries",
+            "Ancient Greek military writers",
+            "Ancient Greek political philosophers",
+            "Attic Greek writers",
+            "Classical-era Greek historians",
+            "Classical horsemanship",
+            "Greco-Persian Wars",
+            "Military personnel of the Achaemenid Empire",
+            "Ostracized Athenians",
+            "Pupils of Socrates",
+            "Social philosophers",
+            "Writers on horsemanship",
+            "Memoirists",
+            "Ten Thousand-ancient mercenaries"
+          ],
+          "birth_year": -430,
+          "death_year": -354
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aratus of Sicyon",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In secret nocturnal enterprises of this sort, no man was ever more successful than Aratus of Sicyon, although in any encounter by day there never was a more arrant coward."
+        ],
+        "commentaries": [
+          "The author cites Aratus of Sicyon as an example of a person who was successful in secret nocturnal enterprises but cowardly in daytime encounters."
+        ],
+        "canonical_author": "Aratus Of Sicyon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aratus of Sicyon",
+        "page_id": 2115847,
+        "infoboxes": [
+          "military person"
+        ],
+        "categories": [
+          "271 BC births",
+          "213 BC deaths",
+          "Ancient Greek monarchs",
+          "3rd-century BC Greek politicians",
+          "Ancient Sicyonians",
+          "3rd-century BC Greek people",
+          "Deaths by poisoning",
+          "Achaean League",
+          "Ancient Olympic competitors",
+          "Ancient Greek chariot racers"
+        ],
+        "birth_year": -271,
+        "death_year": -213
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Aratus of Sicyon",
+          "page_id": 2115847,
+          "infoboxes": [
+            "military person"
+          ],
+          "categories": [
+            "271 BC births",
+            "213 BC deaths",
+            "Ancient Greek monarchs",
+            "3rd-century BC Greek politicians",
+            "Ancient Sicyonians",
+            "3rd-century BC Greek people",
+            "Deaths by poisoning",
+            "Achaean League",
+            "Ancient Olympic competitors",
+            "Ancient Greek chariot racers"
+          ],
+          "birth_year": -271,
+          "death_year": -213
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And among the chief causes which Aristotle assigns for the downfall of tyrants are the wrongs done by them to their subjects in respect of their women, whether by adultery, rape, or other like injury to their honour, as has been sufficiently noticed in the Chapter wherein we treated “_of Conspiracies_”"
+        ],
+        "commentaries": [
+          "The author cites Aristotle's assignment of causes for the downfall of tyrants, specifically wrongs done to subjects regarding their women."
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Philip of Macedon",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "And since we find that two successive reigns of valiant princes, as of Philip of Macedon and his son Alexander, suffice to conquer the world, this ought to be still easier for a commonwealth, which has it in its power to choose, not two excellent rulers only, but an endless number in succession.",
+          "The truth of this is confirmed by numberless examples, and more particularly by what happened in the war waged by the Romans against Philip of Macedon, the father of Perseus."
+        ],
+        "commentaries": [
+          "The author cites Philip of Macedon and his son Alexander as examples of two successive valiant princes who conquered the world, illustrating the power of strong leadership.",
+          "The author cites Philip of Macedon as an example of a commander who avoided battle, but no specific book title is mentioned."
+        ],
+        "canonical_author": "Philip Of Macedon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Philip V of Macedon",
+        "page_id": 100078,
+        "infoboxes": [
+          "monarch"
+        ],
+        "categories": [
+          "3rd-century BC births",
+          "238 BC births",
+          "179 BC deaths",
+          "3rd-century BC Macedonian monarchs",
+          "2nd-century BC Macedonian monarchs",
+          "First Macedonian War",
+          "Second Macedonian War",
+          "Antigonid dynasty"
+        ],
+        "birth_year": -238,
+        "death_year": -179
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Philip V of Macedon",
+          "page_id": 100078,
+          "infoboxes": [
+            "monarch"
+          ],
+          "categories": [
+            "3rd-century BC births",
+            "238 BC births",
+            "179 BC deaths",
+            "3rd-century BC Macedonian monarchs",
+            "2nd-century BC Macedonian monarchs",
+            "First Macedonian War",
+            "Second Macedonian War",
+            "Antigonid dynasty"
+          ],
+          "birth_year": -238,
+          "death_year": -179
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Prince",
+        "author": "Niccolò Machiavelli",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "had I not already spoken of this at length in my _Treatise on Princedoms_, wherein the whole subject is discussed."
+        ],
+        "commentaries": [
+          "The author references his own earlier work as a source for the methods used by the Romans."
+        ],
+        "canonical_author": "Machiavelli"
+      },
+      "goodreads_match": {
+        "text_reviews_count": 5,
+        "author_ids": [
+          "16201"
+        ],
+        "isbn13": "9781421810744",
+        "publisher": "1st World Library",
+        "publication_day": 1,
+        "publication_year": 2006,
+        "work_id": "1335445",
+        "format": "Hardcover",
+        "ratings_count": 18,
+        "average_rating": 3.78,
+        "book_id": "780638",
+        "title": "The Prince",
+        "title_without_series": "The Prince",
+        "num_pages": 180,
+        "publication_month": 1,
+        "isbn": "1421810743",
+        "authors": [
+          "Niccolo Machiavelli"
+        ],
+        "description": "Purchase one of 1st World Library's Classic Books and help support our free internet library of downloadable eBooks. Visit us online at www.1stWorldLibrary.ORG- - Nicolo Machiavelli was born at Florence on 3rd May 1469. He was the second son of Bernardo di Nicolo Machiavelli, a lawyer of some repute, and of Bartolo-mmea di Stefano Nelli, his wife. Both parents were members of the old Florentine nobility. His life falls naturally into three periods, each of which singularly enough constitutes a distinct and....",
+        "link": "https://www.goodreads.com/book/show/780638.The_Prince",
+        "wikipedia_match": {
+          "title": "Niccolò Machiavelli",
+          "page_id": 21444,
+          "infoboxes": [
+            "philosopher "
+          ],
+          "categories": [
+            "Niccolò Machiavelli| ",
+            "1469 births",
+            "1527 deaths",
+            "15th-century Italian philosophers",
+            "16th-century Italian philosophers",
+            "16th-century Italian male writers",
+            "16th-century Italian dramatists and playwrights",
+            "15th-century people from the Republic of Florence",
+            "16th-century people from the Republic of Florence",
+            "15th-century Italian historians",
+            "16th-century Italian historians",
+            "16th-century Italian diplomats",
+            "Italian political writers",
+            "Italian military writers",
+            "Military theorists",
+            "Philosophers of war",
+            "Political realists",
+            "Politicians from Florence",
+            "Writers from Florence",
+            "Italian male non-fiction writers",
+            "Machiavellianism",
+            "Writers from the Republic of Florence",
+            "Diplomats from Florence",
+            "Burials at Basilica of Santa Croce, Florence",
+            "Consequentialists",
+            "Italian political philosophers",
+            "Italian Renaissance writers"
+          ],
+          "birth_year": 1469,
+          "death_year": 1527
+        },
+        "original_year": 1532,
+        "author_meta": {
+          "birth_year": 1469,
+          "death_year": 1527,
+          "main_genre": "political philosophy",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Niccolò Machiavelli",
+        "page_id": 21444,
+        "infoboxes": [
+          "philosopher "
+        ],
+        "categories": [
+          "Niccolò Machiavelli| ",
+          "1469 births",
+          "1527 deaths",
+          "15th-century Italian philosophers",
+          "16th-century Italian philosophers",
+          "16th-century Italian male writers",
+          "16th-century Italian dramatists and playwrights",
+          "15th-century people from the Republic of Florence",
+          "16th-century people from the Republic of Florence",
+          "15th-century Italian historians",
+          "16th-century Italian historians",
+          "16th-century Italian diplomats",
+          "Italian political writers",
+          "Italian military writers",
+          "Military theorists",
+          "Philosophers of war",
+          "Political realists",
+          "Politicians from Florence",
+          "Writers from Florence",
+          "Italian male non-fiction writers",
+          "Machiavellianism",
+          "Writers from the Republic of Florence",
+          "Diplomats from Florence",
+          "Burials at Basilica of Santa Croce, Florence",
+          "Consequentialists",
+          "Italian political philosophers",
+          "Italian Renaissance writers"
+        ],
+        "birth_year": 1469,
+        "death_year": 1527
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "780638",
+        "target_author_ids": [
+          "16201"
+        ],
+        "target_person": {
+          "title": "Niccolò Machiavelli",
+          "page_id": 21444,
+          "infoboxes": [
+            "philosopher "
+          ],
+          "categories": [
+            "Niccolò Machiavelli| ",
+            "1469 births",
+            "1527 deaths",
+            "15th-century Italian philosophers",
+            "16th-century Italian philosophers",
+            "16th-century Italian male writers",
+            "16th-century Italian dramatists and playwrights",
+            "15th-century people from the Republic of Florence",
+            "16th-century people from the Republic of Florence",
+            "15th-century Italian historians",
+            "16th-century Italian historians",
+            "16th-century Italian diplomats",
+            "Italian political writers",
+            "Italian military writers",
+            "Military theorists",
+            "Philosophers of war",
+            "Political realists",
+            "Politicians from Florence",
+            "Writers from Florence",
+            "Italian male non-fiction writers",
+            "Machiavellianism",
+            "Writers from the Republic of Florence",
+            "Diplomats from Florence",
+            "Burials at Basilica of Santa Croce, Florence",
+            "Consequentialists",
+            "Italian political philosophers",
+            "Italian Renaissance writers"
+          ],
+          "birth_year": 1469,
+          "death_year": 1527
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Francesco Maria della Rovere",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "For a brave army, unless stoutly met, enters an enemy’s country without regard to the towns or fortified places it leaves in its rear, as we read of happening in ancient times, and have seen done by Francesco Maria della Rovere, who no long while ago, when he marched against Urbino, made little of leaving ten hostile cities behind him."
+        ],
+        "commentaries": [
+          "The author cites Francesco Maria della Rovere as an example of a commander who ignored fortresses in his rear during a campaign."
+        ],
+        "canonical_author": "Francesco Maria Della Rovere"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Francesco Maria Della Rovere",
+        "page_id": 64661543,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "18th-century doges of Genoa",
+          "1695 births",
+          "1768 deaths"
+        ],
+        "birth_year": 1695,
+        "death_year": 1768
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "4975778"
+        ],
+        "target_person": {
+          "title": "Francesco Maria Della Rovere",
+          "page_id": 64661543,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "18th-century doges of Genoa",
+            "1695 births",
+            "1768 deaths"
+          ],
+          "birth_year": 1695,
+          "death_year": 1768
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Marcus Tullius Cicero",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "For though they be ignorant, the people are not therefore, as Cicero says, incapable of being taught the truth, but are readily convinced when it is told them by one in whose honesty they can trust.",
+          "as Cicero testifies where he says that “it was late that Pompey began to fear Cæsar.”"
+        ],
+        "commentaries": [
+          "The author cites Cicero's view that the people, though ignorant, can be taught the truth by a trustworthy person.",
+          "The author cites Cicero's testimony regarding Pompey's delayed fear of Caesar."
+        ],
+        "canonical_author": "Marcus Tullius Cicero"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Tullius Cicero",
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Marcus Tullius Cicero",
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plutarch",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Many authors, and among others that most grave historian Plutarch, have thought that in acquiring their empire the Romans were more beholden to their good fortune than to their valour; and besides other reasons which they give for this opinion, they affirm it to be proved by the admission of the Romans themselves, since their having erected more temples to Fortune than to any other deity, shows that it was to her that they ascribed their success."
+        ],
+        "commentaries": [
+          "The author references Plutarch's opinion that Roman success was due more to fortune than valour, and notes Plutarch's evidence about Roman temples to Fortune."
+        ],
+        "canonical_author": "Plutarch"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plutarch",
+        "page_id": 24517,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plutarch| ",
+          "46 births",
+          "120s deaths",
+          "1st-century Romans",
+          "2nd-century Romans",
+          "1st-century Greek philosophers",
+          "2nd-century Greek philosophers",
+          "1st-century historians",
+          "2nd-century historians",
+          "Ancient Roman antiquarians",
+          "Ancient Greek biographers",
+          "Ancient Greek essayists",
+          "Ancient Roman biographers",
+          "Greek-language historians from the Roman Empire",
+          "Ancient Boeotians",
+          "Middle Platonists",
+          "Roman-era Greek priests",
+          "Year of birth unknown",
+          "Historians of ancient Greece"
+        ],
+        "birth_year": 46,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "31015"
+        ],
+        "target_person": {
+          "title": "Plutarch",
+          "page_id": 24517,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plutarch| ",
+            "46 births",
+            "120s deaths",
+            "1st-century Romans",
+            "2nd-century Romans",
+            "1st-century Greek philosophers",
+            "2nd-century Greek philosophers",
+            "1st-century historians",
+            "2nd-century historians",
+            "Ancient Roman antiquarians",
+            "Ancient Greek biographers",
+            "Ancient Greek essayists",
+            "Ancient Roman biographers",
+            "Greek-language historians from the Roman Empire",
+            "Ancient Boeotians",
+            "Middle Platonists",
+            "Roman-era Greek priests",
+            "Year of birth unknown",
+            "Historians of ancient Greece"
+          ],
+          "birth_year": 46,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Alexander the Great",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And since we find that two successive reigns of valiant princes, as of Philip of Macedon and his son Alexander, suffice to conquer the world, this ought to be still easier for a commonwealth, which has it in its power to choose, not two excellent rulers only, but an endless number in succession."
+        ],
+        "commentaries": [
+          "The author cites Alexander the Great alongside his father Philip as an example of a valiant prince whose conquests demonstrate the potential of strong leadership."
+        ],
+        "canonical_author": "Alexander The Great"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Alexander the Great",
+        "page_id": 783,
+        "infoboxes": [
+          "royalty",
+          "pharaoh/Serekh ",
+          "pharaoh/Serekh ",
+          "pharaoh/Serekh ",
+          "pharaoh/Serekh ",
+          "pharaoh/Prenomen ",
+          "pharaoh/Prenomen "
+        ],
+        "categories": [
+          "Alexander the Great| ",
+          "Ancient Persia| ",
+          "356 BC births",
+          "323 BC deaths",
+          "4th-century BC Macedonian monarchs",
+          "4th-century BC pharaohs",
+          "Ancient Macedonian generals",
+          "Ancient Pellaeans",
+          "Argead kings of Macedonia",
+          "City founders",
+          "Characters in the Divine Comedy",
+          "Deified Greek people",
+          "Deified male monarchs",
+          "Hellenistic-era people",
+          "Historical figures with ambiguous or disputed sexuality",
+          "Kayanians",
+          "Monarchs of Persia",
+          "People in the deuterocanonical books",
+          "Pharaohs of the Argead dynasty",
+          "Shahnameh characters",
+          "Temple of Artemis"
+        ],
+        "birth_year": -356,
+        "death_year": -323
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Alexander the Great",
+          "page_id": 783,
+          "infoboxes": [
+            "royalty",
+            "pharaoh/Serekh ",
+            "pharaoh/Serekh ",
+            "pharaoh/Serekh ",
+            "pharaoh/Serekh ",
+            "pharaoh/Prenomen ",
+            "pharaoh/Prenomen "
+          ],
+          "categories": [
+            "Alexander the Great| ",
+            "Ancient Persia| ",
+            "356 BC births",
+            "323 BC deaths",
+            "4th-century BC Macedonian monarchs",
+            "4th-century BC pharaohs",
+            "Ancient Macedonian generals",
+            "Ancient Pellaeans",
+            "Argead kings of Macedonia",
+            "City founders",
+            "Characters in the Divine Comedy",
+            "Deified Greek people",
+            "Deified male monarchs",
+            "Hellenistic-era people",
+            "Historical figures with ambiguous or disputed sexuality",
+            "Kayanians",
+            "Monarchs of Persia",
+            "People in the deuterocanonical books",
+            "Pharaohs of the Argead dynasty",
+            "Shahnameh characters",
+            "Temple of Artemis"
+          ],
+          "birth_year": -356,
+          "death_year": -323
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cato the Younger",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "even the elder Cato, so celebrated for his austere virtue, was the first to declare against him, saying that no city could be deemed free which contained a citizen who was feared by the magistrates."
+        ],
+        "commentaries": [
+          "The author cites Cato's opinion as a justification for the Romans' suspicion of Scipio."
+        ],
+        "canonical_author": "Cato The Younger"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cato the Younger",
+        "page_id": 312698,
+        "infoboxes": [
+          "person",
+          "military person"
+        ],
+        "categories": [
+          "Cato the Younger| ",
+          "1st-century BC Romans",
+          "95 BC births",
+          "46 BC deaths",
+          "Ancient Roman politicians who died by suicide",
+          "Correspondents of Cicero",
+          "Porcii Catones|Uticensis, Marcus",
+          "Senators of the Roman Republic",
+          "Suicides by sharp instrument",
+          "Suicides in Tunisia",
+          "Optimates",
+          "Family of Servilia (mother of Brutus)",
+          "Characters in the Divine Comedy",
+          "People of Caesar's civil war"
+        ],
+        "birth_year": -95,
+        "death_year": -46
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cato the Younger",
+          "page_id": 312698,
+          "infoboxes": [
+            "person",
+            "military person"
+          ],
+          "categories": [
+            "Cato the Younger| ",
+            "1st-century BC Romans",
+            "95 BC births",
+            "46 BC deaths",
+            "Ancient Roman politicians who died by suicide",
+            "Correspondents of Cicero",
+            "Porcii Catones|Uticensis, Marcus",
+            "Senators of the Roman Republic",
+            "Suicides by sharp instrument",
+            "Suicides in Tunisia",
+            "Optimates",
+            "Family of Servilia (mother of Brutus)",
+            "Characters in the Divine Comedy",
+            "People of Caesar's civil war"
+          ],
+          "birth_year": -95,
+          "death_year": -46
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dante Alighieri",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "For as Dante wisely says:— “Seldom through the boughs Doth human worth renew itself; for such The will of Him who gives it, that to Him We may ascribe it.”"
+        ],
+        "commentaries": [
+          "The author quotes Dante to support the claim that a prince's virtues are rarely inherited by his successor."
+        ],
+        "canonical_author": "Dante Alighieri"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Dante Alighieri",
+        "page_id": 8169,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Dante Alighieri| ",
+          "1265 births",
+          "1321 deaths",
+          "13th-century Italian poets",
+          "13th-century Italian writers",
+          "14th-century Italian poets",
+          "14th-century Italian writers",
+          "14th-century people from the Republic of Florence",
+          "14th-century writers in Latin",
+          "Catholic poets",
+          "Characters in the Divine Comedy",
+          "Culture in Florence",
+          "Demonologists",
+          "Epic poets",
+          "Italian apothecaries",
+          "Italian exiles",
+          "Italian-language poets",
+          "Italian male poets",
+          "Italian political philosophers",
+          "Italian Roman Catholic writers",
+          "Latin-language Italian writers",
+          "Medieval Latin-language poets",
+          "Politicians from Florence",
+          "Sonneteers",
+          "Writers from Florence"
+        ],
+        "birth_year": 1265,
+        "death_year": 1321
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5031312"
+        ],
+        "target_person": {
+          "title": "Dante Alighieri",
+          "page_id": 8169,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Dante Alighieri| ",
+            "1265 births",
+            "1321 deaths",
+            "13th-century Italian poets",
+            "13th-century Italian writers",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century writers in Latin",
+            "Catholic poets",
+            "Characters in the Divine Comedy",
+            "Culture in Florence",
+            "Demonologists",
+            "Epic poets",
+            "Italian apothecaries",
+            "Italian exiles",
+            "Italian-language poets",
+            "Italian male poets",
+            "Italian political philosophers",
+            "Italian Roman Catholic writers",
+            "Latin-language Italian writers",
+            "Medieval Latin-language poets",
+            "Politicians from Florence",
+            "Sonneteers",
+            "Writers from Florence"
+          ],
+          "birth_year": 1265,
+          "death_year": 1321
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Hiero",
+        "author": "Xenophon",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "let him look into Xenophon’s treatise _De Tirannide_."
+        ],
+        "commentaries": [
+          "The author cites Xenophon's treatise as a source to confirm his views on the hatred of tyrants and love of freedom."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 1,
+        "author_ids": [
+          "14805",
+          "3059621"
+        ],
+        "isbn13": "9781438524191",
+        "publisher": "Book Jungle (Champaign, IL)",
+        "publication_day": 8,
+        "publication_year": 2009,
+        "work_id": "15644575",
+        "format": "Paperback",
+        "ratings_count": 4,
+        "average_rating": 3.47,
+        "book_id": "7946890",
+        "title": "Hiero",
+        "title_without_series": "Hiero",
+        "num_pages": 68,
+        "publication_month": 9,
+        "isbn": "1438524196",
+        "authors": [
+          "Xenophon",
+          "Henry Graham Dakyns"
+        ],
+        "description": "Hiero (Greek: Ieron, Hieron) is a minor work by Xenophon, set as a dialog between Hiero, tyrant of Syracuse, & the lyric poet Simonides about 474 BCE. In it Xenophon argues that a tyrant doesn't have any more access to happiness than a private person.\nThe dialog--like many of Xenophon's works--doesn't receive much scholarly attention today. However, it was the nominal subject of Leo Strauss' analysis On Tyranny, which initiated his famous dialog with Alexandre Kojeve on the role of philosophy in politics.",
+        "link": "https://www.goodreads.com/book/show/7946890-hiero",
+        "wikipedia_match": {
+          "title": "Xenophon",
+          "page_id": 34155,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "430s BC births",
+            "354 BC deaths",
+            "4th-century BC Greek philosophers",
+            "4th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Ancient Athenian philosophers",
+            "Ancient Greek generals",
+            "Ancient Greek mercenaries",
+            "Ancient Greek military writers",
+            "Ancient Greek political philosophers",
+            "Attic Greek writers",
+            "Classical-era Greek historians",
+            "Classical horsemanship",
+            "Greco-Persian Wars",
+            "Military personnel of the Achaemenid Empire",
+            "Ostracized Athenians",
+            "Pupils of Socrates",
+            "Social philosophers",
+            "Writers on horsemanship",
+            "Memoirists",
+            "Ten Thousand-ancient mercenaries"
+          ],
+          "birth_year": -430,
+          "death_year": -354
+        },
+        "original_year": -369,
+        "author_meta": {
+          "birth_year": -430,
+          "death_year": -354,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Xenophon",
+        "page_id": 34155,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "430s BC births",
+          "354 BC deaths",
+          "4th-century BC Greek philosophers",
+          "4th-century BC Greek historians",
+          "Ancient Athenian generals",
+          "Ancient Athenian historians",
+          "Ancient Athenian philosophers",
+          "Ancient Greek generals",
+          "Ancient Greek mercenaries",
+          "Ancient Greek military writers",
+          "Ancient Greek political philosophers",
+          "Attic Greek writers",
+          "Classical-era Greek historians",
+          "Classical horsemanship",
+          "Greco-Persian Wars",
+          "Military personnel of the Achaemenid Empire",
+          "Ostracized Athenians",
+          "Pupils of Socrates",
+          "Social philosophers",
+          "Writers on horsemanship",
+          "Memoirists",
+          "Ten Thousand-ancient mercenaries"
+        ],
+        "birth_year": -430,
+        "death_year": -354
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "7946890",
+        "target_author_ids": [
+          "14805",
+          "3059621"
+        ],
+        "target_person": {
+          "title": "Xenophon",
+          "page_id": 34155,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "430s BC births",
+            "354 BC deaths",
+            "4th-century BC Greek philosophers",
+            "4th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Ancient Athenian philosophers",
+            "Ancient Greek generals",
+            "Ancient Greek mercenaries",
+            "Ancient Greek military writers",
+            "Ancient Greek political philosophers",
+            "Attic Greek writers",
+            "Classical-era Greek historians",
+            "Classical horsemanship",
+            "Greco-Persian Wars",
+            "Military personnel of the Achaemenid Empire",
+            "Ostracized Athenians",
+            "Pupils of Socrates",
+            "Social philosophers",
+            "Writers on horsemanship",
+            "Memoirists",
+            "Ten Thousand-ancient mercenaries"
+          ],
+          "birth_year": -430,
+          "death_year": -354
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Virgil",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "For not without reason has Virgil said— “If then, by chance, some reverend chief appear, Known for his deeds and for his virtues dear, Silent they wait his words and bend a listening ear.”"
+        ],
+        "commentaries": [
+          "The author quotes Virgil to illustrate the power of a revered figure to restrain an excited multitude."
+        ],
+        "canonical_author": "Virgil"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Virgil",
+        "birth_year": -70,
+        "death_year": -19
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "919"
+        ],
+        "target_person": {
+          "title": "Virgil",
+          "birth_year": -70,
+          "death_year": -19
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Quintus Curtius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This opinion is put forward by Quintus Curtius, where, in speaking of the war between Antipater the Macedonian and the King of Sparta, he relates that the latter, from want of money, was constrained to give battle and was defeated; whereas, could he have put off fighting for a few days the news of Alexander’s death would have reached Greece, and he might have had a victory without a battle."
+        ],
+        "commentaries": [
+          "The author cites Quintus Curtius as the source of the opinion that money is the sinews of war, and then argues against this view."
+        ],
+        "canonical_author": "Quintus Curtius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Quintus Curtius Rufus",
+        "page_id": 617834,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1st-century historians",
+          "1st-century Romans",
+          "Curtii|Rufus, Quintus",
+          "Historiography of Alexander the Great",
+          "Latin historians",
+          "Year of birth unknown",
+          "Year of death unknown"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "298687"
+        ],
+        "target_person": {
+          "title": "Quintus Curtius Rufus",
+          "page_id": 617834,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1st-century historians",
+            "1st-century Romans",
+            "Curtii|Rufus, Quintus",
+            "Historiography of Alexander the Great",
+            "Latin historians",
+            "Year of birth unknown",
+            "Year of death unknown"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Cyropaedia",
+        "author": "Xenophon",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And Xenophon in his life of Cyrus tells us, that Cyrus, on his expedition against the King of Armenia, when assigning to each of his followers the part he was to perform, reminded them that the enterprise on which they were engaged, differed little from one of those hunting expeditions on which they had gone so often in his company; likening those who were to lie in ambush in the mountains, to the men sent to spread the toils on the hill-tops; and those who were to overrun the plain, to the beaters whose business it is to start the game from its lair that it may be driven into the toils."
+        ],
+        "commentaries": [
+          "The author cites Xenophon's account of Cyrus to illustrate how the chase is a mimic representation of war, and to support the argument that hunting is useful and honourable for great men."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 2,
+        "author_ids": [
+          "14805"
+        ],
+        "isbn13": "9781606209219",
+        "work_id": "319840",
+        "ratings_count": 6,
+        "average_rating": 4.12,
+        "book_id": "20087887",
+        "title": "Cyropaedia: The Education of Cyrus",
+        "title_without_series": "Cyropaedia: The Education of Cyrus",
+        "isbn": "1606209213",
+        "authors": [
+          "Xenophon"
+        ],
+        "description": "Written in the early fourth century BCE by a gentleman and soldier from Athens, \"Cyropaedia\" is an account of Cyrus the Great that escapes a simple genre placement. It is a sort of historical, political, biographical, fictional romance, encapsulating the sweeping type of narrative characteristic of Xenophon's works. The overall portrait of Cyrus is artistic, offering glimpses of this huge figure's character. Organized into eight books, the entire life of Cyrus the Great is told, from his descent and educati...",
+        "link": "https://www.goodreads.com/book/show/20087887-cyropaedia",
+        "wikipedia_match": {
+          "title": "Xenophon",
+          "page_id": 34155,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "430s BC births",
+            "354 BC deaths",
+            "4th-century BC Greek philosophers",
+            "4th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Ancient Athenian philosophers",
+            "Ancient Greek generals",
+            "Ancient Greek mercenaries",
+            "Ancient Greek military writers",
+            "Ancient Greek political philosophers",
+            "Attic Greek writers",
+            "Classical-era Greek historians",
+            "Classical horsemanship",
+            "Greco-Persian Wars",
+            "Military personnel of the Achaemenid Empire",
+            "Ostracized Athenians",
+            "Pupils of Socrates",
+            "Social philosophers",
+            "Writers on horsemanship",
+            "Memoirists",
+            "Ten Thousand-ancient mercenaries"
+          ],
+          "birth_year": -430,
+          "death_year": -354
+        },
+        "original_year": -370,
+        "author_meta": {
+          "birth_year": -430,
+          "death_year": -354,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Xenophon",
+        "page_id": 34155,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "430s BC births",
+          "354 BC deaths",
+          "4th-century BC Greek philosophers",
+          "4th-century BC Greek historians",
+          "Ancient Athenian generals",
+          "Ancient Athenian historians",
+          "Ancient Athenian philosophers",
+          "Ancient Greek generals",
+          "Ancient Greek mercenaries",
+          "Ancient Greek military writers",
+          "Ancient Greek political philosophers",
+          "Attic Greek writers",
+          "Classical-era Greek historians",
+          "Classical horsemanship",
+          "Greco-Persian Wars",
+          "Military personnel of the Achaemenid Empire",
+          "Ostracized Athenians",
+          "Pupils of Socrates",
+          "Social philosophers",
+          "Writers on horsemanship",
+          "Memoirists",
+          "Ten Thousand-ancient mercenaries"
+        ],
+        "birth_year": -430,
+        "death_year": -354
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "20087887",
+        "target_author_ids": [
+          "14805"
+        ],
+        "target_person": {
+          "title": "Xenophon",
+          "page_id": 34155,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "430s BC births",
+            "354 BC deaths",
+            "4th-century BC Greek philosophers",
+            "4th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Ancient Athenian philosophers",
+            "Ancient Greek generals",
+            "Ancient Greek mercenaries",
+            "Ancient Greek military writers",
+            "Ancient Greek political philosophers",
+            "Attic Greek writers",
+            "Classical-era Greek historians",
+            "Classical horsemanship",
+            "Greco-Persian Wars",
+            "Military personnel of the Achaemenid Empire",
+            "Ostracized Athenians",
+            "Pupils of Socrates",
+            "Social philosophers",
+            "Writers on horsemanship",
+            "Memoirists",
+            "Ten Thousand-ancient mercenaries"
+          ],
+          "birth_year": -430,
+          "death_year": -354
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lorenzo de' Medici",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And to like purport we find it said by Lorenzo de’ Medici:— “A prince’s acts his people imitate; For on their lord the eyes of all men wait.”"
+        ],
+        "commentaries": [
+          "The author quotes Lorenzo de' Medici's poetic lines to reinforce the idea that a prince's behavior is imitated by his people."
+        ],
+        "canonical_author": "Lorenzo De' Medici"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lorenzo de' Medici",
+        "page_id": 18633,
+        "infoboxes": [
+          "noble"
+        ],
+        "categories": [
+          "1449 births",
+          "1492 deaths",
+          "15th-century Italian nobility",
+          "15th-century people from the Republic of Florence",
+          "Burials at San Lorenzo, Florence",
+          "Heads of state of Florence",
+          "House of Medici|Lorenzo I",
+          "Italian art patrons",
+          "Italian Renaissance humanists",
+          "Italian Roman Catholics",
+          "Italian patrons of literature"
+        ],
+        "birth_year": 1449,
+        "death_year": 1492
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6925033"
+        ],
+        "target_person": {
+          "title": "Lorenzo de' Medici",
+          "page_id": 18633,
+          "infoboxes": [
+            "noble"
+          ],
+          "categories": [
+            "1449 births",
+            "1492 deaths",
+            "15th-century Italian nobility",
+            "15th-century people from the Republic of Florence",
+            "Burials at San Lorenzo, Florence",
+            "Heads of state of Florence",
+            "House of Medici|Lorenzo I",
+            "Italian art patrons",
+            "Italian Renaissance humanists",
+            "Italian Roman Catholics",
+            "Italian patrons of literature"
+          ],
+          "birth_year": 1449,
+          "death_year": 1492
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cneius Sulpitius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Cneius Sulpitius when appointed dictator against the Gauls, being unwilling to tempt Fortune by attacking an enemy whom delay and a disadvantageous position would every day render weaker, protracted the war."
+        ],
+        "commentaries": [
+          "The author references Cneius Sulpitius as a historical figure whose strategy of delay is discussed, but no specific book title is cited."
+        ],
+        "canonical_author": "Cneius Sulpitius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cneius Sulpitius",
+        "birth_year": -80
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7394200"
+        ],
+        "target_person": {
+          "title": "Cneius Sulpitius",
+          "birth_year": -80
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "De Monarchia",
+        "author": "Dante Alighieri",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "As to which Dante, in his treatise “De Monarchia,” observes that the people will often raise the cry, “_Flourish our death and perish our life_.”"
+        ],
+        "commentaries": [
+          "The author cites Dante's treatise to support an observation about the people's distrust and its consequences."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 8,
+        "author_ids": [
+          "5031312"
+        ],
+        "isbn13": "9780976953487",
+        "work_id": "1736145",
+        "ratings_count": 166,
+        "average_rating": 3.59,
+        "book_id": "711545",
+        "title": "De Monarchia",
+        "title_without_series": "De Monarchia",
+        "isbn": "097695348X",
+        "authors": [
+          "Dante Alighieri"
+        ],
+        "link": "https://www.goodreads.com/book/show/711545.De_Monarchia",
+        "wikipedia_match": {
+          "title": "Dante Alighieri",
+          "page_id": 8169,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Dante Alighieri| ",
+            "1265 births",
+            "1321 deaths",
+            "13th-century Italian poets",
+            "13th-century Italian writers",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century writers in Latin",
+            "Catholic poets",
+            "Characters in the Divine Comedy",
+            "Culture in Florence",
+            "Demonologists",
+            "Epic poets",
+            "Italian apothecaries",
+            "Italian exiles",
+            "Italian-language poets",
+            "Italian male poets",
+            "Italian political philosophers",
+            "Italian Roman Catholic writers",
+            "Latin-language Italian writers",
+            "Medieval Latin-language poets",
+            "Politicians from Florence",
+            "Sonneteers",
+            "Writers from Florence"
+          ],
+          "birth_year": 1265,
+          "death_year": 1321
+        },
+        "original_year": 1313,
+        "author_meta": {
+          "birth_year": 1265,
+          "death_year": 1321,
+          "main_genre": "poetry",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Dante Alighieri",
+        "page_id": 8169,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Dante Alighieri| ",
+          "1265 births",
+          "1321 deaths",
+          "13th-century Italian poets",
+          "13th-century Italian writers",
+          "14th-century Italian poets",
+          "14th-century Italian writers",
+          "14th-century people from the Republic of Florence",
+          "14th-century writers in Latin",
+          "Catholic poets",
+          "Characters in the Divine Comedy",
+          "Culture in Florence",
+          "Demonologists",
+          "Epic poets",
+          "Italian apothecaries",
+          "Italian exiles",
+          "Italian-language poets",
+          "Italian male poets",
+          "Italian political philosophers",
+          "Italian Roman Catholic writers",
+          "Latin-language Italian writers",
+          "Medieval Latin-language poets",
+          "Politicians from Florence",
+          "Sonneteers",
+          "Writers from Florence"
+        ],
+        "birth_year": 1265,
+        "death_year": 1321
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "711545",
+        "target_author_ids": [
+          "5031312"
+        ],
+        "target_person": {
+          "title": "Dante Alighieri",
+          "page_id": 8169,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Dante Alighieri| ",
+            "1265 births",
+            "1321 deaths",
+            "13th-century Italian poets",
+            "13th-century Italian writers",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century writers in Latin",
+            "Catholic poets",
+            "Characters in the Divine Comedy",
+            "Culture in Florence",
+            "Demonologists",
+            "Epic poets",
+            "Italian apothecaries",
+            "Italian exiles",
+            "Italian-language poets",
+            "Italian male poets",
+            "Italian political philosophers",
+            "Italian Roman Catholic writers",
+            "Latin-language Italian writers",
+            "Medieval Latin-language poets",
+            "Politicians from Florence",
+            "Sonneteers",
+            "Writers from Florence"
+          ],
+          "birth_year": 1265,
+          "death_year": 1321
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Conspiracy of Catiline",
+        "author": "Sallust",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Any one who has read Sallust’s account of the conspiracy of Catiline, must remember how, when that conspiracy was discovered, Catiline not only remained in Rome, but even made his appearance in the senatehouse, where he was suffered to address the senate in the most insulting terms,—so scrupulous was that city in protecting the liberty of all its citizens."
+        ],
+        "commentaries": [
+          "The author references Sallust's account of the Catiline conspiracy as an example of how a republic can be slow to act against conspirators."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 40,
+        "author_ids": [
+          "185771",
+          "14418"
+        ],
+        "isbn13": "9780140441321",
+        "publisher": "Penguin Classics",
+        "publication_day": 28,
+        "publication_year": 1964,
+        "work_id": "313910",
+        "format": "Paperback",
+        "ratings_count": 1865,
+        "average_rating": 3.84,
+        "book_id": "323202",
+        "title": "The Jugurthine War and the Conspiracy of Catiline",
+        "title_without_series": "The Jugurthine War and the Conspiracy of Catiline",
+        "num_pages": 240,
+        "publication_month": 2,
+        "isbn": "0140441328",
+        "authors": [
+          "Sallust",
+          "S.A. Handford"
+        ],
+        "description": "Alternate cover edition of ISBN 0140441328.\nSallust (86-c. 35 BC), who had various public offices in Rome & later a governorship in Africa, supported the political group known as the populares. He was a friend of Caesar & an opponent of Cicero. His history of the war against Jugurtha, King of Numidia, & his account of Catiline's conspiracy in 63 BC are his only complete works to survive; they were written in the years after Caesar's assassination.",
+        "link": "https://www.goodreads.com/book/show/323202.The_Jugurthine_War_and_the_Conspiracy_of_Catiline",
+        "wikipedia_match": {
+          "title": "Sallust",
+          "page_id": 161420,
+          "infoboxes": [
+            "person",
+            "military person"
+          ],
+          "categories": [
+            "86 BC births",
+            "30s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "1st-century BC historians",
+            "1st-century BC Romans",
+            "Roman Republican soldiers",
+            "Golden Age Latin writers",
+            "Latin historians",
+            "Sallustii"
+          ],
+          "birth_year": -86,
+          "death_year": null
+        },
+        "original_year": -63,
+        "author_meta": {
+          "birth_year": -86,
+          "death_year": null,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Sallust",
+        "page_id": 161420,
+        "infoboxes": [
+          "person",
+          "military person"
+        ],
+        "categories": [
+          "86 BC births",
+          "30s BC deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "1st-century BC historians",
+          "1st-century BC Romans",
+          "Roman Republican soldiers",
+          "Golden Age Latin writers",
+          "Latin historians",
+          "Sallustii"
+        ],
+        "birth_year": -86,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "323202",
+        "target_author_ids": [
+          "185771",
+          "14418"
+        ],
+        "target_person": {
+          "title": "Sallust",
+          "page_id": 161420,
+          "infoboxes": [
+            "person",
+            "military person"
+          ],
+          "categories": [
+            "86 BC births",
+            "30s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "1st-century BC historians",
+            "1st-century BC Romans",
+            "Roman Republican soldiers",
+            "Golden Age Latin writers",
+            "Latin historians",
+            "Sallustii"
+          ],
+          "birth_year": -86,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Biondo",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "To which Biondo testifies, when, in speaking of the citizens of Florence and Pistoja, he says, “_In seeking to unite Pistoja the Florentines themselves fell out_.”"
+        ],
+        "commentaries": [
+          "The author references Biondo's testimony about the Florentines falling out while trying to unite Pistoja."
+        ],
+        "canonical_author": "Biondo"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Flavio Biondo",
+        "page_id": 1225733,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1392 births",
+          "1463 deaths",
+          "People from Forlì",
+          "15th-century Italian historians",
+          "Italian Renaissance humanists",
+          "15th-century writers in Latin",
+          "15th-century Italian writers",
+          "15th-century antiquarians"
+        ],
+        "birth_year": 1392,
+        "death_year": 1463
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Flavio Biondo",
+          "page_id": 1225733,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1392 births",
+            "1463 deaths",
+            "People from Forlì",
+            "15th-century Italian historians",
+            "Italian Renaissance humanists",
+            "15th-century writers in Latin",
+            "15th-century Italian writers",
+            "15th-century antiquarians"
+          ],
+          "birth_year": 1392,
+          "death_year": 1463
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thucydides",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Touching this there is a notable passage in Thucydides, the Greek historian, where he tells how the republic of Athens coming victorious out of the Peloponessian war, wherein she had bridled the pride of Sparta, and brought almost the whole of Greece under her authority, was encouraged by the greatness of her renown to propose to herself the conquest of Sicily."
+        ],
+        "commentaries": [
+          "The author references Thucydides to illustrate how Athens, after victory, was encouraged to undertake the conquest of Sicily."
+        ],
+        "canonical_author": "Thucydides"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thucydides",
+        "page_id": 30864,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "470s BC births",
+          "400s BC deaths",
+          "5th-century BC Athenians",
+          "5th-century BC Greek historians",
+          "Ancient Athenian generals",
+          "Ancient Athenian historians",
+          "Classical-era Greek historians",
+          "Ancient Greek merchants",
+          "Ancient Thracian Greeks",
+          "Athenians of the Peloponnesian War",
+          "Attic Greek writers",
+          "Ostracized Athenians",
+          "Philaidae",
+          "Political realists",
+          "Ancient Greek military writers"
+        ],
+        "birth_year": -460,
+        "death_year": -400
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "957"
+        ],
+        "target_person": {
+          "title": "Thucydides",
+          "page_id": 30864,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "470s BC births",
+            "400s BC deaths",
+            "5th-century BC Athenians",
+            "5th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Classical-era Greek historians",
+            "Ancient Greek merchants",
+            "Ancient Thracian Greeks",
+            "Athenians of the Peloponnesian War",
+            "Attic Greek writers",
+            "Ostracized Athenians",
+            "Philaidae",
+            "Political realists",
+            "Ancient Greek military writers"
+          ],
+          "birth_year": -460,
+          "death_year": -400
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Procopius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And Procopius, who writes the history of the war which Belisarius conducted against those Vandals who seized on Africa, relates, that on certain pillars standing in places where the Maurusians once dwelt, he had read inscriptions in these words: “_We Maurusians who fled before Joshua, the robber, the son of Nun_;”"
+        ],
+        "commentaries": [
+          "The author references Procopius's history of the Vandal War as evidence for the Maurusians' flight from Joshua."
+        ],
+        "canonical_author": "Procopius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Procopius",
+        "page_id": 23624,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "500s births",
+          "565 deaths",
+          "6th-century Byzantine historians",
+          "Historians of Justinian I",
+          "Secret histories",
+          "Sources on Germanic paganism|De bello Gothico",
+          "Vandalic War",
+          "People from Caesarea Maritima",
+          "People of the Roman–Sasanian Wars"
+        ],
+        "birth_year": null,
+        "death_year": 565
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "156734"
+        ],
+        "target_person": {
+          "title": "Procopius",
+          "page_id": 23624,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "500s births",
+            "565 deaths",
+            "6th-century Byzantine historians",
+            "Historians of Justinian I",
+            "Secret histories",
+            "Sources on Germanic paganism|De bello Gothico",
+            "Vandalic War",
+            "People from Caesarea Maritima",
+            "People of the Roman–Sasanian Wars"
+          ],
+          "birth_year": null,
+          "death_year": 565
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Herodian",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And were it not for the respect in which I hold the historian, I could not credit as possible what Herodian relates of Plautianus, namely, that he committed to the centurion Saturninus the task of slaying single-handed both Severus and Caracalla, they dwelling in different places; for the thing is so opposed to reason that on no other authority could I be induced to accept it as true."
+        ],
+        "commentaries": [
+          "The author expresses skepticism about an account by Herodian, but respects him as a historian."
+        ],
+        "canonical_author": "Herodian"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Herodian",
+        "page_id": 840542,
+        "infoboxes": [],
+        "categories": [
+          "Greek-language historians from the Roman Empire",
+          "Ancient Greeks in Rome",
+          "2nd-century Greek writers",
+          "3rd-century Greek writers",
+          "2nd-century Romans",
+          "3rd-century Romans",
+          "3rd-century historians",
+          "170s births",
+          "240s deaths",
+          "2nd-century historians"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "302847"
+        ],
+        "target_person": {
+          "title": "Herodian",
+          "page_id": 840542,
+          "infoboxes": [],
+          "categories": [
+            "Greek-language historians from the Roman Empire",
+            "Ancient Greeks in Rome",
+            "2nd-century Greek writers",
+            "3rd-century Greek writers",
+            "2nd-century Romans",
+            "3rd-century Romans",
+            "3rd-century historians",
+            "170s births",
+            "240s deaths",
+            "2nd-century historians"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Ab Urbe Condita",
+        "author": "Livy",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "With respect to which election Titus Livius observes, that \"the result showed that the people when declaring their honest judgment after controversy was over, were governed by a different spirit from that which had inspired them while contending for their liberties and for a share in public honours.\"",
+          "Of which decision Titus Livius, speaking with due admiration, says, \"Where shall we now find in any one man, that modesty, moderation, and magnanimity which were then common to the entire people?\""
+        ],
+        "commentaries": [
+          "The author cites Livy's historical observation on the Roman people's judgment, using it to support his argument about general versus particular judgment.",
+          "The author again quotes Livy to highlight the admirable qualities of the Roman people in making their choices."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 2,
+        "author_ids": [
+          "14577687",
+          "627572",
+          "3973395"
+        ],
+        "isbn13": "9780760770238",
+        "publisher": "Barnes & Noble, Inc.",
+        "publication_day": 16,
+        "publication_year": 2005,
+        "work_id": "323201",
+        "format": "Trade paperback",
+        "ratings_count": 21,
+        "average_rating": 3.91,
+        "book_id": "334585",
+        "title": "The Early History of Rome: Books I-V of the Ab Urbe Condita",
+        "title_without_series": "The Early History of Rome: Books I-V of the Ab Urbe Condita",
+        "num_pages": 448,
+        "publication_month": 7,
+        "isbn": "0760770239",
+        "authors": [
+          "Livy",
+          "Matthew Peacock",
+          "B.O. Foster"
+        ],
+        "description": "Livy's \"Early History of Rome\" tells of a small monarchical state's struggle to survive. It tells the story of the overthrow of the kings and the development of the Roman Republic. It depicts the qualities that allowed the early Romans to overcome internal disputes and foreign enemies and to recover after the nearly total destruction of their city in 390 BC. Livy writes with fairness, humanity, and an irresistible enthusiasm for the courage, honesty, and self-sacrifice that exemplified what it was to be Rom...",
+        "link": "https://www.goodreads.com/book/show/334585.The_Early_History_of_Rome",
+        "wikipedia_match": {
+          "title": "Livy",
+          "page_id": 18049,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1st-century BC births",
+            "17 deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Golden Age Latin writers",
+            "Writers from Padua",
+            "Latin historians",
+            "1st-century BC historians",
+            "1st-century historians",
+            "1st-century BC Romans",
+            "1st-century Romans",
+            "Livii",
+            "Ancient Romans from Padua"
+          ],
+          "birth_year": -59,
+          "death_year": 17
+        },
+        "original_year": -29,
+        "author_meta": {
+          "birth_year": -59,
+          "death_year": 17,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Livy",
+        "page_id": 18049,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1st-century BC births",
+          "17 deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Golden Age Latin writers",
+          "Writers from Padua",
+          "Latin historians",
+          "1st-century BC historians",
+          "1st-century historians",
+          "1st-century BC Romans",
+          "1st-century Romans",
+          "Livii",
+          "Ancient Romans from Padua"
+        ],
+        "birth_year": -59,
+        "death_year": 17
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "334585",
+        "target_author_ids": [
+          "14577687",
+          "627572",
+          "3973395"
+        ],
+        "target_person": {
+          "title": "Livy",
+          "page_id": 18049,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1st-century BC births",
+            "17 deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Golden Age Latin writers",
+            "Writers from Padua",
+            "Latin historians",
+            "1st-century BC historians",
+            "1st-century historians",
+            "1st-century BC Romans",
+            "1st-century Romans",
+            "Livii",
+            "Ancient Romans from Padua"
+          ],
+          "birth_year": -59,
+          "death_year": 17
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "History of Rome",
+        "author": "Livy",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "And Titus Livius commends their behaviour when he says: “_That neglect of the gods which now prevails, had not then made its way nor was it then the practice for every man to interpret his oath, or the laws, to suit his private ends._”",
+          "And that it was from their having found out the crafty policy of the Romans that the Latins were led to take this step, is plain from the words which Titus Livius puts in the mouth of Annius Setinus the Latin prætor, who, in addressing the Latin council, is made to say, “_For if even now we can put up with slavery under the disguise of an equal alliance, etc_”"
+        ],
+        "commentaries": [
+          "The author quotes Livy's work to support his argument about the role of religion in Roman politics.",
+          "The author cites Livy's work for the words of the Latin praetor, using the historian as a source for the political machinations of the Latins."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 4,
+        "author_ids": [
+          "14577687"
+        ],
+        "isbn13": "9781241448721",
+        "work_id": "40705299",
+        "format": "Paperback",
+        "ratings_count": 19,
+        "average_rating": 4.03,
+        "book_id": "6075126",
+        "title": "The History of Rome",
+        "title_without_series": "The History of Rome",
+        "num_pages": 660,
+        "isbn": "1241448728",
+        "authors": [
+          "Livy"
+        ],
+        "description": "Title: The History of Rome by Titus Livius. Translated from the original, with notes and illustrations, by G. Baker.Publisher: British Library, Historical Print EditionsThe British Library is the national library of the United Kingdom. It is one of the world's largest research libraries holding over 150 million items in all known languages and formats: books, journals, newspapers, sound recordings, patents, maps, stamps, prints and much more. Its collections include around 14 million books, along with subst...",
+        "link": "https://www.goodreads.com/book/show/6075126-the-history-of-rome",
+        "wikipedia_match": {
+          "title": "Livy",
+          "page_id": 18049,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1st-century BC births",
+            "17 deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Golden Age Latin writers",
+            "Writers from Padua",
+            "Latin historians",
+            "1st-century BC historians",
+            "1st-century historians",
+            "1st-century BC Romans",
+            "1st-century Romans",
+            "Livii",
+            "Ancient Romans from Padua"
+          ],
+          "birth_year": -59,
+          "death_year": 17
+        },
+        "original_year": -27,
+        "author_meta": {
+          "birth_year": -59,
+          "death_year": 17,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Livy",
+        "page_id": 18049,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1st-century BC births",
+          "17 deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Golden Age Latin writers",
+          "Writers from Padua",
+          "Latin historians",
+          "1st-century BC historians",
+          "1st-century historians",
+          "1st-century BC Romans",
+          "1st-century Romans",
+          "Livii",
+          "Ancient Romans from Padua"
+        ],
+        "birth_year": -59,
+        "death_year": 17
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "6075126",
+        "target_author_ids": [
+          "14577687"
+        ],
+        "target_person": {
+          "title": "Livy",
+          "page_id": 18049,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1st-century BC births",
+            "17 deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Golden Age Latin writers",
+            "Writers from Padua",
+            "Latin historians",
+            "1st-century BC historians",
+            "1st-century historians",
+            "1st-century BC Romans",
+            "1st-century Romans",
+            "Livii",
+            "Ancient Romans from Padua"
+          ],
+          "birth_year": -59,
+          "death_year": 17
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Girolamo Savonarola",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The necessity of this course was well understood by the Friar Girolamo Savonarola, and by the Gonfalonier Piero Soderini."
+        ],
+        "commentaries": [
+          "The author mentions Savonarola as someone who understood the need to eliminate envious rivals but lacked the authority to do so."
+        ],
+        "canonical_author": "Girolamo Savonarola"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Girolamo Savonarola",
+        "page_id": 50139,
+        "infoboxes": [
+          "nobility",
+          "philosopher"
+        ],
+        "categories": [
+          "Girolamo Savonarola| ",
+          "Executed Roman Catholic priests",
+          "Italian Roman Catholics",
+          "Italian torture victims",
+          "Italian Dominicans",
+          "People excommunicated by the Catholic Church",
+          "People executed by the Papal States by burning",
+          "People executed for heresy",
+          "Religious leaders from Ferrara",
+          "Heads of state of Florence",
+          "University of Ferrara alumni",
+          "1452 births",
+          "1498 deaths",
+          "15th-century Italian Roman Catholic priests",
+          "Proto-Protestants",
+          "Dominican Order in Florence",
+          "Friars of San Marco, Florence",
+          "People of the Italian War of 1494–1495"
+        ],
+        "birth_year": 1452,
+        "death_year": 1498
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "580629"
+        ],
+        "target_person": {
+          "title": "Girolamo Savonarola",
+          "page_id": 50139,
+          "infoboxes": [
+            "nobility",
+            "philosopher"
+          ],
+          "categories": [
+            "Girolamo Savonarola| ",
+            "Executed Roman Catholic priests",
+            "Italian Roman Catholics",
+            "Italian torture victims",
+            "Italian Dominicans",
+            "People excommunicated by the Catholic Church",
+            "People executed by the Papal States by burning",
+            "People executed for heresy",
+            "Religious leaders from Ferrara",
+            "Heads of state of Florence",
+            "University of Ferrara alumni",
+            "1452 births",
+            "1498 deaths",
+            "15th-century Italian Roman Catholic priests",
+            "Proto-Protestants",
+            "Dominican Order in Florence",
+            "Friars of San Marco, Florence",
+            "People of the Italian War of 1494–1495"
+          ],
+          "birth_year": 1452,
+          "death_year": 1498
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Prince",
+        "author": "Niccolò Machiavelli",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Whether this is a thing to be commended or no, and whether such methods ought or ought not to be followed by princes, has already been considered by me in my “_Treatise of the Prince_” wherefore I say no more on that subject here."
+        ],
+        "commentaries": [
+          "The author references his own earlier work, 'The Prince', as having already discussed the topic of whether princes should keep promises made under compulsion."
+        ],
+        "canonical_author": "Machiavelli"
+      },
+      "goodreads_match": {
+        "text_reviews_count": 5,
+        "author_ids": [
+          "16201"
+        ],
+        "isbn13": "9781421810744",
+        "publisher": "1st World Library",
+        "publication_day": 1,
+        "publication_year": 2006,
+        "work_id": "1335445",
+        "format": "Hardcover",
+        "ratings_count": 18,
+        "average_rating": 3.78,
+        "book_id": "780638",
+        "title": "The Prince",
+        "title_without_series": "The Prince",
+        "num_pages": 180,
+        "publication_month": 1,
+        "isbn": "1421810743",
+        "authors": [
+          "Niccolo Machiavelli"
+        ],
+        "description": "Purchase one of 1st World Library's Classic Books and help support our free internet library of downloadable eBooks. Visit us online at www.1stWorldLibrary.ORG- - Nicolo Machiavelli was born at Florence on 3rd May 1469. He was the second son of Bernardo di Nicolo Machiavelli, a lawyer of some repute, and of Bartolo-mmea di Stefano Nelli, his wife. Both parents were members of the old Florentine nobility. His life falls naturally into three periods, each of which singularly enough constitutes a distinct and....",
+        "link": "https://www.goodreads.com/book/show/780638.The_Prince",
+        "wikipedia_match": {
+          "title": "Niccolò Machiavelli",
+          "page_id": 21444,
+          "infoboxes": [
+            "philosopher "
+          ],
+          "categories": [
+            "Niccolò Machiavelli| ",
+            "1469 births",
+            "1527 deaths",
+            "15th-century Italian philosophers",
+            "16th-century Italian philosophers",
+            "16th-century Italian male writers",
+            "16th-century Italian dramatists and playwrights",
+            "15th-century people from the Republic of Florence",
+            "16th-century people from the Republic of Florence",
+            "15th-century Italian historians",
+            "16th-century Italian historians",
+            "16th-century Italian diplomats",
+            "Italian political writers",
+            "Italian military writers",
+            "Military theorists",
+            "Philosophers of war",
+            "Political realists",
+            "Politicians from Florence",
+            "Writers from Florence",
+            "Italian male non-fiction writers",
+            "Machiavellianism",
+            "Writers from the Republic of Florence",
+            "Diplomats from Florence",
+            "Burials at Basilica of Santa Croce, Florence",
+            "Consequentialists",
+            "Italian political philosophers",
+            "Italian Renaissance writers"
+          ],
+          "birth_year": 1469,
+          "death_year": 1527
+        },
+        "original_year": 1532,
+        "author_meta": {
+          "birth_year": 1469,
+          "death_year": 1527,
+          "main_genre": "political philosophy",
+          "nationality": "Italian"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Niccolò Machiavelli",
+        "page_id": 21444,
+        "infoboxes": [
+          "philosopher "
+        ],
+        "categories": [
+          "Niccolò Machiavelli| ",
+          "1469 births",
+          "1527 deaths",
+          "15th-century Italian philosophers",
+          "16th-century Italian philosophers",
+          "16th-century Italian male writers",
+          "16th-century Italian dramatists and playwrights",
+          "15th-century people from the Republic of Florence",
+          "16th-century people from the Republic of Florence",
+          "15th-century Italian historians",
+          "16th-century Italian historians",
+          "16th-century Italian diplomats",
+          "Italian political writers",
+          "Italian military writers",
+          "Military theorists",
+          "Philosophers of war",
+          "Political realists",
+          "Politicians from Florence",
+          "Writers from Florence",
+          "Italian male non-fiction writers",
+          "Machiavellianism",
+          "Writers from the Republic of Florence",
+          "Diplomats from Florence",
+          "Burials at Basilica of Santa Croce, Florence",
+          "Consequentialists",
+          "Italian political philosophers",
+          "Italian Renaissance writers"
+        ],
+        "birth_year": 1469,
+        "death_year": 1527
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "780638",
+        "target_author_ids": [
+          "16201"
+        ],
+        "target_person": {
+          "title": "Niccolò Machiavelli",
+          "page_id": 21444,
+          "infoboxes": [
+            "philosopher "
+          ],
+          "categories": [
+            "Niccolò Machiavelli| ",
+            "1469 births",
+            "1527 deaths",
+            "15th-century Italian philosophers",
+            "16th-century Italian philosophers",
+            "16th-century Italian male writers",
+            "16th-century Italian dramatists and playwrights",
+            "15th-century people from the Republic of Florence",
+            "16th-century people from the Republic of Florence",
+            "15th-century Italian historians",
+            "16th-century Italian historians",
+            "16th-century Italian diplomats",
+            "Italian political writers",
+            "Italian military writers",
+            "Military theorists",
+            "Philosophers of war",
+            "Political realists",
+            "Politicians from Florence",
+            "Writers from Florence",
+            "Italian male non-fiction writers",
+            "Machiavellianism",
+            "Writers from the Republic of Florence",
+            "Diplomats from Florence",
+            "Burials at Basilica of Santa Croce, Florence",
+            "Consequentialists",
+            "Italian political philosophers",
+            "Italian Renaissance writers"
+          ],
+          "birth_year": 1469,
+          "death_year": 1527
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Aeneid",
+        "author": "Virgil",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Nor could Virgil better express this opinion, or show by fitter words that he was convinced of its truth than, when he says:— “To arms shall Tullus rouse His sluggish warriors.”"
+        ],
+        "commentaries": [
+          "The author quotes Virgil's Aeneid to support his argument about the importance of military leadership."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 2,
+        "author_ids": [
+          "919",
+          "8124"
+        ],
+        "publisher": "Heritage Press",
+        "publication_year": 1944,
+        "work_id": "288738",
+        "format": "Hardcover",
+        "ratings_count": 5,
+        "average_rating": 3.81,
+        "book_id": "24782569",
+        "title": "Aeneid",
+        "title_without_series": "Aeneid",
+        "num_pages": 397,
+        "authors": [
+          "Virgil",
+          "John Dryden"
+        ],
+        "description": "Illustrated by Carlotta Petrina. Black cloth, front cover stamped in blind with Petrina illus; slipcase; 6-3/4\" x 10-1/2\".",
+        "link": "https://www.goodreads.com/book/show/24782569-aeneid",
+        "original_year": -18,
+        "author_meta": {
+          "birth_year": -70,
+          "death_year": -19,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Virgil",
+        "birth_year": -70,
+        "death_year": -19
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "24782569",
+        "target_author_ids": [
+          "919",
+          "8124"
+        ],
+        "target_person": {
+          "title": "Virgil",
+          "birth_year": -70,
+          "death_year": -19
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Solon",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "The contrary, however, happened in the case of Solon; who by the turn he gave to the institutions of Athens, created there a purely democratic government, of such brief duration, that he himself lived to witness the beginning of the despotism of Pisistratus.",
+          "Spurius Posthumius and two other citizens were, by general consent, despatched to Athens to procure copies of the laws which Solon had drawn up for the Athenians, to the end that these might serve as a groundwork for the laws of Rome.",
+          "Croesus, king of Lydia, after showing Solon the Athenian much besides, at last displayed to him the boundless riches of his treasure-house, and asked him what he thought of his power. Whereupon Solon answered that he thought him no whit more powerful in respect of these treasures, for as war is made with iron and not with gold, another coming with more iron might carry off his gold."
+        ],
+        "commentaries": [
+          "The author mentions Solon as the founder of Athens' democratic institutions, which led to a short-lived government.",
+          "The author describes Solon as the source of laws copied by the Romans, citing his legal code as a model for Roman legislation.",
+          "The author recounts Solon's response to Croesus as an example supporting the argument that good soldiers, not money, are the sinews of war."
+        ],
+        "canonical_author": "Solon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Solon",
+        "page_id": 58230,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "6th-century BC Greek poets",
+          "6th-century BC Athenians",
+          "Ancient Greek elegiac poets",
+          "Archaic Athens",
+          "Ancient legislators",
+          "Greek exiles",
+          "Pederasty in ancient Greece",
+          "Seven Sages of Greece",
+          "630s BC births",
+          "550s BC deaths",
+          "Eponymous archons",
+          "Family of Plato",
+          "6th-century BC Greek politicians",
+          "7th-century BC Greek philosophers",
+          "6th-century BC Greek philosophers"
+        ],
+        "birth_year": -630,
+        "death_year": -560
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Solon",
+          "page_id": 58230,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "6th-century BC Greek poets",
+            "6th-century BC Athenians",
+            "Ancient Greek elegiac poets",
+            "Archaic Athens",
+            "Ancient legislators",
+            "Greek exiles",
+            "Pederasty in ancient Greece",
+            "Seven Sages of Greece",
+            "630s BC births",
+            "550s BC deaths",
+            "Eponymous archons",
+            "Family of Plato",
+            "6th-century BC Greek politicians",
+            "7th-century BC Greek philosophers",
+            "6th-century BC Greek philosophers"
+          ],
+          "birth_year": -630,
+          "death_year": -560
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ottaviano Fregoso",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "By all it was believed that he would retain it as a rock of refuge in case of any reverse of fortune, and by some he was advised to do so; but he, being a truly wise ruler, and knowing well that it is by the attachment of their subjects and not by the strength of their fortifications that princes are maintained in their governments, dismantled this citadel; and founding his authority, not upon material defences, but on his own valour and prudence, kept and still keeps it."
+        ],
+        "commentaries": [
+          "The author cites Ottaviano Fregoso as a wise ruler who dismantled a citadel, relying on his own virtue and the loyalty of his subjects."
+        ],
+        "canonical_author": "Ottaviano Fregoso"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Ottaviano Fregoso",
+        "page_id": 35374912,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "1470 births",
+          "1524 deaths",
+          "16th-century doges of Genoa"
+        ],
+        "birth_year": 1470,
+        "death_year": 1524
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Ottaviano Fregoso",
+          "page_id": 35374912,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1470 births",
+            "1524 deaths",
+            "16th-century doges of Genoa"
+          ],
+          "birth_year": 1470,
+          "death_year": 1524
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Niccolo da Castello",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "When Niccolo da Castello, the ancestor of the Vitelli, returned to his country out of exile, he straightway pulled down the two fortresses built there by Pope Sixtus IV., perceiving that it was not by fortresses, but by the good-will of the people, that he could be maintained in his government."
+        ],
+        "commentaries": [
+          "The author mentions Niccolo da Castello as a ruler who destroyed fortresses, recognizing the importance of popular support."
+        ],
+        "canonical_author": "Niccolo Da Castello"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Niccolò Vitelli",
+        "page_id": 24327581,
+        "infoboxes": [],
+        "categories": [
+          "1414 births",
+          "1486 deaths",
+          "People from Città di Castello",
+          "15th-century condottieri",
+          "People excommunicated by the Catholic Church",
+          "Vitelli family|Niccolo"
+        ],
+        "birth_year": 1414,
+        "death_year": 1486
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Niccolò Vitelli",
+          "page_id": 24327581,
+          "infoboxes": [],
+          "categories": [
+            "1414 births",
+            "1486 deaths",
+            "People from Città di Castello",
+            "15th-century condottieri",
+            "People excommunicated by the Catholic Church",
+            "Vitelli family|Niccolo"
+          ],
+          "birth_year": 1414,
+          "death_year": 1486
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Manlius Torquatus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and after its capture, in the deaths of Manlius Capitolinus, and of the son of Manlius Torquatus in the prosecution of his master of the knights by Papirius Cursor, and in the impeachment of the Scipios."
+        ],
+        "commentaries": [
+          "The author mentions the death of the son of Manlius Torquatus as an example of laws being reinforced after the capture of Rome by the Gauls."
+        ],
+        "canonical_author": "Manlius Torquatus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Titus Manlius Imperiosus Torquatus",
+        "page_id": 6038809,
+        "infoboxes": [],
+        "categories": [
+          "4th-century BC deaths",
+          "4th-century BC Roman consuls",
+          "4th-century BC Roman generals",
+          "Ancient Roman dictators",
+          "Characters in Book VI of the Aeneid",
+          "Filicides",
+          "Manlii Torquati|Titus, Imperiosus",
+          "Ancient Roman patricians",
+          "Year of birth unknown",
+          "Year of death unknown",
+          "Duellists"
+        ],
+        "birth_year": null,
+        "death_year": -202
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Titus Manlius Imperiosus Torquatus",
+          "page_id": 6038809,
+          "infoboxes": [],
+          "categories": [
+            "4th-century BC deaths",
+            "4th-century BC Roman consuls",
+            "4th-century BC Roman generals",
+            "Ancient Roman dictators",
+            "Characters in Book VI of the Aeneid",
+            "Filicides",
+            "Manlii Torquati|Titus, Imperiosus",
+            "Ancient Roman patricians",
+            "Year of birth unknown",
+            "Year of death unknown",
+            "Duellists"
+          ],
+          "birth_year": null,
+          "death_year": -202
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Catiline",
+        "author": "Sallust",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Quod omnia mala exempla ex bonis initiis orta sunt. (Sall. Cat. 51.)"
+        ],
+        "commentaries": [
+          "The author opens the chapter with a Latin epigram from Sallust's work on the Catilinarian conspiracy, using it as a thematic epigraph."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 17,
+        "author_ids": [
+          "185771",
+          "98693"
+        ],
+        "isbn13": "9780140449488",
+        "publisher": "Penguin Classics",
+        "publication_day": 6,
+        "publication_year": 2007,
+        "work_id": "23893197",
+        "format": "Paperback",
+        "ratings_count": 124,
+        "average_rating": 3.83,
+        "book_id": "755218",
+        "title": "Catiline's War, The Jugurthine War, Histories",
+        "title_without_series": "Catiline's War, The Jugurthine War, Histories",
+        "num_pages": 204,
+        "publication_month": 12,
+        "isbn": "0140449485",
+        "authors": [
+          "Sallust",
+          "A.J. Woodman"
+        ],
+        "description": "Sallust (86-c. 35 bc) is the earliest Roman historian of whom complete works survive, a senator of the Roman Republic and younger contemporary of Cicero, Pompey and Julius Caesar. His Catiline's Wartells of the conspiracy in 63 bc led by L. Sergius Catilina, who plotted to assassinate numerous senators and take control of the government, but was thwarted by Cicero. Sallust's vivid account of Roman public life shows a Republic in decline, prey to moral corruption and internal strife. In The Jugurthine Warhe....",
+        "link": "https://www.goodreads.com/book/show/755218.Catiline_s_War_The_Jugurthine_War_Histories",
+        "wikipedia_match": {
+          "title": "Sallust",
+          "page_id": 161420,
+          "infoboxes": [
+            "person",
+            "military person"
+          ],
+          "categories": [
+            "86 BC births",
+            "30s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "1st-century BC historians",
+            "1st-century BC Romans",
+            "Roman Republican soldiers",
+            "Golden Age Latin writers",
+            "Latin historians",
+            "Sallustii"
+          ],
+          "birth_year": -86,
+          "death_year": null
+        },
+        "original_year": -40,
+        "author_meta": {
+          "birth_year": -86,
+          "death_year": null,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Sallust",
+        "page_id": 161420,
+        "infoboxes": [
+          "person",
+          "military person"
+        ],
+        "categories": [
+          "86 BC births",
+          "30s BC deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "1st-century BC historians",
+          "1st-century BC Romans",
+          "Roman Republican soldiers",
+          "Golden Age Latin writers",
+          "Latin historians",
+          "Sallustii"
+        ],
+        "birth_year": -86,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "755218",
+        "target_author_ids": [
+          "185771",
+          "98693"
+        ],
+        "target_person": {
+          "title": "Sallust",
+          "page_id": 161420,
+          "infoboxes": [
+            "person",
+            "military person"
+          ],
+          "categories": [
+            "86 BC births",
+            "30s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "1st-century BC historians",
+            "1st-century BC Romans",
+            "Roman Republican soldiers",
+            "Golden Age Latin writers",
+            "Latin historians",
+            "Sallustii"
+          ],
+          "birth_year": -86,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Chronicle",
+        "author": "Diodorus Siculus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "like the Chronicle of Diodorus Siculus, which, professing to give an account of the events of forty or fifty thousand years, is held, and I believe justly, a lying tale."
+        ],
+        "commentaries": [
+          "The author mentions Diodorus Siculus's Chronicle as an example of a work that is considered unreliable due to its exaggerated claims about ancient history."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 4,
+        "author_ids": [
+          "174548",
+          "2553574"
+        ],
+        "isbn13": "9780674993075",
+        "publisher": "Harvard University Press",
+        "publication_day": 1,
+        "publication_year": 1933,
+        "work_id": "1466685",
+        "format": "Hardcover",
+        "ratings_count": 40,
+        "average_rating": 4.17,
+        "book_id": "1475672",
+        "title": "Library of History, Volume I: Books 1-2.34",
+        "title_without_series": "Library of History, Volume I: Books 1-2.34",
+        "num_pages": 498,
+        "publication_month": 1,
+        "isbn": "0674993071",
+        "authors": [
+          "Diodorus Siculus",
+          "C.H. Oldfather"
+        ],
+        "description": "Diodorus Siculus, Greek historian of Agyrium in Sicily, ca. 80-20 BCE, wrote forty books of world history, called \"Library of History, \" in three parts: mythical history of peoples, non-Greek and Greek, to the Trojan War; history to Alexander's death (323 BCE); history to 54 BCE. Of this we have complete Books I-V (Egyptians, Assyrians, Ethiopians, Greeks) and Books XI-XX (Greek history 480-302 BCE); and fragments of the rest. He was an uncritical compiler, but used good sources and reproduced them faithful...",
+        "link": "https://www.goodreads.com/book/show/1475672.Library_of_History_Volume_I",
+        "wikipedia_match": {
+          "title": "Diodorus Siculus",
+          "page_id": 99425,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1st-century BC Greek writers",
+            "1st-century BC historians",
+            "30s BC deaths",
+            "90s BC births",
+            "Classical geography",
+            "Hellenistic-era historians",
+            "Historians from Magna Graecia",
+            "Sicilian Greeks",
+            "Works about mining",
+            "Historians of Phoenicia"
+          ],
+          "birth_year": -90,
+          "death_year": -30
+        },
+        "original_year": 1933,
+        "author_meta": {
+          "birth_year": -90,
+          "death_year": -30,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Diodorus Siculus",
+        "page_id": 99425,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1st-century BC Greek writers",
+          "1st-century BC historians",
+          "30s BC deaths",
+          "90s BC births",
+          "Classical geography",
+          "Hellenistic-era historians",
+          "Historians from Magna Graecia",
+          "Sicilian Greeks",
+          "Works about mining",
+          "Historians of Phoenicia"
+        ],
+        "birth_year": -90,
+        "death_year": -30
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1475672",
+        "target_author_ids": [
+          "174548",
+          "2553574"
+        ],
+        "target_person": {
+          "title": "Diodorus Siculus",
+          "page_id": 99425,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1st-century BC Greek writers",
+            "1st-century BC historians",
+            "30s BC deaths",
+            "90s BC births",
+            "Classical geography",
+            "Hellenistic-era historians",
+            "Historians from Magna Graecia",
+            "Sicilian Greeks",
+            "Works about mining",
+            "Historians of Phoenicia"
+          ],
+          "birth_year": -90,
+          "death_year": -30
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "History of Rome",
+        "author": "Titus Livius",
+        "note": null,
+        "count": 8,
+        "contexts": [
+          "Although the examples above cited be proof sufficient of what I affirm, I desire to adduce one other, recorded by Titus Livius in his history, where he relates that a sister of Aruns having been violated by a Lucumo of Clusium...",
+          "To cite a single instance, I shall take the case of the Samnites who, strange as it may now seem, were on the admission of Titus Livius himself, so powerful and so steadfast in arms, as to be able to withstand the Romans down to the consulship of Papirius Cursor, son to the first Papirius, a period of six and forty years, in spite of numerous defeats, the loss of many of their towns, and the great slaughter which overtook them everywhere throughout their country.",
+          "Of which change in their fortunes Livius often reminds us, and particularly in connection with the war with Hannibal, where he relates that the Samnites, being ill-treated by a Roman legion quartered at Nola, sent legates to Hannibal to ask his aid; who in laying their case before him told him, that with their own soldiers and captains they had fought single handed against the Romans for a hundred years, and had more than once withstood two consuls and two consular armies; but had now fallen so low, that they were scarce able to defend themselves against one poor legion.",
+          "To which we have a witness in Titus Livius, who relates that when Philip of Macedon came to treat with Titus Quintius Flamininus, and while terms were being discussed in the presence of a certain Etolian captain, this man coming to words with Philip, the latter taunted him with greed and bad faith; telling him that the Etolians were not ashamed to draw pay from one side, and then send their men to serve on the other; so that often the banner of Etolia might be seen displayed in two hostile camps.",
+          "In pointing out this equality of strength, Titus Livius takes occasion to explain the whole system followed by the Romans in the ordering of their armies and in disposing them for battle;",
+          "And that all may understand how much the actions of particular citizens helped to make Rome great, and how many admirable results they wrought in that city, I shall now proceed to set them forth and examine them; with which survey this Third Book of mine, and last division of the First Decade of Titus Livius, shall be brought to a close.",
+          "in reading this history of Titus Livius the necessity of such a foundation is made apparent in every page.",
+          "Titus Livius oftener than once observes in his history, that “at the beginning of a fray the Gauls are more than men, but ere it is ended show themselves less than women.”"
+        ],
+        "commentaries": [
+          "The author cites an anecdote recorded by Titus Livius to illustrate his point about the dangers of lacking legal remedies.",
+          "The author cites Titus Livius as an authority on the power and resilience of the Samnites against Rome.",
+          "The author references Livius's account of the Samnites' decline and their appeal to Hannibal.",
+          "The author cites Titus Livius as a witness to the behavior of the Etolians, using his account to support the argument about the limitations of leagues.",
+          "The author references Titus Livius as the source explaining the Roman military system.",
+          "The author references the work of Titus Livius as the source for the historical examples he will examine in his own book.",
+          "The author references Livy's history as a source that repeatedly demonstrates the importance of a good militia.",
+          "The author cites Livy's historical observation about the Gauls' temperament in battle."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 4,
+        "author_ids": [
+          "14577687"
+        ],
+        "isbn13": "9781241448721",
+        "work_id": "40705299",
+        "format": "Paperback",
+        "ratings_count": 19,
+        "average_rating": 4.03,
+        "book_id": "6075126",
+        "title": "The History of Rome",
+        "title_without_series": "The History of Rome",
+        "num_pages": 660,
+        "isbn": "1241448728",
+        "authors": [
+          "Livy"
+        ],
+        "description": "Title: The History of Rome by Titus Livius. Translated from the original, with notes and illustrations, by G. Baker.Publisher: British Library, Historical Print EditionsThe British Library is the national library of the United Kingdom. It is one of the world's largest research libraries holding over 150 million items in all known languages and formats: books, journals, newspapers, sound recordings, patents, maps, stamps, prints and much more. Its collections include around 14 million books, along with subst...",
+        "link": "https://www.goodreads.com/book/show/6075126-the-history-of-rome",
+        "wikipedia_match": {
+          "title": "Livy",
+          "page_id": 18049,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1st-century BC births",
+            "17 deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Golden Age Latin writers",
+            "Writers from Padua",
+            "Latin historians",
+            "1st-century BC historians",
+            "1st-century historians",
+            "1st-century BC Romans",
+            "1st-century Romans",
+            "Livii",
+            "Ancient Romans from Padua"
+          ],
+          "birth_year": -59,
+          "death_year": 17
+        },
+        "original_year": -27,
+        "author_meta": {
+          "birth_year": -59,
+          "death_year": 17,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Livy",
+        "page_id": 18049,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1st-century BC births",
+          "17 deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Golden Age Latin writers",
+          "Writers from Padua",
+          "Latin historians",
+          "1st-century BC historians",
+          "1st-century historians",
+          "1st-century BC Romans",
+          "1st-century Romans",
+          "Livii",
+          "Ancient Romans from Padua"
+        ],
+        "birth_year": -59,
+        "death_year": 17
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "6075126",
+        "target_author_ids": [
+          "14577687"
+        ],
+        "target_person": {
+          "title": "Livy",
+          "page_id": 18049,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1st-century BC births",
+            "17 deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Golden Age Latin writers",
+            "Writers from Padua",
+            "Latin historians",
+            "1st-century BC historians",
+            "1st-century historians",
+            "1st-century BC Romans",
+            "1st-century Romans",
+            "Livii",
+            "Ancient Romans from Padua"
+          ],
+          "birth_year": -59,
+          "death_year": 17
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Valerius Corvinus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "To this we have the testimony of Valerius Corvinus, himself made consul in his twenty-fourth year, who, in addressing his soldiers, said of the consulship that it was “the reward not of birth but of desert.”",
+          "When Valerius Corvinus was sent by the Romans with their armies against the Samnites, these being new adversaries with whom up to that time they had not measured their strength, Titus Livius tells us that before giving battle he made his men make trial of the enemy in several unimportant skirmishes"
+        ],
+        "commentaries": [
+          "The author cites Valerius Corvinus as a historical example of a young consul, quoting his speech to soldiers.",
+          "The author cites Valerius Corvinus as an example of a prudent captain who familiarized his troops with a new enemy through skirmishes."
+        ],
+        "canonical_author": "Valerius Corvinus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Valerius Corvinus",
+        "birth_year": -370,
+        "death_year": -270
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Valerius Corvinus",
+          "birth_year": -370,
+          "death_year": -270
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Titus Livius",
+        "note": null,
+        "count": 38,
+        "contexts": [
+          "And because the things done by Rome, and which Titus Livius has celebrated, were effected at home or abroad by public or by private wisdom, I shall begin by treating, and noting the consequences of those things done at home in accordance with the public voice, which seem most to merit attention; and to this object the whole of this first Book or first Part of my Discourses, shall be directed.",
+          "And although many such are related by Titus Livius, I content myself with mentioning the following only:",
+          "In speaking of which colony Titus Livius makes the notable remark, that hardly any one in Rome could be got to take part in it, so much readier were the commons to indulge in covetous schemes at home, than to realize them by leaving it.",
+          "“Not,” says Titus Livius, “that they were at a loss what to answer, but because they had none to answer for them;”",
+          "And since the causes which brought this about have been most judiciously set forth by Titus Livius, it seems to me much to the purpose to cite his own words when he says, that “whenever either the commons or the nobles were humble, the others grew haughty; so that if the commons kept within due bounds, the young nobles began to inflict injuries upon them, against which the tribunes, who were themselves made the objects of outrage, were little able to give redress; while the nobles on their part, although they could not close their eyes to the ill behaviour of their young men, were yet well pleased that if excesses were to be committed, they should be committed by their own faction, and not by the commons.",
+          "And Titus Livius observes that, “although bold enough collectively, each separately, fearing to be punished, made his submission.”",
+          "That “nothing is more fickle and inconstant than the multitude” is affirmed not by Titus Livius only, but by all other historians",
+          "In relating which circumstance our author observes “In a short time the people, having no longer cause to fear him, began to deplore his death”",
+          "And elsewhere, when speaking of what took place in Syracuse after the murder of Hieronymus, grandson of Hiero, he says, “It is the nature of the multitude to be an abject slave, or a domineering master.”",
+          "It would seem, too, that Titus Livius was of the same mind, since he very seldom puts a speech into the mouth of any Roman in which he discourses of valour, wherein he does not also make mention of Fortune.",
+          "And Titus Livius tells us that on the capture of Veii, the Romans sent thither a colony, allotting to each colonist three jugera and seven unciae of land, which, according to our measurement would be something under two acres.",
+          "But, indeed, there can be no better witness to the truth of my contention than Titus Livius himself. For in that passage of his history wherein he discusses whether if Alexander the Great had invaded Italy, he would have succeeded in vanquishing the Romans, three things are noted by him as essential to success in war; to wit, many and good soldiers, prudent captains, and favourable fortune; and after examining whether the Romans or Alexander would have had the advantage in each of these three particulars, he arrives at his conclusion without any mention of money.",
+          "Still when I find Titus Livius supplying a complete example of what we have to look for from auxiliaries, by whom I mean troops sent to our assistance by some other prince or ruler, paid by him and under officers by him appointed, it is not fit that I should pass it by in silence.",
+          "touching which request and in connection with which new method of governing, Titus Livius observes, “that not the arms only but also the laws of Rome now began to exert an influence;”",
+          "Having here a notable opportunity to show how Heaven influences men’s actions, Titus Livius turns it to account, and treats the subject at large and in pregnant words, where he says, that since it was Heaven’s will, for ends of its own, that the Romans should feel its power, it first of all caused these Fabii, who were sent as envoys to the Gauls, to act amiss, and then by their misconduct stirred up the Gauls to make war on Rome; and, lastly, so ordered matters that nothing worthy of their name was done by the Romans to withstand their attack.",
+          "Wherefore, Titus Livius, after setting forth all these disorders, concludes with the words, “So far does Fortune darken men’s minds when she would not have her ascendency gainsaid.”",
+          "I am able to illustrate it by a memorable instance which Titus Livius, though with another purpose, relates in his history.",
+          "In reading this History of Titus Livius with a view to profit by it, I think that all the methods of conduct followed by the Roman people and senate merit attention.",
+          "And what is related by Titus Livius as having happened in the conspiracy against Hieronymus, tyrant of Syracuse, is most extraordinary, namely, that on the capture of one of the conspirators, named Theodorus, he, with great fortitude, withheld the names of all his accomplices, and accused friends of the tyrant; while his companions, on their part, trusted so completely in his courage, that not one of them quitted Syracuse or showed any sign of fear.",
+          "That men are thus confounded, and thrown off their balance, could not be better shown than in the words of Titus Livius, where he describes the behaviour of Alasamenes the Etolian, at the time when he resolved on the death of Nabis the Spartan, of whom I have spoken before.",
+          "Here, then, necessity is spoken of by Titus Livius as _the last and mightiest weapon_.",
+          "From this incident, says Titus Livius, we may learn that the spread of the Roman power was due more to the valour of her captains than of her soldiers.",
+          "And the case could not be put in clearer words than by Titus Livius, where he says, “_The three tribunes with consular authority gave proof how hurtful it is in war to have many leaders; for each forming a different opinion, and each abiding by his own, they threw opportunities in the way of their enemies._”",
+          "Further to bear me out I shall again borrow the words of Titus Livius, who, in relating how when Quintius and Agrippa his colleague were sent by the Romans against the Equians, Agrippa contrived that the conduct of the war should rest with Quintius, observes, “_Most wholesome is it that in affairs of great moment, supreme authority be vested in one man._”",
+          "Of Manlius also, Titus Livius speaks in like honourable terms, pointing out that his severity in putting his son to death brought the Roman army to that pitch of discipline which enabled it to prevail against the Latins",
+          "so that Titus Livius, in speaking of him, says, \"His virtues were at once hated and admired by his soldiers.\"",
+          "The story is nobly told by Titus Livius where he says: \"This is worth listening to by those who contemn all things human as compared with riches, and think that glory and excellence can have no place unless accompanied by lavish wealth.\"",
+          "The truth of what I say is confirmed by Titus Livius where he relates how the Roman envoys, who were conveying the spoils of the Veientines as an offering to Apollo, were seized and brought on shore by the corsairs of the Lipari islands in Sicily; when Timasitheus, the prince of these islands, on learning the nature of the offering, its destination, and by whom sent, though himself of Lipari, behaved as a Roman might, showing his people what sacrilege it would be to intercept such a gift, and speaking to such purpose that by general consent the envoys were suffered to proceed upon their voyage, taking all their possessions with them.",
+          "“nor,” says Titus Livius, “did they account anything as taken from their own dignity which was added to his.”",
+          "Wisely, therefore, does Titus Livius use concerning him the words which I have cited.",
+          "Among other high sayings which our historian ascribes to Camillus, as showing of what stuff a truly great man should be made, he puts in his mouth the words, “My courage came not with my dictatorship nor went with my exile;”",
+          "With regard to which occurrence Titus Livius observes, “_Even without a leader the steadfast valour of the soldiers was maintained._”",
+          "the whole family of the Claudii moved by the desires and stirred by the passions which Titus Livius notes in many of them",
+          "I have thought fit to note down with respect to all those books of Titus Livius which have escaped the malignity of Time, whatever seems to me essential to a right understanding of ancient and modern affairs",
+          "This might be shown by many examples, but by none so clearly as by that of Coriolanus related by Livius, where he tells us, that at a time when the Roman nobles were angry with the plebeians (thinking that the appointment of tribunes for their protection had made them too powerful), it happened that Rome was visited by a grievous famine, to meet which the senate sent to Sicily for corn.",
+          "I shall cite the exact words which Livius puts into the mouth of Camillus",
+          "And here the text of Livius suggests two points for our attention",
+          "“Such,” says Livius, “was the fate of a man worthy our admiration had he not been born in a free State.”"
+        ],
+        "commentaries": [
+          "The author references Titus Livius as the historian who celebrated the deeds of Rome, and uses his work as a basis for his own Discourses.",
+          "The author references Livy as the source of historical examples of Roman use of religion.",
+          "The author cites Titus Livius's remark on the reluctance of Roman commons to join a colony.",
+          "The author quotes Titus Livius to illustrate the helplessness of a multitude without a leader.",
+          "The author cites Titus Livius to explain the cycle of ambition and conflict between the commons and nobles in Rome.",
+          "The author cites Titus Livius as an authority on the behavior of the multitude, noting his observation that individuals submit when faced with punishment.",
+          "The author references Titus Livius as one of many historians who claim the multitude is fickle and inconstant.",
+          "The author quotes Titus Livius on the people's regret after condemning Manlius Capitolinus to death.",
+          "The author cites Titus Livius's description of the multitude's nature as either abject slaves or domineering masters.",
+          "The author cites Titus Livius (Livy) as sharing the view that the Romans attributed their success to fortune, based on Livy's narrative style.",
+          "The author cites Titus Livius as a source for the specific amount of land allotted to Roman colonists at Veii.",
+          "The author invokes Titus Livius as a witness to support his argument that good soldiers, not money, are the sinews of war.",
+          "The author cites Titus Livius as providing a historical example of the dangers of auxiliary troops.",
+          "The author quotes Titus Livius to illustrate how Roman governance expanded its influence.",
+          "The author cites Titus Livius as a historian who explains how Heaven influenced Roman actions during the Gallic invasion.",
+          "The author quotes Titus Livius’s conclusion about Fortune’s power over human minds.",
+          "The author cites Titus Livius as the source of a historical example used to illustrate the danger of trusting exiles.",
+          "The author mentions reading the history of Titus Livius to profit from it, noting the methods of conduct of the Roman people and senate.",
+          "The author cites Titus Livius as a historical source for an anecdote about a conspiracy in Syracuse.",
+          "The author cites Titus Livius as a source for an example of confusion during a conspiracy.",
+          "The author quotes Titus Livius as the source of the phrase 'the last and mightiest weapon' in reference to necessity.",
+          "The author cites Titus Livius's interpretation of Coriolanus's actions to support a point about military leadership.",
+          "The author quotes Titus Livius to support the argument that having multiple leaders in an army is harmful.",
+          "The author quotes Titus Livius to support his argument that supreme authority should be vested in one man in important affairs.",
+          "The author cites Livy's historical account of Manlius Torquatus, emphasizing his severe discipline and its effect on the Roman army.",
+          "The author cites Titus Livius's account of Camillus's virtues and the soldiers' mixed feelings.",
+          "The author quotes Titus Livius's narrative of Cincinnatus's poverty and appointment as dictator.",
+          "The author cites Titus Livius as a historical source to confirm the argument that a people's faults are due to their prince, using the example of Timasitheus.",
+          "The author references Titus Livius to illustrate how Camillus's colleagues willingly deferred to his authority for the public good.",
+          "The author praises Titus Livius for his wise depiction of Camillus's ability to extinguish envy through his character.",
+          "The author cites Titus Livius to highlight Camillus's steadfastness through fortune's changes.",
+          "The author quotes Titus Livius to support his argument about the steadfast valour of Roman soldiers.",
+          "The author references the historian Titus Livius as a source for observations about the character of the Claudii family.",
+          "The author cites Livius as the primary historical source for his Discourses, using Livy's books to analyze ancient and modern politics.",
+          "The author references Livius as the historian who related the story of Coriolanus to illustrate the need for legal outlets for popular discontent.",
+          "The author cites Livius as the source for the speech of Camillus and the subsequent senatorial debate.",
+          "The author references Livius's text to draw lessons from the treatment of the men of Privernum.",
+          "The author quotes Livius to illustrate the fate of Manlius Capitolinus and to emphasize the importance of context in a free state."
+        ],
+        "canonical_author": "Titus Livius"
+      },
+      "goodreads_match": {
+        "title": "Ab Urbe Condita Libri",
+        "authors": [
+          "Titus Livius"
+        ],
+        "original_year": -27,
+        "birth_year": -59,
+        "death_year": 17,
+        "nationality": "Roman",
+        "description": "A monumental history of Rome from its founding, covering events up to 9 BC, of which only 35 books survive.",
+        "book_id": "web_881b913a",
+        "author_meta": {
+          "birth_year": -59,
+          "death_year": 17,
+          "nationality": "Roman"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Titus Livius",
+        "birth_year": -59,
+        "death_year": 17
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_881b913a",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Titus Livius",
+          "birth_year": -59,
+          "death_year": 17
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hanno the Carthaginian",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Which facts being made known to Hanno the Carthaginian, he, as I have already related, warned the Carthaginian senate not to lay too much stress upon their victory."
+        ],
+        "commentaries": [
+          "The author mentions Hanno as a historical figure who gave advice based on Roman resilience."
+        ],
+        "canonical_author": "Hanno The Carthaginian"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hanno the Elder",
+        "page_id": 4105402,
+        "infoboxes": [],
+        "categories": [
+          "204 BC deaths",
+          "Carthaginian commanders of the Second Punic War",
+          "Year of birth unknown",
+          "3rd-century BC Punic people"
+        ],
+        "birth_year": -500,
+        "death_year": -204
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Hanno the Elder",
+          "page_id": 4105402,
+          "infoboxes": [],
+          "categories": [
+            "204 BC deaths",
+            "Carthaginian commanders of the Second Punic War",
+            "Year of birth unknown",
+            "3rd-century BC Punic people"
+          ],
+          "birth_year": -500,
+          "death_year": -204
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cæsar",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "For when Cæsar went to Spain against Afranius and Petreius, who were there in command of a strong army, he made little account of them, saying, “_that he went to fight an army without a captain_,” indicating thereby the weakness of these generals. And, conversely, when he went to encounter Pompeius in Thessaly, he said, “_I go against a captain without an army_.”"
+        ],
+        "commentaries": [
+          "The author cites Cæsar's sayings to illustrate the relative importance of a good army versus a good captain."
+        ],
+        "canonical_author": "Cæsar"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cæsar",
+        "birth_year": -100,
+        "death_year": -44
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cæsar",
+          "birth_year": -100,
+          "death_year": -44
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "David",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "David, for example, not only surpassed in learning and judgment, but was so valiant in arms that, after conquering and subduing all his neighbours, he left to his young son Solomon a tranquil State, which the latter, though unskilled in the arts of war, could maintain by the arts of peace, and thus happily enjoy the inheritance of his father’s valour."
+        ],
+        "commentaries": [
+          "The author cites David as an example of a valiant prince who, through his military conquests, left a secure kingdom to his son Solomon, demonstrating how a strong ruler's achievements can sustain a weaker successor."
+        ],
+        "canonical_author": "David"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "David",
+        "birth_year": -1040,
+        "death_year": -970
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "David",
+          "birth_year": -1040,
+          "death_year": -970
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Ab Urbe Condita",
+        "author": "Titus Livius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "To which Titus Livius bears witness when he says, 'Most mischievous at this time to our military discipline was Capua; for ministering to all delights, she turned away the corrupted minds of our soldiers from the remembrance of their country.'"
+        ],
+        "commentaries": [
+          "The author quotes Titus Livius (Livy) as a historical source to illustrate the corrupting influence of Capua on Roman military discipline."
+        ]
+      },
+      "goodreads_match": {
+        "text_reviews_count": 1,
+        "author_ids": [
+          "14577687",
+          "2773953",
+          "2773954",
+          "13849010"
+        ],
+        "work_id": "45165067",
+        "ratings_count": 2,
+        "average_rating": 4.0,
+        "book_id": "25410099",
+        "title": "The History of Rome: The Complete Work",
+        "title_without_series": "The History of Rome: The Complete Work",
+        "authors": [
+          "Livy",
+          "D. Spillan",
+          "Cyrus Edmonds",
+          "William A. M'Devitte"
+        ],
+        "link": "https://www.goodreads.com/book/show/25410099-the-history-of-rome",
+        "wikipedia_match": {
+          "title": "Livy",
+          "page_id": 18049,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1st-century BC births",
+            "17 deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Golden Age Latin writers",
+            "Writers from Padua",
+            "Latin historians",
+            "1st-century BC historians",
+            "1st-century historians",
+            "1st-century BC Romans",
+            "1st-century Romans",
+            "Livii",
+            "Ancient Romans from Padua"
+          ],
+          "birth_year": -59,
+          "death_year": 17
+        },
+        "original_year": -27,
+        "author_meta": {
+          "birth_year": -59,
+          "death_year": 17,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Livy",
+        "page_id": 18049,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1st-century BC births",
+          "17 deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Golden Age Latin writers",
+          "Writers from Padua",
+          "Latin historians",
+          "1st-century BC historians",
+          "1st-century historians",
+          "1st-century BC Romans",
+          "1st-century Romans",
+          "Livii",
+          "Ancient Romans from Padua"
+        ],
+        "birth_year": -59,
+        "death_year": 17
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "25410099",
+        "target_author_ids": [
+          "14577687",
+          "2773953",
+          "2773954",
+          "13849010"
+        ],
+        "target_person": {
+          "title": "Livy",
+          "page_id": 18049,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1st-century BC births",
+            "17 deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Golden Age Latin writers",
+            "Writers from Padua",
+            "Latin historians",
+            "1st-century BC historians",
+            "1st-century historians",
+            "1st-century BC Romans",
+            "1st-century Romans",
+            "Livii",
+            "Ancient Romans from Padua"
+          ],
+          "birth_year": -59,
+          "death_year": 17
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Moses",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Settlers of this sort either establish themselves in cities which they find ready to their hand in the countries of which they take possession, as did Moses",
+          "Any one who reads with intelligence the lessons of Holy Writ, will remember how Moses, to give effect to his laws and ordinances, was constrained to put to death an endless number of those who out of mere envy withstood his designs."
+        ],
+        "commentaries": [
+          "The author cites Moses as a historical founder who led his people to a new city.",
+          "The author references Moses from Holy Writ as an example of a leader who had to eliminate envious rivals to achieve his goals."
+        ],
+        "canonical_author": "Moses"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Moses",
+        "birth_year": -1391,
+        "death_year": -1271
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Moses",
+          "birth_year": -1391,
+          "death_year": -1271
+        }
+      }
+    }
+  ]
+}

@@ -7,6 +7,15 @@
  *   - preserve the exact dedup / link-aggregation behavior.
  */
 
+// Known duplicate-split / variant author names collapsed into a canonical name
+// (datasets/data_overrides.json:name_aliases). Registered by build.mjs before
+// buildGraph runs; applied in normalizeAuthor so both author nodes AND link
+// endpoints merge consistently.
+let _nameAliases = null;
+export function setNameAliases(aliases) {
+  _nameAliases = aliases || null;
+}
+
 export function normalizeAuthor(name) {
   if (!name) return "Unknown";
   let n = name.toString().trim();
@@ -14,7 +23,9 @@ export function normalizeAuthor(name) {
     const parts = n.split(",", 2);
     if (parts.length === 2) n = `${parts[1].trim()} ${parts[0].trim()}`;
   }
-  return n.replace(/\s+/g, " ");
+  n = n.replace(/\s+/g, " ");
+  if (_nameAliases && _nameAliases[n]) return _nameAliases[n];
+  return n;
 }
 
 function normalizeTitle(title) {
@@ -264,4 +275,58 @@ function scoreBook(b) {
   if (b.link) s += 1;
   if (b.description) s += 1;
   return s;
+}
+
+/**
+ * Apply durable manual corrections (datasets/data_overrides.json) to the built
+ * author list, in-place. Fixes author birth/death years (which drive Y-axis
+ * placement) and per-book titles/years. Name merges are handled upstream by
+ * setNameAliases(); this only patches dates/titles on already-merged nodes.
+ *
+ * Shape:
+ *   { author_dates: { "<name>": {birth_year, death_year} },
+ *     books:        { "<name>": [ {match, year?, title?} ] } }
+ *
+ * @returns {{datesApplied:number, booksApplied:number, missed:string[]}}
+ */
+export function applyDataOverrides(authors, overrides) {
+  const stats = { datesApplied: 0, booksApplied: 0, missed: [] };
+  if (!overrides) return stats;
+  const byName = new Map(authors.map((a) => [a.name, a]));
+  const ad = overrides.author_dates || {};
+  for (const [name, dates] of Object.entries(ad)) {
+    const a = byName.get(name);
+    if (!a) {
+      stats.missed.push(`dates:${name}`);
+      continue;
+    }
+    if ("birth_year" in dates) a.birth_year = dates.birth_year;
+    if ("death_year" in dates) a.death_year = dates.death_year;
+    // year drives Y placement; prefer corrected birth_year when present.
+    if (a.birth_year != null) a.year = a.birth_year;
+    stats.datesApplied++;
+  }
+  const bk = overrides.books || {};
+  for (const [name, edits] of Object.entries(bk)) {
+    const a = byName.get(name);
+    if (!a) {
+      stats.missed.push(`books:${name}`);
+      continue;
+    }
+    for (const edit of edits) {
+      // Apply to every book with this title (handles duplicate-edition rows
+      // that escaped work_id dedup, e.g. two "Adelphoe" entries).
+      const targets = a.books.filter((b) => b.title === edit.match);
+      if (!targets.length) {
+        stats.missed.push(`book:${name}:${edit.match}`);
+        continue;
+      }
+      for (const target of targets) {
+        if ("year" in edit) target.year = edit.year;
+        if ("title" in edit) target.title = edit.title;
+      }
+      stats.booksApplied++;
+    }
+  }
+  return stats;
 }

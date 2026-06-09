@@ -1,0 +1,4604 @@
+{
+  "source": {
+    "title": "The Annals",
+    "authors": [
+      "Tacitus"
+    ],
+    "goodreads_id": "pg7959",
+    "calibre_id": null,
+    "publication_year": 1986,
+    "isbn13": "9780935005882",
+    "book_id": "1366151",
+    "ratings_count": 5,
+    "title_without_series": "The Annals of Tacitus",
+    "work_id": "1296116",
+    "average_rating": 4.0,
+    "publication_month": 7,
+    "publication_day": 1,
+    "isbn": "0935005889",
+    "publisher": "Lincoln-Rembrandt Pub.",
+    "author_ids": [
+      "625735"
+    ],
+    "text_reviews_count": 1,
+    "format": "Hardcover",
+    "link": "https://www.goodreads.com/book/show/1366151.The_Annals_of_Tacitus",
+    "author_metadata": {
+      "birth_year": 56,
+      "death_year": 120,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Catullus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the poems of Bibaculus and those of Catullus, stuffed with virulent satires against the Caesars, are still read."
+        ],
+        "commentaries": [
+          "The author mentions the poems of Catullus as containing satires against the Caesars that are still read."
+        ],
+        "canonical_author": "Catullus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Catullus",
+        "page_id": 5768,
+        "infoboxes": [
+          "writer <!-- For more information see [[:Template:Infobox Writer/doc]]. -->"
+        ],
+        "categories": [
+          "Catullus| ",
+          "1st-century BC Romans",
+          "1st-century BC Roman poets",
+          "54 BC deaths",
+          "80s BC births",
+          "Elegiac poets",
+          "Golden Age Latin writers",
+          "Iambic poets",
+          "Valerii",
+          "Writers from Verona"
+        ],
+        "birth_year": -84,
+        "death_year": -54
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "51220"
+        ],
+        "target_person": {
+          "title": "Catullus",
+          "page_id": 5768,
+          "infoboxes": [
+            "writer <!-- For more information see [[:Template:Infobox Writer/doc]]. -->"
+          ],
+          "categories": [
+            "Catullus| ",
+            "1st-century BC Romans",
+            "1st-century BC Roman poets",
+            "54 BC deaths",
+            "80s BC births",
+            "Elegiac poets",
+            "Golden Age Latin writers",
+            "Iambic poets",
+            "Valerii",
+            "Writers from Verona"
+          ],
+          "birth_year": -84,
+          "death_year": -54
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cicero?",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This speech was heard by few with approbation, and many proclaimed their dissent; \"for, that neither was that the point in debate, nor was Caecina considerable enough to censure so weighty an affair.\" He was presently answered by Valerius Messalinus, who was the son of Messala, and inherited a sparkling of his father's eloquence."
+        ],
+        "commentaries": [
+          "Messalinus is noted as the son of Messala, a famous orator, and inheriting his eloquence. The father Messala is an author/source of rhetorical style."
+        ],
+        "canonical_author": "Cicero?"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cicero",
+        "page_id": 6046,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Cicero| ",
+          "106 BC births",
+          "43 BC deaths",
+          "2nd-century BC Romans",
+          "1st-century BC executions",
+          "1st-century BC philosophers",
+          "1st-century BC Roman augurs",
+          "1st-century BC Roman consuls",
+          "1st-century BC writers in Latin",
+          "Academic skeptics",
+          "Ancient landowners",
+          "Ancient Roman equites",
+          "Ancient Roman exiles",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Ancient Roman scholars of religion",
+          "Classical humanists",
+          "Deaths by edged and bladed weapons",
+          "Executed ancient Roman people",
+          "Executed philosophers",
+          "Executed writers",
+          "Golden Age Latin writers",
+          "Letter writers in Latin",
+          "Optimates",
+          "People executed by the Roman Republic",
+          "People from Arpino",
+          "Plebeian aediles",
+          "Philosophers of Roman Italy",
+          "Recipients of ancient Roman pardons",
+          "Roman governors of Cilicia"
+        ],
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cicero",
+          "page_id": 6046,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Cicero| ",
+            "106 BC births",
+            "43 BC deaths",
+            "2nd-century BC Romans",
+            "1st-century BC executions",
+            "1st-century BC philosophers",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Academic skeptics",
+            "Ancient landowners",
+            "Ancient Roman equites",
+            "Ancient Roman exiles",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Ancient Roman scholars of religion",
+            "Classical humanists",
+            "Deaths by edged and bladed weapons",
+            "Executed ancient Roman people",
+            "Executed philosophers",
+            "Executed writers",
+            "Golden Age Latin writers",
+            "Letter writers in Latin",
+            "Optimates",
+            "People executed by the Roman Republic",
+            "People from Arpino",
+            "Plebeian aediles",
+            "Philosophers of Roman Italy",
+            "Recipients of ancient Roman pardons",
+            "Roman governors of Cilicia"
+          ],
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Matthew Arnold",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Mr. Matthew Arnold thus describes him: _Cruel, but composed and bland, Dumb, inscrutable and grand; So Tiberius might have sat, Had Tiberius been a cat._",
+          "'Sanity,' says Mr. Matthew Arnold, in conclusion, 'that is the great virtue of the ancient literature; the want of that is the great defect of the modern, in spite of all its variety and power.'"
+        ],
+        "commentaries": [
+          "The author quotes Matthew Arnold's poetic description of Tiberius, but no specific book title is given.",
+          "The author quotes Matthew Arnold's view on the sanity of ancient literature, agreeing with the sentiment."
+        ],
+        "canonical_author": "Matthew Arnold"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Matthew Arnold",
+        "page_id": 114057,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1822 births",
+          "1888 deaths",
+          "19th-century English journalists",
+          "19th-century English educators",
+          "19th-century English poets",
+          "Alumni of Balliol College, Oxford",
+          "Burials in Surrey",
+          "English Anglicans",
+          "19th-century English essayists",
+          "English literary critics",
+          "English male journalists",
+          "English male poets",
+          "English people of Cornish descent",
+          "Fellows of Oriel College, Oxford",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Huxley family",
+          "Literary critics of English",
+          "English male essayists",
+          "Oxford Professors of Poetry",
+          "People educated at Rugby School",
+          "People educated at Winchester College",
+          "People from Laleham",
+          "Victorian poets",
+          "English male non-fiction writers",
+          "British literary theorists"
+        ],
+        "birth_year": 1822,
+        "death_year": 1888
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "53451"
+        ],
+        "target_person": {
+          "title": "Matthew Arnold",
+          "page_id": 114057,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1822 births",
+            "1888 deaths",
+            "19th-century English journalists",
+            "19th-century English educators",
+            "19th-century English poets",
+            "Alumni of Balliol College, Oxford",
+            "Burials in Surrey",
+            "English Anglicans",
+            "19th-century English essayists",
+            "English literary critics",
+            "English male journalists",
+            "English male poets",
+            "English people of Cornish descent",
+            "Fellows of Oriel College, Oxford",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Huxley family",
+            "Literary critics of English",
+            "English male essayists",
+            "Oxford Professors of Poetry",
+            "People educated at Rugby School",
+            "People educated at Winchester College",
+            "People from Laleham",
+            "Victorian poets",
+            "English male non-fiction writers",
+            "British literary theorists"
+          ],
+          "birth_year": 1822,
+          "death_year": 1888
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Michel de Montaigne",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Montaigne would agree with me, for he says, \"I do not know any author, who, in a work of history, has taken so broad a view of human events, or given a more just analysis of particular characters.\""
+        ],
+        "commentaries": [
+          "The author cites Montaigne's praise of Tacitus."
+        ],
+        "canonical_author": "Michel De Montaigne"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Michel de Montaigne",
+        "page_id": 44307,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1533 births",
+          "1592 deaths",
+          "People from Guyenne",
+          "16th-century French historians",
+          "16th-century French male writers",
+          "16th-century French philosophers",
+          "16th-century travel writers",
+          "Christian humanists",
+          "College of Guienne alumni",
+          "Deaths from peritonsillar abscess",
+          "French autobiographers",
+          "French book and manuscript collectors",
+          "French male essayists",
+          "French male writers",
+          "French nobility",
+          "French people of Spanish-Jewish descent",
+          "French Renaissance humanists",
+          "French Roman Catholic writers",
+          "French sceptics",
+          "French travel writers",
+          "Mayors of Bordeaux",
+          "People from Dordogne",
+          "French philosophers of education",
+          "French philosophers of science",
+          "Prisoners of the Bastille",
+          "Skeptic philosophers",
+          "Writers from Nouvelle-Aquitaine",
+          "16th-century essayists",
+          "16th-century French writers"
+        ],
+        "birth_year": 1533,
+        "death_year": 1592
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "17241"
+        ],
+        "target_person": {
+          "title": "Michel de Montaigne",
+          "page_id": 44307,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1533 births",
+            "1592 deaths",
+            "People from Guyenne",
+            "16th-century French historians",
+            "16th-century French male writers",
+            "16th-century French philosophers",
+            "16th-century travel writers",
+            "Christian humanists",
+            "College of Guienne alumni",
+            "Deaths from peritonsillar abscess",
+            "French autobiographers",
+            "French book and manuscript collectors",
+            "French male essayists",
+            "French male writers",
+            "French nobility",
+            "French people of Spanish-Jewish descent",
+            "French Renaissance humanists",
+            "French Roman Catholic writers",
+            "French sceptics",
+            "French travel writers",
+            "Mayors of Bordeaux",
+            "People from Dordogne",
+            "French philosophers of education",
+            "French philosophers of science",
+            "Prisoners of the Bastille",
+            "Skeptic philosophers",
+            "Writers from Nouvelle-Aquitaine",
+            "16th-century essayists",
+            "16th-century French writers"
+          ],
+          "birth_year": 1533,
+          "death_year": 1592
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Robert Louis Stevenson",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "it may be, that he commanded the secrets of which Mr. Stevenson has dreamed!"
+        ],
+        "commentaries": [
+          "The author alludes to Stevenson's fictional exploration of a double nature, comparing it to Tiberius's possible command of such secrets."
+        ],
+        "canonical_author": "Robert Louis Stevenson"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Robert Louis Stevenson",
+        "page_id": 26444,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Robert Louis Stevenson| ",
+          "1850 births",
+          "1894 deaths",
+          "19th-century pseudonymous writers",
+          "19th-century Scottish male writers",
+          "19th-century Scottish novelists",
+          "19th-century Scottish poets",
+          "19th-century Scottish short story writers",
+          "Alumni of the University of Edinburgh",
+          "British children's poets",
+          "British emigrants to Samoa",
+          "British ghost story writers",
+          "British non-fiction outdoors writers",
+          "British weird fiction writers",
+          "Clan Balfour",
+          "Scottish fabulists",
+          "Former atheists and agnostics",
+          "Former Presbyterians",
+          "Lallans poets",
+          "Maritime writers",
+          "Mythopoeic writers",
+          "People educated at Edinburgh Academy",
+          "Samoan people of Scottish descent",
+          "Samoan writers",
+          "Scottish children's writers",
+          "Scottish expatriates in the United States",
+          "Scottish historical novelists",
+          "Scottish horror writers",
+          "Scottish male songwriters",
+          "Scottish short story writers"
+        ],
+        "birth_year": 1850,
+        "death_year": 1894
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "854076"
+        ],
+        "target_person": {
+          "title": "Robert Louis Stevenson",
+          "page_id": 26444,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Robert Louis Stevenson| ",
+            "1850 births",
+            "1894 deaths",
+            "19th-century pseudonymous writers",
+            "19th-century Scottish male writers",
+            "19th-century Scottish novelists",
+            "19th-century Scottish poets",
+            "19th-century Scottish short story writers",
+            "Alumni of the University of Edinburgh",
+            "British children's poets",
+            "British emigrants to Samoa",
+            "British ghost story writers",
+            "British non-fiction outdoors writers",
+            "British weird fiction writers",
+            "Clan Balfour",
+            "Scottish fabulists",
+            "Former atheists and agnostics",
+            "Former Presbyterians",
+            "Lallans poets",
+            "Maritime writers",
+            "Mythopoeic writers",
+            "People educated at Edinburgh Academy",
+            "Samoan people of Scottish descent",
+            "Samoan writers",
+            "Scottish children's writers",
+            "Scottish expatriates in the United States",
+            "Scottish historical novelists",
+            "Scottish horror writers",
+            "Scottish male songwriters",
+            "Scottish short story writers"
+          ],
+          "birth_year": 1850,
+          "death_year": 1894
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Joseph Addison",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I do not claim for him the style of Addison, nor the accomplished negligence of Goldsmith;"
+        ],
+        "commentaries": [
+          "The author mentions Addison as a stylistic benchmark."
+        ],
+        "canonical_author": "Joseph Addison"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Joseph Addison",
+        "page_id": 163645,
+        "infoboxes": [
+          "person",
+          "writer ",
+          "officeholder "
+        ],
+        "categories": [
+          "1672 births",
+          "1719 deaths",
+          "Alumni of the Queen's College, Oxford",
+          "British magazine publishers (people)",
+          "British MPs 1708–1710",
+          "British MPs 1710–1713",
+          "British MPs 1713–1715",
+          "British MPs 1715–1722",
+          "English Anglicans",
+          "English essayists",
+          "Fellows of Magdalen College, Oxford",
+          "People educated at King Edward VI School, Lichfield",
+          "Irish MPs 1703–1713",
+          "English male essayists",
+          "British magazine founders",
+          "English male dramatists and playwrights",
+          "English male poets",
+          "Neoclassical writers",
+          "Members of the Parliament of Great Britain for Malmesbury",
+          "Members of the Privy Council of Great Britain",
+          "People educated at Charterhouse School",
+          "People from Lichfield",
+          "Writers from Staffordshire",
+          "Writers from Wiltshire",
+          "People from Fulham",
+          "Writers from the London Borough of Hammersmith and Fulham",
+          "English magazine editors",
+          "Members of the Parliament of Great Britain for Lostwithiel",
+          "Whig (British political party) MPs for English constituencies",
+          "Members of the Privy Council of Ireland"
+        ],
+        "birth_year": 1672,
+        "death_year": 1719
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "74092"
+        ],
+        "target_person": {
+          "title": "Joseph Addison",
+          "page_id": 163645,
+          "infoboxes": [
+            "person",
+            "writer ",
+            "officeholder "
+          ],
+          "categories": [
+            "1672 births",
+            "1719 deaths",
+            "Alumni of the Queen's College, Oxford",
+            "British magazine publishers (people)",
+            "British MPs 1708–1710",
+            "British MPs 1710–1713",
+            "British MPs 1713–1715",
+            "British MPs 1715–1722",
+            "English Anglicans",
+            "English essayists",
+            "Fellows of Magdalen College, Oxford",
+            "People educated at King Edward VI School, Lichfield",
+            "Irish MPs 1703–1713",
+            "English male essayists",
+            "British magazine founders",
+            "English male dramatists and playwrights",
+            "English male poets",
+            "Neoclassical writers",
+            "Members of the Parliament of Great Britain for Malmesbury",
+            "Members of the Privy Council of Great Britain",
+            "People educated at Charterhouse School",
+            "People from Lichfield",
+            "Writers from Staffordshire",
+            "Writers from Wiltshire",
+            "People from Fulham",
+            "Writers from the London Borough of Hammersmith and Fulham",
+            "English magazine editors",
+            "Members of the Parliament of Great Britain for Lostwithiel",
+            "Whig (British political party) MPs for English constituencies",
+            "Members of the Privy Council of Ireland"
+          ],
+          "birth_year": 1672,
+          "death_year": 1719
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Suetonius",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Tacitus gives one account; Suetonius, another.",
+          "This theme is enlarged by Suetonius, and evidently enjoyed: he represents Tiberius, as addicted to every established form of vice;"
+        ],
+        "commentaries": [
+          "The author contrasts the accounts of Tiberius's death given by Tacitus and Suetonius.",
+          "The author notes that Suetonius elaborates on Tiberius's vices with evident enjoyment."
+        ],
+        "canonical_author": "Suetonius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Suetonius",
+        "page_id": 37323,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "60s births",
+          "2nd-century deaths",
+          "Ancient Roman biographers",
+          "2nd-century historians",
+          "Latin historians",
+          "Silver Age Latin writers",
+          "2nd-century Romans",
+          "Ancient Roman equites",
+          "Suetonii",
+          "1st-century Romans",
+          "Ab epistulis"
+        ],
+        "birth_year": 69,
+        "death_year": 140
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "16319"
+        ],
+        "target_person": {
+          "title": "Suetonius",
+          "page_id": 37323,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "60s births",
+            "2nd-century deaths",
+            "Ancient Roman biographers",
+            "2nd-century historians",
+            "Latin historians",
+            "Silver Age Latin writers",
+            "2nd-century Romans",
+            "Ancient Roman equites",
+            "Suetonii",
+            "1st-century Romans",
+            "Ab epistulis"
+          ],
+          "birth_year": 69,
+          "death_year": 140
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Herodotus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "such as Herodotus describes, for clearing out a vanquished enemy."
+        ],
+        "commentaries": [
+          "The author cites Herodotus in a footnote to describe the military formation of a net or web used to surround a fleeing enemy."
+        ],
+        "canonical_author": "Herodotus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Herodotus",
+        "page_id": 13574,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Herodotus| ",
+          "480s BC births",
+          "420s BC deaths",
+          "5th-century BC Greek historians",
+          "Ancient Greek political refugees",
+          "Ancient Greeks in Egypt",
+          "Ancient Halicarnassians",
+          "Classical-era Greek historians",
+          "History of Asia",
+          "Historians from ancient Anatolia",
+          "Historiography of India",
+          "Ionic Greek writers",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Historians from the Achaemenid Empire",
+          "Historians of ancient Egypt",
+          "Foreign contacts of ancient Egypt"
+        ],
+        "birth_year": -484,
+        "death_year": -425
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "901"
+        ],
+        "target_person": {
+          "title": "Herodotus",
+          "page_id": 13574,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Herodotus| ",
+            "480s BC births",
+            "420s BC deaths",
+            "5th-century BC Greek historians",
+            "Ancient Greek political refugees",
+            "Ancient Greeks in Egypt",
+            "Ancient Halicarnassians",
+            "Classical-era Greek historians",
+            "History of Asia",
+            "Historians from ancient Anatolia",
+            "Historiography of India",
+            "Ionic Greek writers",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Historians from the Achaemenid Empire",
+            "Historians of ancient Egypt",
+            "Foreign contacts of ancient Egypt"
+          ],
+          "birth_year": -484,
+          "death_year": -425
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Julius Caesar",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "That the Gauls were in times past more puissant and formidable, is related by the Prince of authors, the deified Julius; [Footnote: Julius Caesar.]",
+          "Even the deified Julius Caesar, the first of all the Romans who entered Britain with an army, though by gaining a battle he frightened the natives, and became master of the coast; yet may be thought to have rather presented posterity with a view of the country, than to have conveyed down the possession."
+        ],
+        "commentaries": [
+          "The author cites Julius Caesar as a source for the historical power and strength of the Gauls.",
+          "Julius Caesar is cited as the first Roman to enter Britain with an army, noted for presenting a view of the country rather than securing possession."
+        ],
+        "canonical_author": "Julius Caesar"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Julius Caesar",
+        "page_id": 15924,
+        "infoboxes": [
+          "person",
+          "officeholder "
+        ],
+        "categories": [
+          "Julius Caesar| ",
+          "100 BC births",
+          "44 BC deaths",
+          "1st-century BC historians",
+          "1st-century BC Roman augurs",
+          "1st-century BC Roman consuls",
+          "1st-century BC writers in Latin",
+          "Ancient assassinated people",
+          "Ancient Roman dictators",
+          "Ancient Roman military writers",
+          "Ancient Roman triumphators",
+          "Ancient Roman writers",
+          "Assassinated ancient Roman politicians",
+          "Assassinated heads of state in Europe",
+          "Assassinated military personnel",
+          "Characters in Book VI of the Aeneid",
+          "Characters in the Divine Comedy",
+          "Cleopatra",
+          "Correspondents of Cicero",
+          "Curule aediles",
+          "Deaths by stabbing in ancient Rome",
+          "Deified ancient Roman men",
+          "First Triumvirate",
+          "Flamines Dialis",
+          "Golden Age Latin writers",
+          "Illeists",
+          "Julii Caesares|Gaius",
+          "Memoirists",
+          "People captured by pirates",
+          "Pontifices maximi of the Roman Republic"
+        ],
+        "birth_year": -100,
+        "death_year": -44
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "16535395"
+        ],
+        "target_person": {
+          "title": "Julius Caesar",
+          "page_id": 15924,
+          "infoboxes": [
+            "person",
+            "officeholder "
+          ],
+          "categories": [
+            "Julius Caesar| ",
+            "100 BC births",
+            "44 BC deaths",
+            "1st-century BC historians",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Ancient assassinated people",
+            "Ancient Roman dictators",
+            "Ancient Roman military writers",
+            "Ancient Roman triumphators",
+            "Ancient Roman writers",
+            "Assassinated ancient Roman politicians",
+            "Assassinated heads of state in Europe",
+            "Assassinated military personnel",
+            "Characters in Book VI of the Aeneid",
+            "Characters in the Divine Comedy",
+            "Cleopatra",
+            "Correspondents of Cicero",
+            "Curule aediles",
+            "Deaths by stabbing in ancient Rome",
+            "Deified ancient Roman men",
+            "First Triumvirate",
+            "Flamines Dialis",
+            "Golden Age Latin writers",
+            "Illeists",
+            "Julii Caesares|Gaius",
+            "Memoirists",
+            "People captured by pirates",
+            "Pontifices maximi of the Roman Republic"
+          ],
+          "birth_year": -100,
+          "death_year": -44
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Anthony à Wood",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Anthony à Wood writes in another strain, in the \"Athenae Oxonienis\": \"A rare Translation it is, and the Work of a very Great Master indeed, both in our Tongue and that Story.\""
+        ],
+        "commentaries": [
+          "The author quotes Anthony à Wood's praise of Savile's translation."
+        ],
+        "canonical_author": "Anthony À Wood"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cathy Wood",
+        "page_id": 9909150,
+        "infoboxes": [],
+        "categories": [
+          "Living people"
+        ],
+        "birth_year": 1632,
+        "death_year": 1695
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cathy Wood",
+          "page_id": 9909150,
+          "infoboxes": [],
+          "categories": [
+            "Living people"
+          ],
+          "birth_year": 1632,
+          "death_year": 1695
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "George Buchanan",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "It was from his commerce with the Ancients, as I always think, that George Buchanan derived his opinion, strange to modern ears, that 'a great commander must of necessity have all the talents of an author.'"
+        ],
+        "commentaries": [
+          "The author identifies George Buchanan as the source of an opinion about the talents of a commander, but no specific book title is given."
+        ],
+        "canonical_author": "George Buchanan"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "George Buchanan",
+        "page_id": 287870,
+        "infoboxes": [
+          "person "
+        ],
+        "categories": [
+          "1506 births",
+          "1582 deaths",
+          "16th-century writers in Latin",
+          "16th-century Scottish male writers",
+          "16th-century Scottish historians",
+          "Academics of the University of St Andrews",
+          "Alumni of the University of St Andrews",
+          "Burials at Greyfriars Kirkyard",
+          "Calvinist and Reformed poets",
+          "Celtic studies scholars",
+          "Members of the pre-1707 Parliament of Scotland",
+          "Moderators of the General Assembly of the Church of Scotland",
+          "Monarchomachs",
+          "People from Stirling (council area)",
+          "Neo-Latin poets",
+          "Scottish dramatists and playwrights",
+          "Scottish essayists",
+          "Scottish poets",
+          "Scottish Presbyterians",
+          "Scottish Renaissance humanists",
+          "Scottish soldiers",
+          "Scottish Christian theologians",
+          "Scottish translators",
+          "University of Paris alumni",
+          "Academic staff of the University of Paris",
+          "Historians of Scotland",
+          "Scottish expatriates in France",
+          "People of Stirling Castle",
+          "Latin-language Scottish writers"
+        ],
+        "birth_year": 1506,
+        "death_year": 1582
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "George Buchanan",
+          "page_id": 287870,
+          "infoboxes": [
+            "person "
+          ],
+          "categories": [
+            "1506 births",
+            "1582 deaths",
+            "16th-century writers in Latin",
+            "16th-century Scottish male writers",
+            "16th-century Scottish historians",
+            "Academics of the University of St Andrews",
+            "Alumni of the University of St Andrews",
+            "Burials at Greyfriars Kirkyard",
+            "Calvinist and Reformed poets",
+            "Celtic studies scholars",
+            "Members of the pre-1707 Parliament of Scotland",
+            "Moderators of the General Assembly of the Church of Scotland",
+            "Monarchomachs",
+            "People from Stirling (council area)",
+            "Neo-Latin poets",
+            "Scottish dramatists and playwrights",
+            "Scottish essayists",
+            "Scottish poets",
+            "Scottish Presbyterians",
+            "Scottish Renaissance humanists",
+            "Scottish soldiers",
+            "Scottish Christian theologians",
+            "Scottish translators",
+            "University of Paris alumni",
+            "Academic staff of the University of Paris",
+            "Historians of Scotland",
+            "Scottish expatriates in France",
+            "People of Stirling Castle",
+            "Latin-language Scottish writers"
+          ],
+          "birth_year": 1506,
+          "death_year": 1582
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Domitius Afer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Afer, having thus displayed his genius, and gained a declaration from Tiberius, pronouncing him _eloquent in his own independent right_, was ranked with the most celebrated orators..."
+        ],
+        "commentaries": [
+          "The author describes Domitius Afer as a renowned orator, referencing his reputation as a source of eloquence and his role in prosecuting accusations."
+        ],
+        "canonical_author": "Domitius Afer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gnaeus Domitius Afer",
+        "page_id": 8873,
+        "infoboxes": [],
+        "categories": [
+          "59 deaths",
+          "1st-century Gallo-Roman people",
+          "Ancient Roman rhetoricians",
+          "Domitii|Afer, Gnaeus",
+          "People from Gallia Narbonensis",
+          "People from Nemausus",
+          "Suffect consuls of Imperial Rome",
+          "Year of birth unknown"
+        ],
+        "birth_year": null,
+        "death_year": 59
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Gnaeus Domitius Afer",
+          "page_id": 8873,
+          "infoboxes": [],
+          "categories": [
+            "59 deaths",
+            "1st-century Gallo-Roman people",
+            "Ancient Roman rhetoricians",
+            "Domitii|Afer, Gnaeus",
+            "People from Gallia Narbonensis",
+            "People from Nemausus",
+            "Suffect consuls of Imperial Rome",
+            "Year of birth unknown"
+          ],
+          "birth_year": null,
+          "death_year": 59
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Livy",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Britain is by Livy and Fabius Rusticus, the former the most eloquent of the ancient historians, the latter of the moderns, compared in shape to an oblong shield, or a broad knife with two edges."
+        ],
+        "commentaries": [
+          "Livy is cited as an ancient historian who compared the shape of Britain to an oblong shield or a broad knife."
+        ],
+        "canonical_author": "Livy"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Livy",
+        "page_id": 18049,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1st-century BC births",
+          "17 deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Golden Age Latin writers",
+          "Writers from Padua",
+          "Latin historians",
+          "1st-century BC historians",
+          "1st-century historians",
+          "1st-century BC Romans",
+          "1st-century Romans",
+          "Livii",
+          "Ancient Romans from Padua"
+        ],
+        "birth_year": -59,
+        "death_year": 17
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "14577687"
+        ],
+        "target_person": {
+          "title": "Livy",
+          "page_id": 18049,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1st-century BC births",
+            "17 deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Golden Age Latin writers",
+            "Writers from Padua",
+            "Latin historians",
+            "1st-century BC historians",
+            "1st-century historians",
+            "1st-century BC Romans",
+            "1st-century Romans",
+            "Livii",
+            "Ancient Romans from Padua"
+          ],
+          "birth_year": -59,
+          "death_year": 17
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Horace",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "The battles of Tiberius are celebrated in the Odes of Horace: one of the Epistles is addressed to him; and in another, written to Julius Florus, an officer with Tiberius, Horace enquires about the learned occupations of the Imperial cohort.",
+          "Horace will hardly speak of the Britons, as humane beings, and he was right; in his time, they were not a portion of the Roman World, they had no part in the benefits of the Roman government: he talks of them, as beyond the confines of civility, \"in ultimos orbis Britannos;\" as cut off by \"the estranging sea,\" and there jubilant in their native practices, \"Visum Britannos hospitibus feros.\""
+        ],
+        "commentaries": [
+          "The author mentions that Horace's Odes and Epistles refer to Tiberius's military campaigns and scholarly pursuits.",
+          "The author quotes Horace's view of the Britons as uncivilized."
+        ],
+        "canonical_author": "Horace"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Horace",
+        "birth_year": -65,
+        "death_year": -8
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3341504"
+        ],
+        "target_person": {
+          "title": "Horace",
+          "birth_year": -65,
+          "death_year": -8
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Davanzati",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I would give the highest praise to Davanzati; a scholar of Tuscany, who lived in the sixteenth century."
+        ],
+        "commentaries": [
+          "The author praises Davanzati's translation of Tacitus."
+        ],
+        "canonical_author": "Davanzati"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Bernardo Davanzati",
+        "page_id": 35657166,
+        "infoboxes": [
+          "person",
+          "writer "
+        ],
+        "categories": [
+          "1529 births",
+          "1606 deaths",
+          "Italian agronomists",
+          "Italian economists",
+          "Writers from Florence",
+          "Italian Renaissance people",
+          "Latin–Italian translators",
+          "16th-century Italian translators",
+          "16th-century Italian male writers",
+          "16th-century Italian writers",
+          "Writers from the Grand Duchy of Tuscany",
+          "16th-century merchants",
+          "16th-century people from the Republic of Florence"
+        ],
+        "birth_year": 1529,
+        "death_year": 1606
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Bernardo Davanzati",
+          "page_id": 35657166,
+          "infoboxes": [
+            "person",
+            "writer "
+          ],
+          "categories": [
+            "1529 births",
+            "1606 deaths",
+            "Italian agronomists",
+            "Italian economists",
+            "Writers from Florence",
+            "Italian Renaissance people",
+            "Latin–Italian translators",
+            "16th-century Italian translators",
+            "16th-century Italian male writers",
+            "16th-century Italian writers",
+            "Writers from the Grand Duchy of Tuscany",
+            "16th-century merchants",
+            "16th-century people from the Republic of Florence"
+          ],
+          "birth_year": 1529,
+          "death_year": 1606
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Agricola",
+        "author": "Tacitus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "\"The Annals,\" and the history of Tiberius, have detained us, for the most part, within the capital: \"The Agricola\" brings us into a province of the Empire; and \"The Account of Germany\" will take us among the savages beyond the frontier."
+        ],
+        "commentaries": [
+          "The author references Tacitus's work as a source for the history of Britain."
+        ]
+      },
+      "goodreads_match": {
+        "publication_year": 2016,
+        "title": "The Agricola",
+        "isbn13": "9781354515044",
+        "num_pages": 156,
+        "book_id": "30478027",
+        "ratings_count": 2,
+        "title_without_series": "The Agricola",
+        "work_id": "1378380",
+        "average_rating": 3.66,
+        "publication_month": 4,
+        "publication_day": 25,
+        "isbn": "1354515048",
+        "publisher": "Palala Press",
+        "author_ids": [
+          "2936846",
+          "1853667",
+          "3041852"
+        ],
+        "text_reviews_count": 1,
+        "format": "Hardcover",
+        "authors": [
+          "Tacitus",
+          "William Jackson Brodribb",
+          "Alfred J. Church"
+        ],
+        "description": "This work has been selected by scholars as being culturally important, and is part of the knowledge base of civilization as we know it. This work was reproduced from the original artifact, and remains as true to the original work as possible. Therefore, you will see the original copyright references, library stamps (as most of these works have been housed in our most important libraries around the world), and other notations in the work.This work is in the public domain in the United States of America, and....",
+        "link": "https://www.goodreads.com/book/show/30478027-the-agricola",
+        "wikipedia_match": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        },
+        "original_year": 98,
+        "author_meta": {
+          "birth_year": 56,
+          "death_year": 120,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Tacitus",
+        "page_id": 19594563,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "Tacitus| ",
+          "1st-century Gallo-Roman people",
+          "1st-century writers in Latin",
+          "1st-century historians",
+          "2nd-century Gallo-Roman people",
+          "2nd-century historians",
+          "2nd-century writers in Latin",
+          "50s births",
+          "120s deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Cornelii",
+          "Latin historians",
+          "Roman governors of Asia",
+          "Ancient Roman biographers",
+          "Senators of the Roman Empire",
+          "Silver Age Latin writers",
+          "Suffect consuls of Imperial Rome"
+        ],
+        "birth_year": 56,
+        "death_year": 120
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "30478027",
+        "target_author_ids": [
+          "2936846",
+          "1853667",
+          "3041852"
+        ],
+        "target_person": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sir Henry Savile",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the first, by Sir Henry Savile and \"one Greenway\"; the former, says Gordon, \"has performed like a schoolmaster, the latter like a school-boy.\""
+        ],
+        "commentaries": [
+          "The author mentions Sir Henry Savile as a translator of Tacitus, quoting Gordon's criticism."
+        ],
+        "canonical_author": "Sir Henry Savile"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sir Henry Savile, 1st Baronet",
+        "page_id": 40382023,
+        "infoboxes": [],
+        "categories": [
+          "1579 births",
+          "1632 deaths",
+          "Members of the Parliament of England for constituencies in Yorkshire",
+          "English MPs 1604–1611",
+          "English MPs 1614",
+          "English MPs 1628–1629",
+          "Members of the Middle Temple",
+          "Baronets in the Baronetage of England",
+          "Alumni of Merton College, Oxford"
+        ],
+        "birth_year": 1579,
+        "death_year": 1632
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Sir Henry Savile, 1st Baronet",
+          "page_id": 40382023,
+          "infoboxes": [],
+          "categories": [
+            "1579 births",
+            "1632 deaths",
+            "Members of the Parliament of England for constituencies in Yorkshire",
+            "English MPs 1604–1611",
+            "English MPs 1614",
+            "English MPs 1628–1629",
+            "Members of the Middle Temple",
+            "Baronets in the Baronetage of England",
+            "Alumni of Merton College, Oxford"
+          ],
+          "birth_year": 1579,
+          "death_year": 1632
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Marcus Aurelius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This resembles the account of Antoninus Pius, by Marcus Aurelius;"
+        ],
+        "commentaries": [
+          "The author compares Tacitus's description of Tiberius to Marcus Aurelius's account of Antoninus Pius."
+        ],
+        "canonical_author": "Marcus Aurelius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Aurelius",
+        "page_id": 20155,
+        "infoboxes": [
+          "royalty",
+          "philosopher"
+        ],
+        "categories": [
+          "Marcus Aurelius| ",
+          "121 births",
+          "180 deaths",
+          "2nd-century philosophers",
+          "2nd-century Roman consuls",
+          "2nd-century Roman emperors",
+          "Aelii",
+          "Ancient Roman adoptees",
+          "Ancient Roman philhellenes",
+          "Annii",
+          "Augurs of the Roman Empire",
+          "Aurelii Fulvi|Marcus",
+          "Burials at the Castel Sant'Angelo",
+          "Deified Roman emperors",
+          "Glycon cult",
+          "Greek-language writers",
+          "Moneyers of ancient Rome",
+          "Nerva–Antonine dynasty",
+          "Philosophers of law",
+          "Philosophers of mind",
+          "Philosophers of Roman Italy",
+          "Philosophy writers",
+          "Political philosophers",
+          "Roman pharaohs",
+          "Roman-era Stoic philosophers",
+          "Social philosophers",
+          "Stoic philosophers"
+        ],
+        "birth_year": 121,
+        "death_year": 180
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "17212"
+        ],
+        "target_person": {
+          "title": "Marcus Aurelius",
+          "page_id": 20155,
+          "infoboxes": [
+            "royalty",
+            "philosopher"
+          ],
+          "categories": [
+            "Marcus Aurelius| ",
+            "121 births",
+            "180 deaths",
+            "2nd-century philosophers",
+            "2nd-century Roman consuls",
+            "2nd-century Roman emperors",
+            "Aelii",
+            "Ancient Roman adoptees",
+            "Ancient Roman philhellenes",
+            "Annii",
+            "Augurs of the Roman Empire",
+            "Aurelii Fulvi|Marcus",
+            "Burials at the Castel Sant'Angelo",
+            "Deified Roman emperors",
+            "Glycon cult",
+            "Greek-language writers",
+            "Moneyers of ancient Rome",
+            "Nerva–Antonine dynasty",
+            "Philosophers of law",
+            "Philosophers of mind",
+            "Philosophers of Roman Italy",
+            "Philosophy writers",
+            "Political philosophers",
+            "Roman pharaohs",
+            "Roman-era Stoic philosophers",
+            "Social philosophers",
+            "Stoic philosophers"
+          ],
+          "birth_year": 121,
+          "death_year": 180
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Tiberius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the former enrolled by Tiberius himself; the other his constant companions in so many battles"
+        ],
+        "commentaries": [
+          "The author references Tiberius as the former commander and emperor who enrolled and fought with the legions, but no specific book by Tiberius is cited."
+        ],
+        "canonical_author": "Tiberius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Tiberius III",
+        "page_id": 252506,
+        "infoboxes": [
+          "royalty"
+        ],
+        "categories": [
+          "7th-century Byzantine emperors",
+          "8th-century Byzantine emperors",
+          "Byzantine admirals",
+          "7th-century births",
+          "706 deaths",
+          "Twenty Years' Anarchy",
+          "690s in the Byzantine Empire",
+          "700s in the Byzantine Empire",
+          "Executed monarchs",
+          "People executed by decapitation",
+          "Byzantine consuls"
+        ],
+        "birth_year": null,
+        "death_year": 706
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Tiberius III",
+          "page_id": 252506,
+          "infoboxes": [
+            "royalty"
+          ],
+          "categories": [
+            "7th-century Byzantine emperors",
+            "8th-century Byzantine emperors",
+            "Byzantine admirals",
+            "7th-century births",
+            "706 deaths",
+            "Twenty Years' Anarchy",
+            "690s in the Byzantine Empire",
+            "700s in the Byzantine Empire",
+            "Executed monarchs",
+            "People executed by decapitation",
+            "Byzantine consuls"
+          ],
+          "birth_year": null,
+          "death_year": 706
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Germany",
+        "author": "Tacitus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "\"The Germany\" of Tacitus is a document, that has been much discussed; and these discussions may be numbered among the most flagrant examples of literary intemperance: but this will not surprise us, when we allow for the structure of mind, the language, and the usual productions of those, to whom the treatise is naturally of the greatest importance."
+        ],
+        "commentaries": [
+          "The author discusses the Germania as a much-debated document."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Tacitus on Germany",
+        "book_id": "19381490",
+        "ratings_count": 36,
+        "title_without_series": "Tacitus on Germany",
+        "work_id": "139431",
+        "average_rating": 3.95,
+        "author_ids": [
+          "2936846",
+          "51750"
+        ],
+        "text_reviews_count": 4,
+        "authors": [
+          "Tacitus",
+          "Thomas Gordon"
+        ],
+        "description": "This book was converted from its physical edition to the digital format by a community of volunteers. You may find it for free on the web. Purchase of the Kindle edition includes wireless delivery.",
+        "link": "https://www.goodreads.com/book/show/19381490-tacitus-on-germany",
+        "wikipedia_match": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        },
+        "original_year": 98,
+        "author_meta": {
+          "birth_year": 56,
+          "death_year": 120,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Tacitus",
+        "page_id": 19594563,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "Tacitus| ",
+          "1st-century Gallo-Roman people",
+          "1st-century writers in Latin",
+          "1st-century historians",
+          "2nd-century Gallo-Roman people",
+          "2nd-century historians",
+          "2nd-century writers in Latin",
+          "50s births",
+          "120s deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Cornelii",
+          "Latin historians",
+          "Roman governors of Asia",
+          "Ancient Roman biographers",
+          "Senators of the Roman Empire",
+          "Silver Age Latin writers",
+          "Suffect consuls of Imperial Rome"
+        ],
+        "birth_year": 56,
+        "death_year": 120
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "19381490",
+        "target_author_ids": [
+          "2936846",
+          "51750"
+        ],
+        "target_person": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ascham",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Ascham, on the other hand, a man of real taste and learning, says of the Commentaries, 'All things be most perfectly done by him; in Caesar only, could never yet fault be found.'"
+        ],
+        "commentaries": [
+          "The author references Ascham as a source of judgment on Caesar's Commentaries, agreeing with Ascham's opinion."
+        ],
+        "canonical_author": "Ascham"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Roger Ascham",
+        "page_id": 262141,
+        "infoboxes": [
+          "person "
+        ],
+        "categories": [
+          "English Renaissance humanists",
+          "People of the Elizabethan era",
+          "1510s births",
+          "1568 deaths",
+          "English male archers",
+          "English male non-fiction writers",
+          "English non-fiction writers",
+          "People from Hambleton District",
+          "Alumni of St John's College, Cambridge",
+          "Fellows of St John's College, Cambridge",
+          "16th-century English writers",
+          "16th-century English male writers",
+          "Sportspeople from Yorkshire"
+        ],
+        "birth_year": null,
+        "death_year": 1568
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Roger Ascham",
+          "page_id": 262141,
+          "infoboxes": [
+            "person "
+          ],
+          "categories": [
+            "English Renaissance humanists",
+            "People of the Elizabethan era",
+            "1510s births",
+            "1568 deaths",
+            "English male archers",
+            "English male non-fiction writers",
+            "English non-fiction writers",
+            "People from Hambleton District",
+            "Alumni of St John's College, Cambridge",
+            "Fellows of St John's College, Cambridge",
+            "16th-century English writers",
+            "16th-century English male writers",
+            "Sportspeople from Yorkshire"
+          ],
+          "birth_year": null,
+          "death_year": 1568
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thomas Gordon",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "among these, I am sorry to inscribe the name of Thomas Gordon.",
+          "Gordon says, of one rendering of Tacitus, \"'Tis not the fire of Tacitus, but his embers; quenched with English words, cold and Gothick.\"",
+          "Gordon says of him, \"He explains events with a redundancy of images, and a frugality of words: his images are many, but close and thick; his words are few, but pointed and glowing; and even his silence is instructive and affecting.\"",
+          "But of Tacitus, Gordon says, \"His words and phrases are admirably adapted to his matter and conceptions, and make impressions sudden and wonderful upon the mind of man.\""
+        ],
+        "commentaries": [
+          "The author mentions Thomas Gordon as a critic who perceives Caesar as a demagogue and tyrant.",
+          "The author quotes Gordon's criticism of a translation of Tacitus.",
+          "The author quotes Gordon's description of Tacitus's style.",
+          "The author quotes Gordon's praise of Tacitus's language."
+        ],
+        "canonical_author": "Thomas Gordon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thomas Gordon (writer)",
+        "page_id": 3761681,
+        "infoboxes": [],
+        "categories": [
+          "1690s births",
+          "1750 deaths",
+          "18th-century Scottish writers",
+          "18th-century Scottish male writers",
+          "People from Kirkcudbright",
+          "Scottish political writers",
+          "Whig (British political party) politicians",
+          "Scottish publishers (people)",
+          "Scottish essayists",
+          "Linguists from Scotland",
+          "Scottish republicans",
+          "Amanuenses",
+          "English vegetarianism activists",
+          "Commonwealthmen"
+        ],
+        "birth_year": 1809,
+        "death_year": 1750
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "51750"
+        ],
+        "target_person": {
+          "title": "Thomas Gordon (writer)",
+          "page_id": 3761681,
+          "infoboxes": [],
+          "categories": [
+            "1690s births",
+            "1750 deaths",
+            "18th-century Scottish writers",
+            "18th-century Scottish male writers",
+            "People from Kirkcudbright",
+            "Scottish political writers",
+            "Whig (British political party) politicians",
+            "Scottish publishers (people)",
+            "Scottish essayists",
+            "Linguists from Scotland",
+            "Scottish republicans",
+            "Amanuenses",
+            "English vegetarianism activists",
+            "Commonwealthmen"
+          ],
+          "birth_year": 1809,
+          "death_year": 1750
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Antiochus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "never had Philip of Macedon been so terrible to the Athenians; nor Pyrrhus, nor Antiochus to the Roman people."
+        ],
+        "commentaries": [
+          "The author reports Tiberius comparing the threat of Maroboduus to that of Antiochus."
+        ],
+        "canonical_author": "Antiochus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Antiochus III the Great",
+        "page_id": 84551,
+        "infoboxes": [
+          "royalty"
+        ],
+        "categories": [
+          "240s BC births",
+          "187 BC deaths",
+          "Year of birth uncertain",
+          "3rd-century BC Seleucid monarchs",
+          "2nd-century BC Seleucid monarchs",
+          "People from Khuzestan province"
+        ],
+        "birth_year": null,
+        "death_year": -187
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Antiochus III the Great",
+          "page_id": 84551,
+          "infoboxes": [
+            "royalty"
+          ],
+          "categories": [
+            "240s BC births",
+            "187 BC deaths",
+            "Year of birth uncertain",
+            "3rd-century BC Seleucid monarchs",
+            "2nd-century BC Seleucid monarchs",
+            "People from Khuzestan province"
+          ],
+          "birth_year": null,
+          "death_year": -187
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John Milton",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Upon the other hand, we have to consider that view of Tiberius, which is thus shown by Milton; _This Emperor hath no son, and now is old; Old and lascivious: and from Rome retired To Capreae, an island small but strong, On the Campanian shore; with purpose there, His horrid lusts in private to enjoy._"
+        ],
+        "commentaries": [
+          "The author cites Milton's poetic depiction of Tiberius as lascivious and retired to Capri."
+        ],
+        "canonical_author": "John Milton"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Milton",
+        "page_id": 16215,
+        "infoboxes": [
+          "person",
+          "writer ",
+          "officeholder "
+        ],
+        "categories": [
+          "John Milton| ",
+          "1608 births",
+          "1674 deaths",
+          "17th-century English civil servants",
+          "17th-century English dramatists and playwrights",
+          "17th-century English educators",
+          "17th-century English historians",
+          "17th-century English male writers",
+          "17th-century English philosophers",
+          "17th-century English poets",
+          "17th-century English writers",
+          "17th-century writers in Latin",
+          "17th-century English non-fiction writers",
+          "17th-century English scholars",
+          "17th-century Christian theologians",
+          "Alumni of Christ's College, Cambridge",
+          "Anglican philosophers",
+          "Anglican poets",
+          "Anti-Catholicism in the United Kingdom",
+          "English blind people",
+          "British blind poets",
+          "British blind writers",
+          "Latin-language British writers",
+          "Burials at St Giles-without-Cripplegate",
+          "Calvinist and Reformed poets",
+          "Christian poets",
+          "Christian humanists",
+          "Civil servants from London",
+          "Critics of the Catholic Church",
+          "Deaths from kidney failure in England"
+        ],
+        "birth_year": 1608,
+        "death_year": 1674
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "9876"
+        ],
+        "target_person": {
+          "title": "John Milton",
+          "page_id": 16215,
+          "infoboxes": [
+            "person",
+            "writer ",
+            "officeholder "
+          ],
+          "categories": [
+            "John Milton| ",
+            "1608 births",
+            "1674 deaths",
+            "17th-century English civil servants",
+            "17th-century English dramatists and playwrights",
+            "17th-century English educators",
+            "17th-century English historians",
+            "17th-century English male writers",
+            "17th-century English philosophers",
+            "17th-century English poets",
+            "17th-century English writers",
+            "17th-century writers in Latin",
+            "17th-century English non-fiction writers",
+            "17th-century English scholars",
+            "17th-century Christian theologians",
+            "Alumni of Christ's College, Cambridge",
+            "Anglican philosophers",
+            "Anglican poets",
+            "Anti-Catholicism in the United Kingdom",
+            "English blind people",
+            "British blind poets",
+            "British blind writers",
+            "Latin-language British writers",
+            "Burials at St Giles-without-Cripplegate",
+            "Calvinist and Reformed poets",
+            "Christian poets",
+            "Christian humanists",
+            "Civil servants from London",
+            "Critics of the Catholic Church",
+            "Deaths from kidney failure in England"
+          ],
+          "birth_year": 1608,
+          "death_year": 1674
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dante Alighieri",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I have seen Dante compared to Wagner's operas, to the Parthenon and St. Peter's, and to Justinian's code."
+        ],
+        "commentaries": [
+          "The author mentions a modern comparison of Dante to various works of art and culture, though the author does not endorse this."
+        ],
+        "canonical_author": "Dante Alighieri"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Dante Alighieri",
+        "page_id": 8169,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Dante Alighieri| ",
+          "1265 births",
+          "1321 deaths",
+          "13th-century Italian poets",
+          "13th-century Italian writers",
+          "14th-century Italian poets",
+          "14th-century Italian writers",
+          "14th-century people from the Republic of Florence",
+          "14th-century writers in Latin",
+          "Catholic poets",
+          "Characters in the Divine Comedy",
+          "Culture in Florence",
+          "Demonologists",
+          "Epic poets",
+          "Italian apothecaries",
+          "Italian exiles",
+          "Italian-language poets",
+          "Italian male poets",
+          "Italian political philosophers",
+          "Italian Roman Catholic writers",
+          "Latin-language Italian writers",
+          "Medieval Latin-language poets",
+          "Politicians from Florence",
+          "Sonneteers",
+          "Writers from Florence"
+        ],
+        "birth_year": 1265,
+        "death_year": 1321
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5031312"
+        ],
+        "target_person": {
+          "title": "Dante Alighieri",
+          "page_id": 8169,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Dante Alighieri| ",
+            "1265 births",
+            "1321 deaths",
+            "13th-century Italian poets",
+            "13th-century Italian writers",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century writers in Latin",
+            "Catholic poets",
+            "Characters in the Divine Comedy",
+            "Culture in Florence",
+            "Demonologists",
+            "Epic poets",
+            "Italian apothecaries",
+            "Italian exiles",
+            "Italian-language poets",
+            "Italian male poets",
+            "Italian political philosophers",
+            "Italian Roman Catholic writers",
+            "Latin-language Italian writers",
+            "Medieval Latin-language poets",
+            "Politicians from Florence",
+            "Sonneteers",
+            "Writers from Florence"
+          ],
+          "birth_year": 1265,
+          "death_year": 1321
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sir Charles Bowen",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "From this low company, I would rescue Sir Charles Bowen's \"Virgil\": a delightful poem, to those who are ignorant of Latin; an exquisite production, and an amazing triumph, to those who converse with the original."
+        ],
+        "commentaries": [
+          "The author praises Sir Charles Bowen's translation of Virgil."
+        ],
+        "canonical_author": "Sir Charles Bowen"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sir Charles Bowen",
+        "birth_year": 1835,
+        "death_year": 1894
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "144434"
+        ],
+        "target_person": {
+          "title": "Sir Charles Bowen",
+          "birth_year": 1835,
+          "death_year": 1894
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Life of Agricola",
+        "author": "Tacitus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "From a passage in \"The Life of Agricola,\" we may believe that Tacitus attended in the Senate; for he accuses himself as one of that frightened assembly, which was an unwilling participator in the cruelties of Domitian.",
+          "In 'The Life of Agricola,' I would mention the simplicity of the treatment and the excellence of the taste."
+        ],
+        "commentaries": [
+          "The author cites the work to infer Tacitus's presence in the Senate.",
+          "The author praises the simplicity and taste in Tacitus's 'The Life of Agricola.'"
+        ]
+      },
+      "goodreads_match": {
+        "publication_year": 2015,
+        "title": "The Life of Agricola",
+        "isbn13": "9781330709627",
+        "num_pages": 90,
+        "book_id": "26960076",
+        "ratings_count": 2,
+        "title_without_series": "The Life of Agricola",
+        "work_id": "47010308",
+        "average_rating": 3.5,
+        "publication_month": 9,
+        "publication_day": 27,
+        "isbn": "1330709624",
+        "publisher": "Forgotten Books",
+        "author_ids": [
+          "7401505"
+        ],
+        "text_reviews_count": 1,
+        "format": "Paperback",
+        "authors": [
+          "P Cornelius Tacitus"
+        ],
+        "description": "Excerpt from The Life Of Agricola\nAbout the Publisher\nForgotten Books publishes hundreds of thousands of rare and classic books. Find more at www.forgottenbooks.com\nThis book is a reproduction of an important historical work. Forgotten Books uses state-of-the-art technology to digitally reconstruct the work, preserving the original format whilst repairing imperfections present in the aged copy. In rare cases, an imperfection in the original, such as a blemish or missing page, may be replicated in our editio...",
+        "link": "https://www.goodreads.com/book/show/26960076-the-life-of-agricola",
+        "wikipedia_match": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        },
+        "original_year": 98,
+        "author_meta": {
+          "death_year": 120
+        }
+      },
+      "wikipedia_match": {
+        "title": "Tacitus",
+        "page_id": 19594563,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "Tacitus| ",
+          "1st-century Gallo-Roman people",
+          "1st-century writers in Latin",
+          "1st-century historians",
+          "2nd-century Gallo-Roman people",
+          "2nd-century historians",
+          "2nd-century writers in Latin",
+          "50s births",
+          "120s deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Cornelii",
+          "Latin historians",
+          "Roman governors of Asia",
+          "Ancient Roman biographers",
+          "Senators of the Roman Empire",
+          "Silver Age Latin writers",
+          "Suffect consuls of Imperial Rome"
+        ],
+        "birth_year": 56,
+        "death_year": 120
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "26960076",
+        "target_author_ids": [
+          "7401505"
+        ],
+        "target_person": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Brutus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The letters of Marc Anthony; the speeches of Brutus, are full of reproaches, and recriminations against Augustus; false in truth, but urged with signal asperity:"
+        ],
+        "commentaries": [
+          "The author cites the speeches of Brutus as containing reproaches against Augustus."
+        ],
+        "canonical_author": "Brutus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Junius Brutus",
+        "page_id": 37325,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Marcus Junius Brutus| ",
+          "85 BC births",
+          "42 BC deaths",
+          "Ancient Roman adoptees",
+          "Ancient Roman generals",
+          "Ancient Roman politicians who died by suicide",
+          "Assassins of Julius Caesar",
+          "Characters in the Divine Comedy",
+          "Children of Servilia (mother of Brutus)",
+          "Junii Bruti|Marcus",
+          "Last of the Romans",
+          "Optimates",
+          "Roman consuls designate",
+          "Roman quaestors",
+          "Roman Republican praetors",
+          "Servilii Caepiones",
+          "Suicides by sharp instrument in Greece",
+          "Defectors"
+        ],
+        "birth_year": -85,
+        "death_year": -42
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Marcus Junius Brutus",
+          "page_id": 37325,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Marcus Junius Brutus| ",
+            "85 BC births",
+            "42 BC deaths",
+            "Ancient Roman adoptees",
+            "Ancient Roman generals",
+            "Ancient Roman politicians who died by suicide",
+            "Assassins of Julius Caesar",
+            "Characters in the Divine Comedy",
+            "Children of Servilia (mother of Brutus)",
+            "Junii Bruti|Marcus",
+            "Last of the Romans",
+            "Optimates",
+            "Roman consuls designate",
+            "Roman quaestors",
+            "Roman Republican praetors",
+            "Servilii Caepiones",
+            "Suicides by sharp instrument in Greece",
+            "Defectors"
+          ],
+          "birth_year": -85,
+          "death_year": -42
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Velleius Paterculus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Velleius Paterculus, who served with Tiberius in his campaigns, tells us of his firm discipline, and of his kindness to the soldiers.",
+          "It is not easy to harmonise Paterculus with Suetonius:"
+        ],
+        "commentaries": [
+          "The author refers to Velleius Paterculus as a source for details about Tiberius, but no specific book title is named.",
+          "The author contrasts the accounts of Paterculus and Suetonius regarding Tiberius."
+        ],
+        "canonical_author": "Velleius Paterculus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Velleius Paterculus",
+        "page_id": 235981,
+        "infoboxes": [],
+        "categories": [
+          "10s BC births",
+          "30s deaths",
+          "1st-century historians",
+          "1st-century Romans",
+          "Ancient Roman soldiers",
+          "Latin historians",
+          "Writers from Campania",
+          "Silver Age Latin writers"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Velleius Paterculus",
+          "page_id": 235981,
+          "infoboxes": [],
+          "categories": [
+            "10s BC births",
+            "30s deaths",
+            "1st-century historians",
+            "1st-century Romans",
+            "Ancient Roman soldiers",
+            "Latin historians",
+            "Writers from Campania",
+            "Silver Age Latin writers"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Publius Scipio",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "after the example of Publius Scipio, who, we are told, was constant in the same practices in Sicily, even during the rage of the Punic War there."
+        ],
+        "commentaries": [
+          "The author cites Publius Scipio as an example whose practices Germanicus imitated."
+        ],
+        "canonical_author": "Publius Scipio"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Publius Cornelius Scipio (consul 218 BC)",
+        "page_id": 215271,
+        "infoboxes": [
+          "officeholder",
+          "military person"
+        ],
+        "categories": [
+          "211 BC deaths",
+          "3rd-century BC Roman consuls",
+          "Characters in Book VI of the Aeneid",
+          "Cornelii Scipiones",
+          "Roman commanders of the Second Punic War",
+          "Ancient Roman generals killed in action",
+          "Roman governors of Hispania",
+          "Year of birth unknown",
+          "Ancient Roman patricians",
+          "Roman Republican generals"
+        ],
+        "birth_year": null,
+        "death_year": -211
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Publius Cornelius Scipio (consul 218 BC)",
+          "page_id": 215271,
+          "infoboxes": [
+            "officeholder",
+            "military person"
+          ],
+          "categories": [
+            "211 BC deaths",
+            "3rd-century BC Roman consuls",
+            "Characters in Book VI of the Aeneid",
+            "Cornelii Scipiones",
+            "Roman commanders of the Second Punic War",
+            "Ancient Roman generals killed in action",
+            "Roman governors of Hispania",
+            "Year of birth unknown",
+            "Ancient Roman patricians",
+            "Roman Republican generals"
+          ],
+          "birth_year": null,
+          "death_year": -211
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Corvinus Messala",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Corvinus Messala gloried to have had Cassius for his general: and yet both Pollio and Corvinus became signally powerful in wealth and honours under Augustus."
+        ],
+        "commentaries": [
+          "The author notes that Messala boasted of serving under Cassius, yet prospered under Augustus."
+        ],
+        "canonical_author": "Corvinus Messala"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Valerius Messalla Corvinus",
+        "page_id": 256911,
+        "infoboxes": [],
+        "categories": [
+          "64 BC births",
+          "1st-century deaths",
+          "1st-century BC Roman governors of Syria",
+          "1st-century BC Roman augurs",
+          "1st-century Romans",
+          "Ancient Roman generals",
+          "Patrons of literature",
+          "Ancient Roman patricians",
+          "Urban prefects of Rome",
+          "Valerii Messallae|Corvinus, Marcus",
+          "Year of death uncertain",
+          "People of the War of Actium"
+        ],
+        "birth_year": -64,
+        "death_year": 13
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Marcus Valerius Messalla Corvinus",
+          "page_id": 256911,
+          "infoboxes": [],
+          "categories": [
+            "64 BC births",
+            "1st-century deaths",
+            "1st-century BC Roman governors of Syria",
+            "1st-century BC Roman augurs",
+            "1st-century Romans",
+            "Ancient Roman generals",
+            "Patrons of literature",
+            "Ancient Roman patricians",
+            "Urban prefects of Rome",
+            "Valerii Messallae|Corvinus, Marcus",
+            "Year of death uncertain",
+            "People of the War of Actium"
+          ],
+          "birth_year": -64,
+          "death_year": 13
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plutarch",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Tacitus does not recite the whole of Roman history, nor assemble all the worthies out of Plutarch."
+        ],
+        "commentaries": [
+          "The author notes that Tacitus does not draw upon Plutarch's collection of biographies as a model."
+        ],
+        "canonical_author": "Plutarch"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plutarch",
+        "page_id": 24517,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plutarch| ",
+          "46 births",
+          "120s deaths",
+          "1st-century Romans",
+          "2nd-century Romans",
+          "1st-century Greek philosophers",
+          "2nd-century Greek philosophers",
+          "1st-century historians",
+          "2nd-century historians",
+          "Ancient Roman antiquarians",
+          "Ancient Greek biographers",
+          "Ancient Greek essayists",
+          "Ancient Roman biographers",
+          "Greek-language historians from the Roman Empire",
+          "Ancient Boeotians",
+          "Middle Platonists",
+          "Roman-era Greek priests",
+          "Year of birth unknown",
+          "Historians of ancient Greece"
+        ],
+        "birth_year": 46,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "31015"
+        ],
+        "target_person": {
+          "title": "Plutarch",
+          "page_id": 24517,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plutarch| ",
+            "46 births",
+            "120s deaths",
+            "1st-century Romans",
+            "2nd-century Romans",
+            "1st-century Greek philosophers",
+            "2nd-century Greek philosophers",
+            "1st-century historians",
+            "2nd-century historians",
+            "Ancient Roman antiquarians",
+            "Ancient Greek biographers",
+            "Ancient Greek essayists",
+            "Ancient Roman biographers",
+            "Greek-language historians from the Roman Empire",
+            "Ancient Boeotians",
+            "Middle Platonists",
+            "Roman-era Greek priests",
+            "Year of birth unknown",
+            "Historians of ancient Greece"
+          ],
+          "birth_year": 46,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Julian",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The Emperor Julian describes him 'severe and grim; with a statesman's care, and a soldier's frankness, curiously mingled:'"
+        ],
+        "commentaries": [
+          "The author quotes Emperor Julian's description of Tiberius, but no specific book title is mentioned."
+        ],
+        "canonical_author": "Julian"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Julian",
+        "birth_year": 1904,
+        "death_year": 1994
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13531880"
+        ],
+        "target_person": {
+          "title": "Julian",
+          "birth_year": 1904,
+          "death_year": 1994
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Edward Gibbon",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "\"If we can prefer personal merit to accidental greatness,\" Gibbon here observes, \"we shall esteem the birth of Tacitus more truly noble than that of Kings.\"",
+          "Gibbon has described the limits of the Roman Empire; which \"comprised the fairest part of the earth, and the most civilised portion of mankind.\"",
+          "Gibbon remarks, however, \"The native Caledonians preserved in the northern extremity of the island their wild independence, for which they were not less indebted to their poverty than to their valour.",
+          "Gibbon remarks, with his usual sense, \"In their primitive state of simplicity and independence, the Germans were surveyed by the discerning eye, and delineated by the masterly pencil of Tacitus, the first historian who supplied the science of philosophy to the study of facts.",
+          "Gibbon says, prettily, \"Whenever Tacitus indulges himself in those beautiful episodes, in which he relates some domestic transaction of the Germans or of the Parthians, his principal object is to relieve the attention of the reader from an uniform scene of vice and misery.\""
+        ],
+        "commentaries": [
+          "The author quotes Gibbon's commentary on the nobility of Tacitus's birth.",
+          "The author quotes Gibbon's description of the Roman Empire's extent.",
+          "The author cites Gibbon's remark on the Caledonians.",
+          "The author quotes Gibbon's praise of Tacitus's description of the Germans.",
+          "The author quotes Gibbon's comment on Tacitus's episodes."
+        ],
+        "canonical_author": "Edward Gibbon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Edward Gibbon",
+        "page_id": 10310,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "1737 births",
+          "1794 deaths",
+          "18th-century English diarists",
+          "18th-century English historians",
+          "18th-century English male writers",
+          "18th-century English non-fiction writers",
+          "Acton family|Edward",
+          "Alumni of Magdalen College, Oxford",
+          "British Byzantinists",
+          "British critics of religions",
+          "British Freemasons",
+          "British historians of religion",
+          "English male essayists",
+          "English monarchists",
+          "British MPs 1774–1780",
+          "British MPs 1780–1784",
+          "British Protestants",
+          "British rhetoricians",
+          "Burials in East Sussex",
+          "Converts to Protestantism from Catholicism",
+          "Deaths from peritonitis",
+          "English book and manuscript collectors",
+          "English classical scholars",
+          "English essayists",
+          "English Protestants",
+          "English rhetoricians",
+          "Hampshire and Isle of Wight Militia officers",
+          "Fellows of the Royal Society",
+          "Freemasons of the Premier Grand Lodge of England",
+          "Historians of ancient Rome"
+        ],
+        "birth_year": 1737,
+        "death_year": 1794
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11628"
+        ],
+        "target_person": {
+          "title": "Edward Gibbon",
+          "page_id": 10310,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1737 births",
+            "1794 deaths",
+            "18th-century English diarists",
+            "18th-century English historians",
+            "18th-century English male writers",
+            "18th-century English non-fiction writers",
+            "Acton family|Edward",
+            "Alumni of Magdalen College, Oxford",
+            "British Byzantinists",
+            "British critics of religions",
+            "British Freemasons",
+            "British historians of religion",
+            "English male essayists",
+            "English monarchists",
+            "British MPs 1774–1780",
+            "British MPs 1780–1784",
+            "British Protestants",
+            "British rhetoricians",
+            "Burials in East Sussex",
+            "Converts to Protestantism from Catholicism",
+            "Deaths from peritonitis",
+            "English book and manuscript collectors",
+            "English classical scholars",
+            "English essayists",
+            "English Protestants",
+            "English rhetoricians",
+            "Hampshire and Isle of Wight Militia officers",
+            "Fellows of the Royal Society",
+            "Freemasons of the Premier Grand Lodge of England",
+            "Historians of ancient Rome"
+          ],
+          "birth_year": 1737,
+          "death_year": 1794
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Landscape",
+        "author": "Hamerton",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In a work on 'Landscape,' I remember that Mr. Hamerton mourns over the Commentaries of Caesar; because they do not resemble the letters of a modern war-correspondent"
+        ],
+        "commentaries": [
+          "The author mentions Mr. Hamerton's work 'Landscape' in passing, noting that Hamerton criticizes Caesar's Commentaries for lacking the descriptive qualities of modern war correspondence."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Landscape",
+        "authors": [
+          "Philip Gilbert Hamerton"
+        ],
+        "original_year": 1885,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "British",
+        "description": "A work on landscape art by Philip Gilbert Hamerton, first published in 1885.",
+        "book_id": "web_e9244e59",
+        "author_meta": {
+          "birth_year": 1834,
+          "death_year": 1894,
+          "canonical_name": "Philip Gilbert Hamerton"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Philip Gilbert Hamerton",
+        "birth_year": 1834,
+        "death_year": 1894
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_e9244e59",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Philip Gilbert Hamerton",
+          "birth_year": 1834,
+          "death_year": 1894
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Asinius Pollio",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The writings of Asinius Pollio have conveyed down the memory of the same men, under honourable characters."
+        ],
+        "commentaries": [
+          "The author mentions Pollio's writings as preserving the honorable memory of Brutus and Cassius."
+        ],
+        "canonical_author": "Asinius Pollio"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gaius Asinius Pollio",
+        "page_id": 82748,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "75 BC births",
+          "AD 4 deaths",
+          "1st-century BC historians",
+          "1st-century BC Roman poets",
+          "1st-century BC Roman consuls",
+          "Ancient Roman generals",
+          "Asinii|Pollio, Gaius",
+          "Correspondents of Cicero",
+          "Librarians",
+          "Latin historians",
+          "People from Chieti",
+          "People of the War of Actium"
+        ],
+        "birth_year": -75,
+        "death_year": 4
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Gaius Asinius Pollio",
+          "page_id": 82748,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "75 BC births",
+            "AD 4 deaths",
+            "1st-century BC historians",
+            "1st-century BC Roman poets",
+            "1st-century BC Roman consuls",
+            "Ancient Roman generals",
+            "Asinii|Pollio, Gaius",
+            "Correspondents of Cicero",
+            "Librarians",
+            "Latin historians",
+            "People from Chieti",
+            "People of the War of Actium"
+          ],
+          "birth_year": -75,
+          "death_year": 4
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Rutilius Claudius Namatianus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Neither was the account which Rutilius and Scaurus gave of themselves, thence the less credited or the more censured."
+        ],
+        "commentaries": [
+          "The author mentions Rutilius as a person who wrote an account of his own life."
+        ],
+        "canonical_author": "Rutilius Claudius Namatianus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Rutilius Claudius Namatianus"
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Rutilius Claudius Namatianus"
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dr. Johnson",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "\"The chief glory of every people arises from its authors,\" Dr. Johnson says; and happy the people, I would assert, who have no worse writers than Thomas Gordon.",
+          "\"It is the great excellence of a writer,\" says Dr. Johnson, \"to put into his book as much as it will hold:\"",
+          "\"we are too often ravished with a sonorous sentence,\" as Dr. Johnson says, \"of which, when the noise is past, the meaning does not long remain.\"",
+          "Dr. Johnson, however, says in another place, \"Tacitus, Sir, seems to me rather to have made notes for an historical work, than to have written a history:\""
+        ],
+        "commentaries": [
+          "The author quotes Dr. Johnson's saying about the glory of a people arising from its authors.",
+          "The author quotes Dr. Johnson's maxim about writing.",
+          "The author quotes Dr. Johnson's criticism of empty rhetoric.",
+          "The author quotes Dr. Johnson's opinion of Tacitus's work."
+        ],
+        "canonical_author": "Dr. Johnson"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "H. Johnson",
+        "page_id": 3192459,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1937 births",
+          "Living people",
+          "Radio personalities from Atlanta"
+        ],
+        "birth_year": 1937,
+        "death_year": 1735
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "H. Johnson",
+          "page_id": 3192459,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1937 births",
+            "Living people",
+            "Radio personalities from Atlanta"
+          ],
+          "birth_year": 1937,
+          "death_year": 1735
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Symonds",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "'Economy,' says Mr. Symonds, 'is exhibited in every element of this athletic tongue. Like a naked gladiator all bone and muscle, it relies upon bare sinewy strength.'"
+        ],
+        "commentaries": [
+          "The author quotes Symonds's remark on the economy of the Latin language, using it to describe Tacitus's style."
+        ],
+        "canonical_author": "Symonds"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Symonds",
+        "birth_year": 1851,
+        "death_year": 1934
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "65772"
+        ],
+        "target_person": {
+          "title": "Symonds",
+          "birth_year": 1851,
+          "death_year": 1934
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Commentaries",
+        "author": "Agrippina the Younger",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This passage, not related by the authors of our annals, I found in the commentaries of her daughter Agrippina; her, who was the mother of the Emperor Nero, and has published her own life with the fortunes of her family."
+        ],
+        "commentaries": [
+          "The author cites Agrippina the Younger's commentaries as the source for a specific passage about her mother's encounter with Tiberius."
+        ]
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Agrippina the Younger",
+        "birth_year": 15,
+        "death_year": 59
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Agrippina the Younger",
+          "birth_year": 15,
+          "death_year": 59
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Marcus Tullius Cicero",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "The opinions of Tacitus were not far removed from the opinions of Cicero, but they were modified by what he saw of Nerva and of Trajan:",
+          "That book of Cicero's, in which he exalted Cato to the skies; what other animadversion did it draw from Caesar the Dictator, than a written reply, in the same style and equality as if before his judges he had made it?"
+        ],
+        "commentaries": [
+          "The author compares the political opinions of Tacitus and Cicero.",
+          "The author refers to Cicero's work praising Cato, noting that Caesar's only response was a written rebuttal."
+        ],
+        "canonical_author": "Marcus Tullius Cicero"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Tullius Cicero",
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Marcus Tullius Cicero",
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sallustius Crispus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "great nephew by a sister to Caius Sallustius, the renowned Roman historian, and by him adopted"
+        ],
+        "commentaries": [
+          "The author mentions Caius Sallustius as a renowned Roman historian, reference to his historical works, though no specific title is given."
+        ],
+        "canonical_author": "Sallustius Crispus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gaius Sallustius Passienus Crispus",
+        "page_id": 1394161,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "47 deaths",
+          "Ancient Roman adoptees",
+          "Ancient Roman murder victims",
+          "Family of Nero",
+          "Suffect consuls of Imperial Rome",
+          "Imperial Roman consuls",
+          "Roman governors of Asia",
+          "Husbands of Agrippina the Younger",
+          "Poisoned ancient Romans",
+          "Sallustii|Passienus Crispus, Gaius",
+          "Year of birth unknown"
+        ],
+        "birth_year": -86,
+        "death_year": 47
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Gaius Sallustius Passienus Crispus",
+          "page_id": 1394161,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "47 deaths",
+            "Ancient Roman adoptees",
+            "Ancient Roman murder victims",
+            "Family of Nero",
+            "Suffect consuls of Imperial Rome",
+            "Imperial Roman consuls",
+            "Roman governors of Asia",
+            "Husbands of Agrippina the Younger",
+            "Poisoned ancient Romans",
+            "Sallustii|Passienus Crispus, Gaius",
+            "Year of birth unknown"
+          ],
+          "birth_year": -86,
+          "death_year": 47
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Commentaries",
+        "author": "Julius Caesar",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Ascham, on the other hand, a man of real taste and learning, says of the Commentaries, 'All things be most perfectly done by him; in Caesar only, could never yet fault be found.'"
+        ],
+        "commentaries": [
+          "The author cites Ascham's praise of Caesar's Commentaries, agreeing with the positive assessment of Caesar's work."
+        ],
+        "canonical_author": "Caesar"
+      },
+      "goodreads_match": {
+        "publication_year": 2013,
+        "title": "The Commentaries of Julius Caesar",
+        "isbn13": "9781484129869",
+        "num_pages": 310,
+        "book_id": "19511472",
+        "ratings_count": 55,
+        "title_without_series": "The Commentaries of Julius Caesar",
+        "work_id": "22675529",
+        "average_rating": 4.26,
+        "publication_month": 4,
+        "publication_day": 16,
+        "isbn": "1484129865",
+        "publisher": "Createspace",
+        "author_ids": [
+          "16535395"
+        ],
+        "text_reviews_count": 5,
+        "format": "Paperback",
+        "authors": [
+          "Gaius Julius Caesar"
+        ],
+        "description": "This is a new edition of The Complete Commentaries of Julius Caesar. Including The Commentaries on The War in Gaul and The Roman Civil War. Julius Caesar was a Roman general and statesman and a distinguished writer of Latin prose. He played a critical role in the gradual transformation of the Roman Republic into the Roman Empire. Caesar's conquest of Gaul, completed by 51 BC, extended Rome's territory to the English Channel and the Rhine. Caesar became the first Roman general to cross both when he built a b...",
+        "link": "https://www.goodreads.com/book/show/19511472-the-commentaries-of-julius-caesar",
+        "wikipedia_match": {
+          "title": "Julius Caesar",
+          "page_id": 15924,
+          "infoboxes": [
+            "person",
+            "officeholder "
+          ],
+          "categories": [
+            "Julius Caesar| ",
+            "100 BC births",
+            "44 BC deaths",
+            "1st-century BC historians",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Ancient assassinated people",
+            "Ancient Roman dictators",
+            "Ancient Roman military writers",
+            "Ancient Roman triumphators",
+            "Ancient Roman writers",
+            "Assassinated ancient Roman politicians",
+            "Assassinated heads of state in Europe",
+            "Assassinated military personnel",
+            "Characters in Book VI of the Aeneid",
+            "Characters in the Divine Comedy",
+            "Cleopatra",
+            "Correspondents of Cicero",
+            "Curule aediles",
+            "Deaths by stabbing in ancient Rome",
+            "Deified ancient Roman men",
+            "First Triumvirate",
+            "Flamines Dialis",
+            "Golden Age Latin writers",
+            "Illeists",
+            "Julii Caesares|Gaius",
+            "Memoirists",
+            "People captured by pirates",
+            "Pontifices maximi of the Roman Republic"
+          ],
+          "birth_year": -100,
+          "death_year": -44
+        },
+        "original_year": 2017,
+        "author_meta": {
+          "birth_year": -100,
+          "death_year": -44,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Julius Caesar",
+        "page_id": 15924,
+        "infoboxes": [
+          "person",
+          "officeholder "
+        ],
+        "categories": [
+          "Julius Caesar| ",
+          "100 BC births",
+          "44 BC deaths",
+          "1st-century BC historians",
+          "1st-century BC Roman augurs",
+          "1st-century BC Roman consuls",
+          "1st-century BC writers in Latin",
+          "Ancient assassinated people",
+          "Ancient Roman dictators",
+          "Ancient Roman military writers",
+          "Ancient Roman triumphators",
+          "Ancient Roman writers",
+          "Assassinated ancient Roman politicians",
+          "Assassinated heads of state in Europe",
+          "Assassinated military personnel",
+          "Characters in Book VI of the Aeneid",
+          "Characters in the Divine Comedy",
+          "Cleopatra",
+          "Correspondents of Cicero",
+          "Curule aediles",
+          "Deaths by stabbing in ancient Rome",
+          "Deified ancient Roman men",
+          "First Triumvirate",
+          "Flamines Dialis",
+          "Golden Age Latin writers",
+          "Illeists",
+          "Julii Caesares|Gaius",
+          "Memoirists",
+          "People captured by pirates",
+          "Pontifices maximi of the Roman Republic"
+        ],
+        "birth_year": -100,
+        "death_year": -44
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "19511472",
+        "target_author_ids": [
+          "16535395"
+        ],
+        "target_person": {
+          "title": "Julius Caesar",
+          "page_id": 15924,
+          "infoboxes": [
+            "person",
+            "officeholder "
+          ],
+          "categories": [
+            "Julius Caesar| ",
+            "100 BC births",
+            "44 BC deaths",
+            "1st-century BC historians",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Ancient assassinated people",
+            "Ancient Roman dictators",
+            "Ancient Roman military writers",
+            "Ancient Roman triumphators",
+            "Ancient Roman writers",
+            "Assassinated ancient Roman politicians",
+            "Assassinated heads of state in Europe",
+            "Assassinated military personnel",
+            "Characters in Book VI of the Aeneid",
+            "Characters in the Divine Comedy",
+            "Cleopatra",
+            "Correspondents of Cicero",
+            "Curule aediles",
+            "Deaths by stabbing in ancient Rome",
+            "Deified ancient Roman men",
+            "First Triumvirate",
+            "Flamines Dialis",
+            "Golden Age Latin writers",
+            "Illeists",
+            "Julii Caesares|Gaius",
+            "Memoirists",
+            "People captured by pirates",
+            "Pontifices maximi of the Roman Republic"
+          ],
+          "birth_year": -100,
+          "death_year": -44
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Scaliger",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Scaliger says in his compliments to Buchanan: _Imperii fuerat Romani Scotia lines._"
+        ],
+        "commentaries": [
+          "The author quotes Scaliger's line about Scotland being the limit of the Roman Empire."
+        ],
+        "canonical_author": "Scaliger"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Joseph Justus Scaliger",
+        "page_id": 165552,
+        "infoboxes": [],
+        "categories": [
+          "People from Agen",
+          "1540 births",
+          "1609 deaths",
+          "16th-century French historians",
+          "16th-century French male writers",
+          "16th-century writers in Latin",
+          "17th-century writers in Latin",
+          "16th-century French writers",
+          "17th-century French writers",
+          "17th-century French male writers",
+          "Chronologists",
+          "French classical scholars",
+          "French book and manuscript collectors",
+          "Academic staff of Leiden University",
+          "College of Guienne alumni",
+          "University of Paris alumni",
+          "Academic staff of the University of Geneva",
+          "17th-century Dutch people",
+          "French Protestants",
+          "Converts to Protestantism",
+          "French male non-fiction writers",
+          "French people of Italian descent",
+          "Burials at Pieterskerk, Leiden"
+        ],
+        "birth_year": 1540,
+        "death_year": 1609
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Joseph Justus Scaliger",
+          "page_id": 165552,
+          "infoboxes": [],
+          "categories": [
+            "People from Agen",
+            "1540 births",
+            "1609 deaths",
+            "16th-century French historians",
+            "16th-century French male writers",
+            "16th-century writers in Latin",
+            "17th-century writers in Latin",
+            "16th-century French writers",
+            "17th-century French writers",
+            "17th-century French male writers",
+            "Chronologists",
+            "French classical scholars",
+            "French book and manuscript collectors",
+            "Academic staff of Leiden University",
+            "College of Guienne alumni",
+            "University of Paris alumni",
+            "Academic staff of the University of Geneva",
+            "17th-century Dutch people",
+            "French Protestants",
+            "Converts to Protestantism",
+            "French male non-fiction writers",
+            "French people of Italian descent",
+            "Burials at Pieterskerk, Leiden"
+          ],
+          "birth_year": 1540,
+          "death_year": 1609
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Fabius Rusticus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Britain is by Livy and Fabius Rusticus, the former the most eloquent of the ancient historians, the latter of the moderns, compared in shape to an oblong shield, or a broad knife with two edges."
+        ],
+        "commentaries": [
+          "Fabius Rusticus is cited as a modern historian who compared the shape of Britain to an oblong shield or a broad knife."
+        ],
+        "canonical_author": "Fabius Rusticus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Fabius Rusticus"
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Fabius Rusticus"
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The History",
+        "author": "Tacitus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Of \"The History,\" only four books have been preserved; and they contain the events of a single year"
+        ],
+        "commentaries": [
+          "The author notes the fragmentary survival of Tacitus's History."
+        ]
+      },
+      "goodreads_match": {
+        "title": "The History",
+        "authors": [
+          "Tacitus"
+        ],
+        "original_year": 105,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Roman",
+        "description": "Historical work by Roman historian Tacitus covering the events of a single year (AD 69) during the Year of the Four Emperors; only four books survive.",
+        "book_id": "web_9b545448",
+        "author_meta": {
+          "birth_year": 56,
+          "death_year": 120,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Tacitus",
+        "birth_year": 56,
+        "death_year": 120
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_9b545448",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Tacitus",
+          "birth_year": 56,
+          "death_year": 120
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Murphy",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "There is a rendering by Murphy, diffuse and poor; a dilution of Gordon, worthy neither of Tacitus nor of the English tongue."
+        ],
+        "commentaries": [
+          "The author mentions Murphy's translation of Tacitus critically."
+        ],
+        "canonical_author": "Murphy"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Murphy",
+        "birth_year": 1883,
+        "death_year": 1975
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1008627"
+        ],
+        "target_person": {
+          "title": "Murphy",
+          "birth_year": 1883,
+          "death_year": 1975
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bibaculus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the poems of Bibaculus and those of Catullus, stuffed with virulent satires against the Caesars, are still read."
+        ],
+        "commentaries": [
+          "The author mentions the poems of Bibaculus as containing satires against the Caesars that are still read."
+        ],
+        "canonical_author": "Bibaculus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Furius Bibaculus",
+        "page_id": 697662,
+        "infoboxes": [],
+        "categories": [
+          "1st-century BC deaths",
+          "Golden Age Latin writers",
+          "2nd-century BC Romans",
+          "1st-century BC Romans",
+          "1st-century BC Roman poets",
+          "Furii|Bibaculus",
+          "Year of death unknown",
+          "Writers from Cremona"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Marcus Furius Bibaculus",
+          "page_id": 697662,
+          "infoboxes": [],
+          "categories": [
+            "1st-century BC deaths",
+            "Golden Age Latin writers",
+            "2nd-century BC Romans",
+            "1st-century BC Romans",
+            "1st-century BC Roman poets",
+            "Furii|Bibaculus",
+            "Year of death unknown",
+            "Writers from Cremona"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Dialogue about Illustrious Orators",
+        "author": "Tacitus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "his \"Dialogue about Illustrious Orators\" bears witness to his admirable taste, and to his practical knowledge of Roman eloquence"
+        ],
+        "commentaries": [
+          "The author references this dialogue as evidence of Tacitus's taste and oratorical knowledge."
+        ]
+      },
+      "goodreads_match": {
+        "title": "A Dialogue Concerning Oratory, Or The Causes Of Corrupt Eloquence The Works Of Cornelius Tacitus, Volume 8 (of 8); With An Essay On His Life And Genius, Notes, Supplements",
+        "book_id": "19229888",
+        "ratings_count": 5,
+        "title_without_series": "A Dialogue Concerning Oratory, Or The Causes Of Corrupt Eloquence The Works Of Cornelius Tacitus, Volume 8 (of 8); With An Essay On His Life And Genius, Notes, Supplements",
+        "work_id": "2355839",
+        "average_rating": 3.71,
+        "author_ids": [
+          "2936846",
+          "1008627"
+        ],
+        "text_reviews_count": 1,
+        "authors": [
+          "Tacitus",
+          "Arthur Murphy"
+        ],
+        "description": "This book was converted from its physical edition to the digital format by a community of volunteers. You may find it for free on the web. Purchase of the Kindle edition includes wireless delivery.",
+        "link": "https://www.goodreads.com/book/show/19229888-a-dialogue-concerning-oratory-or-the-causes-of-corrupt-eloquence-the-wo",
+        "wikipedia_match": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        },
+        "original_year": 102,
+        "author_meta": {
+          "birth_year": 56,
+          "death_year": 120,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Tacitus",
+        "page_id": 19594563,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "Tacitus| ",
+          "1st-century Gallo-Roman people",
+          "1st-century writers in Latin",
+          "1st-century historians",
+          "2nd-century Gallo-Roman people",
+          "2nd-century historians",
+          "2nd-century writers in Latin",
+          "50s births",
+          "120s deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Cornelii",
+          "Latin historians",
+          "Roman governors of Asia",
+          "Ancient Roman biographers",
+          "Senators of the Roman Empire",
+          "Silver Age Latin writers",
+          "Suffect consuls of Imperial Rome"
+        ],
+        "birth_year": 56,
+        "death_year": 120
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "19229888",
+        "target_author_ids": [
+          "2936846",
+          "1008627"
+        ],
+        "target_person": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "M. Burnouf",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In French, I cannot but admire the labours of M. Burnouf:"
+        ],
+        "commentaries": [
+          "The author mentions Burnouf's French translation of Tacitus."
+        ],
+        "canonical_author": "M. Burnouf"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Jean-Louis Burnouf",
+        "page_id": 15963796,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1775 births",
+          "1844 deaths",
+          "French philologists",
+          "French translators",
+          "French orientalists",
+          "Members of the Académie des Inscriptions et Belles-Lettres",
+          "People from Manche",
+          "Academic staff of the Collège de France",
+          "French classical scholars",
+          "French male non-fiction writers",
+          "People from the Province of Normandy"
+        ],
+        "birth_year": 1775,
+        "death_year": 1844
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Jean-Louis Burnouf",
+          "page_id": 15963796,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1775 births",
+            "1844 deaths",
+            "French philologists",
+            "French translators",
+            "French orientalists",
+            "Members of the Académie des Inscriptions et Belles-Lettres",
+            "People from Manche",
+            "Academic staff of the Collège de France",
+            "French classical scholars",
+            "French male non-fiction writers",
+            "People from the Province of Normandy"
+          ],
+          "birth_year": 1775,
+          "death_year": 1844
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cowper",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "But Cowper says, no less truly, of a despised and rebel Queen; _Regions Caesar never knew, Thy posterity shall sway; Where his Eagles never flew, None invincible as they._"
+        ],
+        "commentaries": [
+          "The author quotes Cowper's poem on Boadicea."
+        ],
+        "canonical_author": "Cowper"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Bob Cowper",
+        "page_id": 2165948,
+        "infoboxes": [
+          "cricketer"
+        ],
+        "categories": [
+          "1940 births",
+          "2025 deaths",
+          "20th-century Australian sportsmen",
+          "Australia Test cricketers",
+          "Australian cricketers",
+          "Cricketers from Melbourne",
+          "Marylebone Cricket Club cricketers",
+          "People educated at Scotch College, Melbourne",
+          "People from Kew, Victoria",
+          "Recipients of the Medal of the Order of Australia",
+          "Victoria cricketers",
+          "Western Australia cricketers"
+        ],
+        "birth_year": 1940,
+        "death_year": 2025
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Bob Cowper",
+          "page_id": 2165948,
+          "infoboxes": [
+            "cricketer"
+          ],
+          "categories": [
+            "1940 births",
+            "2025 deaths",
+            "20th-century Australian sportsmen",
+            "Australia Test cricketers",
+            "Australian cricketers",
+            "Cricketers from Melbourne",
+            "Marylebone Cricket Club cricketers",
+            "People educated at Scotch College, Melbourne",
+            "People from Kew, Victoria",
+            "Recipients of the Medal of the Order of Australia",
+            "Victoria cricketers",
+            "Western Australia cricketers"
+          ],
+          "birth_year": 1940,
+          "death_year": 2025
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Titus Livius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Titus Livius, an historian eminently famous for eloquence and veracity, signalised Pompey with such abundant encomiums, that he was thence by Augustus named Pompeianus; nor did this prejudice their common friendship."
+        ],
+        "commentaries": [
+          "The author cites Livy as an example of an historian who praised figures later deemed enemies of the state, yet remained in favor with Augustus."
+        ],
+        "canonical_author": "Titus Livius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Titus Livius",
+        "birth_year": -59,
+        "death_year": 17
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Titus Livius",
+          "birth_year": -59,
+          "death_year": 17
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Goldsmith",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I do not claim for him the style of Addison, nor the accomplished negligence of Goldsmith;"
+        ],
+        "commentaries": [
+          "The author mentions Goldsmith as a stylistic benchmark."
+        ],
+        "canonical_author": "Goldsmith"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Oliver Goldsmith",
+        "page_id": 58038,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "1728 births",
+          "1774 deaths",
+          "Writers from County Longford",
+          "Writers from County Roscommon",
+          "Anglo-Irish writers",
+          "18th-century Anglo-Irish people",
+          "Irish Anglicans",
+          "Irish male poets",
+          "Irish male novelists",
+          "Irish male dramatists and playwrights",
+          "Alumni of Trinity College Dublin",
+          "Alumni of the University of Edinburgh",
+          "Streathamites",
+          "18th-century Irish novelists",
+          "18th-century Irish poets",
+          "18th-century Irish male writers",
+          "18th-century Irish dramatists and playwrights",
+          "Irish essayists",
+          "People from Ballymahon",
+          "People from Elphin, County Roscommon"
+        ],
+        "birth_year": 1728,
+        "death_year": 1774
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Oliver Goldsmith",
+          "page_id": 58038,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "1728 births",
+            "1774 deaths",
+            "Writers from County Longford",
+            "Writers from County Roscommon",
+            "Anglo-Irish writers",
+            "18th-century Anglo-Irish people",
+            "Irish Anglicans",
+            "Irish male poets",
+            "Irish male novelists",
+            "Irish male dramatists and playwrights",
+            "Alumni of Trinity College Dublin",
+            "Alumni of the University of Edinburgh",
+            "Streathamites",
+            "18th-century Irish novelists",
+            "18th-century Irish poets",
+            "18th-century Irish male writers",
+            "18th-century Irish dramatists and playwrights",
+            "Irish essayists",
+            "People from Ballymahon",
+            "People from Elphin, County Roscommon"
+          ],
+          "birth_year": 1728,
+          "death_year": 1774
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dr. Birkbeck Hill",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Dr. Birkbeck Hill, in the delightful Preface to his Boswell, explains how he was turned by a happy chance to the study of the literature of the eighteenth century; and how he read on and on in the enchanting pages of \"The Spectator.\""
+        ],
+        "commentaries": [
+          "The author mentions Dr. Birkbeck Hill's preface to his edition of Boswell."
+        ],
+        "canonical_author": "Dr. Birkbeck Hill"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Dr. Birkbeck Hill",
+        "birth_year": 1835,
+        "death_year": 1903
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5171896"
+        ],
+        "target_person": {
+          "title": "Dr. Birkbeck Hill",
+          "birth_year": 1835,
+          "death_year": 1903
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Augustus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Did Augustus, even under the pressure of old age and infirmities, take so many journeys into Germany?"
+        ],
+        "commentaries": [
+          "The author compares Tiberius unfavorably to Augustus, referencing Augustus's travels and actions as a standard of conduct, but not citing a book."
+        ],
+        "canonical_author": "Augustus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Augustus",
+        "birth_year": -63,
+        "death_year": 14
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Augustus",
+          "birth_year": -63,
+          "death_year": 14
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cardinal Newman",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "\"Who is able to infuse into me,\" Cardinal Newman asks, \"or how shall I imbibe, a sense of the peculiarities of the style of Cicero or Virgil, if I have not read their writings?\"",
+          "It has been told of Cardinal Newman, that he never liked to pass a single day, without rendering an English sentence into Latin."
+        ],
+        "commentaries": [
+          "The author quotes Cardinal Newman on the difficulty of conveying style without reading the original.",
+          "The author mentions Cardinal Newman's practice of translating English into Latin as a discipline for writing style."
+        ],
+        "canonical_author": "Cardinal Newman"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Henry Newman",
+        "page_id": 83895,
+        "infoboxes": [
+          "Christian leader",
+          "philosopher",
+          "saint"
+        ],
+        "categories": [
+          "1801 births",
+          "1890 deaths",
+          "19th-century Anglican theologians",
+          "19th-century British cardinals",
+          "19th-century English Anglican priests",
+          "19th-century English male writers",
+          "19th-century English musicians",
+          "19th-century English non-fiction writers",
+          "19th-century English novelists",
+          "19th-century English poets",
+          "19th-century venerated Christians",
+          "Academics of University College Dublin",
+          "Alumni of Trinity College, Oxford",
+          "Anglican priest converts to Roman Catholicism",
+          "Anglican saints",
+          "Aristotelian philosophers",
+          "Augustinian philosophers",
+          "Beatifications by Pope Benedict XVI",
+          "Beatified Oratorians",
+          "British critics of atheism",
+          "Canonizations by Pope Francis",
+          "Cardinals created by Pope Leo XIII",
+          "Catholic philosophers",
+          "Catholic saints who converted from Protestantism",
+          "Christian humanists",
+          "Christianity in Birmingham, West Midlands",
+          "Clergy from Birmingham, West Midlands",
+          "Deaths from pneumonia in England",
+          "Doctors of the Church",
+          "Empiricists"
+        ],
+        "birth_year": 1801,
+        "death_year": 1890
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "John Henry Newman",
+          "page_id": 83895,
+          "infoboxes": [
+            "Christian leader",
+            "philosopher",
+            "saint"
+          ],
+          "categories": [
+            "1801 births",
+            "1890 deaths",
+            "19th-century Anglican theologians",
+            "19th-century British cardinals",
+            "19th-century English Anglican priests",
+            "19th-century English male writers",
+            "19th-century English musicians",
+            "19th-century English non-fiction writers",
+            "19th-century English novelists",
+            "19th-century English poets",
+            "19th-century venerated Christians",
+            "Academics of University College Dublin",
+            "Alumni of Trinity College, Oxford",
+            "Anglican priest converts to Roman Catholicism",
+            "Anglican saints",
+            "Aristotelian philosophers",
+            "Augustinian philosophers",
+            "Beatifications by Pope Benedict XVI",
+            "Beatified Oratorians",
+            "British critics of atheism",
+            "Canonizations by Pope Francis",
+            "Cardinals created by Pope Leo XIII",
+            "Catholic philosophers",
+            "Catholic saints who converted from Protestantism",
+            "Christian humanists",
+            "Christianity in Birmingham, West Midlands",
+            "Clergy from Birmingham, West Midlands",
+            "Deaths from pneumonia in England",
+            "Doctors of the Church",
+            "Empiricists"
+          ],
+          "birth_year": 1801,
+          "death_year": 1890
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Account of Germany",
+        "author": "Tacitus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "I give entire, \"The Account of Germany\" and \"The Life of Agricola\": these works are entertaining, and should have a particular interest for English readers.",
+          "\"The Annals,\" and the history of Tiberius, have detained us, for the most part, within the capital: \"The Agricola\" brings us into a province of the Empire; and \"The Account of Germany\" will take us among the savages beyond the frontier."
+        ],
+        "commentaries": [
+          "The author states that he includes the complete text of these works in the volume.",
+          "The author references Tacitus's work as a source for the history of Germany."
+        ]
+      },
+      "goodreads_match": {
+        "publication_year": 2010,
+        "title": "The Agricola and the Germania",
+        "isbn13": "9780140455403",
+        "num_pages": 121,
+        "book_id": "7006425",
+        "ratings_count": 109,
+        "title_without_series": "The Agricola and the Germania",
+        "work_id": "26416",
+        "average_rating": 3.98,
+        "publication_month": 1,
+        "publication_day": 7,
+        "isbn": "014045540X",
+        "publisher": "Penguin Classics",
+        "author_ids": [
+          "2936846",
+          "5544478"
+        ],
+        "text_reviews_count": 5,
+        "format": "Paperback",
+        "authors": [
+          "Tacitus",
+          "Harold Mattingly"
+        ],
+        "description": "The Agricolais both a portrait of Julius Agricola - the most famous governor of Roman Britain and Tacitus' well-loved and respected father-in-law - and the first detailed account of Britain that has come down to us. It offers fascinating descriptions of the geography, climate and peoples of the country, and a succinct account of the early stages of the Roman occupation, nearly fatally undermined by Boudicca's revolt in AD 61 but consolidated by campaigns that took Agricola as far as Anglesey and northern Sc...",
+        "link": "https://www.goodreads.com/book/show/7006425-the-agricola-and-the-germania",
+        "wikipedia_match": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        },
+        "original_year": 98,
+        "author_meta": {
+          "birth_year": 56,
+          "death_year": 120,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Tacitus",
+        "page_id": 19594563,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "Tacitus| ",
+          "1st-century Gallo-Roman people",
+          "1st-century writers in Latin",
+          "1st-century historians",
+          "2nd-century Gallo-Roman people",
+          "2nd-century historians",
+          "2nd-century writers in Latin",
+          "50s births",
+          "120s deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Cornelii",
+          "Latin historians",
+          "Roman governors of Asia",
+          "Ancient Roman biographers",
+          "Senators of the Roman Empire",
+          "Silver Age Latin writers",
+          "Suffect consuls of Imperial Rome"
+        ],
+        "birth_year": 56,
+        "death_year": 120
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "7006425",
+        "target_author_ids": [
+          "2936846",
+          "5544478"
+        ],
+        "target_person": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Caius Plinius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Caius Plinius, the writer of the German wars, relates that she stood at the end of the bridge, as the legions returned, and accosted them with thanks and praises;"
+        ],
+        "commentaries": [
+          "The author cites Pliny the Elder as a source for the anecdote about Agrippina's actions."
+        ],
+        "canonical_author": "Caius Plinius"
+      },
+      "goodreads_match": {
+        "title": "Bella Germaniae (The German Wars)",
+        "authors": [
+          "Gaius Plinius Secundus (Pliny the Elder)"
+        ],
+        "original_year": 70,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Roman",
+        "description": "Lost historical work on the Germanic wars by Pliny the Elder, referenced by Tacitus in his Annals.",
+        "book_id": "web_6a76513f",
+        "author_meta": {
+          "death_year": 113
+        }
+      },
+      "wikipedia_match": {
+        "title": "Gaius Plinius Secundus (Pliny the Elder)",
+        "death_year": 113
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_6a76513f",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Gaius Plinius Secundus (Pliny the Elder)",
+          "death_year": 113
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Eclogue \"Pollio\"",
+        "author": "Virgil",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "It is like the Saturnian Reign, which Virgil sings in the Eclogue \"Pollio.\""
+        ],
+        "commentaries": [
+          "The author compares the description of Tiberius's reign to a theme in Virgil's eclogue."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Eclogue IV (Pollio)",
+        "authors": [
+          "Virgil"
+        ],
+        "original_year": -40,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Roman",
+        "description": "The fourth eclogue of Virgil's Eclogues, also known as the 'Pollio' eclogue or Messianic Eclogue, prophesying a golden age and the birth of a child.",
+        "book_id": "web_d666f31d",
+        "author_meta": {
+          "birth_year": -70,
+          "death_year": -19,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Virgil",
+        "birth_year": -70,
+        "death_year": -19
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_d666f31d",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Virgil",
+          "birth_year": -70,
+          "death_year": -19
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Of Friendship",
+        "author": "Francis Bacon",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and in the Essay 'Of Friendship,' Bacon has many deep sentences about the favourites of Kings, their 'Participes Curarum.'"
+        ],
+        "commentaries": [
+          "The author references Bacon's essay 'Of Friendship' as containing insights about royal favourites."
+        ]
+      },
+      "goodreads_match": {
+        "publication_year": 1985,
+        "title": "The Essays",
+        "isbn13": "9780140432169",
+        "num_pages": 288,
+        "book_id": "677923",
+        "ratings_count": 2839,
+        "title_without_series": "The Essays",
+        "work_id": "679640",
+        "average_rating": 3.81,
+        "publication_month": 8,
+        "publication_day": 29,
+        "isbn": "0140432167",
+        "publisher": "Penguin Classics",
+        "author_ids": [
+          "50964",
+          "521626"
+        ],
+        "text_reviews_count": 57,
+        "format": "Paperback",
+        "authors": [
+          "Francis Bacon",
+          "John Pitcher"
+        ],
+        "description": "One of the major political figures of his time, Sir Francis Bacon (1561-1626) served in the court of Elizabeth I and ultimately became Lord Chancellor under James I in 1617. A scholar, wit, lawyer and statesman, he wrote widely on politics, philosophy and science - declaring early in his career that 'I have taken all knowledge as my province'. In this, his most famous work, he considers a diverse range of subjects, such as death and marriage, ambition and atheism, in prose that is vibrant and rich in Renais...",
+        "link": "https://www.goodreads.com/book/show/677923.The_Essays",
+        "wikipedia_match": {
+          "title": "Francis Bacon",
+          "page_id": 11319,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "Francis Bacon| ",
+            "1561 births",
+            "1626 deaths",
+            "16th-century English lawyers",
+            "16th-century English male writers",
+            "16th-century English novelists",
+            "16th-century English philosophers",
+            "16th-century English writers",
+            "16th-century spies",
+            "16th-century writers in Latin",
+            "17th-century English LGBTQ people",
+            "17th-century English lawyers",
+            "17th-century English male writers",
+            "17th-century English novelists",
+            "17th-century English philosophers",
+            "17th-century English writers",
+            "17th-century King's Counsel",
+            "17th-century regents",
+            "17th-century spies",
+            "17th-century writers in Latin",
+            "Age of Enlightenment",
+            "Alumni of Trinity College, Cambridge",
+            "Anglican writers",
+            "Attorneys general for England and Wales",
+            "Atomists",
+            "Authors of utopian literature",
+            "Bacon family|Francis",
+            "Baconian theory of Shakespeare authorship|Baconian theory of Shakespeare authorship",
+            "British philosophers of law",
+            "Latin-language British writers"
+          ],
+          "birth_year": 1561,
+          "death_year": 1626
+        },
+        "original_year": 1597,
+        "author_meta": {
+          "birth_year": 1561,
+          "death_year": 1626,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Francis Bacon",
+        "page_id": 11319,
+        "infoboxes": [
+          "officeholder",
+          "philosopher"
+        ],
+        "categories": [
+          "Francis Bacon| ",
+          "1561 births",
+          "1626 deaths",
+          "16th-century English lawyers",
+          "16th-century English male writers",
+          "16th-century English novelists",
+          "16th-century English philosophers",
+          "16th-century English writers",
+          "16th-century spies",
+          "16th-century writers in Latin",
+          "17th-century English LGBTQ people",
+          "17th-century English lawyers",
+          "17th-century English male writers",
+          "17th-century English novelists",
+          "17th-century English philosophers",
+          "17th-century English writers",
+          "17th-century King's Counsel",
+          "17th-century regents",
+          "17th-century spies",
+          "17th-century writers in Latin",
+          "Age of Enlightenment",
+          "Alumni of Trinity College, Cambridge",
+          "Anglican writers",
+          "Attorneys general for England and Wales",
+          "Atomists",
+          "Authors of utopian literature",
+          "Bacon family|Francis",
+          "Baconian theory of Shakespeare authorship|Baconian theory of Shakespeare authorship",
+          "British philosophers of law",
+          "Latin-language British writers"
+        ],
+        "birth_year": 1561,
+        "death_year": 1626
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "677923",
+        "target_author_ids": [
+          "50964",
+          "521626"
+        ],
+        "target_person": {
+          "title": "Francis Bacon",
+          "page_id": 11319,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "Francis Bacon| ",
+            "1561 births",
+            "1626 deaths",
+            "16th-century English lawyers",
+            "16th-century English male writers",
+            "16th-century English novelists",
+            "16th-century English philosophers",
+            "16th-century English writers",
+            "16th-century spies",
+            "16th-century writers in Latin",
+            "17th-century English LGBTQ people",
+            "17th-century English lawyers",
+            "17th-century English male writers",
+            "17th-century English novelists",
+            "17th-century English philosophers",
+            "17th-century English writers",
+            "17th-century King's Counsel",
+            "17th-century regents",
+            "17th-century spies",
+            "17th-century writers in Latin",
+            "Age of Enlightenment",
+            "Alumni of Trinity College, Cambridge",
+            "Anglican writers",
+            "Attorneys general for England and Wales",
+            "Atomists",
+            "Authors of utopian literature",
+            "Bacon family|Francis",
+            "Baconian theory of Shakespeare authorship|Baconian theory of Shakespeare authorship",
+            "British philosophers of law",
+            "Latin-language British writers"
+          ],
+          "birth_year": 1561,
+          "death_year": 1626
+        }
+      }
+    }
+  ]
+}

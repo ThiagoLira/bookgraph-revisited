@@ -1,0 +1,613 @@
+{
+  "source": {
+    "title": "On the Nature of Things",
+    "authors": [
+      "Lucretius"
+    ],
+    "goodreads_id": "pg785",
+    "calibre_id": null,
+    "author_ids": [
+      "8143161"
+    ],
+    "average_rating": 3.97,
+    "num_pages": 262,
+    "title_without_series": "On the Nature of Things",
+    "publication_day": 1,
+    "publication_year": 2001,
+    "book_id": "876094",
+    "ratings_count": 103,
+    "isbn": "0872205878",
+    "work_id": "189338",
+    "publisher": "Hackett Publishing Company, Inc.",
+    "publication_month": 9,
+    "isbn13": "9780872205871",
+    "text_reviews_count": 14,
+    "format": "Paperback",
+    "description": "Martin Ferguson Smith's work on Lucretius is both well known and highly regarded. However, his 1969 translation of De Rerum Natura--long out of print--is virtually unknown. Readers will share our excitement in the discovery of this accurate and fluent prose rendering. For this edition, Professor Smith provides a revised translation, new Introduction, headnotes and bibliography.",
+    "link": "https://www.goodreads.com/book/show/876094.On_the_Nature_of_Things",
+    "author_metadata": {
+      "birth_year": -99,
+      "death_year": -55,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Epicurus",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Even Epicurus went, his light of life Run out, the man in genius who o'er-topped The human race, extinguishing all others, As sun, in ether arisen, all the stars.",
+          "And she the first that gave Life its sweet solaces, when she begat A man of heart so wise, who whilom poured All wisdom forth from his truth-speaking mouth;",
+          "at such a time Nigh the whole tempest quakes"
+        ],
+        "commentaries": [
+          "The author references Epicurus as a supreme genius who also died, despite his greatness.",
+          "The author describes Athens as having produced a wise man (Epicurus) who poured forth wisdom.",
+          "The author is implicitly referencing Epicurean ideas about natural phenomena, as the passage explains thunderbolts through natural causes rather than divine intervention."
+        ],
+        "canonical_author": "Epicurus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Epicurus",
+        "page_id": 10073,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "4th-century BC Greek philosophers",
+          "3rd-century BC Greek philosophers",
+          "341 BC births",
+          "270 BC deaths",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Samians",
+          "Empiricists",
+          "Epicurean philosophers",
+          "Greek male writers",
+          "Materialists",
+          "Philosophers of death",
+          "Hellenistic-era philosophers in Athens"
+        ],
+        "birth_year": -341,
+        "death_year": -270
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "114041"
+        ],
+        "target_person": {
+          "title": "Epicurus",
+          "page_id": 10073,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "4th-century BC Greek philosophers",
+            "3rd-century BC Greek philosophers",
+            "341 BC births",
+            "270 BC deaths",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Samians",
+            "Empiricists",
+            "Epicurean philosophers",
+            "Greek male writers",
+            "Materialists",
+            "Philosophers of death",
+            "Hellenistic-era philosophers in Athens"
+          ],
+          "birth_year": -341,
+          "death_year": -270
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ennius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as our Ennius sang, Who first from lovely Helicon brought down A laurel wreath of bright perennial leaves, Renowned forever among the Italian clans. Yet Ennius too in everlasting verse Proclaims those vaults of Acheron to be, Though thence, he said, nor souls nor bodies fare, But only phantom figures, strangely wan, And tells how once from out those regions rose Old Homer's ghost to him and shed salt tears And with his words unfolded Nature's source."
+        ],
+        "commentaries": [
+          "The author cites Ennius as a poet who sang of the underworld and claimed to have seen Homer's ghost, which revealed the source of nature."
+        ],
+        "canonical_author": "Ennius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Ennius",
+        "page_id": 9820,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Epic poets",
+          "3rd-century BC poets",
+          "2nd-century BC Roman poets",
+          "3rd-century BC Romans",
+          "3rd-century BC writers in Latin",
+          "2nd-century BC writers in Latin",
+          "People from the Province of Lecce",
+          "Ancient Roman tragic dramatists",
+          "Old Latin-language writers",
+          "230s BC births",
+          "160s BC deaths",
+          "Ennii",
+          "Osci"
+        ],
+        "birth_year": -239,
+        "death_year": -169
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "338576"
+        ],
+        "target_person": {
+          "title": "Ennius",
+          "page_id": 9820,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Epic poets",
+            "3rd-century BC poets",
+            "2nd-century BC Roman poets",
+            "3rd-century BC Romans",
+            "3rd-century BC writers in Latin",
+            "2nd-century BC writers in Latin",
+            "People from the Province of Lecce",
+            "Ancient Roman tragic dramatists",
+            "Old Latin-language writers",
+            "230s BC births",
+            "160s BC deaths",
+            "Ennii",
+            "Osci"
+          ],
+          "birth_year": -239,
+          "death_year": -169
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Democritus",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Herein in these affairs nowise take up What honoured sage, Democritus, lays down-- That proposition, that primordials Of body and mind, each super-posed on each, Vary alternately and interweave The fabric of our members.",
+          "Then, too, Democritus, when ripened eld Admonished him his memory waned away, Of own accord offered his head to death.",
+          "Yet chief in likelihood Seemeth the doctrine which the holy thought Of great Democritus lays down: that ever The nearer the constellations be to earth The less can they by whirling of the sky Be borne along, because those skiey powers Of speed aloft do vanish and decrease In under-regions, and the sun is thus Left by degrees behind amongst those signs That follow after, since the sun he lies Far down below the starry signs that blaze; And the moon lags even tardier than the sun: In just so far as is her course removed From upper heaven and nigh unto the lands, In just so far she fails to keep the pace With starry signs above; for just so far As feebler is the whirl that bears her on, (Being, indeed, still lower than the sun), In just so far do all the starry signs, Circling around, o'ertake her and o'erpass."
+        ],
+        "commentaries": [
+          "The author references Democritus's proposition about the interweaving of body and mind primordials, but does not name a specific book.",
+          "The author cites Democritus as an example of a philosopher who willingly faced death.",
+          "The author presents Democritus's doctrine as the most likely explanation for the motions of the sun and moon relative to the stars."
+        ],
+        "canonical_author": "Democritus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Democritus",
+        "page_id": 8211,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Abderites",
+          "Ancient Greek atomist philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek metaphysicians",
+          "Presocratic philosophers",
+          "460s BC births",
+          "370s BC deaths",
+          "5th-century BC Greek mathematicians",
+          "4th-century BC Greek mathematicians"
+        ],
+        "birth_year": -460,
+        "death_year": -370
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Democritus",
+          "page_id": 8211,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Abderites",
+            "Ancient Greek atomist philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek metaphysicians",
+            "Presocratic philosophers",
+            "460s BC births",
+            "370s BC deaths",
+            "5th-century BC Greek mathematicians",
+            "4th-century BC Greek mathematicians"
+          ],
+          "birth_year": -460,
+          "death_year": -370
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Heraclitus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Of whom, chief leader to do battle, comes That Heraclitus, famous for dark speech Among the silly, not the serious Greeks Who search for truth."
+        ],
+        "commentaries": [
+          "Lucretius cites Heraclitus as a philosopher who held that the universe is made of fire, and criticizes him for his obscure style."
+        ],
+        "canonical_author": "Heraclitus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Heraclitus",
+        "page_id": 13792,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Heraclitus| ",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek philosophers",
+          "530s BC births",
+          "470s BC deaths",
+          "Ancient Ephesians",
+          "Ancient Greek cosmologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Deaths from edema",
+          "Ancient Greek epistemologists",
+          "Natural philosophers",
+          "Ontologists",
+          "Philosophers of ancient Ionia",
+          "Ancient Greek philosophers of mind",
+          "Philosophers of religion",
+          "Philosophers of time",
+          "Ancient Greek political philosophers",
+          "Presocratic philosophers"
+        ],
+        "birth_year": -535,
+        "death_year": -475
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "77989"
+        ],
+        "target_person": {
+          "title": "Heraclitus",
+          "page_id": 13792,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Heraclitus| ",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek philosophers",
+            "530s BC births",
+            "470s BC deaths",
+            "Ancient Ephesians",
+            "Ancient Greek cosmologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Deaths from edema",
+            "Ancient Greek epistemologists",
+            "Natural philosophers",
+            "Ontologists",
+            "Philosophers of ancient Ionia",
+            "Ancient Greek philosophers of mind",
+            "Philosophers of religion",
+            "Philosophers of time",
+            "Ancient Greek political philosophers",
+            "Presocratic philosophers"
+          ],
+          "birth_year": -535,
+          "death_year": -475
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Empedocles",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "As first Empedocles of Acragas, Whom that three-cornered isle of all the lands Bore on her coasts..."
+        ],
+        "commentaries": [
+          "The author mentions Empedocles as a philosopher who held that the primal stuff of things is fourfold (fire, earth, air, water), and criticizes his views on first-elements."
+        ],
+        "canonical_author": "Empedocles"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Empedocles",
+        "page_id": 9553,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Deaths from fire",
+          "5th-century BC Greek philosophers",
+          "5th-century BC Greek poets",
+          "Ancient Acragantines",
+          "Ancient Greek shamans",
+          "Pluralist philosophers",
+          "Ancient Greek physicists",
+          "Philosophers of Magna Graecia",
+          "Natural philosophers",
+          "Philosophers of science",
+          "Presocratic philosophers",
+          "Sicilian Greeks",
+          "490s BC births",
+          "430s BC deaths",
+          "Mount Etna",
+          "Miracle workers"
+        ],
+        "birth_year": -494,
+        "death_year": -434
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "501843"
+        ],
+        "target_person": {
+          "title": "Empedocles",
+          "page_id": 9553,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Deaths from fire",
+            "5th-century BC Greek philosophers",
+            "5th-century BC Greek poets",
+            "Ancient Acragantines",
+            "Ancient Greek shamans",
+            "Pluralist philosophers",
+            "Ancient Greek physicists",
+            "Philosophers of Magna Graecia",
+            "Natural philosophers",
+            "Philosophers of science",
+            "Presocratic philosophers",
+            "Sicilian Greeks",
+            "490s BC births",
+            "430s BC deaths",
+            "Mount Etna",
+            "Miracle workers"
+          ],
+          "birth_year": -494,
+          "death_year": -434
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Anaxagoras",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Now let us also take for scrutiny The homeomeria of Anaxagoras, So called by Greeks...",
+          "Which Anaxagoras takes unto himself, Who holds that all things lurk commixed with all While that one only comes to view, of which The bodies exceed in number all the rest, And lie more close to hand and at the fore-- A notion banished from true reason far."
+        ],
+        "commentaries": [
+          "The author discusses Anaxagoras' theory of homeomeria, where things are composed of minute parts of themselves, and criticizes it for lacking void and limits to division.",
+          "The author cites Anaxagoras as holding a specific theory about the mixture of all things, which he then refutes as false."
+        ],
+        "canonical_author": "Anaxagoras"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Anaxagoras",
+        "page_id": 1737,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "500s BC births",
+          "420s BC deaths",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek physicists",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek metaphysicians",
+          "Characters in the Divine Comedy",
+          "Metic philosophers in Classical Athens",
+          "Military personnel of the Achaemenid Empire",
+          "Natural philosophers",
+          "People from Clazomenae",
+          "Philosophers of ancient Ionia",
+          "Pluralist philosophers",
+          "5th-century BC Greek mathematicians",
+          "Greek exiles",
+          "Ancient Greeks accused of sacrilege"
+        ],
+        "birth_year": -500,
+        "death_year": -428
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1985353"
+        ],
+        "target_person": {
+          "title": "Anaxagoras",
+          "page_id": 1737,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "500s BC births",
+            "420s BC deaths",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek metaphysicians",
+            "Characters in the Divine Comedy",
+            "Metic philosophers in Classical Athens",
+            "Military personnel of the Achaemenid Empire",
+            "Natural philosophers",
+            "People from Clazomenae",
+            "Philosophers of ancient Ionia",
+            "Pluralist philosophers",
+            "5th-century BC Greek mathematicians",
+            "Greek exiles",
+            "Ancient Greeks accused of sacrilege"
+          ],
+          "birth_year": -500,
+          "death_year": -428
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "And tells how once from out those regions rose Old Homer's ghost to him and shed salt tears And with his words unfolded Nature's source.",
+          "Add comrades of the Heliconian dames, Among whom Homer, sceptered o'er them all, Now lies in slumber sunken with the rest.",
+          "as poets of the Greeks have sung the tale"
+        ],
+        "commentaries": [
+          "The author mentions Homer's ghost appearing to Ennius and revealing the source of nature.",
+          "The author mentions Homer as a great poet who has died, like all others.",
+          "The author refers to the Greek poets, including Homer, as the source of the tale about Pallas and the crows."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Titus Lucretius Carus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Her hymned the old and learned bards of Greece ***** Seated in chariot o'er the realms of air To drive her team of lions, teaching thus That the great earth hangs poised and cannot lie Resting on other earth."
+        ],
+        "commentaries": [
+          "The author references the 'old and learned bards of Greece' who sang of the earth goddess, indicating traditional Greek poetic sources."
+        ],
+        "canonical_author": "Titus Lucretius Carus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lucretius",
+        "page_id": 37145,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "90s BC births",
+          "50s BC deaths",
+          "1st-century BC philosophers",
+          "1st-century BC Roman poets",
+          "Atomists",
+          "Didactic poets",
+          "Empiricists",
+          "Epic poets",
+          "Golden Age Latin writers",
+          "Lucretii",
+          "Metaphysicians",
+          "Natural philosophers",
+          "Roman-era Epicurean philosophers",
+          "Philosophers of Roman Italy"
+        ],
+        "birth_year": -99,
+        "death_year": -55
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8143161"
+        ],
+        "target_person": {
+          "title": "Lucretius",
+          "page_id": 37145,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "90s BC births",
+            "50s BC deaths",
+            "1st-century BC philosophers",
+            "1st-century BC Roman poets",
+            "Atomists",
+            "Didactic poets",
+            "Empiricists",
+            "Epic poets",
+            "Golden Age Latin writers",
+            "Lucretii",
+            "Metaphysicians",
+            "Natural philosophers",
+            "Roman-era Epicurean philosophers",
+            "Philosophers of Roman Italy"
+          ],
+          "birth_year": -99,
+          "death_year": -55
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,3597 @@
+{
+  "source": {
+    "title": "The Birth of Tragedy",
+    "authors": [
+      "Friedrich Nietzsche"
+    ],
+    "goodreads_id": "manual_nietzsche_bot",
+    "calibre_id": null,
+    "ratings_count": 28,
+    "book_id": "1037842",
+    "isbn": "0192832921",
+    "title_without_series": "The Birth of Tragedy",
+    "publication_year": 2000,
+    "isbn13": "9780192832924",
+    "author_ids": [
+      "1938",
+      "6543253"
+    ],
+    "publication_day": 30,
+    "format": "Paperback",
+    "average_rating": 3.98,
+    "text_reviews_count": 3,
+    "work_id": "3036434",
+    "publication_month": 3,
+    "publisher": "Oxford University Press",
+    "description": "In The Birth of TragedyNietzsche expounds on the origins of Greek tragedy and its relevance to the German culture of its time. He declares it to be the expression of a culture which has achieved a delicate but powerful balance between Dionysian insight into the chaos and suffering which underlies all existence and the discipline and clarity of rational Apollonian form. In order to promote a return to these values, Nietzsche critiques complacent rationalism of late nineteenth-century German culture and makes...",
+    "link": "https://www.goodreads.com/book/show/1037842.The_Birth_of_Tragedy",
+    "author_metadata": {
+      "birth_year": 1844,
+      "death_year": 1900,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Arthur Schopenhauer",
+        "note": null,
+        "count": 10,
+        "contexts": [
+          "My brother was the first who ever manifested such enthusiastic affection for Schopenhauer and Wagner, and he was also the first of that numerous band of young followers who ultimately inscribed the two great names upon their banner.",
+          "This metaphysico-artistic attitude is opposed to Schopenhauer's one-sided view which values art, not from the artist's standpoint but from the spectator's, because it brings salvation and deliverance by means of the joy produced by unreal as opposed to the existing or the real (the experience only of him who is suffering and is in despair owing to himself and everything existing).",
+          "This is directed against Schopenhauer's teaching of _Resignation_ as the tragic attitude towards the world.",
+          "What, forsooth, were Schopenhauer's views on tragedy? \"What gives\"--he says in Welt als Wille und Vorstellung, II. 495--\"to all tragedy that singular swing towards elevation, is the awakening of the knowledge that the world, that life, cannot satisfy us thoroughly, and consequently is not worthy of our attachment In this consists the tragic spirit: it therefore leads to resignation.\"",
+          "and Schopenhauer actually designates the gift of occasionally regarding men and things as mere phantoms and dream-pictures as the criterion of philosophical ability.",
+          "We maintain rather, that this entire antithesis, according to which, as according to some standard of value, Schopenhauer, too, still classifies the arts, the antithesis between the subjective and the objective, is quite out of place in æsthetics",
+          "The extraordinary courage and wisdom of _Kant_ and _Schopenhauer_ have succeeded in gaining the most, difficult, victory, the victory over the optimism hidden in the essence of logic, which optimism in turn is the basis of our culture.",
+          "Let us recollect furthermore how Kant and Schopenhauer made it possible for the spirit of _German philosophy_ streaming from the same sources to annihilate the satisfied delight in existence of scientific Socratism",
+          "Our Schopenhauer was such a Dürerian knight: he was destitute of all hope, but he sought the truth.",
+          "the Schopenhauerian parable of the porcupines"
+        ],
+        "commentaries": [
+          "The author notes Nietzsche's early and enthusiastic admiration for Schopenhauer, treating him as a source of ideas.",
+          "The author contrasts his own view of art with Schopenhauer's, criticizing Schopenhauer's perspective as one-sided and focused on the spectator's experience.",
+          "The author explicitly states that his view of tragic art opposes Schopenhauer's concept of resignation.",
+          "The author quotes Schopenhauer's work 'Welt als Wille und Vorstellung' to contrast his own Dionysian views on tragedy with Schopenhauer's resignationist interpretation.",
+          "The author cites Schopenhauer's philosophical criterion related to viewing reality as dream-pictures.",
+          "The author references Schopenhauer's classification of the arts as a point of departure for his own argument.",
+          "The author credits Schopenhauer alongside Kant for overcoming the optimism inherent in logic.",
+          "The author credits Schopenhauer, along with Kant, for the philosophical shift that undermined scientific Socratism.",
+          "The author refers to Schopenhauer as a figure comparable to Dürer's knight, emphasizing his truth-seeking nature.",
+          "The author references the Schopenhauerian parable of the porcupines as an illustration of the trivial and self-serving nature of social commentary on art."
+        ],
+        "canonical_author": "Arthur Schopenhauer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Arthur Schopenhauer",
+        "page_id": 700,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Arthur Schopenhauer| ",
+          "1788 births",
+          "1860 deaths",
+          "19th-century atheists",
+          "19th-century German philosophers",
+          "Academic staff of the Humboldt University of Berlin",
+          "German animal rights scholars",
+          "Anti-natalists",
+          "Atheist philosophers",
+          "Burials at Frankfurt Main Cemetery",
+          "German epistemologists",
+          "German atheists",
+          "German ethicists",
+          "German people of Dutch descent",
+          "German scholars of Buddhism",
+          "Idealists",
+          "Kantian philosophers",
+          "German philosophers of art",
+          "Philosophers of pessimism",
+          "Philosophers of psychology",
+          "University of Göttingen alumni",
+          "Writers from Gdańsk"
+        ],
+        "birth_year": 1788,
+        "death_year": 1860
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11682"
+        ],
+        "target_person": {
+          "title": "Arthur Schopenhauer",
+          "page_id": 700,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Arthur Schopenhauer| ",
+            "1788 births",
+            "1860 deaths",
+            "19th-century atheists",
+            "19th-century German philosophers",
+            "Academic staff of the Humboldt University of Berlin",
+            "German animal rights scholars",
+            "Anti-natalists",
+            "Atheist philosophers",
+            "Burials at Frankfurt Main Cemetery",
+            "German epistemologists",
+            "German atheists",
+            "German ethicists",
+            "German people of Dutch descent",
+            "German scholars of Buddhism",
+            "Idealists",
+            "Kantian philosophers",
+            "German philosophers of art",
+            "Philosophers of pessimism",
+            "Philosophers of psychology",
+            "University of Göttingen alumni",
+            "Writers from Gdańsk"
+          ],
+          "birth_year": 1788,
+          "death_year": 1860
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pindar",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Who is it that ventures single-handed to disown the Greek character, which, as Homer, Pindar, and Æschylus, as Phidias, as Pericles, as Pythia and Dionysus, as the deepest abyss and the highest height, is sure of our wondering admiration?"
+        ],
+        "commentaries": [
+          "The author lists Pindar among the exemplars of Greek character that Socrates challenges."
+        ],
+        "canonical_author": "Pindar"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pindar",
+        "page_id": 79616,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "510s BC births",
+          "430s BC deaths",
+          "5th-century BC Greek poets",
+          "Ancient Boeotian poets",
+          "Sports poets",
+          "Ancient Thebans",
+          "Doric Greek poets",
+          "Nine Lyric Poets",
+          "Proxenoi",
+          "Wikipedia articles containing unlinked shortened footnotes"
+        ],
+        "birth_year": -522,
+        "death_year": -443
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8340"
+        ],
+        "target_person": {
+          "title": "Pindar",
+          "page_id": 79616,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "510s BC births",
+            "430s BC deaths",
+            "5th-century BC Greek poets",
+            "Ancient Boeotian poets",
+            "Sports poets",
+            "Ancient Thebans",
+            "Doric Greek poets",
+            "Nine Lyric Poets",
+            "Proxenoi",
+            "Wikipedia articles containing unlinked shortened footnotes"
+          ],
+          "birth_year": -522,
+          "death_year": -443
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Archilochus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The ancients themselves supply the answer in symbolic form, when they place Homer and Archilochus as the forefathers and torch-bearers of Greek poetry side by side on gems, sculptures, etc., in the sure conviction that only these two thoroughly original compeers, from whom a stream of fire flows over the whole of Greek posterity, should be taken into consideration."
+        ],
+        "commentaries": [
+          "The author references Archilochus as a key figure in Greek poetry, representing the first subjective artist and the lyrist."
+        ],
+        "canonical_author": "Archilochus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Archilochus",
+        "page_id": 78336,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "680s BC births",
+          "640s BC deaths",
+          "Ionic Greek poets",
+          "Ancient Greek iambic poets",
+          "7th-century BC Greek poets",
+          "Ancient Thasos",
+          "Ancient Parians",
+          "Epigrammatists of the Greek Anthology"
+        ],
+        "birth_year": -680,
+        "death_year": -645
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Archilochus",
+          "page_id": 78336,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "680s BC births",
+            "640s BC deaths",
+            "Ionic Greek poets",
+            "Ancient Greek iambic poets",
+            "7th-century BC Greek poets",
+            "Ancient Thasos",
+            "Ancient Parians",
+            "Epigrammatists of the Greek Anthology"
+          ],
+          "birth_year": -680,
+          "death_year": -645
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Johann Joachim Winckelmann",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "It may be weighed some day before an impartial judge, in what time and in what men the German spirit has thus far striven most resolutely to learn of the Greeks: and if we confidently assume that this unique praise must be accorded to the noblest intellectual efforts of Goethe, Schiller, and Winkelmann"
+        ],
+        "commentaries": [
+          "The author mentions Winckelmann as one of the key figures who strove to learn from the Greeks."
+        ],
+        "canonical_author": "Johann Joachim Winckelmann"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Johann Joachim Winckelmann",
+        "page_id": 200511,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1717 births",
+          "1768 deaths",
+          "18th-century German LGBTQ people",
+          "Converts to Roman Catholicism from Lutheranism",
+          "German gay writers",
+          "German antiquarians",
+          "Archaeologists from Saxony-Anhalt",
+          "German art historians",
+          "German male non-fiction writers",
+          "German people murdered abroad",
+          "German Roman Catholics",
+          "LGBTQ Roman Catholics",
+          "People from Stendal",
+          "People from the Margraviate of Brandenburg",
+          "People murdered in Italy",
+          "University of Halle alumni",
+          "Köllnisches Gymnasium alumni",
+          "People murdered in 1768"
+        ],
+        "birth_year": 1717,
+        "death_year": 1768
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "163046"
+        ],
+        "target_person": {
+          "title": "Johann Joachim Winckelmann",
+          "page_id": 200511,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1717 births",
+            "1768 deaths",
+            "18th-century German LGBTQ people",
+            "Converts to Roman Catholicism from Lutheranism",
+            "German gay writers",
+            "German antiquarians",
+            "Archaeologists from Saxony-Anhalt",
+            "German art historians",
+            "German male non-fiction writers",
+            "German people murdered abroad",
+            "German Roman Catholics",
+            "LGBTQ Roman Catholics",
+            "People from Stendal",
+            "People from the Margraviate of Brandenburg",
+            "People murdered in Italy",
+            "University of Halle alumni",
+            "Köllnisches Gymnasium alumni",
+            "People murdered in 1768"
+          ],
+          "birth_year": 1717,
+          "death_year": 1768
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thucydides",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Pericles (or Thucydides) intimates as much in the great Funeral Speech"
+        ],
+        "commentaries": [
+          "The author references Thucydides as the author of the Funeral Speech, in which the idea of Greek longing for beauty as a response to suffering is intimated."
+        ],
+        "canonical_author": "Thucydides"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thucydides",
+        "page_id": 30864,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "470s BC births",
+          "400s BC deaths",
+          "5th-century BC Athenians",
+          "5th-century BC Greek historians",
+          "Ancient Athenian generals",
+          "Ancient Athenian historians",
+          "Classical-era Greek historians",
+          "Ancient Greek merchants",
+          "Ancient Thracian Greeks",
+          "Athenians of the Peloponnesian War",
+          "Attic Greek writers",
+          "Ostracized Athenians",
+          "Philaidae",
+          "Political realists",
+          "Ancient Greek military writers"
+        ],
+        "birth_year": -460,
+        "death_year": -400
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "957"
+        ],
+        "target_person": {
+          "title": "Thucydides",
+          "page_id": 30864,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "470s BC births",
+            "400s BC deaths",
+            "5th-century BC Athenians",
+            "5th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Classical-era Greek historians",
+            "Ancient Greek merchants",
+            "Ancient Thracian Greeks",
+            "Athenians of the Peloponnesian War",
+            "Attic Greek writers",
+            "Ostracized Athenians",
+            "Philaidae",
+            "Political realists",
+            "Ancient Greek military writers"
+          ],
+          "birth_year": -460,
+          "death_year": -400
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Friedrich Schiller",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "to express which Schiller introduced the technical term \"naïve,\"",
+          "Schiller has enlightened us concerning his poetic procedure by a psychological observation, inexplicable to himself, yet not apparently open to any objection.",
+          "we may avail ourselves exclusively of the phraseology and illustration of Schiller. [22] \"Nature and the ideal,\" he says, \"are either objects of grief, when the former is represented as lost, the latter unattained; or both are objects of joy, in that they are represented as real. The first case furnishes the elegy in its narrower signification, the second the idyll in its widest sense.\"",
+          "It may be weighed some day before an impartial judge, in what time and in what men the German spirit has thus far striven most resolutely to learn of the Greeks: and if we confidently assume that this unique praise must be accorded to the noblest intellectual efforts of Goethe, Schiller, and Winkelmann"
+        ],
+        "commentaries": [
+          "The author references Schiller as the originator of the term 'naïve' in art.",
+          "The author cites Schiller's psychological observation about the poetic process, specifically his description of a preparatory musical mood.",
+          "The author quotes Schiller's distinction between elegy and idyll to explain the idyllic tendency of opera.",
+          "The author mentions Schiller as one of the key figures who strove to learn from the Greeks."
+        ],
+        "canonical_author": "Herbert Schiller"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Friedrich Schiller",
+        "page_id": 63742,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] --> "
+        ],
+        "categories": [
+          "Friedrich Schiller| ",
+          "1759 births",
+          "1805 deaths",
+          "18th-century German dramatists and playwrights",
+          "18th-century German historians",
+          "18th-century German male writers",
+          "18th-century German philosophers",
+          "18th-century German poets",
+          "18th-century German translators",
+          "19th-century deaths from tuberculosis",
+          "19th-century German dramatists and playwrights",
+          "19th-century German historians",
+          "19th-century German male writers",
+          "19th-century German philosophers",
+          "19th-century German poets",
+          "19th-century German physicians",
+          "19th-century translators",
+          "Enlightenment philosophers",
+          "French–German translators",
+          "German-language poets",
+          "German literary theorists",
+          "German male dramatists and playwrights",
+          "German male non-fiction writers",
+          "German male poets",
+          "German medical writers",
+          "German satirists",
+          "German satirical poets",
+          "German untitled nobility",
+          "History of literature",
+          "History of poetry"
+        ],
+        "birth_year": 1759,
+        "death_year": 1805
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1399243"
+        ],
+        "target_person": {
+          "title": "Friedrich Schiller",
+          "page_id": 63742,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] --> "
+          ],
+          "categories": [
+            "Friedrich Schiller| ",
+            "1759 births",
+            "1805 deaths",
+            "18th-century German dramatists and playwrights",
+            "18th-century German historians",
+            "18th-century German male writers",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century German translators",
+            "19th-century deaths from tuberculosis",
+            "19th-century German dramatists and playwrights",
+            "19th-century German historians",
+            "19th-century German male writers",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century German physicians",
+            "19th-century translators",
+            "Enlightenment philosophers",
+            "French–German translators",
+            "German-language poets",
+            "German literary theorists",
+            "German male dramatists and playwrights",
+            "German male non-fiction writers",
+            "German male poets",
+            "German medical writers",
+            "German satirists",
+            "German satirical poets",
+            "German untitled nobility",
+            "History of literature",
+            "History of poetry"
+          ],
+          "birth_year": 1759,
+          "death_year": 1805
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Johann Wolfgang von Goethe",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "the youthful Goethe succeeded in disclosing to us in the daring words of his Prometheus...",
+          "When Goethe on one occasion said to Eckermann with reference to Napoleon: \"Yes, my good friend, there is also a productiveness of deeds,\" he reminded us in a charmingly naïve manner that the non-theorist is something incredible and astounding to modern man; so that the wisdom of Goethe is needed once more in order to discover that such a surprising form of existence is comprehensible, nay even pardonable.",
+          "It may be weighed some day before an impartial judge, in what time and in what men the German spirit has thus far striven most resolutely to learn of the Greeks: and if we confidently assume that this unique praise must be accorded to the noblest intellectual efforts of Goethe, Schiller, and Winkelmann",
+          "Without a lively pathological interest, he says, I too have never yet succeeded in elaborating a tragic situation of any kind, and hence I have rather avoided than sought it."
+        ],
+        "commentaries": [
+          "The author references Goethe's interpretation and poetic expression of the Prometheus theme.",
+          "The author cites Goethe's remark to Eckermann about Napoleon to highlight the modern incomprehension of non-theoretical productivity.",
+          "The author mentions Goethe as one of the key figures who strove to learn from the Greeks.",
+          "The author quotes Goethe's remark about needing pathological interest to create a tragic situation, and uses it to discuss the aesthetic nature of pathos in tragedy."
+        ],
+        "canonical_author": "Johann Wolfgang Von Goethe"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Johann Wolfgang von Goethe",
+        "page_id": 19242322,
+        "infoboxes": [
+          "writer",
+          "officeholder "
+        ],
+        "categories": [
+          "Johann Wolfgang von Goethe| ",
+          "1749 births",
+          "1832 deaths",
+          "18th-century German educators",
+          "18th-century essayists",
+          "18th-century German civil servants",
+          "18th-century German dramatists and playwrights",
+          "18th-century German male writers",
+          "18th-century German novelists",
+          "18th-century German philosophers",
+          "18th-century German poets",
+          "18th-century historians",
+          "18th-century travel writers",
+          "19th-century German educators",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German civil servants",
+          "19th-century German diplomats",
+          "19th-century German dramatists and playwrights",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German poets",
+          "19th-century historians",
+          "19th-century travel writers",
+          "Color scientists",
+          "Enlightenment philosophers",
+          "Epic poets",
+          "Epigrammatists"
+        ],
+        "birth_year": 1749,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "285217"
+        ],
+        "target_person": {
+          "title": "Johann Wolfgang von Goethe",
+          "page_id": 19242322,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Johann Wolfgang von Goethe| ",
+            "1749 births",
+            "1832 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German civil servants",
+            "18th-century German dramatists and playwrights",
+            "18th-century German male writers",
+            "18th-century German novelists",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century historians",
+            "18th-century travel writers",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German civil servants",
+            "19th-century German diplomats",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century historians",
+            "19th-century travel writers",
+            "Color scientists",
+            "Enlightenment philosophers",
+            "Epic poets",
+            "Epigrammatists"
+          ],
+          "birth_year": 1749,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Socrates",
+        "note": null,
+        "count": 14,
+        "contexts": [
+          "O Socrates, Socrates, was this perhaps _thy_ secret? Oh mysterious ironist, was this perhaps thine--irony?...",
+          "Socrates, however, was that _second spectator_ who did not comprehend and therefore did not esteem the Old Tragedy",
+          "But then it seemed to Socrates that tragic art did not even 'tell the truth': not to mention the fact that it addresses itself to him who 'hath but little wit'; consequently not to the philosopher: a twofold reason why it should be avoided.",
+          "Well, to be sure, there stands alongside of this detached perception, as an excess of honesty, if not of presumption, a profound _illusion_ which first came to the world in the person of Socrates",
+          "If we now look at Socrates in the light of this thought, he appears to us as the first who could not only live, but--what is far more--also die under the guidance of this instinct of science",
+          "He who once makes intelligible to himself how, after the death of Socrates, the mystagogue of science, one philosophical school succeeds another, like wave upon wave",
+          "he who realises all this, together with the amazingly high pyramid of our present-day knowledge, cannot fail to see in Socrates the turning-point and vortex of so-called universal history.",
+          "In view of this practical pessimism, Socrates is the archetype of the theoretical optimist",
+          "just as from the time of Socrates onwards the mechanism of concepts, judgments, and inferences was prized above all other capacities as the highest activity and the most admirable gift of nature.",
+          "Even the sublimest moral acts, the stirrings of pity, of self-sacrifice, of heroism, and that tranquillity of soul, so difficult of attainment, which the Apollonian Greek called Sophrosyne, were derived by Socrates, and his like-minded successors up to the present day, from the dialectics of knowledge, and were accordingly designated as teachable.",
+          "the avidity of the insatiate optimistic knowledge, of which Socrates is the typical representative, transformed into tragic resignation and the need of art",
+          "I understand by the spirit of science the belief which first came to light in the person of Socrates,--the belief in the fathomableness of nature and in knowledge as a panacea.",
+          "the archetype and progenitor is Socrates.",
+          "on the other, the comprehension of Socratism: Socrates diagnosed for the first time as the tool of Grecian dissolution, as a typical decadent."
+        ],
+        "commentaries": [
+          "The author addresses Socrates as a source of ideas, questioning whether Socratic irony and the Socratic turn toward morality and dialectics represent a symptom of decline.",
+          "The author describes Socrates as a spectator who did not understand or value Old Tragedy.",
+          "The author discusses Socrates' view that tragic art does not tell the truth and is not suitable for philosophers.",
+          "The author presents Socrates as the originator of a profound illusion about causality and knowledge.",
+          "The author describes Socrates as the first to live and die guided by the instinct of science.",
+          "The author refers to Socrates as the mystagogue of science, whose death triggered a succession of philosophical schools.",
+          "The author identifies Socrates as the turning-point and vortex of universal history.",
+          "The author characterizes Socrates as the archetype of the theoretical optimist.",
+          "The author states that from Socrates' time onward, conceptual reasoning was prized as the highest capacity.",
+          "The author notes that Socrates derived even moral acts from the dialectics of knowledge and deemed them teachable.",
+          "The author describes Socrates as the typical representative of insatiate optimistic knowledge.",
+          "The author cites Socrates as the originator of the scientific spirit that opposes myth.",
+          "The author refers to Socrates as the archetype and progenitor of the theorist ideal in Alexandrine culture.",
+          "The author presents Socrates as a key figure in the decline of Greek culture, diagnosing him as a decadent."
+        ],
+        "canonical_author": "Socrates"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Socrates",
+        "page_id": 25664190,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Socrates| ",
+          "5th-century BC Athenians",
+          "5th-century BC Greek philosophers",
+          "4th-century BC executions",
+          "470s BC births",
+          "399 BC deaths",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political philosophers",
+          "Ancient Greeks accused of sacrilege",
+          "Characters in the Divine Comedy",
+          "Critics of religions",
+          "Executed ancient Greek people",
+          "Executed philosophers",
+          "Family of Socrates",
+          "Forced suicides",
+          "Irony theorists",
+          "People executed by ancient Athens",
+          "People executed by poison",
+          "People executed for heresy",
+          "Philosophers of education",
+          "Classical theism",
+          "Male suicides",
+          "Suicides by poison"
+        ],
+        "birth_year": -470,
+        "death_year": -399
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "302836"
+        ],
+        "target_person": {
+          "title": "Socrates",
+          "page_id": 25664190,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Socrates| ",
+            "5th-century BC Athenians",
+            "5th-century BC Greek philosophers",
+            "4th-century BC executions",
+            "470s BC births",
+            "399 BC deaths",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political philosophers",
+            "Ancient Greeks accused of sacrilege",
+            "Characters in the Divine Comedy",
+            "Critics of religions",
+            "Executed ancient Greek people",
+            "Executed philosophers",
+            "Family of Socrates",
+            "Forced suicides",
+            "Irony theorists",
+            "People executed by ancient Athens",
+            "People executed by poison",
+            "People executed for heresy",
+            "Philosophers of education",
+            "Classical theism",
+            "Male suicides",
+            "Suicides by poison"
+          ],
+          "birth_year": -470,
+          "death_year": -399
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pythagoras",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as if there had never been a Sixth Century with its birth of tragedy, its Mysteries, its Pythagoras and Heraclitus"
+        ],
+        "commentaries": [
+          "The author mentions Pythagoras as a figure from the Sixth Century."
+        ],
+        "canonical_author": "Pythagoras"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pythagoras",
+        "page_id": 23275,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Pythagoras| ",
+          "570s BC births",
+          "490s BC deaths",
+          "6th-century BC mathematicians",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek mathematicians",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek geometers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek music theorists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political refugees",
+          "Ancient Greek shamans",
+          "Ancient occultists",
+          "Ancient Samians",
+          "Pythagoreans",
+          "Founders of religions",
+          "Numerologists",
+          "Pythagoreans of Magna Graecia",
+          "6th-century BC religious leaders",
+          "5th-century BC religious leaders"
+        ],
+        "birth_year": -570,
+        "death_year": -495
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "203707"
+        ],
+        "target_person": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": -570,
+          "death_year": -495
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dante Alighieri",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "he made use of this tragedy, as Dante made use of Vergil, in order to be led up to the gates of paradise"
+        ],
+        "commentaries": [
+          "The author compares the Renaissance man's use of Greek tragedy to Dante's use of Vergil as a guide."
+        ],
+        "canonical_author": "Dante Alighieri"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Dante Alighieri",
+        "page_id": 8169,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Dante Alighieri| ",
+          "1265 births",
+          "1321 deaths",
+          "13th-century Italian poets",
+          "13th-century Italian writers",
+          "14th-century Italian poets",
+          "14th-century Italian writers",
+          "14th-century people from the Republic of Florence",
+          "14th-century writers in Latin",
+          "Catholic poets",
+          "Characters in the Divine Comedy",
+          "Culture in Florence",
+          "Demonologists",
+          "Epic poets",
+          "Italian apothecaries",
+          "Italian exiles",
+          "Italian-language poets",
+          "Italian male poets",
+          "Italian political philosophers",
+          "Italian Roman Catholic writers",
+          "Latin-language Italian writers",
+          "Medieval Latin-language poets",
+          "Politicians from Florence",
+          "Sonneteers",
+          "Writers from Florence"
+        ],
+        "birth_year": 1265,
+        "death_year": 1321
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5031312"
+        ],
+        "target_person": {
+          "title": "Dante Alighieri",
+          "page_id": 8169,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Dante Alighieri| ",
+            "1265 births",
+            "1321 deaths",
+            "13th-century Italian poets",
+            "13th-century Italian writers",
+            "14th-century Italian poets",
+            "14th-century Italian writers",
+            "14th-century people from the Republic of Florence",
+            "14th-century writers in Latin",
+            "Catholic poets",
+            "Characters in the Divine Comedy",
+            "Culture in Florence",
+            "Demonologists",
+            "Epic poets",
+            "Italian apothecaries",
+            "Italian exiles",
+            "Italian-language poets",
+            "Italian male poets",
+            "Italian political philosophers",
+            "Italian Roman Catholic writers",
+            "Latin-language Italian writers",
+            "Medieval Latin-language poets",
+            "Politicians from Florence",
+            "Sonneteers",
+            "Writers from Florence"
+          ],
+          "birth_year": 1265,
+          "death_year": 1321
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Gotthold Ephraim Lessing",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "It might be said of him, that his unusually large fund of critical ability, as in the case of Lessing, if it did not create, at least constantly fructified a productively artistic collateral impulse.",
+          "For that reason Lessing, the most honest theoretical man, ventured to say that he cared more for the search after truth than for truth itself: in saying which he revealed the fundamental secret of science, to the astonishment, and indeed, to the vexation of scientific men."
+        ],
+        "commentaries": [
+          "The author compares Euripides' critical ability to that of Lessing.",
+          "The author cites Lessing's statement about preferring the search for truth over truth itself, characterizing him as the most honest theoretical man."
+        ],
+        "canonical_author": "Gotthold Ephraim Lessing"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gotthold Ephraim Lessing",
+        "page_id": 12305,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Gotthold Ephraim Lessing| ",
+          "1729 births",
+          "1781 deaths",
+          "18th-century German dramatists and playwrights",
+          "18th-century German Protestant theologians",
+          "18th-century German poets",
+          "18th-century German philosophers",
+          "Christian poets",
+          "Enlightenment philosophers",
+          "German Christians",
+          "German male non-fiction writers",
+          "Members of the Prussian Academy of Sciences",
+          "People from Kamenz",
+          "Scholars from the Electorate of Saxony",
+          "People of the Age of Enlightenment",
+          "Protestant philosophers",
+          "Leipzig University alumni",
+          "University of Wittenberg alumni",
+          "Wolfenbüttel",
+          "German Enlightenment",
+          "German Freemasons",
+          "German male poets",
+          "German male dramatists and playwrights",
+          "Vossische Zeitung people",
+          "Spinozists",
+          "Poets from the Electorate of Saxony"
+        ],
+        "birth_year": 1729,
+        "death_year": 1781
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7723"
+        ],
+        "target_person": {
+          "title": "Gotthold Ephraim Lessing",
+          "page_id": 12305,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Gotthold Ephraim Lessing| ",
+            "1729 births",
+            "1781 deaths",
+            "18th-century German dramatists and playwrights",
+            "18th-century German Protestant theologians",
+            "18th-century German poets",
+            "18th-century German philosophers",
+            "Christian poets",
+            "Enlightenment philosophers",
+            "German Christians",
+            "German male non-fiction writers",
+            "Members of the Prussian Academy of Sciences",
+            "People from Kamenz",
+            "Scholars from the Electorate of Saxony",
+            "People of the Age of Enlightenment",
+            "Protestant philosophers",
+            "Leipzig University alumni",
+            "University of Wittenberg alumni",
+            "Wolfenbüttel",
+            "German Enlightenment",
+            "German Freemasons",
+            "German male poets",
+            "German male dramatists and playwrights",
+            "Vossische Zeitung people",
+            "Spinozists",
+            "Poets from the Electorate of Saxony"
+          ],
+          "birth_year": 1729,
+          "death_year": 1781
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Anaxagoras",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "he must often have felt that he ought to actualise in the drama the words at the beginning of the essay of Anaxagoras: \"In the beginning all things were mixed together; then came the understanding and created order.\""
+        ],
+        "commentaries": [
+          "The author references Anaxagoras's essay to illustrate Euripides's critico-productive activity."
+        ],
+        "canonical_author": "Anaxagoras"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Anaxagoras",
+        "page_id": 1737,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "500s BC births",
+          "420s BC deaths",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek physicists",
+          "Ancient Greeks from the Achaemenid Empire",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek metaphysicians",
+          "Characters in the Divine Comedy",
+          "Metic philosophers in Classical Athens",
+          "Military personnel of the Achaemenid Empire",
+          "Natural philosophers",
+          "People from Clazomenae",
+          "Philosophers of ancient Ionia",
+          "Pluralist philosophers",
+          "5th-century BC Greek mathematicians",
+          "Greek exiles",
+          "Ancient Greeks accused of sacrilege"
+        ],
+        "birth_year": -500,
+        "death_year": -428
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1985353"
+        ],
+        "target_person": {
+          "title": "Anaxagoras",
+          "page_id": 1737,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "500s BC births",
+            "420s BC deaths",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek physicists",
+            "Ancient Greeks from the Achaemenid Empire",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek metaphysicians",
+            "Characters in the Divine Comedy",
+            "Metic philosophers in Classical Athens",
+            "Military personnel of the Achaemenid Empire",
+            "Natural philosophers",
+            "People from Clazomenae",
+            "Philosophers of ancient Ionia",
+            "Pluralist philosophers",
+            "5th-century BC Greek mathematicians",
+            "Greek exiles",
+            "Ancient Greeks accused of sacrilege"
+          ],
+          "birth_year": -500,
+          "death_year": -428
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Richard Wagner",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "For years, that is to say, from the time Billow's arrangement of _Tristan and Isolde_ for the pianoforte, had appeared, he had already been a passionate admirer of Wagner's music; but now that the artist himself entered upon the scene of his life, with the whole fascinating strength of his strong will, my brother felt that he was in the presence of a being whom he, of all modern men, resembled most in regard to force of character."
+        ],
+        "commentaries": [
+          "The author describes Nietzsche's admiration for Wagner, focusing on his personality and influence."
+        ],
+        "canonical_author": "Richard Wagner"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Richard Wagner",
+        "page_id": 25452,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Richard Wagner| ",
+          "1813 births",
+          "1883 deaths",
+          "19th-century German classical composers",
+          "19th-century German conductors (music)",
+          "19th-century German male musicians",
+          "19th-century theatre",
+          "German autobiographers",
+          "19th-century German essayists",
+          "German expatriates in Switzerland",
+          "German expatriates in the Russian Empire",
+          "German male conductors (music)",
+          "German music critics",
+          "German nationalism",
+          "German opera composers",
+          "German opera directors",
+          "German opera librettists",
+          "German opera managers",
+          "German Romantic composers",
+          "German theatre directors",
+          "Leipzig University alumni",
+          "German male opera composers",
+          "Musicians from Bavaria",
+          "Composers from Dresden",
+          "Musicians from Leipzig",
+          "People educated at the Kreuzschule",
+          "People educated at the St. Thomas School, Leipzig",
+          "German people of the Revolutions of 1848",
+          "Romantic composers",
+          "Wagner family|Richard"
+        ],
+        "birth_year": 1813,
+        "death_year": 1883
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13890"
+        ],
+        "target_person": {
+          "title": "Richard Wagner",
+          "page_id": 25452,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Richard Wagner| ",
+            "1813 births",
+            "1883 deaths",
+            "19th-century German classical composers",
+            "19th-century German conductors (music)",
+            "19th-century German male musicians",
+            "19th-century theatre",
+            "German autobiographers",
+            "19th-century German essayists",
+            "German expatriates in Switzerland",
+            "German expatriates in the Russian Empire",
+            "German male conductors (music)",
+            "German music critics",
+            "German nationalism",
+            "German opera composers",
+            "German opera directors",
+            "German opera librettists",
+            "German opera managers",
+            "German Romantic composers",
+            "German theatre directors",
+            "Leipzig University alumni",
+            "German male opera composers",
+            "Musicians from Bavaria",
+            "Composers from Dresden",
+            "Musicians from Leipzig",
+            "People educated at the Kreuzschule",
+            "People educated at the St. Thomas School, Leipzig",
+            "German people of the Revolutions of 1848",
+            "Romantic composers",
+            "Wagner family|Richard"
+          ],
+          "birth_year": 1813,
+          "death_year": 1883
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Menander",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "if we desire, as briefly as possible, and without professing to say aught exhaustive on the subject, to characterise what Euripides has in common with Menander and Philemon"
+        ],
+        "commentaries": [
+          "The author compares Euripides with Menander and Philemon."
+        ],
+        "canonical_author": "Menander"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Menander",
+        "page_id": 160570,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Ancient Athenian dramatists and playwrights",
+          "4th-century BC Athenians",
+          "3rd-century BC Athenians",
+          "4th-century BC Greek poets",
+          "3rd-century BC Greek poets",
+          "Hellenistic Athens",
+          "New Comic poets",
+          "340s BC births",
+          "290s BC deaths"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "81914"
+        ],
+        "target_person": {
+          "title": "Menander",
+          "page_id": 160570,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Ancient Athenian dramatists and playwrights",
+            "4th-century BC Athenians",
+            "3rd-century BC Athenians",
+            "4th-century BC Greek poets",
+            "3rd-century BC Greek poets",
+            "Hellenistic Athens",
+            "New Comic poets",
+            "340s BC births",
+            "290s BC deaths"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "according to the Aristotelian expression, \"the imitation of nature.\"",
+          "The latter explanatory notion, which sounds sublime to many a politician—that the immutable moral law was embodied by the democratic Athenians in the popular chorus, which always carries its point over the passionate excesses and extravagances of kings—may be ever so forcibly suggested by an observation of Aristotle: still it has no bearing on the original formation of tragedy",
+          "whereby of course its character is completely destroyed, notwithstanding that Aristotle countenances this very theory of the chorus.",
+          "Never since Aristotle has an explanation of the tragic effect been proposed, by which an æsthetic activity of the hearer could be inferred from artistic circumstances.",
+          "Not in order to get rid of terror and pity, not to purify from a dangerous passion by its vehement discharge (it was thus that Aristotle misunderstood it);"
+        ],
+        "commentaries": [
+          "The author references Aristotle's concept of mimesis in discussing Greek art.",
+          "The author cites an observation by Aristotle regarding the chorus, but dismisses its relevance to the origin of tragedy.",
+          "The author references Aristotle's support for the theory of the chorus as presented by Sophocles.",
+          "The author references Aristotle's concept of catharsis and notes that no explanation of the tragic effect since Aristotle has been based on aesthetic activity.",
+          "The author criticizes Aristotle's interpretation of tragedy, especially regarding catharsis."
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 7,
+        "contexts": [
+          "Deliverance in the _form_ and its eternity (just as Plato may have pictured it, save that he rejoiced in a complete subordination of all too excitable sensibilities, even in the idea itself).",
+          "What if it was madness itself, to use a word of Plato's, which brought the _greatest_ blessings upon Hellas?",
+          "Availing ourselves of Plato's terminology, however, we should have to speak of the tragic figures of the Hellenic stage somewhat as follows.",
+          "So also the divine Plato speaks for the most part only ironically of the creative faculty of the poet, in so far as it is not conscious insight, and places it on a par with the gift of the soothsayer and dream-interpreter",
+          "Like Plato, he reckoned it among the seductive arts which only represent the agreeable, not the useful, and hence he required of his disciples abstinence and strict separation from such unphilosophical allurements; with such success that the youthful tragic poet Plato first of all burned his poems to be able to become a scholar of Socrates.",
+          "To a person thus minded the Platonic Socrates then appears as the teacher of an entirely new form of \"Greek cheerfulness\" and felicity of existence",
+          "(Christianity, the philosophy of Schopenhauer, in a certain sense already the philosophy of Plato, all idealistic systems as typical forms)"
+        ],
+        "commentaries": [
+          "The author references Plato's conception of form and eternity, noting a contrast with Plato's emphasis on subordinating sensibilities.",
+          "The author cites Plato's concept of madness as potentially bringing great blessings upon Greece, questioning the nature of Dionysian ecstasy.",
+          "The author adapts Plato's terminology to discuss tragic figures.",
+          "The author cites Plato's ironic view of the poet's creative faculty as lacking conscious insight.",
+          "The author mentions Plato's condemnation of tragedy as a seductive art and notes that Plato burned his own poems to become a scholar of Socrates.",
+          "The author mentions the Platonic Socrates as a teacher of a new form of Greek cheerfulness.",
+          "The author lists Plato's philosophy as an example of the degenerating instinct opposed to life-affirmation."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sophocles",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "The language of the Sophoclean heroes, for instance, surprises us by its Apollonian precision and clearness...",
+          "one would be tempted to extol the radical tendency of Euripides to bring about an adequate relation between art-work and public as an advance on Sophocles.",
+          "What Sophocles said of Æschylus, that he did what was right, though unconsciously, was surely not in the mind of Euripides",
+          "The movement along the line of the representation of character proceeds rapidly: while Sophocles still delineates complete characters and employs myth for their refined development, Euripides already delineates only prominent individual traits of character, which can express themselves in violent bursts of passion; in the New Attic Comedy, however, there are only masks with _one_ expression: frivolous old men, duped panders, and cunning slaves in untiring repetition."
+        ],
+        "commentaries": [
+          "The author discusses the Apollonian qualities of Sophoclean heroes, using Sophocles as a source of ideas.",
+          "The author compares Euripides' approach to that of Sophocles.",
+          "The author mentions Sophocles's statement about Æschylus to contrast with Euripides's view.",
+          "The author contrasts Sophocles' use of myth and character with Euripides' more individualistic approach."
+        ],
+        "canonical_author": "Sophocles"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sophocles",
+        "page_id": 26984,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Sophocles| ",
+          "400s BC deaths",
+          "490s BC births",
+          "5th-century BC Athenians",
+          "5th-century BC Greek poets",
+          "Ancient Athenian dramatists and playwrights",
+          "Ancient Greek LGBTQ people",
+          "Gay dramatists and playwrights",
+          "Gay poets",
+          "Greek gay writers",
+          "Ancient Greek tragic poets"
+        ],
+        "birth_year": -497,
+        "death_year": -406
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1002"
+        ],
+        "target_person": {
+          "title": "Sophocles",
+          "page_id": 26984,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Sophocles| ",
+            "400s BC deaths",
+            "490s BC births",
+            "5th-century BC Athenians",
+            "5th-century BC Greek poets",
+            "Ancient Athenian dramatists and playwrights",
+            "Ancient Greek LGBTQ people",
+            "Gay dramatists and playwrights",
+            "Gay poets",
+            "Greek gay writers",
+            "Ancient Greek tragic poets"
+          ],
+          "birth_year": -497,
+          "death_year": -406
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Immanuel Kant",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "I laboured to express, in Kantian and Schopenhauerian formulæ, strange and new valuations, which ran fundamentally counter to the spirit of Kant and Schopenhauer, as well as to their taste!",
+          "The extraordinary courage and wisdom of _Kant_ and _Schopenhauer_ have succeeded in gaining the most, difficult, victory, the victory over the optimism hidden in the essence of logic, which optimism in turn is the basis of our culture.",
+          "Let us recollect furthermore how Kant and Schopenhauer made it possible for the spirit of _German philosophy_ streaming from the same sources to annihilate the satisfied delight in existence of scientific Socratism"
+        ],
+        "commentaries": [
+          "The author mentions using Kantian formulas to express his own ideas, noting that they were contrary to Kant's spirit.",
+          "The author credits Kant and Schopenhauer with overcoming the optimism inherent in logic that underlies modern culture.",
+          "The author credits Kant and Schopenhauer with enabling German philosophy to challenge scientific Socratism."
+        ],
+        "canonical_author": "Immanuel Kant"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Immanuel Kant",
+        "page_id": 14631,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Immanuel Kant| ",
+          "1724 births",
+          "1804 deaths",
+          "18th-century anthropologists",
+          "18th-century essayists",
+          "18th-century German male writers",
+          "18th-century German philosophers",
+          "18th-century German writers",
+          "18th-century Prussian people",
+          "19th-century German anthropologists",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German philosophers",
+          "19th-century Prussian people",
+          "19th-century social scientists",
+          "Academic staff of the University of Königsberg",
+          "Age of Enlightenment",
+          "Enlightenment philosophers",
+          "German epistemologists",
+          "German agnostics",
+          "German ethicists",
+          "German idealists",
+          "German logicians",
+          "German Lutherans",
+          "German male non-fiction writers",
+          "German political philosophers",
+          "Humor researchers",
+          "Idealists"
+        ],
+        "birth_year": 1724,
+        "death_year": 1804
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11038"
+        ],
+        "target_person": {
+          "title": "Immanuel Kant",
+          "page_id": 14631,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Immanuel Kant| ",
+            "1724 births",
+            "1804 deaths",
+            "18th-century anthropologists",
+            "18th-century essayists",
+            "18th-century German male writers",
+            "18th-century German philosophers",
+            "18th-century German writers",
+            "18th-century Prussian people",
+            "19th-century German anthropologists",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German philosophers",
+            "19th-century Prussian people",
+            "19th-century social scientists",
+            "Academic staff of the University of Königsberg",
+            "Age of Enlightenment",
+            "Enlightenment philosophers",
+            "German epistemologists",
+            "German agnostics",
+            "German ethicists",
+            "German idealists",
+            "German logicians",
+            "German Lutherans",
+            "German male non-fiction writers",
+            "German political philosophers",
+            "Humor researchers",
+            "Idealists"
+          ],
+          "birth_year": 1724,
+          "death_year": 1804
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Æschylus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "he prides himself upon this in his contest with Æschylus: how the people have learned from him how to observe, debate, and draw conclusions according to the rules of art and with the cleverest sophistications.",
+          "Who is it that ventures single-handed to disown the Greek character, which, as Homer, Pindar, and Æschylus, as Phidias, as Pericles, as Pythia and Dionysus, as the deepest abyss and the highest height, is sure of our wondering admiration?"
+        ],
+        "commentaries": [
+          "The author mentions the contest between Euripides and Æschylus.",
+          "The author lists Æschylus among the exemplars of Greek character that Socrates challenges."
+        ],
+        "canonical_author": "Æschylus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Æschylus",
+        "birth_year": -525,
+        "death_year": -456
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "990"
+        ],
+        "target_person": {
+          "title": "Æschylus",
+          "birth_year": -525,
+          "death_year": -456
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The World as Will and Idea",
+        "author": "Arthur Schopenhauer",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "He writes: 'Here I saw a mirror in which I espied the world, life, and my own nature depicted with frightful grandeur.'",
+          "Cf. _World and Will as Idea,_ I. p. 339, trans. by Haldane and Kemp."
+        ],
+        "commentaries": [
+          "The author describes his brother's first reading of Schopenhauer's book and its profound impact on him.",
+          "The author references Schopenhauer's work as a source for the concept of 'the will'."
+        ],
+        "canonical_author": "Schopenhauer"
+      },
+      "goodreads_match": {
+        "ratings_count": 4,
+        "book_id": "6157793",
+        "title_without_series": "The World as Will and Idea",
+        "author_ids": [
+          "11682"
+        ],
+        "title": "The World as Will and Idea",
+        "average_rating": 4.2,
+        "text_reviews_count": 2,
+        "work_id": "45420852",
+        "authors": [
+          "Arthur Schopenhauer"
+        ],
+        "description": "Il mondo come volonta e rappresentazioneresta ancor oggi la testimonianza appassionante e illuminante di una crisi intellettuale e morale che e ben lontana dall'essere risolta; e chi lo legge con occhio storico puo ben riconoscervi uno dei documenti <>per comprendere l'origine e il significato di talune idee che sono ancora operanti nella filosofia contemporanea, pronte, comunque, a riemergere ogni volta che la storia sembra deludere o sconfiggere.\nDall'introduzione di Cesare Vasoli.",
+        "link": "https://www.goodreads.com/book/show/6157793-the-world-as-will-and-idea",
+        "wikipedia_match": {
+          "title": "Arthur Schopenhauer",
+          "page_id": 700,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Arthur Schopenhauer| ",
+            "1788 births",
+            "1860 deaths",
+            "19th-century atheists",
+            "19th-century German philosophers",
+            "Academic staff of the Humboldt University of Berlin",
+            "German animal rights scholars",
+            "Anti-natalists",
+            "Atheist philosophers",
+            "Burials at Frankfurt Main Cemetery",
+            "German epistemologists",
+            "German atheists",
+            "German ethicists",
+            "German people of Dutch descent",
+            "German scholars of Buddhism",
+            "Idealists",
+            "Kantian philosophers",
+            "German philosophers of art",
+            "Philosophers of pessimism",
+            "Philosophers of psychology",
+            "University of Göttingen alumni",
+            "Writers from Gdańsk"
+          ],
+          "birth_year": 1788,
+          "death_year": 1860
+        },
+        "original_year": 1818,
+        "author_meta": {
+          "birth_year": 1788,
+          "death_year": 1860,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Arthur Schopenhauer",
+        "page_id": 700,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Arthur Schopenhauer| ",
+          "1788 births",
+          "1860 deaths",
+          "19th-century atheists",
+          "19th-century German philosophers",
+          "Academic staff of the Humboldt University of Berlin",
+          "German animal rights scholars",
+          "Anti-natalists",
+          "Atheist philosophers",
+          "Burials at Frankfurt Main Cemetery",
+          "German epistemologists",
+          "German atheists",
+          "German ethicists",
+          "German people of Dutch descent",
+          "German scholars of Buddhism",
+          "Idealists",
+          "Kantian philosophers",
+          "German philosophers of art",
+          "Philosophers of pessimism",
+          "Philosophers of psychology",
+          "University of Göttingen alumni",
+          "Writers from Gdańsk"
+        ],
+        "birth_year": 1788,
+        "death_year": 1860
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "6157793",
+        "target_author_ids": [
+          "11682"
+        ],
+        "target_person": {
+          "title": "Arthur Schopenhauer",
+          "page_id": 700,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Arthur Schopenhauer| ",
+            "1788 births",
+            "1860 deaths",
+            "19th-century atheists",
+            "19th-century German philosophers",
+            "Academic staff of the Humboldt University of Berlin",
+            "German animal rights scholars",
+            "Anti-natalists",
+            "Atheist philosophers",
+            "Burials at Frankfurt Main Cemetery",
+            "German epistemologists",
+            "German atheists",
+            "German ethicists",
+            "German people of Dutch descent",
+            "German scholars of Buddhism",
+            "Idealists",
+            "Kantian philosophers",
+            "German philosophers of art",
+            "Philosophers of pessimism",
+            "Philosophers of psychology",
+            "University of Göttingen alumni",
+            "Writers from Gdańsk"
+          ],
+          "birth_year": 1788,
+          "death_year": 1860
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 7,
+        "contexts": [
+          "The subject of the address was \"Homer and Classical Philology.\"",
+          "And hence how inexpressibly sublime is Homer, who, as unit being, bears the same relation to this Apollonian folk-culture as the unit dream-artist does to the dream-faculty of the people and of Nature in general.",
+          "The ancients themselves supply the answer in symbolic form, when they place Homer and Archilochus as the forefathers and torch-bearers of Greek poetry side by side on gems, sculptures, etc., in the sure conviction that only these two thoroughly original compeers, from whom a stream of fire flows over the whole of Greek posterity, should be taken into consideration.",
+          "With reference to Archilochus, it has been established by critical research that he introduced the folk-song into literature, and, on account thereof, deserved, according to the general estimate of the Greeks, his unique position alongside of Homer.",
+          "Why is it that Homer sketches much more vividly[7] than all the other poets?",
+          "Who is it that ventures single-handed to disown the Greek character, which, as Homer, Pindar, and Æschylus, as Phidias, as Pericles, as Pythia and Dionysus, as the deepest abyss and the highest height, is sure of our wondering admiration?",
+          "which in Schiller's time was taken seriously"
+        ],
+        "commentaries": [
+          "The author references Nietzsche's inaugural lecture about Homer, treating Homer as an author and source of scholarly inquiry.",
+          "The author cites Homer as the paradigmatic naïve artist and representative of Apollonian culture.",
+          "The author references Homer as a key figure in Greek poetry, representing the Apollonian naïve artist.",
+          "The author mentions Homer as a benchmark for comparison with Archilochus.",
+          "The author cites Homer as an example of a poet who sketches vividly due to his contemplative nature.",
+          "The author lists Homer among the exemplars of Greek character that Socrates challenges.",
+          "Schiller is mentioned in the context of a discussion about the moral education of the people through theatre, which was taken seriously in his time but is now considered an antiquated idea."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Faust",
+        "author": "Johann Wolfgang von Goethe",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Faust, trans. of Bayard Taylor.--TR.",
+          "_Faust,_ trans. of Bayard Taylor.--TR.",
+          "How unintelligible must _Faust,_ the modern cultured man, who is in himself intelligible, have appeared to a true Greek,--Faust, storming discontentedly through all the faculties, devoted to magic and the devil from a desire for knowledge, whom we have only to place alongside of Socrates for the purpose of comparison, in order to see that modern man begins to divine the boundaries of this Socratic love of perception and longs for a coast in the wide waste of the ocean of knowledge."
+        ],
+        "commentaries": [
+          "The author references Goethe's Faust, citing a specific translation.",
+          "The author quotes from Goethe's work, noting the translation by Bayard Taylor.",
+          "The author references Goethe's Faust as a representation of the modern cultured man, comparing him to Socrates to illustrate the limits of Socratic knowledge."
+        ],
+        "canonical_author": "Goethe"
+      },
+      "goodreads_match": {
+        "ratings_count": 1,
+        "book_id": "28927881",
+        "title_without_series": "Faust",
+        "publication_year": 1983,
+        "author_ids": [
+          "285217"
+        ],
+        "format": "Hardcover",
+        "title": "Faust",
+        "average_rating": 3.97,
+        "text_reviews_count": 1,
+        "work_id": "24158213",
+        "publisher": "Univers",
+        "authors": [
+          "Johann Wolfgang von Goethe"
+        ],
+        "description": "Fausto, de Johann Wolfgang von Goethe es una obra tragica enteramente dialogada, concebida mas para ser leida que para ser representada (al estilo de La Celestina). Fue publicada en dos partes: Faust: der Tragodie erster Teil (Fausto: Primera parte de la tragedia) y Faust: der Tragodie zweiter Teil (Fausto: Segunda parte de la tragedia). Se trata de la obra mas famosa de Goethe y esta considerada como una de las grandes obras de la literatura universal. La figura del doctor Fausto, personaje legendario que....",
+        "link": "https://www.goodreads.com/book/show/28927881-faust",
+        "wikipedia_match": {
+          "title": "Johann Wolfgang von Goethe",
+          "page_id": 19242322,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Johann Wolfgang von Goethe| ",
+            "1749 births",
+            "1832 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German civil servants",
+            "18th-century German dramatists and playwrights",
+            "18th-century German male writers",
+            "18th-century German novelists",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century historians",
+            "18th-century travel writers",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German civil servants",
+            "19th-century German diplomats",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century historians",
+            "19th-century travel writers",
+            "Color scientists",
+            "Enlightenment philosophers",
+            "Epic poets",
+            "Epigrammatists"
+          ],
+          "birth_year": 1749,
+          "death_year": 1832
+        },
+        "original_year": 1808,
+        "author_meta": {
+          "birth_year": 1749,
+          "death_year": 1832,
+          "main_genre": "Poetry",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Johann Wolfgang von Goethe",
+        "page_id": 19242322,
+        "infoboxes": [
+          "writer",
+          "officeholder "
+        ],
+        "categories": [
+          "Johann Wolfgang von Goethe| ",
+          "1749 births",
+          "1832 deaths",
+          "18th-century German educators",
+          "18th-century essayists",
+          "18th-century German civil servants",
+          "18th-century German dramatists and playwrights",
+          "18th-century German male writers",
+          "18th-century German novelists",
+          "18th-century German philosophers",
+          "18th-century German poets",
+          "18th-century historians",
+          "18th-century travel writers",
+          "19th-century German educators",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German civil servants",
+          "19th-century German diplomats",
+          "19th-century German dramatists and playwrights",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German poets",
+          "19th-century historians",
+          "19th-century travel writers",
+          "Color scientists",
+          "Enlightenment philosophers",
+          "Epic poets",
+          "Epigrammatists"
+        ],
+        "birth_year": 1749,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "28927881",
+        "target_author_ids": [
+          "285217"
+        ],
+        "target_person": {
+          "title": "Johann Wolfgang von Goethe",
+          "page_id": 19242322,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Johann Wolfgang von Goethe| ",
+            "1749 births",
+            "1832 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German civil servants",
+            "18th-century German dramatists and playwrights",
+            "18th-century German male writers",
+            "18th-century German novelists",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century historians",
+            "18th-century travel writers",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German civil servants",
+            "19th-century German diplomats",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century historians",
+            "19th-century travel writers",
+            "Color scientists",
+            "Enlightenment philosophers",
+            "Epic poets",
+            "Epigrammatists"
+          ],
+          "birth_year": 1749,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Ion",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the Platonic 'Ion'"
+        ],
+        "commentaries": [
+          "The author quotes the Platonic dialogue 'Ion' to contrast the younger rhapsodist's emotional involvement with the older rhapsodist's calm absorption, using it to explain Euripides' theatrical style."
+        ]
+      },
+      "goodreads_match": {
+        "ratings_count": 1,
+        "book_id": "28095580",
+        "title_without_series": "Ion",
+        "author_ids": [
+          "879"
+        ],
+        "title": "Ion",
+        "average_rating": 3.53,
+        "text_reviews_count": 1,
+        "work_id": "1993600",
+        "authors": [
+          "Plato"
+        ],
+        "description": "In Plato's Ion Socrates discusses with Ion, a professional rhapsode who also lectures on Homer, the question of whether the rhapsode, a performer of poetry, gives his performance on account of his skill and knowledge or by virtue of divine possession. It is one of the shorter of Plato's dialogues.",
+        "link": "https://www.goodreads.com/book/show/28095580-ion",
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        },
+        "original_year": -390,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "28095580",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pericles",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Pericles (or Thucydides) intimates as much in the great Funeral Speech"
+        ],
+        "commentaries": [
+          "The author references Pericles (via Thucydides' account) as a source for the idea that the Greek longing for beauty may have grown out of suffering."
+        ],
+        "canonical_author": "Pericles"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pericles",
+        "page_id": 36812,
+        "infoboxes": [
+          "military person"
+        ],
+        "categories": [
+          "490s BC births",
+          "429 BC deaths",
+          "5th-century BC Athenians",
+          "Alcmaeonidae",
+          "Ancient Athenian generals",
+          "5th-century BC Greek politicians",
+          "Athenians of the Greco-Persian Wars",
+          "Athenians of the Peloponnesian War",
+          "Culture of Greece",
+          "Athenian democracy"
+        ],
+        "birth_year": null,
+        "death_year": -429
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Pericles",
+          "page_id": 36812,
+          "infoboxes": [
+            "military person"
+          ],
+          "categories": [
+            "490s BC births",
+            "429 BC deaths",
+            "5th-century BC Athenians",
+            "Alcmaeonidae",
+            "Ancient Athenian generals",
+            "5th-century BC Greek politicians",
+            "Athenians of the Greco-Persian Wars",
+            "Athenians of the Peloponnesian War",
+            "Culture of Greece",
+            "Athenian democracy"
+          ],
+          "birth_year": null,
+          "death_year": -429
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Twilight of the Idols",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I have but lately stated in the _Twilight of the Idols,_ page 139 (1st edit. ):"
+        ],
+        "commentaries": [
+          "The author cites his own work to explain the concept of the tragic and the Dionysian."
+        ]
+      },
+      "goodreads_match": {
+        "ratings_count": 71,
+        "book_id": "4182144",
+        "isbn": "019955496X",
+        "title_without_series": "Twilight of the Idols",
+        "publication_year": 2009,
+        "isbn13": "9780199554966",
+        "author_ids": [
+          "1938",
+          "47585"
+        ],
+        "publication_day": 1,
+        "format": "Paperback",
+        "num_pages": 124,
+        "title": "Twilight of the Idols",
+        "average_rating": 3.92,
+        "text_reviews_count": 6,
+        "work_id": "19234046",
+        "publication_month": 4,
+        "publisher": "Oxford University Press",
+        "authors": [
+          "Friedrich Nietzsche",
+          "Duncan Large"
+        ],
+        "description": "Twilight of the Idols. Nietzsche's own unabashed appraisal of the last work intended to serve as a short introduction to the whole of his philosophy, and the most synoptic of all his books, bristles with a register of vocabulary derived from physiology, pathology, symptomatalogy and medicine. This new translation is supplemented by an introduction and extensive notes, which provide close analysis of a highly condensed work.\nAbout the Series: For over 100 years Oxford World's Classics has made available the....",
+        "link": "https://www.goodreads.com/book/show/4182144-twilight-of-the-idols",
+        "original_year": 1889,
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "4182144",
+        "target_author_ids": [
+          "1938",
+          "47585"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Euripides",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "What meantest thou, oh impious Euripides, in seeking once more to enthral this dying one?",
+          "It was _Euripides_ who fought this death-struggle of tragedy; the later art is known as the _New Attic Comedy._",
+          "Euripides, who, albeit in a higher sense, must be designated as a thoroughly unmusical nature, is for this very reason a passionate adherent of the New Dithyrambic Music, and with the liberality of a freebooter employs all its effective turns and mannerisms.",
+          "the heroes and choruses of Euripides are already dissolute enough when once they begin to sing"
+        ],
+        "commentaries": [
+          "The author addresses Euripides directly, accusing him of causing the death of tragedy.",
+          "The author discusses Euripides as a key figure in the transformation of tragedy.",
+          "The author describes Euripides as an unmusical figure who embraced the new dithyrambic style.",
+          "The author mentions Euripides' heroes and choruses as examples of the dissolute nature of the new un-Dionysian spirit."
+        ],
+        "canonical_author": "Euripides"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Euripides",
+        "page_id": 9808,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Euripides| ",
+          "480s BC births",
+          "400s BC deaths",
+          "Ancient Athenian dramatists and playwrights",
+          "5th-century BC Athenians",
+          "Courtiers of Archelaus of Macedon",
+          "5th-century BC Greek poets",
+          "Ancient Greek tragic poets",
+          "Sports poets",
+          "People from Salamis Island"
+        ],
+        "birth_year": -480,
+        "death_year": -406
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "973"
+        ],
+        "target_person": {
+          "title": "Euripides",
+          "page_id": 9808,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Euripides| ",
+            "480s BC births",
+            "400s BC deaths",
+            "Ancient Athenian dramatists and playwrights",
+            "5th-century BC Athenians",
+            "Courtiers of Archelaus of Macedon",
+            "5th-century BC Greek poets",
+            "Ancient Greek tragic poets",
+            "Sports poets",
+            "People from Salamis Island"
+          ],
+          "birth_year": -480,
+          "death_year": -406
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristophanes",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "What Euripides takes credit for in the Aristophanean \"Frogs,\" namely, that by his household remedies he freed tragic art from its pompous corpulency, is apparent above all in his tragic heroes.",
+          "It is in this tone, half indignantly and half contemptuously, that Aristophanic comedy is wont to speak of both of them",
+          "The unerring instinct of Aristophanes surely did the proper thing when it comprised Socrates himself, the tragedy of Euripides, and the music of the new Dithyrambic poets in the same feeling of hatred, and perceived in all three phenomena the symptoms of a degenerate culture."
+        ],
+        "commentaries": [
+          "The author references Aristophanes' play 'Frogs' in relation to Euripides.",
+          "The author references Aristophanes's comedic portrayal of Socrates and Euripides.",
+          "The author references Aristophanes' critical view of Socrates and contemporary art as a sign of cultural decline."
+        ],
+        "canonical_author": "Aristophanes"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aristophanes",
+        "page_id": 1028,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Aristophanes| ",
+          "440s BC births",
+          "Year of birth unknown",
+          "380s BC deaths",
+          "Year of death unknown",
+          "4th-century BC Athenians",
+          "4th-century BC Greek poets",
+          "5th-century BC Athenians",
+          "5th-century BC Greek poets",
+          "Ancient Athenian dramatists and playwrights",
+          "Ancient Greek satirists",
+          "Satirical dramatists and playwrights",
+          "Old Comic poets",
+          "Writers of lost works"
+        ],
+        "birth_year": -446,
+        "death_year": -386
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1011"
+        ],
+        "target_person": {
+          "title": "Aristophanes",
+          "page_id": 1028,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Aristophanes| ",
+            "440s BC births",
+            "Year of birth unknown",
+            "380s BC deaths",
+            "Year of death unknown",
+            "4th-century BC Athenians",
+            "4th-century BC Greek poets",
+            "5th-century BC Athenians",
+            "5th-century BC Greek poets",
+            "Ancient Athenian dramatists and playwrights",
+            "Ancient Greek satirists",
+            "Satirical dramatists and playwrights",
+            "Old Comic poets",
+            "Writers of lost works"
+          ],
+          "birth_year": -446,
+          "death_year": -386
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Ecce Homo",
+        "author": "Friedrich Nietzsche",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "They also appear in the _Ecce Homo._--TRANSLATOR'S NOTE.]"
+        ],
+        "commentaries": [
+          "This book is mentioned in the translator's note as containing similar content."
+        ]
+      },
+      "goodreads_match": {
+        "ratings_count": 1,
+        "book_id": "17281535",
+        "title_without_series": "Ecce homo",
+        "publication_year": 2011,
+        "isbn13": "9789875509795",
+        "author_ids": [
+          "1938"
+        ],
+        "format": "Paperback",
+        "num_pages": 171,
+        "title": "Ecce homo",
+        "average_rating": 3.82,
+        "text_reviews_count": 1,
+        "work_id": "560851",
+        "publisher": "Longseller",
+        "authors": [
+          "Friedrich Nietzsche"
+        ],
+        "description": "En este libro breve pero intenso, un Nietzsche enfermo vuelve a tomar la pluma para escribir su biografia intelectual. Repasa sus obras mas importantes, explica como y por que surgieron, revela que efectos buscaba con cada una, las pone en contexto y aclara dudas. Pero, sobre todo, repasa por ultima vez las ideas centrales que rigieron su vida y sus pensamientos: la busqueda del hombre autenticamente libre, vital, creativo, que se atreve a romper las cadenas impuestas por una sociedad hipocrita y mentirosa....",
+        "link": "https://www.goodreads.com/book/show/17281535-ecce-homo",
+        "wikipedia_match": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        },
+        "original_year": 1908,
+        "author_meta": {
+          "birth_year": 1844,
+          "death_year": 1900,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Nietzsche",
+        "page_id": 10671,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Friedrich Nietzsche| ",
+          "1844 births",
+          "1900 deaths",
+          "People from Lützen",
+          "People from the Province of Saxony",
+          "Former Lutherans",
+          "19th-century German non-fiction writers",
+          "19th-century German male writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German male musicians",
+          "19th-century Prussian people",
+          "Aphorists",
+          "German critics of Christianity",
+          "Determinists",
+          "Existentialists",
+          "German classical philologists",
+          "Hellenists",
+          "German metaphysicians",
+          "German philosophers of art",
+          "Philosophers of time",
+          "Philosophers of nihilism",
+          "German philosophy writers",
+          "Writers from Saxony-Anhalt",
+          "Leipzig University alumni",
+          "University of Bonn alumni",
+          "Academic staff of the University of Basel",
+          "People associated with the University of Basel",
+          "Prussian Army personnel",
+          "German military personnel of the Franco-Prussian War"
+        ],
+        "birth_year": 1844,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "17281535",
+        "target_author_ids": [
+          "1938"
+        ],
+        "target_person": {
+          "title": "Friedrich Nietzsche",
+          "page_id": 10671,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Friedrich Nietzsche| ",
+            "1844 births",
+            "1900 deaths",
+            "People from Lützen",
+            "People from the Province of Saxony",
+            "Former Lutherans",
+            "19th-century German non-fiction writers",
+            "19th-century German male writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German male musicians",
+            "19th-century Prussian people",
+            "Aphorists",
+            "German critics of Christianity",
+            "Determinists",
+            "Existentialists",
+            "German classical philologists",
+            "Hellenists",
+            "German metaphysicians",
+            "German philosophers of art",
+            "Philosophers of time",
+            "Philosophers of nihilism",
+            "German philosophy writers",
+            "Writers from Saxony-Anhalt",
+            "Leipzig University alumni",
+            "University of Bonn alumni",
+            "Academic staff of the University of Basel",
+            "People associated with the University of Basel",
+            "Prussian Army personnel",
+            "German military personnel of the Franco-Prussian War"
+          ],
+          "birth_year": 1844,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Titus Lucretius Carus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In dreams, according to the conception of Lucretius, the glorious divine figures first appeared to the souls of men"
+        ],
+        "commentaries": [
+          "The author references Lucretius's conception of dreams as the origin of divine figures in art."
+        ],
+        "canonical_author": "Titus Lucretius Carus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lucretius",
+        "page_id": 37145,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "90s BC births",
+          "50s BC deaths",
+          "1st-century BC philosophers",
+          "1st-century BC Roman poets",
+          "Atomists",
+          "Didactic poets",
+          "Empiricists",
+          "Epic poets",
+          "Golden Age Latin writers",
+          "Lucretii",
+          "Metaphysicians",
+          "Natural philosophers",
+          "Roman-era Epicurean philosophers",
+          "Philosophers of Roman Italy"
+        ],
+        "birth_year": -99,
+        "death_year": -55
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8143161"
+        ],
+        "target_person": {
+          "title": "Lucretius",
+          "page_id": 37145,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "90s BC births",
+            "50s BC deaths",
+            "1st-century BC philosophers",
+            "1st-century BC Roman poets",
+            "Atomists",
+            "Didactic poets",
+            "Empiricists",
+            "Epic poets",
+            "Golden Age Latin writers",
+            "Lucretii",
+            "Metaphysicians",
+            "Natural philosophers",
+            "Roman-era Epicurean philosophers",
+            "Philosophers of Roman Italy"
+          ],
+          "birth_year": -99,
+          "death_year": -55
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Virgil",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "he made use of this tragedy, as Dante made use of Vergil, in order to be led up to the gates of paradise"
+        ],
+        "commentaries": [
+          "The author mentions Vergil as the guide used by Dante, drawing a parallel to the Renaissance use of Greek tragedy."
+        ],
+        "canonical_author": "Virgil"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Virgil",
+        "birth_year": -70,
+        "death_year": -19
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "919"
+        ],
+        "target_person": {
+          "title": "Virgil",
+          "birth_year": -70,
+          "death_year": -19
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Gervinus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "some of them, like Gervinus, do not even reach the precincts by this path."
+        ],
+        "commentaries": [
+          "The author mentions Gervinus as an example of someone who fails to reach the precincts of musical perception."
+        ],
+        "canonical_author": "Gervinus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Georg Gottfried Gervinus",
+        "page_id": 468910,
+        "infoboxes": [],
+        "categories": [
+          "1805 births",
+          "1871 deaths",
+          "Writers from Darmstadt",
+          "German religious humanists",
+          "19th-century German historians",
+          "Members of the Frankfurt Parliament",
+          "People from the Grand Duchy of Hesse",
+          "Shakespearean scholars",
+          "University of Giessen alumni",
+          "Heidelberg University alumni",
+          "Academic staff of Heidelberg University",
+          "Academic staff of the University of Göttingen",
+          "German male dramatists and playwrights",
+          "19th-century German dramatists and playwrights",
+          "19th-century German male writers",
+          "German male poets"
+        ],
+        "birth_year": 1805,
+        "death_year": 1871
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Georg Gottfried Gervinus",
+          "page_id": 468910,
+          "infoboxes": [],
+          "categories": [
+            "1805 births",
+            "1871 deaths",
+            "Writers from Darmstadt",
+            "German religious humanists",
+            "19th-century German historians",
+            "Members of the Frankfurt Parliament",
+            "People from the Grand Duchy of Hesse",
+            "Shakespearean scholars",
+            "University of Giessen alumni",
+            "Heidelberg University alumni",
+            "Academic staff of Heidelberg University",
+            "Academic staff of the University of Göttingen",
+            "German male dramatists and playwrights",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "German male poets"
+          ],
+          "birth_year": 1805,
+          "death_year": 1871
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Émile",
+        "author": "Jean-Jacques Rousseau",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "this could be believed only by an age which sought to picture to itself Rousseau's Émile also as an artist"
+        ],
+        "commentaries": [
+          "The author mentions Rousseau's work 'Émile' as an example of a naive artist figure."
+        ],
+        "canonical_author": "Rousseau"
+      },
+      "goodreads_match": {
+        "ratings_count": 3,
+        "book_id": "638611",
+        "isbn": "0460005189",
+        "title_without_series": "Émile",
+        "publication_year": 1955,
+        "isbn13": "9780460005180",
+        "author_ids": [
+          "7994",
+          "2985260"
+        ],
+        "publication_day": 1,
+        "format": "Hardcover",
+        "title": "Émile",
+        "average_rating": 3.61,
+        "text_reviews_count": 1,
+        "work_id": "2854373",
+        "publication_month": 10,
+        "publisher": "Dutton Books (NY)/J.M. Dent & Sons Ltd (London)",
+        "authors": [
+          "Jean-Jacques Rousseau",
+          "Barbara Foxley"
+        ],
+        "description": "This philosophical romance, called by Lord Morley \"one of the seminal books\" and by others \"the child's charter\", has an Introduction by Andre Boutet de Monvel, Professor of French Literature, Institut Francais du Royaume-Uni.\nThe work \"has been the inspirational source of every great reformer since the eighteenth century\", says Professor Boutet de Monvel; but its influence has extended far beyond the confines of education, and its effect upon the ideas of several generations has covered a much wider sphere...",
+        "link": "https://www.goodreads.com/book/show/638611._mile",
+        "wikipedia_match": {
+          "title": "Jean-Jacques Rousseau",
+          "page_id": 15941,
+          "infoboxes": [
+            "philosopher",
+            "writer"
+          ],
+          "categories": [
+            "Jean-Jacques Rousseau| ",
+            "1712 births",
+            "1778 deaths",
+            "18th-century classical composers",
+            "18th-century male musicians",
+            "18th-century memoirists",
+            "18th-century novelists",
+            "18th-century philosophers",
+            "18th-century writers from the Republic of Geneva",
+            "Age of Enlightenment",
+            "Autobiographers",
+            "Baroque composers",
+            "Burials at the Panthéon, Paris",
+            "Classical-period composers",
+            "Contributors to the Encyclopédie (1751–1772)",
+            "Converts to Roman Catholicism from Calvinism",
+            "Deist philosophers",
+            "Enlightenment philosophers",
+            "Male non-fiction writers",
+            "Political philosophers",
+            "Music copyists",
+            "Music theorists",
+            "Musicians from the Republic of Geneva",
+            "People with hypochondriasis",
+            "Philosophers from the Republic of Geneva",
+            "Philosophers of art",
+            "Philosophers of culture",
+            "Philosophers of economics",
+            "Philosophers of education",
+            "Philosophers of literature"
+          ],
+          "birth_year": 1712,
+          "death_year": 1778
+        },
+        "original_year": 1762,
+        "author_meta": {
+          "birth_year": 1712,
+          "death_year": 1778,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Jean-Jacques Rousseau",
+        "page_id": 15941,
+        "infoboxes": [
+          "philosopher",
+          "writer"
+        ],
+        "categories": [
+          "Jean-Jacques Rousseau| ",
+          "1712 births",
+          "1778 deaths",
+          "18th-century classical composers",
+          "18th-century male musicians",
+          "18th-century memoirists",
+          "18th-century novelists",
+          "18th-century philosophers",
+          "18th-century writers from the Republic of Geneva",
+          "Age of Enlightenment",
+          "Autobiographers",
+          "Baroque composers",
+          "Burials at the Panthéon, Paris",
+          "Classical-period composers",
+          "Contributors to the Encyclopédie (1751–1772)",
+          "Converts to Roman Catholicism from Calvinism",
+          "Deist philosophers",
+          "Enlightenment philosophers",
+          "Male non-fiction writers",
+          "Political philosophers",
+          "Music copyists",
+          "Music theorists",
+          "Musicians from the Republic of Geneva",
+          "People with hypochondriasis",
+          "Philosophers from the Republic of Geneva",
+          "Philosophers of art",
+          "Philosophers of culture",
+          "Philosophers of economics",
+          "Philosophers of education",
+          "Philosophers of literature"
+        ],
+        "birth_year": 1712,
+        "death_year": 1778
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "638611",
+        "target_author_ids": [
+          "7994",
+          "2985260"
+        ],
+        "target_person": {
+          "title": "Jean-Jacques Rousseau",
+          "page_id": 15941,
+          "infoboxes": [
+            "philosopher",
+            "writer"
+          ],
+          "categories": [
+            "Jean-Jacques Rousseau| ",
+            "1712 births",
+            "1778 deaths",
+            "18th-century classical composers",
+            "18th-century male musicians",
+            "18th-century memoirists",
+            "18th-century novelists",
+            "18th-century philosophers",
+            "18th-century writers from the Republic of Geneva",
+            "Age of Enlightenment",
+            "Autobiographers",
+            "Baroque composers",
+            "Burials at the Panthéon, Paris",
+            "Classical-period composers",
+            "Contributors to the Encyclopédie (1751–1772)",
+            "Converts to Roman Catholicism from Calvinism",
+            "Deist philosophers",
+            "Enlightenment philosophers",
+            "Male non-fiction writers",
+            "Political philosophers",
+            "Music copyists",
+            "Music theorists",
+            "Musicians from the Republic of Geneva",
+            "People with hypochondriasis",
+            "Philosophers from the Republic of Geneva",
+            "Philosophers of art",
+            "Philosophers of culture",
+            "Philosophers of economics",
+            "Philosophers of education",
+            "Philosophers of literature"
+          ],
+          "birth_year": 1712,
+          "death_year": 1778
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "A. W. Schlegel",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Much more celebrated than this political explanation of the chorus is the notion of A. W. Schlegel, who advises us to regard the chorus, in a manner, as the essence and extract of the crowd of spectators,—as the \"ideal spectator.\"",
+          "the Schlegelian expression has intimated to us, that the perfect ideal spectator does not at all suffer the world of the scenes to act æsthetically on him, but corporeo-empirically.",
+          "The Schlegelian observation must here reveal itself to us in a deeper sense."
+        ],
+        "commentaries": [
+          "The author references A. W. Schlegel's view of the chorus as the 'ideal spectator' and criticizes it as unscientific.",
+          "The author discusses and challenges Schlegel's view of the tragic chorus.",
+          "The author references Schlegel's observation about the chorus as the 'ideal spectator' to deepen the analysis."
+        ],
+        "canonical_author": "A. W. Schlegel"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "A. W. Schlegel",
+        "birth_year": 1767,
+        "death_year": 1845
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "479291"
+        ],
+        "target_person": {
+          "title": "A. W. Schlegel",
+          "birth_year": 1767,
+          "death_year": 1845
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Prometheus",
+        "author": "Æschylus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "With the glory of passivity I now contrast the glory of activity which illuminates the Prometheus of Æschylus."
+        ],
+        "commentaries": [
+          "The author cites Æschylus' Prometheus as a contrast to the passive hero, discussing its thematic content."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Prometheus Bound",
+        "authors": [
+          "Aeschylus"
+        ],
+        "original_year": -456,
+        "birth_year": -525,
+        "death_year": -456,
+        "nationality": "Ancient Greek",
+        "description": "Ancient Greek tragedy attributed to Aeschylus, depicting the punishment of Prometheus for stealing fire from the gods and giving it to humanity.",
+        "book_id": "web_5c157f8b",
+        "author_meta": {
+          "birth_year": -525,
+          "death_year": -456,
+          "nationality": "Ancient Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aeschylus",
+        "birth_year": -525,
+        "death_year": -456
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_5c157f8b",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Aeschylus",
+          "birth_year": -525,
+          "death_year": -456
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "History of the Evolution of Man",
+        "author": "Ernst Haeckel",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "(Translation in Hæckel's _History of the Evolution of Man._)"
+        ],
+        "commentaries": [
+          "The author references a translation published in Haeckel's work."
+        ],
+        "canonical_author": "Haeckel"
+      },
+      "goodreads_match": {
+        "title": "The History of Creation",
+        "authors": [
+          "Ernst Haeckel"
+        ],
+        "original_year": 1868,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "Ernst Haeckel's major work on evolutionary theory, originally published in German as 'Natürliche Schöpfungsgeschichte'. The English translation is often titled 'The History of Creation' or 'The History of the Evolution of Man'.",
+        "book_id": "web_8bc1a49f",
+        "author_meta": {
+          "birth_year": 1834,
+          "death_year": 1919,
+          "main_genre": null,
+          "nationality": null,
+          "canonical_name": "Ernst Haeckel"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ernst Haeckel",
+        "birth_year": 1834,
+        "death_year": 1919
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_8bc1a49f",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Ernst Haeckel",
+          "birth_year": 1834,
+          "death_year": 1919
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Œdipus at Colonus",
+        "author": "Sophocles",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In the \"Œdipus at Colonus\" we find the same cheerfulness, elevated, however, to an infinite transfiguration..."
+        ],
+        "commentaries": [
+          "The author references Sophocles' play Œdipus at Colonus to illustrate cheerfulness and transfiguration."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Oedipus at Colonus",
+        "authors": [
+          "Sophocles"
+        ],
+        "original_year": -406,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Greek",
+        "description": "Tragedy by Sophocles, the second of his Theban plays, depicting the death of Oedipus at Colonus.",
+        "book_id": "web_f4a1b29b",
+        "author_meta": {
+          "birth_year": -497,
+          "death_year": -406,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Sophocles",
+        "birth_year": -497,
+        "death_year": -406
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_f4a1b29b",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Sophocles",
+          "birth_year": -497,
+          "death_year": -406
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Bride of Messina",
+        "author": "Friedrich Schiller",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "An infinitely more valuable insight into the signification of the chorus had already been displayed by Schiller in the celebrated Preface to his Bride of Messina, where he regarded the chorus as a living wall which tragedy draws round herself to guard her from contact with the world of reality, and to preserve her ideal domain and poetical freedom."
+        ],
+        "commentaries": [
+          "The author favorably cites Schiller's preface to explain the chorus as a protective barrier against reality."
+        ],
+        "canonical_author": "Schiller"
+      },
+      "goodreads_match": {
+        "title": "The Bride of Messina",
+        "authors": [
+          "Friedrich Schiller"
+        ],
+        "original_year": 1803,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A tragedy by Friedrich Schiller, first performed in 1803, known for its preface discussing the function of the chorus as a protective barrier between the ideal world of tragedy and reality.",
+        "book_id": "web_a453519d",
+        "author_meta": {
+          "birth_year": 1759,
+          "death_year": 1805,
+          "main_genre": "drama",
+          "nationality": "German"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Friedrich Schiller",
+        "birth_year": 1759,
+        "death_year": 1805
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_a453519d",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Friedrich Schiller",
+          "birth_year": 1759,
+          "death_year": 1805
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Raphael",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In a symbolic painting, Raphael, himself one of these immortal \"naïve\" ones, has represented to us this depotentiating of appearance to appearance, the primordial process of the naïve artist and at the same time of Apollonian culture."
+        ],
+        "commentaries": [
+          "The author references Raphael's painting 'Transfiguration' as an example of the naïve artist and Apollonian culture."
+        ],
+        "canonical_author": "Raphael"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Raphael",
+        "birth_year": 1483,
+        "death_year": 1520
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Raphael",
+          "birth_year": 1483,
+          "death_year": 1520
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Beethoven",
+        "author": "Richard Wagner",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Richard Wagner, by way of confirmation of its eternal truth, affixed his seal, when he asserted in his _Beethoven_ that music must be judged according to æsthetic principles quite different from those which apply to the plastic arts"
+        ],
+        "commentaries": [
+          "The author references Wagner's book 'Beethoven' as confirming the aesthetic principle about music's distinct nature."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Beethoven",
+        "authors": [
+          "Richard Wagner"
+        ],
+        "original_year": 1870,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A book by Richard Wagner on the composer Ludwig van Beethoven, setting forth Wagner's aesthetic principles, particularly regarding music as distinct from the plastic arts.",
+        "book_id": "web_482e5e20",
+        "author_meta": {
+          "birth_year": 1813,
+          "death_year": 1883,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Richard Wagner",
+        "birth_year": 1813,
+        "death_year": 1883
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_482e5e20",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Richard Wagner",
+          "birth_year": 1813,
+          "death_year": 1883
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Welt als Wille und Vorstellung",
+        "author": "Arthur Schopenhauer",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "Welt als Wille und Vorstellung, I. p. 416: \"Just as in a stormy sea, unbounded in every direction, rising and falling with howling mountainous waves, a sailor sits in a boat and trusts in his frail barque: so in the midst of a world of sorrows the individual sits quietly supported by and trusting in his principium individuationis.\"",
+          "Schopenhauer, who did not shut his eyes to the difficulty presented by the lyrist in the philosophical contemplation of art, thought he had found a way out of it, on which, however, I cannot accompany him; while he alone, in his profound metaphysics of music, held in his hands the means whereby this difficulty could be definitely removed: as I believe I have removed it here in his spirit and to his honour.",
+          "(Schopenhauer, _Welt als Wille und Vorstellung,_ I. 310.)",
+          "(Schopenhauer, whom Richard Wagner, with especial reference to this point, accredits with an unsurpassable clearness and perspicuity of exposition, expresses himself most copiously on the subject in the following passage which I shall cite here at full length[21] (_Welt als Wille und Vorstellung,_ I. p. 309)",
+          "Kant, on the other hand, showed that these served in reality only to elevate the mere phenomenon, the work of Mâyâ, to the sole and highest reality, putting it in place of the innermost and true essence of things, thus making the actual knowledge of this essence impossible, that is, according to the expression of Schopenhauer, to lull the dreamer still more soundly asleep (_Welt als Wille und Vorstellung,_ I. 498)."
+        ],
+        "commentaries": [
+          "The author quotes Schopenhauer's work to illustrate the Apollonian state of calm individuation.",
+          "The author references Schopenhauer's work on the metaphysics of music and his treatment of the lyrist, noting that Schopenhauer held the key to the difficulty but that the author has resolved it in a different manner.",
+          "The author cites Schopenhauer's work to support the idea that music is a direct copy of the will itself.",
+          "The author quotes a lengthy passage from Schopenhauer's 'Welt als Wille und Vorstellung' on the relation of music to image and concept.",
+          "The author references Schopenhauer's 'Welt als Wille und Vorstellung' to support Kant's demonstration of the limits of knowledge."
+        ],
+        "canonical_author": "Schopenhauer"
+      },
+      "goodreads_match": {
+        "ratings_count": 64,
+        "book_id": "18886731",
+        "title_without_series": "The World As Will And Idea (Vol. 1 of 3)",
+        "author_ids": [
+          "11682"
+        ],
+        "title": "The World As Will And Idea (Vol. 1 of 3)",
+        "average_rating": 4.16,
+        "text_reviews_count": 1,
+        "work_id": "3212390",
+        "authors": [
+          "Arthur Schopenhauer"
+        ],
+        "description": "This book was converted from its physical edition to the digital format by a community of volunteers. You may find it for free on the web. Purchase of the Kindle edition includes wireless delivery.",
+        "link": "https://www.goodreads.com/book/show/18886731-the-world-as-will-and-idea",
+        "wikipedia_match": {
+          "title": "Arthur Schopenhauer",
+          "page_id": 700,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Arthur Schopenhauer| ",
+            "1788 births",
+            "1860 deaths",
+            "19th-century atheists",
+            "19th-century German philosophers",
+            "Academic staff of the Humboldt University of Berlin",
+            "German animal rights scholars",
+            "Anti-natalists",
+            "Atheist philosophers",
+            "Burials at Frankfurt Main Cemetery",
+            "German epistemologists",
+            "German atheists",
+            "German ethicists",
+            "German people of Dutch descent",
+            "German scholars of Buddhism",
+            "Idealists",
+            "Kantian philosophers",
+            "German philosophers of art",
+            "Philosophers of pessimism",
+            "Philosophers of psychology",
+            "University of Göttingen alumni",
+            "Writers from Gdańsk"
+          ],
+          "birth_year": 1788,
+          "death_year": 1860
+        },
+        "original_year": 1819,
+        "author_meta": {
+          "birth_year": 1788,
+          "death_year": 1860,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Arthur Schopenhauer",
+        "page_id": 700,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Arthur Schopenhauer| ",
+          "1788 births",
+          "1860 deaths",
+          "19th-century atheists",
+          "19th-century German philosophers",
+          "Academic staff of the Humboldt University of Berlin",
+          "German animal rights scholars",
+          "Anti-natalists",
+          "Atheist philosophers",
+          "Burials at Frankfurt Main Cemetery",
+          "German epistemologists",
+          "German atheists",
+          "German ethicists",
+          "German people of Dutch descent",
+          "German scholars of Buddhism",
+          "Idealists",
+          "Kantian philosophers",
+          "German philosophers of art",
+          "Philosophers of pessimism",
+          "Philosophers of psychology",
+          "University of Göttingen alumni",
+          "Writers from Gdańsk"
+        ],
+        "birth_year": 1788,
+        "death_year": 1860
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "18886731",
+        "target_author_ids": [
+          "11682"
+        ],
+        "target_person": {
+          "title": "Arthur Schopenhauer",
+          "page_id": 700,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Arthur Schopenhauer| ",
+            "1788 births",
+            "1860 deaths",
+            "19th-century atheists",
+            "19th-century German philosophers",
+            "Academic staff of the Humboldt University of Berlin",
+            "German animal rights scholars",
+            "Anti-natalists",
+            "Atheist philosophers",
+            "Burials at Frankfurt Main Cemetery",
+            "German epistemologists",
+            "German atheists",
+            "German ethicists",
+            "German people of Dutch descent",
+            "German scholars of Buddhism",
+            "Idealists",
+            "Kantian philosophers",
+            "German philosophers of art",
+            "Philosophers of pessimism",
+            "Philosophers of psychology",
+            "University of Göttingen alumni",
+            "Writers from Gdańsk"
+          ],
+          "birth_year": 1788,
+          "death_year": 1860
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Philemon",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "we are no longer surprised at the wish of Philemon, who would have got himself hanged at once, with the sole design of being able to visit Euripides in the lower regions"
+        ],
+        "commentaries": [
+          "The author mentions Philemon's wish to visit Euripides in the underworld."
+        ],
+        "canonical_author": "Philemon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Philemon",
+        "birth_year": -362,
+        "death_year": -262
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Philemon",
+          "birth_year": -362,
+          "death_year": -262
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Heraclitus of Ephesus",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "as in the teaching of the great Heraclitus of Ephesus, all things move in a double orbit",
+          "as if there had never been a Sixth Century with its birth of tragedy, its Mysteries, its Pythagoras and Heraclitus",
+          "in like manner as when Heraclitus the Obscure compares the world-building power to a playing child which places stones here and there and builds sandhills only to overthrow them again.",
+          "The affirmation of transiency _and annihilation_, to wit the decisive factor in a Dionysian _philosophy_, the yea-saying to antithesis and war, to _becoming_, with radical rejection even of the concept '_being_,'--that I must directly acknowledge as, of all thinking hitherto, the nearest to my own."
+        ],
+        "commentaries": [
+          "The author references Heraclitus's teaching about the double orbit of all things in relation to German music and culture.",
+          "The author mentions Heraclitus as a figure from the Sixth Century.",
+          "Nietzsche invokes Heraclitus as a source for the idea of the world as a playful, creative-destructive force.",
+          "The author acknowledges Heraclitus as a precursor to his own Dionysian philosophy, particularly in the affirmation of becoming."
+        ],
+        "canonical_author": "Heraclitus Of Ephesus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Heraclitus of Ephesus",
+        "birth_year": -535,
+        "death_year": -475
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "77989"
+        ],
+        "target_person": {
+          "title": "Heraclitus of Ephesus",
+          "birth_year": -535,
+          "death_year": -475
+        }
+      }
+    }
+  ]
+}

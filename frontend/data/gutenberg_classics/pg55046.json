@@ -1,0 +1,4003 @@
+{
+  "source": {
+    "title": "First Principles",
+    "authors": [
+      "Herbert Spencer"
+    ],
+    "goodreads_id": "pg55046",
+    "calibre_id": null,
+    "author_ids": [
+      "299395"
+    ],
+    "num_pages": 486,
+    "publisher": "Christian Classics",
+    "book_id": "17861735",
+    "isbn13": "9780870612794",
+    "work_id": "531871",
+    "format": "Paperback",
+    "average_rating": 4.16,
+    "publication_day": 1,
+    "isbn": "0870612794",
+    "text_reviews_count": 1,
+    "publication_month": 12,
+    "ratings_count": 10,
+    "title_without_series": "On First Principles",
+    "publication_year": 2013,
+    "description": "s/t: Being Koetschau's Text of the De Principiis Translated into English Together with an Introduction & Notes\nThe Father\nChrist\nThe Holy Spirit\nLoss or falling away\nRational natures\nThe end or consummation\nThings corporeal & incorporeal\nThe angels\nThe world & the creatures in it\nThe perpetuity of bodily nature\nThe beginning of the world & its causes\nThat there is one God of the law & the prophets, & that the God of the old & new covenants is the same\nThe just & the good\nThe incarnation of the Saviour\nThat....",
+    "link": "https://www.goodreads.com/book/show/17861735-on-first-principles",
+    "author_metadata": {
+      "birth_year": 1820,
+      "death_year": 1903,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Roger Joseph Boscovich",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Boscovich's conception yet remains to us.",
+          "We have here to remark, what could not without anticipation be remarked when treating of Matter, that the hypothesis of Newton, equally with that of Boscovich, is open to the charge that it supposes one thing to act upon another through a space which is absolutely empty—a supposition which cannot be represented in thought."
+        ],
+        "commentaries": [
+          "The author introduces Boscovich's theory as another hypothesis on the constitution of matter.",
+          "The author mentions Boscovich's hypothesis alongside Newton's, criticizing both for assuming action through empty space."
+        ],
+        "canonical_author": "Roger Joseph Boscovich"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Roger Joseph Boscovich",
+        "page_id": 23747676,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1711 births",
+          "1787 deaths",
+          "People from Dubrovnik",
+          "Ragusan Jesuits",
+          "Croatian people of Italian descent",
+          "Croatian Roman Catholic theologians",
+          "Croatian physicists",
+          "Croatian philosophers",
+          "Croatian male poets",
+          "18th-century Croatian poets",
+          "Italian people of Croatian descent",
+          "18th-century Italian astronomers",
+          "18th-century Italian philosophers",
+          "18th-century Italian Jesuits",
+          "18th-century Italian Roman Catholic theologians",
+          "18th-century Italian mathematicians",
+          "18th-century Italian physicists",
+          "18th-century Italian poets",
+          "18th-century Italian male writers",
+          "Italian male poets",
+          "Fellows of the Royal Society",
+          "Academic staff of the University of Pavia",
+          "Jesuit scientists",
+          "18th-century Croatian Jesuits",
+          "Ragusan diplomats"
+        ],
+        "birth_year": 1711,
+        "death_year": 1787
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Roger Joseph Boscovich",
+          "page_id": 23747676,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1711 births",
+            "1787 deaths",
+            "People from Dubrovnik",
+            "Ragusan Jesuits",
+            "Croatian people of Italian descent",
+            "Croatian Roman Catholic theologians",
+            "Croatian physicists",
+            "Croatian philosophers",
+            "Croatian male poets",
+            "18th-century Croatian poets",
+            "Italian people of Croatian descent",
+            "18th-century Italian astronomers",
+            "18th-century Italian philosophers",
+            "18th-century Italian Jesuits",
+            "18th-century Italian Roman Catholic theologians",
+            "18th-century Italian mathematicians",
+            "18th-century Italian physicists",
+            "18th-century Italian poets",
+            "18th-century Italian male writers",
+            "Italian male poets",
+            "Fellows of the Royal Society",
+            "Academic staff of the University of Pavia",
+            "Jesuit scientists",
+            "18th-century Croatian Jesuits",
+            "Ragusan diplomats"
+          ],
+          "birth_year": 1711,
+          "death_year": 1787
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Archimedes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "“The conception of statical force,” “was never presented in a distinct form till the works of Archimedes appeared;”"
+        ],
+        "commentaries": [
+          "The author quotes a remark that Archimedes' works first presented a distinct conception of statical force."
+        ],
+        "canonical_author": "Archimedes"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Archimedes",
+        "page_id": 1844,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Archimedes| ",
+          "3rd-century BC Greek writers",
+          "People from Syracuse, Sicily",
+          "Ancient Greek engineers",
+          "Ancient Greek inventors",
+          "Ancient Greek geometers",
+          "Ancient Greek physicists",
+          "Hellenistic-era philosophers",
+          "Doric Greek writers",
+          "Sicilian Greeks",
+          "Mathematicians from Sicily",
+          "Scientists from Sicily",
+          "Ancient Greek murder victims",
+          "Ancient Syracusans",
+          "Fluid dynamicists",
+          "Buoyancy",
+          "280s BC births",
+          "210s BC deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "3rd-century BC Greek mathematicians",
+          "3rd-century BC Syracusans"
+        ],
+        "birth_year": -287,
+        "death_year": -212
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "661188"
+        ],
+        "target_person": {
+          "title": "Archimedes",
+          "page_id": 1844,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Archimedes| ",
+            "3rd-century BC Greek writers",
+            "People from Syracuse, Sicily",
+            "Ancient Greek engineers",
+            "Ancient Greek inventors",
+            "Ancient Greek geometers",
+            "Ancient Greek physicists",
+            "Hellenistic-era philosophers",
+            "Doric Greek writers",
+            "Sicilian Greeks",
+            "Mathematicians from Sicily",
+            "Scientists from Sicily",
+            "Ancient Greek murder victims",
+            "Ancient Syracusans",
+            "Fluid dynamicists",
+            "Buoyancy",
+            "280s BC births",
+            "210s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "3rd-century BC Greek mathematicians",
+            "3rd-century BC Syracusans"
+          ],
+          "birth_year": -287,
+          "death_year": -212
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Euclid",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and that these theorems, at first isolated, did not acquire the clearness which complete demonstration gives, until they were arranged by Euclid into a series of dependent propositions."
+        ],
+        "commentaries": [
+          "The author cites Euclid's arrangement of geometric theorems as an example of increasing definiteness in mathematics."
+        ],
+        "canonical_author": "Euclid"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Euclid",
+        "page_id": 9331,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Euclid| ",
+          "4th-century BC births",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC Greek writers",
+          "3rd-century BC deaths",
+          "3rd-century BC Greek mathematicians",
+          "3rd-century BC Greek writers",
+          "Ancient Alexandrians",
+          "Ancient Greek geometers",
+          "Number theorists",
+          "Ancient Greeks in Egypt"
+        ],
+        "birth_year": -325,
+        "death_year": -265
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "125792"
+        ],
+        "target_person": {
+          "title": "Euclid",
+          "page_id": 9331,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Euclid| ",
+            "4th-century BC births",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC Greek writers",
+            "3rd-century BC deaths",
+            "3rd-century BC Greek mathematicians",
+            "3rd-century BC Greek writers",
+            "Ancient Alexandrians",
+            "Ancient Greek geometers",
+            "Number theorists",
+            "Ancient Greeks in Egypt"
+          ],
+          "birth_year": -325,
+          "death_year": -265
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Auguste Comte",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and this it is which M. Comte has wrongly asserted to be the sole regulative principle of the progress."
+        ],
+        "commentaries": [
+          "The author references M. Comte as having made an assertion about the progress of generalization, which the author characterizes as wrong."
+        ],
+        "canonical_author": "M. Comte"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Auguste Comte",
+        "page_id": 132471,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Auguste Comte| ",
+          "1798 births",
+          "1857 deaths",
+          "19th-century French economists",
+          "19th-century French essayists",
+          "19th-century French mathematicians",
+          "19th-century French non-fiction writers",
+          "19th-century French philosophers",
+          "Burials at Père Lachaise Cemetery",
+          "Consequentialists",
+          "French critics of religions",
+          "École Polytechnique alumni",
+          "Founders of religions",
+          "French agnostics",
+          "French ethicists",
+          "French male non-fiction writers",
+          "French sociologists",
+          "Materialists",
+          "Writers from Montpellier",
+          "French philosophers of culture",
+          "Philosophers of economics",
+          "French philosophers of education",
+          "French philosophers of history",
+          "French philosophers of religion",
+          "French philosophers of science",
+          "Positivists",
+          "Saint-Simonists",
+          "Secular humanists",
+          "Structural functionalism",
+          "Theoretical historians"
+        ],
+        "birth_year": 1798,
+        "death_year": 1857
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5428890"
+        ],
+        "target_person": {
+          "title": "Auguste Comte",
+          "page_id": 132471,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Auguste Comte| ",
+            "1798 births",
+            "1857 deaths",
+            "19th-century French economists",
+            "19th-century French essayists",
+            "19th-century French mathematicians",
+            "19th-century French non-fiction writers",
+            "19th-century French philosophers",
+            "Burials at Père Lachaise Cemetery",
+            "Consequentialists",
+            "French critics of religions",
+            "École Polytechnique alumni",
+            "Founders of religions",
+            "French agnostics",
+            "French ethicists",
+            "French male non-fiction writers",
+            "French sociologists",
+            "Materialists",
+            "Writers from Montpellier",
+            "French philosophers of culture",
+            "Philosophers of economics",
+            "French philosophers of education",
+            "French philosophers of history",
+            "French philosophers of religion",
+            "French philosophers of science",
+            "Positivists",
+            "Saint-Simonists",
+            "Secular humanists",
+            "Structural functionalism",
+            "Theoretical historians"
+          ],
+          "birth_year": 1798,
+          "death_year": 1857
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hermann von Helmholtz",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "Prof. Helmholtz estimates, that since the time when, according to the nebular hypothesis, the matter composing the Solar System extended to the orbit of Neptune, there has been evolved by the arrest of sensible motion, an amount of heat 454 times as great as that which the Sun still has to give out.",
+          "It has been contended, however, by Prof. Helmholtz, that inappreciable as may be its effect within known periods of time, the friction of the tidal wave must be slowly diminishing the Earth’s rotatory motion, and must eventually destroy it.",
+          "Grove, Helmholtz, and Meyer, are more than any others to be credited with the clear enunciation of this doctrine.",
+          "In his essay on “The Inter-action of Natural Forces,” Prof. Helmholtz states the thermal equivalent of the Earth’s movement through space; as calculated on the now received datum of Mr. Joule."
+        ],
+        "commentaries": [
+          "The author cites Prof. Helmholtz's estimate of the heat generated by the evolution of the Solar System and the amount remaining, as well as his calculation of the Sun's contraction rate.",
+          "The author references Prof. Helmholtz's argument that tidal friction is slowly reducing the Earth's rotation, though notes the extreme effect would be an extension of the day to a lunation.",
+          "The author cites Helmholtz as one of the key figures responsible for clearly enunciating the doctrine of the correlation and equivalence of forces.",
+          "The author cites Helmholtz's essay to provide a calculation of the thermal equivalent of the Earth's motion."
+        ],
+        "canonical_author": "Hermann Von Helmholtz"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hermann von Helmholtz",
+        "page_id": 53311,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Hermann von Helmholtz| ",
+          "1821 births",
+          "1894 deaths",
+          "Acousticians",
+          "Color scientists",
+          "German fluid dynamicists",
+          "Foreign members of the Royal Society",
+          "Foreign associates of the National Academy of Sciences",
+          "German biophysicists",
+          "19th-century German physicists",
+          "German untitled nobility",
+          "German ophthalmologists",
+          "Academic staff of the Humboldt University of Berlin",
+          "Recipients of the Pour le Mérite (civil class)",
+          "Members of the Prussian Academy of Sciences",
+          "Members of the Royal Swedish Academy of Sciences",
+          "People from Potsdam",
+          "Scientists from the Province of Brandenburg",
+          "Recipients of the Copley Medal",
+          "Recipients of the Matteucci Medal",
+          "Thermodynamicists",
+          "Academic staff of the University of Bonn",
+          "Academic staff of Heidelberg University",
+          "Academic staff of the University of Königsberg",
+          "Vision scientists",
+          "Auditory scientists",
+          "Physicians of the Charité",
+          "Members of the Royal Society of Sciences in Uppsala",
+          "International members of the American Philosophical Society"
+        ],
+        "birth_year": 1821,
+        "death_year": 1894
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8269923"
+        ],
+        "target_person": {
+          "title": "Hermann von Helmholtz",
+          "page_id": 53311,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Hermann von Helmholtz| ",
+            "1821 births",
+            "1894 deaths",
+            "Acousticians",
+            "Color scientists",
+            "German fluid dynamicists",
+            "Foreign members of the Royal Society",
+            "Foreign associates of the National Academy of Sciences",
+            "German biophysicists",
+            "19th-century German physicists",
+            "German untitled nobility",
+            "German ophthalmologists",
+            "Academic staff of the Humboldt University of Berlin",
+            "Recipients of the Pour le Mérite (civil class)",
+            "Members of the Prussian Academy of Sciences",
+            "Members of the Royal Swedish Academy of Sciences",
+            "People from Potsdam",
+            "Scientists from the Province of Brandenburg",
+            "Recipients of the Copley Medal",
+            "Recipients of the Matteucci Medal",
+            "Thermodynamicists",
+            "Academic staff of the University of Bonn",
+            "Academic staff of Heidelberg University",
+            "Academic staff of the University of Königsberg",
+            "Vision scientists",
+            "Auditory scientists",
+            "Physicians of the Charité",
+            "Members of the Royal Society of Sciences in Uppsala",
+            "International members of the American Philosophical Society"
+          ],
+          "birth_year": 1821,
+          "death_year": 1894
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John Stuart Mill",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Evidently this industrial progress has for its limit, that which Mr. Mill has called “the stationary state.”",
+          "Nor does it seem to me that such an equilibration will, as Mr. Mill suggests, leave scope for further mental culture and moral progress; but rather that the approximation to it must be simultaneous with the approximation to complete equilibrium between man’s nature and the conditions of his existence."
+        ],
+        "commentaries": [
+          "The author references Mill's concept of the stationary state as the limit of industrial progress.",
+          "The author disagrees with Mill's suggestion that equilibration will allow for further mental and moral progress."
+        ],
+        "canonical_author": "John Stuart Mill"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Stuart Mill",
+        "page_id": 15626,
+        "infoboxes": [
+          "officeholder",
+          "philosopher",
+          "economist "
+        ],
+        "categories": [
+          "John Stuart Mill| ",
+          "1806 births",
+          "1873 deaths",
+          "19th-century English essayists",
+          "19th-century English philosophers",
+          "19th-century English writers",
+          "19th-century British autobiographers",
+          "Anglo-Scots",
+          "British classical liberal economists",
+          "British free speech activists",
+          "British radicals",
+          "British male feminists",
+          "British philosophers of logic",
+          "British philosophers of mind",
+          "British philosophy writers",
+          "British social liberals",
+          "British social philosophers",
+          "Consequentialists",
+          "Empiricists",
+          "English agnostics",
+          "English autobiographers",
+          "English ethicists",
+          "English feminist writers",
+          "English libertarians",
+          "English logicians",
+          "English male essayists",
+          "English male non-fiction writers",
+          "English non-fiction writers",
+          "English people of Scottish descent",
+          "English philosophers of language"
+        ],
+        "birth_year": 1806,
+        "death_year": 1873
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "57651"
+        ],
+        "target_person": {
+          "title": "John Stuart Mill",
+          "page_id": 15626,
+          "infoboxes": [
+            "officeholder",
+            "philosopher",
+            "economist "
+          ],
+          "categories": [
+            "John Stuart Mill| ",
+            "1806 births",
+            "1873 deaths",
+            "19th-century English essayists",
+            "19th-century English philosophers",
+            "19th-century English writers",
+            "19th-century British autobiographers",
+            "Anglo-Scots",
+            "British classical liberal economists",
+            "British free speech activists",
+            "British radicals",
+            "British male feminists",
+            "British philosophers of logic",
+            "British philosophers of mind",
+            "British philosophy writers",
+            "British social liberals",
+            "British social philosophers",
+            "Consequentialists",
+            "Empiricists",
+            "English agnostics",
+            "English autobiographers",
+            "English ethicists",
+            "English feminist writers",
+            "English libertarians",
+            "English logicians",
+            "English male essayists",
+            "English male non-fiction writers",
+            "English non-fiction writers",
+            "English people of Scottish descent",
+            "English philosophers of language"
+          ],
+          "birth_year": 1806,
+          "death_year": 1873
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Wilhelm von Humboldt",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "When, for example, Humboldt quotes the saying of the Swiss—\"it is going to rain because we hear the murmur of the torrents nearer,\"—when he remarks the relation between this and an observation of his own, that the cataracts of the Orinoco are heard at a greater distance by night than by day—when he notes the essential parallelism existing between these facts and the fact that the unusual visibility of remote objects is also an indication of coming rain—and when he points out that the common cause of these variations is the smaller hindrance offered to the passage of both light and sound, by media which are comparatively homogeneous, either in temperature or hygrometric state; he helps in bringing under one generalization the phenomena of light and those of sound.",
+          "Humboldt states that during the summer drought, the alligators of the Pampas lie buried in a state of suspended animation beneath the parched surface, and struggle up out of the earth as soon as it becomes humid."
+        ],
+        "commentaries": [
+          "The author cites Humboldt's observations and quotations as examples of scientific generalization.",
+          "The author references Humboldt's observation about alligators in a state of suspended animation during drought."
+        ],
+        "canonical_author": "Wilhelm Von Humboldt"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Wilhelm von Humboldt",
+        "page_id": 33110,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1767 births",
+          "1835 deaths",
+          "18th-century German diplomats",
+          "18th-century German philosophers",
+          "19th-century German diplomats",
+          "19th-century German philosophers",
+          "Age of Enlightenment",
+          "Alexander von Humboldt",
+          "Ambassadors of Prussia",
+          "Coppet group",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Fellows of the American Academy of Arts and Sciences",
+          "German academic administrators",
+          "German anthropologists",
+          "German ethicists",
+          "German libertarians",
+          "German Lutherans",
+          "German male non-fiction writers",
+          "Prussian nobility",
+          "German politicians of the Napoleonic Wars",
+          "Honorary members of the Saint Petersburg Academy of Sciences",
+          "Humboldt family|Wilhelm",
+          "Academic staff of the Humboldt University of Berlin",
+          "Interior ministers of Prussia",
+          "Libertarian theorists",
+          "19th-century German linguists",
+          "Linguists of Austronesian languages",
+          "Linguists of Uto-Aztecan languages",
+          "Lutheran philosophers"
+        ],
+        "birth_year": 1767,
+        "death_year": 1835
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "204411"
+        ],
+        "target_person": {
+          "title": "Wilhelm von Humboldt",
+          "page_id": 33110,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1767 births",
+            "1835 deaths",
+            "18th-century German diplomats",
+            "18th-century German philosophers",
+            "19th-century German diplomats",
+            "19th-century German philosophers",
+            "Age of Enlightenment",
+            "Alexander von Humboldt",
+            "Ambassadors of Prussia",
+            "Coppet group",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Fellows of the American Academy of Arts and Sciences",
+            "German academic administrators",
+            "German anthropologists",
+            "German ethicists",
+            "German libertarians",
+            "German Lutherans",
+            "German male non-fiction writers",
+            "Prussian nobility",
+            "German politicians of the Napoleonic Wars",
+            "Honorary members of the Saint Petersburg Academy of Sciences",
+            "Humboldt family|Wilhelm",
+            "Academic staff of the Humboldt University of Berlin",
+            "Interior ministers of Prussia",
+            "Libertarian theorists",
+            "19th-century German linguists",
+            "Linguists of Austronesian languages",
+            "Linguists of Uto-Aztecan languages",
+            "Lutheran philosophers"
+          ],
+          "birth_year": 1767,
+          "death_year": 1835
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Edward Forbes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Supposing the unknown bird taken to a naturalist of the old school, interested only in externals, (one of those described by the late Edward Forbes, as examining animals as though they were merely skins filled with straw,)"
+        ],
+        "commentaries": [
+          "The author references Edward Forbes as a naturalist who described a certain type of old-school naturalist, using his description to illustrate a point about limited intellectual engagement."
+        ],
+        "canonical_author": "Edward Forbes"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Edward Forbes",
+        "page_id": 937992,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1815 births",
+          "1854 deaths",
+          "British geologists",
+          "19th-century Manx people",
+          "Fellows of the Royal Society",
+          "Academics of King's College London",
+          "Presidents of the Geological Society of London",
+          "Fellows of the Geological Society of London",
+          "Academics of the University of Edinburgh",
+          "Burials at the Dean Cemetery",
+          "Alumni of the University of Edinburgh",
+          "People from Douglas, Isle of Man",
+          "British Geological Survey",
+          "British malacologists",
+          "Explorers of West Asia",
+          "Manx scientists"
+        ],
+        "birth_year": 1815,
+        "death_year": 1854
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Edward Forbes",
+          "page_id": 937992,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1815 births",
+            "1854 deaths",
+            "British geologists",
+            "19th-century Manx people",
+            "Fellows of the Royal Society",
+            "Academics of King's College London",
+            "Presidents of the Geological Society of London",
+            "Fellows of the Geological Society of London",
+            "Academics of the University of Edinburgh",
+            "Burials at the Dean Cemetery",
+            "Alumni of the University of Edinburgh",
+            "People from Douglas, Isle of Man",
+            "British Geological Survey",
+            "British malacologists",
+            "Explorers of West Asia",
+            "Manx scientists"
+          ],
+          "birth_year": 1815,
+          "death_year": 1854
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Johannes Kepler",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "When, many centuries after, Kepler discovered that the planets moved round the Sun in ellipses and described equal areas in equal times, he concluded that in each planet there must exist a spirit to guide its movements."
+        ],
+        "commentaries": [
+          "The author cites Kepler's conclusion about guiding spirits in planets as an example of an intermediate stage in scientific explanation."
+        ],
+        "canonical_author": "Johannes Kepler"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Johannes Kepler",
+        "page_id": 15736,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Johannes Kepler| ",
+          "1571 births",
+          "1630 deaths",
+          "People from Weil der Stadt",
+          "16th-century German male writers",
+          "16th-century German writers",
+          "17th-century German male writers",
+          "16th-century writers in Latin",
+          "16th-century German mathematicians",
+          "17th-century writers in Latin",
+          "17th-century German mathematicians",
+          "17th-century German novelists",
+          "German expatriates in Austria",
+          "Scientists from Prague",
+          "Austrian Lutherans",
+          "Christian astrologers",
+          "German cosmologists",
+          "German astrologers",
+          "17th-century German astronomers",
+          "German Lutherans",
+          "German music theorists",
+          "Natural philosophers",
+          "Copernican Revolution",
+          "Mathematicians from Prague",
+          "Members of the Lincean Academy",
+          "German writers about music",
+          "Austrian writers about music",
+          "University of Tübingen alumni",
+          "17th-century German philosophers",
+          "16th-century German astronomers"
+        ],
+        "birth_year": 1571,
+        "death_year": 1630
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "79396"
+        ],
+        "target_person": {
+          "title": "Johannes Kepler",
+          "page_id": 15736,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Johannes Kepler| ",
+            "1571 births",
+            "1630 deaths",
+            "People from Weil der Stadt",
+            "16th-century German male writers",
+            "16th-century German writers",
+            "17th-century German male writers",
+            "16th-century writers in Latin",
+            "16th-century German mathematicians",
+            "17th-century writers in Latin",
+            "17th-century German mathematicians",
+            "17th-century German novelists",
+            "German expatriates in Austria",
+            "Scientists from Prague",
+            "Austrian Lutherans",
+            "Christian astrologers",
+            "German cosmologists",
+            "German astrologers",
+            "17th-century German astronomers",
+            "German Lutherans",
+            "German music theorists",
+            "Natural philosophers",
+            "Copernican Revolution",
+            "Mathematicians from Prague",
+            "Members of the Lincean Academy",
+            "German writers about music",
+            "Austrian writers about music",
+            "University of Tübingen alumni",
+            "17th-century German philosophers",
+            "16th-century German astronomers"
+          ],
+          "birth_year": 1571,
+          "death_year": 1630
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "St. Augustine",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "in the language of St Austin,—'cognoscendo ignorari, et ignorando cognosci.'"
+        ],
+        "commentaries": [
+          "The author quotes St. Augustine's Latin phrase to express the idea that the highest wisdom is to recognize the unknowable."
+        ],
+        "canonical_author": "St. Augustine"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "St. Augustine",
+        "birth_year": 354,
+        "death_year": 430
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6819578"
+        ],
+        "target_person": {
+          "title": "St. Augustine",
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thomas Henry Huxley",
+        "note": null,
+        "count": 4,
+        "contexts": [
+          "if the opponent of the development hypothesis cites the facts set forth by Professor Huxley in his lecture on “Persistent Types”",
+          "Some two years ago, I expressed to my friend Professor Huxley, my dissatisfaction with the current expression—\"Conservation of Force;\" assigning as reasons, first, that the word \"conservation\" implies a conserver and an act of conserving; and, second, that it does not imply the existence of the force before that particular manifestation of it with which we commence. In place of \"conservation,\" Professor Huxley suggested _persistence_.",
+          "While this sheet is passing through the press, a fact illustrating this general truth in a yet more remarkable manner, has been mentioned to me by Prof. Huxley; who kindly allows me to make use of it while still unpublished by him.",
+          "or just as, to use Prof. Huxley’s simile, the smaller fragments pass through the sieve while the larger are kept back;"
+        ],
+        "commentaries": [
+          "The author references Professor Huxley's lecture 'Persistent Types' as a source of arguments against the development hypothesis.",
+          "The author credits Professor Huxley with suggesting the term 'persistence' as a replacement for 'conservation' in the context of force.",
+          "The author mentions that Professor Huxley shared an unpublished fact with him, which he uses to illustrate a general truth.",
+          "The author references a simile by Prof. Huxley to illustrate the process of natural selection."
+        ],
+        "canonical_author": "Thomas Henry Huxley"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thomas Henry Huxley",
+        "page_id": 30038,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1825 births",
+          "1895 deaths",
+          "19th-century British anthropologists",
+          "19th-century British zoologists",
+          "19th-century English non-fiction writers",
+          "19th-century English translators",
+          "Academics of Imperial College London",
+          "Alumni of Charing Cross Medical School",
+          "Alumni of University College London",
+          "Biological evolution",
+          "British anthropologists",
+          "British carcinologists",
+          "British evolutionary biologists",
+          "Burials at East Finchley Cemetery",
+          "Charles Darwin",
+          "Comparative anatomy",
+          "Corresponding members of the Saint Petersburg Academy of Sciences",
+          "Deans of the Royal College of Science",
+          "English agnostics",
+          "English anatomists",
+          "English anthropologists",
+          "English palaeontologists",
+          "English sceptics",
+          "English taxonomists",
+          "English zoologists",
+          "Fellows of the Linnean Society of London",
+          "Fellows of the Royal Society",
+          "Foreign associates of the National Academy of Sciences",
+          "Fullerian Professors of Physiology",
+          "Huxley family|Thomas Henry"
+        ],
+        "birth_year": 1825,
+        "death_year": 1895
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "17171"
+        ],
+        "target_person": {
+          "title": "Thomas Henry Huxley",
+          "page_id": 30038,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1825 births",
+            "1895 deaths",
+            "19th-century British anthropologists",
+            "19th-century British zoologists",
+            "19th-century English non-fiction writers",
+            "19th-century English translators",
+            "Academics of Imperial College London",
+            "Alumni of Charing Cross Medical School",
+            "Alumni of University College London",
+            "Biological evolution",
+            "British anthropologists",
+            "British carcinologists",
+            "British evolutionary biologists",
+            "Burials at East Finchley Cemetery",
+            "Charles Darwin",
+            "Comparative anatomy",
+            "Corresponding members of the Saint Petersburg Academy of Sciences",
+            "Deans of the Royal College of Science",
+            "English agnostics",
+            "English anatomists",
+            "English anthropologists",
+            "English palaeontologists",
+            "English sceptics",
+            "English taxonomists",
+            "English zoologists",
+            "Fellows of the Linnean Society of London",
+            "Fellows of the Royal Society",
+            "Foreign associates of the National Academy of Sciences",
+            "Fullerian Professors of Physiology",
+            "Huxley family|Thomas Henry"
+          ],
+          "birth_year": 1825,
+          "death_year": 1895
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Origin of Species",
+        "author": "Charles Darwin",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Reference would have been made to the process of \"natural selection,\" as greatly facilitating the differentiations described.",
+          "Let me add that though these positions are not enunciated in The Origin of Species, yet a mutual friend gives me reason to think that Mr. Darwin would coincide in them; if he did not indeed consider them as tacitly implied in his work."
+        ],
+        "commentaries": [
+          "The author refers to Darwin's work on natural selection in a footnote, noting that his own earlier paragraph would have been expressed differently if written after Darwin's book.",
+          "The author speculates that Darwin's book implicitly supports his own positions, based on a mutual friend's report."
+        ]
+      },
+      "goodreads_match": {
+        "author_ids": [
+          "12793"
+        ],
+        "num_pages": 703,
+        "publisher": "Castle Books",
+        "book_id": "22463",
+        "isbn13": "9780785819110",
+        "work_id": "481941",
+        "format": "Hardcover",
+        "average_rating": 3.97,
+        "publication_day": 1,
+        "isbn": "0785819118",
+        "text_reviews_count": 1077,
+        "publication_month": 5,
+        "title": "The Origin of Species",
+        "ratings_count": 66709,
+        "title_without_series": "The Origin of Species",
+        "publication_year": 2004,
+        "authors": [
+          "Charles Darwin"
+        ],
+        "description": "Darwin's theory of natural selection issued a profound challenge to orthodox thought and belief: no being or species has been specifically created; all are locked into a pitiless struggle for existence, with extinction looming for those not fitted for the task.\nYet The Origin of Species (1859) is also a humane and inspirational vision of ecological interrelatedness, revealing the complex mutual interdependencies between animal and plant life, climate and physical environment, and - by implication - within t...",
+        "link": "https://www.goodreads.com/book/show/22463.The_Origin_of_Species",
+        "wikipedia_match": {
+          "title": "Charles Darwin",
+          "page_id": 8145410,
+          "infoboxes": [
+            "person",
+            "writer",
+            "scientist"
+          ],
+          "categories": [
+            "Charles Darwin| ",
+            "1809 births",
+            "1882 deaths",
+            "19th-century British biologists",
+            "19th-century English writers",
+            "19th-century Anglicans",
+            "19th-century English naturalists",
+            "19th-century English geologists",
+            "Alumni of Christ's College, Cambridge",
+            "Alumni of the University of Edinburgh",
+            "Botanists with author abbreviations",
+            "British carcinologists",
+            "British evolutionary biologists",
+            "British science communicators",
+            "Burials at Westminster Abbey",
+            "Circumnavigators of the globe",
+            "Coleopterists",
+            "Darwin–Wedgwood family",
+            "Deaths from coronary thrombosis",
+            "English abolitionists",
+            "English agnostics",
+            "English Anglicans",
+            "English entomologists",
+            "English justices of the peace",
+            "English sceptics",
+            "English travel writers",
+            "Ethologists",
+            "Fellows of the Linnean Society of London",
+            "Fellows of the Royal Entomological Society",
+            "Fellows of the Royal Geographical Society"
+          ],
+          "birth_year": 1809,
+          "death_year": 1882
+        },
+        "original_year": 1859,
+        "author_meta": {
+          "birth_year": 1809,
+          "death_year": 1882,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Charles Darwin",
+        "page_id": 8145410,
+        "infoboxes": [
+          "person",
+          "writer",
+          "scientist"
+        ],
+        "categories": [
+          "Charles Darwin| ",
+          "1809 births",
+          "1882 deaths",
+          "19th-century British biologists",
+          "19th-century English writers",
+          "19th-century Anglicans",
+          "19th-century English naturalists",
+          "19th-century English geologists",
+          "Alumni of Christ's College, Cambridge",
+          "Alumni of the University of Edinburgh",
+          "Botanists with author abbreviations",
+          "British carcinologists",
+          "British evolutionary biologists",
+          "British science communicators",
+          "Burials at Westminster Abbey",
+          "Circumnavigators of the globe",
+          "Coleopterists",
+          "Darwin–Wedgwood family",
+          "Deaths from coronary thrombosis",
+          "English abolitionists",
+          "English agnostics",
+          "English Anglicans",
+          "English entomologists",
+          "English justices of the peace",
+          "English sceptics",
+          "English travel writers",
+          "Ethologists",
+          "Fellows of the Linnean Society of London",
+          "Fellows of the Royal Entomological Society",
+          "Fellows of the Royal Geographical Society"
+        ],
+        "birth_year": 1809,
+        "death_year": 1882
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "22463",
+        "target_author_ids": [
+          "12793"
+        ],
+        "target_person": {
+          "title": "Charles Darwin",
+          "page_id": 8145410,
+          "infoboxes": [
+            "person",
+            "writer",
+            "scientist"
+          ],
+          "categories": [
+            "Charles Darwin| ",
+            "1809 births",
+            "1882 deaths",
+            "19th-century British biologists",
+            "19th-century English writers",
+            "19th-century Anglicans",
+            "19th-century English naturalists",
+            "19th-century English geologists",
+            "Alumni of Christ's College, Cambridge",
+            "Alumni of the University of Edinburgh",
+            "Botanists with author abbreviations",
+            "British carcinologists",
+            "British evolutionary biologists",
+            "British science communicators",
+            "Burials at Westminster Abbey",
+            "Circumnavigators of the globe",
+            "Coleopterists",
+            "Darwin–Wedgwood family",
+            "Deaths from coronary thrombosis",
+            "English abolitionists",
+            "English agnostics",
+            "English Anglicans",
+            "English entomologists",
+            "English justices of the peace",
+            "English sceptics",
+            "English travel writers",
+            "Ethologists",
+            "Fellows of the Linnean Society of London",
+            "Fellows of the Royal Entomological Society",
+            "Fellows of the Royal Geographical Society"
+          ],
+          "birth_year": 1809,
+          "death_year": 1882
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sir William Hamilton",
+        "note": null,
+        "count": 7,
+        "contexts": [
+          "The fundamental condition to all consciousness, emphatically insisted upon by Mr Mansel in common with Sir William Hamilton and others, is the antithesis of subject and object.",
+          "\"With the exception,\" says Sir William Hamilton, \"of a few late Absolutist theorisers in Germany, this is, perhaps, the truth of all others most harmoniously re-echoed by every philosopher of every school.\"",
+          "The demonstration of the necessarily relative character of our knowledge, as deduced from the nature of intelligence, has been brought to its most definite shape by Sir William Hamilton.",
+          "\"The _absolute_ is conceived merely by a negation of conceivability,\" writes Sir William Hamilton.",
+          "Sir William Hamilton however, in his trenchant (and in most parts unanswerable) criticism on Cousin, contends, in conformity with his position above stated, that one of these correlatives is nothing whatever beyond the negation of the other.",
+          "I cannot do better than avail myself of the demonstration which Mr Mansel, carrying out in detail the doctrine of Sir William Hamilton, has given in his “Limits of Religious Thought.”",
+          "The very passage already quoted from Sir Wm Hamilton, in which he asserts that “the _absolute_ is conceived merely by a negation of conceivability,” itself ends with the remark that, “by a wonderful revelation, we are thus, in the very consciousness of our inability to conceive aught above the relative and finite, inspired with a belief in the existence of something unconditioned beyond the sphere of all comprehensible reality.”"
+        ],
+        "commentaries": [
+          "The author references Sir William Hamilton along with Mr Mansel as a source for the fundamental condition of consciousness.",
+          "The author quotes Sir William Hamilton to support the claim that the conclusion regarding the unknowability of reality is widely accepted by philosophers.",
+          "The author references Sir William Hamilton as the source of the most definite formulation of the argument about the relative character of knowledge.",
+          "The author quotes Sir William Hamilton's statement on the Absolute to introduce and then critique the purely logical view.",
+          "The author references Sir William Hamilton's criticism of Cousin, citing his position on correlatives.",
+          "The author notes that Mansel's work expounds the doctrine of Sir William Hamilton.",
+          "The author discusses Sir Wm Hamilton's assertion about the Absolute and his subsequent remark about a belief in the unconditioned."
+        ],
+        "canonical_author": "Sir William Hamilton"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sir William Hamilton, 9th Baronet",
+        "page_id": 206346,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1788 births",
+          "1856 deaths",
+          "Writers from Glasgow",
+          "Nobility from Glasgow",
+          "Stirling-Hamilton baronets|9",
+          "Clan Stirling|William",
+          "Doctors of Divinity",
+          "19th-century Scottish philosophers",
+          "Alumni of Balliol College, Oxford",
+          "Academics of the University of Edinburgh",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Fellows of the Royal Society of Edinburgh",
+          "House of Hamilton|William",
+          "Metaphysicians",
+          "Scottish logicians",
+          "Scottish knights",
+          "19th-century Scottish writers",
+          "Burials at St John's, Edinburgh"
+        ],
+        "birth_year": 1788,
+        "death_year": 1856
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Sir William Hamilton, 9th Baronet",
+          "page_id": 206346,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1788 births",
+            "1856 deaths",
+            "Writers from Glasgow",
+            "Nobility from Glasgow",
+            "Stirling-Hamilton baronets|9",
+            "Clan Stirling|William",
+            "Doctors of Divinity",
+            "19th-century Scottish philosophers",
+            "Alumni of Balliol College, Oxford",
+            "Academics of the University of Edinburgh",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Fellows of the Royal Society of Edinburgh",
+            "House of Hamilton|William",
+            "Metaphysicians",
+            "Scottish logicians",
+            "Scottish knights",
+            "19th-century Scottish writers",
+            "Burials at St John's, Edinburgh"
+          ],
+          "birth_year": 1788,
+          "death_year": 1856
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Equally in the writings of Plato, and in those of not a few living men of science, we find it taken for granted that there is an analogy between the process of creation and the process of manufacture."
+        ],
+        "commentaries": [
+          "The author cites Plato as an example of a philosopher who assumes an analogy between creation and manufacture."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Isaac Newton",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "there presents itself the Newtonian supposition, that it consists of solid atoms not in contact but acting on each other by attractive and repulsive forces, varying with the distances.",
+          "Newton described himself as unable to think that the attraction of one body for another at a distance, could be exerted in the absence of an intervening medium.",
+          "Newton himself confessed the force of gravitation to be incomprehensible without the intermediation of an ether; and, as we have already seen, (§ 18,) the assumption of an ether does not in the least help us."
+        ],
+        "commentaries": [
+          "The author presents Newton's supposition of solid atoms with forces as an alternative to absolute solidity in matter.",
+          "The author references Newton's own statement about the inconceivability of action at a distance without an intervening medium.",
+          "The author references Newton's confession about the incomprehensibility of gravitation to illustrate the progression toward more abstract causes."
+        ],
+        "canonical_author": "Isaac Newton"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Isaac Newton",
+        "page_id": 14627,
+        "infoboxes": [
+          "scientist",
+          "officeholder"
+        ],
+        "categories": [
+          "Isaac Newton| ",
+          "1642 births",
+          "1727 deaths",
+          "17th-century alchemists",
+          "17th-century apocalypticists",
+          "17th-century English astronomers",
+          "17th-century English mathematicians",
+          "17th-century English male writers",
+          "17th-century English writers",
+          "17th-century writers in Latin",
+          "18th-century alchemists",
+          "18th-century apocalypticists",
+          "18th-century English astronomers",
+          "18th-century British scientists",
+          "18th-century English mathematicians",
+          "18th-century English male writers",
+          "18th-century English writers",
+          "18th-century writers in Latin",
+          "Alumni of Trinity College, Cambridge",
+          "Antitrinitarians",
+          "Ballistics experts",
+          "British critics of atheism",
+          "British experimental physicists",
+          "British geometers",
+          "British optical physicists",
+          "British science communicators",
+          "Latin-language British writers",
+          "Burials at Westminster Abbey",
+          "Color scientists",
+          "Copernican Revolution"
+        ],
+        "birth_year": 1643,
+        "death_year": 1727
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "135106"
+        ],
+        "target_person": {
+          "title": "Isaac Newton",
+          "page_id": 14627,
+          "infoboxes": [
+            "scientist",
+            "officeholder"
+          ],
+          "categories": [
+            "Isaac Newton| ",
+            "1642 births",
+            "1727 deaths",
+            "17th-century alchemists",
+            "17th-century apocalypticists",
+            "17th-century English astronomers",
+            "17th-century English mathematicians",
+            "17th-century English male writers",
+            "17th-century English writers",
+            "17th-century writers in Latin",
+            "18th-century alchemists",
+            "18th-century apocalypticists",
+            "18th-century English astronomers",
+            "18th-century British scientists",
+            "18th-century English mathematicians",
+            "18th-century English male writers",
+            "18th-century English writers",
+            "18th-century writers in Latin",
+            "Alumni of Trinity College, Cambridge",
+            "Antitrinitarians",
+            "Ballistics experts",
+            "British critics of atheism",
+            "British experimental physicists",
+            "British geometers",
+            "British optical physicists",
+            "British science communicators",
+            "Latin-language British writers",
+            "Burials at Westminster Abbey",
+            "Color scientists",
+            "Copernican Revolution"
+          ],
+          "birth_year": 1643,
+          "death_year": 1727
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "through other phases in which, as in the Iliad, the religious, martial, historical, the epic, dramatic, and lyric elements are similarly commingled;",
+          "And from the days of Homer downwards, the power of currents of air, natural and artificial, to part from one another units of unlike specific gravities, has been habitually utilized in the winnowing of chaff from wheat."
+        ],
+        "commentaries": [
+          "The author references the Iliad as an example of early literature where multiple genres are combined.",
+          "The author cites Homer as a historical reference point for the ancient practice of winnowing, illustrating the long-standing understanding of segregation by air currents."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John Herschel",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Even should there be, as Sir John Herschel suggests, a rotation of the ethereal medium in the same direction with the planets, this arrest, though immensely postponed, would not be absolutely prevented."
+        ],
+        "commentaries": [
+          "The author references Sir John Herschel's suggestion that the ethereal medium might rotate with the planets, noting it would delay but not prevent the arrest of planetary motion."
+        ],
+        "canonical_author": "John Herschel"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Herschel",
+        "page_id": 43592,
+        "infoboxes": [
+          "scientist",
+          "COA wide"
+        ],
+        "categories": [
+          "1792 births",
+          "1871 deaths",
+          "19th-century English astronomers",
+          "Photographers from Buckinghamshire",
+          "19th-century English photographers",
+          "Alumni of St John's College, Cambridge",
+          "Baronets in the Baronetage of the United Kingdom",
+          "Burials at Westminster Abbey",
+          "English Christians",
+          "English people of German descent",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Fellows of the Royal Astronomical Society",
+          "Fellows of the Royal Society",
+          "Honorary members of the Saint Petersburg Academy of Sciences",
+          "Masters of the Mint",
+          "Members of the Royal Swedish Academy of Sciences",
+          "People educated at Eton College",
+          "People from Slough",
+          "Pioneers of photography",
+          "Presidents of the Royal Astronomical Society",
+          "Proto-evolutionary biologists",
+          "Recipients of the Copley Medal",
+          "Recipients of the Gold Medal of the Royal Astronomical Society",
+          "Recipients of the Pour le Mérite (civil class)",
+          "Rectors of the University of Aberdeen",
+          "Royal Medal winners",
+          "Senior Wranglers",
+          "Spectroscopists",
+          "Herschel family|John",
+          "Recipients of the Lalande Prize"
+        ],
+        "birth_year": 1792,
+        "death_year": 1871
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "John Herschel",
+          "page_id": 43592,
+          "infoboxes": [
+            "scientist",
+            "COA wide"
+          ],
+          "categories": [
+            "1792 births",
+            "1871 deaths",
+            "19th-century English astronomers",
+            "Photographers from Buckinghamshire",
+            "19th-century English photographers",
+            "Alumni of St John's College, Cambridge",
+            "Baronets in the Baronetage of the United Kingdom",
+            "Burials at Westminster Abbey",
+            "English Christians",
+            "English people of German descent",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Fellows of the Royal Astronomical Society",
+            "Fellows of the Royal Society",
+            "Honorary members of the Saint Petersburg Academy of Sciences",
+            "Masters of the Mint",
+            "Members of the Royal Swedish Academy of Sciences",
+            "People educated at Eton College",
+            "People from Slough",
+            "Pioneers of photography",
+            "Presidents of the Royal Astronomical Society",
+            "Proto-evolutionary biologists",
+            "Recipients of the Copley Medal",
+            "Recipients of the Gold Medal of the Royal Astronomical Society",
+            "Recipients of the Pour le Mérite (civil class)",
+            "Rectors of the University of Aberdeen",
+            "Royal Medal winners",
+            "Senior Wranglers",
+            "Spectroscopists",
+            "Herschel family|John",
+            "Recipients of the Lalande Prize"
+          ],
+          "birth_year": 1792,
+          "death_year": 1871
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Galileo Galilei",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the primitive notion that moving bodies had an inherent tendency gradually to lose their motion and finally stop—a notion of which the Greeks did not get rid, but which lasted till the time of Galileo—began to give way."
+        ],
+        "commentaries": [
+          "The author mentions Galileo as the figure marking the end of the primitive notion that moving bodies have an inherent tendency to stop."
+        ],
+        "canonical_author": "Galileo Galilei"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Galileo Galilei",
+        "page_id": 29688374,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Galileo Galilei| ",
+          "1564 births",
+          "1642 deaths",
+          "16th-century Italian astronomers",
+          "16th-century Italian inventors",
+          "16th-century Italian mathematicians",
+          "16th-century Italian male writers",
+          "16th-century Roman Catholics",
+          "17th-century Italian astronomers",
+          "17th-century Italian inventors",
+          "17th-century Italian male writers",
+          "17th-century Italian mathematicians",
+          "17th-century Italian philosophers",
+          "17th-century Italian physicists",
+          "17th-century writers in Latin",
+          "17th-century Roman Catholics",
+          "Academic staff of the University of Padua",
+          "Academic staff of the University of Pisa",
+          "Articles containing video clips",
+          "Ballistics experts",
+          "Blind scholars and academics",
+          "Burials at Basilica of Santa Croce, Florence",
+          "Catholicism-related controversies",
+          "Christian astrologers",
+          "Copernican Revolution",
+          "Discoverers of moons",
+          "Experimental physicists",
+          "Galileo affair",
+          "Italian astrologers",
+          "Italian blind people"
+        ],
+        "birth_year": 1564,
+        "death_year": 1642
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "14190"
+        ],
+        "target_person": {
+          "title": "Galileo Galilei",
+          "page_id": 29688374,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Galileo Galilei| ",
+            "1564 births",
+            "1642 deaths",
+            "16th-century Italian astronomers",
+            "16th-century Italian inventors",
+            "16th-century Italian mathematicians",
+            "16th-century Italian male writers",
+            "16th-century Roman Catholics",
+            "17th-century Italian astronomers",
+            "17th-century Italian inventors",
+            "17th-century Italian male writers",
+            "17th-century Italian mathematicians",
+            "17th-century Italian philosophers",
+            "17th-century Italian physicists",
+            "17th-century writers in Latin",
+            "17th-century Roman Catholics",
+            "Academic staff of the University of Padua",
+            "Academic staff of the University of Pisa",
+            "Articles containing video clips",
+            "Ballistics experts",
+            "Blind scholars and academics",
+            "Burials at Basilica of Santa Croce, Florence",
+            "Catholicism-related controversies",
+            "Christian astrologers",
+            "Copernican Revolution",
+            "Discoverers of moons",
+            "Experimental physicists",
+            "Galileo affair",
+            "Italian astrologers",
+            "Italian blind people"
+          ],
+          "birth_year": 1564,
+          "death_year": 1642
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dr. Burney",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "As argued by Dr. Burney, and as implied by the customs of still extant barbarous races, the first musical instruments were, without doubt, percussive—sticks, calabashes, tom-toms—and were used simply to mark the time of the dance;"
+        ],
+        "commentaries": [
+          "The author cites Dr. Burney's argument about the origin of musical instruments."
+        ],
+        "canonical_author": "Dr. Burney"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Charles Burney",
+        "page_id": 214016,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1726 births",
+          "1814 deaths",
+          "People from Shrewsbury",
+          "Fellows of the Royal Society",
+          "English Classical-period composers",
+          "18th-century English historians",
+          "English music historians",
+          "Burney family|Charles",
+          "Streathamites",
+          "People educated at Shrewsbury School",
+          "People educated at The King's School, Chester"
+        ],
+        "birth_year": 1726,
+        "death_year": 1814
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Charles Burney",
+          "page_id": 214016,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1726 births",
+            "1814 deaths",
+            "People from Shrewsbury",
+            "Fellows of the Royal Society",
+            "English Classical-period composers",
+            "18th-century English historians",
+            "English music historians",
+            "Burney family|Charles",
+            "Streathamites",
+            "People educated at Shrewsbury School",
+            "People educated at The King's School, Chester"
+          ],
+          "birth_year": 1726,
+          "death_year": 1814
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Antoine Hamilton",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Carrying a step further the doctrine put into shape by Hamilton and Mansel;",
+          "Here let me point out how the same general inference may be evolved from another fundamental condition of thought, omitted by Sir W. Hamilton, and not supplied by Mr Mansel;—a condition which, under its obverse aspect, we have already contemplated in the last section."
+        ],
+        "commentaries": [
+          "The author references Hamilton as a source for the doctrine of the Unknowable.",
+          "The author mentions Sir W. Hamilton as having omitted a condition of thought, which the author then proceeds to supply."
+        ],
+        "canonical_author": "Antoine Hamilton"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Antoine Hamilton",
+        "page_id": 1165223,
+        "infoboxes": [
+          "noble"
+        ],
+        "categories": [
+          "1640s births",
+          "1719 deaths",
+          "French people of Scottish descent",
+          "French Army officers",
+          "Irish exiles",
+          "Irish Jacobites",
+          "French-language Irish writers",
+          "Jacobite military personnel of the Williamite War in Ireland",
+          "Military personnel from County Tipperary",
+          "Military personnel from Caen",
+          "Younger sons of baronets",
+          "People from Nenagh"
+        ],
+        "birth_year": null,
+        "death_year": 1719
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Antoine Hamilton",
+          "page_id": 1165223,
+          "infoboxes": [
+            "noble"
+          ],
+          "categories": [
+            "1640s births",
+            "1719 deaths",
+            "French people of Scottish descent",
+            "French Army officers",
+            "Irish exiles",
+            "Irish Jacobites",
+            "French-language Irish writers",
+            "Jacobite military personnel of the Williamite War in Ireland",
+            "Military personnel from County Tipperary",
+            "Military personnel from Caen",
+            "Younger sons of baronets",
+            "People from Nenagh"
+          ],
+          "birth_year": null,
+          "death_year": 1719
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Schelling",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "It seems proper to remark that the generalization here variously illustrated, is akin to one enunciated by Schelling, that Life is the tendency to individuation."
+        ],
+        "commentaries": [
+          "The author introduces Schelling's definition of life as 'the tendency to individuation' and proceeds to critique it over several paragraphs."
+        ],
+        "canonical_author": "Schelling"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Schelling",
+        "birth_year": 1921,
+        "death_year": 2016
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "28031"
+        ],
+        "target_person": {
+          "title": "Schelling",
+          "birth_year": 1921,
+          "death_year": 2016
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Johann Wolfgang von Goethe",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Pursuing an idea which Harvey set afloat, Wolff, Goethe, and Von Baer, have established the truth that the series of changes gone through during the development of a seed into a tree, or an ovum into an animal, constitute an advance from homogeneity of structure to heterogeneity of structure."
+        ],
+        "commentaries": [
+          "The author cites Goethe as one of the scientists who confirmed the law of organic evolution."
+        ],
+        "canonical_author": "Johann Wolfgang Von Goethe"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Johann Wolfgang von Goethe",
+        "page_id": 19242322,
+        "infoboxes": [
+          "writer",
+          "officeholder "
+        ],
+        "categories": [
+          "Johann Wolfgang von Goethe| ",
+          "1749 births",
+          "1832 deaths",
+          "18th-century German educators",
+          "18th-century essayists",
+          "18th-century German civil servants",
+          "18th-century German dramatists and playwrights",
+          "18th-century German male writers",
+          "18th-century German novelists",
+          "18th-century German philosophers",
+          "18th-century German poets",
+          "18th-century historians",
+          "18th-century travel writers",
+          "19th-century German educators",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German civil servants",
+          "19th-century German diplomats",
+          "19th-century German dramatists and playwrights",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German poets",
+          "19th-century historians",
+          "19th-century travel writers",
+          "Color scientists",
+          "Enlightenment philosophers",
+          "Epic poets",
+          "Epigrammatists"
+        ],
+        "birth_year": 1749,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "285217"
+        ],
+        "target_person": {
+          "title": "Johann Wolfgang von Goethe",
+          "page_id": 19242322,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Johann Wolfgang von Goethe| ",
+            "1749 births",
+            "1832 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German civil servants",
+            "18th-century German dramatists and playwrights",
+            "18th-century German male writers",
+            "18th-century German novelists",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century historians",
+            "18th-century travel writers",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German civil servants",
+            "19th-century German diplomats",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century historians",
+            "19th-century travel writers",
+            "Color scientists",
+            "Enlightenment philosophers",
+            "Epic poets",
+            "Epigrammatists"
+          ],
+          "birth_year": 1749,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Gottfried Wilhelm Leibniz",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Seeing that Matter could not, as Leibnitz suggested, be composed of unextended monads"
+        ],
+        "commentaries": [
+          "The author notes that Leibnitz suggested monads but that this idea fails to account for extension."
+        ],
+        "canonical_author": "Leibnitz"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gottfried Wilhelm Leibniz",
+        "page_id": 12281,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Gottfried Wilhelm Leibniz| ",
+          "1646 births",
+          "1716 deaths",
+          "17th-century German mathematicians",
+          "17th-century German philosophers",
+          "17th-century German scientists",
+          "17th-century German writers",
+          "17th-century German male writers",
+          "17th-century writers in Latin",
+          "17th-century German inventors",
+          "18th-century German mathematicians",
+          "18th-century German philosophers",
+          "18th-century German physicists",
+          "18th-century German scientists",
+          "18th-century German writers",
+          "18th-century German male writers",
+          "18th-century writers in Latin",
+          "18th-century German inventors",
+          "Constructed language creators",
+          "Determinists",
+          "Enlightenment philosophers",
+          "Fellows of the Royal Society",
+          "German librarians",
+          "German logicians",
+          "German Lutherans",
+          "German philologists",
+          "German political philosophers",
+          "German Protestants",
+          "French-language German writers",
+          "Leipzig University alumni"
+        ],
+        "birth_year": 1646,
+        "death_year": 1716
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1340566"
+        ],
+        "target_person": {
+          "title": "Gottfried Wilhelm Leibniz",
+          "page_id": 12281,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Gottfried Wilhelm Leibniz| ",
+            "1646 births",
+            "1716 deaths",
+            "17th-century German mathematicians",
+            "17th-century German philosophers",
+            "17th-century German scientists",
+            "17th-century German writers",
+            "17th-century German male writers",
+            "17th-century writers in Latin",
+            "17th-century German inventors",
+            "18th-century German mathematicians",
+            "18th-century German philosophers",
+            "18th-century German physicists",
+            "18th-century German scientists",
+            "18th-century German writers",
+            "18th-century German male writers",
+            "18th-century writers in Latin",
+            "18th-century German inventors",
+            "Constructed language creators",
+            "Determinists",
+            "Enlightenment philosophers",
+            "Fellows of the Royal Society",
+            "German librarians",
+            "German logicians",
+            "German Lutherans",
+            "German philologists",
+            "German political philosophers",
+            "German Protestants",
+            "French-language German writers",
+            "Leipzig University alumni"
+          ],
+          "birth_year": 1646,
+          "death_year": 1716
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John Locke",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as in Psychology the arrested growth recommences now that the disciples of Kant and those of Locke have both their views recognized in the theory that organized experiences produce forms of thought;"
+        ],
+        "commentaries": [
+          "The author refers to Locke's followers as representing the opposing side in a philosophical synthesis."
+        ],
+        "canonical_author": "John Locke"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Locke",
+        "page_id": 16143,
+        "infoboxes": [
+          "officeholder",
+          "philosopher"
+        ],
+        "categories": [
+          "John Locke| ",
+          "1632 births",
+          "1704 deaths",
+          "17th-century English male writers",
+          "17th-century English medical doctors",
+          "17th-century English philosophers",
+          "17th-century English writers",
+          "Alumni of Christ Church, Oxford",
+          "Anglican philosophers",
+          "British expatriates in the Dutch Republic",
+          "British critics of atheism",
+          "Classical liberalism",
+          "Empiricists",
+          "English Anglicans",
+          "English Christian theologians",
+          "English political philosophers",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Fellows of Christ Church, Oxford",
+          "Fellows of the Royal Society",
+          "Metaphysicians",
+          "People educated at Westminster School, London",
+          "People from Epping Forest District",
+          "People from Wrington",
+          "People of the Rye House Plot",
+          "English philosophers of language",
+          "British philosophers of law",
+          "Philosophers of education"
+        ],
+        "birth_year": 1632,
+        "death_year": 1704
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "51746"
+        ],
+        "target_person": {
+          "title": "John Locke",
+          "page_id": 16143,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "John Locke| ",
+            "1632 births",
+            "1704 deaths",
+            "17th-century English male writers",
+            "17th-century English medical doctors",
+            "17th-century English philosophers",
+            "17th-century English writers",
+            "Alumni of Christ Church, Oxford",
+            "Anglican philosophers",
+            "British expatriates in the Dutch Republic",
+            "British critics of atheism",
+            "Classical liberalism",
+            "Empiricists",
+            "English Anglicans",
+            "English Christian theologians",
+            "English political philosophers",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Fellows of Christ Church, Oxford",
+            "Fellows of the Royal Society",
+            "Metaphysicians",
+            "People educated at Westminster School, London",
+            "People from Epping Forest District",
+            "People from Wrington",
+            "People of the Rye House Plot",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of education"
+          ],
+          "birth_year": 1632,
+          "death_year": 1704
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Rathke",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Mr. Newport has described the course of this concentration as exhibited in insects; and by Rathke it has been traced in crustaceans."
+        ],
+        "commentaries": [
+          "The author cites Rathke's work on tracing concentration in crustaceans."
+        ],
+        "canonical_author": "Rathke"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Martin Rathke",
+        "page_id": 2120369,
+        "infoboxes": [],
+        "categories": [
+          "1793 births",
+          "1860 deaths",
+          "German carcinologists",
+          "German embryologists",
+          "19th-century German zoologists",
+          "Scientists from Gdańsk",
+          "People from West Prussia",
+          "University of Göttingen alumni",
+          "Humboldt University of Berlin alumni",
+          "Academic staff of the University of Tartu",
+          "Academic staff of the University of Königsberg",
+          "Foreign members of the Royal Society",
+          "Corresponding members of the Saint Petersburg Academy of Sciences",
+          "Biologists from the Kingdom of Prussia"
+        ],
+        "birth_year": 1793,
+        "death_year": 1860
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Martin Rathke",
+          "page_id": 2120369,
+          "infoboxes": [],
+          "categories": [
+            "1793 births",
+            "1860 deaths",
+            "German carcinologists",
+            "German embryologists",
+            "19th-century German zoologists",
+            "Scientists from Gdańsk",
+            "People from West Prussia",
+            "University of Göttingen alumni",
+            "Humboldt University of Berlin alumni",
+            "Academic staff of the University of Tartu",
+            "Academic staff of the University of Königsberg",
+            "Foreign members of the Royal Society",
+            "Corresponding members of the Saint Petersburg Academy of Sciences",
+            "Biologists from the Kingdom of Prussia"
+          ],
+          "birth_year": 1793,
+          "death_year": 1860
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Joule",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In his essay on “The Inter-action of Natural Forces,” Prof. Helmholtz states the thermal equivalent of the Earth’s movement through space; as calculated on the now received datum of Mr. Joule."
+        ],
+        "commentaries": [
+          "The author references Joule's datum used in Helmholtz's calculation."
+        ],
+        "canonical_author": "Joule"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "James Prescott Joule",
+        "page_id": 81859,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "James Prescott Joule| ",
+          "1818 births",
+          "1889 deaths",
+          "19th-century British physicists",
+          "English brewers",
+          "English physicists",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Fellows of the Royal Society",
+          "Foreign associates of the National Academy of Sciences",
+          "Fluid dynamicists",
+          "History of Greater Manchester",
+          "People associated with electricity",
+          "People associated with energy",
+          "Scientists from Salford",
+          "Recipients of the Copley Medal",
+          "Royal Medal winners",
+          "Thermodynamicists",
+          "Manchester Literary and Philosophical Society"
+        ],
+        "birth_year": 1818,
+        "death_year": 1889
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "James Prescott Joule",
+          "page_id": 81859,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "James Prescott Joule| ",
+            "1818 births",
+            "1889 deaths",
+            "19th-century British physicists",
+            "English brewers",
+            "English physicists",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Fellows of the Royal Society",
+            "Foreign associates of the National Academy of Sciences",
+            "Fluid dynamicists",
+            "History of Greater Manchester",
+            "People associated with electricity",
+            "People associated with energy",
+            "Scientists from Salford",
+            "Recipients of the Copley Medal",
+            "Royal Medal winners",
+            "Thermodynamicists",
+            "Manchester Literary and Philosophical Society"
+          ],
+          "birth_year": 1818,
+          "death_year": 1889
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Milne-Edwards",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "That mode of it which consists in the union of homogeneous parts originally separate, has been described by Milne-Edwards and others, as exhibited in various of the invertebrata; though it does not seem to have been included by them as an essential peculiarity in the process of organic development."
+        ],
+        "commentaries": [
+          "The author references Milne-Edwards as a source for observations on the union of homogeneous parts in invertebrates, but suggests this was not considered an essential feature of organic development by Milne-Edwards."
+        ],
+        "canonical_author": "Milne-Edwards"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Henri Milne-Edwards",
+        "page_id": 497881,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1800 births",
+          "1885 deaths",
+          "French taxonomists",
+          "French carcinologists",
+          "French ornithologists",
+          "Grand Officers of the Legion of Honour",
+          "Recipients of the Copley Medal",
+          "Members of the French Academy of Sciences",
+          "Members of the Royal Swedish Academy of Sciences",
+          "Foreign associates of the National Academy of Sciences",
+          "Foreign members of the Royal Society",
+          "Recipients of the Pour le Mérite (civil class)",
+          "French people of English descent",
+          "Scientists from Bruges",
+          "19th-century French zoologists",
+          "National Museum of Natural History (France) people",
+          "Presidents of the Société entomologique de France",
+          "University of Paris alumni",
+          "International members of the American Philosophical Society"
+        ],
+        "birth_year": 1800,
+        "death_year": 1885
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Henri Milne-Edwards",
+          "page_id": 497881,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1800 births",
+            "1885 deaths",
+            "French taxonomists",
+            "French carcinologists",
+            "French ornithologists",
+            "Grand Officers of the Legion of Honour",
+            "Recipients of the Copley Medal",
+            "Members of the French Academy of Sciences",
+            "Members of the Royal Swedish Academy of Sciences",
+            "Foreign associates of the National Academy of Sciences",
+            "Foreign members of the Royal Society",
+            "Recipients of the Pour le Mérite (civil class)",
+            "French people of English descent",
+            "Scientists from Bruges",
+            "19th-century French zoologists",
+            "National Museum of Natural History (France) people",
+            "Presidents of the Société entomologique de France",
+            "University of Paris alumni",
+            "International members of the American Philosophical Society"
+          ],
+          "birth_year": 1800,
+          "death_year": 1885
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hooke",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "It was further shaken by such experiments as those of Hooke, which proved that the spinning of a top continued long in proportion as it was prevented from communicating movement to surrounding matter"
+        ],
+        "commentaries": [
+          "The author cites Hooke's experiments as evidence that motion is continuous unless transferred to other matter."
+        ],
+        "canonical_author": "Hooke"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hook Nose",
+        "page_id": 3437391,
+        "infoboxes": [],
+        "categories": [
+          "1820s births",
+          "1868 deaths",
+          "Native American leaders",
+          "Native American people of the Indian Wars",
+          "Northern Cheyenne people",
+          "Comanche campaign",
+          "19th-century Native American people"
+        ],
+        "birth_year": null,
+        "death_year": 1868
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Hook Nose",
+          "page_id": 3437391,
+          "infoboxes": [],
+          "categories": [
+            "1820s births",
+            "1868 deaths",
+            "Native American leaders",
+            "Native American people of the Indian Wars",
+            "Northern Cheyenne people",
+            "Comanche campaign",
+            "19th-century Native American people"
+          ],
+          "birth_year": null,
+          "death_year": 1868
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Charles Darwin",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And on consulting Mr. Darwin’s remarks on divergence of character, it will be seen that the segregations thus caused tend ever to become more definite."
+        ],
+        "commentaries": [
+          "The author cites Mr. Darwin's remarks on divergence of character to support the argument about segregation."
+        ],
+        "canonical_author": "Charles Darwin"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Charles Darwin",
+        "page_id": 8145410,
+        "infoboxes": [
+          "person",
+          "writer",
+          "scientist"
+        ],
+        "categories": [
+          "Charles Darwin| ",
+          "1809 births",
+          "1882 deaths",
+          "19th-century British biologists",
+          "19th-century English writers",
+          "19th-century Anglicans",
+          "19th-century English naturalists",
+          "19th-century English geologists",
+          "Alumni of Christ's College, Cambridge",
+          "Alumni of the University of Edinburgh",
+          "Botanists with author abbreviations",
+          "British carcinologists",
+          "British evolutionary biologists",
+          "British science communicators",
+          "Burials at Westminster Abbey",
+          "Circumnavigators of the globe",
+          "Coleopterists",
+          "Darwin–Wedgwood family",
+          "Deaths from coronary thrombosis",
+          "English abolitionists",
+          "English agnostics",
+          "English Anglicans",
+          "English entomologists",
+          "English justices of the peace",
+          "English sceptics",
+          "English travel writers",
+          "Ethologists",
+          "Fellows of the Linnean Society of London",
+          "Fellows of the Royal Entomological Society",
+          "Fellows of the Royal Geographical Society"
+        ],
+        "birth_year": 1809,
+        "death_year": 1882
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "12793"
+        ],
+        "target_person": {
+          "title": "Charles Darwin",
+          "page_id": 8145410,
+          "infoboxes": [
+            "person",
+            "writer",
+            "scientist"
+          ],
+          "categories": [
+            "Charles Darwin| ",
+            "1809 births",
+            "1882 deaths",
+            "19th-century British biologists",
+            "19th-century English writers",
+            "19th-century Anglicans",
+            "19th-century English naturalists",
+            "19th-century English geologists",
+            "Alumni of Christ's College, Cambridge",
+            "Alumni of the University of Edinburgh",
+            "Botanists with author abbreviations",
+            "British carcinologists",
+            "British evolutionary biologists",
+            "British science communicators",
+            "Burials at Westminster Abbey",
+            "Circumnavigators of the globe",
+            "Coleopterists",
+            "Darwin–Wedgwood family",
+            "Deaths from coronary thrombosis",
+            "English abolitionists",
+            "English agnostics",
+            "English Anglicans",
+            "English entomologists",
+            "English justices of the peace",
+            "English sceptics",
+            "English travel writers",
+            "Ethologists",
+            "Fellows of the Linnean Society of London",
+            "Fellows of the Royal Entomological Society",
+            "Fellows of the Royal Geographical Society"
+          ],
+          "birth_year": 1809,
+          "death_year": 1882
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Laplace",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "If we accept the conclusion of Laplace, that the equatorial portion of this rotating and contracting spheroid will at successive stages acquire a centrifugal force great enough to prevent any nearer approach to the centre round which it rotates, and will so be left behind by the inner parts of the spheroid in its still-continued contraction; we shall find, in the fate of the detached ring, a fresh exemplification of the principle we are following out.",
+          "Laplace assumed that the ring would rupture at one place only; and would then collapse on itself.",
+          "To conclude, as Laplace did, that the equatorial portion of a rotating nebulous spheroid, will, during concentration, acquire a centrifugal force sufficient to prevent it from following the rest of the contracting mass, is to conclude that such portions will remain behind as are in common subject to a certain differential force."
+        ],
+        "commentaries": [
+          "The author references Laplace's conclusion regarding the formation of planetary rings from a rotating spheroid.",
+          "The author mentions Laplace's assumption about the rupture of a ring.",
+          "The author references Laplace's conclusion regarding the formation of a nebulous ring from a rotating spheroid, using it to illustrate the principle of segregation among like units by unlike forces."
+        ],
+        "canonical_author": "Laplace"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pierre-Simon Laplace",
+        "page_id": 344783,
+        "infoboxes": [
+          "scientist",
+          "officeholder"
+        ],
+        "categories": [
+          "Pierre-Simon Laplace| ",
+          "1749 births",
+          "1827 deaths",
+          "People from Calvados (department)",
+          "French mathematicians",
+          "18th-century French mathematicians",
+          "19th-century French mathematicians",
+          "Counts of the First French Empire",
+          "Determinists",
+          "Enlightenment scientists",
+          "French agnostics",
+          "French deists",
+          "18th-century French astronomers",
+          "French marquesses",
+          "French physicists",
+          "French fluid dynamicists",
+          "Grand Officers of the Legion of Honour",
+          "French mathematical analysts",
+          "Linear algebraists",
+          "Members of the Académie Française",
+          "Members of the French Academy of Sciences",
+          "Members of the Royal Netherlands Academy of Arts and Sciences",
+          "Members of the Royal Swedish Academy of Sciences",
+          "Fellows of the Royal Society",
+          "French probability theorists",
+          "Philosophers of probability",
+          "French interior ministers",
+          "French theoretical physicists",
+          "Fellows of the American Academy of Arts and Sciences",
+          "University of Caen Normandy alumni"
+        ],
+        "birth_year": 1749,
+        "death_year": 1827
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "324846"
+        ],
+        "target_person": {
+          "title": "Pierre-Simon Laplace",
+          "page_id": 344783,
+          "infoboxes": [
+            "scientist",
+            "officeholder"
+          ],
+          "categories": [
+            "Pierre-Simon Laplace| ",
+            "1749 births",
+            "1827 deaths",
+            "People from Calvados (department)",
+            "French mathematicians",
+            "18th-century French mathematicians",
+            "19th-century French mathematicians",
+            "Counts of the First French Empire",
+            "Determinists",
+            "Enlightenment scientists",
+            "French agnostics",
+            "French deists",
+            "18th-century French astronomers",
+            "French marquesses",
+            "French physicists",
+            "French fluid dynamicists",
+            "Grand Officers of the Legion of Honour",
+            "French mathematical analysts",
+            "Linear algebraists",
+            "Members of the Académie Française",
+            "Members of the French Academy of Sciences",
+            "Members of the Royal Netherlands Academy of Arts and Sciences",
+            "Members of the Royal Swedish Academy of Sciences",
+            "Fellows of the Royal Society",
+            "French probability theorists",
+            "Philosophers of probability",
+            "French interior ministers",
+            "French theoretical physicists",
+            "Fellows of the American Academy of Arts and Sciences",
+            "University of Caen Normandy alumni"
+          ],
+          "birth_year": 1749,
+          "death_year": 1827
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "William Shakespeare",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and it may be even questioned whether Shakespeare, in his poetical anticipation of a time when all things should disappear and “leave not a wrack behind,” was not under its influence."
+        ],
+        "commentaries": [
+          "The author references Shakespeare's poetic anticipation of universal disappearance as an example of the belief in the annihilation of matter."
+        ],
+        "canonical_author": "William Shakespeare"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "William Shakespeare",
+        "page_id": 32897,
+        "infoboxes": [
+          "person",
+          "writer "
+        ],
+        "categories": [
+          "William Shakespeare| ",
+          "1564 births",
+          "1616 deaths",
+          "16th-century English male actors",
+          "English male stage actors",
+          "English male Shakespearean actors",
+          "16th-century English dramatists and playwrights",
+          "16th-century English male writers",
+          "17th-century English dramatists and playwrights",
+          "16th-century English poets",
+          "Burials in Warwickshire",
+          "17th-century English poets",
+          "17th-century English male writers",
+          "English Renaissance dramatists",
+          "People educated at King Edward VI School, Stratford-upon-Avon",
+          "Male actors from Stratford-upon-Avon",
+          "People of the Elizabethan era",
+          "Shakespeare family",
+          "Sonneteers",
+          "King's Men (playing company)",
+          "17th-century English male actors",
+          "English male dramatists and playwrights",
+          "English male poets",
+          "Writers from Warwickshire",
+          "Burials at Church of the Holy Trinity, Stratford-upon-Avon"
+        ],
+        "birth_year": 1564,
+        "death_year": 1616
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "947"
+        ],
+        "target_person": {
+          "title": "William Shakespeare",
+          "page_id": 32897,
+          "infoboxes": [
+            "person",
+            "writer "
+          ],
+          "categories": [
+            "William Shakespeare| ",
+            "1564 births",
+            "1616 deaths",
+            "16th-century English male actors",
+            "English male stage actors",
+            "English male Shakespearean actors",
+            "16th-century English dramatists and playwrights",
+            "16th-century English male writers",
+            "17th-century English dramatists and playwrights",
+            "16th-century English poets",
+            "Burials in Warwickshire",
+            "17th-century English poets",
+            "17th-century English male writers",
+            "English Renaissance dramatists",
+            "People educated at King Edward VI School, Stratford-upon-Avon",
+            "Male actors from Stratford-upon-Avon",
+            "People of the Elizabethan era",
+            "Shakespeare family",
+            "Sonneteers",
+            "King's Men (playing company)",
+            "17th-century English male actors",
+            "English male dramatists and playwrights",
+            "English male poets",
+            "Writers from Warwickshire",
+            "Burials at Church of the Holy Trinity, Stratford-upon-Avon"
+          ],
+          "birth_year": 1564,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Samuel Taylor Coleridge",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "It has been remarked (I am told by Coleridge, though I have been unable to find the passage) that with the advance of language, words which were originally alike in their meanings acquire unlike meanings—a change which he expresses by the formidable word \"desynonymization.\""
+        ],
+        "commentaries": [
+          "The author attributes to Coleridge the observation about the process of 'desynonymization' in language, though he notes he could not locate the original passage himself."
+        ],
+        "canonical_author": "Samuel Taylor Coleridge"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Samuel Taylor Coleridge",
+        "page_id": 29408,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Samuel Taylor Coleridge| ",
+          "15th The King's Hussars soldiers",
+          "1772 births",
+          "1834 deaths",
+          "18th-century English Christian theologians",
+          "18th-century English poets",
+          "19th-century English Christian theologians",
+          "19th-century English poets",
+          "Alumni of Jesus College, Cambridge",
+          "Coleridge family|Samuel Taylor",
+          "English Anglican theologians",
+          "English Anglicans",
+          "English literary critics",
+          "English male poets",
+          "English theologians",
+          "Fellows of the Royal Society of Literature",
+          "Irvingites",
+          "Literary critics of English",
+          "Nontrinitarian Christians",
+          "People educated at Christ's Hospital",
+          "People from Ottery St Mary",
+          "People with bipolar disorder",
+          "Philosophers of literature",
+          "Philosophers of religion",
+          "Romantic poets",
+          "Spinozists"
+        ],
+        "birth_year": 1772,
+        "death_year": 1834
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11525"
+        ],
+        "target_person": {
+          "title": "Samuel Taylor Coleridge",
+          "page_id": 29408,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Samuel Taylor Coleridge| ",
+            "15th The King's Hussars soldiers",
+            "1772 births",
+            "1834 deaths",
+            "18th-century English Christian theologians",
+            "18th-century English poets",
+            "19th-century English Christian theologians",
+            "19th-century English poets",
+            "Alumni of Jesus College, Cambridge",
+            "Coleridge family|Samuel Taylor",
+            "English Anglican theologians",
+            "English Anglicans",
+            "English literary critics",
+            "English male poets",
+            "English theologians",
+            "Fellows of the Royal Society of Literature",
+            "Irvingites",
+            "Literary critics of English",
+            "Nontrinitarian Christians",
+            "People educated at Christ's Hospital",
+            "People from Ottery St Mary",
+            "People with bipolar disorder",
+            "Philosophers of literature",
+            "Philosophers of religion",
+            "Romantic poets",
+            "Spinozists"
+          ],
+          "birth_year": 1772,
+          "death_year": 1834
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Babbage",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "witness the fact to which attention was first drawn by Mr. Babbage, that when the pasty mixture of ground flints and kaolin, prepared for the manufacture of porcelain, is kept some time, it becomes gritty and unfit for use, in consequence of the particles of silica separating themselves from the rest, and uniting together in grains;"
+        ],
+        "commentaries": [
+          "The author cites Mr. Babbage as the originator of a fact about the segregation of particles in a porcelain mixture."
+        ],
+        "canonical_author": "Babbage"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Charles Babbage",
+        "page_id": 5698,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Charles Babbage| ",
+          "1791 births",
+          "1871 deaths",
+          "19th-century English mathematicians",
+          "Alumni of Peterhouse, Cambridge",
+          "Alumni of Trinity College, Cambridge",
+          "British business theorists",
+          "Burials at Kensal Green Cemetery",
+          "Corresponding members of the Saint Petersburg Academy of Sciences",
+          "English Christians",
+          "English computer scientists",
+          "19th-century English engineers",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Fellows of the Royal Astronomical Society",
+          "Fellows of the Royal Society of Edinburgh",
+          "Fellows of the Royal Society",
+          "Lucasian Professors of Mathematics",
+          "Mathematicians from London",
+          "People educated at Totnes Grammar School",
+          "People of the Industrial Revolution",
+          "Recipients of the Gold Medal of the Royal Astronomical Society"
+        ],
+        "birth_year": 1791,
+        "death_year": 1871
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "538773"
+        ],
+        "target_person": {
+          "title": "Charles Babbage",
+          "page_id": 5698,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Charles Babbage| ",
+            "1791 births",
+            "1871 deaths",
+            "19th-century English mathematicians",
+            "Alumni of Peterhouse, Cambridge",
+            "Alumni of Trinity College, Cambridge",
+            "British business theorists",
+            "Burials at Kensal Green Cemetery",
+            "Corresponding members of the Saint Petersburg Academy of Sciences",
+            "English Christians",
+            "English computer scientists",
+            "19th-century English engineers",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Fellows of the Royal Astronomical Society",
+            "Fellows of the Royal Society of Edinburgh",
+            "Fellows of the Royal Society",
+            "Lucasian Professors of Mathematics",
+            "Mathematicians from London",
+            "People educated at Totnes Grammar School",
+            "People of the Industrial Revolution",
+            "Recipients of the Gold Medal of the Royal Astronomical Society"
+          ],
+          "birth_year": 1791,
+          "death_year": 1871
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "M. Elie de Beaumont",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "However untenable may be the details of M. Elie de Beaumont’s theory, there is good reason to accept the general proposition that the disruptions and variations of level which take place at intervals on the terrestrial surface, are due to the progressive collapse of the Earth’s solid envelope upon its cooling and contracting nucleus."
+        ],
+        "commentaries": [
+          "The author references M. Elie de Beaumont’s theory, acknowledging that while the details may be incorrect, the general proposition regarding geological changes is accepted."
+        ],
+        "canonical_author": "M. Elie De Beaumont"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Roger de Beaumont",
+        "page_id": 3282486,
+        "infoboxes": [],
+        "categories": [
+          "1010s births",
+          "1094 deaths",
+          "Anglo-Normans",
+          "Norman warriors",
+          "Beaumont family|Roger",
+          "Year of birth uncertain"
+        ],
+        "birth_year": 1798,
+        "death_year": 1094
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Roger de Beaumont",
+          "page_id": 3282486,
+          "infoboxes": [],
+          "categories": [
+            "1010s births",
+            "1094 deaths",
+            "Anglo-Normans",
+            "Norman warriors",
+            "Beaumont family|Roger",
+            "Year of birth uncertain"
+          ],
+          "birth_year": 1798,
+          "death_year": 1094
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Max Müller",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Whether, as Max Müller and Bunsen think, all languages have grown from one stock, or whether, as some philologists say, they have grown from two or more stocks, it is clear that since large families of languages, as the Indo-European, are of one parentage, they have become distinct through a process of continuous divergence."
+        ],
+        "commentaries": [
+          "The author references Max Müller's view on the common origin of languages as a point of comparison."
+        ],
+        "canonical_author": "Max Müller"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Max Müller",
+        "page_id": 329426,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1823 births",
+          "1900 deaths",
+          "19th-century British historians",
+          "19th-century British linguists",
+          "19th-century British male writers",
+          "19th-century British translators",
+          "19th-century German historians",
+          "19th-century German linguists",
+          "19th-century German male writers",
+          "19th-century German translators",
+          "British critics of Christianity",
+          "British Indologists",
+          "British male essayists",
+          "British orientalists",
+          "British philologists",
+          "British religion academics",
+          "British Sanskrit scholars",
+          "Burials at Holywell Cemetery",
+          "Diebold Professors of Comparative Philology",
+          "Fellows of All Souls College, Oxford",
+          "German critics of Christianity",
+          "German emigrants to the United Kingdom",
+          "German Indologists",
+          "German male essayists",
+          "German orientalists",
+          "German philologists",
+          "German religion academics",
+          "German Sanskrit scholars",
+          "Hindu studies scholars",
+          "Indo-Europeanists"
+        ],
+        "birth_year": 1823,
+        "death_year": 1900
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Max Müller",
+          "page_id": 329426,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1823 births",
+            "1900 deaths",
+            "19th-century British historians",
+            "19th-century British linguists",
+            "19th-century British male writers",
+            "19th-century British translators",
+            "19th-century German historians",
+            "19th-century German linguists",
+            "19th-century German male writers",
+            "19th-century German translators",
+            "British critics of Christianity",
+            "British Indologists",
+            "British male essayists",
+            "British orientalists",
+            "British philologists",
+            "British religion academics",
+            "British Sanskrit scholars",
+            "Burials at Holywell Cemetery",
+            "Diebold Professors of Comparative Philology",
+            "Fellows of All Souls College, Oxford",
+            "German critics of Christianity",
+            "German emigrants to the United Kingdom",
+            "German Indologists",
+            "German male essayists",
+            "German orientalists",
+            "German philologists",
+            "German religion academics",
+            "German Sanskrit scholars",
+            "Hindu studies scholars",
+            "Indo-Europeanists"
+          ],
+          "birth_year": 1823,
+          "death_year": 1900
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Immanuel Kant",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "as in Psychology the arrested growth recommences now that the disciples of Kant and those of Locke have both their views recognized in the theory that organized experiences produce forms of thought;",
+          "Shall we then take refuge in the Kantian doctrine?"
+        ],
+        "commentaries": [
+          "The author refers to Kant's followers as representing one side of a philosophical synthesis.",
+          "The author references Kant's doctrine regarding Space and Time as forms of the intellect, and proceeds to critique it."
+        ],
+        "canonical_author": "Immanuel Kant"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Immanuel Kant",
+        "page_id": 14631,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Immanuel Kant| ",
+          "1724 births",
+          "1804 deaths",
+          "18th-century anthropologists",
+          "18th-century essayists",
+          "18th-century German male writers",
+          "18th-century German philosophers",
+          "18th-century German writers",
+          "18th-century Prussian people",
+          "19th-century German anthropologists",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German philosophers",
+          "19th-century Prussian people",
+          "19th-century social scientists",
+          "Academic staff of the University of Königsberg",
+          "Age of Enlightenment",
+          "Enlightenment philosophers",
+          "German epistemologists",
+          "German agnostics",
+          "German ethicists",
+          "German idealists",
+          "German logicians",
+          "German Lutherans",
+          "German male non-fiction writers",
+          "German political philosophers",
+          "Humor researchers",
+          "Idealists"
+        ],
+        "birth_year": 1724,
+        "death_year": 1804
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11038"
+        ],
+        "target_person": {
+          "title": "Immanuel Kant",
+          "page_id": 14631,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Immanuel Kant| ",
+            "1724 births",
+            "1804 deaths",
+            "18th-century anthropologists",
+            "18th-century essayists",
+            "18th-century German male writers",
+            "18th-century German philosophers",
+            "18th-century German writers",
+            "18th-century Prussian people",
+            "19th-century German anthropologists",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German philosophers",
+            "19th-century Prussian people",
+            "19th-century social scientists",
+            "Academic staff of the University of Königsberg",
+            "Age of Enlightenment",
+            "Enlightenment philosophers",
+            "German epistemologists",
+            "German agnostics",
+            "German ethicists",
+            "German idealists",
+            "German logicians",
+            "German Lutherans",
+            "German male non-fiction writers",
+            "German political philosophers",
+            "Humor researchers",
+            "Idealists"
+          ],
+          "birth_year": 1724,
+          "death_year": 1804
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Henry Longueville Mansel",
+        "note": null,
+        "count": 9,
+        "contexts": [
+          "The fundamental condition to all consciousness, emphatically insisted upon by Mr Mansel in common with Sir William Hamilton and others, is the antithesis of subject and object.",
+          "And on this \"primitive dualism of consciousness,\" \"from which the explanations of philosophy must take their start,\" Mr Mansel founds his refutation of the German absolutists.",
+          "\"The _Absolute_ and the _Infinite_\" says Mr Mansel, \"are thus, like the _Inconceivable_ and the _Imperceptible_, names indicating, not an object of thought or of consciousness at all, but the mere absence of the conditions under which consciousness is possible.\"",
+          "If we are required to conceive the relation between the Relative and Non-relative without being conscious of both, “we are in fact” (to quote the words of Mr Mansel differently applied) “required to compare that of which we are conscious with that of which we are not conscious; the comparison itself being an act of consciousness, and only possible through the consciousness of both its objects.”",
+          "When he says that “we are compelled, by the constitution of our minds, to believe in the existence of an Absolute and Infinite Being,—a belief which appears forced upon us, as the complement of our consciousness of the relative and the finite;” he clearly says by implication that this consciousness is positive, and not negative.",
+          "Carrying a step further the doctrine put into shape by Hamilton and Mansel;",
+          "I cannot do better than avail myself of the demonstration which Mr Mansel, carrying out in detail the doctrine of Sir William Hamilton, has given in his “Limits of Religious Thought.”",
+          "One of the most recent writers who has touched upon this question—Mr Mansel—does indeed contend that in the consciousness of self, we have a piece of real knowledge.",
+          "As writes Mr Mansel, in the work from which I have already quoted largely—\"It is our duty, then, to think of God as personal; and it is our duty to believe that He is infinite.\""
+        ],
+        "commentaries": [
+          "The author references Mr Mansel as a source for the idea of the antithesis of subject and object.",
+          "The author explains that Mr Mansel bases his refutation of the German absolutists on the concept of primitive dualism of consciousness.",
+          "The author quotes Mr Mansel to present another version of the argument that the Absolute is unknowable, then proceeds to argue that this position is incomplete.",
+          "The author quotes Mr Mansel's words, applying them to the relation between the Relative and Non-relative.",
+          "The author references Mr Mansel's statement about the belief in an Absolute and Infinite Being, interpreting it as implying a positive consciousness.",
+          "The author references Mansel as a source for the doctrine of the Unknowable.",
+          "The author cites Mansel's book 'Limits of Religious Thought' as providing a demonstration that reveals the contradictions in the concepts of First Cause, Infinite, and Absolute.",
+          "The author references Mansel as a recent writer who argues for the reality of self-knowledge through immediate intuition.",
+          "The author quotes Mansel's work to present a theological position that he then argues against."
+        ],
+        "canonical_author": "Mr Mansel"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Henry Longueville Mansel",
+        "page_id": 206369,
+        "infoboxes": [],
+        "categories": [
+          "1820 births",
+          "1871 deaths",
+          "Mansel family|Henry Longueville",
+          "19th-century English philosophers",
+          "People from West Northamptonshire District",
+          "Deans of St Paul's",
+          "People educated at Merchant Taylors' School, Northwood",
+          "Alumni of St John's College, Oxford",
+          "Waynflete Professors of Metaphysical Philosophy",
+          "Regius Professors of Ecclesiastical History",
+          "English male non-fiction writers",
+          "19th-century Anglican theologians"
+        ],
+        "birth_year": 1820,
+        "death_year": 1871
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Henry Longueville Mansel",
+          "page_id": 206369,
+          "infoboxes": [],
+          "categories": [
+            "1820 births",
+            "1871 deaths",
+            "Mansel family|Henry Longueville",
+            "19th-century English philosophers",
+            "People from West Northamptonshire District",
+            "Deans of St Paul's",
+            "People educated at Merchant Taylors' School, Northwood",
+            "Alumni of St John's College, Oxford",
+            "Waynflete Professors of Metaphysical Philosophy",
+            "Regius Professors of Ecclesiastical History",
+            "English male non-fiction writers",
+            "19th-century Anglican theologians"
+          ],
+          "birth_year": 1820,
+          "death_year": 1871
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Grove",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Grove, Helmholtz, and Meyer, are more than any others to be credited with the clear enunciation of this doctrine."
+        ],
+        "commentaries": [
+          "The author cites Grove as one of the key figures responsible for clearly enunciating the doctrine of the correlation and equivalence of forces."
+        ],
+        "canonical_author": "Grove"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "William Robert Grove",
+        "page_id": 1049937,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1811 births",
+          "1896 deaths",
+          "British inventors",
+          "British chemists",
+          "Welsh inventors",
+          "Welsh chemists",
+          "Welsh lawyers",
+          "People from Swansea",
+          "People educated at Bishop Gore School",
+          "Alumni of Brasenose College, Oxford",
+          "Fellows of the Royal Society",
+          "Members of the Privy Council of the United Kingdom",
+          "Royal Medal winners",
+          "Justices of the common pleas",
+          "Battery inventors",
+          "Burials at Kensal Green Cemetery",
+          "Common Pleas Division judges",
+          "19th-century Welsh lawyers",
+          "Knights Bachelor",
+          "People associated with electricity",
+          "19th-century English judges"
+        ],
+        "birth_year": 1811,
+        "death_year": 1896
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "William Robert Grove",
+          "page_id": 1049937,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1811 births",
+            "1896 deaths",
+            "British inventors",
+            "British chemists",
+            "Welsh inventors",
+            "Welsh chemists",
+            "Welsh lawyers",
+            "People from Swansea",
+            "People educated at Bishop Gore School",
+            "Alumni of Brasenose College, Oxford",
+            "Fellows of the Royal Society",
+            "Members of the Privy Council of the United Kingdom",
+            "Royal Medal winners",
+            "Justices of the common pleas",
+            "Battery inventors",
+            "Burials at Kensal Green Cemetery",
+            "Common Pleas Division judges",
+            "19th-century Welsh lawyers",
+            "Knights Bachelor",
+            "People associated with electricity",
+            "19th-century English judges"
+          ],
+          "birth_year": 1811,
+          "death_year": 1896
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Philosophy of the Inductive Sciences",
+        "author": "William Whewell",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "The same work and its fellow on “The Philosophy of the Inductive Sciences,” supply other evidences equally good, because equally independent of any such hypothesis as is here to be established.",
+          "In his “History of the Inductive Sciences,” Dr. Whewell says that the Greeks failed in physical philosophy because their “ideas were not distinct, and appropriate to the facts.”"
+        ],
+        "commentaries": [
+          "The author references Whewell's companion work as providing further evidence for the indefiniteness of early science.",
+          "The author quotes Whewell's work to support the claim that primitive science was indefinite."
+        ]
+      },
+      "goodreads_match": {
+        "title": "The Philosophy of the Inductive Sciences",
+        "authors": [
+          "William Whewell"
+        ],
+        "original_year": 1840,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "British",
+        "description": "A foundational work on the philosophy of science by William Whewell, originally published in 1840, which argues for the role of ideas and inductive reasoning in scientific discovery.",
+        "book_id": "web_ea10c99d",
+        "author_meta": {
+          "birth_year": 1794,
+          "canonical_name": "William Whewell",
+          "death_year": 1866,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "William Whewell",
+        "birth_year": 1794,
+        "death_year": 1866
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_ea10c99d",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "William Whewell",
+          "birth_year": 1794,
+          "death_year": 1866
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "George Stephenson",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The late George Stephenson was one of the first to recognize the fact that the force impelling his locomotive, originally emanated from the sun."
+        ],
+        "commentaries": [
+          "The author credits George Stephenson with early recognition that the force driving a locomotive originates from the sun."
+        ],
+        "canonical_author": "George Stephenson"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "George Stephenson",
+        "page_id": 12578,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "George Stephenson| ",
+          "1781 births",
+          "1848 deaths",
+          "People of the Industrial Revolution",
+          "19th-century English inventors",
+          "Millwrights",
+          "People from Wylam",
+          "19th-century English engineers",
+          "English civil engineers",
+          "English mechanical engineers"
+        ],
+        "birth_year": 1781,
+        "death_year": 1848
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "George Stephenson",
+          "page_id": 12578,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "George Stephenson| ",
+            "1781 births",
+            "1848 deaths",
+            "People of the Industrial Revolution",
+            "19th-century English inventors",
+            "Millwrights",
+            "People from Wylam",
+            "19th-century English engineers",
+            "English civil engineers",
+            "English mechanical engineers"
+          ],
+          "birth_year": 1781,
+          "death_year": 1848
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Correlation of Physical Forces",
+        "author": "Grove",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "These facts, the larger part of which are culled from Mr. Grove's work on \"The Correlation of Physical Forces,\"",
+          "Pursuing the suggestion made by Mr. Grove, in the first edition of his work on the \"Correlation of the Physical Forces,\" that a connexion probably exists between the forces classed as vital and those classed as physical, Dr. Carpenter has pointed out that such a connexion is clearly exhibited during incubation."
+        ],
+        "commentaries": [
+          "The author cites Grove's work as the source for the majority of the facts presented about the transformation of physical forces.",
+          "The author references Mr. Grove's work as the source of a suggestion about the correlation of vital and physical forces, which is then elaborated by Dr. Carpenter."
+        ]
+      },
+      "goodreads_match": {
+        "title": "The Correlation of Physical Forces",
+        "authors": [
+          "William Robert Grove"
+        ],
+        "original_year": 1846,
+        "birth_year": 1811,
+        "death_year": 1896,
+        "nationality": "British",
+        "description": "A seminal work on the conservation of energy and the interconvertibility of physical forces, first published in 1846.",
+        "book_id": "web_2e8d7262",
+        "author_meta": {
+          "birth_year": 1811,
+          "death_year": 1896,
+          "nationality": "British"
+        }
+      },
+      "wikipedia_match": {
+        "title": "William Robert Grove",
+        "birth_year": 1811,
+        "death_year": 1896
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_2e8d7262",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "William Robert Grove",
+          "birth_year": 1811,
+          "death_year": 1896
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Philosophy of the Unconditioned",
+        "author": "Sir William Hamilton",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I cannot here do better than extract from his essay on the \"Philosophy of the Unconditioned,\" the passage containing the substance of his doctrine."
+        ],
+        "commentaries": [
+          "The author quotes directly from Hamilton's essay to present his doctrine on the limitation of human thought to the conditioned."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Philosophy of the Unconditioned",
+        "authors": [
+          "Sir William Hamilton"
+        ],
+        "original_year": 1829,
+        "birth_year": 1788,
+        "death_year": 1856,
+        "nationality": "Scottish",
+        "description": "Essay by Sir William Hamilton on the philosophy of the unconditioned, published in the Edinburgh Review in 1829.",
+        "book_id": "web_831d8d35",
+        "author_meta": {
+          "birth_year": 1788,
+          "death_year": 1856,
+          "nationality": "Scottish"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Sir William Hamilton",
+        "birth_year": 1788,
+        "death_year": 1856
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_831d8d35",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Sir William Hamilton",
+          "birth_year": 1788,
+          "death_year": 1856
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Mr. James Hinton",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "That organic growth takes place in the direction of least resistance, is a proposition that has been set forth and illustrated by Mr. James Hinton, in the _Medico-Chirurgical Review_ for October, 1858.",
+          "Without endorsing all Mr. Hinton’s illustrations, to some of which exception might be taken, his conclusion may be accepted as a large instalment of the truth."
+        ],
+        "commentaries": [
+          "The author references Mr. James Hinton as the source of the proposition that organic growth follows the direction of least resistance, and notes that Hinton illustrated this in a review article.",
+          "The author references Mr. Hinton's illustrations and conclusions regarding organic growth, accepting his conclusion as a large instalment of the truth."
+        ],
+        "canonical_author": "Mr. James Hinton"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Mr. James Hinton",
+        "birth_year": 1822,
+        "death_year": 1875
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Mr. James Hinton",
+          "birth_year": 1822,
+          "death_year": 1875
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bunsen",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Whether, as Max Müller and Bunsen think, all languages have grown from one stock, or whether, as some philologists say, they have grown from two or more stocks, it is clear that since large families of languages, as the Indo-European, are of one parentage, they have become distinct through a process of continuous divergence."
+        ],
+        "commentaries": [
+          "The author references Bunsen's view on the common origin of languages as a point of comparison."
+        ],
+        "canonical_author": "Bunsen"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Christian Charles Josias von Bunsen",
+        "page_id": 212448,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "1791 births",
+          "1860 deaths",
+          "People from Korbach",
+          "Ambassadors of Prussia",
+          "Members of the Prussian House of Lords",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Archaeologists from Hesse",
+          "German Egyptologists",
+          "People from Waldeck (state)",
+          "University of Göttingen alumni",
+          "Members of the Frankfurt Parliament",
+          "19th-century diplomats",
+          "Expatriates in the Papal States"
+        ],
+        "birth_year": 1791,
+        "death_year": 1860
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Christian Charles Josias von Bunsen",
+          "page_id": 212448,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1791 births",
+            "1860 deaths",
+            "People from Korbach",
+            "Ambassadors of Prussia",
+            "Members of the Prussian House of Lords",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Archaeologists from Hesse",
+            "German Egyptologists",
+            "People from Waldeck (state)",
+            "University of Göttingen alumni",
+            "Members of the Frankfurt Parliament",
+            "19th-century diplomats",
+            "Expatriates in the Papal States"
+          ],
+          "birth_year": 1791,
+          "death_year": 1860
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Limits of Religious Thought",
+        "author": "Mansel",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "A more popular presentation of it, with illustrative applications, as given by Mr Mansel in his “Limits of Religious Thought,” will make it more fully understood."
+        ],
+        "commentaries": [
+          "The author references Mansel's work to provide a more accessible explanation of the conditioned nature of thought, quoting extensively from it."
+        ]
+      },
+      "goodreads_match": {
+        "title": "The Limits of Religious Thought",
+        "authors": [
+          "Henry Longueville Mansel"
+        ],
+        "original_year": 1858,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "English",
+        "description": "A philosophical work examining the boundaries of human reason in understanding religious concepts, by Henry Longueville Mansel, first published in 1858.",
+        "book_id": "web_400c15ac",
+        "author_meta": {
+          "birth_year": 1820,
+          "death_year": 1871,
+          "main_genre": null,
+          "nationality": null,
+          "canonical_name": "Henry Longueville Mansel"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Henry Longueville Mansel",
+        "birth_year": 1820,
+        "death_year": 1871
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_400c15ac",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Henry Longueville Mansel",
+          "birth_year": 1820,
+          "death_year": 1871
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pope",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Homer's Iliad translated by Pope"
+        ],
+        "commentaries": [
+          "The author refers to Pope's translation of Homer's Iliad, citing it as a work that demonstrates certain qualities."
+        ],
+        "canonical_author": "Pope"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pope",
+        "death_year": 965
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "25157"
+        ],
+        "target_person": {
+          "title": "Pope",
+          "death_year": 965
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Owen",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "if we may rely on Prof. Owen, had a type of structure intermediate between some of the types now existing"
+        ],
+        "commentaries": [
+          "The author cites Professor Owen's opinion on the intermediate structure of Palæotherium and Anaplotherium."
+        ],
+        "canonical_author": "Owen"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Owen",
+        "birth_year": 1602,
+        "death_year": 1668
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "332089"
+        ],
+        "target_person": {
+          "title": "Owen",
+          "birth_year": 1602,
+          "death_year": 1668
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Wolff",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Pursuing an idea which Harvey set afloat, Wolff, Goethe, and Von Baer, have established the truth that the series of changes gone through during the development of a seed into a tree, or an ovum into an animal, constitute an advance from homogeneity of structure to heterogeneity of structure."
+        ],
+        "commentaries": [
+          "The author mentions Wolff as one of the scientists who established the law of organic evolution as a change from homogeneity to heterogeneity."
+        ],
+        "canonical_author": "Wolff"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Wolff",
+        "birth_year": 1733,
+        "death_year": 1794
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Wolff",
+          "birth_year": 1733,
+          "death_year": 1794
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Harvey",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Pursuing an idea which Harvey set afloat, Wolff, Goethe, and Von Baer, have established the truth that the series of changes gone through during the development of a seed into a tree, or an ovum into an animal, constitute an advance from homogeneity of structure to heterogeneity of structure."
+        ],
+        "commentaries": [
+          "The author credits Harvey with originating the idea that development involves a progression from homogeneity to heterogeneity."
+        ],
+        "canonical_author": "Harvey"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Harvey",
+        "birth_year": 1578,
+        "death_year": 1657
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Harvey",
+          "birth_year": 1578,
+          "death_year": 1657
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Meyer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Grove, Helmholtz, and Meyer, are more than any others to be credited with the clear enunciation of this doctrine."
+        ],
+        "commentaries": [
+          "The author cites Meyer as one of the key figures responsible for clearly enunciating the doctrine of the correlation and equivalence of forces."
+        ],
+        "canonical_author": "Meyer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Meyer",
+        "birth_year": 1830,
+        "death_year": 1895
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Meyer",
+          "birth_year": 1830,
+          "death_year": 1895
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Von Baer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Pursuing an idea which Harvey set afloat, Wolff, Goethe, and Von Baer, have established the truth that the series of changes gone through during the development of a seed into a tree, or an ovum into an animal, constitute an advance from homogeneity of structure to heterogeneity of structure."
+        ],
+        "commentaries": [
+          "The author references Von Baer as one of the scientists who established the principle of development from homogeneity to heterogeneity."
+        ],
+        "canonical_author": "Von Baer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Von Baer",
+        "birth_year": 1792,
+        "death_year": 1876
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Von Baer",
+          "birth_year": 1792,
+          "death_year": 1876
+        }
+      }
+    }
+  ]
+}

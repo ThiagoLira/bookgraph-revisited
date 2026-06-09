@@ -1,0 +1,1663 @@
+{
+  "source": {
+    "title": "Confessions",
+    "authors": [
+      "Augustine of Hippo"
+    ],
+    "goodreads_id": "pg3296",
+    "calibre_id": null,
+    "format": "Kindle Edition",
+    "author_ids": [
+      "3089348"
+    ],
+    "title_without_series": "No More Confessions (Confessions, #3)",
+    "publication_month": 1,
+    "average_rating": 3.89,
+    "ratings_count": 27,
+    "publication_day": 25,
+    "publication_year": 2015,
+    "book_id": "24637158",
+    "num_pages": 172,
+    "text_reviews_count": 9,
+    "work_id": "25748576",
+    "description": "ROSE ZARELLI is done confessing because confessions are for people who have done something wrong. And I haven't done anything wrong. Here, I'll prove it to you.\n1) After my mother got that call, I \"borrowed\" her car. (Because you can't steal your mother's car, can you?) I don't really remember driving downtown, but I do remember...\n2) ...getting past the bouncer at Dizzy's (I mean, it's his job to spot a fake ID, so that's on him)...\n3) ...and then later, telling my mother the truth about the bar but lying....",
+    "link": "https://www.goodreads.com/book/show/24637158-no-more-confessions",
+    "author_metadata": {
+      "birth_year": 354,
+      "death_year": 430,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And what did it profit me, that scarce twenty years old, a book of Aristotle, which they call the ten Predicaments, falling into my hands (on whose very name I hung, as on something great and divine, so often as my rhetoric master of Carthage, and others, accounted learned, mouthed it with cheeks bursting with pride), I read and understood it unaided?"
+        ],
+        "commentaries": [
+          "The author recounts reading Aristotle's 'Categories' (the ten Predicaments) as a young man and understanding it without a tutor."
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Symmachus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "that Symmachus, then prefect of the city, would try me by setting me some subject, and so send me."
+        ],
+        "commentaries": [
+          "The author refers to Symmachus as the prefect who would test him for a teaching position in Milan."
+        ],
+        "canonical_author": "Symmachus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pope Symmachus",
+        "page_id": 63008,
+        "infoboxes": [
+          "Christian leader"
+        ],
+        "categories": [
+          "5th-century births",
+          "514 deaths",
+          "5th-century archbishops",
+          "Sardinian Roman Catholic priests",
+          "6th-century archbishops",
+          "6th-century Christian saints",
+          "Italian popes",
+          "Italian saints",
+          "Ostrogothic Papacy",
+          "People from Sardinia",
+          "Popes",
+          "Papal saints",
+          "Year of birth unknown",
+          "5th-century popes",
+          "6th-century popes",
+          "Burials at St. Peter's Basilica"
+        ],
+        "birth_year": null,
+        "death_year": 514
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Pope Symmachus",
+          "page_id": 63008,
+          "infoboxes": [
+            "Christian leader"
+          ],
+          "categories": [
+            "5th-century births",
+            "514 deaths",
+            "5th-century archbishops",
+            "Sardinian Roman Catholic priests",
+            "6th-century archbishops",
+            "6th-century Christian saints",
+            "Italian popes",
+            "Italian saints",
+            "Ostrogothic Papacy",
+            "People from Sardinia",
+            "Popes",
+            "Papal saints",
+            "Year of birth unknown",
+            "5th-century popes",
+            "6th-century popes",
+            "Burials at St. Peter's Basilica"
+          ],
+          "birth_year": null,
+          "death_year": 514
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Epicurus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I held that Epicurus had in my mind won the palm, had I not believed that after death there remained a life for the soul, and places of requital according to men's deserts, which Epicurus would not believe."
+        ],
+        "commentaries": [
+          "The author mentions that in his disputes with friends, he would have awarded the victory to Epicurus if he had not believed in an afterlife, which Epicurus denied."
+        ],
+        "canonical_author": "Epicurus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Epicurus",
+        "page_id": 10073,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "4th-century BC Greek philosophers",
+          "3rd-century BC Greek philosophers",
+          "341 BC births",
+          "270 BC deaths",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Samians",
+          "Empiricists",
+          "Epicurean philosophers",
+          "Greek male writers",
+          "Materialists",
+          "Philosophers of death",
+          "Hellenistic-era philosophers in Athens"
+        ],
+        "birth_year": -341,
+        "death_year": -270
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "114041"
+        ],
+        "target_person": {
+          "title": "Epicurus",
+          "page_id": 10073,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "4th-century BC Greek philosophers",
+            "3rd-century BC Greek philosophers",
+            "341 BC births",
+            "270 BC deaths",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Samians",
+            "Empiricists",
+            "Epicurean philosophers",
+            "Greek male writers",
+            "Materialists",
+            "Philosophers of death",
+            "Hellenistic-era philosophers in Athens"
+          ],
+          "birth_year": -341,
+          "death_year": -270
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hippocrates",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "saying, that he had in his earliest years studied that art, so as to make it the profession whereby he should live, and that, understanding Hippocrates, he could soon have understood such a study as this;"
+        ],
+        "commentaries": [
+          "The author reports a story about a man who claims he could have easily understood the art of nativity-casting because he already understood Hippocrates."
+        ],
+        "canonical_author": "Hippocrates"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hippocrates",
+        "page_id": 13486,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "460s BC births",
+          "370s BC deaths",
+          "5th-century BC Greek physicians",
+          "4th-century BC Greek physicians",
+          "Ancient Greek science writers",
+          "Ancient Greeks in Thessaly",
+          "Ancient Koans",
+          "Characters in the Divine Comedy",
+          "Classical humanists",
+          "Ionic Greek writers",
+          "Longevity myths",
+          "Year of birth uncertain",
+          "Year of death uncertain"
+        ],
+        "birth_year": -460,
+        "death_year": -370
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "248774"
+        ],
+        "target_person": {
+          "title": "Hippocrates",
+          "page_id": 13486,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "460s BC births",
+            "370s BC deaths",
+            "5th-century BC Greek physicians",
+            "4th-century BC Greek physicians",
+            "Ancient Greek science writers",
+            "Ancient Greeks in Thessaly",
+            "Ancient Koans",
+            "Characters in the Divine Comedy",
+            "Classical humanists",
+            "Ionic Greek writers",
+            "Longevity myths",
+            "Year of birth uncertain",
+            "Year of death uncertain"
+          ],
+          "birth_year": -460,
+          "death_year": -370
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plotinus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Thou procuredst for me, by means of one puffed up with most unnatural pride, certain books of the Platonists, translated from Greek into Latin."
+        ],
+        "commentaries": [
+          "The author mentions being given books of the Platonists, which are attributed to Plotinus and other Platonic philosophers, translated into Latin."
+        ],
+        "canonical_author": "Plotinus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plotinus",
+        "page_id": 38422,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plotinus| ",
+          "200s births",
+          "270 deaths",
+          "3rd-century Egyptian people",
+          "3rd-century Greek philosophers",
+          "3rd-century Romans",
+          "Ancient Greek epistemologists",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of mind",
+          "Ancient Lycopolitans",
+          "Classical theism",
+          "Greek-language commentators on Plato",
+          "Neoplatonists",
+          "Roman-era Greeks",
+          "Roman-era philosophers in Rome",
+          "Philosophers in ancient Alexandria"
+        ],
+        "birth_year": 204,
+        "death_year": 270
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "14704"
+        ],
+        "target_person": {
+          "title": "Plotinus",
+          "page_id": 38422,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plotinus| ",
+            "200s births",
+            "270 deaths",
+            "3rd-century Egyptian people",
+            "3rd-century Greek philosophers",
+            "3rd-century Romans",
+            "Ancient Greek epistemologists",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of mind",
+            "Ancient Lycopolitans",
+            "Classical theism",
+            "Greek-language commentators on Plato",
+            "Neoplatonists",
+            "Roman-era Greeks",
+            "Roman-era philosophers in Rome",
+            "Philosophers in ancient Alexandria"
+          ],
+          "birth_year": 204,
+          "death_year": 270
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "And being thence admonished to return to myself, I entered even into my inward self, Thou being my Guide: and able I was, for Thou wert become my Helper.",
+          "And I perceived myself to be far off from Thee, in the region of unlikeness, as if I heard this Thy voice from on high: \"I am the food of grown men, grow, and thou shalt feed upon Me; nor shalt thou convert Me, like the food of thy flesh into thee, but thou shalt be converted into Me.\"",
+          "But when I mentioned that I had read certain books of the Platonists, which Victorinus, sometime Rhetoric Professor of Rome (who had died a Christian, as I had heard), had translated into Latin, he testified his joy that I had not fallen upon the writings of other philosophers, full of fallacies and deceits, after the rudiments of this world, whereas the Platonists many ways led to the belief in God and His Word."
+        ],
+        "commentaries": [
+          "The author refers to reading books of the Platonists and being influenced by their ideas to turn inward.",
+          "The author alludes to the Platonic concept of the 'region of unlikeness' from the dialogues.",
+          "The author mentions reading books of the Platonists, which are associated with Plato's philosophy, and notes that they were translated by Victorinus."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Victorinus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Do not many, out of a deeper hell of blindness than Victorinus, return to Thee, approach, and are enlightened, receiving that Light,"
+        ],
+        "commentaries": [
+          "The author refers to Victorinus as a figure whose conversion story was related to him, serving as an inspiration and example."
+        ],
+        "canonical_author": "Victorinus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Victorinus",
+        "page_id": 512428,
+        "infoboxes": [
+          "royalty"
+        ],
+        "categories": [
+          "Gallic emperors",
+          "Thirty Tyrants (Roman)",
+          "3rd-century Roman consuls",
+          "3rd-century monarchs in Europe",
+          "3rd-century murdered monarchs",
+          "Piavonii",
+          "Year of birth unknown",
+          "270s deaths",
+          "Year of death uncertain",
+          "Gallic consuls"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Victorinus",
+          "page_id": 512428,
+          "infoboxes": [
+            "royalty"
+          ],
+          "categories": [
+            "Gallic emperors",
+            "Thirty Tyrants (Roman)",
+            "3rd-century Roman consuls",
+            "3rd-century monarchs in Europe",
+            "3rd-century murdered monarchs",
+            "Piavonii",
+            "Year of birth unknown",
+            "270s deaths",
+            "Year of death uncertain",
+            "Gallic consuls"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Athanasius of Alexandria",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I remember to have been often told me of Athanasius, Bishop of Alexandria, who made the reader of the psalm utter it with so slight inflection of voice, that it was nearer speaking than singing."
+        ],
+        "commentaries": [
+          "The author recalls a practice attributed to Athanasius regarding the restrained singing of psalms."
+        ],
+        "canonical_author": "Athanasius Of Alexandria"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Athanasius of Alexandria",
+        "page_id": 3225,
+        "infoboxes": [
+          "Christian leader",
+          "philosopher",
+          "manner of address"
+        ],
+        "categories": [
+          "290s births",
+          "373 deaths",
+          "4th-century Byzantine writers",
+          "4th-century Christian saints",
+          "4th-century Christian theologians",
+          "4th-century philosophers",
+          "Anglican saints",
+          "Catholic philosophers",
+          "Christologists",
+          "Church Fathers",
+          "Doctors of the Church",
+          "Eastern Orthodox saints",
+          "Egyptian Roman Catholic writers",
+          "Egyptian theologians",
+          "Nature of Jesus Christ",
+          "Opponents of Arianism",
+          "Participants in the First Council of Nicaea",
+          "Philosophers in ancient Alexandria",
+          "Saints from Roman Egypt"
+        ],
+        "birth_year": 296,
+        "death_year": 373
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5786637"
+        ],
+        "target_person": {
+          "title": "Athanasius of Alexandria",
+          "page_id": 3225,
+          "infoboxes": [
+            "Christian leader",
+            "philosopher",
+            "manner of address"
+          ],
+          "categories": [
+            "290s births",
+            "373 deaths",
+            "4th-century Byzantine writers",
+            "4th-century Christian saints",
+            "4th-century Christian theologians",
+            "4th-century philosophers",
+            "Anglican saints",
+            "Catholic philosophers",
+            "Christologists",
+            "Church Fathers",
+            "Doctors of the Church",
+            "Eastern Orthodox saints",
+            "Egyptian Roman Catholic writers",
+            "Egyptian theologians",
+            "Nature of Jesus Christ",
+            "Opponents of Arianism",
+            "Participants in the First Council of Nicaea",
+            "Philosophers in ancient Alexandria",
+            "Saints from Roman Egypt"
+          ],
+          "birth_year": 296,
+          "death_year": 373
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John the Evangelist",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "unless it sees signs and wonders, it will not believe"
+        ],
+        "commentaries": [
+          "The author references John 4:48, where Jesus says, 'Except ye see signs and wonders, ye will not believe.'"
+        ],
+        "canonical_author": "John The Evangelist"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John the Evangelist",
+        "page_id": 16555,
+        "infoboxes": [
+          "saint"
+        ],
+        "categories": [
+          "10s births",
+          "100s deaths",
+          "1st-century writers",
+          "Christian saints from the New Testament",
+          "Four Evangelists",
+          "Saints from the Holy Land",
+          "John the Apostle"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "John the Evangelist",
+          "page_id": 16555,
+          "infoboxes": [
+            "saint"
+          ],
+          "categories": [
+            "10s births",
+            "100s deaths",
+            "1st-century writers",
+            "Christian saints from the New Testament",
+            "Four Evangelists",
+            "Saints from the Holy Land",
+            "John the Apostle"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Aeneid",
+        "author": "Virgil",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I was forced to learn the wanderings of one Aeneas, forgetful of my own, and to weep for dead Dido, because she killed herself for love"
+        ],
+        "commentaries": [
+          "The author describes being forced to study Virgil's Aeneid as a boy, and criticizes his emotional attachment to the fictional characters."
+        ]
+      },
+      "goodreads_match": {
+        "format": "Hardcover",
+        "author_ids": [
+          "919",
+          "8124"
+        ],
+        "title_without_series": "Aeneid",
+        "title": "Aeneid",
+        "average_rating": 3.81,
+        "ratings_count": 5,
+        "publisher": "Heritage Press",
+        "publication_year": 1944,
+        "book_id": "24782569",
+        "num_pages": 397,
+        "text_reviews_count": 2,
+        "work_id": "288738",
+        "authors": [
+          "Virgil",
+          "John Dryden"
+        ],
+        "description": "Illustrated by Carlotta Petrina. Black cloth, front cover stamped in blind with Petrina illus; slipcase; 6-3/4\" x 10-1/2\".",
+        "link": "https://www.goodreads.com/book/show/24782569-aeneid",
+        "original_year": -18,
+        "author_meta": {
+          "birth_year": -70,
+          "death_year": -19,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Virgil",
+        "birth_year": -70,
+        "death_year": -19
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "24782569",
+        "target_author_ids": [
+          "919",
+          "8124"
+        ],
+        "target_person": {
+          "title": "Virgil",
+          "birth_year": -70,
+          "death_year": -19
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Anaximenes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I asked the moving air; and the whole air with his inhabitants answered, \"Anaximenes was deceived, I am not God.\""
+        ],
+        "commentaries": [
+          "The author mentions Anaximenes as a philosopher who mistakenly identified air as God, and the air itself refutes this claim."
+        ],
+        "canonical_author": "Anaximenes"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Anaximenes of Miletus",
+        "page_id": 1748,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "6th-century BC Greek philosophers",
+          "Ancient Milesians",
+          "Philosophers of ancient Ionia",
+          "Presocratic philosophers"
+        ],
+        "birth_year": null,
+        "death_year": -320
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8391372"
+        ],
+        "target_person": {
+          "title": "Anaximenes of Miletus",
+          "page_id": 1748,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "6th-century BC Greek philosophers",
+            "Ancient Milesians",
+            "Philosophers of ancient Ionia",
+            "Presocratic philosophers"
+          ],
+          "birth_year": null,
+          "death_year": -320
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Marcus Tullius Cicero",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "for not as I now speak, did I feel when I turned to those Scriptures; but they seemed to me unworthy to be compared to the stateliness of Tully: for my swelling pride shrunk from their lowliness, nor could my sharp wit pierce the interior thereof."
+        ],
+        "commentaries": [
+          "Augustine compares the style of the Scriptures unfavourably to that of Cicero (referred to as 'Tully')."
+        ],
+        "canonical_author": "Marcus Tullius Cicero"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Tullius Cicero",
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Marcus Tullius Cicero",
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Psalms",
+        "author": "David",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "when I read the Psalms of David"
+        ],
+        "commentaries": [
+          "Augustine describes reading the Psalms and being kindled towards God."
+        ]
+      },
+      "goodreads_match": {
+        "isbn13": "9780310286899",
+        "format": "Paperback",
+        "author_ids": [
+          "3024136",
+          "1248481"
+        ],
+        "title_without_series": "The Psalms",
+        "title": "The Psalms",
+        "publication_month": 9,
+        "average_rating": 4.0,
+        "ratings_count": 2,
+        "isbn": "0310286891",
+        "publisher": "Zondervan",
+        "publication_day": 14,
+        "publication_year": 2010,
+        "book_id": "9255965",
+        "text_reviews_count": 1,
+        "work_id": "14136614",
+        "authors": [
+          "Brian L. Webster",
+          "David Beach"
+        ],
+        "link": "https://www.goodreads.com/book/show/9255965-the-psalms",
+        "original_year": 2010,
+        "author_meta": {
+          "birth_year": 1905,
+          "death_year": 1974
+        }
+      },
+      "wikipedia_match": {
+        "title": "Brian L. Webster",
+        "birth_year": 1905,
+        "death_year": 1974
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "9255965",
+        "target_author_ids": [
+          "3024136",
+          "1248481"
+        ],
+        "target_person": {
+          "title": "Brian L. Webster",
+          "birth_year": 1905,
+          "death_year": 1974
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "For Homer also curiously wove the like fictions, and is most sweetly-vain, yet was he bitter to my boyish taste.",
+          "These were Homer's fictions, transferring things human to the gods; would he had brought down things divine to us!"
+        ],
+        "commentaries": [
+          "The author compares Homer's fictions to Virgil's, noting that he found Homer difficult and unpleasant as a child due to the foreign language.",
+          "The author quotes a schoolmaster who criticizes Homer for attributing human vices to the gods."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Antony",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "For I had heard of Antony, that coming in during the reading of the Gospel, he received the admonition, as if what was being read was spoken to him: Go, sell all that thou hast, and give to the poor, and thou shalt have treasure in heaven, and come and follow me: and by such oracle he was forthwith converted unto Thee."
+        ],
+        "commentaries": [
+          "The author references the story of Antony as an example of conversion through hearing scripture."
+        ],
+        "canonical_author": "Antony"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Antony",
+        "page_id": 80825763,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Antony",
+          "page_id": 80825763,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "David (Psalmist)",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Seek the Lord, and your soul shall live",
+          "according to which Abraham, and Isaac, and Jacob, and Moses, and David, were righteous",
+          "and that David blamed himself for desiring a draught of water;"
+        ],
+        "commentaries": [
+          "The author paraphrases Psalms 69:32, attributed to David.",
+          "The author lists David among the righteous patriarchs, citing the biblical figure as an example of righteousness in God's law.",
+          "The author references David as a biblical figure who blamed himself for desiring water."
+        ],
+        "canonical_author": "David (Psalmist)"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "David (Psalmist)",
+        "birth_year": -1040,
+        "death_year": -970
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "David (Psalmist)",
+          "birth_year": -1040,
+          "death_year": -970
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cicero",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "But because he had read some of Tully's Orations, a very few books of Seneca, some things of the poets, and such few volumes of his own sect as were written in Latin and neatly, and was daily practised in speaking, he acquired a certain eloquence, which proved the more pleasing and seductive because under the guidance of a good wit, and with a kind of natural gracefulness."
+        ],
+        "commentaries": [
+          "The author notes that Faustus had read some of Tully's (Cicero's) Orations, which contributed to his eloquence."
+        ],
+        "canonical_author": "Tully"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cicero",
+        "page_id": 6046,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Cicero| ",
+          "106 BC births",
+          "43 BC deaths",
+          "2nd-century BC Romans",
+          "1st-century BC executions",
+          "1st-century BC philosophers",
+          "1st-century BC Roman augurs",
+          "1st-century BC Roman consuls",
+          "1st-century BC writers in Latin",
+          "Academic skeptics",
+          "Ancient landowners",
+          "Ancient Roman equites",
+          "Ancient Roman exiles",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Ancient Roman scholars of religion",
+          "Classical humanists",
+          "Deaths by edged and bladed weapons",
+          "Executed ancient Roman people",
+          "Executed philosophers",
+          "Executed writers",
+          "Golden Age Latin writers",
+          "Letter writers in Latin",
+          "Optimates",
+          "People executed by the Roman Republic",
+          "People from Arpino",
+          "Plebeian aediles",
+          "Philosophers of Roman Italy",
+          "Recipients of ancient Roman pardons",
+          "Roman governors of Cilicia"
+        ],
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Cicero",
+          "page_id": 6046,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Cicero| ",
+            "106 BC births",
+            "43 BC deaths",
+            "2nd-century BC Romans",
+            "1st-century BC executions",
+            "1st-century BC philosophers",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Academic skeptics",
+            "Ancient landowners",
+            "Ancient Roman equites",
+            "Ancient Roman exiles",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Ancient Roman scholars of religion",
+            "Classical humanists",
+            "Deaths by edged and bladed weapons",
+            "Executed ancient Roman people",
+            "Executed philosophers",
+            "Executed writers",
+            "Golden Age Latin writers",
+            "Letter writers in Latin",
+            "Optimates",
+            "People executed by the Roman Republic",
+            "People from Arpino",
+            "Plebeian aediles",
+            "Philosophers of Roman Italy",
+            "Recipients of ancient Roman pardons",
+            "Roman governors of Cilicia"
+          ],
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Manichaeus",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "and compared them with the saying of Manichaeus, which in his frenzy he had written most largely on these subjects; but discovered not any account of the solstices, or equinoxes, or the eclipses of the greater lights, nor whatever of this sort I had learned in the books of secular philosophy.",
+          "But yet who bade that Manichaeus write on these things also, skill in which was no element of piety?",
+          "For he would not have himself meanly thought of, but went about to persuade men, \"That the Holy Ghost, the Comforter and Enricher of Thy faithful ones, was with plenary authority personally within him.\"",
+          "But I had not as yet clearly ascertained whether the vicissitudes of longer and shorter days and nights, and of day and night itself, with the eclipses of the greater lights, and whatever else of the kind I had read of in other books, might be explained consistently with his sayings; so that, if they by any means might, it should still remain a question to me whether it were so or no; but I might, on account of his reputed sanctity, rest my credence upon his authority.",
+          "For almost all those nine years, wherein with unsettled mind I had been their disciple, I had longed but too intensely for the coming of this Faustus."
+        ],
+        "commentaries": [
+          "The author compares his own scientific observations with the writings of Manichaeus, finding them lacking.",
+          "The author questions why Manichaeus wrote on matters unrelated to piety.",
+          "The author reports that Manichaeus claimed to have the Holy Spirit with full authority within him.",
+          "The author had not yet determined whether natural phenomena could be explained by Manichaeus's teachings, and considered relying on his authority.",
+          "The author mentions his long anticipation for Faustus, a key figure in the Manichaean sect."
+        ],
+        "canonical_author": "Manichaeus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Manichaeus",
+        "birth_year": 216,
+        "death_year": 274
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Manichaeus",
+          "birth_year": 216,
+          "death_year": 274
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "On the Fair and Fit",
+        "author": "Augustine of Hippo",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And this consideration sprang up in my mind, out of my inmost heart, and I wrote 'on the fair and fit,' I think, two or three books."
+        ],
+        "commentaries": [
+          "The author mentions writing books on the subject of 'the fair and fit,' which he later refers to as having been dedicated to the orator Hierius."
+        ],
+        "canonical_author": "Augustine"
+      },
+      "goodreads_match": {
+        "title": "On the Fair and Fit",
+        "authors": [
+          "Augustine of Hippo"
+        ],
+        "original_year": 386,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Roman African",
+        "description": "An early lost work by Augustine, written around 386 AD, on aesthetics and ethics, mentioned in his Confessions.",
+        "book_id": "web_474693da",
+        "author_meta": {
+          "birth_year": 354,
+          "death_year": 430,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Augustine of Hippo",
+        "birth_year": 354,
+        "death_year": 430
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_474693da",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Augustine of Hippo",
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Master",
+        "author": "Augustine of Hippo",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "There is a book of ours entitled The Master; it is a dialogue between him and me."
+        ],
+        "commentaries": [
+          "Augustine mentions a book he authored, 'The Master', which records a dialogue between himself and his friend Adeodatus in his sixteenth year."
+        ],
+        "canonical_author": "Augustine"
+      },
+      "goodreads_match": {
+        "title": "De Magistro (The Teacher / The Master)",
+        "authors": [
+          "Augustine of Hippo"
+        ],
+        "original_year": 389,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Roman African",
+        "description": "A philosophical dialogue between Augustine and his son Adeodatus, exploring the nature of language and teaching.",
+        "book_id": "web_a05dd9ad",
+        "author_meta": {
+          "birth_year": 354,
+          "death_year": 430,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Augustine of Hippo",
+        "birth_year": 354,
+        "death_year": 430
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_a05dd9ad",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Augustine of Hippo",
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Genesis",
+        "author": "Moses",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I cannot believe that Thou gavest a less gift unto Moses Thy faithful servant, than I would wish or desire Thee to have given me, had I been born in the time he was, and hadst Thou set me in that office, that by the service of my heart and tongue those books might be dispensed, which for so long after were to profit all nations"
+        ],
+        "commentaries": [
+          "The author reflects on the gift of writing given to Moses for the book of Genesis, wishing he had been given similar eloquence for the same task."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Genesis",
+        "authors": [
+          "Moses"
+        ],
+        "original_year": -1400,
+        "birth_year": 0,
+        "death_year": 0,
+        "nationality": "Hebrew",
+        "description": "First book of the Bible, traditionally attributed to Moses.",
+        "book_id": "web_3b15caf6",
+        "author_meta": {
+          "birth_year": 1730,
+          "canonical_name": "Moses Harris",
+          "death_year": 1788,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Moses",
+        "birth_year": 1730,
+        "death_year": 1788
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_3b15caf6",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Moses",
+          "birth_year": 1730,
+          "death_year": 1788
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Isaiah",
+        "author": "Isaiah",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "He recommended Isaiah the Prophet: I believe, because he above the rest is a more clear foreshower of the Gospel and of the calling of the Gentiles."
+        ],
+        "commentaries": [
+          "The author notes that Ambrose recommended the book of Isaiah, and that he initially found it difficult."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Book of Isaiah",
+        "authors": [
+          "Isaiah"
+        ],
+        "original_year": -700,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Israelite",
+        "description": "A prophetic book in the Hebrew Bible/Old Testament, attributed to the prophet Isaiah, traditionally dated to the 8th century BCE.",
+        "book_id": "web_5d2c6e45",
+        "author_meta": {
+          "birth_year": 1935,
+          "canonical_name": "Isaiah Shachar",
+          "death_year": 1977,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Isaiah",
+        "birth_year": 1935,
+        "death_year": 1977
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_5d2c6e45",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Isaiah",
+          "birth_year": 1935,
+          "death_year": 1977
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Paul the Apostle",
+        "note": null,
+        "count": 12,
+        "contexts": [
+          "Ye were sometimes darkness, but now light in the Lord.",
+          "That Thy Apostle may say to them, Ye were sometimes darkness, but now light in the Lord.",
+          "Hence let him that is able, follow with his understanding Thy Apostle, where he thus speaks, Because Thy love is shed abroad in our hearts by the Holy Ghost which is given unto us: and where concerning spiritual gifts, he teacheth and showeth unto us a more excellent way of charity; and where he bows his knee unto Thee for us, that we may know the supereminent knowledge of the love of Christ.",
+          "And the fowl, though bred in the sea, is yet multiplied upon the earth. For of the first preachings of the Evangelists, man's infidelity was the cause; yet are the faithful also exhorted and blessed by them manifoldly, from day to day.",
+          "For thus do men hear, so as not to hear only, but to do also. Seek the Lord, and your soul shall live, that the earth may bring forth the living soul.",
+          "Be not conformed to the world. Contain yourselves from it: the soul lives by avoiding what it dies by affecting.",
+          "Be ye (saith he) as I am, for I also am as you are.",
+          "For to this purpose said that dispenser of Thine (who begat children by the Gospel), that he might not for ever have them babes, whom he must be fain to feed with milk, and cherish as a nurse; be ye transformed (saith he) by the renewing of your mind, that ye may prove what is that good and acceptable and perfect will of God.",
+          "Wherefore to that said in the plural, Let us make man, is yet subjoined in the singular, And God made man: and to that said in the plural, After our likeness, is subjoined in the singular, After the image of God.",
+          "And yet even that least of Thy apostles, by whose tongue Thou soundedst forth these words, when through his warfare, Paulus the Proconsul, his pride conquered, was made to pass under the easy yoke of Thy Christ, and became a provincial of the great King; he also for his former name Saul, was pleased to be called Paul, in testimony of so great a victory.",
+          "it happened that upon a table for some game, before us, he observed a book, took, opened it, and contrary to his expectation, found it the Apostle Paul; for he thought it some of those books which I was wearing myself in teaching.",
+          "Such an earth was the devout Onesiphorus, unto whose house Thou gavest mercy, because he often refreshed Thy Paul, and was not ashamed of his chain."
+        ],
+        "commentaries": [
+          "The author (Augustine) quotes the Apostle Paul's teaching on the transformation from darkness to light in the Lord.",
+          "The author invokes the authority of the Apostle Paul to address those who hold erroneous views about the soul.",
+          "The author cites the Apostle Paul as a source of ideas regarding charity and spiritual gifts, referencing his teachings in the New Testament.",
+          "The author mentions the Evangelists' preachings, referencing Paul's role in spreading the Gospel, though no specific book is named.",
+          "The author echoes Paul's exhortation to seek the Lord, as found in the Psalms and adapted by Paul in his epistles.",
+          "The author directly quotes and paraphrases Paul's instruction in Romans 12:2, 'Be not conformed to this world.'",
+          "The author refers to Paul's statement of identification with his audience, likely from 1 Corinthians.",
+          "The author cites Paul as a dispensary of the Gospel, referencing his teaching on spiritual maturity and transformation in Romans 12:2.",
+          "The author reflects on Paul's teaching about the renewal of the mind and the image of God in man, as in Colossians 3:10.",
+          "The author references the Apostle Paul as a real historical author and figure whose name change marked a victory; this serves as an example of conversion.",
+          "Augustine recounts how Pontitianus found a book containing the writings of the Apostle Paul, which led to a conversation about Christian devotion.",
+          "The author references the Apostle Paul as a source of ideas, citing his experiences and teachings as recorded in the New Testament."
+        ],
+        "canonical_author": "Paul The Apostle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Paul the Apostle",
+        "birth_year": 5,
+        "death_year": 67
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Paul the Apostle",
+          "birth_year": 5,
+          "death_year": 67
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Hortensius",
+        "author": "Marcus Tullius Cicero",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "In the ordinary course of study, I fell upon a certain book of Cicero, whose speech almost all admire, not so his heart. This book of his contains an exhortation to philosophy, and is called \"Hortensius.\"",
+          "upon the reading of Cicero's Hortensius, I was stirred to an earnest love of wisdom"
+        ],
+        "commentaries": [
+          "Augustine describes how reading this book altered his affections and turned his prayers to God, making him long for wisdom.",
+          "Augustine describes how reading this book in his youth ignited his love for wisdom."
+        ],
+        "canonical_author": "Cicero"
+      },
+      "goodreads_match": {
+        "title": "Hortensius",
+        "authors": [
+          "Marcus Tullius Cicero"
+        ],
+        "original_year": -45,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Roman",
+        "description": "Lost philosophical dialogue by Cicero, written in 45 BC, urging the pursuit of philosophy.",
+        "book_id": "web_ed3e69ec",
+        "author_meta": {
+          "birth_year": -106,
+          "death_year": -43,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Marcus Tullius Cicero",
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_ed3e69ec",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Marcus Tullius Cicero",
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Faustus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "There had then come to Carthage a certain Bishop of the Manichees, Faustus by name, a great snare of the Devil, and many were entangled by him through that lure of his smooth language",
+          "lo, Faustus the Manichee will come, and clear every thing!"
+        ],
+        "commentaries": [
+          "The author mentions Faustus as a Manichaean bishop whose eloquence and reputation for learning attracted him, but he came to separate the man's rhetorical skill from the truth he sought.",
+          "The author references Faustus the Manichee as a source whose arrival is anticipated for clarifying matters."
+        ],
+        "canonical_author": "Faustus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Faustus",
+        "birth_year": 300,
+        "death_year": 400
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Faustus",
+          "birth_year": 300,
+          "death_year": 400
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Terence",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "As if we should have never known such words as 'golden shower,' 'lap,' 'beguile,' 'temples of the heavens,' or others in that passage, unless Terence had brought a lewd youth upon the stage, setting up Jupiter as his example of seduction."
+        ],
+        "commentaries": [
+          "The author references Terence's play as an example of how literature can corrupt by presenting divine figures as models for immoral behavior."
+        ],
+        "canonical_author": "Terence"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Terence",
+        "birth_year": -195,
+        "death_year": -159
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Terence",
+          "birth_year": -195,
+          "death_year": -159
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Moses",
+        "note": null,
+        "count": 12,
+        "contexts": [
+          "according to which Abraham, and Isaac, and Jacob, and Moses, and David, were righteous",
+          "Of Him did Moses write; this saith Himself; this saith the Truth.",
+          "but the enemies thereof I hate vehemently; oh that Thou wouldest slay them with Thy two-edged sword, that they might no longer be enemies unto it: for so do I love to have them slain unto themselves, that they may live unto Thee. But behold others not faultfinders, but extollers of the book of Genesis; \"The Spirit of God,\" say they, \"Who by His servant Moses wrote these things, would not have those words thus understood; He would not have it understood, as thou sayest, but otherwise, as we say.\"",
+          "\"What say ye to me, O ye gainsayers that I was speaking unto, who yet believe Moses to have been the holy servant of God, and his books the oracles of the Holy Ghost?",
+          "For they say, \"Though these things be true, yet did not Moses intend those two, when, by revelation of the Spirit, he said, In the beginning God created heaven and earth.",
+          "Thy servant Moses to have spoken in the Spirit of truth",
+          "For I perceive, that whichsoever of the two had been said, it might have been truly said; but which of the two he thought of in these words, I do not so perceive.",
+          "By this if man demands of me, \"which of these was the meaning of Thy servant Moses\"; this were not the language of my Confessions, should I not confess unto Thee, \"I know not\"; and yet I know that those senses are true, those carnal ones excepted, of which I have spoken what seemed necessary.",
+          "Let the waters bring forth the moving creature that hath life, and the fowls that fly above the earth.",
+          "Let the waters bring forth, not the living creature which the earth brings forth, but the moving creature having life, and the fowls that fly above the earth.",
+          "For so man, though now spiritual and renewed in the knowledge of God after His image that created him, ought to be a doer of the law, not a judge.",
+          "Man therefore, whom Thou hast made after Thine own image, received not dominion over the lights of heaven, nor over that hidden heaven itself, nor over the day and the night, which Thou calledst before the foundation of the heaven, nor over the gathering together of the waters, which is the sea; but He received dominion over the fishes of the sea, and the fowls of the air, and over all cattle, and over all the earth, and over all creeping things which creep upon the earth."
+        ],
+        "commentaries": [
+          "The author lists Moses among the righteous patriarchs, citing the biblical figure as an example of righteousness in God's law.",
+          "Augustine references Moses as the author of the biblical text regarding creation, though he notes that he cannot directly ask Moses about its meaning.",
+          "The author references Moses as the servant of God who wrote the book of Genesis, and reports that others interpret Moses' words differently.",
+          "The author again refers to Moses as the holy servant of God and his books as the oracles of the Holy Ghost.",
+          "The author reports that his opponents claim Moses did not intend certain meanings in the creation account.",
+          "The author refers to Moses as the writer of the Genesis account, whose meaning he seeks to understand.",
+          "The author discusses the multiple possible interpretations of Moses' intention in writing the book of Genesis, but acknowledges he does not know which meaning Moses intended.",
+          "The author refers to Moses as the author of Scripture, discussing his intended meaning in the words attributed to him.",
+          "The author paraphrases the creation account in Genesis 1:20, attributed to Moses.",
+          "The author comments on the distinction in the Genesis creation narrative.",
+          "The author references the creation of man in God's image from Genesis 1:26-27.",
+          "The author reflects on the dominion given to man in Genesis 1:28."
+        ],
+        "canonical_author": "Moses"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Moses",
+        "birth_year": -1393,
+        "death_year": -1273
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Moses",
+          "birth_year": -1393,
+          "death_year": -1273
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ambrose",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "To Milan I came, to Ambrose the Bishop, known to the whole world as among the best of men, Thy devout servant; whose eloquent discourse did then plentifully dispense unto Thy people the flour of Thy wheat, the gladness of Thy oil, and the sober inebriation of Thy wine.",
+          "and she hastened the more eagerly to the Church, and hung upon the lips of Ambrose, praying for the fountain of that water, which springeth up unto life everlasting.",
+          "and with joy I heard Ambrose in his sermons to the people, oftentimes most diligently recommend this text for a rule, The letter killeth, but the Spirit giveth life;",
+          "And by letters I signified to Thy Prelate, the holy man Ambrose, my former errors and present desires, begging his advice what of Thy Scriptures I had best read, to become readier and fitter for receiving so great grace.",
+          "I remembered those true verses of Thy Ambrose."
+        ],
+        "commentaries": [
+          "The author describes Ambrose's preaching and his initial focus on his eloquence rather than the truth of his teachings.",
+          "The author describes his mother's devotion to Ambrose, whom she loved as an angel of God, and who influenced the author's faith.",
+          "The author recalls hearing Ambrose preach and recommend a scriptural rule, which helped him interpret the Scriptures spiritually.",
+          "The author mentions writing to Ambrose for advice on which Scriptures to read.",
+          "The author recalls verses by Ambrose, implying a reference to his hymns or writings."
+        ],
+        "canonical_author": "Ambrose"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Ambrose",
+        "birth_year": 340,
+        "death_year": 397
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Ambrose",
+          "birth_year": 340,
+          "death_year": 397
+        }
+      }
+    }
+  ]
+}

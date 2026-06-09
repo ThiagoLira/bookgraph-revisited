@@ -133,16 +133,44 @@ export function bakeLayout(authors, links) {
     a.x = worldWidth / 2 + jitter * worldWidth * 0.92;
   }
 
-  // Offline relaxation: pin Y, spread X via collision, weak centering.
+  // Offline relaxation. Y is hard-pinned per node via `fy` (d3 fixes any node
+  // with fy set and zeroes its vy), so every force below only moves nodes in X:
+  //   - link:    pull connected authors together horizontally; heavier
+  //              co-citation (count) pulls tighter, hub-normalized by degree so
+  //              high-degree nodes don't collapse the whole field.
+  //   - collide: keep circles from overlapping (sets the floor on closeness).
+  //   - x:       very weak centering so disconnected components don't drift off.
   const pad = n > 1500 ? 16 : n > 600 ? 20 : 26; // generous gaps (old desktop was 5)
+
+  // Disposable link copy: d3.forceLink rewrites source/target from id strings to
+  // node refs; the original `links` array must keep string ids for baked.json.
+  const simLinks = links.map((l) => ({ source: l.source, target: l.target, count: l.count }));
+  const degree = new Map();
+  for (const l of simLinks) {
+    degree.set(l.source, (degree.get(l.source) || 0) + 1);
+    degree.set(l.target, (degree.get(l.target) || 0) + 1);
+  }
+
   const sim = d3
     .forceSimulation(authors)
     .force("y", d3.forceY((d) => d.fy).strength(1))
-    .force("x", d3.forceX(worldWidth / 2).strength(0.008))
+    .force(
+      "link",
+      d3
+        .forceLink(simLinks)
+        .id((d) => d.id)
+        .distance((l) => (l.source.r || 8) + (l.target.r || 8) + 22)
+        .strength((l) => {
+          const w = Math.min(l.count || 1, 8) / 8; // 0.125–1 by co-citation weight
+          const k = 1 / Math.min(degree.get(l.source.id) || 1, degree.get(l.target.id) || 1);
+          return 0.5 * w * k; // hub-normalized attraction
+        })
+    )
+    .force("x", d3.forceX(worldWidth / 2).strength(0.004))
     .force("collide", d3.forceCollide((d) => d.r + pad).iterations(4))
     .stop();
 
-  const TICKS = 600;
+  const TICKS = 800;
   for (let i = 0; i < TICKS; i++) sim.tick();
 
   // Normalize bounding box -> margins, derive final world size.

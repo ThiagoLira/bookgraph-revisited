@@ -102,5 +102,15 @@
         "name": "The Hero With a Thousand Faces",
         "path": "./data/the_hero_with_a_thousand_faces",
         "baked": true
+    },
+    {
+        "name": "Nietzsche: The Birth of Tragedy",
+        "path": "./data/nietzsche_the_birth_of_tragedy",
+        "baked": true
+    },
+    {
+        "name": "Gutenberg Classics",
+        "path": "./data/gutenberg_classics",
+        "baked": true
     }
 ]

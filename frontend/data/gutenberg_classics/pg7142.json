@@ -1,0 +1,213 @@
+{
+  "source": {
+    "title": "History of the Peloponnesian War",
+    "authors": [
+      "Thucydides"
+    ],
+    "goodreads_id": "pg7142",
+    "calibre_id": null,
+    "work_id": "804111",
+    "text_reviews_count": 3,
+    "book_id": "4593395",
+    "format": "Paperback",
+    "title_without_series": "History of the Peloponnesian War",
+    "publication_year": 1972,
+    "num_pages": 648,
+    "average_rating": 3.87,
+    "author_ids": [
+      "957",
+      "192810"
+    ],
+    "ratings_count": 54,
+    "publisher": "Penguin Books (London)",
+    "description": "Thucydides' book is now entitled History of the Peloponnesian War. His entire contribution to history & historiography is contained in this dense history of the 27-year war between Athens & allies against Sparta & its allies. It breaks off near the end of the 21st year. Thucydides believed the war represented an event of unparalleled magnitude. He intended his account to serve as \"a possession for all time.\"\nThucydides is regarded as one of the 1st true historians. Like his predecessor Herodotus, he places....",
+    "link": "https://www.goodreads.com/book/show/4593395-history-of-the-peloponnesian-war",
+    "author_metadata": {
+      "birth_year": -460,
+      "death_year": -400,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Hesiod",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "After bivouacking with the army in the precinct of Nemean Zeus, in which the poet Hesiod is said to have been killed by the people of the country, according to an oracle which had foretold that he should die in Nemea, Demosthenes set out at daybreak to invade Aetolia."
+        ],
+        "commentaries": [
+          "Thucydides references the poet Hesiod in a brief aside about the location where his army camped, noting the tradition of his death in Nemea."
+        ],
+        "canonical_author": "Hesiod"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hesiod",
+        "page_id": 13700,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Hesiod| ",
+          "8th-century BC births",
+          "8th-century BC Greek poets",
+          "Ancient Boeotian poets",
+          "Ancient Greek didactic poets",
+          "Year of death unknown",
+          "8th-century BC philosophers",
+          "7th-century BC Greek philosophers"
+        ],
+        "birth_year": -750,
+        "death_year": -650
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1691"
+        ],
+        "target_person": {
+          "title": "Hesiod",
+          "page_id": 13700,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Hesiod| ",
+            "8th-century BC births",
+            "8th-century BC Greek poets",
+            "Ancient Boeotian poets",
+            "Ancient Greek didactic poets",
+            "Year of death unknown",
+            "8th-century BC philosophers",
+            "7th-century BC Greek philosophers"
+          ],
+          "birth_year": -750,
+          "death_year": -650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Iliad",
+        "author": "Homer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "this at least is what Homer says, if his testimony is deemed sufficient."
+        ],
+        "commentaries": [
+          "The author references Homer's account of the Trojan War to support the size of Agamemnon's navy."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "3293141",
+        "text_reviews_count": 9,
+        "publication_month": 6,
+        "book_id": "7105277",
+        "format": "Paperback",
+        "title_without_series": "Iliad",
+        "isbn13": "9781848373259",
+        "publication_year": 2009,
+        "num_pages": 414,
+        "average_rating": 3.83,
+        "author_ids": [
+          "903"
+        ],
+        "ratings_count": 69,
+        "title": "Iliad",
+        "publication_day": 30,
+        "publisher": "Book Sales, Inc.",
+        "isbn": "1848373252",
+        "authors": [
+          "Homer"
+        ],
+        "description": "This groundbreaking English version by Robert Fagles is the most important recent translation of Homer's great epic poem. The verse translation has been hailed by scholars as the new standard, providing an Iliad that delights modern sensibility and aesthetic without sacrificing the grandeur and particular genius of Homer's own style and language. The Iliad is one of the two great epics of Homer, and is typically described as one of the greatest war stories of all time, but to say the Iliad is a war story do...",
+        "link": "https://www.goodreads.com/book/show/7105277-iliad",
+        "original_year": -800,
+        "author_meta": {
+          "birth_year": -850,
+          "death_year": -800,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "7105277",
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hellanicus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Hellanicus, it is true, did touch on these events in his Athenian history; but he is somewhat concise and not accurate in his dates."
+        ],
+        "commentaries": [
+          "The author mentions Hellanicus as a predecessor who wrote about the same events, but criticizes his conciseness and inaccuracy in dating."
+        ],
+        "canonical_author": "Hellanicus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hellanicus of Lesbos",
+        "page_id": 1472614,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "490 BC births",
+          "405 BC deaths",
+          "Ancient Mytileneans",
+          "Classical-era Greek historians",
+          "5th-century BC Greek historians",
+          "Ancient Italian history"
+        ],
+        "birth_year": -490,
+        "death_year": -405
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Hellanicus of Lesbos",
+          "page_id": 1472614,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "490 BC births",
+            "405 BC deaths",
+            "Ancient Mytileneans",
+            "Classical-era Greek historians",
+            "5th-century BC Greek historians",
+            "Ancient Italian history"
+          ],
+          "birth_year": -490,
+          "death_year": -405
+        }
+      }
+    }
+  ]
+}

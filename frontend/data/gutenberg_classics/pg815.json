@@ -1,0 +1,2108 @@
+{
+  "source": {
+    "title": "Democracy in America",
+    "authors": [
+      "Alexis de Tocqueville"
+    ],
+    "goodreads_id": "pg815",
+    "calibre_id": null,
+    "title_without_series": "Democracy in America",
+    "work_id": "90454",
+    "publication_month": 8,
+    "book_id": "1322105",
+    "isbn": "0393929868",
+    "ratings_count": 13,
+    "author_ids": [
+      "465"
+    ],
+    "isbn13": "9780393929867",
+    "average_rating": 3.99,
+    "publisher": "W. W. Norton & Company",
+    "format": "Paperback",
+    "publication_year": 2007,
+    "text_reviews_count": 2,
+    "publication_day": 21,
+    "description": "It is accompanied by detailed explanatory annotations and an introduction addressing Democracy in America s canonic and iconic place in American life. Backgrounds includes seven letters offering Tocqueville s impressions of his nine-and-a-half month journey through the United States. Nine contemporary reviews, both American and European, trace Democracy in America s varied initial reception. Thirteen Interpretations gauge Tocqueville s influence on American political thought and on democracy s legacy. Contr...",
+    "link": "https://www.goodreads.com/book/show/1322105.Democracy_in_America",
+    "author_metadata": {
+      "birth_year": 1805,
+      "death_year": 1859,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Tacitus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "When I perceive the resemblance which exists between the political institutions of our ancestors, the Germans, and of the wandering tribes of North America; between the customs described by Tacitus, and those of which I have sometimes been a witness, I cannot help thinking that the same cause has brought about the same results in both hemispheres; and that in the midst of the apparent diversity of human affairs, a certain number of primary facts may be discovered, from which all the others are derived."
+        ],
+        "commentaries": [
+          "The author references Tacitus as the source of descriptions of ancient German customs, comparing them to those of North American tribes."
+        ],
+        "canonical_author": "Tacitus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Tacitus",
+        "page_id": 19594563,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "Tacitus| ",
+          "1st-century Gallo-Roman people",
+          "1st-century writers in Latin",
+          "1st-century historians",
+          "2nd-century Gallo-Roman people",
+          "2nd-century historians",
+          "2nd-century writers in Latin",
+          "50s births",
+          "120s deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Cornelii",
+          "Latin historians",
+          "Roman governors of Asia",
+          "Ancient Roman biographers",
+          "Senators of the Roman Empire",
+          "Silver Age Latin writers",
+          "Suffect consuls of Imperial Rome"
+        ],
+        "birth_year": 56,
+        "death_year": 120
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2936846"
+        ],
+        "target_person": {
+          "title": "Tacitus",
+          "page_id": 19594563,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "Tacitus| ",
+            "1st-century Gallo-Roman people",
+            "1st-century writers in Latin",
+            "1st-century historians",
+            "2nd-century Gallo-Roman people",
+            "2nd-century historians",
+            "2nd-century writers in Latin",
+            "50s births",
+            "120s deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Cornelii",
+            "Latin historians",
+            "Roman governors of Asia",
+            "Ancient Roman biographers",
+            "Senators of the Roman Empire",
+            "Silver Age Latin writers",
+            "Suffect consuls of Imperial Rome"
+          ],
+          "birth_year": 56,
+          "death_year": 120
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Moliere",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Moliere criticised the courtiers in the very pieces which were acted before the Court."
+        ],
+        "commentaries": [
+          "The author cites Moliere as an example of a writer who openly criticized the courtiers of his time."
+        ],
+        "canonical_author": "Moliere"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Molière",
+        "page_id": 51465,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "Molière| ",
+          "1622 births",
+          "1673 deaths",
+          "Male actors from Paris",
+          "17th-century French dramatists and playwrights",
+          "17th-century French male writers",
+          "17th-century French poets",
+          "French satirists",
+          "French satirical dramatists and playwrights",
+          "Lycée Louis-le-Grand alumni",
+          "Burials at Père Lachaise Cemetery",
+          "17th-century French male actors",
+          "French male stage actors",
+          "17th-century deaths from tuberculosis",
+          "Deaths onstage",
+          "Man in the Iron Mask",
+          "17th-century pseudonymous writers",
+          "17th-century theatre managers",
+          "Tuberculosis deaths in France"
+        ],
+        "birth_year": 1622,
+        "death_year": 1673
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "29837"
+        ],
+        "target_person": {
+          "title": "Molière",
+          "page_id": 51465,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "Molière| ",
+            "1622 births",
+            "1673 deaths",
+            "Male actors from Paris",
+            "17th-century French dramatists and playwrights",
+            "17th-century French male writers",
+            "17th-century French poets",
+            "French satirists",
+            "French satirical dramatists and playwrights",
+            "Lycée Louis-le-Grand alumni",
+            "Burials at Père Lachaise Cemetery",
+            "17th-century French male actors",
+            "French male stage actors",
+            "17th-century deaths from tuberculosis",
+            "Deaths onstage",
+            "Man in the Iron Mask",
+            "17th-century pseudonymous writers",
+            "17th-century theatre managers",
+            "Tuberculosis deaths in France"
+          ],
+          "birth_year": 1622,
+          "death_year": 1673
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The author mentions Plato in the context of philosophical ideas."
+        ],
+        "commentaries": [
+          "No valid citation for Plato found in the provided excerpt."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Federalist",
+        "author": "Alexander Hamilton, James Madison, John Jay",
+        "note": null,
+        "count": 6,
+        "contexts": [
+          "“The Federalist” (No. 77) seemed to establish the affirmative; but in 1789 Congress formally decided that, as the President was responsible for his actions, he ought not to be forced to employ agents who had forfeited his esteem.",
+          "three men, who had already acquired a portion of that celebrity which they have since enjoyed—John Jay, Hamilton, and Madison—formed an association with the intention of explaining to the nation the advantages of the measure which was proposed.",
+          "“Tax laws,” says Hamilton in the “Federalist” (No. 12), “have in vain been multiplied; new methods to enforce the collection have in vain been tried; the public expectation has been uniformly disappointed and the treasuries of the States have remained empty.”",
+          "Mr. Hamilton expresses the same opinion in the “Federalist,” No. 51."
+        ],
+        "commentaries": [
+          "The author cites The Federalist as a source that initially supported the interpretation that the President needed Senate consent for removals.",
+          "The author mentions Hamilton as one of the authors of The Federalist papers.",
+          "The author quotes Hamilton's argument from The Federalist about the failure of tax collection under the popular system of government.",
+          "The author cites Hamilton's opinion from The Federalist to support the argument about the dangers of majority tyranny.",
+          "The author mentions Madison as one of the authors of The Federalist papers.",
+          "The author mentions John Jay as one of the authors of The Federalist papers."
+        ]
+      },
+      "goodreads_match": {
+        "title_without_series": "The Federalist",
+        "work_id": "707252",
+        "publication_month": 10,
+        "book_id": "996373",
+        "isbn": "0521001218",
+        "ratings_count": 11,
+        "author_ids": [
+          "51287",
+          "63859",
+          "63860"
+        ],
+        "isbn13": "9780521001212",
+        "average_rating": 4.05,
+        "publisher": "Cambridge University Press",
+        "format": "paper",
+        "title": "The Federalist",
+        "publication_year": 2015,
+        "text_reviews_count": 1,
+        "publication_day": 2,
+        "authors": [
+          "Alexander Hamilton",
+          "James Madison",
+          "John Jay"
+        ],
+        "description": "The Federalist represents one side of one of the most momentous political debates ever conducted: whether to ratify, or to reject, the newly drafted American constitution. This authoritative new edition presents complete texts for all of the eighty-five Federalist papers, along with the sixteen letters of \"Brutus,\" the unknown New York Antifederalist. Each paper is systematically cross-referenced to the other, and both to the appended Articles of Confederation and U.S. Constitution. Terence Ball's editing s...",
+        "link": "https://www.goodreads.com/book/show/996373.The_Federalist",
+        "original_year": 2003,
+        "author_meta": {
+          "death_year": 1804,
+          "canonical_name": "Alexander Hamilton"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Alexander Hamilton",
+        "death_year": 1804
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "996373",
+        "target_author_ids": [
+          "51287",
+          "63859",
+          "63860"
+        ],
+        "target_person": {
+          "title": "Alexander Hamilton",
+          "death_year": 1804
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Notes on the State of Virginia",
+        "author": "Thomas Jefferson",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "We learn from President Jefferson's \"Notes upon Virginia,\" p. 148, that among the Iroquois, when attacked by a superior force, aged men refused to fly or to survive the destruction of their country; and they braved death like the ancient Romans when their capital was sacked by the Gauls.",
+          "See “Histoire de la Louisiane,” by Lepage Dupratz; Charlevoix, “Histoire de la Nouvelle France”; “Lettres du Rev. G. Hecwelder;” “Transactions of the American Philosophical Society,” v. I; Jefferson’s “Notes on Virginia,” pp. 135-190."
+        ],
+        "commentaries": [
+          "The author cites Jefferson's book as a source for examples of Iroquois bravery and resistance.",
+          "The author cites Jefferson's work as a source of especial weight on the character of primitive peoples."
+        ]
+      },
+      "goodreads_match": {
+        "num_pages": 342,
+        "title_without_series": "Notes on the State of Virginia",
+        "work_id": "294213",
+        "publication_month": 2,
+        "book_id": "1230425",
+        "isbn": "0807845884",
+        "ratings_count": 287,
+        "author_ids": [
+          "1673"
+        ],
+        "isbn13": "9780807845882",
+        "average_rating": 3.49,
+        "publisher": "University of North Carolina Press",
+        "format": "Paperback",
+        "title": "Notes on the State of Virginia",
+        "publication_year": 1996,
+        "text_reviews_count": 15,
+        "publication_day": 1,
+        "authors": [
+          "Thomas Jefferson"
+        ],
+        "description": "A request in 1780 by the French legation to the United States to learn more about the newly formed thirteen states of America stimulated in Jefferson, as he later described it, a \"mysterious obligation for making me much better acquainted with my own country than I ever was before.\" Written during his first term as governor of Virginia, Notes on the State of Virginia is at once a scientific discourse, an attempt to define America, and an examination of the idea of freedom. With the same genius and clear, fl...",
+        "link": "https://www.goodreads.com/book/show/1230425.Notes_on_the_State_of_Virginia",
+        "wikipedia_match": {
+          "title": "Thomas Jefferson",
+          "page_id": 29922,
+          "infoboxes": [
+            "officeholder",
+            "philosopher",
+            "U.S. Cabinet"
+          ],
+          "categories": [
+            "Thomas Jefferson| ",
+            "1743 births",
+            "1800s in the United States",
+            "1826 deaths",
+            "18th-century American letter writers",
+            "18th-century American philosophers",
+            "18th-century cryptographers",
+            "18th-century vice presidents of the United States",
+            "19th-century American letter writers",
+            "19th-century American philosophers",
+            "19th-century presidents of the United States",
+            "19th-century vice presidents of the United States",
+            "19th-century Virginia politicians",
+            "Ambassadors of the United States to France",
+            "American architects",
+            "American bibliophiles",
+            "American book and manuscript collectors",
+            "American deists",
+            "American foreign policy writers",
+            "American free speech activists",
+            "American gardeners",
+            "American lawyers admitted to the practice of law by reading law",
+            "American libertarians",
+            "American male non-fiction writers",
+            "American neoclassical architects",
+            "18th-century American planters",
+            "American political party founders",
+            "American political philosophers",
+            "American political writers",
+            "American religious skeptics"
+          ],
+          "birth_year": 1743,
+          "death_year": 1772
+        },
+        "original_year": 1785,
+        "author_meta": {
+          "birth_year": 1743,
+          "death_year": 1772,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Thomas Jefferson",
+        "page_id": 29922,
+        "infoboxes": [
+          "officeholder",
+          "philosopher",
+          "U.S. Cabinet"
+        ],
+        "categories": [
+          "Thomas Jefferson| ",
+          "1743 births",
+          "1800s in the United States",
+          "1826 deaths",
+          "18th-century American letter writers",
+          "18th-century American philosophers",
+          "18th-century cryptographers",
+          "18th-century vice presidents of the United States",
+          "19th-century American letter writers",
+          "19th-century American philosophers",
+          "19th-century presidents of the United States",
+          "19th-century vice presidents of the United States",
+          "19th-century Virginia politicians",
+          "Ambassadors of the United States to France",
+          "American architects",
+          "American bibliophiles",
+          "American book and manuscript collectors",
+          "American deists",
+          "American foreign policy writers",
+          "American free speech activists",
+          "American gardeners",
+          "American lawyers admitted to the practice of law by reading law",
+          "American libertarians",
+          "American male non-fiction writers",
+          "American neoclassical architects",
+          "18th-century American planters",
+          "American political party founders",
+          "American political philosophers",
+          "American political writers",
+          "American religious skeptics"
+        ],
+        "birth_year": 1743,
+        "death_year": 1772
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1230425",
+        "target_author_ids": [
+          "1673"
+        ],
+        "target_person": {
+          "title": "Thomas Jefferson",
+          "page_id": 29922,
+          "infoboxes": [
+            "officeholder",
+            "philosopher",
+            "U.S. Cabinet"
+          ],
+          "categories": [
+            "Thomas Jefferson| ",
+            "1743 births",
+            "1800s in the United States",
+            "1826 deaths",
+            "18th-century American letter writers",
+            "18th-century American philosophers",
+            "18th-century cryptographers",
+            "18th-century vice presidents of the United States",
+            "19th-century American letter writers",
+            "19th-century American philosophers",
+            "19th-century presidents of the United States",
+            "19th-century vice presidents of the United States",
+            "19th-century Virginia politicians",
+            "Ambassadors of the United States to France",
+            "American architects",
+            "American bibliophiles",
+            "American book and manuscript collectors",
+            "American deists",
+            "American foreign policy writers",
+            "American free speech activists",
+            "American gardeners",
+            "American lawyers admitted to the practice of law by reading law",
+            "American libertarians",
+            "American male non-fiction writers",
+            "American neoclassical architects",
+            "18th-century American planters",
+            "American political party founders",
+            "American political philosophers",
+            "American political writers",
+            "American religious skeptics"
+          ],
+          "birth_year": 1743,
+          "death_year": 1772
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Commentaries on the Constitution of the United States",
+        "author": "Joseph Story",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "It is perfectly clear, says Mr. Story (“Commentaries,” p. 503, or in the large edition Section 1379), that any law which enlarges, abridges, or in any manner changes the intention of the parties, resulting from the stipulations in the contract, necessarily impairs it.",
+          "A remarkable instance of this is given by Mr. Story (p. 508, or in the large edition Section 1388): “Dartmouth College in New Hampshire had been founded by a charter granted to certain individuals before the American Revolution, and its trustees formed a corporation under this charter."
+        ],
+        "commentaries": [
+          "The author quotes Mr. Story's 'Commentaries' to define what constitutes impairment of a contract under Federal jurisprudence.",
+          "The author cites Mr. Story's 'Commentaries' for an example of a contract case involving Dartmouth College."
+        ]
+      },
+      "goodreads_match": {
+        "title_without_series": "Commentaries On The Constitution Of The United States",
+        "work_id": "2534089",
+        "book_id": "9376537",
+        "isbn": "0837726468",
+        "ratings_count": 2,
+        "author_ids": [
+          "253990"
+        ],
+        "isbn13": "9780837726465",
+        "average_rating": 4.1,
+        "title": "Commentaries On The Constitution Of The United States",
+        "text_reviews_count": 1,
+        "authors": [
+          "Joseph Story"
+        ],
+        "description": "This work has been selected by scholars as being culturally important, and is part of the knowledge base of civilization as we know it. This work was reproduced from the original artifact, and remains as true to the original work as possible. Therefore, you will see the original copyright references, library stamps (as most of these works have been housed in our most important libraries around the world), and other notations in the work. This work is in the public domain in the United States of America, and...",
+        "link": "https://www.goodreads.com/book/show/9376537-commentaries-on-the-constitution-of-the-united-states",
+        "wikipedia_match": {
+          "title": "Joseph Story",
+          "page_id": 273827,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1779 births",
+            "1845 deaths",
+            "19th-century American judges",
+            "American Unitarians",
+            "Burials at Mount Auburn Cemetery",
+            "Conflict of laws scholars",
+            "Democratic-Republican Party members of the United States House of Representatives from Massachusetts",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Hall of Fame for Great Americans inductees",
+            "Harvard University alumni",
+            "Harvard Law School faculty",
+            "Members of the Massachusetts House of Representatives",
+            "Speakers of the Massachusetts House of Representatives",
+            "Politicians from Marblehead, Massachusetts",
+            "American scholars of constitutional law",
+            "United States federal judges appointed by James Madison",
+            "Justices of the Supreme Court of the United States",
+            "United States federal judges admitted to the practice of law by reading law",
+            "District attorneys in Essex County, Massachusetts",
+            "19th-century members of the United States House of Representatives",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1779,
+          "death_year": 1845
+        },
+        "original_year": 2015,
+        "author_meta": {
+          "birth_year": 1779,
+          "death_year": 1845,
+          "canonical_name": "Joseph Story"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Joseph Story",
+        "page_id": 273827,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "1779 births",
+          "1845 deaths",
+          "19th-century American judges",
+          "American Unitarians",
+          "Burials at Mount Auburn Cemetery",
+          "Conflict of laws scholars",
+          "Democratic-Republican Party members of the United States House of Representatives from Massachusetts",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Hall of Fame for Great Americans inductees",
+          "Harvard University alumni",
+          "Harvard Law School faculty",
+          "Members of the Massachusetts House of Representatives",
+          "Speakers of the Massachusetts House of Representatives",
+          "Politicians from Marblehead, Massachusetts",
+          "American scholars of constitutional law",
+          "United States federal judges appointed by James Madison",
+          "Justices of the Supreme Court of the United States",
+          "United States federal judges admitted to the practice of law by reading law",
+          "District attorneys in Essex County, Massachusetts",
+          "19th-century members of the United States House of Representatives",
+          "Members of the American Philosophical Society"
+        ],
+        "birth_year": 1779,
+        "death_year": 1845
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "9376537",
+        "target_author_ids": [
+          "253990"
+        ],
+        "target_person": {
+          "title": "Joseph Story",
+          "page_id": 273827,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1779 births",
+            "1845 deaths",
+            "19th-century American judges",
+            "American Unitarians",
+            "Burials at Mount Auburn Cemetery",
+            "Conflict of laws scholars",
+            "Democratic-Republican Party members of the United States House of Representatives from Massachusetts",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Hall of Fame for Great Americans inductees",
+            "Harvard University alumni",
+            "Harvard Law School faculty",
+            "Members of the Massachusetts House of Representatives",
+            "Speakers of the Massachusetts House of Representatives",
+            "Politicians from Marblehead, Massachusetts",
+            "American scholars of constitutional law",
+            "United States federal judges appointed by James Madison",
+            "Justices of the Supreme Court of the United States",
+            "United States federal judges admitted to the practice of law by reading law",
+            "District attorneys in Essex County, Massachusetts",
+            "19th-century members of the United States House of Representatives",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1779,
+          "death_year": 1845
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Commentaries",
+        "author": "Joseph Story",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "See Story’s “Commentaries,” p. 624, or in the large edition Section 1677."
+        ],
+        "commentaries": [
+          "The author cites Story's Commentaries as a reference for the constitutional question regarding suits against a State."
+        ]
+      },
+      "goodreads_match": {
+        "title_without_series": "Commentaries On The Constitution Of The United States",
+        "work_id": "2534089",
+        "book_id": "9376537",
+        "isbn": "0837726468",
+        "ratings_count": 2,
+        "author_ids": [
+          "253990"
+        ],
+        "isbn13": "9780837726465",
+        "average_rating": 4.1,
+        "title": "Commentaries On The Constitution Of The United States",
+        "text_reviews_count": 1,
+        "authors": [
+          "Joseph Story"
+        ],
+        "description": "This work has been selected by scholars as being culturally important, and is part of the knowledge base of civilization as we know it. This work was reproduced from the original artifact, and remains as true to the original work as possible. Therefore, you will see the original copyright references, library stamps (as most of these works have been housed in our most important libraries around the world), and other notations in the work. This work is in the public domain in the United States of America, and...",
+        "link": "https://www.goodreads.com/book/show/9376537-commentaries-on-the-constitution-of-the-united-states",
+        "wikipedia_match": {
+          "title": "Joseph Story",
+          "page_id": 273827,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1779 births",
+            "1845 deaths",
+            "19th-century American judges",
+            "American Unitarians",
+            "Burials at Mount Auburn Cemetery",
+            "Conflict of laws scholars",
+            "Democratic-Republican Party members of the United States House of Representatives from Massachusetts",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Hall of Fame for Great Americans inductees",
+            "Harvard University alumni",
+            "Harvard Law School faculty",
+            "Members of the Massachusetts House of Representatives",
+            "Speakers of the Massachusetts House of Representatives",
+            "Politicians from Marblehead, Massachusetts",
+            "American scholars of constitutional law",
+            "United States federal judges appointed by James Madison",
+            "Justices of the Supreme Court of the United States",
+            "United States federal judges admitted to the practice of law by reading law",
+            "District attorneys in Essex County, Massachusetts",
+            "19th-century members of the United States House of Representatives",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1779,
+          "death_year": 1845
+        },
+        "original_year": 2015,
+        "author_meta": {
+          "birth_year": 1779,
+          "death_year": 1845,
+          "main_genre": null,
+          "nationality": null,
+          "canonical_name": "Joseph Story"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Joseph Story",
+        "page_id": 273827,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "1779 births",
+          "1845 deaths",
+          "19th-century American judges",
+          "American Unitarians",
+          "Burials at Mount Auburn Cemetery",
+          "Conflict of laws scholars",
+          "Democratic-Republican Party members of the United States House of Representatives from Massachusetts",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Hall of Fame for Great Americans inductees",
+          "Harvard University alumni",
+          "Harvard Law School faculty",
+          "Members of the Massachusetts House of Representatives",
+          "Speakers of the Massachusetts House of Representatives",
+          "Politicians from Marblehead, Massachusetts",
+          "American scholars of constitutional law",
+          "United States federal judges appointed by James Madison",
+          "Justices of the Supreme Court of the United States",
+          "United States federal judges admitted to the practice of law by reading law",
+          "District attorneys in Essex County, Massachusetts",
+          "19th-century members of the United States House of Representatives",
+          "Members of the American Philosophical Society"
+        ],
+        "birth_year": 1779,
+        "death_year": 1845
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "9376537",
+        "target_author_ids": [
+          "253990"
+        ],
+        "target_person": {
+          "title": "Joseph Story",
+          "page_id": 273827,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1779 births",
+            "1845 deaths",
+            "19th-century American judges",
+            "American Unitarians",
+            "Burials at Mount Auburn Cemetery",
+            "Conflict of laws scholars",
+            "Democratic-Republican Party members of the United States House of Representatives from Massachusetts",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Hall of Fame for Great Americans inductees",
+            "Harvard University alumni",
+            "Harvard Law School faculty",
+            "Members of the Massachusetts House of Representatives",
+            "Speakers of the Massachusetts House of Representatives",
+            "Politicians from Marblehead, Massachusetts",
+            "American scholars of constitutional law",
+            "United States federal judges appointed by James Madison",
+            "Justices of the Supreme Court of the United States",
+            "United States federal judges admitted to the practice of law by reading law",
+            "District attorneys in Essex County, Massachusetts",
+            "19th-century members of the United States House of Representatives",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1779,
+          "death_year": 1845
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Volney",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "At the time when M. de Volney, from whom I borrow these details, passed through Vincennes, the number of the French was reduced to a hundred individuals, most of whom were about to pass over to Louisiana or to Canada."
+        ],
+        "commentaries": [
+          "The author borrows details from Volney about the decline of the French settlement at Vincennes."
+        ],
+        "canonical_author": "Volney"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Constantin François de Chassebœuf, comte de Volney",
+        "page_id": 196811,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1757 births",
+          "1820 deaths",
+          "18th-century French writers",
+          "18th-century French male writers",
+          "19th-century French writers",
+          "19th-century French male writers",
+          "Burials at Père Lachaise Cemetery",
+          "Counts of the First French Empire",
+          "French abolitionists",
+          "French deists",
+          "French ethnologists",
+          "French male writers",
+          "18th-century French philosophers",
+          "19th-century French philosophers",
+          "French travel writers",
+          "Members of the Académie Française",
+          "International members of the American Philosophical Society",
+          "Peers of France",
+          "People from Maine (province)"
+        ],
+        "birth_year": 1757,
+        "death_year": 1820
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3197853"
+        ],
+        "target_person": {
+          "title": "Constantin François de Chassebœuf, comte de Volney",
+          "page_id": 196811,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1757 births",
+            "1820 deaths",
+            "18th-century French writers",
+            "18th-century French male writers",
+            "19th-century French writers",
+            "19th-century French male writers",
+            "Burials at Père Lachaise Cemetery",
+            "Counts of the First French Empire",
+            "French abolitionists",
+            "French deists",
+            "French ethnologists",
+            "French male writers",
+            "18th-century French philosophers",
+            "19th-century French philosophers",
+            "French travel writers",
+            "Members of the Académie Française",
+            "International members of the American Philosophical Society",
+            "Peers of France",
+            "People from Maine (province)"
+          ],
+          "birth_year": 1757,
+          "death_year": 1820
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aesop",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "It is well known that several of the most distinguished authors of antiquity, and amongst them Aesop and Terence, were, or had been slaves."
+        ],
+        "commentaries": [
+          "The author mentions Aesop as an example of a distinguished ancient author who was a slave."
+        ],
+        "canonical_author": "Aesop"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aesop",
+        "page_id": 20012109,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "620s BC births",
+          "560s BC deaths",
+          "6th-century BC executions",
+          "6th-century BC Greek writers",
+          "7th-century BC Greek people",
+          "Ancient Greek slaves and freedmen",
+          "Ancient Samians",
+          "Fabulists",
+          "Storytellers"
+        ],
+        "birth_year": 1976,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "12452"
+        ],
+        "target_person": {
+          "title": "Aesop",
+          "page_id": 20012109,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "620s BC births",
+            "560s BC deaths",
+            "6th-century BC executions",
+            "6th-century BC Greek writers",
+            "7th-century BC Greek people",
+            "Ancient Greek slaves and freedmen",
+            "Ancient Samians",
+            "Fabulists",
+            "Storytellers"
+          ],
+          "birth_year": 1976,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Commentaries on American Law",
+        "author": "James Kent",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "See Kent’s “Commentaries,” vol. i. p. 387."
+        ],
+        "commentaries": [
+          "The author references Kent's 'Commentaries' as a source for legal commentary on state sovereignty and judicial power."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Commentaries on American Law",
+        "authors": [
+          "James Kent"
+        ],
+        "original_year": 1826,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": null,
+        "description": "A seminal four-volume treatise on American law by James Kent, first published in 1826.",
+        "book_id": "web_3512b876",
+        "author_meta": {
+          "birth_year": 1763,
+          "death_year": 1847,
+          "canonical_name": "James Kent (jurist)"
+        }
+      },
+      "wikipedia_match": {
+        "title": "James Kent",
+        "birth_year": 1763,
+        "death_year": 1847
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_3512b876",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "James Kent",
+          "birth_year": 1763,
+          "death_year": 1847
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "History of New France",
+        "author": "Charlevoix",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "M. de Senonville, the governor of Canada, wrote thus to Louis XIV in 1685: “It has long been believed that in order to civilize the savages we ought to draw them nearer to us. But there is every reason to suppose we have been mistaken. Those which have been brought into contact with us have not become French, and the French who have lived among them are changed into savages, affecting to dress and live like them.” (“History of New France,” by Charlevoix, vol. ii., p. 345.)"
+        ],
+        "commentaries": [
+          "The author cites Charlevoix's 'History of New France' as the source of a letter from the governor of Canada to Louis XIV."
+        ]
+      },
+      "goodreads_match": {
+        "title": "History of New France",
+        "authors": [
+          "Pierre-François-Xavier de Charlevoix"
+        ],
+        "original_year": 1744,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "French",
+        "description": "A multi-volume history of New France (Canada) by Jesuit missionary and historian Charlevoix, first published in French in 1744.",
+        "book_id": "web_1e757e9b",
+        "author_meta": {
+          "birth_year": 1682,
+          "death_year": 1761,
+          "canonical_name": "Pierre François Xavier de Charlevoix"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Pierre-François-Xavier de Charlevoix",
+        "birth_year": 1682,
+        "death_year": 1761
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_1e757e9b",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Pierre-François-Xavier de Charlevoix",
+          "birth_year": 1682,
+          "death_year": 1761
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Histoire de la Louisiane",
+        "author": "Lepage Dupratz",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "See “Histoire de la Louisiane,” by Lepage Dupratz; Charlevoix, “Histoire de la Nouvelle France”; “Lettres du Rev. G. Hecwelder;” “Transactions of the American Philosophical Society,” v. I; Jefferson’s “Notes on Virginia,” pp. 135-190."
+        ],
+        "commentaries": [
+          "The author cites this book as a source for information about the history of Louisiana."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Histoire de la Louisiane",
+        "authors": [
+          "Antoine-Simon Le Page du Pratz"
+        ],
+        "original_year": 1758,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "French",
+        "description": "A three-volume history of Louisiana by French explorer and ethnographer Le Page du Pratz, first published in 1758, based on his travels and observations among Native American tribes.",
+        "book_id": "web_9186d20a",
+        "author_meta": {
+          "death_year": 1775,
+          "canonical_name": "Antoine-Simon Le Page du Pratz"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Antoine-Simon Le Page du Pratz",
+        "death_year": 1775
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_9186d20a",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Antoine-Simon Le Page du Pratz",
+          "death_year": 1775
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Commentaries",
+        "author": "James Kent",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "See Kent’s “Commentaries”, vol. i. p. 289.",
+          "615-780; Kent's \"Commentaries,\" p. 255.]",
+          "v v [ Kent’s “Commentaries,” vol. i. p. 244."
+        ],
+        "commentaries": [
+          "The author references Kent's Commentaries to support the statement about the 1789 Congressional decision.",
+          "The author references Kent's Commentaries as a source for legal or constitutional commentary.",
+          "The author cites Kent's Commentaries as a legal reference regarding the powers of the Federal Executive."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Commentaries on American Law",
+        "authors": [
+          "James Kent"
+        ],
+        "original_year": 1826,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "American",
+        "description": "A foundational four-volume treatise on American law by Chancellor James Kent, first published in 1826 and widely cited in the 19th century.",
+        "book_id": "web_3512b876",
+        "author_meta": {
+          "birth_year": 1763,
+          "death_year": 1847,
+          "main_genre": null,
+          "nationality": null,
+          "canonical_name": "James Kent (jurist)"
+        }
+      },
+      "wikipedia_match": {
+        "title": "James Kent",
+        "birth_year": 1763,
+        "death_year": 1847
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_3512b876",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "James Kent",
+          "birth_year": 1763,
+          "death_year": 1847
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "New England's Memorial",
+        "author": "Nathaniel Morton",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Nathaniel Morton, *f the historian of the first years of the settlement, thus opens his subject: f [ “New England’s Memorial,” p. 13; Boston, 1826."
+        ],
+        "commentaries": [
+          "The author quotes Nathaniel Morton's 'New England's Memorial' to illustrate the spirit of the Puritan settlers."
+        ]
+      },
+      "goodreads_match": {
+        "title": "New England's Memorial",
+        "authors": [
+          "Nathaniel Morton"
+        ],
+        "original_year": 1669,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "English (American colonial)",
+        "description": "A history of the Plymouth Colony, first published in 1669, compiled by Nathaniel Morton, a secretary and historian of the colony.",
+        "book_id": "web_1b72fa4a",
+        "author_meta": {
+          "birth_year": 1615,
+          "death_year": 1685,
+          "canonical_name": "Nathaniel Morton"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Nathaniel Morton",
+        "birth_year": 1615,
+        "death_year": 1685
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_1b72fa4a",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Nathaniel Morton",
+          "birth_year": 1615,
+          "death_year": 1685
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Belknap",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Curious researches, by Belknap, upon slavery in New England, are to be found in the “Historical Collection of Massachusetts,” vol. iv. p. 193."
+        ],
+        "commentaries": [
+          "The author references Belknap's research on slavery in New England, citing it as a source found in the Historical Collection of Massachusetts."
+        ],
+        "canonical_author": "Belknap"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Jeremy Belknap",
+        "page_id": 732474,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1744 births",
+          "1798 deaths",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Harvard College alumni",
+          "Historians of New England",
+          "New Hampshire militiamen in the American Revolution",
+          "People from Dover, New Hampshire",
+          "Writers from Portsmouth, New Hampshire",
+          "Burials at Mount Auburn Cemetery",
+          "18th-century American historians",
+          "American historians",
+          "People from colonial Boston",
+          "Members of the American Philosophical Society"
+        ],
+        "birth_year": 1744,
+        "death_year": 1798
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Jeremy Belknap",
+          "page_id": 732474,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1744 births",
+            "1798 deaths",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Harvard College alumni",
+            "Historians of New England",
+            "New Hampshire militiamen in the American Revolution",
+            "People from Dover, New Hampshire",
+            "Writers from Portsmouth, New Hampshire",
+            "Burials at Mount Auburn Cemetery",
+            "18th-century American historians",
+            "American historians",
+            "People from colonial Boston",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1744,
+          "death_year": 1798
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Magnalia Christi Americana",
+        "author": "Mather",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "l [ Mather’s “Magnalia Christi Americana,” vol. ii. p. 13."
+        ],
+        "commentaries": [
+          "The author references Mather's work as the source for a definition of liberty pronounced by a man in the face of a free people."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Magnalia Christi Americana",
+        "authors": [
+          "Cotton Mather"
+        ],
+        "original_year": 1702,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "American",
+        "description": "A historical and ecclesiastical work by Puritan minister Cotton Mather, first published in 1702, detailing the religious history of New England.",
+        "book_id": "web_63198ce3",
+        "author_meta": {
+          "birth_year": 1663,
+          "canonical_name": "Cotton Mather",
+          "death_year": 1728,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Cotton Mather",
+        "birth_year": 1663,
+        "death_year": 1728
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_63198ce3",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cotton Mather",
+          "birth_year": 1663,
+          "death_year": 1728
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Memoirs of Jefferson",
+        "author": "Thomas Jefferson",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "thus, for instance, it is stated in the “Memoirs of Jefferson” (as collected by M. Conseil), “Nothing is more clearly written in the book of destiny than the emancipation of the blacks; and it is equally certain that the two races will never live in a state of equal freedom under the same government, so insurmountable are the barriers which nature, habit, and opinions have established between them.”"
+        ],
+        "commentaries": [
+          "The author quotes Jefferson's memoirs to support the opinion that the two races will never live together as equals, referencing a statement attributed to Jefferson about the inevitability of emancipation and the insurmountable barriers between the races."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Memoirs of Jefferson",
+        "authors": [
+          "Thomas Jefferson"
+        ],
+        "original_year": 1829,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "American",
+        "description": "A compilation of Thomas Jefferson's writings and memoirs, edited by Thomas Jefferson Randolph, published posthumously in 1829. The citation refers to a passage about emancipation and racial separation.",
+        "book_id": "web_b452d0f7",
+        "author_meta": {
+          "birth_year": 1743,
+          "death_year": 1772,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Thomas Jefferson",
+        "birth_year": 1743,
+        "death_year": 1772
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_b452d0f7",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Thomas Jefferson",
+          "birth_year": 1743,
+          "death_year": 1772
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Kent",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This opinion has been very candidly set forth by Chancellor Kent, who says, in speaking with great eulogiums of that part of the Constitution which empowers the Executive to nominate the judges: “It is indeed probable that the men who are best fitted to discharge the duties of this high office would have too much reserve in their manners, and too much austerity in their principles, for them to be returned by the majority at an election where universal suffrage is adopted.”"
+        ],
+        "commentaries": [
+          "The author cites Chancellor Kent's opinion on the difficulty of electing the most qualified judges under universal suffrage."
+        ],
+        "canonical_author": "Kent"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "James Kent (jurist)",
+        "page_id": 431475,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "1763 births",
+          "1847 deaths",
+          "People from Dutchess County, New York",
+          "American legal writers",
+          "Members of the New York State Assembly",
+          "Chancellors of New York (state)",
+          "Politicians from Summit, New Jersey",
+          "Yale College alumni",
+          "New York City recorders",
+          "New York Supreme Court justices",
+          "Hall of Fame for Great Americans inductees",
+          "People from Rensselaer County, New York",
+          "Columbia University faculty",
+          "19th-century members of the New York State Legislature",
+          "18th-century members of the New York State Legislature",
+          "Candidates in the 1793 United States elections",
+          "Members of the American Philosophical Society"
+        ],
+        "birth_year": 1763,
+        "death_year": 1847
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "James Kent (jurist)",
+          "page_id": 431475,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1763 births",
+            "1847 deaths",
+            "People from Dutchess County, New York",
+            "American legal writers",
+            "Members of the New York State Assembly",
+            "Chancellors of New York (state)",
+            "Politicians from Summit, New Jersey",
+            "Yale College alumni",
+            "New York City recorders",
+            "New York Supreme Court justices",
+            "Hall of Fame for Great Americans inductees",
+            "People from Rensselaer County, New York",
+            "Columbia University faculty",
+            "19th-century members of the New York State Legislature",
+            "18th-century members of the New York State Legislature",
+            "Candidates in the 1793 United States elections",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1763,
+          "death_year": 1847
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Tableau des Etats-Unis",
+        "author": "Volney",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "“Five years ago,” (says Volney in his “Tableau des Etats-Unis,” p. 370) “in going from Vincennes to Kaskaskia, a territory which now forms part of the State of Illinois, but which at the time I mention was completely wild (1797), you could not cross a prairie without seeing herds of from four to five hundred buffaloes.",
+          "“In all the tribes,” says Volney, in his “Tableau des Etats-Unis,” p. 423, “there still exists a generation of old warriors...”"
+        ],
+        "commentaries": [
+          "The author quotes Volney's book to illustrate the rapid disappearance of buffalo herds due to European settlement.",
+          "The author quotes Volney's book to illustrate the Indian perspective on labor and civilization."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Tableau des États-Unis",
+        "authors": [
+          "Constantin-François Volney"
+        ],
+        "original_year": 1803,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "French",
+        "description": "A travel and geographical description of the United States by French philosopher and historian Volney, first published in 1803.",
+        "book_id": "web_13b41baf",
+        "author_meta": {
+          "birth_year": 1757,
+          "death_year": 1820
+        }
+      },
+      "wikipedia_match": {
+        "title": "Constantin-François Volney",
+        "birth_year": 1757,
+        "death_year": 1820
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_13b41baf",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Constantin-François Volney",
+          "birth_year": 1757,
+          "death_year": 1820
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Commentaries on American Law",
+        "author": "James Kent",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "“It cannot be doubted,” says Chancellor Kent in his “Treatise on American Law,” “that the division of landed estates must produce great evils when it is carried to such excess as that each parcel of land is insufficient to support a family; but these disadvantages have never been felt in the United States, and many generations must elapse before they can be felt."
+        ],
+        "commentaries": [
+          "The author quotes Chancellor Kent's 'Treatise on American Law' to support the argument that the division of landed estates has not yet caused problems in the United States due to abundant land and westward emigration."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Commentaries on American Law",
+        "authors": [
+          "James Kent"
+        ],
+        "original_year": 1826,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "American",
+        "description": "A foundational multi-volume treatise on American law by Chancellor James Kent, first published in the 1820s and widely used in legal education.",
+        "book_id": "web_3512b876",
+        "author_meta": {
+          "birth_year": 1763,
+          "death_year": 1847,
+          "main_genre": null,
+          "nationality": null,
+          "canonical_name": "James Kent (jurist)"
+        }
+      },
+      "wikipedia_match": {
+        "title": "James Kent",
+        "birth_year": 1763,
+        "death_year": 1847
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_3512b876",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "James Kent",
+          "birth_year": 1763,
+          "death_year": 1847
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Life of Washington",
+        "author": "John Marshall",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "See the fifth volume of Marshall's “Life of Washington.”"
+        ],
+        "commentaries": [
+          "The author references Marshall's biography of Washington to support a point about Washington's political challenges."
+        ],
+        "canonical_author": "Marshall"
+      },
+      "goodreads_match": {
+        "num_pages": 542,
+        "title_without_series": "The Life of George Washington",
+        "work_id": "1117660",
+        "publication_month": 7,
+        "book_id": "1130468",
+        "isbn": "0865972761",
+        "ratings_count": 33,
+        "author_ids": [
+          "181856",
+          "382020",
+          "916138"
+        ],
+        "isbn13": "9780865972766",
+        "average_rating": 3.51,
+        "publisher": "Liberty Fund Inc.",
+        "format": "Hardcover",
+        "title": "The Life of George Washington",
+        "publication_year": 2000,
+        "text_reviews_count": 6,
+        "publication_day": 1,
+        "authors": [
+          "John Marshall",
+          "Robert Faulkner",
+          "Paul Carrese"
+        ],
+        "description": "Within eight years of the death of George Washington in 1799, the first major biography of \"the father of his country\" was written by John Marshall and published in five volumes. Marshall, who later became Chief Justice of the United States Supreme Court, was induced to the task by the first President's nephew, Bushrod Washington. Marshall's own principal biographer, Albert J. Beveridge, has described The Life of George Washingtonas \"to this day the fullest and most trustworthy treatment of that period from...",
+        "link": "https://www.goodreads.com/book/show/1130468.The_Life_of_George_Washington",
+        "original_year": 1807,
+        "author_meta": {
+          "birth_year": 1748,
+          "death_year": 1819,
+          "canonical_name": "John Marshall (Royal Navy officer, born 1748)"
+        }
+      },
+      "wikipedia_match": {
+        "title": "John Marshall",
+        "birth_year": 1748,
+        "death_year": 1819
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1130468",
+        "target_author_ids": [
+          "181856",
+          "382020",
+          "916138"
+        ],
+        "target_person": {
+          "title": "John Marshall",
+          "birth_year": 1748,
+          "death_year": 1819
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Laws of the United States",
+        "author": "Story",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "2d, The Laws of the Union on the same subject, and especially that of March 30, 1802. (See Story’s “Laws of the United States.”)"
+        ],
+        "commentaries": [
+          "The author references Story's compilation of laws as a source for understanding U.S. policy toward the Indians."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Laws of the United States",
+        "authors": [
+          "Joseph Story"
+        ],
+        "original_year": 1802,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "American",
+        "description": "A compilation of U.S. federal laws, likely referring to the edition edited by Joseph Story, published in 1802.",
+        "book_id": "web_2623554b",
+        "author_meta": {
+          "birth_year": 1779,
+          "death_year": 1845,
+          "main_genre": null,
+          "nationality": null,
+          "canonical_name": "Joseph Story"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Joseph Story",
+        "birth_year": 1779,
+        "death_year": 1845
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_2623554b",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Joseph Story",
+          "birth_year": 1779,
+          "death_year": 1845
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Histoire de la Nouvelle France",
+        "author": "Charlevoix",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "See “Histoire de la Louisiane,” by Lepage Dupratz; Charlevoix, “Histoire de la Nouvelle France”; “Lettres du Rev. G. Hecwelder;” “Transactions of the American Philosophical Society,” v. I; Jefferson’s “Notes on Virginia,” pp. 135-190.",
+          "See the “Histoire de la Nouvelle France,” by Charlevoix, and the work entitled “Lettres edifiantes.”"
+        ],
+        "commentaries": [
+          "The author cites this book as a source for the history of New France.",
+          "The author references Charlevoix's work as a source on attempts to diffuse knowledge among the Indians."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Histoire de la Nouvelle France",
+        "authors": [
+          "Pierre-François-Xavier de Charlevoix"
+        ],
+        "original_year": 1744,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "French",
+        "description": "A multi-volume history of New France (French colonial territories in North America), written by Jesuit missionary and historian Charlevoix, first published in 1744.",
+        "book_id": "web_97277d85",
+        "author_meta": {
+          "birth_year": 1682,
+          "death_year": 1761,
+          "main_genre": null,
+          "nationality": null,
+          "canonical_name": "Pierre François Xavier de Charlevoix"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Pierre-François-Xavier de Charlevoix",
+        "birth_year": 1682,
+        "death_year": 1761
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_97277d85",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Pierre-François-Xavier de Charlevoix",
+          "birth_year": 1682,
+          "death_year": 1761
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cabanis",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "to believe in some blind cosmogony, or to assert with Cabanis the secretion of thought by the brain"
+        ],
+        "commentaries": [
+          "The author mentions Cabanis as an example of a materialist thinker who asserts the physiological origin of thought, contrasting his view with the religious spirit the author admires."
+        ],
+        "canonical_author": "Cabanis"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pierre Jean Georges Cabanis",
+        "page_id": 174292,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "1757 births",
+          "1808 deaths",
+          "People from Limousin (province)",
+          "People from Corrèze",
+          "French materialists",
+          "Members of the Académie Française",
+          "Members of the Council of Five Hundred",
+          "Burials at the Panthéon, Paris",
+          "Les Neuf Sœurs",
+          "French physiologists",
+          "French Freemasons",
+          "Proto-evolutionary biologists",
+          "International members of the American Philosophical Society"
+        ],
+        "birth_year": 1757,
+        "death_year": 1808
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Pierre Jean Georges Cabanis",
+          "page_id": 174292,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "1757 births",
+            "1808 deaths",
+            "People from Limousin (province)",
+            "People from Corrèze",
+            "French materialists",
+            "Members of the Académie Française",
+            "Members of the Council of Five Hundred",
+            "Burials at the Panthéon, Paris",
+            "Les Neuf Sœurs",
+            "French physiologists",
+            "French Freemasons",
+            "Proto-evolutionary biologists",
+            "International members of the American Philosophical Society"
+          ],
+          "birth_year": 1757,
+          "death_year": 1808
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Fulton",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Fulton was obliged to proffer his services to foreign nations for a long time before he was able to devote them to his own country."
+        ],
+        "commentaries": [
+          "The author mentions Fulton as an example of an American inventor who had to seek recognition abroad before being accepted in his own country."
+        ],
+        "canonical_author": "Fulton"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Robert Fulton",
+        "page_id": 26161,
+        "infoboxes": [
+          "person "
+        ],
+        "categories": [
+          "1765 births",
+          "1815 deaths",
+          "19th-century deaths from tuberculosis",
+          "American bisexual men",
+          "American inventors",
+          "Burials at Trinity Church Cemetery",
+          "Engineers from Pennsylvania",
+          "Erie Canal commissioners",
+          "Hall of Fame for Great Americans inductees",
+          "LGBTQ people from Pennsylvania",
+          "People from Lancaster County, Pennsylvania",
+          "People from colonial Pennsylvania",
+          "People of the American Industrial Revolution",
+          "Submarine pioneers",
+          "Tuberculosis deaths in New York (state)"
+        ],
+        "birth_year": 1765,
+        "death_year": 1815
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Robert Fulton",
+          "page_id": 26161,
+          "infoboxes": [
+            "person "
+          ],
+          "categories": [
+            "1765 births",
+            "1815 deaths",
+            "19th-century deaths from tuberculosis",
+            "American bisexual men",
+            "American inventors",
+            "Burials at Trinity Church Cemetery",
+            "Engineers from Pennsylvania",
+            "Erie Canal commissioners",
+            "Hall of Fame for Great Americans inductees",
+            "LGBTQ people from Pennsylvania",
+            "People from Lancaster County, Pennsylvania",
+            "People from colonial Pennsylvania",
+            "People of the American Industrial Revolution",
+            "Submarine pioneers",
+            "Tuberculosis deaths in New York (state)"
+          ],
+          "birth_year": 1765,
+          "death_year": 1815
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Delolme",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "o [ See Blackstone; and Delolme, book I chap. x.]"
+        ],
+        "commentaries": [
+          "The author cites Delolme as a source for the English laws retained by Americans."
+        ],
+        "canonical_author": "Delolme"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Jean-Louis de Lolme",
+        "page_id": 3760116,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1740 births",
+          "1804 deaths",
+          "18th-century writers from the Republic of Geneva",
+          "Enlightenment philosophers",
+          "British male writers",
+          "British legal writers",
+          "British political philosophers",
+          "18th-century British philosophers",
+          "18th-century English male writers",
+          "Immigrants to the Kingdom of Great Britain"
+        ],
+        "birth_year": 1740,
+        "death_year": 1804
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Jean-Louis de Lolme",
+          "page_id": 3760116,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1740 births",
+            "1804 deaths",
+            "18th-century writers from the Republic of Geneva",
+            "Enlightenment philosophers",
+            "British male writers",
+            "British legal writers",
+            "British political philosophers",
+            "18th-century British philosophers",
+            "18th-century English male writers",
+            "Immigrants to the Kingdom of Great Britain"
+          ],
+          "birth_year": 1740,
+          "death_year": 1804
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Tanner",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This is plainly shown by the memoirs of Tanner."
+        ],
+        "commentaries": [
+          "The author references Tanner's memoirs to illustrate the irresistible charm of the hunter's life."
+        ],
+        "canonical_author": "Tanner"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Tanner",
+        "death_year": 1858
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "83789"
+        ],
+        "target_person": {
+          "title": "Tanner",
+          "death_year": 1858
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Terence",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "It is well known that several of the most distinguished authors of antiquity, and amongst them Aesop and Terence, were, or had been slaves."
+        ],
+        "commentaries": [
+          "The author mentions Terence as an example of a distinguished ancient author who was a slave."
+        ],
+        "canonical_author": "Terence"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Terence",
+        "birth_year": -195,
+        "death_year": -159
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Terence",
+          "birth_year": -195,
+          "death_year": -159
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Story",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Mr. Story, judge of the Supreme Court of the United States, speaks, in his “Treatise on the Federal Constitution,” of the advantages of trial by jury in civil cases:—"
+        ],
+        "commentaries": [
+          "The author cites Story's 'Treatise on the Federal Constitution' as a source supporting the advantages of trial by jury in civil cases."
+        ],
+        "canonical_author": "Story"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Joseph Story",
+        "page_id": 273827,
+        "infoboxes": [
+          "officeholder"
+        ],
+        "categories": [
+          "1779 births",
+          "1845 deaths",
+          "19th-century American judges",
+          "American Unitarians",
+          "Burials at Mount Auburn Cemetery",
+          "Conflict of laws scholars",
+          "Democratic-Republican Party members of the United States House of Representatives from Massachusetts",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Hall of Fame for Great Americans inductees",
+          "Harvard University alumni",
+          "Harvard Law School faculty",
+          "Members of the Massachusetts House of Representatives",
+          "Speakers of the Massachusetts House of Representatives",
+          "Politicians from Marblehead, Massachusetts",
+          "American scholars of constitutional law",
+          "United States federal judges appointed by James Madison",
+          "Justices of the Supreme Court of the United States",
+          "United States federal judges admitted to the practice of law by reading law",
+          "District attorneys in Essex County, Massachusetts",
+          "19th-century members of the United States House of Representatives",
+          "Members of the American Philosophical Society"
+        ],
+        "birth_year": 1779,
+        "death_year": 1845
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Joseph Story",
+          "page_id": 273827,
+          "infoboxes": [
+            "officeholder"
+          ],
+          "categories": [
+            "1779 births",
+            "1845 deaths",
+            "19th-century American judges",
+            "American Unitarians",
+            "Burials at Mount Auburn Cemetery",
+            "Conflict of laws scholars",
+            "Democratic-Republican Party members of the United States House of Representatives from Massachusetts",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Hall of Fame for Great Americans inductees",
+            "Harvard University alumni",
+            "Harvard Law School faculty",
+            "Members of the Massachusetts House of Representatives",
+            "Speakers of the Massachusetts House of Representatives",
+            "Politicians from Marblehead, Massachusetts",
+            "American scholars of constitutional law",
+            "United States federal judges appointed by James Madison",
+            "Justices of the Supreme Court of the United States",
+            "United States federal judges admitted to the practice of law by reading law",
+            "District attorneys in Essex County, Massachusetts",
+            "19th-century members of the United States House of Representatives",
+            "Members of the American Philosophical Society"
+          ],
+          "birth_year": 1779,
+          "death_year": 1845
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Winthrop",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This speech was made by Winthrop; he was accused of having committed arbitrary actions during his magistracy, but after having made the speech of which the above is a fragment, he was acquitted by acclamation, and from that time forwards he was always re-elected governor of the State."
+        ],
+        "commentaries": [
+          "The author references a speech by Winthrop, citing him as a historical figure and source of ideas about liberty and authority."
+        ],
+        "canonical_author": "Winthrop"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Winthrop",
+        "birth_year": 1588,
+        "death_year": 1649
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Winthrop",
+          "birth_year": 1588,
+          "death_year": 1649
+        }
+      }
+    }
+  ]
+}

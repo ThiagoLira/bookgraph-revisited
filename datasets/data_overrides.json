@@ -1,0 +1,673 @@
+{
+  "_comment": "Durable build-time corrections merged in graph_model/build. Generated from data_review/ agent audits. name_aliases collapse duplicate-split nodes; author_dates fix Y-axis placement; books fix titles/years.",
+  "name_aliases": {
+    "Miguel de Cervantes Saavedra": "Miguel de Cervantes",
+    "Rene Descartes": "René Descartes",
+    "Francois Rabelais": "François Rabelais",
+    "Niccolo Machiavelli": "Niccolò Machiavelli",
+    "Pascal": "Blaise Pascal",
+    "Goethe": "Johann Wolfgang von Goethe",
+    "Wagner": "Richard Wagner",
+    "Hawthorne": "Nathaniel Hawthorne",
+    "Tennyson": "Alfred Tennyson",
+    "Honore de Balzac": "Honoré de Balzac",
+    "Emile Zola": "Émile Zola",
+    "Soren Kierkegaard": "Søren Kierkegaard",
+    "Æschylus": "Aeschylus",
+    "Diogenes Laërtius": "Diogenes Laertius",
+    "Thomas à Kempis": "Thomas a Kempis",
+    "Étienne Pivert de Senancour": "Etienne Pivert de Senancour",
+    "Joachim Du Bellay": "Joachim du Bellay",
+    "Stéphane Mallarmé": "Stephane Mallarme"
+  },
+  "author_dates": {
+    "Thomas More": {
+      "birth_year": 1478,
+      "death_year": 1535
+    },
+    "Francisco Cervantes de Salazar": {
+      "birth_year": 1514,
+      "death_year": 1575
+    },
+    "Edmund Spenser": {
+      "birth_year": 1552,
+      "death_year": 1599
+    },
+    "Cicero": {
+      "birth_year": -106,
+      "death_year": -43
+    },
+    "Juvenal": {
+      "birth_year": 55,
+      "death_year": 138
+    },
+    "Aesop": {
+      "birth_year": -620,
+      "death_year": -564
+    },
+    "Noam Chomsky": {
+      "birth_year": 1928,
+      "death_year": null
+    },
+    "Saxo Grammaticus": {
+      "birth_year": 1150,
+      "death_year": 1220
+    },
+    "Ramon Llull": {
+      "birth_year": 1232,
+      "death_year": 1316
+    },
+    "George Steiner": {
+      "birth_year": 1929,
+      "death_year": 2020
+    },
+    "Richard Wagner": {
+      "birth_year": 1813,
+      "death_year": 1883
+    },
+    "Moses Mendelssohn": {
+      "birth_year": 1729,
+      "death_year": 1786
+    },
+    "Geoffrey of Monmouth": {
+      "birth_year": 1095,
+      "death_year": 1155
+    },
+    "Theocritus": {
+      "birth_year": -300,
+      "death_year": -260
+    },
+    "Menander": {
+      "birth_year": -342,
+      "death_year": -291
+    },
+    "Benjamin Franklin": {
+      "birth_year": 1706,
+      "death_year": 1790
+    },
+    "Nathaniel Hawthorne": {
+      "birth_year": 1804,
+      "death_year": 1864
+    },
+    "Alfred Tennyson": {
+      "birth_year": 1809,
+      "death_year": 1892
+    },
+    "Pseudo-Dionysius the Areopagite": {
+      "birth_year": 470,
+      "death_year": 530
+    },
+    "John Webster": {
+      "birth_year": 1580,
+      "death_year": 1634
+    },
+    "Galen": {
+      "birth_year": 129,
+      "death_year": 216
+    },
+    "Servius": {
+      "birth_year": 370,
+      "death_year": 430
+    }
+  },
+  "books": {
+    "Francis Bacon": [
+      {
+        "match": "Essays",
+        "year": 1597
+      }
+    ],
+    "Blaise Pascal": [
+      {
+        "match": "The Physical Treatises of Pascal",
+        "year": 1663
+      }
+    ],
+    "Emanuel Swedenborg": [
+      {
+        "match": "True Christian Religion, Vol 1",
+        "year": 1771
+      }
+    ],
+    "Giovanni Pico della Mirandola": [
+      {
+        "match": "De hominis dignitate. Heptaplus. De ente et uno",
+        "year": 1486
+      }
+    ],
+    "William Congreve": [
+      {
+        "match": "The Mourning Bride",
+        "year": 1697
+      }
+    ],
+    "William Shakespeare": [
+      {
+        "match": "Macbeth",
+        "year": 1606
+      },
+      {
+        "match": "The Winter's Tale",
+        "year": 1611
+      }
+    ],
+    "Voltaire": [
+      {
+        "match": "Dictionnaire Philosophique",
+        "title": "Philosophical Dictionary"
+      },
+      {
+        "match": "Histoire de Charles XII",
+        "title": "History of Charles XII"
+      },
+      {
+        "match": "Siècle de Louis XIV",
+        "title": "The Age of Louis XIV"
+      },
+      {
+        "match": "La Princesse de Babylone",
+        "title": "The Princess of Babylon"
+      }
+    ],
+    "Gottfried Wilhelm Leibniz": [
+      {
+        "match": "La Monadologie",
+        "title": "The Monadology"
+      }
+    ],
+    "Erasmus": [
+      {
+        "match": "MORIAE ENCOMIUM OR, THE PRAISE OF FOLLY",
+        "title": "The Praise of Folly"
+      },
+      {
+        "match": "Adagia. Lateinisch / Deutsch",
+        "title": "Adages"
+      }
+    ],
+    "Torquato Tasso": [
+      {
+        "match": "Gerusalemme liberata",
+        "title": "Jerusalem Delivered"
+      },
+      {
+        "match": "Gerusalemme Conquistata",
+        "title": "Jerusalem Conquered"
+      }
+    ],
+    "Galileo Galilei": [
+      {
+        "match": "Dialogo sopra i due massimi sistemi del mondo",
+        "title": "Dialogue Concerning the Two Chief World Systems"
+      }
+    ],
+    "Martin Luther": [
+      {
+        "match": "Sendbrief von Dolmetschen",
+        "title": "On Translating: An Open Letter"
+      }
+    ],
+    "Nicolaus Copernicus": [
+      {
+        "match": "De hypothesibus motuum coelestium commentariolus",
+        "title": "Commentariolus"
+      }
+    ],
+    "Montesquieu": [
+      {
+        "match": "De L'esprit Des Lois, Tome 1",
+        "title": "The Spirit of the Laws"
+      }
+    ],
+    "Albrecht Dürer": [
+      {
+        "match": "Vier Bücher von Menschlicher Proportion",
+        "title": "Four Books on Human Proportion"
+      }
+    ],
+    "Jean Bodin": [
+      {
+        "match": "Methodus ad facilem historiarum cognitionem",
+        "title": "Method for the Easy Comprehension of History"
+      },
+      {
+        "match": "De la démonomanie des sorciers",
+        "title": "On the Demon-Mania of Witches"
+      }
+    ],
+    "Heinrich Cornelius Agrippa von Nettesheim": [
+      {
+        "match": "De occulta philosophia libri tres",
+        "title": "Three Books of Occult Philosophy"
+      }
+    ],
+    "Giordano Bruno": [
+      {
+        "match": "La cena de le ceneri",
+        "title": "The Ash Wednesday Supper"
+      },
+      {
+        "match": "Spaccio della bestia trionfante",
+        "title": "The Expulsion of the Triumphant Beast"
+      },
+      {
+        "match": "De la causa, principio e uno",
+        "title": "Cause, Principle and Unity"
+      }
+    ],
+    "Athanasius Kircher": [
+      {
+        "match": "Mundus subterraneus",
+        "title": "The Subterranean World"
+      },
+      {
+        "match": "Ars Magna Lucis et Umbrae",
+        "title": "The Great Art of Light and Shadow"
+      }
+    ],
+    "Jacques-Bénigne Bossuet": [
+      {
+        "match": "Maximes et Réflexions sur la Comédie",
+        "title": "Maxims and Reflections on Comedy"
+      }
+    ],
+    "Adolf Hitler": [
+      {
+        "match": "Mein Kampf",
+        "year": 1925
+      }
+    ],
+    "Oliver Sacks": [
+      {
+        "match": "The Man Who Mistook His Wife for a Hat and Other Clinical Tales",
+        "year": 1985
+      }
+    ],
+    "Arthur Stanley Eddington": [
+      {
+        "match": "The Nature of the Physical World",
+        "year": 1928
+      }
+    ],
+    "Erich Auerbach": [
+      {
+        "match": "Mimesis: The Representation of Reality in Western Literature",
+        "year": 1946
+      }
+    ],
+    "Jacques Maritain": [
+      {
+        "match": "Art and Scholasticism With Other Essays",
+        "year": 1920
+      }
+    ],
+    "Thomas Malory": [
+      {
+        "match": "Le Morte d'Arthur",
+        "year": 1470
+      }
+    ],
+    "Saxo Grammaticus": [
+      {
+        "match": "Saxo Grammaticus: The History of the Danes, Books I-IX: I. English Text; II. Commentary",
+        "year": 1208,
+        "title": "Gesta Danorum (The History of the Danes)"
+      }
+    ],
+    "Guillaume de Lorris": [
+      {
+        "match": "Le Roman de La Rose",
+        "year": 1230,
+        "title": "The Romance of the Rose"
+      }
+    ],
+    "Dante Alighieri": [
+      {
+        "match": "Vita nuova/Viața nouă",
+        "title": "La Vita Nuova"
+      }
+    ],
+    "Marcus Tullius Cicero": [
+      {
+        "match": "Academica",
+        "year": -45
+      },
+      {
+        "match": "Epistulae ad Familiares",
+        "year": -44
+      },
+      {
+        "match": "De Petitione Consulatus",
+        "year": -64
+      },
+      {
+        "match": "De Divinatione",
+        "year": -44
+      },
+      {
+        "match": "The Academic Questions: Treatise de Finibus, and Tusculan Disputations",
+        "year": -45
+      },
+      {
+        "match": "Paradoxa Stoicorum",
+        "year": -46
+      },
+      {
+        "match": "Tusculanae Disputationes",
+        "year": -45
+      },
+      {
+        "match": "Pro Milone. in Pisonem. Pro Scauro. Pro Fonteio. Pro Rabirio Postumo. Pro Marcello. Pro Ligario. Pro Rege Deiotaro",
+        "year": -52
+      }
+    ],
+    "Terence": [
+      {
+        "match": "Adelphoe",
+        "year": -160
+      }
+    ],
+    "Homer": [
+      {
+        "match": "The Iliad",
+        "year": -800
+      },
+      {
+        "match": "Odyssée",
+        "title": "Odyssey"
+      }
+    ],
+    "Augustine of Hippo": [
+      {
+        "match": "Erbauliche Schriften",
+        "year": 400,
+        "title": "Edifying Writings"
+      }
+    ],
+    "Horace": [
+      {
+        "match": "Satires I",
+        "year": -35
+      }
+    ],
+    "Plutarch": [
+      {
+        "match": "Moralia 15: Fragments",
+        "year": 100
+      },
+      {
+        "match": "Plutarch's Lives IX",
+        "year": 100
+      }
+    ],
+    "Pliny the Elder": [
+      {
+        "match": "Natural History, Volume IX: Books 33-35",
+        "year": 77
+      }
+    ],
+    "Tertullian": [
+      {
+        "match": "Latin Christianity: Tertullian (Ante-Nicene Fathers 3)",
+        "year": 200
+      }
+    ],
+    "Suetonius": [
+      {
+        "match": "Divus Augustus",
+        "year": 121
+      }
+    ],
+    "Jerome": [
+      {
+        "match": "Select Letters",
+        "year": 400
+      }
+    ],
+    "Plautus": [
+      {
+        "match": "Roman Comedy: Five Plays by Plautus and Terence: Menaechmi, Rudens and Truculentus by Plautus; Adelphoe and Eunuchus by Terence",
+        "year": -200
+      }
+    ],
+    "Gaius Julius Caesar": [
+      {
+        "match": "Alexandrian War, African War, Spanish War",
+        "year": -45
+      }
+    ],
+    "Saint Jerome": [
+      {
+        "match": "Adversus Jovinianum",
+        "year": 393
+      }
+    ],
+    "Dionysius of Halicarnassus": [
+      {
+        "match": "Dionysius of Halicarnassus: Roman Antiquities, Volume I, Books 1-2 (Loeb Classical Library No. 319)",
+        "year": -7
+      }
+    ],
+    "Longinus": [
+      {
+        "match": "On the Sublime",
+        "year": 50
+      }
+    ],
+    "Hesiod": [
+      {
+        "match": "Theogonie",
+        "title": "Theogony"
+      }
+    ],
+    "Jean-Jacques Rousseau": [
+      {
+        "match": "Confessions",
+        "year": 1782
+      }
+    ],
+    "Fyodor Dostoevsky": [
+      {
+        "match": "The Devils",
+        "year": 1872
+      }
+    ],
+    "Friedrich Nietzsche": [
+      {
+        "match": "Ecce Homo",
+        "year": 1908
+      }
+    ],
+    "Herbert Spencer": [
+      {
+        "match": "First Principles",
+        "year": 1862
+      }
+    ],
+    "Percy Bysshe Shelley": [
+      {
+        "match": "A Defence Of Poetry",
+        "year": 1840
+      }
+    ],
+    "Pierre-Simon Laplace": [
+      {
+        "match": "A Philosophical Essay on Probabilities",
+        "year": 1814
+      }
+    ],
+    "F. H. Bradley": [
+      {
+        "match": "Appearance and Reality",
+        "year": 1893
+      }
+    ],
+    "William James": [
+      {
+        "match": "Some Problems of Philosophy: A Beginning of an Introduction to Philosophy",
+        "year": 1911
+      }
+    ],
+    "George Santayana": [
+      {
+        "match": "Three Philosophical Poets: Lucretius, Dante And Goethe",
+        "year": 1910
+      }
+    ],
+    "Wallace Stevens": [
+      {
+        "match": "The Auroras of Autumn",
+        "year": 1950
+      }
+    ],
+    "W.B. Yeats": [
+      {
+        "match": "Sailing to Byzantium",
+        "year": 1928
+      }
+    ],
+    "Ralph Waldo Emerson": [
+      {
+        "match": "Divinity School Address",
+        "year": 1838
+      }
+    ],
+    "Giovanni Battista Piranesi": [
+      {
+        "match": "Le Carceri",
+        "year": 1750
+      }
+    ],
+    "Johann Wolfgang von Goethe": [
+      {
+        "match": "Römische Elegien",
+        "title": "Roman Elegies"
+      },
+      {
+        "match": "West-Ostlicher Divan",
+        "title": "West-Eastern Divan"
+      },
+      {
+        "match": "Kampagne in Frankreich",
+        "title": "Campaign in France"
+      }
+    ],
+    "Stendhal": [
+      {
+        "match": "Le Rouge et le Noir",
+        "title": "The Red and the Black"
+      },
+      {
+        "match": "Souvenirs d'égotisme",
+        "title": "Memoirs of an Egotist"
+      }
+    ],
+    "Marcel Proust": [
+      {
+        "match": "Du côté de chez Swann",
+        "title": "Swann's Way"
+      },
+      {
+        "match": "Le Temps retrouvé (À la recherche du temps perdu #7)",
+        "title": "Time Regained"
+      }
+    ],
+    "Charles Baudelaire": [
+      {
+        "match": "Les Fleurs du mal",
+        "title": "The Flowers of Evil"
+      }
+    ],
+    "Denis Diderot": [
+      {
+        "match": "Le neveu de Rameau",
+        "title": "Rameau's Nephew"
+      }
+    ],
+    "Rainer Maria Rilke": [
+      {
+        "match": "Duineser Elegien",
+        "title": "Duino Elegies"
+      }
+    ],
+    "Jules Verne": [
+      {
+        "match": "L'île mystérieuse",
+        "title": "The Mysterious Island"
+      }
+    ],
+    "Gustave Le Bon": [
+      {
+        "match": "Psychologie des Foules",
+        "title": "The Crowd: A Study of the Popular Mind"
+      }
+    ],
+    "Honoré de Balzac": [
+      {
+        "match": "La Fille Aux Yeux D'Or",
+        "title": "The Girl with the Golden Eyes"
+      }
+    ],
+    "Victor Hugo": [
+      {
+        "match": "La Légende des Siècles",
+        "title": "The Legend of the Ages"
+      }
+    ],
+    "Georg Simmel": [
+      {
+        "match": "Soziologie",
+        "title": "Sociology"
+      }
+    ],
+    "Heinrich von Kleist": [
+      {
+        "match": "Über das Marionettentheater",
+        "title": "On the Marionette Theatre"
+      }
+    ],
+    "François-René de Chateaubriand": [
+      {
+        "match": "Vie de Rancé",
+        "title": "The Life of Rancé"
+      }
+    ],
+    "Benedetto Croce": [
+      {
+        "match": "Storia dell'estetica",
+        "title": "History of Aesthetics"
+      }
+    ],
+    "Aristotle": [
+      {
+        "match": "Economics",
+        "year": -330
+      },
+      {
+        "match": "Problemata",
+        "year": -330
+      },
+      {
+        "match": "Historia Animalium 1: Books 1-10 (Cambridge Classical Texts and Commentaries, #38)",
+        "year": -343,
+        "title": "Historia Animalium"
+      },
+      {
+        "match": "The Works of Aristotle Translated into English",
+        "year": null
+      }
+    ],
+    "Julius Caesar": [
+      {
+        "match": "Commentarii de Bello Gallico",
+        "year": -50
+      }
+    ],
+    "Lao Tzu": [
+      {
+        "match": "Tao Te Ching",
+        "year": -550
+      }
+    ]
+  }
+}

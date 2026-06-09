@@ -1,0 +1,3466 @@
+{
+  "source": {
+    "title": "Studies in Pessimism",
+    "authors": [
+      "Arthur Schopenhauer"
+    ],
+    "goodreads_id": "pg10732",
+    "calibre_id": null,
+    "average_rating": 4.0,
+    "format": "Paperback",
+    "book_id": "1756413",
+    "publication_year": 2007,
+    "work_id": "2568404",
+    "isbn": "1602063494",
+    "publication_day": 1,
+    "publication_month": 6,
+    "title_without_series": "Studies In Pessimism",
+    "ratings_count": 13,
+    "text_reviews_count": 1,
+    "publisher": "Cosimo Classics",
+    "isbn13": "9781602063495",
+    "author_ids": [
+      "11682"
+    ],
+    "description": "CONTENTSOn the Sufferings of the WorldOn the Vanity of ExistenceOn SuicideImmortality: A DialoguePsychological ObservationsOn EducationOf WomenOn NoiseA Few Parables",
+    "link": "https://www.goodreads.com/book/show/1756413.Studies_In_Pessimism",
+    "author_metadata": {
+      "birth_year": 1788,
+      "death_year": 1860,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Jean-Jacques Rousseau",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Hence, even Rousseau declared: _Women have, in general, no love for any art; they have no proper knowledge of any; and they have no genius_."
+        ],
+        "commentaries": [
+          "The author quotes Rousseau's declaration about women's lack of artistic sensibility."
+        ],
+        "canonical_author": "Jean-Jacques Rousseau"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Jean-Jacques Rousseau",
+        "page_id": 15941,
+        "infoboxes": [
+          "philosopher",
+          "writer"
+        ],
+        "categories": [
+          "Jean-Jacques Rousseau| ",
+          "1712 births",
+          "1778 deaths",
+          "18th-century classical composers",
+          "18th-century male musicians",
+          "18th-century memoirists",
+          "18th-century novelists",
+          "18th-century philosophers",
+          "18th-century writers from the Republic of Geneva",
+          "Age of Enlightenment",
+          "Autobiographers",
+          "Baroque composers",
+          "Burials at the Panthéon, Paris",
+          "Classical-period composers",
+          "Contributors to the Encyclopédie (1751–1772)",
+          "Converts to Roman Catholicism from Calvinism",
+          "Deist philosophers",
+          "Enlightenment philosophers",
+          "Male non-fiction writers",
+          "Political philosophers",
+          "Music copyists",
+          "Music theorists",
+          "Musicians from the Republic of Geneva",
+          "People with hypochondriasis",
+          "Philosophers from the Republic of Geneva",
+          "Philosophers of art",
+          "Philosophers of culture",
+          "Philosophers of economics",
+          "Philosophers of education",
+          "Philosophers of literature"
+        ],
+        "birth_year": 1712,
+        "death_year": 1778
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7994"
+        ],
+        "target_person": {
+          "title": "Jean-Jacques Rousseau",
+          "page_id": 15941,
+          "infoboxes": [
+            "philosopher",
+            "writer"
+          ],
+          "categories": [
+            "Jean-Jacques Rousseau| ",
+            "1712 births",
+            "1778 deaths",
+            "18th-century classical composers",
+            "18th-century male musicians",
+            "18th-century memoirists",
+            "18th-century novelists",
+            "18th-century philosophers",
+            "18th-century writers from the Republic of Geneva",
+            "Age of Enlightenment",
+            "Autobiographers",
+            "Baroque composers",
+            "Burials at the Panthéon, Paris",
+            "Classical-period composers",
+            "Contributors to the Encyclopédie (1751–1772)",
+            "Converts to Roman Catholicism from Calvinism",
+            "Deist philosophers",
+            "Enlightenment philosophers",
+            "Male non-fiction writers",
+            "Political philosophers",
+            "Music copyists",
+            "Music theorists",
+            "Musicians from the Republic of Geneva",
+            "People with hypochondriasis",
+            "Philosophers from the Republic of Geneva",
+            "Philosophers of art",
+            "Philosophers of culture",
+            "Philosophers of economics",
+            "Philosophers of education",
+            "Philosophers of literature"
+          ],
+          "birth_year": 1712,
+          "death_year": 1778
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Origen",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Amongst the Christian Fathers, Origen, with praiseworthy courage, took this view, which is further justified by certain objective theories of life."
+        ],
+        "commentaries": [
+          "The author mentions Origen as a Christian Father who courageously held the view that the world is a penitentiary."
+        ],
+        "canonical_author": "Origen"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Origen",
+        "page_id": 22702,
+        "infoboxes": [
+          "philosopher",
+          "saint"
+        ],
+        "categories": [
+          "Origen| ",
+          "184 births",
+          "253 deaths",
+          "2nd-century Egyptian people",
+          "3rd-century Egyptian people",
+          "3rd-century Greek philosophers",
+          "3rd-century writers",
+          "Amillennialism",
+          "Ancient Christians involved in controversies",
+          "Anglican saints",
+          "Christian anti-Gnosticism",
+          "Christian apologists",
+          "Christian ascetics",
+          "Christian pacifists",
+          "Christian universalist theologians",
+          "Church Fathers",
+          "Egyptian theologians",
+          "Hermeneutists",
+          "Writers of late antiquity",
+          "Middle Platonists",
+          "Oriental Orthodox saints",
+          "People celebrated in the Lutheran liturgical calendar",
+          "People declared heretics by the first seven ecumenical councils",
+          "Philosophers in ancient Alexandria",
+          "Roman-era Greeks",
+          "Systematic theologians"
+        ],
+        "birth_year": 184,
+        "death_year": 253
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "299395"
+        ],
+        "target_person": {
+          "title": "Origen",
+          "page_id": 22702,
+          "infoboxes": [
+            "philosopher",
+            "saint"
+          ],
+          "categories": [
+            "Origen| ",
+            "184 births",
+            "253 deaths",
+            "2nd-century Egyptian people",
+            "3rd-century Egyptian people",
+            "3rd-century Greek philosophers",
+            "3rd-century writers",
+            "Amillennialism",
+            "Ancient Christians involved in controversies",
+            "Anglican saints",
+            "Christian anti-Gnosticism",
+            "Christian apologists",
+            "Christian ascetics",
+            "Christian pacifists",
+            "Christian universalist theologians",
+            "Church Fathers",
+            "Egyptian theologians",
+            "Hermeneutists",
+            "Writers of late antiquity",
+            "Middle Platonists",
+            "Oriental Orthodox saints",
+            "People celebrated in the Lutheran liturgical calendar",
+            "People declared heretics by the first seven ecumenical councils",
+            "Philosophers in ancient Alexandria",
+            "Roman-era Greeks",
+            "Systematic theologians"
+          ],
+          "birth_year": 184,
+          "death_year": 253
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Immanuel Kant",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "This is why Kant is so great.",
+          "But this Kantian rigmarole won't do any more: it's antiquated and no longer applicable to modern ideas."
+        ],
+        "commentaries": [
+          "The author praises Kant for his insight into the ideality of time and space.",
+          "The author dismissively refers to Kantian concepts as outdated."
+        ],
+        "canonical_author": "Immanuel Kant"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Immanuel Kant",
+        "page_id": 14631,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Immanuel Kant| ",
+          "1724 births",
+          "1804 deaths",
+          "18th-century anthropologists",
+          "18th-century essayists",
+          "18th-century German male writers",
+          "18th-century German philosophers",
+          "18th-century German writers",
+          "18th-century Prussian people",
+          "19th-century German anthropologists",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German philosophers",
+          "19th-century Prussian people",
+          "19th-century social scientists",
+          "Academic staff of the University of Königsberg",
+          "Age of Enlightenment",
+          "Enlightenment philosophers",
+          "German epistemologists",
+          "German agnostics",
+          "German ethicists",
+          "German idealists",
+          "German logicians",
+          "German Lutherans",
+          "German male non-fiction writers",
+          "German political philosophers",
+          "Humor researchers",
+          "Idealists"
+        ],
+        "birth_year": 1724,
+        "death_year": 1804
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "11038"
+        ],
+        "target_person": {
+          "title": "Immanuel Kant",
+          "page_id": 14631,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Immanuel Kant| ",
+            "1724 births",
+            "1804 deaths",
+            "18th-century anthropologists",
+            "18th-century essayists",
+            "18th-century German male writers",
+            "18th-century German philosophers",
+            "18th-century German writers",
+            "18th-century Prussian people",
+            "19th-century German anthropologists",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German philosophers",
+            "19th-century Prussian people",
+            "19th-century social scientists",
+            "Academic staff of the University of Königsberg",
+            "Age of Enlightenment",
+            "Enlightenment philosophers",
+            "German epistemologists",
+            "German agnostics",
+            "German ethicists",
+            "German idealists",
+            "German logicians",
+            "German Lutherans",
+            "German male non-fiction writers",
+            "German political philosophers",
+            "Humor researchers",
+            "Idealists"
+          ],
+          "birth_year": 1724,
+          "death_year": 1804
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "In the one case (with the exception, it must be confessed, of Plato), the object of ethics is to enable a man to lead a happy life; in the other, it is to free and redeem him from life altogether--as is directly stated in the very first words of the Sankhya Karika.",
+          "How can it dwell where, as Plato says, _continual Becoming and never Being_ is the sole form of existence?",
+          "still better, however, by Plato's remark that nothing in human affairs is worth any great anxiety--[Greek: oute ti ton anthropinon axion esti megalaes spoudaes.]"
+        ],
+        "commentaries": [
+          "The author mentions Plato as an exception among Greek ethicists, implying his ethical views differ from the typical Greek focus on happiness.",
+          "The author quotes Plato's idea that existence is characterized by continual becoming and never being.",
+          "The author quotes Plato's remark that nothing in human affairs is worth great anxiety."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thomas Hood",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Meanwhile, I may quote what Thomas Hood says of them[2]: _For a musical nation, they are the most noisy I ever met with_."
+        ],
+        "commentaries": [
+          "The author quotes Thomas Hood's observation about the Germans being a noisy nation."
+        ],
+        "canonical_author": "Thomas Hood"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thomas Hood",
+        "page_id": 249114,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "1799 births",
+          "1845 deaths",
+          "19th-century English poets",
+          "19th-century English essayists",
+          "Victorian poets",
+          "Writers from London",
+          "Burials at Kensal Green Cemetery",
+          "English male essayists",
+          "English male poets",
+          "Poets from Dundee"
+        ],
+        "birth_year": 1799,
+        "death_year": 1845
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "87327"
+        ],
+        "target_person": {
+          "title": "Thomas Hood",
+          "page_id": 249114,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "1799 births",
+            "1845 deaths",
+            "19th-century English poets",
+            "19th-century English essayists",
+            "Victorian poets",
+            "Writers from London",
+            "Burials at Kensal Green Cemetery",
+            "English male essayists",
+            "English male poets",
+            "Poets from Dundee"
+          ],
+          "birth_year": 1799,
+          "death_year": 1845
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Baltasar Gracián",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This is the meaning of that remark of Gracian, that nothing is more unworthy of a man than to let it be seen that he is one--_el mayor desdoro de un hombre es dar muestras de que es hombre_."
+        ],
+        "commentaries": [
+          "The author quotes Gracian's remark about unworthiness of a man letting it be seen that he is one."
+        ],
+        "canonical_author": "Gracian"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Baltasar Gracián",
+        "page_id": 1632292,
+        "infoboxes": [
+          "philosopher "
+        ],
+        "categories": [
+          "1601 births",
+          "1658 deaths",
+          "17th-century Spanish Jesuits",
+          "17th-century Spanish philosophers",
+          "17th-century Spanish writers",
+          "Spanish Baroque writers",
+          "Jesuit philosophers",
+          "People from Comunidad de Calatayud",
+          "Philosophers of pessimism",
+          "Spanish Roman Catholic writers",
+          "Spanish Golden Age",
+          "Spanish male writers",
+          "Aphorists"
+        ],
+        "birth_year": 1601,
+        "death_year": 1658
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1026409"
+        ],
+        "target_person": {
+          "title": "Baltasar Gracián",
+          "page_id": 1632292,
+          "infoboxes": [
+            "philosopher "
+          ],
+          "categories": [
+            "1601 births",
+            "1658 deaths",
+            "17th-century Spanish Jesuits",
+            "17th-century Spanish philosophers",
+            "17th-century Spanish writers",
+            "Spanish Baroque writers",
+            "Jesuit philosophers",
+            "People from Comunidad de Calatayud",
+            "Philosophers of pessimism",
+            "Spanish Roman Catholic writers",
+            "Spanish Golden Age",
+            "Spanish male writers",
+            "Aphorists"
+          ],
+          "birth_year": 1601,
+          "death_year": 1658
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Juan Huarte",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "[Footnote 1: _Translator's Note_.--- Juan Huarte (1520?-1590) practised as a physician at Madrid. The work cited by Schopenhauer is known, and has been translated into many languages.]",
+          "And Huarte[1] in his _Examen de ingenios para las scienzias_--a book which has been famous for three hundred years--denies women the possession of all the higher faculties."
+        ],
+        "commentaries": [
+          "The translator notes that Schopenhauer cites a work by Juan Huarte.",
+          "The author references Huarte's book as denying women higher faculties."
+        ],
+        "canonical_author": "Juan Huarte"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Huarte",
+        "page_id": 1279105,
+        "infoboxes": [
+          "NFL biography"
+        ],
+        "categories": [
+          "1944 births",
+          "Living people",
+          "All-American college football players",
+          "American Football League players",
+          "American football quarterbacks",
+          "American people of Basque descent",
+          "Boston Patriots players",
+          "College Football Hall of Fame inductees",
+          "Chicago Bears players",
+          "Heisman Trophy winners",
+          "Kansas City Chiefs players",
+          "Memphis Southmen players",
+          "Notre Dame Fighting Irish football players",
+          "Philadelphia Eagles players",
+          "Players of American football from Anaheim, California",
+          "Players of American football from Santa Ana, California",
+          "Mater Dei High School (Santa Ana, California) alumni"
+        ],
+        "birth_year": 1944,
+        "death_year": 1592
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "16177530"
+        ],
+        "target_person": {
+          "title": "John Huarte",
+          "page_id": 1279105,
+          "infoboxes": [
+            "NFL biography"
+          ],
+          "categories": [
+            "1944 births",
+            "Living people",
+            "All-American college football players",
+            "American Football League players",
+            "American football quarterbacks",
+            "American people of Basque descent",
+            "Boston Patriots players",
+            "College Football Hall of Fame inductees",
+            "Chicago Bears players",
+            "Heisman Trophy winners",
+            "Kansas City Chiefs players",
+            "Memphis Southmen players",
+            "Notre Dame Fighting Irish football players",
+            "Philadelphia Eagles players",
+            "Players of American football from Anaheim, California",
+            "Players of American football from Santa Ana, California",
+            "Mater Dei High School (Santa Ana, California) alumni"
+          ],
+          "birth_year": 1944,
+          "death_year": 1592
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Theophrastus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "[Greek: anaisthaesia kai bradutaes psuchaes], as Theophrastus has it."
+        ],
+        "commentaries": [
+          "The author quotes Theophrastus to describe a certain dullness of mind that prevents solitary laughter."
+        ],
+        "canonical_author": "Theophrastus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Theophrastus",
+        "page_id": 98409,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "370s BC births",
+          "280s BC deaths",
+          "4th-century BC Greek philosophers",
+          "4th-century BC philosophers",
+          "3rd-century BC Greek philosophers",
+          "Ancient Eresians",
+          "Ancient Greek biologists",
+          "Ancient Greek botanists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ancient Greek science writers",
+          "Peripatetic philosophers",
+          "Natural philosophers",
+          "Ancient Greek grammarians",
+          "Hellenistic-era philosophers in Athens",
+          "Metic philosophers in Classical Athens"
+        ],
+        "birth_year": -371,
+        "death_year": -287
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "185668"
+        ],
+        "target_person": {
+          "title": "Theophrastus",
+          "page_id": 98409,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "370s BC births",
+            "280s BC deaths",
+            "4th-century BC Greek philosophers",
+            "4th-century BC philosophers",
+            "3rd-century BC Greek philosophers",
+            "Ancient Eresians",
+            "Ancient Greek biologists",
+            "Ancient Greek botanists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Greek science writers",
+            "Peripatetic philosophers",
+            "Natural philosophers",
+            "Ancient Greek grammarians",
+            "Hellenistic-era philosophers in Athens",
+            "Metic philosophers in Classical Athens"
+          ],
+          "birth_year": -371,
+          "death_year": -287
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "William Shakespeare",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Shakespeare, in particular, shows that this is his general method, more especially in Hamlet.",
+          "However, the heart would do better to be careful, and to remember what Hamlet put down in his tablets--_that one may smile, and smile, and be a villain_."
+        ],
+        "commentaries": [
+          "The author cites Shakespeare's Hamlet as an example of the noble element in drama.",
+          "The author refers to a quote from Hamlet about smiling and being a villain."
+        ],
+        "canonical_author": "William Shakespeare"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "William Shakespeare",
+        "page_id": 32897,
+        "infoboxes": [
+          "person",
+          "writer "
+        ],
+        "categories": [
+          "William Shakespeare| ",
+          "1564 births",
+          "1616 deaths",
+          "16th-century English male actors",
+          "English male stage actors",
+          "English male Shakespearean actors",
+          "16th-century English dramatists and playwrights",
+          "16th-century English male writers",
+          "17th-century English dramatists and playwrights",
+          "16th-century English poets",
+          "Burials in Warwickshire",
+          "17th-century English poets",
+          "17th-century English male writers",
+          "English Renaissance dramatists",
+          "People educated at King Edward VI School, Stratford-upon-Avon",
+          "Male actors from Stratford-upon-Avon",
+          "People of the Elizabethan era",
+          "Shakespeare family",
+          "Sonneteers",
+          "King's Men (playing company)",
+          "17th-century English male actors",
+          "English male dramatists and playwrights",
+          "English male poets",
+          "Writers from Warwickshire",
+          "Burials at Church of the Holy Trinity, Stratford-upon-Avon"
+        ],
+        "birth_year": 1564,
+        "death_year": 1616
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "947"
+        ],
+        "target_person": {
+          "title": "William Shakespeare",
+          "page_id": 32897,
+          "infoboxes": [
+            "person",
+            "writer "
+          ],
+          "categories": [
+            "William Shakespeare| ",
+            "1564 births",
+            "1616 deaths",
+            "16th-century English male actors",
+            "English male stage actors",
+            "English male Shakespearean actors",
+            "16th-century English dramatists and playwrights",
+            "16th-century English male writers",
+            "17th-century English dramatists and playwrights",
+            "16th-century English poets",
+            "Burials in Warwickshire",
+            "17th-century English poets",
+            "17th-century English male writers",
+            "English Renaissance dramatists",
+            "People educated at King Edward VI School, Stratford-upon-Avon",
+            "Male actors from Stratford-upon-Avon",
+            "People of the Elizabethan era",
+            "Shakespeare family",
+            "Sonneteers",
+            "King's Men (playing company)",
+            "17th-century English male actors",
+            "English male dramatists and playwrights",
+            "English male poets",
+            "Writers from Warwickshire",
+            "Burials at Church of the Holy Trinity, Stratford-upon-Avon"
+          ],
+          "birth_year": 1564,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Johann Wolfgang von Goethe",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In the biographies of almost all great writers, or wherever else their personal utterances are recorded, I find complaints about it; in the case of Kant, for instance, Goethe, Lichtenberg, Jean Paul; and if it should happen that any writer has omitted to express himself on the matter, it is only for want of an opportunity."
+        ],
+        "commentaries": [
+          "The author lists Goethe among great writers who complained about noise."
+        ],
+        "canonical_author": "Johann Wolfgang Von Goethe"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Johann Wolfgang von Goethe",
+        "page_id": 19242322,
+        "infoboxes": [
+          "writer",
+          "officeholder "
+        ],
+        "categories": [
+          "Johann Wolfgang von Goethe| ",
+          "1749 births",
+          "1832 deaths",
+          "18th-century German educators",
+          "18th-century essayists",
+          "18th-century German civil servants",
+          "18th-century German dramatists and playwrights",
+          "18th-century German male writers",
+          "18th-century German novelists",
+          "18th-century German philosophers",
+          "18th-century German poets",
+          "18th-century historians",
+          "18th-century travel writers",
+          "19th-century German educators",
+          "19th-century German essayists",
+          "German male essayists",
+          "19th-century German civil servants",
+          "19th-century German diplomats",
+          "19th-century German dramatists and playwrights",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German novelists",
+          "19th-century German philosophers",
+          "19th-century German poets",
+          "19th-century historians",
+          "19th-century travel writers",
+          "Color scientists",
+          "Enlightenment philosophers",
+          "Epic poets",
+          "Epigrammatists"
+        ],
+        "birth_year": 1749,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "285217"
+        ],
+        "target_person": {
+          "title": "Johann Wolfgang von Goethe",
+          "page_id": 19242322,
+          "infoboxes": [
+            "writer",
+            "officeholder "
+          ],
+          "categories": [
+            "Johann Wolfgang von Goethe| ",
+            "1749 births",
+            "1832 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German civil servants",
+            "18th-century German dramatists and playwrights",
+            "18th-century German male writers",
+            "18th-century German novelists",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century historians",
+            "18th-century travel writers",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "German male essayists",
+            "19th-century German civil servants",
+            "19th-century German diplomats",
+            "19th-century German dramatists and playwrights",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German novelists",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century historians",
+            "19th-century travel writers",
+            "Color scientists",
+            "Enlightenment philosophers",
+            "Epic poets",
+            "Epigrammatists"
+          ],
+          "birth_year": 1749,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Empedocles",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I refer, not to my own philosophy alone, but to the wisdom of all ages, as expressed in Brahmanism and Buddhism, and in the sayings of Greek philosophers like Empedocles and Pythagoras; as also by Cicero, in his remark that the wise men of old used to teach that we come into this world to pay the penalty of crime committed in another state of existence--a doctrine which formed part of the initiation into the mysteries."
+        ],
+        "commentaries": [
+          "The author cites Empedocles as one of the Greek philosophers whose sayings support the view that life is a penalty for past crimes."
+        ],
+        "canonical_author": "Empedocles"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Empedocles",
+        "page_id": 9553,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Deaths from fire",
+          "5th-century BC Greek philosophers",
+          "5th-century BC Greek poets",
+          "Ancient Acragantines",
+          "Ancient Greek shamans",
+          "Pluralist philosophers",
+          "Ancient Greek physicists",
+          "Philosophers of Magna Graecia",
+          "Natural philosophers",
+          "Philosophers of science",
+          "Presocratic philosophers",
+          "Sicilian Greeks",
+          "490s BC births",
+          "430s BC deaths",
+          "Mount Etna",
+          "Miracle workers"
+        ],
+        "birth_year": -494,
+        "death_year": -434
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "501843"
+        ],
+        "target_person": {
+          "title": "Empedocles",
+          "page_id": 9553,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Deaths from fire",
+            "5th-century BC Greek philosophers",
+            "5th-century BC Greek poets",
+            "Ancient Acragantines",
+            "Ancient Greek shamans",
+            "Pluralist philosophers",
+            "Ancient Greek physicists",
+            "Philosophers of Magna Graecia",
+            "Natural philosophers",
+            "Philosophers of science",
+            "Presocratic philosophers",
+            "Sicilian Greeks",
+            "490s BC births",
+            "430s BC deaths",
+            "Mount Etna",
+            "Miracle workers"
+          ],
+          "birth_year": -494,
+          "death_year": -434
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Aristotle, it is true, declared suicide to be an offence against the State, although not against the person;"
+        ],
+        "commentaries": [
+          "The author references Aristotle's view on suicide as an offense against the State."
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Friedrich Schleiermacher",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The mighty Schleiermacher, for instance, and that gigantic intellect, Hegel; and at this time of day we've abandoned that nonsense."
+        ],
+        "commentaries": [
+          "The author mentions Schleiermacher as a prominent thinker whose ideas are now considered obsolete."
+        ],
+        "canonical_author": "Friedrich Schleiermacher"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Friedrich Schleiermacher",
+        "page_id": 179109,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1768 births",
+          "1834 deaths",
+          "18th-century Christian universalists",
+          "18th-century essayists",
+          "18th-century German male writers",
+          "18th-century German philosophers",
+          "18th-century German Protestant theologians",
+          "18th-century German writers",
+          "18th-century non-fiction writers",
+          "18th-century German translators",
+          "19th-century Christian universalists",
+          "19th-century Calvinist and Reformed theologians",
+          "19th-century German essayists",
+          "19th-century German male writers",
+          "19th-century German non-fiction writers",
+          "19th-century German philosophers",
+          "19th-century German Protestant theologians",
+          "19th-century German writers",
+          "19th-century German translators",
+          "Age of Enlightenment",
+          "Christian universalist theologians",
+          "Deaths from pneumonia in Germany",
+          "Enlightenment philosophers",
+          "German biblical scholars",
+          "German Calvinist and Reformed theologians",
+          "German Christian universalists",
+          "German epistemologists",
+          "German essayists",
+          "German ethicists",
+          "German logicians"
+        ],
+        "birth_year": 1768,
+        "death_year": 1834
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "192624"
+        ],
+        "target_person": {
+          "title": "Friedrich Schleiermacher",
+          "page_id": 179109,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1768 births",
+            "1834 deaths",
+            "18th-century Christian universalists",
+            "18th-century essayists",
+            "18th-century German male writers",
+            "18th-century German philosophers",
+            "18th-century German Protestant theologians",
+            "18th-century German writers",
+            "18th-century non-fiction writers",
+            "18th-century German translators",
+            "19th-century Christian universalists",
+            "19th-century Calvinist and Reformed theologians",
+            "19th-century German essayists",
+            "19th-century German male writers",
+            "19th-century German non-fiction writers",
+            "19th-century German philosophers",
+            "19th-century German Protestant theologians",
+            "19th-century German writers",
+            "19th-century German translators",
+            "Age of Enlightenment",
+            "Christian universalist theologians",
+            "Deaths from pneumonia in Germany",
+            "Enlightenment philosophers",
+            "German biblical scholars",
+            "German Calvinist and Reformed theologians",
+            "German Christian universalists",
+            "German epistemologists",
+            "German essayists",
+            "German ethicists",
+            "German logicians"
+          ],
+          "birth_year": 1768,
+          "death_year": 1834
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "George Sand",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as George Sand said, les défauts de ses vertus"
+        ],
+        "commentaries": [
+          "The author quotes George Sand's phrase about the defects of one's virtues to illustrate the idea that brilliant people openly admit their errors as essential to their qualities."
+        ],
+        "canonical_author": "George Sand"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "George Sand",
+        "page_id": 52592,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "George Sand| ",
+          "1804 births",
+          "1876 deaths",
+          "19th-century French composers",
+          "19th-century French dramatists and playwrights",
+          "19th-century French novelists",
+          "19th-century French women writers",
+          "Frédéric Chopin",
+          "French women novelists",
+          "French socialists",
+          "Legion of Honour refusals",
+          "People from Indre",
+          "Pseudonymous women writers",
+          "Writers from Paris",
+          "19th-century French letter writers",
+          "19th-century pseudonymous writers",
+          "Romantic muses and models",
+          "French women dramatists and playwrights",
+          "Writers of the Romantic era",
+          "19th-century French women journalists",
+          "19th-century French short story writers",
+          "French women short story writers",
+          "French political writers",
+          "19th-century French non-fiction writers",
+          "French women non-fiction writers",
+          "19th-century French memoirists",
+          "French women's rights activists",
+          "French travel writers",
+          "Female-to-male cross-dressers",
+          "French historical novelists"
+        ],
+        "birth_year": 1804,
+        "death_year": 1876
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1464"
+        ],
+        "target_person": {
+          "title": "George Sand",
+          "page_id": 52592,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "George Sand| ",
+            "1804 births",
+            "1876 deaths",
+            "19th-century French composers",
+            "19th-century French dramatists and playwrights",
+            "19th-century French novelists",
+            "19th-century French women writers",
+            "Frédéric Chopin",
+            "French women novelists",
+            "French socialists",
+            "Legion of Honour refusals",
+            "People from Indre",
+            "Pseudonymous women writers",
+            "Writers from Paris",
+            "19th-century French letter writers",
+            "19th-century pseudonymous writers",
+            "Romantic muses and models",
+            "French women dramatists and playwrights",
+            "Writers of the Romantic era",
+            "19th-century French women journalists",
+            "19th-century French short story writers",
+            "French women short story writers",
+            "French political writers",
+            "19th-century French non-fiction writers",
+            "French women non-fiction writers",
+            "19th-century French memoirists",
+            "French women's rights activists",
+            "French travel writers",
+            "Female-to-male cross-dressers",
+            "French historical novelists"
+          ],
+          "birth_year": 1804,
+          "death_year": 1876
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Gottfried Wilhelm Leibniz",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Leibnitz is particularly concerned to defend this absurdity; and he seeks to strengthen his position by using a palpable and paltry sophism.",
+          "Even though Leibnitz' contention, that this is the best of all possible worlds, were correct, that would not justify God in having created it."
+        ],
+        "commentaries": [
+          "The author criticizes Leibnitz for defending the absurdity that evil is negative, calling his argument a sophism.",
+          "The author references Leibnitz's philosophical contention about the best of all possible worlds, arguing against its justification for God's creation."
+        ],
+        "canonical_author": "Leibnitz"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Gottfried Wilhelm Leibniz",
+        "page_id": 12281,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Gottfried Wilhelm Leibniz| ",
+          "1646 births",
+          "1716 deaths",
+          "17th-century German mathematicians",
+          "17th-century German philosophers",
+          "17th-century German scientists",
+          "17th-century German writers",
+          "17th-century German male writers",
+          "17th-century writers in Latin",
+          "17th-century German inventors",
+          "18th-century German mathematicians",
+          "18th-century German philosophers",
+          "18th-century German physicists",
+          "18th-century German scientists",
+          "18th-century German writers",
+          "18th-century German male writers",
+          "18th-century writers in Latin",
+          "18th-century German inventors",
+          "Constructed language creators",
+          "Determinists",
+          "Enlightenment philosophers",
+          "Fellows of the Royal Society",
+          "German librarians",
+          "German logicians",
+          "German Lutherans",
+          "German philologists",
+          "German political philosophers",
+          "German Protestants",
+          "French-language German writers",
+          "Leipzig University alumni"
+        ],
+        "birth_year": 1646,
+        "death_year": 1716
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1340566"
+        ],
+        "target_person": {
+          "title": "Gottfried Wilhelm Leibniz",
+          "page_id": 12281,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Gottfried Wilhelm Leibniz| ",
+            "1646 births",
+            "1716 deaths",
+            "17th-century German mathematicians",
+            "17th-century German philosophers",
+            "17th-century German scientists",
+            "17th-century German writers",
+            "17th-century German male writers",
+            "17th-century writers in Latin",
+            "17th-century German inventors",
+            "18th-century German mathematicians",
+            "18th-century German philosophers",
+            "18th-century German physicists",
+            "18th-century German scientists",
+            "18th-century German writers",
+            "18th-century German male writers",
+            "18th-century writers in Latin",
+            "18th-century German inventors",
+            "Constructed language creators",
+            "Determinists",
+            "Enlightenment philosophers",
+            "Fellows of the Royal Society",
+            "German librarians",
+            "German logicians",
+            "German Lutherans",
+            "German philologists",
+            "German political philosophers",
+            "German Protestants",
+            "French-language German writers",
+            "Leipzig University alumni"
+          ],
+          "birth_year": 1646,
+          "death_year": 1716
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Friedrich Schiller",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Schiller's poem in honor of women, _Würde der Frauen_, is the result of much careful thought..."
+        ],
+        "commentaries": [
+          "The author contrasts Schiller's poem unfavorably with a quote from Jouy."
+        ],
+        "canonical_author": "Friedrich Schiller"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Friedrich Schiller",
+        "page_id": 63742,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] --> "
+        ],
+        "categories": [
+          "Friedrich Schiller| ",
+          "1759 births",
+          "1805 deaths",
+          "18th-century German dramatists and playwrights",
+          "18th-century German historians",
+          "18th-century German male writers",
+          "18th-century German philosophers",
+          "18th-century German poets",
+          "18th-century German translators",
+          "19th-century deaths from tuberculosis",
+          "19th-century German dramatists and playwrights",
+          "19th-century German historians",
+          "19th-century German male writers",
+          "19th-century German philosophers",
+          "19th-century German poets",
+          "19th-century German physicians",
+          "19th-century translators",
+          "Enlightenment philosophers",
+          "French–German translators",
+          "German-language poets",
+          "German literary theorists",
+          "German male dramatists and playwrights",
+          "German male non-fiction writers",
+          "German male poets",
+          "German medical writers",
+          "German satirists",
+          "German satirical poets",
+          "German untitled nobility",
+          "History of literature",
+          "History of poetry"
+        ],
+        "birth_year": 1759,
+        "death_year": 1805
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1399243"
+        ],
+        "target_person": {
+          "title": "Friedrich Schiller",
+          "page_id": 63742,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] --> "
+          ],
+          "categories": [
+            "Friedrich Schiller| ",
+            "1759 births",
+            "1805 deaths",
+            "18th-century German dramatists and playwrights",
+            "18th-century German historians",
+            "18th-century German male writers",
+            "18th-century German philosophers",
+            "18th-century German poets",
+            "18th-century German translators",
+            "19th-century deaths from tuberculosis",
+            "19th-century German dramatists and playwrights",
+            "19th-century German historians",
+            "19th-century German male writers",
+            "19th-century German philosophers",
+            "19th-century German poets",
+            "19th-century German physicians",
+            "19th-century translators",
+            "Enlightenment philosophers",
+            "French–German translators",
+            "German-language poets",
+            "German literary theorists",
+            "German male dramatists and playwrights",
+            "German male non-fiction writers",
+            "German male poets",
+            "German medical writers",
+            "German satirists",
+            "German satirical poets",
+            "German untitled nobility",
+            "History of literature",
+            "History of poetry"
+          ],
+          "birth_year": 1759,
+          "death_year": 1805
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Pythagoras",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I refer, not to my own philosophy alone, but to the wisdom of all ages, as expressed in Brahmanism and Buddhism, and in the sayings of Greek philosophers like Empedocles and Pythagoras; as also by Cicero, in his remark that the wise men of old used to teach that we come into this world to pay the penalty of crime committed in another state of existence--a doctrine which formed part of the initiation into the mysteries."
+        ],
+        "commentaries": [
+          "The author cites Pythagoras as one of the Greek philosophers whose sayings support the view that life is a penalty for past crimes."
+        ],
+        "canonical_author": "Pythagoras"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Pythagoras",
+        "page_id": 23275,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Pythagoras| ",
+          "570s BC births",
+          "490s BC deaths",
+          "6th-century BC mathematicians",
+          "6th-century BC Greek philosophers",
+          "5th-century BC Greek mathematicians",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek geometers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek music theorists",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek political refugees",
+          "Ancient Greek shamans",
+          "Ancient occultists",
+          "Ancient Samians",
+          "Pythagoreans",
+          "Founders of religions",
+          "Numerologists",
+          "Pythagoreans of Magna Graecia",
+          "6th-century BC religious leaders",
+          "5th-century BC religious leaders"
+        ],
+        "birth_year": -570,
+        "death_year": -495
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "203707"
+        ],
+        "target_person": {
+          "title": "Pythagoras",
+          "page_id": 23275,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Pythagoras| ",
+            "570s BC births",
+            "490s BC deaths",
+            "6th-century BC mathematicians",
+            "6th-century BC Greek philosophers",
+            "5th-century BC Greek mathematicians",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek music theorists",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek political refugees",
+            "Ancient Greek shamans",
+            "Ancient occultists",
+            "Ancient Samians",
+            "Pythagoreans",
+            "Founders of religions",
+            "Numerologists",
+            "Pythagoreans of Magna Graecia",
+            "6th-century BC religious leaders",
+            "5th-century BC religious leaders"
+          ],
+          "birth_year": -570,
+          "death_year": -495
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Diogenes Laertius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "according to Diogenes Laertius,[1] Antisthenes gave, when he was asked what branch of knowledge was most necessary; and we can see what he meant."
+        ],
+        "commentaries": [
+          "The author cites Diogenes Laertius as the source for Antisthenes' answer about the most necessary branch of knowledge."
+        ],
+        "canonical_author": "Diogenes Laertius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Diogenes Laertius",
+        "page_id": 80047,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "3rd-century Romans",
+          "3rd-century Greek philosophers",
+          "Ancient Greek biographers",
+          "Year of birth unknown",
+          "Year of death unknown",
+          "Compilers of works of quotations",
+          "Ancient Roman biographers",
+          "Epigrammatists of the Greek Anthology",
+          "180 births"
+        ],
+        "birth_year": 180,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5752152"
+        ],
+        "target_person": {
+          "title": "Diogenes Laertius",
+          "page_id": 80047,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "3rd-century Romans",
+            "3rd-century Greek philosophers",
+            "Ancient Greek biographers",
+            "Year of birth unknown",
+            "Year of death unknown",
+            "Compilers of works of quotations",
+            "Ancient Roman biographers",
+            "Epigrammatists of the Greek Anthology",
+            "180 births"
+          ],
+          "birth_year": 180,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Georg Wilhelm Friedrich Hegel",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The mighty Schleiermacher, for instance, and that gigantic intellect, Hegel; and at this time of day we've abandoned that nonsense."
+        ],
+        "commentaries": [
+          "The author mentions Hegel as a towering figure whose philosophy is no longer relevant."
+        ],
+        "canonical_author": "Georg Wilhelm Friedrich Hegel"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Georg Wilhelm Friedrich Hegel",
+        "page_id": 12598,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Georg Wilhelm Friedrich Hegel| ",
+          "1770 births",
+          "1831 deaths",
+          "18th-century German educators",
+          "18th-century essayists",
+          "18th-century German male writers",
+          "18th-century German philosophers",
+          "18th-century German writers",
+          "18th-century historians",
+          "19th-century German educators",
+          "19th-century German essayists",
+          "19th-century German male writers",
+          "19th-century German philosophers",
+          "19th-century historians",
+          "19th-century mystics",
+          "Academic staff of the Humboldt University of Berlin",
+          "Academic staff of the University of Jena",
+          "Burials at the Dorotheenstadt Cemetery",
+          "Death of God theologians",
+          "Deaths from cholera",
+          "Enlightenment philosophers",
+          "German historians of philosophy",
+          "German Lutherans",
+          "German male essayists",
+          "German male non-fiction writers",
+          "German political philosophers",
+          "Hegelian philosophers| ",
+          "Heidelberg University alumni",
+          "German idealists",
+          "Infectious disease deaths in Germany"
+        ],
+        "birth_year": 1770,
+        "death_year": 1831
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6188"
+        ],
+        "target_person": {
+          "title": "Georg Wilhelm Friedrich Hegel",
+          "page_id": 12598,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Georg Wilhelm Friedrich Hegel| ",
+            "1770 births",
+            "1831 deaths",
+            "18th-century German educators",
+            "18th-century essayists",
+            "18th-century German male writers",
+            "18th-century German philosophers",
+            "18th-century German writers",
+            "18th-century historians",
+            "19th-century German educators",
+            "19th-century German essayists",
+            "19th-century German male writers",
+            "19th-century German philosophers",
+            "19th-century historians",
+            "19th-century mystics",
+            "Academic staff of the Humboldt University of Berlin",
+            "Academic staff of the University of Jena",
+            "Burials at the Dorotheenstadt Cemetery",
+            "Death of God theologians",
+            "Deaths from cholera",
+            "Enlightenment philosophers",
+            "German historians of philosophy",
+            "German Lutherans",
+            "German male essayists",
+            "German male non-fiction writers",
+            "German political philosophers",
+            "Hegelian philosophers| ",
+            "Heidelberg University alumni",
+            "German idealists",
+            "Infectious disease deaths in Germany"
+          ],
+          "birth_year": 1770,
+          "death_year": 1831
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lord Byron",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And even Lord Byron says: _Thought of the state of women under the ancient Greeks--convenient enough. Present state, a remnant of the barbarism of the chivalric and the feudal ages--artificial and unnatural. They ought to mind home--and be well fed and clothed--but not mixed in society. Well educated, too, in religion--but to read neither poetry nor politics-- nothing but books of piety and cookery. Music--drawing--dancing--also a little gardening and ploughing now and then. I have seen them mending the roads in Epirus with good success. Why not, as well as hay-making and milking_?"
+        ],
+        "commentaries": [
+          "The author quotes Lord Byron extensively to support his views on the proper role of women."
+        ],
+        "canonical_author": "Lord Byron"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lord Byron",
+        "page_id": 17566665,
+        "infoboxes": [
+          "writer",
+          "officeholder"
+        ],
+        "categories": [
+          "Lord Byron| ",
+          "1788 births",
+          "1824 deaths",
+          "18th-century English nobility",
+          "19th-century English dramatists and playwrights",
+          "19th-century English nobility",
+          "19th-century English poets",
+          "19th-century English LGBTQ people",
+          "San Lazzaro degli Armeni alumni",
+          "Alumni of Trinity College, Cambridge",
+          "Anglo-Scots",
+          "Anti-monarchists",
+          "Armenian studies scholars",
+          "Barons Byron|Byron, George Gordon Byron, 6th Baron",
+          "Bisexual male writers",
+          "Bisexual male politicians",
+          "Bisexual poets",
+          "English bisexual politicians",
+          "English bisexual writers",
+          "English bisexual men",
+          "British people of Cornish descent",
+          "British philhellenes in the Greek War of Independence",
+          "Greek people of English descent",
+          "Greek people of Scottish descent",
+          "Naturalized citizens of Greece",
+          "Burials at the Church of St Mary Magdalene, Hucknall",
+          "Burials in Nottinghamshire",
+          "Byron family",
+          "Carbonari",
+          "Coppet group"
+        ],
+        "birth_year": 1788,
+        "death_year": 1824
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "44407"
+        ],
+        "target_person": {
+          "title": "Lord Byron",
+          "page_id": 17566665,
+          "infoboxes": [
+            "writer",
+            "officeholder"
+          ],
+          "categories": [
+            "Lord Byron| ",
+            "1788 births",
+            "1824 deaths",
+            "18th-century English nobility",
+            "19th-century English dramatists and playwrights",
+            "19th-century English nobility",
+            "19th-century English poets",
+            "19th-century English LGBTQ people",
+            "San Lazzaro degli Armeni alumni",
+            "Alumni of Trinity College, Cambridge",
+            "Anglo-Scots",
+            "Anti-monarchists",
+            "Armenian studies scholars",
+            "Barons Byron|Byron, George Gordon Byron, 6th Baron",
+            "Bisexual male writers",
+            "Bisexual male politicians",
+            "Bisexual poets",
+            "English bisexual politicians",
+            "English bisexual writers",
+            "English bisexual men",
+            "British people of Cornish descent",
+            "British philhellenes in the Greek War of Independence",
+            "Greek people of English descent",
+            "Greek people of Scottish descent",
+            "Naturalized citizens of Greece",
+            "Burials at the Church of St Mary Magdalene, Hucknall",
+            "Burials in Nottinghamshire",
+            "Byron family",
+            "Carbonari",
+            "Coppet group"
+          ],
+          "birth_year": 1788,
+          "death_year": 1824
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Vicar of Wakefield",
+        "author": "Oliver Goldsmith",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "First and foremost, to give an example, _Gil Blas_, and the other works of Le Sage (or rather their Spanish originals); further, _The Vicar of Wakefield_, and, to some extent Sir Walter Scott's novels."
+        ],
+        "commentaries": [
+          "The author cites this novel as a positive example that does not have a bad influence."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 3.47,
+        "format": "Soft Cloth Hardcover",
+        "book_id": "31191077",
+        "publication_year": 1935,
+        "work_id": "2907686",
+        "title_without_series": "The Vicar of Wakefield;",
+        "ratings_count": 0,
+        "text_reviews_count": 1,
+        "publisher": "Thomas Nelson & Sons",
+        "title": "The Vicar of Wakefield;",
+        "author_ids": [
+          "65124"
+        ],
+        "authors": [
+          "Oliver Goldsmith"
+        ],
+        "description": "This work has been selected by scholars as being culturally important, and is part of the knowledge base of civilization as we know it. This work was reproduced from the original artifact, and remains as true to the original work as possible. Therefore, you will see the original copyright references, library stamps (as most of these works have been housed in our most important libraries around the world), and other notations in the work.This work is in the public domain in the United States of America, and....",
+        "link": "https://www.goodreads.com/book/show/31191077-the-vicar-of-wakefield",
+        "wikipedia_match": {
+          "title": "Oliver Goldsmith",
+          "page_id": 58038,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "1728 births",
+            "1774 deaths",
+            "Writers from County Longford",
+            "Writers from County Roscommon",
+            "Anglo-Irish writers",
+            "18th-century Anglo-Irish people",
+            "Irish Anglicans",
+            "Irish male poets",
+            "Irish male novelists",
+            "Irish male dramatists and playwrights",
+            "Alumni of Trinity College Dublin",
+            "Alumni of the University of Edinburgh",
+            "Streathamites",
+            "18th-century Irish novelists",
+            "18th-century Irish poets",
+            "18th-century Irish male writers",
+            "18th-century Irish dramatists and playwrights",
+            "Irish essayists",
+            "People from Ballymahon",
+            "People from Elphin, County Roscommon"
+          ],
+          "birth_year": 1728,
+          "death_year": 1774
+        },
+        "original_year": 1766,
+        "author_meta": {
+          "birth_year": 1728,
+          "canonical_name": "Oliver Goldsmith",
+          "death_year": 1774,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Oliver Goldsmith",
+        "page_id": 58038,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "1728 births",
+          "1774 deaths",
+          "Writers from County Longford",
+          "Writers from County Roscommon",
+          "Anglo-Irish writers",
+          "18th-century Anglo-Irish people",
+          "Irish Anglicans",
+          "Irish male poets",
+          "Irish male novelists",
+          "Irish male dramatists and playwrights",
+          "Alumni of Trinity College Dublin",
+          "Alumni of the University of Edinburgh",
+          "Streathamites",
+          "18th-century Irish novelists",
+          "18th-century Irish poets",
+          "18th-century Irish male writers",
+          "18th-century Irish dramatists and playwrights",
+          "Irish essayists",
+          "People from Ballymahon",
+          "People from Elphin, County Roscommon"
+        ],
+        "birth_year": 1728,
+        "death_year": 1774
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "31191077",
+        "target_author_ids": [
+          "65124"
+        ],
+        "target_person": {
+          "title": "Oliver Goldsmith",
+          "page_id": 58038,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "1728 births",
+            "1774 deaths",
+            "Writers from County Longford",
+            "Writers from County Roscommon",
+            "Anglo-Irish writers",
+            "18th-century Anglo-Irish people",
+            "Irish Anglicans",
+            "Irish male poets",
+            "Irish male novelists",
+            "Irish male dramatists and playwrights",
+            "Alumni of Trinity College Dublin",
+            "Alumni of the University of Edinburgh",
+            "Streathamites",
+            "18th-century Irish novelists",
+            "18th-century Irish poets",
+            "18th-century Irish male writers",
+            "18th-century Irish dramatists and playwrights",
+            "Irish essayists",
+            "People from Ballymahon",
+            "People from Elphin, County Roscommon"
+          ],
+          "birth_year": 1728,
+          "death_year": 1774
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Valerius Maximus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Valerius Maximus gives some very neat examples of this in his chapter on self-confidence, de fiducia sui."
+        ],
+        "commentaries": [
+          "The author refers to Valerius Maximus as providing examples of self-confidence in a specific chapter."
+        ],
+        "canonical_author": "Valerius Maximus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Terentius Maximus",
+        "page_id": 285997,
+        "infoboxes": [],
+        "categories": [
+          "Terentii",
+          "1st-century deaths",
+          "Roman Imperial era slaves and freedmen",
+          "1st-century Roman usurpers",
+          "Impostor pretenders",
+          "Year of birth unknown",
+          "Nero"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "302989"
+        ],
+        "target_person": {
+          "title": "Terentius Maximus",
+          "page_id": 285997,
+          "infoboxes": [],
+          "categories": [
+            "Terentii",
+            "1st-century deaths",
+            "Roman Imperial era slaves and freedmen",
+            "1st-century Roman usurpers",
+            "Impostor pretenders",
+            "Year of birth unknown",
+            "Nero"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Marcus Tullius Cicero",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I refer, not to my own philosophy alone, but to the wisdom of all ages, as expressed in Brahmanism and Buddhism, and in the sayings of Greek philosophers like Empedocles and Pythagoras; as also by Cicero, in his remark that the wise men of old used to teach that we come into this world to pay the penalty of crime committed in another state of existence--a doctrine which formed part of the initiation into the mysteries."
+        ],
+        "commentaries": [
+          "The author cites Cicero's remark that ancient wise men taught that life is a penalty for crimes committed in another existence."
+        ],
+        "canonical_author": "Marcus Tullius Cicero"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Tullius Cicero",
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Marcus Tullius Cicero",
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Politics",
+        "author": "Aristotle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In the _Politics_[1] Aristotle explains the great disadvantage which accrued to the Spartans from the fact that they conceded too much to their women, by giving them the right of inheritance and dower, and a great amount of independence; and he shows how much this contributed to Sparta's fall."
+        ],
+        "commentaries": [
+          "The author cites Aristotle's Politics to support his argument about the negative effects of giving women too much independence and property rights."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 3.92,
+        "format": "Paperback",
+        "book_id": "19083",
+        "publication_year": 2000,
+        "work_id": "14746717",
+        "isbn": "0486414248",
+        "publication_day": 15,
+        "num_pages": 368,
+        "publication_month": 11,
+        "title_without_series": "Politics",
+        "ratings_count": 22643,
+        "text_reviews_count": 215,
+        "publisher": "Dover Publications",
+        "title": "Politics",
+        "isbn13": "9780486414249",
+        "author_ids": [
+          "2192"
+        ],
+        "authors": [
+          "Aristotle"
+        ],
+        "description": "What is the relationship of the individual to the state? What is the ideal state, and how can it bring about the most desirable life for its citizens? What sort of education should it provide? What is the purpose of amassing wealth? These are some of the questions Aristotle attempts to answer in one of the most intellectually stimulating works.\nBoth heavily influenced by and critical of Plato's Republic and Laws,Politicsrepresents the distillation of a lifetime of thought and observation. \"Encyclopaedic kno...",
+        "link": "https://www.goodreads.com/book/show/19083.Politics",
+        "wikipedia_match": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        },
+        "original_year": -349,
+        "author_meta": {
+          "birth_year": -384,
+          "death_year": -322,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "19083",
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Vanini",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And Vanini--whom his contemporaries burned, finding that an easier task than to confute him--puts the same thing in a very forcible way. Man, he says, is so full of every kind of misery that, were it not repugnant to the Christian religion, I should venture to affirm that if evil spirits exist at all, they have posed into human form and are now atoning for their crimes."
+        ],
+        "commentaries": [
+          "The author quotes Vanini's forceful statement that human misery suggests people are evil spirits atoning for crimes."
+        ],
+        "canonical_author": "Vanini"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lucilio Vanini",
+        "page_id": 567364,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1585 births",
+          "1619 deaths",
+          "People from the Province of Lecce",
+          "16th-century Italian philosophers",
+          "16th-century Italian male writers",
+          "17th-century Italian philosophers",
+          "Italian atheists",
+          "Atheist philosophers",
+          "People executed for heresy",
+          "Italian people executed abroad",
+          "People executed by strangulation",
+          "17th-century executions by France",
+          "Executed philosophers",
+          "Pantheists",
+          "Proto-evolutionary biologists",
+          "Persecution of atheists",
+          "17th-century atheists",
+          "People from the Kingdom of Naples"
+        ],
+        "birth_year": 1585,
+        "death_year": 1619
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "4507276"
+        ],
+        "target_person": {
+          "title": "Lucilio Vanini",
+          "page_id": 567364,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1585 births",
+            "1619 deaths",
+            "People from the Province of Lecce",
+            "16th-century Italian philosophers",
+            "16th-century Italian male writers",
+            "17th-century Italian philosophers",
+            "Italian atheists",
+            "Atheist philosophers",
+            "People executed for heresy",
+            "Italian people executed abroad",
+            "People executed by strangulation",
+            "17th-century executions by France",
+            "Executed philosophers",
+            "Pantheists",
+            "Proto-evolutionary biologists",
+            "Persecution of atheists",
+            "17th-century atheists",
+            "People from the Kingdom of Naples"
+          ],
+          "birth_year": 1585,
+          "death_year": 1619
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Publius Ovidius Naso",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "That line of Ovid's, _Pronaque cum spectent animalia cetera terram_, can be applied in its true physical sense to the lower animals alone...",
+          "The former is the transcendental view, which is well expressed in Ovid's _non est tanti_--it is not worth so much trouble..."
+        ],
+        "commentaries": [
+          "The author quotes Ovid's line about animals looking at the ground and applies it metaphorically.",
+          "The author cites Ovid's phrase 'non est tanti' as expressing the transcendental view of life."
+        ],
+        "canonical_author": "Publius Ovidius Naso"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Publius Ovidius Naso",
+        "birth_year": -43,
+        "death_year": 17
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1127"
+        ],
+        "target_person": {
+          "title": "Publius Ovidius Naso",
+          "birth_year": -43,
+          "death_year": 17
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Aesop's Fables",
+        "author": "Aesop",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "A mother gave her children Aesop's fables to read, in the hope of educating and improving their minds; but they very soon brought the book back, and the eldest, wise beyond his years, delivered himself as follows: _This is no book for us; it's much too childish and stupid._"
+        ],
+        "commentaries": [
+          "The author references Aesop's fables as a book given to children for educational purposes, noting the children's rationalist rejection of it."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 4.05,
+        "format": "ebook",
+        "book_id": "21331",
+        "work_id": "868263",
+        "num_pages": 93,
+        "title_without_series": "Aesop's Fables",
+        "ratings_count": 247,
+        "text_reviews_count": 19,
+        "publisher": "Planet PDF",
+        "title": "Aesop's Fables",
+        "author_ids": [
+          "12452"
+        ],
+        "authors": [
+          "Aesop"
+        ],
+        "description": "A timeless collection of 80 of Aesop's best-loved fables--punctuated by the age-old morals that have instructed countless generations. This volume highlights such fables as \"The Goose Who Laid the Golden Eggs,\" \"The Mouse and the Frog,\" and the one and only \"The Tortoise and the Hare.\"",
+        "link": "https://www.goodreads.com/book/show/21331.Aesop_s_Fables",
+        "wikipedia_match": {
+          "title": "Aesop",
+          "page_id": 20012109,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "620s BC births",
+            "560s BC deaths",
+            "6th-century BC executions",
+            "6th-century BC Greek writers",
+            "7th-century BC Greek people",
+            "Ancient Greek slaves and freedmen",
+            "Ancient Samians",
+            "Fabulists",
+            "Storytellers"
+          ],
+          "birth_year": 1976,
+          "death_year": null
+        },
+        "original_year": -560,
+        "author_meta": {
+          "birth_year": 1976,
+          "canonical_name": "Aesop Rock",
+          "death_year": null,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aesop",
+        "page_id": 20012109,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "620s BC births",
+          "560s BC deaths",
+          "6th-century BC executions",
+          "6th-century BC Greek writers",
+          "7th-century BC Greek people",
+          "Ancient Greek slaves and freedmen",
+          "Ancient Samians",
+          "Fabulists",
+          "Storytellers"
+        ],
+        "birth_year": 1976,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "21331",
+        "target_author_ids": [
+          "12452"
+        ],
+        "target_person": {
+          "title": "Aesop",
+          "page_id": 20012109,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "620s BC births",
+            "560s BC deaths",
+            "6th-century BC executions",
+            "6th-century BC Greek writers",
+            "7th-century BC Greek people",
+            "Ancient Greek slaves and freedmen",
+            "Ancient Samians",
+            "Fabulists",
+            "Storytellers"
+          ],
+          "birth_year": 1976,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Gil Blas",
+        "author": "Le Sage",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "First and foremost, to give an example, _Gil Blas_, and the other works of Le Sage (or rather their Spanish originals); further, _The Vicar of Wakefield_, and, to some extent Sir Walter Scott's novels."
+        ],
+        "commentaries": [
+          "The author cites this novel as a notable exception to the generally harmful influence of novels on youth."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 3.74,
+        "format": "Paperback",
+        "book_id": "7480592",
+        "publication_year": 2009,
+        "work_id": "9592435",
+        "isbn": "143410267X",
+        "publication_day": 28,
+        "num_pages": 608,
+        "publication_month": 4,
+        "title_without_series": "The Adventures of Gil Blas",
+        "ratings_count": 109,
+        "text_reviews_count": 6,
+        "publisher": "Editorium",
+        "title": "The Adventures of Gil Blas",
+        "isbn13": "9781434102676",
+        "author_ids": [
+          "181760"
+        ],
+        "authors": [
+          "Alain-Rene Le Sage"
+        ],
+        "description": "Gils Blas recounts the education and swashbuckling adventures of an adaptable young valet as he progresses from one master to the next, making his way from naive youth to cunning servant to landed proprietor and nobleman--with a stint in jail, bereavements, and fits of remorse along the way. Finally, our hero learns compassion and achieves tranquillity in a life in the country.",
+        "link": "https://www.goodreads.com/book/show/7480592-the-adventures-of-gil-blas",
+        "original_year": 1715,
+        "author_meta": {
+          "birth_year": 1668,
+          "death_year": 1747,
+          "main_genre": "novel",
+          "nationality": "French"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Alain-Rene Le Sage",
+        "birth_year": 1668,
+        "death_year": 1747
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "7480592",
+        "target_author_ids": [
+          "181760"
+        ],
+        "target_person": {
+          "title": "Alain-Rene Le Sage",
+          "birth_year": 1668,
+          "death_year": 1747
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sébastien-Roch Nicolas de Chamfort",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "and as regards their other qualities Chamfort[2] makes the very true remark: _They are made to trade with our own weaknesses and our follies, but not with our reason."
+        ],
+        "commentaries": [
+          "The author cites Chamfort's remark about women trading on weaknesses and follies."
+        ],
+        "canonical_author": "Sébastien-Roch Nicolas De Chamfort"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Nicolas Chamfort",
+        "page_id": 367300,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1741 births",
+          "1794 deaths",
+          "Writers from Clermont-Ferrand",
+          "18th-century French male writers",
+          "18th-century French poets",
+          "18th-century French journalists",
+          "18th-century French dramatists and playwrights",
+          "Members of the Académie Française",
+          "Aphorists",
+          "French male poets",
+          "18th-century suicides",
+          "Suicides by firearm in France",
+          "Suicides by sharp instrument in France"
+        ],
+        "birth_year": 1741,
+        "death_year": 1794
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "308646"
+        ],
+        "target_person": {
+          "title": "Nicolas Chamfort",
+          "page_id": 367300,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1741 births",
+            "1794 deaths",
+            "Writers from Clermont-Ferrand",
+            "18th-century French male writers",
+            "18th-century French poets",
+            "18th-century French journalists",
+            "18th-century French dramatists and playwrights",
+            "Members of the Académie Française",
+            "Aphorists",
+            "French male poets",
+            "18th-century suicides",
+            "Suicides by firearm in France",
+            "Suicides by sharp instrument in France"
+          ],
+          "birth_year": 1741,
+          "death_year": 1794
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Sardanapalus",
+        "author": "Lord Byron",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The same thing is more feelingly expressed by Byron in _Sardanapalus_..."
+        ],
+        "commentaries": [
+          "The author quotes Byron's play to express the proper appreciation of women."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 4.17,
+        "format": "Hardcover",
+        "book_id": "12230469",
+        "publication_year": 2008,
+        "work_id": "17204133",
+        "isbn": "0554798530",
+        "publication_day": 20,
+        "num_pages": 188,
+        "publication_month": 8,
+        "title_without_series": "Sardanapalus: A Tragedy",
+        "ratings_count": 21,
+        "text_reviews_count": 3,
+        "publisher": "BiblioLife",
+        "title": "Sardanapalus: A Tragedy",
+        "isbn13": "9780554798530",
+        "author_ids": [
+          "44407"
+        ],
+        "authors": [
+          "George Gordon Byron"
+        ],
+        "description": "This is a pre-1923 historical reproduction that was curated for quality. Quality assurance was conducted on each of these books in an attempt to remove books with imperfections introduced by the digitization process. Though we have made best efforts - the books may have occasional errors that do not impede the reading experience. We believe this work is culturally important and have elected to bring the book back into print as part of our continuing commitment to the preservation of printed works worldwide.",
+        "link": "https://www.goodreads.com/book/show/12230469-sardanapalus",
+        "wikipedia_match": {
+          "title": "Lord Byron",
+          "page_id": 17566665,
+          "infoboxes": [
+            "writer",
+            "officeholder"
+          ],
+          "categories": [
+            "Lord Byron| ",
+            "1788 births",
+            "1824 deaths",
+            "18th-century English nobility",
+            "19th-century English dramatists and playwrights",
+            "19th-century English nobility",
+            "19th-century English poets",
+            "19th-century English LGBTQ people",
+            "San Lazzaro degli Armeni alumni",
+            "Alumni of Trinity College, Cambridge",
+            "Anglo-Scots",
+            "Anti-monarchists",
+            "Armenian studies scholars",
+            "Barons Byron|Byron, George Gordon Byron, 6th Baron",
+            "Bisexual male writers",
+            "Bisexual male politicians",
+            "Bisexual poets",
+            "English bisexual politicians",
+            "English bisexual writers",
+            "English bisexual men",
+            "British people of Cornish descent",
+            "British philhellenes in the Greek War of Independence",
+            "Greek people of English descent",
+            "Greek people of Scottish descent",
+            "Naturalized citizens of Greece",
+            "Burials at the Church of St Mary Magdalene, Hucknall",
+            "Burials in Nottinghamshire",
+            "Byron family",
+            "Carbonari",
+            "Coppet group"
+          ],
+          "birth_year": 1788,
+          "death_year": 1824
+        },
+        "original_year": 1821,
+        "author_meta": {
+          "birth_year": 1858,
+          "canonical_name": "George Gordon Byron Sproat",
+          "death_year": 1927,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Lord Byron",
+        "page_id": 17566665,
+        "infoboxes": [
+          "writer",
+          "officeholder"
+        ],
+        "categories": [
+          "Lord Byron| ",
+          "1788 births",
+          "1824 deaths",
+          "18th-century English nobility",
+          "19th-century English dramatists and playwrights",
+          "19th-century English nobility",
+          "19th-century English poets",
+          "19th-century English LGBTQ people",
+          "San Lazzaro degli Armeni alumni",
+          "Alumni of Trinity College, Cambridge",
+          "Anglo-Scots",
+          "Anti-monarchists",
+          "Armenian studies scholars",
+          "Barons Byron|Byron, George Gordon Byron, 6th Baron",
+          "Bisexual male writers",
+          "Bisexual male politicians",
+          "Bisexual poets",
+          "English bisexual politicians",
+          "English bisexual writers",
+          "English bisexual men",
+          "British people of Cornish descent",
+          "British philhellenes in the Greek War of Independence",
+          "Greek people of English descent",
+          "Greek people of Scottish descent",
+          "Naturalized citizens of Greece",
+          "Burials at the Church of St Mary Magdalene, Hucknall",
+          "Burials in Nottinghamshire",
+          "Byron family",
+          "Carbonari",
+          "Coppet group"
+        ],
+        "birth_year": 1788,
+        "death_year": 1824
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "12230469",
+        "target_author_ids": [
+          "44407"
+        ],
+        "target_person": {
+          "title": "Lord Byron",
+          "page_id": 17566665,
+          "infoboxes": [
+            "writer",
+            "officeholder"
+          ],
+          "categories": [
+            "Lord Byron| ",
+            "1788 births",
+            "1824 deaths",
+            "18th-century English nobility",
+            "19th-century English dramatists and playwrights",
+            "19th-century English nobility",
+            "19th-century English poets",
+            "19th-century English LGBTQ people",
+            "San Lazzaro degli Armeni alumni",
+            "Alumni of Trinity College, Cambridge",
+            "Anglo-Scots",
+            "Anti-monarchists",
+            "Armenian studies scholars",
+            "Barons Byron|Byron, George Gordon Byron, 6th Baron",
+            "Bisexual male writers",
+            "Bisexual male politicians",
+            "Bisexual poets",
+            "English bisexual politicians",
+            "English bisexual writers",
+            "English bisexual men",
+            "British people of Cornish descent",
+            "British philhellenes in the Greek War of Independence",
+            "Greek people of English descent",
+            "Greek people of Scottish descent",
+            "Naturalized citizens of Greece",
+            "Burials at the Church of St Mary Magdalene, Hucknall",
+            "Burials in Nottinghamshire",
+            "Byron family",
+            "Carbonari",
+            "Coppet group"
+          ],
+          "birth_year": 1788,
+          "death_year": 1824
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Don Quixote",
+        "author": "Miguel de Cervantes Saavedra",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "_Don Quixote_ may be regarded as a satirical exhibition of the error to which I am referring."
+        ],
+        "commentaries": [
+          "The author cites this book as a satirical example of the error induced by reading novels."
+        ],
+        "canonical_author": "Miguel de Cervantes"
+      },
+      "goodreads_match": {
+        "average_rating": 3.85,
+        "book_id": "6012840",
+        "work_id": "121842",
+        "title_without_series": "Don Quixote",
+        "ratings_count": 49,
+        "text_reviews_count": 4,
+        "title": "Don Quixote",
+        "author_ids": [
+          "4037220"
+        ],
+        "authors": [
+          "Miguel de Cervantes Saavedra"
+        ],
+        "description": "Don Quixotehas become so entranced by reading chivalric romances, that he determines to become a knight-errant himself. In the company of his faithful squire, Sancho Panza, his exploits blossom in all sorts of wonderful ways. While Quixote's fancy often leads him astray - he tilts at windmills, imagining them to be giants - Sancho acquires cunning and a certain sagacity. Sane madman and wise fool, they roam the world together, and together they have haunted readers' imaginations for nearly four hundred year...",
+        "link": "https://www.goodreads.com/book/show/6012840-don-quixote",
+        "original_year": 1605,
+        "author_meta": {
+          "birth_year": 1547,
+          "death_year": 1616,
+          "main_genre": "novel",
+          "nationality": "Spanish"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Miguel de Cervantes Saavedra",
+        "birth_year": 1547,
+        "death_year": 1616
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "6012840",
+        "target_author_ids": [
+          "4037220"
+        ],
+        "target_person": {
+          "title": "Miguel de Cervantes Saavedra",
+          "birth_year": 1547,
+          "death_year": 1616
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Sankhya Karika",
+        "author": "Ishvara Krishna",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In the one case (with the exception, it must be confessed, of Plato), the object of ethics is to enable a man to lead a happy life; in the other, it is to free and redeem him from life altogether--as is directly stated in the very first words of the Sankhya Karika."
+        ],
+        "commentaries": [
+          "The author cites the Sankhya Karika as a text that directly states the goal of ethics is redemption from life."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Sankhya Karika",
+        "authors": [
+          "Ishvara Krishna"
+        ],
+        "original_year": 350,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Indian",
+        "description": "Foundational text of the Samkhya school of Hindu philosophy, composed by Ishvara Krishna around the 4th-5th century CE.",
+        "book_id": "web_51328aa0",
+        "author_meta": {
+          "birth_year": 350,
+          "death_year": 425,
+          "canonical_name": "Ishvara Krishna"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Ishvara Krishna",
+        "birth_year": 350,
+        "death_year": 425
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_51328aa0",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Ishvara Krishna",
+          "birth_year": 350,
+          "death_year": 425
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Vital Powers",
+        "author": "Immanuel Kant",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Kant wrote a treatise on _The Vital Powers_."
+        ],
+        "commentaries": [
+          "The author mentions Kant's treatise as a point of departure for his own thoughts on noise."
+        ],
+        "canonical_author": "Kant"
+      },
+      "goodreads_match": {
+        "title": "The Vital Powers",
+        "authors": [
+          "Immanuel Kant"
+        ],
+        "original_year": 1746,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A treatise by Immanuel Kant on the concept of living forces (vis viva), originally published in 1746 as 'Gedanken von der wahren Schätzung der lebendigen Kräfte'.",
+        "book_id": "web_19f022c2",
+        "author_meta": {
+          "birth_year": 1724,
+          "death_year": 1804,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Immanuel Kant",
+        "birth_year": 1724,
+        "death_year": 1804
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_19f022c2",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Immanuel Kant",
+          "birth_year": 1724,
+          "death_year": 1804
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Cursed is the ground for thy sake",
+        "author": "Matthias Claudius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I cannot refrain from recommending the thoughtful reader a popular, but at the same time, profound treatise on this subject by Claudius which exhibits the essentially pessimistic spirit of Christianity. It is entitled: Cursed is the ground for thy sake."
+        ],
+        "commentaries": [
+          "The author recommends a treatise by Claudius, praising its pessimistic Christian spirit."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Cursed is the ground for thy sake",
+        "authors": [
+          "Matthias Claudius"
+        ],
+        "original_year": 1774,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A treatise by Matthias Claudius reflecting on the biblical curse from Genesis 3:17, embodying a pessimistic Christian perspective.",
+        "book_id": "web_7bd2c8f6",
+        "author_meta": {
+          "birth_year": 1740,
+          "death_year": 1815,
+          "canonical_name": "Matthias Claudius"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Matthias Claudius",
+        "birth_year": 1740,
+        "death_year": 1815
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_7bd2c8f6",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Matthias Claudius",
+          "birth_year": 1740,
+          "death_year": 1815
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "de Concubinatu",
+        "author": "Thomasius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And in view of this aspect of the institution of monogamy, Thomasius' profoundly learned treatise, _de Concubinatu_, is well worth reading; for it shows that, amongst all nations and all ages, down to the Lutheran Reformation, concubinage was permitted; nay, that it was an institution which was to a certain extent actually recognized by law, and attended with no dishonor."
+        ],
+        "commentaries": [
+          "The author recommends Thomasius's treatise as a learned work supporting the historical permissibility of concubinage."
+        ]
+      },
+      "goodreads_match": {
+        "title": "De Concubinatu",
+        "authors": [
+          "Christian Thomasius"
+        ],
+        "original_year": 1713,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "German",
+        "description": "A legal-historical treatise by Christian Thomasius arguing that concubinage was a legally recognized institution in many cultures until the Lutheran Reformation.",
+        "book_id": "web_56dc85e4",
+        "author_meta": {
+          "birth_year": 1655,
+          "death_year": 1728,
+          "canonical_name": "Christian Thomasius"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Christian Thomasius",
+        "birth_year": 1655,
+        "death_year": 1728
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_56dc85e4",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Christian Thomasius",
+          "birth_year": 1655,
+          "death_year": 1728
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sir Walter Scott",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "First and foremost, to give an example, _Gil Blas_, and the other works of Le Sage (or rather their Spanish originals); further, _The Vicar of Wakefield_, and, to some extent Sir Walter Scott's novels."
+        ],
+        "commentaries": [
+          "The author mentions Scott's novels as a generally positive exception to the harmful trend."
+        ],
+        "canonical_author": "Sir Walter Scott"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sir Walter Scott",
+        "birth_year": 1771,
+        "death_year": 1832
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Sir Walter Scott",
+          "birth_year": 1771,
+          "death_year": 1832
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "De' Romori: a Messer Luca Martini",
+        "author": "Bronzino",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I refer to a poetical epistle in _terzo rimo_ by the famous painter Bronzino, entitled _De' Romori: a Messer Luca Martini_."
+        ],
+        "commentaries": [
+          "The author recommends Bronzino's poetical epistle as a good work on the subject of noise."
+        ]
+      },
+      "goodreads_match": {
+        "title": "De' Romori: a Messer Luca Martini",
+        "authors": [
+          "Agnolo Bronzino"
+        ],
+        "original_year": 1560,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Italian",
+        "description": "A poetical epistle in terza rima by the Florentine painter Agnolo Bronzino, addressed to Luca Martini, likely composed in the mid-16th century.",
+        "book_id": "web_3b07d3bb",
+        "author_meta": {
+          "birth_year": 1503,
+          "death_year": 1572
+        }
+      },
+      "wikipedia_match": {
+        "title": "Agnolo Bronzino",
+        "birth_year": 1503,
+        "death_year": 1572
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_3b07d3bb",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Agnolo Bronzino",
+          "birth_year": 1503,
+          "death_year": 1572
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Jean Paul (Johann Paul Friedrich Richter)",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In the biographies of almost all great writers, or wherever else their personal utterances are recorded, I find complaints about it; in the case of Kant, for instance, Goethe, Lichtenberg, Jean Paul; and if it should happen that any writer has omitted to express himself on the matter, it is only for want of an opportunity."
+        ],
+        "commentaries": [
+          "The author lists Jean Paul among great writers who complained about noise."
+        ],
+        "canonical_author": "Jean Paul"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Jean Paul (Johann Paul Friedrich Richter)",
+        "birth_year": 1763,
+        "death_year": 1825
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Jean Paul (Johann Paul Friedrich Richter)",
+          "birth_year": 1763,
+          "death_year": 1825
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Myson",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Myson, the misanthropist, was once surprised by one of these people as he was laughing to himself."
+        ],
+        "commentaries": [
+          "The author recounts an anecdote about Myson laughing alone, without citing a specific book."
+        ],
+        "canonical_author": "Myson"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Myson",
+        "birth_year": -600,
+        "death_year": -500
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Myson",
+          "birth_year": -600,
+          "death_year": -500
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Essay on Suicide",
+        "author": "David Hume",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The most thorough-going refutation of them is given by Hume in his Essay on Suicide."
+        ],
+        "commentaries": [
+          "The author cites Hume's essay as a refutation of arguments against suicide."
+        ]
+      },
+      "goodreads_match": {
+        "average_rating": 3.68,
+        "format": "Paperback",
+        "book_id": "1231892",
+        "publication_year": 2005,
+        "work_id": "798476",
+        "isbn": "0141023953",
+        "publication_day": 25,
+        "num_pages": 113,
+        "publication_month": 8,
+        "title_without_series": "On Suicide",
+        "ratings_count": 359,
+        "text_reviews_count": 22,
+        "publisher": "Penguin",
+        "title": "On Suicide",
+        "isbn13": "9780141023953",
+        "author_ids": [
+          "45726"
+        ],
+        "authors": [
+          "David Hume"
+        ],
+        "description": "Throughout history, some books have changed the world. They have transformed the way we see ourselves and each other. They have inspired debate, dissent, war and revolution. They have enlightened, outraged, provoked and comforted. They have enriched lives and destroyed them. Now Penguin brings you the works of the great thinkers, pioneers, radicals and visionaries whose ideas shook civilization and helped make us who we are.\nOne of the most important thinkers ever to write in English, the Empiricist David H...",
+        "link": "https://www.goodreads.com/book/show/1231892.On_Suicide",
+        "wikipedia_match": {
+          "title": "David Hume",
+          "page_id": 7925,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "David Hume| ",
+            "1711 births",
+            "1776 deaths",
+            "Alumni of the University of Edinburgh",
+            "British sceptics",
+            "Critics of religions",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Historians of England",
+            "Members of the Philosophical Society of Edinburgh",
+            "People from Edinburgh",
+            "Philosophers of art",
+            "British philosophers of mind",
+            "Philosophers of religion",
+            "Philosophers of science",
+            "Scottish atheists",
+            "Scottish humanists",
+            "Scottish economists",
+            "Scottish essayists",
+            "Scottish historians",
+            "Scottish librarians",
+            "Scottish philosophers",
+            "Virtue ethicists",
+            "Preclassical economists",
+            "Critics of the Catholic Church"
+          ],
+          "birth_year": 1711,
+          "death_year": 1776
+        },
+        "original_year": 1775,
+        "author_meta": {
+          "birth_year": 1711,
+          "death_year": 1776,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "David Hume",
+        "page_id": 7925,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "David Hume| ",
+          "1711 births",
+          "1776 deaths",
+          "Alumni of the University of Edinburgh",
+          "British sceptics",
+          "Critics of religions",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Historians of England",
+          "Members of the Philosophical Society of Edinburgh",
+          "People from Edinburgh",
+          "Philosophers of art",
+          "British philosophers of mind",
+          "Philosophers of religion",
+          "Philosophers of science",
+          "Scottish atheists",
+          "Scottish humanists",
+          "Scottish economists",
+          "Scottish essayists",
+          "Scottish historians",
+          "Scottish librarians",
+          "Scottish philosophers",
+          "Virtue ethicists",
+          "Preclassical economists",
+          "Critics of the Catholic Church"
+        ],
+        "birth_year": 1711,
+        "death_year": 1776
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1231892",
+        "target_author_ids": [
+          "45726"
+        ],
+        "target_person": {
+          "title": "David Hume",
+          "page_id": 7925,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "David Hume| ",
+            "1711 births",
+            "1776 deaths",
+            "Alumni of the University of Edinburgh",
+            "British sceptics",
+            "Critics of religions",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Historians of England",
+            "Members of the Philosophical Society of Edinburgh",
+            "People from Edinburgh",
+            "Philosophers of art",
+            "British philosophers of mind",
+            "Philosophers of religion",
+            "Philosophers of science",
+            "Scottish atheists",
+            "Scottish humanists",
+            "Scottish economists",
+            "Scottish essayists",
+            "Scottish historians",
+            "Scottish librarians",
+            "Scottish philosophers",
+            "Virtue ethicists",
+            "Preclassical economists",
+            "Critics of the Catholic Church"
+          ],
+          "birth_year": 1711,
+          "death_year": 1776
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Lichtenberg",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In the biographies of almost all great writers, or wherever else their personal utterances are recorded, I find complaints about it; in the case of Kant, for instance, Goethe, Lichtenberg, Jean Paul; and if it should happen that any writer has omitted to express himself on the matter, it is only for want of an opportunity."
+        ],
+        "commentaries": [
+          "The author lists Lichtenberg among great writers who complained about noise."
+        ],
+        "canonical_author": "Lichtenberg"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lichtenberg",
+        "birth_year": 1742,
+        "death_year": 1799
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Lichtenberg",
+          "birth_year": 1742,
+          "death_year": 1799
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Manu",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In India, no woman is ever independent, but in accordance with the law of Mamu, she stands under the control of her father, her husband, her brother or her son."
+        ],
+        "commentaries": [
+          "The author invokes the law of Manu (Mamu) to contrast the status of women in India with European practices."
+        ],
+        "canonical_author": "Mamu"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Manu",
+        "birth_year": 1490,
+        "death_year": 1564
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Manu",
+          "birth_year": 1490,
+          "death_year": 1564
+        }
+      }
+    }
+  ]
+}

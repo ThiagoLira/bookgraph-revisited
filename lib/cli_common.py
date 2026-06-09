@@ -34,7 +34,7 @@ def add_llm_args(parser: argparse.ArgumentParser):
     )
     parser.add_argument(
         "--model",
-        default="deepseek/deepseek-v3.2",
+        default="deepseek/deepseek-v4-flash",
         help="Model ID.",
     )
 

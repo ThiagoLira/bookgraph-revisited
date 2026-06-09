@@ -16,7 +16,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 
 import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { buildGraph } from "./graph_model.mjs";
+import { buildGraph, setNameAliases, applyDataOverrides } from "./graph_model.mjs";
 import { bakeLayout } from "./layout.mjs";
 import { loadRegionMap, loadAuthorsMeta, resolveRegion } from "./nationality.mjs";
 import { ImageCache, ensureImages } from "./images.mjs";
@@ -72,8 +72,17 @@ function loadRecords(slug) {
 }
 
 async function bakeRecords(records, slug, ctx) {
-  const { regionMap, metaIndex, imageCache, skipImages, rebuildImages } = ctx;
+  const { regionMap, metaIndex, imageCache, skipImages, rebuildImages, dataOverrides } = ctx;
   const { authors, links } = buildGraph(records);
+
+  // Apply durable manual date/title corrections (datasets/data_overrides.json).
+  if (dataOverrides) {
+    const s = applyDataOverrides(authors, dataOverrides);
+    console.log(
+      `  overrides: ${s.datesApplied} author dates, ${s.booksApplied} book fields` +
+        (s.missed.length ? ` (${s.missed.length} not present in this dataset)` : "")
+    );
+  }
 
   // Nationality -> region -> color.
   let withRegion = 0;
@@ -155,6 +164,14 @@ function markBakedInIndex(index, slug, name) {
   return index;
 }
 
+function loadDataOverrides() {
+  const p = join(REPO_ROOT, "datasets", "data_overrides.json");
+  if (!existsSync(p)) return null;
+  const ov = JSON.parse(readFileSync(p, "utf8"));
+  setNameAliases(ov.name_aliases || null);
+  return ov;
+}
+
 async function main() {
   const args = parseArgs(process.argv);
   const ctx = {
@@ -163,6 +180,7 @@ async function main() {
     imageCache: new ImageCache(REPO_ROOT),
     skipImages: args.skipImages,
     rebuildImages: args.rebuildImages,
+    dataOverrides: loadDataOverrides(),
   };
 
   let index = loadDatasetIndex();

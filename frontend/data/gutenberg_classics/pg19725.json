@@ -1,0 +1,1038 @@
+{
+  "source": {
+    "title": "The History of Rome",
+    "authors": [
+      "Livy"
+    ],
+    "goodreads_id": "pg19725",
+    "calibre_id": null,
+    "author_ids": [
+      "14577687"
+    ],
+    "text_reviews_count": 4,
+    "book_id": "6075126",
+    "isbn": "1241448728",
+    "ratings_count": 19,
+    "average_rating": 4.03,
+    "isbn13": "9781241448721",
+    "format": "Paperback",
+    "title_without_series": "The History of Rome",
+    "work_id": "40705299",
+    "num_pages": 660,
+    "description": "Title: The History of Rome by Titus Livius. Translated from the original, with notes and illustrations, by G. Baker.Publisher: British Library, Historical Print EditionsThe British Library is the national library of the United Kingdom. It is one of the world's largest research libraries holding over 150 million items in all known languages and formats: books, journals, newspapers, sound recordings, patents, maps, stamps, prints and much more. Its collections include around 14 million books, along with subst...",
+    "link": "https://www.goodreads.com/book/show/6075126-the-history-of-rome",
+    "author_metadata": {
+      "birth_year": -59,
+      "death_year": 17,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Plutarch",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Forte quádam divinitus. ?e?? t??? t???. Plut."
+        ],
+        "commentaries": [
+          "The author cites Plutarch in a footnote reference to support a notion of divine intervention."
+        ],
+        "canonical_author": "Plutarch"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plutarch",
+        "page_id": 24517,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plutarch| ",
+          "46 births",
+          "120s deaths",
+          "1st-century Romans",
+          "2nd-century Romans",
+          "1st-century Greek philosophers",
+          "2nd-century Greek philosophers",
+          "1st-century historians",
+          "2nd-century historians",
+          "Ancient Roman antiquarians",
+          "Ancient Greek biographers",
+          "Ancient Greek essayists",
+          "Ancient Roman biographers",
+          "Greek-language historians from the Roman Empire",
+          "Ancient Boeotians",
+          "Middle Platonists",
+          "Roman-era Greek priests",
+          "Year of birth unknown",
+          "Historians of ancient Greece"
+        ],
+        "birth_year": 46,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "31015"
+        ],
+        "target_person": {
+          "title": "Plutarch",
+          "page_id": 24517,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plutarch| ",
+            "46 births",
+            "120s deaths",
+            "1st-century Romans",
+            "2nd-century Romans",
+            "1st-century Greek philosophers",
+            "2nd-century Greek philosophers",
+            "1st-century historians",
+            "2nd-century historians",
+            "Ancient Roman antiquarians",
+            "Ancient Greek biographers",
+            "Ancient Greek essayists",
+            "Ancient Roman biographers",
+            "Greek-language historians from the Roman Empire",
+            "Ancient Boeotians",
+            "Middle Platonists",
+            "Roman-era Greek priests",
+            "Year of birth unknown",
+            "Historians of ancient Greece"
+          ],
+          "birth_year": 46,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thucydides",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "[Footnote 110: A similar measure was adopted at Athens. See Thucyd."
+        ],
+        "commentaries": [
+          "The author (or a commentator) references Thucydides as a source for a similar historical measure adopted at Athens."
+        ],
+        "canonical_author": "Thucydides"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thucydides",
+        "page_id": 30864,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "470s BC births",
+          "400s BC deaths",
+          "5th-century BC Athenians",
+          "5th-century BC Greek historians",
+          "Ancient Athenian generals",
+          "Ancient Athenian historians",
+          "Classical-era Greek historians",
+          "Ancient Greek merchants",
+          "Ancient Thracian Greeks",
+          "Athenians of the Peloponnesian War",
+          "Attic Greek writers",
+          "Ostracized Athenians",
+          "Philaidae",
+          "Political realists",
+          "Ancient Greek military writers"
+        ],
+        "birth_year": -460,
+        "death_year": -400
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "957"
+        ],
+        "target_person": {
+          "title": "Thucydides",
+          "page_id": 30864,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "470s BC births",
+            "400s BC deaths",
+            "5th-century BC Athenians",
+            "5th-century BC Greek historians",
+            "Ancient Athenian generals",
+            "Ancient Athenian historians",
+            "Classical-era Greek historians",
+            "Ancient Greek merchants",
+            "Ancient Thracian Greeks",
+            "Athenians of the Peloponnesian War",
+            "Attic Greek writers",
+            "Ostracized Athenians",
+            "Philaidae",
+            "Political realists",
+            "Ancient Greek military writers"
+          ],
+          "birth_year": -460,
+          "death_year": -400
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Quintus Tubero",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Valerius Antias and Quintus Tubero state that Marcus Manlius and Quintus Sulpicius were, the consuls for that year."
+        ],
+        "commentaries": [
+          "The author mentions Quintus Tubero as an authority for a different list of consuls."
+        ],
+        "canonical_author": "Quintus Tubero"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Ludovicus Tubero",
+        "page_id": 9527228,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1459 births",
+          "1527 deaths",
+          "Ragusan Benedictines",
+          "Ragusan historians",
+          "16th-century historians",
+          "People from Dubrovnik"
+        ],
+        "birth_year": 1459,
+        "death_year": 1527
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Ludovicus Tubero",
+          "page_id": 9527228,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1459 births",
+            "1527 deaths",
+            "Ragusan Benedictines",
+            "Ragusan historians",
+            "16th-century historians",
+            "People from Dubrovnik"
+          ],
+          "birth_year": 1459,
+          "death_year": 1527
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "the books of the fates"
+        ],
+        "commentaries": [
+          "The author refers to the books of the fates, which are associated with Homeric or prophetic traditions, as a source for interpreting prodigies."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Licinius Macer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "That the same consuls were re-elected on the following year, Julius for the third time, Virginius for the second time, I find in Licinius Macer."
+        ],
+        "commentaries": [
+          "The author cites Licinius Macer as a source for the re-election of consuls."
+        ],
+        "canonical_author": "Licinius Macer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Licinius Macer",
+        "page_id": 1053282,
+        "infoboxes": [],
+        "categories": [
+          "66 BC deaths",
+          "1st-century BC Romans",
+          "1st-century BC writers",
+          "Ancient Roman politicians who died by suicide",
+          "Golden Age Latin writers",
+          "Latin writers known only from secondary sources",
+          "Licinii|Macer, Gaius",
+          "Populares",
+          "Year of birth unknown"
+        ],
+        "birth_year": null,
+        "death_year": -66
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Licinius Macer",
+          "page_id": 1053282,
+          "infoboxes": [],
+          "categories": [
+            "66 BC deaths",
+            "1st-century BC Romans",
+            "1st-century BC writers",
+            "Ancient Roman politicians who died by suicide",
+            "Golden Age Latin writers",
+            "Latin writers known only from secondary sources",
+            "Licinii|Macer, Gaius",
+            "Populares",
+            "Year of birth unknown"
+          ],
+          "birth_year": null,
+          "death_year": -66
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Doering",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Doering says there were only two powerful reasons, revenge and fear, and a ratio probabilis introduced by _tum_; which has the force of insuper."
+        ],
+        "commentaries": [
+          "The author cites Doering as a source for an interpretation of a passage."
+        ],
+        "canonical_author": "Doering"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Doering",
+        "birth_year": 1948
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1549723"
+        ],
+        "target_person": {
+          "title": "Doering",
+          "birth_year": 1948
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Niebuhr",
+        "note": null,
+        "count": 13,
+        "contexts": [
+          "Among the manuals of Roman History which may most advantageously be used by the student, is Twiss's Epitome of Niebuhr, 2 vols. 8vo, a work frequently referred to in these pages.",
+          "[Footnote 57: This is noticed as the first trace of the Agrarian division by Niebuhr, i. p. 161.]",
+          "Niebuhr is of opinion that what is said regarding the Commentaries of Servius Tullius, chap. 60, has reference to this.",
+          "[Footnote 67: Niebuhr will have it that Brutus punished his children by his authority as a father, and that there was no appeal to the people from the father. See Nieb. i. p. 488.]",
+          "Niebuhr mentions a more probable one. See Nieb. i. p. 541; ii. p. 204.",
+          "Niebuhr thinks, that from this defeat of the Etrurians may be dated the commencement of the recovery of their liberty by the Romans, and that the flight of the Roman hostages, the sale of Porsena's goods, &c. were subsequent to it.",
+          "See Nieb. p. 553, and Niebhr. Epit. by Twiss, Append. p. 355.",
+          "[Footnote 124: Niebuhr thinks that Cæso was among the number. See cap. 25, where we read \"Cæsonem neque Quintiæ familiæ, neque reipublicæ restitui posse.\" Comp. Niebuhr ii. n. 673, Wachsmuth, p. 347.]",
+          "[Footnote 135: Niebuhr will have it that five of these were of plebeian rank.]",
+          "According to Niebuhr, (vol. ii. p. 233,) this fear put into the mouth of Claudius, is attributable to ignorance or forgetfulness on the part of Livy, of the early usage in the dividing of spoils, which had ceased to be observed in the time of Augustus.",
+          "[Footnote 163: \"This vow frequently occurs in Grecian history, like that made of the Persian booty, but this is the only instance in the history of Rome.\" --_Niebuhr_, vol. ii. 239.]",
+          "[Footnote 165: The idea of the Romans working a mine, even through the soil of Veii, so as to be sure of reaching not only the town and the citadel, and even the temple, is considered by Niebuhr as extremely ridiculous.",
+          "See Niebuhr III. ii. 249."
+        ],
+        "commentaries": [
+          "The translator's preface refers to Niebuhr as the author of a historical work, used via an epitome by Twiss, as a frequently cited source in the translation.",
+          "The author cites Niebuhr as a source commenting on the Agrarian division.",
+          "The author references Niebuhr's opinion on the Commentaries of Servius Tullius.",
+          "The author cites Niebuhr's interpretation of Brutus's punishment of his children, referencing a specific page in Niebuhr's work.",
+          "The author references Niebuhr's work as providing a more probable origin for the custom of selling Porsena's goods.",
+          "The author cites Niebuhr's interpretation of the historical significance of the Etrurian defeat.",
+          "The author references Niebuhr's work as a source for a historical interpretation.",
+          "The author references Niebuhr's opinion on the fate of Cæso, citing his historical work.",
+          "The author references Niebuhr's opinion on the plebeian rank of certain decemvirs.",
+          "The author cites Niebuhr's historical analysis to critique Livy's account of Roman spoils division.",
+          "The author references Niebuhr's observation on the uniqueness of the vow in Roman history.",
+          "The author notes Niebuhr's criticism of the plausibility of the mine story in Livy's narrative.",
+          "The author references Niebuhr as a source for the identification of the Novensiles deities."
+        ],
+        "canonical_author": "Niebuhr"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Barthold Georg Niebuhr",
+        "page_id": 204651,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1776 births",
+          "1831 deaths",
+          "Writers from Copenhagen",
+          "German diplomats",
+          "19th-century German historians",
+          "German classical scholars",
+          "Ambassadors of Prussia",
+          "Prussian politicians",
+          "Academic staff of the University of Bonn",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Honorary members of the Saint Petersburg Academy of Sciences",
+          "Members of the Royal Netherlands Academy of Arts and Sciences",
+          "19th-century German diplomats",
+          "German male non-fiction writers",
+          "Historians of ancient Rome",
+          "University of Kiel alumni",
+          "Academic staff of the Humboldt University of Berlin",
+          "Immigrants to the Kingdom of Prussia",
+          "Scholars from the Kingdom of Prussia",
+          "19th-century Danish diplomats"
+        ],
+        "birth_year": 1776,
+        "death_year": 1831
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Barthold Georg Niebuhr",
+          "page_id": 204651,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1776 births",
+            "1831 deaths",
+            "Writers from Copenhagen",
+            "German diplomats",
+            "19th-century German historians",
+            "German classical scholars",
+            "Ambassadors of Prussia",
+            "Prussian politicians",
+            "Academic staff of the University of Bonn",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Honorary members of the Saint Petersburg Academy of Sciences",
+            "Members of the Royal Netherlands Academy of Arts and Sciences",
+            "19th-century German diplomats",
+            "German male non-fiction writers",
+            "Historians of ancient Rome",
+            "University of Kiel alumni",
+            "Academic staff of the Humboldt University of Berlin",
+            "Immigrants to the Kingdom of Prussia",
+            "Scholars from the Kingdom of Prussia",
+            "19th-century Danish diplomats"
+          ],
+          "birth_year": 1776,
+          "death_year": 1831
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Fabius Pictor",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Fabius Pictor, the oldest of our historians, adds, that such was the number of those who were able to bear arms.",
+          "On this account I am more inclined to believe Fabius Pictor, besides his being the more ancient historian, that there were only forty talents, than Piso, who says that forty thousand pounds weight of silver were set apart for that purpose;",
+          "I find in Fabius, far the most ancient writer, that he lived even to old age; he states positively, that advanced in years he made use of this phrase, \"That exile bore much heavier on the old man.\""
+        ],
+        "commentaries": [
+          "The author cites Fabius Pictor as an ancient historian who provided additional information about the census.",
+          "The author cites Fabius Pictor as a more ancient historian whose account of the amount of spoils from Pometia he prefers over that of Piso.",
+          "The author cites Fabius as an ancient writer who provides an account of the subject's death and a quoted phrase."
+        ],
+        "canonical_author": "Fabius Pictor"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Quintus Fabius Pictor",
+        "page_id": 449566,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "270s BC births",
+          "2nd-century BC deaths",
+          "Year of death uncertain",
+          "Latin historians",
+          "3rd-century BC Romans",
+          "3rd-century BC historians|Fabius Pictor",
+          "Roman Republican soldiers",
+          "Fabii"
+        ],
+        "birth_year": -270,
+        "death_year": -200
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Quintus Fabius Pictor",
+          "page_id": 449566,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "270s BC births",
+            "2nd-century BC deaths",
+            "Year of death uncertain",
+            "Latin historians",
+            "3rd-century BC Romans",
+            "3rd-century BC historians|Fabius Pictor",
+            "Roman Republican soldiers",
+            "Fabii"
+          ],
+          "birth_year": -270,
+          "death_year": -200
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Gaius Licinius Macer",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Macer Licinius writes, that he was named by the consul for the purpose of holding the elections, because his colleague hastening to have the elections over before undertaking the war, that he might continue the consulship, he thought it right to thwart his ambitious designs."
+        ],
+        "commentaries": [
+          "The author cites Macer Licinius as a source for a specific historical claim, but notes that his authority is less weighty due to a family bias."
+        ],
+        "canonical_author": "Macer Licinius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Licinius Macer",
+        "page_id": 1053282,
+        "infoboxes": [],
+        "categories": [
+          "66 BC deaths",
+          "1st-century BC Romans",
+          "1st-century BC writers",
+          "Ancient Roman politicians who died by suicide",
+          "Golden Age Latin writers",
+          "Latin writers known only from secondary sources",
+          "Licinii|Macer, Gaius",
+          "Populares",
+          "Year of birth unknown"
+        ],
+        "birth_year": -82,
+        "death_year": -66
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Licinius Macer",
+          "page_id": 1053282,
+          "infoboxes": [],
+          "categories": [
+            "66 BC deaths",
+            "1st-century BC Romans",
+            "1st-century BC writers",
+            "Ancient Roman politicians who died by suicide",
+            "Golden Age Latin writers",
+            "Latin writers known only from secondary sources",
+            "Licinii|Macer, Gaius",
+            "Populares",
+            "Year of birth unknown"
+          ],
+          "birth_year": -82,
+          "death_year": -66
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Niebuhr",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "[Footnote 72: The Horatii being of the _minores patres_.\nNieb.\ni. p.\n533.]"
+        ],
+        "commentaries": [
+          "The author references Nieb. (likely Niebuhr) as a source for a historical note on the Horatii."
+        ],
+        "canonical_author": "Nieb."
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Barthold Georg Niebuhr",
+        "page_id": 204651,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "1776 births",
+          "1831 deaths",
+          "Writers from Copenhagen",
+          "German diplomats",
+          "19th-century German historians",
+          "German classical scholars",
+          "Ambassadors of Prussia",
+          "Prussian politicians",
+          "Academic staff of the University of Bonn",
+          "Fellows of the American Academy of Arts and Sciences",
+          "Honorary members of the Saint Petersburg Academy of Sciences",
+          "Members of the Royal Netherlands Academy of Arts and Sciences",
+          "19th-century German diplomats",
+          "German male non-fiction writers",
+          "Historians of ancient Rome",
+          "University of Kiel alumni",
+          "Academic staff of the Humboldt University of Berlin",
+          "Immigrants to the Kingdom of Prussia",
+          "Scholars from the Kingdom of Prussia",
+          "19th-century Danish diplomats"
+        ],
+        "birth_year": 1776,
+        "death_year": 1831
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Barthold Georg Niebuhr",
+          "page_id": 204651,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "1776 births",
+            "1831 deaths",
+            "Writers from Copenhagen",
+            "German diplomats",
+            "19th-century German historians",
+            "German classical scholars",
+            "Ambassadors of Prussia",
+            "Prussian politicians",
+            "Academic staff of the University of Bonn",
+            "Fellows of the American Academy of Arts and Sciences",
+            "Honorary members of the Saint Petersburg Academy of Sciences",
+            "Members of the Royal Netherlands Academy of Arts and Sciences",
+            "19th-century German diplomats",
+            "German male non-fiction writers",
+            "Historians of ancient Rome",
+            "University of Kiel alumni",
+            "Academic staff of the Humboldt University of Berlin",
+            "Immigrants to the Kingdom of Prussia",
+            "Scholars from the Kingdom of Prussia",
+            "19th-century Danish diplomats"
+          ],
+          "birth_year": 1776,
+          "death_year": 1831
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dr. Hunter",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "According to Dr. Hunter, there are two formal assertions, one, that resentment stimulated the sons of Ancus against the king himself; the other, that the plot is laid for the king himself upon two considerations, of reason and policy.]"
+        ],
+        "commentaries": [
+          "The author cites Dr. Hunter as a source for a formal analysis of the plot."
+        ],
+        "canonical_author": "Dr. Hunter"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Adz Hunter",
+        "page_id": 3003574,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Living people",
+          "1982 births",
+          "Australian male actors"
+        ],
+        "birth_year": 1982,
+        "death_year": 2005
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Adz Hunter",
+          "page_id": 3003574,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Living people",
+            "1982 births",
+            "Australian male actors"
+          ],
+          "birth_year": 1982,
+          "death_year": 2005
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dionysius",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "[Footnote 58: _His son_. Dionysius will have it that he was the grandson. See Nieb. i. p. 367.]",
+          "For his character, see Dion. x. 31, 32."
+        ],
+        "commentaries": [
+          "The author cites Dionysius for an alternative interpretation of familial relations.",
+          "The author references Dionysius (likely Dionysius of Halicarnassus) as a source for the character of Siccius Dentatus, though this appears in a footnote."
+        ],
+        "canonical_author": "Dionysius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Dionysius of Halicarnassus",
+        "page_id": 159387,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "Ancient Greek educators",
+          "Greek-language historians from the Roman Empire",
+          "Ancient Greeks in Rome",
+          "Ancient Halicarnassians",
+          "1st-century BC Romans",
+          "1st-century BC Greek writers",
+          "1st-century BC historians",
+          "Ancient Roman antiquarians",
+          "Atticists (rhetoricians)",
+          "Rhetoric theorists",
+          "Historians from Roman Anatolia",
+          "Year of death unknown",
+          "60s BC births",
+          "0s BC deaths",
+          "Greek Latinists"
+        ],
+        "birth_year": -60,
+        "death_year": -7
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "302996"
+        ],
+        "target_person": {
+          "title": "Dionysius of Halicarnassus",
+          "page_id": 159387,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "Ancient Greek educators",
+            "Greek-language historians from the Roman Empire",
+            "Ancient Greeks in Rome",
+            "Ancient Halicarnassians",
+            "1st-century BC Romans",
+            "1st-century BC Greek writers",
+            "1st-century BC historians",
+            "Ancient Roman antiquarians",
+            "Atticists (rhetoricians)",
+            "Rhetoric theorists",
+            "Historians from Roman Anatolia",
+            "Year of death unknown",
+            "60s BC births",
+            "0s BC deaths",
+            "Greek Latinists"
+          ],
+          "birth_year": -60,
+          "death_year": -7
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cincius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Cincius, a careful writer on such monuments, asserts that there were seen at Volsinii also nails fixed in the temple of Nortia, a Tuscan goddess, as indices of the number of years."
+        ],
+        "commentaries": [
+          "The author cites Cincius as a source for the practice of using nails as year-markers in Etruscan temples."
+        ],
+        "canonical_author": "Cincius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cincius",
+        "birth_year": -200,
+        "death_year": -100
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cincius",
+          "birth_year": -200,
+          "death_year": -100
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Valerius Antias",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Valerius Antias and Quintus Tubero state that Marcus Manlius and Quintus Sulpicius were, the consuls for that year."
+        ],
+        "commentaries": [
+          "The author mentions Valerius Antias as an authority for a different list of consuls."
+        ],
+        "canonical_author": "Valerius Antias"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Valerius Antias",
+        "birth_year": -100,
+        "death_year": -50
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Valerius Antias",
+          "birth_year": -100,
+          "death_year": -50
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cicero",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "[Footnote 74: He here rejected the omen.\nCic.\ni.\n7, 14.; auguria aut _oblativa_ sunt, quæ non poscuntur, aut _impetrativa_, quæ optata veniunt.\nThe latter could not be rejected.]"
+        ],
+        "commentaries": [
+          "The author cites Cic. (likely Cicero) as a source for a discussion of omens."
+        ],
+        "canonical_author": "Cic."
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cicero",
+        "page_id": 6046,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Cicero| ",
+          "106 BC births",
+          "43 BC deaths",
+          "2nd-century BC Romans",
+          "1st-century BC executions",
+          "1st-century BC philosophers",
+          "1st-century BC Roman augurs",
+          "1st-century BC Roman consuls",
+          "1st-century BC writers in Latin",
+          "Academic skeptics",
+          "Ancient landowners",
+          "Ancient Roman equites",
+          "Ancient Roman exiles",
+          "Ancient Roman jurists",
+          "Ancient Roman rhetoricians",
+          "Ancient Roman scholars of religion",
+          "Classical humanists",
+          "Deaths by edged and bladed weapons",
+          "Executed ancient Roman people",
+          "Executed philosophers",
+          "Executed writers",
+          "Golden Age Latin writers",
+          "Letter writers in Latin",
+          "Optimates",
+          "People executed by the Roman Republic",
+          "People from Arpino",
+          "Plebeian aediles",
+          "Philosophers of Roman Italy",
+          "Recipients of ancient Roman pardons",
+          "Roman governors of Cilicia"
+        ],
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Cicero",
+          "page_id": 6046,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Cicero| ",
+            "106 BC births",
+            "43 BC deaths",
+            "2nd-century BC Romans",
+            "1st-century BC executions",
+            "1st-century BC philosophers",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Academic skeptics",
+            "Ancient landowners",
+            "Ancient Roman equites",
+            "Ancient Roman exiles",
+            "Ancient Roman jurists",
+            "Ancient Roman rhetoricians",
+            "Ancient Roman scholars of religion",
+            "Classical humanists",
+            "Deaths by edged and bladed weapons",
+            "Executed ancient Roman people",
+            "Executed philosophers",
+            "Executed writers",
+            "Golden Age Latin writers",
+            "Letter writers in Latin",
+            "Optimates",
+            "People executed by the Roman Republic",
+            "People from Arpino",
+            "Plebeian aediles",
+            "Philosophers of Roman Italy",
+            "Recipients of ancient Roman pardons",
+            "Roman governors of Cilicia"
+          ],
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Piso",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "On this account I am more inclined to believe Fabius Pictor, besides his being the more ancient historian, that there were only forty talents, than Piso, who says that forty thousand pounds weight of silver were set apart for that purpose;",
+          "this account is more general than that which Piso has given, that the secession was made to the Aventine.",
+          "Piso said that three were added to the number, whereas there had been only two before."
+        ],
+        "commentaries": [
+          "The author mentions Piso as a historian whose account of the spoils he disagrees with, preferring Fabius Pictor's version.",
+          "The author cites Piso for an alternative account of the secession, noting that Piso places the event on the Aventine rather than the Sacred Mount.",
+          "The author cites Piso as a source for the historical detail about the number of tribunes."
+        ],
+        "canonical_author": "Piso"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Piso",
+        "birth_year": -200,
+        "death_year": -120
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Piso",
+          "birth_year": -200,
+          "death_year": -120
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Claudius Claudianus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Claudius asserts that a battle was fought that year with the Gauls, on the banks of the Anio; and that then the famous battle was fought on the bridge, in which Titus Manlius, engaging with a Gaul by whom he had been challenged, slew him in the sight of the two armies and despoiled him of his chain.",
+          "Claudius states, that the consul first punished those who were at the head of the conspiracy; that three hundred and fifty of the conspirators were sent in chains to Rome; and that such submission was not received by the senate, because they considered that the people of Fundi wished to come off with impunity by the punishment of needy and humble persons."
+        ],
+        "commentaries": [
+          "The author cites Claudius as a source for a specific historical claim about a battle with the Gauls.",
+          "The author cites the historian Claudius as a source for an alternative account of the consul's actions in the Privernum conflict."
+        ],
+        "canonical_author": "Claudius Claudianus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Claudius Claudianus",
+        "birth_year": 370,
+        "death_year": 404
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Claudius Claudianus",
+          "birth_year": 370,
+          "death_year": 404
+        }
+      }
+    }
+  ]
+}

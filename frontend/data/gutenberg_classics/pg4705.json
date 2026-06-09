@@ -1,0 +1,2998 @@
+{
+  "source": {
+    "title": "A Treatise of Human Nature",
+    "authors": [
+      "David Hume"
+    ],
+    "goodreads_id": "pg4705",
+    "calibre_id": null,
+    "publisher": "Hard Press",
+    "author_ids": [
+      "45726"
+    ],
+    "text_reviews_count": 54,
+    "title_without_series": "A Treatise of Human Nature",
+    "format": "Paperback",
+    "average_rating": 3.91,
+    "isbn": "1406927554",
+    "num_pages": 434,
+    "work_id": "2649450",
+    "publication_year": 2006,
+    "isbn13": "9781406927559",
+    "book_id": "80311",
+    "ratings_count": 8451,
+    "description": "A Treatise of Human Nature (1739-40), David Hume's comprehensive attempt to base philosophy on a new, observationally grounded study of human nature, is one of the most important texts in Western philosophy. It is also the focal point of current attempts to understand 18th-century philosophy. The Treatise first explains how we form such concepts as cause and effect, external existence, and personal identity, and to form compelling but unconfirmable beliefs in the entities represented by these concepts. It t...",
+    "link": "https://www.goodreads.com/book/show/80311.A_Treatise_of_Human_Nature",
+    "author_metadata": {
+      "birth_year": 1711,
+      "death_year": 1776,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Nicolas Malebranche",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "See Father Malbranche, Book vi. Part 2, chap. 3. And the illustrations upon it."
+        ],
+        "commentaries": [
+          "The author cites Malebranche's work as a source for the discussion of opinions on the secret force and energy of causes."
+        ],
+        "canonical_author": "Father Malbranche"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Nicolas Malebranche",
+        "page_id": 174019,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1638 births",
+          "1715 deaths",
+          "17th-century French Catholic theologians",
+          "17th-century French male writers",
+          "17th-century French philosophers",
+          "18th-century French Roman Catholic priests",
+          "18th-century French Catholic theologians",
+          "18th-century French male writers",
+          "18th-century French philosophers",
+          "17th-century French Roman Catholic priests",
+          "Augustinian philosophers",
+          "Cartesianism",
+          "Catholic clergy scientists",
+          "Catholic philosophers",
+          "Clergy from Paris",
+          "Enlightenment philosophers",
+          "French epistemologists",
+          "French male non-fiction writers",
+          "French Oratory",
+          "French Roman Catholic writers",
+          "Members of the French Academy of Sciences",
+          "French metaphysicians",
+          "Ontologists",
+          "French philosophers of mind",
+          "French philosophers of religion",
+          "French philosophers of science",
+          "French political philosophers",
+          "Rationalists",
+          "French social philosophers",
+          "University of Paris alumni"
+        ],
+        "birth_year": 1638,
+        "death_year": 1715
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "412100"
+        ],
+        "target_person": {
+          "title": "Nicolas Malebranche",
+          "page_id": 174019,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1638 births",
+            "1715 deaths",
+            "17th-century French Catholic theologians",
+            "17th-century French male writers",
+            "17th-century French philosophers",
+            "18th-century French Roman Catholic priests",
+            "18th-century French Catholic theologians",
+            "18th-century French male writers",
+            "18th-century French philosophers",
+            "17th-century French Roman Catholic priests",
+            "Augustinian philosophers",
+            "Cartesianism",
+            "Catholic clergy scientists",
+            "Catholic philosophers",
+            "Clergy from Paris",
+            "Enlightenment philosophers",
+            "French epistemologists",
+            "French male non-fiction writers",
+            "French Oratory",
+            "French Roman Catholic writers",
+            "Members of the French Academy of Sciences",
+            "French metaphysicians",
+            "Ontologists",
+            "French philosophers of mind",
+            "French philosophers of religion",
+            "French philosophers of science",
+            "French political philosophers",
+            "Rationalists",
+            "French social philosophers",
+            "University of Paris alumni"
+          ],
+          "birth_year": 1638,
+          "death_year": 1715
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thomas Hobbes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "All the points of time and place, say some philosophers,[3] in which we can suppose any object to begin to exist, are in themselves equal; and unless there be some cause, which is peculiar to one time and to one place, and which by that means determines and fixes the existence, it must remain in eternal suspence; and the object can never begin to be, for want of something to fix its beginning."
+        ],
+        "commentaries": [
+          "The author references Mr. Hobbes as a philosopher who argued for the necessity of a cause based on the equality of points of time and place."
+        ],
+        "canonical_author": "Thomas Hobbes"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thomas Hobbes",
+        "page_id": 29823,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Thomas Hobbes| ",
+          "1588 births",
+          "1679 deaths",
+          "17th-century English writers",
+          "17th-century writers in Latin",
+          "17th-century English male writers",
+          "17th-century English philosophers",
+          "Alumni of Magdalen Hall, Oxford",
+          "Atomists",
+          "British critics of Christianity",
+          "British critics of religions",
+          "Critics of the Catholic Church",
+          "Empiricists",
+          "English expatriates in France",
+          "English mathematicians",
+          "English physicists",
+          "English political philosophers",
+          "English theologians",
+          "Epistemologists",
+          "Materialists",
+          "Metaphysicians",
+          "Ontologists",
+          "Writers from Malmesbury",
+          "Philosophers of culture",
+          "British philosophers of education",
+          "Philosophers of history",
+          "English philosophers of language",
+          "British philosophers of law",
+          "Philosophers of mathematics",
+          "Philosophers of mind"
+        ],
+        "birth_year": 1588,
+        "death_year": 1679
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "10122"
+        ],
+        "target_person": {
+          "title": "Thomas Hobbes",
+          "page_id": 29823,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Thomas Hobbes| ",
+            "1588 births",
+            "1679 deaths",
+            "17th-century English writers",
+            "17th-century writers in Latin",
+            "17th-century English male writers",
+            "17th-century English philosophers",
+            "Alumni of Magdalen Hall, Oxford",
+            "Atomists",
+            "British critics of Christianity",
+            "British critics of religions",
+            "Critics of the Catholic Church",
+            "Empiricists",
+            "English expatriates in France",
+            "English mathematicians",
+            "English physicists",
+            "English political philosophers",
+            "English theologians",
+            "Epistemologists",
+            "Materialists",
+            "Metaphysicians",
+            "Ontologists",
+            "Writers from Malmesbury",
+            "Philosophers of culture",
+            "British philosophers of education",
+            "Philosophers of history",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of mathematics",
+            "Philosophers of mind"
+          ],
+          "birth_year": 1588,
+          "death_year": 1679
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Proculus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "But of all the questions of this kind the most curious is that, which for so many ages divided the disciples of Proculus and Sabinus."
+        ],
+        "commentaries": [
+          "The author mentions Proculus as the leader of a school of thought in a long-standing legal controversy."
+        ],
+        "canonical_author": "Proculus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Proculus",
+        "page_id": 549369,
+        "infoboxes": [
+          "Roman emperor"
+        ],
+        "categories": [
+          "3rd-century births",
+          "281 deaths",
+          "3rd-century Roman usurpers",
+          "Crisis of the Third Century",
+          "Executed ancient Roman people",
+          "People executed by the Roman Empire",
+          "3rd-century executions",
+          "People from Albenga",
+          "Executed Italian people",
+          "Ancient Romans from unknown gentes",
+          "Ancient Roman generals",
+          "Generals of Probus"
+        ],
+        "birth_year": null,
+        "death_year": 281
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Proculus",
+          "page_id": 549369,
+          "infoboxes": [
+            "Roman emperor"
+          ],
+          "categories": [
+            "3rd-century births",
+            "281 deaths",
+            "3rd-century Roman usurpers",
+            "Crisis of the Third Century",
+            "Executed ancient Roman people",
+            "People executed by the Roman Empire",
+            "3rd-century executions",
+            "People from Albenga",
+            "Executed Italian people",
+            "Ancient Romans from unknown gentes",
+            "Ancient Roman generals",
+            "Generals of Probus"
+          ],
+          "birth_year": null,
+          "death_year": 281
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John Milton",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Were the case the same with us as Milton represents it to be with the angels, to whom descent is adverse, and who cannot sink without labour and compulsion, this order of things would be entirely inverted;"
+        ],
+        "commentaries": [
+          "The author references Milton's depiction of angels to illustrate a hypothetical inversion of the natural association between difficulty and ascent."
+        ],
+        "canonical_author": "John Milton"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Milton",
+        "page_id": 16215,
+        "infoboxes": [
+          "person",
+          "writer ",
+          "officeholder "
+        ],
+        "categories": [
+          "John Milton| ",
+          "1608 births",
+          "1674 deaths",
+          "17th-century English civil servants",
+          "17th-century English dramatists and playwrights",
+          "17th-century English educators",
+          "17th-century English historians",
+          "17th-century English male writers",
+          "17th-century English philosophers",
+          "17th-century English poets",
+          "17th-century English writers",
+          "17th-century writers in Latin",
+          "17th-century English non-fiction writers",
+          "17th-century English scholars",
+          "17th-century Christian theologians",
+          "Alumni of Christ's College, Cambridge",
+          "Anglican philosophers",
+          "Anglican poets",
+          "Anti-Catholicism in the United Kingdom",
+          "English blind people",
+          "British blind poets",
+          "British blind writers",
+          "Latin-language British writers",
+          "Burials at St Giles-without-Cripplegate",
+          "Calvinist and Reformed poets",
+          "Christian poets",
+          "Christian humanists",
+          "Civil servants from London",
+          "Critics of the Catholic Church",
+          "Deaths from kidney failure in England"
+        ],
+        "birth_year": 1608,
+        "death_year": 1674
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "9876"
+        ],
+        "target_person": {
+          "title": "John Milton",
+          "page_id": 16215,
+          "infoboxes": [
+            "person",
+            "writer ",
+            "officeholder "
+          ],
+          "categories": [
+            "John Milton| ",
+            "1608 births",
+            "1674 deaths",
+            "17th-century English civil servants",
+            "17th-century English dramatists and playwrights",
+            "17th-century English educators",
+            "17th-century English historians",
+            "17th-century English male writers",
+            "17th-century English philosophers",
+            "17th-century English poets",
+            "17th-century English writers",
+            "17th-century writers in Latin",
+            "17th-century English non-fiction writers",
+            "17th-century English scholars",
+            "17th-century Christian theologians",
+            "Alumni of Christ's College, Cambridge",
+            "Anglican philosophers",
+            "Anglican poets",
+            "Anti-Catholicism in the United Kingdom",
+            "English blind people",
+            "British blind poets",
+            "British blind writers",
+            "Latin-language British writers",
+            "Burials at St Giles-without-Cripplegate",
+            "Calvinist and Reformed poets",
+            "Christian poets",
+            "Christian humanists",
+            "Civil servants from London",
+            "Critics of the Catholic Church",
+            "Deaths from kidney failure in England"
+          ],
+          "birth_year": 1608,
+          "death_year": 1674
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Nicolas Malebranche",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "I may subjoin another argument proposed by a noted author,[2] which seems to me very strong and beautiful.",
+          "As father _Malebranche_ and other _Cartesians_."
+        ],
+        "commentaries": [
+          "The author references an argument from Malebranche (via the footnote 'Mons. Malezieu' which is a common misattribution; the original author is Malebranche) to support his reasoning on infinite divisibility.",
+          "The author references Malebranche as a philosopher who asserted the agency of the supreme Being in relation to all actions of the mind except volition."
+        ],
+        "canonical_author": "Nicolas Malebranche"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Nicolas Malebranche",
+        "page_id": 174019,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1638 births",
+          "1715 deaths",
+          "17th-century French Catholic theologians",
+          "17th-century French male writers",
+          "17th-century French philosophers",
+          "18th-century French Roman Catholic priests",
+          "18th-century French Catholic theologians",
+          "18th-century French male writers",
+          "18th-century French philosophers",
+          "17th-century French Roman Catholic priests",
+          "Augustinian philosophers",
+          "Cartesianism",
+          "Catholic clergy scientists",
+          "Catholic philosophers",
+          "Clergy from Paris",
+          "Enlightenment philosophers",
+          "French epistemologists",
+          "French male non-fiction writers",
+          "French Oratory",
+          "French Roman Catholic writers",
+          "Members of the French Academy of Sciences",
+          "French metaphysicians",
+          "Ontologists",
+          "French philosophers of mind",
+          "French philosophers of religion",
+          "French philosophers of science",
+          "French political philosophers",
+          "Rationalists",
+          "French social philosophers",
+          "University of Paris alumni"
+        ],
+        "birth_year": 1638,
+        "death_year": 1715
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "412100"
+        ],
+        "target_person": {
+          "title": "Nicolas Malebranche",
+          "page_id": 174019,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1638 births",
+            "1715 deaths",
+            "17th-century French Catholic theologians",
+            "17th-century French male writers",
+            "17th-century French philosophers",
+            "18th-century French Roman Catholic priests",
+            "18th-century French Catholic theologians",
+            "18th-century French male writers",
+            "18th-century French philosophers",
+            "17th-century French Roman Catholic priests",
+            "Augustinian philosophers",
+            "Cartesianism",
+            "Catholic clergy scientists",
+            "Catholic philosophers",
+            "Clergy from Paris",
+            "Enlightenment philosophers",
+            "French epistemologists",
+            "French male non-fiction writers",
+            "French Oratory",
+            "French Roman Catholic writers",
+            "Members of the French Academy of Sciences",
+            "French metaphysicians",
+            "Ontologists",
+            "French philosophers of mind",
+            "French philosophers of religion",
+            "French philosophers of science",
+            "French political philosophers",
+            "Rationalists",
+            "French social philosophers",
+            "University of Paris alumni"
+          ],
+          "birth_year": 1638,
+          "death_year": 1715
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sallust",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The characters of Caesar and Cato, as drawn by Sallust, are both of them virtuous, in the strictest sense of the word; but in a different way: Nor are the sentiments entirely the same, which arise from them."
+        ],
+        "commentaries": [
+          "The author refers to Sallust's portrayal of the characters of Caesar and Cato to illustrate that different virtuous characters can produce different sentiments of approbation."
+        ],
+        "canonical_author": "Sallust"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sallust",
+        "page_id": 161420,
+        "infoboxes": [
+          "person",
+          "military person"
+        ],
+        "categories": [
+          "86 BC births",
+          "30s BC deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "1st-century BC historians",
+          "1st-century BC Romans",
+          "Roman Republican soldiers",
+          "Golden Age Latin writers",
+          "Latin historians",
+          "Sallustii"
+        ],
+        "birth_year": -86,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "185771"
+        ],
+        "target_person": {
+          "title": "Sallust",
+          "page_id": 161420,
+          "infoboxes": [
+            "person",
+            "military person"
+          ],
+          "categories": [
+            "86 BC births",
+            "30s BC deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "1st-century BC historians",
+            "1st-century BC Romans",
+            "Roman Republican soldiers",
+            "Golden Age Latin writers",
+            "Latin historians",
+            "Sallustii"
+          ],
+          "birth_year": -86,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Charles de Saint-Évremond",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "This passage was always particularly admired by the prince of Conde, as we learn from St Evremond."
+        ],
+        "commentaries": [
+          "The author references St Evremond as the source reporting the prince of Conde's admiration for Alexander the Great."
+        ],
+        "canonical_author": "St Evremond"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Charles de Saint-Évremond",
+        "page_id": 292715,
+        "infoboxes": [
+          "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+        ],
+        "categories": [
+          "1613 births",
+          "1703 deaths",
+          "People from the Province of Normandy",
+          "Writers from Normandy",
+          "Lycée Louis-le-Grand alumni",
+          "Lycée Saint-Louis alumni",
+          "French military leaders",
+          "French literary critics",
+          "17th-century French writers",
+          "17th-century French male writers",
+          "18th-century French male writers",
+          "Burials at Westminster Abbey",
+          "French male essayists",
+          "18th-century French essayists"
+        ],
+        "birth_year": 1613,
+        "death_year": 1703
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Charles de Saint-Évremond",
+          "page_id": 292715,
+          "infoboxes": [
+            "writer <!-- for more information see [[:Template:Infobox writer/doc]] -->"
+          ],
+          "categories": [
+            "1613 births",
+            "1703 deaths",
+            "People from the Province of Normandy",
+            "Writers from Normandy",
+            "Lycée Louis-le-Grand alumni",
+            "Lycée Saint-Louis alumni",
+            "French military leaders",
+            "French literary critics",
+            "17th-century French writers",
+            "17th-century French male writers",
+            "18th-century French male writers",
+            "Burials at Westminster Abbey",
+            "French male essayists",
+            "18th-century French essayists"
+          ],
+          "birth_year": 1613,
+          "death_year": 1703
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "George Berkeley",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "A great philosopher [3] has disputed the received opinion in this particular, and has asserted, that all general ideas are nothing but particular ones, annexed to a certain term, which gives them a more extensive signification, and makes them recall upon occasion other individuals, which are similar to them."
+        ],
+        "commentaries": [
+          "The author cites Dr. Berkeley as a great philosopher who disputed the received opinion on abstract ideas, and praises his discovery as one of the greatest in the republic of letters."
+        ],
+        "canonical_author": "George Berkeley"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "George Berkeley",
+        "page_id": 11958,
+        "infoboxes": [
+          "Christian leader",
+          "philosopher"
+        ],
+        "categories": [
+          "George Berkeley| ",
+          "1685 births",
+          "1753 deaths",
+          "17th-century Anglican theologians",
+          "18th-century Anglican theologians",
+          "18th-century Irish male writers",
+          "18th-century Irish philosophers",
+          "18th-century Irish writers",
+          "17th-century Anglo-Irish people",
+          "18th-century Anglo-Irish people",
+          "Academics of Trinity College Dublin",
+          "Alumni of Trinity College Dublin",
+          "Anglican bishops of Cloyne",
+          "Anglican philosophers",
+          "Deans of Derry",
+          "Deans of Dromore",
+          "Empiricists",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Fellows of Trinity College Dublin",
+          "History of calculus",
+          "Idealists",
+          "Irish expatriates in England",
+          "Irish philosophers",
+          "Natural philosophers",
+          "Irish religious writers",
+          "Irish slave owners",
+          "People educated at Kilkenny College",
+          "Christian clergy from County Kilkenny",
+          "Philosophers of science"
+        ],
+        "birth_year": 1685,
+        "death_year": 1753
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "92770"
+        ],
+        "target_person": {
+          "title": "George Berkeley",
+          "page_id": 11958,
+          "infoboxes": [
+            "Christian leader",
+            "philosopher"
+          ],
+          "categories": [
+            "George Berkeley| ",
+            "1685 births",
+            "1753 deaths",
+            "17th-century Anglican theologians",
+            "18th-century Anglican theologians",
+            "18th-century Irish male writers",
+            "18th-century Irish philosophers",
+            "18th-century Irish writers",
+            "17th-century Anglo-Irish people",
+            "18th-century Anglo-Irish people",
+            "Academics of Trinity College Dublin",
+            "Alumni of Trinity College Dublin",
+            "Anglican bishops of Cloyne",
+            "Anglican philosophers",
+            "Deans of Derry",
+            "Deans of Dromore",
+            "Empiricists",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Fellows of Trinity College Dublin",
+            "History of calculus",
+            "Idealists",
+            "Irish expatriates in England",
+            "Irish philosophers",
+            "Natural philosophers",
+            "Irish religious writers",
+            "Irish slave owners",
+            "People educated at Kilkenny College",
+            "Christian clergy from County Kilkenny",
+            "Philosophers of science"
+          ],
+          "birth_year": 1685,
+          "death_year": 1753
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Nicolaus Copernicus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Here, therefore, moral philosophy is in the same condition as natural, with regard to astronomy before the time of COPERNICUS."
+        ],
+        "commentaries": [
+          "The author references Copernicus as a figure whose work in astronomy exemplifies a shift from complex systems to simpler, more natural explanations, drawing an analogy to moral philosophy."
+        ],
+        "canonical_author": "Nicolaus Copernicus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Nicolaus Copernicus",
+        "page_id": 323592,
+        "infoboxes": [
+          "scientist"
+        ],
+        "categories": [
+          "Nicolaus Copernicus| ",
+          "1473 births",
+          "1543 deaths",
+          "15th-century German philosophers",
+          "15th-century Polish astronomers",
+          "16th-century economists",
+          "16th-century German astronomers",
+          "16th-century German male writers",
+          "16th-century German mathematicians",
+          "16th-century German philosophers",
+          "16th-century German writers",
+          "16th-century mathematicians",
+          "16th-century Polish astronomers",
+          "16th-century Polish male writers",
+          "16th-century Polish philosophers",
+          "16th-century Polish scientists",
+          "16th-century Polish writers",
+          "16th-century writers in Latin",
+          "Anglican saints",
+          "Burials at Frombork Cathedral",
+          "Canon law jurists",
+          "Canons of Warmia",
+          "Catholic clergy scientists",
+          "Copernican Revolution",
+          "German economists",
+          "German Roman Catholics",
+          "Jagiellonian University alumni",
+          "People celebrated in the Lutheran liturgical calendar",
+          "People from Royal Prussia",
+          "People from Toruń"
+        ],
+        "birth_year": 1473,
+        "death_year": 1543
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3072638"
+        ],
+        "target_person": {
+          "title": "Nicolaus Copernicus",
+          "page_id": 323592,
+          "infoboxes": [
+            "scientist"
+          ],
+          "categories": [
+            "Nicolaus Copernicus| ",
+            "1473 births",
+            "1543 deaths",
+            "15th-century German philosophers",
+            "15th-century Polish astronomers",
+            "16th-century economists",
+            "16th-century German astronomers",
+            "16th-century German male writers",
+            "16th-century German mathematicians",
+            "16th-century German philosophers",
+            "16th-century German writers",
+            "16th-century mathematicians",
+            "16th-century Polish astronomers",
+            "16th-century Polish male writers",
+            "16th-century Polish philosophers",
+            "16th-century Polish scientists",
+            "16th-century Polish writers",
+            "16th-century writers in Latin",
+            "Anglican saints",
+            "Burials at Frombork Cathedral",
+            "Canon law jurists",
+            "Canons of Warmia",
+            "Catholic clergy scientists",
+            "Copernican Revolution",
+            "German economists",
+            "German Roman Catholics",
+            "Jagiellonian University alumni",
+            "People celebrated in the Lutheran liturgical calendar",
+            "People from Royal Prussia",
+            "People from Toruń"
+          ],
+          "birth_year": 1473,
+          "death_year": 1543
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "John Locke",
+        "note": null,
+        "count": 3,
+        "contexts": [
+          "Mr. _Locke_, my Lord _Shaftesbury_, Dr. _Mandeville_, Mr. _Hutchinson_, Dr. _Butler_, etc.",
+          "Perhaps I rather restore the word, idea, to its original sense, from which Mr Locke had perverted it, in making it stand for all our perceptions.",
+          "Mr. Locke."
+        ],
+        "commentaries": [
+          "The author lists Locke among recent philosophers who have advanced the science of man.",
+          "The author criticizes Locke's use of the term 'idea' and claims to restore its original meaning.",
+          "The author references Mr. Locke as a source of an argument he is critiquing."
+        ],
+        "canonical_author": "John Locke"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Locke",
+        "page_id": 16143,
+        "infoboxes": [
+          "officeholder",
+          "philosopher"
+        ],
+        "categories": [
+          "John Locke| ",
+          "1632 births",
+          "1704 deaths",
+          "17th-century English male writers",
+          "17th-century English medical doctors",
+          "17th-century English philosophers",
+          "17th-century English writers",
+          "Alumni of Christ Church, Oxford",
+          "Anglican philosophers",
+          "British expatriates in the Dutch Republic",
+          "British critics of atheism",
+          "Classical liberalism",
+          "Empiricists",
+          "English Anglicans",
+          "English Christian theologians",
+          "English political philosophers",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Fellows of Christ Church, Oxford",
+          "Fellows of the Royal Society",
+          "Metaphysicians",
+          "People educated at Westminster School, London",
+          "People from Epping Forest District",
+          "People from Wrington",
+          "People of the Rye House Plot",
+          "English philosophers of language",
+          "British philosophers of law",
+          "Philosophers of education"
+        ],
+        "birth_year": 1632,
+        "death_year": 1704
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "51746"
+        ],
+        "target_person": {
+          "title": "John Locke",
+          "page_id": 16143,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "John Locke| ",
+            "1632 births",
+            "1704 deaths",
+            "17th-century English male writers",
+            "17th-century English medical doctors",
+            "17th-century English philosophers",
+            "17th-century English writers",
+            "Alumni of Christ Church, Oxford",
+            "Anglican philosophers",
+            "British expatriates in the Dutch Republic",
+            "British critics of atheism",
+            "Classical liberalism",
+            "Empiricists",
+            "English Anglicans",
+            "English Christian theologians",
+            "English political philosophers",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Fellows of Christ Church, Oxford",
+            "Fellows of the Royal Society",
+            "Metaphysicians",
+            "People educated at Westminster School, London",
+            "People from Epping Forest District",
+            "People from Wrington",
+            "People of the Rye House Plot",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of education"
+          ],
+          "birth_year": 1632,
+          "death_year": 1704
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Baruch Spinoza",
+        "note": null,
+        "count": 5,
+        "contexts": [
+          "I assert, that the doctrine of the immateriality, simplicity, and indivisibility of a thinking substance is a true atheism, and will serve to justify all those sentiments, for which Spinoza is so universally infamous.",
+          "The fundamental principle of the atheism of Spinoza is the doctrine of the simplicity of the universe, and the unity of that substance, in which he supposes both thought and matter to inhere.",
+          "I believe this brief exposition of the principles of that famous atheist will be sufficient for the present purpose, and that without entering farther into these gloomy and obscure regions, I shall be able to shew, that this hideous hypothesis is almost the same with that of the immateriality of the soul, which has become so popular.",
+          "Here Spinoza appears, and tells me, that these are only modifications; and that the subject, in which they inhere, is simple, incompounded, and indivisible.",
+          "see whether all the absurdities, which have been found in the system of Spinoza, may not likewise be discovered in that of Theologians."
+        ],
+        "commentaries": [
+          "The author references Spinoza's views on the simplicity and unity of substance, associating them with atheism.",
+          "The author explains Spinoza's fundamental principle of the simplicity and unity of substance.",
+          "The author summarizes Spinoza's principles and compares them to the popular doctrine of the immateriality of the soul.",
+          "The author presents Spinoza's view that all objects are modifications of a simple, indivisible substance.",
+          "The author references Spinoza's system to compare its absurdities with those of the theologians."
+        ],
+        "canonical_author": "Baruch Spinoza"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Baruch Spinoza",
+        "page_id": 3408,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1632 births",
+          "1677 deaths",
+          "Baruch Spinoza| ",
+          "17th-century Jewish biblical scholars",
+          "17th-century Jewish theologians",
+          "17th-century writers in Latin",
+          "17th-century Sephardi Jews",
+          "17th-century Dutch philosophers",
+          "Censorship in Judaism",
+          "Censorship in the Netherlands",
+          "Critics of Judaism",
+          "Dutch critics of religions",
+          "Dutch Enlightenment",
+          "Critics of the Catholic Church",
+          "Descartes scholars",
+          "Determinists",
+          "Dutch ethicists",
+          "Dutch logicians",
+          "Dutch people of Portuguese descent",
+          "Dutch people of Portuguese-Jewish descent",
+          "Dutch Sephardi Jews",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Freethought",
+          "Heresy in Judaism",
+          "Jewish philosophers",
+          "Jewish skeptics",
+          "Jewish translators of the Bible",
+          "Metaphilosophers",
+          "Metaphysicians"
+        ],
+        "birth_year": 1632,
+        "death_year": 1677
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "122092"
+        ],
+        "target_person": {
+          "title": "Baruch Spinoza",
+          "page_id": 3408,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1632 births",
+            "1677 deaths",
+            "Baruch Spinoza| ",
+            "17th-century Jewish biblical scholars",
+            "17th-century Jewish theologians",
+            "17th-century writers in Latin",
+            "17th-century Sephardi Jews",
+            "17th-century Dutch philosophers",
+            "Censorship in Judaism",
+            "Censorship in the Netherlands",
+            "Critics of Judaism",
+            "Dutch critics of religions",
+            "Dutch Enlightenment",
+            "Critics of the Catholic Church",
+            "Descartes scholars",
+            "Determinists",
+            "Dutch ethicists",
+            "Dutch logicians",
+            "Dutch people of Portuguese descent",
+            "Dutch people of Portuguese-Jewish descent",
+            "Dutch Sephardi Jews",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Freethought",
+            "Heresy in Judaism",
+            "Jewish philosophers",
+            "Jewish skeptics",
+            "Jewish translators of the Bible",
+            "Metaphilosophers",
+            "Metaphysicians"
+          ],
+          "birth_year": 1632,
+          "death_year": 1677
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bernard Mandeville",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Mr. _Locke_, my Lord _Shaftesbury_, Dr. _Mandeville_, Mr. _Hutchinson_, Dr. _Butler_, etc."
+        ],
+        "commentaries": [
+          "The author lists Mandeville among recent philosophers who have advanced the science of man."
+        ],
+        "canonical_author": "Bernard Mandeville"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Bernard Mandeville",
+        "page_id": 564568,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1670 births",
+          "1733 deaths",
+          "Emigrants from the Dutch Republic",
+          "Immigrants to the Kingdom of England",
+          "17th-century Dutch economists",
+          "17th-century Dutch philosophers",
+          "17th-century Dutch physicians",
+          "17th-century English male writers",
+          "17th-century English medical doctors",
+          "17th-century English philosophers",
+          "18th-century Dutch economists",
+          "18th-century Dutch philosophers",
+          "18th-century Dutch physicians",
+          "18th-century English male writers",
+          "18th-century English medical doctors",
+          "18th-century English philosophers",
+          "Classical economists",
+          "Dutch male writers",
+          "Dutch non-fiction writers",
+          "Dutch satirists",
+          "English economists",
+          "English political philosophers",
+          "English satirists",
+          "Leiden University alumni",
+          "Scientists from Rotterdam",
+          "Writers from Rotterdam",
+          "Dutch male non-fiction writers"
+        ],
+        "birth_year": 1670,
+        "death_year": 1733
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "237162"
+        ],
+        "target_person": {
+          "title": "Bernard Mandeville",
+          "page_id": 564568,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1670 births",
+            "1733 deaths",
+            "Emigrants from the Dutch Republic",
+            "Immigrants to the Kingdom of England",
+            "17th-century Dutch economists",
+            "17th-century Dutch philosophers",
+            "17th-century Dutch physicians",
+            "17th-century English male writers",
+            "17th-century English medical doctors",
+            "17th-century English philosophers",
+            "18th-century Dutch economists",
+            "18th-century Dutch philosophers",
+            "18th-century Dutch physicians",
+            "18th-century English male writers",
+            "18th-century English medical doctors",
+            "18th-century English philosophers",
+            "Classical economists",
+            "Dutch male writers",
+            "Dutch non-fiction writers",
+            "Dutch satirists",
+            "English economists",
+            "English political philosophers",
+            "English satirists",
+            "Leiden University alumni",
+            "Scientists from Rotterdam",
+            "Writers from Rotterdam",
+            "Dutch male non-fiction writers"
+          ],
+          "birth_year": 1670,
+          "death_year": 1733
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Republic",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I am apt to think a travellar would meet with as little credit, who should inform us of people exactly of the same character with those in Plato's republic on the one hand, or those in Hobbes's Leviathan on the other."
+        ],
+        "commentaries": [
+          "The author uses Plato's republic as a comparison point for hypothetical uniform characters that would be disbelieved by a traveler."
+        ]
+      },
+      "goodreads_match": {
+        "publisher": "Wordsworth Editions",
+        "publication_day": 5,
+        "author_ids": [
+          "879"
+        ],
+        "text_reviews_count": 3,
+        "title_without_series": "Republic",
+        "title": "Republic",
+        "format": "Paperback",
+        "average_rating": 3.91,
+        "isbn": "1853264830",
+        "work_id": "1625515",
+        "publication_year": 1997,
+        "isbn13": "9781853264832",
+        "publication_month": 4,
+        "book_id": "1613389",
+        "ratings_count": 45,
+        "authors": [
+          "Plato"
+        ],
+        "description": "A newly designed second edition of the classic translation of Plato's timeless work, \"The Republic,\" by the author of \"The Closing of the American Mind.\"",
+        "link": "https://www.goodreads.com/book/show/1613389.Republic",
+        "wikipedia_match": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        },
+        "original_year": -400,
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1613389",
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Francis Hutcheson",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Mr. _Locke_, my Lord _Shaftesbury_, Dr. _Mandeville_, Mr. _Hutchinson_, Dr. _Butler_, etc."
+        ],
+        "commentaries": [
+          "The author lists Hutcheson among recent philosophers who have advanced the science of man."
+        ],
+        "canonical_author": "Francis Hutcheson"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Francis Hutcheson (philosopher)",
+        "page_id": 188405,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1694 births",
+          "1746 deaths",
+          "18th-century essayists",
+          "18th-century Irish male writers",
+          "18th-century Irish philosophers",
+          "18th-century Irish writers",
+          "18th-century ministers of the Church of Scotland",
+          "18th-century Irish Presbyterian ministers",
+          "Academics of the University of Glasgow",
+          "Animal rights scholars",
+          "Alumni of the University of Glasgow",
+          "Burials at St. Mary's Churchyard, Dublin",
+          "Classical economists",
+          "Consequentialists",
+          "Empiricists",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Humor researchers",
+          "Irish essayists",
+          "Irish ethicists",
+          "Irish logicians",
+          "Irish male non-fiction writers",
+          "Irish Presbyterians",
+          "Ontologists",
+          "Pamphleteers",
+          "People from Saintfield",
+          "People of the Scottish Enlightenment",
+          "Philosophers of art",
+          "Philosophers of economics",
+          "Philosophers of education"
+        ],
+        "birth_year": 1694,
+        "death_year": 1746
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "216332"
+        ],
+        "target_person": {
+          "title": "Francis Hutcheson (philosopher)",
+          "page_id": 188405,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1694 births",
+            "1746 deaths",
+            "18th-century essayists",
+            "18th-century Irish male writers",
+            "18th-century Irish philosophers",
+            "18th-century Irish writers",
+            "18th-century ministers of the Church of Scotland",
+            "18th-century Irish Presbyterian ministers",
+            "Academics of the University of Glasgow",
+            "Animal rights scholars",
+            "Alumni of the University of Glasgow",
+            "Burials at St. Mary's Churchyard, Dublin",
+            "Classical economists",
+            "Consequentialists",
+            "Empiricists",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Humor researchers",
+            "Irish essayists",
+            "Irish ethicists",
+            "Irish logicians",
+            "Irish male non-fiction writers",
+            "Irish Presbyterians",
+            "Ontologists",
+            "Pamphleteers",
+            "People from Saintfield",
+            "People of the Scottish Enlightenment",
+            "Philosophers of art",
+            "Philosophers of economics",
+            "Philosophers of education"
+          ],
+          "birth_year": 1694,
+          "death_year": 1746
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Anthony Ashley Cooper, 3rd Earl of Shaftesbury",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Mr. _Locke_, my Lord _Shaftesbury_, Dr. _Mandeville_, Mr. _Hutchinson_, Dr. _Butler_, etc."
+        ],
+        "commentaries": [
+          "The author lists Shaftesbury among recent philosophers who have advanced the science of man."
+        ],
+        "canonical_author": "Anthony Ashley Cooper, 3Rd Earl Of Shaftesbury"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Anthony Ashley-Cooper, 3rd Earl of Shaftesbury",
+        "page_id": 575910,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1671 births",
+          "1713 deaths",
+          "17th-century English philosophers",
+          "18th-century British essayists",
+          "18th-century English philosophers",
+          "Age of Enlightenment",
+          "British deists",
+          "English ethicists",
+          "English male essayists",
+          "Cambridge Platonists",
+          "Earls of Shaftesbury|3",
+          "English essayists",
+          "English MPs 1695–1698|Ashley, Anthony Ashley-Cooper, Lord",
+          "Enlightenment philosophers",
+          "People educated at Winchester College",
+          "English philosophers of religion",
+          "Philosophers of social science",
+          "British philosophers of art",
+          "Commonwealthmen"
+        ],
+        "birth_year": 1671,
+        "death_year": 1713
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Anthony Ashley-Cooper, 3rd Earl of Shaftesbury",
+          "page_id": 575910,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1671 births",
+            "1713 deaths",
+            "17th-century English philosophers",
+            "18th-century British essayists",
+            "18th-century English philosophers",
+            "Age of Enlightenment",
+            "British deists",
+            "English ethicists",
+            "English male essayists",
+            "Cambridge Platonists",
+            "Earls of Shaftesbury|3",
+            "English essayists",
+            "English MPs 1695–1698|Ashley, Anthony Ashley-Cooper, Lord",
+            "Enlightenment philosophers",
+            "People educated at Winchester College",
+            "English philosophers of religion",
+            "Philosophers of social science",
+            "British philosophers of art",
+            "Commonwealthmen"
+          ],
+          "birth_year": 1671,
+          "death_year": 1713
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Essay Concerning Human Understanding",
+        "author": "John Locke",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "See Mr. Locke, chapter of power."
+        ],
+        "commentaries": [
+          "The author references Locke's chapter on power as a source for a popular explication of the idea of power and efficacy."
+        ],
+        "canonical_author": "Locke"
+      },
+      "goodreads_match": {
+        "publisher": "Prometheus Books",
+        "publication_day": 1,
+        "author_ids": [
+          "51746"
+        ],
+        "text_reviews_count": 1,
+        "title_without_series": "An Essay Concerning Human Understanding",
+        "title": "An Essay Concerning Human Understanding",
+        "format": "Paperback",
+        "average_rating": 3.82,
+        "isbn": "0879759178",
+        "num_pages": 623,
+        "work_id": "1689887",
+        "publication_year": 1995,
+        "isbn13": "9780879759179",
+        "publication_month": 12,
+        "book_id": "1479156",
+        "ratings_count": 12,
+        "authors": [
+          "John Locke"
+        ],
+        "description": "What is known? And how do we come to know it? These are the primary points of focus for metaphysics and epistemology, respectively. Here, in one of the classic works of early-modern empiricist philosophy, John Locke (1632-1704) attempts to answer these basic human questions by moving away from the rationalist notion of innate ideas to establish the concept of the tabula rasa in which the mind is initially impressed with ideas through perception of the external world of substance. The formation of basic idea...",
+        "link": "https://www.goodreads.com/book/show/1479156.An_Essay_Concerning_Human_Understanding",
+        "wikipedia_match": {
+          "title": "John Locke",
+          "page_id": 16143,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "John Locke| ",
+            "1632 births",
+            "1704 deaths",
+            "17th-century English male writers",
+            "17th-century English medical doctors",
+            "17th-century English philosophers",
+            "17th-century English writers",
+            "Alumni of Christ Church, Oxford",
+            "Anglican philosophers",
+            "British expatriates in the Dutch Republic",
+            "British critics of atheism",
+            "Classical liberalism",
+            "Empiricists",
+            "English Anglicans",
+            "English Christian theologians",
+            "English political philosophers",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Fellows of Christ Church, Oxford",
+            "Fellows of the Royal Society",
+            "Metaphysicians",
+            "People educated at Westminster School, London",
+            "People from Epping Forest District",
+            "People from Wrington",
+            "People of the Rye House Plot",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of education"
+          ],
+          "birth_year": 1632,
+          "death_year": 1704
+        },
+        "original_year": 1690,
+        "author_meta": {
+          "birth_year": 1632,
+          "death_year": 1704,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "John Locke",
+        "page_id": 16143,
+        "infoboxes": [
+          "officeholder",
+          "philosopher"
+        ],
+        "categories": [
+          "John Locke| ",
+          "1632 births",
+          "1704 deaths",
+          "17th-century English male writers",
+          "17th-century English medical doctors",
+          "17th-century English philosophers",
+          "17th-century English writers",
+          "Alumni of Christ Church, Oxford",
+          "Anglican philosophers",
+          "British expatriates in the Dutch Republic",
+          "British critics of atheism",
+          "Classical liberalism",
+          "Empiricists",
+          "English Anglicans",
+          "English Christian theologians",
+          "English political philosophers",
+          "Enlightenment philosophers",
+          "Epistemologists",
+          "Fellows of Christ Church, Oxford",
+          "Fellows of the Royal Society",
+          "Metaphysicians",
+          "People educated at Westminster School, London",
+          "People from Epping Forest District",
+          "People from Wrington",
+          "People of the Rye House Plot",
+          "English philosophers of language",
+          "British philosophers of law",
+          "Philosophers of education"
+        ],
+        "birth_year": 1632,
+        "death_year": 1704
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "1479156",
+        "target_author_ids": [
+          "51746"
+        ],
+        "target_person": {
+          "title": "John Locke",
+          "page_id": 16143,
+          "infoboxes": [
+            "officeholder",
+            "philosopher"
+          ],
+          "categories": [
+            "John Locke| ",
+            "1632 births",
+            "1704 deaths",
+            "17th-century English male writers",
+            "17th-century English medical doctors",
+            "17th-century English philosophers",
+            "17th-century English writers",
+            "Alumni of Christ Church, Oxford",
+            "Anglican philosophers",
+            "British expatriates in the Dutch Republic",
+            "British critics of atheism",
+            "Classical liberalism",
+            "Empiricists",
+            "English Anglicans",
+            "English Christian theologians",
+            "English political philosophers",
+            "Enlightenment philosophers",
+            "Epistemologists",
+            "Fellows of Christ Church, Oxford",
+            "Fellows of the Royal Society",
+            "Metaphysicians",
+            "People educated at Westminster School, London",
+            "People from Epping Forest District",
+            "People from Wrington",
+            "People of the Rye House Plot",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of education"
+          ],
+          "birth_year": 1632,
+          "death_year": 1704
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Sabinus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "But of all the questions of this kind the most curious is that, which for so many ages divided the disciples of Proculus and Sabinus."
+        ],
+        "commentaries": [
+          "The author mentions Sabinus as the leader of a school of thought in a long-standing legal controversy."
+        ],
+        "canonical_author": "Sabinus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Sabinus (Ovid)",
+        "page_id": 8317202,
+        "infoboxes": [],
+        "categories": [
+          "1st-century Romans",
+          "10s deaths",
+          "1st-century Roman poets",
+          "Golden Age Latin writers",
+          "Latin writers known only from secondary sources",
+          "Year of birth missing",
+          "Year of death uncertain"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Sabinus (Ovid)",
+          "page_id": 8317202,
+          "infoboxes": [],
+          "categories": [
+            "1st-century Romans",
+            "10s deaths",
+            "1st-century Roman poets",
+            "Golden Age Latin writers",
+            "Latin writers known only from secondary sources",
+            "Year of birth missing",
+            "Year of death uncertain"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Horace",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Horace has remarked this phænomenon."
+        ],
+        "commentaries": [
+          "The author cites Horace as having observed the phenomenon of uncertainty increasing fear."
+        ],
+        "canonical_author": "Horace"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Horace",
+        "birth_year": -65,
+        "death_year": -8
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "3341504"
+        ],
+        "target_person": {
+          "title": "Horace",
+          "birth_year": -65,
+          "death_year": -8
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Marcus Tullius Cicero",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Cicero de Finibus, lib. 5."
+        ],
+        "commentaries": [
+          "The author quotes a passage from Cicero's work to illustrate the power of places to evoke associations and memories."
+        ],
+        "canonical_author": "Marcus Tullius Cicero"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Tullius Cicero",
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Marcus Tullius Cicero",
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "François de La Rochefoucauld",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The Duc de La Rochefoucault has very well observed, that absence destroys weak passions, but encreases strong; as the wind extinguishes a candle, but blows up a fire."
+        ],
+        "commentaries": [
+          "The author quotes the Duc de La Rochefoucault's observation about the effects of absence on passions."
+        ],
+        "canonical_author": "La Rochefoucault"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "François de La Rochefoucauld (writer)",
+        "page_id": 287047,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1613 births",
+          "1680 deaths",
+          "17th-century French writers",
+          "17th-century French male writers",
+          "Aphorists",
+          "Dukes of La Rochefoucauld",
+          "17th-century French letter writers",
+          "French male non-fiction writers",
+          "French Roman Catholics",
+          "Literary peers",
+          "Prisoners of the Bastille",
+          "17th-century French memoirists",
+          "House of La Rochefoucauld",
+          "People from the Province of Île-de-France"
+        ],
+        "birth_year": 1613,
+        "death_year": 1680
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "7428903"
+        ],
+        "target_person": {
+          "title": "François de La Rochefoucauld (writer)",
+          "page_id": 287047,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1613 births",
+            "1680 deaths",
+            "17th-century French writers",
+            "17th-century French male writers",
+            "Aphorists",
+            "Dukes of La Rochefoucauld",
+            "17th-century French letter writers",
+            "French male non-fiction writers",
+            "French Roman Catholics",
+            "Literary peers",
+            "Prisoners of the Bastille",
+            "17th-century French memoirists",
+            "House of La Rochefoucauld",
+            "People from the Province of Île-de-France"
+          ],
+          "birth_year": 1613,
+          "death_year": 1680
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Titus Lucretius Carus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "[3] Suave mari magno turbantibus aequora ventis E terra magnum alterius spectare laborem; Non quia vexari quenquam eat jucunda voluptas, Sed quibus ipse malls caress qula cernere sauv' est. LUCRET."
+        ],
+        "commentaries": [
+          "The author quotes Lucretius in Latin to illustrate the pleasure of observing others' troubles from a safe distance, relating it to the principles of sympathy and comparison."
+        ],
+        "canonical_author": "Titus Lucretius Carus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Lucretius",
+        "page_id": 37145,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "90s BC births",
+          "50s BC deaths",
+          "1st-century BC philosophers",
+          "1st-century BC Roman poets",
+          "Atomists",
+          "Didactic poets",
+          "Empiricists",
+          "Epic poets",
+          "Golden Age Latin writers",
+          "Lucretii",
+          "Metaphysicians",
+          "Natural philosophers",
+          "Roman-era Epicurean philosophers",
+          "Philosophers of Roman Italy"
+        ],
+        "birth_year": -99,
+        "death_year": -55
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "8143161"
+        ],
+        "target_person": {
+          "title": "Lucretius",
+          "page_id": 37145,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "90s BC births",
+            "50s BC deaths",
+            "1st-century BC philosophers",
+            "1st-century BC Roman poets",
+            "Atomists",
+            "Didactic poets",
+            "Empiricists",
+            "Epic poets",
+            "Golden Age Latin writers",
+            "Lucretii",
+            "Metaphysicians",
+            "Natural philosophers",
+            "Roman-era Epicurean philosophers",
+            "Philosophers of Roman Italy"
+          ],
+          "birth_year": -99,
+          "death_year": -55
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Historical and Critical Dictionary",
+        "author": "Pierre Bayle",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "[12] [12] See _Bayle's_ dictionary, article of _Spinoza_."
+        ],
+        "commentaries": [
+          "The author cites Bayle's dictionary as a source for the article on Spinoza."
+        ],
+        "canonical_author": "Bayle"
+      },
+      "goodreads_match": {
+        "author_ids": [
+          "444184"
+        ],
+        "text_reviews_count": 1,
+        "title_without_series": "Historical and Critical Dictionary",
+        "title": "Historical and Critical Dictionary",
+        "average_rating": 4.16,
+        "work_id": "844652",
+        "isbn13": "2940002250967",
+        "book_id": "7015458",
+        "ratings_count": 2,
+        "authors": [
+          "Pierre Bayle"
+        ],
+        "description": "This is an EXACT reproduction of a book published before 1923. This IS NOT an OCR'd book with strange characters, introduced typographical errors, and jumbled words. This book may have occasional imperfections such as missing or blurred pages, poor pictures, errant marks, etc. that were either part of the original artifact, or were introduced by the scanning process. We believe this work is culturally important, and despite the imperfections, have elected to bring it back into print as part of our continuin...",
+        "link": "https://www.goodreads.com/book/show/7015458-historical-and-critical-dictionary",
+        "wikipedia_match": {
+          "title": "Pierre Bayle",
+          "page_id": 308126,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1647 births",
+            "1706 deaths",
+            "17th-century Calvinist and Reformed Christians",
+            "18th-century Calvinist and Reformed Christians",
+            "17th-century Dutch philosophers",
+            "18th-century Dutch philosophers",
+            "17th-century French philosophers",
+            "17th-century French writers",
+            "17th-century lexicographers",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Alumni of Jesuit schools",
+            "Calvinist and Reformed philosophers",
+            "Converts to Roman Catholicism from Calvinism",
+            "Converts to Calvinism from Roman Catholicism",
+            "Dutch historians",
+            "Encyclopedists",
+            "Enlightenment philosophers",
+            "French literary critics",
+            "French Protestants",
+            "Huguenots",
+            "People from Ariège (department)",
+            "Writers from Rotterdam",
+            "Philosophy and thought in the Dutch Republic",
+            "French sceptics",
+            "Skeptic philosophers",
+            "People from the County of Foix"
+          ],
+          "birth_year": 1647,
+          "death_year": 1706
+        },
+        "original_year": 1991,
+        "author_meta": {
+          "birth_year": 1647,
+          "death_year": 1706,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Pierre Bayle",
+        "page_id": 308126,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "1647 births",
+          "1706 deaths",
+          "17th-century Calvinist and Reformed Christians",
+          "18th-century Calvinist and Reformed Christians",
+          "17th-century Dutch philosophers",
+          "18th-century Dutch philosophers",
+          "17th-century French philosophers",
+          "17th-century French writers",
+          "17th-century lexicographers",
+          "17th-century French male writers",
+          "17th-century Roman Catholics",
+          "Age of Enlightenment",
+          "Alumni of Jesuit schools",
+          "Calvinist and Reformed philosophers",
+          "Converts to Roman Catholicism from Calvinism",
+          "Converts to Calvinism from Roman Catholicism",
+          "Dutch historians",
+          "Encyclopedists",
+          "Enlightenment philosophers",
+          "French literary critics",
+          "French Protestants",
+          "Huguenots",
+          "People from Ariège (department)",
+          "Writers from Rotterdam",
+          "Philosophy and thought in the Dutch Republic",
+          "French sceptics",
+          "Skeptic philosophers",
+          "People from the County of Foix"
+        ],
+        "birth_year": 1647,
+        "death_year": 1706
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "7015458",
+        "target_author_ids": [
+          "444184"
+        ],
+        "target_person": {
+          "title": "Pierre Bayle",
+          "page_id": 308126,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "1647 births",
+            "1706 deaths",
+            "17th-century Calvinist and Reformed Christians",
+            "18th-century Calvinist and Reformed Christians",
+            "17th-century Dutch philosophers",
+            "18th-century Dutch philosophers",
+            "17th-century French philosophers",
+            "17th-century French writers",
+            "17th-century lexicographers",
+            "17th-century French male writers",
+            "17th-century Roman Catholics",
+            "Age of Enlightenment",
+            "Alumni of Jesuit schools",
+            "Calvinist and Reformed philosophers",
+            "Converts to Roman Catholicism from Calvinism",
+            "Converts to Calvinism from Roman Catholicism",
+            "Dutch historians",
+            "Encyclopedists",
+            "Enlightenment philosophers",
+            "French literary critics",
+            "French Protestants",
+            "Huguenots",
+            "People from Ariège (department)",
+            "Writers from Rotterdam",
+            "Philosophy and thought in the Dutch Republic",
+            "French sceptics",
+            "Skeptic philosophers",
+            "People from the County of Foix"
+          ],
+          "birth_year": 1647,
+          "death_year": 1706
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Barrow",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "[5] See Dr. Barrow's mathematical lectures."
+        ],
+        "commentaries": [
+          "The author references Dr. Barrow's mathematical lectures as a source for a point in the discussion."
+        ],
+        "canonical_author": "Barrow"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Barrow",
+        "birth_year": 1945
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "72043"
+        ],
+        "target_person": {
+          "title": "Barrow",
+          "birth_year": 1945
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Leviathan",
+        "author": "Thomas Hobbes",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I am apt to think a travellar would meet with as little credit, who should inform us of people exactly of the same character with those in Plato's republic on the one hand, or those in Hobbes's Leviathan on the other."
+        ],
+        "commentaries": [
+          "The author uses Hobbes's Leviathan as a comparison point for hypothetical uniform characters that would be disbelieved by a traveler."
+        ],
+        "canonical_author": "Hobbes"
+      },
+      "goodreads_match": {
+        "publisher": "Fontana/Collins",
+        "publication_day": 1,
+        "author_ids": [
+          "10122"
+        ],
+        "text_reviews_count": 1,
+        "title_without_series": "Leviathan",
+        "title": "Leviathan",
+        "average_rating": 3.67,
+        "isbn": "0006330665",
+        "num_pages": 511,
+        "work_id": "680963",
+        "publication_year": 1974,
+        "isbn13": "9780006330660",
+        "publication_month": 1,
+        "book_id": "6359076",
+        "ratings_count": 5,
+        "authors": [
+          "Thomas Hobbes"
+        ],
+        "description": "Thomas Hobbes took a new look at the ways in which society should function, and he ended up formulating the concept of political science. His crowning achievement, Leviathan,remains among the greatest works in the history of ideas. Written during a moment in English history when the political and social structures as well as methods of science were in flux and open to interpretation, Leviathanplayed an essential role in the development of the modern world.\nAn outspoken royalist, Hobbes fled to France during...",
+        "link": "https://www.goodreads.com/book/show/6359076-leviathan",
+        "wikipedia_match": {
+          "title": "Thomas Hobbes",
+          "page_id": 29823,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Thomas Hobbes| ",
+            "1588 births",
+            "1679 deaths",
+            "17th-century English writers",
+            "17th-century writers in Latin",
+            "17th-century English male writers",
+            "17th-century English philosophers",
+            "Alumni of Magdalen Hall, Oxford",
+            "Atomists",
+            "British critics of Christianity",
+            "British critics of religions",
+            "Critics of the Catholic Church",
+            "Empiricists",
+            "English expatriates in France",
+            "English mathematicians",
+            "English physicists",
+            "English political philosophers",
+            "English theologians",
+            "Epistemologists",
+            "Materialists",
+            "Metaphysicians",
+            "Ontologists",
+            "Writers from Malmesbury",
+            "Philosophers of culture",
+            "British philosophers of education",
+            "Philosophers of history",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of mathematics",
+            "Philosophers of mind"
+          ],
+          "birth_year": 1588,
+          "death_year": 1679
+        },
+        "original_year": 1651,
+        "author_meta": {
+          "birth_year": 1588,
+          "death_year": 1679,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Thomas Hobbes",
+        "page_id": 29823,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Thomas Hobbes| ",
+          "1588 births",
+          "1679 deaths",
+          "17th-century English writers",
+          "17th-century writers in Latin",
+          "17th-century English male writers",
+          "17th-century English philosophers",
+          "Alumni of Magdalen Hall, Oxford",
+          "Atomists",
+          "British critics of Christianity",
+          "British critics of religions",
+          "Critics of the Catholic Church",
+          "Empiricists",
+          "English expatriates in France",
+          "English mathematicians",
+          "English physicists",
+          "English political philosophers",
+          "English theologians",
+          "Epistemologists",
+          "Materialists",
+          "Metaphysicians",
+          "Ontologists",
+          "Writers from Malmesbury",
+          "Philosophers of culture",
+          "British philosophers of education",
+          "Philosophers of history",
+          "English philosophers of language",
+          "British philosophers of law",
+          "Philosophers of mathematics",
+          "Philosophers of mind"
+        ],
+        "birth_year": 1588,
+        "death_year": 1679
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "6359076",
+        "target_author_ids": [
+          "10122"
+        ],
+        "target_person": {
+          "title": "Thomas Hobbes",
+          "page_id": 29823,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Thomas Hobbes| ",
+            "1588 births",
+            "1679 deaths",
+            "17th-century English writers",
+            "17th-century writers in Latin",
+            "17th-century English male writers",
+            "17th-century English philosophers",
+            "Alumni of Magdalen Hall, Oxford",
+            "Atomists",
+            "British critics of Christianity",
+            "British critics of religions",
+            "Critics of the Catholic Church",
+            "Empiricists",
+            "English expatriates in France",
+            "English mathematicians",
+            "English physicists",
+            "English political philosophers",
+            "English theologians",
+            "Epistemologists",
+            "Materialists",
+            "Metaphysicians",
+            "Ontologists",
+            "Writers from Malmesbury",
+            "Philosophers of culture",
+            "British philosophers of education",
+            "Philosophers of history",
+            "English philosophers of language",
+            "British philosophers of law",
+            "Philosophers of mathematics",
+            "Philosophers of mind"
+          ],
+          "birth_year": 1588,
+          "death_year": 1679
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Trebonian",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I shall therefore content my self with observing, that the decision of Trebonian seems to me pretty ingenious; that the cup belongs to the proprietor of the metal, because it can be brought back to its first form: But that the ship belongs to the author of its form for a contrary reason."
+        ],
+        "commentaries": [
+          "The author cites Trebonian's decision as an ingenious resolution to the controversy between Proculus and Sabinus."
+        ],
+        "canonical_author": "Trebonian"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Trebonian",
+        "birth_year": 500,
+        "death_year": 575
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Trebonian",
+          "birth_year": 500,
+          "death_year": 575
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Joseph Butler",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Mr. _Locke_, my Lord _Shaftesbury_, Dr. _Mandeville_, Mr. _Hutchinson_, Dr. _Butler_, etc."
+        ],
+        "commentaries": [
+          "The author lists Butler among recent philosophers who have advanced the science of man."
+        ],
+        "canonical_author": "Joseph Butler"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Joseph Butler",
+        "page_id": 163552,
+        "infoboxes": [
+          "Christian leader",
+          "philosopher"
+        ],
+        "categories": [
+          "1692 births",
+          "1752 deaths",
+          "People from Wantage",
+          "Alumni of Oriel College, Oxford",
+          "18th-century Church of England bishops",
+          "18th-century English non-fiction writers",
+          "18th-century English male writers",
+          "18th-century English writers",
+          "18th-century English philosophers",
+          "Anglican philosophers",
+          "English Anglican theologians",
+          "Anglican saints",
+          "Bishops of Bristol",
+          "Bishops of Durham",
+          "Christian apologists",
+          "Deans of St Paul's",
+          "Clerks of the Closet",
+          "English sermon writers",
+          "Empiricists",
+          "English male non-fiction writers",
+          "British critics of atheism",
+          "Critics of deism",
+          "People from Stanhope, County Durham",
+          "18th-century Anglican theologians"
+        ],
+        "birth_year": 1692,
+        "death_year": 1752
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Joseph Butler",
+          "page_id": 163552,
+          "infoboxes": [
+            "Christian leader",
+            "philosopher"
+          ],
+          "categories": [
+            "1692 births",
+            "1752 deaths",
+            "People from Wantage",
+            "Alumni of Oriel College, Oxford",
+            "18th-century Church of England bishops",
+            "18th-century English non-fiction writers",
+            "18th-century English male writers",
+            "18th-century English writers",
+            "18th-century English philosophers",
+            "Anglican philosophers",
+            "English Anglican theologians",
+            "Anglican saints",
+            "Bishops of Bristol",
+            "Bishops of Durham",
+            "Christian apologists",
+            "Deans of St Paul's",
+            "Clerks of the Closet",
+            "English sermon writers",
+            "Empiricists",
+            "English male non-fiction writers",
+            "British critics of atheism",
+            "Critics of deism",
+            "People from Stanhope, County Durham",
+            "18th-century Anglican theologians"
+          ],
+          "birth_year": 1692,
+          "death_year": 1752
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Thales of Miletus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "reckoning from THALES to SOCRATES, the space of time is nearly equal to that betwixt, my Lord Bacon and some late philosophers in England"
+        ],
+        "commentaries": [
+          "The author mentions Thales as an early philosopher in a historical comparison."
+        ],
+        "canonical_author": "Thales Of Miletus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Thales of Miletus",
+        "page_id": 30072,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "6th-century BC Greek philosophers",
+          "620s BC births",
+          "540s BC deaths",
+          "Ancient Greek astronomers",
+          "Ancient Greek geometers",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek physicists",
+          "Ancient Milesians",
+          "Epistemologists",
+          "Metaphilosophers",
+          "Metaphysicians",
+          "Metaphysics writers",
+          "Natural philosophers",
+          "Ontologists",
+          "Philosophers of ancient Ionia",
+          "Philosophers of education",
+          "Philosophers of mathematics",
+          "Philosophers of mind",
+          "Philosophers of science",
+          "Presocratic philosophers",
+          "Seven Sages of Greece",
+          "6th-century BC mathematicians",
+          "6th-century BC astronomers"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5045465"
+        ],
+        "target_person": {
+          "title": "Thales of Miletus",
+          "page_id": 30072,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "6th-century BC Greek philosophers",
+            "620s BC births",
+            "540s BC deaths",
+            "Ancient Greek astronomers",
+            "Ancient Greek geometers",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek physicists",
+            "Ancient Milesians",
+            "Epistemologists",
+            "Metaphilosophers",
+            "Metaphysicians",
+            "Metaphysics writers",
+            "Natural philosophers",
+            "Ontologists",
+            "Philosophers of ancient Ionia",
+            "Philosophers of education",
+            "Philosophers of mathematics",
+            "Philosophers of mind",
+            "Philosophers of science",
+            "Presocratic philosophers",
+            "Seven Sages of Greece",
+            "6th-century BC mathematicians",
+            "6th-century BC astronomers"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "HISTOIRE ANCIENNE",
+        "author": "Charles Rollin",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "A late celebrated historian[1] admires this passage of antient history, as one of the most singular that is any where to be met.\n[1] Mons. Rollin {Charles Rollin, HISTOIRE ANCIENNE. (Paris 1730-38)}."
+        ],
+        "commentaries": [
+          "The author cites Rollin's admiration for a passage of ancient history, quoting Rollin's commentary on the Athenians' rejection of Themistocles' proposal."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Histoire Ancienne",
+        "authors": [
+          "Charles Rollin"
+        ],
+        "original_year": 1730,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "French",
+        "description": "A multi-volume history of ancient civilizations, originally published in Paris between 1730 and 1738.",
+        "book_id": "web_c58a6c3f",
+        "author_meta": {
+          "birth_year": 1661,
+          "death_year": 1741,
+          "canonical_name": "Charles Rollin"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Charles Rollin",
+        "birth_year": 1661,
+        "death_year": 1741
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_c58a6c3f",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Charles Rollin",
+          "birth_year": 1661,
+          "death_year": 1741
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Moralists: or, Philosophical Rhapsody",
+        "author": "Anthony Ashley Cooper, 3rd Earl of Shaftesbury",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "If the reader is desirous to see how a great genius may be influencd by these seemingly trivial principles of the imagination, as well as the mere vulgar, let him read my Lord SHAFTSBURY’S reasonings concerning the uniting principle of the universe, and the identity of plants and animals. See his MORALISTS: or, PHILOSOPHICAL RHAPSODY."
+        ],
+        "commentaries": [
+          "The author cites Shaftesbury's work as an example of how a great genius can be influenced by the principles of the imagination regarding identity."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Moralists: or, Philosophical Rhapsody",
+        "authors": [
+          "Anthony Ashley Cooper, 3rd Earl of Shaftesbury"
+        ],
+        "original_year": 1709,
+        "birth_year": 1671,
+        "death_year": 1713,
+        "nationality": "English",
+        "description": "A philosophical dialogue exploring themes of unity, identity, and the moral sense, later included in Shaftesbury's 'Characteristicks of Men, Manners, Opinions, Times'.",
+        "book_id": "web_14c2dd4b",
+        "author_meta": {
+          "birth_year": 1671,
+          "death_year": 1713,
+          "nationality": "English"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Anthony Ashley Cooper, 3rd Earl of Shaftesbury",
+        "birth_year": 1671,
+        "death_year": 1713
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_14c2dd4b",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Anthony Ashley Cooper, 3rd Earl of Shaftesbury",
+          "birth_year": 1671,
+          "death_year": 1713
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Solomon on the Vanity of the World",
+        "author": "Matthew Prior",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Yet this makes us not blame Mr Prior for joining his Alma and his Solomon in the same volume; though that admirable poet has succeeded perfectly well in the gaiety of the one, as well as in the melancholy of the other."
+        ],
+        "commentaries": [
+          "The author cites Prior's poem 'Solomon' as an example of a serious work that, despite being paired with a humorous one in the same volume, does not cause difficulty for the reader because the two performances are considered entirely different."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Solomon on the Vanity of the World",
+        "authors": [
+          "Matthew Prior"
+        ],
+        "original_year": 1718,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "English",
+        "description": "A poem by Matthew Prior, first published in 1718, reflecting on the vanity of human pursuits, often paired with his lighter poem 'Alma' in later editions.",
+        "book_id": "web_23ac9a34",
+        "author_meta": {
+          "birth_year": 1664,
+          "death_year": 1721,
+          "canonical_name": "Matthew Prior"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Matthew Prior",
+        "birth_year": 1664,
+        "death_year": 1721
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_23ac9a34",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Matthew Prior",
+          "birth_year": 1664,
+          "death_year": 1721
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cardinal de Retz",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "From the same principles we may account for those observations of the CARDINAL DE RETZ, that there are many things, in which the world wishes to be deceived; and that it more easily excuses a person in acting than in talking contrary to the decorum of his profession and character."
+        ],
+        "commentaries": [
+          "The author cites the observations of Cardinal de Retz to support his own principles regarding human judgment and excuse."
+        ],
+        "canonical_author": "Cardinal De Retz"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cardinal de Retz",
+        "birth_year": 1613,
+        "death_year": 1679
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cardinal de Retz",
+          "birth_year": 1613,
+          "death_year": 1679
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Mr Philips",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Mr Philips has chosen CYDER for the subject of an excellent poem."
+        ],
+        "commentaries": [
+          "The author mentions Mr Philips as the poet who wrote an excellent poem about cider."
+        ],
+        "canonical_author": "Mr Philips"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "John Philips",
+        "page_id": 1191229,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "1676 births",
+          "1709 deaths",
+          "18th-century English poets",
+          "People from Bampton, Oxfordshire",
+          "People educated at Winchester College",
+          "Alumni of Christ Church, Oxford",
+          "English male poets"
+        ],
+        "birth_year": 1676,
+        "death_year": 1709
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "John Philips",
+          "page_id": 1191229,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "1676 births",
+            "1709 deaths",
+            "18th-century English poets",
+            "People from Bampton, Oxfordshire",
+            "People educated at Winchester College",
+            "Alumni of Christ Church, Oxford",
+            "English male poets"
+          ],
+          "birth_year": 1676,
+          "death_year": 1709
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Clarke",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The second argument,[4] which I find used on this head, labours under an equal difficulty. Every thing, it is said, must have a cause; for if any thing wanted a cause, it would produce ITSELF; that is, exist before it existed; which is impossible."
+        ],
+        "commentaries": [
+          "The author cites Dr. Clarke and others as proponents of an argument that everything must have a cause, otherwise it would produce itself."
+        ],
+        "canonical_author": "Clarke"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Clarke",
+        "birth_year": 1675,
+        "death_year": 1729
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Clarke",
+          "birth_year": 1675,
+          "death_year": 1729
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Alma",
+        "author": "Matthew Prior",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Yet this makes us not blame Mr Prior for joining his Alma and his Solomon in the same volume; though that admirable poet has succeeded perfectly well in the gaiety of the one, as well as in the melancholy of the other."
+        ],
+        "commentaries": [
+          "The author cites Prior's poem 'Alma' as an example of a work that, despite being humorous, can be successfully paired with a serious work in the same volume because they are considered as entirely different performances."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Alma",
+        "authors": [
+          "Matthew Prior"
+        ],
+        "original_year": 1718,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "English",
+        "description": "A mock-heroic poem by Matthew Prior, first published in 1718, often paired with his poem 'Solomon' in later editions.",
+        "book_id": "web_ae49baed",
+        "author_meta": {
+          "birth_year": 1664,
+          "death_year": 1721,
+          "main_genre": null,
+          "nationality": null,
+          "canonical_name": "Matthew Prior"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Matthew Prior",
+        "birth_year": 1664,
+        "death_year": 1721
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_ae49baed",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Matthew Prior",
+          "birth_year": 1664,
+          "death_year": 1721
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "THE RELIGION OF NATURE DELINEATED",
+        "author": "William Wollaston",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "One might think it were entirely superfluous to prove this, if a late author [William Wollaston, THE RELIGION OF NATURE DELINEATED (London 1722)], who has had the good fortune to obtain some reputation, had not seriously affirmed, that such a falshood is the foundation of all guilt and moral deformity."
+        ],
+        "commentaries": [
+          "The author cites Wollaston's book as the source of the hypothesis that falsehood is the foundation of all guilt and moral deformity, and proceeds to argue against it."
+        ]
+      },
+      "goodreads_match": {
+        "title": "THE RELIGION OF NATURE DELINEATED",
+        "authors": [
+          "William Wollaston"
+        ],
+        "original_year": 1722,
+        "birth_year": 1659,
+        "death_year": 1724,
+        "nationality": "English",
+        "description": "A philosophical treatise arguing that morality is based on the conformity of actions to truth, published in London.",
+        "book_id": "web_03a32608",
+        "author_meta": {
+          "birth_year": 1659,
+          "death_year": 1724,
+          "nationality": "English"
+        }
+      },
+      "wikipedia_match": {
+        "title": "William Wollaston",
+        "birth_year": 1659,
+        "death_year": 1724
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_03a32608",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "William Wollaston",
+          "birth_year": 1659,
+          "death_year": 1724
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Dionysius",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Those who took up arms against Dionysius or Nero, or Philip the second, have the favour of every reader in the perusal of their history"
+        ],
+        "commentaries": [
+          "The author mentions Dionysius as an example of a tyrant against whom resistance was justified, but notes that this is a historical figure, not a book author; however, per the rules, 'Dionysius' is a real historical person, but in context he is not cited as a source of ideas but as a ruler. The excerpt does not cite any book or author as a source of ideas within the narrative prose. The only named individuals (Dionysius, Nero, Philip the second) are rulers, not authors of books. There are no citations of book authors in this excerpt."
+        ],
+        "canonical_author": "Dionysius"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Dionysius",
+        "birth_year": -432,
+        "death_year": -367
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Dionysius",
+          "birth_year": -432,
+          "death_year": -367
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "The Spectator",
+        "author": "Joseph Addison",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "Addison, SPECTATOR 412, final paragraph."
+        ],
+        "commentaries": [
+          "The author references Addison's Spectator as a source, citing a specific issue and paragraph."
+        ],
+        "canonical_author": "Addison"
+      },
+      "goodreads_match": {
+        "title": "The Spectator",
+        "authors": [
+          "Joseph Addison"
+        ],
+        "original_year": 1711,
+        "birth_year": 0,
+        "death_year": 0,
+        "nationality": "English",
+        "description": "A daily periodical published from 1711 to 1712, featuring essays on morals, manners, and literature; issue 412 is by Joseph Addison.",
+        "book_id": "web_3dfb8a5e",
+        "author_meta": {
+          "birth_year": 1672,
+          "death_year": 1719,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Joseph Addison",
+        "birth_year": 1672,
+        "death_year": 1719
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_3dfb8a5e",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Joseph Addison",
+          "birth_year": 1672,
+          "death_year": 1719
+        }
+      }
+    }
+  ]
+}

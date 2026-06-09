@@ -1,0 +1,1955 @@
+{
+  "source": {
+    "title": "Leviathan",
+    "authors": [
+      "Thomas Hobbes"
+    ],
+    "goodreads_id": "pg3207",
+    "calibre_id": null,
+    "work_id": "6226342",
+    "text_reviews_count": 30,
+    "ratings_count": 120,
+    "isbn13": "9781847385192",
+    "format": "Hardcover",
+    "publication_day": 1,
+    "book_id": "6892159",
+    "author_ids": [
+      "13957"
+    ],
+    "publication_month": 10,
+    "isbn": "1847385192",
+    "publisher": "Simon & Schuster",
+    "publication_year": 2009,
+    "title_without_series": "Leviathan (Leviathan, #1)",
+    "average_rating": 3.91,
+    "num_pages": 434,
+    "link": "https://www.goodreads.com/book/show/6892159-leviathan",
+    "author_metadata": {
+      "birth_year": 1588,
+      "death_year": 1679,
+      "main_genre": null,
+      "nationality": null
+    }
+  },
+  "citations": [
+    {
+      "raw": {
+        "title": "",
+        "author": "Carneades",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And this was it which Carneades also did at Rome, when he was Ambassadour"
+        ],
+        "commentaries": [
+          "The author mentions Carneades as an ambassador who spoke at Rome."
+        ],
+        "canonical_author": "Carneades"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Carneades",
+        "page_id": 1079171,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "210s BC births",
+          "120s BC deaths",
+          "2nd-century BC Greek philosophers",
+          "Cyrenean Greeks",
+          "Ancient Greeks in Rome",
+          "Hellenistic-era philosophers in Athens",
+          "Academic skeptics"
+        ],
+        "birth_year": -214,
+        "death_year": -129
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Carneades",
+          "page_id": 1079171,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "210s BC births",
+            "120s BC deaths",
+            "2nd-century BC Greek philosophers",
+            "Cyrenean Greeks",
+            "Ancient Greeks in Rome",
+            "Hellenistic-era philosophers in Athens",
+            "Academic skeptics"
+          ],
+          "birth_year": -214,
+          "death_year": -129
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Augustine of Hippo",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "What were this to Purgatory, if Augustine had not applied the Wrath to the fire of Hell, and the Displeasure, to that of Purgatory?"
+        ],
+        "commentaries": [
+          "The author notes that Augustine rhetorically applied a Psalm verse to the doctrine of Purgatory."
+        ],
+        "canonical_author": "Augustine Of Hippo"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Augustine of Hippo",
+        "page_id": 2030,
+        "infoboxes": [
+          "saint",
+          "philosopher"
+        ],
+        "categories": [
+          "Augustine of Hippo| ",
+          "354 births",
+          "430 deaths",
+          "4th-century Berber people",
+          "4th-century bishops in Roman North Africa",
+          "4th-century Christian theologians",
+          "4th-century philosophers",
+          "4th-century Romans",
+          "4th-century writers in Latin",
+          "5th-century Berber people",
+          "5th-century bishops in Roman North Africa",
+          "5th-century Christian saints",
+          "5th-century Christian theologians",
+          "5th-century philosophers",
+          "5th-century Western Romans",
+          "5th-century writers in Latin",
+          "African philosophers",
+          "Amillennialism",
+          "Ancient Roman Christian mystics",
+          "Ancient Roman philosophers",
+          "Ancient Roman rhetoricians",
+          "Anglican saints",
+          "Augustinian Order| ",
+          "Augustinian philosophers",
+          "Aurelii|Augustinus",
+          "Autobiographers",
+          "Berber Christians",
+          "Burials at San Pietro in Ciel d'Oro",
+          "Catholic philosophers",
+          "Catholic saints"
+        ],
+        "birth_year": 354,
+        "death_year": 430
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "6819578"
+        ],
+        "target_person": {
+          "title": "Augustine of Hippo",
+          "page_id": 2030,
+          "infoboxes": [
+            "saint",
+            "philosopher"
+          ],
+          "categories": [
+            "Augustine of Hippo| ",
+            "354 births",
+            "430 deaths",
+            "4th-century Berber people",
+            "4th-century bishops in Roman North Africa",
+            "4th-century Christian theologians",
+            "4th-century philosophers",
+            "4th-century Romans",
+            "4th-century writers in Latin",
+            "5th-century Berber people",
+            "5th-century bishops in Roman North Africa",
+            "5th-century Christian saints",
+            "5th-century Christian theologians",
+            "5th-century philosophers",
+            "5th-century Western Romans",
+            "5th-century writers in Latin",
+            "African philosophers",
+            "Amillennialism",
+            "Ancient Roman Christian mystics",
+            "Ancient Roman philosophers",
+            "Ancient Roman rhetoricians",
+            "Anglican saints",
+            "Augustinian Order| ",
+            "Augustinian philosophers",
+            "Aurelii|Augustinus",
+            "Autobiographers",
+            "Berber Christians",
+            "Burials at San Pietro in Ciel d'Oro",
+            "Catholic philosophers",
+            "Catholic saints"
+          ],
+          "birth_year": 354,
+          "death_year": 430
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Julius Caesar",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "If I should not believe all that is written By Historians, of the glorious acts of Alexander, or Caesar; I do not think the Ghost of Alexander, or Caesar, had any just cause to be offended; or any body else, but the Historian."
+        ],
+        "commentaries": [
+          "Caesar is referenced as a historical figure, not as a book author."
+        ],
+        "canonical_author": "Julius Caesar"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Julius Caesar",
+        "page_id": 15924,
+        "infoboxes": [
+          "person",
+          "officeholder "
+        ],
+        "categories": [
+          "Julius Caesar| ",
+          "100 BC births",
+          "44 BC deaths",
+          "1st-century BC historians",
+          "1st-century BC Roman augurs",
+          "1st-century BC Roman consuls",
+          "1st-century BC writers in Latin",
+          "Ancient assassinated people",
+          "Ancient Roman dictators",
+          "Ancient Roman military writers",
+          "Ancient Roman triumphators",
+          "Ancient Roman writers",
+          "Assassinated ancient Roman politicians",
+          "Assassinated heads of state in Europe",
+          "Assassinated military personnel",
+          "Characters in Book VI of the Aeneid",
+          "Characters in the Divine Comedy",
+          "Cleopatra",
+          "Correspondents of Cicero",
+          "Curule aediles",
+          "Deaths by stabbing in ancient Rome",
+          "Deified ancient Roman men",
+          "First Triumvirate",
+          "Flamines Dialis",
+          "Golden Age Latin writers",
+          "Illeists",
+          "Julii Caesares|Gaius",
+          "Memoirists",
+          "People captured by pirates",
+          "Pontifices maximi of the Roman Republic"
+        ],
+        "birth_year": -100,
+        "death_year": -44
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "16535395"
+        ],
+        "target_person": {
+          "title": "Julius Caesar",
+          "page_id": 15924,
+          "infoboxes": [
+            "person",
+            "officeholder "
+          ],
+          "categories": [
+            "Julius Caesar| ",
+            "100 BC births",
+            "44 BC deaths",
+            "1st-century BC historians",
+            "1st-century BC Roman augurs",
+            "1st-century BC Roman consuls",
+            "1st-century BC writers in Latin",
+            "Ancient assassinated people",
+            "Ancient Roman dictators",
+            "Ancient Roman military writers",
+            "Ancient Roman triumphators",
+            "Ancient Roman writers",
+            "Assassinated ancient Roman politicians",
+            "Assassinated heads of state in Europe",
+            "Assassinated military personnel",
+            "Characters in Book VI of the Aeneid",
+            "Characters in the Divine Comedy",
+            "Cleopatra",
+            "Correspondents of Cicero",
+            "Curule aediles",
+            "Deaths by stabbing in ancient Rome",
+            "Deified ancient Roman men",
+            "First Triumvirate",
+            "Flamines Dialis",
+            "Golden Age Latin writers",
+            "Illeists",
+            "Julii Caesares|Gaius",
+            "Memoirists",
+            "People captured by pirates",
+            "Pontifices maximi of the Roman Republic"
+          ],
+          "birth_year": -100,
+          "death_year": -44
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Marcus Terentius Varro",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "such as would pose Cicero, and Varro, and all the Grammarians of ancient Rome."
+        ],
+        "commentaries": [
+          "The author mentions Varro as one of the ancient Roman grammarians who would be puzzled by the barbarous language of School-Divines."
+        ],
+        "canonical_author": "Marcus Terentius Varro"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Terentius Varro",
+        "page_id": 235965,
+        "infoboxes": [],
+        "categories": [
+          "116 BC births",
+          "27 BC deaths",
+          "2nd-century BC Romans",
+          "1st-century BC Roman praetors",
+          "1st-century BC writers in Latin",
+          "Ancient linguists",
+          "Ancient Roman antiquarians",
+          "Ancient Roman scholars of religion",
+          "Roman Republican soldiers",
+          "Ancient Roman writers",
+          "Encyclopedias in classical antiquity",
+          "Ancient Roman encyclopedists",
+          "Geoponici",
+          "Golden Age Latin writers",
+          "People from Rieti",
+          "Recipients of ancient Roman pardons",
+          "Roman-era students in Athens",
+          "Terentii|Varro, Marcus",
+          "Latinists"
+        ],
+        "birth_year": -116,
+        "death_year": -27
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1462815"
+        ],
+        "target_person": {
+          "title": "Marcus Terentius Varro",
+          "page_id": 235965,
+          "infoboxes": [],
+          "categories": [
+            "116 BC births",
+            "27 BC deaths",
+            "2nd-century BC Romans",
+            "1st-century BC Roman praetors",
+            "1st-century BC writers in Latin",
+            "Ancient linguists",
+            "Ancient Roman antiquarians",
+            "Ancient Roman scholars of religion",
+            "Roman Republican soldiers",
+            "Ancient Roman writers",
+            "Encyclopedias in classical antiquity",
+            "Ancient Roman encyclopedists",
+            "Geoponici",
+            "Golden Age Latin writers",
+            "People from Rieti",
+            "Recipients of ancient Roman pardons",
+            "Roman-era students in Athens",
+            "Terentii|Varro, Marcus",
+            "Latinists"
+          ],
+          "birth_year": -116,
+          "death_year": -27
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Livy",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "If Livy say the Gods made once a Cow speak, and we believe it not; wee distrust not God therein, but Livy."
+        ],
+        "commentaries": [
+          "The author mentions Livy, who wrote 'Ab Urbe Condita' (History of Rome), as a historian whose writings are cited for an anecdote."
+        ],
+        "canonical_author": "Livy"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Livy",
+        "page_id": 18049,
+        "infoboxes": [
+          "academic"
+        ],
+        "categories": [
+          "1st-century BC births",
+          "17 deaths",
+          "Year of birth uncertain",
+          "Year of death uncertain",
+          "Golden Age Latin writers",
+          "Writers from Padua",
+          "Latin historians",
+          "1st-century BC historians",
+          "1st-century historians",
+          "1st-century BC Romans",
+          "1st-century Romans",
+          "Livii",
+          "Ancient Romans from Padua"
+        ],
+        "birth_year": -59,
+        "death_year": 17
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "14577687"
+        ],
+        "target_person": {
+          "title": "Livy",
+          "page_id": 18049,
+          "infoboxes": [
+            "academic"
+          ],
+          "categories": [
+            "1st-century BC births",
+            "17 deaths",
+            "Year of birth uncertain",
+            "Year of death uncertain",
+            "Golden Age Latin writers",
+            "Writers from Padua",
+            "Latin historians",
+            "1st-century BC historians",
+            "1st-century historians",
+            "1st-century BC Romans",
+            "1st-century Romans",
+            "Livii",
+            "Ancient Romans from Padua"
+          ],
+          "birth_year": -59,
+          "death_year": 17
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Ammianus Marcellinus",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "as Ammianus Marcellinus saith (describing the sedition of Damasus and Ursinicus about the Bishopricke,) that it was worth their contention, in that the Bishops of those times by the liberality of their flock, and especially of Matrons, lived splendidly, were carryed in Coaches, and sumptuous in their fare and apparell."
+        ],
+        "commentaries": [
+          "The author cites Ammianus Marcellinus as a historical source describing the wealth and lifestyle of bishops in the time of Constantine."
+        ],
+        "canonical_author": "Ammianus Marcellinus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Ammianus Marcellinus",
+        "page_id": 1767,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "330 births",
+          "390s deaths",
+          "4th-century births",
+          "4th-century Greek writers",
+          "4th-century historians",
+          "4th-century writers in Latin",
+          "4th-century Romans",
+          "Ancient Greeks in Rome",
+          "Ancient Roman equites",
+          "Ancient Roman soldiers",
+          "Late-Roman-era pagans",
+          "Latin historians",
+          "People from Roman Syria",
+          "People of the Roman–Sasanian Wars",
+          "Roman-era Greeks",
+          "Year of death unknown",
+          "Domestici"
+        ],
+        "birth_year": 330,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "302823"
+        ],
+        "target_person": {
+          "title": "Ammianus Marcellinus",
+          "page_id": 1767,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "330 births",
+            "390s deaths",
+            "4th-century births",
+            "4th-century Greek writers",
+            "4th-century historians",
+            "4th-century writers in Latin",
+            "4th-century Romans",
+            "Ancient Greeks in Rome",
+            "Ancient Roman equites",
+            "Ancient Roman soldiers",
+            "Late-Roman-era pagans",
+            "Latin historians",
+            "People from Roman Syria",
+            "People of the Roman–Sasanian Wars",
+            "Roman-era Greeks",
+            "Year of death unknown",
+            "Domestici"
+          ],
+          "birth_year": 330,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Hesiod",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "What kind of things they were, to whom they attributed the name of Daemons, appeareth partly in the Genealogie of their Gods, written by Hesiod, one of the most ancient Poets of the Graecians;"
+        ],
+        "commentaries": [
+          "The author mentions Hesiod as a source for understanding what the ancients called Daemons."
+        ],
+        "canonical_author": "Hesiod"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Hesiod",
+        "page_id": 13700,
+        "infoboxes": [
+          "writer"
+        ],
+        "categories": [
+          "Hesiod| ",
+          "8th-century BC births",
+          "8th-century BC Greek poets",
+          "Ancient Boeotian poets",
+          "Ancient Greek didactic poets",
+          "Year of death unknown",
+          "8th-century BC philosophers",
+          "7th-century BC Greek philosophers"
+        ],
+        "birth_year": -750,
+        "death_year": -650
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "1691"
+        ],
+        "target_person": {
+          "title": "Hesiod",
+          "page_id": 13700,
+          "infoboxes": [
+            "writer"
+          ],
+          "categories": [
+            "Hesiod| ",
+            "8th-century BC births",
+            "8th-century BC Greek poets",
+            "Ancient Boeotian poets",
+            "Ancient Greek didactic poets",
+            "Year of death unknown",
+            "8th-century BC philosophers",
+            "7th-century BC Greek philosophers"
+          ],
+          "birth_year": -750,
+          "death_year": -650
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Aristotle",
+        "note": null,
+        "count": 16,
+        "contexts": [
+          "But the Philosophy-schooles, through all the Universities of Christendome, grounded upon certain Texts of Aristotle, teach another doctrine;",
+          "and partly from bringing of the Philosophy, and doctrine of Aristotle into Religion, by the Schoole-men; from whence there arose so many contradictions, and absurdities, as brought the Clergy into a reputation both of Ignorance, and of Fraudulent intention; and enclined people to revolt from them",
+          "It is true, that certain living creatures, as Bees, and Ants, live sociably one with another, (which are therefore by Aristotle numbred amongst Politicall creatures;)",
+          "as Plato, Aristotle, Cicero, and divers others have done, without taking upon them the profession of the study of the Law.",
+          "Thirdly, by mixing with the Scripture divers reliques of the Religion, and much of the vain and erroneous Philosophy of the Greeks, especially of Aristotle.",
+          "Aristotle in the Walk of the Temple of Pan, called Lycaeum",
+          "that which now is called Aristotles Metaphysiques, nor more repugnant to Government, than much of that hee hath said in his Politiques; nor more ignorantly, than a great part of his Ethiques",
+          "And since the Authority of Aristotle is onely current there, that study is not properly Philosophy, (the nature whereof dependeth not on Authors,) but Aristotelity.",
+          "The Explication (that is, the setling of the meaning) of which, and the like Terms, is commonly in the Schools called Metaphysiques; as being a part of the Philosophy of Aristotle, which hath that for title: but it is in another sense; for there it signifieth as much, as 'Books written, or placed after his naturall Philosophy:' But the Schools take them for Books Of Supernaturall Philosophy: for the word Metaphysiques will bear both these senses.",
+          "It is to this purpose, that men may no longer suffer themselves to be abused, by them, that by this doctrine of Separated Essences, built on the Vain Philosophy of Aristotle, would fright them from Obeying the Laws of their Countrey, with empty names; as men fright Birds from the Corn with an empty doublet, a hat, and a crooked stick.",
+          "And this shall suffice for an example of the Errors, which are brought into the Church, from the Entities, and Essences of Aristotle: which it may be he knew to be false Philosophy; but writ it as a thing consonant to, and corroborative of their Religion; and fearing the fate of Socrates.",
+          "If you desire to know why some kind of bodies sink naturally downwards toward the Earth, and others goe naturally from it; The Schools will tell you out of Aristotle, that the bodies that sink downwards, are Heavy; and that this Heavinesse is it that causes them to descend: But if you ask what they mean by Heavinesse, they will define it to bee an endeavour to goe to the center of the Earth: so that the cause why things sink downward, is an Endeavour to be below: which is as much as to say, that bodies descend, or ascend, because they doe.",
+          "Aristotle, and other Heathen Philosophers define Good, and Evill, by the Appetite of men; and well enough, as long as we consider them governed every one by his own Law",
+          "From Aristotles Civill Philosophy, they have learned, to call all manner of Common-wealths but the Popular, (such as was at that time the state of Athens,) Tyranny.",
+          "this is another Errour of Aristotles Politiques, that in a wel ordered Common-wealth, not Men should govern, but the Laws.",
+          "the Metaphysiques, Ethiques, and Politiques of Aristotle"
+        ],
+        "commentaries": [
+          "The author criticizes the Aristotelian doctrine of sensible species taught in universities, contrasting it with his own account of sense.",
+          "Hobbes criticizes the introduction of Aristotle's philosophy into Christian religion by the Schoolmen, blaming it for contradictions and absurdities that discredited the clergy.",
+          "The author references Aristotle's classification of certain animals as political creatures to contrast with human society.",
+          "The author cites Aristotle as one of several philosophers who have written about the nature of law without being legal professionals.",
+          "The author criticizes the mixing of Aristotle's philosophy with Scripture, blaming it for spiritual darkness.",
+          "The author mentions Aristotle as teaching in the Lycaeum.",
+          "The author criticizes Aristotle's Metaphysics, Politics, and Ethics as absurd, repugnant to government, and ignorant.",
+          "The author criticizes the dominance of Aristotle's authority in university philosophy, calling it 'Aristotelity' rather than true philosophy.",
+          "The author discusses Aristotle's Metaphysics, noting its ambiguous title and how the Schools misinterpret it as supernatural philosophy.",
+          "The author accuses Aristotle's philosophy of being used to deceive people into disobeying laws through the doctrine of separated essences.",
+          "The author suggests Aristotle may have known his philosophy was false but wrote it to support religion, fearing the fate of Socrates.",
+          "The author criticizes Aristotle's explanation of gravity as circular reasoning, where heaviness is defined as an endeavor to go to the center of the Earth.",
+          "The author references Aristotle's definition of good and evil based on human appetite, noting its validity only in a state of nature without civil law.",
+          "The author criticizes Aristotle's civil philosophy for teaching that all non-popular governments are tyranny, a doctrine he considers vain and pernicious.",
+          "The author identifies as an error Aristotle's political principle that laws, not men, should govern, arguing that laws are ineffective without the force of men.",
+          "The author references Aristotle's works as the source of the metaphysical, ethical, and political doctrines used by the Schoolmen to obscure errors."
+        ],
+        "canonical_author": "Aristotle"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Plato",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "as Plato, Aristotle, Cicero, and divers others have done, without taking upon them the profession of the study of the Law.",
+          "Plato in certaine publique Walks called Academia, from one Academus"
+        ],
+        "commentaries": [
+          "The author cites Plato as one of several philosophers who have written about the nature of law without being legal professionals.",
+          "The author mentions Plato as teaching in a public walk called Academia."
+        ],
+        "canonical_author": "Plato"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Plato",
+        "page_id": 22954,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Plato| ",
+          "420s BC births",
+          "340s BC deaths",
+          "5th-century BC Greek philosophers",
+          "4th-century BC Greek philosophers",
+          "Academic philosophers",
+          "Ancient Athenian philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek philosophers of art",
+          "Ancient Greek philosophers of language",
+          "Ancient Syracuse",
+          "Attic Greek writers",
+          "Characters in the Divine Comedy",
+          "Epigrammatists of the Greek Anthology",
+          "Idealists",
+          "Philosophers of education",
+          "Pupils of Socrates",
+          "Rationalists",
+          "Rhetoric theorists"
+        ],
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "879"
+        ],
+        "target_person": {
+          "title": "Plato",
+          "page_id": 22954,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Plato| ",
+            "420s BC births",
+            "340s BC deaths",
+            "5th-century BC Greek philosophers",
+            "4th-century BC Greek philosophers",
+            "Academic philosophers",
+            "Ancient Athenian philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek philosophers of art",
+            "Ancient Greek philosophers of language",
+            "Ancient Syracuse",
+            "Attic Greek writers",
+            "Characters in the Divine Comedy",
+            "Epigrammatists of the Greek Anthology",
+            "Idealists",
+            "Philosophers of education",
+            "Pupils of Socrates",
+            "Rationalists",
+            "Rhetoric theorists"
+          ],
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "St. Paul",
+        "note": null,
+        "count": 7,
+        "contexts": [
+          "and it is of Abraham (not of Moses) St. Paul saith (Rom. 4.11.) that he is the \"Father of the Faithfull,\"",
+          "confirmed by St. Paul himself (Tit. 2.14.) where he saith, alluding to that place, that our blessed Saviour \"gave himself for us, that he might purifie us to himself, a peculiar (that is, an extraordinary) people:\"",
+          "St. Paul saith (1 Cor. 11.4,5.)",
+          "St. Paul saith of the Cretians, that a Prophet of their owne said, they were Liars (Tit. 1.12.)",
+          "the Jews had that quality which St. Paul noteth, \"to look for a sign\"",
+          "For considering the words of St. Paul (1 Cor. 15.29.) \"What shall they doe which are Baptized for the dead, if the dead rise not at all? why also are they Baptized for the dead?\"",
+          "St. Paul saith, (Coll. 3. 20) \"Servants obey your masters in All things,\" and, (Verse. 22) \"Children obey your Parents in All things.\""
+        ],
+        "commentaries": [
+          "The author cites St. Paul's interpretation of Abraham as the father of the faithful.",
+          "The author references St. Paul's epistle to Titus to support the translation of 'peculiar people'.",
+          "The author cites St. Paul's statement about praying and prophesying with head covered or uncovered to support his interpretation of prophecy as praising God in psalms and holy songs.",
+          "The author references St. Paul's mention of a Cretan prophet to illustrate that the word 'prophet' was commonly used for poets who celebrated God in verse.",
+          "The author references St. Paul's observation about the Jews' tendency to seek signs before submitting to government.",
+          "The author refers to St. Paul's epistle to interpret a ritual concerning baptism for the dead.",
+          "The author quotes Paul to assert simple obedience in those subject to paternal or despotic dominion."
+        ],
+        "canonical_author": "St. Paul"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "St. Paul",
+        "birth_year": 5,
+        "death_year": 67
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "15282814"
+        ],
+        "target_person": {
+          "title": "St. Paul",
+          "birth_year": 5,
+          "death_year": 67
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Politics",
+        "author": "Aristotle",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "I know that Aristotle in the first booke of his Politiques, for a foundation of his doctrine, maketh men by Nature, some more worthy to Command, meaning the wiser sort (such as he thought himselfe to be for his Philosophy;) others to Serve, (meaning those that had strong bodies, but were not Philosophers as he;) as if Master and Servant were not introduced by consent of men, but by difference of Wit; which is not only against reason; but also against experience.",
+          "And because the Athenians were taught, (to keep them from desire of changing their Government,) that they were Freemen, and all that lived under Monarchy were slaves; therefore Aristotle puts it down in his Politiques,(lib.6.cap.2) \"In democracy, Liberty is to be supposed: for ’tis commonly held, that no man is Free in any other Government.\""
+        ],
+        "commentaries": [
+          "Hobbes references Aristotle's Politics to critique his doctrine that some men are naturally fit to command and others to serve, arguing that this is against reason and experience.",
+          "The author cites Aristotle's 'Politiques' as a source for the idea that liberty is assumed in democracy and that no man is free under other governments."
+        ]
+      },
+      "goodreads_match": {
+        "work_id": "14746717",
+        "text_reviews_count": 215,
+        "ratings_count": 22643,
+        "isbn13": "9780486414249",
+        "format": "Paperback",
+        "publication_day": 15,
+        "book_id": "19083",
+        "author_ids": [
+          "2192"
+        ],
+        "publication_month": 11,
+        "isbn": "0486414248",
+        "publisher": "Dover Publications",
+        "title": "Politics",
+        "publication_year": 2000,
+        "title_without_series": "Politics",
+        "average_rating": 3.92,
+        "num_pages": 368,
+        "authors": [
+          "Aristotle"
+        ],
+        "description": "What is the relationship of the individual to the state? What is the ideal state, and how can it bring about the most desirable life for its citizens? What sort of education should it provide? What is the purpose of amassing wealth? These are some of the questions Aristotle attempts to answer in one of the most intellectually stimulating works.\nBoth heavily influenced by and critical of Plato's Republic and Laws,Politicsrepresents the distillation of a lifetime of thought and observation. \"Encyclopaedic kno...",
+        "link": "https://www.goodreads.com/book/show/19083.Politics",
+        "wikipedia_match": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        },
+        "original_year": -349,
+        "author_meta": {
+          "birth_year": -384,
+          "death_year": -322,
+          "main_genre": null,
+          "nationality": null
+        }
+      },
+      "wikipedia_match": {
+        "title": "Aristotle",
+        "page_id": 308,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "Aristotle| ",
+          "Aristotelianism|*",
+          "384 BC births",
+          "322 BC deaths",
+          "4th-century BC Greek mathematicians",
+          "4th-century BC philosophers",
+          "4th-century BC Greek writers",
+          "Acting theorists",
+          "Ancient Greek biologists",
+          "Ancient Greek epistemologists",
+          "Ancient Greek ethicists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek philosophers of language",
+          "Ancient Greek philosophers of mind",
+          "Ancient Greek physicists",
+          "Ancient Greek political philosophers",
+          "Ancient Greek political refugees",
+          "Ancient Greek philosophers of art",
+          "Ancient literary critics",
+          "Ancient Stagirites",
+          "Aphorists",
+          "Aristotelian philosophers",
+          "Attic Greek writers",
+          "Ancient Greek cosmologists",
+          "Classical theism",
+          "Characters in the Divine Comedy",
+          "Greek male writers",
+          "Greek geologists",
+          "Greek meteorologists"
+        ],
+        "birth_year": -384,
+        "death_year": -322
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "19083",
+        "target_author_ids": [
+          "2192"
+        ],
+        "target_person": {
+          "title": "Aristotle",
+          "page_id": 308,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "Aristotle| ",
+            "Aristotelianism|*",
+            "384 BC births",
+            "322 BC deaths",
+            "4th-century BC Greek mathematicians",
+            "4th-century BC philosophers",
+            "4th-century BC Greek writers",
+            "Acting theorists",
+            "Ancient Greek biologists",
+            "Ancient Greek epistemologists",
+            "Ancient Greek ethicists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek philosophers of language",
+            "Ancient Greek philosophers of mind",
+            "Ancient Greek physicists",
+            "Ancient Greek political philosophers",
+            "Ancient Greek political refugees",
+            "Ancient Greek philosophers of art",
+            "Ancient literary critics",
+            "Ancient Stagirites",
+            "Aphorists",
+            "Aristotelian philosophers",
+            "Attic Greek writers",
+            "Ancient Greek cosmologists",
+            "Classical theism",
+            "Characters in the Divine Comedy",
+            "Greek male writers",
+            "Greek geologists",
+            "Greek meteorologists"
+          ],
+          "birth_year": -384,
+          "death_year": -322
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Josephus",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "Of the Canonicall, Josephus a learned Jew, that wrote in the time of the Emperor Domitian, reckoneth Twenty Two, making the number agree with the Hebrew Alphabet.",
+          "For the seventy Interpreters that converted the Bible into Greek, were all of them Hebrews; and we have extant the works of Philo and Josephus both Jews, written by them eloquently in Greek."
+        ],
+        "commentaries": [
+          "The author cites Josephus's count of canonical books, noting it matches the Hebrew alphabet.",
+          "The author mentions Josephus as a Jewish writer whose works are extant and written in Greek."
+        ],
+        "canonical_author": "Josephus"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Josephus",
+        "page_id": 16494,
+        "infoboxes": [
+          "scholar"
+        ],
+        "categories": [
+          "Josephus| ",
+          "1st-century historians",
+          "1st-century Jews",
+          "1st-century people",
+          "1st-century Romans",
+          "1st-century writers",
+          "37 births",
+          "Hellenistic Jewish writers",
+          "Hellenistic Jews",
+          "Jewish apologists",
+          "Jewish historians",
+          "Jewish Roman (city) history",
+          "People from Roman Judea",
+          "Greek-language historians from the Roman Empire",
+          "Year of death unknown",
+          "Historians of Phoenicia",
+          "Writers from Jerusalem",
+          "People of the First Jewish–Roman War",
+          "Military personnel from Jerusalem"
+        ],
+        "birth_year": 37,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "5468507"
+        ],
+        "target_person": {
+          "title": "Josephus",
+          "page_id": 16494,
+          "infoboxes": [
+            "scholar"
+          ],
+          "categories": [
+            "Josephus| ",
+            "1st-century historians",
+            "1st-century Jews",
+            "1st-century people",
+            "1st-century Romans",
+            "1st-century writers",
+            "37 births",
+            "Hellenistic Jewish writers",
+            "Hellenistic Jews",
+            "Jewish apologists",
+            "Jewish historians",
+            "Jewish Roman (city) history",
+            "People from Roman Judea",
+            "Greek-language historians from the Roman Empire",
+            "Year of death unknown",
+            "Historians of Phoenicia",
+            "Writers from Jerusalem",
+            "People of the First Jewish–Roman War",
+            "Military personnel from Jerusalem"
+          ],
+          "birth_year": 37,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Cyprian",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "The third, is, from that the Sea of S. Peter is called by S. Cyprian, the Head, the Source, the Roote, the Sun, from whence the Authority of Bishops is derived."
+        ],
+        "commentaries": [
+          "The author references Cyprian's description of the Sea of Saint Peter as a metaphor for the source of episcopal authority."
+        ],
+        "canonical_author": "Cyprian"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Cyprian",
+        "page_id": 37899,
+        "infoboxes": [
+          "Christian leader"
+        ],
+        "categories": [
+          "200s births",
+          "258 deaths",
+          "3rd-century bishops of Carthage",
+          "3rd-century Christian martyrs",
+          "3rd-century executions",
+          "3rd-century Romans",
+          "3rd-century Christian theologians",
+          "3rd-century writers in Latin",
+          "Ancient Christians involved in controversies",
+          "Anglican saints",
+          "Berber Christians",
+          "Christian martyrs executed by decapitation",
+          "Church Fathers",
+          "Converts to Christianity from ancient Roman religions",
+          "Executed ancient Roman people",
+          "Executed Tunisian people",
+          "Post–Silver Age Latin writers",
+          "Roman Catholic writers",
+          "Saints from Roman Africa",
+          "Year of birth uncertain"
+        ],
+        "birth_year": null,
+        "death_year": 258
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Cyprian",
+          "page_id": 37899,
+          "infoboxes": [
+            "Christian leader"
+          ],
+          "categories": [
+            "200s births",
+            "258 deaths",
+            "3rd-century bishops of Carthage",
+            "3rd-century Christian martyrs",
+            "3rd-century executions",
+            "3rd-century Romans",
+            "3rd-century Christian theologians",
+            "3rd-century writers in Latin",
+            "Ancient Christians involved in controversies",
+            "Anglican saints",
+            "Berber Christians",
+            "Christian martyrs executed by decapitation",
+            "Church Fathers",
+            "Converts to Christianity from ancient Roman religions",
+            "Executed ancient Roman people",
+            "Executed Tunisian people",
+            "Post–Silver Age Latin writers",
+            "Roman Catholic writers",
+            "Saints from Roman Africa",
+            "Year of birth uncertain"
+          ],
+          "birth_year": null,
+          "death_year": 258
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Beza",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "The most difficult place to answer, of all those than can be brought, to prove the Kingdome of God by Christ is already in this world, is alledged, not by Bellarmine, nor any other of the Church of Rome; but by Beza; that will have it to begin from the Resurrection of Christ.",
+          "But if that which Beza sayes in his notes on this place be well observed, there is none that will not see, that in stead of Paynes, it should be Bands; and then there is no further cause to seek for Purgatory in this Text."
+        ],
+        "commentaries": [
+          "The author mentions Beza as the source of a difficult argument that the Kingdom of God began at the Resurrection of Christ.",
+          "The author cites Beza's interpretation of a biblical text to counter an argument for Purgatory."
+        ],
+        "canonical_author": "Beza"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Theodore Beza",
+        "page_id": 40322,
+        "infoboxes": [
+          "theologian"
+        ],
+        "categories": [
+          "1519 births",
+          "1605 deaths",
+          "People from Yonne",
+          "Theologians from the Republic of Geneva",
+          "French Calvinist and Reformed theologians",
+          "16th-century French writers",
+          "16th-century French male writers",
+          "16th-century Calvinist and Reformed theologians",
+          "Neo-Latin poets",
+          "Translators of the Bible into French",
+          "Translators of the Bible into Latin",
+          "Christian humanists",
+          "Calvinist and Reformed hymnwriters",
+          "Converts to Calvinism from Roman Catholicism",
+          "Monarchomachs",
+          "Supralapsarians",
+          "French hymnwriters",
+          "Academic staff of the University of Geneva",
+          "Academic staff of the University of Lausanne",
+          "16th-century French theologians",
+          "French male non-fiction writers",
+          "French evangelicals",
+          "16th-century writers in Latin",
+          "16th-century French translators",
+          "Systematic theologians"
+        ],
+        "birth_year": 1519,
+        "death_year": 1605
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Theodore Beza",
+          "page_id": 40322,
+          "infoboxes": [
+            "theologian"
+          ],
+          "categories": [
+            "1519 births",
+            "1605 deaths",
+            "People from Yonne",
+            "Theologians from the Republic of Geneva",
+            "French Calvinist and Reformed theologians",
+            "16th-century French writers",
+            "16th-century French male writers",
+            "16th-century Calvinist and Reformed theologians",
+            "Neo-Latin poets",
+            "Translators of the Bible into French",
+            "Translators of the Bible into Latin",
+            "Christian humanists",
+            "Calvinist and Reformed hymnwriters",
+            "Converts to Calvinism from Roman Catholicism",
+            "Monarchomachs",
+            "Supralapsarians",
+            "French hymnwriters",
+            "Academic staff of the University of Geneva",
+            "Academic staff of the University of Lausanne",
+            "16th-century French theologians",
+            "French male non-fiction writers",
+            "French evangelicals",
+            "16th-century writers in Latin",
+            "16th-century French translators",
+            "Systematic theologians"
+          ],
+          "birth_year": 1519,
+          "death_year": 1605
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Solon",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "And yet thereby, if Solon had not caused to be given out he was mad, and afterwards in gesture and habit of a mad-man, and in verse, propounded it to the People that flocked about him, they had had an enemy perpetually in readinesse, even at the gates of their Citie;"
+        ],
+        "commentaries": [
+          "The author references Solon as a historical figure who used a clever ruse to persuade the Athenian people to renew a war for the island of Salamis."
+        ],
+        "canonical_author": "Solon"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Solon",
+        "page_id": 58230,
+        "infoboxes": [
+          "person"
+        ],
+        "categories": [
+          "6th-century BC Greek poets",
+          "6th-century BC Athenians",
+          "Ancient Greek elegiac poets",
+          "Archaic Athens",
+          "Ancient legislators",
+          "Greek exiles",
+          "Pederasty in ancient Greece",
+          "Seven Sages of Greece",
+          "630s BC births",
+          "550s BC deaths",
+          "Eponymous archons",
+          "Family of Plato",
+          "6th-century BC Greek politicians",
+          "7th-century BC Greek philosophers",
+          "6th-century BC Greek philosophers"
+        ],
+        "birth_year": -630,
+        "death_year": -560
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Solon",
+          "page_id": 58230,
+          "infoboxes": [
+            "person"
+          ],
+          "categories": [
+            "6th-century BC Greek poets",
+            "6th-century BC Athenians",
+            "Ancient Greek elegiac poets",
+            "Archaic Athens",
+            "Ancient legislators",
+            "Greek exiles",
+            "Pederasty in ancient Greece",
+            "Seven Sages of Greece",
+            "630s BC births",
+            "550s BC deaths",
+            "Eponymous archons",
+            "Family of Plato",
+            "6th-century BC Greek politicians",
+            "7th-century BC Greek philosophers",
+            "6th-century BC Greek philosophers"
+          ],
+          "birth_year": -630,
+          "death_year": -560
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Homer",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "of whose praises, in a hymne of Homer, the greatest is this, that being born in the morning, he had invented Musique at noon, and before night, stolen away the Cattell of Appollo, from his Herdsmen.",
+          "as the Grammarians describe the Rules of Language, out of the Practise of the time; or the Rules of Poetry, out of the Poems of Homer and Virgil."
+        ],
+        "commentaries": [
+          "The author cites a hymn by Homer as an example of how the ancient Heathen honoured the Gods by depicting them committing great but unjust acts.",
+          "The author references Homer's poems as examples from which grammarians derive rules of poetry."
+        ],
+        "canonical_author": "Homer"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Homer",
+        "birth_year": -850,
+        "death_year": -800
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "903"
+        ],
+        "target_person": {
+          "title": "Homer",
+          "birth_year": -850,
+          "death_year": -800
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Marcus Tullius Cicero",
+        "note": null,
+        "count": 8,
+        "contexts": [
+          "For it is most true that Cicero sayth of them somewhere; that there can be nothing so absurd, but may be found in the books of Philosophers.",
+          "(in which sence Cicero useth it where he saies, \"Unus Sustineo Tres Personas; Mei, Adversarii, & Judicis, I beare three Persons; my own, my Adversaries, and the Judges;\")",
+          "And as Aristotle; so Cicero, and other Writers have grounded their Civill doctrine, on the opinions of the Romans, who were taught to hate Monarchy, at first, by them that having deposed their Soveraign, shared amongst them the Soveraignty of Rome; and afterwards by their Successors.",
+          "Which is so evident, that even Cicero, (a passionate defender of Liberty,) in a publique pleading, attributeth all Propriety to the Law Civil, \"Let the Civill Law,\" saith he, \"be once abandoned, or but negligently guarded, (not to say oppressed,) and there is nothing, that any man can be sure to receive from his Ancestor, or leave to his Children.\"",
+          "as Plato, Aristotle, Cicero, and divers others have done, without taking upon them the profession of the study of the Law.",
+          "as Cicero saith, who was one of them",
+          "There is another Errour in their Civill Philosophy (which they never learned of Aristotle, nor Cicero, nor any other of the Heathen,) to extend the power of the Law, which is the Rule of Actions onely, to the very Thoughts, and Consciences of men",
+          "Cicero maketh honorable mention of one of the Cassii, a severe Judge amongst the Romans, for a custome he had, in Criminal causes, (when the testimony of the witnesses was not sufficient,) to ask the Accusers, Cui Bono; that is to say, what Profit, Honor, or other Contentment, the accused obtained, or expected by the Fact."
+        ],
+        "commentaries": [
+          "The author quotes Cicero to support the claim that philosophers are especially prone to absurdity.",
+          "The author cites Cicero's use of the term 'persona' to illustrate the concept of bearing multiple roles or persons.",
+          "The author mentions Cicero alongside Aristotle as a writer whose civil doctrine is based on Roman opinions that favor liberty and oppose monarchy.",
+          "The author cites Cicero's public pleading to support the argument that property rights depend on civil law.",
+          "The author cites Cicero as one of several philosophers who have written about the nature of law without being legal professionals.",
+          "The author cites Cicero's statement about the absurdity of old philosophers.",
+          "The author notes that the error of extending law to thoughts and consciences was not learned from Cicero or other heathen philosophers.",
+          "The author cites Cicero's mention of a Roman judge's practice of asking 'Cui Bono' as a principle for presuming authorship from benefit."
+        ],
+        "canonical_author": "Marcus Tullius Cicero"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Marcus Tullius Cicero",
+        "birth_year": -106,
+        "death_year": -43
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "13755"
+        ],
+        "target_person": {
+          "title": "Marcus Tullius Cicero",
+          "birth_year": -106,
+          "death_year": -43
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Bellarmine",
+        "note": null,
+        "count": 10,
+        "contexts": [
+          "Cardinall Bellarmine in his third generall Controversie, hath handled a great many questions concerning the Ecclesiasticall Power of the Pope of Rome; and begins with this, Whether it ought to be Monarchicall, Aristocraticall, or Democraticall.",
+          "This, according to Bellarmines exposition, is, that Christ gave here to Simon Peter two priviledges",
+          "Therefore this place maketh most strongly for the joining of the Ecclesiasticall Supremacy to the Civill Soveraignty, contrary to that which Cardinall Bellarmine alledgeth it for.",
+          "This also is granted, so he doe it in his own Dominions, or in the Dominions of any other Prince that hath given him that Power; but not universally, in Right of the Popedome: For that power belongeth to every Christian Soveraign, within the bounds of his owne Empire, and is inseparable from the Soveraignty. Before the People of Israel had (by the commandment of God to Samuel) set over themselves a King, after the manner of other Nations, the High Priest had the Civill Government; and none but he could make, nor depose an inferiour Priest: But that Power was afterwards in the King, as may be proved by this same argument of Bellarmine; For if the Priest (be he the High Priest or any other) had his Jurisdiction immediately from God, then the King could not take it from him; \"for he could do nothing contrary to Gods ordinance: But it is certain, that King Solomon (1 Kings 2.26.) deprived Abiathar the High Priest of his office, and placed Zadok (verse 35.) in his room. Kings therefore may in the like manner Ordaine, and Deprive Bishops, as they shall thinke fit, for the well governing of their Subjects.",
+          "In the fift Book he hath four Conclusions. The first is, \"That the Pope in not Lord of all the world:\" the second, \"that the Pope is not Lord of all the Christian world:\" The third, \"That the Pope (without his owne Territory) has not any Temporall Jurisdiction DIRECTLY:\" These three Conclusions are easily granted. The fourth is, \"That the Pope has (in the Dominions of other Princes) the Supreme Temporall Power INDIRECTLY:\" which is denyed; unlesse he mean by Indirectly, that he has gotten it by Indirect means; then is that also granted. But I understand, that when he saith he hath it Indirectly, he means, that such Temporall Jurisdiction belongeth to him of Right, but that this Right is but a Consequence of his Pastorall Authority, the which he could not exercise, unlesse he have the other with it: And therefore to the Pastorall Power (which he calls Spirituall) the Supreme Power Civill is necessarily annexed; and that thereby hee hath a Right to change Kingdomes, giving them to one, and taking them from another, when he shall think it conduces to the Salvation of Souls.",
+          "And this is the Doctrine, not onely that Bellarmine here, and many other Doctors teach in their Sermons and Books, but also that some Councells have decreed, and the Popes have decreed, and the Popes have accordingly, when the occasion hath served them, put in practise.",
+          "And thus much of Power Ecclesiasticall; wherein I had been more briefe, forbearing to examine these Arguments of Bellarmine, if they had been his, as a Private man, and not as the Champion of the Papacy, against all other Christian Princes, and States.",
+          "As for those which Cardinall Bellarmine hath alledged, for the present Kingdome of God administred by the Pope, (than which there are none that make a better show of proof,) I have already answered them; and made it evident, that the Kingdome of God, instituted by Moses, ended in the election of Saul: After which time the Priest of his own authority never deposed any King.",
+          "As for some other texts, to prove the Popes Power over civill Soveraignes (besides those of Bellarmine;)",
+          "The texts for Purgatory alledged by Bellarmine out of the Canonicall Scripture of the old Testament, are first, the Fasting of David for Saul and Jonathan, mentioned (2 Kings, 1. 12.); and againe, (2 Sam. 3. 35.) for the death of Abner."
+        ],
+        "commentaries": [
+          "The author references Bellarmine's work on ecclesiastical power, noting his handling of questions about the form of papal authority.",
+          "The author references Bellarmine's interpretation of a biblical passage regarding papal infallibility.",
+          "The author references Cardinal Bellarmine's argument and counters it.",
+          "The author cites Bellarmine's argument about the derivation of episcopal jurisdiction from the civil sovereign and then responds to show that kings have the power to ordain and deprive bishops.",
+          "The author summarizes and critiques Bellarmine's four conclusions regarding the temporal power of the Pope, particularly disputing the claim of indirect supreme temporal power.",
+          "The author identifies Bellarmine as a key proponent of the doctrine of papal temporal power and notes that it has been taught by many.",
+          "The author references Bellarmine's arguments regarding ecclesiastical power, noting that he would have been briefer if Bellarmine were a private man rather than the champion of the Papacy.",
+          "The author references Cardinal Bellarmine's arguments regarding the Kingdom of God administered by the Pope, and states that he has already answered them.",
+          "The author references Bellarmine's texts as a source for arguments about the Pope's power over civil sovereigns.",
+          "The author references Bellarmine's use of Old Testament texts to argue for the doctrine of Purgatory."
+        ],
+        "canonical_author": "Bellarmine"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Robert Bellarmine",
+        "page_id": 4878,
+        "infoboxes": [
+          "Christian leader"
+        ],
+        "categories": [
+          "1542 births",
+          "1621 deaths",
+          "16th-century Italian Jesuits",
+          "16th-century Italian male writers",
+          "16th-century Italian Roman Catholic theologians",
+          "17th-century Italian cardinals",
+          "17th-century Italian Jesuits",
+          "17th-century Italian male writers",
+          "17th-century Italian Roman Catholic archbishops",
+          "17th-century Italian Roman Catholic theologians",
+          "Academic staff of the Old University of Leuven",
+          "Archbishops of Capua",
+          "Bishops in Tuscany",
+          "Burials at Sant'Ignazio, Rome",
+          "Cervini family",
+          "Doctors of the Church",
+          "Early modern Christian devotional writers",
+          "Inquisitors",
+          "Italian librarians",
+          "Italian male non-fiction writers",
+          "Italian religious writers",
+          "Italian Roman Catholic saints",
+          "Italian Roman Catholic writers",
+          "Jesuit archbishops",
+          "Jesuit cardinals",
+          "Jesuit saints",
+          "Old University of Leuven alumni",
+          "People from Montepulciano",
+          "Pontifical Gregorian University alumni",
+          "University of Padua alumni"
+        ],
+        "birth_year": 1542,
+        "death_year": 1621
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "563286"
+        ],
+        "target_person": {
+          "title": "Robert Bellarmine",
+          "page_id": 4878,
+          "infoboxes": [
+            "Christian leader"
+          ],
+          "categories": [
+            "1542 births",
+            "1621 deaths",
+            "16th-century Italian Jesuits",
+            "16th-century Italian male writers",
+            "16th-century Italian Roman Catholic theologians",
+            "17th-century Italian cardinals",
+            "17th-century Italian Jesuits",
+            "17th-century Italian male writers",
+            "17th-century Italian Roman Catholic archbishops",
+            "17th-century Italian Roman Catholic theologians",
+            "Academic staff of the Old University of Leuven",
+            "Archbishops of Capua",
+            "Bishops in Tuscany",
+            "Burials at Sant'Ignazio, Rome",
+            "Cervini family",
+            "Doctors of the Church",
+            "Early modern Christian devotional writers",
+            "Inquisitors",
+            "Italian librarians",
+            "Italian male non-fiction writers",
+            "Italian religious writers",
+            "Italian Roman Catholic saints",
+            "Italian Roman Catholic writers",
+            "Jesuit archbishops",
+            "Jesuit cardinals",
+            "Jesuit saints",
+            "Old University of Leuven alumni",
+            "People from Montepulciano",
+            "Pontifical Gregorian University alumni",
+            "University of Padua alumni"
+          ],
+          "birth_year": 1542,
+          "death_year": 1621
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Virgil",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "as the Grammarians describe the Rules of Language, out of the Practise of the time; or the Rules of Poetry, out of the Poems of Homer and Virgil.",
+          "the Romans called Tartarus; of which Virgill sayes, Bis patet in præceps, tantem tendítque sub umbras, Quantus ad æthereum cœli suspectus Olympum"
+        ],
+        "commentaries": [
+          "The author references Virgil's poems as examples from which grammarians derive rules of poetry.",
+          "The author quotes Virgil's description of Tartarus to illustrate the concept of the underworld in classical literature."
+        ],
+        "canonical_author": "Virgil"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Virgil",
+        "birth_year": -70,
+        "death_year": -19
+      },
+      "edge": {
+        "target_type": "author",
+        "target_book_id": null,
+        "target_author_ids": [
+          "919"
+        ],
+        "target_person": {
+          "title": "Virgil",
+          "birth_year": -70,
+          "death_year": -19
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "Zeno of Elea",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "those that Zeno taught, Stoiques, from the Stoa"
+        ],
+        "commentaries": [
+          "The author mentions Zeno as the teacher of the Stoics."
+        ],
+        "canonical_author": "Zeno Of Elea"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "Zeno of Elea",
+        "page_id": 143331,
+        "infoboxes": [
+          "philosopher"
+        ],
+        "categories": [
+          "490s BC births",
+          "430s BC deaths",
+          "5th-century BC Greek philosophers",
+          "Ancient Greek epistemologists",
+          "Ancient Greek logicians",
+          "Ancient Greek metaphysicians",
+          "Ancient Greek LGBTQ people",
+          "Characters in the Divine Comedy",
+          "Eleatic philosophers",
+          "Lucanian Greeks",
+          "Philosophers of Magna Graecia"
+        ],
+        "birth_year": null,
+        "death_year": null
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Zeno of Elea",
+          "page_id": 143331,
+          "infoboxes": [
+            "philosopher"
+          ],
+          "categories": [
+            "490s BC births",
+            "430s BC deaths",
+            "5th-century BC Greek philosophers",
+            "Ancient Greek epistemologists",
+            "Ancient Greek logicians",
+            "Ancient Greek metaphysicians",
+            "Ancient Greek LGBTQ people",
+            "Characters in the Divine Comedy",
+            "Eleatic philosophers",
+            "Lucanian Greeks",
+            "Philosophers of Magna Graecia"
+          ],
+          "birth_year": null,
+          "death_year": null
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "De Summo Pontifice",
+        "author": "Bellarmine",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "yet because the Pope of Romes challenge to that Power universally, hath been maintained chiefly, and I think as strongly as is possible, by Cardinall Bellarmine, in his Controversie De Summo Pontifice;"
+        ],
+        "commentaries": [
+          "The author references Cardinal Bellarmine's work as the primary defense of the Pope's universal power, which he then proceeds to examine and refute."
+        ]
+      },
+      "goodreads_match": {
+        "title": "De Summo Pontifice",
+        "authors": [
+          "Robert Bellarmine"
+        ],
+        "original_year": 1581,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Italian",
+        "description": "A theological treatise on papal supremacy, originally part of Bellarmine's larger work 'Disputationes de controversiis christianae fidei'.",
+        "book_id": "web_c7aadb91",
+        "author_meta": {
+          "birth_year": 1542,
+          "death_year": 1621,
+          "canonical_name": "Robert Bellarmine"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Robert Bellarmine",
+        "birth_year": 1542,
+        "death_year": 1621
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_c7aadb91",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Robert Bellarmine",
+          "birth_year": 1542,
+          "death_year": 1621
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Commentary upon Littleton",
+        "author": "Sir Edward Coke",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "nor yet (as Sr. Ed, Coke makes it (Sir Edward Coke, upon Littleton Lib.2. Ch.6 fol 97.b),) an Artificiall Perfection of Reason, Gotten By Long Study, Observation, And Experience, (as his was.)",
+          "Somewhat like to a piece of Law in Cokes Commentaries on Litleton; where he sayes, If the right Heire of the Crown be attainted of Treason; yet the Crown shall descend to him, and Eo Instante the Atteynder be voyd;"
+        ],
+        "commentaries": [
+          "The author references Sir Edward Coke's commentary on Littleton to criticize the notion of an artificial perfection of reason gained through long study.",
+          "The author references a legal principle from Coke's Commentaries on Litleton to illustrate a point about justice and inheritance."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Commentary upon Littleton",
+        "authors": [
+          "Sir Edward Coke"
+        ],
+        "original_year": 1628,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "English",
+        "description": "A seminal legal treatise by Sir Edward Coke, first published in 1628, commenting on Thomas Littleton's 'Tenures' and a foundational text of English common law.",
+        "book_id": "web_a24c810e",
+        "author_meta": {
+          "birth_year": 1552,
+          "death_year": 1598
+        }
+      },
+      "wikipedia_match": {
+        "title": "Sir Edward Coke",
+        "birth_year": 1552,
+        "death_year": 1598
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_a24c810e",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Sir Edward Coke",
+          "birth_year": 1552,
+          "death_year": 1598
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Common-wealth",
+        "author": "Plato",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "I am at the point of believing this my labour, as uselesse, and the Common-wealth of Plato; For he also is of opinion that it is impossible for the disorders of State, and change of Governments by Civill Warre, ever to be taken away, till Soveraigns be Philosophers."
+        ],
+        "commentaries": [
+          "The author references Plato's 'Common-wealth' (likely the Republic) and his opinion that political disorders cannot be resolved until sovereigns become philosophers."
+        ]
+      },
+      "goodreads_match": {
+        "title": "The Republic",
+        "authors": [
+          "Plato"
+        ],
+        "original_year": -375,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Greek",
+        "description": "Plato's dialogue on justice, the ideal state, and the philosopher-king.",
+        "book_id": "web_dc581f59",
+        "author_meta": {
+          "birth_year": -427,
+          "death_year": -347,
+          "main_genre": "Philosophy",
+          "nationality": "Greek"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Plato",
+        "birth_year": -427,
+        "death_year": -347
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_dc581f59",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Plato",
+          "birth_year": -427,
+          "death_year": -347
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Of The Concourse, Motion, And Help Of God",
+        "author": "Suarez",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "They are the Translation of the Title of the sixth chapter of Suarez first Booke, Of The Concourse, Motion, And Help Of God."
+        ],
+        "commentaries": [
+          "The author cites a specific book by Suarez as an example of meaningless or absurd philosophical writing, pointing to its title as incomprehensible when translated."
+        ]
+      },
+      "goodreads_match": {
+        "title": "De Concursu, Motione et Auxilio Dei",
+        "authors": [
+          "Francisco Suárez"
+        ],
+        "original_year": 1600,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Spanish",
+        "description": "A theological treatise on divine concurrence, motion, and help by the Spanish Jesuit philosopher Francisco Suárez.",
+        "book_id": "web_c50483e2",
+        "author_meta": {
+          "birth_year": 1548,
+          "death_year": 1617,
+          "canonical_name": "Francisco Suárez"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Francisco Suárez",
+        "birth_year": 1548,
+        "death_year": 1617
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_c50483e2",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Francisco Suárez",
+          "birth_year": 1548,
+          "death_year": 1617
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "Institutions of Justinian",
+        "author": "Justinian I",
+        "note": null,
+        "count": 1,
+        "contexts": [
+          "In the Institutions of Justinian, we find seven sorts of Civill Lawes."
+        ],
+        "commentaries": [
+          "The author references Justinian's Institutions as a source for a classification of civil laws."
+        ]
+      },
+      "goodreads_match": {
+        "title": "Institutes of Justinian",
+        "authors": [
+          "Justinian I"
+        ],
+        "original_year": 533,
+        "birth_year": null,
+        "death_year": null,
+        "nationality": "Roman",
+        "description": "A foundational legal textbook commissioned by the Byzantine Emperor Justinian I, part of the Corpus Juris Civilis, outlining the principles of Roman law.",
+        "book_id": "web_772539f4",
+        "author_meta": {
+          "death_year": 565,
+          "canonical_name": "Justinian I"
+        }
+      },
+      "wikipedia_match": {
+        "title": "Justinian I",
+        "death_year": 565
+      },
+      "edge": {
+        "target_type": "book",
+        "target_book_id": "web_772539f4",
+        "target_author_ids": [],
+        "target_person": {
+          "title": "Justinian I",
+          "death_year": 565
+        }
+      }
+    },
+    {
+      "raw": {
+        "title": "",
+        "author": "St. Jerome",
+        "note": null,
+        "count": 2,
+        "contexts": [
+          "St. Jerome does the same, though they reckon them in different manner.",
+          "the Hebrew is (as St. Jerome testifies) in prose"
+        ],
+        "commentaries": [
+          "The author mentions St. Jerome's similar but differently numbered reckoning of canonical books.",
+          "The author cites St. Jerome's testimony regarding the prose form of the Hebrew text in the Book of Job."
+        ],
+        "canonical_author": "St. Jerome"
+      },
+      "goodreads_match": null,
+      "wikipedia_match": {
+        "title": "St. Jerome",
+        "birth_year": 347,
+        "death_year": 420
+      },
+      "edge": {
+        "target_type": "person",
+        "target_book_id": null,
+        "target_author_ids": [],
+        "target_person": {
+          "title": "St. Jerome",
+          "birth_year": 347,
+          "death_year": 420
+        }
+      }
+    }
+  ]
+}
