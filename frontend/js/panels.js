@@ -4,6 +4,7 @@
  */
 
 const $ = (id) => document.getElementById(id);
+const isMobile = () => window.matchMedia("(max-width: 720px)").matches;
 
 function el(tag, cls, html) {
   const e = document.createElement(tag);
@@ -51,10 +52,16 @@ export class Panels {
 
     document.querySelectorAll(".panel-close").forEach((b) =>
       b.addEventListener("click", () => {
-        if (b.dataset.close === "detail") this.closeDetail();
+        // On mobile the two panels act as ONE sheet — closing either dismisses it.
+        if (isMobile()) this.store.clearSelection();
+        else if (b.dataset.close === "detail") this.closeDetail();
         else this.store.clearSelection();
       })
     );
+    this._setupSheetTabs();
+    this._setupSheetDrag();
+    this._setupLegendToggle();
+    this._setupMobileSearch();
     document.querySelectorAll(".cite-tab").forEach((t) =>
       t.addEventListener("click", () => {
         if (t.disabled) return;
@@ -77,6 +84,90 @@ export class Panels {
       else if (reason === "hover") this._onHover();
       else if (reason === "hoverBook") this._onHoverBook();
       else if (reason === "transform") { this._hidePopover(0); this._hideTooltip(); }
+    });
+  }
+
+  // ---- mobile sheet (tabs + drag) ------------------------------------------
+  _setupSheetTabs() {
+    this.sheetTabs = $("sheet-tabs");
+    this.sheetTabs.querySelectorAll("button").forEach((b) =>
+      b.addEventListener("click", () => this._setSheetTab(b.dataset.stab))
+    );
+    // Leaving mobile: drop sheet state so desktop side-panels behave normally.
+    window.matchMedia("(max-width: 720px)").addEventListener("change", (e) => {
+      if (!e.matches) {
+        delete document.body.dataset.sheetTab;
+        this.sheetTabs.hidden = true;
+      } else if (this.store.selected) {
+        this._setSheetTab(this._sheetTab || "detail");
+        this.sheetTabs.hidden = false;
+      }
+    });
+  }
+
+  _setSheetTab(tab) {
+    this._sheetTab = tab;
+    if (!isMobile()) return;
+    document.body.dataset.sheetTab = tab;
+    this.sheetTabs.querySelectorAll("button").forEach((b) =>
+      b.classList.toggle("is-active", b.dataset.stab === tab)
+    );
+  }
+
+  _openSheet(tab) {
+    if (!isMobile()) return;
+    this._setSheetTab(tab);
+    this.sheetTabs.hidden = false;
+    $("legend").classList.add("collapsed"); // keep the graph clear of overlays
+  }
+
+  _closeSheet() {
+    delete document.body.dataset.sheetTab;
+    this.sheetTabs.hidden = true;
+  }
+
+  /** Drag the grip to resize the sheet; fling/drag down past the floor closes it. */
+  _setupSheetDrag() {
+    const root = document.documentElement;
+    document.querySelectorAll(".sheet-grip").forEach((grip) => {
+      let startY = 0, startH = 0, dragging = false;
+      grip.addEventListener("pointerdown", (e) => {
+        dragging = true;
+        startY = e.clientY;
+        startH = grip.closest(".panel").getBoundingClientRect().height;
+        grip.setPointerCapture(e.pointerId);
+        e.preventDefault();
+      });
+      grip.addEventListener("pointermove", (e) => {
+        if (!dragging) return;
+        const h = startH + (startY - e.clientY);
+        const min = window.innerHeight * 0.16;
+        const max = window.innerHeight * 0.92;
+        root.style.setProperty("--sheet-h", Math.max(min, Math.min(max, h)) + "px");
+      });
+      grip.addEventListener("pointerup", (e) => {
+        if (!dragging) return;
+        dragging = false;
+        const h = startH + (startY - e.clientY);
+        if (h < window.innerHeight * 0.22) {
+          root.style.setProperty("--sheet-h", "50dvh");
+          this.store.clearSelection();
+        }
+      });
+    });
+  }
+
+  // ---- legend toggle & mobile search ---------------------------------------
+  _setupLegendToggle() {
+    const legend = $("legend");
+    $("legend-toggle").addEventListener("click", () => legend.classList.toggle("collapsed"));
+    if (!isMobile()) legend.classList.remove("collapsed"); // desktop: open by default
+  }
+
+  _setupMobileSearch() {
+    $("search-toggle").addEventListener("click", () => {
+      const open = document.body.classList.toggle("search-open");
+      if (open) $("search-input").focus();
     });
   }
 
@@ -180,8 +271,8 @@ export class Panels {
   }
 
   renderLegend(regions) {
-    this.elLegend.innerHTML = "";
-    this.elLegend.appendChild(el("div", "legend-title", "Region of origin"));
+    const box = $("legend-items");
+    box.innerHTML = "";
     for (const [key, r] of Object.entries(regions)) {
       const item = el("div", "legend-item");
       item.dataset.region = key;
@@ -191,7 +282,7 @@ export class Panels {
         this.store.setRegionFilter(key);
         this._syncLegend();
       });
-      this.elLegend.appendChild(item);
+      box.appendChild(item);
     }
   }
 
@@ -217,6 +308,7 @@ export class Panels {
     this.elDetail.classList.add("open");
     this.elDetail.setAttribute("aria-hidden", "false");
     this.elLegend.classList.add("shifted");
+    this._openSheet("detail");
     this.elBack.hidden = this.store.backStack.length === 0;
   }
 
@@ -230,6 +322,7 @@ export class Panels {
     this.elCitation.setAttribute("aria-hidden", "true");
     this.elDetail.setAttribute("aria-hidden", "true");
     this.elLegend.classList.remove("shifted");
+    this._closeSheet();
     this.elBack.hidden = true;
   }
 
@@ -246,9 +339,11 @@ export class Panels {
     this._renderAuthorDetail(node, scope);
     this.elDetail.classList.add("open");
     this.elDetail.setAttribute("aria-hidden", "false");
+    this._setSheetTab("detail"); // mobile: flip the sheet to the preview
   }
   _previewBook(book, author, scope = null) {
     this._renderBookDetail({ book, author }, scope);
+    this._setSheetTab("detail");
   }
 
   // ---- citation panel -----------------------------------------------------
@@ -650,6 +745,7 @@ export class Panels {
         item.addEventListener("click", () => {
           input.value = "";
           results.classList.remove("open");
+          document.body.classList.remove("search-open");
           this._navTo(node);
           if (h.type === "book") this.store.selectBook(h.book, node);
         });

@@ -27,7 +27,10 @@ export class Interaction {
     this.sel.call(this.zoom).on("dblclick.zoom", null);
 
     canvas.addEventListener("mousemove", (e) => this._onMove(e));
-    canvas.addEventListener("mouseleave", () => this.store.setHover(null));
+    canvas.addEventListener("mouseleave", () => {
+      this.store.setHover(null);
+      this.store.setHoverBook(null);
+    });
     canvas.addEventListener("click", (e) => this._onClick(e));
   }
 
@@ -96,8 +99,10 @@ export class Interaction {
   /** Animate pan/zoom to center a node, zooming in past the photo threshold. */
   flyTo(node, targetK) {
     const k = targetK || Math.max(2.0, Math.min(4, this.store.transform.k));
+    // On mobile the bottom sheet covers the lower half — aim above it.
+    const cy = window.innerWidth <= 720 ? this.renderer.H * 0.28 : this.renderer.H / 2;
     const tx = this.renderer.W / 2 - node.x * k;
-    const ty = this.renderer.H / 2 - node.y * k;
+    const ty = cy - node.y * k;
     const transform = d3.zoomIdentity.translate(tx, ty).scale(k);
     this.sel.transition().duration(750).ease(d3.easeCubicInOut).call(this.zoom.transform, transform);
   }

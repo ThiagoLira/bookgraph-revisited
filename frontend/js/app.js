@@ -19,6 +19,17 @@ const panels = new Panels(store, interaction);
 
 window.addEventListener("resize", () => renderer.resize());
 panels.setupSearch();
+// Canvas labels use webfonts — redraw once they're ready so the first paint
+// doesn't stick with the fallback serif.
+document.fonts?.ready.then(() => renderer.scheduleDraw());
+
+// Repaint highlights when selection/filter state changes without a canvas
+// event (panel close buttons, sheet drag-dismiss, legend filters on touch).
+store.subscribe((reason) => {
+  if (reason === "select" || reason === "selectBook" || reason === "regionFilter" || reason === "hover") {
+    renderer.scheduleDraw();
+  }
+});
 
 // Dismiss the intro overlay on the first real interaction (pan/zoom/select).
 let introDismissed = false;
