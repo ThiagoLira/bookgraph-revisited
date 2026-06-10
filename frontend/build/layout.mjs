@@ -79,39 +79,54 @@ function fillYears(authors, links) {
 }
 
 // ---- Y time scale -----------------------------------------------------------
+// Piecewise resolution (px per year). Antiquity stays compressed, but the
+// early-modern band (1400-1800) gets its own mid resolution — at the old
+// 0.6px/yr the entire Renaissance-to-Enlightenment canon collapsed into one
+// dense horizontal stripe. Post-1800 stays high-res.
+const Y_SEGMENTS = [
+  { until: 1400, res: 0.6, tickStep: 100 },
+  { until: 1800, res: 3.0, tickStep: 50 },
+  { until: Infinity, res: 10, tickStep: 10 },
+];
+
 function buildYScale(authors) {
   const years = authors.map((a) => a.year);
   const minYear = Math.min(...years);
   const maxYear = Math.max(...years);
-  const split = 1800;
-  const lowRes = 0.6; // px/yr before 1800
-  const highRes = 10; // px/yr after 1800
-
-  let yScale, totalHeight, tickValues;
   const topPad = 120;
   const botPad = 120;
 
-  if (minYear < split && maxYear > split) {
-    const ancientH = (split - minYear) * lowRes;
-    const modernH = (maxYear - split) * highRes;
-    totalHeight = ancientH + modernH + topPad + botPad;
-    const yBottom = totalHeight - botPad;
-    const ySplit = yBottom - ancientH;
-    const yTop = ySplit - modernH;
-    yScale = d3.scaleLinear().domain([minYear, split, maxYear]).range([yBottom, ySplit, yTop]);
-    tickValues = [
-      ...d3.range(Math.ceil(minYear / 100) * 100, split, 100),
-      ...d3.range(split, maxYear + 1, 10),
-    ];
-  } else {
-    const res = maxYear > split ? highRes : lowRes;
-    totalHeight = (maxYear - minYear) * res + topPad + botPad;
-    const yBottom = totalHeight - botPad;
-    const yTop = topPad;
-    yScale = d3.scaleLinear().domain([minYear, maxYear]).range([yBottom, yTop]);
-    const step = maxYear > split ? 10 : 100;
-    tickValues = d3.range(Math.ceil(minYear / step) * step, maxYear + 1, step);
+  // Domain breakpoints: data extent clipped against segment boundaries.
+  const breaks = [minYear];
+  for (const s of Y_SEGMENTS) {
+    if (s.until > minYear && s.until < maxYear) breaks.push(s.until);
   }
+  breaks.push(maxYear);
+
+  const segFor = (year) => Y_SEGMENTS.find((s) => year < s.until);
+
+  // Heights per band, bottom-up range (older = larger y).
+  const heights = [];
+  let bandsTotal = 0;
+  for (let i = 0; i < breaks.length - 1; i++) {
+    const seg = segFor((breaks[i] + breaks[i + 1]) / 2);
+    const h = (breaks[i + 1] - breaks[i]) * seg.res;
+    heights.push(h);
+    bandsTotal += h;
+  }
+  const totalHeight = bandsTotal + topPad + botPad;
+  const range = [totalHeight - botPad];
+  for (const h of heights) range.push(range[range.length - 1] - h);
+  const yScale = d3.scaleLinear().domain(breaks).range(range);
+
+  // Gridline ticks at each band's density.
+  const ticks = new Set();
+  for (let i = 0; i < breaks.length - 1; i++) {
+    const step = segFor((breaks[i] + breaks[i + 1]) / 2).tickStep;
+    for (let t = Math.ceil(breaks[i] / step) * step; t <= breaks[i + 1]; t += step) ticks.add(t);
+  }
+  const tickValues = [...ticks].sort((a, b) => a - b);
+
   return { yScale, totalHeight, tickValues, minYear, maxYear };
 }
 

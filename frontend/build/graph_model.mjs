@@ -156,6 +156,9 @@ export function buildGraph(records) {
         const name = normalizeAuthor(
           wiki.title || (match.authors && match.authors.length ? match.authors[0] : match.name) || "Unknown"
         );
+        // Unresolved citations (not_found: no wiki/goodreads identity) would
+        // all aggregate into a meaningless "Unknown" node — skip them.
+        if (name === "Unknown") return;
         const node = ensureAuthor(name);
         applyAuthorMeta(node);
         if (cit.raw?.commentaries) {

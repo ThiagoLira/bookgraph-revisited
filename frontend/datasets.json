@@ -112,5 +112,10 @@
         "name": "Gutenberg Classics",
         "path": "./data/gutenberg_classics",
         "baked": true
+    },
+    {
+        "name": "Thiago's Library",
+        "path": "./data/thiago_library",
+        "baked": true
     }
 ]
