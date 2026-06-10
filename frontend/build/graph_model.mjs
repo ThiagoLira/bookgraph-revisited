@@ -10,10 +10,13 @@
 // Known duplicate-split / variant author names collapsed into a canonical name
 // (datasets/data_overrides.json:name_aliases). Registered by build.mjs before
 // buildGraph runs; applied in normalizeAuthor so both author nodes AND link
-// endpoints merge consistently.
+// endpoints merge consistently. buildGraph extends the static map per dataset
+// with auto-detected diacritic twins ("Moliere"/"Molière").
+let _staticAliases = null;
 let _nameAliases = null;
 export function setNameAliases(aliases) {
-  _nameAliases = aliases || null;
+  _staticAliases = aliases || null;
+  _nameAliases = _staticAliases;
 }
 
 export function normalizeAuthor(name) {
@@ -26,6 +29,63 @@ export function normalizeAuthor(name) {
   n = n.replace(/\s+/g, " ");
   if (_nameAliases && _nameAliases[n]) return _nameAliases[n];
   return n;
+}
+
+// Diacritic/punctuation-insensitive key for twin detection.
+function foldName(n) {
+  return n
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/\./g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// Scan all author-name candidates in the records, group diacritic twins, and
+// extend the alias map so every variant resolves to one canonical form (the
+// most-accented variant — accents are usually the correct spelling).
+function buildDynamicAliases(records) {
+  const candidates = new Set();
+  const addRaw = (raw) => {
+    const n = normalizeAuthor(raw);
+    if (n && n !== "Unknown") candidates.add(n);
+  };
+  for (const rec of records) {
+    const src = rec.source || {};
+    addRaw(Array.isArray(src.authors) ? src.authors[0] : src.authors);
+    for (const cit of rec.citations || []) {
+      const match = cit.goodreads_match || {};
+      const wiki = cit.wikipedia_match || {};
+      if (cit.edge?.target_book_id) {
+        addRaw(match.authors && match.authors.length ? match.authors[0] : null);
+      } else if (cit.edge?.target_author_ids) {
+        addRaw(wiki.title || (match.authors && match.authors.length ? match.authors[0] : match.name));
+      }
+    }
+  }
+  const byFold = new Map();
+  for (const n of candidates) {
+    const k = foldName(n);
+    if (!byFold.has(k)) byFold.set(k, []);
+    byFold.get(k).push(n);
+  }
+  const aliases = { ...(_staticAliases || {}) };
+  const accents = (s) => [...s].filter((ch) => ch.charCodeAt(0) > 127).length;
+  for (const variants of byFold.values()) {
+    if (variants.length < 2) continue;
+    variants.sort((a, b) => accents(b) - accents(a) || b.length - a.length || a.localeCompare(b));
+    const canonical = variants[0];
+    for (let i = 1; i < variants.length; i++) aliases[variants[i]] = canonical;
+  }
+  // Flatten alias chains (static A->B where B is itself a folded variant).
+  for (const [k, v] of Object.entries(aliases)) {
+    let target = v;
+    let hops = 0;
+    while (aliases[target] && hops++ < 5) target = aliases[target];
+    aliases[k] = target;
+  }
+  _nameAliases = aliases;
 }
 
 function normalizeTitle(title) {
@@ -67,6 +127,7 @@ function leanBook(id, title, year, isSource, meta, commentaries) {
  * @returns {{authors: Array, links: Array}}
  */
 export function buildGraph(records) {
+  buildDynamicAliases(records); // merge diacritic-twin author names
   const authorMap = new Map();
   const authorRefRe = /\b(The|the) author\b/g;
 
