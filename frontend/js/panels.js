@@ -239,14 +239,16 @@ export class Panels {
   }
 
   // Preview a citation on the right panel only — no camera move, no change to
-  // the current selection/focus/left panel.
-  _previewAuthor(node) {
-    this._renderAuthorDetail(node);
+  // the current selection/focus/left panel. `scope` (set when the click came
+  // from the selected node's Cites/Cited-by lists) narrows the provenance
+  // shown to the relationship between the selected node and this one.
+  _previewAuthor(node, scope = null) {
+    this._renderAuthorDetail(node, scope);
     this.elDetail.classList.add("open");
     this.elDetail.setAttribute("aria-hidden", "false");
   }
-  _previewBook(book, author) {
-    this._renderBookDetail({ book, author });
+  _previewBook(book, author, scope = null) {
+    this._renderBookDetail({ book, author }, scope);
   }
 
   // ---- citation panel -----------------------------------------------------
@@ -292,13 +294,13 @@ export class Panels {
             : "This author's works weren't analyzed, so we don't know who they cite. Try the “Cited by” tab.")
         );
       }
-      for (const l of outLinks) authorsUl.appendChild(this._authorRow(l.target, l.count, regions));
+      for (const l of outLinks) authorsUl.appendChild(this._authorRow(l.target, l.count, regions, { src: node, tgt: l.target, workFilter }));
       const works = this._worksFromLinks(outLinks, workFilter);
       if (!works.length) worksUl.appendChild(el("li", "cite-empty", "No specific works resolved."));
-      for (const w of works) worksUl.appendChild(this._workRow(w.book, w.author, regions));
+      for (const w of works) worksUl.appendChild(this._workRow(w.book, w.author, regions, { src: node, tgt: w.author, workFilter }));
     } else {
       $("sec-works").style.display = "none";
-      for (const l of node.in) authorsUl.appendChild(this._authorRow(l.source, l.count, regions));
+      for (const l of node.in) authorsUl.appendChild(this._authorRow(l.source, l.count, regions, { src: l.source, tgt: node }));
     }
   }
 
@@ -335,35 +337,70 @@ export class Panels {
   // ---- per-citation provenance --------------------------------------------
   // Group the citations arriving at `targetAuthor` by citing author. With a
   // book: only citations of that specific work; without: author-level
-  // citations (invoked by name / work didn't resolve to a book).
+  // citations (invoked by name / work didn't resolve to a book). Links that
+  // carry no citation text (legacy datasets) still get a group so every citer
+  // is listed — head + count only, marked noData.
   _citationGroups(targetAuthor, book = null) {
     const groups = [];
     for (const l of targetAuthor.in || []) {
-      const cits = (l.citations || []).filter((c) => (book ? c.tb === book.id : !c.tb));
-      if (!cits.length) continue;
-      groups.push({ src: l.source, cits, total: cits.reduce((s, c) => s + (c.n || 1), 0) });
+      const all = l.citations || [];
+      const cits = all.filter((c) => (book ? c.tb === book.id : !c.tb));
+      if (cits.length) {
+        groups.push({ src: l.source, link: l, cits, total: cits.reduce((s, c) => s + (c.n || 1), 0) });
+      } else if (!book) {
+        // No author-level passages from this citer. Still list them: either
+        // their passages live on specific cited works, or it's a legacy
+        // dataset with no passage text at all.
+        groups.push({ src: l.source, link: l, cits: [], total: l.count, noData: true, hasBookCits: all.some((c) => c.tb) });
+      }
     }
     groups.sort((a, b) => b.total - a.total);
     return groups;
   }
 
-  _renderCitationGroups(body, groups, { showRawTitles = false } = {}) {
+  // The single relationship selected-node ↔ previewed-node: only citations on
+  // the src→tgt link (optionally narrowed to one cited work / one source book).
+  _scopedGroups({ src, tgt, book = null, workFilter = null }) {
+    const l = (tgt.in || []).find((x) => x.source === src);
+    if (!l) return [];
+    let cits = l.citations || [];
+    if (book) cits = cits.filter((c) => c.tb === book.id);
+    if (workFilter) cits = cits.filter((c) => c.sb === workFilter.id);
+    if (!cits.length) {
+      if (book) return [];
+      return [{ src, link: l, cits: [], total: l.count, noData: true }];
+    }
+    return [{ src, link: l, cits, total: cits.reduce((s, c) => s + (c.n || 1), 0) }];
+  }
+
+  _renderCitationGroups(body, groups, { showRawTitles = false, title = "Cited in context" } = {}) {
     const s = el("div", "detail-section");
-    s.appendChild(el("h4", null, "Cited in context"));
+    s.appendChild(el("h4", null, esc(title)));
     for (const g of groups) {
       const box = el("div", "cite-group");
       const head = el("div", "cite-group-head");
       const name = el("span", "cite-group-author", esc(g.src.name));
       name.addEventListener("click", () => this._navTo(g.src));
       head.appendChild(name);
-      const srcTitles = [...new Set(g.cits.map((c) => this.graph.bookById?.get(c.sb)?.title).filter(Boolean))];
+      let srcTitles = [...new Set(g.cits.map((c) => this.graph.bookById?.get(c.sb)?.title).filter(Boolean))];
+      if (!srcTitles.length && g.link?.source_book_ids) {
+        srcTitles = [...new Set(g.link.source_book_ids.map((id) => this.graph.bookById?.get(id)?.title).filter(Boolean))];
+      }
       if (srcTitles.length) head.appendChild(el("span", "cite-group-src", ` · ${esc(srcTitles.join(" · "))}`));
       if (g.total > 1) head.appendChild(el("span", "cite-count", `×${g.total}`));
       box.appendChild(head);
 
       if (showRawTitles) {
-        const raw = [...new Set(g.cits.map((c) => c.t).filter(Boolean))];
+        const raw = [...new Set(g.cits.map((c) => c.t || (c.tb && this.graph.bookById?.get(c.tb)?.title)).filter(Boolean))];
         if (raw.length) box.appendChild(el("div", "cite-rawtitle", `cited: ${esc(raw.join(" · "))}`));
+      }
+
+      if (g.noData) {
+        box.appendChild(el("p", "cite-nodata", g.hasBookCits
+          ? "Passages are attached to the specific works cited — see their pages."
+          : "No passage text in this dataset."));
+        s.appendChild(box);
+        continue;
       }
 
       const quotes = [...new Set(g.cits.flatMap((c) => c.q || []))];
@@ -402,29 +439,29 @@ export class Panels {
     }
   }
 
-  _authorRow(node, count, regions) {
+  _authorRow(node, count, regions, scope = null) {
     const row = el("li", "cite-row");
     row.appendChild(el("span", "cite-dot")).style.background = (regions[node.region] || regions.unknown).color;
     row.appendChild(el("span", "cite-name", esc(node.name)));
     row.appendChild(el("span", "cite-year", fmtYear(node.year)));
     if (count > 1) row.appendChild(el("span", "cite-count", `×${count}`));
-    row.addEventListener("click", () => this._previewAuthor(node));
+    row.addEventListener("click", () => this._previewAuthor(node, scope));
     return row;
   }
 
-  _workRow(book, author, regions) {
+  _workRow(book, author, regions, scope = null) {
     const row = el("li", "cite-row");
     row.appendChild(el("span", "cite-dot")).style.background = (regions[author.region] || regions.unknown).color;
     const name = el("span", "cite-name");
     name.innerHTML = `${esc(book.title)} <span style="color:var(--muted);font-family:var(--mono);font-size:10.5px">— ${esc(author.name)}</span>`;
     row.appendChild(name);
     row.appendChild(el("span", "cite-year", fmtYear(book.year)));
-    row.addEventListener("click", () => this._previewBook(book, author));
+    row.addEventListener("click", () => this._previewBook(book, author, scope));
     return row;
   }
 
   // ---- detail panel -------------------------------------------------------
-  _renderAuthorDetail(a) {
+  _renderAuthorDetail(a, scope = null) {
     const regions = this.graph.meta.regions;
     const region = regions[a.region] || regions.unknown;
     const body = $("detail-body");
@@ -479,12 +516,22 @@ export class Panels {
       body.appendChild(s);
     }
 
-    // Author-level citations (invoked by name, or the cited work didn't
-    // resolve to a book — raw titles shown). Grouped by citing author; falls
-    // back to the pooled commentary list when details haven't loaded.
-    const groups = this._citationGroups(a, null);
+    // Citations grouped by citing author. With a scope (arrived here from the
+    // selected node's lists) show ONLY that relationship; otherwise all citers.
+    // Falls back to the pooled commentary list when details haven't loaded.
+    let groups, opts;
+    if (scope && scope.tgt === a) {
+      groups = this._scopedGroups(scope);
+      opts = { showRawTitles: true, title: `Cited by ${scope.src.name}` };
+    } else if (scope && scope.src === a) {
+      groups = this._scopedGroups(scope);
+      opts = { showRawTitles: true, title: `On ${scope.tgt.name}` };
+    } else {
+      groups = this._citationGroups(a, null);
+      opts = { showRawTitles: true };
+    }
     if (groups.length) {
-      this._renderCitationGroups(body, groups, { showRawTitles: true });
+      this._renderCitationGroups(body, groups, opts);
     } else if (a.commentaries && a.commentaries.length) {
       const s = el("div", "detail-section");
       s.appendChild(el("h4", null, "Cited in context"));
@@ -494,7 +541,7 @@ export class Panels {
     body.scrollTop = 0;
   }
 
-  _renderBookDetail(sb = this.store.selectedBook) {
+  _renderBookDetail(sb = this.store.selectedBook, scope = null) {
     if (!sb) return;
     const { book, author } = sb;
     const body = $("detail-body");
@@ -527,9 +574,12 @@ export class Panels {
       s.appendChild(el("p", "detail-desc", esc(book.description)));
       body.appendChild(s);
     }
-    // Grouped per-citer provenance (verbatim passages + commentary). Falls back
-    // to the pooled commentary list when details haven't loaded / legacy bakes.
-    const groups = book.is_source ? [] : this._citationGroups(author, book);
+    // Grouped per-citer provenance (verbatim passages + commentary). A scope
+    // (arrived from the selected node's works list) narrows to that citer only.
+    // Falls back to the pooled commentary list when details haven't loaded.
+    const groups = book.is_source ? []
+      : scope ? this._scopedGroups({ ...scope, book })
+      : this._citationGroups(author, book);
     if (groups.length) {
       this._renderCitationGroups(body, groups);
     } else if (book.commentaries && book.commentaries.length) {
